@@ -7,23 +7,9 @@ from pathlib import Path
 import pytest
 from main import DOCS_DIR, define_env
 from scripts.repo_tools.org_structure import load_org_structure, render_org_structure
+from tests.helpers import FakeMacroEnvironment
 
 REPO_ROOT = Path(__file__).resolve().parents[1]
-
-
-class FakeMacroEnvironment:
-    """Minimal stand-in for the MkDocs macros environment."""
-
-    def __init__(self) -> None:
-        """Initialize the fake macro registry."""
-
-        self.macros: dict[str, object] = {}
-
-    def macro(self, function: object) -> object:
-        """Register a macro function and return it unchanged."""
-
-        self.macros[getattr(function, "__name__", "unknown")] = function
-        return function
 
 
 def test_org_structure_data_loads_cleanly() -> None:

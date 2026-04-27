@@ -57,6 +57,16 @@ commands, and re-verify all plugins and theme behavior together.
 - Run `./scripts/verify.sh` before merging structural or config changes.
 - Treat `site/` as generated output, not source.
 
+## Page data model
+
+Use the smallest shared pattern that matches the page need:
+
+- `.metadata.yml` carries inherited page metadata such as owner, review cadence, change log, and optional `display_badge` state.
+- `*.cards.yml` carries repeated landing-page card content and should render only through `card_grid_from(...)`.
+- `*.data.yml` carries structured page-specific source data when one file needs to drive multiple rendered sections, tables, charts, or lists.
+
+If a page can stay plain Markdown, keep it plain Markdown. Only introduce structured data when it removes repeated source-of-truth content or repeated shared UI markup.
+
 ## Repository layout
 
 ```

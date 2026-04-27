@@ -7,42 +7,9 @@ from pathlib import Path
 import pytest
 from main import DOCS_DIR, define_env
 from scripts.repo_tools.badges import render_badge
+from tests.helpers import FakeMacroEnvironment
 
 REPO_ROOT = Path(__file__).resolve().parents[1]
-
-
-class _FakePageFile:
-    """Minimal file object for a fake MkDocs page."""
-
-    def __init__(self, src_path: str) -> None:
-        """Store the source path used by the macros plugin."""
-
-        self.src_path = src_path
-
-
-class _FakePage:
-    """Minimal page object for a fake MkDocs page."""
-
-    def __init__(self, src_path: str) -> None:
-        """Create a fake page with the given source path."""
-
-        self.file = _FakePageFile(src_path)
-
-
-class FakeMacroEnvironment:
-    """Minimal stand-in for the MkDocs macros environment."""
-
-    def __init__(self, page_src_path: str) -> None:
-        """Initialize the fake macro registry and current page."""
-
-        self.macros: dict[str, object] = {}
-        self.page = _FakePage(page_src_path)
-
-    def macro(self, function: object) -> object:
-        """Register a macro function and return it unchanged."""
-
-        self.macros[getattr(function, "__name__", "unknown")] = function
-        return function
 
 
 def test_render_badge_uses_shared_label_and_variant_mapping() -> None:

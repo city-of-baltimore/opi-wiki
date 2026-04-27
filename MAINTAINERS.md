@@ -112,6 +112,16 @@ and render it through a shared macro. The org structure page is the current
 example: update `org-structure.data.yml`, not multiple Mermaid blocks and staff
 lists by hand.
 
+## Page data model
+
+Use each data shape intentionally:
+
+- `.metadata.yml` for inherited page metadata, review fields, and optional `display_badge` state.
+- `*.cards.yml` for shared landing-page card content rendered through `card_grid_from(...)`.
+- `*.data.yml` for page-local structured source data that needs to render into more than one repeated section.
+
+Do not invent new adjacent file conventions casually. If a page needs a new shared data pattern, document it in this manual and `README.md` in the same change.
+
 ## Build platform posture
 
 This repo currently runs on MkDocs 1.x and should stay there unless the team
