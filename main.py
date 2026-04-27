@@ -58,3 +58,12 @@ def define_env(env: MacroEnvironment) -> None:
         page_path = DOCS_DIR / env.page.file.src_path
         metadata = resolve_page_metadata(DOCS_DIR, page_path)
         return Markup(render_badge(resolve_page_badge_value(metadata)))
+
+    @env.macro
+    def org_structure_from(relative_path: str, section: str) -> Markup:
+        """Render a structured org-structure section from shared YAML data."""
+
+        from scripts.repo_tools.org_structure import load_org_structure, render_org_structure
+
+        structure = load_org_structure(DOCS_DIR, relative_path)
+        return Markup(render_org_structure(structure, section))

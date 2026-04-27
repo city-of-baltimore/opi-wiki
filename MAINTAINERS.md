@@ -99,6 +99,14 @@ Visible status/type pills are shared UI too. Store badge intent in the nearest
 `template`, `reference`, or `position-description`, and render them with the
 shared `page_badge()` or `badge(...)` macros instead of inline HTML spans.
 
+## Structured page data
+
+When one page needs to repeat the same source-of-truth data across charts,
+tables, and roster text, keep that content in a neighboring `*.data.yml` file
+and render it through a shared macro. The org structure page is the current
+example: update `org-structure.data.yml`, not multiple Mermaid blocks and staff
+lists by hand.
+
 ## Build platform posture
 
 This repo currently runs on MkDocs 1.x and should stay there unless the team

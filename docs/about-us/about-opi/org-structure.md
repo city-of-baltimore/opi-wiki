@@ -17,21 +17,7 @@ This chart shows the named leadership structure and portfolio ownership. Staff
 alignment appears below in one chart per portfolio so the reporting lines stay
 readable.
 
-```mermaid
-flowchart TD
-  CA["Faith P. Leach<br/>City Administrator"]
-  ED["Dartanion Swift-Williams<br/>Executive Director & Chief Data Officer"]
-  DO["Director's Office<br/>Rakeim Young<br/>Chief of Staff"]
-  PC["Performance and CitiStat<br/>Danny Heller<br/>Deputy Chief Performance Officer"]
-  DA["Data and Analytics<br/>Jason Howard, PhD<br/>Deputy Chief Data Officer"]
-  IL["Innovation Lab<br/>Dartanion Swift-Williams<br/>Interim Portfolio Lead"]
-
-  CA --> ED
-  ED --> DO
-  ED --> PC
-  ED --> DA
-  ED -. interim oversight .-> IL
-```
+{{ org_structure_from("about-us/about-opi/org-structure.data.yml", "leadership_chart") }}
 
 ## Staff alignment by portfolio
 
@@ -40,81 +26,7 @@ mobile. Innovation Lab work is currently staffed through cross-portfolio
 assignments, so those contributors appear under their home teams instead of
 being duplicated in a separate Lab roster.
 
-=== "Director's Office"
-
-    ```mermaid
-    flowchart TB
-      DOLead["Rakeim Young<br/>Chief of Staff"]
-      DO1["Mallory Screws<br/>Project Manager"]
-      DO2["Derek Thomas<br/>Special Assistant"]
-      DO3["Rashaad Tillery<br/>CitiStat Inspector"]
-      DO4["Audrey Randazzo<br/>Communications and Partnerships Lead"]
-      DO5["Chiemeka Okeoma<br/>Senior Product Engineer"]
-      DO6["Xander Jake de los Santos<br/>Product Engineer"]
-
-      DOLead --> DO1
-      DOLead --> DO2
-      DOLead --> DO3
-      DOLead --> DO4
-      DOLead --> DO5
-      DOLead --> DO6
-    ```
-
-=== "Performance and CitiStat"
-
-    ```mermaid
-    flowchart TB
-      PCLead["Danny Heller<br/>Deputy Chief Performance Officer"]
-      PC1["Darren Lu<br/>CitiStat Program Manager"]
-      PC2["Ethan Buckborough<br/>CitiStat Analyst"]
-      PC3["Nelson Gomes Boronat<br/>CitiStat Analyst"]
-      PC4["Ross Hackett<br/>CitiStat Analyst"]
-      PC5["Griffin Riddler, PhD<br/>CitiStat Analyst"]
-      PC6["Vacant<br/>Senior Performance Analyst"]
-
-      PCLead --> PC1
-      PCLead --> PC2
-      PCLead --> PC3
-      PCLead --> PC4
-      PCLead --> PC5
-      PCLead --> PC6
-    ```
-
-=== "Data and Analytics"
-
-    ```mermaid
-    flowchart TB
-      DALead["Jason Howard, PhD<br/>Deputy Chief Data Officer"]
-      DA1["Roberto Herbruger<br/>Technical Program Manager"]
-      DA2["Vera Choo<br/>Analytics Lead"]
-      DA3["Selenea Gibson<br/>Applied Data Scientist"]
-      DA4["Koby Samuel<br/>Principal Platform Engineer"]
-      DA5["Alejandro Zuniga Sosa<br/>Principal Data Engineer"]
-      DA6["Briya Bhakta<br/>Senior Data Engineer"]
-      DA7["Sam Wilson<br/>Open Data Program Manager"]
-      DA8["Addisalem Abera<br/>Data Engineer"]
-
-      DALead --> DA1
-      DALead --> DA2
-      DALead --> DA3
-      DALead --> DA4
-      DALead --> DA5
-      DALead --> DA6
-      DALead --> DA7
-      DALead --> DA8
-    ```
-
-=== "Innovation Lab"
-
-    ```mermaid
-    flowchart TB
-      ILLead["Dartanion Swift-Williams<br/>Interim Portfolio Lead"]
-      IL1["Dedicated roles<br/>Standing up in FY27"]
-      IL2["Contributors work from<br/>Home portfolios"]
-
-      ILLead -.-> IL1
-      ILLead -.-> IL2
-    ```
+{{ org_structure_from("about-us/about-opi/org-structure.data.yml", "portfolio_tabs") }}
 
 **SECTION 1**
 
@@ -122,12 +34,7 @@ being duplicated in a separate Lab roster.
 
 OPI’s work is organized into four portfolios, each with a named lead, a budget cost center, a defined set of functions, and a primary value proposition.
 
-| **Portfolio**            | **Lead**                                                                         | **Cost Center**          | **Primary Value**                                                                                                                      |
-|--------------------------|----------------------------------------------------------------------------------|--------------------------|----------------------------------------------------------------------------------------------------------------------------------------|
-| Director’s Office        | Rakeim Young, Chief of Staff                                                     | AdminOps                 | Operating backbone that keeps work prioritized, documented, communicated, and deliverable.                                             |
-| Performance and CitiStat | Danny Heller, Deputy Chief Performance Officer                                   | Performance and CitiStat | Owns the performance method; translates priorities into routines, measures, follow-up, and improvement.                                |
-| Data and Analytics       | Jason Howard, PhD, Deputy Chief Data Officer                                     | Data and Analytics       | Builds trusted data infrastructure and decision-ready analytics; supports CitiStat, transparency, agency operations, and AI readiness. |
-| Innovation Lab           | Dartanion Swift-Williams, interim until Innovation Program Manager is identified | Innovation Lab           | Turns service problems into designed, usable, testable solutions; coordinates handoff to data, engineering, agency, or BCIT partners.  |
+{{ org_structure_from("about-us/about-opi/org-structure.data.yml", "portfolio_table") }}
 
 **SECTION 2**
 
@@ -135,61 +42,7 @@ OPI’s work is organized into four portfolios, each with a named lead, a budget
 
 The alignment below reflects OPI’s current operating chart. It will be updated as vacancies are filled or roles are formally reclassified.
 
-**Director’s Office**
-
-- Rakeim Young — Chief of Staff
-
-- Mallory Screws — Project Manager
-
-- Derek Thomas — Special Assistant
-
-- Rashaad Tillery — CitiStat Inspector
-
-- Audrey Randazzo — Communications and Partnerships Lead
-
-- Chiemeka Okeoma — Senior Product Engineer
-
-- Xander Jake de los Santos — Product Engineer
-
-**Performance and CitiStat**
-
-- Danny Heller — Deputy Chief Performance Officer
-
-- Darren Lu — CitiStat Program Manager
-
-- Ethan Buckborough — CitiStat Analyst
-
-- Nelson Gomes Boronat — CitiStat Analyst
-
-- Ross Hackett — CitiStat Analyst
-
-- Griffin Riddler, PhD — CitiStat Analyst
-
-- TBD — Senior Performance Analyst
-
-**Data and Analytics**
-
-- Jason Howard, PhD — Deputy Chief Data Officer
-
-- Roberto Herbruger — Technical Program Manager
-
-- Vera Choo — Analytics Lead
-
-- Selenea Gibson — Applied Data Scientist
-
-- Koby Samuel — Principal Platform Engineer
-
-- Alejandro Zuniga Sosa — Principal Data Engineer
-
-- Briya Bhakta — Senior Data Engineer
-
-- Sam Wilson — Open Data Program Manager
-
-- Addisalem Abera — Data Engineer
-
-**Innovation Lab**
-
-Dartanion Swift-Williams serves as interim portfolio lead. Innovation work is currently supported through a cross-portfolio model and will be formalized when the Innovation Program Manager role is identified and filled.
+{{ org_structure_from("about-us/about-opi/org-structure.data.yml", "staff_alignment") }}
 
 **SECTION 3**
 

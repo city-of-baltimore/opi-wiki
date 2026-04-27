@@ -51,6 +51,7 @@ commands, and re-verify all plugins and theme behavior together.
 - Keep global site config in `mkdocs.yml`.
 - Keep navigation local to the content in `docs/**/.pages`.
 - Keep landing-page card content in neighboring `*.cards.yml` files and render it through the shared `card_grid_from(...)` macro.
+- Keep repeated structured page data in neighboring `*.data.yml` files when one source needs to drive multiple rendered sections.
 - Keep visible page badges in `.metadata.yml` via the `display_badge` field and render them through `page_badge()` or `badge(...)`, not raw HTML spans.
 - Run `./scripts/verify.sh` before merging structural or config changes.
 - Treat `site/` as generated output, not source.
