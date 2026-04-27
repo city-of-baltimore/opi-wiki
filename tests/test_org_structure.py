@@ -5,9 +5,9 @@ from __future__ import annotations
 from pathlib import Path
 
 import pytest
-from main import DOCS_DIR, define_env
+from main import DOCS_DIR
 from scripts.repo_tools.org_structure import load_org_structure, render_org_structure
-from tests.helpers import FakeMacroEnvironment
+from tests.helpers import register_macros
 
 REPO_ROOT = Path(__file__).resolve().parents[1]
 
@@ -43,9 +43,7 @@ def test_org_structure_renderer_covers_chart_table_and_roster_sections() -> None
 def test_define_env_registers_org_structure_macro() -> None:
     """The MkDocs macros module should expose the shared org-structure helper."""
 
-    env = FakeMacroEnvironment()
-
-    define_env(env)
+    env = register_macros()
 
     rendered = env.macros["org_structure_from"](
         "about-us/about-opi/org-structure.data.yml",

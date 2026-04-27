@@ -2,6 +2,8 @@
 
 from __future__ import annotations
 
+from main import define_env
+
 
 class FakePageFile:
     """Minimal file object for a fake MkDocs page."""
@@ -36,3 +38,11 @@ class FakeMacroEnvironment:
 
         self.macros[getattr(function, "__name__", "unknown")] = function
         return function
+
+
+def register_macros(page_src_path: str | None = None) -> FakeMacroEnvironment:
+    """Return a fake environment with all shared MkDocs macros registered."""
+
+    env = FakeMacroEnvironment(page_src_path)
+    define_env(env)
+    return env

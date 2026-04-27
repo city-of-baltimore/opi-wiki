@@ -5,9 +5,9 @@ from __future__ import annotations
 from pathlib import Path
 
 import pytest
-from main import DOCS_DIR, define_env
+from main import DOCS_DIR
 from scripts.repo_tools.badges import render_badge
-from tests.helpers import FakeMacroEnvironment
+from tests.helpers import register_macros
 
 REPO_ROOT = Path(__file__).resolve().parents[1]
 
@@ -32,9 +32,7 @@ def test_render_badge_rejects_unknown_badge_tokens() -> None:
 def test_define_env_registers_badge_macros() -> None:
     """The macros module should expose both explicit and page-derived badges."""
 
-    env = FakeMacroEnvironment("how-we-work/operations/charter-template.md")
-
-    define_env(env)
+    env = register_macros("how-we-work/operations/charter-template.md")
 
     assert str(env.macros["badge"]("reference")) == (
         '<span class="opi-pill internal">Reference</span>'
