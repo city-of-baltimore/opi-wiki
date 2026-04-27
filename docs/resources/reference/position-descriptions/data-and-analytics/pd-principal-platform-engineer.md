@@ -121,4 +121,4 @@ Employees in this class work a conventional work week. This position may be requ
 
 **Supervision given.** Senior individual contributor and recognized subject-matter expert. Mentors data engineers and analysts; leads code review for platform-related work.
 
-*This Position Description reflects the FY27 OPI operating model. It describes the typical scope of the role and is not an exhaustive list of duties. OPI is an Equal Opportunity Employer; all qualified applicants will receive consideration without regard to race, color, religion, sex, sexual orientation, gender identity, national origin, disability, age, or veteran status.*
+*This Position Description reflects the OPI operating model. It describes the typical scope of the role and is not an exhaustive list of duties. OPI is an Equal Opportunity Employer; all qualified applicants will receive consideration without regard to race, color, religion, sex, sexual orientation, gender identity, national origin, disability, age, or veteran status.*

@@ -118,4 +118,4 @@ Employees in this class work a conventional work week. This position may be requ
 
 **Supervision given.** Directly supervises the Civic Design and UX Lead, Civic Technology Lead, Product Engineer, Senior Product Engineer, and Senior Program Analyst (Innovation Lab cost center). Indirectly coordinates with the Project Manager and partner-agency leads on tiger-team work.
 
-*This Position Description reflects the FY27 OPI operating model. It describes the typical scope of the role and is not an exhaustive list of duties. OPI is an Equal Opportunity Employer; all qualified applicants will receive consideration without regard to race, color, religion, sex, sexual orientation, gender identity, national origin, disability, age, or veteran status.*
+*This Position Description reflects the OPI operating model. It describes the typical scope of the role and is not an exhaustive list of duties. OPI is an Equal Opportunity Employer; all qualified applicants will receive consideration without regard to race, color, religion, sex, sexual orientation, gender identity, national origin, disability, age, or veteran status.*

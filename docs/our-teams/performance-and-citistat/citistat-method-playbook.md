@@ -11,7 +11,7 @@
 
 Method Playbook
 
-*Read alongside: OPI CitiStat Strategic Framework FY27..*
+*Read alongside: OPI CitiStat Strategic Framework*
 
 *The Strategic Framework is the public-facing case for CitiStat. This Method Playbook is the staff-facing companion: standards, templates, and the operating discipline.*
 

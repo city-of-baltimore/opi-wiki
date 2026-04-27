@@ -86,8 +86,8 @@ Mayor’s Office of Performance and Innovation
 
 **READ ALONGSIDE**
 
-**Innovation Lab Strategy FY27 —** *how the Lab operates, what it owns, and FY27 priorities.*
+**Innovation Lab Strategy —** *how the Lab operates, what it owns, and priorities.*
 
-**Digital Product Methodology FY27 —** *how OPI designs, builds, and ships digital products.*
+**Digital Product Methodology —** *how OPI designs, builds, and ships digital products.*
 
 **About OPI: Innovation Lab —** *who is on the team and how to engage them.*

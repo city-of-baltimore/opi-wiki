@@ -135,4 +135,4 @@ Employees in this class work a conventional work week. This position may be requ
 
 **Supervision given.** Provides executive oversight to the Technical Program Manager, the Analytics Lead, the Principal Data Engineer, the Principal Platform Engineer, the Senior Data Engineer, and the Applied Data Scientist. Indirectly supervises a wider technical, professional, and administrative staff.
 
-*This Position Description reflects the FY27 OPI operating model. It describes the typical scope of the role and is not an exhaustive list of duties. OPI is an Equal Opportunity Employer; all qualified applicants will receive consideration without regard to race, color, religion, sex, sexual orientation, gender identity, national origin, disability, age, or veteran status.*
+*This Position Description reflects the OPI operating model. It describes the typical scope of the role and is not an exhaustive list of duties. OPI is an Equal Opportunity Employer; all qualified applicants will receive consideration without regard to race, color, religion, sex, sexual orientation, gender identity, national origin, disability, age, or veteran status.*

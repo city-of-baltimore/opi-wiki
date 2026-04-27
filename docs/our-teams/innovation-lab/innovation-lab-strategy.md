@@ -11,7 +11,7 @@
 
 Strategy Document
 
-*Read alongside: OPI About — Innovation Lab; OPI Service Theory of Change — Innovation Lab; OPI Digital Product Methodology FY27..*
+*Read alongside: OPI About — Innovation Lab; OPI Service Theory of Change — Innovation Lab; OPI Digital Product Methodology*
 
 *This document makes the strategic argument for the Lab. The About doc tells the human story. The ToC shows the operating backbone. The Digital Product Methodology specifies how products are designed and shipped.*
 
@@ -23,7 +23,7 @@ The Innovation Lab is OPI’s citywide service improvement capability. It exists
 
 Innovation in city government has too often meant novelty, technology for its own sake, or special projects that drift without owners. Baltimore needs a different standard. Innovation should be structured problem-solving in service of delivery: discovery, design, prototyping, piloting, sustainment, and learning.
 
-This strategy defines the Lab’s purpose, posture, methods, governance, and FY27 priorities. It is anchored in four commitments: start with the service, not the screen; design with users, not for them; build only when build is the right answer; and treat sustainment as the test of success.
+This strategy defines the Lab’s purpose, posture, methods, governance, and priorities. It is anchored in four commitments: start with the service, not the screen; design with users, not for them; build only when build is the right answer; and treat sustainment as the test of success.
 
 **THE CASE FOR CHANGE**
 

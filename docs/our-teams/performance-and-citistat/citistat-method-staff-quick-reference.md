@@ -188,8 +188,6 @@ OPI maintains a register of active and authorized Stats. Each Stat has a charter
 
 - CitiStat Portfolio Register — held by the Performance team; the canonical list of authorized Stats.
 
-- 
-
 - Baltimore City Code, Article 1, Subtitle 61 — the legal foundation of the CitiStat program.
 
 - OPI Foundations Document Set — charters, intake SOP, performance standards, QA standards.

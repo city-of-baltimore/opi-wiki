@@ -13,7 +13,7 @@
 
 OPI runs on a small number of operating principles. They are deliberately memorable, because they show up in the small daily decisions — how a meeting opens, who gets credit, how a memo is reviewed, how we say no — not just in retreats and onboarding decks.
 
-These principles emerged from team listening sessions, strategy retros, and homework reflections. They are paired with the FY27 values: GRIT, CANDOR, OWNERSHIP, HUMILITY, INTENTION, IMPACT.
+These principles emerged from team listening sessions, strategy retros, and homework reflections. They are paired with the OPI values: GRIT, CANDOR, OWNERSHIP, HUMILITY, INTENTION, IMPACT.
 
 > *Set the temperature. The operating norms we model become the office culture.*
 

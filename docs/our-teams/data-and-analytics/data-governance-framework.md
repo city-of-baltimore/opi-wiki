@@ -11,7 +11,7 @@
 
 Strategy Framework
 
-*Read alongside: OPI Citywide Data & Analytics Strategy FY27..*
+*Read alongside: OPI Citywide Data & Analytics Strategy*
 
 *This framework defines the governance rules. The Data & Analytics Strategy explains the broader service and how the rules are operationalized day to day.*
 

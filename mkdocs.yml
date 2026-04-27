@@ -4,8 +4,8 @@ site_url: https://opi.baltimorecity.gov/
 site_author: Mayor's Office of Performance and Innovation, Baltimore City
 copyright: © Mayor's Office of Performance and Innovation, Baltimore City
 
-repo_name: baltimorecity/opi-foundations
-repo_url: https://github.com/baltimorecity/opi-foundations
+repo_name: balt-opi/opi-wiki
+repo_url: https://github.com/balt-opi/opi-wiki
 edit_uri: edit/main/docs/
 docs_dir: docs
 strict: true
@@ -70,7 +70,7 @@ extra:
   generator: false
   social:
     - icon: fontawesome/brands/github
-      link: https://github.com/baltimorecity/opi-foundations
+      link: https://github.com/balt-opi/opi-wiki
       name: OPI Foundations on GitHub
   status:
     new: Recently added

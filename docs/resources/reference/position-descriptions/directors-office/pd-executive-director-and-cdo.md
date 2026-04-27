@@ -37,7 +37,7 @@
 
 The Executive Director and Chief Data Officer is the Mayor’s principal executive for performance, data, and innovation. The role sets OPI’s strategy, runs the citywide CitiStat program, leads Baltimore’s data and AI agenda, and partners with agencies to translate the Mayor’s priorities into measurable service improvements. The Executive Director represents OPI to the City Administrator, the Mayor, agency directors, the City Council, philanthropic partners, and the public.
 
-The role is responsible for OPI’s four service portfolios — Director’s Office and Administration & Operations, Performance and CitiStat, Data and Analytics, and the Innovation Lab — and for the disciplined operating rhythm that turns analysis into commitments and commitments into delivered work. The Executive Director also serves as the City’s Chief Data Officer with accountability for data governance, the Open Data Program, and the responsible adoption of analytics and AI in city government.
+The role is responsible for OPI’s four service portfolios — Director’s Office, Performance and CitiStat, Data and Analytics, and the Innovation Lab — and for the disciplined operating rhythm that turns analysis into commitments and commitments into delivered work. The Executive Director also serves as the City’s Chief Data Officer with accountability for data governance, the Open Data Program, and the responsible adoption of analytics and AI in city government.
 
 **■ Key Responsibilities**
 
@@ -135,4 +135,4 @@ Employees in this class work a conventional work week. This position may be requ
 
 **Supervision given.** Provides executive oversight to OPI’s senior leadership team — the Chief of Staff, the Deputy Chief Performance Officer, the Deputy Chief Data Officer, and the Innovation Lab director (or interim) — and indirectly supervises the full OPI staff.
 
-*This Position Description reflects the FY27 OPI operating model. It describes the typical scope of the role and is not an exhaustive list of duties. OPI is an Equal Opportunity Employer; all qualified applicants will receive consideration without regard to race, color, religion, sex, sexual orientation, gender identity, national origin, disability, age, or veteran status.*
+*This Position Description reflects the OPI operating model. It describes the typical scope of the role and is not an exhaustive list of duties. OPI is an Equal Opportunity Employer; all qualified applicants will receive consideration without regard to race, color, religion, sex, sexual orientation, gender identity, national origin, disability, age, or veteran status.*

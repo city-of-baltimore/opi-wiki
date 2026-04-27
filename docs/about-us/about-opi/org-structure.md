@@ -7,7 +7,7 @@
 *Portfolios, leads, staff alignment, services, cost centers, and the Cross-Agency Delivery overlay.*
 OPI delivers its mission through four portfolios and five services. The portfolios are how we organize people, leadership, and cost centers. The services are how we describe what OPI delivers to residents, agencies, and City leadership.
 
-This document is the canonical view of OPI’s FY27 structure: leads, staff alignment, portfolios, services, cost centers, and the Cross-Agency Delivery overlay.
+This document is the canonical view of OPI’s structure: leads, staff alignment, portfolios, services, cost centers, and the Cross-Agency Delivery overlay.
 
 > *Better government is not a one-time project. It is a discipline.*
 

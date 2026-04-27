@@ -11,7 +11,7 @@
 
 Strategic Framework
 
-*Read alongside: OPI CitiStat Method Playbook; OPI Citywide Performance Management Strategy FY27..*
+*Read alongside: OPI CitiStat Method Playbook; OPI Citywide Performance Management Strategy*
 
 *This Framework is the public-facing strategic case. The Method Playbook is the staff-facing operating manual. The Performance Management Strategy explains how CitiStat fits inside the broader citywide system.*
 
@@ -269,7 +269,7 @@ CitiStat should be rigorous internally and legible externally. Residents, Counci
 
 **From a meeting series to an operating system**
 
-The FY27 direction is to strengthen CitiStat from a meeting-centered routine into a citywide performance operating system. That means stronger performance planning before sessions, better data products between sessions, clearer triggers for delivery activation, and more public-facing explanation of what changed.
+The direction is to strengthen CitiStat from a meeting-centered routine into a citywide performance operating system. That means stronger performance planning before sessions, better data products between sessions, clearer triggers for delivery activation, and more public-facing explanation of what changed.
 
 | **Dimension**              | **What success looks like**                                                                                                |
 |----------------------------|----------------------------------------------------------------------------------------------------------------------------|

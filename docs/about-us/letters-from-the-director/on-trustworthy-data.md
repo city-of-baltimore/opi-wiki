@@ -64,8 +64,8 @@ Mayor’s Office of Performance and Innovation
 
 **READ ALONGSIDE**
 
-**Data & Analytics Strategy FY27 —** *how Baltimore is building citywide data infrastructure.*
+**Data & Analytics Strategy —** *how Baltimore is building citywide data infrastructure.*
 
-**Data Governance Framework FY27 —** *roles, standards, and decision rights for data stewardship.*
+**Data Governance Framework —** *roles, standards, and decision rights for data stewardship.*
 
 **About OPI: Data & Analytics —** *what the Data & Analytics team owns and how it partners.*

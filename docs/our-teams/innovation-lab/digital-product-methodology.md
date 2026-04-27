@@ -11,7 +11,7 @@
 
 Method Guide
 
-*Read alongside: OPI Innovation Lab Strategy FY27..*
+*Read alongside: OPI Innovation Lab Strategy*
 
 *The Lab Strategy explains why we build and the discipline we use. This Methodology is the citywide playbook for how we design and ship digital products. More than the Innovation Lab uses it.*
 

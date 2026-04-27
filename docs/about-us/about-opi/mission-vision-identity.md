@@ -11,7 +11,7 @@
 
 **A shared answer to the question: who is OPI?**
 
-This document captures what the OPI team has heard, debated, and aligned on about our identity. It is the human side of the FY27 Foundations deck: not the org chart or the service catalog, but the operating story we use to introduce ourselves, recruit teammates, and stay grounded when the work gets hard.
+This document captures what the OPI team has heard, debated, and aligned on about our identity. It is the human side of the OPI Foundations deck: not the org chart or the service catalog, but the operating story we use to introduce ourselves, recruit teammates, and stay grounded when the work gets hard.
 
 > *Better government is not a one-time project. It is a discipline.*
 

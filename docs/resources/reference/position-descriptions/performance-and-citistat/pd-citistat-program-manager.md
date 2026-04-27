@@ -129,4 +129,4 @@ Employees in this class work a conventional work week. This position may be requ
 
 **Supervision given.** Individual contributor with respect to direct reports. Provides professional coaching and quality assurance to the CitiStat Analyst bench.
 
-*This Position Description reflects the FY27 OPI operating model. It describes the typical scope of the role and is not an exhaustive list of duties. OPI is an Equal Opportunity Employer; all qualified applicants will receive consideration without regard to race, color, religion, sex, sexual orientation, gender identity, national origin, disability, age, or veteran status.*
+*This Position Description reflects the OPI operating model. It describes the typical scope of the role and is not an exhaustive list of duties. OPI is an Equal Opportunity Employer; all qualified applicants will receive consideration without regard to race, color, religion, sex, sexual orientation, gender identity, national origin, disability, age, or veteran status.*

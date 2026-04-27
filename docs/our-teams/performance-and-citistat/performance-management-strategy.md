@@ -11,7 +11,7 @@
 
 Strategy Document
 
-*Read alongside: OPI About — Citywide Performance Management; OPI Service Theory of Change — Performance Management; CitiStat Strategic Framework FY27..*
+*Read alongside: OPI About — Citywide Performance Management; OPI Service Theory of Change — Performance Management; CitiStat Strategic Framework*
 
 *This document is the strategic argument for Baltimore’s performance system. The About doc tells the human story of the team. The Theory of Change doc shows the operating backbone. CitiStat Strategic Framework explains the executive routine itself.*
 

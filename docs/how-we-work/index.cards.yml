@@ -3,6 +3,14 @@
   body: "How new hires join OPI, how managers prepare, how transitions happen."
   href: onboarding/
 - meta: Section
+  title: "Administrative Memos"
+  body: "Memo-style operational guidance surfaced as its own collection."
+  href: administrative-memos/
+- meta: Section
+  title: "How-To Guides"
+  body: "Short step-based procedures and support guides."
+  href: how-to/
+- meta: Section
   title: Operations
   body: "Leadership norms, performance standards, productivity playbook, QA, and operating templates."
   href: operations/

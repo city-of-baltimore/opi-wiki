@@ -1,8 +1,8 @@
-# PD — Product Engineer (Full Stack)
+# PD — Product Engineer
 
 {{ page_badge() }}
 
-> Position description for the Product Engineer (Full Stack).
+> Position description for the Product Engineer.
 
 **CLASSIFICATION** Operations Officer III (Non-Civil Service)
 
@@ -20,7 +20,7 @@
 
 |                          |                                                                                                         |
 |--------------------------|---------------------------------------------------------------------------------------------------------|
-| **Working title**        | Product Engineer (Full Stack)                                                                           |
+| **Working title**        | Product Engineer                                                                           |
 | **Classification**       | Operations Officer III (Non-Civil Service)                                                              |
 | **Portfolio**            | Director's Office                                                                                       |
 | **Reports to**           | Innovation Program Manager (with technical direction from the Civic Technology Lead)                    |
@@ -117,4 +117,4 @@ Employees in this class work a conventional work week. Work is performed in an o
 
 **Supervision given.** Individual contributor.
 
-*This Position Description reflects the FY27 OPI operating model. It describes the typical scope of the role and is not an exhaustive list of duties. OPI is an Equal Opportunity Employer; all qualified applicants will receive consideration without regard to race, color, religion, sex, sexual orientation, gender identity, national origin, disability, age, or veteran status.*
+*This Position Description reflects the OPI operating model. It describes the typical scope of the role and is not an exhaustive list of duties. OPI is an Equal Opportunity Employer; all qualified applicants will receive consideration without regard to race, color, religion, sex, sexual orientation, gender identity, national origin, disability, age, or veteran status.*

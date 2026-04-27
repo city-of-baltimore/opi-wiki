@@ -50,7 +50,7 @@ commands, and re-verify all plugins and theme behavior together.
 
 - Keep global site config in `mkdocs.yml`.
 - Keep navigation local to the content in `docs/**/.pages`.
-- Keep recurring operations material grouped in local subsections such as `docs/how-we-work/operations/administrative-memos/` and `docs/how-we-work/operations/how-to/` when the source documents represent a durable content class.
+- Keep recurring operational source material grouped in dedicated local collections such as `docs/how-we-work/administrative-memos/` and `docs/how-we-work/how-to/`, and expose those collections intentionally in the nearest section navigation.
 - Keep landing-page card content in neighboring `*.cards.yml` files and render it through the shared `card_grid_from(...)` macro.
 - Keep repeated structured page data in neighboring `*.data.yml` files when one source needs to drive multiple rendered sections.
 - Keep visible page badges in `.metadata.yml` via the `display_badge` field and render them through `page_badge()` or `badge(...)`, not raw HTML spans.
