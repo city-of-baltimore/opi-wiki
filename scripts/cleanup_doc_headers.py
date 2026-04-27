@@ -4,34 +4,37 @@
 from __future__ import annotations
 
 import argparse
-import sys
+import logging
 from pathlib import Path
 
-REPO_ROOT = Path(__file__).resolve().parents[1]
-if str(REPO_ROOT) not in sys.path:
-    sys.path.insert(0, str(REPO_ROOT))
+try:
+    from check_cli import REPO_ROOT, build_logger, ensure_repo_root_on_path
+except ModuleNotFoundError:
+    from scripts.check_cli import REPO_ROOT, build_logger, ensure_repo_root_on_path
 
+ensure_repo_root_on_path()
 
 DOCS_DIR = REPO_ROOT / "docs"
 
 
-def _target_files() -> list[Path]:
+def _target_files(docs_dir: Path) -> list[Path]:
     """Return Markdown files that should be scanned for header boilerplate."""
 
-    return sorted(DOCS_DIR.rglob("*.md"))
+    return sorted(docs_dir.rglob("*.md"))
 
 
-def _scan() -> int:
+def scan_headers(docs_dir: Path = DOCS_DIR, logger: logging.Logger | None = None) -> int:
     """Report boilerplate findings without modifying files."""
 
     from scripts.repo_tools.header_cleanup import find_header_changes
 
+    logger = logger or build_logger()
     had_changes = False
-    for markdown_file in _target_files():
+    for markdown_file in _target_files(docs_dir):
         try:
             text = markdown_file.read_text(encoding="utf-8")
         except OSError as error:
-            print(f"Unable to read {markdown_file}: {error}", file=sys.stderr)
+            logger.error("Unable to read %s: %s", markdown_file, error)
             return 1
 
         changes = find_header_changes(text, markdown_file)
@@ -40,26 +43,34 @@ def _scan() -> int:
 
         had_changes = True
         for change in changes:
-            relative_file = markdown_file.relative_to(REPO_ROOT)
-            print(
-                f"{relative_file}:{change.line_number}: "
-                f"{change.reason}: {change.content.strip()}"
+            relative_file = (
+                markdown_file.relative_to(REPO_ROOT)
+                if markdown_file.is_relative_to(REPO_ROOT)
+                else markdown_file
+            )
+            logger.warning(
+                "%s:%s: %s: %s",
+                relative_file,
+                change.line_number,
+                change.reason,
+                change.content.strip(),
             )
 
     return 1 if had_changes else 0
 
 
-def _write() -> int:
+def write_headers(docs_dir: Path = DOCS_DIR, logger: logging.Logger | None = None) -> int:
     """Apply header cleanup changes in place."""
 
     from scripts.repo_tools.header_cleanup import apply_header_cleanup
 
+    logger = logger or build_logger()
     updated_files = 0
-    for markdown_file in _target_files():
+    for markdown_file in _target_files(docs_dir):
         try:
             text = markdown_file.read_text(encoding="utf-8")
         except OSError as error:
-            print(f"Unable to read {markdown_file}: {error}", file=sys.stderr)
+            logger.error("Unable to read %s: %s", markdown_file, error)
             return 1
 
         cleaned_text, changes = apply_header_cleanup(text, markdown_file)
@@ -69,12 +80,12 @@ def _write() -> int:
         try:
             markdown_file.write_text(cleaned_text, encoding="utf-8")
         except OSError as error:
-            print(f"Unable to write {markdown_file}: {error}", file=sys.stderr)
+            logger.error("Unable to write %s: %s", markdown_file, error)
             return 1
 
         updated_files += 1
 
-    print(f"Updated {updated_files} Markdown files.")
+    logger.info("Updated %s Markdown files.", updated_files)
     return 0
 
 
@@ -90,11 +101,12 @@ def main() -> int:
         help="Apply changes in place instead of reporting findings.",
     )
     args = parser.parse_args()
+    logger = build_logger()
 
     try:
-        return _write() if args.write else _scan()
+        return write_headers(logger=logger) if args.write else scan_headers(logger=logger)
     except Exception as error:  # noqa: BLE001
-        print(f"Header cleanup failed unexpectedly: {error}", file=sys.stderr)
+        logger.error("Header cleanup failed unexpectedly: %s", error)
         return 1
 
 
