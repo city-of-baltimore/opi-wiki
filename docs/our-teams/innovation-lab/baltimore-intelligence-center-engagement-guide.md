@@ -89,7 +89,7 @@ The work cuts across OPI’s Innovation Lab, Data and Analytics team, and Perfor
 
 ### **Where the BIC sits**
 
-Operationally, the BIC runs out of OPI’s Innovation Lab — the home for product delivery and applied technology inside the office. Technically, its center of gravity is the Data and Analytics team, which provides the platform, governance, and engineering muscle. CitiStat is the lead agency-partner anchor for the first wave of intelligence products. The Executive Director and Chief Data Officer provides executive sponsorship and interim project leadership while the Innovation Program Manager role remains aspirational.
+Operationally, the BIC runs out of OPI’s Innovation Lab — the home for product delivery and applied technology inside the office. Technically, its center of gravity is the Data and Analytics team, which provides the platform, governance, and engineering muscle. CitiStat is the lead agency-partner anchor for the first wave of intelligence products. The Executive Director and Chief Data Officer provides executive sponsorship and serves as Interim Innovation Program Manager.
 
 ### **Squad roster**
 
@@ -120,7 +120,7 @@ Sand Technologies provides the Technical Program Manager (TBD), engagement manag
 
 - Bi-weekly — product showcase and user feedback (open to OPI, agency partners, BCIT).
 
-- Monthly — executive steering (Executive Sponsor, Sand engagement leadership, Deputy CDO, Innovation Lab interim portfolio lead, CitiStat lead). Decision log review and milestone reporting.
+- Monthly — executive steering (Executive Sponsor, Sand engagement leadership, Deputy CDO, Interim Innovation Program Manager, CitiStat lead). Decision log review and milestone reporting.
 
 - Quarterly — portfolio review with BCIT, Law, Procurement, Finance, and agency sponsors. Risks, governance posture, use case approvals.
 

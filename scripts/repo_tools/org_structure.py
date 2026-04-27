@@ -5,9 +5,12 @@ from __future__ import annotations
 from dataclasses import dataclass
 from html import escape
 from pathlib import Path
+from textwrap import wrap
 from typing import Any
 
 from scripts.repo_tools.data import load_docs_yaml_file
+
+MERMAID_LABEL_WRAP = 26
 
 
 @dataclass(frozen=True)
@@ -152,7 +155,22 @@ def load_org_structure(docs_dir: Path, relative_path: str) -> OrgStructure:
 def _mermaid_node(node_id: str, *parts: str) -> str:
     """Render a Mermaid node with escaped HTML line breaks."""
 
-    label = "<br/>".join(escape(part, quote=True) for part in parts)
+    label_lines: list[str] = []
+    for part in parts:
+        label_lines.extend(
+            wrap(
+                part.strip(),
+                width=MERMAID_LABEL_WRAP,
+                break_long_words=False,
+                break_on_hyphens=False,
+            )
+            or [part.strip()]
+        )
+
+    label = "<br/>".join(
+        escape(line, quote=False).replace('"', "&quot;")
+        for line in label_lines
+    )
     return f'  {node_id}["{label}"]'
 
 

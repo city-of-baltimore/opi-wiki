@@ -8,9 +8,9 @@
 
 **PORTFOLIO** Innovation Lab
 
-**REPORTS TO** Chief of Staff (with strategic direction from the Executive Director as interim portfolio lead)
+**REPORTS TO** Chief of Staff (with strategic direction from the Executive Director while serving as Interim Innovation Program Manager)
 
-**INCUMBENT** Aspirational / Unfilled
+**INCUMBENT** Dartanion Swift-Williams (Interim)
 
 **EFFECTIVE** OPI Reorganization
 
@@ -21,16 +21,16 @@
 | **Working title**        | Innovation Program Manager                                                                                                                                                                                                                                                |
 | **Classification**       | Operations Manager II                                                                                                                                                                                                                                                     |
 | **Portfolio**            | Innovation Lab                                                                                                                                                                                                                                                            |
-| **Reports to**           | Chief of Staff (with strategic direction from the Executive Director as interim portfolio lead)                                                                                                                                                                           |
-| **Incumbent**            | Aspirational / Unfilled                                                                                                                                                                                                                                                   |
+| **Reports to**           | Chief of Staff (with strategic direction from the Executive Director while serving as Interim Innovation Program Manager)                                                                                                                                                  |
+| **Incumbent**            | Dartanion Swift-Williams (Interim)                                                                                                                                                                                                                                        |
 | **Supervision given**    | Directly supervises the Civic Design and UX Lead, Civic Technology Lead, Product Engineer, and Senior Product Engineer. Indirectly coordinates with the Project Manager and partner-agency leads on tiger-team work.                                                     |
-| **Supervision received** | Reports to the Chief of Staff. Receives strategic direction from the Executive Director as interim portfolio lead.                                                                                                                                                        |
+| **Supervision received** | Reports to the Chief of Staff. Receives strategic direction from the Executive Director while the role is being served on an interim basis.                                                                                                                              |
 
 **■ Position Summary**
 
 The Innovation Program Manager leads the day-to-day operations of OPI’s Innovation Lab — the portfolio that takes service problems surfaced by CitiStat or Director’s Office sponsorship and turns them into tested, adopted solutions. The role runs the Lab’s intake, scoping, and delivery routines; orchestrates tiger teams; sponsors civic-tech and service-design work; and coaches Lab staff (Civic Design and UX Lead, Civic Technology Lead, Senior Product Engineer, and Product Engineer) toward decision-ready outcomes.
 
-Reporting administratively to the Chief of Staff, the Innovation Program Manager partners closely with the Executive Director (interim portfolio lead), the Deputy Chief Performance Officer (CitiStat handoffs), and the Deputy Chief Data Officer (data and product collaboration). The role ensures Lab projects are framed for adoption from day one, evaluated honestly, and either scaled, sustained by the agency owner, or sunset with a clear lessons-learned record.
+Reporting administratively to the Chief of Staff, the Innovation Program Manager partners closely with the Executive Director (currently serving in this role on an interim basis), the Deputy Chief Performance Officer (CitiStat handoffs), and the Deputy Chief Data Officer (data and product collaboration). The role ensures Lab projects are framed for adoption from day one, evaluated honestly, and either scaled, sustained by the agency owner, or sunset with a clear lessons-learned record.
 
 **■ Key Responsibilities**
 
@@ -114,7 +114,7 @@ Employees in this class work a conventional work week. This position may be requ
 
 **■ Supervision**
 
-**Supervision received.** Reports to the Chief of Staff. Receives strategic direction from the Executive Director as interim portfolio lead.
+**Supervision received.** Reports to the Chief of Staff. Receives strategic direction from the Executive Director while the role is being served on an interim basis.
 
 **Supervision given.** Directly supervises the Civic Design and UX Lead, Civic Technology Lead, Product Engineer, and Senior Product Engineer. Indirectly coordinates with the Project Manager and partner-agency leads on tiger-team work.
 

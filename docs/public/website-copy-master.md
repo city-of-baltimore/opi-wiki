@@ -138,7 +138,7 @@ Page should display:
 
 - Deputy Chief Data Officer (Data and Analytics).
 
-- Innovation Lab interim portfolio lead.
+- Interim Innovation Program Manager (Innovation Lab).
 
 *Names are maintained in the OPI staff directory and updated as roles change.*
 

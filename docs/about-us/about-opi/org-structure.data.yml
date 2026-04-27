@@ -81,16 +81,13 @@ portfolios:
     node_id: IL
     lead:
       name: Dartanion Swift-Williams
-      title: Interim Portfolio Lead
+      title: Interim Innovation Program Manager
     leadership_edge_style: dotted
     leadership_edge_label: interim oversight
     cost_center: Innovation Lab
     primary_value: Turns service problems into designed, usable, testable solutions; coordinates handoff to data, engineering, agency, or BCIT partners.
-    table_lead: Dartanion Swift-Williams, interim portfolio lead
+    table_lead: Dartanion Swift-Williams, Interim Innovation Program Manager
     staff:
-      - name: Open / Aspirational
-        title: Innovation Program Manager
-        edge_style: dotted
       - name: Chiemeka Okeoma
         title: Senior Product Engineer
       - name: Xander Jake de los Santos

@@ -36,8 +36,8 @@ Each refined Position Description is filed alongside this roster in the same fol
 |                         |                                                                                     |
 |-------------------------|-------------------------------------------------------------------------------------|
 | **Total positions**     | 25                                                                                  |
-| **Filled**              | 21                                                                                  |
-| **Open / aspirational** | 4                                                                                   |
+| **Filled**              | 22                                                                                  |
+| **Open / aspirational** | 3                                                                                   |
 | **Portfolios**          | 4 (Director’s Office, Innovation Lab, Performance and CitiStat, Data and Analytics) |
 | **Cost centers**        | 4 (AdminOps, Innovation Lab, Performance Management, Data and Analytics)            |
 | **Executive sponsor**   | Mayor Brandon M. Scott via City Administrator Faith P. Leach                        |
@@ -45,7 +45,7 @@ Each refined Position Description is filed alongside this roster in the same fol
 ??? info "Leadership"
 
 
-    OPI leadership is the Executive Director, the Chief of Staff, and the two Deputy Chiefs. The Innovation Lab currently has interim portfolio leadership from the Executive Director while the Innovation Program Manager role remains aspirational.
+    OPI leadership is the Executive Director, the Chief of Staff, and the two Deputy Chiefs. The Innovation Lab is currently led by Dartanion Swift-Williams as Interim Innovation Program Manager.
 
     | **Role**                                  | **Incumbent**            | **Reports to**     | **PIN** |
     |-------------------------------------------|--------------------------|--------------------|---------|
@@ -53,7 +53,7 @@ Each refined Position Description is filed alongside this roster in the same fol
     | Chief of Staff                            | Rakeim Young             | Executive Director | 50053   |
     | Deputy Chief Performance Officer          | Danny Heller             | Executive Director | 54340   |
     | Deputy Chief Data Officer                 | Jason Howard, PhD        | Executive Director | 114589  |
-    | Innovation Lab interim portfolio lead     | Dartanion Swift-Williams | City Administrator | —       |
+    | Innovation Lab (interim)                  | Dartanion Swift-Williams | City Administrator | —       |
 
 **■ Roster by Portfolio**
 
@@ -85,8 +85,7 @@ Each refined Position Description is filed alongside this roster in the same fol
 
     | **Name**                  | **Working title**                    | **Classification**                | **Cost center** | **PIN** |
     |---------------------------|--------------------------------------|-----------------------------------|-----------------|---------|
-    | Dartanion Swift-Williams  | Interim portfolio lead               | Executive Director I              | AdminOps        | 15961   |
-    | Aspirational / unfilled   | Innovation Program Manager           | Operations Manager II             | Innovation Lab  | TBD     |
+    | Dartanion Swift-Williams  | Interim Innovation Program Manager   | Executive Director I              | AdminOps        | 15961   |
     | Chiemeka Okeoma           | Senior Product Engineer              | Operations Officer V              | Innovation Lab  | 62137   |
     | Xander Jake de los Santos | Product Engineer                     | Operations Officer III            | Innovation Lab  | 70431   |
     | Aspirational / unfilled   | Civic Technology Lead                | Operations Manager II (proposed)  | Innovation Lab  | TBD     |
@@ -96,12 +95,11 @@ Each refined Position Description is filed alongside this roster in the same fol
 
     | **Position**                         | **Incumbent**            | **Reports to**                                                                                   |
     |--------------------------------------|--------------------------|--------------------------------------------------------------------------------------------------|
-    | Interim portfolio lead               | Dartanion Swift-Williams | City Administrator                                                                               |
-    | Innovation Program Manager           | Aspirational / unfilled  | Chief of Staff (with strategic direction from Dartanion Swift-Williams, interim portfolio lead) |
-    | Senior Product Engineer              | Chiemeka Okeoma          | Innovation Program Manager (with interim oversight from Dartanion Swift-Williams)                |
+    | Interim Innovation Program Manager   | Dartanion Swift-Williams | City Administrator                                                                               |
+    | Senior Product Engineer              | Chiemeka Okeoma          | Interim Innovation Program Manager                                                               |
     | Product Engineer                     | Xander Jake de los Santos | Senior Product Engineer                                                                       |
-    | Civic Technology Lead                | Aspirational / unfilled  | Innovation Program Manager                                                                       |
-    | Civic Design and UX Lead             | Aspirational / unfilled  | Innovation Program Manager                                                                       |
+    | Civic Technology Lead                | Aspirational / unfilled  | Interim Innovation Program Manager                                                               |
+    | Civic Design and UX Lead             | Aspirational / unfilled  | Interim Innovation Program Manager                                                               |
 
 ??? info "Performance and CitiStat roster and reporting"
 
@@ -185,7 +183,6 @@ Each refined Position Description is filed alongside this roster in the same fol
     |------------------------------------------------|---------------------------|-------------------|---------|
     | Special Assistant to the Executive Director | Derek Thomas              | Director's Office        | 70432   |
     | Communications and Partnerships Lead           | Audrey Randazzo           | Director's Office | 53413   |
-    | Innovation Program Manager                     | Aspirational / unfilled   | Innovation Lab    | TBD     |
     | Senior Product Engineer                        | Chiemeka Okeoma           | Innovation Lab    | 62137   |
     | Product Engineer                               | Xander Jake de los Santos | Innovation Lab    | 70431   |
     | Civic Technology Lead                          | Aspirational / unfilled   | Innovation Lab    | TBD     |
@@ -237,7 +234,6 @@ Each refined Position Description is filed alongside this roster in the same fol
 
     | **Title**                  | **Status**          | **Portfolio**            | **PIN / Status** |
     |----------------------------|---------------------|--------------------------|------------------|
-    | Innovation Program Manager | Aspirational / unfilled | Innovation Lab            | TBD              |
     | Civic Technology Lead      | Aspirational / unfilled | Innovation Lab            | TBD              |
     | Civic Design and UX Lead   | Aspirational / unfilled | Innovation Lab            | TBD              |
     | Senior Performance Analyst | Open — to be posted | Performance and CitiStat | 115657           |
