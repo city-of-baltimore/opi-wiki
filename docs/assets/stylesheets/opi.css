@@ -17,6 +17,13 @@
   --opi-bg-soft:     #FAFAF7;
   --opi-card-bg:     #FFFFFF;
   --opi-heading:     #1A1A1A;
+  --opi-chrome-bg:   var(--opi-near-black);
+  --opi-chrome-border: var(--opi-gold);
+  --opi-link-color:  var(--opi-gold-deep);
+  --opi-link-hover:  var(--opi-gold);
+  --opi-nav-accent:  var(--opi-gold-deep);
+  --opi-nav-accent-bg: rgba(155, 117, 23, 0.1);
+  --opi-card-focus-outline: var(--opi-gold-deep);
 }
 
 /* ---- Dark mode tokens ---- */
@@ -32,6 +39,11 @@
   --opi-bg-soft:     #1B1B22;
   --opi-card-bg:     #1B1B22;
   --opi-heading:     #F5F5F2;
+  --opi-link-color:  var(--opi-gold);
+  --opi-link-hover:  var(--opi-gold);
+  --opi-nav-accent:  var(--opi-gold);
+  --opi-nav-accent-bg: rgba(232, 182, 53, 0.12);
+  --opi-card-focus-outline: var(--opi-gold);
 }
 
 /* Material theme color overrides — light */
@@ -105,8 +117,8 @@ body, .md-typeset {
 
 /* Header bar — narrow, gold underline */
 .md-header {
-  background-color: var(--opi-near-black);
-  border-bottom: 3px solid var(--opi-gold);
+  background-color: var(--opi-chrome-bg);
+  border-bottom: 3px solid var(--opi-chrome-border);
   box-shadow: none;
 }
 
@@ -117,7 +129,7 @@ body, .md-typeset {
 
 /* Tabs — gold active indicator */
 .md-tabs {
-  background-color: var(--opi-near-black);
+  background-color: var(--opi-chrome-bg);
 }
 .md-tabs__link {
   opacity: 0.85;
@@ -126,7 +138,7 @@ body, .md-typeset {
 .md-tabs__link--active,
 .md-tabs__link:hover {
   opacity: 1;
-  color: var(--opi-gold);
+  color: var(--opi-link-hover);
 }
 
 /* Sidebar nav links — readable in both modes */
@@ -144,23 +156,13 @@ body, .md-typeset {
 .md-nav__link--active code,
 .md-nav__link:hover,
 .md-nav__link:focus-visible {
-  color: var(--opi-gold-deep);
-}
-[data-md-color-scheme="slate"] .md-nav--primary .md-nav__item--active > .md-nav__link,
-[data-md-color-scheme="slate"] .md-nav--primary .md-nav__item--active > .md-nav__link code,
-[data-md-color-scheme="slate"] .md-nav__item--active > .md-nav__link,
-[data-md-color-scheme="slate"] .md-nav__item--active > .md-nav__link code,
-[data-md-color-scheme="slate"] .md-nav__link--active,
-[data-md-color-scheme="slate"] .md-nav__link--active code,
-[data-md-color-scheme="slate"] .md-nav__link:hover,
-[data-md-color-scheme="slate"] .md-nav__link:focus-visible {
-  color: var(--opi-gold);
+  color: var(--opi-nav-accent);
 }
 .md-nav--primary .md-nav__item--active > .md-nav__link {
-  background-color: var(--md-accent-fg-color--transparent);
+  background-color: var(--opi-nav-accent-bg);
 }
 .md-nav--primary .md-nav__link:focus-visible {
-  background-color: var(--md-accent-fg-color--transparent);
+  background-color: var(--opi-nav-accent-bg);
   outline: 2px solid currentcolor;
   outline-offset: -2px;
 }
@@ -170,16 +172,13 @@ body, .md-typeset {
 
 /* Links */
 .md-typeset a {
-  color: var(--opi-gold-deep);
+  color: var(--opi-link-color);
   text-decoration: none;
   border-bottom: 1px solid transparent;
   transition: border-color 0.15s ease;
 }
 .md-typeset a:hover {
-  border-bottom-color: var(--opi-gold);
-}
-[data-md-color-scheme="slate"] .md-typeset a {
-  color: var(--opi-gold);
+  border-bottom-color: var(--opi-link-hover);
 }
 
 /* Internal-link 🔒 marker convention */
@@ -193,11 +192,8 @@ body, .md-typeset {
   border-bottom: 1px dotted var(--opi-text-muted);
 }
 .md-typeset a.internal-link:hover {
-  color: var(--opi-gold-deep);
-  border-bottom-color: var(--opi-gold);
-}
-[data-md-color-scheme="slate"] .md-typeset a.internal-link:hover {
-  color: var(--opi-gold);
+  color: var(--opi-link-color);
+  border-bottom-color: var(--opi-link-hover);
 }
 
 /* Tables — Bloomberg-style */
@@ -236,8 +232,8 @@ body, .md-typeset {
 
 /* Page footer */
 .md-footer {
-  background-color: var(--opi-near-black);
-  border-top: 3px solid var(--opi-gold);
+  background-color: var(--opi-chrome-bg);
+  border-top: 3px solid var(--opi-chrome-border);
 }
 .md-footer-meta {
   background-color: #000000;
@@ -281,12 +277,9 @@ body, .md-typeset {
   text-decoration: none;
 }
 .md-typeset .opi-card a.opi-card-link:focus-visible {
-  outline: 2px solid var(--opi-gold-deep);
+  outline: 2px solid var(--opi-card-focus-outline);
   outline-offset: -2px;
   border-radius: 4px;
-}
-[data-md-color-scheme="slate"] .md-typeset .opi-card a.opi-card-link:focus-visible {
-  outline-color: var(--opi-gold);
 }
 .opi-card h3 {
   margin: 0 0 0.4rem 0;
@@ -295,11 +288,7 @@ body, .md-typeset {
 }
 .opi-card-link:hover h3,
 .opi-card-link:focus-visible h3 {
-  color: var(--opi-gold-deep);
-}
-[data-md-color-scheme="slate"] .opi-card-link:hover h3,
-[data-md-color-scheme="slate"] .opi-card-link:focus-visible h3 {
-  color: var(--opi-gold);
+  color: var(--opi-link-color);
 }
 .opi-card p {
   margin: 0;
@@ -312,10 +301,7 @@ body, .md-typeset {
   font-size: 0.78rem;
   letter-spacing: 0.04em;
   font-weight: 600;
-  color: var(--opi-gold-deep);
-}
-[data-md-color-scheme="slate"] .opi-card .opi-card-action {
-  color: var(--opi-gold);
+  color: var(--opi-link-color);
 }
 .opi-card .opi-card-action::after {
   content: " \2192";
@@ -325,12 +311,9 @@ body, .md-typeset {
   font-size: 0.7rem;
   text-transform: uppercase;
   letter-spacing: 0.08em;
-  color: var(--opi-gold-deep);
+  color: var(--opi-link-color);
   font-weight: 600;
   margin-bottom: 0.3rem;
-}
-[data-md-color-scheme="slate"] .opi-card .opi-card-meta {
-  color: var(--opi-gold);
 }
 
 /* "Status pill" inline label */
