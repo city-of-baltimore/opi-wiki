@@ -7,7 +7,7 @@ import sys
 from pathlib import Path
 
 import pytest
-from scripts.verify import VerifyStep, build_steps, run_verification
+from scripts.verify import VerifyStep, build_steps, parse_args, run_verification
 
 
 def _python_command(source: str) -> tuple[str, ...]:
@@ -81,3 +81,22 @@ def test_build_steps_keeps_fly_validation_optional(monkeypatch: pytest.MonkeyPat
     monkeypatch.setattr("scripts.verify.shutil.which", lambda command: "/usr/local/bin/flyctl")
     monkeypatch.setattr(Path, "exists", lambda self: self.name == "fly.toml")
     assert [step.name for step in build_steps(repo_root)][-1] == "Validating Fly config"
+
+
+def test_parse_args_supports_optional_browser_smoke_flag() -> None:
+    """The verification runner should support opting into browser smoke coverage."""
+
+    args = parse_args(["--include-browser-smoke", "--json-output", "report.json"])
+
+    assert args.include_browser_smoke is True
+    assert args.json_output == Path("report.json")
+
+
+def test_build_steps_can_append_browser_smoke_checks() -> None:
+    """Optional browser smoke should append after the fast static checks."""
+
+    step_names = [
+        step.name for step in build_steps(Path("/tmp/example"), include_browser_smoke=True)
+    ]
+
+    assert "Running browser smoke checks" in step_names

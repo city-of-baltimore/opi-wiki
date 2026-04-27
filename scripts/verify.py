@@ -36,7 +36,12 @@ class VerifyResult:
     stderr: str
 
 
-def build_steps(repo_root: Path, python_executable: str | None = None) -> list[VerifyStep]:
+def build_steps(
+    repo_root: Path,
+    python_executable: str | None = None,
+    *,
+    include_browser_smoke: bool = False,
+) -> list[VerifyStep]:
     """Return the ordered verification steps for this repository."""
 
     python = python_executable or sys.executable
@@ -70,6 +75,14 @@ def build_steps(repo_root: Path, python_executable: str | None = None) -> list[V
             command=(python, "scripts/check_accessibility_smoke.py"),
         ),
     ]
+
+    if include_browser_smoke:
+        steps.append(
+            VerifyStep(
+                name="Running browser smoke checks",
+                command=(python, "scripts/check_browser_smoke.py"),
+            )
+        )
 
     if shutil.which("flyctl") and (repo_root / "fly.toml").exists():
         steps.append(
@@ -204,6 +217,11 @@ def parse_args(argv: Sequence[str] | None = None) -> argparse.Namespace:
 
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument(
+        "--include-browser-smoke",
+        action="store_true",
+        help="Run optional Playwright smoke checks against the built site.",
+    )
+    parser.add_argument(
         "--json-output",
         type=Path,
         help="Write a machine-readable verification report to this path.",
@@ -217,7 +235,7 @@ def main(argv: Sequence[str] | None = None) -> int:
     args = parse_args(argv)
 
     try:
-        steps = build_steps(REPO_ROOT)
+        steps = build_steps(REPO_ROOT, include_browser_smoke=args.include_browser_smoke)
         return run_verification(
             steps,
             REPO_ROOT,

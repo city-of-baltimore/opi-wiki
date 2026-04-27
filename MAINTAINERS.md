@@ -152,6 +152,11 @@ so maintainers get per-step timing and failure summaries without having to
 change their local workflow. If you need a machine-readable report for CI or
 triage, run `./scripts/verify.sh --json-output /path/to/report.json`.
 
+For UI regressions that static checks will miss, maintainers can opt into a
+browser smoke pass with `./scripts/verify.sh --include-browser-smoke`. That
+pass expects a one-time local browser install via
+`poetry run playwright install chromium`.
+
 ## Bus factor mitigation
 
 This role has a high bus factor by design (it's one person). Mitigations:

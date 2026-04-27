@@ -31,12 +31,22 @@ poetry run mkdocs build
 
 # optional: write a machine-readable verification report
 ./scripts/verify.sh --json-output /tmp/opi-verify.json
+
+# optional: include browser smoke checks after the strict site build
+./scripts/verify.sh --include-browser-smoke
 ```
 
 `poetry run mkdocs serve` runs at <http://127.0.0.1:8000> with live reload.
 `./scripts/verify.sh` remains the stable entrypoint, but now delegates to a
 structured Python runner that emits step timings and can optionally write a
 JSON report for CI or debugging.
+
+To use the optional browser smoke checks locally, install the Chromium browser
+once per machine:
+
+```bash
+poetry run playwright install chromium
+```
 
 ## Build platform note
 
