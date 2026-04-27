@@ -1,7 +1,7 @@
 [project]
-name = "opi-foundations-wiki"
+name = "opi-wiki"
 version = "0.1.0"
-description = "Public MkDocs site for the Mayor's Office of Performance and Innovation."
+description = "A Wiki for all things OPI."
 readme = "README.md"
 requires-python = ">=3.11,<4.0"
 dependencies = [
