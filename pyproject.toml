@@ -1,0 +1,39 @@
+[project]
+name = "opi-foundations-wiki"
+version = "0.1.0"
+description = "Public MkDocs site for the Mayor's Office of Performance and Innovation."
+readme = "README.md"
+requires-python = ">=3.11,<4.0"
+dependencies = [
+  "mkdocs==1.6.1",
+  "mkdocs-material==9.5.49",
+  "mkdocs-awesome-pages-plugin==2.9.3",
+  "mkdocs-macros-plugin==1.5.0",
+  "mkdocs-redirects==1.2.2",
+  "pymdown-extensions==10.12",
+]
+
+[tool.poetry]
+package-mode = false
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[dependency-groups]
+dev = [
+    "pytest (>=9.0.3,<10.0.0)",
+    "ruff (>=0.15.12,<0.16.0)"
+]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 100
+src = ["main.py", "scripts", "tests"]
+target-version = "py311"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "BLE"]

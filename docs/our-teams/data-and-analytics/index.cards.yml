@@ -1,0 +1,16 @@
+- meta: Document
+  title: "About Data Analytics"
+  body: "What the Data and Analytics team does inside OPI."
+  href: about-data-analytics/
+- meta: Strategy
+  title: "Data Analytics Strategy"
+  body: "OPI's strategy for citywide data and analytics work."
+  href: data-analytics-strategy/
+- meta: Framework
+  title: "Data Governance Framework"
+  body: "The framework OPI uses to govern city data assets."
+  href: data-governance-framework/
+- meta: "Theory of change"
+  title: "Data Analytics ToC"
+  body: "How data and analytics work moves from inputs to outcomes."
+  href: data-analytics-theory-of-change/

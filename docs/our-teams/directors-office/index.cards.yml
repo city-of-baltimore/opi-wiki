@@ -1,0 +1,8 @@
+- meta: Function
+  title: "About Admin Ops"
+  body: "What Admin Ops does inside the Director's Office."
+  href: about-admin-ops/
+- meta: "Theory of change"
+  title: "Admin Ops Theory of Change"
+  body: "How Admin Ops moves from inputs to outcomes."
+  href: admin-ops-theory-of-change/

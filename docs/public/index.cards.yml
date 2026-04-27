@@ -1,0 +1,20 @@
+- meta: Brief
+  title: "CitiStat — Public Brief"
+  body: "Plain-language public brief on CitiStat."
+  href: citistat-public-brief/
+- meta: Brief
+  title: "Data and Analytics — Public Brief"
+  body: "Plain-language public brief on the Data and Analytics team."
+  href: data-analytics-public-brief/
+- meta: Brief
+  title: "Innovation Lab — Public Brief"
+  body: "Plain-language public brief on the Innovation Lab."
+  href: innovation-lab-public-brief/
+- meta: Document
+  title: "Website Copy Master"
+  body: "The master copy doc for the public OPI website."
+  href: website-copy-master/
+- meta: Document
+  title: "Website Information Architecture"
+  body: "Information architecture for the public OPI website."
+  href: website-information-architecture/

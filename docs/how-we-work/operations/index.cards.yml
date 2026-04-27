@@ -1,0 +1,36 @@
+- meta: Document
+  title: "Leadership Norms"
+  body: "How OPI leaders show up, decide, and communicate."
+  href: leadership-norms/
+- meta: Document
+  title: "Performance Standards (Staff)"
+  body: "What performance looks like for individual contributors at OPI."
+  href: performance-standards-staff/
+- meta: Document
+  title: "Performance Standards — Manager Companion"
+  body: "How managers operationalize the staff performance standards."
+  href: performance-standards-manager-companion/
+- meta: Playbook
+  title: "Productivity and Collaboration Playbook"
+  body: "Tools, rituals, and conventions for getting work done together."
+  href: productivity-and-collaboration-playbook/
+- meta: Document
+  title: "QA Standards"
+  body: "Quality bars for everything OPI ships."
+  href: qa-standards/
+- meta: Strategy
+  title: "SharePoint Operating System Strategy"
+  body: "How OPI uses SharePoint as an internal operating system."
+  href: sharepoint-operating-system-strategy/
+- meta: Template
+  title: "Charter Template"
+  body: "Template for chartering a new initiative or working group."
+  href: charter-template/
+- meta: Document
+  title: "Intake SOP"
+  body: "How OPI receives, triages, and routes new requests."
+  href: intake-sop/
+- meta: Template
+  title: "Problem Statement Template"
+  body: "A structured way to frame a problem before scoping a solution."
+  href: problem-statement-template/

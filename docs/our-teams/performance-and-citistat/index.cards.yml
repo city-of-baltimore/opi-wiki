@@ -1,0 +1,34 @@
+strategy_and_method:
+  - meta: Document
+    title: "About Performance Management"
+    body: "What performance management means inside Baltimore City government."
+    href: about-performance-management/
+  - meta: Strategy
+    title: "Performance Management Strategy"
+    body: "OPI's strategy for citywide performance management."
+    href: performance-management-strategy/
+  - meta: "Theory of change"
+    title: "Performance Management ToC"
+    body: "How performance management moves from inputs to outcomes."
+    href: performance-management-theory-of-change/
+  - meta: Playbook
+    title: "CitiStat Method Playbook"
+    body: "The end-to-end CitiStat method — how a Stat session actually runs."
+    href: citistat-method-playbook/
+  - meta: Framework
+    title: "CitiStat Strategic Framework"
+    body: "The strategic frame that gives every Stat session its bearings."
+    href: citistat-strategic-framework/
+  - meta: "Quick reference"
+    title: "CitiStat — Staff Quick Reference"
+    body: "A one-page quick-reference for OPI staff running Stats."
+    href: citistat-method-staff-quick-reference/
+citistat_portfolio:
+  - meta: Portfolio
+    title: "CitiStat Portfolio"
+    body: "The full CitiStat portfolio — 19 agency briefs covering 311, Capital, Clean, DGS, DOT, Downtown, Finance, Fire/EMS, Health, Housing, HR/Labor, Permits, Police, Rec, Solid Waste, Tech, Water, Workplace Safety, Youth."
+    href: citistat-portfolio/
+  - meta: "Sub-track"
+    title: "Cross-Agency Delivery"
+    body: "How OPI runs work that crosses agency lines."
+    href: cross-agency-delivery/

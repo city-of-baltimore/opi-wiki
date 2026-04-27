@@ -1,0 +1,12 @@
+- meta: Section
+  title: Onboarding
+  body: "How new hires join OPI, how managers prepare, how transitions happen."
+  href: onboarding/
+- meta: Section
+  title: Operations
+  body: "Leadership norms, performance standards, productivity playbook, QA, and operating templates."
+  href: operations/
+- meta: Section
+  title: "Team and Roles"
+  body: "Who's on the team and how roles are organized."
+  href: team-and-roles/

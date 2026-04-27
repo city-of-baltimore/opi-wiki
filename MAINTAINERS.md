@@ -1,0 +1,149 @@
+# Maintainer's Operating Manual
+
+This document is for the OPI Foundations docs maintainer. It describes the role, the weekly cadence, the editorial voice, and the systems involved.
+
+## The role
+
+**Title:** OPI Foundations Docs Maintainer
+**Effort:** 0.4–0.6 FTE (16–24 hours/week)
+**Reports to:** Executive Director and CDO, OPI
+
+**Primary responsibilities:**
+
+1. Translate suggestions and source documents into Markdown that renders cleanly on the site.
+2. Maintain editorial voice consistency across every page.
+3. Run the contribution intake process: triage issues and Google Form submissions, draft changes, route for approval, publish.
+4. Keep the navigation (`docs/**/.pages`), glossary, and cross-links in sync as content evolves.
+5. Quarterly: audit each page for staleness and route stale pages to their owners for review.
+
+## Weekly cadence (suggested)
+
+| Day | Work |
+|---|---|
+| Monday | Triage new issues + Google Form submissions; respond to acknowledge each within 2 business days |
+| Tuesday–Thursday | Draft changes in Markdown; open PRs; route to section owners |
+| Friday | Merge approved PRs; review metrics (page views, search queries, broken links); plan next week |
+
+## The intake funnel
+
+```
+Issue / Google Form / Comment / Email
+         │
+         ▼
+  Maintainer triage
+         │
+         ├── Typo or small fix     → commit directly to main → auto-deploy
+         ├── Substantive change    → branch → PR → section owner approves → merge
+         └── New section or major  → ED/CDO approves before merge
+```
+
+## Editorial voice
+
+OPI Foundations is written for **city peers, partner agencies, council members, peer cities, and the public**. The voice is:
+
+- **Plain.** No jargon without a glossary entry.
+- **Concrete.** Specific examples beat abstract framings.
+- **Active.** "OPI runs CitiStat sessions" not "CitiStat sessions are run by OPI."
+- **Sourced.** Every factual claim about city operations should link to a source — a council document, an annual report, a stat brief, or a public dataset.
+- **Calm.** This is reference material, not marketing copy. No hype, no exclamation points.
+
+When in doubt, model the voice on the [Letters from the Director](docs/about-us/letters-from-the-director/index.md). They're the canonical tone reference.
+
+## What goes here vs. SharePoint
+
+**Public Foundations site (this repo):**
+
+- Methodology, strategy, operating model
+- Public briefs and website material
+- Theory of Change and Glossary
+- Letters from the Director
+- Position Descriptions Index (titles + summaries)
+
+**Baltimore City intranet (SharePoint):**
+
+- Onboarding checklists (with PII)
+- Full Position Descriptions (with compensation)
+- Performance Standards (signed)
+- MAPS Benefits guides
+- Internal SOPs and intake queues
+- Telework Policy (formal HR doc)
+
+When in doubt, **ask the section owner**. Default to public unless there's a specific reason it's internal.
+
+## Cross-link discipline
+
+The Reference section (`docs/resources/reference/`) is cross-cutting. Every section page should link to:
+
+- The [Glossary](docs/resources/reference/glossary.md) when a term is first used in a section.
+- The [Operating Model](docs/resources/reference/operating-model-staff-version.md) when a page is about how OPI is structured.
+- The relevant [Theory of Change](docs/resources/reference/theory-of-change-summaries.md) summary when a page is about what a division does.
+- The [Strategic Priorities](docs/resources/reference/strategic-priorities-one-pager.md) when a page connects to current FY priorities.
+
+## Navigation ownership
+
+Navigation is local to each section. Keep `mkdocs.yml` focused on site-wide
+runtime settings, and update the nearest `docs/**/.pages` file whenever a page
+is added, removed, renamed, or moved.
+
+## Landing-page cards
+
+Card grids on section landing pages are shared UI, not one-off HTML snippets.
+Keep the card content in the nearest `*.cards.yml` file and render it through
+the shared `card_grid_from(...)` macro so markup, link affordances, and
+accessibility behavior stay consistent across sections.
+
+## Build platform posture
+
+This repo currently runs on MkDocs 1.x and should stay there unless the team
+approves a deliberate platform migration.
+
+Keep `mkdocs-redirects` pinned at `1.2.2` unless and until OPI explicitly
+decides to migrate to ProperDocs. Newer redirect-plugin releases pull in
+ProperDocs transitively and emit migration warnings during normal MkDocs builds.
+
+If the team wants ProperDocs later, treat it as a full platform change:
+
+1. Rename `mkdocs.yml` to `properdocs.yml`.
+2. Update local commands, CI, and preview/deploy scripts from `mkdocs` to `properdocs`.
+3. Re-verify theme, plugins, redirects, and navigation behavior in one slice.
+
+## Staleness audit (quarterly)
+
+Every quarter, run `./scripts/verify.sh` (which includes `mkdocs build --strict`) and audit:
+
+1. Pages whose `Last reviewed` field is more than 6 months old.
+2. Pages whose linked source documents have been updated.
+3. Pages with low traffic that may not be needed.
+
+Email the relevant section owner with a one-line ask: "Is this still accurate? Any updates?"
+
+## Bus factor mitigation
+
+This role has a high bus factor by design (it's one person). Mitigations:
+
+1. **Backup maintainer.** A second person trained on the systems but not actively maintaining. Quarterly: run a "could you take over tomorrow?" check-in.
+2. **All editorial decisions are written down.** Voice, conventions, structural rules — all in this document. No tribal knowledge.
+3. **Vacation coverage.** A two-week vacation should not break the wiki. Section owners with write access can publish urgent fixes in maintainer's absence.
+
+## Tools the maintainer uses
+
+| Tool | Purpose |
+|---|---|
+| GitHub Enterprise (this repo) | Source of truth, version control, CI/CD |
+| Poetry | Python dependency and environment management |
+| MkDocs Material | Site renderer (local preview + production build) |
+| `./scripts/verify.sh` | Standard local verification pass |
+| Pandoc | Convert .docx → Markdown when migrating Drive content |
+| VS Code (or any Markdown editor) | Authoring |
+| Google Drive | Read-access to the OPI Foundations folder for source materials |
+| SharePoint | Read-access for understanding what stays internal |
+
+## Onboarding a new maintainer
+
+Day 1: read this document and `CONTRIBUTING.md`. Run `poetry run mkdocs serve` locally. Read every page on the live site.
+
+Week 1: shadow the previous maintainer through one full intake cycle (issue → PR → merge → deploy).
+
+Week 2: handle the next intake cycle solo, with the previous maintainer reviewing PRs.
+
+Week 3+: independent.

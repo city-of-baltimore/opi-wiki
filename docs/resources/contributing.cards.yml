@@ -1,0 +1,11 @@
+- meta: "Quick fix"
+  title: "Edit this page"
+  body: "Spot a typo or factual error? Click the pencil icon at the top of any page to open the source file on GitHub and propose a change."
+- meta: "Larger change"
+  title: "Open an issue"
+  body: "Suggest a structural change, propose new content, or flag a topic that's missing entirely. We use issue templates to make it easy."
+- meta: Direct
+  title: "Email us"
+  body: "For sensitive feedback or content we should not handle in the open, email opi@baltimorecity.gov."
+  href: mailto:opi@baltimorecity.gov
+  link_label: "Email opi@baltimorecity.gov"

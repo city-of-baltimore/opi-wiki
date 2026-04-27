@@ -1,0 +1,28 @@
+- meta: Document
+  title: "Glossary of OPI Terms"
+  body: "Plain-language definitions of every term used inside OPI."
+  href: glossary/
+- meta: Document
+  title: "Operating Model (Staff Version)"
+  body: "The OPI operating model written for OPI staff."
+  href: operating-model-staff-version/
+- meta: Reference
+  title: "Theory of Change Summaries"
+  body: "All five OPI theories of change in one place."
+  href: theory-of-change-summaries/
+- meta: Document
+  title: "Strategic Priorities One-Pager"
+  body: "OPI's strategic priorities, on one page."
+  href: strategic-priorities-one-pager/
+- meta: Reference
+  title: "Position Descriptions"
+  body: "The canonical directory of OPI position descriptions."
+  href: position-descriptions/
+- meta: Playbook
+  title: "Tiger Teams Playbook"
+  body: "How OPI runs short-cycle, cross-functional Tiger Teams."
+  href: tiger-teams-playbook/
+- meta: Reference
+  title: "Wiki Knowledge Base Structure"
+  body: "How this wiki is organized and why."
+  href: wiki-knowledge-base-structure/

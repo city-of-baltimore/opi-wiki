@@ -1,0 +1,8 @@
+- meta: Section
+  title: "About OPI"
+  body: "Operating frame, mission and vision, principles, org structure, teams."
+  href: about-opi/
+- meta: Section
+  title: "Letters from the Director"
+  body: "Periodic letters from OPI's Executive Director / Chief Data Officer."
+  href: letters-from-the-director/
