@@ -31,7 +31,7 @@
 
 **■ Position Summary**
 
-The Senior Product Engineer is a hybrid analytics-and-builder role within the Innovation Lab portfolio. The role leads data and analytics projects on behalf of city agencies and the Mayor’s Office — moving from problem framing to analysis, to decision-ready deliverables, to durable tools. The role blends applied analytics and statistical modeling, data products and lightweight applications, integrations and automation, and AI proof-of-concepts that are safe, evaluated, and operationally relevant. The Senior Product Engineer partners closely with the Civic Design and UX Lead, the Civic Technology Lead, CitiStat, and agency staff to translate operational questions into clear measures, actionable insights, and usable tools.
+The Senior Product Engineer is a hybrid analytics-and-builder role within the Innovation Lab portfolio. The role leads data and analytics projects on behalf of city agencies and the Mayor’s Office — moving from problem framing to analysis, to decision-ready deliverables, to durable tools. The role blends applied analytics and statistical modeling, data products and lightweight applications, integrations and automation, and AI proof-of-concepts that are safe, evaluated, and operationally relevant. The Senior Product Engineer partners closely with the Civic Designer, the Civic Technology Lead, CitiStat, and agency staff to translate operational questions into clear measures, actionable insights, and usable tools.
 
 **■ Key Responsibilities**
 
@@ -65,7 +65,7 @@ The Senior Product Engineer is a hybrid analytics-and-builder role within the In
 
 **Cross-Team Collaboration and Stewardship**
 
-- Partner with the Civic Design and UX Lead and CitiStat staff to ensure products solve real operational problems and ship with the right operating model.
+- Partner with the Civic Designer and CitiStat staff to ensure products solve real operational problems and ship with the right operating model.
 
 - Mentor more junior practitioners and contribute to OPI’s engineering and analytics standards.
 

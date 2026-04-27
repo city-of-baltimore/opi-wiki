@@ -33,7 +33,7 @@
 
 The Analytics Lead is OPI’s principal data practitioner: navigating complex city datasets, surfacing actionable insights, and partnering with operational teams to solve real problems through data. The role combines hands-on data investigation, rapid exploration, and strong stakeholder collaboration to drive Baltimore’s data-informed decision-making. A successful Analytics Lead is equally comfortable sitting with agency staff to understand operations as they are diving into the underlying data.
 
-Reporting to the Deputy Chief Data Officer, the Analytics Lead works closely with OPI’s data engineers, the Applied Data Scientist, and CitiStat analysts, as well as with decision-makers and data practitioners across agencies. The position leads efforts to understand patterns in city data, connect findings to operational realities, and translate complex information into clear guidance for stakeholders. The role also provides analytical support to agencies and their data staff.
+Reporting to the Deputy Chief Data Officer, the Analytics Lead works closely with OPI’s data engineers, CitiStat analysts, and Innovation Lab product staff, as well as with decision-makers and data practitioners across agencies. The position leads efforts to understand patterns in city data, connect findings to operational realities, and translate complex information into clear guidance for stakeholders. The role also provides analytical support to agencies and their data staff.
 
 **■ Key Responsibilities**
 
@@ -63,7 +63,7 @@ Reporting to the Deputy Chief Data Officer, the Analytics Lead works closely wit
 
 **Stewardship**
 
-- Coordinate analytical priorities with the Applied Data Scientist, the Senior Performance Analyst (Performance Tracker), and the Senior Product Engineer (Innovation Lab).
+- Coordinate analytical priorities with the Senior Performance Analyst (Performance Tracker) and Innovation Lab partners such as the Senior Product Engineer and Civic Designer.
 
 - Perform other related duties as assigned to support OPI’s mission and innovation agenda.
 

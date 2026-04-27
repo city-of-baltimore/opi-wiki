@@ -35,9 +35,9 @@ Each refined Position Description is filed alongside this roster in the same fol
 
 |                         |                                                                                     |
 |-------------------------|-------------------------------------------------------------------------------------|
-| **Total positions**     | 25                                                                                  |
+| **Total positions**     | 24                                                                                  |
 | **Filled**              | 22                                                                                  |
-| **Open / aspirational** | 3                                                                                   |
+| **Open / aspirational** | 2                                                                                   |
 | **Portfolios**          | 4 (Director’s Office, Innovation Lab, Performance and CitiStat, Data and Analytics) |
 | **Cost centers**        | 4 (AdminOps, Innovation Lab, Performance Management, Data and Analytics)            |
 | **Executive sponsor**   | Mayor Brandon M. Scott via City Administrator Faith P. Leach                        |
@@ -86,20 +86,20 @@ Each refined Position Description is filed alongside this roster in the same fol
     | **Name**                  | **Working title**                    | **Classification**                | **Cost center** | **PIN** |
     |---------------------------|--------------------------------------|-----------------------------------|-----------------|---------|
     | Dartanion Swift-Williams  | Interim Innovation Program Manager   | Executive Director I              | AdminOps        | 15961   |
+    | Selenea Gibson            | Civic Designer                       | Operations Officer III            | Innovation Lab  | 53412   |
     | Chiemeka Okeoma           | Senior Product Engineer              | Operations Officer V              | Innovation Lab  | 62137   |
     | Xander Jake de los Santos | Product Engineer                     | Operations Officer III            | Innovation Lab  | 70431   |
     | Aspirational / unfilled   | Civic Technology Lead                | Operations Manager II (proposed)  | Innovation Lab  | TBD     |
-    | Aspirational / unfilled   | Civic Design and UX Lead             | Operations Officer III (proposed) | Innovation Lab  | TBD     |
 
     **Reporting structure**
 
     | **Position**                         | **Incumbent**            | **Reports to**                                                                                   |
     |--------------------------------------|--------------------------|--------------------------------------------------------------------------------------------------|
     | Interim Innovation Program Manager   | Dartanion Swift-Williams | City Administrator                                                                               |
+    | Civic Designer                       | Selenea Gibson           | Interim Innovation Program Manager                                                               |
     | Senior Product Engineer              | Chiemeka Okeoma          | Interim Innovation Program Manager                                                               |
     | Product Engineer                     | Xander Jake de los Santos | Senior Product Engineer                                                                       |
     | Civic Technology Lead                | Aspirational / unfilled  | Interim Innovation Program Manager                                                               |
-    | Civic Design and UX Lead             | Aspirational / unfilled  | Interim Innovation Program Manager                                                               |
 
 ??? info "Performance and CitiStat roster and reporting"
 
@@ -137,7 +137,6 @@ Each refined Position Description is filed alongside this roster in the same fol
     | Alejandro Zuniga Sosa | Principal Data Engineer     | Operations Manager II  | Data and Analytics | 53411   |
     | Koby Samuel           | Principal Platform Engineer | Operations Officer V   | Data and Analytics | 115656  |
     | Briya Bhakta          | Senior Data Engineer        | Operations Officer V   | Data and Analytics | 70433   |
-    | Selenea Gibson        | Applied Data Scientist      | Operations Officer III | Data and Analytics | 53412   |
 
     **Reporting structure**
 
@@ -149,7 +148,6 @@ Each refined Position Description is filed alongside this roster in the same fol
     | Principal Data Engineer     | Alejandro Zuniga Sosa | Deputy Chief Data Officer |
     | Principal Platform Engineer | Koby Samuel           | Deputy Chief Data Officer |
     | Senior Data Engineer        | Briya Bhakta          | Principal Data Engineer   |
-    | Applied Data Scientist      | Selenea Gibson        | Analytics Lead            |
 
 ??? info "Cost center view"
 
@@ -175,7 +173,6 @@ Each refined Position Description is filed alongside this roster in the same fol
     | Principal Data Engineer     | Alejandro Zuniga Sosa | Data and Analytics | 53411   |
     | Principal Platform Engineer | Koby Samuel           | Data and Analytics | 115656  |
     | Senior Data Engineer        | Briya Bhakta          | Data and Analytics | 70433   |
-    | Applied Data Scientist      | Selenea Gibson        | Data and Analytics | 53412   |
 
     **Innovation Lab (CCA001472)**
 
@@ -183,10 +180,10 @@ Each refined Position Description is filed alongside this roster in the same fol
     |------------------------------------------------|---------------------------|-------------------|---------|
     | Special Assistant to the Executive Director | Derek Thomas              | Director's Office        | 70432   |
     | Communications and Partnerships Lead           | Audrey Randazzo           | Director's Office | 53413   |
+    | Civic Designer                                 | Selenea Gibson            | Innovation Lab    | 53412   |
     | Senior Product Engineer                        | Chiemeka Okeoma           | Innovation Lab    | 62137   |
     | Product Engineer                               | Xander Jake de los Santos | Innovation Lab    | 70431   |
     | Civic Technology Lead                          | Aspirational / unfilled   | Innovation Lab    | TBD     |
-    | Civic Design and UX Lead                       | Aspirational / unfilled   | Innovation Lab    | TBD     |
 
     **Performance Management (CCA001472)**
 
@@ -213,6 +210,7 @@ Each refined Position Description is filed alongside this roster in the same fol
     | Mallory Screws            | Project Manager                                | Director's Office        | mallory.screws@baltimorecity.gov           |
     | Audrey Randazzo           | Communications and Partnerships Lead           | Director's Office        | audrey.randazzo@baltimorecity.gov          |
     | Rashaad Tillery           | CitiStat Inspector                             | Director's Office        | rashaad.tillery@baltimorecity.gov          |
+    | Selenea Gibson            | Civic Designer                                 | Innovation Lab           | selenea.gibson@baltimorecity.gov           |
     | Chiemeka Okeoma           | Senior Product Engineer                        | Innovation Lab           | chiemeka.okeoma@baltimorecity.gov          |
     | Xander Jake de los Santos | Product Engineer                               | Innovation Lab           | via Chief of Staff                         |
     | Danny Heller              | Deputy Chief Performance Officer               | Performance and CitiStat | daniel.heller@baltimorecity.gov            |
@@ -227,7 +225,6 @@ Each refined Position Description is filed alongside this roster in the same fol
     | Alejandro Zuniga Sosa     | Principal Data Engineer                        | Data and Analytics       | alejandro.zunigasosa@baltimorecity.gov     |
     | Koby Samuel               | Principal Platform Engineer                    | Data and Analytics       | koby.samuel@baltimorecity.gov              |
     | Briya Bhakta              | Senior Data Engineer                           | Data and Analytics       | briya.bhakta@baltimorecity.gov             |
-    | Selenea Gibson            | Applied Data Scientist                         | Data and Analytics       | selenea.gibson@baltimorecity.gov           |
 
 ??? info "Open positions"
 
@@ -235,7 +232,6 @@ Each refined Position Description is filed alongside this roster in the same fol
     | **Title**                  | **Status**          | **Portfolio**            | **PIN / Status** |
     |----------------------------|---------------------|--------------------------|------------------|
     | Civic Technology Lead      | Aspirational / unfilled | Innovation Lab            | TBD              |
-    | Civic Design and UX Lead   | Aspirational / unfilled | Innovation Lab            | TBD              |
     | Senior Performance Analyst | Open — to be posted | Performance and CitiStat | 115657           |
 
 *This roster reflects the OPI operating model. Position descriptions for every role listed here are filed in the OPI Foundations / Position Descriptions folder, organized by portfolio. PIN numbers and budget detail come from the City’s authoritative position file.*

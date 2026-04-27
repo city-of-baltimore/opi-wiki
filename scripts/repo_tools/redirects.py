@@ -9,7 +9,7 @@ import yaml
 
 ALLOWED_DUPLICATE_DESTINATIONS = {
     "resources/index.md",
-    "resources/reference/position-descriptions/innovation-lab/pd-civic-design-and-ux-lead.md",
+    "resources/reference/position-descriptions/innovation-lab/pd-civic-designer.md",
     "resources/reference/position-descriptions/innovation-lab/pd-civic-technology-lead.md",
     "resources/reference/position-descriptions/directors-office/pd-communications-and-partnerships-lead.md",
     "resources/reference/position-descriptions/innovation-lab/pd-innovation-program-manager.md",

@@ -137,9 +137,9 @@ The Data and Analytics portfolio builds the data foundation that makes OPI’s w
 
 Interim Innovation Program Manager: Dartanion Swift-Williams
 
-Current staffed roles: Interim Innovation Program Manager, Senior Product
-Engineer, and Product Engineer. Aspirational roles: Civic Technology Lead and
-Civic Design and UX Lead.
+Current staffed roles: Interim Innovation Program Manager, Civic Designer,
+Senior Product Engineer, and Product Engineer. Aspirational roles: Civic
+Technology Lead.
 
 > *From service problems to practical solutions.*
 

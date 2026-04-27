@@ -63,8 +63,6 @@ portfolios:
         title: Technical Program Manager
       - name: Vera Choo
         title: Analytics Lead
-      - name: Selenea Gibson
-        title: Applied Data Scientist
       - name: Koby Samuel
         title: Principal Platform Engineer
       - name: Alejandro Zuniga Sosa
@@ -88,13 +86,12 @@ portfolios:
     primary_value: Turns service problems into designed, usable, testable solutions; coordinates handoff to data, engineering, agency, or BCIT partners.
     table_lead: Dartanion Swift-Williams, Interim Innovation Program Manager
     staff:
+      - name: Selenea Gibson
+        title: Civic Designer
       - name: Chiemeka Okeoma
         title: Senior Product Engineer
       - name: Xander Jake de los Santos
         title: Product Engineer
       - name: Open / Aspirational
         title: Civic Technology Lead
-        edge_style: dotted
-      - name: Open / Aspirational
-        title: Civic Design and UX Lead
         edge_style: dotted

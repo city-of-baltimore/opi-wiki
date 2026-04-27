@@ -100,7 +100,7 @@ Operationally, the BIC runs out of OPI’s Innovation Lab — the home for produ
 | Project Manager                            | Mallory Screws            | Project Manager                                | OPI                            |
 | Data Engineering Lead                      | Alejandro Zuniga Sosa     | Principal Data Engineer                        | OPI — Data and Analytics       |
 | Platform Engineering Lead                  | Koby Samuel               | Principal Platform Engineer                    | OPI — Data and Analytics       |
-| Data Science and Analytics                 | Selenea Gibson            | Applied Data Scientist                         | OPI — Data and Analytics       |
+| Civic Design and Evaluation                | Selenea Gibson            | Civic Designer                                 | OPI — Innovation Lab           |
 | Data Engineering                           | Briya Bhakta              | Senior Data Engineer                           | OPI — Data and Analytics       |
 | Technical Program Management               | Roberto Herbruger         | Technical Program Manager                      | OPI — Data and Analytics       |
 | Data Governance and Analytics              | Vera Choo                 | Data Governance and Analytics Manager          | OPI — Data and Analytics       |
@@ -679,7 +679,7 @@ OPI staff who are part of the BIC, with full positions and home teams. Sand role
 | Project Manager                            | Mallory Screws            | Project Manager                                | OPI                            |
 | Data Engineering Lead                      | Alejandro Zuniga Sosa     | Principal Data Engineer                        | OPI — Data and Analytics       |
 | Platform Engineering Lead                  | Koby Samuel               | Principal Platform Engineer                    | OPI — Data and Analytics       |
-| Data Science and Analytics                 | Selenea Gibson            | Applied Data Scientist                         | OPI — Data and Analytics       |
+| Civic Design and Evaluation                | Selenea Gibson            | Civic Designer                                 | OPI — Innovation Lab           |
 | Data Engineering                           | Briya Bhakta              | Senior Data Engineer                           | OPI — Data and Analytics       |
 | Technical Program Management               | Roberto Herbruger         | Technical Program Manager                      | OPI — Data and Analytics       |
 | Data Governance and Analytics              | Vera Choo                 | Data Governance and Analytics Manager          | OPI — Data and Analytics       |

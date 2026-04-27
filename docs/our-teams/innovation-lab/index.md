@@ -11,6 +11,6 @@
 The canonical
 [Resources → Position Descriptions](../../resources/reference/position-descriptions/index.md)
 directory is the source of truth for Innovation Lab roles. Current staffed
-roles are Interim Innovation Program Manager, Senior Product Engineer, and
-Product Engineer. Civic Technology Lead and Civic Design and UX Lead remain
-aspirational roles.
+roles are Interim Innovation Program Manager, Civic Designer, Senior Product
+Engineer, and Product Engineer. Civic Technology Lead remains an aspirational
+role.

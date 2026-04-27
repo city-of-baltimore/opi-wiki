@@ -116,7 +116,7 @@ Tiger teams use the Public Innovation Toolkit, a four-phase method designed for 
 | Executive sponsor   | Deputy Mayor for the cluster   | Authorizes the team, unblocks, and closes the work at the end.                 |
 | Agency partner lead | Agency director or designee    | Owns the agency’s side of the work and the sustain plan.                       |
 | Tiger team lead     | OPI Innovation Lab PM          | Runs the sprint; owns plan-on-a-page, weekly delivery, and final sustain memo. |
-| Civic designer      | OPI · Civic Design and UX Lead | Frontline and resident research; service maps; co-design.                      |
+| Civic designer      | OPI · Civic Designer           | Frontline and resident research; service maps; co-design.                      |
 | Data lead           | OPI · Data and Analytics       | Diagnosis analytics; data products that ship with the pilot.                   |
 | Technical PM        | OPI · Technical PM             | Tooling and integration with BCIT and the agency.                              |
 | Performance liaison | OPI · CitiStat Program Manager | Metric set and CitiStat handoff at sustain.                                    |

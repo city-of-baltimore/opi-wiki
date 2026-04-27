@@ -33,7 +33,7 @@
 
 The Product Engineer is a mission-driven full-stack engineer on the Innovation Lab team, building modern, scalable data products that power internal decision-making, public engagement, and transparency in Baltimore City government. The role contributes to high-impact digital products like the citywide Performance Plan, the Mayor’s Executive Dashboard, the 10-Year Financial Plan, economic-intelligence products, and other public-facing data products.
 
-The Product Engineer works closely with the Civic Design and UX Lead, the Senior Product Engineer, the Civic Technology Lead, analysts, and policy experts to design and implement full-stack applications, primarily using React, Python, and modern APIs. The engineer helps shape reusable, modular components and patterns to support a growing portfolio of city dashboards and internal tools.
+The Product Engineer works closely with the Civic Designer, the Senior Product Engineer, the Civic Technology Lead, analysts, and policy experts to design and implement full-stack applications, primarily using React, Python, and modern APIs. The engineer helps shape reusable, modular components and patterns to support a growing portfolio of city dashboards and internal tools.
 
 **■ Key Responsibilities**
 

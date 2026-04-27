@@ -47,7 +47,7 @@ OPI maintains a position description (PD) for every role on the team. PDs are th
 
 - [Innovation Program Manager](innovation-lab/pd-innovation-program-manager.md)
 - [Civic Technology Lead](innovation-lab/pd-civic-technology-lead.md)
-- [Civic Design and UX Lead](innovation-lab/pd-civic-design-and-ux-lead.md)
+- [Civic Designer](innovation-lab/pd-civic-designer.md)
 - [Senior Product Engineer](innovation-lab/pd-senior-product-engineer.md)
 - [Product Engineer](innovation-lab/pd-product-engineer-full-stack.md)
 
@@ -62,7 +62,6 @@ OPI maintains a position description (PD) for every role on the team. PDs are th
 
 - [Deputy Chief Data Officer](data-and-analytics/pd-deputy-chief-data-officer.md)
 - [Analytics Lead](data-and-analytics/pd-analytics-lead.md)
-- [Applied Data Scientist](data-and-analytics/pd-applied-data-scientist.md)
 - [Principal Data Engineer](data-and-analytics/pd-principal-data-engineer.md)
 - [Principal Platform Engineer](data-and-analytics/pd-principal-platform-engineer.md)
 - [Senior Data Engineer](data-and-analytics/pd-senior-data-engineer.md)

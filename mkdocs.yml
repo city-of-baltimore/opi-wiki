@@ -121,7 +121,7 @@ plugins:
       redirect_maps:
         our-teams/directors-office/pd-chief-of-staff.md: resources/reference/position-descriptions/directors-office/pd-chief-of-staff.md
         our-teams/directors-office/pd-citistat-inspector.md: resources/reference/position-descriptions/directors-office/pd-citistat-inspector.md
-        our-teams/directors-office/pd-civic-design-and-ux-lead.md: resources/reference/position-descriptions/innovation-lab/pd-civic-design-and-ux-lead.md
+        our-teams/directors-office/pd-civic-design-and-ux-lead.md: resources/reference/position-descriptions/innovation-lab/pd-civic-designer.md
         our-teams/directors-office/pd-civic-technology-lead.md: resources/reference/position-descriptions/innovation-lab/pd-civic-technology-lead.md
         our-teams/directors-office/pd-communications-and-partnerships-lead.md: resources/reference/position-descriptions/directors-office/pd-communications-and-partnerships-lead.md
         our-teams/directors-office/pd-executive-director-and-cdo.md: resources/reference/position-descriptions/directors-office/pd-executive-director-and-cdo.md
@@ -135,7 +135,7 @@ plugins:
         our-teams/performance-and-citistat/pd-deputy-chief-performance-officer.md: resources/reference/position-descriptions/performance-and-citistat/pd-deputy-chief-performance-officer.md
         our-teams/performance-and-citistat/pd-senior-performance-analyst.md: resources/reference/position-descriptions/performance-and-citistat/pd-senior-performance-analyst.md
         our-teams/data-and-analytics/pd-analytics-lead.md: resources/reference/position-descriptions/data-and-analytics/pd-analytics-lead.md
-        our-teams/data-and-analytics/pd-applied-data-scientist.md: resources/reference/position-descriptions/data-and-analytics/pd-applied-data-scientist.md
+        our-teams/data-and-analytics/pd-applied-data-scientist.md: resources/reference/position-descriptions/innovation-lab/pd-civic-designer.md
         our-teams/data-and-analytics/pd-deputy-chief-data-officer.md: resources/reference/position-descriptions/data-and-analytics/pd-deputy-chief-data-officer.md
         our-teams/data-and-analytics/pd-principal-data-engineer.md: resources/reference/position-descriptions/data-and-analytics/pd-principal-data-engineer.md
         our-teams/data-and-analytics/pd-principal-platform-engineer.md: resources/reference/position-descriptions/data-and-analytics/pd-principal-platform-engineer.md
@@ -147,7 +147,9 @@ plugins:
         resources/grants-and-funding/division-narratives.md: resources/index.md
         resources/reference/glossary-additions-april-2026.md: resources/reference/glossary.md
         resources/reference/fy27-eoy-report-refresh.md: resources/reference/index.md
-        resources/reference/position-descriptions/directors-office/pd-civic-design-and-ux-lead.md: resources/reference/position-descriptions/innovation-lab/pd-civic-design-and-ux-lead.md
+        resources/reference/position-descriptions/directors-office/pd-civic-design-and-ux-lead.md: resources/reference/position-descriptions/innovation-lab/pd-civic-designer.md
+        resources/reference/position-descriptions/data-and-analytics/pd-applied-data-scientist.md: resources/reference/position-descriptions/innovation-lab/pd-civic-designer.md
+        resources/reference/position-descriptions/innovation-lab/pd-civic-design-and-ux-lead.md: resources/reference/position-descriptions/innovation-lab/pd-civic-designer.md
         resources/reference/position-descriptions/directors-office/pd-civic-technology-lead.md: resources/reference/position-descriptions/innovation-lab/pd-civic-technology-lead.md
         resources/reference/position-descriptions/innovation-lab/pd-communications-and-partnerships-lead.md: resources/reference/position-descriptions/directors-office/pd-communications-and-partnerships-lead.md
         resources/reference/position-descriptions/directors-office/pd-innovation-program-manager.md: resources/reference/position-descriptions/innovation-lab/pd-innovation-program-manager.md

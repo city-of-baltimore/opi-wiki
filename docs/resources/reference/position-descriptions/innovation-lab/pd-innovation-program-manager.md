@@ -23,12 +23,12 @@
 | **Portfolio**            | Innovation Lab                                                                                                                                                                                                                                                            |
 | **Reports to**           | Chief of Staff (with strategic direction from the Executive Director while serving as Interim Innovation Program Manager)                                                                                                                                                  |
 | **Incumbent**            | Dartanion Swift-Williams (Interim)                                                                                                                                                                                                                                        |
-| **Supervision given**    | Directly supervises the Civic Design and UX Lead, Civic Technology Lead, Product Engineer, and Senior Product Engineer. Indirectly coordinates with the Project Manager and partner-agency leads on tiger-team work.                                                     |
+| **Supervision given**    | Directly supervises the Civic Designer, Civic Technology Lead, Product Engineer, and Senior Product Engineer. Indirectly coordinates with the Project Manager and partner-agency leads on tiger-team work.                                                            |
 | **Supervision received** | Reports to the Chief of Staff. Receives strategic direction from the Executive Director while the role is being served on an interim basis.                                                                                                                              |
 
 **■ Position Summary**
 
-The Innovation Program Manager leads the day-to-day operations of OPI’s Innovation Lab — the portfolio that takes service problems surfaced by CitiStat or Director’s Office sponsorship and turns them into tested, adopted solutions. The role runs the Lab’s intake, scoping, and delivery routines; orchestrates tiger teams; sponsors civic-tech and service-design work; and coaches Lab staff (Civic Design and UX Lead, Civic Technology Lead, Senior Product Engineer, and Product Engineer) toward decision-ready outcomes.
+The Innovation Program Manager leads the day-to-day operations of OPI’s Innovation Lab — the portfolio that takes service problems surfaced by CitiStat or Director’s Office sponsorship and turns them into tested, adopted solutions. The role runs the Lab’s intake, scoping, and delivery routines; orchestrates tiger teams; sponsors civic-tech and service-design work; and coaches Lab staff (Civic Designer, Civic Technology Lead, Senior Product Engineer, and Product Engineer) toward decision-ready outcomes.
 
 Reporting administratively to the Chief of Staff, the Innovation Program Manager partners closely with the Executive Director (currently serving in this role on an interim basis), the Deputy Chief Performance Officer (CitiStat handoffs), and the Deputy Chief Data Officer (data and product collaboration). The role ensures Lab projects are framed for adoption from day one, evaluated honestly, and either scaled, sustained by the agency owner, or sunset with a clear lessons-learned record.
 
@@ -54,7 +54,7 @@ Reporting administratively to the Chief of Staff, the Innovation Program Manager
 
 **Civic Design and Civic Technology**
 
-- Direct the work of the Civic Design and UX Lead and the Civic Technology Lead; align design and technology approach with service-delivery realities.
+- Direct the work of the Civic Designer and the Civic Technology Lead; align design and technology approach with service-delivery realities.
 
 - Sponsor service blueprints, journey maps, prototypes, and tested civic-tech tools that are accessible, equitable, and sustainable.
 
@@ -116,6 +116,6 @@ Employees in this class work a conventional work week. This position may be requ
 
 **Supervision received.** Reports to the Chief of Staff. Receives strategic direction from the Executive Director while the role is being served on an interim basis.
 
-**Supervision given.** Directly supervises the Civic Design and UX Lead, Civic Technology Lead, Product Engineer, and Senior Product Engineer. Indirectly coordinates with the Project Manager and partner-agency leads on tiger-team work.
+**Supervision given.** Directly supervises the Civic Designer, Civic Technology Lead, Product Engineer, and Senior Product Engineer. Indirectly coordinates with the Project Manager and partner-agency leads on tiger-team work.
 
 *This Position Description reflects the OPI operating model. It describes the typical scope of the role and is not an exhaustive list of duties. OPI is an Equal Opportunity Employer; all qualified applicants will receive consideration without regard to race, color, religion, sex, sexual orientation, gender identity, national origin, disability, age, or veteran status.*

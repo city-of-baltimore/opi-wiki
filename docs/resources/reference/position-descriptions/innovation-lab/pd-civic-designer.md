@@ -1,34 +1,37 @@
-# PD — Civic Design and UX Lead
+# PD — Civic Designer
 
 {{ page_badge() }}
 
-> Position description for the Civic Design and UX Lead.
+> Position description for the Civic Designer.
 
 **CLASSIFICATION** Operations Officer III
 
 **PORTFOLIO** Innovation Lab
 
-**REPORTS TO** Innovation Program Manager
+**REPORTS TO** Innovation Program Manager (with interim portfolio oversight from the Executive Director)
 
-**INCUMBENT** Aspirational / Unfilled
+**INCUMBENT** Selenea Gibson
+
+**POSITION NUMBER** 53412
 
 **EFFECTIVE** OPI Reorganization
 
 **■ At a Glance**
 
-|                          |                                            |
-|--------------------------|--------------------------------------------|
-| **Working title**        | Civic Design and UX Lead                   |
-| **Classification**       | Operations Officer III                     |
-| **Portfolio**            | Innovation Lab                            |
-| **Reports to**           | Innovation Program Manager                 |
-| **Incumbent**            | Aspirational / Unfilled                    |
-| **Supervision given**    | Individual contributor.                    |
-| **Supervision received** | Reports to the Innovation Program Manager. |
+|                          |                                                                                                                                  |
+|--------------------------|----------------------------------------------------------------------------------------------------------------------------------|
+| **Working title**        | Civic Designer                                                                                                                   |
+| **Classification**       | Operations Officer III                                                                                                           |
+| **Portfolio**            | Innovation Lab                                                                                                                   |
+| **Reports to**           | Innovation Program Manager (with interim portfolio oversight from the Executive Director)                                        |
+| **Incumbent**            | Selenea Gibson                                                                                                                   |
+| **Position number**      | 53412                                                                                                                            |
+| **Supervision given**    | Individual contributor.                                                                                                          |
+| **Supervision received** | Reports to the Innovation Program Manager. Receives interim portfolio oversight from the Executive Director on active priorities. |
 
 **■ Position Summary**
 
-The Civic Design and UX Lead applies service design, applied research, and human-centered methods to improve how Baltimore delivers services. The role partners with agency teams and community stakeholders to uncover challenges, design responsive solutions, and support continuous improvement in city programs and services. The Civic Design and UX Lead plans workshops and research initiatives for cross-functional projects and helps embed practical, human-centered approaches across city government.
+The Civic Designer applies service design, applied research, and human-centered methods to improve how Baltimore delivers services. The role partners with agency teams and community stakeholders to uncover challenges, design responsive solutions, and support continuous improvement in city programs and services. The Civic Designer plans workshops and research initiatives for cross-functional projects and helps embed practical, human-centered approaches across city government.
 
 **■ Key Responsibilities**
 
@@ -106,7 +109,7 @@ Employees in this class work a conventional work week. Work is performed in an o
 
 **■ Supervision**
 
-**Supervision received.** Reports to the Innovation Program Manager.
+**Supervision received.** Reports to the Innovation Program Manager. Receives interim portfolio oversight from the Executive Director on active priorities.
 
 **Supervision given.** Individual contributor.
 
