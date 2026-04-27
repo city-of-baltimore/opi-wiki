@@ -49,7 +49,7 @@ def test_pd_header_cleanup_keeps_role_metadata() -> None:
 > Position description for the Project Manager.
 **DIRECTOR’S OFFICE · POSITION DESCRIPTION**
 **Project Manager**
-Mayor’s Office of Performance and Innovation · Baltimore City
+Mayor’s Office of Performance and Innovation · City of Baltimore
 **CLASSIFICATION** Operations Officer III
 **PORTFOLIO** Director's Office
 """
@@ -63,7 +63,7 @@ Mayor’s Office of Performance and Innovation · Baltimore City
     )
 
     assert "**DIRECTOR’S OFFICE · POSITION DESCRIPTION**" not in cleaned
-    assert "Mayor’s Office of Performance and Innovation · Baltimore City" not in cleaned
+    assert "Mayor’s Office of Performance and Innovation · City of Baltimore" not in cleaned
     assert "**CLASSIFICATION** Operations Officer III" in cleaned
     assert "**PORTFOLIO** Director's Office" in cleaned
 

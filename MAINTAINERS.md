@@ -59,7 +59,7 @@ When in doubt, model the voice on the [Letters from the Director](docs/about-us/
 - Letters from the Director
 - Position Descriptions Index (titles + summaries)
 
-**Baltimore City intranet (SharePoint):**
+**City of Baltimore intranet (SharePoint):**
 
 - Onboarding checklists (with PII)
 - Full Position Descriptions (with compensation)
