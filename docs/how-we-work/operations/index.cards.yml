@@ -22,6 +22,14 @@
   title: "SharePoint Operating System Strategy"
   body: "How OPI uses SharePoint as an internal operating system."
   href: sharepoint-operating-system-strategy/
+- meta: Collection
+  title: "Administrative Memos"
+  body: "Draft pages converted from memo-style guidance that still need review."
+  href: administrative-memos/
+- meta: Collection
+  title: "How-To Guides"
+  body: "Short step-based operational guides converted from source documents."
+  href: how-to/
 - meta: Template
   title: "Charter Template"
   body: "Template for chartering a new initiative or working group."

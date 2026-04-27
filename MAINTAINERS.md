@@ -85,6 +85,11 @@ Navigation is local to each section. Keep `mkdocs.yml` focused on site-wide
 runtime settings, and update the nearest `docs/**/.pages` file whenever a page
 is added, removed, renamed, or moved.
 
+For recurring operational source material, keep durable memo-style guidance in
+`docs/how-we-work/operations/administrative-memos/` and short step-based
+procedures in `docs/how-we-work/operations/how-to/` rather than scattering them
+across unrelated sections.
+
 ## Landing-page cards
 
 Card grids on section landing pages are shared UI, not one-off HTML snippets.

@@ -14,7 +14,7 @@ Protecting continuity, security, and OPI’s credibility through humane, predict
 
 **AUDIENCE** Departing staff, managers, AdminOps, IT
 
-**OWNER** Director's Office / AdminOps
+**OWNER** Director's Office
 
 **VERSION** v1.0 · May 2026
 
@@ -79,7 +79,7 @@ Or immediately, if shorter notice.
 
 **■ Portfolio-specific add-ons**
 
-**Director's Office / AdminOps**
+**Director's Office**
 
 Ensure portfolio visibility and decision support artifacts remain current and owned.
 

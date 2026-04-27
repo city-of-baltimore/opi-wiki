@@ -76,6 +76,13 @@ understands.
   cleanup includes duplicate boilerplate, stale scaffolding, or superseded
   copies that still have one canonical source of truth left in place.
 
+### Memo conversion rule
+
+- Before converting a memo-style source document, ask the clarifying questions
+  needed to resolve ambiguous dates, named contacts, publication posture, or
+  sensitive details. Do not silently choose among conflicting memo variants when
+  those points are unclear.
+
 ## Engineering Rules
 
 - Repo automation should prefer Python over complex shell when logic needs

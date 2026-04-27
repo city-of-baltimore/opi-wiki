@@ -1,4 +1,4 @@
-# On Admin Ops
+# On AdminOps
 
 {{ page_badge() }}
 

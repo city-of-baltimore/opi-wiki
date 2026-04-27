@@ -14,7 +14,7 @@ A structured 90-day playbook for new hires, managers, and onboarding buddies.
 
 **AUDIENCE** New hires, managers, onboarding buddies, AdminOps
 
-**OWNER** Director's Office / AdminOps
+**OWNER** Director's Office
 
 **VERSION** v1.0 · May 2026
 
@@ -93,7 +93,7 @@ In months two and three, the new hire begins owning a defined slice of work, shi
 
 Use the section for the portfolio you are joining. Managers should also use the manager section.
 
-**Director's Office / AdminOps**
+**Director's Office**
 
 Focus: portfolio visibility, decision support, communications, operations backbone, and quality assurance for public and executive artifacts.
 

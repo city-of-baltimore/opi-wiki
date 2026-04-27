@@ -1,0 +1,7 @@
+defaults:
+  owner: Chief of Staff
+  status: internal
+  display_badge: draft
+  last_reviewed: 2026-04-27
+  next_review: 2026-07-27
+  change_log: Created draft how-to pages from the April 2026 archive intake.

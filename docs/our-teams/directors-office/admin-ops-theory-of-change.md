@@ -1,8 +1,8 @@
-# Admin Ops Theory of Change
+# AdminOps Theory of Change
 
 {{ page_badge() }}
 
-> How Admin Ops moves from inputs to outcomes.
+> How AdminOps moves from inputs to outcomes.
 **SERVICE THEORY OF CHANGE · 05 OF 05**
 
 **AdminOps**

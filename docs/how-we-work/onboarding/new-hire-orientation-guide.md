@@ -14,7 +14,7 @@ Your first day, your first week, and what to expect at Baltimore’s Mayor’s O
 
 **AUDIENCE** New OPI staff
 
-**OWNER** Director's Office / AdminOps
+**OWNER** Director's Office
 
 **VERSION** v1.0 · May 2026
 
@@ -50,7 +50,7 @@ OPI is organized into four portfolios. Each portfolio has a lead and is responsi
 
 | **Portfolio**                | **Lead**                                       | **What it owns**                                                                         |
 |------------------------------|------------------------------------------------|------------------------------------------------------------------------------------------|
-| Director's Office / AdminOps | Rakeim Young, Chief of Staff                   | Operating backbone, intake, communications, knowledge management, and quality assurance. |
+| Director's Office | Rakeim Young, Chief of Staff                   | Operating backbone, intake, communications, knowledge management, and quality assurance. |
 | Performance and CitiStat     | Danny Heller, Deputy Chief Performance Officer | CitiStat method, agency performance plans, KPIs, follow-up, and sustainment monitoring.  |
 | Data and Analytics           | Jason Howard, PhD, Deputy Chief Data Officer   | Data platform, analytics, governance, open data, GIS, and AI/data readiness.             |
 | Innovation Lab               | Dartanion Swift-Williams (interim)             | Service design, product discovery, civic technology, AI pilots, and operational tools.   |

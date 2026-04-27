@@ -14,7 +14,7 @@ Health, leave, retirement, and time-off benefits for OPI staff covered by the MA
 
 **AUDIENCE** OPI staff covered by MAPS
 
-**OWNER** Director's Office / AdminOps · HR review pending
+**OWNER** Director's Office · HR review pending
 
 **VERSION** v1.0 (DRAFT) · May 2026
 

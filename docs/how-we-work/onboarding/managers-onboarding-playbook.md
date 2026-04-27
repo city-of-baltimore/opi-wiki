@@ -14,7 +14,7 @@ A practical guide for OPI managers — how to make new hires productive, connect
 
 **AUDIENCE** All OPI managers
 
-**OWNER** Director's Office / AdminOps
+**OWNER** Director's Office
 
 **VERSION** v1.0 · May 2026
 

@@ -20,6 +20,9 @@ Every role on the team has a published position description. The full index live
 This page is the internal roster reference. For the public-facing narrative, team
 methods, and portfolio pages, start in [Our Teams](../../our-teams/index.md).
 
+For a narrower directory view that omits raw phone fields from the archive
+contact sheet, use [Staff Directory](staff-directory.md).
+
 **■ How to read this document**
 
 This roster lists every active and pending OPI position for FY27. Roles are grouped by portfolio — the team a person works with day to day — and labeled by cost center — the FY27 budget line that funds the position. Portfolios and cost centers do not always match one-to-one; the Director’s Office, for example, includes positions funded under AdminOps and positions funded under the Innovation Lab cost center.
