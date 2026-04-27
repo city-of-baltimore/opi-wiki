@@ -147,6 +147,11 @@ Every quarter, run `./scripts/verify.sh` (which includes `mkdocs build --strict`
 
 Email the relevant section owner with a one-line ask: "Is this still accurate? Any updates?"
 
+The shell entrypoint now delegates to a structured Python verification runner,
+so maintainers get per-step timing and failure summaries without having to
+change their local workflow. If you need a machine-readable report for CI or
+triage, run `./scripts/verify.sh --json-output /path/to/report.json`.
+
 ## Bus factor mitigation
 
 This role has a high bus factor by design (it's one person). Mitigations:

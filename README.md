@@ -28,9 +28,15 @@ poetry run mkdocs build
 
 # run the maintainer verification pass
 ./scripts/verify.sh
+
+# optional: write a machine-readable verification report
+./scripts/verify.sh --json-output /tmp/opi-verify.json
 ```
 
 `poetry run mkdocs serve` runs at <http://127.0.0.1:8000> with live reload.
+`./scripts/verify.sh` remains the stable entrypoint, but now delegates to a
+structured Python runner that emits step timings and can optionally write a
+JSON report for CI or debugging.
 
 ## Build platform note
 
