@@ -3,13 +3,12 @@
 
 from __future__ import annotations
 
-import sys
-from pathlib import Path
+try:
+    from check_cli import REPO_ROOT, ensure_repo_root_on_path, run_issue_check
+except ModuleNotFoundError:
+    from scripts.check_cli import REPO_ROOT, ensure_repo_root_on_path, run_issue_check
 
-REPO_ROOT = Path(__file__).resolve().parents[1]
-if str(REPO_ROOT) not in sys.path:
-    sys.path.insert(0, str(REPO_ROOT))
-
+ensure_repo_root_on_path()
 
 SITE_DIR = REPO_ROOT / "site"
 
@@ -17,22 +16,13 @@ SITE_DIR = REPO_ROOT / "site"
 def main() -> int:
     """Validate a few high-signal accessibility invariants in built HTML."""
 
-    try:
-        from scripts.repo_tools.accessibility import find_accessibility_issues
+    from scripts.repo_tools.accessibility import find_accessibility_issues
 
-        issues = find_accessibility_issues(SITE_DIR)
-    except Exception as error:  # noqa: BLE001
-        print(f"Accessibility smoke check failed unexpectedly: {error}", file=sys.stderr)
-        return 1
-
-    if issues:
-        print("Accessibility smoke check failed:", file=sys.stderr)
-        for issue in issues:
-            print(f"  - {issue}", file=sys.stderr)
-        return 1
-
-    print("Accessibility smoke check passed.")
-    return 0
+    return run_issue_check(
+        check_name="Accessibility smoke check",
+        success_message="Accessibility smoke check passed.",
+        issue_finder=lambda: find_accessibility_issues(SITE_DIR),
+    )
 
 
 if __name__ == "__main__":

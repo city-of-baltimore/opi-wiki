@@ -3,12 +3,12 @@
 
 from __future__ import annotations
 
-import sys
-from pathlib import Path
+try:
+    from check_cli import REPO_ROOT, ensure_repo_root_on_path, run_issue_check
+except ModuleNotFoundError:
+    from scripts.check_cli import REPO_ROOT, ensure_repo_root_on_path, run_issue_check
 
-REPO_ROOT = Path(__file__).resolve().parents[1]
-if str(REPO_ROOT) not in sys.path:
-    sys.path.insert(0, str(REPO_ROOT))
+ensure_repo_root_on_path()
 
 
 SCAN_PATHS = [
@@ -23,22 +23,13 @@ SCAN_PATHS = [
 def main() -> int:
     """Check editorial Markdown for discouraged brand-term casing."""
 
-    try:
-        from scripts.repo_tools.brand_terms import find_brand_term_issues
+    from scripts.repo_tools.brand_terms import find_brand_term_issues
 
-        issues = find_brand_term_issues(SCAN_PATHS)
-    except Exception as error:  # noqa: BLE001
-        print(f"Brand-term validation failed unexpectedly: {error}", file=sys.stderr)
-        return 1
-
-    if issues:
-        print("Brand-term validation failed:", file=sys.stderr)
-        for issue in issues:
-            print(f"  - {issue}", file=sys.stderr)
-        return 1
-
-    print("Brand terms validated.")
-    return 0
+    return run_issue_check(
+        check_name="Brand-term validation",
+        success_message="Brand terms validated.",
+        issue_finder=lambda: find_brand_term_issues(SCAN_PATHS),
+    )
 
 
 if __name__ == "__main__":

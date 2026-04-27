@@ -3,13 +3,12 @@
 
 from __future__ import annotations
 
-import sys
-from pathlib import Path
+try:
+    from check_cli import REPO_ROOT, ensure_repo_root_on_path, run_issue_check
+except ModuleNotFoundError:
+    from scripts.check_cli import REPO_ROOT, ensure_repo_root_on_path, run_issue_check
 
-REPO_ROOT = Path(__file__).resolve().parents[1]
-if str(REPO_ROOT) not in sys.path:
-    sys.path.insert(0, str(REPO_ROOT))
-
+ensure_repo_root_on_path()
 
 DOCS_DIR = REPO_ROOT / "docs"
 
@@ -17,22 +16,13 @@ DOCS_DIR = REPO_ROOT / "docs"
 def main() -> int:
     """Run the raw HTML link validator and emit human-readable failures."""
 
-    try:
-        from scripts.repo_tools.html_links import find_unresolved_html_links
+    from scripts.repo_tools.html_links import find_unresolved_html_links
 
-        errors = find_unresolved_html_links(DOCS_DIR)
-    except Exception as error:  # noqa: BLE001
-        print(f"Raw HTML link validation failed unexpectedly: {error}", file=sys.stderr)
-        return 1
-
-    if errors:
-        print("Raw HTML link validation failed:", file=sys.stderr)
-        for error in errors:
-            print(f"  - {error}", file=sys.stderr)
-        return 1
-
-    print("Raw HTML links validated.")
-    return 0
+    return run_issue_check(
+        check_name="Raw HTML link validation",
+        success_message="Raw HTML links validated.",
+        issue_finder=lambda: find_unresolved_html_links(DOCS_DIR),
+    )
 
 
 if __name__ == "__main__":

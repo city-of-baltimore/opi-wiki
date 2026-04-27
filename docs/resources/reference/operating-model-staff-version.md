@@ -153,14 +153,10 @@ OPI’s services are designed to work as a cycle, not as silos.
 
 **■ Where to learn more**
 
-- Operating Model master — held by leadership; the full governance and decision-rights detail.
-
 - OPI Foundations Document Set — onboarding, operations, performance standards, charters, intake SOP.
 
-- CitiStat Method Playbook (Wave 4, this set).
+- CitiStat Method Playbook.
 
-- Tiger Teams Playbook (Wave 4, this set).
-
-- OPI Wiki on SharePoint — the canonical home for everything above.
+- Tiger Teams Playbook.
 
 *Owned by the Director’s Office. Reviewed quarterly. Update whenever portfolios, services, or governance change.*
