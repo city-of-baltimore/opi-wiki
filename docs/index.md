@@ -24,9 +24,9 @@ Every page on this site is a Markdown document in a [GitHub repository](https://
 
 ## Recently updated
 
-- [Letter — On OPI Foundations](about-us/letters-from-the-director/on-opi-foundations.md) <span class="opi-pill approved">Approved</span>
-- [CitiStat Strategic Framework](our-teams/performance-and-citistat/citistat-strategic-framework.md) <span class="opi-pill approved">Approved</span>
-- [Glossary of OPI Terms](resources/reference/glossary.md) <span class="opi-pill approved">Approved</span>
+- [Letter — On OPI Foundations](about-us/letters-from-the-director/on-opi-foundations.md) {{ badge("approved") }}
+- [CitiStat Strategic Framework](our-teams/performance-and-citistat/citistat-strategic-framework.md) {{ badge("approved") }}
+- [Glossary of OPI Terms](resources/reference/glossary.md) {{ badge("approved") }}
 
 ---
 

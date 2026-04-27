@@ -1,6 +1,6 @@
 # Innovation Lab Strategy
 
-<span class="opi-pill approved">Approved</span>
+{{ page_badge() }}
 
 > What the Innovation Lab is for, and how it operates.
 **STRATEGY**

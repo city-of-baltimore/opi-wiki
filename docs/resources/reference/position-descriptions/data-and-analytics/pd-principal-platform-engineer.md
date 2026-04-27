@@ -1,6 +1,6 @@
 # PD — Principal Platform Engineer
 
-<span class="opi-pill internal">Position Description</span>
+{{ page_badge() }}
 
 > Position description for the Principal Platform Engineer.
 

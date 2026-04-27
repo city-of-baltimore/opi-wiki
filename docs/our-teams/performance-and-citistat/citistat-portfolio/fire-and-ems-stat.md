@@ -1,6 +1,6 @@
 # Fire and EMS Stat
 
-<span class="opi-pill approved">Approved</span>
+{{ page_badge() }}
 
 > CitiStat brief for Fire and EMS.
 

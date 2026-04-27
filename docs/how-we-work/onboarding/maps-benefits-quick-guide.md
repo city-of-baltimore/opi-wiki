@@ -1,6 +1,6 @@
 # MAPS Benefits Quick Guide
 
-<span class="opi-pill draft">Draft</span>
+{{ page_badge() }}
 
 > A plain-language overview of MAPS benefits available to OPI staff.
 

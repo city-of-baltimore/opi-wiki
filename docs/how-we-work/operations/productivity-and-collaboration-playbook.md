@@ -1,6 +1,6 @@
 # Productivity and Collaboration Playbook
 
-<span class="opi-pill approved">Approved</span>
+{{ page_badge() }}
 
 > Tools, rituals, and conventions for getting work done together.
 

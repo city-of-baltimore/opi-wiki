@@ -1,6 +1,6 @@
 # On Trustworthy Data
 
-<span class="opi-pill approved">Approved</span>
+{{ page_badge() }}
 
 > Why trustworthy data is a precondition for everything else.
 

@@ -1,6 +1,6 @@
 # PD — Executive Director and Chief Data Officer
 
-<span class="opi-pill internal">Position Description</span>
+{{ page_badge() }}
 
 > Position description for the Executive Director / CDO.
 

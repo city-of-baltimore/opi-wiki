@@ -1,6 +1,6 @@
 # Charter Template
 
-<span class="opi-pill internal">Template</span>
+{{ page_badge() }}
 
 > Template for chartering a new initiative or working group.
 

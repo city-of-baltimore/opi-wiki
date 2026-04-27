@@ -1,6 +1,6 @@
 # Solid Waste Stat
 
-<span class="opi-pill approved">Approved</span>
+{{ page_badge() }}
 
 > CitiStat brief for Solid Waste.
 

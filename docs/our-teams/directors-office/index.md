@@ -1,6 +1,6 @@
 # Director's Office
 
-<span class="opi-pill approved">Approved</span>
+{{ page_badge() }}
 
 > The Executive Director / Chief Data Officer's office, plus the Admin Ops function that runs the operational backbone of OPI.
 

@@ -1,6 +1,6 @@
 # QA Standards
 
-<span class="opi-pill approved">Approved</span>
+{{ page_badge() }}
 
 > Quality bars for everything OPI ships.
 

@@ -1,6 +1,6 @@
 # Contributing
 
-<span class="opi-pill approved">Approved</span>
+{{ page_badge() }}
 
 > How to suggest a change, report a problem, or propose new content.
 

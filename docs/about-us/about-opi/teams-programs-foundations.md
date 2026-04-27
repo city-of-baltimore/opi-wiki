@@ -1,6 +1,6 @@
 # Teams, Programs, Foundations
 
-<span class="opi-pill approved">Approved</span>
+{{ page_badge() }}
 
 > The full lineup of teams, recurring programs, and foundational practices.
 **TEAMS, PROGRAMS & FOUNDATIONS**

@@ -1,6 +1,6 @@
 # Operating Principles and Culture
 
-<span class="opi-pill approved">Approved</span>
+{{ page_badge() }}
 
 > How we work together — the rules of the road inside OPI.
 **Operating Principles and Culture**

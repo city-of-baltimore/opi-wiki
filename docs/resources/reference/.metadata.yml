@@ -6,5 +6,8 @@ defaults:
   change_log: Normalized review metadata for reference pages.
 
 pages:
+  theory-of-change-summaries.md:
+    display_badge: reference
   wiki-knowledge-base-structure.md:
+    display_badge: reference
     status: internal

@@ -1,6 +1,6 @@
 # About Data Analytics
 
-<span class="opi-pill approved">Approved</span>
+{{ page_badge() }}
 
 > What the Data and Analytics team does inside OPI.
 **ABOUT · SERVICE 02 OF 05**

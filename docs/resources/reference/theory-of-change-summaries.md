@@ -1,6 +1,6 @@
 # Theory of Change Summaries
 
-<span class="opi-pill internal">Reference</span>
+{{ page_badge() }}
 
 > All five OPI theories of change in one place.
 

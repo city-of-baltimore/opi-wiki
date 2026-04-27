@@ -1,6 +1,6 @@
 # Problem Statement Template
 
-<span class="opi-pill internal">Template</span>
+{{ page_badge() }}
 
 > A structured way to frame a problem before scoping a solution.
 

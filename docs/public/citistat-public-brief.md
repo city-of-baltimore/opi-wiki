@@ -1,6 +1,6 @@
 # CitiStat — Public Brief
 
-<span class="opi-pill approved">Approved</span>
+{{ page_badge() }}
 
 > Plain-language public brief on CitiStat.
 

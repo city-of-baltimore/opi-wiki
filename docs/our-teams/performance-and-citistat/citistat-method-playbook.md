@@ -1,6 +1,6 @@
 # CitiStat Method Playbook
 
-<span class="opi-pill approved">Approved</span>
+{{ page_badge() }}
 
 > The end-to-end CitiStat method — how a Stat session actually runs.
 **METHOD PLAYBOOK**

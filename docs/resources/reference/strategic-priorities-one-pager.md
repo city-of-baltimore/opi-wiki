@@ -1,6 +1,6 @@
 # Strategic Priorities One-Pager
 
-<span class="opi-pill approved">Approved</span>
+{{ page_badge() }}
 
 > OPI's strategic priorities, on one page.
 

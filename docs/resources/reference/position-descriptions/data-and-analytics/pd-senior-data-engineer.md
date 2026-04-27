@@ -1,6 +1,6 @@
 # PD — Senior Data Engineer
 
-<span class="opi-pill internal">Position Description</span>
+{{ page_badge() }}
 
 > Position description for the Senior Data Engineer.
 

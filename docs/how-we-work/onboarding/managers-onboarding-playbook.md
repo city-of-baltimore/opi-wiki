@@ -1,6 +1,6 @@
 # Managers' Onboarding Playbook
 
-<span class="opi-pill approved">Approved</span>
+{{ page_badge() }}
 
 > What managers do — and don't do — to set new hires up for success.
 

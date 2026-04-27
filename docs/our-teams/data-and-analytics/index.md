@@ -1,6 +1,6 @@
 # Data and Analytics
 
-<span class="opi-pill approved">Approved</span>
+{{ page_badge() }}
 
 > Data governance, analytics, data engineering, and platform engineering for the City of Baltimore.
 

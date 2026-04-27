@@ -1,6 +1,6 @@
 # On OPI Foundations
 
-<span class="opi-pill approved">Approved</span>
+{{ page_badge() }}
 
 > Why we're publishing this body of work, and what it's for.
 

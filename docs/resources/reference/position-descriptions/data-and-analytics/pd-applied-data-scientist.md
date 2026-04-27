@@ -1,6 +1,6 @@
 # PD — Applied Data Scientist
 
-<span class="opi-pill internal">Position Description</span>
+{{ page_badge() }}
 
 > Position description for the Applied Data Scientist.
 

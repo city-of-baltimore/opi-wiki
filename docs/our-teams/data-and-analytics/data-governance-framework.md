@@ -1,6 +1,6 @@
 # Data Governance Framework
 
-<span class="opi-pill approved">Approved</span>
+{{ page_badge() }}
 
 > The framework OPI uses to govern city data assets.
 **STRATEGY FRAMEWORK**

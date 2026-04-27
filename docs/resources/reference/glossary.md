@@ -1,6 +1,6 @@
 # Glossary of OPI Terms
 
-<span class="opi-pill approved">Approved</span>
+{{ page_badge() }}
 
 > Plain-language definitions of every term used inside OPI.
 

@@ -1,6 +1,6 @@
 # Digital Product Methodology
 
-<span class="opi-pill approved">Approved</span>
+{{ page_badge() }}
 
 > How OPI ships digital products inside city government.
 **METHOD GUIDE**

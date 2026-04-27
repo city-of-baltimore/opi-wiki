@@ -1,6 +1,6 @@
 # Wiki Knowledge Base Structure
 
-<span class="opi-pill internal">Reference</span>
+{{ page_badge() }}
 
 > How this wiki is organized and why.
 

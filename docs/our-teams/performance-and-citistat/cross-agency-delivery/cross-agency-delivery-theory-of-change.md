@@ -1,6 +1,6 @@
 # Cross-Agency Delivery Theory of Change
 
-<span class="opi-pill approved">Approved</span>
+{{ page_badge() }}
 
 > How cross-agency delivery moves from inputs to outcomes.
 **SERVICE THEORY OF CHANGE · 04 OF 05**

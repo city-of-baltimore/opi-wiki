@@ -1,6 +1,6 @@
 # Offboarding Process and Checklist
 
-<span class="opi-pill approved">Approved</span>
+{{ page_badge() }}
 
 > How we handle transitions, knowledge handoff, and access changes.
 

@@ -1,6 +1,6 @@
 # Position Descriptions
 
-<span class="opi-pill approved">Approved</span>
+{{ page_badge() }}
 
 > The full index of OPI position descriptions.
 

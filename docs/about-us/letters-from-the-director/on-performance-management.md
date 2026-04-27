@@ -1,6 +1,6 @@
 # On Performance Management
 
-<span class="opi-pill approved">Approved</span>
+{{ page_badge() }}
 
 > What modern performance management looks like inside a city government.
 

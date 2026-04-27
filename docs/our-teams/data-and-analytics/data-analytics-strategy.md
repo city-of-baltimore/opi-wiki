@@ -1,6 +1,6 @@
 # Data Analytics Strategy
 
-<span class="opi-pill approved">Approved</span>
+{{ page_badge() }}
 
 > OPI's strategy for citywide data and analytics work.
 **STRATEGY**

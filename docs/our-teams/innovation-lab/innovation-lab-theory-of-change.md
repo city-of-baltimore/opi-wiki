@@ -1,6 +1,6 @@
 # Innovation Lab Theory of Change
 
-<span class="opi-pill approved">Approved</span>
+{{ page_badge() }}
 
 > How the Innovation Lab moves from inputs to outcomes.
 **SERVICE THEORY OF CHANGE · 03 OF 05**

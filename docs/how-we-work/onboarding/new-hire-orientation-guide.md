@@ -1,6 +1,6 @@
 # New Hire Orientation Guide
 
-<span class="opi-pill approved">Approved</span>
+{{ page_badge() }}
 
 > What a new hire's first weeks at OPI look like.
 

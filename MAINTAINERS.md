@@ -92,6 +92,13 @@ Keep the card content in the nearest `*.cards.yml` file and render it through
 the shared `card_grid_from(...)` macro so markup, link affordances, and
 accessibility behavior stay consistent across sections.
 
+## Page badges
+
+Visible status/type pills are shared UI too. Store badge intent in the nearest
+`.metadata.yml` file with `display_badge` values such as `approved`, `draft`,
+`template`, `reference`, or `position-description`, and render them with the
+shared `page_badge()` or `badge(...)` macros instead of inline HTML spans.
+
 ## Build platform posture
 
 This repo currently runs on MkDocs 1.x and should stay there unless the team

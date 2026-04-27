@@ -1,6 +1,6 @@
 # PD — Civic Design and UX Lead
 
-<span class="opi-pill internal">Position Description</span>
+{{ page_badge() }}
 
 > Position description for the Civic Design and UX Lead.
 

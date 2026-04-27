@@ -1,6 +1,6 @@
 # About Performance Management
 
-<span class="opi-pill approved">Approved</span>
+{{ page_badge() }}
 
 > What performance management means inside Baltimore City government.
 **ABOUT · SERVICE 01 OF 05**

@@ -1,6 +1,6 @@
 # On Innovation and Civic Design
 
-<span class="opi-pill approved">Approved</span>
+{{ page_badge() }}
 
 > What it means to bring innovation discipline and civic design into city hall.
 

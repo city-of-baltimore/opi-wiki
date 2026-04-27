@@ -1,6 +1,6 @@
 # Mission, Vision, Identity
 
-<span class="opi-pill approved">Approved</span>
+{{ page_badge() }}
 
 > Why this office exists, where it's heading, and what it stands for.
 **Mission, Vision, and Identity**

@@ -1,6 +1,6 @@
 # SharePoint Operating System Strategy
 
-<span class="opi-pill approved">Approved</span>
+{{ page_badge() }}
 
 > How OPI uses SharePoint as an internal operating system.
 

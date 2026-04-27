@@ -1,6 +1,6 @@
 # Performance and CitiStat
 
-<span class="opi-pill approved">Approved</span>
+{{ page_badge() }}
 
 > Citywide performance management, the CitiStat methodology, cross-agency delivery.
 

@@ -1,6 +1,6 @@
 # Baltimore Intelligence Center Engagement Guide
 
-<span class="opi-pill approved">Approved</span>
+{{ page_badge() }}
 
 > How the Innovation Lab engages with the Baltimore Intelligence Center.
 

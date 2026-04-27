@@ -1,6 +1,6 @@
 # CitiStat Method — Staff Quick Reference
 
-<span class="opi-pill internal">Reference</span>
+{{ page_badge() }}
 
 > A one-page quick-reference for OPI staff running Stats.
 

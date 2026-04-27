@@ -4,3 +4,9 @@ defaults:
   last_reviewed: 2026-04-15
   next_review: 2026-07-15
   change_log: Normalized review metadata for operations pages.
+
+pages:
+  charter-template.md:
+    display_badge: template
+  problem-statement-template.md:
+    display_badge: template

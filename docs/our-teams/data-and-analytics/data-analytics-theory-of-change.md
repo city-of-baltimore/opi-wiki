@@ -1,6 +1,6 @@
 # Data Analytics Theory of Change
 
-<span class="opi-pill approved">Approved</span>
+{{ page_badge() }}
 
 > How data and analytics work moves from inputs to outcomes.
 **SERVICE THEORY OF CHANGE · 02 OF 05**

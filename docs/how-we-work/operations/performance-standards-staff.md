@@ -1,6 +1,6 @@
 # Performance Standards (Staff)
 
-<span class="opi-pill approved">Approved</span>
+{{ page_badge() }}
 
 > What performance looks like for individual contributors at OPI.
 

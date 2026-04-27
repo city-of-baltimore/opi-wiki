@@ -1,6 +1,7 @@
 defaults:
   owner: OPI Director's Office
   status: approved
+  display_badge: approved
   last_reviewed: 2026-04-15
   next_review: 2026-07-15
   change_log: Added structured review metadata coverage and validation.

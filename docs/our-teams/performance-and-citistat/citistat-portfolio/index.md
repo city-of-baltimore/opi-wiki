@@ -1,6 +1,6 @@
 # CitiStat Portfolio
 
-<span class="opi-pill approved">Approved</span>
+{{ page_badge() }}
 
 > The full CitiStat portfolio — every Stat, with its brief, in one place.
 

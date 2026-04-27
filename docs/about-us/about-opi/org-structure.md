@@ -1,6 +1,6 @@
 # Org Structure
 
-<span class="opi-pill approved">Approved</span>
+{{ page_badge() }}
 
 > Who reports to whom, and how decision rights flow.
 

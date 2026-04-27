@@ -39,3 +39,22 @@ def define_env(env: MacroEnvironment) -> None:
                 f"Available sections: {available_sections}"
             )
         return Markup(render_card_grid(sections[section]))
+
+    @env.macro
+    def badge(value: str) -> Markup:
+        """Render a shared display badge by token."""
+
+        from scripts.repo_tools.badges import render_badge
+
+        return Markup(render_badge(value))
+
+    @env.macro
+    def page_badge() -> Markup:
+        """Render the current page's configured display badge."""
+
+        from scripts.repo_tools.badges import render_badge, resolve_page_badge_value
+        from scripts.repo_tools.metadata import resolve_page_metadata
+
+        page_path = DOCS_DIR / env.page.file.src_path
+        metadata = resolve_page_metadata(DOCS_DIR, page_path)
+        return Markup(render_badge(resolve_page_badge_value(metadata)))

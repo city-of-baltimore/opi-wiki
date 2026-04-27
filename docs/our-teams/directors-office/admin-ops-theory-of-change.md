@@ -1,6 +1,6 @@
 # Admin Ops Theory of Change
 
-<span class="opi-pill approved">Approved</span>
+{{ page_badge() }}
 
 > How Admin Ops moves from inputs to outcomes.
 **SERVICE THEORY OF CHANGE · 05 OF 05**

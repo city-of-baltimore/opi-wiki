@@ -1,6 +1,6 @@
 # Onboarding Process and Checklist
 
-<span class="opi-pill approved">Approved</span>
+{{ page_badge() }}
 
 > The end-to-end onboarding workflow with concrete checkpoints.
 

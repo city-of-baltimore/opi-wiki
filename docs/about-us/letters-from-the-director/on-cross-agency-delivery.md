@@ -1,6 +1,6 @@
 # On Cross-Agency Delivery
 
-<span class="opi-pill approved">Approved</span>
+{{ page_badge() }}
 
 > Why some of the city's most important problems can only be solved across agency boundaries.
 

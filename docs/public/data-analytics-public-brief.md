@@ -1,6 +1,6 @@
 # Data and Analytics — Public Brief
 
-<span class="opi-pill approved">Approved</span>
+{{ page_badge() }}
 
 > Plain-language public brief on the Data and Analytics team.
 

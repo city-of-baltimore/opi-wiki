@@ -1,6 +1,6 @@
 # Team and Roles
 
-<span class="opi-pill approved">Approved</span>
+{{ page_badge() }}
 
 > Who's on the OPI team for FY27 and how the roles are organized.
 

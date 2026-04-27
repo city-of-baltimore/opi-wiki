@@ -1,6 +1,6 @@
 # Performance Management Strategy
 
-<span class="opi-pill approved">Approved</span>
+{{ page_badge() }}
 
 > OPI's strategy for citywide performance management.
 **STRATEGY**

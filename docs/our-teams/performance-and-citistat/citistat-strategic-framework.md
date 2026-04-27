@@ -1,6 +1,6 @@
 # CitiStat Strategic Framework
 
-<span class="opi-pill approved">Approved</span>
+{{ page_badge() }}
 
 > The strategic frame that gives every Stat session its bearings.
 **STRATEGIC FRAMEWORK**

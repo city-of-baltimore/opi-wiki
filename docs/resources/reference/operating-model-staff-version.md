@@ -1,6 +1,6 @@
 # Operating Model (Staff Version)
 
-<span class="opi-pill approved">Approved</span>
+{{ page_badge() }}
 
 > The OPI operating model written for OPI staff.
 

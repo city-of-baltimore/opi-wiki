@@ -1,6 +1,6 @@
 # Website Copy Master
 
-<span class="opi-pill approved">Approved</span>
+{{ page_badge() }}
 
 > The master copy doc for the public OPI website.
 

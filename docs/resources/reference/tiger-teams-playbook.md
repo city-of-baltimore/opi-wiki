@@ -1,6 +1,6 @@
 # Tiger Teams Playbook
 
-<span class="opi-pill approved">Approved</span>
+{{ page_badge() }}
 
 > How OPI runs short-cycle, cross-functional Tiger Teams.
 

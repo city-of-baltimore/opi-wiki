@@ -1,6 +1,6 @@
 # About Cross-Agency Delivery
 
-<span class="opi-pill approved">Approved</span>
+{{ page_badge() }}
 
 > How OPI runs work that crosses agency lines.
 

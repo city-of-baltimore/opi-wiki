@@ -1,6 +1,6 @@
 # PD — Product Engineer (Full Stack)
 
-<span class="opi-pill internal">Position Description</span>
+{{ page_badge() }}
 
 > Position description for the Product Engineer (Full Stack).
 
