@@ -6,9 +6,9 @@
 
 **CLASSIFICATION** Operations Officer III (Non-Civil Service)
 
-**PORTFOLIO** Director's Office
+**PORTFOLIO** Innovation Lab
 
-**REPORTS TO** Innovation Program Manager (with technical direction from the Civic Technology Lead)
+**REPORTS TO** Senior Product Engineer (with interim portfolio oversight from the Executive Director)
 
 **INCUMBENT** Xander Jake de los Santos
 
@@ -22,12 +22,12 @@
 |--------------------------|---------------------------------------------------------------------------------------------------------|
 | **Working title**        | Product Engineer                                                                           |
 | **Classification**       | Operations Officer III (Non-Civil Service)                                                              |
-| **Portfolio**            | Director's Office                                                                                       |
-| **Reports to**           | Innovation Program Manager (with technical direction from the Civic Technology Lead)                    |
+| **Portfolio**            | Innovation Lab                                                                                          |
+| **Reports to**           | Senior Product Engineer (with interim portfolio oversight from the Executive Director)                  |
 | **Incumbent**            | Xander Jake de los Santos                                                                               |
 | **Position number**      | 70431                                                                                                   |
 | **Supervision given**    | Individual contributor.                                                                                 |
-| **Supervision received** | Reports to the Innovation Program Manager. Receives technical direction from the Civic Technology Lead. |
+| **Supervision received** | Reports to the Senior Product Engineer. Receives interim portfolio oversight from the Executive Director. |
 
 **■ Position Summary**
 
@@ -113,7 +113,7 @@ Employees in this class work a conventional work week. Work is performed in an o
 
 **■ Supervision**
 
-**Supervision received.** Reports to the Innovation Program Manager. Receives technical direction from the Civic Technology Lead.
+**Supervision received.** Reports to the Senior Product Engineer. Receives interim portfolio oversight from the Executive Director.
 
 **Supervision given.** Individual contributor.
 

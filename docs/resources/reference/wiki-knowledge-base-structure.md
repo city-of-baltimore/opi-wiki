@@ -191,7 +191,7 @@ Every Wiki page and every controlled artifact carries a small set of tags so the
 
 **Taxonomy owner (DCDO with Chief of Staff).** Owns term sets, sensitivity labels, and metadata rules.
 
-**Service owners (DCPO, DCDO, Innovation Lab Lead).** Own content for their service playbooks and standards.
+**Service owners (DCPO, DCDO, Innovation Lab portfolio lead).** Own content for their service playbooks and standards.
 
 **Ops librarian (AdminOps).** Audits broken links, archives stale content, enforces naming conventions.
 

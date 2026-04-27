@@ -23,12 +23,6 @@ portfolios:
         title: Special Assistant
       - name: Rashaad Tillery
         title: CitiStat Inspector
-      - name: Audrey Randazzo
-        title: Communications and Partnerships Lead
-      - name: Chiemeka Okeoma
-        title: Senior Product Engineer
-      - name: Xander Jake de los Santos
-        title: Product Engineer
 
   - key: performance-and-citistat
     label: Performance and CitiStat
@@ -90,12 +84,20 @@ portfolios:
     leadership_edge_label: interim oversight
     cost_center: Innovation Lab
     primary_value: Turns service problems into designed, usable, testable solutions; coordinates handoff to data, engineering, agency, or BCIT partners.
-    table_lead: Dartanion Swift-Williams, interim until Innovation Program Manager is identified
-    staff_alignment_note: Dartanion Swift-Williams serves as interim portfolio lead. Innovation work is currently supported through a cross-portfolio model and will be formalized when the Innovation Program Manager role is identified and filled.
+    table_lead: Dartanion Swift-Williams, interim portfolio lead
     staff:
-      - name: Dedicated roles
-        title: Standing up in FY27
+      - name: Open / Aspirational
+        title: Innovation Program Manager
         edge_style: dotted
-      - name: Contributors work from
-        title: Home portfolios
+      - name: Audrey Randazzo
+        title: Communications and Partnerships Lead
+      - name: Chiemeka Okeoma
+        title: Senior Product Engineer
+      - name: Xander Jake de los Santos
+        title: Product Engineer
+      - name: Open / Aspirational
+        title: Civic Technology Lead
+        edge_style: dotted
+      - name: Open / Aspirational
+        title: Civic Design and UX Lead
         edge_style: dotted

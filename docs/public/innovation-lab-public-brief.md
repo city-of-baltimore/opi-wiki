@@ -106,7 +106,7 @@ CitiStat surfaces what is not working. Citywide Data and Analytics explains why.
 
 |                |                                                                                      |
 |----------------|--------------------------------------------------------------------------------------|
-| **Lead**       | Innovation Lab Director (interim: Dartanion Swift-Williams, Executive Director, OPI) |
+| **Lead**       | Innovation Lab interim portfolio lead (Dartanion Swift-Williams, Executive Director, OPI) |
 | **Front door** | OPI Director’s Office · single intake                                                |
 | **Web**        | opi.baltimorecity.gov/innovation-lab                                                 |
 | **Open data**  | data.baltimorecity.gov (Open Baltimore)                                              |

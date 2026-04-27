@@ -10,7 +10,7 @@
 
 **REPORTS TO** Innovation Program Manager
 
-**INCUMBENT** Open / Posting
+**INCUMBENT** Aspirational / Unfilled
 
 **EFFECTIVE** OPI Reorganization
 
@@ -20,9 +20,9 @@
 |--------------------------|--------------------------------------------|
 | **Working title**        | Civic Design and UX Lead                   |
 | **Classification**       | Operations Officer III                     |
-| **Portfolio**            | Director's Office                          |
+| **Portfolio**            | Innovation Lab                            |
 | **Reports to**           | Innovation Program Manager                 |
-| **Incumbent**            | Open — to be posted                        |
+| **Incumbent**            | Aspirational / Unfilled                    |
 | **Supervision given**    | Individual contributor.                    |
 | **Supervision received** | Reports to the Innovation Program Manager. |
 

@@ -44,4 +44,12 @@ def test_redirect_duplicate_destinations_require_allowlist(tmp_path: Path) -> No
 def test_redirect_allowlist_stays_small_and_explicit() -> None:
     """Intentional many-to-one redirects should remain rare and documented."""
 
-    assert ALLOWED_DUPLICATE_DESTINATIONS == {"resources/index.md"}
+    assert ALLOWED_DUPLICATE_DESTINATIONS == {
+        "resources/index.md",
+        "resources/reference/position-descriptions/innovation-lab/pd-civic-design-and-ux-lead.md",
+        "resources/reference/position-descriptions/innovation-lab/pd-civic-technology-lead.md",
+        "resources/reference/position-descriptions/innovation-lab/pd-communications-and-partnerships-lead.md",
+        "resources/reference/position-descriptions/innovation-lab/pd-innovation-program-manager.md",
+        "resources/reference/position-descriptions/innovation-lab/pd-product-engineer-full-stack.md",
+        "resources/reference/position-descriptions/innovation-lab/pd-senior-product-engineer.md",
+    }

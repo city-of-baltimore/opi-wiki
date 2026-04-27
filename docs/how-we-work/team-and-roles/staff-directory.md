@@ -12,9 +12,9 @@
 |---|---|---|---|---|
 | Director's Office | Dartanion Swift-Williams | Executive Director and Chief Data Officer | 410-645-0021 | dartanion.swift-williams@baltimorecity.gov |
 | Director's Office | Rakeim Young | Chief of Staff |  | rakeim.young@baltimorecity.gov |
-| Director's Office | Derek Thomas | Special Assistant to the Executive Director | 443-826-8794 | derek.thomas@baltimorecity.gov |
+| Director's Office | Derek Thomas | Special Assistant | 443-826-8794 | derek.thomas@baltimorecity.gov |
 | Director's Office | Mallory Screws | Project Manager | 443-219-9590 | mallory.screws@baltimorecity.gov |
-| Director's Office | Audrey Randazzo | Communications and Partnerships Lead |  | audrey.randazzo@baltimorecity.gov |
+| Innovation Lab | Audrey Randazzo | Communications and Partnerships Lead |  | audrey.randazzo@baltimorecity.gov |
 | Director's Office | Rashaad Tillery | CitiStat Inspector | 443-845-8921 | rashaad.tillery@baltimorecity.gov |
 | Innovation Lab | Chiemeka Okeoma | Senior Product Engineer | 240-252-8991 | chiemeka.okeoma@baltimorecity.gov |
 | Innovation Lab | Xander Jake de los Santos | Product Engineer |  | via Chief of Staff |

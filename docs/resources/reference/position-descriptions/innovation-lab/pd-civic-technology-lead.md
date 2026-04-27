@@ -6,11 +6,11 @@
 
 **CLASSIFICATION** Operations Manager II
 
-**PORTFOLIO** Director's Office
+**PORTFOLIO** Innovation Lab
 
 **REPORTS TO** Innovation Program Manager
 
-**INCUMBENT** Open / Posting
+**INCUMBENT** Aspirational / Unfilled
 
 **EFFECTIVE** OPI Reorganization
 
@@ -20,9 +20,9 @@
 |--------------------------|--------------------------------------------------------------------------------------------------------------------|
 | **Working title**        | Civic Technology Lead                                                                                              |
 | **Classification**       | Operations Manager II                                                                                              |
-| **Portfolio**            | Director's Office                                                                                                  |
+| **Portfolio**            | Innovation Lab                                                                                                     |
 | **Reports to**           | Innovation Program Manager                                                                                         |
-| **Incumbent**            | Open — to be posted                                                                                                |
+| **Incumbent**            | Aspirational / Unfilled                                                                                            |
 | **Supervision given**    | Senior individual contributor. May provide technical leadership over Product Engineer and Senior Product Engineer. |
 | **Supervision received** | Reports to the Innovation Program Manager.                                                                         |
 

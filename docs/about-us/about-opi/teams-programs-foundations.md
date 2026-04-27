@@ -135,7 +135,11 @@ The Data and Analytics portfolio builds the data foundation that makes OPI’s w
 
 **Innovation Lab**
 
-Interim lead: Dartanion Swift-Williams, until an Innovation Program Manager is identified
+Interim lead: Dartanion Swift-Williams
+
+Current staffed roles: Communications and Partnerships Lead, Senior Product
+Engineer, and Product Engineer. Aspirational roles: Innovation Program Manager,
+Civic Technology Lead, and Civic Design and UX Lead.
 
 > *From service problems to practical solutions.*
 

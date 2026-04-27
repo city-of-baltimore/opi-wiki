@@ -6,7 +6,7 @@
 
 **CLASSIFICATION** Operations Officer III
 
-**PORTFOLIO** Director's Office
+**PORTFOLIO** Innovation Lab
 
 **REPORTS TO** Chief of Staff (with frequent direct work for the Executive Director)
 
@@ -22,7 +22,7 @@
 |--------------------------|--------------------------------------------------------------------------------------------------------------------|
 | **Working title**        | Communications and Partnerships Lead                                                                               |
 | **Classification**       | Operations Officer III                                                                                             |
-| **Portfolio**            | Director's Office                                                                                                  |
+| **Portfolio**            | Innovation Lab                                                                                                     |
 | **Reports to**           | Chief of Staff (with frequent direct work for the Executive Director)                                              |
 | **Incumbent**            | Audrey Randazzo                                                                                                    |
 | **Position number**      | 53413                                                                                                              |

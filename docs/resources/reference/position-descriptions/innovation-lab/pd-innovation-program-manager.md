@@ -6,11 +6,11 @@
 
 **CLASSIFICATION** Operations Manager II
 
-**PORTFOLIO** Director's Office
+**PORTFOLIO** Innovation Lab
 
-**REPORTS TO** Chief of Staff (with strategic direction from the Executive Director, who is the interim Innovation Lab lead)
+**REPORTS TO** Chief of Staff (with strategic direction from the Executive Director as interim portfolio lead)
 
-**INCUMBENT** Open / Posting
+**INCUMBENT** Aspirational / Unfilled
 
 **EFFECTIVE** OPI Reorganization
 
@@ -20,17 +20,17 @@
 |--------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **Working title**        | Innovation Program Manager                                                                                                                                                                                                                                                |
 | **Classification**       | Operations Manager II                                                                                                                                                                                                                                                     |
-| **Portfolio**            | Director's Office                                                                                                                                                                                                                                                         |
-| **Reports to**           | Chief of Staff (with strategic direction from the Executive Director, who is the interim Innovation Lab lead)                                                                                                                                                             |
-| **Incumbent**            | Open — to be posted                                                                                                                                                                                                                                                       |
-| **Supervision given**    | Directly supervises the Civic Design and UX Lead, Civic Technology Lead, Product Engineer, Senior Product Engineer, and Senior Program Analyst (Innovation Lab cost center). Indirectly coordinates with the Project Manager and partner-agency leads on tiger-team work. |
-| **Supervision received** | Reports to the Chief of Staff. Receives strategic direction from the Executive Director, who is the interim Innovation Lab lead.                                                                                                                                          |
+| **Portfolio**            | Innovation Lab                                                                                                                                                                                                                                                            |
+| **Reports to**           | Chief of Staff (with strategic direction from the Executive Director as interim portfolio lead)                                                                                                                                                                           |
+| **Incumbent**            | Aspirational / Unfilled                                                                                                                                                                                                                                                   |
+| **Supervision given**    | Directly supervises the Civic Design and UX Lead, Civic Technology Lead, Product Engineer, and Senior Product Engineer. Indirectly coordinates with the Project Manager and partner-agency leads on tiger-team work.                                                     |
+| **Supervision received** | Reports to the Chief of Staff. Receives strategic direction from the Executive Director as interim portfolio lead.                                                                                                                                                        |
 
 **■ Position Summary**
 
-The Innovation Program Manager leads the day-to-day operations of OPI’s Innovation Lab — the portfolio that takes service problems surfaced by CitiStat or Director’s Office sponsorship and turns them into tested, adopted solutions. The role runs the Lab’s intake, scoping, and delivery routines; orchestrates tiger teams; sponsors civic-tech and service-design work; and coaches Lab staff (Civic Design and UX Lead, Civic Technology Lead, Product Engineers, and Senior Program Analysts) toward decision-ready outcomes.
+The Innovation Program Manager leads the day-to-day operations of OPI’s Innovation Lab — the portfolio that takes service problems surfaced by CitiStat or Director’s Office sponsorship and turns them into tested, adopted solutions. The role runs the Lab’s intake, scoping, and delivery routines; orchestrates tiger teams; sponsors civic-tech and service-design work; and coaches Lab staff (Civic Design and UX Lead, Civic Technology Lead, Senior Product Engineer, and Product Engineer) toward decision-ready outcomes.
 
-Reporting administratively to the Chief of Staff, the Innovation Program Manager partners closely with the Executive Director (interim Innovation Lab lead), the Deputy Chief Performance Officer (CitiStat handoffs), and the Deputy Chief Data Officer (data and product collaboration). The role ensures Lab projects are framed for adoption from day one, evaluated honestly, and either scaled, sustained by the agency owner, or sunset with a clear lessons-learned record.
+Reporting administratively to the Chief of Staff, the Innovation Program Manager partners closely with the Executive Director (interim portfolio lead), the Deputy Chief Performance Officer (CitiStat handoffs), and the Deputy Chief Data Officer (data and product collaboration). The role ensures Lab projects are framed for adoption from day one, evaluated honestly, and either scaled, sustained by the agency owner, or sunset with a clear lessons-learned record.
 
 **■ Key Responsibilities**
 
@@ -114,8 +114,8 @@ Employees in this class work a conventional work week. This position may be requ
 
 **■ Supervision**
 
-**Supervision received.** Reports to the Chief of Staff. Receives strategic direction from the Executive Director, who is the interim Innovation Lab lead.
+**Supervision received.** Reports to the Chief of Staff. Receives strategic direction from the Executive Director as interim portfolio lead.
 
-**Supervision given.** Directly supervises the Civic Design and UX Lead, Civic Technology Lead, Product Engineer, Senior Product Engineer, and Senior Program Analyst (Innovation Lab cost center). Indirectly coordinates with the Project Manager and partner-agency leads on tiger-team work.
+**Supervision given.** Directly supervises the Civic Design and UX Lead, Civic Technology Lead, Product Engineer, and Senior Product Engineer. Indirectly coordinates with the Project Manager and partner-agency leads on tiger-team work.
 
 *This Position Description reflects the OPI operating model. It describes the typical scope of the role and is not an exhaustive list of duties. OPI is an Equal Opportunity Employer; all qualified applicants will receive consideration without regard to race, color, religion, sex, sexual orientation, gender identity, national origin, disability, age, or veteran status.*

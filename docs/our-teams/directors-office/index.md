@@ -6,7 +6,10 @@
 
 ## What this team does
 
-The Director's Office sets direction, manages external relationships, and runs the operational backbone of OPI. The team includes the Executive Director, Chief of Staff, Special Assistant, Communications and Partnerships, civic design and tech leadership, and AdminOps.
+The Director's Office sets direction, manages executive coordination, and runs
+the operational backbone of OPI. The team includes the Executive Director,
+Chief of Staff, Special Assistant, Project Manager, CitiStat Inspector, and the
+AdminOps routines that keep the office aligned.
 
 {{ card_grid_from("our-teams/directors-office/index.cards.yml") }}
 

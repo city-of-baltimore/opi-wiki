@@ -30,7 +30,7 @@ OPI maintains a position description (PD) for every role on the team. PDs are th
 
 - Reports to: the position the role reports to in the OPI Operating Model.
 
-- Status: “Filled,” “Open,” or “Contracted” — maintained against the personnel roster.
+- Status: “Filled,” “Open,” “Aspirational,” or “Contracted” — maintained against the personnel roster.
 
 ## Browse by portfolio
 
@@ -38,15 +38,18 @@ OPI maintains a position description (PD) for every role on the team. PDs are th
 
 - [Executive Director and Chief Data Officer](directors-office/pd-executive-director-and-cdo.md)
 - [Chief of Staff](directors-office/pd-chief-of-staff.md)
-- [Special Assistant to the Executive Director](directors-office/pd-special-assistant-to-the-executive-director.md)
-- [Communications and Partnerships Lead](directors-office/pd-communications-and-partnerships-lead.md)
+- [Special Assistant](directors-office/pd-special-assistant-to-the-executive-director.md)
 - [Project Manager](directors-office/pd-project-manager.md)
-- [Civic Technology Lead](directors-office/pd-civic-technology-lead.md)
-- [Civic Design and UX Lead](directors-office/pd-civic-design-and-ux-lead.md)
-- [Innovation Program Manager](directors-office/pd-innovation-program-manager.md)
-- [Senior Product Engineer](directors-office/pd-senior-product-engineer.md)
-- [Product Engineer](directors-office/pd-product-engineer-full-stack.md)
 - [CitiStat Inspector](directors-office/pd-citistat-inspector.md)
+
+### Innovation Lab
+
+- [Innovation Program Manager](innovation-lab/pd-innovation-program-manager.md)
+- [Communications and Partnerships Lead](innovation-lab/pd-communications-and-partnerships-lead.md)
+- [Civic Technology Lead](innovation-lab/pd-civic-technology-lead.md)
+- [Civic Design and UX Lead](innovation-lab/pd-civic-design-and-ux-lead.md)
+- [Senior Product Engineer](innovation-lab/pd-senior-product-engineer.md)
+- [Product Engineer](innovation-lab/pd-product-engineer-full-stack.md)
 
 ### Performance and CitiStat
 

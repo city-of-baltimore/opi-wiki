@@ -8,7 +8,10 @@
 
 ## Position descriptions
 
-Innovation Lab staffing currently draws on roles housed in the Director's Office
-and Data and Analytics while dedicated Lab positions stand up. The canonical
+The canonical
 [Resources → Position Descriptions](../../resources/reference/position-descriptions/index.md)
-remains the source of truth for those roles.
+directory is the source of truth for Innovation Lab roles. Current staffed
+roles are Communications and Partnerships Lead, Senior Product Engineer, and
+Product Engineer. Innovation Program Manager, Civic Technology Lead, and Civic
+Design and UX Lead remain aspirational roles under interim portfolio
+leadership.

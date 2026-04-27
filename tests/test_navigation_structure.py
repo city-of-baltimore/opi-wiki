@@ -51,6 +51,18 @@ NAV_TITLE_EXPECTATIONS = {
     REPO_ROOT / "docs/resources/reference/.pages": "Reference",
     REPO_ROOT
     / "docs/resources/reference/position-descriptions/.pages": "Position Descriptions",
+    REPO_ROOT
+    / "docs/resources/reference/position-descriptions/directors-office/.pages": "Director's Office",
+    REPO_ROOT
+    / "docs/resources/reference/position-descriptions/innovation-lab/.pages": "Innovation Lab",
+    REPO_ROOT
+    / "docs/resources/reference/position-descriptions/performance-and-citistat/.pages": (
+        "Performance and CitiStat"
+    ),
+    REPO_ROOT
+    / "docs/resources/reference/position-descriptions/data-and-analytics/.pages": (
+        "Data and Analytics"
+    ),
 }
 
 

@@ -33,11 +33,9 @@ def test_org_structure_renderer_covers_chart_table_and_roster_sections() -> None
 
     assert "ED -. interim oversight .-> IL" in leadership_chart
     assert "| Director's Office | Rakeim Young, Chief of Staff | AdminOps |" in portfolio_table
-    assert "- Mallory Screws — Project Manager" in staff_alignment
-    assert (
-        "Innovation work is currently supported through a cross-portfolio model"
-        in staff_alignment
-    )
+    assert "- Audrey Randazzo — Communications and Partnerships Lead" in staff_alignment
+    assert "- Open / Aspirational — Innovation Program Manager" in staff_alignment
+    assert "cross-portfolio model" not in staff_alignment
 
 
 def test_define_env_registers_org_structure_macro() -> None:

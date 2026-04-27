@@ -89,13 +89,13 @@ The work cuts across OPI’s Innovation Lab, Data and Analytics team, and Perfor
 
 ### **Where the BIC sits**
 
-Operationally, the BIC runs out of OPI’s Innovation Lab — the home for product delivery and applied technology inside the office. Technically, its center of gravity is the Data and Analytics team, which provides the platform, governance, and engineering muscle. CitiStat is the lead agency-partner anchor for the first wave of intelligence products. The Executive Director and Chief Data Officer holds executive sponsorship and, in the interim, project lead until the Innovation Program Manager seat is funded and filled.
+Operationally, the BIC runs out of OPI’s Innovation Lab — the home for product delivery and applied technology inside the office. Technically, its center of gravity is the Data and Analytics team, which provides the platform, governance, and engineering muscle. CitiStat is the lead agency-partner anchor for the first wave of intelligence products. The Executive Director and Chief Data Officer provides executive sponsorship and interim project leadership while the Innovation Program Manager role remains aspirational.
 
 ### **Squad roster**
 
 | **Role on the BIC**                        | **Name**                  | **Position**                                   | **Home team**                  |
 |--------------------------------------------|---------------------------|------------------------------------------------|--------------------------------|
-| Executive Sponsor and interim Project Lead | Dartanion Swift-Williams  | Executive Director and Chief Data Officer, OPI | OPI — Director’s Office        |
+| Executive Sponsor and interim BIC Project Lead | Dartanion Swift-Williams  | Executive Director and Chief Data Officer, OPI | OPI — Director’s Office        |
 | Product Manager                            | Chiemeka Okeoma           | Senior Product Engineer                        | OPI — Innovation Lab           |
 | Project Manager                            | Mallory Screws            | Project Manager                                | OPI                            |
 | Data Engineering Lead                      | Alejandro Zuniga Sosa     | Principal Data Engineer                        | OPI — Data and Analytics       |
@@ -120,7 +120,7 @@ Sand Technologies provides the Technical Program Manager (TBD), engagement manag
 
 - Bi-weekly — product showcase and user feedback (open to OPI, agency partners, BCIT).
 
-- Monthly — executive steering (Executive Sponsor, Sand engagement leadership, Deputy CDO, Innovation Lab lead, CitiStat lead). Decision log review and milestone reporting.
+- Monthly — executive steering (Executive Sponsor, Sand engagement leadership, Deputy CDO, Innovation Lab interim portfolio lead, CitiStat lead). Decision log review and milestone reporting.
 
 - Quarterly — portfolio review with BCIT, Law, Procurement, Finance, and agency sponsors. Risks, governance posture, use case approvals.
 
@@ -313,7 +313,7 @@ The work that decides whether the platform and products survive after Sand leave
 
 | **OPI lead**                                                                                                                              | **Sand role**                                                                                                              | **Key dependencies**                                                                                                                            |
 |-------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------|
-| Chiemeka Okeoma (PM) and a designated Civic Design and UX Lead (aspirational). Adoption: Vera Choo and Mallory. | Design Lead, Capability Transfer Lead, Adoption Lead. Sand pairs and trains; OPI staff own day-to-day delivery by month 9. | Innovation Program Manager and Civic Design and UX Lead funding decisions; OPI Performance Standards and onboarding artifacts already in place. |
+| Chiemeka Okeoma (PM) with designated design support as needed. Adoption: Vera Choo and Mallory. | Design Lead, Capability Transfer Lead, Adoption Lead. Sand pairs and trains; OPI staff own day-to-day delivery by month 9. | Named design coverage for the workstream; OPI Performance Standards and onboarding artifacts already in place. |
 
 ### **Exit criteria — what “done” looks like at month 12**
 
@@ -556,7 +556,7 @@ Six risks are material enough to manage explicitly. Each has a named owner, a mi
 
 | **Risk**                           | **Why it matters**                                                                                                  | **Mitigation**                                                                                                                     | **Owner**                                |
 |------------------------------------|---------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------|
-| Innovation Lab capacity gap        | Two funded engineers cannot absorb capability transfer in months 7–12 and run the program from month 13 onward.     | Close Innovation Program Manager seat by month 9; close Civic Technology Lead and Civic Design and UX Lead by month 12.            | Executive Sponsor                        |
+| Innovation Lab capacity gap        | The current staffed Innovation Lab bench is lean relative to the capability-transfer burden in months 7–12 and ongoing sustainment after the vendor drawdown. | Scope the work to the current staffed roster, pair Sand transfer directly with named OPI owners, and treat aspirational roles as additive capacity rather than baseline assumptions. | Executive Sponsor                        |
 | Source-system access slippage      | Wave-one ingest depends on agency partner availability and BCIT approvals; any one slipping delays the lead pilot.  | Lock wave-one access in month 1; named agency owners; weekly status with BCIT.                                                     | Project Lead + Platform Engineering Lead |
 | Data governance ratification delay | Without a ratified policy, the catalog is decoration and the AI governance process is on shaky ground.              | Sand drafts in M1; Vera ratifies by end of month 5; executive approval at the May steering.                                        | Vera Choo + Executive Sponsor            |
 | Use case sprawl                    | Demand will exceed capacity. Without intake discipline, the program becomes reactive and quality drops.             | Single intake; risk tier; no production work without an approved brief; quarterly portfolio review prunes use cases.               | Project Lead                             |
@@ -661,7 +661,7 @@ The pre-kickoff briefing flagged a number of placeholders. Most are resolved in 
 | Sand TPM and engagement-manager assignment                                       | Daily and weekly cadence depends on knowing who, on the Sand side, holds the seat.                                                                 | Sand engagement leadership                 | Week 2       |
 | Operations Analyst, Data Governance Analyst, and Data Engineer (Python) staffing | Listed as TBD in pre-kickoff. Affects M1 capacity for ingest and governance.                                                                       | Project Lead + Sand TPM                    | Week 2       |
 | Cityworks interface (direct vs API) and CAD interface                            | Wave-one ingest depends on confirmed interface. Slippage delays City Services Intelligence and StatGPT.                                            | Platform Engineering Lead + agency owners  | Week 3       |
-| Innovation Program Manager funding decision                                      | Material risk to capability transfer. Without it, OPI cannot absorb the program at month 12.                                                       | Executive Sponsor + philanthropic partners | Month 6      |
+| Innovation Lab sustainment posture                                               | Material risk to capability transfer. Sustainment planning must assume the current staffed roster and documented handoff coverage at month 12.      | Executive Sponsor + Chief of Staff         | Month 6      |
 | BI / GenBI tool selection                                                        | Workstream 3 product roadmap for months 10–18 depends on it.                                                                                       | Project Lead + Deputy CDO + Sand           | Month 9      |
 | Public communications posture                                                    | When and how to talk about the BIC publicly — internal-first through month 12, but a published case study at month 18.                             | Executive Sponsor + OPI Communications     | Month 6      |
 | City code or charter alignment                                                   | Article 1, Subtitle 61 already requires OPI to run CitiStat and operate an Innovation Lab. Confirm whether the BIC needs any further codification. | Executive Sponsor + Law                    | Month 9      |
@@ -674,7 +674,7 @@ OPI staff who are part of the BIC, with full positions and home teams. Sand role
 
 | **Role on the BIC**                        | **Name**                  | **Position**                                   | **Home team**                  |
 |--------------------------------------------|---------------------------|------------------------------------------------|--------------------------------|
-| Executive Sponsor and interim Project Lead | Dartanion Swift-Williams  | Executive Director and Chief Data Officer, OPI | OPI — Director’s Office        |
+| Executive Sponsor and interim BIC Project Lead | Dartanion Swift-Williams  | Executive Director and Chief Data Officer, OPI | OPI — Director’s Office        |
 | Product Manager                            | Chiemeka Okeoma           | Senior Product Engineer                        | OPI — Innovation Lab           |
 | Project Manager                            | Mallory Screws            | Project Manager                                | OPI                            |
 | Data Engineering Lead                      | Alejandro Zuniga Sosa     | Principal Data Engineer                        | OPI — Data and Analytics       |

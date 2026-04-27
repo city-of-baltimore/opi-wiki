@@ -58,7 +58,7 @@ Words shape behavior. When OPI uses one word for something and an agency partner
 
 **Decision-grade.** A standard for analytics work: data and analysis credible enough to anchor a real decision — sourced, current, defined, and tested.
 
-**Director’s Office.** OPI portfolio that hosts AdminOps, the PMO, comms and partnerships, knowledge management, and inspections. Led by the Chief of Staff.
+**Director’s Office.** OPI portfolio that hosts AdminOps, the PMO, knowledge management, inspections, and officewide coordination. Led by the Chief of Staff.
 
 **Executive Director.** The OPI agency head, who also serves as the city’s Chief Data Officer and Chief Performance Officer. Currently Dartanion Swift-Williams.
 
@@ -66,7 +66,7 @@ Words shape behavior. When OPI uses one word for something and an agency partner
 
 **Handoff.** The transition from a tiger team or design engagement to the agency that will operate the result. Designed from week one, not negotiated at the end.
 
-**Innovation Lab.** OPI’s service for translating service problems into practical solutions. Tagline: “From service problems to practical solutions.” Method: Public Innovation Toolkit. Currently led on an interim basis.
+**Innovation Lab.** OPI’s service for translating service problems into practical solutions. Tagline: “From service problems to practical solutions.” Method: Public Innovation Toolkit. Currently led by Dartanion Swift-Williams on an interim basis.
 
 **Intake.** OPI’s process for receiving, scoping, and chartering new work. See the Intake SOP. Owned by AdminOps in the Director’s Office.
 
@@ -90,7 +90,7 @@ Words shape behavior. When OPI uses one word for something and an agency partner
 
 **PMO.** OPI’s Project Management Office. Sits in the Director’s Office and runs the project gate process across the OPI portfolio.
 
-**Portfolio.** OPI’s organizational unit. Four portfolios: Director’s Office and AdminOps; Performance and CitiStat; Data and Analytics; Innovation Lab.
+**Portfolio.** OPI’s organizational unit. Four portfolios: Director’s Office; Performance and CitiStat; Data and Analytics; Innovation Lab.
 
 **Pre-memo.** The two-to-four-page document that opens a Stat. Frames the problem, presents the data, names hypotheses, asks for decisions, and lists discussion questions.
 

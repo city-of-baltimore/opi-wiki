@@ -6,9 +6,9 @@
 
 **CLASSIFICATION** Operations Officer V (Non-Civil Service)
 
-**PORTFOLIO** Director's Office
+**PORTFOLIO** Innovation Lab
 
-**REPORTS TO** Innovation Program Manager (with strategic direction from the Executive Director)
+**REPORTS TO** Innovation Program Manager (with interim portfolio oversight from the Executive Director)
 
 **INCUMBENT** Chiemeka Okeoma
 
@@ -22,16 +22,16 @@
 |--------------------------|----------------------------------------------------------------------------------------------------------------------------------------|
 | **Working title**        | Senior Product Engineer                                                                                                                |
 | **Classification**       | Operations Officer V (Non-Civil Service)                                                                                               |
-| **Portfolio**            | Director's Office                                                                                                                      |
-| **Reports to**           | Innovation Program Manager (with strategic direction from the Executive Director)                                                      |
+| **Portfolio**            | Innovation Lab                                                                                                                         |
+| **Reports to**           | Innovation Program Manager (with interim portfolio oversight from the Executive Director)                                               |
 | **Incumbent**            | Chiemeka Okeoma                                                                                                                        |
 | **Position number**      | 62137                                                                                                                                  |
 | **Supervision given**    | Senior individual contributor. May mentor the Product Engineer and provide technical leadership on Innovation Lab projects.            |
-| **Supervision received** | Reports to the Innovation Program Manager. Receives strategic direction from the Executive Director on AI and data-product priorities. |
+| **Supervision received** | Reports to the Innovation Program Manager. Receives interim portfolio oversight from the Executive Director on AI and data-product priorities. |
 
 **■ Position Summary**
 
-The Senior Product Engineer is a hybrid analytics-and-builder role within the Director’s Office, sitting in the Innovation Lab portfolio. The role leads data and analytics projects on behalf of city agencies and the Mayor’s Office — moving from problem framing to analysis, to decision-ready deliverables, to durable tools. The role blends applied analytics and statistical modeling, data products and lightweight applications, integrations and automation, and AI proof-of-concepts that are safe, evaluated, and operationally relevant. The Senior Product Engineer partners closely with the Civic Design and UX Lead, the Civic Technology Lead, CitiStat, and agency staff to translate operational questions into clear measures, actionable insights, and usable tools.
+The Senior Product Engineer is a hybrid analytics-and-builder role within the Innovation Lab portfolio. The role leads data and analytics projects on behalf of city agencies and the Mayor’s Office — moving from problem framing to analysis, to decision-ready deliverables, to durable tools. The role blends applied analytics and statistical modeling, data products and lightweight applications, integrations and automation, and AI proof-of-concepts that are safe, evaluated, and operationally relevant. The Senior Product Engineer partners closely with the Civic Design and UX Lead, the Civic Technology Lead, CitiStat, and agency staff to translate operational questions into clear measures, actionable insights, and usable tools.
 
 **■ Key Responsibilities**
 
@@ -115,7 +115,7 @@ Employees in this class work a conventional work week. This position may be requ
 
 **■ Supervision**
 
-**Supervision received.** Reports to the Innovation Program Manager. Receives strategic direction from the Executive Director on AI and data-product priorities.
+**Supervision received.** Reports to the Innovation Program Manager. Receives interim portfolio oversight from the Executive Director on AI and data-product priorities.
 
 **Supervision given.** Senior individual contributor. May mentor the Product Engineer and provide technical leadership on Innovation Lab projects.
 
