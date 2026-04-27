@@ -44,7 +44,7 @@ Cross-Agency Delivery typically pairs OPI with one of the following:
 
 - A central function that owns a constraint (DHR for hiring, BBMR for budget, BCIT for technology, Law for procurement).
 
-- Another part of the Mayor’s Office (Chief Administrative Officer, Director of Government Reform, Mayor’s Office of Children and Family Success).
+- Another part of the Mayor’s Office.
 
 **What success looks like**
 
