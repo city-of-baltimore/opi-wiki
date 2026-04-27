@@ -85,7 +85,7 @@ Work enters as a data product request, a Stat-driven KPI need, an open data publ
 
 | **Role**                                | **Responsibility**                                                                                                 |
 |-----------------------------------------|--------------------------------------------------------------------------------------------------------------------|
-| Executive Director / Chief Data Officer | Owns citywide data strategy and resolves major questions of scope, ownership, and data sharing.                    |
+| Executive Director | Owns citywide data strategy and resolves major questions of scope, ownership, and data sharing.                    |
 | Deputy Chief Data Officer               | Stewards the data platform, analytics portfolio, governance practice, open data, and AI/data readiness work.       |
 | Data Governance and Open Data Council   | Cross-agency forum for shared definitions, data sharing agreements, and resolving definition or quality conflicts. |
 | Open Data Council                       | Reviews dataset publishing priorities, public feedback, and Open Baltimore roadmap.                                |

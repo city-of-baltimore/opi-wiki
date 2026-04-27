@@ -36,7 +36,7 @@ OPI maintains a position description (PD) for every role on the team. PDs are th
 
 ### Director's Office
 
-- [Executive Director and CDO](directors-office/pd-executive-director-and-cdo.md)
+- [Executive Director and Chief Data Officer](directors-office/pd-executive-director-and-cdo.md)
 - [Chief of Staff](directors-office/pd-chief-of-staff.md)
 - [Special Assistant to the Executive Director](directors-office/pd-special-assistant-to-the-executive-director.md)
 - [Communications and Partnerships Lead](directors-office/pd-communications-and-partnerships-lead.md)

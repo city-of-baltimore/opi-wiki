@@ -6,7 +6,7 @@
 
 ## How OPI is organized
 
-OPI runs as four working groups under the Executive Director / CDO:
+OPI runs as four working groups under the Executive Director:
 
 {{ card_grid_from("how-we-work/team-and-roles/index.cards.yml") }}
 

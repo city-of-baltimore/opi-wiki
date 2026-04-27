@@ -60,7 +60,7 @@ Words shape behavior. When OPI uses one word for something and an agency partner
 
 **Director’s Office.** OPI portfolio that hosts AdminOps, the PMO, comms and partnerships, knowledge management, and inspections. Led by the Chief of Staff.
 
-**Executive Director and CDO.** The OPI agency head, who also serves as the city’s Chief Data Officer and Chief Performance Officer. Currently Dartanion Swift-Williams.
+**Executive Director.** The OPI agency head, who also serves as the city’s Chief Data Officer and Chief Performance Officer. Currently Dartanion Swift-Williams.
 
 **Front door.** The single intake path for new work. All requests for OPI involvement enter through the front door, are scoped, and either chartered, deferred, or declined. Freelance project starts are out of bounds.
 

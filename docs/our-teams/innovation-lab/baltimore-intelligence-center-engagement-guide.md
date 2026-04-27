@@ -89,7 +89,7 @@ The work cuts across OPI’s Innovation Lab, Data and Analytics team, and Perfor
 
 ### **Where the BIC sits**
 
-Operationally, the BIC runs out of OPI’s Innovation Lab — the home for product delivery and applied technology inside the office. Technically, its center of gravity is the Data and Analytics team, which provides the platform, governance, and engineering muscle. CitiStat is the lead agency-partner anchor for the first wave of intelligence products. The Executive Director and CDO holds executive sponsorship and, in the interim, project lead until the Innovation Program Manager seat is funded and filled.
+Operationally, the BIC runs out of OPI’s Innovation Lab — the home for product delivery and applied technology inside the office. Technically, its center of gravity is the Data and Analytics team, which provides the platform, governance, and engineering muscle. CitiStat is the lead agency-partner anchor for the first wave of intelligence products. The Executive Director and Chief Data Officer holds executive sponsorship and, in the interim, project lead until the Innovation Program Manager seat is funded and filled.
 
 ### **Squad roster**
 
@@ -136,9 +136,6 @@ Sand Technologies provides the Technical Program Manager (TBD), engagement manag
 | Procurement and vendor changes               | Executive Sponsor                                    | Procurement, Finance, Law                         |
 | Public release of any data product           | Executive Sponsor + Data Governance Manager          | Communications, Law, agency sponsor               |
 
-### **Capacity and the unfunded ask**
-
-The funded Innovation Lab today is two engineers (Senior Product Engineer and Product Engineer). That is enough to start — with Sand carrying the heavy lift in months 0–6 — but it is not enough to absorb capability transfer in months 7–12 and run the program independently from month 13 onward. Closing at least the Innovation Program Manager seat by month 9 is the most material risk mitigation in this engagement.
 
 **SECTION 3**
 
@@ -316,7 +313,7 @@ The work that decides whether the platform and products survive after Sand leave
 
 | **OPI lead**                                                                                                                              | **Sand role**                                                                                                              | **Key dependencies**                                                                                                                            |
 |-------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------|
-| Chiemeka Okeoma (PM) and a designated Civic Design and UX Lead (currently unfunded — see capacity note). Adoption: Vera Choo and Mallory. | Design Lead, Capability Transfer Lead, Adoption Lead. Sand pairs and trains; OPI staff own day-to-day delivery by month 9. | Innovation Program Manager and Civic Design and UX Lead funding decisions; OPI Performance Standards and onboarding artifacts already in place. |
+| Chiemeka Okeoma (PM) and a designated Civic Design and UX Lead (aspirational). Adoption: Vera Choo and Mallory. | Design Lead, Capability Transfer Lead, Adoption Lead. Sand pairs and trains; OPI staff own day-to-day delivery by month 9. | Innovation Program Manager and Civic Design and UX Lead funding decisions; OPI Performance Standards and onboarding artifacts already in place. |
 
 ### **Exit criteria — what “done” looks like at month 12**
 
@@ -489,7 +486,7 @@ Governance is the discipline that decides whether the platform earns trust and t
 
 ### **Data Governance Policy — ownership and timeline**
 
-Sand drafts the formal Data Governance Policy as an M1 deliverable, due in month 3. Vera Choo (Data Governance and Analytics Manager) owns ratification and adoption, with executive approval from the CDO. The policy covers: ownership and stewardship, sensitivity and access tiers, retention, sharing and external release, lineage and quality standards, and a steward onboarding process. v2 of the policy in month 11 incorporates production lessons.
+Sand drafts the formal Data Governance Policy as an M1 deliverable, due in month 3. Vera Choo (Data Governance and Analytics Manager) owns ratification and adoption, with executive approval from the Chief Data Officer. The policy covers: ownership and stewardship, sensitivity and access tiers, retention, sharing and external release, lineage and quality standards, and a steward onboarding process. v2 of the policy in month 11 incorporates production lessons.
 
 ### **AI governance — the lightweight but real version**
 

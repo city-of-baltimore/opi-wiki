@@ -2,7 +2,7 @@
 
 {{ page_badge() }}
 
-> Position description for the Executive Director / CDO.
+> Position description for the Executive Director.
 
 **Executive Director**
 

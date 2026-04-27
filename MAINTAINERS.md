@@ -6,7 +6,7 @@ This document is for the OPI Foundations docs maintainer. It describes the role,
 
 **Title:** OPI Foundations Docs Maintainer
 **Effort:** 0.4–0.6 FTE (16–24 hours/week)
-**Reports to:** Executive Director and CDO, OPI
+**Reports to:** Executive Director
 
 **Primary responsibilities:**
 

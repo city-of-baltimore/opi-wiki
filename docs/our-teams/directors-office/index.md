@@ -2,11 +2,11 @@
 
 {{ page_badge() }}
 
-> The Executive Director / Chief Data Officer's office, plus the AdminOps function that runs the operational backbone of OPI.
+> The Executive Director's office, plus the AdminOps function that runs the operational backbone of OPI.
 
 ## What this team does
 
-The Director's Office sets direction, manages external relationships, and runs the operational backbone of OPI. The team includes the Executive Director / CDO, Chief of Staff, Special Assistant, Communications and Partnerships, civic design and tech leadership, and AdminOps.
+The Director's Office sets direction, manages external relationships, and runs the operational backbone of OPI. The team includes the Executive Director, Chief of Staff, Special Assistant, Communications and Partnerships, civic design and tech leadership, and AdminOps.
 
 {{ card_grid_from("our-teams/directors-office/index.cards.yml") }}
 
