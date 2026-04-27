@@ -22,9 +22,9 @@ readable.
 ## Staff alignment by portfolio
 
 Each portfolio gets its own chart so the roster stays readable on desktop and
-mobile. Innovation Lab roles now appear directly in the Lab roster, with
-aspirational seats labeled as such so the current team and intended structure
-stay visible in one place.
+mobile. Innovation Lab staffing and its adjacent Director's Office support
+roles are shown in their home portfolios, with aspirational seats labeled as
+such so the current team and intended structure stay visible in one place.
 
 {{ org_structure_from("about-us/about-opi/org-structure.data.yml", "portfolio_tabs") }}
 

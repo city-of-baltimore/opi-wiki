@@ -17,6 +17,8 @@ portfolios:
     primary_value: Operating backbone that keeps work prioritized, documented, communicated, and deliverable.
     table_lead: Rakeim Young, Chief of Staff
     staff:
+      - name: Audrey Randazzo
+        title: Communications and Partnerships Lead
       - name: Mallory Screws
         title: Project Manager
       - name: Derek Thomas
@@ -89,8 +91,6 @@ portfolios:
       - name: Open / Aspirational
         title: Innovation Program Manager
         edge_style: dotted
-      - name: Audrey Randazzo
-        title: Communications and Partnerships Lead
       - name: Chiemeka Okeoma
         title: Senior Product Engineer
       - name: Xander Jake de los Santos

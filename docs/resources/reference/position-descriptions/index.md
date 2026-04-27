@@ -38,6 +38,7 @@ OPI maintains a position description (PD) for every role on the team. PDs are th
 
 - [Executive Director and Chief Data Officer](directors-office/pd-executive-director-and-cdo.md)
 - [Chief of Staff](directors-office/pd-chief-of-staff.md)
+- [Communications and Partnerships Lead](directors-office/pd-communications-and-partnerships-lead.md)
 - [Special Assistant](directors-office/pd-special-assistant-to-the-executive-director.md)
 - [Project Manager](directors-office/pd-project-manager.md)
 - [CitiStat Inspector](directors-office/pd-citistat-inspector.md)
@@ -45,7 +46,6 @@ OPI maintains a position description (PD) for every role on the team. PDs are th
 ### Innovation Lab
 
 - [Innovation Program Manager](innovation-lab/pd-innovation-program-manager.md)
-- [Communications and Partnerships Lead](innovation-lab/pd-communications-and-partnerships-lead.md)
 - [Civic Technology Lead](innovation-lab/pd-civic-technology-lead.md)
 - [Civic Design and UX Lead](innovation-lab/pd-civic-design-and-ux-lead.md)
 - [Senior Product Engineer](innovation-lab/pd-senior-product-engineer.md)

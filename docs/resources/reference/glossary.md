@@ -58,7 +58,7 @@ Words shape behavior. When OPI uses one word for something and an agency partner
 
 **Decision-grade.** A standard for analytics work: data and analysis credible enough to anchor a real decision — sourced, current, defined, and tested.
 
-**Director’s Office.** OPI portfolio that hosts AdminOps, the PMO, knowledge management, inspections, and officewide coordination. Led by the Chief of Staff.
+**Director’s Office.** OPI portfolio that hosts AdminOps, the PMO, communications, knowledge management, inspections, and officewide coordination. Led by the Chief of Staff.
 
 **Executive Director.** The OPI agency head, who also serves as the city’s Chief Data Officer and Chief Performance Officer. Currently Dartanion Swift-Williams.
 

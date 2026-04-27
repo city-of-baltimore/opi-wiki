@@ -64,6 +64,7 @@ Each refined Position Description is filed alongside this roster in the same fol
     |--------------------------|---------------------------------------------|-------------------------------|-----------------|---------|
     | Dartanion Swift-Williams | Executive Director and Chief Data Officer   | Executive Director I          | AdminOps        | 15961   |
     | Rakeim Young             | Chief of Staff                              | Operations Manager II         | AdminOps        | 50053   |
+    | Audrey Randazzo          | Communications and Partnerships Lead        | Operations Officer III | Innovation Lab  | 53413   |
     | Derek Thomas             | Special Assistant to the Executive Director | Operations Officer III | Innovation Lab  | 70432   |
     | Mallory Screws           | Project Manager                             | Operations Officer III | AdminOps        | 62121   |
     | Rashaad Tillery          | CitiStat Inspector                          | Operations Officer I          | AdminOps        | 50509   |
@@ -74,6 +75,7 @@ Each refined Position Description is filed alongside this roster in the same fol
     |---------------------------------------------|--------------------------|---------------------------------------------|
     | Executive Director and Chief Data Officer   | Dartanion Swift-Williams | City Administrator                          |
     | Chief of Staff                              | Rakeim Young             | Executive Director                          |
+    | Communications and Partnerships Lead        | Audrey Randazzo          | Chief of Staff                              |
     | Special Assistant to the Executive Director | Derek Thomas             | Executive Director (through Chief of Staff) |
     | Project Manager                             | Mallory Screws           | Chief of Staff                              |
     | CitiStat Inspector                          | Rashaad Tillery          | Chief of Staff                              |
@@ -85,7 +87,6 @@ Each refined Position Description is filed alongside this roster in the same fol
     |---------------------------|--------------------------------------|-----------------------------------|-----------------|---------|
     | Dartanion Swift-Williams  | Interim portfolio lead               | Executive Director I              | AdminOps        | 15961   |
     | Aspirational / unfilled   | Innovation Program Manager           | Operations Manager II             | Innovation Lab  | TBD     |
-    | Audrey Randazzo           | Communications and Partnerships Lead | Operations Officer III            | Innovation Lab  | 53413   |
     | Chiemeka Okeoma           | Senior Product Engineer              | Operations Officer V              | Innovation Lab  | 62137   |
     | Xander Jake de los Santos | Product Engineer                     | Operations Officer III            | Innovation Lab  | 70431   |
     | Aspirational / unfilled   | Civic Technology Lead                | Operations Manager II (proposed)  | Innovation Lab  | TBD     |
@@ -97,7 +98,6 @@ Each refined Position Description is filed alongside this roster in the same fol
     |--------------------------------------|--------------------------|--------------------------------------------------------------------------------------------------|
     | Interim portfolio lead               | Dartanion Swift-Williams | City Administrator                                                                               |
     | Innovation Program Manager           | Aspirational / unfilled  | Chief of Staff (with strategic direction from Dartanion Swift-Williams, interim portfolio lead) |
-    | Communications and Partnerships Lead | Audrey Randazzo          | Chief of Staff                                                                                   |
     | Senior Product Engineer              | Chiemeka Okeoma          | Innovation Program Manager (with interim oversight from Dartanion Swift-Williams)                |
     | Product Engineer                     | Xander Jake de los Santos | Senior Product Engineer                                                                       |
     | Civic Technology Lead                | Aspirational / unfilled  | Innovation Program Manager                                                                       |
@@ -184,7 +184,7 @@ Each refined Position Description is filed alongside this roster in the same fol
     | **Working title**                              | **Incumbent**             | **Portfolio**     | **PIN** |
     |------------------------------------------------|---------------------------|-------------------|---------|
     | Special Assistant to the Executive Director | Derek Thomas              | Director's Office        | 70432   |
-    | Communications and Partnerships Lead           | Audrey Randazzo           | Innovation Lab    | 53413   |
+    | Communications and Partnerships Lead           | Audrey Randazzo           | Director's Office | 53413   |
     | Innovation Program Manager                     | Aspirational / unfilled   | Innovation Lab    | TBD     |
     | Senior Product Engineer                        | Chiemeka Okeoma           | Innovation Lab    | 62137   |
     | Product Engineer                               | Xander Jake de los Santos | Innovation Lab    | 70431   |
@@ -214,7 +214,7 @@ Each refined Position Description is filed alongside this roster in the same fol
     | Rakeim Young              | Chief of Staff                                 | Director's Office        | rakeim.young@baltimorecity.gov             |
     | Derek Thomas              | Special Assistant to the Executive Director | Director's Office        | derek.thomas@baltimorecity.gov             |
     | Mallory Screws            | Project Manager                                | Director's Office        | mallory.screws@baltimorecity.gov           |
-    | Audrey Randazzo           | Communications and Partnerships Lead           | Innovation Lab           | audrey.randazzo@baltimorecity.gov          |
+    | Audrey Randazzo           | Communications and Partnerships Lead           | Director's Office        | audrey.randazzo@baltimorecity.gov          |
     | Rashaad Tillery           | CitiStat Inspector                             | Director's Office        | rashaad.tillery@baltimorecity.gov          |
     | Chiemeka Okeoma           | Senior Product Engineer                        | Innovation Lab           | chiemeka.okeoma@baltimorecity.gov          |
     | Xander Jake de los Santos | Product Engineer                               | Innovation Lab           | via Chief of Staff                         |

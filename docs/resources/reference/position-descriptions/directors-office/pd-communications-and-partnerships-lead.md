@@ -6,7 +6,7 @@
 
 **CLASSIFICATION** Operations Officer III
 
-**PORTFOLIO** Innovation Lab
+**PORTFOLIO** Director's Office
 
 **REPORTS TO** Chief of Staff (with frequent direct work for the Executive Director)
 
@@ -22,7 +22,7 @@
 |--------------------------|--------------------------------------------------------------------------------------------------------------------|
 | **Working title**        | Communications and Partnerships Lead                                                                               |
 | **Classification**       | Operations Officer III                                                                                             |
-| **Portfolio**            | Innovation Lab                                                                                                     |
+| **Portfolio**            | Director's Office                                                                                                  |
 | **Reports to**           | Chief of Staff (with frequent direct work for the Executive Director)                                              |
 | **Incumbent**            | Audrey Randazzo                                                                                                    |
 | **Position number**      | 53413                                                                                                              |
@@ -67,7 +67,7 @@ The Communications and Partnerships Lead develops and stewards OPI’s external 
 
 **Brand and Publication Standards**
 
-- Maintain OPI’s brand kit and document templates in partnership with the Director’s Office.
+- Maintain OPI’s brand kit and document templates in partnership with the Chief of Staff and the rest of the Director’s Office team.
 
 - Operate OPI’s publication QA process; uphold the Bloomberg/HKS-grade quality bar across deliverables.
 
