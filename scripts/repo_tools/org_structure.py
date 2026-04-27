@@ -7,7 +7,7 @@ from html import escape
 from pathlib import Path
 from typing import Any
 
-import yaml
+from scripts.repo_tools.data import load_docs_yaml_file
 
 
 @dataclass(frozen=True)
@@ -124,16 +124,7 @@ def _normalize_portfolio(raw_portfolio: Any, index: int, source: str) -> Portfol
 def load_org_structure(docs_dir: Path, relative_path: str) -> OrgStructure:
     """Load structured org data from a YAML file under the docs directory."""
 
-    data_path = (docs_dir / relative_path).resolve()
-
-    try:
-        raw_data = yaml.safe_load(data_path.read_text(encoding="utf-8"))
-    except FileNotFoundError as error:
-        raise FileNotFoundError(f"Org-structure data file not found: {data_path}") from error
-    except OSError as error:
-        raise RuntimeError(f"Unable to read org-structure data file: {data_path}") from error
-    except yaml.YAMLError as error:
-        raise ValueError(f"Invalid YAML in org-structure data file: {data_path}") from error
+    raw_data = load_docs_yaml_file(docs_dir, relative_path, label="Org-structure data")
 
     if not isinstance(raw_data, dict):
         raise ValueError(f"Org-structure data file must contain a mapping: {relative_path}")
