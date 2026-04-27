@@ -64,7 +64,11 @@ theme:
     - announce.dismiss
 
 extra_css:
-  - assets/stylesheets/opi.css
+  - assets/stylesheets/tokens.css
+  - assets/stylesheets/base.css
+  - assets/stylesheets/material-chrome.css
+  - assets/stylesheets/components.css
+  - assets/stylesheets/home.css
 
 extra:
   generator: false

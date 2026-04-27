@@ -1,0 +1,78 @@
+/* Shared OPI design tokens and Material theme bridges. */
+
+:root {
+  --opi-gold: #D6A21A;
+  --opi-gold-deep: #9B7517;
+  --opi-gold-soft: #F2EAD3;
+  --opi-near-black: #1A1A1A;
+  --opi-text: #2A2A2A;
+  --opi-text-muted: #6B6B6B;
+  --opi-border: #D8D8D8;
+  --opi-bg: #FFFFFF;
+  --opi-bg-soft: #FAFAF7;
+  --opi-card-bg: #FFFFFF;
+  --opi-heading: #1A1A1A;
+  --opi-chrome-bg: var(--opi-near-black);
+  --opi-chrome-border: var(--opi-gold);
+  --opi-link-color: var(--opi-gold-deep);
+  --opi-link-hover: var(--opi-gold);
+  --opi-nav-accent: var(--opi-gold-deep);
+  --opi-nav-accent-bg: rgba(155, 117, 23, 0.1);
+  --opi-card-focus-outline: var(--opi-gold-deep);
+}
+
+[data-md-color-scheme="slate"] {
+  --opi-gold: #E8B635;
+  --opi-gold-deep: #D6A21A;
+  --opi-gold-soft: #3A2F12;
+  --opi-near-black: #0E0E10;
+  --opi-text: #DCDCDA;
+  --opi-text-muted: #9A9A98;
+  --opi-border: #3A3A3D;
+  --opi-bg: #14141A;
+  --opi-bg-soft: #1B1B22;
+  --opi-card-bg: #1B1B22;
+  --opi-heading: #F5F5F2;
+  --opi-link-color: var(--opi-gold);
+  --opi-link-hover: var(--opi-gold);
+  --opi-nav-accent: var(--opi-gold);
+  --opi-nav-accent-bg: rgba(232, 182, 53, 0.12);
+  --opi-card-focus-outline: var(--opi-gold);
+}
+
+[data-md-color-scheme="default"][data-md-color-primary="custom"] {
+  --md-primary-fg-color: var(--opi-near-black);
+  --md-primary-fg-color--light: #2A2A2A;
+  --md-primary-fg-color--dark: #000000;
+  --md-primary-bg-color: #FFFFFF;
+  --md-primary-bg-color--light: #FFFFFF;
+  --md-typeset-a-color: var(--opi-link-color);
+}
+
+[data-md-color-scheme="default"][data-md-color-accent="custom"] {
+  --md-accent-fg-color: var(--opi-gold-deep);
+  --md-accent-fg-color--transparent: rgba(155, 117, 23, 0.1);
+  --md-accent-bg-color: #FFFFFF;
+  --md-accent-bg-color--light: #FFFFFF;
+}
+
+[data-md-color-scheme="slate"][data-md-color-primary="custom"] {
+  --md-primary-fg-color: #0E0E10;
+  --md-primary-fg-color--light: #1A1A1F;
+  --md-primary-fg-color--dark: #000000;
+  --md-primary-bg-color: #F5F5F2;
+  --md-primary-bg-color--light: #F5F5F2;
+  --md-typeset-a-color: var(--opi-link-color);
+  --md-default-bg-color: #14141A;
+  --md-default-fg-color: #DCDCDA;
+  --md-default-fg-color--light: #B8B8B6;
+  --md-default-fg-color--lighter: #797977;
+  --md-typeset-color: #DCDCDA;
+}
+
+[data-md-color-scheme="slate"][data-md-color-accent="custom"] {
+  --md-accent-fg-color: var(--opi-gold);
+  --md-accent-fg-color--transparent: rgba(232, 182, 53, 0.12);
+  --md-accent-bg-color: #14141A;
+  --md-accent-bg-color--light: #1B1B22;
+}

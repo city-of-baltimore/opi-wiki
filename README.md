@@ -70,6 +70,7 @@ commands, and re-verify all plugins and theme behavior together.
 - Keep landing-page card content in neighboring `*.cards.yml` files and render it through the shared `card_grid_from(...)` macro.
 - Keep repeated structured page data in neighboring `*.data.yml` files when one source needs to drive multiple rendered sections.
 - Keep visible page badges in `.metadata.yml` via the `display_badge` field and render them through `page_badge()` or `badge(...)`, not raw HTML spans.
+- Keep shared brand CSS split by responsibility under `docs/assets/stylesheets/` so tokens, Material chrome, reusable components, and page-specific presentation do not drift together.
 - Run `./scripts/verify.sh` before merging structural or config changes.
 - Treat `site/` as generated output, not source.
 
@@ -103,7 +104,11 @@ opi-foundations/
 │   ├── contributing.md
 │   ├── */index.cards.yml   # section-local landing-page card data
 │   └── assets/
-│       ├── stylesheets/opi.css   # OPI brand styles
+│       ├── stylesheets/tokens.css          # shared design tokens + Material bridges
+│       ├── stylesheets/base.css            # typography and content primitives
+│       ├── stylesheets/material-chrome.css # header, nav, tabs, footer
+│       ├── stylesheets/components.css      # cards, pills, reusable shared UI
+│       ├── stylesheets/home.css            # homepage-only presentation
 │       ├── images/               # logos, page images
 │       └── docs/                 # downloadable .docx/.pdf assets
 ├── overrides/              # MkDocs Material theme overrides (empty for now)

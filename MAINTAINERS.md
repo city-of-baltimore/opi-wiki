@@ -97,6 +97,11 @@ Keep the card content in the nearest `*.cards.yml` file and render it through
 the shared `card_grid_from(...)` macro so markup, link affordances, and
 accessibility behavior stay consistent across sections.
 
+Keep shared CSS split by responsibility too: design tokens, Material chrome
+overrides, reusable components, and page-specific presentation should live in
+separate files under `docs/assets/stylesheets/` so one-off tweaks do not drift
+into the global theme surface.
+
 ## Page badges
 
 Visible status/type pills are shared UI too. Store badge intent in the nearest

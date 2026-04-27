@@ -1,0 +1,149 @@
+/* Shared reusable content components. */
+
+.opi-card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1rem;
+  margin: 1.5rem 0;
+}
+
+.opi-card {
+  border: 1px solid var(--opi-border);
+  border-radius: 4px;
+  background: var(--opi-card-bg);
+  transition: border-color 0.15s ease, box-shadow 0.15s ease, transform 0.15s ease;
+}
+
+.opi-card:hover,
+.opi-card:focus-within {
+  border-color: var(--opi-gold);
+  box-shadow: 0 2px 12px rgba(214, 162, 26, 0.18);
+  transform: translateY(-1px);
+}
+
+.opi-card-link,
+.opi-card-copy {
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+  min-height: 100%;
+  padding: 1rem 1.1rem;
+}
+
+.md-typeset .opi-card a.opi-card-link {
+  color: inherit;
+  text-decoration: none;
+  border: 0;
+}
+
+.md-typeset .opi-card a.opi-card-link:hover,
+.md-typeset .opi-card a.opi-card-link:focus-visible {
+  text-decoration: none;
+}
+
+.md-typeset .opi-card a.opi-card-link:focus-visible {
+  outline: 2px solid var(--opi-card-focus-outline);
+  outline-offset: -2px;
+  border-radius: 4px;
+}
+
+.opi-card h3 {
+  margin: 0 0 0.4rem 0;
+  font-size: 1.05rem;
+  color: var(--opi-heading);
+}
+
+.opi-card-link:hover h3,
+.opi-card-link:focus-visible h3 {
+  color: var(--opi-link-color);
+}
+
+.opi-card p {
+  margin: 0;
+  font-size: 0.85rem;
+  color: var(--opi-text-muted);
+  line-height: 1.4;
+}
+
+.opi-card .opi-card-action {
+  margin-top: auto;
+  font-size: 0.78rem;
+  letter-spacing: 0.04em;
+  font-weight: 600;
+  color: var(--opi-link-color);
+}
+
+.opi-card .opi-card-action::after {
+  content: " \2192";
+}
+
+.opi-card .opi-card-meta {
+  display: inline-block;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--opi-link-color);
+  font-weight: 600;
+  margin-bottom: 0.3rem;
+}
+
+.opi-pill {
+  display: inline-block;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  padding: 0.1rem 0.5rem;
+  border-radius: 999px;
+  font-weight: 600;
+  vertical-align: middle;
+}
+
+.opi-pill.draft {
+  background: #FFF7E0;
+  color: #8A6800;
+}
+
+.opi-pill.approved {
+  background: var(--opi-gold-soft);
+  color: var(--opi-gold-deep);
+}
+
+.opi-pill.public {
+  background: #E5F2E0;
+  color: #3E6B2E;
+}
+
+.opi-pill.internal {
+  background: #EFEFEF;
+  color: var(--opi-text-muted);
+}
+
+.opi-pill.fy27 {
+  background: #1A1A1A;
+  color: var(--opi-gold);
+}
+
+[data-md-color-scheme="slate"] .opi-pill.draft {
+  background: #3A2F12;
+  color: #E8B635;
+}
+
+[data-md-color-scheme="slate"] .opi-pill.approved {
+  background: #3A2F12;
+  color: var(--opi-gold);
+}
+
+[data-md-color-scheme="slate"] .opi-pill.public {
+  background: #1F3320;
+  color: #8FCB7C;
+}
+
+[data-md-color-scheme="slate"] .opi-pill.internal {
+  background: #2A2A2D;
+  color: #B8B8B6;
+}
+
+[data-md-color-scheme="slate"] .opi-pill.fy27 {
+  background: #0E0E10;
+  color: var(--opi-gold);
+}

@@ -1,0 +1,34 @@
+/* Homepage-only presentation rules. */
+
+.opi-hero {
+  background: linear-gradient(135deg, var(--opi-near-black) 0%, #2A2A2A 100%);
+  color: #FFFFFF;
+  padding: 2.5rem 2rem;
+  border-bottom: 4px solid var(--opi-gold);
+  margin: -1.5rem -0.8rem 2rem -0.8rem;
+  border-radius: 2px;
+}
+
+.opi-hero h1 {
+  color: #FFFFFF;
+  border-bottom: 0;
+  font-size: 2.4rem;
+  margin: 0 0 0.5rem 0;
+  padding: 0;
+}
+
+.opi-hero .opi-hero-eyebrow {
+  color: var(--opi-gold);
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  letter-spacing: 0.12em;
+  font-weight: 600;
+  margin-bottom: 0.4rem;
+}
+
+.opi-hero p {
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 1.05rem;
+  max-width: 65ch;
+  margin: 0;
+}
