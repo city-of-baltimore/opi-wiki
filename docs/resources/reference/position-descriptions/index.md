@@ -73,4 +73,4 @@ OPI maintains a position description (PD) for every role on the team. PDs are th
 
 **Review cadence.** Quarterly review by the Chief of Staff with portfolio leads. Annual sweep aligned to the budget cycle.
 
-    *Owned by the Chief of Staff with HR partner. Reviewed quarterly. Update whenever a position is posted, filled, vacated, or reclassified.*
+*Owned by the Chief of Staff with HR partner. Reviewed quarterly. Update whenever a position is posted, filled, vacated, or reclassified.*
