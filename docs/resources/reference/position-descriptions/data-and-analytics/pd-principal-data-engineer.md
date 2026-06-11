@@ -2,7 +2,7 @@
 
 {{ page_header(summary="Position description for the Principal Data Engineer.") }}
 
-**■ At a Glance**
+## At a Glance
 
 |                          |                                                                                                                                                                           |
 |--------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -13,15 +13,15 @@
 | **Supervision given**    | Senior individual contributor with technical leadership over the data-engineering bench (Senior Data Engineer and any future engineers). Leads code review and mentoring. |
 | **Supervision received** | Reports to the Deputy Chief Data Officer.                                                                                                                                 |
 
-**■ Position Summary**
+## Position Summary
 
 The Principal Data Engineer is OPI’s lead data engineer and architect, responsible for designing and developing Baltimore’s next-generation data infrastructure. The role co-develops a centralized, enterprise-wide data warehouse and the secure, reliable, scalable pipelines that feed it. Beyond contributing to OPI codebases, the Principal Data Engineer influences data architecture, orchestration, tooling, and governance across the team and the City.
 
 Reporting to the Deputy Chief Data Officer, the role works on an interdisciplinary team of analysts, designers, and managers to ensure data products are adopted by agency staff, policymakers, and the public. The Principal Data Engineer is a hands-on, senior practitioner with both architectural and engineering responsibilities.
 
-**■ Key Responsibilities**
+## Key Responsibilities
 
-**Data Architecture**
+### Data Architecture
 
 - Develop data models, lakehouse-style tiered layers, and orchestration frameworks that work for efficient computation, fellow engineers, and data consumers.
 
@@ -29,7 +29,7 @@ Reporting to the Deputy Chief Data Officer, the role works on an interdisciplina
 
 - Partner with the Principal Platform Engineer on cloud architecture, security baselines, and CI/CD.
 
-**Pipeline Engineering**
+### Pipeline Engineering
 
 - Develop and maintain ETL/ELT pipelines using Python, PostgreSQL, and modern orchestration frameworks.
 
@@ -37,7 +37,7 @@ Reporting to the Deputy Chief Data Officer, the role works on an interdisciplina
 
 - Automate ingestion from multiple data sources (APIs, flat files, databases) into centralized data models for reporting and analysis.
 
-**Stakeholder Partnership**
+### Stakeholder Partnership
 
 - Work with agency stakeholders, analysts, and data scientists to understand what datasets mean and how they are used; translate business questions into technical solutions and data products that surface insights and guide action.
 
@@ -45,15 +45,15 @@ Reporting to the Deputy Chief Data Officer, the role works on an interdisciplina
 
 - Contribute to citywide data governance: owner/steward accountability, sharing agreements, access workflows, and change management.
 
-**Engineering Practice and Stewardship**
+### Engineering Practice and Stewardship
 
 - Lead code reviews and uphold engineering standards (testing, documentation, observability).
 
 - Mentor more junior engineers and contribute to OPI’s broader engineering culture.
 
-**■ Knowledge, Skills, and Abilities**
+## Knowledge, Skills, and Abilities
 
-**Technical expertise**
+### Technical expertise
 
 - Proficiency in Python for data engineering (Pandas, Polars, SQLAlchemy, ORM patterns, requests).
 
@@ -65,7 +65,7 @@ Reporting to the Deputy Chief Data Officer, the role works on an interdisciplina
 
 - Understanding of cloud data workflows, APIs, and modern DevOps tools for CI/CD, logging, and monitoring.
 
-**Collaboration and stewardship**
+### Collaboration and stewardship
 
 - Ability to work collaboratively on GitHub and contribute to shared codebases.
 
@@ -75,7 +75,7 @@ Reporting to the Deputy Chief Data Officer, the role works on an interdisciplina
 
 - Curiosity, problem-solving mindset, and ownership of complex technical challenges.
 
-**Operations management**
+### Operations management
 
 - Knowledge of public and business administration, including planning, organizing, staffing, directing, and controlling.
 
@@ -85,25 +85,25 @@ Reporting to the Deputy Chief Data Officer, the role works on an interdisciplina
 
 - Ability to maintain confidentiality of sensitive information.
 
-**■ Minimum Qualifications**
+## Minimum Qualifications
 
-**Education**
+### Education
 
 - Bachelor’s degree in Computer Science, Data Science, Information Systems, or a related field.
 
-**Experience**
+### Experience
 
 - At least 7 years of professional experience in data engineering or a related technical role.
 
-**Equivalency**
+### Equivalency
 
 An equivalent combination of education and experience will be considered.
 
-**■ Working Conditions**
+## Working Conditions
 
 Employees in this class work a conventional work week. This position may be required to work evening and weekend hours and 24-hour callback in an emergency. Work is performed in an office where work conditions are normal. Work requires minimal physical exertion. Hybrid telework is supported under OPI’s telework policy; staff are expected to be on site at City Hall a minimum of four days per week, with one day per week available as remote.
 
-**■ Supervision**
+## Supervision
 
 **Supervision received.** Reports to the Deputy Chief Data Officer.
 

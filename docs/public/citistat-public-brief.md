@@ -4,15 +4,19 @@
 
 A plain-language brief on Baltimore’s CitiStat program, the 19 Stats, and where to see results.
 
-**VERSION** v1.0
+VERSION
+:   v1.0
 
-**UPDATED** April 2026
+UPDATED
+:   April 2026
 
-**OWNER** CitiStat · Performance Portfolio
+OWNER
+:   CitiStat · Performance Portfolio
 
-**AUDIENCE** Agency partners, City Council, residents, media
+AUDIENCE
+:   Agency partners, City Council, residents, media
 
-**■ What CitiStat is**
+## What CitiStat is
 
 CitiStat is Baltimore’s citywide performance management program. It is a structured, recurring conversation between the Mayor’s Office and City agencies, focused on a small set of measures that matter to residents — and on what each agency is doing about them.
 
@@ -20,7 +24,7 @@ CitiStat is established in the Baltimore City Code (Article 1, Subtitle 61). It 
 
 > *Respond when necessary. Build so we do not have to respond again.*
 
-**■ The four tenets**
+## The four tenets
 
 Every Stat session is grounded in four discipline points:
 
@@ -32,7 +36,7 @@ Every Stat session is grounded in four discipline points:
 
 **Relentless follow-up and assessment.** Commitments tracked in writing across sessions, not only inside one meeting.
 
-**■ The 19 Stats at a glance**
+## The 19 Stats at a glance
 
 CitiStat runs through nineteen recurring Stats. Each Stat is a regular session focused on a specific service area, with the agency that owns it.
 
@@ -58,7 +62,7 @@ CitiStat runs through nineteen recurring Stats. Each Stat is a regular session f
 | Workplace Safety Stat | Worker safety across City agencies.                            |
 | Youth Stat            | Youth-serving programs and outcomes across agencies.           |
 
-**■ How a Stat session works**
+## How a Stat session works
 
 **Memo first.** OPI prepares a CitiStat memorandum: data, trend, last meeting’s commitments, and questions for this meeting.
 
@@ -68,7 +72,7 @@ CitiStat runs through nineteen recurring Stats. Each Stat is a regular session f
 
 **Follow-up.** Commitments are tracked across sessions. Patterns surface to leadership and — where appropriate — to the public.
 
-**■ Where to see CitiStat results**
+## Where to see CitiStat results
 
 - CitiStat impact briefs published on opi.baltimorecity.gov — short, plain-language summaries of progress on priority services.
 
@@ -76,11 +80,11 @@ CitiStat runs through nineteen recurring Stats. Each Stat is a regular session f
 
 - Mayor and City Council updates — testimony, budget hearings, and citywide briefings reference CitiStat data.
 
-**■ How CitiStat fits with the rest of OPI**
+## How CitiStat fits with the rest of OPI
 
 CitiStat is one of three core OPI services that work as a cycle. CitiStat surfaces what is not working. Citywide Data and Analytics explains why and builds the data products that keep working between sessions. The Innovation Lab redesigns the service. Cross-Agency Delivery and AdminOps keep the work coordinated and on track.
 
-**■ Contact**
+## Contact
 
 |                 |                                                                |
 |-----------------|----------------------------------------------------------------|

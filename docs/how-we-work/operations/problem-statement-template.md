@@ -4,19 +4,22 @@
 
 A one-to-three sentence framing that names what is failing and who feels it. Sharp problems make sharp work.
 
-**AUDIENCE** All OPI staff
+AUDIENCE
+:   All OPI staff
 
-**OWNER** Director’s Office
+OWNER
+:   Director’s Office
 
-**VERSION** v1.0 · February 2026
+VERSION
+:   v1.0 · February 2026
 
-**■ Why we write problem statements**
+## Why we write problem statements
 
 A good problem statement is the cheapest piece of work in the entire project. Get it right and the rest of the project becomes obvious. Get it wrong and no amount of execution will save the outcome.
 
 > *A problem statement names what is failing and who feels it. It is not a diagnosis, a solution, or a press release.*
 
-**What good looks like**
+### What good looks like
 
 - Concrete. Specific service, specific population, specific failure mode.
 
@@ -28,7 +31,7 @@ A good problem statement is the cheapest piece of work in the entire project. Ge
 
 - Solution-free. Describes the problem, not the fix.
 
-**What to avoid**
+### What to avoid
 
 - Diagnosis dressed up as problem (“the system is fragmented”).
 
@@ -38,13 +41,13 @@ A good problem statement is the cheapest piece of work in the entire project. Ge
 
 - Unverifiable claims with no data behind them.
 
-**■ The structure**
+## The structure
 
 Use this structure as your starting point. Once it works, edit for clarity.
 
 > *\[Population\] who \[verb / experience\] \[service or process\] \[face / wait / receive\] \[failure mode\], measured by \[metric or evidence\], with the result that \[consequence\].*
 
-**Worked example — 311 / Forestry**
+### Worked example — 311 / Forestry
 
 - Population: residents who report tree damage after storms.
 
@@ -58,17 +61,17 @@ Use this structure as your starting point. Once it works, edit for clarity.
 
 > *Final form: “Residents who report tree damage after storms wait an average of 19 days for status. Forestry case loads spike by 3x and DPW receives duplicate complaints.”*
 
-**Worked example — Permitting**
+### Worked example — Permitting
 
 > *“Small contractors applying for residential permits wait a median of 42 days for first review, against a target of 14 days. Two-thirds of applications need rework due to unclear requirements, which extends the cycle and erodes trust in the permitting system.”*
 
-**Worked example — Internal data access**
+### Worked example — Internal data access
 
 > *“OPI analysts request operational data from agency systems via email and wait an average of 11 business days per request. The same datasets are requested repeatedly, with no cataloged source of truth, which delays performance reviews and produces inconsistent metric definitions.”*
 
-**■ Quality checks**
+## Quality checks
 
-**Before you write**
+### Before you write
 
 - Have you spoken with at least one person who is on the receiving end of the failure?
 
@@ -76,7 +79,7 @@ Use this structure as your starting point. Once it works, edit for clarity.
 
 - Have you bounded the population (who, where, when)?
 
-**After you write**
+### After you write
 
 - Read the statement aloud. Does it pass the “new hire” test?
 
@@ -86,7 +89,7 @@ Use this structure as your starting point. Once it works, edit for clarity.
 
 - Is the consequence stated in terms residents, agencies, or leaders care about?
 
-**Stress tests**
+### Stress tests
 
 - **The “so what” test:** If we solve this, what changes?
 
@@ -94,7 +97,7 @@ Use this structure as your starting point. Once it works, edit for clarity.
 
 - **The “wrong problem” test:** Could a clever team produce a perfect solution to the wrong problem here?
 
-**■ Anti-patterns and rewrites**
+## Anti-patterns and rewrites
 
 | **Weak**                                               | **Stronger**                                                                                                                                                                                |
 |--------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -103,7 +106,7 @@ Use this structure as your starting point. Once it works, edit for clarity.
 | “Data governance is immature.”                         | “7 of OPI’s 12 most-used datasets lack a named owner, refresh schedule, or sensitivity label, which has produced two contested KPI publications in the last 6 months.”                      |
 | “There is misalignment across agencies on permitting.” | “Permitting applicants receive conflicting requirements from DHCD and Fire on the same case in 31% of multi-agency reviews, extending the median cycle by 22 days.”                         |
 
-**■ Where this lives in the operating model**
+## Where this lives in the operating model
 
 - Project Directory — every accepted project has a problem statement field.
 
@@ -113,6 +116,6 @@ Use this structure as your starting point. Once it works, edit for clarity.
 
 - Decision memos — the problem statement is the first paragraph.
 
-**■ Owner**
+## Owner
 
 Owned by the Director’s Office with input from the Deputy Chief Performance Officer. Reviewed annually.

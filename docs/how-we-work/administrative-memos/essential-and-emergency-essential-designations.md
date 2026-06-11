@@ -21,7 +21,7 @@ March 5, 2026
 **Subject:**  
 Essential and Emergency Essential Designations for Continuity of Operations
 
-**Purpose**
+## Purpose
 
 To support continuity of operations during emergencies and significant citywide
 events, this memo establishes OPI staff designations as Essential or Emergency
@@ -36,7 +36,7 @@ policy, bargaining unit agreements, and any event-specific direction issued by
 the Department of Human Resources (DHR) or the Office of the Labor Commissioner
 (OLC).
 
-**Staff designations (effective March 9, 2026)**
+## Staff designations (effective March 9, 2026)
 
 Designations support continuity of operations during City activations (for
 example: severe weather, public safety incidents, critical systems outages, or
@@ -48,7 +48,7 @@ other emergency declarations).
 | Emergency Essential | All other OPI staff. | May be required to report to duty or perform remote duties as directed based on the incident and operational needs. Be prepared for activation and schedule changes. |
 | Non-Essential | No OPI positions are designated Non-Essential at this time. | Not applicable for OPI at this. |
 
-**How activation works**
+## How activation works
 
 - The OPI Executive Director or Chief of Staff will issue an OPI-specific
   posture for staff, including: reporting instructions, priority work, coverage
@@ -60,7 +60,7 @@ other emergency declarations).
 - If the city issues a closure, delayed start, telework posture, or emergency
   activation, OPI staff may be required to report to work.
 
-**Reporting expectations**
+## Reporting expectations
 
 **Essential** (OPI leadership and principal staff — Operations Officer V and above)
 
@@ -82,7 +82,7 @@ other emergency declarations).
 
 - No OPI positions are designated Non-Essential at this time.
 
-**Communication channels**
+## Communication channels
 
 During activations, official updates and instructions will be communicated
 through the channels below. Staff should prioritize the most recent official
@@ -94,7 +94,7 @@ guidance.
 
 - Phone/SMS call tree for urgent escalations or time-critical notices
 
-**Supervisor responsibilities**
+## Supervisor responsibilities
 
 - Confirm team contact lists and escalation coverage (including alternates) at
   least quarterly.
@@ -104,7 +104,7 @@ guidance.
 - During activations, provide clear tasking, priority sequencing, and expected
   availability windows.
 
-**What you should do now**
+## What you should do now
 
 - Ensure your phone number and emergency contact details are current per city HR
   processes and internal OPI records.
@@ -115,7 +115,7 @@ guidance.
 - Review the OPI activation checklist when published (location will be
   communicated via Teams and posted to SharePoint).
 
-**Questions**
+## Questions
 
 If you have questions about your designation or reporting expectations, contact
 your direct supervisor first, or Rakeim Young, Chief of Staff, for

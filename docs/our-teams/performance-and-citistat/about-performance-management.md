@@ -10,9 +10,9 @@
 
 *This About doc is the human story of the service — who we are, what we do, and what we own. The Performance Management Strategy is the strategic argument behind the system. The Theory of Change explains how the service is mandated, governed, staffed, measured, and sustained.*
 
-**PURPOSE**
+## PURPOSE
 
-**What this service is for**
+### What this service is for
 
 Citywide Performance Management helps Baltimore City turn priorities into action, data into decisions, and commitments into measurable service improvements.
 
@@ -20,7 +20,7 @@ This team stewards Baltimore’s performance management system, including CitiSt
 
 <div class="opi-pullquote" markdown="0">The goal is not more meetings. The goal is clearer ownership, faster decisions, better follow-through, and visible improvements residents and public servants can feel.</div>
 
-**Who we are**
+### Who we are
 
 We are the city’s performance method team.
 
@@ -28,7 +28,7 @@ We bring structure, analysis, facilitation, and follow-through to the services a
 
 We are not auditors. We are not here to surprise agencies, embarrass teams, or create performance theater. We are partners in disciplined improvement. We hold the line on candor, method, and accountability while helping agencies own and sustain change.
 
-**What we do**
+### What we do
 
 We administer Baltimore’s citywide performance routines, including agency Stats, thematic Stats, agency performance planning, performance measures, and follow-up processes.
 
@@ -48,13 +48,13 @@ Core work includes:
 
 - Connecting performance routines to budget, public reporting, and annual impact narratives.
 
-**Why it matters**
+### Why it matters
 
 City government does not improve because someone reports on a problem. It improves when the problem is defined clearly, the right people are in the room, the right data is trusted, commitments are assigned, and follow-up continues until conditions change.
 
 When performance management works, agencies are not simply presenting status updates. They are learning, adjusting, and solving problems in public view of leadership. Residents benefit when service issues are identified earlier, bottlenecks are addressed faster, and agencies build routines that make improvement part of how they work.
 
-**How we work**
+### How we work
 
 We work through a disciplined but humane performance cycle.
 
@@ -69,7 +69,7 @@ We use the lightest effective management routine. Some problems belong in a Stat
 
 We do not take over agency operations. Agencies own service delivery. OPI provides the method, the data questions, the follow-up discipline, and the escalation path.
 
-**The four tenets of Stat**
+### The four tenets of Stat
 
 The routine, at every step, holds to the four tenets of Stat.
 
@@ -96,7 +96,7 @@ The routine, at every step, holds to the four tenets of Stat.
   </div>
 </div>
 
-**What we own**
+### What we own
 
 The team owns:
 
@@ -120,7 +120,7 @@ The team owns:
 
 - Public summaries and annual report content tied to performance routines.
 
-**What we do not own**
+### What we do not own
 
 The team does not own:
 
@@ -136,7 +136,7 @@ The team does not own:
 
 *We partner on those functions, but they have separate service homes.*
 
-**How we partner across OPI**
+### How we partner across OPI
 
 Performance is often the front door for identifying problems.
 
@@ -148,7 +148,7 @@ When a Stat commitment requires multi-agency sequencing, authorizer decisions, a
 
 When public narrative, Council preparation, quality assurance, calendar coordination, or portfolio visibility is needed, we partner with AdminOps.
 
-**What success looks like**
+### What success looks like
 
 Success means the performance system is useful, trusted, and action-oriented.
 
@@ -156,7 +156,7 @@ In human terms, the work is succeeding when leadership time is spent on the high
 
 *For the formal success measures — routine reliability, decision quality, data integrity, service improvement, budget linkage, and public trust — see [Performance Management Strategy](performance-management-strategy.md).*
 
-**Common outputs**
+### Common outputs
 
 - CitiStat pre-memos and decks.
 

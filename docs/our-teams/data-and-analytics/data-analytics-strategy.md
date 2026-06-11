@@ -8,7 +8,7 @@ Strategy Document
 
 *This document makes the strategic case for citywide data infrastructure. The About doc tells the human story. The ToC shows the operating backbone. The Governance Framework specifies stewardship rules.*
 
-**EXECUTIVE SUMMARY**
+## EXECUTIVE SUMMARY
 
 **Foundations plus leverage**
 
@@ -18,7 +18,7 @@ The team does not exist to become the default report shop for every agency. It e
 
 The service is essential because every major city priority now depends on trusted data: CitiStat, 311, permitting, housing, public safety, cleaning, budget alignment, open data, digital products, and responsible AI. Without strong data stewardship, every other OPI service is weaker.
 
-**SERVICE DEFINITION**
+## SERVICE DEFINITION
 
 **What this service is**
 
@@ -26,7 +26,7 @@ Citywide Data & Analytics strengthens Baltimore City’s data infrastructure, an
 
 Activities include developing and maintaining data pipelines and shared datasets, producing analytics and data products, supporting data quality and governance standards, maintaining Open Baltimore, publishing high-quality open datasets, supporting data literacy, and preparing the City for responsible use of artificial intelligence and advanced analytics.
 
-**WHY THIS WORK MATTERS**
+## WHY THIS WORK MATTERS
 
 **A city cannot manage what it cannot trust**
 
@@ -36,7 +36,7 @@ This is not sustainable. The City needs shared datasets, common definitions, doc
 
 > *This infrastructure is also the foundation for AI readiness. Responsible AI requires trusted sources, clear definitions, sensitive data controls, human oversight, and evaluation. AI without data stewardship is risk without value.*
 
-**WHAT THE SERVICE OWNS**
+## WHAT THE SERVICE OWNS
 
 **Six lines of work**
 
@@ -64,7 +64,7 @@ Responsible AI framework, AI evaluation memos, human oversight standards, pilot 
 
 Coaching, training, office hours, show-and-tells, and support for agency Data-Driven Officers and data stewards.
 
-**WHAT THE SERVICE DOES NOT OWN**
+## WHAT THE SERVICE DOES NOT OWN
 
 **Boundaries that protect the work**
 
@@ -82,7 +82,7 @@ Clear boundaries protect the team from becoming a bottleneck and protect agencie
 
 - It does not become the permanent analytics shop for every bespoke agency report. Ad hoc work should either become standardized, transition to an agency, or stop.
 
-**OPERATING POSTURE**
+## OPERATING POSTURE
 
 **Platform steward, not central fulfillment shop**
 
@@ -90,7 +90,7 @@ The Data & Analytics team should prioritize work that creates reusable value. A 
 
 > **Five intake questions: What decision will this support? Who will use it? Can it be reused? What data quality or governance risk exists? Who will sustain it after the first release?**
 
-**CORE OFFERINGS**
+## CORE OFFERINGS
 
 **How agencies engage the service**
 
@@ -103,27 +103,27 @@ The Data & Analytics team should prioritize work that creates reusable value. A 
 | AI / data readiness review | An agency proposes an AI or advanced analytics use case.                            | Evaluation memo, risk tier, data requirements, human oversight plan.   |
 | Data literacy support      | Agency staff need to interpret or use data more effectively.                        | Training, office hours, playbook, community-of-practice session.       |
 
-**HOW THE SERVICE PARTNERS ACROSS OPI**
+## HOW THE SERVICE PARTNERS ACROSS OPI
 
 **Integration with other services**
 
-**With Performance**
+### With Performance
 
 The service provides trusted data, KPI definitions, dashboards, methodology cards, data quality notes, and analysis that supports performance routines. It does not run the Stat session or enforce follow-up.
 
-**With the Innovation Lab**
+### With the Innovation Lab
 
 The service provides data, APIs, quality standards, and governance support for digital products, prototypes, AI pilots, and operational tools. It does not lead user research or service design.
 
-**With Cross-Agency Delivery**
+### With Cross-Agency Delivery
 
 The service provides shared data models, baseline metrics, and performance instrumentation that show whether delivery activations are changing conditions.
 
-**With AdminOps**
+### With AdminOps
 
 The service coordinates publication cadence, public-facing materials, Council briefings, and knowledge management for data products.
 
-**OPEN DATA AS PUBLIC ACCOUNTABILITY INFRASTRUCTURE**
+## OPEN DATA AS PUBLIC ACCOUNTABILITY INFRASTRUCTURE
 
 **A product with users**
 
@@ -131,7 +131,7 @@ Open data should be treated as a product with users. Residents, journalists, res
 
 The service should maintain an inventory of datasets, prioritize publication based on public value and readiness, publish methodology cards for high-value datasets, and create feedback channels so users can report issues or request improvements.
 
-**RESPONSIBLE AI READINESS**
+## RESPONSIBLE AI READINESS
 
 **A lightweight but real review process**
 
@@ -139,7 +139,7 @@ AI belongs in this service because AI builds on data foundations and governance.
 
 No production AI use case should proceed without an approved use case brief, defined data sources, documented assumptions, human oversight, and a plan to evaluate whether it works. The standard is not whether the technology is impressive. The standard is whether it improves a real decision or service while protecting residents and public trust.
 
-**SUCCESS MEASURES**
+## SUCCESS MEASURES
 
 **How we know the foundation is strong**
 
@@ -157,7 +157,7 @@ No production AI use case should proceed without an approved use case brief, def
 
 - Reduction in duplicate data cleaning and manual reporting for recurring priority questions.
 
-**FY27 PRIORITIES**
+## FY27 PRIORITIES
 
 **What we will do this year**
 
@@ -189,7 +189,7 @@ Build reusable data products for 311, permitting, service delivery, public safet
 
 Expand data literacy and communities of practice so agencies can use data responsibly without depending on OPI for every question.
 
-**CLOSING**
+## CLOSING
 
 **A foundation, not a support function**
 

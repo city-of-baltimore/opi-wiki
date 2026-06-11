@@ -2,7 +2,7 @@
 
 {{ page_header(summary="Position description for the CitiStat Program Manager.") }}
 
-**■ At a Glance**
+## At a Glance
 
 |                          |                                                                                                                                            |
 |--------------------------|--------------------------------------------------------------------------------------------------------------------------------------------|
@@ -13,15 +13,15 @@
 | **Supervision given**    | Individual contributor with respect to direct reports. Provides professional coaching and quality assurance to the CitiStat Analyst bench. |
 | **Supervision received** | Reports to the Deputy Chief Performance Officer.                                                                                           |
 
-**■ Position Summary**
+## Position Summary
 
 The CitiStat Program Manager is the senior practitioner of CitiStat method and the principal coach for the CitiStat Analyst bench. Reporting to the Deputy Chief Performance Officer, the Program Manager coordinates and facilitates Stat sessions, conducts deeper-cycle analysis on the most complex topics, ensures rigorous quality assurance of deliverables, and provides coaching to analysts. The role helps agencies use data to identify operational challenges, develop solutions, and track progress on key performance indicators (KPIs).
 
 The Program Manager is a champion of data-driven decision-making, process improvement, and transparency. The role is an individual contributor with respect to direct reports, but carries strong professional responsibility for the quality, cadence, and consistency of the CitiStat program.
 
-**■ Key Responsibilities**
+## Key Responsibilities
 
-**Quality Assurance and Coaching**
+### Quality Assurance and Coaching
 
 - Develop, maintain, and operate the Performance team’s quality-assurance process for CitiStat materials and analyses.
 
@@ -29,7 +29,7 @@ The Program Manager is a champion of data-driven decision-making, process improv
 
 - Run pre-session reviews; raise issues and improvements before the session; lead post-session retrospectives.
 
-**CitiStat Process and Operations**
+### CitiStat Process and Operations
 
 - Optimize the CitiStat operating process: intake, topic calendar, planning, deliverables, data use, and follow-through.
 
@@ -37,7 +37,7 @@ The Program Manager is a champion of data-driven decision-making, process improv
 
 - Lead planning and follow-up for sessions, ensuring sessions are structured, impactful, and aligned with city priorities.
 
-**Performance Management Support**
+### Performance Management Support
 
 - Provide leadership, analytical, and facilitation support for the citywide performance management process.
 
@@ -47,7 +47,7 @@ The Program Manager is a champion of data-driven decision-making, process improv
 
 - Prepare data visualizations, reports, and presentations that translate complex information into clear, actionable insights for city leadership.
 
-**Stewardship and Cross-Office Coordination**
+### Stewardship and Cross-Office Coordination
 
 - Partner with the Senior Performance Analyst on Performance Tracker product owner work and citywide measure development.
 
@@ -55,9 +55,9 @@ The Program Manager is a champion of data-driven decision-making, process improv
 
 - Perform other related duties to support CitiStat, citywide performance planning, and process-improvement initiatives.
 
-**■ Knowledge, Skills, and Abilities**
+## Knowledge, Skills, and Abilities
 
-**Program analysis**
+### Program analysis
 
 - Advanced analytical and data-interpretation skills, with experience using data to drive performance management and accountability.
 
@@ -73,7 +73,7 @@ The Program Manager is a champion of data-driven decision-making, process improv
 
 - Deep understanding of public-sector operations, performance frameworks, and the CitiStat model.
 
-**Operations management**
+### Operations management
 
 - Knowledge of the principles, practices, and procedures of business and public administration.
 
@@ -89,25 +89,25 @@ The Program Manager is a champion of data-driven decision-making, process improv
 
 - Ability to maintain confidentiality of sensitive information.
 
-**■ Minimum Qualifications**
+## Minimum Qualifications
 
-**Education**
+### Education
 
 - Bachelor’s degree in Public Administration, Business, Management, Data/Analytics, or a related field. Master’s degree preferred.
 
-**Experience**
+### Experience
 
 - At least 6 years of management or analyst experience, including at least 3 years in performance management, data analysis, or public-sector operations.
 
-**Equivalency**
+### Equivalency
 
 An equivalent combination of education and experience will be considered.
 
-**■ Working Conditions**
+## Working Conditions
 
 Employees in this class work a conventional work week. This position may be required to work evening and weekend hours and 24-hour callback in an emergency. Work is performed in an office where work conditions are normal. Work requires minimal physical exertion. Hybrid telework is supported under OPI’s telework policy; staff are expected to be on site at City Hall a minimum of four days per week, with one day per week available as remote.
 
-**■ Supervision**
+## Supervision
 
 **Supervision received.** Reports to the Deputy Chief Performance Officer.
 

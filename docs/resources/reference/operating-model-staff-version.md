@@ -4,15 +4,19 @@
 
 A short, plain-language guide for OPI staff. Pairs with the full Operating Model master held by leadership.
 
-**VERSION** v1.0
+VERSION
+:   v1.0
 
-**UPDATED** April 2026
+UPDATED
+:   April 2026
 
-**OWNER** OPI Director’s Office
+OWNER
+:   OPI Director’s Office
 
-**AUDIENCE** All OPI staff
+AUDIENCE
+:   All OPI staff
 
-**■ OPI in one sentence**
+## OPI in one sentence
 
 > *OPI combines performance, data, design, and delivery to help Baltimore City improve services in ways residents and staff can see and feel.*
 >
@@ -20,9 +24,9 @@ A short, plain-language guide for OPI staff. Pairs with the full Operating Model
 
 We are the Mayor’s Office of Performance and Innovation, a small office inside the City Administrator’s Office. Our job is to make sure that when residents call 311, apply for a permit, or rely on trash collection, those services actually work — and that City staff have the routines, data, and tools to keep them working.
 
-**■ How we are organized**
+## How we are organized
 
-**Four portfolios**
+### Four portfolios
 
 OPI is organized into four portfolios. Each portfolio has a clear lead and a clear scope.
 
@@ -33,7 +37,7 @@ OPI is organized into four portfolios. Each portfolio has a clear lead and a cle
 | Data and Analytics             | Jason Howard, PhD, Deputy Chief Data Officer   | Builds trusted data infrastructure — analytics, data platform, data engineering, open data, governance, AI readiness.  |
 | Innovation Lab                 | Dartanion Swift-Williams, Interim Innovation Program Manager | Turns service problems into designed, testable solutions — HCD, product discovery, civic tech, AI pilots, partnerships, and tiger teams. |
 
-**Five services**
+### Five services
 
 The four portfolios deliver five services. The same portfolio can support more than one service; one service is delivered as an overlay.
 
@@ -47,11 +51,11 @@ The four portfolios deliver five services. The same portfolio can support more t
 
 *Cross-Agency Delivery is a service overlay, not a stand-alone team. The Innovation Lab provides the team, Performance provides the standing delivery routine, and the Director’s Office provides the authorizing relationships.*
 
-**■ How work enters OPI**
+## How work enters OPI
 
 OPI uses a single front door. Every request — from agencies, from leadership, from inside OPI — enters the same way and gets routed by the same standard.
 
-**The intake path**
+### The intake path
 
 1.  Request lands in the OPI single front door (currently the Director’s Office intake).
 
@@ -63,7 +67,7 @@ OPI uses a single front door. Every request — from agencies, from leadership, 
 
 5.  Work runs through the appropriate cadence (CitiStat session, Lab sprint, delivery review) until close-out, with a documented hand-back to the agency that owns the service.
 
-**What we accept**
+### What we accept
 
 - Cross-agency problems with a clear executive sponsor.
 
@@ -75,7 +79,7 @@ OPI uses a single front door. Every request — from agencies, from leadership, 
 
 - Cross-cutting strategic asks from the Mayor or City Administrator.
 
-**What we decline or redirect**
+### What we decline or redirect
 
 - Long-term operating responsibility for an agency’s service — we are a time-boxed partner, not the operator.
 
@@ -85,9 +89,9 @@ OPI uses a single front door. Every request — from agencies, from leadership, 
 
 - Unsponsored or unscoped requests — we send them back with a problem-statement template.
 
-**■ How we govern decisions**
+## How we govern decisions
 
-**Decision rights**
+### Decision rights
 
 - Each portfolio lead decides scope and pace inside their portfolio.
 
@@ -97,7 +101,7 @@ OPI uses a single front door. Every request — from agencies, from leadership, 
 
 - Public commitments (Council, press, partners) are cleared through the Director’s Office and Communications.
 
-**Cadences**
+### Cadences
 
 | **Cadence**                 | **Purpose**                                                                                                     |
 |-----------------------------|-----------------------------------------------------------------------------------------------------------------|
@@ -107,7 +111,7 @@ OPI uses a single front door. Every request — from agencies, from leadership, 
 | Quarterly leadership review | Strategic priorities, service-level targets, staffing, partnerships, budget.                                    |
 | Annual planning             | Strategic Priorities update, FY budget submission, Foundations document refresh.                                |
 
-**Escalation**
+### Escalation
 
 - Inside a portfolio: portfolio lead decides; Executive Director if blocked.
 
@@ -117,7 +121,7 @@ OPI uses a single front door. Every request — from agencies, from leadership, 
 
 - Decision SLA: most decisions in five business days. Anything older surfaces at Weekly Ops Review.
 
-**■ How the services interlock**
+## How the services interlock
 
 OPI’s services are designed to work as a cycle, not as silos.
 
@@ -131,7 +135,7 @@ OPI’s services are designed to work as a cycle, not as silos.
 
 **AdminOps keeps it organized.** Through portfolio visibility, intake, QA, communications, and knowledge management.
 
-**■ What this means for you**
+## What this means for you
 
 - Know which portfolio you are in and which services you contribute to.
 
@@ -143,7 +147,7 @@ OPI’s services are designed to work as a cycle, not as silos.
 
 - Hand off cleanly. Every project closes with a sustain plan — the agency that owns the service keeps the gain.
 
-**■ Where to learn more**
+## Where to learn more
 
 - OPI Foundations Document Set — onboarding, operations, performance standards, charters, intake SOP.
 

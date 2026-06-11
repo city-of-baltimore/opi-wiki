@@ -4,13 +4,16 @@
 
 Protecting continuity, security, and OPI’s credibility through humane, predictable transitions.
 
-**AUDIENCE** Departing staff, managers, AdminOps, IT
+AUDIENCE
+:   Departing staff, managers, AdminOps, IT
 
-**OWNER** Director's Office
+OWNER
+:   Director's Office
 
-**VERSION** v1.0 · May 2026
+VERSION
+:   v1.0 · May 2026
 
-**■ Principles**
+## Principles
 
 - **No surprises:** Leaders and key partners know the transition plan early.
 
@@ -22,7 +25,7 @@ Protecting continuity, security, and OPI’s credibility through humane, predict
 
 > *Offboarding is how we protect the trust we built during onboarding.*
 
-**■ When notice is received (Day 0 – Day 2)**
+## When notice is received (Day 0 – Day 2)
 
 | **When** | **Task**                                                                                   | **Owner**                   | **How**                                                                    |
 |----------|--------------------------------------------------------------------------------------------|-----------------------------|----------------------------------------------------------------------------|
@@ -31,7 +34,7 @@ Protecting continuity, security, and OPI’s credibility through humane, predict
 | Day 0–2  | Identify critical work at risk: commitments, deadlines, meetings, dependencies.            | Departing staff + Manager   | Surface risks early. Propose options: re-scope, reassign, or pause.        |
 | Day 0–2  | Initiate AdminOps and IT tickets for access removal, mailbox delegation, equipment return. | AdminOps + Manager          | Coordinate with BCIT and building admin. Document ticket numbers.          |
 
-**■ Two weeks before last day**
+## Two weeks before last day
 
 Or immediately, if shorter notice.
 
@@ -43,7 +46,7 @@ Or immediately, if shorter notice.
 | T-10 days | Schedule knowledge transfer sessions with the continuity owner.                                   | Departing staff + Manager | Record decisions. Focus on pitfalls and watch-outs.                    |
 | T-7 days  | Draft a stakeholder communications plan (internal and agency partners, where appropriate).        | Manager + Departing staff | Keep messaging aligned. Avoid over-promising post-departure support.   |
 
-**■ Last week**
+## Last week
 
 | **When** | **Task**                                                                                     | **Owner**            | **How**                                                              |
 |----------|----------------------------------------------------------------------------------------------|----------------------|----------------------------------------------------------------------|
@@ -52,7 +55,7 @@ Or immediately, if shorter notice.
 | T-3 days | Close out open work where possible. Document what is paused and why.                         | Departing staff      | Update boards so work is legible.                                    |
 | T-2 days | Complete exit interview and feedback (if applicable).                                        | Departing staff + HR | Capture suggestions to improve onboarding and systems.               |
 
-**■ Last day**
+## Last day
 
 | **When** | **Task**                                                                                               | **Owner**                  | **How**                                                               |
 |----------|--------------------------------------------------------------------------------------------------------|----------------------------|-----------------------------------------------------------------------|
@@ -60,7 +63,7 @@ Or immediately, if shorter notice.
 | Last day | Set Out-of-Office message with routing instructions. Remove yourself from critical distribution lists. | Departing staff            | Include the continuity owner and the shared mailbox where applicable. |
 | Last day | Final transition check: Handoff Pack complete, owners assigned, stakeholders informed.                 | Manager + Departing staff  | Manager confirms all critical items have a named owner.               |
 
-**■ After departure**
+## After departure
 
 | **When**    | **Task**                                                                                          | **Owner**          | **How**                                                           |
 |-------------|---------------------------------------------------------------------------------------------------|--------------------|-------------------------------------------------------------------|
@@ -69,9 +72,9 @@ Or immediately, if shorter notice.
 | +7 days     | Archive or reassign files in OneDrive. Ensure SharePoint is the system of record.                 | Manager + AdminOps | Avoid knowledge loss. Copy necessary work products to SharePoint. |
 | +14 days    | Confirm continuity is stable: no orphaned projects, missing credentials, or unclear stakeholders. | Manager            | Use a brief after-action to improve the offboarding process.      |
 
-**■ Portfolio-specific add-ons**
+## Portfolio-specific add-ons
 
-**Director's Office**
+### Director's Office
 
 Ensure portfolio visibility and decision support artifacts remain current and owned.
 
@@ -81,7 +84,7 @@ Ensure portfolio visibility and decision support artifacts remain current and ow
 
 - T-5 days: finalize any public or executive artifacts in flight (QA complete, sources linked, version history intact).
 
-**Performance**
+### Performance
 
 Protect continuity of performance routines, Stat preparation, and agency relationships.
 
@@ -91,7 +94,7 @@ Protect continuity of performance routines, Stat preparation, and agency relatio
 
 - T-7 days: ensure KPI Dictionary updates are complete. Avoid orphaned metric definitions and stale dashboards.
 
-**Data and Analytics**
+### Data and Analytics
 
 Prevent security and reliability risks. Rotate credentials, reassign repos and pipelines, and keep runbooks current.
 
@@ -103,7 +106,7 @@ Prevent security and reliability risks. Rotate credentials, reassign repos and p
 
 - T-5 days: confirm data access and permission groups are adjusted. No personal accounts remain in production workflows.
 
-**Innovation Lab**
+### Innovation Lab
 
 Protect engagement continuity and design artifact integrity.
 
@@ -115,7 +118,7 @@ Protect engagement continuity and design artifact integrity.
 
 - T-5 days: hand off any external partner relationships (universities, philanthropy, civic tech) to the Interim Innovation Program Manager or the Communications and Partnerships Lead.
 
-**Manager responsibilities (all portfolios)**
+### Manager responsibilities (all portfolios)
 
 - Day 0–2: clarify communications — who needs to know, when, and what will be shared.
 
@@ -125,7 +128,7 @@ Protect engagement continuity and design artifact integrity.
 
 - Post-departure: conduct a lightweight after-action review. Capture learnings in templates and processes.
 
-**■ Appendix. Handoff Pack template**
+## Appendix. Handoff Pack template
 
 Create a SharePoint document titled: \[LastName\] — Handoff Pack — \[Role\] — \[YYYY-MM-DD\]. The template has eight sections.
 

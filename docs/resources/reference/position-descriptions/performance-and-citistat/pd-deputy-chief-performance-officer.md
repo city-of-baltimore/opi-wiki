@@ -2,7 +2,7 @@
 
 {{ page_header(summary="Position description for the Deputy Chief Performance Officer.") }}
 
-**■ At a Glance**
+## At a Glance
 
 |                          |                                                                                                                                                                                                       |
 |--------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -13,15 +13,15 @@
 | **Supervision given**    | Provides executive oversight to the CitiStat Program Manager, the Senior Performance Analyst, and the CitiStat Analyst bench. Coordinates with the Innovation Program Manager on tiger-team handoffs. |
 | **Supervision received** | Reports to the Executive Director and Chief Data Officer of OPI.                                                                                                                                      |
 
-**■ Position Summary**
+## Position Summary
 
 The Deputy Chief Performance Officer (DCPO) is Baltimore’s senior leader for performance strategy and CitiStat. Reporting to the Executive Director and Chief Data Officer, the DCPO oversees the CitiStat team, runs the citywide performance system (including the monthly CitiStat meetings), partners with agencies to develop and monitor agency performance plans, and works closely with the Bureau of the Budget and Management Research (BBMR) to align performance metrics to mayoral priorities.
 
 The DCPO leads a team of civic-minded analysts who gather and analyze data from city agencies to assess performance, identify operational challenges, and collaborate on solutions. The DCPO also serves as product owner for the citywide Performance Tracker and partners with the Director’s Office on cross-functional projects, including delivery units and tiger teams that translate performance findings into delivered service improvements.
 
-**■ Key Responsibilities**
+## Key Responsibilities
 
-**Performance Strategy and Governance**
+### Performance Strategy and Governance
 
 - In partnership with BBMR and the City Administrator’s Office, lead the development, implementation, and continuous improvement of Baltimore’s citywide performance management framework.
 
@@ -35,7 +35,7 @@ The DCPO leads a team of civic-minded analysts who gather and analyze data from 
 
 - Own and maintain the KPI Dictionary standard (owners, formulas, cadence, equity lens) and drive adoption across agencies.
 
-**CitiStat Program Management**
+### CitiStat Program Management
 
 - Optimize the CitiStat program for consistent stakeholder engagement, planning, deliverables, data use, and program evaluation.
 
@@ -45,13 +45,13 @@ The DCPO leads a team of civic-minded analysts who gather and analyze data from 
 
 - Maintain a single source of truth for CitiStat follow-ups; escalate blockers with clear recommendations; track outcomes and decision points.
 
-**Process Improvement and Implementation Support**
+### Process Improvement and Implementation Support
 
 - Initiate and execute additional implementation support to agency or city leadership using alternative methodologies (delivery units, tiger teams, and others) to convert performance findings into operational change.
 
 - Partner with the Director’s Office and the Innovation Lab on cross-functional projects.
 
-**Executive Leadership and Supervision**
+### Executive Leadership and Supervision
 
 - Direct programs with broad scope and major impact on agency missions and operations.
 
@@ -59,9 +59,9 @@ The DCPO leads a team of civic-minded analysts who gather and analyze data from 
 
 - Represent the City at senior levels to collaborate, solve operational problems, and build support for performance improvements.
 
-**■ Knowledge, Skills, and Abilities**
+## Knowledge, Skills, and Abilities
 
-**Performance leadership**
+### Performance leadership
 
 - Demonstrated experience establishing citywide or enterprise performance routines and translating insights into sustained improvements.
 
@@ -73,7 +73,7 @@ The DCPO leads a team of civic-minded analysts who gather and analyze data from 
 
 - Plain-language storytelling for non-technical audiences with equity and resident voice embedded.
 
-**Management and program analysis**
+### Management and program analysis
 
 - Knowledge of the principles and practices of operations and administration.
 
@@ -87,7 +87,7 @@ The DCPO leads a team of civic-minded analysts who gather and analyze data from 
 
 - Ability to supervise and direct the activities of staff.
 
-**Operations management**
+### Operations management
 
 - Knowledge of municipal organizational structure, staffing patterns, and administrative controls.
 
@@ -95,25 +95,25 @@ The DCPO leads a team of civic-minded analysts who gather and analyze data from 
 
 - Ability to communicate effectively with co-workers, staff of other agencies, and the general public.
 
-**■ Minimum Qualifications**
+## Minimum Qualifications
 
-**Education**
+### Education
 
 - Master’s degree in Public Administration, Public Policy, Business, Management, Data/Analytics, or a related field.
 
-**Experience**
+### Experience
 
 - At least 8 years of progressively responsible experience in performance management or operations; at least 5 years managing teams and running cross-agency performance or delivery routines.
 
-**Equivalency**
+### Equivalency
 
 An equivalent combination of education and experience will be considered.
 
-**■ Working Conditions**
+## Working Conditions
 
 Employees in this class work a conventional work week. This position may be required to work evening and weekend hours and 24-hour callback in an emergency. Work is performed in an office where work conditions are normal. Work requires minimal physical exertion. Hybrid telework is supported under OPI’s telework policy; staff are expected to be on site at City Hall a minimum of four days per week, with one day per week available as remote.
 
-**■ Supervision**
+## Supervision
 
 **Supervision received.** Reports to the Executive Director and Chief Data Officer of OPI.
 

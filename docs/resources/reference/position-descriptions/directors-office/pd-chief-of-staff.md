@@ -2,7 +2,7 @@
 
 {{ page_header(summary="Position description for the Chief of Staff.") }}
 
-**■ At a Glance**
+## At a Glance
 
 |                          |                                                                                                                                                                                                                                                                                                                                     |
 |--------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -13,15 +13,15 @@
 | **Supervision given**    | Directly supervises the Director’s Office team — Communications and Partnerships Lead, Project Manager, Special Assistant, and CitiStat Inspector — and directly oversees the Innovation Program Manager in support of the Innovation Lab portfolio. Indirectly coordinates with the Deputy Chief Performance Officer and the Deputy Chief Data Officer. |
 | **Supervision received** | Reports to the Executive Director and Chief Data Officer of OPI.                                                                                                                                                                                                                                                                    |
 
-**■ Position Summary**
+## Position Summary
 
 The Chief of Staff is the Executive Director’s principal deputy and the operational leader of OPI’s Director’s Office. The role coordinates strategy and execution on behalf of the Executive Director, owns OPI’s internal operating rhythm, and represents the Executive Director in interagency forums. Externally, the Chief of Staff leads partnerships, communications, and resource development. Internally, the Chief of Staff oversees administrative operations, knowledge management, the SharePoint operating system, quality assurance, the inspections function, and cross-OPI alignment.
 
 The Chief of Staff manages the Director’s Office staff (Communications and Partnerships Lead, Project Manager, Special Assistant, and CitiStat Inspector), directly oversees the Innovation Program Manager role on behalf of the Innovation Lab portfolio, oversees personnel, purchasing, and facilities coordination, and maintains continuity practices including OSHA, COOP, and incident response. The role is the connective tissue between the Executive Director and the four service portfolios.
 
-**■ Key Responsibilities**
+## Key Responsibilities
 
-**Executive Operations**
+### Executive Operations
 
 - Serve as the Executive Director’s delegate for internal coordination, external briefings, and interagency forums.
 
@@ -35,7 +35,7 @@ The Chief of Staff manages the Director’s Office staff (Communications and Par
 
 - Maintain continuity protocols for executive coverage, incident response, and after-action reviews.
 
-**Portfolio and Delivery Alignment**
+### Portfolio and Delivery Alignment
 
 - Partner with portfolio leads (Performance, Data and Analytics, Innovation Lab) to align priorities, milestones, and the OPI Book of Business.
 
@@ -43,13 +43,13 @@ The Chief of Staff manages the Director’s Office staff (Communications and Par
 
 - Sponsor the office’s quality-assurance standards and ensure deliverables meet the OPI publication bar.
 
-**Partnerships, Communications, and Storytelling**
+### Partnerships, Communications, and Storytelling
 
 - Lead OPI’s external partnership strategy with philanthropy, academic partners, civic-tech networks, and peer cities; sponsor the Communications and Partnerships Lead.
 
 - Approve OPI’s editorial calendar, publications, and external communications in coordination with the Mayor’s Office of Communications.
 
-**Operations, Knowledge, and SharePoint**
+### Operations, Knowledge, and SharePoint
 
 - Manage OPI’s internal operations: personnel actions, purchasing, facilities coordination, and the OPI SharePoint operating system as the source of truth.
 
@@ -57,15 +57,15 @@ The Chief of Staff manages the Director’s Office staff (Communications and Par
 
 - Direct OPI’s administrative-operations function (CitiStat Inspector and related coordination), including supplies, facilities, AV, and visitor logistics.
 
-**Personnel and Stewardship**
+### Personnel and Stewardship
 
 - Oversee hiring, onboarding, performance management, and offboarding for the Director’s Office team and serve as a resource for portfolio leads.
 
 - Maintain OSHA, COOP, telework, and essential-designation practices; partner with HR on benefits, leave, and labor-relations matters.
 
-**■ Knowledge, Skills, and Abilities**
+## Knowledge, Skills, and Abilities
 
-**Operations and program leadership**
+### Operations and program leadership
 
 - Strong executive operations and chief-of-staff skills, including running operating rhythms, briefing executives, and converting decisions into delivered work.
 
@@ -73,13 +73,13 @@ The Chief of Staff manages the Director’s Office staff (Communications and Par
 
 - Knowledge of municipal procurement, personnel, budgeting, and continuity practices.
 
-**Communications and partnerships**
+### Communications and partnerships
 
 - Strong written and verbal communications, including executive memos, briefings, and external-facing publications.
 
 - Comfort building and stewarding external partnerships with philanthropy, academia, civic tech, and peer cities.
 
-**Operations management**
+### Operations management
 
 - Knowledge of the principles, practices, and procedures of business and public administration.
 
@@ -91,25 +91,25 @@ The Chief of Staff manages the Director’s Office staff (Communications and Par
 
 - Ability to communicate effectively with co-workers, staff of other agencies, and the general public.
 
-**■ Minimum Qualifications**
+## Minimum Qualifications
 
-**Education**
+### Education
 
 - Bachelor’s degree in Public Administration, Public Policy, Business, Management, or a related field. Master’s degree preferred.
 
-**Experience**
+### Experience
 
 - At least 7 years of progressively responsible leadership experience, including chief-of-staff, deputy director, or program management roles in government, civic technology, consulting, or a comparable mission-driven setting; demonstrated record of running an executive’s office and delivering through others.
 
-**Equivalency**
+### Equivalency
 
 An equivalent combination of education and experience will be considered.
 
-**■ Working Conditions**
+## Working Conditions
 
 Employees in this class work a conventional work week. This position may be required to work evening and weekend hours and 24-hour callback in an emergency. Work is performed in an office where work conditions are normal. Work requires minimal physical exertion. Hybrid telework is supported under OPI’s telework policy; staff are expected to be on site at City Hall a minimum of four days per week, with one day per week available as remote.
 
-**■ Supervision**
+## Supervision
 
 **Supervision received.** Reports to the Executive Director and Chief Data Officer of OPI.
 

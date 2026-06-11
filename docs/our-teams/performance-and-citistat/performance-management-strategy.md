@@ -21,7 +21,7 @@ Every Stat should therefore end with one of five outcomes: a closed commitment, 
   Every effective Stat session resolves to one of five outcomes: (1) a closed commitment with evidence, (2) a new or revised priority metric, (3) a process or SOP change, (4) a triggered delivery activation or product routine, or (5) a documented decision to stop, redesign, or escalate. “Continue discussing” is not an outcome.
 </div>
 
-**EXECUTIVE SUMMARY**
+### EXECUTIVE SUMMARY
 
 **A performance system, not a reporting exercise**
 
@@ -31,7 +31,7 @@ This strategy defines how Baltimore will connect the Mayor’s priorities, agenc
 
 At its best, performance management is a learning discipline. It helps government see reality clearly, act on the evidence, and keep improving. It is also a trust discipline. Residents deserve a government that is candid about what is working, honest about where systems are falling short, and disciplined about what happens next.
 
-**THE CASE FOR CHANGE**
+### THE CASE FOR CHANGE
 
 **Residents experience services, not metrics**
 
@@ -41,7 +41,7 @@ Baltimore has a powerful legacy in performance management through CitiStat. The 
 
 The City already has many ingredients: mayoral priorities, agency performance measures, CitiStat sessions, public dashboards, budget performance measures, open data, agency leaders, and frontline expertise. The challenge is integration. Too often, goals, measures, meetings, budgets, dashboards, and improvement projects operate in parallel. This strategy brings them into one cycle.
 
-**NORTH STAR**
+### NORTH STAR
 
 **Disciplined, humane, learning-oriented**
 
@@ -49,7 +49,7 @@ The City already has many ingredients: mayoral priorities, agency performance me
 
 The system will be disciplined because commitments have owners, dates, evidence, and escalation paths. It will be humane because the purpose is to help agencies solve problems, not perform blame. It will be learning-oriented because every review should produce clearer understanding, better decisions, and stronger routines.
 
-**GUIDING PRINCIPLES**
+### GUIDING PRINCIPLES
 
 **How the system should behave**
 
@@ -85,7 +85,7 @@ Improvements count when agencies can own them after the central team steps back.
 
 Public reporting should be plain-language, candid, and focused on progress, barriers, and next steps.
 
-**THE BALTIMORE PERFORMANCE CYCLE**
+### THE BALTIMORE PERFORMANCE CYCLE
 
 **Plan, measure, review, improve, report, learn**
 
@@ -100,7 +100,7 @@ The City’s performance system should operate as a repeating cycle.
 | Report    | Share progress, barriers, and next steps with leadership, Council, staff, and residents.                          | Public summaries; annual reports; budget narratives; website updates.      |
 | Learn     | Assess whether the routine and the intervention worked, then redesign, scale, pause, or institutionalize.         | After-action reviews; sustainment plans; annual refresh.                   |
 
-**CORE COMPONENT 1**
+### CORE COMPONENT 1
 
 **Mayor’s priorities and agency performance plans**
 
@@ -110,7 +110,7 @@ Agency performance plans should be practical management tools. Each plan should 
 
 OPI will support agencies with templates, coaching, KPI review, and alignment to budget narratives. Over time, agency plans should become the common frame used in CitiStat, budget development, Council briefings, and public reporting.
 
-**CORE COMPONENT 2**
+### CORE COMPONENT 2
 
 **CitiStat as the executive performance rhythm**
 
@@ -149,7 +149,7 @@ Every effective Stat holds to the four tenets that have defined the discipline s
   </div>
 </div>
 
-**CORE COMPONENT 3**
+### CORE COMPONENT 3
 
 **Citywide Data & Analytics**
 
@@ -159,7 +159,7 @@ For priority measures, OPI will maintain a KPI dictionary with definitions, owne
 
 This data foundation also prepares Baltimore for responsible AI. AI can support analysis, communication, and decision support only when the underlying data is trusted, documented, governed, and reviewed by humans.
 
-**CORE COMPONENT 4**
+### CORE COMPONENT 4
 
 **Cross-Agency Delivery and Tiger Teams**
 
@@ -167,7 +167,7 @@ Many of Baltimore’s toughest service problems do not sit inside one agency. Pe
 
 Cross-agency delivery should be activated when the work crosses multiple agencies, has a named authorizer, requires sequencing over at least 90 days, and has a sustainment owner. Tiger teams should be time-boxed, outcome-owned, and focused on diagnosis, prototype, implementation, and handoff. They should produce concrete outputs: process maps, staffing assessments, data and technology assessments, pilot designs, SOPs, training materials, and sustainment plans.
 
-**CORE COMPONENT 5**
+### CORE COMPONENT 5
 
 **Budget alignment**
 
@@ -175,7 +175,7 @@ The budget is one of the City’s most powerful performance tools. Performance m
 
 OPI and the budget office should continue aligning agency performance plans, budget performance measures, CitiStat findings, and outcome narratives. Budget reviews should ask: What problem is this investment solving? What result should change? What evidence suggests this approach will work? What capacity is needed to implement it? How will the City know whether it worked?
 
-**CORE COMPONENT 6**
+### CORE COMPONENT 6
 
 **Public reporting and trust**
 
@@ -183,7 +183,7 @@ Public reporting should not simply publish more data. It should help residents u
 
 Baltimore’s public performance products should include annual CitiStat reporting, priority dashboards, open datasets where appropriate, district or neighborhood views when data quality supports them, and short narrative updates that explain what changed because of performance review. The public story should avoid triumphalism. It should build trust through candor, specificity, and evidence of follow-through.
 
-**GOVERNANCE AND DECISION RIGHTS**
+### GOVERNANCE AND DECISION RIGHTS
 
 **Who owns what**
 
@@ -205,7 +205,7 @@ Clear decision rights are essential.
 
 This ownership model prevents two common failures: central teams taking over agency work, and agencies being asked to solve cross-agency problems without the authority to change the system around them.
 
-**SUCCESS MEASURES**
+### SUCCESS MEASURES
 
 **How we know the system is working**
 
@@ -221,7 +221,7 @@ This ownership model prevents two common failures: central teams taking over age
 
 - Public trust: publication cadence, public usability, and the ability to explain what changed because of performance review.
 
-**FY27 IMPLEMENTATION PRIORITIES**
+### FY27 IMPLEMENTATION PRIORITIES
 
 **What we will do this year**
 
@@ -253,7 +253,7 @@ Create a public reporting rhythm that tells residents what the City is improving
 
 Run an annual review of the performance system itself and adjust routines that are not producing decisions, learning, or improvement.
 
-**CLOSING**
+### CLOSING
 
 **A discipline, not a project**
 

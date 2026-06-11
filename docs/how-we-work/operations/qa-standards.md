@@ -4,19 +4,22 @@
 
 The minimum bar for any artifact OPI produces. Accessibility, plain language, privacy review, and no surprise launches.
 
-**AUDIENCE** All OPI staff and managers
+AUDIENCE
+:   All OPI staff and managers
 
-**OWNER** Director’s Office · DCDO (privacy)
+OWNER
+:   Director’s Office · DCDO (privacy)
 
-**VERSION** v1.0 · February 2026
+VERSION
+:   v1.0 · February 2026
 
-**■ Why QA matters**
+## Why QA matters
 
 OPI’s work is used by senior leaders, agency partners, and sometimes the public. Quality is not optional, and it is not a separate phase. It is part of the work. This document describes the QA bar that applies to everything OPI publishes — internally and externally.
 
 > *No public artifact ships without QA. No surprise launches.*
 
-**Principles**
+### Principles
 
 - Quality is built in. QA is part of delivery, not an afterthought.
 
@@ -28,7 +31,7 @@ OPI’s work is used by senior leaders, agency partners, and sometimes the publi
 
 - Privacy is a first-class concern. Sensitivity is handled before publication, not after.
 
-**■ What QA covers**
+## What QA covers
 
 Every artifact passes four gates before it is shared with an audience outside the immediate working team.
 
@@ -39,9 +42,9 @@ Every artifact passes four gates before it is shared with an audience outside th
 | Privacy and sensitivity | The artifact does not expose PII or restricted information. Sensitivity is labeled. Approvals are in place.                                         |
 | Launch readiness        | Stakeholders are informed before publication. Comms are coordinated. Rollback or correction plan is in place. No surprise launches.                 |
 
-**■ Gate 1 — Accessibility**
+## Gate 1 — Accessibility
 
-**Minimum standard**
+### Minimum standard
 
 - All public artifacts meet WCAG 2.1 AA contrast ratios (4.5:1 for body text, 3:1 for large text).
 
@@ -55,7 +58,7 @@ Every artifact passes four gates before it is shared with an audience outside th
 
 - PDFs are tagged. Scanned images of documents are not acceptable.
 
-**Quick checks**
+### Quick checks
 
 - Read the artifact with a screen reader for one minute.
 
@@ -65,9 +68,9 @@ Every artifact passes four gates before it is shared with an audience outside th
 
 - Verify alt text is descriptive, not “image” or “photo.”
 
-**■ Gate 2 — Plain language**
+## Gate 2 — Plain language
 
-**Minimum standard**
+### Minimum standard
 
 - The ask, decision, or main finding appears in the first 50 words.
 
@@ -81,7 +84,7 @@ Every artifact passes four gates before it is shared with an audience outside th
 
 - Numbers and dates are formatted consistently and use thousands separators.
 
-**Quick checks**
+### Quick checks
 
 - A new hire who has never worked at OPI can read the artifact and explain it back accurately.
 
@@ -89,7 +92,7 @@ Every artifact passes four gates before it is shared with an audience outside th
 
 - Every claim is either obvious or sourced.
 
-**■ Gate 3 — Privacy and sensitivity**
+## Gate 3 — Privacy and sensitivity
 
 **Minimum standard**
 
@@ -115,9 +118,9 @@ Every artifact passes four gates before it is shared with an audience outside th
 
 - Any visualization with cell sizes below the agreed minimum (typically \<10 records).
 
-**■ Gate 4 — Launch readiness**
+## Gate 4 — Launch readiness
 
-**Minimum standard**
+### Minimum standard
 
 - Stakeholders are informed before publication. Internal notice precedes external launch by at least one business day for routine work, more for sensitive work.
 
@@ -129,7 +132,7 @@ Every artifact passes four gates before it is shared with an audience outside th
 
 - A public narrative status is recorded in the Project Directory: Not public / Eligible / Drafting / Published.
 
-**What “no surprise launches” means**
+### What “no surprise launches” means
 
 - No one in leadership learns about an OPI public artifact from outside the building.
 
@@ -137,9 +140,9 @@ Every artifact passes four gates before it is shared with an audience outside th
 
 - Sensitive findings have a pre-publication briefing path.
 
-**■ How QA is performed**
+## How QA is performed
 
-**Roles**
+### Roles
 
 - **Author:** Owns the artifact. Initiates QA. Resolves findings.
 
@@ -149,7 +152,7 @@ Every artifact passes four gates before it is shared with an audience outside th
 
 - **Manager:** Confirms QA pass before publication.
 
-**Process**
+### Process
 
 1.  Author drafts the artifact and runs the QA checklist.
 
@@ -163,7 +166,7 @@ Every artifact passes four gates before it is shared with an audience outside th
 
 6.  Artifact is published.
 
-**QA artifacts kept on file**
+### QA artifacts kept on file
 
 - QA checklist (completed and dated).
 
@@ -173,9 +176,9 @@ Every artifact passes four gates before it is shared with an audience outside th
 
 - Launch notice trail (who was informed, when).
 
-**■ QA checklist (copy / paste)**
+## QA checklist (copy / paste)
 
-**Accessibility**
+### Accessibility
 
 - Contrast meets WCAG AA.
 
@@ -187,7 +190,7 @@ Every artifact passes four gates before it is shared with an audience outside th
 
 - PDFs are tagged.
 
-**Plain language**
+### Plain language
 
 - Ask is in the first 50 words.
 
@@ -199,7 +202,7 @@ Every artifact passes four gates before it is shared with an audience outside th
 
 - Voice is active.
 
-**Privacy and sensitivity**
+### Privacy and sensitivity
 
 - Sensitivity label applied.
 
@@ -211,7 +214,7 @@ Every artifact passes four gates before it is shared with an audience outside th
 
 - Re-identification risk reviewed.
 
-**Launch readiness**
+### Launch readiness
 
 - Internal notice provided.
 
@@ -223,10 +226,10 @@ Every artifact passes four gates before it is shared with an audience outside th
 
 - Public narrative status updated in the Project Directory.
 
-**■ When QA fails**
+## When QA fails
 
 When an artifact fails QA, the failure and the resolution are documented. Repeat failures are coached, not punished privately. Patterns of failure are escalated to leadership and addressed at the system level (template, training, tooling), not just the individual artifact.
 
-**■ Owner and review**
+## Owner and review
 
 Owned by Director’s Office with privacy and sensitivity standards co-owned by the Deputy Chief Data Officer. Reviewed semi-annually or after any significant incident.

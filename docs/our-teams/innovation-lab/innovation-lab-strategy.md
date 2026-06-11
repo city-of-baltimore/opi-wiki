@@ -8,7 +8,7 @@ Strategy Document
 
 *This document makes the strategic argument for the Lab. The About doc tells the human story. The ToC shows the operating backbone. The Digital Product Methodology specifies how products are designed and shipped.*
 
-**EXECUTIVE SUMMARY**
+## EXECUTIVE SUMMARY
 
 **Innovation as delivery, not theater**
 
@@ -18,7 +18,7 @@ Innovation in city government has too often meant novelty, technology for its ow
 
 This strategy defines the Lab’s purpose, posture, methods, governance, and priorities. It is anchored in four commitments: start with the service, not the screen; design with users, not for them; build only when build is the right answer; and treat sustainment as the test of success.
 
-**THE CASE FOR CHANGE**
+## THE CASE FOR CHANGE
 
 **Many service problems are design problems**
 
@@ -28,7 +28,7 @@ These are design problems, data problems, workflow problems, and ownership probl
 
 > *Performance tells us where the system is falling short. Data helps us understand why. The Innovation Lab designs and tests practical solutions. Cross-Agency Delivery helps implementation stick.*
 
-**NORTH STAR**
+## NORTH STAR
 
 **Practical innovation in service of delivery**
 
@@ -36,7 +36,7 @@ The Innovation Lab will be a disciplined, humane, learning-oriented practice tha
 
 Disciplined because every engagement starts with a real problem, a real user, a real owner, a real decision, and a plan for sustainment. Humane because we work alongside frontline staff and residents, not over them. Learning-oriented because we run small, evaluate honestly, and stop or scale based on evidence.
 
-**GUIDING PRINCIPLES**
+## GUIDING PRINCIPLES
 
 **How the Lab operates**
 
@@ -68,7 +68,7 @@ Components, patterns, APIs, design systems, and methods should be reused across 
 
 The work happens in service of residents and staff. We do not build for spectacle. We build for delivery, and we explain the work plainly to the people it serves.
 
-**WHAT THE LAB OWNS**
+## WHAT THE LAB OWNS
 
 **Core capabilities**
 
@@ -96,7 +96,7 @@ Coordination with universities, civic technologists, philanthropic partners, and
 
 A growing library of components, accessibility patterns, intake flows, status communications, and operational tooling that future products can build on.
 
-**WHAT THE LAB DOES NOT OWN**
+## WHAT THE LAB DOES NOT OWN
 
 **Boundaries that protect the work**
 
@@ -112,7 +112,7 @@ A growing library of components, accessibility patterns, intake flows, status co
 
 - It is not a place where unfunded special projects go to drift. Every engagement needs an owner, a decision, and a sustainment plan.
 
-**OPERATING POSTURE**
+## OPERATING POSTURE
 
 **Discovery before build, sustainment from the start**
 
@@ -120,7 +120,7 @@ Every Lab engagement should have a clear admission test: a real problem, named u
 
 > **Five Lab intake questions: What problem are we solving? Who experiences it? What decision or workflow will change? What does success look like? Who will own the product after launch?**
 
-**ENGAGEMENT TYPES**
+## ENGAGEMENT TYPES
 
 **How agencies work with the Lab**
 
@@ -132,27 +132,27 @@ Every Lab engagement should have a clear admission test: a real problem, named u
 | AI pilot                 | A use case meets responsible AI criteria and improves a real decision or service.             | Use case brief, evaluation memo, human oversight plan, sunset criteria. |
 | Civic design partnership | A university, civic tech, or philanthropic partner can expand capacity or insight.            | Partnership scope, deliverables, public-facing summary, hand-back plan. |
 
-**HOW THE LAB PARTNERS ACROSS OPI**
+## HOW THE LAB PARTNERS ACROSS OPI
 
 **Integration with other services**
 
-**With Performance**
+### With Performance
 
 The Lab takes problems surfaced in CitiStat and converts them into discovery, design, and pilot work. It returns evidence about what worked back into the performance routine.
 
-**With Citywide Data & Analytics**
+### With Citywide Data & Analytics
 
 Data & Analytics provides shared datasets, methodology cards, KPIs, and AI/data readiness review. The Lab does not maintain enterprise data infrastructure; it consumes it through clear contracts.
 
-**With Cross-Agency Delivery**
+### With Cross-Agency Delivery
 
 Cross-Agency Delivery is the service overlay. The Innovation Lab owns the craft of solving; Cross-Agency Delivery owns the coordination authority when multiple agencies must ship together. The Lab is the capability — the craft team that asks *how do we solve this?* Cross-Agency Delivery owns coordination authority across agencies and asks *how do we get multiple agencies to actually ship this together?* When a Tiger Team’s work needs that overlay, the Lab provides the team and the method (the Public Innovation Toolkit), and Cross-Agency Delivery provides the standing delivery review, the named Authorizer at the Deputy Mayor or City Administrator level, and the closure plan with sustainment commitments from each agency.
 
-**With AdminOps**
+### With AdminOps
 
 AdminOps owns intake, portfolio visibility, public narrative, Council readiness, and publication. The Lab works through these channels rather than around them.
 
-**CIVIC DESIGN AS LEADERSHIP**
+## CIVIC DESIGN AS LEADERSHIP
 
 **Why design and management belong together**
 
@@ -160,7 +160,7 @@ Civic design is not a decorative phase at the end of a project. It is a way of w
 
 The Lab’s posture inside OPI is to make that mindset operational. We ask: What problem are we really solving? Who is this working for, and who is it not working for? Where are we adding friction? How do we redesign this so it works every time, not just when one heroic person pushes it through?
 
-**RESPONSIBLE AI IN THE LAB**
+## RESPONSIBLE AI IN THE LAB
 
 **Pilots with guardrails**
 
@@ -168,7 +168,7 @@ AI is one tool among many. The Lab uses AI when it can support staff, reduce rep
 
 Every Lab AI pilot follows the City’s responsible AI review process: problem framing, users, data sources, risk tier, decision impact, human oversight, evaluation method, logging, and sunset criteria. No production AI use case ships without a documented evaluation plan and a clear statement of where human judgment remains responsible.
 
-**SUCCESS MEASURES**
+## SUCCESS MEASURES
 
 **How we know the Lab is working**
 
@@ -190,7 +190,7 @@ Every Lab AI pilot follows the City’s responsible AI review process: problem f
 
 Tiger Teams are one of the Innovation Lab's methods, not a synonym for all innovation work. The Lab provides the craft: discovery, service design, prototyping, product thinking, and learning in real conditions. When the work requires multiple agencies to move together with named authority, Cross-Agency Delivery provides the coordination overlay.
 
-**FY27 PRIORITIES**
+## FY27 PRIORITIES
 
 **What the Lab will do this year**
 
@@ -222,7 +222,7 @@ Establish a small set of strategic partnerships with universities, civic tech or
 
 Build a quarterly product review that closes, redesigns, or hands off products that are not delivering value.
 
-**CLOSING**
+## CLOSING
 
 **Innovation as a discipline**
 

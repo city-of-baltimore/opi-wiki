@@ -2,7 +2,7 @@
 
 {{ page_header(summary="Position description for the Communications and Partnerships Lead.") }}
 
-**■ At a Glance**
+## At a Glance
 
 |                          |                                                                                                                    |
 |--------------------------|--------------------------------------------------------------------------------------------------------------------|
@@ -13,13 +13,13 @@
 | **Supervision given**    | Individual contributor; coordinates editorial and brand work across the four portfolios.                           |
 | **Supervision received** | Reports to the Chief of Staff. Works directly with the Executive Director on partner and Council-facing materials. |
 
-**■ Position Summary**
+## Position Summary
 
 The Communications and Partnerships Lead develops and stewards OPI’s external narrative, partner relationships, and editorial operations. The role builds clear, plain-language stories about OPI’s work, manages an editorial calendar across reports, dashboards, and public updates, and coordinates philanthropic and civic partnerships that extend OPI’s reach. The position prepares talking points and materials for the Executive Director and OPI leadership, supports grant concepts and proposals, and works with the four portfolios to translate analysis and product work into materials that residents, agency partners, City Council members, and funders can use.
 
-**■ Key Responsibilities**
+## Key Responsibilities
 
-**Partnerships and Resource Development**
+### Partnerships and Resource Development
 
 - Map priority partners across philanthropy, academia, civic tech, and community networks; maintain contact plans and meeting briefs.
 
@@ -29,7 +29,7 @@ The Communications and Partnerships Lead develops and stewards OPI’s external 
 
 - Coordinate with the Executive Director and Chief of Staff on funder cultivation and stewardship.
 
-**Storytelling and Editorial Operations**
+### Storytelling and Editorial Operations
 
 - Maintain an editorial calendar for reports, dashboards, impact briefs, and public updates; align timelines with CitiStat and portfolio cadences.
 
@@ -41,7 +41,7 @@ The Communications and Partnerships Lead develops and stewards OPI’s external 
 
 - Produce internal publications (impact briefs, playbooks, templates) and maintain a simple style guide and plain-language checklist.
 
-**Executive and Council-Facing Materials**
+### Executive and Council-Facing Materials
 
 - Own briefing packets for external and internal meetings (goals, context, asks, one-pager, talking points).
 
@@ -49,15 +49,15 @@ The Communications and Partnerships Lead develops and stewards OPI’s external 
 
 - Support testimony preparation and Council follow-up communications.
 
-**Brand and Publication Standards**
+### Brand and Publication Standards
 
 - Maintain OPI’s brand kit and document templates in partnership with the Chief of Staff and the rest of the Director’s Office team.
 
 - Operate OPI’s publication QA process; uphold the Bloomberg/HKS-grade quality bar across deliverables.
 
-**■ Knowledge, Skills, and Abilities**
+## Knowledge, Skills, and Abilities
 
-**Communications and storytelling**
+### Communications and storytelling
 
 - Demonstrated ability to translate complex analytic and operational material into plain-language content for executive, public, and partner audiences.
 
@@ -65,7 +65,7 @@ The Communications and Partnerships Lead develops and stewards OPI’s external 
 
 - Experience producing executive decks, one-pagers, briefs, and public reports.
 
-**Partnerships and resource development**
+### Partnerships and resource development
 
 - Working knowledge of philanthropic and civic-tech partner ecosystems.
 
@@ -73,7 +73,7 @@ The Communications and Partnerships Lead develops and stewards OPI’s external 
 
 - Track record stewarding partner relationships through clear, timely communication.
 
-**Operations and editorial discipline**
+### Operations and editorial discipline
 
 - Ability to manage an editorial calendar across multiple workstreams.
 
@@ -81,25 +81,25 @@ The Communications and Partnerships Lead develops and stewards OPI’s external 
 
 - Ability to prepare and present reports clearly and concisely; ability to compile and analyze operational data.
 
-**■ Minimum Qualifications**
+## Minimum Qualifications
 
-**Education**
+### Education
 
 - Bachelor’s degree in Communications, Journalism, Public Policy, Public Administration, or a related field.
 
-**Experience**
+### Experience
 
 - At least 5 years of communications, partnerships, or development experience in government, civic technology, philanthropy, or a comparable mission-driven setting; demonstrated record of producing executive-grade materials.
 
-**Equivalency**
+### Equivalency
 
 An equivalent combination of education and experience will be considered.
 
-**■ Working Conditions**
+## Working Conditions
 
 Employees in this class work a conventional work week. Work is performed in an office where work conditions are normal. Work requires minimal physical exertion. Hybrid telework is supported under OPI’s telework policy; staff are expected to be on site at City Hall a minimum of four days per week, with one day per week available as remote.
 
-**■ Supervision**
+## Supervision
 
 **Supervision received.** Reports to the Chief of Staff. Works directly with the Executive Director on partner and Council-facing materials.
 

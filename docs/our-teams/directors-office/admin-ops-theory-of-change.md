@@ -6,7 +6,7 @@
 
 *The operating backbone that keeps OPI’s work visible, coordinated, and sustained.*
 
-**NORTH STAR**
+## NORTH STAR
 
 **A small office that runs like a well-oiled machine.**
 
@@ -14,7 +14,7 @@ The AdminOps service keeps OPI’s work coordinated, well-documented, properly r
 
 > *Clarity is not bureaucracy. Clarity is how we protect people, quality, and impact.*
 
-**SERVICE DEFINITION**
+## SERVICE DEFINITION
 
 **What this service does**
 
@@ -22,13 +22,13 @@ This service is responsible for the administrative, operational, communications,
 
 Activities performed by this service include portfolio intake and tracking, project management coordination, executive briefings, communications, branding and marketing, Council relations, knowledge management, fiscal and procurement coordination, HR and facilities support, internal operating routines, quality assurance for public-facing materials, and maintaining the systems and standards that allow OPI’s work to be delivered consistently and sustainably.
 
-**PURPOSE AND PHILOSOPHIES**
+## PURPOSE AND PHILOSOPHIES
 
-**What we heard, what we have aligned on**
+### What we heard, what we have aligned on
 
 *AdminOps is the operating backbone of OPI. These principles describe how we hold the rest of the office together.*
 
-**Why this work matters**
+### Why this work matters
 
 - Without intake, governance, and portfolio discipline, OPI defaults to whoever asks loudest — not whoever has the highest leverage.
 
@@ -38,7 +38,7 @@ Activities performed by this service include portfolio intake and tracking, proj
 
 - Recognition culture is operational — it is how we retain talented people who could be paid more in the private sector.
 
-**How we operate**
+### How we operate
 
 - Standard intake form, standard problem statement, standard charter — same shape every time, regardless of who is asking.
 
@@ -54,7 +54,7 @@ Activities performed by this service include portfolio intake and tracking, proj
 
 - Recognition culture is built into the routine — pins, medallions, shout-outs, transparency awards, public credit, and named contributions on every artifact.
 
-**Operating principles for the team**
+### Operating principles for the team
 
 - Move fast with intention.
 
@@ -74,7 +74,7 @@ Activities performed by this service include portfolio intake and tracking, proj
 
 > *Better government is not a one-time project. It is a discipline. The discipline lives in the operating backbone — the standards, routines, and recognition that hold the work together.*
 
-**1. Service overview**
+### 1. Service overview
 
 | **Topic**               | **Summary**                                                                                                                                                                                                                            |
 |-------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -84,9 +84,9 @@ Activities performed by this service include portfolio intake and tracking, proj
 | Portfolio home          | Director’s Office. Led by the Chief of Staff.                                                                                                                                                                                          |
 | What success looks like | Intake is fast and predictable; portfolio status is current; communications and narrative are coordinated; QA prevents low-quality artifacts from going public; OPI’s knowledge persists across staffing changes.                      |
 
-**2. Scope and service boundaries**
+### 2. Scope and service boundaries
 
-**In scope**
+#### In scope
 
 - Portfolio intake and tracking — single intake path, prioritization, routing, status visibility.
 
@@ -110,7 +110,7 @@ Activities performed by this service include portfolio intake and tracking, proj
 
 - Field validation support — coordination with portfolios on ride-alongs, inspections, and ground-truth checks.
 
-**Out of scope (we partner or refer)**
+#### Out of scope (we partner or refer)
 
 - Citywide HR, IT, finance, and procurement systems — owned by their respective departments. We coordinate; we do not replace.
 
@@ -118,7 +118,7 @@ Activities performed by this service include portfolio intake and tracking, proj
 
 - Stat methodology, data engineering, product builds, or service redesigns — owned by the other four services.
 
-**3. Engagement model**
+### 3. Engagement model
 
 AdminOps is mostly continuous and rhythm-driven, not project-based. Where projects do occur (e.g., a website refresh or a new operating routine), they use the standard OPI engagement model.
 
@@ -131,7 +131,7 @@ AdminOps is mostly continuous and rhythm-driven, not project-based. Where projec
 | QA and publication readiness | Per artifact                                   | QA checklist; sign-off; brand and accessibility check.                        |
 | Knowledge management         | Continuous; quarterly cleanups                 | Updated wiki; glossary; templates; onboarding materials.                      |
 
-**4. Theory of Change**
+### 4. Theory of Change
 
 | **Stage**          | **Concrete, measurable definition**                                                                                                                                                                                                                                        |
 |--------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -142,7 +142,7 @@ AdminOps is mostly continuous and rhythm-driven, not project-based. Where projec
 | Outcomes (6–18 mo) | Communications produce a coherent public story across services; Council relations are proactive; the knowledge base reduces repeated questions and supports new hires; OPI’s operating routines run on muscle memory.                                                      |
 | Impact (2+ yr)     | OPI is a credible, predictable institution. Leadership can rely on the office. Knowledge persists across staffing changes. The operating model is the product.                                                                                                             |
 
-**5. Governance and decision rights**
+### 5. Governance and decision rights
 
 | **Role**                                   | **Responsibility**                                                                                                                  |
 |--------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------|
@@ -153,7 +153,7 @@ AdminOps is mostly continuous and rhythm-driven, not project-based. Where projec
 | Senior Product Engineer / Product Engineer | Build and maintain OPI’s internal operational tools, intake system, and knowledge base infrastructure.                              |
 | Project Manager                            | Cross-portfolio coordination, milestone tracking, and delivery support for AdminOps initiatives.                                    |
 
-**6. Core offerings and target service levels**
+### 6. Core offerings and target service levels
 
 | **Offering**                 | **Customer**                       | **When to use**                       | **Target SLA / cadence**                                         |
 |------------------------------|------------------------------------|---------------------------------------|------------------------------------------------------------------|
@@ -163,7 +163,7 @@ AdminOps is mostly continuous and rhythm-driven, not project-based. Where projec
 | Knowledge management         | OPI staff                          | New hire, new artifact, new process   | Wiki updated continuously; quarterly cleanup.                    |
 | QA / publication readiness   | OPI portfolios                     | Any public-facing artifact            | QA within 3 business days; no public release without sign-off.   |
 
-**7. Metrics, targets, and learning**
+### 7. Metrics, targets, and learning
 
 - Intake speed — median time from request to routing decision.
 
@@ -177,7 +177,7 @@ AdminOps is mostly continuous and rhythm-driven, not project-based. Where projec
 
 - Narrative cadence — public releases per quarter; "What we heard / what we changed" coverage.
 
-**8. Handoffs and synergies across OPI services**
+### 8. Handoffs and synergies across OPI services
 
 - To Performance — coordination of the Stat calendar, public Stat summaries, and field validation.
 
@@ -187,7 +187,7 @@ AdminOps is mostly continuous and rhythm-driven, not project-based. Where projec
 
 - To Cross-Agency Delivery — portfolio visibility, comms, and Council coordination for activations.
 
-**Appendix · Standard artifact suite**
+#### Appendix · Standard artifact suite
 
 - Intake stub (requestor, problem, due date, agencies, owner, urgency, public risk).
 

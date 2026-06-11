@@ -2,7 +2,7 @@
 
 {{ page_header(summary="Position description for the Senior Performance Analyst.") }}
 
-**■ At a Glance**
+## At a Glance
 
 |                          |                                                                                                                                                  |
 |--------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -13,15 +13,15 @@
 | **Supervision given**    | Individual contributor; no direct reports. Senior peer to the CitiStat Analyst bench; mentors analysts on measurement quality and Tracker usage. |
 | **Supervision received** | Reports to the Deputy Chief Performance Officer.                                                                                                 |
 
-**■ Position Summary**
+## Position Summary
 
 The Senior Performance Analyst is the principal individual contributor for citywide performance management. Reporting to the Deputy Chief Performance Officer, the Senior Performance Analyst is the product owner for Baltimore’s Performance Tracker, leads the development and refinement of citywide performance measures, and coordinates the preparation and review of agency performance plans. The role works closely with agency performance analysts, the Bureau of the Budget and Management Research (BBMR), and OPI data and engineering staff.
 
 In addition to the citywide performance management function, the Senior Performance Analyst leads one or more CitiStat topics in the same way a CitiStat Analyst does — framing the problem, building the analytic baseline, preparing the session, and following through on commitments. The role is a senior peer to the CitiStat Analyst bench, with no direct reports.
 
-**■ Key Responsibilities**
+## Key Responsibilities
 
-**Performance Tracker Product Ownership**
+### Performance Tracker Product Ownership
 
 - Serve as product owner for Baltimore’s Performance Tracker, collaborating with data and IT teams on system design, feature development, user feedback, and continuous improvement.
 
@@ -29,7 +29,7 @@ In addition to the citywide performance management function, the Senior Performa
 
 - Operate a clear backlog and release rhythm; partner with the Technical Program Manager (Data and Analytics) on dependencies.
 
-**Citywide Performance Measures and Plans**
+### Citywide Performance Measures and Plans
 
 - Develop, refine, and maintain citywide performance measures in partnership with agencies and BBMR.
 
@@ -39,13 +39,13 @@ In addition to the citywide performance management function, the Senior Performa
 
 - Provide expertise on service-level metrics, outcome-based budgeting, and performance measures.
 
-**CitiStat Topic Leadership**
+### CitiStat Topic Leadership
 
 - Lead one or more CitiStat topics: own the topic, build the analytic baseline, prepare session materials, and follow through on commitments.
 
 - Apply CitiStat method discipline (accurate and timely intelligence shared by all, rapid deployment of resources, effective tactics and strategies, relentless follow-up and assessment).
 
-**Analysis, Reporting, and Coordination**
+### Analysis, Reporting, and Coordination
 
 - Monitor and analyze departmental performance measures; create dashboards and reports for leadership and stakeholders.
 
@@ -53,9 +53,9 @@ In addition to the citywide performance management function, the Senior Performa
 
 - Analyze performance data and prepare reports, dashboards, and presentations for city leadership, highlighting trends, challenges, and recommended actions.
 
-**■ Knowledge, Skills, and Abilities**
+## Knowledge, Skills, and Abilities
 
-**Performance management**
+### Performance management
 
 - Strong performance-management methods: KPI design and interpretation, outcome-based budgeting, and program evaluation.
 
@@ -63,7 +63,7 @@ In addition to the citywide performance management function, the Senior Performa
 
 - Strong facilitation, communication, and presentation abilities, including translating data for non-technical audiences.
 
-**Analysis and tooling**
+### Analysis and tooling
 
 - Excel plus at least two of Power BI, ArcGIS, R, Python, and SQL; familiarity with SharePoint and portfolio trackers.
 
@@ -71,7 +71,7 @@ In addition to the citywide performance management function, the Senior Performa
 
 - Ability to design dashboards and reporting views with usability and decision-support in mind.
 
-**Operations and stewardship**
+### Operations and stewardship
 
 - Diplomacy with senior leaders; reliable follow-through in a visible cadence.
 
@@ -79,25 +79,25 @@ In addition to the citywide performance management function, the Senior Performa
 
 - Ability to maintain confidentiality of sensitive information.
 
-**■ Minimum Qualifications**
+## Minimum Qualifications
 
-**Education**
+### Education
 
 - Bachelor’s degree in Public Administration, Public Policy, Data/Analytics, Business, Management, Statistics, or a related field. Master’s degree preferred.
 
-**Experience**
+### Experience
 
 - At least 5 years of experience in performance management, applied analytics, or public-sector operations, including demonstrated experience leading a measurement or reporting product.
 
-**Equivalency**
+### Equivalency
 
 An equivalent combination of education and experience will be considered.
 
-**■ Working Conditions**
+## Working Conditions
 
 Employees in this class work a conventional work week. Work is performed in an office where work conditions are normal. Work requires minimal physical exertion. Hybrid telework is supported under OPI’s telework policy; staff are expected to be on site at City Hall a minimum of four days per week, with one day per week available as remote.
 
-**■ Supervision**
+## Supervision
 
 **Supervision received.** Reports to the Deputy Chief Performance Officer.
 

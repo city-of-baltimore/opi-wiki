@@ -16,7 +16,7 @@ When that data is accurate, timely, and well-governed, it becomes a public asset
 
 That is why Baltimore’s data work is not back-office work. It is civic infrastructure.
 
-**The promise and the risk of this moment**
+## The promise and the risk of this moment
 
 There is a lot of excitement about AI in government, and there should be. Used responsibly, AI can help city employees reduce repetitive work, draft clearer resident communications, identify operational patterns, and focus human attention where judgment matters most. It can help us understand service demand across neighborhoods, flag unusual changes in performance, and support staff who are already stretched thin.
 
@@ -24,7 +24,7 @@ But AI does not replace stewardship. It depends on stewardship. If the underlyin
 
 So our first responsibility is not to chase the newest tool. Our first responsibility is to build the conditions under which new tools can be used responsibly: trusted datasets, clear definitions, strong governance, documented lineage, human oversight, and a culture that values evidence over optics.
 
-**What Baltimore is building**
+## What Baltimore is building
 
 Baltimore is building a citywide data and analytics capability that treats data as shared infrastructure. That means moving away from one-off extracts, disconnected spreadsheets, stale dashboards, and isolated systems. It means building reusable datasets, clear methodology, accessible tools, and governance routines that help agencies use the same facts when making decisions.
 
@@ -32,7 +32,7 @@ This work supports CitiStat, open data, service redesign, permit reform, 311 imp
 
 Open data is part of that promise. It should not be a graveyard of stale files. It should be living transparency infrastructure: documented, updated, understandable, and useful. Good open data helps residents ask better questions. It helps universities and civic technologists contribute solutions. It helps City Council exercise oversight. It helps agencies see their own work more clearly. And it reminds government that information belongs in service of the public.
 
-**Stewardship is a public value**
+## Stewardship is a public value
 
 Good data stewardship is not about control for control’s sake. It is about making responsible use possible. Governance should not be a wall that blocks progress. It should be a set of guardrails that lets us move faster because we know the rules of the road.
 
@@ -40,7 +40,7 @@ That means we need clear answers to basic questions: Who owns this dataset? How 
 
 The future of government will be shaped by organizations that can connect data, operations, technology, and trust. Baltimore has the talent and the urgency to be one of those places. But we have to build the foundation carefully, because the foundation is what determines whether innovation lasts.
 
-**The government residents deserve**
+## The government residents deserve
 
 Residents do not need government to sound more technical. They need government to work better. They need cleaner streets, safer neighborhoods, faster permits, clearer communication, reliable 311 follow-up, and services that do not require them to understand how City Hall is organized in order to get help.
 
@@ -60,7 +60,7 @@ Mayor’s Office of Performance and Innovation
 
 *City of Baltimore · Brandon M. Scott, Mayor*
 
-**READ ALONGSIDE**
+## READ ALONGSIDE
 
 **Data & Analytics Strategy —** *how Baltimore is building citywide data infrastructure.*
 

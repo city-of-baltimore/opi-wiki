@@ -10,9 +10,9 @@
 
 *This About doc explains the service in plain language. The Theory of Change doc explains how the service is mandated, governed, staffed, measured, and sustained.*
 
-**PURPOSE**
+## PURPOSE
 
-**What this service is for**
+### What this service is for
 
 Citywide Data and Analytics makes Baltimore’s data accurate, accessible, governed, and useful for decisions, transparency, service delivery, and public trust.
 
@@ -20,7 +20,7 @@ This team builds the data foundation that allows OPI and the City to move from q
 
 The work is both technical and civic. It is about pipelines, dashboards, open data, GIS, data governance, AI readiness, and analytics. It is also about trust, accountability, and making sure the City can explain what it knows and how it knows it.
 
-**Who we are**
+### Who we are
 
 We are Baltimore’s civic data infrastructure team.
 
@@ -30,7 +30,7 @@ We are translators. We translate between agencies and BCIT, between raw data and
 
 We are not just a dashboard team. We build the conditions that make dashboards trustworthy.
 
-**What we do**
+### What we do
 
 We strengthen Baltimore’s data infrastructure, analytics capacity, open data program, GIS practice, data governance, and AI/data readiness.
 
@@ -52,7 +52,7 @@ Core work includes:
 
 - Supporting performance management, delivery activations, and Innovation Lab products with reliable data.
 
-**Why it matters**
+### Why it matters
 
 Every OPI service depends on trustworthy data.
 
@@ -62,7 +62,7 @@ Data is not a side function. It is civic infrastructure.
 
 When this team succeeds, agencies do not rebuild the same extract for every request. Leaders do not debate whose spreadsheet is right. Residents can find public data that is current and understandable. AI pilots are grounded, evaluated, and governed before they scale.
 
-**How we work**
+### How we work
 
 We build for reuse, trust, and decision value.
 
@@ -72,7 +72,7 @@ We prioritize lineage, definitions, and ownership. Methodology is not paperwork 
 
 We also distinguish analytics products from operational products. If the primary purpose is insight, analysis, open data, governance, or executive reporting, Data and Analytics leads. If the primary purpose is a workflow tool, resident or staff interface, or operational application, the Innovation Lab leads with Data as a partner.
 
-**What we own**
+### What we own
 
 The team owns:
 
@@ -96,7 +96,7 @@ The team owns:
 
 - Data support for CitiStat, delivery activations, and public reporting.
 
-**What we do not own**
+### What we do not own
 
 The team does not own:
 
@@ -112,7 +112,7 @@ The team does not own:
 
 *We partner closely on these areas, but we do not replace the agency, BCIT, Performance, or Innovation roles.*
 
-**How we partner across OPI**
+### How we partner across OPI
 
 Data and Analytics is the evidence layer for OPI.
 
@@ -124,7 +124,7 @@ We support Cross-Agency Delivery with shared data models, milestone instrumentat
 
 We support AdminOps with publishing cadence, public-facing data product coordination, quality assurance, and narrative support.
 
-**What success looks like**
+### What success looks like
 
 Success means Baltimore has data people can trust and use.
 
@@ -146,7 +146,7 @@ We know the work is succeeding when:
 
 - The City’s data infrastructure reduces duplication, vendor dependence, and time spent cleaning the same data repeatedly.
 
-**Common outputs**
+### Common outputs
 
 - Dashboards and analytic briefs.
 

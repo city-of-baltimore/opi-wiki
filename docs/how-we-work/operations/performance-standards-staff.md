@@ -4,21 +4,25 @@
 
 Staff distribution. Eight core dimensions, role craft, evidence-based ratings, and a fair calibration process.
 
-**VERSION** v2.0
+VERSION
+:   v2.0
 
-**EFFECTIVE** July 1, 2026
+EFFECTIVE
+:   July 1, 2026
 
-**OWNER** OPI Director’s Office
+OWNER
+:   OPI Director’s Office
 
-**REVIEW** Annual, or as required by operational changes
+REVIEW
+:   Annual, or as required by operational changes
 
-**■ Purpose**
+## Purpose
 
 OPI exists to raise the City’s capacity to deliver. That requires consistent standards for quality, rigor, trust, and follow-through. This guide defines performance expectations for all OPI staff and the process leaders use to assess performance in a fair, evidence-based way.
 
 This guide complements City performance management and HR procedures. It does not replace required City forms or policies. It provides OPI-specific clarity on how we define excellence and how we calibrate performance across roles.
 
-**■ The OPI Way**
+## The OPI Way
 
 OPI is not a typical agency. We operate as a high-trust, high-output delivery unit. Our work is used by senior leaders, partner agencies, and sometimes the public. We protect OPI’s credibility through disciplined craft, accurate analysis, clear communication, and documented decisions.
 
@@ -32,7 +36,7 @@ OPI is not a typical agency. We operate as a high-trust, high-output delivery un
 
 - **Candid and respectful:** We say the true thing kindly and early.
 
-**■ How to use this guide**
+## How to use this guide
 
 - Start-of-cycle alignment on priorities and expectations.
 
@@ -46,7 +50,7 @@ OPI is not a typical agency. We operate as a high-trust, high-output delivery un
 
 > *A 3 is the bar. Strong, reliable OPI-standard performance. 4 and 5 are reserved for performance that clearly exceeds role expectations and raises the bar for others.*
 
-**■ Key definitions**
+## Key definitions
 
 | **Term**           | **Meaning**                                                                                                                                                      |
 |--------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -57,7 +61,7 @@ OPI is not a typical agency. We operate as a high-trust, high-output delivery un
 | Role charter       | A one-page agreement that defines top priorities, expected artifacts, partners, and success measures for the cycle.                                              |
 | Reset plan         | A short, time-bound plan used when performance is inconsistent. It defines expectations, supports, and evidence of improvement.                                  |
 
-**■ The OPI rating scale**
+## The OPI rating scale
 
 The scale is designed to be clear and calibratable. A 3 is strong performance at OPI’s standard. A 4 and 5 are reserved for performance that clearly exceeds role expectations and raises the bar for others.
 
@@ -69,17 +73,17 @@ The scale is designed to be clear and calibratable. A 3 is strong performance at
 | 2          | Developing / Inconsistent | Quality, reliability, or judgment is inconsistent. Rework recurs. Deadlines slip without early escalation. Documentation gaps persist. |
 | 1          | Not meeting expectations  | Repeatedly misses commitments or breaks quality and trust standards. Requires immediate corrective action.                             |
 
-**Guardrails**
+### Guardrails
 
 - A single high-severity trust breach (accuracy, integrity, privacy, or misrepresentation) can cap overall ratings until corrected and confidence is restored.
 
 - Overall ratings of 4 or 5 require strong performance in Results and follow-through, Craft quality and QA, and Collaboration and trust-building.
 
-**■ Performance dimensions**
+## Performance dimensions
 
 All staff are assessed on eight core dimensions. Managers also assess role craft dimensions selected for each position at the start of the cycle.
 
-**Eight core dimensions**
+### Eight core dimensions
 
 | **Dimension**                               | **What it means**                                                                                            | **Strong signals (examples)**                                                                    |
 |---------------------------------------------|--------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------|
@@ -92,7 +96,7 @@ All staff are assessed on eight core dimensions. Managers also assess role craft
 | Ownership, initiative, and learning agility | Acts without waiting for perfect direction. Escalates risk early. Learns fast and improves systems.          | Proposes solutions. Prevents recurring issues. Turns lessons into standards.                     |
 | Integrity, privacy, and stewardship         | Handles sensitive information appropriately. Protects public trust. Follows approvals and ethical standards. | Proactively flags risk. Uses least-privilege access. Avoids overstated claims.                   |
 
-**Role craft dimensions (role-specific)**
+### Role craft dimensions (role-specific)
 
 Each role selects two to four craft dimensions at the start of the cycle. These dimensions define excellence in the specific discipline.
 
@@ -105,11 +109,11 @@ Each role selects two to four craft dimensions at the start of the cycle. These 
 | Communications and partnerships | Executive narratives, approvals discipline, editorial operations, partner follow-through.     |
 | Operations craft                | Process design, SOP quality, compliance, procurement readiness, incident response discipline. |
 
-**■ The performance process**
+## The performance process
 
 The process is consistent across teams and is designed to reduce bias and surprises.
 
-**Start-of-cycle alignment (first two weeks)**
+### Start-of-cycle alignment (first two weeks)
 
 - Manager and staff agree on a role charter with three to five priorities, success measures, and expected artifacts.
 
@@ -117,7 +121,7 @@ The process is consistent across teams and is designed to reduce bias and surpri
 
 - Definition of done is agreed for major deliverables (QA, approvals, documentation).
 
-**Quarterly check-ins (required)**
+### Quarterly check-ins (required)
 
 - Progress against priorities, evidence links, risks, and support needs.
 
@@ -125,13 +129,13 @@ The process is consistent across teams and is designed to reduce bias and surpri
 
 - Confirm next 30 to 60 day deliverables.
 
-**Mid-cycle feedback (360-lite)**
+### Mid-cycle feedback (360-lite)
 
 - Manager collects input from two to four peers or partners using structured prompts focused on impact and collaboration.
 
 - Notes are summarized for calibration; raw quotes remain confidential.
 
-**End-of-cycle review**
+### End-of-cycle review
 
 - Staff submits a self-review with an impact narrative and evidence bundle.
 
@@ -139,7 +143,7 @@ The process is consistent across teams and is designed to reduce bias and surpri
 
 - Development goals are set with one to two concrete assignments.
 
-**Calibration**
+### Calibration
 
 - OPI leadership reviews proposed ratings for consistency across teams, roles, and levels.
 
@@ -147,7 +151,7 @@ The process is consistent across teams and is designed to reduce bias and surpri
 
 - Adjustments require a documented rationale. Calibration is for fairness and shared standards, not to force a curve.
 
-**■ Evidence bundle requirements**
+## Evidence bundle requirements
 
 Evidence is required for performance reviews. It strengthens fairness and reduces recency bias.
 
@@ -161,7 +165,7 @@ Evidence is required for performance reviews. It strengthens fairness and reduce
 
 - At least one QA discipline example (test plan, validation note, peer review, or checklist).
 
-**■ What staff can expect from managers**
+## What staff can expect from managers
 
 High standards require strong management. Managers commit to:
 
@@ -175,7 +179,7 @@ High standards require strong management. Managers commit to:
 
 - Consistent documentation of decisions, feedback, and performance discussions.
 
-**■ If you disagree with an assessment**
+## If you disagree with an assessment
 
 Disagreement is handled through a clear pathway. The goal is clarity and fairness, not debate.
 
@@ -185,11 +189,11 @@ Disagreement is handled through a clear pathway. The goal is clarity and fairnes
 
 - **Step 3:** OPI leadership reviews the case during calibration and documents the rationale if still unresolved.
 
-**■ Supporting improvement and addressing gaps**
+## Supporting improvement and addressing gaps
 
 When performance is inconsistent, OPI responds quickly and fairly. The objective is improvement with clear expectations and support.
 
-**When performance trends toward a 2**
+### When performance trends toward a 2
 
 - Manager and staff create a 30-day reset plan with two to three concrete expectations.
 
@@ -205,7 +209,7 @@ When performance is inconsistent, OPI responds quickly and fairly. The objective
 
 - Formal HR-aligned steps are used when required.
 
-**■ Appendix A — Scorecard template**
+## Appendix A — Scorecard template
 
 *Eight core dimensions plus two role craft dimensions. Total weight = 100%.*
 
@@ -222,7 +226,7 @@ When performance is inconsistent, OPI responds quickly and fairly. The objective
 | Role craft dimension 1                      | 5%         |                  |                      |           |
 | Role craft dimension 2                      | 5%         |                  |                      |           |
 
-**■ Appendix B — Self-review template**
+## Appendix B — Self-review template
 
 *Staff complete this self-review at the end of each cycle. Each prompt is a short paragraph with links.*
 
@@ -236,7 +240,7 @@ When performance is inconsistent, OPI responds quickly and fairly. The objective
 
 **Prompt 5.** Growth plan: one to two skills, plus next assignments that build them.
 
-**■ Appendix C — Manager review template**
+## Appendix C — Manager review template
 
 *Managers complete this review at the end of each cycle alongside the staff self-review and the evidence bundle.*
 
@@ -250,7 +254,7 @@ When performance is inconsistent, OPI responds quickly and fairly. The objective
 
 **Prompt 5.** Growth plan with specific coaching and assignments.
 
-**■ Appendix D — 30-day reset plan template**
+## Appendix D — 30-day reset plan template
 
 | **Area**                                               | **Plan** |
 |--------------------------------------------------------|----------|
@@ -259,7 +263,7 @@ When performance is inconsistent, OPI responds quickly and fairly. The objective
 | Supports (training, pairing, scope changes)            |          |
 | Evidence of improvement (what will be true in 30 days) |          |
 
-**■ Appendix E — 360-lite feedback prompts**
+## Appendix E — 360-lite feedback prompts
 
 - Where did this person raise the bar for quality or clarity?
 
@@ -269,6 +273,6 @@ When performance is inconsistent, OPI responds quickly and fairly. The objective
 
 - What is one capability they should develop next?
 
-**■ Owner and review cadence**
+## Owner and review cadence
 
 Owned by the OPI Director’s Office. Reviewed annually before the start of each fiscal year, or as required by operational changes. Companion document: OPI Performance Standards — Manager Companion.

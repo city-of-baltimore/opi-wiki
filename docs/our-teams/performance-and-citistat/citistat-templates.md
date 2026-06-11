@@ -84,31 +84,31 @@ Room setup is step 10 of the [12-step analyst execution cycle](citistat-method-p
 
 ### Before the Stat
 
-**Cleaning and preparation**
+#### Cleaning and preparation
 
 - Pre-clean the main tables where placards go.
 - Place name-card placards according to the seating chart.
 
-**AV setup**
+#### AV setup
 
 - Turn on the TVs using the iPad control at the podium.
 - Pull microphones from the AV control room, space them across the main tables, and set one at the podium.
 - Test each microphone and adjust volume.
 
-**Remote attendees**
+#### Remote attendees
 
 - Test the Microsoft Teams meeting link with the deck loaded in PowerPoint.
 - Confirm a remote volunteer can see the slides, hear the room, and be heard back.
 
 ### After the Stat
 
-**Cleaning and breakdown**
+#### Cleaning and breakdown
 
 - Collect any Stat memos or printouts left behind.
 - Wipe down the main tables.
 - Collect all name tags and placards and return them to the pre-named folder for that Stat.
 
-**AV shutdown**
+#### AV shutdown
 
 - Turn off the TVs using the iPad control at the podium.
 - Mute and turn off all microphones.

@@ -25,29 +25,23 @@ such so the current team and intended structure stay visible in one place.
 
 {{ org_structure_from("about-us/about-opi/org-structure.data.yml", "portfolio_tabs") }}
 
-**SECTION 1**
-
-**The Four Portfolios**
+## The Four Portfolios
 
 OPI’s work is organized into four portfolios, each with a named lead, a budget cost center, a defined set of functions, and a primary value proposition.
 
 {{ org_structure_from("about-us/about-opi/org-structure.data.yml", "portfolio_table") }}
 
-**SECTION 2**
-
-**Current Staff Alignment**
+## Current Staff Alignment
 
 The alignment below reflects OPI’s current operating chart. It will be updated as vacancies are filled or roles are formally reclassified.
 
 {{ org_structure_from("about-us/about-opi/org-structure.data.yml", "staff_alignment") }}
 
-**SECTION 3**
-
-**Cost Centers and Budget Services**
+## Cost Centers and Budget Services
 
 Cost centers govern budget and expense management. Budget services describe what OPI delivers. Cross-Agency Delivery is tracked as a service overlay unless and until dedicated staff or budget are assigned.
 
-**Cost Centers**
+### Cost Centers
 
 | **Cost Center**          | **Description**                                                                                                                                                                                                              |
 |--------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -56,7 +50,7 @@ Cost centers govern budget and expense management. Budget services describe what
 | Data and Analytics       | Personnel and operating costs for analytics, data platform development, data engineering, data governance, open data, GIS and spatial analytics, data literacy, and responsible data and AI readiness.                       |
 | Innovation Lab           | Personnel and operating costs for human-centered design, product discovery, service design, prototyping, operational tools, civic technology, applied innovation projects, strategic partnerships, and AI innovation pilots. |
 
-**Five Services**
+### Five Services
 
 OPI’s services describe the value we deliver, regardless of which portfolio or staff member is involved.
 
@@ -70,9 +64,7 @@ OPI’s services describe the value we deliver, regardless of which portfolio or
 
 - AdminOps — administered by the Director’s Office.
 
-**SECTION 4**
-
-**Cross-Agency Delivery Overlay**
+## Cross-Agency Delivery Overlay
 
 Cross-Agency Delivery is an OPI-wide service overlay, not a standalone cost center at this stage. It is activated for Mayor, City Administrator, or Deputy Mayor priorities that require coordinated action across agencies.
 
@@ -87,9 +79,7 @@ Danny Heller serves as Interim Delivery Manager, stewarding delivery discipline 
 | Activation decision                 | Executive Director, with input from OPI leadership and relevant executive sponsors.                                                                                 |
 | Execution model                     | Assigned lead by activation; time-boxed delivery reviews or working sessions; status tracked through Portfolio Council and weekly leadership reporting.               |
 
-**SECTION 5**
-
-**How to Read This Structure**
+## How to Read This Structure
 
 Three lenses help staff, partners, and leadership read OPI:
 

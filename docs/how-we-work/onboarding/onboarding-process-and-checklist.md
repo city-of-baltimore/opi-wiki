@@ -4,13 +4,16 @@
 
 A structured 90-day playbook for new hires, managers, and onboarding buddies.
 
-**AUDIENCE** New hires, managers, onboarding buddies, AdminOps
+AUDIENCE
+:   New hires, managers, onboarding buddies, AdminOps
 
-**OWNER** Director's Office
+OWNER
+:   Director's Office
 
-**VERSION** v1.0 · May 2026
+VERSION
+:   v1.0 · May 2026
 
-**■ Purpose**
+## Purpose
 
 This document standardizes how OPI brings new staff into the office. The goal is that every new hire is productive, connected, and clear on expectations within the first 30 days, owns a defined slice of work by day 60, and is delivering meaningful outputs by day 90.
 
@@ -18,7 +21,7 @@ Onboarding is a shared responsibility. The new hire owns their learning. The man
 
 > *Great onboarding is a retention and performance lever. Treat it as critical infrastructure.*
 
-**Roles**
+### Roles
 
 **New hire.** Completes setup tasks, reads required materials, asks early questions, and keeps notes of blockers.
 
@@ -28,7 +31,7 @@ Onboarding is a shared responsibility. The new hire owns their learning. The man
 
 **AdminOps and IT.** Coordinate accounts, equipment, access, and facilities logistics. Day-one readiness is non-negotiable.
 
-**■ Pre-start checklist (T-6 weeks to Day 0)**
+## Pre-start checklist (T-6 weeks to Day 0)
 
 Day-one readiness depends on starting these tasks early. The manager and AdminOps coordinate to make sure nothing is left to the last week.
 
@@ -43,7 +46,7 @@ Day-one readiness depends on starting these tasks early. The manager and AdminOp
 | T-1 week         | Assign onboarding buddy and schedule first-week coffee chats.                                   | Manager + Buddy         | Buddy reaches out before day one with a short welcome and time to meet.                   |
 | T-1 week         | Schedule essential meetings: manager one-on-ones, team meetings, OPI overview.                  | Manager                 | Include daily 10–15 minute check-ins for the first week and a weekly one-on-one ongoing.  |
 
-**■ Day 1 – Day 5**
+## Day 1 – Day 5
 
 The first week is for orientation and tool readiness. The new hire should leave the week knowing where everything is, who to ask, and how to set up their working systems.
 
@@ -58,7 +61,7 @@ The first week is for orientation and tool readiness. The new hire should leave 
 | Week 1   | Review OPI norms: leadership norms, staff norms, and performance expectations. | New hire            | Surface unclear expectations early in your first one-on-one.                              |
 | Week 1   | Set up your personal working system: OneNote, task capture, calendar blocks.   | New hire            | Default: tasks in Planner or Jira; notes in OneNote; documents in SharePoint.             |
 
-**■ Weeks 2 – 4**
+## Weeks 2 – 4
 
 In weeks two through four, the focus shifts from setup to learning the system and shipping a small early win. The new hire begins observing real work and contributing where they can.
 
@@ -70,7 +73,7 @@ In weeks two through four, the focus shifts from setup to learning the system an
 | Week 3          | Create or update your working-with-me note (preferences, hours, communication style).           | New hire           | Share with manager and team. Revisit after 60 days.                              |
 | Week 4 / Day 30 | 30-day check-in and onboarding feedback survey or interview.                                    | Manager + New hire | What is working, what is missing, and what should we improve in onboarding.      |
 
-**■ Months 2 – 3**
+## Months 2 – 3
 
 In months two and three, the new hire begins owning a defined slice of work, shipping meaningful outputs, and documenting their work so it survives turnover.
 
@@ -81,11 +84,11 @@ In months two and three, the new hire begins owning a defined slice of work, shi
 | Day 75–90 | Deliver one to two meaningful outputs. Document the work.         | New hire           | Ensure SharePoint organization, decision logs, and handoff-ready documentation.     |
 | Day 90    | 90-day review and finalize next-quarter objectives.               | Manager + New hire | Confirm ownership, expectations, and growth plan.                                   |
 
-**■ Portfolio-specific add-ons**
+## Portfolio-specific add-ons
 
 Use the section for the portfolio you are joining. Managers should also use the manager section.
 
-**Director's Office**
+### Director's Office
 
 Focus: portfolio visibility, decision support, communications, operations backbone, and quality assurance for public and executive artifacts.
 
@@ -99,7 +102,7 @@ Focus: portfolio visibility, decision support, communications, operations backbo
 
 - Month 1: ship an ops leverage win (template improvement, faster turnaround, better visibility, or QA uplift).
 
-**Performance**
+### Performance
 
 Focus: performance routines, Stat preparation and follow-through, KPI definitions, and agency partnership.
 
@@ -113,7 +116,7 @@ Focus: performance routines, Stat preparation and follow-through, KPI definition
 
 - Month 2–3: own a follow-through workstream — commitments tracker hygiene, agency coaching, or analysis-to-action pipeline.
 
-**Data and Analytics**
+### Data and Analytics
 
 Focus: reliable data and digital products, governance, quality gates, and production discipline.
 
@@ -129,7 +132,7 @@ Focus: reliable data and digital products, governance, quality gates, and produc
 
 - Month 2–3: own a component or dataset end-to-end — owner, SLA, tests, documentation, adoption path.
 
-**Innovation Lab**
+### Innovation Lab
 
 Focus: human-centered design, product discovery, civic technology, AI pilots, and operational tools.
 
@@ -145,7 +148,7 @@ Focus: human-centered design, product discovery, civic technology, AI pilots, an
 
 - Month 2–3: own a discovery thread or prototype on an active engagement.
 
-**Manager checklist (all portfolios)**
+### Manager checklist (all portfolios)
 
 Onboarding is a manager responsibility. The minimum standard is below.
 
@@ -158,7 +161,7 @@ Onboarding is a manager responsibility. The minimum standard is below.
 | Month 1      | Create space for early wins. Protect focus from ad hoc churn.              | Use WIP limits. Say "not now" with rationale and a revisit date.    |
 | Day 30/60/90 | Run structured check-ins. Document outcomes.                               | Use the 30/60/90 template. Capture agreements in writing.           |
 
-**■ Appendix A. Suggested onboarding meetings**
+## Appendix A. Suggested onboarding meetings
 
 A starting list of common onboarding sessions. Adapt based on role and portfolio.
 
@@ -175,7 +178,7 @@ A starting list of common onboarding sessions. Adapt based on role and portfolio
 | BCIT onboarding                              | BCIT or designated IT contact | 60 min     | IT account setup, security, MFA, software requests, and trouble tickets.        |
 | Coffee chats                                 | OPI peers                     | 15–30 min  | Informal time with peers across portfolios.                                     |
 
-**■ Appendix B. Common software and access**
+## Appendix B. Common software and access
 
 A baseline list. Confirm with your manager what you actually need before requesting licenses or elevated access.
 
@@ -194,7 +197,7 @@ A baseline list. Confirm with your manager what you actually need before request
 | Adobe Creative Cloud                                         | For Innovation Lab design roles, on request.                           |
 | Open Data Portal admin access                                | For the Open Data Program Manager and designees.                       |
 
-**■ Appendix C. 30-day onboarding feedback prompts**
+## Appendix C. 30-day onboarding feedback prompts
 
 We collect feedback at the 30-day mark to improve onboarding. The new hire and manager each respond to these prompts in writing or in a short interview.
 

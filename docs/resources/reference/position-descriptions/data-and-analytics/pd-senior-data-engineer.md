@@ -2,7 +2,7 @@
 
 {{ page_header(summary="Position description for the Senior Data Engineer.") }}
 
-**■ At a Glance**
+## At a Glance
 
 |                          |                                                                                                          |
 |--------------------------|----------------------------------------------------------------------------------------------------------|
@@ -13,21 +13,21 @@
 | **Supervision given**    | Individual contributor.                                                                                  |
 | **Supervision received** | Reports to the Deputy Chief Data Officer. Receives technical direction from the Principal Data Engineer. |
 
-**■ Position Summary**
+## Position Summary
 
 The Senior Data Engineer helps design and develop Baltimore’s next-generation data infrastructure as a core contributor on the Data and Analytics team. The role co-develops the centralized, enterprise-wide data warehouse and the secure, reliable, scalable pipelines that feed it.
 
 Reporting to the Deputy Chief Data Officer with technical direction from the Principal Data Engineer, the role works on an interdisciplinary team of analysts, designers, and managers to ensure that data products are adopted by agency staff, policymakers, and the public. The Senior Data Engineer is a hands-on engineer with growing architectural responsibility.
 
-**■ Key Responsibilities**
+## Key Responsibilities
 
-**Architecture and Modeling**
+### Architecture and Modeling
 
 - Contribute to data models, lakehouse-style tiered layers, and orchestration frameworks that make sense for efficient computation, fellow engineers, and data consumers.
 
 - Apply data-architecture standards (schema design, naming conventions, lineage, and data-quality contracts).
 
-**Pipeline Engineering**
+### Pipeline Engineering
 
 - Develop and maintain ETL/ELT pipelines using Python, PostgreSQL, and modern orchestration frameworks.
 
@@ -35,7 +35,7 @@ Reporting to the Deputy Chief Data Officer with technical direction from the Pri
 
 - Automate data ingestion from multiple sources (APIs, flat files, databases) into centralized data models for reporting and analysis.
 
-**Stakeholder Partnership and Stewardship**
+### Stakeholder Partnership and Stewardship
 
 - Work with agency stakeholders, analysts, and data scientists to translate business questions into technical solutions and data products.
 
@@ -43,9 +43,9 @@ Reporting to the Deputy Chief Data Officer with technical direction from the Pri
 
 - Participate in code reviews, documentation, and knowledge sharing across the team.
 
-**■ Knowledge, Skills, and Abilities**
+## Knowledge, Skills, and Abilities
 
-**Technical expertise**
+### Technical expertise
 
 - Proficiency in Python for data engineering (Pandas, Polars, SQLAlchemy, ORM patterns, requests).
 
@@ -57,7 +57,7 @@ Reporting to the Deputy Chief Data Officer with technical direction from the Pri
 
 - Understanding of cloud data workflows, APIs, and modern DevOps tools for CI/CD, logging, and monitoring.
 
-**Collaboration**
+### Collaboration
 
 - Ability to work collaboratively on GitHub and contribute to shared codebases.
 
@@ -67,7 +67,7 @@ Reporting to the Deputy Chief Data Officer with technical direction from the Pri
 
 - Commitment to privacy, accessibility, and ethical use of data.
 
-**Operations and values**
+### Operations and values
 
 - Curiosity, problem-solving mindset, and a desire to take ownership of complex technical challenges.
 
@@ -75,25 +75,25 @@ Reporting to the Deputy Chief Data Officer with technical direction from the Pri
 
 - Ability to maintain confidentiality of sensitive information.
 
-**■ Minimum Qualifications**
+## Minimum Qualifications
 
-**Education**
+### Education
 
 - Bachelor’s degree in Computer Science, Data Science, Information Systems, or a related field.
 
-**Experience**
+### Experience
 
 - At least 5 years of professional experience in data engineering or a related technical role.
 
-**Equivalency**
+### Equivalency
 
 An equivalent combination of education and experience will be considered.
 
-**■ Working Conditions**
+## Working Conditions
 
 Employees in this class work a conventional work week. This position may be required to work evening and weekend hours and 24-hour callback in an emergency. Work is performed in an office where work conditions are normal. Work requires minimal physical exertion. Hybrid telework is supported under OPI’s telework policy; staff are expected to be on site at City Hall a minimum of four days per week, with one day per week available as remote.
 
-**■ Supervision**
+## Supervision
 
 **Supervision received.** Reports to the Deputy Chief Data Officer. Receives technical direction from the Principal Data Engineer.
 

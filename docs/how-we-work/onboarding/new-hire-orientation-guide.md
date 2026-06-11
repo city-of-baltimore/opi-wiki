@@ -4,13 +4,16 @@
 
 Your first day, your first week, and what to expect at Baltimore’s Mayor’s Office of Performance and Innovation.
 
-**AUDIENCE** New OPI staff
+AUDIENCE
+:   New OPI staff
 
-**OWNER** Director's Office
+OWNER
+:   Director's Office
 
-**VERSION** v1.0 · May 2026
+VERSION
+:   v1.0 · May 2026
 
-**■ Welcome to OPI**
+## Welcome to OPI
 
 Welcome to the Mayor’s Office of Performance and Innovation. You are joining a team that combines performance, data, design, and delivery to help Baltimore City improve services in ways residents and staff can see and feel.
 
@@ -18,7 +21,7 @@ Welcome to the Mayor’s Office of Performance and Innovation. You are joining a
 
 This guide is your map for the first day and the first week. It tells you what to expect, who you’ll meet, what you need to do to get set up, and how to find your footing. Read it once before you start and keep it open through your first week.
 
-**Our mission and how we operate**
+### Our mission and how we operate
 
 OPI is the City’s in-house performance, data, design, and delivery team. We do four things at the same time: we make performance visible, we build trustworthy data, we design and test better services, and we help agencies follow through.
 
@@ -36,7 +39,7 @@ You will hear us describe this as a cycle:
 
 Every role at OPI sits inside this cycle. Your work will be more useful when you understand where it fits.
 
-**How OPI is organized**
+### How OPI is organized
 
 OPI is organized into four portfolios. Each portfolio has a lead and is responsible for a set of services and outputs.
 
@@ -49,7 +52,7 @@ OPI is organized into four portfolios. Each portfolio has a lead and is responsi
 
 *Cross-Agency Delivery is a service overlay, not a separate portfolio. Danny Heller serves as Interim Delivery Manager; Rakeim Young maintains portfolio visibility and escalation tracking.*
 
-**What we deliver**
+### What we deliver
 
 | **Service**                     | **In one sentence**                                                                      |
 |---------------------------------|------------------------------------------------------------------------------------------|
@@ -59,11 +62,11 @@ OPI is organized into four portfolios. Each portfolio has a lead and is responsi
 | Cross-Agency Delivery           | Coordinates priority initiatives that require action across multiple City agencies.      |
 | AdminOps                        | Keeps OPI’s work coordinated, documented, resourced, and well communicated.              |
 
-**■ Your first day**
+## Your first day
 
 Day one is for setup, introductions, and getting your bearings. Your manager and onboarding buddy will guide you. The goal is not for you to start producing today — it is for you to leave the day knowing where everything is and who to ask.
 
-**What to bring**
+### What to bring
 
 - Two forms of ID for your badge.
 
@@ -71,7 +74,7 @@ Day one is for setup, introductions, and getting your bearings. Your manager and
 
 - Any benefits documents you want to discuss with HR.
 
-**What you will receive**
+### What you will receive
 
 - A laptop and any peripherals you requested.
 
@@ -81,7 +84,7 @@ Day one is for setup, introductions, and getting your bearings. Your manager and
 
 - A welcome packet with your day-one schedule, key contacts, and onboarding meeting invitations.
 
-**Day one schedule (typical)**
+### Day one schedule (typical)
 
 | **When**     | **What**                              | **Notes**                                                                                          |
 |--------------|---------------------------------------|----------------------------------------------------------------------------------------------------|
@@ -92,11 +95,11 @@ Day one is for setup, introductions, and getting your bearings. Your manager and
 | Afternoon    | OPI overview                          | A 30–45 minute walkthrough of how the office is organized, what we deliver, and where things live. |
 | End of day   | End-of-day check-in with your manager | Confirm what worked, what is still blocking, and what to expect tomorrow.                          |
 
-**■ Your first week**
+## Your first week
 
 In your first week, the goal is to learn the system before you try to change it. You will meet your team, observe at least one performance routine in action, and set up the working systems you will use every day.
 
-**What you will do**
+### What you will do
 
 - Complete required HR and Workday onboarding tasks. These are time-sensitive — do them first.
 
@@ -110,7 +113,7 @@ In your first week, the goal is to learn the system before you try to change it.
 
 - Schedule recurring weekly one-on-ones with your manager and your onboarding buddy.
 
-**Who you will meet**
+### Who you will meet
 
 Your manager will schedule introductions with key partners. The list below is a starting point — your role will determine the full set.
 
@@ -124,13 +127,13 @@ Your manager will schedule introductions with key partners. The list below is a 
 
 - Two or three peers from other portfolios so you understand the full operating model.
 
-**What “good” looks like by Day 30**
+### What “good” looks like by Day 30
 
 By the end of your first month, you should be able to describe what OPI does, who does what, and where to find the systems of record. You should have produced or contributed to at least one early win — something small, real, and shippable. You should know how to escalate a question, file an intake request, and use the standard artifact templates.
 
-**■ How we work**
+## How we work
 
-**The OPI way**
+### The OPI way
 
 OPI operates with high trust and high standards. The non-negotiables apply to every staff member from day one:
 
@@ -144,7 +147,7 @@ OPI operates with high trust and high standards. The non-negotiables apply to ev
 
 - **Escalate early:** Raise risks when they are small. Avoid surprise misses.
 
-**Tools, in plain language**
+### Tools, in plain language
 
 We use Microsoft 365 for communication and documentation, and Jira for engineering work. The principle is simple: reduce tool sprawl and make it easy to find the truth.
 
@@ -160,7 +163,7 @@ We use Microsoft 365 for communication and documentation, and Jira for engineeri
 
 *See the Productivity and Collaboration Playbook for details on how each tool fits together.*
 
-**■ Where to go for help**
+## Where to go for help
 
 **Stuck on a tool or access?** Ask your onboarding buddy first. If you are blocked for more than 24 hours, escalate to your manager.
 
@@ -172,13 +175,13 @@ We use Microsoft 365 for communication and documentation, and Jira for engineeri
 
 **Need to escalate a risk or blocker?** Tell your manager. If urgent, copy the Chief of Staff. We treat early escalation as professionalism, not failure.
 
-**A note on the first 90 days**
+### A note on the first 90 days
 
 The first 30 days are for learning the system. Days 31–60 are for owning a defined slice of work. Days 61–90 are for shipping meaningful outputs and documenting them so they survive turnover. By day 100, we ask you for a brief readout: what shipped, what you learned, and what you need next.
 
 You will use the OPI 30/60/90-Day Plan and First 100 Days Template to structure this. Your manager will help you draft it during week one and finalize it by day 10.
 
-**■ Welcome again**
+## Welcome again
 
 You are joining OPI at a build-and-scale moment for Baltimore. We are building citywide routines that are dependable, modernizing data and digital foundations, and proving visible improvements in core services. Your work will matter quickly. Take the first week to learn how things fit together, ask early questions, and start building the relationships that will make the rest of your time here productive.
 

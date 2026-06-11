@@ -4,19 +4,23 @@
 
 A single index of OPI’s position descriptions — grouped by portfolio — with classifications, reporting lines, and where to find the full document.
 
-**VERSION** v1.2
+VERSION
+:   v1.2
 
-**UPDATED** April 2026
+UPDATED
+:   April 2026
 
-**OWNER** OPI Director’s Office · with HR partner
+OWNER
+:   OPI Director’s Office · with HR partner
 
-**AUDIENCE** OPI managers; hiring committees; HR; new hires orienting to the org.
+AUDIENCE
+:   OPI managers; hiring committees; HR; new hires orienting to the org.
 
-**■ How to use this index**
+## How to use this index
 
 OPI maintains a position description (PD) for every role on the team. PDs are the canonical job documents — they are what we use for hiring, classification, performance management, and onboarding. This index is the directory: it tells you what roles exist, where they sit, who they report to, the City classification, and where to find the full PD.
 
-**Conventions**
+### Conventions
 
 - Title format: Working Title (City Classification).
 
@@ -63,7 +67,7 @@ OPI maintains a position description (PD) for every role on the team. PDs are th
 
 Cross-Agency Delivery is a service overlay, not a separate team or cost center, so it does not have dedicated position descriptions. The Innovation Lab provides the team, Performance provides the standing delivery routine, and the Director's Office provides the authorizing relationships. Staff working in Cross-Agency Delivery engagements remain on their home-portfolio PD. See the [Cross-Agency Delivery overview](../../../our-teams/cross-agency-delivery/about-cross-agency-delivery.md) and the [Tiger Teams Playbook](../tiger-teams-playbook.md) for how engagements are chartered and staffed.
 
-**■ How this index is maintained**
+## How this index is maintained
 
 **Owner.** The Chief of Staff is the owner of the PD index and the source of truth for working titles, reporting lines, and status.
 

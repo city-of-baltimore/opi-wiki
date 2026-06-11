@@ -2,7 +2,7 @@
 
 {{ page_header(summary="Position description for the Senior Product Engineer.") }}
 
-**■ At a Glance**
+## At a Glance
 
 |                          |                                                                                                                                        |
 |--------------------------|----------------------------------------------------------------------------------------------------------------------------------------|
@@ -13,13 +13,13 @@
 | **Supervision given**    | Senior individual contributor. May mentor the Product Engineer and provide technical leadership on Innovation Lab projects.            |
 | **Supervision received** | Reports to the Innovation Program Manager. Receives interim portfolio oversight from the Executive Director on AI and data-product priorities. |
 
-**■ Position Summary**
+## Position Summary
 
 The Senior Product Engineer is a hybrid analytics-and-builder role within the Innovation Lab portfolio. The role leads data and analytics projects on behalf of city agencies and the Mayor’s Office — moving from problem framing to analysis, to decision-ready deliverables, to durable tools. The role blends applied analytics and statistical modeling, data products and lightweight applications, integrations and automation, and AI proof-of-concepts that are safe, evaluated, and operationally relevant. The Senior Product Engineer partners closely with the Civic Designer, the Civic Technology Lead, CitiStat, and agency staff to translate operational questions into clear measures, actionable insights, and usable tools.
 
-**■ Key Responsibilities**
+## Key Responsibilities
 
-**Analytics and Applied Research**
+### Analytics and Applied Research
 
 - Lead rapid-turn analyses for agencies and OPI leadership by framing questions, defining measures, establishing baselines, and translating findings into clear recommendations.
 
@@ -31,7 +31,7 @@ The Senior Product Engineer is a hybrid analytics-and-builder role within the In
 
 - Translate technical outputs into clear briefings, visuals, and decision materials for executive leadership, CitiStat sessions, and agency partners.
 
-**AI Proof-of-Concepts**
+### AI Proof-of-Concepts
 
 - Design and execute AI POCs for city use cases, with clear success measures and baseline comparisons.
 
@@ -39,7 +39,7 @@ The Senior Product Engineer is a hybrid analytics-and-builder role within the In
 
 - Apply OPI’s responsible-AI safeguards: human-in-the-loop checks, transparency requirements, and post-deployment monitoring plans.
 
-**Data Products and Delivery**
+### Data Products and Delivery
 
 - Build dashboards, parameterized reports, reusable datasets, and lightweight web applications that surface analytic outputs and progress against targets.
 
@@ -47,15 +47,15 @@ The Senior Product Engineer is a hybrid analytics-and-builder role within the In
 
 - Partner with the Civic Technology Lead and Product Engineer on shared infrastructure, deployment patterns, and engineering standards.
 
-**Cross-Team Collaboration and Stewardship**
+### Cross-Team Collaboration and Stewardship
 
 - Partner with the Civic Designer and CitiStat staff to ensure products solve real operational problems and ship with the right operating model.
 
 - Mentor more junior practitioners and contribute to OPI’s engineering and analytics standards.
 
-**■ Knowledge, Skills, and Abilities**
+## Knowledge, Skills, and Abilities
 
-**Analytics and modeling**
+### Analytics and modeling
 
 - Advanced proficiency in Python and SQL; experience with feature engineering, descriptive/inferential statistics, and predictive modeling.
 
@@ -63,7 +63,7 @@ The Senior Product Engineer is a hybrid analytics-and-builder role within the In
 
 - Working familiarity with GIS tools and spatial analysis (ArcGIS Pro, ArcGIS Online, QGIS).
 
-**Engineering and AI evaluation**
+### Engineering and AI evaluation
 
 - Experience building lightweight web applications with modern frameworks (e.g., React/Streamlit/Shiny) and integrating with backend services and APIs.
 
@@ -71,7 +71,7 @@ The Senior Product Engineer is a hybrid analytics-and-builder role within the In
 
 - Strong code, testing, and documentation discipline; comfort working in shared codebases.
 
-**Communication and partnership**
+### Communication and partnership
 
 - Strong writing and presentation skills for executive and non-technical audiences.
 
@@ -79,25 +79,25 @@ The Senior Product Engineer is a hybrid analytics-and-builder role within the In
 
 - Track record translating analysis into commitments, decisions, and durable change.
 
-**■ Minimum Qualifications**
+## Minimum Qualifications
 
-**Education**
+### Education
 
 - Bachelor’s degree in Computer Science, Data Science, Statistics, Engineering, Public Policy, or a related field; or equivalent experience.
 
-**Experience**
+### Experience
 
 - At least 5 years of experience in applied analytics, data science, or product engineering, with a track record shipping decision-ready data products.
 
-**Equivalency**
+### Equivalency
 
 An equivalent combination of education and experience will be considered.
 
-**■ Working Conditions**
+## Working Conditions
 
 Employees in this class work a conventional work week. This position may be required to work evening and weekend hours and 24-hour callback in an emergency. Work is performed in an office where work conditions are normal. Work requires minimal physical exertion. Hybrid telework is supported under OPI’s telework policy; staff are expected to be on site at City Hall a minimum of four days per week, with one day per week available as remote.
 
-**■ Supervision**
+## Supervision
 
 **Supervision received.** Reports to the Innovation Program Manager. Receives interim portfolio oversight from the Executive Director on AI and data-product priorities.
 

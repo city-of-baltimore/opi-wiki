@@ -4,13 +4,16 @@
 
 A searchable, governed, and durable knowledge base for OPI. Strategy, metadata taxonomy, and Project Directory schema.
 
-**AUDIENCE** OPI staff, site stewards, service leads
+AUDIENCE
+:   OPI staff, site stewards, service leads
 
-**OWNER** Chief of Staff (Site Steward) · DCDO (Taxonomy)
+OWNER
+:   Chief of Staff (Site Steward) · DCDO (Taxonomy)
 
-**VERSION** v1.0 · February 22, 2026
+VERSION
+:   v1.0 · February 22, 2026
 
-**■ Goal and design intent**
+## Goal and design intent
 
 Build a SharePoint-based operating system for OPI that is easy to use on day one, rigorous enough for production work, and durable enough to survive staffing and leadership changes.
 
@@ -18,7 +21,7 @@ This is not a file dump. It is a living operating manual with clear ownership, s
 
 > *Respond when necessary. Build so we do not have to respond again.*
 
-**Design principles**
+### Design principles
 
 - Simple top-level navigation. Depth comes from consistent subpages, not more tabs.
 
@@ -32,7 +35,7 @@ This is not a file dump. It is a living operating manual with clear ownership, s
 
 - Governance is the product. Every page has an owner and a review cadence, or it does not exist.
 
-**What SharePoint does for OPI**
+### What SharePoint does for OPI
 
 - **Knowledge base:** How OPI works, written down, current, and easy to find.
 
@@ -40,7 +43,7 @@ This is not a file dump. It is a living operating manual with clear ownership, s
 
 - **Enablement:** Templates, how-tos, and standards that make good work repeatable across teams and agencies.
 
-**■ Information architecture**
+## Information architecture
 
 Top-level navigation has five pillars. This is the entire navigation surface. Anything else lives one level down.
 
@@ -54,7 +57,7 @@ Top-level navigation has five pillars. This is the entire navigation surface. An
 
 Persistent utility links sit in the top right corner: Directory, Project Directory, Templates, Change Log, Start Here. Small, consistent, high-value.
 
-**Page types and where content belongs**
+### Page types and where content belongs
 
 | **Content type**   | **Use it for**                                                                        | **Example**                                | **Rules**                                                        |
 |--------------------|---------------------------------------------------------------------------------------|--------------------------------------------|------------------------------------------------------------------|
@@ -63,7 +66,7 @@ Persistent utility links sit in the top right corner: Directory, Project Directo
 | Lists              | Systems of record: structured data that must be sortable, filterable, and reportable. | Project Directory; People Directory.       | Required fields; weekly updates; named owners.                   |
 | Folders            | Organizing supporting files inside a project space.                                   | Meeting attachments.                       | Not a system of record. Never store “truth” only in files.       |
 
-**Governance: keep it sharp**
+### Governance: keep it sharp
 
 A SharePoint wiki fails when ownership is vague. Governance is non-negotiable.
 
@@ -73,7 +76,7 @@ A SharePoint wiki fails when ownership is vague. Governance is non-negotiable.
 
 - **Every template:** Version number, owner, change notes, and an approved usage context.
 
-**Governance roles**
+### Governance roles
 
 | **Role**                                | **What they own**                                                     |
 |-----------------------------------------|-----------------------------------------------------------------------|
@@ -82,11 +85,11 @@ A SharePoint wiki fails when ownership is vague. Governance is non-negotiable.
 | Service Owners (DCPO, DCDO, Innovation) | Content owners for service playbooks and standards.                   |
 | Ops Librarian (PMO / AdminOps)          | Audits broken links, archives snapshots, enforces naming conventions. |
 
-**■ Implementation approach**
+## Implementation approach
 
 Build in three releases so the system is useful immediately and improves with use.
 
-**MVP — first 2 weeks**
+### MVP — first 2 weeks
 
 - Site structure with the five-pillar navigation.
 
@@ -100,7 +103,7 @@ Build in three releases so the system is useful immediately and improves with us
 
 - Change Log page with a named site steward.
 
-**V1 — 30 to 45 days**
+### V1 — 30 to 45 days
 
 - Service playbooks and How We Deliver cadence pages (intake, chartering, sustainment).
 
@@ -114,7 +117,7 @@ Build in three releases so the system is useful immediately and improves with us
 
 - First quarterly audit and archive snapshot.
 
-**V2 — quarterly**
+### V2 — quarterly
 
 - Expand systems-of-record lists.
 
@@ -122,11 +125,11 @@ Build in three releases so the system is useful immediately and improves with us
 
 - Harden governance with audits, term updates, and archives.
 
-**■ Metadata taxonomy**
+## Metadata taxonomy
 
 Make OPI’s work findable, governable, and reportable without making people fill out a bureaucracy. The design goal is the minimum effective metadata: a small set of tags that unlocks search, filtering, ownership clarity, and risk management.
 
-**Principles**
+### Principles
 
 - Metadata is a contract. If a field is required, it must be accurate and current.
 
@@ -138,7 +141,7 @@ Make OPI’s work findable, governable, and reportable without making people fil
 
 - Limit required fields to what OPI will actually use in reviews, dashboards, and decisions.
 
-**Core term sets (managed metadata)**
+### Core term sets (managed metadata)
 
 | **Term set**         | **Definition**                                                   | **Example values**                                                                                             | **Owner**           |
 |----------------------|------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------|---------------------|
@@ -153,7 +156,7 @@ Make OPI’s work findable, governable, and reportable without making people fil
 | Service area         | Resident-facing service domain.                                  | 311; Permitting; Trash collection; Street sweeping; Code enforcement; Forestry.                                | Service leads       |
 | Equity lens          | Whether and how equity considerations are relevant and included. | Required; Not applicable; In progress.                                                                         | DCPO                |
 
-**Required metadata by content type**
+### Required metadata by content type
 
 | **Content**                    | **Required fields**                                                                                                       | **Optional fields**                                                   | **Notes**                                                          |
 |--------------------------------|---------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------|--------------------------------------------------------------------|
@@ -162,7 +165,7 @@ Make OPI’s work findable, governable, and reportable without making people fil
 | Project Directory item         | Project name; Service line; Agency; OPI Owner; Sponsor; Authorizer; Lifecycle phase; Priority; RAG; Next checkpoint date. | Program; Service area; Decision needed by; Dependencies; Equity lens. | If it can’t be described in these fields, it isn’t ready to start. |
 | People Directory item          | Person; Team; Role; What to contact for.                                                                                  | Skills; Programs; Backup coverage.                                    | Directory reduces “who owns this?” churn.                          |
 
-**Naming conventions**
+### Naming conventions
 
 Naming conventions are not cosmetic. They are what makes search work for new hires and partners.
 
@@ -174,7 +177,7 @@ Naming conventions are not cosmetic. They are what makes search work for new hir
 
 - Projects are named “Service area – Outcome – Agency.”
 
-**Taxonomy governance and change control**
+### Taxonomy governance and change control
 
 - Single request path: a SharePoint list form for “Request a new tag or term,” reviewed weekly by Ops Librarian.
 
@@ -184,11 +187,11 @@ Naming conventions are not cosmetic. They are what makes search work for new hir
 
 - Sensitivity labels and production-readiness definitions are policy-controlled by the Deputy Chief Data Officer. Changes require a written note.
 
-**■ Project Directory schema**
+## Project Directory schema
 
 A single, trusted portfolio record that answers, at any moment, what are we doing, who owns it, what decisions are needed, and what “done” means. This is the backbone of OPI’s book of business.
 
-**Design principles**
+### Design principles
 
 - One list is the portfolio truth. Do not run parallel trackers in decks, DMs, or personal files.
 
@@ -200,7 +203,7 @@ A single, trusted portfolio record that answers, at any moment, what are we doin
 
 - Every project links to its artifacts (charter, decision memos, KPI pack, runbooks).
 
-**Data model**
+### Data model
 
 - **List:** Project Directory (portfolio record).
 
@@ -252,7 +255,7 @@ Optional, add when ready:
 | Public narrative status  | Choice                    | No           | Not public; Eligible; Drafting; Published. Feeds the Our Work storytelling pipeline.                                          |
 | Last updated             | Date / time               | System       | Auto-populated by SharePoint. Used for reminder automation.                                                                   |
 
-**Validation rules (the quality bar for the list)**
+### Validation rules (the quality bar for the list)
 
 - If Lifecycle phase is not “Closed” or “Parked,” Next checkpoint date is required and must be within 30 days.
 
@@ -262,7 +265,7 @@ Optional, add when ready:
 
 - If Production readiness is Pilot or Production, runbook link and Tech Lead are required.
 
-**Standard views**
+### Standard views
 
 - Portfolio — Active (all non-closed, non-parked).
 
@@ -280,7 +283,7 @@ Optional, add when ready:
 
 - Production items (Pilot / Production only) for reliability and incident readiness.
 
-**Cadence and accountability**
+### Cadence and accountability
 
 - **Weekly:** Project owners update by a set deadline (e.g., Monday 12:00).
 
@@ -290,7 +293,7 @@ Optional, add when ready:
 
 - **Quarterly:** Archive snapshot (PDF export) for institutional memory and audits.
 
-**Automations (high leverage)**
+### Automations (high leverage)
 
 - Reminder: if a project has not been updated in 7 days and is Active, notify Owner and copy PMO.
 
@@ -298,7 +301,7 @@ Optional, add when ready:
 
 - Project kickoff: when Lifecycle phase moves to Charter, auto-create a project folder (or document set) and a project hub page from template.
 
-**■ People and Contacts Directory**
+## People and Contacts Directory
 
 A directory list makes tagging practical. It bridges “who owns this?” with “who can help?”
 
@@ -313,7 +316,7 @@ A directory list makes tagging practical. It bridges “who owns this?” with �
 | Preferred channel   | Choice           | No           | Teams / email / phone for urgent matters.                                                    |
 | Notes               | Multi-line text  | No           | Short, practical notes. Avoid personal information.                                          |
 
-**■ Site governance — minimum rules**
+## Site governance — minimum rules
 
 - No new top-level navigation items without CoS approval.
 
@@ -325,7 +328,7 @@ A directory list makes tagging practical. It bridges “who owns this?” with �
 
 - Delete or archive obsolete guidance. If it is wrong, it cannot remain “for reference.”
 
-**■ Project hub page — standard template**
+## Project hub page — standard template
 
 Every active project has a simple hub page linked from the Project Directory.
 
@@ -343,7 +346,7 @@ Every active project has a simple hub page linked from the Project Directory.
 
 - Sustain plan (who owns it after OPI; what routine keeps it alive).
 
-**■ Quick reference for staff**
+## Quick reference for staff
 
 > *If you only remember one thing: tag the work so someone new can find it and understand who owns it.*
 

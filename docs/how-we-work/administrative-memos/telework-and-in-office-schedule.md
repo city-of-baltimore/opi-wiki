@@ -53,9 +53,9 @@ approach problems, joining working sessions, or building leadership presence.
 Just as importantly, a consistent in-office rhythm provides equity and
 predictability so everyone knows when teammates will be available and engaged.
 
-**Core Expectations**
+## Core Expectations
 
-**In-Office Days**
+## In-Office Days
 
 - **Core Days:** Tuesday, Wednesday, and Thursday are mandatory in-office days for everyone.
 
@@ -63,7 +63,7 @@ predictability so everyone knows when teammates will be available and engaged.
 
 - **Flexibility:** Certain projects or in-person meetings may require attendance on a specific Monday or Friday. In those cases, work with your manager to swap your fourth day as needed. Swaps do not roll over to future weeks.
 
-**Remote Days**
+## Remote Days
 
 - Each staff member has one remote day per week.
 
@@ -71,7 +71,7 @@ predictability so everyone knows when teammates will be available and engaged.
 
 - Regular weekly WFH days should be posted on the OPI team calendar. Any exceptions or swaps should also be reflected on the calendar so that expectations are clear across the team.
 
-**Core Hours**
+## Core Hours
 
 - All staff are expected to work the typical 7.34-hour work day.
 
@@ -79,13 +79,13 @@ predictability so everyone knows when teammates will be available and engaged.
 
 - Staff may arrive earlier or leave later depending on individual schedules, but all team members must be on-site during core hours.
 
-**Full-Day Presence**
+## Full-Day Presence
 
 - In-office days are expected to be full workdays. Split or partial in-office days are not permitted.
 
 - If an unavoidable commitment arises, staff should work with their manager and follow City leave or flex-time policies. Managers are expected to apply exceptions consistently and equitably across staff.
 
-**FAQs**
+## FAQs
 
 **Q: What if I need to be remote on one of the required core days (Tue-Thu)?**  
 **A:** Work with your manager to request an exception in advance. Exceptions are

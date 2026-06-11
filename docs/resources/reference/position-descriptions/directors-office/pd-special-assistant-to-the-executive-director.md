@@ -2,7 +2,7 @@
 
 {{ page_header(summary="Position description for the Special Assistant to the Executive Director.") }}
 
-**■ At a Glance**
+## At a Glance
 
 |                          |                                                                                      |
 |--------------------------|--------------------------------------------------------------------------------------|
@@ -13,15 +13,15 @@
 | **Supervision given**    | Individual contributor; no direct reports.                                           |
 | **Supervision received** | Reports to the Executive Director and Chief Data Officer through the Chief of Staff. |
 
-**■ Position Summary**
+## Position Summary
 
 The Special Assistant is a high-impact, trusted partner to the Executive Director and the Director’s Office. The role goes well beyond traditional administrative support: the Special Assistant protects and amplifies the Executive Director’s capacity by running a disciplined calendar and briefing system, orchestrating meetings and follow-through, and keeping commitments closed on time.
 
 In addition to executive support, the Special Assistant carries a working portfolio of innovation and delivery support — helping move tiger teams, Innovation Lab projects, and ad-hoc analytic work forward — and provides Stat support with a focus on public-safety topics, including pre-session preparation, evidence collation, and post-session follow-through. The role reports administratively through the Chief of Staff and works directly with the Executive Director on day-to-day priorities.
 
-**■ Key Responsibilities**
+## Key Responsibilities
 
-**Executive Calendar and Time Protection**
+### Executive Calendar and Time Protection
 
 - Own and manage the Executive Director’s calendar, aligning time with OPI’s strategic priorities (CitiStat, major deliverables, executive briefings, and priority service work).
 
@@ -33,7 +33,7 @@ In addition to executive support, the Special Assistant carries a working portfo
 
 - Screen meeting requests based on urgency, value, and decision need; recommend “yes,” “not now,” or “delegate.”
 
-**Meeting Orchestration and Follow-Through**
+### Meeting Orchestration and Follow-Through
 
 - Run a disciplined briefing system for the Executive Director: identify briefing needs, request inputs from owners, and assemble materials on time.
 
@@ -41,13 +41,13 @@ In addition to executive support, the Special Assistant carries a working portfo
 
 - Maintain the Executive Director’s actions list and weekly review; raise visible risks and overdue items to the Chief of Staff.
 
-**Briefing Packets, Memos, and Decision Documentation**
+### Briefing Packets, Memos, and Decision Documentation
 
 - Draft briefing packets, talking points, and decision memos for executive engagements (interagency, philanthropic, City Council, Board of Estimates).
 
 - Maintain reusable briefing templates and a library of past materials; keep contact records and meeting context up to date.
 
-**Innovation and Delivery Support**
+### Innovation and Delivery Support
 
 - Support Innovation Lab projects and tiger teams as a working team member: scheduling, document hygiene, status updates, and small-cycle deliverables.
 
@@ -55,21 +55,21 @@ In addition to executive support, the Special Assistant carries a working portfo
 
 - Contribute to OPI publications, one-pagers, and visual materials in plain language.
 
-**CitiStat and Public-Safety Stat Support**
+### CitiStat and Public-Safety Stat Support
 
 - Provide CitiStat support with a focus on public-safety topics: pre-session evidence collation, agenda preparation, and post-session follow-through.
 
 - Coordinate with the Performance team on session logistics, briefing materials, and commitments tracking.
 
-**Confidentiality, Discretion, and Sound Judgment**
+### Confidentiality, Discretion, and Sound Judgment
 
 - Handle confidential information with discretion; safeguard sensitive personnel, contractual, and security-related materials.
 
 - Use sound judgment in representing the Executive Director’s positions and in escalating issues to the Chief of Staff.
 
-**■ Knowledge, Skills, and Abilities**
+## Knowledge, Skills, and Abilities
 
-**Executive support and operations**
+### Executive support and operations
 
 - Demonstrated experience supporting senior executives in high-volume, high-trust environments.
 
@@ -77,7 +77,7 @@ In addition to executive support, the Special Assistant carries a working portfo
 
 - Excellent writing and editing for executive audiences; ability to produce briefing packets and decision memos at speed and at a high quality bar.
 
-**Delivery and analysis**
+### Delivery and analysis
 
 - Comfort moving small project workstreams forward independently; ability to scope, deliver, and close out discrete tasks.
 
@@ -85,7 +85,7 @@ In addition to executive support, the Special Assistant carries a working portfo
 
 - Familiarity with public-safety topics or willingness to develop fluency quickly.
 
-**Judgment and stewardship**
+### Judgment and stewardship
 
 - Discretion with confidential information.
 
@@ -93,25 +93,25 @@ In addition to executive support, the Special Assistant carries a working portfo
 
 - Ability to communicate effectively across the OPI team, partner agencies, and external stakeholders.
 
-**■ Minimum Qualifications**
+## Minimum Qualifications
 
-**Education**
+### Education
 
 - Bachelor’s degree in Public Administration, Public Policy, Business, Management, or a related field.
 
-**Experience**
+### Experience
 
 - At least 3 years of experience supporting senior executives, managing complex calendars, or coordinating cross-functional projects in government, consulting, or a comparable setting.
 
-**Equivalency**
+### Equivalency
 
 An equivalent combination of education and experience will be considered.
 
-**■ Working Conditions**
+## Working Conditions
 
 Employees in this class work a conventional work week. This position may be required to work evening and weekend hours and 24-hour callback in an emergency. Work is performed in an office where work conditions are normal. Work requires minimal physical exertion. Hybrid telework is supported under OPI’s telework policy; staff are expected to be on site at City Hall a minimum of four days per week, with one day per week available as remote.
 
-**■ Supervision**
+## Supervision
 
 **Supervision received.** Reports to the Executive Director and Chief Data Officer through the Chief of Staff.
 

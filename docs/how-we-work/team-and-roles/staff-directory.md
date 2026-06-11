@@ -2,9 +2,11 @@
 
 {{ page_header(summary="Staff directory derived from the contact sheet and the current roster.") }}
 
-**AUDIENCE** OPI staff
+AUDIENCE
+:   OPI staff
 
-**OWNER** Chief of Staff
+OWNER
+:   Chief of Staff
 
 | **Team** | **Name** | **Title** | **Work phone** | **Email / route** |
 |---|---|---|---|---|

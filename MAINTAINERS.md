@@ -143,6 +143,35 @@ Visible status/type pills are shared UI too. Store badge intent in the nearest
 page's badge automatically; use the `badge(...)` macro only for one-off inline
 badges, and never inline raw HTML pill spans.
 
+## Headings
+
+Use real Markdown headings (`##`, `###`, `####`) for section breaks — never a
+bold-only paragraph. Bold-only "headings" don't appear in the table of contents,
+aren't announced as headings by screen readers, and get no anchor link.
+
+- Top-level page sections: `##`. (The old decorative `**■ Section**` style has
+  been retired in favor of `## Section`.)
+- Sub-sections nest with `###` / `####`.
+- Keep **bold** for genuine inline emphasis, for short descriptive *deks* that
+  sit directly under a heading, and for memo fields (`**To:**`, `**From:**`).
+  A bold sentence or a one-line descriptor is not a heading.
+
+## Page metadata blocks
+
+Visible page front-matter (`VERSION`, `UPDATED`, `OWNER`, `AUDIENCE`,
+`EFFECTIVE`, `REVIEW`) uses a Markdown definition list, not ad-hoc bold lines:
+
+```markdown
+VERSION
+:   v1.0
+
+OWNER
+:   Director's Office
+```
+
+This renders as a semantic `<dl>`. (This visible block is distinct from the
+build-time `.metadata.yml`, which drives review cadence and the status badge.)
+
 ## Structured page data
 
 When one page needs to repeat the same source-of-truth data across charts,

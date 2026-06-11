@@ -10,9 +10,9 @@
 
 *This About doc explains the service in plain language. The Theory of Change doc explains how the service is mandated, governed, staffed, measured, and sustained.*
 
-**PURPOSE**
+## PURPOSE
 
-**What this service is for**
+### What this service is for
 
 AdminOps keeps OPI aligned, coordinated, resourced, documented, and understood.
 
@@ -20,7 +20,7 @@ This service is the operating backbone for the office. It supports the Executive
 
 AdminOps is not overhead. It is the operating system that lets a small, multidisciplinary office deliver citywide work with discipline and credibility.
 
-**Who we are**
+### Who we are
 
 We are the executive and operational core of OPI.
 
@@ -28,7 +28,7 @@ This includes the Director’s Office functions, Chief of Staff function, portfo
 
 We keep the office moving without letting it become chaotic. We protect priorities, support staff, document decisions, prepare leaders, tell the story, and make sure work does not disappear when a meeting ends or a person changes roles.
 
-**What we do**
+### What we do
 
 AdminOps coordinates the conditions that allow OPI’s five services to work as one system.
 
@@ -54,7 +54,7 @@ Core work includes:
 
 - Field validation coordination when evidence is needed to confirm conditions or closure.
 
-**Why it matters**
+### Why it matters
 
 A small office cannot operate citywide without strong operating discipline.
 
@@ -62,7 +62,7 @@ Without AdminOps, every request has a different intake path, every project has a
 
 AdminOps creates the shared standards that make OPI reliable. Clarity is not bureaucracy. Clarity protects people, quality, and impact.
 
-**How we work**
+### How we work
 
 We make the work legible.
 
@@ -72,7 +72,7 @@ We help OPI say yes responsibly and no on purpose. New work should be routed thr
 
 We keep the story honest. Communications is not spin. It is how OPI explains what changed, what we learned, what remains hard, and what comes next.
 
-**What we own**
+### What we own
 
 AdminOps owns:
 
@@ -100,7 +100,7 @@ AdminOps owns:
 
 - Field validation coordination when connected to quality assurance, Stat closure, or executive evidence.
 
-**What we do not own**
+### What we do not own
 
 AdminOps does not own:
 
@@ -120,7 +120,7 @@ AdminOps does not own:
 
 *AdminOps coordinates, tracks, briefs, and supports these areas. It does not replace the service owners.*
 
-**How we partner across OPI**
+### How we partner across OPI
 
 AdminOps is the connective tissue across all services.
 
@@ -132,7 +132,7 @@ It supports the Innovation Lab with launch communications, Council and executive
 
 It supports Cross-Agency Delivery with portfolio visibility, escalation tracking, executive briefing materials, Council coordination, and closeout documentation.
 
-**Field evidence rule**
+### Field evidence rule
 
 Fieldwork has different homes depending on the purpose.
 
@@ -144,7 +144,7 @@ If the purpose is confirming implementation conditions for a delivery activation
 
 AdminOps coordinates field logistics, evidence standards, documentation, and quality assurance where needed.
 
-**Partnership operating rule**
+### Partnership operating rule
 
 Partnerships should be tied to a portfolio priority, not managed as disconnected relationship-building.
 
@@ -156,7 +156,7 @@ Performance owns partnerships tied to performance practice, CitiStat methods, de
 
 AdminOps brokers, tracks, briefs, documents, and closes the loop on partnership commitments.
 
-**What success looks like**
+### What success looks like
 
 Success means OPI runs with clarity, credibility, and continuity.
 
@@ -180,7 +180,7 @@ We know the work is succeeding when:
 
 - The office can move fast with intention, not chaos.
 
-**Common outputs**
+### Common outputs
 
 - Intake records.
 

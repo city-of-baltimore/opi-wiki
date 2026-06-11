@@ -2,7 +2,7 @@
 
 {{ page_header(summary="A template for the office-wide announcement when someone joins OPI.", category="OPI · ONBOARDING", tagline="Two reusable templates the Chief of Staff posts in the OPI Teams channel on the morning of every new hire’s first day — a generic version and an engineering-specific version.") }}
 
-**HOW TO USE THIS TEMPLATE**
+## HOW TO USE THIS TEMPLATE
 
 # **A small, warm welcome**
 
@@ -30,15 +30,15 @@ Replace anything in \[square brackets\]. Keep the tone warm, brief, and specific
 
 - Send a duplicate as a Teams chat in the new hire’s portfolio sub-channel.
 
-**TEMPLATE A · GENERIC**
+## TEMPLATE A · GENERIC
 
 # **For any new hire**
 
-**SUBJECT LINE (TEAMS POST TITLE)**
+## SUBJECT LINE (TEAMS POST TITLE)
 
 Welcome to OPI — \[First Name\] \[Last Name\] starts today
 
-**BODY**
+## BODY
 
 Team —
 
@@ -56,17 +56,17 @@ Required fields the manager must provide the day before
 
 First and last name; portfolio; job title; preferred pronouns (or “none”); manager name; buddy name; previous role/org; one-sentence accomplishment from prior role; one-sentence focus at OPI; fun fact (provided by the new hire); arrival time at the office; high-resolution photo (with new hire’s consent).
 
-**TEMPLATE B · ENGINEERING**
+## TEMPLATE B · ENGINEERING
 
 # **For new engineers and product engineers**
 
 Same structure as Template A, with two changes: the focus area highlights products / repos, and the post tags the Engineering channel as well.
 
-**SUBJECT LINE (TEAMS POST TITLE)**
+## SUBJECT LINE (TEAMS POST TITLE)
 
 Welcome to OPI Engineering — \[First Name\] \[Last Name\] starts today
 
-**BODY**
+## BODY
 
 Team —
 
@@ -82,7 +82,7 @@ Drop a welcome below. Come say hi this afternoon.
 
 — \[Chief of Staff name\]
 
-**POSTING WORKFLOW**
+## POSTING WORKFLOW
 
 # **Who does what, in order**
 

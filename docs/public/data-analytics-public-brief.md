@@ -4,15 +4,19 @@
 
 A plain-language brief on how Baltimore manages, publishes, and uses data — and how to engage with the work.
 
-**VERSION** v1.0
+VERSION
+:   v1.0
 
-**UPDATED** April 2026
+UPDATED
+:   April 2026
 
-**OWNER** Citywide Data and Analytics · Data and Analytics Portfolio
+OWNER
+:   Citywide Data and Analytics · Data and Analytics Portfolio
 
-**AUDIENCE** Agency partners, civic technologists, researchers, residents, media
+AUDIENCE
+:   Agency partners, civic technologists, researchers, residents, media
 
-**■ What Citywide Data and Analytics is**
+## What Citywide Data and Analytics is
 
 Citywide Data and Analytics is the OPI service responsible for the City’s data infrastructure, open data program, and analytics capacity. It is led from the Data and Analytics portfolio, under the City’s Chief Data Officer.
 
@@ -20,9 +24,9 @@ The service is built on three commitments: trustworthy data, useful data product
 
 > *Respond when necessary. Build so we do not have to respond again.*
 
-**■ What we do**
+## What we do
 
-**Open Baltimore**
+### Open Baltimore
 
 Baltimore’s Open Data Program is established in City Code (Article 1, Subtitle 9) and operated by the Chief Data Officer. The program proactively releases City data in open, machine-readable formats through Open Baltimore (data.baltimorecity.gov). Each agency has an open data coordinator; OPI maintains the inventory, documentation, and quality standards.
 
@@ -34,7 +38,7 @@ Baltimore’s Open Data Program is established in City Code (Article 1, Subtitle
 
 - A clear path for residents, researchers, and businesses to request datasets.
 
-**Data products**
+### Data products
 
 Beyond raw data, the service builds and maintains a small number of high-leverage data products that City staff and partners use every week. Examples include:
 
@@ -44,7 +48,7 @@ Beyond raw data, the service builds and maintains a small number of high-leverag
 
 - Cross-agency datasets that knit together signals for the Innovation Lab and CitiStat.
 
-**Responsible AI readiness**
+### Responsible AI readiness
 
 The service is preparing Baltimore to use analytics and AI with intention and integrity. The starting point is governance and competence, not technology procurement.
 
@@ -56,9 +60,9 @@ The service is preparing Baltimore to use analytics and AI with intention and in
 
 - Workforce readiness — training City staff to evaluate vendor claims and read model outputs.
 
-**■ How to engage**
+## How to engage
 
-**If you are a City agency**
+### If you are a City agency
 
 - Reach the service through the OPI single front door. Bring a clear data need and an owner.
 
@@ -74,17 +78,17 @@ The service is preparing Baltimore to use analytics and AI with intention and in
 
 - Cite Open Baltimore as the source of record, and reach out for clarifications before reporting to avoid avoidable misreads.
 
-**If you are a resident**
+### If you are a resident
 
 - Open Baltimore is yours. The most common uses are checking neighborhood-level service performance, finding facilities and services, and following City budget and operations data.
 
 - If a dataset is missing, broken, or unclear, the Open Data Program contact channel is the right place to flag it.
 
-**■ How Data and Analytics fits with the rest of OPI**
+## How Data and Analytics fits with the rest of OPI
 
 CitiStat surfaces what is not working. Citywide Data and Analytics explains why — and gives City staff the data products they need to act between Stat sessions. The Innovation Lab uses the same data to redesign services. Together, the three services form an integrated performance and improvement cycle, supported by Cross-Agency Delivery and AdminOps.
 
-**■ Contact**
+## Contact
 
 |                 |                                                                |
 |-----------------|----------------------------------------------------------------|

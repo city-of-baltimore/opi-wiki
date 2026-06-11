@@ -2,7 +2,7 @@
 
 {{ page_header(summary="Position description for the Deputy Chief Data Officer.") }}
 
-**■ At a Glance**
+## At a Glance
 
 |                          |                                                                                                                                                                                                                                                                                             |
 |--------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -13,15 +13,15 @@
 | **Supervision given**    | Provides executive oversight to the Technical Program Manager, the Analytics Lead, the Principal Data Engineer, the Principal Platform Engineer, and the Senior Data Engineer. Indirectly supervises a wider technical, professional, and administrative staff. |
 | **Supervision received** | Reports to the Executive Director and Chief Data Officer of OPI.                                                                                                                                                                                                                            |
 
-**■ Position Summary**
+## Position Summary
 
 The Deputy Chief Data Officer (DCDO) is Baltimore’s principal leader for data infrastructure, analytics, open data, and applied analytics products. Reporting to the Executive Director and Chief Data Officer, the DCDO directs OPI’s Data Platform program and the citywide analytics function and partners with the Innovation Lab on shared product infrastructure.
 
 The role is both strategic and operational: shaping citywide data and AI standards, governing data pipelines and products, publishing open data, and supporting resident-facing analytics products such as the executive dashboards and the Mayor’s reporting tools. The DCDO leads senior professionals across data engineering, analytics, and product management and partners with agency executives, Baltimore City Information Technology (BCIT), and external stakeholders to build a modern, trusted data and AI ecosystem for Baltimore.
 
-**■ Key Responsibilities**
+## Key Responsibilities
 
-**Data and AI Leadership**
+### Data and AI Leadership
 
 - Set the citywide strategy for data governance, pipelines, lineage, and adoption — paving the way for trusted, transparent, and responsible data infrastructure.
 
@@ -31,7 +31,7 @@ The role is both strategic and operational: shaping citywide data and AI standar
 
 - Champion responsible-AI standards in coordination with the Executive Director and BCIT.
 
-**Analytics and Product Leadership**
+### Analytics and Product Leadership
 
 - Direct OPI’s analytics function: applied analytics, data products, and BI/GIS deliverables that inform decisions.
 
@@ -41,7 +41,7 @@ The role is both strategic and operational: shaping citywide data and AI standar
 
 - Partner with the Innovation Program Manager on shared product infrastructure used by the Innovation Lab.
 
-**Executive Leadership and Partnerships**
+### Executive Leadership and Partnerships
 
 - Lead, mentor, and develop the Data and Analytics team across data engineering, analytics, and product/program management.
 
@@ -49,7 +49,7 @@ The role is both strategic and operational: shaping citywide data and AI standar
 
 - Represent OPI in citywide forums on data governance, AI, and digital service delivery.
 
-**Stewardship and Operations**
+### Stewardship and Operations
 
 - Direct programs that have a broad scope and major impact on agency missions and operations.
 
@@ -59,9 +59,9 @@ The role is both strategic and operational: shaping citywide data and AI standar
 
 - Ensure compliance with citywide policy through subordinate managers; integrate information from all sources to communicate a well-informed, diverse perspective.
 
-**■ Knowledge, Skills, and Abilities**
+## Knowledge, Skills, and Abilities
 
-**Data and AI leadership**
+### Data and AI leadership
 
 - Visionary leadership in data governance, AI, analytics, and digital platforms.
 
@@ -73,7 +73,7 @@ The role is both strategic and operational: shaping citywide data and AI standar
 
 - Exceptional communication, with experience engaging senior leaders, technical teams, and public stakeholders.
 
-**Public administration and operations**
+### Public administration and operations
 
 - Knowledge of the principles and practices of operations and administration.
 
@@ -87,7 +87,7 @@ The role is both strategic and operational: shaping citywide data and AI standar
 
 - Ability to supervise and direct the activities of staff.
 
-**Stewardship**
+### Stewardship
 
 - Commitment to equity, transparency, and resident-centered services.
 
@@ -95,25 +95,25 @@ The role is both strategic and operational: shaping citywide data and AI standar
 
 - Ability to establish and maintain effective working relationships with associates, officials, and employees.
 
-**■ Minimum Qualifications**
+## Minimum Qualifications
 
-**Education**
+### Education
 
 - Master’s degree in Data Science, Computer Science, Public Administration, or a related field. Doctorate preferred.
 
-**Experience**
+### Experience
 
 - At least 10 years of senior leadership in data, AI, analytics, or digital service delivery, including 6+ years managing cross-disciplinary teams. Demonstrated success building data platforms, AI pilots, or resident-facing digital products at scale.
 
-**Equivalency**
+### Equivalency
 
 An equivalent combination of education and experience will be considered.
 
-**■ Working Conditions**
+## Working Conditions
 
 Employees in this class work a conventional work week. This position may be required to work evening and weekend hours and 24-hour callback in an emergency. Work is performed in an office where work conditions are normal. Work requires minimal physical exertion. Hybrid telework is supported under OPI’s telework policy; staff are expected to be on site at City Hall a minimum of four days per week, with one day per week available as remote.
 
-**■ Supervision**
+## Supervision
 
 **Supervision received.** Reports to the Executive Director and Chief Data Officer of OPI.
 

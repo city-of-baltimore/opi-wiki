@@ -6,21 +6,25 @@
 
 A reference of OPI’s active vocabulary.
 
-**VERSION** v1.2
+VERSION
+:   v1.2
 
-**UPDATED** April 2026
+UPDATED
+:   April 2026
 
-**OWNER** OPI Director’s Office · Chief of Staff
+OWNER
+:   OPI Director’s Office · Chief of Staff
 
-**AUDIENCE** OPI staff, agency partners, City Council and CA staff, and the public.
+AUDIENCE
+:   OPI staff, agency partners, City Council and CA staff, and the public.
 
-**■ Why this glossary exists**
+## Why this glossary exists
 
 Words shape behavior. When OPI uses one word for something and an agency partner uses another, simple conversations turn into translation work. This glossary is the single list of OPI’s active vocabulary.
 
 > *If a term is on the active list, it is in the wild on purpose. Use it as written.*
 
-**■ Active terms**
+## Active terms
 
 **311.** The city’s service-request system — phone, app, and web. Resident requests are routed to the agency that owns the service. OPI’s 311 reform work focuses on intake, handoffs, and transparency.
 
@@ -144,7 +148,7 @@ Words shape behavior. When OPI uses one word for something and an agency partner
 
 **Workday.** The city’s enterprise system for HR, finance, and AdminOps. The FY26 “maximize Workday” priority focuses on reporting, HR processes, capital budget management, grants, and internal workflows.
 
-**■ Terms to use carefully**
+## Terms to use carefully
 
 These terms are easy to misuse in a way that blurs OPI's operating model. Use them only as described, and prefer the canonical language in [How Work Moves Through OPI](../../how-we-work/how-work-moves-through-opi.md).
 
@@ -156,7 +160,7 @@ These terms are easy to misuse in a way that blurs OPI's operating model. Use th
 
 **Delivery room.** Avoid. Prefer *delivery review*, *delivery cadence*, or *delivery activation*, which are defined and less theatrical.
 
-**■ Naming norms**
+## Naming norms
 
 - Sentence case for service and document names; Title Case only for proper nouns and program names (e.g., CitiStat, Innovation Lab).
 

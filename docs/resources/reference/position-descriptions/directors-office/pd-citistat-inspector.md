@@ -2,7 +2,7 @@
 
 {{ page_header(summary="Position description for the CitiStat Inspector.") }}
 
-**■ At a Glance**
+## At a Glance
 
 |                          |                                                                                                                               |
 |--------------------------|-------------------------------------------------------------------------------------------------------------------------------|
@@ -13,15 +13,15 @@
 | **Supervision given**    | Individual contributor.                                                                                                       |
 | **Supervision received** | Reports to the Chief of Staff. Receives operational coordination from the Performance team for inspections work. |
 
-**■ Position Summary**
+## Position Summary
 
 The CitiStat Inspector is OPI’s field-validation and service-quality inspector and a coordinator of administrative operations in the Director’s Office. The role supports CitiStat with disciplined, evidence-based inspections — confirming whether the work that’s reported on paper matches what’s happening on the ground — and supports the Director’s Office with day-to-day administrative operations (supplies, facilities coordination, rooms/AV, visitor logistics, and related tasks) to keep the office running smoothly.
 
 For inspections, the role works closely with the Performance team and with agency operations leaders. For office coordination, the role partners with the Chief of Staff and the Special Assistant.
 
-**■ Key Responsibilities**
+## Key Responsibilities
 
-**Field Inspections**
+### Field Inspections
 
 - Conduct inspections using standardized checklists and rating scales; document pass/fail criteria, defect severity, and remediation timelines.
 
@@ -35,7 +35,7 @@ For inspections, the role works closely with the Performance team and with agenc
 
 - Summarize findings in concise, decision-ready briefs that identify root causes, options, owners, and due dates; support session materials and post-meeting follow-ups.
 
-**Office Coordination and Administrative Operations**
+### Office Coordination and Administrative Operations
 
 - Maintain inventories, reorder thresholds, and storage; perform routine printer/AV checks.
 
@@ -47,15 +47,15 @@ For inspections, the role works closely with the Performance team and with agenc
 
 - Assemble quotes; draft simple requisitions; maintain receipt logs and P-card documentation.
 
-**Software UAT and Go-Live Support**
+### Software UAT and Go-Live Support
 
 - Support user-acceptance testing for OPI tools and dashboards: execute test scripts, log defects, and verify fixes.
 
 - Help coordinate go-live readiness, training logistics, and quick-reference materials.
 
-**■ Knowledge, Skills, and Abilities**
+## Knowledge, Skills, and Abilities
 
-**Inspection discipline**
+### Inspection discipline
 
 - Comfort working in the field with checklists and rating scales; strong attention to detail and evidence integrity.
 
@@ -63,7 +63,7 @@ For inspections, the role works closely with the Performance team and with agenc
 
 - Ability to plan safe, efficient routes and to coordinate access with agency and contractor partners.
 
-**Office coordination**
+### Office coordination
 
 - Strong administrative-operations skills: inventories, ticketing, room and AV setup, and receipt management.
 
@@ -71,7 +71,7 @@ For inspections, the role works closely with the Performance team and with agenc
 
 - Ability to maintain confidentiality of sensitive information.
 
-**Public-sector operations**
+### Public-sector operations
 
 - Knowledge of municipal operations and the basic vocabulary of city service delivery (work orders, permits, 311, inspections).
 
@@ -79,25 +79,25 @@ For inspections, the role works closely with the Performance team and with agenc
 
 - Ability to follow standard procedures and to escalate exceptions appropriately.
 
-**■ Minimum Qualifications**
+## Minimum Qualifications
 
-**Education**
+### Education
 
 - Associate’s degree or equivalent; bachelor’s degree preferred.
 
-**Experience**
+### Experience
 
 - At least 2 years of inspections, field operations, or administrative-coordination experience in government, facilities, construction, or a comparable operational setting.
 
-**Equivalency**
+### Equivalency
 
 An equivalent combination of education and experience will be considered.
 
-**■ Working Conditions**
+## Working Conditions
 
 Employees in this class work a conventional work week, with regular field work that requires moderate physical exertion (walking, climbing stairs, accessing facilities). This position may be required to work evening and weekend hours and 24-hour callback in an emergency. Office work is performed under normal conditions. Hybrid telework is supported under OPI’s telework policy; staff are expected to be on site at City Hall a minimum of four days per week, with one day per week available as remote.
 
-**■ Supervision**
+## Supervision
 
 **Supervision received.** Reports to the Chief of Staff. Receives operational coordination from the Performance team for inspections work.
 

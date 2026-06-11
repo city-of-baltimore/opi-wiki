@@ -4,19 +4,22 @@
 
 A practical guide for OPI managers — how to make new hires productive, connected, and clear on expectations within 90 days.
 
-**AUDIENCE** All OPI managers
+AUDIENCE
+:   All OPI managers
 
-**OWNER** Director's Office
+OWNER
+:   Director's Office
 
-**VERSION** v1.0 · May 2026
+VERSION
+:   v1.0 · May 2026
 
-**■ Why onboarding matters**
+## Why onboarding matters
 
 Great onboarding is a retention and performance lever. Staff who land well stay longer, contribute earlier, and trust the office more. Staff who land poorly cost the team energy in ways that compound for months. Treat onboarding as critical infrastructure.
 
 > *The first 90 days are the easiest time to set high standards. After that, expectations harden.*
 
-**■ Your minimum standard**
+## Your minimum standard
 
 Every OPI manager owns the following from offer-accept through day 100. None of these are optional.
 
@@ -34,27 +37,27 @@ Every OPI manager owns the following from offer-accept through day 100. None of 
 | Day 90    | Conduct a 90-day review.                       | Confirm ownership, expectations, and growth plan. Set next-quarter objectives.                            |
 | Day 100   | Day-100 readout with leadership.               | 15–30 minutes. Use the readout template.                                                                  |
 
-**■ The four conversations**
+## The four conversations
 
 Schedule these four conversations explicitly during the first 30 days. They are easy to skip and expensive to skip.
 
-**1. The role and outcomes conversation**
+### 1. The role and outcomes conversation
 
 Translate the job description into three to five outcomes the new hire is responsible for. Be specific. Include what success looks like at day 30, day 60, and day 90.
 
-**2. The norms conversation**
+### 2. The norms conversation
 
 How we communicate, how we make decisions, when to escalate, and what quality looks like. Walk through the OPI Quick Reference Handbook together.
 
-**3. The relationships conversation**
+### 3. The relationships conversation
 
 Who matters in this role. Internal: portfolio peers, the Chief of Staff, the Executive Director. External: agency contacts and partners. Explain decision rights and sensitivities.
 
-**4. The growth conversation**
+### 4. The growth conversation
 
 What the new hire wants to learn. What skills and exposure they need. How you will create opportunities for them.
 
-**■ How to assign the first early win**
+## How to assign the first early win
 
 A good early win is small, real, and shippable in the first three to four weeks. It builds confidence and gives the new hire concrete experience with our tools and norms.
 
@@ -68,7 +71,7 @@ A good early win is small, real, and shippable in the first three to four weeks.
 
 - Celebrate it when it ships. Use a Teams channel or all-staff moment.
 
-**■ Coaching on OPI performance dimensions**
+## Coaching on OPI performance dimensions
 
 Use OPI’s five performance dimensions as your check-in rubric. Be specific. Tie feedback to concrete examples.
 
@@ -80,7 +83,7 @@ Use OPI’s five performance dimensions as your check-in rubric. Be specific. Ti
 | Collaboration | Do they work well with peers, partners, and agencies? Do they share credit?                      |
 | Growth        | Are they building skills, giving and receiving feedback, and improving over time?                |
 
-**■ Common mistakes to avoid**
+## Common mistakes to avoid
 
 - **Treating day-one readiness as someone else’s problem:** It is yours, not IT’s. Coordinate access and hardware four to six weeks ahead.
 
@@ -94,9 +97,9 @@ Use OPI’s five performance dimensions as your check-in rubric. Be specific. Ti
 
 - **Waiting until day 90 to give feedback:** Calibrate weekly. Surface issues early in writing.
 
-**■ Templates and prompts**
+## Templates and prompts
 
-**30-day check-in script**
+### 30-day check-in script
 
 Open with: "What is going well?" Then ask:
 
@@ -110,7 +113,7 @@ Open with: "What is going well?" Then ask:
 
 Close with one specific change for the next 30 days. Document it.
 
-**60-day check-in script**
+### 60-day check-in script
 
 - Walk me through what you have shipped. What was hardest?
 
@@ -122,7 +125,7 @@ Close with one specific change for the next 30 days. Document it.
 
 Close with two outcomes for the next 30 days. Document them.
 
-**90-day review script**
+### 90-day review script
 
 - Review concrete outcomes against the 30/60/90 plan.
 
@@ -134,7 +137,7 @@ Close with two outcomes for the next 30 days. Document them.
 
 Close with the day-100 readout plan and the leadership audience.
 
-**■ Manager commitments to share with new hires**
+## Manager commitments to share with new hires
 
 > *Copy these into the new hire’s welcome email or share them in the first one-on-one.*
 
@@ -148,7 +151,7 @@ Close with the day-100 readout plan and the leadership audience.
 
 - I will create opportunities for early wins and visible, meaningful ownership by day 90.
 
-**■ Appendix. Manager onboarding readiness checklist**
+## Appendix. Manager onboarding readiness checklist
 
 Run through this checklist two weeks before the new hire’s start date. Check each item or escalate the gap.
 

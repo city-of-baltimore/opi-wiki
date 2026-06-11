@@ -2,7 +2,7 @@
 
 {{ page_header(summary="How cross-agency delivery moves from inputs to outcomes.", category="SERVICE THEORY OF CHANGE · 04 OF 05", tagline="How we move work that no single agency can deliver alone.") }}
 
-**NORTH STAR**
+## NORTH STAR
 
 **Multi-agency commitments that ship, get used, and stick.**
 
@@ -10,7 +10,7 @@ Cross-Agency Delivery is a service overlay — not a standalone cost center. We 
 
 > *Performance management often fails because the people in the room can analyze the problem but cannot change the conditions that produce it. Delivery is where conditions change.*
 
-**SERVICE DEFINITION**
+## SERVICE DEFINITION
 
 **What this service does**
 
@@ -18,13 +18,13 @@ This service is responsible for coordinating selected high-priority initiatives 
 
 Activities performed by this service include standing up delivery routines and tiger teams, developing project charters and implementation plans, mapping cross-agency workflows, tracking risks and dependencies, coordinating agency commitments, supporting executive escalation, documenting decisions and follow-up actions, and helping agencies sustain improvements through standard operating procedures, training materials, and performance monitoring.
 
-**PURPOSE AND PHILOSOPHIES**
+## PURPOSE AND PHILOSOPHIES
 
-**What we heard, what we have aligned on**
+### What we heard, what we have aligned on
 
 *Cross-agency delivery is an overlay service — it borrows people, methods, and authority from across OPI and convenes them around a specific cross-agency outcome. These are the principles we operate by.*
 
-**Why this work matters**
+### Why this work matters
 
 - The hardest problems in city government are cross-agency by nature — permitting, vacants, overdose response, workforce, public safety. No single department can fix them alone.
 
@@ -34,7 +34,7 @@ Activities performed by this service include standing up delivery routines and t
 
 - Communities feel the failure of coordination. They do not care which agency owns what — they want the service to work.
 
-**How we operate**
+### How we operate
 
 - Convene the right people at the right moment. Our craft is recognizing when a problem needs a room, who belongs in it, and what decision the room owes back.
 
@@ -48,7 +48,7 @@ Activities performed by this service include standing up delivery routines and t
 
 - We do not own agency workflows. City Hall owns the user experience, OPI owns the data and method, agencies own the workflow, BCIT owns the infrastructure.
 
-**When we activate**
+### When we activate
 
 - A priority outcome with a named Authorizer at the Deputy Mayor or City Administrator level.
 
@@ -60,7 +60,7 @@ Activities performed by this service include standing up delivery routines and t
 
 > *We resist the urge to take over agency work. Instead, we build systems that help agencies own and sustain change.*
 
-**1. Service overview**
+### 1. Service overview
 
 | **Topic**                        | **Summary**                                                                                                                                                                                                                                |
 |----------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -71,7 +71,7 @@ Activities performed by this service include standing up delivery routines and t
 | Mandate                          | Mayoral and CA priorities that meet the delivery activation criteria; Stat-driven escalations; cross-agency commitments from charters.                                                                                                     |
 | What success looks like          | Activations close their core deliverables on time; the cross-agency workplan stays current; sustainment is named and held; the improvement is still working twelve months later.                                                           |
 
-**2. Activation criteria**
+### 2. Activation criteria
 
 We do not run delivery reviews for everything. The overlay activates only when the problem meets all six criteria. If it does not, we use a different routine — a Stat, a product council, a charter and an owner, or a one-time decision memo.
 
@@ -87,7 +87,7 @@ We do not run delivery reviews for everything. The overlay activates only when t
 
 - A sustainment owner is identified before activation closes — we do not start what cannot be sustained.
 
-**3. Engagement model**
+### 3. Engagement model
 
 | **Stage**           | **What happens**                                                                                                                                | **Outputs / decisions**                                                            |
 |---------------------|-------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------|
@@ -97,7 +97,7 @@ We do not run delivery reviews for everything. The overlay activates only when t
 | Deliver             | Run weekly delivery reviews with the SRO and agency owners; track commitments; escalate blockers to the Authorizer; QA before any public release. | Weekly status; commitment ledger; decision log; QA sign-offs; blocker escalations. |
 | Sustain             | Document SOPs, training, monitoring; transfer to sustainment owner; close activation with evidence and an annual review checkpoint.             | Runbook; SOP package; monitoring plan; closure memo; sustainment owner sign-off.   |
 
-**4. Theory of Change**
+### 4. Theory of Change
 
 | **Stage**          | **Concrete, measurable definition**                                                                                                                                                                                                                                  |
 |--------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -108,7 +108,7 @@ We do not run delivery reviews for everything. The overlay activates only when t
 | Outcomes (6–18 mo) | Major cross-agency commitments hit milestones; sustained services show improved outcomes; the City has a working playbook for cross-agency delivery that survives leadership changes.                                                                                |
 | Impact (2+ yr)     | Baltimore can move work across agencies. Hard problems do not stay stuck. Improvements stick because sustainment was planned before delivery closed.                                                                                                                 |
 
-**5. Governance and decision rights**
+### 5. Governance and decision rights
 
 | **Role**                       | **Responsibility**                                                                                                                   |
 |--------------------------------|--------------------------------------------------------------------------------------------------------------------------------------|
@@ -119,7 +119,7 @@ We do not run delivery reviews for everything. The overlay activates only when t
 | Chief of Staff (OPI)           | Provides portfolio visibility and ensures activations are coordinated with other OPI work.                                           |
 | Agency Owners                  | Hold agency commitments; bring evidence to delivery reviews; sustain after closure.                                                    |
 
-**6. Core offerings and target service levels**
+### 6. Core offerings and target service levels
 
 | **Offering**           | **Typical customer**    | **When to use**                                                       | **Target SLA / cadence**                                                    |
 |------------------------|-------------------------|-----------------------------------------------------------------------|-----------------------------------------------------------------------------|
@@ -128,7 +128,7 @@ We do not run delivery reviews for everything. The overlay activates only when t
 | Workflow mapping       | Agency or OPI portfolio | Cross-agency dependency or handoff failure                            | Initial map within 15 business days.                                        |
 | Sustainment package    | Sustainment owner       | Activation closure                                                    | Runbook, SOPs, monitoring, and review checkpoint within 30 days of closure. |
 
-**7. Metrics, targets, and learning**
+### 7. Metrics, targets, and learning
 
 - Activation discipline — share of activations with current charters, named SROs, and active Authorizers.
 
@@ -140,7 +140,7 @@ We do not run delivery reviews for everything. The overlay activates only when t
 
 - Decision velocity — Authorizer decision SLA met (target: 10 business days for non-routine decisions).
 
-**8. Handoffs and synergies across OPI services**
+### 8. Handoffs and synergies across OPI services
 
 - From Performance → cross-agency commitments from Stat charters; KPI reporting on activations.
 
@@ -150,7 +150,7 @@ We do not run delivery reviews for everything. The overlay activates only when t
 
 - To AdminOps → portfolio visibility, comms, narrative, Council briefings.
 
-**Appendix · Standard artifact suite**
+#### Appendix · Standard artifact suite
 
 - Activation memo (criteria met, Authorizer, SRO, scope, expected duration).
 

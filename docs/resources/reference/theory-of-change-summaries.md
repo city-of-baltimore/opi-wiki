@@ -4,21 +4,25 @@
 
 Inputs, activities, outputs, outcomes, and impact for each service — plus the assumptions we are willing to test.
 
-**VERSION** v1.0
+VERSION
+:   v1.0
 
-**UPDATED** April 2026
+UPDATED
+:   April 2026
 
-**OWNER** OPI Director’s Office
+OWNER
+:   OPI Director’s Office
 
-**AUDIENCE** OPI staff; agency partners; Deputy Mayors and City Administrator’s Office.
+AUDIENCE
+:   OPI staff; agency partners; Deputy Mayors and City Administrator’s Office.
 
-**■ How to read this document**
+## How to read this document
 
 A theory of change is a step-by-step explanation of how the work we do leads to the change we want to see. It names what we put in, what we do, what we produce, what improves as a result, and the long-term impact we are aiming at — and it surfaces the assumptions that have to hold for the chain to work. This document presents one summary per service. The fuller versions live in each service’s service definition.
 
 > *Respond when necessary. Build so we do not have to respond again.*
 
-**OPI’s five services**
+### OPI’s five services
 
 - **1:** Citywide Performance Management
 
@@ -30,7 +34,7 @@ A theory of change is a step-by-step explanation of how the work we do leads to 
 
 - **5:** AdminOps
 
-**■ The shared logic**
+## The shared logic
 
 | **Step**   | **What it means**                     | **How OPI uses it**                                                           |
 |------------|---------------------------------------|-------------------------------------------------------------------------------|
@@ -40,19 +44,19 @@ A theory of change is a step-by-step explanation of how the work we do leads to 
 | Outcomes   | The real-world improvements we enable | Faster service, fewer errors, better resident experience, better stewardship. |
 | Impact     | The long-term change we aim for       | A more responsive, trusted, equitable Baltimore City government.              |
 
-**■ Service summaries**
+## Service summaries
 
-**1. Citywide Performance Management**
+### 1. Citywide Performance Management
 
-**NORTH STAR**
+#### NORTH STAR
 
 > *Distributed operation. Single definition. Every Stat is a problem-solving conversation that ends with commitments and proof of closure.*
 
-**The problem we exist to address**
+#### The problem we exist to address
 
 Without a disciplined rhythm, agencies optimize what gets measured, not what matters. Service problems persist because no recurring forum forces decisions, names owners, and tracks follow-through.
 
-**Inputs → Activities → Outputs → Outcomes → Impact**
+#### Inputs → Activities → Outputs → Outcomes → Impact
 
 **Inputs.** CitiStat analysts and inspectors; agency leads; Deputy Mayor sponsors; reliable agency data; the CitiStat method.
 
@@ -64,7 +68,7 @@ Without a disciplined rhythm, agencies optimize what gets measured, not what mat
 
 **Impact.** Baltimore residents experience reliable, predictable services; the City Administrator has a real-time picture of where service delivery is improving and where it is not.
 
-**Core assumptions**
+#### Core assumptions
 
 - Decision-makers will attend regularly and act on commitments.
 
@@ -74,7 +78,7 @@ Without a disciplined rhythm, agencies optimize what gets measured, not what mat
 
 - Inspections and ground truth are credible counterweights to dashboard distortion.
 
-**How we will know it is working**
+#### How we will know it is working
 
 - Closure rate of commitments by the next Stat.
 
@@ -84,17 +88,17 @@ Without a disciplined rhythm, agencies optimize what gets measured, not what mat
 
 - Agencies adopting the same metric and routine in their internal management.
 
-**2. Citywide Data and Analytics**
+### 2. Citywide Data and Analytics
 
-**NORTH STAR**
+#### NORTH STAR
 
 > *Trusted data, in the hands of decision-makers, on the questions that matter.*
 
-**The problem we exist to address**
+#### The problem we exist to address
 
 City data is fragmented across systems, of uneven quality, and hard to use without specialist help. Decisions get made on stale numbers or none. Public trust in city numbers is fragile.
 
-**Inputs → Activities → Outputs → Outcomes → Impact**
+#### Inputs → Activities → Outputs → Outcomes → Impact
 
 **Inputs.** Data engineers, scientists, and product managers; the City data platform and warehouse; agency systems of record; data governance partners.
 
@@ -106,7 +110,7 @@ City data is fragmented across systems, of uneven quality, and hard to use witho
 
 **Impact.** Baltimore is a data-capable city: residents, agencies, and partners can see how the city is performing and contribute to its improvement.
 
-**Core assumptions**
+#### Core assumptions
 
 - Agencies will share data and adopt governance once value is demonstrated.
 
@@ -116,7 +120,7 @@ City data is fragmented across systems, of uneven quality, and hard to use witho
 
 - Open data and internal data are mutually reinforcing, not in tension.
 
-**How we will know it is working**
+#### How we will know it is working
 
 - Number of agencies with priority datasets in the warehouse.
 
@@ -126,17 +130,17 @@ City data is fragmented across systems, of uneven quality, and hard to use witho
 
 - Reduction in duplicate, ad-hoc data pulls.
 
-**3. Innovation Lab**
+### 3. Innovation Lab
 
-**NORTH STAR**
+#### NORTH STAR
 
 > *From service problems to practical solutions — designed with frontline staff and residents, prototyped fast, handed off to operate.*
 
-**The problem we exist to address**
+#### The problem we exist to address
 
 Service problems often look like technology, policy, or staffing problems in isolation; they are usually all three. Without a small team that can hold the whole problem and design across boundaries, agencies cannot move from analysis to action.
 
-**Inputs → Activities → Outputs → Outcomes → Impact**
+#### Inputs → Activities → Outputs → Outcomes → Impact
 
 **Inputs.** Civic designers; product managers; engineers; access to frontline staff and residents; Public Innovation Toolkit; partnership with BCIT and agencies.
 
@@ -148,7 +152,7 @@ Service problems often look like technology, policy, or staffing problems in iso
 
 **Impact.** A reputation for delivery: a city government known for shipping practical improvements where residents can see and feel them.
 
-**Core assumptions**
+#### Core assumptions
 
 - Six-month time-boxed projects beat indefinite ones.
 
@@ -158,7 +162,7 @@ Service problems often look like technology, policy, or staffing problems in iso
 
 - In-house build is feasible and preferable for a defined class of city problems.
 
-**How we will know it is working**
+#### How we will know it is working
 
 - Number of tiger teams completed on schedule with a sustain plan in hand.
 
@@ -168,17 +172,17 @@ Service problems often look like technology, policy, or staffing problems in iso
 
 - Resident satisfaction on the targeted service experience.
 
-**4. Cross-Agency Delivery**
+### 4. Cross-Agency Delivery
 
-**NORTH STAR**
+#### NORTH STAR
 
 > *When the problem crosses agency lines, OPI runs the delivery chain.*
 
-**The problem we exist to address**
+#### The problem we exist to address
 
 Many of the city’s hardest problems — permits, vacants, downtown recovery, 311 — do not sit inside one agency. Without a designated quarterback, the work falls into the seams between agencies and stalls.
 
-**Inputs → Activities → Outputs → Outcomes → Impact**
+#### Inputs → Activities → Outputs → Outcomes → Impact
 
 **Inputs.** PMO and program managers; CitiStat method; design and analytics capacity; mayoral and City Administrator authority; partner agencies’ frontline teams.
 
@@ -190,7 +194,7 @@ Many of the city’s hardest problems — permits, vacants, downtown recovery, 3
 
 **Impact.** The city can pursue ambitious cross-agency outcomes — not just agency-by-agency improvement.
 
-**Core assumptions**
+#### Core assumptions
 
 - Cross-agency work needs a designated quarterback with executive backing.
 
@@ -200,7 +204,7 @@ Many of the city’s hardest problems — permits, vacants, downtown recovery, 3
 
 - OPI’s authority is borrowed from the Mayor and CA; we must use it sparingly and visibly.
 
-**How we will know it is working**
+#### How we will know it is working
 
 - On-time milestone delivery on cross-agency programs.
 
@@ -210,17 +214,17 @@ Many of the city’s hardest problems — permits, vacants, downtown recovery, 3
 
 - Visible progress on the small set of named cross-agency priorities.
 
-**5. AdminOps**
+### 5. AdminOps
 
-**NORTH STAR**
+#### NORTH STAR
 
 > *OPI runs as well as the city we are asking other agencies to be.*
 
-**The problem we exist to address**
+#### The problem we exist to address
 
 A team that asks agencies to operate with discipline must hold itself to the same standard. Without strong intake, project management, communications, and people operations, OPI cannot deliver the other four services reliably.
 
-**Inputs → Activities → Outputs → Outcomes → Impact**
+#### Inputs → Activities → Outputs → Outcomes → Impact
 
 **Inputs.** Chief of Staff; PMO; communications and partnerships; HR and finance partners; SharePoint and Microsoft 365 platform; the OPI Operating Model.
 
@@ -232,7 +236,7 @@ A team that asks agencies to operate with discipline must hold itself to the sam
 
 **Impact.** A reliable internal operating system that lets the four citywide services produce their best work.
 
-**Core assumptions**
+#### Core assumptions
 
 - A single front door beats freelance project starts.
 
@@ -242,7 +246,7 @@ A team that asks agencies to operate with discipline must hold itself to the sam
 
 - Communications discipline (one voice, consistent language) compounds trust over time.
 
-**How we will know it is working**
+#### How we will know it is working
 
 - Intake-to-charter cycle time.
 
@@ -252,7 +256,7 @@ A team that asks agencies to operate with discipline must hold itself to the sam
 
 - Stakeholder reports of clarity on OPI’s role and how to engage.
 
-**■ How we will test the theory**
+## How we will test the theory
 
 Each service’s assumptions become things we look at in our quarterly review. Where an assumption is not holding, we adjust the activities, not just the outputs. The point of a theory of change is not to be right — it is to be honest about why we believe what we are doing will work, and to find out quickly when it does not.
 

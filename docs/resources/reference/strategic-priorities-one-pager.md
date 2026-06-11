@@ -4,25 +4,29 @@
 
 What OPI is finishing this year and starting next — anchored to the City Administrator’s priorities and the Mayor’s Action Plan.
 
-**VERSION** v1.0
+VERSION
+:   v1.0
 
-**UPDATED** April 2026
+UPDATED
+:   April 2026
 
-**OWNER** Executive Director, OPI
+OWNER
+:   Executive Director, OPI
 
-**AUDIENCE** City Council; City Administrator’s Office; agency partners; OPI staff.
+AUDIENCE
+:   City Council; City Administrator’s Office; agency partners; OPI staff.
 
-**■ North star**
+## North star
 
 > *Respond when necessary. Build so we do not have to respond again.*
 
 OPI exists to make Baltimore City government continuously better at delivering services that residents can see and feel. We do that through five services — Citywide Performance Management, Citywide Data and Analytics, Innovation Lab, Cross-Agency Delivery, and AdminOps — and we measure ourselves on whether the city’s services are getting more reliable, not on the volume of activity in our office.
 
-**■ FY26 — The foundation in delivery**
+## FY26 — The foundation in delivery
 
 FY26 is about getting the foundation right. The three priorities below were named to City Council at the FY26 budget hearing and remain our primary focus through June 2026. The recommended FY26 budget is $2.03M.
 
-**Priority 1 — Continue modernizing 311**
+### Priority 1 — Continue modernizing 311
 
 - Beyond the app and basic communications: handoffs, staff training, work-order management, inspections, and real transparency.
 
@@ -38,7 +42,7 @@ FY26 is about getting the foundation right. The three priorities below were name
 
 - Signals: end-to-end permit cycle time on priority permit types; share of applications processed without manual rework; public-facing dashboard live.
 
-**Priority 3 — Maximize Workday**
+### Priority 3 — Maximize Workday
 
 - Use the city’s investment in Workday to its full potential: proper reporting, better HR processes and reporting, capital budget management, grants, and internal workflows that work.
 
@@ -46,7 +50,7 @@ FY26 is about getting the foundation right. The three priorities below were name
 
 - Signals: number of citywide reports delivered from Workday on schedule; reduction in manual data pulls; HR cycle-time improvements on priority processes.
 
-**FY26 supporting commitments**
+### FY26 supporting commitments
 
 - CitiStat: stand up and stabilize 19 regularly occurring Stats by end of January 2026; 12 of the 17 are new or relaunched. Performance owns; Method Playbook governs.
 
@@ -56,7 +60,7 @@ FY26 is about getting the foundation right. The three priorities below were name
 
 - OPI operating system: Foundations Document Set published; SharePoint operating system in production; intake SOP in use across the team.
 
-**■ FY27 — The next-level moves**
+## FY27 — The next-level moves
 
 With the foundation in place, FY27 shifts focus to bigger, more visible outcomes. The agenda is grounded in the City Administrator’s priorities and the Mayor’s Action Plan; final scoping is in design as part of the FY27 budget cycle.
 
@@ -84,7 +88,7 @@ With the foundation in place, FY27 shifts focus to bigger, more visible outcomes
 
 - Sustain handoffs are the test: tiger team gains stay gained because the agency that owns the service keeps the gain.
 
-**Direction 4 — Strengthen the citywide performance system**
+### Direction 4 — Strengthen the citywide performance system
 
 - Continue stabilizing CitiStat as the city’s shared management language; add the FY27 target of 50% of agencies achieving 90% of their commitment targets.
 
@@ -92,7 +96,7 @@ With the foundation in place, FY27 shifts focus to bigger, more visible outcomes
 
 - A standing Cross-Agency Delivery capability for the small set of multi-agency outcomes that matter most.
 
-**■ How we will know we are succeeding**
+## How we will know we are succeeding
 
 | **Question**                                                             | **Where to look**                                                                                         |
 |--------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------|

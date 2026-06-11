@@ -10,13 +10,13 @@
 
 *The About doc explains the service in plain language — purpose, who we are, what we do, what we own and do not own, partnerships, and success. This Theory of Change doc is the operational backbone: mandate, engagement model, governance, SLAs, KPI metrics, handoffs, and the standard artifact suite.*
 
-**NORTH STAR**
+## NORTH STAR
 
 **A disciplined, humane, learning-oriented performance system.**
 
 *A citywide performance system that turns priorities and data into sustained service improvements residents can see and feel — non-punitive, evidence-driven, and relentless about follow-through. Method, governance, and measurement detail follows.*
 
-**1. Service overview**
+### 1. Service overview
 
 | **Topic**            | **Summary**                                                                                                                                                                                                                                                 |
 |----------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -27,11 +27,11 @@
 | Who we serve         | Mayor, City Administrator, Deputy Mayors, Deputy City Administrators (Executive Sponsors / Authorizers); agency directors and Senior Responsible Owners; agency performance and data leads; Council and the public through plain-language reporting.        |
 | Outcome anchor       | Stat sessions are useful and humane; commitments close on time with evidence; priority services show measurable cycle-time and backlog improvement; agencies embed KPIs in their own routines; leadership trust in the numbers grows quarter over quarter.  |
 
-**2. Operating scope (boundary lines)**
+### 2. Operating scope (boundary lines)
 
 *Full ownership / partnership / referral patterns are detailed in the About doc. This is the budget-facing summary.*
 
-**In scope for this cost center**
+#### In scope for this cost center
 
 - Agency performance planning — goals, KPI trees, owners, cadences, and performance plans aligned to City priorities.
 
@@ -45,7 +45,7 @@
 
 - Capacity-building — communities of practice for agency performance leads, coaching, playbooks, and templates.
 
-**Routed elsewhere**
+#### Routed elsewhere
 
 - Agency operations → agency.
 
@@ -55,7 +55,7 @@
 
 - Digital products and service redesign → Innovation Lab.
 
-**3. Engagement model**
+### 3. Engagement model
 
 Work enters through mayoral and CA priorities, agency requests, or risks surfaced in Stat. Standard OPI engagement model adapted to performance-routine cadence.
 
@@ -67,7 +67,7 @@ Work enters through mayoral and CA priorities, agency requests, or risks surface
 | Deliver           | Pre-read → session → follow-up memo → commitment tracking → after-action review.                                             | Stat deck; follow-up memo; commitment tracker entries; decision log; public summary.                                  |
 | Sustain           | Continuation test after two cycles. Redesign, pause, or convert to another routine if no decisions or learning are produced. | Sustainment plan; KPI handoff; annual report section; updated portfolio register.                                     |
 
-**4. Theory of Change**
+### 4. Theory of Change
 
 This logic model is operational: each stage maps to artifacts, routines, and named owners.
 
@@ -80,7 +80,7 @@ This logic model is operational: each stage maps to artifacts, routines, and nam
 | Outcomes (6–18 mo) | Reduced cycle times and aged backlogs in priority services; more sessions producing concrete process or SOP changes; faster resolution of cross-agency blockers via delivery activations; stronger linkage between performance and budget.                                                    |
 | Impact (2+ yr)     | An institutionalized culture of continuous improvement that survives leadership changes, retires chronic problems, and earns resident trust through visible, sustained results.                                                                                                               |
 
-**5. Governance, decision rights, and operating cadence**
+### 5. Governance, decision rights, and operating cadence
 
 Decisions move when the right people have clear authority, timeboxes, and escalation paths.
 
@@ -93,11 +93,11 @@ Decisions move when the right people have clear authority, timeboxes, and escala
 | OPI Operating Lead               | Runs the Stat session or support model; coordinates artifacts; ensures follow-up moves through the appropriate channel.                                 |
 | Analyst / Data Lead              | Prepares analysis, KPI updates, data quality notes, and dashboard inputs.                                                                               |
 
-**Stat admission and continuation criteria**
+#### Stat admission and continuation criteria
 
 The full citywide admission criteria, continuation test, and right-routine matrix live in the [CitiStat Method Playbook → Issue selection, admission, and continuation](citistat-method-playbook.md#issue-selection-admission-and-continuation). In short: a routine should be called a Stat only when there is a clear performance problem requiring leadership attention, a named Executive Sponsor or Authorizer, a defined agency owner or Senior Responsible Owner, reliable-enough data, and a cadence for commitments and follow-up. If a Stat does not produce decisions, commitments, or measurable learning after two cycles, redesign it, pause it, or convert it into another operating routine.
 
-**6. Core offerings and target service levels**
+### 6. Core offerings and target service levels
 
 | **Offering**                          | **Typical customer**                           | **When to use**                                            | **Target SLA / cadence**                                            |
 |---------------------------------------|------------------------------------------------|------------------------------------------------------------|---------------------------------------------------------------------|
@@ -107,33 +107,33 @@ The full citywide admission criteria, continuation test, and right-routine matri
 | KPI Dictionary support                | Agencies and Data and Analytics service        | New or changed metrics, new dashboards, Stat prep          | Update within 5 business days for priority KPIs.                    |
 | Stat method support                   | Deputy Mayor-led routines, agency-led routines | Stats outside OPI-operated set that need method fidelity   | Quarterly method check; on-call coaching.                           |
 
-**7. Metrics, targets, and learning**
+### 7. Metrics, targets, and learning
 
-**Routine reliability**
+#### Routine reliability
 
 - Sessions held as scheduled; pre-reads posted on time; follow-ups closed on time.
 
-**Service improvement**
+#### Service improvement
 
 - Median cycle time and aged backlog for priority services covered by the Stat portfolio.
 
 - On-time completion of selected service requests.
 
-**Culture and utility**
+#### Culture and utility
 
 - Post-session helpfulness pulse from agency participants.
 
 - Share of sessions resulting in a process or SOP change.
 
-**Data integrity**
+#### Data integrity
 
 - Share of Stat KPIs fully defined (owner, formula, cadence, equity cut) and linked to the KPI Dictionary.
 
-**Cross-agency throughput**
+#### Cross-agency throughput
 
 - Number of delivery activations triggered by the Stat portfolio and milestone hit rate.
 
-**8. Operational handoffs across OPI services**
+### 8. Operational handoffs across OPI services
 
 *Partnership philosophy is in the About doc. These are the operational specifics.*
 
@@ -145,7 +145,7 @@ The full citywide admission criteria, continuation test, and right-routine matri
 
 - To AdminOps — portfolio visibility, publishing cadence for briefs, and operational support for the Stat calendar.
 
-**Appendix · Standard artifact suite**
+#### Appendix · Standard artifact suite
 
 - Pre-meeting memo (purpose, agenda, data highlights, risks, decisions needed, prior follow-ups).
 

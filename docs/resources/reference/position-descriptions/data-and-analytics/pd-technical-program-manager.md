@@ -2,7 +2,7 @@
 
 {{ page_header(summary="Position description for the Technical Program Manager.") }}
 
-**■ At a Glance**
+## At a Glance
 
 |                          |                                                                                                |
 |--------------------------|------------------------------------------------------------------------------------------------|
@@ -13,15 +13,15 @@
 | **Supervision given**    | Coordinates cross-functional delivery for the Data and Analytics portfolio; no direct reports. |
 | **Supervision received** | Reports to the Deputy Chief Data Officer.                                                      |
 
-**■ Position Summary**
+## Position Summary
 
 The Technical Program Manager (TPM) leads cross-functional delivery for the Deputy Chief Data Officer’s portfolio: citywide data and analytics, data governance, and OPI-led data products. The role helps the City deliver tools and data products that make services more transparent, efficient, and accessible to residents. The TPM owns portfolio roadmaps, technical requirements, delivery cadence, risk and issue management, quality assurance, and user-acceptance testing, and coordinates closely with Baltimore City Information Technology (BCIT) on change control.
 
 The TPM operates as a single source of truth for the Data and Analytics team’s portfolio using agile project-management tools (such as Jira) and the OPI SharePoint operating system. The TPM ensures that the team ships reliable increments on a predictable cadence with acceptance evidence and stable operations — and measures impact post-release, including data quality, adoption, and resident value.
 
-**■ Key Responsibilities**
+## Key Responsibilities
 
-**Intake, Roadmaps, and Requirements**
+### Intake, Roadmaps, and Requirements
 
 - Run standardized intake, producing project briefs (problem, public value, scope, interfaces/APIs, risks, and the Definition of Done).
 
@@ -29,13 +29,13 @@ The TPM operates as a single source of truth for the Data and Analytics team’s
 
 - Translate needs into user stories, acceptance criteria, data contracts, API specs, observability expectations, privacy impacts, and accessibility requirements.
 
-**Architecture, Security, and Change Control**
+### Architecture, Security, and Change Control
 
 - Coordinate architecture and security reviews with BCIT applications, infrastructure, and InfoSec.
 
 - Operate change-control processes; ensure releases are coordinated with downstream consumers and agency partners.
 
-**Agile Delivery and Quality**
+### Agile Delivery and Quality
 
 - Operate agile ceremonies (backlog grooming, sprint planning, standups, demos, retrospectives); track blockers and drive timely decisions and escalations.
 
@@ -43,7 +43,7 @@ The TPM operates as a single source of truth for the Data and Analytics team’s
 
 - Coordinate with the Senior Performance Analyst (Performance Tracker product owner) and the Innovation Lab on shared dependencies.
 
-**Data Governance and Documentation**
+### Data Governance and Documentation
 
 - Support data governance through operationalizing owner/steward accountability, data-sharing agreements, access workflows, and change management.
 
@@ -51,9 +51,9 @@ The TPM operates as a single source of truth for the Data and Analytics team’s
 
 - Publish regular status reports and monthly executive summaries; plan training, SOP updates, operational runbooks, and handoffs to steady-state owners.
 
-**■ Knowledge, Skills, and Abilities**
+## Knowledge, Skills, and Abilities
 
-**Technical program management**
+### Technical program management
 
 - Program leadership across data platforms, analytics, and public-facing digital products in multi-team environments (engineering, analytics, design).
 
@@ -63,7 +63,7 @@ The TPM operates as a single source of truth for the Data and Analytics team’s
 
 - Working knowledge of security, privacy, and accessibility reviews; ability to coordinate remediations.
 
-**Tooling and partnerships**
+### Tooling and partnerships
 
 - Strong knowledge of project-management and collaboration tools (Jira, SharePoint, Miro, and diagramming tools).
 
@@ -71,7 +71,7 @@ The TPM operates as a single source of truth for the Data and Analytics team’s
 
 - Strong facilitation, dependency management, and written communication; concise executive briefings.
 
-**Operations management**
+### Operations management
 
 - Knowledge of the principles and practices of operations and administration.
 
@@ -83,25 +83,25 @@ The TPM operates as a single source of truth for the Data and Analytics team’s
 
 - Ability to direct the activities of staff and cross-functional teams.
 
-**■ Minimum Qualifications**
+## Minimum Qualifications
 
-**Education**
+### Education
 
 - Bachelor’s degree in Computer Science, Data Science, Engineering, Information Technology, or a related field; or equivalent experience.
 
-**Experience**
+### Experience
 
 - At least 5 years leading technical programs in data platforms/analytics, digital products, or enterprise integrations, with demonstrated on-time delivery in cross-functional settings.
 
-**Equivalency**
+### Equivalency
 
 An equivalent combination of education and experience will be considered.
 
-**■ Working Conditions**
+## Working Conditions
 
 Employees in this class work a conventional work week. This position may be required to work evening and weekend hours and 24-hour callback in an emergency. Work is performed in an office where work conditions are normal. Work requires minimal physical exertion. Hybrid telework is supported under OPI’s telework policy; staff are expected to be on site at City Hall a minimum of four days per week, with one day per week available as remote.
 
-**■ Supervision**
+## Supervision
 
 **Supervision received.** Reports to the Deputy Chief Data Officer.
 

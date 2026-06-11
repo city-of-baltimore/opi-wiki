@@ -16,21 +16,25 @@
 
 How OPI organizes its internal knowledge so staff can find what they need, trust what they find, and rely on it surviving turnover.
 
-**VERSION** v1.0
+VERSION
+:   v1.0
 
-**UPDATED** April 2026
+UPDATED
+:   April 2026
 
-**OWNER** OPI Director’s Office · Chief of Staff
+OWNER
+:   OPI Director’s Office · Chief of Staff
 
-**AUDIENCE** All OPI staff; SharePoint site stewards; HR and BCIT partners
+AUDIENCE
+:   All OPI staff; SharePoint site stewards; HR and BCIT partners
 
-**■ Why the Wiki exists**
+## Why the Wiki exists
 
 The OPI Wiki is the single internal home for the way OPI works — mission, model, methods, templates, and active project records. It is not a file dump. It is a maintained operating manual with named owners, review cadences, and a quality bar. The goal is simple: anyone joining OPI should be able to find the canonical document, the right template, the active project list, and the person who owns each thing — in under five minutes.
 
 > *Respond when necessary. Build so we do not have to respond again.*
 
-**Three jobs of the Wiki**
+### Three jobs of the Wiki
 
 **Find.** Surface the canonical document, person, or routine the user needs, fast.
 
@@ -38,11 +42,11 @@ The OPI Wiki is the single internal home for the way OPI works — mission, mode
 
 **Survive.** Outlast turnover. The Wiki is a record of how OPI works, not how any one person works.
 
-**■ Platform and scope**
+## Platform and scope
 
 OPI uses Microsoft SharePoint as the wiki platform, consistent with the rest of City government. SharePoint provides pages for living guidance, document libraries for controlled artifacts, and lists for systems of record (project directory, people directory, change log). Other tools (Teams chats, OneDrive, personal folders) are not the system of record — by policy.
 
-**What lives in the Wiki**
+### What lives in the Wiki
 
 - Canonical OPI Foundations documents (this set), in their final approved form.
 
@@ -56,7 +60,7 @@ OPI uses Microsoft SharePoint as the wiki platform, consistent with the rest of 
 
 - Change Log — what was added, updated, or retired in the last 90 days.
 
-**What does not live in the Wiki**
+### What does not live in the Wiki
 
 - Personally identifiable information about residents.
 
@@ -66,7 +70,7 @@ OPI uses Microsoft SharePoint as the wiki platform, consistent with the rest of 
 
 - Working chat threads — those live in Teams; only decisions and outcomes flow into the Wiki.
 
-**■ Top-level navigation**
+## Top-level navigation
 
 The internal SharePoint KB uses six top-level pillars. Depth comes from consistent subpages, not from adding more tabs. Every pillar has a named owner.
 
@@ -79,7 +83,7 @@ The internal SharePoint KB uses six top-level pillars. Depth comes from consiste
 | Operations and Governance    | Policies, telework, productivity playbook, HR and IT how-tos, QA standards, change control.         | Chief of Staff    |
 | People and Project Directory | People directory, Project Directory list, agency liaisons, contact lookup.                          | Chief of Staff    |
 
-**Persistent utility links (top of every page)**
+### Persistent utility links (top of every page)
 
 - Start Here — new hire onboarding hub.
 
@@ -91,9 +95,9 @@ The internal SharePoint KB uses six top-level pillars. Depth comes from consiste
 
 - Change Log — what is new and updated.
 
-**■ Canonical pages — what each pillar must contain**
+## Canonical pages — what each pillar must contain
 
-**About OPI**
+### About OPI
 
 - OPI in one paragraph (mission, north star, who we report to).
 
@@ -105,7 +109,7 @@ The internal SharePoint KB uses six top-level pillars. Depth comes from consiste
 
 - What OPI does and does not do (scope and boundaries).
 
-**How We Deliver**
+### How We Deliver
 
 - Operating Model — staff version (this set, doc 27).
 
@@ -117,7 +121,7 @@ The internal SharePoint KB uses six top-level pillars. Depth comes from consiste
 
 - Escalation paths — who decides what, with timeboxes.
 
-**Playbooks and Methods**
+### Playbooks and Methods
 
 - CitiStat Method Playbook — staff and agency version (this set, doc 28).
 
@@ -129,7 +133,7 @@ The internal SharePoint KB uses six top-level pillars. Depth comes from consiste
 
 - Responsible AI readiness — use-case intake and review process.
 
-**Tools and Systems**
+### Tools and Systems
 
 - City systems 101 — 311, Accela, Workday, BCIT supported tooling.
 
@@ -139,7 +143,7 @@ The internal SharePoint KB uses six top-level pillars. Depth comes from consiste
 
 - Data and analytics tools — warehouse, BI, open data publishing.
 
-**Operations and Governance**
+### Operations and Governance
 
 - Telework Policy and Productivity Playbook (this set, Wave 2).
 
@@ -151,7 +155,7 @@ The internal SharePoint KB uses six top-level pillars. Depth comes from consiste
 
 - Equity, accessibility, and privacy standards.
 
-**People and Project Directory**
+### People and Project Directory
 
 - People Directory — every OPI staff member, role, portfolio, contact.
 
@@ -161,7 +165,7 @@ The internal SharePoint KB uses six top-level pillars. Depth comes from consiste
 
 - Position Descriptions Index (this set, doc 31).
 
-**■ Page types — what to use, when**
+## Page types — what to use, when
 
 Every Wiki contributor must know which content type to use. Mismatch is the leading cause of drift.
 
@@ -172,7 +176,7 @@ Every Wiki contributor must know which content type to use. Mismatch is the lead
 | List             | Systems of record — structured, sortable, filterable, reportable.   | Project Directory; People Directory.          |
 | Folder           | Supporting files inside a project space; never the source of truth. | Meeting attachments inside a project hub.     |
 
-**■ Metadata — minimum effective tagging**
+## Metadata — minimum effective tagging
 
 Every Wiki page and every controlled artifact carries a small set of tags so the Wiki stays findable and governable. The principle: minimum effective metadata. Required fields must be accurate; everything else is optional.
 
@@ -187,9 +191,9 @@ Every Wiki page and every controlled artifact carries a small set of tags so the
 | Sensitivity         | Yes          | Public · Internal · Restricted.                            |
 | Change log          | Yes          | A short note of what changed in the last update.           |
 
-**■ Governance — keep it sharp**
+## Governance — keep it sharp
 
-**Roles**
+### Roles
 
 **Site steward (Chief of Staff).** Owns navigation, standards, change control, and the overall structure.
 
@@ -199,7 +203,7 @@ Every Wiki page and every controlled artifact carries a small set of tags so the
 
 **Ops librarian (AdminOps).** Audits broken links, archives stale content, enforces naming conventions.
 
-**Cadence**
+### Cadence
 
 - Weekly: ops librarian sweeps for broken links and stale items in active spaces.
 
@@ -209,7 +213,7 @@ Every Wiki page and every controlled artifact carries a small set of tags so the
 
 - Annually: site steward leads a full taxonomy and IA review.
 
-**Quality bar**
+### Quality bar
 
 - Every page has an owner, a review date, and a change log.
 
@@ -219,7 +223,7 @@ Every Wiki page and every controlled artifact carries a small set of tags so the
 
 - Stale content (no review for 6+ months) is flagged red and reviewed or retired.
 
-**■ Implementation — three releases**
+## Implementation — three releases
 
 The Wiki is built in three releases so it is useful on day one and improves with use.
 
@@ -229,7 +233,7 @@ The Wiki is built in three releases so it is useful on day one and improves with
 
 **V2 (quarterly).** Expand systems-of-record lists, add dashboards and views, harden governance (audits, term updates, archive policy).
 
-**■ Access and sensitivity**
+## Access and sensitivity
 
 - **Default open:** Most of the Wiki is open to all OPI staff. Defaulting to open is intentional.
 
@@ -239,7 +243,7 @@ The Wiki is built in three releases so it is useful on day one and improves with
 
 - **No resident PII:** Resident PII does not live in SharePoint. Operational data with PII lives in the system of record (for example, Workday, BCIT-managed systems).
 
-**■ Rollout to staff**
+## Rollout to staff
 
 - All-hands launch with a 20-minute walkthrough: where to find what, how to contribute, how to flag stale content.
 

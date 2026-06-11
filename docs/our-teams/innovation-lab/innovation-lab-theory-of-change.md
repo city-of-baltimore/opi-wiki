@@ -2,7 +2,7 @@
 
 {{ page_header(summary="How the Innovation Lab moves from inputs to outcomes.", category="SERVICE THEORY OF CHANGE · 03 OF 05", tagline="From service problems to practical solutions.") }}
 
-**NORTH STAR**
+## NORTH STAR
 
 **Practical, tested service improvements residents and staff actually use.**
 
@@ -10,7 +10,7 @@ The Innovation Lab is OPI’s citywide service improvement capability, using hum
 
 > *We are organized by discipline, but designed to work as one team. The Innovation Lab turns service problems into practical solutions.*
 
-**SERVICE DEFINITION**
+## SERVICE DEFINITION
 
 **What this service does**
 
@@ -18,13 +18,13 @@ This service is responsible for operating OPI’s Innovation Lab, a citywide ser
 
 Activities performed by this service include service design, user research, process mapping, prototyping, product discovery, workflow improvement, resident and staff engagement, responsible AI pilots, and development of operational tools such as performance management portals, data collection systems, service workflow applications, and other products that support agency operations and service delivery.
 
-**PURPOSE AND PHILOSOPHIES**
+## PURPOSE AND PHILOSOPHIES
 
-**What we heard, what we have aligned on**
+### What we heard, what we have aligned on
 
 *These statements come directly from team listening sessions and strategy work. They describe the spirit in which this service is delivered, not just the mechanics.*
 
-**Why this work matters**
+### Why this work matters
 
 - Service problems are practical problems. Residents and staff feel them every day in friction, repeat contacts, and abandoned applications.
 
@@ -34,7 +34,7 @@ Activities performed by this service include service design, user research, proc
 
 - Pilots that never ship operate as expensive theater. Our discipline is shipping, learning, and handing off.
 
-**How we operate**
+### How we operate
 
 - Human-centered design as a default. We talk to users before we design solutions, and we design with them, not for them.
 
@@ -48,7 +48,7 @@ Activities performed by this service include service design, user research, proc
 
 - Move fast with intention. Speed is a discipline, not an excuse to skip rigor.
 
-**How we partner**
+### How we partner
 
 - University research partnerships and civic-technology partners (e.g., Code for America-style relationships) extend our capacity without expanding payroll.
 
@@ -60,7 +60,7 @@ Activities performed by this service include service design, user research, proc
 
 > *From service problems to practical solutions. We are not here to make government look better. We are here to make it work better.*
 
-**1. Service overview**
+### 1. Service overview
 
 | **Topic**               | **Summary**                                                                                                                                                                                                                                             |
 |-------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -73,9 +73,9 @@ Activities performed by this service include service design, user research, proc
 
 *OPI is the canonical service name.*
 
-**2. Scope and service boundaries**
+### 2. Scope and service boundaries
 
-**In scope**
+#### In scope
 
 - Service design and user research — journey mapping, process mapping, prototyping, usability testing, resident and staff engagement.
 
@@ -89,7 +89,7 @@ Activities performed by this service include service design, user research, proc
 
 - Operational tooling — performance management portals, internal coordination tools, and field tools used by agency staff.
 
-**Out of scope (we partner or refer)**
+#### Out of scope (we partner or refer)
 
 - Enterprise IT replacements or large vendor implementations without an MVP path — partner with BCIT.
 
@@ -101,7 +101,7 @@ Activities performed by this service include service design, user research, proc
 
 - Shipping anything without a sustain plan — every product needs ownership, support, budget, and data readiness.
 
-**3. Engagement model**
+### 3. Engagement model
 
 We run like a product organization. Every initiative has a single accountable owner, a clear outcome metric, and a release rhythm. We start with discovery and ship in increments with QA gates.
 
@@ -113,7 +113,7 @@ We run like a product organization. Every initiative has a single accountable ow
 | Deliver           | Discovery sprint → prototype → MVP → iterate. Apply accessibility, performance, security, and QA gates. Ship in increments. | Tested prototypes; MVP release; changelog; runbook; usage analytics; user feedback log. |
 | Sustain           | Confirm long-term ownership and support; reduce operational load; expand adoption; retire features as needed.               | Sustainment plan; SLOs; documentation; deprecation notes; annual review.                |
 
-**4. Theory of Change**
+### 4. Theory of Change
 
 | **Stage**          | **Concrete, measurable definition**                                                                                                                                                                                                                           |
 |--------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -124,7 +124,7 @@ We run like a product organization. Every initiative has a single accountable ow
 | Outcomes (6–18 mo) | Multiple products in steady use with sustained adoption; reusable patterns reduce time-to-ship for new tools; AI pilots either scale with evidence or sunset cleanly; agencies request the Lab earlier in their planning cycles.                              |
 | Impact (2+ yr)     | Baltimore residents and staff experience services that are easier to use and easier to manage. The Lab is a trusted partner agencies turn to early. Improvements stick because every product ships with an owner and a sustain plan.                          |
 
-**5. Governance and decision rights**
+### 5. Governance and decision rights
 
 | **Role**                              | **Responsibility**                                                                                                             |
 |---------------------------------------|--------------------------------------------------------------------------------------------------------------------------------|
@@ -135,7 +135,7 @@ We run like a product organization. Every initiative has a single accountable ow
 | Design Lead                           | Owns research integrity, service design quality, and the design system.                                                        |
 | BCIT                                  | Partners on architecture, security, identity, integration, and enterprise readiness for products that scale.                   |
 
-**6. Core offerings and target service levels**
+### 6. Core offerings and target service levels
 
 | **Offering**                       | **Typical customer**    | **When to use**                                        | **Target SLA / cadence**                                                    |
 |------------------------------------|-------------------------|--------------------------------------------------------|-----------------------------------------------------------------------------|
@@ -145,7 +145,7 @@ We run like a product organization. Every initiative has a single accountable ow
 | AI pilot                           | Agency or citywide      | Use case with potential responsible-AI value           | Evaluation memo within 15 business days; pilot within one quarter.          |
 | Partnership activation             | Agency or OPI portfolio | Talent, method, or funding gap that a partner can fill | Partner scoping within 10 business days.                                    |
 
-**7. Metrics, targets, and learning**
+### 7. Metrics, targets, and learning
 
 - Service outcomes — task success, time-on-task, abandonment, repeat contacts on priority flows we touch.
 
@@ -159,7 +159,7 @@ We run like a product organization. Every initiative has a single accountable ow
 
 - AI responsibility — share of AI pilots with documented evaluation, human oversight, and sunset criteria.
 
-**8. Handoffs and synergies across OPI services**
+### 8. Handoffs and synergies across OPI services
 
 - To Performance — service improvements that produce measurable KPIs we want tracked in Stat.
 
@@ -169,7 +169,7 @@ We run like a product organization. Every initiative has a single accountable ow
 
 - To AdminOps — comms, narrative, and Council briefings for products and pilots.
 
-**Appendix · Standard artifact suite**
+#### Appendix · Standard artifact suite
 
 - Product brief (problem, user, decision, outcome metric, scope, owner).
 

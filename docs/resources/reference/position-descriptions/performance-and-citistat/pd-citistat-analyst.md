@@ -2,7 +2,7 @@
 
 {{ page_header(summary="Position description for the CitiStat Analyst.") }}
 
-**■ At a Glance**
+## At a Glance
 
 |                          |                                                                                                                    |
 |--------------------------|--------------------------------------------------------------------------------------------------------------------|
@@ -13,15 +13,15 @@
 | **Supervision given**    | Individual contributor.                                                                                            |
 | **Supervision received** | Reports to the Deputy Chief Performance Officer. Receives professional coaching from the CitiStat Program Manager. |
 
-**■ Position Summary**
+## Position Summary
 
 CitiStat is City Hall’s performance and accountability program. The CitiStat Analyst enables fact-based decisions by producing disciplined analysis, supporting follow-through, and translating data into clear, actionable options.
 
 The role frames problems; collects, validates, analyzes, and interprets datasets across city agencies; and identifies trends, risks, and root causes. Through data analysis, field engagement, and collaboration with agency leaders, the Analyst defines performance metrics, conducts policy research, and supports the implementation of improvement strategies. The CitiStat Analyst applies the program’s core tenets — accurate and timely intelligence shared by all, rapid deployment of resources, effective tactics and strategies, and relentless follow-up and assessment — to improve service quality and efficiency. The position reports to the Deputy Chief Performance Officer.
 
-**■ Key Responsibilities**
+## Key Responsibilities
 
-**Data Analysis**
+### Data Analysis
 
 - Monitor KPIs and service trends; conduct deep-dive analyses on priority issues such as cycle time, backlog, and quality.
 
@@ -35,7 +35,7 @@ The role frames problems; collects, validates, analyzes, and interprets datasets
 
 - Use data analysis and visualization tools to produce reproducible outputs.
 
-**Session Preparation and Follow-Through**
+### Session Preparation and Follow-Through
 
 - Build deliverables (pre-memos, decks, dashboards, briefs) that explain findings and options to non-technical leaders.
 
@@ -47,9 +47,9 @@ The role frames problems; collects, validates, analyzes, and interprets datasets
 
 - Coordinate with partner teams when issues meet delivery or cross-functional criteria, ensuring clear handoffs and follow-through.
 
-**■ Knowledge, Skills, and Abilities**
+## Knowledge, Skills, and Abilities
 
-**Performance management**
+### Performance management
 
 - Applied performance-management methods; KPI design and interpretation; ability to frame problems and test countermeasures.
 
@@ -57,13 +57,13 @@ The role frames problems; collects, validates, analyzes, and interprets datasets
 
 - Data definitions and lineage discipline; basic testing; comfort with uncertainty statements and caveats.
 
-**Tooling and analysis**
+### Tooling and analysis
 
 - Excel plus at least one of Power BI, ArcGIS, R, Python, and SQL; familiarity with SharePoint and portfolio trackers is a plus.
 
 - Comfort working with administrative data sources (311, permits, water billing, inspections, work orders).
 
-**Operations and stewardship**
+### Operations and stewardship
 
 - Diplomacy with senior leaders; reliable follow-through in a visible cadence.
 
@@ -71,25 +71,25 @@ The role frames problems; collects, validates, analyzes, and interprets datasets
 
 - Ability to communicate effectively across teams and agency partners.
 
-**■ Minimum Qualifications**
+## Minimum Qualifications
 
-**Education**
+### Education
 
 - Bachelor’s degree in Public Administration, Business, Management, Data/Analytics, or a related field.
 
-**Experience**
+### Experience
 
 - Three years of experience related to performance management, data analysis, or public-sector operations.
 
-**Equivalency**
+### Equivalency
 
 An equivalent combination of education and experience will be considered.
 
-**■ Working Conditions**
+## Working Conditions
 
 Employees in this class work a conventional work week. Work is performed in an office where work conditions are normal. Work requires minimal physical exertion. Hybrid telework is supported under OPI’s telework policy; staff are expected to be on site at City Hall a minimum of four days per week, with one day per week available as remote.
 
-**■ Supervision**
+## Supervision
 
 **Supervision received.** Reports to the Deputy Chief Performance Officer. Receives professional coaching from the CitiStat Program Manager.
 

@@ -22,7 +22,7 @@ The standards on this page apply in sequence:
 
 QCed before any visualization is built. The QCer fills out this part first.
 
-**Code**
+### Code
 
 - Every business-rule decision is documented in the code or a paired memo, and the document is linked from the deck or pre-memo.
 
@@ -32,7 +32,7 @@ QCed before any visualization is built. The QCer fills out this part first.
 
 - The QCer ran the code line by line, confirmed each line accomplishes its intent, and confirmed intermediate outputs match the intent. Issues are returned to the lead with line-by-line notes.
 
-**Spreadsheet output and data table**
+### Spreadsheet output and data table
 
 - The output follows the documented business rules.
 

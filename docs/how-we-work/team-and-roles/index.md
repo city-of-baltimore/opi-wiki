@@ -21,7 +21,7 @@ methods, and portfolio pages, start in [Our Teams](../../our-teams/index.md).
 For a narrower directory view that omits raw phone fields from the archive
 contact sheet, use [Staff Directory](staff-directory.md).
 
-**■ How to read this document**
+## How to read this document
 
 This roster lists every active and pending OPI position. Roles are grouped by portfolio — the team a person works with day to day — and labeled by cost center — the budget line that funds the position. Portfolios and cost centers do not always match one-to-one; the Director’s Office, for example, includes positions funded under AdminOps and positions funded under the Innovation Lab cost center.
 
@@ -29,7 +29,7 @@ Each refined Position Description is filed alongside this roster in the same fol
 
 > *Respond when necessary. Build so we do not have to respond again.*
 
-**■ OPI at a Glance**
+## OPI at a Glance
 
 |                         |                                                                                     |
 |-------------------------|-------------------------------------------------------------------------------------|
@@ -53,7 +53,7 @@ Each refined Position Description is filed alongside this roster in the same fol
     | Deputy Chief Data Officer                 | Jason Howard, PhD        | Executive Director | 114589  |
     | Innovation Lab (interim)                  | Dartanion Swift-Williams | City Administrator | —       |
 
-**■ Roster by Portfolio**
+## Roster by Portfolio
 
 ??? info "Director's Office roster and reporting"
 
@@ -67,7 +67,7 @@ Each refined Position Description is filed alongside this roster in the same fol
     | Mallory Screws           | Project Manager                             | Operations Officer III | AdminOps        | 62121   |
     | Rashaad Tillery          | CitiStat Inspector                          | Operations Officer I          | AdminOps        | 50509   |
 
-    **Reporting structure**
+### Reporting structure
 
     | **Position**                                | **Incumbent**            | **Reports to**                              |
     |---------------------------------------------|--------------------------|---------------------------------------------|
@@ -89,7 +89,7 @@ Each refined Position Description is filed alongside this roster in the same fol
     | Xander Jake de los Santos | Product Engineer                     | Operations Officer III            | Innovation Lab  | 70431   |
     | Aspirational / unfilled   | Civic Technology Lead                | Operations Manager II (proposed)  | Innovation Lab  | TBD     |
 
-    **Reporting structure**
+### Reporting structure
 
     | **Position**                         | **Incumbent**            | **Reports to**                                                                                   |
     |--------------------------------------|--------------------------|--------------------------------------------------------------------------------------------------|
@@ -112,7 +112,7 @@ Each refined Position Description is filed alongside this roster in the same fol
     | Ethan Buckborough    | CitiStat Analyst                 | CitiStat Analyst I            | Performance Management | 52437   |
     | Nelson Gomes Boronat | CitiStat Analyst                 | CitiStat Analyst I | Performance Management | 62122   |
 
-    **Reporting structure**
+### Reporting structure
 
     | **Position**                     | **Incumbent**        | **Reports to**                   |
     |----------------------------------|----------------------|----------------------------------|
@@ -136,7 +136,7 @@ Each refined Position Description is filed alongside this roster in the same fol
     | Koby Samuel           | Principal Platform Engineer | Operations Officer V   | Data and Analytics | 115656  |
     | Briya Bhakta          | Senior Data Engineer        | Operations Officer V   | Data and Analytics | 70433   |
 
-    **Reporting structure**
+### Reporting structure
 
     | **Position**                | **Incumbent**         | **Reports to**            |
     |-----------------------------|-----------------------|---------------------------|
@@ -152,7 +152,7 @@ Each refined Position Description is filed alongside this roster in the same fol
 
     OPI’s budget is organized into four cost centers. The same person may sit on a portfolio team that does not match their cost center — for example, the Special Assistant currently sits in the Director’s Office portfolio while remaining funded in the Innovation Lab cost center.
 
-    **AdminOps (CCA001472)**
+### AdminOps (CCA001472)
 
     | **Working title**                         | **Incumbent**            | **Portfolio**     | **PIN** |
     |-------------------------------------------|--------------------------|-------------------|---------|
@@ -161,7 +161,7 @@ Each refined Position Description is filed alongside this roster in the same fol
     | Project Manager                           | Mallory Screws           | Director's Office | 62121   |
     | CitiStat Inspector                        | Rashaad Tillery          | Director's Office | 50509   |
 
-    **Data and Analytics (CCA001472)**
+### Data and Analytics (CCA001472)
 
     | **Working title**           | **Incumbent**         | **Portfolio**      | **PIN** |
     |-----------------------------|-----------------------|--------------------|---------|
@@ -172,7 +172,7 @@ Each refined Position Description is filed alongside this roster in the same fol
     | Principal Platform Engineer | Koby Samuel           | Data and Analytics | 115656  |
     | Senior Data Engineer        | Briya Bhakta          | Data and Analytics | 70433   |
 
-    **Innovation Lab (CCA001472)**
+### Innovation Lab (CCA001472)
 
     | **Working title**                              | **Incumbent**             | **Portfolio**     | **PIN** |
     |------------------------------------------------|---------------------------|-------------------|---------|
@@ -183,7 +183,7 @@ Each refined Position Description is filed alongside this roster in the same fol
     | Product Engineer                               | Xander Jake de los Santos | Innovation Lab    | 70431   |
     | Civic Technology Lead                          | Aspirational / unfilled   | Innovation Lab    | TBD     |
 
-    **Performance Management (CCA001472)**
+### Performance Management (CCA001472)
 
     | **Working title**                | **Incumbent**        | **Portfolio**            | **PIN** |
     |----------------------------------|----------------------|--------------------------|---------|

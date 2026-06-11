@@ -2,7 +2,7 @@
 
 {{ page_header(summary="Position description for the Innovation Program Manager.") }}
 
-**■ At a Glance**
+## At a Glance
 
 |                          |                                                                                                                                                                                                                                                                           |
 |--------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -13,15 +13,15 @@
 | **Supervision given**    | Directly supervises the Civic Designer, Civic Technology Lead, Product Engineer, and Senior Product Engineer. Indirectly coordinates with the Project Manager and partner-agency leads on tiger-team work.                                                            |
 | **Supervision received** | Reports to the Chief of Staff. Receives strategic direction from the Executive Director while the role is being served on an interim basis.                                                                                                                              |
 
-**■ Position Summary**
+## Position Summary
 
 The Innovation Program Manager leads the day-to-day operations of OPI’s Innovation Lab — the portfolio that takes service problems surfaced by CitiStat or Director’s Office sponsorship and turns them into tested, adopted solutions. The role runs the Lab’s intake, scoping, and delivery routines; orchestrates tiger teams; sponsors civic-tech and service-design work; and coaches Lab staff (Civic Designer, Civic Technology Lead, Senior Product Engineer, and Product Engineer) toward decision-ready outcomes.
 
 Reporting administratively to the Chief of Staff, the Innovation Program Manager partners closely with the Executive Director (currently serving in this role on an interim basis), the Deputy Chief Performance Officer (CitiStat handoffs), and the Deputy Chief Data Officer (data and product collaboration). The role ensures Lab projects are framed for adoption from day one, evaluated honestly, and either scaled, sustained by the agency owner, or sunset with a clear lessons-learned record.
 
-**■ Key Responsibilities**
+## Key Responsibilities
 
-**Innovation Lab Portfolio Leadership**
+### Innovation Lab Portfolio Leadership
 
 - Operate the Innovation Lab’s intake-to-closeout pipeline: charter, scoping, design and discovery, prototyping, evaluation, and handoff.
 
@@ -31,7 +31,7 @@ Reporting administratively to the Chief of Staff, the Innovation Program Manager
 
 - Coach Lab staff and tiger-team leads on framing, design discipline, evaluation, and plain-language storytelling.
 
-**tiger team and Cross-Agency Delivery**
+### tiger team and Cross-Agency Delivery
 
 - Stand up tiger teams against priority service problems with the Director’s Office; appoint delivery leads, set milestones, and run checkpoints.
 
@@ -39,7 +39,7 @@ Reporting administratively to the Chief of Staff, the Innovation Program Manager
 
 - Partner with CitiStat to convert Stat findings into delivery work where the bar for tiger-team activation is met.
 
-**Civic Design and Civic Technology**
+### Civic Design and Civic Technology
 
 - Direct the work of the Civic Designer and the Civic Technology Lead; align design and technology approach with service-delivery realities.
 
@@ -47,7 +47,7 @@ Reporting administratively to the Chief of Staff, the Innovation Program Manager
 
 - Set quality standards for the Lab’s research, design, and engineering deliverables.
 
-**Cross-Office Coordination and Stewardship**
+### Cross-Office Coordination and Stewardship
 
 - Coordinate with the Deputy Chief Data Officer on shared data, analytics, and product infrastructure.
 
@@ -55,9 +55,9 @@ Reporting administratively to the Chief of Staff, the Innovation Program Manager
 
 - Steward the Lab’s operating standards, SOPs, and publication archive in SharePoint.
 
-**■ Knowledge, Skills, and Abilities**
+## Knowledge, Skills, and Abilities
 
-**Innovation and delivery leadership**
+### Innovation and delivery leadership
 
 - Demonstrated experience leading service-design, civic-tech, or innovation portfolios in government or a comparable mission-driven setting.
 
@@ -65,7 +65,7 @@ Reporting administratively to the Chief of Staff, the Innovation Program Manager
 
 - Skill in standing up cross-functional tiger teams and converting analysis into delivered service improvements.
 
-**People and program management**
+### People and program management
 
 - Track record managing multidisciplinary staff (designers, engineers, analysts) toward shared outcomes.
 
@@ -73,7 +73,7 @@ Reporting administratively to the Chief of Staff, the Innovation Program Manager
 
 - Strong executive writing for charters, status reports, and post-mortems.
 
-**Operations management**
+### Operations management
 
 - Knowledge of municipal operations, data, and digital service delivery.
 
@@ -81,25 +81,25 @@ Reporting administratively to the Chief of Staff, the Innovation Program Manager
 
 - Ability to maintain confidentiality of sensitive information.
 
-**■ Minimum Qualifications**
+## Minimum Qualifications
 
-**Education**
+### Education
 
 - Bachelor’s degree in Public Administration, Public Policy, Design, Business, or a related field. Master’s degree preferred.
 
-**Experience**
+### Experience
 
 - At least 6 years of relevant program-management experience, including at least 3 years leading multidisciplinary teams in service design, civic technology, or innovation work.
 
-**Equivalency**
+### Equivalency
 
 An equivalent combination of education and experience will be considered.
 
-**■ Working Conditions**
+## Working Conditions
 
 Employees in this class work a conventional work week. This position may be required to work evening and weekend hours and 24-hour callback in an emergency. Work is performed in an office where work conditions are normal. Work requires minimal physical exertion. Hybrid telework is supported under OPI’s telework policy; staff are expected to be on site at City Hall a minimum of four days per week, with one day per week available as remote.
 
-**■ Supervision**
+## Supervision
 
 **Supervision received.** Reports to the Chief of Staff. Receives strategic direction from the Executive Director while the role is being served on an interim basis.
 

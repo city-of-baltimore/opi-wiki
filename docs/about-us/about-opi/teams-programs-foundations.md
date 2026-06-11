@@ -6,7 +6,7 @@ Read this page as the bridge between OPI's structure and OPI's work. Portfolios 
 
 > **CitiStat identifies the problem. Data helps explain it. The Innovation Lab designs and tests the solution. Cross-Agency Delivery coordinates implementation when multiple agencies must act together. AdminOps keeps the work visible, documented, and sustained.**
 
-**WHAT WE OWN AND HOW WE WORK**
+## WHAT WE OWN AND HOW WE WORK
 
 This document describes OPI’s four portfolios in operating detail — what each portfolio owns, the typical outputs it produces, the boundaries between functions, and the foundations that make our work coherent across services.
 
@@ -19,15 +19,13 @@ Use this loop as the plain-language test for OPI's service model. A page that de
 
 Use it alongside the Organization Structure document, which shows the formal portfolio chart, leads, and cost centers.
 
-**SECTION 1**
-
-**Director’s Office**
+## Director’s Office
 
 Lead: Rakeim Young, Chief of Staff
 
 The Director’s Office portfolio keeps OPI aligned, coordinated, resourced, and understood. It is the front door for intake and the operating backbone for portfolio visibility, communications, knowledge management, and internal administration.
 
-**Owns**
+### Owns
 
 - Officewide intake and triage process
 
@@ -47,7 +45,7 @@ The Director’s Office portfolio keeps OPI aligned, coordinated, resourced, and
 
 - CitiStat Inspector and field validation, with formal service relationship to Performance
 
-**Typical Outputs**
+### Typical Outputs
 
 - Weekly leadership view
 
@@ -59,15 +57,13 @@ The Director’s Office portfolio keeps OPI aligned, coordinated, resourced, and
 
 - Knowledge management standards and quality gates
 
-**SECTION 2**
-
-**Performance**
+## Performance
 
 Lead: Danny Heller, Deputy Chief Performance Officer
 
 The Performance portfolio stewards OPI’s performance method and supports the citywide CitiStat program, which is owned overall by the Executive Director. The portfolio ensures performance routines are structured, data-informed, useful, and connected to follow-through.
 
-**Owns**
+### Owns
 
 - CitiStat structure, cadence, standards, and method stewardship
 
@@ -83,7 +79,7 @@ The Performance portfolio stewards OPI’s performance method and supports the c
 
 - Performance analysis and reporting
 
-**Typical Outputs**
+### Typical Outputs
 
 - CitiStat sessions and follow-up memos
 
@@ -95,15 +91,13 @@ The Performance portfolio stewards OPI’s performance method and supports the c
 
 - Sustainment monitoring after delivery activations
 
-**SECTION 3**
-
-**Data and Analytics**
+## Data and Analytics
 
 Lead: Jason Howard, PhD, Deputy Chief Data Officer
 
 The Data and Analytics portfolio builds the data foundation that makes OPI’s work trustworthy and useful. It turns administrative data into insight, shared assets, open data, and reusable infrastructure.
 
-**Owns**
+### Owns
 
 - Analytics and insight products
 
@@ -123,7 +117,7 @@ The Data and Analytics portfolio builds the data foundation that makes OPI’s w
 
 - AI and data governance foundations
 
-**Typical Outputs**
+### Typical Outputs
 
 - Dashboards, analytic briefs, and data products
 
@@ -135,9 +129,7 @@ The Data and Analytics portfolio builds the data foundation that makes OPI’s w
 
 - AI and data readiness guidance
 
-**SECTION 4**
-
-**Innovation Lab**
+## Innovation Lab
 
 Interim Innovation Program Manager: Dartanion Swift-Williams
 
@@ -149,13 +141,13 @@ Technology Lead.
 
 The Innovation Lab is OPI’s service improvement and applied innovation portfolio. It uses design, product, civic technology, AI pilots, and partnerships to help agencies design, test, and implement practical improvements.
 
-**What Innovation Means at OPI**
+### What Innovation Means at OPI
 
 Innovation at OPI means practical improvement, not novelty. It is not "cool ideas," "special projects," or "technology for technology’s sake."
 
 Innovation is how OPI helps Baltimore City understand service problems, design with the people closest to them, test practical solutions, and turn what works into better ways of operating.
 
-**Owns**
+### Owns
 
 - Human-centered design and service design
 
@@ -173,7 +165,7 @@ Innovation is how OPI helps Baltimore City understand service problems, design w
 
 - Tiger Teams as an innovation method when discovery, design, or prototyping is required — the Lab provides the team and the Public Innovation Toolkit. The Lab is the capability (*how do we solve this?*); Cross-Agency Delivery is the service overlay (*how do we get multiple agencies to ship this together?*). When a Tiger Team’s work needs that overlay — named Authorizers at the Deputy Mayor or City Administrator level, decision rights across agencies, and sustainment commitments from each agency — it is chartered through Cross-Agency Delivery; otherwise through Innovation Lab intake under the agency director.
 
-**Typical Outputs**
+### Typical Outputs
 
 - Product briefs and discovery memos
 
@@ -185,7 +177,7 @@ Innovation is how OPI helps Baltimore City understand service problems, design w
 
 - Partnership concepts, grant ideas, and innovation briefs
 
-**What Innovation Is Not**
+### What Innovation Is Not
 
 - A random ideas shop
 
@@ -201,7 +193,7 @@ Innovation is how OPI helps Baltimore City understand service problems, design w
 
 - A team that builds tools without sustainment plans
 
-**Where the Lab Sits**
+### Where the Lab Sits
 
 The Innovation Lab sits at the intersection of:
 
@@ -217,9 +209,7 @@ The Innovation Lab sits at the intersection of:
 
 - Strategic partnerships — bringing in outside capacity when they help the City solve priority problems
 
-**SECTION 5**
-
-**Function Boundaries and Handoffs**
+## Function Boundaries and Handoffs
 
 OPI’s portfolios are designed to overlap by intent, not by accident. The boundaries below describe how functions are divided when more than one portfolio could plausibly own a piece of work.
 
@@ -233,15 +223,13 @@ OPI’s portfolios are designed to overlap by intent, not by accident. The bound
 | Strategic partnerships          | Innovation Lab, with Director oversight                          | Partnerships should be tied to a portfolio priority, product roadmap, data capability, fellowship, grant, or innovation agenda. AdminOps brokers, tracks, briefs, communicates, and closes out commitments.     |
 | Resident and staff engagement   | Innovation Lab                                                   | Innovation leads engagement that informs service design, product discovery, and problem framing.                                                                                                                |
 
-**SECTION 6**
-
-**Foundations: How These Teams Work Together**
+## Foundations: How These Teams Work Together
 
 OPI’s portfolios are designed to operate as one system. The full cycle reads:
 
 > *CitiStat identifies performance problems. Data and Analytics helps explain them. The Innovation Lab designs and tests practical solutions. Cross-Agency Delivery helps coordinate implementation. AdminOps keeps the work visible, documented, and accountable.*
 
-**Examples That Make It Real**
+### Examples That Make It Real
 
 - Redesigning 311 service request workflows
 

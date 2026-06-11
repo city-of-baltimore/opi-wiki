@@ -4,15 +4,19 @@
 
 From service problems to practical solutions.
 
-**VERSION** v1.0
+VERSION
+:   v1.0
 
-**UPDATED** April 2026
+UPDATED
+:   April 2026
 
-**OWNER** OPI Innovation Lab
+OWNER
+:   OPI Innovation Lab
 
-**AUDIENCE** Agency partners, civic partners, residents, media, funders
+AUDIENCE
+:   Agency partners, civic partners, residents, media, funders
 
-**■ What the Innovation Lab is**
+## What the Innovation Lab is
 
 The OPI Innovation Lab is the City’s in-house service-improvement team. We work with frontline staff, agency leaders, and residents to redesign how everyday services actually work — from how a 311 call ends in a fixed problem, to how a permit moves from application to issuance.
 
@@ -20,11 +24,11 @@ The OPI Innovation Lab is the City’s in-house service-improvement team. We wor
 
 The Lab is one of five OPI services and sits within the Mayor’s Office of Performance and Innovation, in the City Administrator’s Office. It replaces the older “Civic Design Lab” and “Baltimore Design Lab” framings and now also carries forward the City’s digital service work.
 
-**■ How we work**
+## How we work
 
 The Lab uses a simple, disciplined sequence. We start where there is a real problem with a real owner. We learn from the people doing and receiving the service. We test small, observable changes. We hand the improved service back to the agency that owns it, with the data and routines to keep it working.
 
-**Our four moves**
+### Our four moves
 
 **Listen.** Talk to residents, frontline staff, and agency leaders. Map the service as it actually runs, not as it appears on paper.
 
@@ -34,7 +38,7 @@ The Lab uses a simple, disciplined sequence. We start where there is a real prob
 
 **Hand off.** Transfer the improved service, with the data and routines to maintain it, to the owning agency. Stay close enough to support without owning forever.
 
-**What we are not**
+### What we are not
 
 - Not a long-term operator. The Lab improves services and hands them back.
 
@@ -42,7 +46,7 @@ The Lab uses a simple, disciplined sequence. We start where there is a real prob
 
 - Not a separate brand. “OPI Innovation Lab” is the only name; “Civic Design Lab” and “Baltimore Design Lab” are retired.
 
-**■ What we work on**
+## What we work on
 
 The Lab focuses on cross-agency operating systems and frontline services that affect many residents at once. Active and recent areas include:
 
@@ -56,7 +60,7 @@ The Lab focuses on cross-agency operating systems and frontline services that af
 
 - Citywide digital services — the small, durable web and form improvements that make services usable.
 
-**Examples of recent work**
+### Examples of recent work
 
 - 311 Reimagined — redesigned intake, workflows, and feedback loops, in-house.
 
@@ -66,9 +70,9 @@ The Lab focuses on cross-agency operating systems and frontline services that af
 
 - Downtown RISE — lightweight canvassing tool to tag infrastructure and cleanliness issues block by block.
 
-**■ How to engage the Lab**
+## How to engage the Lab
 
-**If you are a City agency**
+### If you are a City agency
 
 - **Bring a problem, not a project:** Start with the OPI single front door. Bring a problem statement, a service or system you own, and an executive sponsor.
 
@@ -76,25 +80,25 @@ The Lab focuses on cross-agency operating systems and frontline services that af
 
 - **Plan for handoff:** Agencies keep service ownership; the Lab is a time-boxed partner.
 
-**If you are a community partner or resident**
+### If you are a community partner or resident
 
 - We talk to residents and frontline staff as part of every project. Reach out through the OPI Director’s Office to be added to relevant outreach.
 
 - Open Baltimore is the public window into much of the data the Lab uses.
 
-**If you are a funder or philanthropic partner**
+### If you are a funder or philanthropic partner
 
 - The Lab welcomes targeted partnerships that expand capacity — staff capacity, residencies, fellowships, or applied research — around already-prioritized City service problems.
 
 - Inquiries go to the OPI Director’s Office.
 
-**■ How the Lab fits into OPI**
+## How the Lab fits into OPI
 
 CitiStat surfaces what is not working. Citywide Data and Analytics explains why. The Innovation Lab redesigns and tests what comes next. Cross-Agency Delivery coordinates work that spans departments. AdminOps keeps the work organized and accountable.
 
 > *Respond when necessary. Build so we do not have to respond again.*
 
-**■ Contact**
+## Contact
 
 |                |                                                                                      |
 |----------------|--------------------------------------------------------------------------------------|

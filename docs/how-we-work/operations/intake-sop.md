@@ -4,19 +4,22 @@
 
 How OPI accepts new work. One front door. Clear vetting. No surprise commitments.
 
-**AUDIENCE** OPI staff and partners requesting OPI support
+AUDIENCE
+:   OPI staff and partners requesting OPI support
 
-**OWNER** Director’s Office
+OWNER
+:   Director’s Office
 
-**VERSION** v1.0 · February 2026
+VERSION
+:   v1.0 · February 2026
 
-**■ Why this exists**
+## Why this exists
 
 OPI is a high-trust, high-output unit. Our credibility depends on disciplined commitments and reliable follow-through. Every new request — whether it comes from the Mayor’s Office, an agency partner, or an internal team — enters through a single intake process. The process protects focus, makes tradeoffs explicit, and prevents quiet commitments that distort capacity.
 
 > *Respond when necessary. Build so we do not have to respond again.*
 
-**Principles**
+### Principles
 
 - One front door. All requests enter through the same intake path. No back-channel commitments.
 
@@ -28,11 +31,11 @@ OPI is a high-trust, high-output unit. Our credibility depends on disciplined co
 
 - Honest tradeoffs. New work that displaces planned work is escalated with options.
 
-**■ The single front door**
+## The single front door
 
 All intake routes through Director’s Office, which serves as the OPI front door. Service portfolios receive requests through AdminOps so that capacity, sequencing, and authorization can be reviewed in one place.
 
-**How to submit a request**
+### How to submit a request
 
 - **Channel A:** SharePoint intake form (preferred). Captures the required fields below in one place.
 
@@ -40,7 +43,7 @@ All intake routes through Director’s Office, which serves as the OPI front doo
 
 - **Channel C:** Direct manager referral. Managers may forward an inbound request to AdminOps. The referring manager is recorded as the request liaison.
 
-**Required fields at intake**
+### Required fields at intake
 
 | **Field**                 | **What we need**                                                                       |
 |---------------------------|----------------------------------------------------------------------------------------|
@@ -52,11 +55,11 @@ All intake routes through Director’s Office, which serves as the OPI front doo
 | Background links          | Existing memos, data, prior work, related Project Directory items.                     |
 | Sensitivity               | Any privacy, confidentiality, or political sensitivity flags.                          |
 
-**■ Triage and decision**
+## Triage and decision
 
 Within two business days of receipt, AdminOps triages the request and routes it to the appropriate service lead for vetting. The vetting conversation is short, structured, and documented.
 
-**Vetting checklist**
+### Vetting checklist
 
 1.  Owner. Who on OPI leads this if accepted?
 
@@ -72,7 +75,7 @@ Within two business days of receipt, AdminOps triages the request and routes it 
 
 7.  Authorization. For cross-agency work, is there a named Senior Responsible Owner?
 
-**Decision outcomes**
+### Decision outcomes
 
 | **Outcome** | **What happens next**                                                                                                                                                                   |
 |-------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -80,7 +83,7 @@ Within two business days of receipt, AdminOps triages the request and routes it 
 | Decline     | Polite but clear. Requester receives a written response explaining why and (where possible) directing them to the right resource elsewhere.                                             |
 | Park        | Time-boxed deferral. The reason and conditions for revisit are documented. Park status is reviewed at least monthly and at quarterly portfolio review.                                  |
 
-**■ Charter creation**
+## Charter creation
 
 Accepted work moves to charter. The OPI Charter Template is the baseline. A charter is required before substantive work begins. No charter, no work.
 
@@ -94,7 +97,7 @@ Accepted work moves to charter. The OPI Charter Template is the baseline. A char
 
 - Dependencies, risks, and definition of done.
 
-**■ Cadence and governance**
+## Cadence and governance
 
 - **Acknowledge:** AdminOps acknowledges receipt within one business day.
 
@@ -106,7 +109,7 @@ Accepted work moves to charter. The OPI Charter Template is the baseline. A char
 
 - **Portfolio:** Quarterly portfolio review revisits Park status and balances WIP.
 
-**What we do not do**
+### What we do not do
 
 - We do not accept work without an authorizing owner for cross-agency requests.
 
@@ -116,10 +119,10 @@ Accepted work moves to charter. The OPI Charter Template is the baseline. A char
 
 - We do not become a shadow operator for work that properly belongs to an agency or central department.
 
-**■ Escalation**
+## Escalation
 
 If a request cannot be triaged within 2 business days, AdminOps escalates to the Chief of Staff. If a cross-agency dispute blocks vetting, the City Administrator’s Office is engaged as authorizer of last resort.
 
-**■ Owner and review**
+## Owner and review
 
 This SOP is owned by the Director’s Office. Reviewed quarterly. Changes propose via tracked request with rationale.

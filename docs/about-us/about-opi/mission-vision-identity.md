@@ -6,7 +6,7 @@
 
 Use this page as the north star for voice and purpose. It explains why OPI exists and what kind of public institution the office is trying to become. For the operating model, pair it with the organization structure, Teams / Programs / Foundations, and How Work Moves Through OPI pages.
 
-**NORTH STAR**
+## NORTH STAR
 
 **A shared answer to the question: who is OPI?**
 
@@ -14,19 +14,19 @@ This document captures what the OPI team has heard, debated, and aligned on abou
 
 > *Better government is not a one-time project. It is a discipline.*
 
-**Mission**
+### Mission
 
 **We use data and design to improve city services in ways that residents and public servants can see and feel.**
 
-**Vision**
+### Vision
 
 *Baltimore as a blueprint for local government nationwide: a city that delivers what matters most to residents, runs efficiently, and gets better every day.*
 
-**Tagline**
+### Tagline
 
 *Better government is not a one-time project. It is a discipline.*
 
-**Values**
+### Values
 
 *Our six core values guide how we work, both with each other and our partners. They are paired with the operating maxim: we move with urgency, but not chaos.*
 
@@ -41,13 +41,13 @@ This document captures what the OPI team has heard, debated, and aligned on abou
 
 *We move with urgency, but not chaos.*
 
-**MISSION JOURNEY**
+## MISSION JOURNEY
 
 **The five framework questions we used to write our mission**
 
 *Our mission did not arrive whole. We worked through five questions as a team. Each section below captures the answers we converged on.*
 
-**1. Who we are**
+### 1. Who we are
 
 - A small, citywide office that pairs disciplined performance management with applied service design and trustworthy data.
 
@@ -55,7 +55,7 @@ This document captures what the OPI team has heard, debated, and aligned on abou
 
 - A team of operators, analysts, designers, product managers, and storytellers — not a consultancy, not a research lab, not a press shop.
 
-**2. Who our customers are**
+### 2. Who our customers are
 
 - Mayor and City Administrator — priority outcomes, executive decisions, public narrative.
 
@@ -69,7 +69,7 @@ This document captures what the OPI team has heard, debated, and aligned on abou
 
 - Other governments — peers we learn from and share with, so Baltimore becomes a blueprint.
 
-**3. What benefit we deliver**
+### 3. What benefit we deliver
 
 - Faster, clearer decisions for leadership — Stat sessions that produce commitments, not just discussion.
 
@@ -81,7 +81,7 @@ This document captures what the OPI team has heard, debated, and aligned on abou
 
 - A pipeline of city talent who learn the discipline of public-sector delivery and carry it elsewhere.
 
-**4. What expertise we bring**
+### 4. What expertise we bring
 
 - Performance management and CitiStat method — routines, KPI discipline, follow-up.
 
@@ -93,7 +93,7 @@ This document captures what the OPI team has heard, debated, and aligned on abou
 
 - Communications, storytelling, executive briefings, and Council relations.
 
-**5. What output we produce**
+### 5. What output we produce
 
 - Performance routines: Stat sessions, follow-up memos, decision logs, public summaries, annual report sections.
 
@@ -105,11 +105,11 @@ This document captures what the OPI team has heard, debated, and aligned on abou
 
 - Knowledge artifacts: position descriptions, glossaries, playbooks, transition packets.
 
-**WHO WE ARE (AND ARE NOT)**
+## WHO WE ARE (AND ARE NOT)
 
 **A working list from team listening sessions**
 
-**We are…**
+### We are…
 
 - A team that uses data and design to make government work better.
 
@@ -125,7 +125,7 @@ This document captures what the OPI team has heard, debated, and aligned on abou
 
 - Storytellers who tell the truth about what we do and what we have learned.
 
-**We are not…**
+### We are not…
 
 - A consulting firm that produces decks and disappears.
 
@@ -141,7 +141,7 @@ This document captures what the OPI team has heard, debated, and aligned on abou
 
 - A standing committee. We work in time-boxed cycles with named owners and exit criteria.
 
-**MISPERCEPTIONS**
+## MISPERCEPTIONS
 
 **What the city thinks we do versus what we actually do**
 
@@ -156,27 +156,27 @@ This document captures what the OPI team has heard, debated, and aligned on abou
 | “OPI fixes everything cross-agency.” | Cross-Agency Delivery is a service overlay we activate against specific priority outcomes with named sponsors — not a backstop for everything that crosses department lines.       |
 | “OPI is the Mayor’s consultancy.”    | We are an institutional capability designed to outlast administrations. Our partner is the Mayor’s Office, and our scope and quality standards travel with us.                     |
 
-**VISION THEMES**
+## VISION THEMES
 
 **The four threads we hear most often**
 
-**1. Baltimore as a blueprint**
+### 1. Baltimore as a blueprint
 
 A city other cities study — not because we are bigger, but because we have built durable performance, data, and service-design capacity that other places can borrow.
 
-**2. Civic data leadership**
+### 2. Civic data leadership
 
 Baltimore becomes a national leader in how cities steward, share, and use data — through Open Baltimore, citywide data infrastructure, and a Citywide Data Network of residents and partners.
 
-**3. Translators**
+### 3. Translators
 
 We sit at the seams between agencies, residents, leadership, and technology partners. The vision is to be the most trusted translator in city government — the team people call when something needs to be understood across boundaries.
 
-**4. Shared infrastructure**
+### 4. Shared infrastructure
 
 A platform city. 311, permitting, performance, data, and service workflows connected via shared infrastructure, design system, and conventions — instead of one-off vendor contracts that decay over time.
 
-**CUSTOMER DEFINITION**
+## CUSTOMER DEFINITION
 
 **Who we serve and how we serve them**
 
@@ -189,49 +189,49 @@ A platform city. 311, permitting, performance, data, and service workflows conne
 | Residents            | Services that work, data to trust, channels to be heard.        | Better service experiences, Open Baltimore, plain-language reporting, civic data community. |
 | Other governments    | Peer learning, shared playbooks, public reference architecture. | Conference talks, blog posts, code and method published openly.                             |
 
-**STRATEGIC THEMES**
+## STRATEGIC THEMES
 
 **The six threads we keep returning to**
 
 *From listening sessions and strategy retros, six themes recur. They are not strategy on their own — they are the conditions strategy has to address.*
 
-**1. Intake and governance**
+### 1. Intake and governance
 
 - We say yes too often. We need standard intake, problem statements, and rejection criteria.
 
 - Governance — Data Governance Council, Open Data Council, intake committee — is how we share authority instead of bottlenecking on one leader.
 
-**2. Documentation and knowledge management**
+### 2. Documentation and knowledge management
 
 - “Document or it didn’t happen.” Documentation is the bridge between past selves, present selves, and future selves.
 
 - SharePoint operating system, wiki, glossary, position descriptions, transition packets — these are not administrative chores. They are the substrate of institutional memory.
 
-**3. Refocus on residents**
+### 3. Refocus on residents
 
 - Residents are not a stakeholder group. They are why we exist.
 
 - Constituent Services, neighborhood liaisons, district-level data storytelling, and resident-facing data products belong in our service mix — not as outreach, but as core delivery.
 
-**4. Data literacy and AI readiness**
+### 4. Data literacy and AI readiness
 
 - Agencies cannot use what they cannot interpret. Data literacy is part of our delivery, not a side program.
 
 - AI without governance is risk. AI evaluation memos, human oversight, and sunset criteria are the table stakes for responsible use.
 
-**5. Capacity and discipline**
+### 5. Capacity and discipline
 
 - We protect against burnout by being disciplined about scope. The 70 / 20 / 10 model anchors how we plan team time — see Operating Principles & Culture for the full breakdown.
 
 - We say no on purpose. Saying no is how we protect quality and impact.
 
-**6. Recognition and culture**
+### 6. Recognition and culture
 
 - Recognition is operational. Pins, transparency awards, public credit on artifacts — these retain talent we cannot match on salary alone.
 
 - Culture is set in small daily acts: how we run a meeting, how we write a memo, how we give credit, how we say no.
 
-**MISSION FRAMINGS**
+## MISSION FRAMINGS
 
 **Two ways the mission has been articulated by our team**
 
@@ -239,7 +239,7 @@ A platform city. 311, permitting, performance, data, and service workflows conne
 
 *The current mission statement is the consolidation of these framings. The point of capturing both here is that our mission language is a living statement, not a tagline written by committee.*
 
-**HOW WE USE THIS DOCUMENT**
+## HOW WE USE THIS DOCUMENT
 
 **Practical guidance for OPI staff**
 

@@ -24,7 +24,7 @@ Elonna Jones, Mayor's Office of Government Relations
 **Subject:**  
 Protocol For Responding To City Council Requests
 
-**Purpose**
+## Purpose
 
 To ensure appropriate coordination and compliance with established oversight
 procedures, any request for information, documents, data, applications, or
@@ -40,7 +40,7 @@ from the MOGR. This requirement applies to all forms of information and
 communication, including but not limited to reports, data extracts, systems
 access, presentations, written materials, or informal summaries.
 
-**Process**
+## Process
 
 Upon receiving a request from a City Council member or their staff, OPI staff
 should promptly initiate the review process by engaging the appropriate contact
@@ -62,7 +62,7 @@ Adherence to this protocol is required to ensure consistent coordination,
 appropriate oversight, and alignment with established intergovernmental
 communication procedures.
 
-**Questions**
+## Questions
 
 If you have questions about this policy, or your expectations within the
 guidance, please contact your OPI Chief of Staff, Rock Young for clarification.

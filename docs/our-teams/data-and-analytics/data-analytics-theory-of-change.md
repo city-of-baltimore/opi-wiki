@@ -10,13 +10,13 @@
 
 *The About doc explains the service in plain language — purpose, who we are, what we do, what we own and do not own, partnerships, and success. This Theory of Change doc is the operational backbone: mandate, engagement model, governance, SLAs, KPI metrics, handoffs, and the standard artifact suite.*
 
-**NORTH STAR**
+## NORTH STAR
 
 **Trustworthy data, reusable insight products, and a city that runs on evidence.**
 
 *Strengthen Baltimore’s data infrastructure, analytics capacity, open data program, and data governance so that City data is accurate, reliable, accessible, and useful for decision-making, transparency, and public accountability. Mandate, governance, SLAs, and measurement detail follows.*
 
-**1. Service overview**
+### 1. Service overview
 
 | **Topic**            | **Summary**                                                                                                                                                                                                                                                                                            |
 |----------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -27,11 +27,11 @@
 | Who we serve         | City Administrator, Deputy Mayors, agencies, Council, civic technologists, researchers, journalists, and residents who use Open Baltimore.                                                                                                                                                             |
 | Outcome anchor       | Priority datasets meet documented quality standards; the Citywide Data Platform is the system of record for shared datasets; Open Baltimore is current, complete, and used; agencies build on reusable data products instead of one-off extracts; AI use cases are evaluated and deployed responsibly. |
 
-**2. Operating scope (boundary lines)**
+### 2. Operating scope (boundary lines)
 
 *Full ownership / partnership / referral patterns are detailed in the About doc. This is the budget-facing summary.*
 
-**In scope for this cost center**
+#### In scope for this cost center
 
 - Data platform and pipelines — Citywide Data Platform, shared datasets, APIs, lineage, refresh standards.
 
@@ -45,7 +45,7 @@
 
 - Citywide data architecture coordination with BCIT and agency data teams.
 
-**Routed elsewhere**
+#### Routed elsewhere
 
 - Enterprise infrastructure / security / identity / production environments → BCIT.
 
@@ -55,7 +55,7 @@
 
 - Performance routines themselves → Performance.
 
-**3. Engagement model**
+### 3. Engagement model
 
 Work enters as a data product request, a Stat-driven KPI need, an open data publishing request, or a governance question. We use the standard OPI engagement model with a product-led delivery rhythm.
 
@@ -67,7 +67,7 @@ Work enters as a data product request, a Stat-driven KPI need, an open data publ
 | Deliver           | Build pipeline, dashboard, dataset, or evaluation; QA before public release.                | Versioned data product; methodology card; user documentation; QA sign-off.                       |
 | Sustain           | Establish refresh schedule, owner, monitoring, and sunset criteria.                         | Sustainment plan; runbook; data quality dashboard; annual review checkpoint.                     |
 
-**4. Theory of Change**
+### 4. Theory of Change
 
 | **Stage**          | **Concrete, measurable definition**                                                                                                                                                                                                                                       |
 |--------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -78,7 +78,7 @@ Work enters as a data product request, a Stat-driven KPI need, an open data publ
 | Outcomes (6–18 mo) | Agencies build performance routines on reusable data products; cross-agency analyses become routine; AI pilots are evaluated and either scaled or sunset with evidence; data quality issues are surfaced and resolved through governance, not escalation.                 |
 | Impact (2+ yr)     | Baltimore runs on trustworthy, well-governed data. Decisions are evidence-based by default. The public can verify what the City reports. Agencies see data as shared infrastructure, not a one-off favor.                                                                 |
 
-**5. Governance and decision rights**
+### 5. Governance and decision rights
 
 | **Role**                                | **Responsibility**                                                                                                 |
 |-----------------------------------------|--------------------------------------------------------------------------------------------------------------------|
@@ -89,7 +89,7 @@ Work enters as a data product request, a Stat-driven KPI need, an open data publ
 | Agency Data-Driven Officers             | Own agency-side data quality, refresh cadence, and KPI definitions; partner with OPI on shared datasets.           |
 | BCIT                                    | Owns enterprise infrastructure, security, identity, and production environments; partners on integration.          |
 
-**6. Core offerings and target service levels**
+### 6. Core offerings and target service levels
 
 | **Offering**               | **Typical customer**          | **When to use**                                           | **Target SLA / cadence**                                                            |
 |----------------------------|-------------------------------|-----------------------------------------------------------|-------------------------------------------------------------------------------------|
@@ -99,7 +99,7 @@ Work enters as a data product request, a Stat-driven KPI need, an open data publ
 | Data governance memo       | Agencies; Council             | Definition conflict, sharing question, or quality dispute | Memo within 10 business days; Council referral if needed.                           |
 | AI/data readiness review   | Agencies; CA                  | Proposed AI use case or model                             | Evaluation memo within 15 business days; human oversight plan included.             |
 
-**7. Metrics, targets, and learning**
+### 7. Metrics, targets, and learning
 
 - Data reliability — share of priority datasets meeting documented quality and refresh standards.
 
@@ -113,7 +113,7 @@ Work enters as a data product request, a Stat-driven KPI need, an open data publ
 
 - Agency capacity — Data-Driven Officers active in each priority agency; data literacy participation.
 
-**8. Operational handoffs across OPI services**
+### 8. Operational handoffs across OPI services
 
 *Partnership philosophy is in the About doc. These are the operational specifics.*
 
@@ -125,7 +125,7 @@ Work enters as a data product request, a Stat-driven KPI need, an open data publ
 
 - To AdminOps — publishing cadence coordination for public-facing data products.
 
-**Appendix · Standard artifact suite**
+#### Appendix · Standard artifact suite
 
 - Methodology card (definitions, sources, refresh cadence, caveats).
 

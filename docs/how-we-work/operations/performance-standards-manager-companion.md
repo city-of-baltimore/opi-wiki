@@ -4,21 +4,25 @@
 
 Calibration packet, calibration questions, and a bias check. Companion to the Staff v2 guide.
 
-**VERSION** v2.0
+VERSION
+:   v2.0
 
-**EFFECTIVE** July 1, 2026
+EFFECTIVE
+:   July 1, 2026
 
-**AUDIENCE** OPI managers and calibration leads
+AUDIENCE
+:   OPI managers and calibration leads
 
-**OWNER** OPI Director’s Office
+OWNER
+:   OPI Director’s Office
 
-**■ How to use this companion**
+## How to use this companion
 
 This document is a manager-only companion to the OPI Performance Standards — Staff v2 guide. It defines the calibration packet, calibration questions, and a brief bias check. Use it before every quarterly check-in, mid-cycle 360-lite, and end-of-cycle calibration. Bring it to calibration meetings.
 
 > *Calibration is for fairness and shared standards. It is not stack ranking, it does not reward politics, and it does not punish people for constraints outside their control when they escalated appropriately.*
 
-**■ The calibration packet**
+## The calibration packet
 
 Each manager brings a calibration packet for each staff member. The packet is the basis for calibration. Without it, calibration is opinion, not evidence.
 
@@ -30,7 +34,7 @@ Each manager brings a calibration packet for each staff member. The packet is th
 | 4      | Evidence bundle (5+ links)    | Final artifacts and supporting materials. At least one closed-loop example and one QA discipline example.                                          |
 | 5      | 360-lite notes (optional)     | Two to four short quotes from peers or partners, anonymized if needed. Focused on impact and collaboration.                                        |
 
-**■ Calibration questions**
+## Calibration questions
 
 Use these five questions for each staff member during calibration. Anchor every claim to a link in the evidence bundle.
 
@@ -44,7 +48,7 @@ Use these five questions for each staff member during calibration. Anchor every 
 
 - **Durable assets:** Did they build durable assets that others can reuse (templates, SOPs, datasets, components, runbooks)?
 
-**■ Bias check**
+## Bias check
 
 Run this check before finalizing a rating. If you answer yes to any item, return to the evidence bundle and re-anchor your rating.
 
@@ -56,7 +60,7 @@ Run this check before finalizing a rating. If you answer yes to any item, return
 
 - Did I apply different standards based on communication style?
 
-**■ Calibration principles**
+## Calibration principles
 
 - **Not stack ranking:** Calibration is to ensure fairness and shared standards. It is not designed to enforce a distribution.
 
@@ -66,7 +70,7 @@ Run this check before finalizing a rating. If you answer yes to any item, return
 
 - **Consistency across teams:** Two staff members with comparable scope, evidence, and outcomes should land at comparable ratings, regardless of team.
 
-**■ Manager checklist before calibration**
+## Manager checklist before calibration
 
 - Role Charter is finalized and dated.
 
@@ -82,9 +86,9 @@ Run this check before finalizing a rating. If you answer yes to any item, return
 
 - Disagreement pathway has been explained to the staff member if a difficult rating is proposed.
 
-**■ Difficult conversations**
+## Difficult conversations
 
-**When proposing a 2**
+### When proposing a 2
 
 - Bring specific evidence and a draft 30-day reset plan to the conversation.
 
@@ -100,7 +104,7 @@ Run this check before finalizing a rating. If you answer yes to any item, return
 
 - Document everything in writing and follow City HR procedures.
 
-**When a staff member disagrees**
+### When a staff member disagrees
 
 - Re-walk the evidence bundle together. Listen first.
 
@@ -108,6 +112,6 @@ Run this check before finalizing a rating. If you answer yes to any item, return
 
 - Document the rationale for the final rating during calibration.
 
-**■ Owner and cadence**
+## Owner and cadence
 
 Owned by the OPI Director’s Office. Reviewed annually alongside the Staff v2 guide. Updates that change rating definitions, weights, or process are versioned and announced before the next cycle begins.

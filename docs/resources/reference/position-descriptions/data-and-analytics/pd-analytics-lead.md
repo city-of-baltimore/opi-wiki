@@ -2,7 +2,7 @@
 
 {{ page_header(summary="Position description for the Analytics Lead.") }}
 
-**■ At a Glance**
+## At a Glance
 
 |                          |                                                                                                   |
 |--------------------------|---------------------------------------------------------------------------------------------------|
@@ -13,15 +13,15 @@
 | **Supervision given**    | Senior individual contributor; provides analytical leadership across the Data and Analytics team. |
 | **Supervision received** | Reports to the Deputy Chief Data Officer.                                                         |
 
-**■ Position Summary**
+## Position Summary
 
 The Analytics Lead is OPI’s principal data practitioner: navigating complex city datasets, surfacing actionable insights, and partnering with operational teams to solve real problems through data. The role combines hands-on data investigation, rapid exploration, and strong stakeholder collaboration to drive Baltimore’s data-informed decision-making. A successful Analytics Lead is equally comfortable sitting with agency staff to understand operations as they are diving into the underlying data.
 
 Reporting to the Deputy Chief Data Officer, the Analytics Lead works closely with OPI’s data engineers, CitiStat analysts, and Innovation Lab product staff, as well as with decision-makers and data practitioners across agencies. The position leads efforts to understand patterns in city data, connect findings to operational realities, and translate complex information into clear guidance for stakeholders. The role also provides analytical support to agencies and their data staff.
 
-**■ Key Responsibilities**
+## Key Responsibilities
 
-**Exploratory Analysis and Insight Generation**
+### Exploratory Analysis and Insight Generation
 
 - Investigate and analyze complex, messy city datasets to extract meaningful patterns, trends, and insights that inform operational decisions.
 
@@ -29,7 +29,7 @@ Reporting to the Deputy Chief Data Officer, the Analytics Lead works closely wit
 
 - Develop deep familiarity with city program operations, service-delivery workflows, and agency priorities to contextualize data findings.
 
-**Stakeholder Partnership and Translation**
+### Stakeholder Partnership and Translation
 
 - Partner closely with city stakeholders to understand their questions, frame analytical problems, and rapidly prototype data-driven solutions.
 
@@ -37,7 +37,7 @@ Reporting to the Deputy Chief Data Officer, the Analytics Lead works closely wit
 
 - Communicate complex data through narrative and visualization; translate findings into operational guidance.
 
-**Tooling, Workflows, and Documentation**
+### Tooling, Workflows, and Documentation
 
 - Build and maintain data workflows, exploratory tools, and reusable analytical assets that enable OPI and partner teams to work more effectively with data.
 
@@ -45,15 +45,15 @@ Reporting to the Deputy Chief Data Officer, the Analytics Lead works closely wit
 
 - Serve as a data subject-matter expert; represent the team in data discussions and contribute to citywide data initiatives.
 
-**Stewardship**
+### Stewardship
 
 - Coordinate analytical priorities with the Senior Performance Analyst (Performance Tracker) and Innovation Lab partners such as the Senior Product Engineer and Civic Designer.
 
 - Perform other related duties as assigned to support OPI’s mission and innovation agenda.
 
-**■ Knowledge, Skills, and Abilities**
+## Knowledge, Skills, and Abilities
 
-**Analysis and tooling**
+### Analysis and tooling
 
 - Advanced proficiency in exploratory data analysis; ability to navigate large, complex, and imperfect datasets to surface meaningful findings.
 
@@ -63,7 +63,7 @@ Reporting to the Deputy Chief Data Officer, the Analytics Lead works closely wit
 
 - Familiarity with data integration, data-quality assessment, and working across disparate or disconnected data sources.
 
-**Communication and partnership**
+### Communication and partnership
 
 - Ability to work closely with non-technical stakeholders to frame questions, communicate findings clearly, and translate data into operational guidance.
 
@@ -71,7 +71,7 @@ Reporting to the Deputy Chief Data Officer, the Analytics Lead works closely wit
 
 - Self-starter with a commitment to continuous learning, stakeholder partnership, and delivering tangible impact through data.
 
-**Operations management**
+### Operations management
 
 - Knowledge of the principles and practices of operations and administration.
 
@@ -79,25 +79,25 @@ Reporting to the Deputy Chief Data Officer, the Analytics Lead works closely wit
 
 - Ability to maintain confidentiality of sensitive information.
 
-**■ Minimum Qualifications**
+## Minimum Qualifications
 
-**Education**
+### Education
 
 - Bachelor’s degree in Data Science, Statistics, Economics, Natural Sciences, or another data-heavy discipline. Candidates with graduate degrees where data investigation and analysis were central are encouraged to apply.
 
-**Experience**
+### Experience
 
 - At least 5 years of applied data science and data analysis, with a proven record investigating complex datasets and delivering actionable insights.
 
-**Equivalency**
+### Equivalency
 
 An equivalent combination of education and experience will be considered.
 
-**■ Working Conditions**
+## Working Conditions
 
 Employees in this class work a conventional work week. Work is performed in an office where work conditions are normal. Work requires minimal physical exertion. Hybrid telework is supported under OPI’s telework policy; staff are expected to be on site at City Hall a minimum of four days per week, with one day per week available as remote.
 
-**■ Supervision**
+## Supervision
 
 **Supervision received.** Reports to the Deputy Chief Data Officer.
 

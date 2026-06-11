@@ -2,7 +2,7 @@
 
 {{ page_header(summary="Position description for the Civic Technology Lead.") }}
 
-**■ At a Glance**
+## At a Glance
 
 |                          |                                                                                                                    |
 |--------------------------|--------------------------------------------------------------------------------------------------------------------|
@@ -13,15 +13,15 @@
 | **Supervision given**    | Senior individual contributor. May provide technical leadership over Product Engineer and Senior Product Engineer. |
 | **Supervision received** | Reports to the Innovation Program Manager.                                                                         |
 
-**■ Position Summary**
+## Position Summary
 
 The Civic Technology Lead is OPI’s principal technical architect and senior hands-on engineer for the Innovation Lab. The role designs, builds, and operates digital systems that advance city operations and service delivery — from internal tools to resident-facing applications — and brings deep expertise in cloud engineering, software development, and data architecture. The Civic Technology Lead works closely with OPI teams and partners with Baltimore City Information Technology (BCIT) to ensure technical alignment across applications and data.
 
 Reporting to the Innovation Program Manager, the Civic Technology Lead is the senior technical resource on the Lab’s product team, responsible for end-to-end design and delivery of modern, scalable solutions. The role leads efforts to automate processes, integrate citywide systems, and apply emerging technologies (such as AI and mobile applications) to drive durable service improvements.
 
-**■ Key Responsibilities**
+## Key Responsibilities
 
-**Technical Architecture and Engineering**
+### Technical Architecture and Engineering
 
 - Design and implement technical architectures that align with OPI strategy and citywide goals.
 
@@ -31,13 +31,13 @@ Reporting to the Innovation Program Manager, the Civic Technology Lead is the se
 
 - Develop and maintain architectural documentation, solution blueprints, and capability roadmaps.
 
-**Emerging Technology and AI**
+### Emerging Technology and AI
 
 - Evaluate and integrate emerging technologies, including cloud services (Azure), data pipelines, and Large Language Models (LLMs), to accelerate civic-tech delivery.
 
 - Design AI proof-of-concepts (POCs) with clear success measures, evaluation plans, and human-in-the-loop safeguards aligned with OPI’s responsible-AI standards.
 
-**Cross-Team and BCIT Collaboration**
+### Cross-Team and BCIT Collaboration
 
 - Partner with BCIT on architecture, security, identity, and change-control reviews; resolve disconnected systems through unified, user-friendly digital experiences.
 
@@ -45,7 +45,7 @@ Reporting to the Innovation Program Manager, the Civic Technology Lead is the se
 
 - Apply Agile methodologies and lead iterative design and delivery processes for technical solutions.
 
-**Engineering Practice and Stewardship**
+### Engineering Practice and Stewardship
 
 - Establish engineering standards for the Lab: code review, testing, observability, accessibility, and security baselines.
 
@@ -53,9 +53,9 @@ Reporting to the Innovation Program Manager, the Civic Technology Lead is the se
 
 - Represent OPI as a technical subject-matter expert in citywide digital initiatives.
 
-**■ Knowledge, Skills, and Abilities**
+## Knowledge, Skills, and Abilities
 
-**Technical expertise**
+### Technical expertise
 
 - Advanced expertise in cloud engineering, data engineering, and platform architecture (Azure and PostgreSQL/PostGIS preferred).
 
@@ -65,7 +65,7 @@ Reporting to the Innovation Program Manager, the Civic Technology Lead is the se
 
 - Working knowledge of CI/CD, observability, security baselines, and accessibility (WCAG) requirements.
 
-**Delivery and stewardship**
+### Delivery and stewardship
 
 - Track record shipping civic-tech, public-sector, or comparable mission-driven products.
 
@@ -73,7 +73,7 @@ Reporting to the Innovation Program Manager, the Civic Technology Lead is the se
 
 - Strong written and spoken communication for technical and non-technical audiences.
 
-**Operations management**
+### Operations management
 
 - Knowledge of the principles, practices, and procedures of business and public administration.
 
@@ -81,25 +81,25 @@ Reporting to the Innovation Program Manager, the Civic Technology Lead is the se
 
 - Ability to exercise judgment and discretion in applying laws, rules, regulations, and departmental policies.
 
-**■ Minimum Qualifications**
+## Minimum Qualifications
 
-**Education**
+### Education
 
 - Bachelor’s degree in Computer Science, Software Engineering, Data Science, or a related field; or equivalent experience.
 
-**Experience**
+### Experience
 
 - At least 7 years of progressively responsible engineering experience, including senior or staff-level work, with a track record delivering production systems in cloud environments.
 
-**Equivalency**
+### Equivalency
 
 An equivalent combination of education and experience will be considered.
 
-**■ Working Conditions**
+## Working Conditions
 
 Employees in this class work a conventional work week. This position may be required to work evening and weekend hours and 24-hour callback in an emergency. Work is performed in an office where work conditions are normal. Work requires minimal physical exertion. Hybrid telework is supported under OPI’s telework policy; staff are expected to be on site at City Hall a minimum of four days per week, with one day per week available as remote.
 
-**■ Supervision**
+## Supervision
 
 **Supervision received.** Reports to the Innovation Program Manager.
 

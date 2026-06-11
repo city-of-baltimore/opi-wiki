@@ -4,19 +4,23 @@
 
 Site map, navigation, URL structure, content priority, and a CMS-ready page inventory.
 
-**VERSION** v1.0
+VERSION
+:   v1.0
 
-**UPDATED** April 2026
+UPDATED
+:   April 2026
 
-**AUDIENCE** Web publisher, OPI Director’s Office, Communications
+AUDIENCE
+:   Web publisher, OPI Director’s Office, Communications
 
-**OWNER** OPI Director’s Office
+OWNER
+:   OPI Director’s Office
 
-**■ Purpose**
+## Purpose
 
 This document defines the information architecture for opi.baltimorecity.gov before any CMS build begins. It pairs with the OPI Website Copy Master, which is the canonical source for page content. Together, the two documents allow the City’s web publisher to plan the site, scope the build, and lift copy directly into the CMS.
 
-**■ Design principles**
+## Design principles
 
 - Two audiences, every page: an agency partner and a resident.
 
@@ -30,7 +34,7 @@ This document defines the information architecture for opi.baltimorecity.gov bef
 
 - Predictable structure. The four sections are Teams, Programs, Services, and About.
 
-**■ Top-level navigation**
+## Top-level navigation
 
 *Five primary nav items, in order. A subdued utility bar holds About and Contact.*
 
@@ -44,9 +48,9 @@ This document defines the information architecture for opi.baltimorecity.gov bef
 
 *Utility bar: About (/about), Contact (/contact), Search.*
 
-**■ Site map**
+## Site map
 
-**Home — /**
+### Home — /
 
 - Hero with primary calls to action.
 
@@ -60,7 +64,7 @@ This document defines the information architecture for opi.baltimorecity.gov bef
 
 - Newsletter or updates feed signup.
 
-**About OPI — /about**
+### About OPI — /about
 
 - Mission and North Star.
 
@@ -74,7 +78,7 @@ This document defines the information architecture for opi.baltimorecity.gov bef
 
 - Contact and ways to engage.
 
-**Teams — /teams**
+### Teams — /teams
 
 *Four tiles linking to portfolio detail pages. Each detail page follows the same structure.*
 
@@ -86,7 +90,7 @@ This document defines the information architecture for opi.baltimorecity.gov bef
 
 - Innovation Lab — /teams/innovation-lab
 
-**Programs — /programs**
+### Programs — /programs
 
 *Four primary programs. Each has a detail page.*
 
@@ -98,7 +102,7 @@ This document defines the information architecture for opi.baltimorecity.gov bef
 
 - Data Fellows — /programs/data-fellows
 
-**Services — /services**
+### Services — /services
 
 *Five service pages. Each follows the same template.*
 
@@ -112,7 +116,7 @@ This document defines the information architecture for opi.baltimorecity.gov bef
 
 - AdminOps — /services/administration-operations
 
-**Reports — /reports**
+### Reports — /reports
 
 - CitiStat impact briefs — /reports/citistat
 
@@ -120,7 +124,7 @@ This document defines the information architecture for opi.baltimorecity.gov bef
 
 - Public summaries — /reports/summaries
 
-**How to work with OPI — /work-with-us**
+### How to work with OPI — /work-with-us
 
 - Intake form (single front door).
 
@@ -128,7 +132,7 @@ This document defines the information architecture for opi.baltimorecity.gov bef
 
 - What to expect at each work size: quick request, project, major engagement.
 
-**Contact — /contact**
+### Contact — /contact
 
 - General contact.
 
@@ -138,7 +142,7 @@ This document defines the information architecture for opi.baltimorecity.gov bef
 
 - Open Baltimore feedback.
 
-**Utility pages**
+### Utility pages
 
 - Accessibility — /accessibility
 
@@ -150,7 +154,7 @@ This document defines the information architecture for opi.baltimorecity.gov bef
 
 - Glossary — /glossary
 
-**■ Page template inventory**
+## Page template inventory
 
 | **Template**        | **Used for**                                     | **Required components**                                                                                                                          |
 |---------------------|--------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -163,7 +167,7 @@ This document defines the information architecture for opi.baltimorecity.gov bef
 | Engagement / intake | Work with OPI                                    | Audience pathways, intake form, definition of done at each work size.                                                                            |
 | Static / utility    | About, Contact, Glossary, Accessibility, Privacy | Plain text, structured headings, contact details, accessible link patterns.                                                                      |
 
-**■ URL and slug standards**
+## URL and slug standards
 
 - Lower-case slugs separated by hyphens. No underscores.
 
@@ -175,7 +179,7 @@ This document defines the information architecture for opi.baltimorecity.gov bef
 
 - External links open in the same tab unless they leave the City’s domain.
 
-**■ Content priority by page**
+## Content priority by page
 
 *The first 200 words of each page do the heaviest work. Use this priority order.*
 
@@ -188,7 +192,7 @@ This document defines the information architecture for opi.baltimorecity.gov bef
 | 5\. Proof or transparency         | A recent example, a metric, an annual report, or an authority reference. |
 | 6\. Page-level engagement element | Featured story, audience pathways, or updates feed.                      |
 
-**■ Accessibility and language access**
+## Accessibility and language access
 
 - All pages meet WCAG 2.1 AA. Color contrast at or above 4.5 to 1 for body text and 3 to 1 for large text.
 
@@ -202,7 +206,7 @@ This document defines the information architecture for opi.baltimorecity.gov bef
 
 - Translation pathway is documented on each page (Spanish at minimum, others as supported).
 
-**■ Search and discoverability**
+## Search and discoverability
 
 - Site search is enabled and tuned to favor service pages and program detail pages over reports.
 
@@ -212,7 +216,7 @@ This document defines the information architecture for opi.baltimorecity.gov bef
 
 - Reports include structured metadata: type, date, authoring team, agencies covered.
 
-**■ Performance, security, and analytics**
+## Performance, security, and analytics
 
 - Site loads quickly on low-bandwidth connections. Images compressed. No unnecessary scripts.
 
@@ -222,7 +226,7 @@ This document defines the information architecture for opi.baltimorecity.gov bef
 
 - Quarterly review of top pages, drop-offs, and search queries to refine content.
 
-**■ CMS implementation notes**
+## CMS implementation notes
 
 - The site can be implemented on the City’s standard CMS or as a static site, provided accessibility and search standards are met.
 
@@ -232,7 +236,7 @@ This document defines the information architecture for opi.baltimorecity.gov bef
 
 - Versioning: track when each page was last reviewed and by whom.
 
-**■ Open questions to resolve before launch**
+## Open questions to resolve before launch
 
 - Which CMS will host the site? Is OPI building on a Baltimore City template or a standalone site?
 
@@ -244,6 +248,6 @@ This document defines the information architecture for opi.baltimorecity.gov bef
 
 - What is the launch date and the rollout sequence (soft launch with a small audience, then public)?
 
-**■ Owner and cadence**
+## Owner and cadence
 
 Owned by the OPI Director’s Office. Reviewed quarterly. Major IA changes go through Communications and the web publisher before publishing.

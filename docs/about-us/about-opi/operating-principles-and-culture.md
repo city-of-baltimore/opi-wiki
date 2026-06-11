@@ -6,7 +6,7 @@
 
 Culture shows up in the handoffs. Moving fast with intention means choosing the right routine, naming the owner, documenting the decision, and planning sustainment before launch. Use the operating principles alongside How Work Moves Through OPI when deciding whether work belongs in CitiStat, Data and Analytics, the Innovation Lab, Cross-Agency Delivery, or AdminOps.
 
-**NORTH STAR**
+## NORTH STAR
 
 **The operating culture we are choosing on purpose**
 
@@ -16,59 +16,59 @@ These principles emerged from team listening sessions, strategy retros, and home
 
 > *Set the temperature. The operating norms we model become the office culture.*
 
-**OPERATING PRINCIPLES**
+## OPERATING PRINCIPLES
 
 **Ten statements we repeat until they become reflex**
 
-**1. Move fast with intention**
+### 1. Move fast with intention
 
 Speed is a discipline, not an excuse to skip rigor. We move fast because each cycle of learning is more valuable than the next slide of polish — not because we want to be busy.
 
-**2. Bring your full human self**
+### 2. Bring your full human self
 
 We do not perform professionalism. We bring lived experience, judgment, doubt, and care into the work. The team is stronger when people feel safe naming what they actually see.
 
-**3. Follow through and finish strong**
+### 3. Follow through and finish strong
 
 Starts are easy. Finishes earn trust. Every commitment has an owner, a date, evidence of done, and an escalation path — internally and with our partners.
 
-**4. Ask better questions**
+### 4. Ask better questions
 
 The quality of our work depends on the quality of the questions we ask. We invest in framing problems carefully because a sharper question saves a cycle of analysis.
 
-**5. Bring meaning**
+### 5. Bring meaning
 
 Why does this matter? Who benefits? What changes if we succeed? We tie work to outcomes, not output. “We shipped something” is not a victory unless someone’s life or work got measurably better.
 
-**6. Celebrate collaboration over heroics**
+### 6. Celebrate collaboration over heroics
 
 Public-sector heroics are usually a sign of a system failure. We name contributors, share credit, and design routines that do not depend on one person being available at 11pm.
 
-**7. Document or it didn’t happen**
+### 7. Document or it didn’t happen
 
 Documentation is the bridge between past selves, present selves, and future selves. Our work has to be legible to the people who inherit it. SOPs, decision logs, transition packets, and methodology cards are not chores — they are the deliverable.
 
-**8. Set the temperature**
+### 8. Set the temperature
 
 How we run a meeting, write a memo, give feedback, give credit, and respond to a hard message becomes the office culture. We set the temperature on purpose.
 
-**9. Don’t fight the problem on its turf**
+### 9. Don’t fight the problem on its turf
 
 When a problem keeps winning in its own arena — a recurring agency conflict, a stalled procurement, a permanent escalation — we change the arena. We move the conversation to a place where we can win, or we hand the work to a function that can.
 
-**10. Data \> Information \> Knowledge**
+### 10. Data \> Information \> Knowledge
 
 Raw data is not a deliverable. Information is data with structure. Knowledge is information that changes a decision. Our craft is moving up that chain on purpose, every cycle.
 
 > *Say the true thing kindly. Candor is a value. So is care. They are not in tension.*
 
-**RECOGNITION CULTURE**
+## RECOGNITION CULTURE
 
 **How we honor the work and the people who do it**
 
 Recognition is operational. It is how we retain people who could be paid more in the private sector, and how we communicate to the rest of the city what good work looks like.
 
-**Routines we keep**
+### Routines we keep
 
 - team recognition rituals — small, memorable awards given by peers, in front of peers, at the moment the work happens.
 
@@ -80,7 +80,7 @@ Recognition is operational. It is how we retain people who could be paid more in
 
 - Annual recognition tied to outcomes, not seniority — the team members who shipped, learned, and finished are the ones we celebrate.
 
-**Why this matters**
+### Why this matters
 
 - Public-sector compensation cannot match private sector. Recognition, agency, growth, and meaning are how we compete for talent.
 
@@ -88,7 +88,7 @@ Recognition is operational. It is how we retain people who could be paid more in
 
 - Recognition is teaching — by celebrating specific behaviors, we make those behaviors easier to repeat.
 
-**RESIDENT-FOCUSED OPERATING NORMS**
+## RESIDENT-FOCUSED OPERATING NORMS
 
 **How we keep residents at the center of the work**
 
@@ -108,13 +108,13 @@ Recognition is operational. It is how we retain people who could be paid more in
 
 > *More in-city partnerships, boots on the ground, and relational government. Closes the perception gap. Builds legitimacy. Ensures sustainability.*
 
-**CIVIC DATA COMMUNITY**
+## CIVIC DATA COMMUNITY
 
-**How we extend our team without expanding payroll**
+### How we extend our team without expanding payroll
 
 We cannot hire fast enough to do everything we want. The Citywide Data Network is how we extend our capacity through partnership.
 
-**Programs we run or sponsor**
+### Programs we run or sponsor
 
 - Show-and-tells — monthly forums where agencies, civic technologists, and residents demo what they have built with city data.
 
@@ -128,7 +128,7 @@ We cannot hire fast enough to do everything we want. The Citywide Data Network i
 
 - Peer-government partnerships — visiting other cities, hosting visitors, and partnering on shared data, product, and service-delivery work.
 
-**OWNERSHIP MODEL**
+## OWNERSHIP MODEL
 
 **Who owns what across the city operating stack**
 
@@ -143,31 +143,31 @@ We cannot hire fast enough to do everything we want. The Citywide Data Network i
 
 Where any layer is unclear in a specific engagement, the engagement charter resolves it before delivery starts. We do not let ownership be implicit.
 
-**OPERATING CHEAT CODES**
+## OPERATING CHEAT CODES
 
 **Frameworks we use across the team**
 
-**SBAR — Situation, Background, Assessment, Recommendation**
+### SBAR — Situation, Background, Assessment, Recommendation
 
 Used for executive briefings, escalations, and Stat memos. Forces us to land the recommendation before we narrate the history.
 
-**STAR — Situation, Task, Action, Result**
+### STAR — Situation, Task, Action, Result
 
 Used for performance documentation, retros, and case studies. Forces us to name what changed because we acted, not just what we did.
 
-**Repeat-back framing**
+### Repeat-back framing
 
 In every alignment conversation, we repeat back what we heard before we agree. It catches misalignment in the room instead of in the deliverable.
 
-**SOPs and precedent**
+### SOPs and precedent
 
 We find an example before we invent. Other cities, other agencies, other teams within OPI. Reinventing the wheel is a tell that we did not do the research.
 
-**Atypical observers**
+### Atypical observers
 
 We invite people outside the obvious stakeholder list — a city photographer, a frontline staff member, a teenager, a retiree — because the strategic insight often lives in the seams the experts cannot see.
 
-**PAST SELVES, FUTURE SELVES**
+## PAST SELVES, FUTURE SELVES
 
 **Why we document and reflect**
 
@@ -185,7 +185,7 @@ Two of the most important strategic partners every team member has are their pas
 
 > *A client can fail and you have done your job. A partner is someone whose failure is your failure too. OPI’s real partner is the Mayor’s Office, because our success and failure are intertwined.*
 
-**HOW WE PLAN TEAM TIME**
+## HOW WE PLAN TEAM TIME
 
 **The 70 / 20 / 10 model**
 
@@ -201,7 +201,7 @@ Practical implications: we draft an annual capacity plan per service. We track a
 
 > *Use strategy to protect against burnout and ensure responsiveness without chaos. Build repeatable models so we can scale even when teams are stretched.*
 
-**LIVING DOCUMENT**
+## LIVING DOCUMENT
 
 **How we keep this honest**
 

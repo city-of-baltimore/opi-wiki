@@ -4,13 +4,17 @@
 
 How OPI runs cross-functional, time-boxed teams that prototype, prove, and scale solutions to persistent service problems.
 
-**VERSION** v1.2
+VERSION
+:   v1.2
 
-**UPDATED** April 2026
+UPDATED
+:   April 2026
 
-**OWNER** Innovation Lab — with Performance at sustain, and Cross-Agency Delivery when the work needs cross-agency coordination authority
+OWNER
+:   Innovation Lab — with Performance at sustain, and Cross-Agency Delivery when the work needs cross-agency coordination authority
 
-**AUDIENCE** OPI staff and agency partners on a Tiger Team; Deputy Mayors and the City Administrator’s Office.
+AUDIENCE
+:   OPI staff and agency partners on a Tiger Team; Deputy Mayors and the City Administrator’s Office.
 
 ## Canonical Tiger Team definition
 
@@ -32,7 +36,7 @@ Use a Tiger Team when the problem has all of these conditions:
 
 Do not use a Tiger Team for routine reporting, a one-time executive decision, an unfunded idea without an owner, a dashboard request without a service-change path, or a problem that only needs a normal CitiStat follow-up.
 
-**■ Why Tiger Teams now**
+## Why Tiger Teams now
 
 Baltimore City has lived with persistent gaps in basic service delivery — in parking enforcement, traffic calming, sweeping, waste, code enforcement, forestry. These gaps are not surprises; they are systemic. They sit at the intersection of process, staffing, technology, equipment, and contracts, and no one part of the system can fix them alone.
 
@@ -40,7 +44,7 @@ A Tiger Team is a focused delivery sprint, time-boxed to the problem — typical
 
 > *Design prompt: what would have to be true for this service to feel reliable to residents?*
 
-**■ How Tiger Teams are chartered**
+## How Tiger Teams are chartered
 
 The Innovation Lab provides the team and the method for every Tiger Team. The Lab’s question is *how do we solve this?* — the craft, the discovery, the design, the build.
 
@@ -63,11 +67,11 @@ In both cases, the deliverables, cadences, and standard artifacts that follow ap
 
 *Source: City Services Tiger Teams briefing, OPI 2026.*
 
-**■ Plain-language test**
+## Plain-language test
 
 A Tiger Team is the right routine when a service problem needs a time-boxed team to diagnose, prototype, and test a fix in real conditions. It is not the right routine for routine reporting, a one-time executive decision, or a dashboard request without a service-change owner.
 
-**■ What makes a Tiger Team different**
+## What makes a Tiger Team different
 
 ## When to use a Tiger Team
 
@@ -94,7 +98,7 @@ If the team needs multiple agencies to change workflows, decision rights, or sus
 
 - Ends with a sustain plan: ownership, operating procedures, and the data products that keep it honest.
 
-**Standard outputs**
+### Standard outputs
 
 - **1:** Process maps for each service — current state, target state, and the diff.
 
@@ -106,11 +110,11 @@ If the team needs multiple agencies to change workflows, decision rights, or sus
 
 - **5:** Data and technology assessment — systems of record, gaps, and the data products needed to operate.
 
-**■ The method — Public Innovation Toolkit**
+## The method — Public Innovation Toolkit
 
 Tiger Teams use the Public Innovation Toolkit, a four-phase method designed for public-sector delivery. The phases are sequential but the work iterates: diagnosis informs design, prototypes inform diagnosis, and the sustain plan starts taking shape from week one.
 
-**Phase 1 — AIM: Set the mission**
+### Phase 1 — AIM: Set the mission
 
 **Purpose.** Establish an Ambitious, Impactful Mission. Get the team aligned on what would have to be true for the service to feel reliable to residents.
 
@@ -120,7 +124,7 @@ Tiger Teams use the Public Innovation Toolkit, a four-phase method designed for 
 
 **Duration.** Approximately weeks 1–4.
 
-**Phase 2 — DESIGN: Reimagine solutions**
+### Phase 2 — DESIGN: Reimagine solutions
 
 **Purpose.** Use design research, data analysis, and creative ideation to understand the problem and co-create candidate solutions.
 
@@ -130,7 +134,7 @@ Tiger Teams use the Public Innovation Toolkit, a four-phase method designed for 
 
 **Duration.** Approximately weeks 5–12.
 
-**Phase 3 — ACTIVATE: Deliver initiatives**
+### Phase 3 — ACTIVATE: Deliver initiatives
 
 **Purpose.** Prototype, pilot, and scale initiatives in real conditions — not in slides.
 
@@ -140,7 +144,7 @@ Tiger Teams use the Public Innovation Toolkit, a four-phase method designed for 
 
 **Duration.** Approximately weeks 13–22.
 
-**Phase 4 — SUSTAIN: Ingrain the work**
+### Phase 4 — SUSTAIN: Ingrain the work
 
 **Purpose.** Hand off the gain so it survives the team. The agency that owns the service keeps the gain.
 
@@ -150,7 +154,7 @@ Tiger Teams use the Public Innovation Toolkit, a four-phase method designed for 
 
 **Duration.** Approximately weeks 23–26.
 
-**■ Roles on a Tiger Team**
+## Roles on a Tiger Team
 
 | **Role**            | **Owned by**                   | **What they do**                                                               |
 |---------------------|--------------------------------|--------------------------------------------------------------------------------|
@@ -163,9 +167,9 @@ Tiger Teams use the Public Innovation Toolkit, a four-phase method designed for 
 | Performance liaison | OPI · CitiStat Program Manager | Metric set and CitiStat handoff at sustain.                                    |
 | Frontline reviewers | Agency frontline staff         | Weekly review of prototypes; veto on operational unworkability.                |
 
-**■ Cadence and routines**
+## Cadence and routines
 
-**Within the team**
+### Within the team
 
 - Weekly stand-up: progress, decisions needed, risks.
 
@@ -173,7 +177,7 @@ Tiger Teams use the Public Innovation Toolkit, a four-phase method designed for 
 
 - Monthly resident or frontline check-in: what is the work doing in the world.
 
-**With sponsors**
+### With sponsors
 
 - Kickoff with the Deputy Mayor and agency director: charter, mission, plan-on-a-page.
 
@@ -181,13 +185,13 @@ Tiger Teams use the Public Innovation Toolkit, a four-phase method designed for 
 
 - Closure (week 26): sustain plan signed; CitiStat handoff scheduled; closure memo published.
 
-**With the city**
+### With the city
 
 - Monthly delivery brief shared with the City Administrator and OPI leadership.
 
 - At sustain, a closure brief shared internally and — where appropriate — publicly.
 
-**■ Standard artifacts**
+## Standard artifacts
 
 - Charter — mission, problem statement, scope, sponsors, team, decision rights.
 
@@ -203,7 +207,7 @@ Tiger Teams use the Public Innovation Toolkit, a four-phase method designed for 
 
 - Closure memo — what changed in the world, what is left to do, what we learned.
 
-**■ What makes a Tiger Team succeed**
+## What makes a Tiger Team succeed
 
 **Real authority.** A named Authorizer at the right level — the agency director when the authority sits inside one agency, or a Deputy Mayor or the City Administrator when the work needs Cross-Agency Delivery’s coordination overlay — who shows up, decides, and closes the work.
 
@@ -215,7 +219,7 @@ Tiger Teams use the Public Innovation Toolkit, a four-phase method designed for 
 
 **Sustain from week one.** The agency that will own the service is in the room from the start. The handoff is designed, not negotiated at the end.
 
-**Common failure modes**
+### Common failure modes
 
 - No real sponsor authority. Decisions get bounced; the team stalls.
 
@@ -227,7 +231,7 @@ Tiger Teams use the Public Innovation Toolkit, a four-phase method designed for 
 
 - Wrong-sized data work. The team spends three months on a dashboard that no one will operate.
 
-**■ How Tiger Teams fit with the rest of OPI**
+## How Tiger Teams fit with the rest of OPI
 
 **Innovation Lab.** The capability — owns the Tiger Team method, the lead, and most of the team. The Lab’s question is *how do we solve this?*
 
@@ -239,7 +243,7 @@ Tiger Teams use the Public Innovation Toolkit, a four-phase method designed for 
 
 **AdminOps.** Charters the team in intake, supports comms and partnerships, and books the closure ceremony.
 
-**■ Where to learn more**
+## Where to learn more
 
 - Innovation Lab Public Brief — the public-facing explainer of how the Lab works.
 

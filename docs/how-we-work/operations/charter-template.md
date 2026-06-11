@@ -4,19 +4,22 @@
 
 A short, decision-grade artifact that confirms ownership, scope, and the bar for done. No charter, no work.
 
-**AUDIENCE** OPI service leads, owners, and sponsors
+AUDIENCE
+:   OPI service leads, owners, and sponsors
 
-**OWNER** Director’s Office
+OWNER
+:   Director’s Office
 
-**VERSION** v1.0 · February 2026
+VERSION
+:   v1.0 · February 2026
 
-**■ How to use this template**
+## How to use this template
 
 Every accepted OPI project begins with a charter. The charter is the project’s contract: who owns it, what “done” looks like, who decides, and how progress will be visible. Keep it short. A good charter fits on two pages.
 
 > *A charter is not a plan. It is the agreement that makes a plan possible.*
 
-**When to use**
+### When to use
 
 - Anything accepted through the intake process. New work begins with a charter.
 
@@ -24,7 +27,7 @@ Every accepted OPI project begins with a charter. The charter is the project’s
 
 - Stat commitments that translate into projects. Use the charter to make follow-through visible.
 
-**Quality bar**
+### Quality bar
 
 - Plain language. A new hire should understand the charter without insider knowledge.
 
@@ -34,11 +37,11 @@ Every accepted OPI project begins with a charter. The charter is the project’s
 
 - A near-term next checkpoint date and a current RAG.
 
-**■ Charter — fillable template**
+## Charter — fillable template
 
 *Fill in the fields below. Required fields are marked with an asterisk (\*).*
 
-**1. Identity**
+### 1. Identity
 
 |                       |                                                                                                                   |
 |-----------------------|-------------------------------------------------------------------------------------------------------------------|
@@ -50,7 +53,7 @@ Every accepted OPI project begins with a charter. The charter is the project’s
 | **Service area**      |                                                                                                                   |
 | **Date drafted**      |                                                                                                                   |
 
-**2. People (required)**
+### 2. People (required)
 
 |                       |                                                                                                           |
 |-----------------------|-----------------------------------------------------------------------------------------------------------|
@@ -62,41 +65,41 @@ Every accepted OPI project begins with a charter. The charter is the project’s
 | **Design Lead**       | Required for service design or resident-facing change.                                                    |
 | **Communications**    | Required when public-facing artifacts are in scope.                                                       |
 
-**3. Problem and outcome**
+### 3. Problem and outcome
 
-**Problem statement \***
+#### Problem statement
 
 1–3 sentences. What is failing and who feels it. Avoid diagnosis or solutioning.
 
 > *Example: “Residents who report tree damage after storms wait an average of 19 days for status. Forestry case loads spike by 3x and DPW receives duplicate complaints.”*
 
-**Outcome statement \***
+#### Outcome statement
 
 What will be measurably better. Start with “Reduce,” “Increase,” “Shorten,” or “Enable.”
 
 > *Example: “Reduce average time-to-status for storm-related forestry cases from 19 days to under 5 days within 90 days of pilot launch.”*
 
-**Primary KPI(s) \***
+#### Primary KPI(s)
 
 - KPI name + definition + baseline + target + timeframe.
 
 - Link to the KPI dictionary or dashboard. If undefined, that is a red flag.
 
-**4. Scope**
+### 4. Scope
 
-**In scope**
+#### In scope
 
 - Specific deliverables, audiences, geographies, or data sets.
 
-**Out of scope**
+#### Out of scope
 
 - Adjacent work that will not be addressed in this project.
 
-**Assumptions**
+#### Assumptions
 
 - What we are taking for granted. Make these explicit.
 
-**5. Plan**
+### 5. Plan
 
 |                        |                                                                                    |
 |------------------------|------------------------------------------------------------------------------------|
@@ -107,7 +110,7 @@ What will be measurably better. Start with “Reduce,” “Increase,” “Shor
 | **Target end date**    |                                                                                    |
 | **Next checkpoint \*** | Date the owner will next update status or bring the project to review.             |
 
-**Milestones**
+#### Milestones
 
 | **Milestone** | **Date** | **Definition of done** |
 |---------------|----------|------------------------|
@@ -115,25 +118,25 @@ What will be measurably better. Start with “Reduce,” “Increase,” “Shor
 |               |          |                        |
 |               |          |                        |
 
-**6. Dependencies and risks**
+### 6. Dependencies and risks
 
-**Known dependencies**
+#### Known dependencies
 
 - Policy, procurement, BCIT, data access, partner readiness. List owners next to dependencies.
 
-**Risks and blockers**
+#### Risks and blockers
 
 - What could stop this work. Required when RAG is Amber or Red.
 
-**Sensitivity**
+#### Sensitivity
 
 - Public / Internal / Restricted (PII) / Confidential. Required for data-related projects.
 
-**Production readiness**
+#### Production readiness
 
 - Prototype / Pilot / Production / Deprecated. Required for tools and data products.
 
-**7. Definition of done**
+### 7. Definition of done
 
 Document what “done” requires before this project closes. Include all of the following that apply:
 
@@ -147,11 +150,11 @@ Document what “done” requires before this project closes. Include all of the
 
 - Public narrative status: Not public / Eligible / Drafting / Published.
 
-**8. Sustain plan**
+### 8. Sustain plan
 
 Who owns the work after the project closes? What routine keeps it alive? Without a sustain plan, gains erode.
 
-**9. Decisions needed at start**
+### 9. Decisions needed at start
 
 - Plain-language decision request. Format: “We need X by date Y.”
 
@@ -159,7 +162,7 @@ Who owns the work after the project closes? What routine keeps it alive? Without
 
 - Date needed.
 
-**10. Approvals**
+### 10. Approvals
 
 |                      |                                                                                     |
 |----------------------|-------------------------------------------------------------------------------------|
@@ -168,7 +171,7 @@ Who owns the work after the project closes? What routine keeps it alive? Without
 | **Authorizer**       | \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_ Date: \_\_\_\_\_\_\_\_\_\_ |
 | **OPI Service Lead** | \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_ Date: \_\_\_\_\_\_\_\_\_\_ |
 
-**■ Maintenance**
+## Maintenance
 
 Update the charter when scope, timeline, or KPIs change materially. Material changes require sponsor and authorizer acknowledgment. The charter and the Project Directory entry are the same record — keep them aligned.
 

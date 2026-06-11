@@ -4,19 +4,22 @@
 
 How OPI works in Microsoft 365 (Outlook, Teams, OneDrive, OneNote, SharePoint, Planner) and Jira. Minimum standards for clear, durable, and accountable work.
 
-**AUDIENCE** All OPI staff
+AUDIENCE
+:   All OPI staff
 
-**OWNER** Director’s Office
+OWNER
+:   Director’s Office
 
-**VERSION** v1.1 · Effective February 2026
+VERSION
+:   v1.1 · Effective February 2026
 
-**■ Why this exists**
+## Why this exists
 
 OPI operates at the intersection of performance, data, design, and delivery. We work fast and we work in public-trust contexts. This playbook sets the minimum standards for how we communicate, document, plan, and deliver so that our work is easy to find, easy to reuse, and trustworthy when it leaves the building.
 
 > *Respond when necessary. Build so we do not have to respond again.*
 
-**OPI in 10 working norms**
+### OPI in 10 working norms
 
 Quick reference. Each item is expanded later in this guide.
 
@@ -40,11 +43,11 @@ Quick reference. Each item is expanded later in this guide.
 
 10. Close the loop. Confirm completion with evidence and next steps.
 
-**■ 1. Tool roles and systems of record**
+## 1. Tool roles and systems of record
 
 Our tools are powerful but only if we use them consistently. The goal is simple: reduce tool sprawl and make it easy to find the truth.
 
-**Three systems of record (non-negotiable)**
+### Three systems of record (non-negotiable)
 
 - **Work tracking:** Planner for most staff; Jira for engineering.
 
@@ -52,7 +55,7 @@ Our tools are powerful but only if we use them consistently. The goal is simple:
 
 - **Decisions:** Meeting notes and a simple decision log stored in the project or team space.
 
-**Tool roles matrix**
+### Tool roles matrix
 
 | **Tool**         | **Use it for**                                                                          | **Avoid using it for**                                                       | **System of record?**      |
 |------------------|-----------------------------------------------------------------------------------------|------------------------------------------------------------------------------|----------------------------|
@@ -66,9 +69,9 @@ Our tools are powerful but only if we use them consistently. The goal is simple:
 
 > *Practical rule: drafts can live in OneDrive; anything you expect others to use or reference must be moved to the appropriate SharePoint space.*
 
-**■ 2. Document hygiene and sharing**
+## 2. Document hygiene and sharing
 
-**Minimum standard**
+### Minimum standard
 
 - Every official doc has a clear title, date, owner, status (Draft / For Review / Final), and a link to where it lives.
 
@@ -76,7 +79,7 @@ Our tools are powerful but only if we use them consistently. The goal is simple:
 
 - Maintain one source of truth. Do not keep parallel copies in Teams chat, email attachments, and OneDrive.
 
-**Naming conventions**
+### Naming conventions
 
 Use names that sort, scan, and survive context loss. Recommended format: YYYY-MM-DD – Topic – Audience or Project – Status.
 
@@ -86,13 +89,13 @@ Use names that sort, scan, and survive context loss. Recommended format: YYYY-MM
 
 - 2026-02 – Snow Ops – Data Pipeline Runbook – Final
 
-**Versioning and “final”**
+### Versioning and “final”
 
 - Prefer SharePoint version history (v1, v2, v3) over “FINAL_FINAL_v7.”
 
 - If a document must be exported (PDF for Council), store the export next to the source doc in SharePoint and link them.
 
-**Sharing and permissions**
+### Sharing and permissions
 
 - Default to People in the organization or named people, not Anyone with the link.
 
@@ -100,15 +103,15 @@ Use names that sort, scan, and survive context loss. Recommended format: YYYY-MM
 
 - For sensitive data: do not share via email attachment. Use approved storage and access controls. Ask your manager or the Deputy Chief Data Officer designee if unsure.
 
-**■ 3. Email standards (Outlook)**
+## 3. Email standards (Outlook)
 
-**When to use email vs. Teams**
+### When to use email vs. Teams
 
 - **Email:** External stakeholders, approvals, formal requests, and information that must be forwarded.
 
 - **Teams:** Internal coordination, quick questions, and team updates. Capture decisions elsewhere.
 
-**Subject line tags**
+### Subject line tags
 
 - **\[ACTION\]:** Needs a response or work.
 
@@ -120,7 +123,7 @@ Use names that sort, scan, and survive context loss. Recommended format: YYYY-MM
 
 - **\[DUE mm/dd\]:** Time bound. Use mm/dd format.
 
-**Email body standard**
+### Email body standard
 
 - Lead with the ask: what you need, by when, and why it matters.
 
@@ -128,15 +131,15 @@ Use names that sort, scan, and survive context loss. Recommended format: YYYY-MM
 
 - End with next steps and owner.
 
-**Email signature standard**
+### Email signature standard
 
 Keep signatures consistent, professional, and accessible. No oversized images.
 
 > *First Last — Title \| Mayor’s Office of Performance and Innovation (OPI), City of Baltimore — m: (###) \###-#### \| e: first.last@baltimorecity.gov*
 
-**■ 4. Teams standards**
+## 4. Teams standards
 
-**Minimum standard**
+### Minimum standard
 
 - Use channels for work that should be visible and searchable. Avoid doing real work exclusively in 1:1 chats.
 
@@ -144,7 +147,7 @@ Keep signatures consistent, professional, and accessible. No oversized images.
 
 - Store shared files in the appropriate SharePoint or Team site, not in ad hoc chat threads.
 
-**Channel hygiene**
+### Channel hygiene
 
 - One topic per channel where possible (for example, \#requests-intake, \#project-snow-ops, \#announcements).
 
@@ -152,15 +155,15 @@ Keep signatures consistent, professional, and accessible. No oversized images.
 
 - Avoid @channel unless urgent and relevant to most members.
 
-**Teams meetings and files**
+### Teams meetings and files
 
 - Meeting chat is not a system of record. Copy key decisions and action items into notes.
 
 - If you share a file in Teams, confirm where it is stored. Teams Files are backed by SharePoint, but duplicates happen. Use a single canonical link.
 
-**■ 5. Meeting management**
+## 5. Meeting management
 
-**Every meeting must produce**
+### Every meeting must produce
 
 - Agenda. Even a short one.
 
@@ -170,7 +173,7 @@ Keep signatures consistent, professional, and accessible. No oversized images.
 
 - Action items. Owner, due date, and where the work is tracked.
 
-**Roles for key meetings**
+### Roles for key meetings
 
 - **Facilitator:** Keeps flow and ensures outcomes.
 
@@ -180,7 +183,7 @@ Keep signatures consistent, professional, and accessible. No oversized images.
 
 - **Driver:** Accountable for follow-through after the meeting.
 
-**Calendar hygiene and OOO**
+### Calendar hygiene and OOO
 
 - Default to 25 or 50-minute meetings to create transition time.
 
@@ -190,11 +193,11 @@ Keep signatures consistent, professional, and accessible. No oversized images.
 
 - Add time off to the shared OPI calendar. Add it. Do not email broad distribution lists.
 
-**■ 6. Project and task management**
+## 6. Project and task management
 
 Work is only manageable if it is visible. We use boards to make work, ownership, and deadlines explicit.
 
-**Minimum standard**
+### Minimum standard
 
 - Every deliverable has an owner, a due date, and a definition of done.
 
@@ -202,7 +205,7 @@ Work is only manageable if it is visible. We use boards to make work, ownership,
 
 - Meeting action items are entered into the board within 24 hours.
 
-**Planner (for most OPI work)**
+### Planner (for most OPI work)
 
 - Use buckets that match your workflow (Backlog, Doing, Blocked, Done) or project phases.
 
@@ -212,7 +215,7 @@ Work is only manageable if it is visible. We use boards to make work, ownership,
 
 - Link the source doc in the task description.
 
-**Jira (engineering)**
+### Jira (engineering)
 
 > *Engineering rule of thumb: no ticket, no work. Tickets include acceptance criteria, risk notes, and links to designs and data definitions. Definition of done includes testing, documentation, and deployment / verification steps.*
 
@@ -224,7 +227,7 @@ Work is only manageable if it is visible. We use boards to make work, ownership,
 
 - Track incidents with a lightweight post-incident note and follow-up tickets.
 
-**Status updates (one format)**
+### Status updates (one format)
 
 Use the same format across teams to reduce cognitive load.
 
@@ -236,11 +239,11 @@ Use the same format across teams to reduce cognitive load.
 
 - **Asks:** What you need from leadership or partners.
 
-**■ 7. Handling ad hoc asks and interrupts**
+## 7. Handling ad hoc asks and interrupts
 
 Ad hoc work is the number-one cause of missed deadlines. We manage it like a queue.
 
-**Minimum standard**
+### Minimum standard
 
 - Every ad hoc ask is logged within 24 hours in Planner or Jira.
 
@@ -250,7 +253,7 @@ Ad hoc work is the number-one cause of missed deadlines. We manage it like a que
 
 - Blockers lasting more than 48 hours are surfaced with a clear ask.
 
-**Recommended intake fields**
+### Recommended intake fields
 
 - Requester and contact.
 
@@ -266,11 +269,11 @@ Ad hoc work is the number-one cause of missed deadlines. We manage it like a que
 
 - OPI owner.
 
-**■ 8. Data and performance product hygiene**
+## 8. Data and performance product hygiene
 
 OPI’s data and performance outputs are products. They must be trustworthy, documented, and maintainable.
 
-**KPI and metric hygiene**
+### KPI and metric hygiene
 
 - Metric definition (plain language and technical definition).
 
@@ -282,7 +285,7 @@ OPI’s data and performance outputs are products. They must be trustworthy, doc
 
 - Confidence level (high / medium / low) and known limitations.
 
-**Data product hygiene**
+### Data product hygiene
 
 - Named product owner and a documented support path.
 
@@ -298,11 +301,11 @@ OPI’s data and performance outputs are products. They must be trustworthy, doc
 
 - Avoid distributing extracts via email. Prefer governed access and links.
 
-**■ 9. Templates**
+## 9. Templates
 
 Copy and paste these templates to reduce friction and keep norms consistent.
 
-**Template A — Meeting agenda and notes**
+### Template A — Meeting agenda and notes
 
 - Title format: YYYY-MM-DD – Meeting Name.
 
@@ -320,7 +323,7 @@ Copy and paste these templates to reduce friction and keep norms consistent.
 
 - Links.
 
-**Template B — Decision log**
+### Template B — Decision log
 
 | **Date** | **Decision** | **Context / options** | **Owner** | **Link** |
 |----------|--------------|-----------------------|-----------|----------|
@@ -328,7 +331,7 @@ Copy and paste these templates to reduce friction and keep norms consistent.
 |          |              |                       |           |          |
 |          |              |                       |           |          |
 
-**Template C — Status update**
+### Template C — Status update
 
 - Subject: OPI – \[Team / Project\] – Weekly Status – YYYY-MM-DD.
 
@@ -342,7 +345,7 @@ Copy and paste these templates to reduce friction and keep norms consistent.
 
 - Links.
 
-**Template D — Ad hoc request**
+### Template D — Ad hoc request
 
 - What you need.
 
@@ -354,7 +357,7 @@ Copy and paste these templates to reduce friction and keep norms consistent.
 
 - Primary contact and approver.
 
-**Template E — Planner task standard**
+### Template E — Planner task standard
 
 - Title: verb + object (for example, Draft Council memo on X).
 
@@ -368,7 +371,7 @@ Copy and paste these templates to reduce friction and keep norms consistent.
 
 - Attachments: links only (SharePoint). Avoid file uploads.
 
-**Template F — Jira story standard**
+### Template F — Jira story standard
 
 - User story or objective.
 
@@ -380,6 +383,6 @@ Copy and paste these templates to reduce friction and keep norms consistent.
 
 - Definition of done: tests, docs, deploy, verification.
 
-**Owner and maintenance**
+### Owner and maintenance
 
 This playbook is a living standard. The Director’s Office owns updates. Propose changes via a tracked request (Planner or Jira) with a brief rationale.

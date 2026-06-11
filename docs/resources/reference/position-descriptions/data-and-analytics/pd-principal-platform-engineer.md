@@ -2,7 +2,7 @@
 
 {{ page_header(summary="Position description for the Principal Platform Engineer.") }}
 
-**■ At a Glance**
+## At a Glance
 
 |                          |                                                                                                                                                       |
 |--------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -13,15 +13,15 @@
 | **Supervision given**    | Senior individual contributor and recognized subject-matter expert. Mentors data engineers and analysts; leads code review for platform-related work. |
 | **Supervision received** | Reports to the Deputy Chief Data Officer.                                                                                                             |
 
-**■ Position Summary**
+## Position Summary
 
 The Principal Platform Engineer is a key contributor to Baltimore’s data strategy, leading the design, development, and optimization of the City’s data-platform infrastructure. The role architects cloud-based solutions that power the citywide data warehouse and related data products and is responsible for developing and maintaining data-ingestion pipelines and ETL processes that are high-quality, performant, and well-documented.
 
 Reporting to the Deputy Chief Data Officer, the role works closely with OPI analysts, product and engineering teams, and IT infrastructure and security teams. The ideal candidate is passionate about improving public services through data-driven insights and solutions, and brings strong engineering talent along with an understanding of data governance, security, and privacy.
 
-**■ Key Responsibilities**
+## Key Responsibilities
 
-**Data Architecture and Engineering**
+### Data Architecture and Engineering
 
 - Lead data-architecture design, ensuring citywide data infrastructure is optimized for performance, scalability, and security.
 
@@ -33,7 +33,7 @@ Reporting to the Deputy Chief Data Officer, the role works closely with OPI anal
 
 - Implement processes for monitoring and maintaining data quality, promoting accuracy, consistency, and timeliness across the City’s data infrastructure.
 
-**Cloud Architecture and CI/CD**
+### Cloud Architecture and CI/CD
 
 - Architect the cloud platform for the citywide data warehouse, data products, and related applications.
 
@@ -41,7 +41,7 @@ Reporting to the Deputy Chief Data Officer, the role works closely with OPI anal
 
 - Conduct code reviews for data engineers and analysts, promoting engineering best practices.
 
-**Technical Operations and Security**
+### Technical Operations and Security
 
 - Establish logging, monitoring, and alerting frameworks for data integrity and platform reliability.
 
@@ -51,9 +51,9 @@ Reporting to the Deputy Chief Data Officer, the role works closely with OPI anal
 
 - Mentor team members; provide actionable feedback and facilitate knowledge sharing.
 
-**■ Knowledge, Skills, and Abilities**
+## Knowledge, Skills, and Abilities
 
-**Technical operations**
+### Technical operations
 
 - Visionary leadership in data governance, AI, analytics, and digital platforms.
 
@@ -67,7 +67,7 @@ Reporting to the Deputy Chief Data Officer, the role works closely with OPI anal
 
 - Commitment to equity, transparency, and resident-centered services.
 
-**Operations management**
+### Operations management
 
 - Knowledge of the principles and practices of operations and administration.
 
@@ -81,25 +81,25 @@ Reporting to the Deputy Chief Data Officer, the role works closely with OPI anal
 
 - Ability to direct the activities of staff or cross-functional teams.
 
-**■ Minimum Qualifications**
+## Minimum Qualifications
 
-**Education**
+### Education
 
 - Bachelor’s degree in Data Science, Computer Science, Engineering, or a related field. Highly experienced specialists will also be considered.
 
-**Experience**
+### Experience
 
 - At least 7 years in ETL design and development; at least 7 years writing complex SQL queries; at least 5 years in data-warehouse architecture and management; at least 5 years of Python development; at least 5 years with data architecture and schema design; at least 5 years with CI/CD processes and Kubernetes; at least 5 years designing and deploying cloud solutions.
 
-**Equivalency**
+### Equivalency
 
 An equivalent combination of education and experience will be considered.
 
-**■ Working Conditions**
+## Working Conditions
 
 Employees in this class work a conventional work week. This position may be required to work evening and weekend hours and 24-hour callback in an emergency. Work is performed in an office where work conditions are normal. Work requires minimal physical exertion. Hybrid telework is supported under OPI’s telework policy; staff are expected to be on site at City Hall a minimum of four days per week, with one day per week available as remote.
 
-**■ Supervision**
+## Supervision
 
 **Supervision received.** Reports to the Deputy Chief Data Officer.
 

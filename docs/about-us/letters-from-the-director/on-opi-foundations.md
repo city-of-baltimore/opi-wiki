@@ -12,7 +12,7 @@ That is why the Mayor’s Office of Performance and Innovation exists. We are th
 
 OPI is small relative to the City we serve. We will never be the agency that fixes a pothole, answers a 311 call, inspects a building, runs a recreation center, or drives a fire truck. The people who do that work are why government works at all. Our job is to help them do it well, and to help the Mayor and City Administrator see the system clearly enough to lead it.
 
-**What we believe**
+## What we believe
 
 Better government is not a slogan. It is a practice. It is a set of habits that compound — routines that make problems visible, decisions documented, follow-through expected, and learning a normal part of the week. Cities that build those habits get better year over year. Cities that do not, drift.
 
@@ -20,19 +20,19 @@ We believe a few things plainly. Government is a public good, not a brand. Trust
 
 Those beliefs shape how we operate. We start with real problems. We talk to the people closest to the service before we write the brief. We build the smallest useful version, test it, and decide honestly whether to scale, redesign, or stop. We document what we did and why, so the next person can build on it. And we measure ourselves by whether residents and staff are actually better off, not by activity.
 
-**What we do**
+## What we do
 
 OPI organizes its work into a connected set of capabilities. Performance management runs the routines that turn data into decisions — CitiStat, agency stat, executive briefings, and the citywide measures that show how Baltimore is doing. Data and analytics builds the trusted datasets, definitions, and tools that make those routines possible. The Innovation Lab partners with agencies to redesign services that are not working and to test practical improvements. Cross-agency delivery helps complex initiatives that touch multiple departments actually get implemented. And our administration and operations team is the spine that makes all of it run — hiring, contracts, finance, communications, and the internal systems that keep us honest.
 
 Each of these capabilities exists because the City needs it. None of them works in isolation. A dashboard without a routine is a screen no one looks at. A redesigned service without sustained ownership reverts within a year. A management meeting without data is opinion. A dataset without governance is a liability. Our advantage is putting these pieces together so that insight, action, and follow-through happen in the same place.
 
-**The standard we hold ourselves to**
+## The standard we hold ourselves to
 
 I want OPI to be the kind of office that City employees are glad to work with. That means showing up prepared. Asking better questions than we are asked. Telling the truth, even when the truth is inconvenient. Respecting the time of agency partners. Following through on what we said we would do. Being clear about what we own and what we do not. And remembering, every day, that we are a small office that exists in service of a much larger City government and the residents it serves.
 
 We are also building the kind of place where talented public servants want to do the best work of their careers. That requires more than a good mission. It requires clear roles, fair expectations, real development, honest feedback, and a culture that rewards rigor and humility instead of polish and self-promotion. We are not perfect at any of this yet. We are working on it openly.
 
-**A discipline, not a program**
+## A discipline, not a program
 
 The deepest version of our job is not to run programs. It is to help the City build a discipline. A discipline of asking better questions about service delivery. A discipline of using evidence to make decisions. A discipline of designing systems around the people they are supposed to serve. A discipline of finishing what we start. A discipline of telling residents the truth about what is working and what is not.
 
@@ -52,7 +52,7 @@ Mayor’s Office of Performance and Innovation
 
 *City of Baltimore · Brandon M. Scott, Mayor*
 
-**READ ALONGSIDE**
+## READ ALONGSIDE
 
 **About OPI: Operating Frame —** *how the office is organized and how we work.*
 

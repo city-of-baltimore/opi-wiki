@@ -8,38 +8,38 @@ Source-system sequencing is the single biggest determinant of whether the engage
 
 ## M1 — Foundation (months 0–6)
 
-**Platform**
+### Platform
 
 - Stand up the governed Azure platform: medallion architecture, ingest framework, monitoring, security review with BCIT.
 - Ingest wave-one priority sources (see [Source-system priorities](#source-system-priorities)).
 - Deploy OpenMetadata; populate with wave-one sources; assign data owners and stewards.
 
-**Products**
+### Products
 
 - Build the city services semantic layer; publish KPI dictionary v1.
 - Launch City Services Intelligence in disciplined pilot with named users.
 - Launch StatGPT pilot with CitiStat City Services and Public Safety leads.
 - Stand up design system v1; adoption playbook for the two flagship products.
 
-**Governance**
+### Governance
 
 - Draft and ratify Data Governance Policy v1 (Sand drafts, Vera owns ratification).
 - Establish AI use case intake, risk tiering, and approval process.
 
 ## M2 — Launch (months 7–12)
 
-**Platform**
+### Platform
 
 - Ingest wave-two priority sources.
 - Stand up the SharePoint Governance Scanner and Project Status Reporting Tool.
 
-**Products**
+### Products
 
 - Expand semantic layer to public safety and neighborhoods.
 - Launch OPI Internal Intelligence in months 7–9.
 - Decide BI/GenBI tool selection.
 
-**Governance**
+### Governance
 
 - Run AI evaluation framework on flagship products; publish monthly quality report.
 - Begin structured capability transfer in earnest — OPI staff take operational ownership of platform and one flagship product.
@@ -47,16 +47,16 @@ Source-system sequencing is the single biggest determinant of whether the engage
 
 ## M3 — City-led Expansion (months 13–18, post-vendor)
 
-**Platform**
+### Platform
 
 - OPI runs the platform, the catalog, the semantic layer, and the flagship products independently.
 
-**Products**
+### Products
 
 - Replicate the City Services Intelligence pattern in a second domain (permitting, housing, or vacants).
 - Stand up GenBI, Neighborhoods Map, and Neighborhoods Explorer with Chat.
 
-**Governance**
+### Governance
 
 - Sand on call for advisory and architecture review only.
 - Publish a public-facing case study and an internal continuation plan for years two and three.

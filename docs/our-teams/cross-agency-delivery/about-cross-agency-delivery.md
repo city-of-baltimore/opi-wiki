@@ -6,7 +6,7 @@
 
 Most of the problems OPI gets called into are bigger than any one agency. Permitting cuts across DHCD, DOT, and Public Works. Vacancies cut across HCD, DPW, and Law. Workforce outcomes cut across MOED, BCPSS, and the Health Department. Cross-Agency Delivery is the OPI service that moves these problems across agency lines without losing momentum and without creating a new agency to do it.
 
-**What we do**
+## What we do
 
 Cross-Agency Delivery is a service overlay, not a team and not a cost center. It is the way OPI runs work that requires multiple agencies to ship together. The overlay owns coordination authority — named Authorizers, Senior Responsible Owners, decision rights across agencies, sustainment commitments from each agency, and a weekly delivery cadence to keep them aligned. Its question is *how do we get multiple agencies to actually ship this together?*
 
@@ -26,7 +26,7 @@ A Tiger Team needs Cross-Agency Delivery when the work cannot be sustained by on
 
 If the authority sits cleanly inside one agency, the Tiger Team can run through Innovation Lab intake under the agency director. If multiple agencies must change how they work together, the Tiger Team should be chartered through Cross-Agency Delivery.
 
-**How we deliver**
+### How we deliver
 
 Every Cross-Agency engagement follows the same three-stage path:
 
@@ -36,7 +36,7 @@ Every Cross-Agency engagement follows the same three-stage path:
 | Run       | Stand up the squad, the routine, and the data. Run a weekly or bi-weekly cycle, time-boxed to the activation pattern (typically three to six months for a Tiger Team).    | OPI delivery lead embedded with the agencies           |
 | Hand off  | Document the routine, train the agency owner, and exit. OPI stays available for follow-up.         | OPI delivery lead, agency owner                        |
 
-**Who we work with**
+### Who we work with
 
 Cross-Agency Delivery typically pairs OPI with one of the following:
 
@@ -46,7 +46,7 @@ Cross-Agency Delivery typically pairs OPI with one of the following:
 
 - Another part of the Mayor’s Office.
 
-**What success looks like**
+### What success looks like
 
 - A signed problem statement and target outcome before work starts.
 
@@ -56,7 +56,7 @@ Cross-Agency Delivery typically pairs OPI with one of the following:
 
 - A measurable change in the indicator the squad set out to move.
 
-**What this service is not**
+### What this service is not
 
 - It is not a long-term seat at the table. OPI is a temporary intervention, not an ongoing operating partner.
 
@@ -64,7 +64,7 @@ Cross-Agency Delivery typically pairs OPI with one of the following:
 
 - It is not a procurement function. Where vendor delivery is needed, OPI partners with the relevant central function or the Innovation Lab.
 
-**Read alongside**
+### Read alongside
 
 - OPI About OPI Operating Frame
 
