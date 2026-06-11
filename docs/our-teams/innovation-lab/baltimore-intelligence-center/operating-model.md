@@ -6,7 +6,7 @@
 
 ## Two homes, one squad
 
-The Baltimore Intelligence Center has two organizational homes that have to work as one. The Innovation Lab is the home for product delivery, design, and applied technology. The Data and Analytics team is the home for the platform, the catalog, the semantic layer, and engineering. Performance and CitiStat is the lead agency-partner anchor for intelligence products in their first year. The BIC squad model resolves the seams.
+The Baltimore Intelligence Center has two organizational homes that have to work as one. The Innovation Lab is the home for product delivery, design, and applied technology. The Data and Analytics team is the home for the platform, the catalog, the semantic layer, and engineering. Performance is the lead agency-partner anchor for intelligence products in their first year. The BIC squad model resolves the seams.
 
 ## How work flows
 

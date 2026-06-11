@@ -127,7 +127,7 @@ AdminOps does not own:
 
 AdminOps is the connective tissue across all services.
 
-It supports Performance and CitiStat with calendar coordination, public summaries, field validation coordination, annual reporting, and operational support for the Stat portfolio.
+It supports Performance with calendar coordination, public summaries, field validation coordination, annual reporting, and operational support for the Stat portfolio.
 
 It supports Data and Analytics with publishing cadence, public-facing data product coordination, partner communications, and narrative support.
 
@@ -141,7 +141,7 @@ Fieldwork has different homes depending on the purpose.
 
 If the purpose is discovery, user research, usability, or service design, the Innovation Lab leads.
 
-If the purpose is verifying whether a Stat commitment was completed or whether a condition changed, Performance and CitiStat leads with AdminOps coordination.
+If the purpose is verifying whether a Stat commitment was completed or whether a condition changed, Performance leads with AdminOps coordination.
 
 If the purpose is confirming implementation conditions for a delivery activation, Cross-Agency Delivery leads.
 

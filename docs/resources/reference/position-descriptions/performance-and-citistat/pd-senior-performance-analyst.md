@@ -10,7 +10,7 @@
 |--------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------|
 | **Working title**        | Senior Performance Analyst                                                                                                                       |
 | **Classification**       | Operations Officer III                                                                                                                           |
-| **Portfolio**            | Performance and CitiStat                                                                                                                         |
+| **Portfolio**            | Performance                                                                                                                         |
 | **Reports to**           | Deputy Chief Performance Officer                                                                                                                 |
 | **Supervision given**    | Individual contributor; no direct reports. Senior peer to the CitiStat Analyst bench; mentors analysts on measurement quality and Tracker usage. |
 | **Supervision received** | Reports to the Deputy Chief Performance Officer.                                                                                                 |

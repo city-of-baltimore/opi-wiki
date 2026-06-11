@@ -33,7 +33,7 @@ The pages are organized so three audiences can read what they need.
 
 ## Squad at a glance
 
-The BIC is a named squad with one backlog and one operating cadence. Operationally it runs out of the Innovation Lab (product delivery and applied technology). Technically its center of gravity is the Data and Analytics team (platform, governance, engineering). Performance and CitiStat is the lead agency-partner anchor for intelligence products in their first year.
+The BIC is a named squad with one backlog and one operating cadence. Operationally it runs out of the Innovation Lab (product delivery and applied technology). Technically its center of gravity is the Data and Analytics team (platform, governance, engineering). Performance is the lead agency-partner anchor for intelligence products in their first year.
 
 | **Role on the BIC**                            | **Name**                 | **Home team**             |
 |------------------------------------------------|--------------------------|---------------------------|

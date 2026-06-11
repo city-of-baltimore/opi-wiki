@@ -3,7 +3,7 @@ defaults:
   status: approved
   last_reviewed: 2026-04-15
   next_review: 2026-07-15
-  change_log: Normalized review metadata for performance and CitiStat pages.
+  change_log: Normalized review metadata for Performance pages.
 
 pages:
   citistat-method-staff-quick-reference.md:

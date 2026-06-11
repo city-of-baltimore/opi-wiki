@@ -313,7 +313,7 @@ A directory list makes tagging practical. It bridges “who owns this?” with �
 | **Field**           | **Type**         | **Required** | **Definition**                                                                               |
 |---------------------|------------------|--------------|----------------------------------------------------------------------------------------------|
 | Person              | Person           | Yes          | Primary identifier.                                                                          |
-| OPI team            | Choice / managed | Yes          | Director’s Office; Performance and CitiStat; Data and Analytics; Innovation Lab; AdminOps.   |
+| OPI team            | Choice / managed | Yes          | Director’s Office; Performance; Data and Analytics; Innovation Lab; AdminOps.   |
 | Role title          | Single line      | Yes          | Formal role (what HR calls it).                                                              |
 | What to contact for | Managed (multi)  | Yes          | Practical routing tags such as “CitiStat memos,” “Data access,” “Open Baltimore publishing.” |
 | Focus areas         | Managed (multi)  | No           | Service domains (311, permitting, sanitation, etc.).                                         |

@@ -62,7 +62,7 @@ The Director’s Office portfolio keeps OPI aligned, coordinated, resourced, and
 
 - Internal and external communications coordination
 
-- CitiStat Inspector and field validation, with formal service relationship to Performance and CitiStat
+- CitiStat Inspector and field validation, with formal service relationship to Performance
 
 **Typical Outputs**
 
@@ -78,11 +78,11 @@ The Director’s Office portfolio keeps OPI aligned, coordinated, resourced, and
 
 **SECTION 2**
 
-**Performance and CitiStat**
+**Performance**
 
 Lead: Danny Heller, Deputy Chief Performance Officer
 
-The Performance and CitiStat portfolio stewards OPI’s performance method and supports the citywide CitiStat program, which is owned overall by the Executive Director. The portfolio ensures performance routines are structured, data-informed, useful, and connected to follow-through.
+The Performance portfolio stewards OPI’s performance method and supports the citywide CitiStat program, which is owned overall by the Executive Director. The portfolio ensures performance routines are structured, data-informed, useful, and connected to follow-through.
 
 **Owns**
 

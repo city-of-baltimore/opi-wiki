@@ -32,7 +32,7 @@ Doing this in 2026 is materially easier than doing it in 2028.
 
 ## Why a named squad
 
-The work cuts across OPI’s Innovation Lab, Data and Analytics team, and Performance and CitiStat team — plus Sand and agency partners. A named squad with a clear roster, a single backlog, and a defined operating cadence is the only way to keep delivery coherent across that many seams. The Baltimore Intelligence Center (BIC) is that squad.
+The work cuts across OPI’s Innovation Lab, Data and Analytics team, and Performance team — plus Sand and agency partners. A named squad with a clear roster, a single backlog, and a defined operating cadence is the only way to keep delivery coherent across that many seams. The Baltimore Intelligence Center (BIC) is that squad.
 
 ## Where the BIC sits
 

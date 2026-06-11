@@ -10,7 +10,7 @@
 |--------------------------|--------------------------------------------------------------------------------------------------------------------------------------------|
 | **Working title**        | CitiStat Program Manager                                                                                                                   |
 | **Classification**       | Operations Manager I                                                                                                                       |
-| **Portfolio**            | Performance and CitiStat                                                                                                                   |
+| **Portfolio**            | Performance                                                                                                                   |
 | **Reports to**           | Deputy Chief Performance Officer                                                                                                           |
 | **Supervision given**    | Individual contributor with respect to direct reports. Provides professional coaching and quality assurance to the CitiStat Analyst bench. |
 | **Supervision received** | Reports to the Deputy Chief Performance Officer.                                                                                           |

@@ -23,7 +23,7 @@
 
 The Executive Director and Chief Data Officer is the Mayor’s principal executive for performance, data, and innovation. The role sets OPI’s strategy, runs the citywide CitiStat program, leads Baltimore’s data and AI agenda, and partners with agencies to translate the Mayor’s priorities into measurable service improvements. The Executive Director represents OPI to the City Administrator, the Mayor, agency directors, the City Council, philanthropic partners, and the public.
 
-The role is responsible for OPI’s four service portfolios — Director’s Office, Performance and CitiStat, Data and Analytics, and the Innovation Lab — and for the disciplined operating rhythm that turns analysis into commitments and commitments into delivered work. The Executive Director also serves as the City’s Chief Data Officer with accountability for data governance, the Open Data Program, and the responsible adoption of analytics and AI in city government.
+The role is responsible for OPI’s four service portfolios — Director’s Office, Performance, Data and Analytics, and the Innovation Lab — and for the disciplined operating rhythm that turns analysis into commitments and commitments into delivered work. The Executive Director also serves as the City’s Chief Data Officer with accountability for data governance, the Open Data Program, and the responsible adoption of analytics and AI in city government.
 
 **■ Key Responsibilities**
 
@@ -37,7 +37,7 @@ The role is responsible for OPI’s four service portfolios — Director’s Off
 
 - Serve as the public face of OPI for testimony, briefings, and major announcements; ensure OPI communications are accurate, accessible, and on-message with the Mayor’s Office of Communications.
 
-**Performance and CitiStat**
+**Performance**
 
 - Convene and chair CitiStat sessions for the City Administrator and the Mayor; set the topic calendar and brief the Mayor on outcomes, decisions, and follow-through.
 

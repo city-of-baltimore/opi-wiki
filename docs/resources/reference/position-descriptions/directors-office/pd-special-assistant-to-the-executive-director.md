@@ -61,7 +61,7 @@ In addition to executive support, the Special Assistant carries a working portfo
 
 - Provide CitiStat support with a focus on public-safety topics: pre-session evidence collation, agenda preparation, and post-session follow-through.
 
-- Coordinate with the Performance and CitiStat team on session logistics, briefing materials, and commitments tracking.
+- Coordinate with the Performance team on session logistics, briefing materials, and commitments tracking.
 
 **Confidentiality, Discretion, and Sound Judgment**
 

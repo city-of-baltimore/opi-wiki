@@ -158,7 +158,7 @@ We do not run delivery reviews for everything. The overlay activates only when t
 
 **8. Handoffs and synergies across OPI services**
 
-- From Performance and CitiStat → cross-agency commitments from Stat charters; KPI reporting on activations.
+- From Performance → cross-agency commitments from Stat charters; KPI reporting on activations.
 
 - From the Innovation Lab → service redesigns and products that require multi-agency rollout.
 

@@ -37,7 +37,7 @@ NAV_TITLE_EXPECTATIONS = {
     REPO_ROOT / "docs/how-we-work/team-and-roles/.pages": "Team and Roles",
     REPO_ROOT / "docs/our-teams/.pages": "Our Teams",
     REPO_ROOT / "docs/our-teams/directors-office/.pages": "Director's Office",
-    REPO_ROOT / "docs/our-teams/performance-and-citistat/.pages": "Performance and CitiStat",
+    REPO_ROOT / "docs/our-teams/performance-and-citistat/.pages": "Performance",
     REPO_ROOT
     / "docs/our-teams/performance-and-citistat/citistat-portfolio/.pages": "CitiStat Portfolio",
     REPO_ROOT / "docs/our-teams/cross-agency-delivery/.pages": "Cross-Agency Delivery",
@@ -54,7 +54,7 @@ NAV_TITLE_EXPECTATIONS = {
     / "docs/resources/reference/position-descriptions/innovation-lab/.pages": "Innovation Lab",
     REPO_ROOT
     / "docs/resources/reference/position-descriptions/performance-and-citistat/.pages": (
-        "Performance and CitiStat"
+        "Performance"
     ),
     REPO_ROOT
     / "docs/resources/reference/position-descriptions/data-and-analytics/.pages": (

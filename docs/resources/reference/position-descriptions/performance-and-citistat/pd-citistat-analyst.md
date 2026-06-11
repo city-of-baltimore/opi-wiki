@@ -10,7 +10,7 @@
 |--------------------------|--------------------------------------------------------------------------------------------------------------------|
 | **Working title**        | CitiStat Analyst                                                                                                   |
 | **Classification**       | CitiStat Analyst I                                                                                                 |
-| **Portfolio**            | Performance and CitiStat                                                                                           |
+| **Portfolio**            | Performance                                                                                           |
 | **Reports to**           | Deputy Chief Performance Officer                                                                                   |
 | **Supervision given**    | Individual contributor.                                                                                            |
 | **Supervision received** | Reports to the Deputy Chief Performance Officer. Receives professional coaching from the CitiStat Program Manager. |

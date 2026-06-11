@@ -42,7 +42,7 @@ Words shape behavior. When OPI uses one word for something and an agency partner
 
 **Charter.** The artifact that opens any new OPI project. Names the problem, sponsor, scope, team, decision rights, and intended outcome. Required for intake to advance.
 
-**CitiStat.** The city’s performance management program, established in Baltimore City Code Article 1, Subtitle 61, and operated by OPI’s Performance and CitiStat portfolio. See the CitiStat Method Playbook.
+**CitiStat.** The city’s performance management program, established in Baltimore City Code Article 1, Subtitle 61, and operated by OPI’s Performance portfolio. See the CitiStat Method Playbook.
 
 **CitiStat Director.** The leader of the CitiStat Program. The Executive Director of the Mayor’s Office of Performance and Innovation serves as CitiStat Director. The Deputy Chief Performance Officer serves as Deputy Director of the program. The CitiStat Director sets program strategy, owns the citywide portfolio, and is the senior point of accountability for the routine.
 
@@ -54,7 +54,7 @@ Words shape behavior. When OPI uses one word for something and an agency partner
 
 **Commitment.** The basic unit of accountability in CitiStat. Every commitment has an owner, a date, and a definition of done. Tracked in the CitiStat tracker between meetings.
 
-**Cross-Agency Delivery.** OPI’s service overlay for problems that cross agency lines. Not a team and not a cost center — a way of running work that requires multiple agencies to ship together. It owns the coordination authority: named Authorizers, Senior Responsible Owners, decision rights, sustainment commitments, and the weekly delivery cadence. The Innovation Lab provides the team and the method; Performance and CitiStat provides the standing performance routine; the Director’s Office provides the authorizing relationships at the Deputy Mayor and City Administrator level. Activates as a Tiger Team, a standing delivery review, or an embedded delivery engagement, depending on the problem. Always written in full — do not abbreviate as CAD, which collides with Computer-Aided Dispatch.
+**Cross-Agency Delivery.** OPI’s service overlay for problems that cross agency lines. Not a team and not a cost center — a way of running work that requires multiple agencies to ship together. It owns the coordination authority: named Authorizers, Senior Responsible Owners, decision rights, sustainment commitments, and the weekly delivery cadence. The Innovation Lab provides the team and the method; Performance provides the standing performance routine; the Director’s Office provides the authorizing relationships at the Deputy Mayor and City Administrator level. Activates as a Tiger Team, a standing delivery review, or an embedded delivery engagement, depending on the problem. Always written in full — do not abbreviate as CAD, which collides with Computer-Aided Dispatch.
 
 **Data and Analytics.** OPI’s service that builds and governs the city’s data platform, produces decision-grade analytics products, and trains agencies. Reports to the Executive Director through the Deputy Chief Data Officer.
 
@@ -110,11 +110,11 @@ Words shape behavior. When OPI uses one word for something and an agency partner
 
 **ORF.** Opioid Restitution Fund. OPI built and operates the application that tracks ORF-funded recovery projects.
 
-**Performance and CitiStat.** OPI’s service that operates the city’s performance management routine. Stewards the CitiStat method, the analyst bench, and the agency relationships.
+**Performance.** OPI’s service that operates the city’s performance management routine. Stewards the CitiStat method, the analyst bench, and the agency relationships.
 
 **PMO.** OPI’s Project Management Office. Sits in the Director’s Office and runs the project gate process across the OPI portfolio.
 
-**Portfolio.** OPI’s organizational unit. Four portfolios: Director’s Office; Performance and CitiStat; Data and Analytics; Innovation Lab.
+**Portfolio.** OPI’s organizational unit. Four portfolios: Director’s Office; Performance; Data and Analytics; Innovation Lab.
 
 **Pre-memo.** The two-to-four-page document that opens a Stat. Frames the problem, presents the data, names hypotheses, asks for decisions, and lists discussion questions.
 

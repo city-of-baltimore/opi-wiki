@@ -182,7 +182,7 @@ AdminOps is mostly continuous and rhythm-driven, not project-based. Where projec
 
 **8. Handoffs and synergies across OPI services**
 
-- To Performance and CitiStat — coordination of the Stat calendar, public Stat summaries, and field validation.
+- To Performance — coordination of the Stat calendar, public Stat summaries, and field validation.
 
 - To Citywide Data and Analytics — publishing cadence for data products and dashboards.
 

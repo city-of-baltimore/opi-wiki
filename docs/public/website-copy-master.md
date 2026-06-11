@@ -122,7 +122,7 @@ OPI is led by an Executive Director who serves as the City’s Chief Data Office
 | **Portfolio**                  | **What it does**                                                                                                                                                    |
 |--------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Director’s Office | The operating backbone: portfolio management, communications, intake, hiring and onboarding, procurement coordination, knowledge management, and quality assurance. |
-| Performance and CitiStat       | Stewards CitiStat, agency performance plans, performance measures, and follow-up. Operates Cross-Agency Delivery as a service overlay.                              |
+| Performance       | Stewards CitiStat, agency performance plans, performance measures, and follow-up. Operates Cross-Agency Delivery as a service overlay.                              |
 | Data and Analytics             | Operates the data platform, analytics products, open data, data governance, and responsible AI readiness.                                                           |
 | Innovation Lab                 | Operates service design, product discovery, civic technology, AI pilots tied to operations, partnerships, and tiger teams.                                          |
 
@@ -134,7 +134,7 @@ Page should display:
 
 - Chief of Staff (Director’s Office).
 
-- Deputy Chief Performance Officer (Performance and CitiStat).
+- Deputy Chief Performance Officer (Performance).
 
 - Deputy Chief Data Officer (Data and Analytics).
 
@@ -188,9 +188,9 @@ A consistent, predictable partner: clear intake, clear priorities, and clarity a
 
 Transparency and follow-through. We publish what we can, explain what we are doing and why, and make it easier to see whether government is improving.
 
-**Performance and CitiStat**
+**Performance**
 
-Performance and CitiStat runs Baltimore’s performance operating system. We help City agencies set clear goals, track what matters, and turn data into action, through structured CitiStat sessions and relentless follow-through.
+Performance runs Baltimore’s performance operating system. We help City agencies set clear goals, track what matters, and turn data into action, through structured CitiStat sessions and relentless follow-through.
 
 **Why this team exists**
 

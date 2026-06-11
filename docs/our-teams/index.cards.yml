@@ -3,7 +3,7 @@
   body: "The Executive Director's office and the AdminOps function."
   href: directors-office/
 - meta: Team
-  title: "Performance and CitiStat"
+  title: "Performance"
   body: "The performance management and CitiStat methodology team."
   href: performance-and-citistat/
 - meta: Team
@@ -16,5 +16,5 @@
   href: data-and-analytics/
 - meta: Service
   title: "Cross-Agency Delivery"
-  body: "The service overlay for problems that span agency boundaries — runs across Performance and CitiStat and the Innovation Lab."
+  body: "The service overlay for problems that span agency boundaries — runs across Performance and the Innovation Lab."
   href: cross-agency-delivery/

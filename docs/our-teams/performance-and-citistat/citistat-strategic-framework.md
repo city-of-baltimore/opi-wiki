@@ -142,7 +142,7 @@ CitiStat addresses those failure modes by creating a predictable cadence for tru
 
 The principal agencies listed in Subtitle 61 are: the Fire Department, Department of Finance, Department of General Services, Health Department, Department of Housing and Community Development, Police Department, Department of Public Works, Department of Recreation and Parks, and Department of Transportation.
 
-CitiStat is managed by the Executive Director of OPI, method-stewarded by the Performance and CitiStat team, authorized through the relevant Deputy Mayor, Deputy City Administrator, City Administrator, or executive sponsor, and implemented by agencies.
+CitiStat is managed by the Executive Director of OPI, method-stewarded by the Performance team, authorized through the relevant Deputy Mayor, Deputy City Administrator, City Administrator, or executive sponsor, and implemented by agencies.
 
 ## The CitiStat operating model
 
@@ -499,5 +499,5 @@ CitiStat is one of Baltimore’s most important civic management traditions. Its
 - [CitiStat — Staff Quick Reference](citistat-method-staff-quick-reference.md) — the at-a-glance version of the method.
 - [CitiStat Templates](citistat-templates.md) — agendas, materials send-out standards, and deliverable types.
 - [CitiStat Portfolio](citistat-portfolio/index.md) — every active Stat brief, including watchlist and right-routine guidance.
-- [About Performance and CitiStat](about-performance-management.md) — plain-language overview of the service.
+- [About Performance](about-performance-management.md) — plain-language overview of the service.
 - [Performance Management Theory of Change](performance-management-theory-of-change.md) — mandate, governance, staffing, measures, and sustainment.

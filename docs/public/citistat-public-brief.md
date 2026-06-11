@@ -16,7 +16,7 @@ A plain-language brief on Baltimore’s CitiStat program, the 19 Stats, and wher
 
 **UPDATED** April 2026
 
-**OWNER** CitiStat · Performance and CitiStat Portfolio
+**OWNER** CitiStat · Performance Portfolio
 
 **AUDIENCE** Agency partners, City Council, residents, media
 
@@ -24,7 +24,7 @@ A plain-language brief on Baltimore’s CitiStat program, the 19 Stats, and wher
 
 CitiStat is Baltimore’s citywide performance management program. It is a structured, recurring conversation between the Mayor’s Office and City agencies, focused on a small set of measures that matter to residents — and on what each agency is doing about them.
 
-CitiStat is established in the Baltimore City Code (Article 1, Subtitle 61). It is a Mayor’s Office function carried out by OPI — specifically the Performance and CitiStat portfolio — and it works through monthly meetings, written memoranda, and follow-up commitments.
+CitiStat is established in the Baltimore City Code (Article 1, Subtitle 61). It is a Mayor’s Office function carried out by OPI — specifically the Performance portfolio — and it works through monthly meetings, written memoranda, and follow-up commitments.
 
 > *Respond when necessary. Build so we do not have to respond again.*
 
@@ -93,9 +93,9 @@ CitiStat is one of three core OPI services that work as a cycle. CitiStat surfac
 |                 |                                                                |
 |-----------------|----------------------------------------------------------------|
 | **Director**    | Danny Heller, Deputy Chief Performance Officer                 |
-| **Portfolio**   | Performance and CitiStat                                       |
+| **Portfolio**   | Performance                                       |
 | **Authorities** | Baltimore City Code, Article 1, Subtitle 61 — CitiStat Program |
 | **Front door**  | OPI Director’s Office · single intake                          |
 | **Web**         | opi.baltimorecity.gov/citistat                                 |
 
-*Owned by Performance and CitiStat. Reviewed quarterly. Plain-language brief intended for public use.*
+*Owned by Performance. Reviewed quarterly. Plain-language brief intended for public use.*

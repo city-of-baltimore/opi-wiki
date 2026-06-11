@@ -111,7 +111,7 @@ Activities performed by this service include service design, user research, proc
 
 - Production infrastructure, security, identity, and enterprise environments — owned by BCIT.
 
-- Performance routines and Stat sessions — owned by Performance and CitiStat.
+- Performance routines and Stat sessions — owned by Performance.
 
 - Open data publication and data platform engineering — owned by Data and Analytics.
 
@@ -177,7 +177,7 @@ We run like a product organization. Every initiative has a single accountable ow
 
 **8. Handoffs and synergies across OPI services**
 
-- To Performance and CitiStat — service improvements that produce measurable KPIs we want tracked in Stat.
+- To Performance — service improvements that produce measurable KPIs we want tracked in Stat.
 
 - To Citywide Data and Analytics — data and APIs needed for products; performance instrumentation; AI evaluation support.
 

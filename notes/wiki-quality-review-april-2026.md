@@ -59,7 +59,7 @@ Use this language consistently:
 ### Where confusion can still appear
 
 - Section landing pages are too brief to teach the model to new readers.
-- Cross-Agency Delivery language can accidentally make Performance and CitiStat sound like the delivery routine rather than the performance routine that monitors the gain.
+- Cross-Agency Delivery language can accidentally make Performance sound like the delivery routine rather than the performance routine that monitors the gain.
 - “Digital Services” and “Baltimore Design Lab” need explicit status so they do not compete with Innovation Lab terminology.
 
 ### Reusable language
@@ -88,7 +88,7 @@ Use this language consistently:
 1. Add `How Work Moves Through OPI` under `How We Work` immediately after the section index.
 2. Add a landing-page card for the new explainer.
 3. Keep Tiger Teams Playbook in Reference, but link to it from Innovation Lab, Cross-Agency Delivery, and the new explainer.
-4. Keep Cross-Agency Delivery as its own section. Do not move it back under Performance and CitiStat, because the redirect map already indicates that separation is intentional.
+4. Keep Cross-Agency Delivery as its own section. Do not move it back under Performance, because the redirect map already indicates that separation is intentional.
 5. Use the glossary as the source of truth and link to it from section landing pages.
 
 ## 6. Canonical terminology guide

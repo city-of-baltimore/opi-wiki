@@ -56,7 +56,7 @@
 
 - Service redesign and digital product builds → Innovation Lab.
 
-- Performance routines themselves → Performance and CitiStat.
+- Performance routines themselves → Performance.
 
 **3. Engagement model**
 
@@ -96,7 +96,7 @@ Work enters as a data product request, a Stat-driven KPI need, an open data publ
 
 | **Offering**               | **Typical customer**          | **When to use**                                           | **Target SLA / cadence**                                                            |
 |----------------------------|-------------------------------|-----------------------------------------------------------|-------------------------------------------------------------------------------------|
-| Stat dashboard / KPI build | Performance and CitiStat team | New Stat or new priority KPI                              | V1 within 15 business days; refresh on documented cadence.                          |
+| Stat dashboard / KPI build | Performance team | New Stat or new priority KPI                              | V1 within 15 business days; refresh on documented cadence.                          |
 | Executive dashboard        | CA, Deputy Mayors, ED         | Priority cross-agency view                                | V1 within 30 business days; quarterly refinement.                                   |
 | Open data publication      | Agencies; public              | New high-value dataset                                    | Publication within 30 business days of agency readiness; methodology card included. |
 | Data governance memo       | Agencies; Council             | Definition conflict, sharing question, or quality dispute | Memo within 10 business days; Council referral if needed.                           |
@@ -120,7 +120,7 @@ Work enters as a data product request, a Stat-driven KPI need, an open data publ
 
 *Partnership philosophy is in the About doc. These are the operational specifics.*
 
-- To Performance and CitiStat — KPI definitions, dashboards, and data quality support for the Stat portfolio.
+- To Performance — KPI definitions, dashboards, and data quality support for the Stat portfolio.
 
 - To the Innovation Lab — datasets and APIs needed for service redesigns, digital products, and AI pilots.
 

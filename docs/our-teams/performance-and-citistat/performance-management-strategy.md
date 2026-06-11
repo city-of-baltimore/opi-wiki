@@ -10,9 +10,9 @@
 
 *How Baltimore connects priorities, data, routines, delivery, budget, and public trust.*
 
-*Read alongside: OPI About Performance and CitiStat; OPI Service Theory of Change — Performance Management; CitiStat Strategic Framework.*
+*Read alongside: OPI About Performance; OPI Service Theory of Change — Performance Management; CitiStat Strategic Framework.*
 
-*This document is the strategic argument for Baltimore’s performance system — the case for change, the operating principles, the citywide cycle, governance, success measures, and FY priorities. [About Performance and CitiStat](about-performance-management.md) tells the human story of the team. The Theory of Change shows the operating backbone. The CitiStat Strategic Framework explains the executive routine itself.*
+*This document is the strategic argument for Baltimore’s performance system — the case for change, the operating principles, the citywide cycle, governance, success measures, and FY priorities. [About Performance](about-performance-management.md) tells the human story of the team. The Theory of Change shows the operating backbone. The CitiStat Strategic Framework explains the executive routine itself.*
 
 ## From performance to action
 
@@ -267,7 +267,7 @@ Baltimore’s performance management strategy is not about perfect dashboards or
 
 ## See also
 
-- [About Performance and CitiStat](about-performance-management.md) — plain-language overview of the service this strategy guides.
+- [About Performance](about-performance-management.md) — plain-language overview of the service this strategy guides.
 - [Performance Management Theory of Change](performance-management-theory-of-change.md) — the mandate, governance, staffing, measures, and sustainment behind the strategy.
 - [CitiStat Strategic Framework](citistat-strategic-framework.md) — the public-facing strategic frame for CitiStat itself.
 - [CitiStat Method Playbook](citistat-method-playbook.md) — the staff-facing operating standards.

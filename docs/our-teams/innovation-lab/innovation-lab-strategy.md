@@ -116,7 +116,7 @@ A growing library of components, accessibility patterns, intake flows, status co
 
 **Boundaries that protect the work**
 
-- It does not own performance accountability or CitiStat routines. Performance and CitiStat owns the executive rhythm.
+- It does not own performance accountability or CitiStat routines. Performance owns the executive rhythm.
 
 - It does not own enterprise infrastructure, security, networking, or production environments. BCIT owns those.
 
@@ -152,7 +152,7 @@ Every Lab engagement should have a clear admission test: a real problem, named u
 
 **Integration with other services**
 
-**With Performance and CitiStat**
+**With Performance**
 
 The Lab takes problems surfaced in CitiStat and converts them into discovery, design, and pilot work. It returns evidence about what worked back into the performance routine.
 

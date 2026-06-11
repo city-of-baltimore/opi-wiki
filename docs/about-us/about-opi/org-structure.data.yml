@@ -27,12 +27,12 @@ portfolios:
         title: CitiStat Inspector
 
   - key: performance-and-citistat
-    label: Performance and CitiStat
+    label: Performance
     node_id: PC
     lead:
       name: Danny Heller
       title: Deputy Chief Performance Officer
-    cost_center: Performance and CitiStat
+    cost_center: Performance
     primary_value: Owns the performance method; translates priorities into routines, measures, follow-up, and improvement.
     table_lead: Danny Heller, Deputy Chief Performance Officer
     staff:

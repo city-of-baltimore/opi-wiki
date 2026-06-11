@@ -27,13 +27,13 @@ Most of the problems OPI gets called into are bigger than any one agency. Permit
 
 Cross-Agency Delivery is a service overlay, not a team and not a cost center. It is the way OPI runs work that requires multiple agencies to ship together. The overlay owns coordination authority — named Authorizers, Senior Responsible Owners, decision rights across agencies, sustainment commitments from each agency, and a weekly delivery cadence to keep them aligned. Its question is *how do we get multiple agencies to actually ship this together?*
 
-The Innovation Lab provides the team and method when discovery, design, prototyping, or product work is needed. Performance and CitiStat provides the executive performance routine that can surface the problem and monitor the gain after sustainment. The Director’s Office provides the authorizing relationships at the Deputy Mayor and City Administrator level.
+The Innovation Lab provides the team and method when discovery, design, prototyping, or product work is needed. Performance provides the executive performance routine that can surface the problem and monitor the gain after sustainment. The Director’s Office provides the authorizing relationships at the Deputy Mayor and City Administrator level.
 
 The service activates in three patterns, chosen to fit the problem:
 
 - **Tiger Team activation.** A time-boxed Tiger Team chartered through Cross-Agency Delivery — typically three to six months, scoped to the problem — when the work needs cross-agency coordination authority. Authorized at the Deputy Mayor or City Administrator level. The Innovation Lab provides the team and the method (the Public Innovation Toolkit). Cross-Agency Delivery provides the standing delivery review, the closure plan, and the sustainment commitments from each agency.
 
-- **Standing delivery review.** A standing cross-agency forum that meets on a fixed cadence to drive a single multi-agency outcome — vacancies, permitting, workforce. Has a named Authorizer, a Senior Responsible Owner, the agencies at the table, and a closure plan. Performance and CitiStat owns the routine.
+- **Standing delivery review.** A standing cross-agency forum that meets on a fixed cadence to drive a single multi-agency outcome — vacancies, permitting, workforce. Has a named Authorizer, a Senior Responsible Owner, the agencies at the table, and a closure plan. Performance owns the routine.
 
 - **Embedded delivery.** An embedded delivery engagement where OPI staff sit inside an agency for 90 to 180 days to stand up a routine, train the team, and hand it back.
 
@@ -85,7 +85,7 @@ Cross-Agency Delivery typically pairs OPI with one of the following:
 
 - OPI About OPI Operating Frame
 
-- OPI About Performance and CitiStat
+- OPI About Performance
 
 - OPI ToC Cross Agency Delivery (Theory of Change)
 

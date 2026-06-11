@@ -56,7 +56,7 @@ FY26 is about getting the foundation right. The three priorities below were name
 
 **FY26 supporting commitments**
 
-- CitiStat: stand up and stabilize 19 regularly occurring Stats by end of January 2026; 12 of the 17 are new or relaunched. Performance and CitiStat owns; Method Playbook governs.
+- CitiStat: stand up and stabilize 19 regularly occurring Stats by end of January 2026; 12 of the 17 are new or relaunched. Performance owns; Method Playbook governs.
 
 - tiger teams cohort: six FY26 focus areas — Parking Enforcement, Traffic Calming (DOT); Street Sweeping, Zero Waste (DPW); Code Enforcement (DHCD); Forestry Backlog (BCRP). Innovation Lab leads; sustain by June 2026.
 

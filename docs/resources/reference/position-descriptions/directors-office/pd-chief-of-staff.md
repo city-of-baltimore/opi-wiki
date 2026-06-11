@@ -39,7 +39,7 @@ The Chief of Staff manages the Director’s Office staff (Communications and Par
 
 **Portfolio and Delivery Alignment**
 
-- Partner with portfolio leads (Performance and CitiStat, Data and Analytics, Innovation Lab) to align priorities, milestones, and the OPI Book of Business.
+- Partner with portfolio leads (Performance, Data and Analytics, Innovation Lab) to align priorities, milestones, and the OPI Book of Business.
 
 - Oversee the Project Manager and the OPI portfolio register; review weekly and monthly status, surface risks, and direct decision points to the Executive Director.
 

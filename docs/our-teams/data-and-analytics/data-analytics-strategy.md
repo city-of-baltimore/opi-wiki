@@ -77,7 +77,7 @@ Coaching, training, office hours, show-and-tells, and support for agency Data-Dr
 
 Clear boundaries protect the team from becoming a bottleneck and protect agencies from losing ownership of their own work.
 
-- It does not own performance accountability. Performance and CitiStat owns the routine; Data & Analytics provides trusted data and analysis.
+- It does not own performance accountability. Performance owns the routine; Data & Analytics provides trusted data and analysis.
 
 - It does not own service redesign. The Innovation Lab leads service design, product discovery, and user research.
 
@@ -114,7 +114,7 @@ The Data & Analytics team should prioritize work that creates reusable value. A 
 
 **Integration with other services**
 
-**With Performance and CitiStat**
+**With Performance**
 
 The service provides trusted data, KPI definitions, dashboards, methodology cards, data quality notes, and analysis that supports performance routines. It does not run the Stat session or enforce follow-up.
 

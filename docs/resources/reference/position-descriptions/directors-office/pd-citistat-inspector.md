@@ -11,15 +11,15 @@
 | **Working title**        | CitiStat Inspector                                                                                                            |
 | **Classification**       | Operations Officer I                                                                                                          |
 | **Portfolio**            | Director's Office                                                                                                             |
-| **Reports to**           | Chief of Staff (with operational coordination from the Performance and CitiStat team for inspections)                         |
+| **Reports to**           | Chief of Staff (with operational coordination from the Performance team for inspections)                         |
 | **Supervision given**    | Individual contributor.                                                                                                       |
-| **Supervision received** | Reports to the Chief of Staff. Receives operational coordination from the Performance and CitiStat team for inspections work. |
+| **Supervision received** | Reports to the Chief of Staff. Receives operational coordination from the Performance team for inspections work. |
 
 **■ Position Summary**
 
 The CitiStat Inspector is OPI’s field-validation and service-quality inspector and a coordinator of administrative operations in the Director’s Office. The role supports CitiStat with disciplined, evidence-based inspections — confirming whether the work that’s reported on paper matches what’s happening on the ground — and supports the Director’s Office with day-to-day administrative operations (supplies, facilities coordination, rooms/AV, visitor logistics, and related tasks) to keep the office running smoothly.
 
-For inspections, the role works closely with the Performance and CitiStat team and with agency operations leaders. For office coordination, the role partners with the Chief of Staff and the Special Assistant.
+For inspections, the role works closely with the Performance team and with agency operations leaders. For office coordination, the role partners with the Chief of Staff and the Special Assistant.
 
 **■ Key Responsibilities**
 
@@ -101,7 +101,7 @@ Employees in this class work a conventional work week, with regular field work t
 
 **■ Supervision**
 
-**Supervision received.** Reports to the Chief of Staff. Receives operational coordination from the Performance and CitiStat team for inspections work.
+**Supervision received.** Reports to the Chief of Staff. Receives operational coordination from the Performance team for inspections work.
 
 **Supervision given.** Individual contributor.
 

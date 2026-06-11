@@ -88,7 +88,7 @@ This document defines the information architecture for opi.baltimorecity.gov bef
 
 - Director’s Office — /teams/directors-office
 
-- Performance and CitiStat — /teams/performance-citistat
+- Performance — /teams/performance-citistat
 
 - Data and Analytics — /teams/data-analytics
 

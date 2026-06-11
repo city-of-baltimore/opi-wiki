@@ -107,7 +107,7 @@ Focus: portfolio visibility, decision support, communications, operations backbo
 
 - Month 1: ship an ops leverage win (template improvement, faster turnaround, better visibility, or QA uplift).
 
-**Performance and CitiStat**
+**Performance**
 
 Focus: performance routines, Stat preparation and follow-through, KPI definitions, and agency partnership.
 
@@ -175,7 +175,7 @@ A starting list of common onboarding sessions. Adapt based on role and portfolio
 | Welcome meeting                              | Manager                       | 30–45 min  | Introductions and what to expect in the first week.                             |
 | OPI overview and meet the Executive Director | Executive Director            | 30 min     | Office mission, four portfolios, five services, and the cycle.                  |
 | City Government 101                          | Director’s Office             | 30 min     | Who’s who in Baltimore City government and how decisions move.                  |
-| CitiStat overview and a session observation  | Performance and CitiStat lead | 60–90 min  | Method, cadence, pre-reads, follow-up. Observe a real session.                  |
+| CitiStat overview and a session observation  | Performance lead | 60–90 min  | Method, cadence, pre-reads, follow-up. Observe a real session.                  |
 | Data and Analytics overview                  | Data and Analytics lead       | 30 min     | Platform, governance, open data, and how analytics feed CitiStat and the Lab.   |
 | Innovation Lab overview                      | Interim Innovation Program Manager | 30 min     | Service design, product discovery, civic tech, AI pilots, and partnerships.     |
 | AdminOps and operating cadence               | Chief of Staff                | 30 min     | Intake, charters, portfolio view, weekly Ops Review, monthly Portfolio Council. |

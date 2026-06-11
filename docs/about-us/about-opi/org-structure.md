@@ -62,7 +62,7 @@ Cost centers govern budget and expense management. Budget services describe what
 | **Cost Center**          | **Description**                                                                                                                                                                                                              |
 |--------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | AdminOps                 | Personnel and operating costs for OPI executive support, communications, portfolio management, intake, knowledge management, fiscal, HR, facilities, Council relations, quality assurance, and agencywide operations.        |
-| Performance and CitiStat | Personnel and operating costs for CitiStat, citywide performance management, agency performance planning, performance measures, follow-up tracking, performance analysis, and performance method stewardship.                |
+| Performance | Personnel and operating costs for CitiStat, citywide performance management, agency performance planning, performance measures, follow-up tracking, performance analysis, and performance method stewardship.                |
 | Data and Analytics       | Personnel and operating costs for analytics, data platform development, data engineering, data governance, open data, GIS and spatial analytics, data literacy, and responsible data and AI readiness.                       |
 | Innovation Lab           | Personnel and operating costs for human-centered design, product discovery, service design, prototyping, operational tools, civic technology, applied innovation projects, strategic partnerships, and AI innovation pilots. |
 
@@ -70,7 +70,7 @@ Cost centers govern budget and expense management. Budget services describe what
 
 OPI’s services describe the value we deliver, regardless of which portfolio or staff member is involved.
 
-- Citywide Performance Management — administered by Performance and CitiStat.
+- Citywide Performance Management — administered by Performance.
 
 - Citywide Data and Analytics — administered by Data and Analytics.
 

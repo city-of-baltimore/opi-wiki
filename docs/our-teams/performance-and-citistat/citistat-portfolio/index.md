@@ -10,7 +10,7 @@
 
 Baltimore’s CitiStat portfolio is the City’s executive performance rhythm for the services, systems, and priorities residents and staff experience most directly. This register documents the initial 19 monthly Stats, their government clusters, Stat types, executive sponsors, OPI support models, core data products, standard artifacts, and starter focus areas.
 
-CitiStat is managed by the Executive Director of OPI, method-stewarded by the Performance and CitiStat team, authorized through the relevant Deputy Mayor, Deputy City Administrator, City Administrator, or executive sponsor, and implemented by agencies. OPI leaders may operate selected Stats where the topic aligns with their portfolio, but all Stats follow a common standard: clear purpose, reliable enough data, useful pre-work, disciplined follow-up, evidence of closure, and a public story of progress.
+CitiStat is managed by the Executive Director of OPI, method-stewarded by the Performance team, authorized through the relevant Deputy Mayor, Deputy City Administrator, City Administrator, or executive sponsor, and implemented by agencies. OPI leaders may operate selected Stats where the topic aligns with their portfolio, but all Stats follow a common standard: clear purpose, reliable enough data, useful pre-work, disciplined follow-up, evidence of closure, and a public story of progress.
 
 This document is a companion to OPI’s operating model. The operating model explains how OPI organizes work; this register explains what each Stat is for, who sponsors it, what it tracks, what artifacts it produces, and how it can trigger delivery, product, data, or executive action.
 
@@ -28,7 +28,7 @@ The goal is not more meetings. The goal is a management routine that helps Balti
 |--------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Executive Director, OPI                    | Owns CitiStat as a citywide management program and resolves major questions of scope, quality, and operating model.                                                           |
 | Deputy Chief Performance Officer           | Serves as Deputy Director for the CitiStat program. Supports the Executive Director on program leadership and method discipline; takes on session leadership as delegated.    |
-| Performance and CitiStat Team              | Stewards the method, standards, templates, cadence, KPI discipline, follow-up expectations, and Stat quality.                                                                 |
+| Performance Team              | Stewards the method, standards, templates, cadence, KPI discipline, follow-up expectations, and Stat quality.                                                                 |
 | Executive Sponsor / Authorizer             | Typically the relevant Deputy Mayor, Deputy City Administrator, City Administrator, or executive sponsor. Confirms priorities, resolves barriers, and authorizes commitments. |
 | Agency Director / Senior Responsible Owner | Owns operational performance, implementation, resource alignment, and agency follow-through.                                                                                  |
 | OPI Operating Lead                         | Runs the session process or support model, coordinates artifacts, and ensures follow-up moves through the appropriate channel.                                                |
@@ -139,5 +139,5 @@ Not every recurring problem should become a Stat. The first question should be: 
 
 - [CitiStat Method Playbook](../citistat-method-playbook.md) — the operating standards every Stat in this portfolio runs on.
 - [CitiStat Strategic Framework](../citistat-strategic-framework.md) — the public-facing strategic frame and portfolio rationale.
-- [About Performance and CitiStat](../about-performance-management.md) — plain-language overview of the service.
+- [About Performance](../about-performance-management.md) — plain-language overview of the service.
 - [Performance Management Theory of Change](../performance-management-theory-of-change.md) — mandate, governance, staffing, measures, and sustainment.

@@ -38,7 +38,7 @@ Each refined Position Description is filed alongside this roster in the same fol
 | **Total positions**     | 24                                                                                  |
 | **Filled**              | 22                                                                                  |
 | **Open / aspirational** | 2                                                                                   |
-| **Portfolios**          | 4 (Director’s Office, Innovation Lab, Performance and CitiStat, Data and Analytics) |
+| **Portfolios**          | 4 (Director’s Office, Innovation Lab, Performance, Data and Analytics) |
 | **Cost centers**        | 4 (AdminOps, Innovation Lab, Performance Management, Data and Analytics)            |
 | **Executive sponsor**   | Mayor Brandon M. Scott via City Administrator Faith P. Leach                        |
 
@@ -101,7 +101,7 @@ Each refined Position Description is filed alongside this roster in the same fol
     | Product Engineer                     | Xander Jake de los Santos | Senior Product Engineer                                                                       |
     | Civic Technology Lead                | Aspirational / unfilled  | Interim Innovation Program Manager                                                               |
 
-??? info "Performance and CitiStat roster and reporting"
+??? info "Performance roster and reporting"
 
 
     | **Name**             | **Working title**                | **Classification**            | **Cost center**        | **PIN** |
@@ -189,13 +189,13 @@ Each refined Position Description is filed alongside this roster in the same fol
 
     | **Working title**                | **Incumbent**        | **Portfolio**            | **PIN** |
     |----------------------------------|----------------------|--------------------------|---------|
-    | Deputy Chief Performance Officer | Danny Heller         | Performance and CitiStat | 54340   |
-    | CitiStat Program Manager         | Darren Lu            | Performance and CitiStat | 15971   |
-    | Senior Performance Analyst       | Open — to be posted  | Performance and CitiStat | 115657  |
-    | CitiStat Analyst                 | Ross Hackett         | Performance and CitiStat | 16441   |
-    | CitiStat Analyst                 | Griffin Riddler, PhD    | Performance and CitiStat | 47946   |
-    | CitiStat Analyst                 | Ethan Buckborough    | Performance and CitiStat | 52437   |
-    | CitiStat Analyst                 | Nelson Gomes Boronat   | Performance and CitiStat | 62122   |
+    | Deputy Chief Performance Officer | Danny Heller         | Performance | 54340   |
+    | CitiStat Program Manager         | Darren Lu            | Performance | 15971   |
+    | Senior Performance Analyst       | Open — to be posted  | Performance | 115657  |
+    | CitiStat Analyst                 | Ross Hackett         | Performance | 16441   |
+    | CitiStat Analyst                 | Griffin Riddler, PhD    | Performance | 47946   |
+    | CitiStat Analyst                 | Ethan Buckborough    | Performance | 52437   |
+    | CitiStat Analyst                 | Nelson Gomes Boronat   | Performance | 62122   |
 
 ??? info "Contact directory"
 
@@ -213,12 +213,12 @@ Each refined Position Description is filed alongside this roster in the same fol
     | Selenea Gibson            | Civic Designer                                 | Innovation Lab           | selenea.gibson@baltimorecity.gov           |
     | Chiemeka Okeoma           | Senior Product Engineer                        | Innovation Lab           | chiemeka.okeoma@baltimorecity.gov          |
     | Xander Jake de los Santos | Product Engineer                               | Innovation Lab           | via Chief of Staff                         |
-    | Danny Heller              | Deputy Chief Performance Officer               | Performance and CitiStat | daniel.heller@baltimorecity.gov            |
-    | Darren Lu                 | CitiStat Program Manager                       | Performance and CitiStat | darren.lu@baltimorecity.gov                |
-    | Ross Hackett              | CitiStat Analyst                               | Performance and CitiStat | ross.hackett@baltimorecity.gov             |
-    | Griffin Riddler, PhD           | CitiStat Analyst                               | Performance and CitiStat | griffin.riddler@baltimorecity.gov          |
-    | Ethan Buckborough         | CitiStat Analyst                               | Performance and CitiStat | ethan.buckborough@baltimorecity.gov        |
-    | Nelson Gomes Boronat      | CitiStat Analyst                               | Performance and CitiStat | nelson.gomesboronat@baltimorecity.gov      |
+    | Danny Heller              | Deputy Chief Performance Officer               | Performance | daniel.heller@baltimorecity.gov            |
+    | Darren Lu                 | CitiStat Program Manager                       | Performance | darren.lu@baltimorecity.gov                |
+    | Ross Hackett              | CitiStat Analyst                               | Performance | ross.hackett@baltimorecity.gov             |
+    | Griffin Riddler, PhD           | CitiStat Analyst                               | Performance | griffin.riddler@baltimorecity.gov          |
+    | Ethan Buckborough         | CitiStat Analyst                               | Performance | ethan.buckborough@baltimorecity.gov        |
+    | Nelson Gomes Boronat      | CitiStat Analyst                               | Performance | nelson.gomesboronat@baltimorecity.gov      |
     | Jason Howard, PhD         | Deputy Chief Data Officer                      | Data and Analytics       | jason.howard@baltimorecity.gov             |
     | Roberto Herbruger         | Technical Program Manager                      | Data and Analytics       | roberto.herbruger@baltimorecity.gov        |
     | Vera Choo                 | Analytics Lead                                 | Data and Analytics       | vera.choo@baltimorecity.gov                |
@@ -232,6 +232,6 @@ Each refined Position Description is filed alongside this roster in the same fol
     | **Title**                  | **Status**          | **Portfolio**            | **PIN / Status** |
     |----------------------------|---------------------|--------------------------|------------------|
     | Civic Technology Lead      | Aspirational / unfilled | Innovation Lab            | TBD              |
-    | Senior Performance Analyst | Open — to be posted | Performance and CitiStat | 115657           |
+    | Senior Performance Analyst | Open — to be posted | Performance | 115657           |
 
 *This roster reflects the OPI operating model. Position descriptions for every role listed here are filed in the OPI Foundations / Position Descriptions folder, organized by portfolio. PIN numbers and budget detail come from the City’s authoritative position file.*

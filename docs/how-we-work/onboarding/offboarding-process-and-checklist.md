@@ -89,7 +89,7 @@ Ensure portfolio visibility and decision support artifacts remain current and ow
 
 - T-5 days: finalize any public or executive artifacts in flight (QA complete, sources linked, version history intact).
 
-**Performance and CitiStat**
+**Performance**
 
 Protect continuity of performance routines, Stat preparation, and agency relationships.
 

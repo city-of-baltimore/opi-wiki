@@ -51,7 +51,7 @@ OPI maintains a position description (PD) for every role on the team. PDs are th
 - [Senior Product Engineer](innovation-lab/pd-senior-product-engineer.md)
 - [Product Engineer](innovation-lab/pd-product-engineer-full-stack.md)
 
-### Performance and CitiStat
+### Performance
 
 - [Deputy Chief Performance Officer](performance-and-citistat/pd-deputy-chief-performance-officer.md)
 - [CitiStat Program Manager](performance-and-citistat/pd-citistat-program-manager.md)
@@ -69,7 +69,7 @@ OPI maintains a position description (PD) for every role on the team. PDs are th
 
 ### Cross-Agency Delivery
 
-Cross-Agency Delivery is a service overlay, not a separate team or cost center, so it does not have dedicated position descriptions. The Innovation Lab provides the team, Performance and CitiStat provides the standing delivery routine, and the Director's Office provides the authorizing relationships. Staff working in Cross-Agency Delivery engagements remain on their home-portfolio PD. See the [Cross-Agency Delivery overview](../../../our-teams/cross-agency-delivery/about-cross-agency-delivery.md) and the [Tiger Teams Playbook](../tiger-teams-playbook.md) for how engagements are chartered and staffed.
+Cross-Agency Delivery is a service overlay, not a separate team or cost center, so it does not have dedicated position descriptions. The Innovation Lab provides the team, Performance provides the standing delivery routine, and the Director's Office provides the authorizing relationships. Staff working in Cross-Agency Delivery engagements remain on their home-portfolio PD. See the [Cross-Agency Delivery overview](../../../our-teams/cross-agency-delivery/about-cross-agency-delivery.md) and the [Tiger Teams Playbook](../tiger-teams-playbook.md) for how engagements are chartered and staffed.
 
 **■ How this index is maintained**
 

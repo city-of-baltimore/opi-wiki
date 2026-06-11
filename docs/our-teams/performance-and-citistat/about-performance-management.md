@@ -1,4 +1,4 @@
-# About Performance and CitiStat
+# About Performance
 
 {{ page_badge() }}
 

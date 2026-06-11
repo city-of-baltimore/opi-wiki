@@ -16,7 +16,7 @@ How OPI runs cross-functional, time-boxed teams that prototype, prove, and scale
 
 **UPDATED** April 2026
 
-**OWNER** Innovation Lab — with Performance and CitiStat at sustain, and Cross-Agency Delivery when the work needs cross-agency coordination authority
+**OWNER** Innovation Lab — with Performance at sustain, and Cross-Agency Delivery when the work needs cross-agency coordination authority
 
 **AUDIENCE** OPI staff and agency partners on a Tiger Team; Deputy Mayors and the City Administrator’s Office.
 
@@ -239,7 +239,7 @@ Tiger Teams use the Public Innovation Toolkit, a four-phase method designed for 
 
 **Innovation Lab.** The capability — owns the Tiger Team method, the lead, and most of the team. The Lab’s question is *how do we solve this?*
 
-**Performance and CitiStat.** Owns the metric set and absorbs the work into a Stat at sustain. The Stat is how the gain stays gained.
+**Performance.** Owns the metric set and absorbs the work into a Stat at sustain. The Stat is how the gain stays gained.
 
 **Data and Analytics.** Provides the diagnosis analytics during the sprint and the data products that ship with the pilot.
 

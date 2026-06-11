@@ -43,7 +43,7 @@ Reporting to the Innovation Program Manager, the Civic Technology Lead is the se
 
 - Partner with BCIT on architecture, security, identity, and change-control reviews; resolve disconnected systems through unified, user-friendly digital experiences.
 
-- Provide technical guidance to Lab teammates (Civic Designer, Product Engineers) and to portfolio leads outside the Lab (Performance and CitiStat, Data and Analytics).
+- Provide technical guidance to Lab teammates (Civic Designer, Product Engineers) and to portfolio leads outside the Lab (Performance, Data and Analytics).
 
 - Apply Agile methodologies and lead iterative design and delivery processes for technical solutions.
 

@@ -23,7 +23,7 @@ OPI is the Mayor’s Office of Performance and Innovation. We help Baltimore Cit
 
 *Read each About \<Service\> document for the detail. Read these short statements together for how the cycle moves.*
 
-**Performance and CitiStat**
+**Performance**
 
 Identifies where the system is falling short and creates routines for decisions and follow-through. Stewards CitiStat, agency performance planning, KPI standards, commitment tracking, and the executive performance rhythm.
 

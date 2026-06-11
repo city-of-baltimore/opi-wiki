@@ -21,9 +21,9 @@ OPI staff who are part of the BIC, with full positions and home teams. Sand role
 | Data Governance and Analytics                  | Vera Choo                 | Data Governance and Analytics Manager          | OPI — Data and Analytics       |
 | Deputy CDO and platform partnership            | Jason Howard, PhD         | Deputy Chief Data Officer                      | OPI — Data and Analytics       |
 | Product Engineering                            | Xander Jake de los Santos | Product Engineer                               | OPI — Innovation Lab           |
-| CitiStat — City Services lead                  | Nelson Gomes Boronat      | CitiStat Analyst                               | OPI — Performance and CitiStat |
-| CitiStat — City Services lead                  | Ross Hackett              | CitiStat Analyst                               | OPI — Performance and CitiStat |
-| CitiStat — Public Safety lead                  | Derek Thomas              | CitiStat Analyst                               | OPI — Performance and CitiStat |
+| CitiStat — City Services lead                  | Nelson Gomes Boronat      | CitiStat Analyst                               | OPI — Performance |
+| CitiStat — City Services lead                  | Ross Hackett              | CitiStat Analyst                               | OPI — Performance |
+| CitiStat — Public Safety lead                  | Derek Thomas              | CitiStat Analyst                               | OPI — Performance |
 
 ## Sand Technologies — expected roles
 

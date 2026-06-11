@@ -26,7 +26,7 @@
 |----------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | What it is           | A citywide performance operating capability that combines agency performance planning (goals, KPI trees, performance plans) with the CitiStat method (sessions, pre-memos, decks, follow-up memos, commitment tracking) to keep priority outcomes on track. |
 | Mandate              | Baltimore City Code Article 1, Subtitle 61 (CitiStat and performance management).                                                                                                                                                                           |
-| Portfolio home       | Performance and CitiStat portfolio. Method-stewarded by the Deputy Chief Performance Officer; program-owned by the Executive Director of OPI.                                                                                                               |
+| Portfolio home       | Performance portfolio. Method-stewarded by the Deputy Chief Performance Officer; program-owned by the Executive Director of OPI.                                                                                                               |
 | Budget / cost center | Service line: Citywide Performance Management.                                                                                                                                                                                                              |
 | Who we serve         | Mayor, City Administrator, Deputy Mayors, Deputy City Administrators (Executive Sponsors / Authorizers); agency directors and Senior Responsible Owners; agency performance and data leads; Council and the public through plain-language reporting.        |
 | Outcome anchor       | Stat sessions are useful and humane; commitments close on time with evidence; priority services show measurable cycle-time and backlog improvement; agencies embed KPIs in their own routines; leadership trust in the numbers grows quarter over quarter.  |
@@ -171,7 +171,7 @@ The full citywide admission criteria, continuation test, and right-routine matri
 
 ## See also
 
-- [About Performance and CitiStat](about-performance-management.md) — plain-language overview of the service.
+- [About Performance](about-performance-management.md) — plain-language overview of the service.
 - [Performance Management Strategy](performance-management-strategy.md) — the strategic plan this Theory of Change underwrites.
 - [CitiStat Method Playbook → The CitiStat cycle](citistat-method-playbook.md#the-citistat-cycle) — the 12-step operating cycle that delivers the SLAs in section 6 above.
 - [CitiStat Method Playbook → Issue selection, admission, and continuation](citistat-method-playbook.md#issue-selection-admission-and-continuation) — canonical admission criteria and right-routine matrix.

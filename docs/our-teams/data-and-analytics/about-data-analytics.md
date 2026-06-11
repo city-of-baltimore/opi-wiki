@@ -119,7 +119,7 @@ The team does not own:
 
 Data and Analytics is the evidence layer for OPI.
 
-We support Performance and CitiStat with KPI definitions, dashboards, data quality notes, and shared measures.
+We support Performance with KPI definitions, dashboards, data quality notes, and shared measures.
 
 We support the Innovation Lab with data, APIs, instrumentation, AI evaluation support, and analytics for products and pilots.
 
