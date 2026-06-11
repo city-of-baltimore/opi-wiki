@@ -1,13 +1,6 @@
 # Innovation Lab Strategy
 
-{{ page_badge() }}
-
-> What the Innovation Lab is for, and how it operates.
-**STRATEGY**
-
-**Innovation Lab Strategy**
-
-*How Baltimore turns service problems into prototypes, pilots, and sustained improvements.*
+{{ page_header(summary="What the Innovation Lab is for, and how it operates.", category="STRATEGY", tagline="How Baltimore turns service problems into prototypes, pilots, and sustained improvements.") }}
 
 Strategy Document
 
@@ -36,15 +29,6 @@ These are design problems, data problems, workflow problems, and ownership probl
 > *Performance tells us where the system is falling short. Data helps us understand why. The Innovation Lab designs and tests practical solutions. Cross-Agency Delivery helps implementation stick.*
 
 **NORTH STAR**
-
-## Innovation Lab operating clarity
-
-The Innovation Lab owns the craft of solving: discovery, service design, user research, product management, prototyping, civic technology, applied AI pilots, and MVP-and-handoff methods. The Lab's question is: **How do we solve this problem in a way that works for residents and staff?**
-
-The Lab is not an ideas shop, a shadow IT team, or a place for unfunded special projects to drift. It starts with a service problem, designs with the people closest to the work, tests practical improvements, and hands off what works with an owner, runbook, and sustainment plan.
-
-The Lab can work on one-agency or multi-agency problems. When implementation requires several agencies to move together with named decision rights and commitments, the Lab partners with Cross-Agency Delivery.
-
 
 **Practical innovation in service of delivery**
 

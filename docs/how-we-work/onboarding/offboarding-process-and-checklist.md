@@ -1,14 +1,6 @@
 # Offboarding Process and Checklist
 
-{{ page_badge() }}
-
-> How we handle transitions, knowledge handoff, and access changes.
-
-**SERIES · OPI FOUNDATIONS**
-
-**Offboarding Process**
-
-**and Checklist**
+{{ page_header(summary="How we handle transitions, knowledge handoff, and access changes.", category="SERIES · OPI FOUNDATIONS") }}
 
 Protecting continuity, security, and OPI’s credibility through humane, predictable transitions.
 

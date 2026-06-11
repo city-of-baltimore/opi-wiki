@@ -1,14 +1,6 @@
 # CitiStat Strategic Framework
 
-{{ page_badge() }}
-
-> The strategic frame that gives every Stat session its bearings.
-
-**STRATEGIC FRAMEWORK · AUDIENCE: PUBLIC**
-
-**CitiStat Strategic Framework**
-
-*Baltimore’s performance management system for turning data, decisions, and follow-through into better city services.*
+{{ page_header(summary="The strategic frame that gives every Stat session its bearings.", category="STRATEGIC FRAMEWORK · AUDIENCE: PUBLIC", tagline="Baltimore’s performance management system for turning data, decisions, and follow-through into better city services.") }}
 
 *Read alongside: OPI CitiStat Method Playbook; OPI Citywide Performance Management Strategy.*
 

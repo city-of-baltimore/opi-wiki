@@ -65,4 +65,4 @@ def test_badge_pages_retain_metadata_backing() -> None:
 
     for markdown_file in badge_pages:
         text = markdown_file.read_text(encoding="utf-8")
-        assert "{{ page_badge() }}" in text
+        assert "{{ page_header(" in text

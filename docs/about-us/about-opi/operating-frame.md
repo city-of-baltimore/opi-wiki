@@ -1,13 +1,6 @@
 # Operating Frame
 
-{{ page_badge() }}
-
-> How OPI is structured, what each team does, and how the parts fit together.
-**ABOUT THE MAYOR’S OFFICE OF PERFORMANCE AND INNOVATION**
-
-**About OPI**
-
-*How our five services work as one improvement cycle for Baltimore.*
+{{ page_header(summary="How OPI is structured, what each team does, and how the parts fit together.", category="ABOUT OPI", tagline="How our five services work as one improvement cycle for Baltimore.") }}
 
 **FRONT MATTER**
 

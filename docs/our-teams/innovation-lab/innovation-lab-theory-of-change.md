@@ -1,22 +1,6 @@
-# Innovation Lab
+# Innovation Lab Theory of Change
 
-## Innovation Lab operating clarity
-
-The Innovation Lab owns the craft of solving: discovery, service design, user research, product management, prototyping, civic technology, applied AI pilots, and MVP-and-handoff methods. The Lab's question is: **How do we solve this problem in a way that works for residents and staff?**
-
-The Lab is not an ideas shop, a shadow IT team, or a place for unfunded special projects to drift. It starts with a service problem, designs with the people closest to the work, tests practical improvements, and hands off what works with an owner, runbook, and sustainment plan.
-
-The Lab can work on one-agency or multi-agency problems. When implementation requires several agencies to move together with named decision rights and commitments, the Lab partners with Cross-Agency Delivery.
- Theory of Change
-
-{{ page_badge() }}
-
-> How the Innovation Lab moves from inputs to outcomes.
-**SERVICE THEORY OF CHANGE · 03 OF 05**
-
-**Innovation Lab**
-
-*From service problems to practical solutions.*
+{{ page_header(summary="How the Innovation Lab moves from inputs to outcomes.", category="SERVICE THEORY OF CHANGE · 03 OF 05", tagline="From service problems to practical solutions.") }}
 
 **NORTH STAR**
 

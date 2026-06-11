@@ -1,8 +1,6 @@
 # On Performance Management
 
-{{ page_badge() }}
-
-> What modern performance management looks like inside a city government.
+{{ page_header(summary="What modern performance management looks like inside a city government.") }}
 
 **Performance Management Is How a City Tells the Truth**
 

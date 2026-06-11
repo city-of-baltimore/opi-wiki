@@ -1,8 +1,6 @@
 # HR and Labor Stat
 
-{{ page_badge() }}
-
-> CitiStat brief for HR and Labor.
+{{ page_header(summary="CitiStat brief for HR and Labor.") }}
 
 | **Field**                      | **Value**                                                                                                                                  |
 |--------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------|

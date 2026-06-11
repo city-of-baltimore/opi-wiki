@@ -67,6 +67,7 @@ commands, and re-verify all plugins and theme behavior together.
 - Keep global site config in `mkdocs.yml`.
 - Keep navigation local to the content in `docs/**/.pages`.
 - Keep recurring operational source material grouped in dedicated local collections such as `docs/how-we-work/administrative-memos/` and `docs/how-we-work/how-to/`, and expose those collections intentionally in the nearest section navigation.
+- Open each content page with one `{{ page_header(...) }}` call directly under the `# H1`, not a hand-built stack of badge, blockquote, bold kicker, restated bold title, and italic tagline. The macro renders the status badge (from `.metadata.yml`) plus an optional `category`, `summary`, and `tagline`. Keep the title as a single `# H1` — never restate it as a bold paragraph. Section `index.md` landing pages stay on a plain `>` blockquote summary and carry no badge.
 - Keep landing-page card content in neighboring `*.cards.yml` files and render it through the shared `card_grid_from(...)` macro.
 - Keep repeated structured page data in neighboring `*.data.yml` files when one source needs to drive multiple rendered sections.
 - Keep visible page badges in `.metadata.yml` via the `display_badge` field and render them through `page_badge()` or `badge(...)`, not raw HTML spans.
@@ -78,6 +79,7 @@ commands, and re-verify all plugins and theme behavior together.
 
 Use the smallest shared pattern that matches the page need:
 
+- `{{ page_header(...) }}` renders the canonical page intro (status badge + optional `category`, `summary`, `tagline`) once, from the page and its `.metadata.yml`. It is the only supported way to render the header chrome.
 - `.metadata.yml` carries inherited page metadata such as owner, review cadence, change log, and optional `display_badge` state.
 - `*.cards.yml` carries repeated landing-page card content and should render only through `card_grid_from(...)`.
 - `*.data.yml` carries structured page-specific source data when one file needs to drive multiple rendered sections, tables, charts, or lists.

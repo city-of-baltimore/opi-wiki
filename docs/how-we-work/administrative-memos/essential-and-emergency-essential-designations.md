@@ -1,6 +1,6 @@
 # Essential and Emergency Essential Designations for Continuity of Operations
 
-{{ page_badge() }}
+{{ page_header() }}
 
 **To:**  
 All OPI Staff

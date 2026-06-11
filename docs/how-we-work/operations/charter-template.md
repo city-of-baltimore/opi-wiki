@@ -1,14 +1,6 @@
 # Charter Template
 
-{{ page_badge() }}
-
-> Template for chartering a new initiative or working group.
-
-**SERIES · OPI FOUNDATIONS**
-
-**Project Charter**
-
-**Template**
+{{ page_header(summary="Template for chartering a new initiative or working group.", category="SERIES · OPI FOUNDATIONS") }}
 
 A short, decision-grade artifact that confirms ownership, scope, and the bar for done. No charter, no work.
 

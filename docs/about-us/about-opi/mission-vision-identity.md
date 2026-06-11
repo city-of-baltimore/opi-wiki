@@ -1,16 +1,10 @@
 # Mission, Vision, Identity
 
+{{ page_header(summary="Why this office exists, where it's heading, and what it stands for.", tagline="Who we are, who we serve, and what success looks like.") }}
+
 ## How this document should be used
 
 Use this page as the north star for voice and purpose. It explains why OPI exists and what kind of public institution the office is trying to become. For the operating model, pair it with the organization structure, Teams / Programs / Foundations, and How Work Moves Through OPI pages.
-
-
-{{ page_badge() }}
-
-> Why this office exists, where it's heading, and what it stands for.
-**Mission, Vision, and Identity**
-
-*Who we are, who we serve, and what success looks like.*
 
 **NORTH STAR**
 

@@ -1,8 +1,6 @@
 # PD — Principal Data Engineer
 
-{{ page_badge() }}
-
-> Position description for the Principal Data Engineer.
+{{ page_header(summary="Position description for the Principal Data Engineer.") }}
 
 **■ At a Glance**
 

@@ -1,8 +1,6 @@
 # Permit Stat
 
-{{ page_badge() }}
-
-> CitiStat brief for Permit.
+{{ page_header(summary="CitiStat brief for Permit.") }}
 
 | **Field**                      | **Value**                                                                                                            |
 |--------------------------------|----------------------------------------------------------------------------------------------------------------------|

@@ -1,8 +1,6 @@
 # On AdminOps
 
-{{ page_badge() }}
-
-> Why the operational backbone of an office is as important as its strategy.
+{{ page_header(summary="Why the operational backbone of an office is as important as its strategy.") }}
 
 **The Quiet Work That Makes Public Service Possible**
 

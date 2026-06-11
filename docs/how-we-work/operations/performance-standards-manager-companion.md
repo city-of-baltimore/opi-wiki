@@ -1,14 +1,6 @@
 # Performance Standards — Manager Companion
 
-{{ page_badge() }}
-
-> How managers operationalize the staff performance standards.
-
-**SERIES · OPI FOUNDATIONS**
-
-**Performance Standards**
-
-**Manager Companion**
+{{ page_header(summary="How managers operationalize the staff performance standards.", category="SERIES · OPI FOUNDATIONS") }}
 
 Calibration packet, calibration questions, and a bias check. Companion to the Staff v2 guide.
 

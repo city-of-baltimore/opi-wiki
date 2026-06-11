@@ -1,8 +1,6 @@
 # Capability Transfer and Target State
 
-{{ page_badge() }}
-
-> What “capability transfer” actually means here, what Baltimore should be able to do alone by month 12, and the target state every funder, agency partner, and executive will eventually ask about.
+{{ page_header(summary="What “capability transfer” actually means here, what Baltimore should be able to do alone by month 12, and the target state every funder, agency partner, and executive will eventually ask about.") }}
 
 ## What capability transfer means here
 

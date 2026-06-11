@@ -1,14 +1,6 @@
 # Website Information Architecture
 
-{{ page_badge() }}
-
-> Information architecture for the public OPI website.
-
-**SERIES · OPI FOUNDATIONS**
-
-**OPI Website**
-
-**Information Architecture**
+{{ page_header(summary="Information architecture for the public OPI website.", category="SERIES · OPI FOUNDATIONS") }}
 
 Site map, navigation, URL structure, content priority, and a CMS-ready page inventory.
 

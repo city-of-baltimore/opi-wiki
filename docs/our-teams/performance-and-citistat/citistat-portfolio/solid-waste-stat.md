@@ -1,8 +1,6 @@
 # Solid Waste Stat
 
-{{ page_badge() }}
-
-> CitiStat brief for Solid Waste.
+{{ page_header(summary="CitiStat brief for Solid Waste.") }}
 
 | **Field**                      | **Value**                                                                                                  |
 |--------------------------------|------------------------------------------------------------------------------------------------------------|

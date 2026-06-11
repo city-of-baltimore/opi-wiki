@@ -1,8 +1,6 @@
 # PD — Technical Program Manager
 
-{{ page_badge() }}
-
-> Position description for the Technical Program Manager.
+{{ page_header(summary="Position description for the Technical Program Manager.") }}
 
 **■ At a Glance**
 

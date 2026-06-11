@@ -1,14 +1,6 @@
 # Onboarding Process and Checklist
 
-{{ page_badge() }}
-
-> The end-to-end onboarding workflow with concrete checkpoints.
-
-**SERIES · OPI FOUNDATIONS**
-
-**Onboarding Process**
-
-**and Checklist**
+{{ page_header(summary="The end-to-end onboarding workflow with concrete checkpoints.", category="SERIES · OPI FOUNDATIONS") }}
 
 A structured 90-day playbook for new hires, managers, and onboarding buddies.
 

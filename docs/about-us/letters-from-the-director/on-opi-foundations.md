@@ -1,8 +1,6 @@
 # On OPI Foundations
 
-{{ page_badge() }}
-
-> Why we're publishing this body of work, and what it's for.
+{{ page_header(summary="Why we're publishing this body of work, and what it's for.") }}
 
 **Better Government Is a Discipline**
 

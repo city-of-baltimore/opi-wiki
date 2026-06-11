@@ -1,13 +1,6 @@
 # Data Analytics Strategy
 
-{{ page_badge() }}
-
-> OPI's strategy for citywide data and analytics work.
-**STRATEGY**
-
-**Citywide Data & Analytics Strategy**
-
-*Shared infrastructure for trustworthy data, better decisions, transparency, and responsible AI readiness.*
+{{ page_header(summary="OPI's strategy for citywide data and analytics work.", category="STRATEGY", tagline="Shared infrastructure for trustworthy data, better decisions, transparency, and responsible AI readiness.") }}
 
 Strategy Document
 

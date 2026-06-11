@@ -1,8 +1,6 @@
 # Roadmap and Source Systems
 
-{{ page_badge() }}
-
-> Twelve vendor months, then six city-led months — and the source-system sequencing that makes the schedule real.
+{{ page_header(summary="Twelve vendor months, then six city-led months — and the source-system sequencing that makes the schedule real.") }}
 
 Twelve vendor months, then six city-led months. The vendor-led period is structured around two milestones — Foundation (M1, months 0–6) and Launch (M2, months 7–12). The city-led continuation is the third milestone (M3, months 13–18): an Expansion phase that proves the program runs without daily vendor support.
 

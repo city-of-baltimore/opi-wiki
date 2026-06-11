@@ -1,8 +1,6 @@
 # PD — Senior Performance Analyst
 
-{{ page_badge() }}
-
-> Position description for the Senior Performance Analyst.
+{{ page_header(summary="Position description for the Senior Performance Analyst.") }}
 
 **■ At a Glance**
 

@@ -1,17 +1,7 @@
 # Org Structure
 
-## Portfolio, service, program, and team language
+{{ page_header(summary="Who reports to whom, and how decision rights flow.", tagline="Portfolios, leads, staff alignment, services, cost centers, and the Cross-Agency Delivery overlay.") }}
 
-A portfolio is how OPI organizes people, leadership, and cost centers. A service is what OPI delivers to City leadership, agencies, residents, and partners. A program is a formal named body of work, such as CitiStat or Open Data. A team is the staff group that performs the work.
-
-Use this distinction when writing or editing OPI pages. It prevents Cross-Agency Delivery from being described like a staffed portfolio, keeps CitiStat from being treated as all of performance management, and keeps the Innovation Lab from becoming a catch-all for any special project.
-
-
-{{ page_badge() }}
-
-> Who reports to whom, and how decision rights flow.
-
-*Portfolios, leads, staff alignment, services, cost centers, and the Cross-Agency Delivery overlay.*
 OPI delivers its mission through four portfolios and five services. The portfolios are how we organize people, leadership, and cost centers. The services are how we describe what OPI delivers to residents, agencies, and City leadership.
 
 This document is the canonical view of OPI’s structure: leads, staff alignment, portfolios, services, cost centers, and the Cross-Agency Delivery overlay.

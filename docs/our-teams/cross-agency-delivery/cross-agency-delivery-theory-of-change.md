@@ -1,22 +1,6 @@
-# Cross-Agency Delivery
+# Cross-Agency Delivery Theory of Change
 
-## Cross-Agency Delivery operating clarity
-
-Cross-Agency Delivery is a service overlay, not a standing team and not a cost center. It activates when a priority outcome requires multiple agencies to move together and normal channels are not enough. Its question is: **How do we get multiple agencies to actually ship this together?**
-
-The overlay creates the conditions for delivery: a named Authorizer, a Senior Responsible Owner, agency owners, a commitment ledger, an escalation path, and a closure plan. Agencies still own operations. OPI owns the method, the coordination routine, the evidence, and the handoff discipline.
-
-Cross-Agency Delivery is different from CitiStat. CitiStat surfaces the performance problem, helps leadership decide, and monitors follow-through. Cross-Agency Delivery sequences implementation across agencies when the work cannot move through one agency alone.
- Theory of Change
-
-{{ page_badge() }}
-
-> How cross-agency delivery moves from inputs to outcomes.
-**SERVICE THEORY OF CHANGE · 04 OF 05**
-
-**Cross-Agency Delivery**
-
-*How we move work that no single agency can deliver alone.*
+{{ page_header(summary="How cross-agency delivery moves from inputs to outcomes.", category="SERVICE THEORY OF CHANGE · 04 OF 05", tagline="How we move work that no single agency can deliver alone.") }}
 
 **NORTH STAR**
 

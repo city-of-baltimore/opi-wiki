@@ -1,8 +1,6 @@
 # Reference
 
-{{ page_badge() }}
-
-> Full squad roster, expected Sand roles, and a glossary of the program’s working vocabulary.
+{{ page_header(summary="Full squad roster, expected Sand roles, and a glossary of the program’s working vocabulary.") }}
 
 ## Full squad roster
 

@@ -1,14 +1,6 @@
 # Strategic Priorities One-Pager
 
-{{ page_badge() }}
-
-> OPI's strategic priorities, on one page.
-
-**SERIES · OPI FOUNDATIONS**
-
-**Strategic Priorities**
-
-**FY26 in delivery in design**
+{{ page_header(summary="OPI's strategic priorities, on one page.", category="SERIES · OPI FOUNDATIONS") }}
 
 What OPI is finishing this year and starting next — anchored to the City Administrator’s priorities and the Mayor’s Action Plan.
 

@@ -1,14 +1,6 @@
 # Website Copy Master
 
-{{ page_badge() }}
-
-> The master copy doc for the public OPI website.
-
-**SERIES · OPI FOUNDATIONS**
-
-**OPI Website Copy**
-
-**Home, About, Teams, Programs, Services**
+{{ page_header(summary="The master copy doc for the public OPI website.", category="SERIES · OPI FOUNDATIONS") }}
 
 Publication-ready copy blocks for opi.baltimorecity.gov. Plain language. Two audiences: agency partners and residents.
 

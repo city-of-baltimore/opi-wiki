@@ -1,13 +1,6 @@
 # Data Governance Framework
 
-{{ page_badge() }}
-
-> The framework OPI uses to govern city data assets.
-**STRATEGY FRAMEWORK**
-
-**Comprehensive Data Governance for Baltimore City**
-
-*A framework for trustworthy data, responsible use, open data, privacy, sharing, and AI readiness.*
+{{ page_header(summary="The framework OPI uses to govern city data assets.", category="STRATEGY FRAMEWORK", tagline="A framework for trustworthy data, responsible use, open data, privacy, sharing, and AI readiness.") }}
 
 Strategy Framework
 

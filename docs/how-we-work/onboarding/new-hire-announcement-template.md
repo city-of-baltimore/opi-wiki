@@ -1,13 +1,6 @@
 # New Hire Announcement Template
 
-{{ page_badge() }}
-
-> A template for the office-wide announcement when someone joins OPI.
-**OPI · ONBOARDING**
-
-**New Hire Announcement Template**
-
-*Two reusable templates the Chief of Staff posts in the OPI Teams channel on the morning of every new hire’s first day — a generic version and an engineering-specific version.*
+{{ page_header(summary="A template for the office-wide announcement when someone joins OPI.", category="OPI · ONBOARDING", tagline="Two reusable templates the Chief of Staff posts in the OPI Teams channel on the morning of every new hire’s first day — a generic version and an engineering-specific version.") }}
 
 **HOW TO USE THIS TEMPLATE**
 

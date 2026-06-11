@@ -1,8 +1,6 @@
 # Baltimore Intelligence Center
 
-{{ page_badge() }}
-
-> The citywide data, intelligence, and AI program — and the operating reference for everyone working on, partnering with, or funding it.
+{{ page_header(summary="The citywide data, intelligence, and AI program — and the operating reference for everyone working on, partnering with, or funding it.") }}
 
 The Baltimore Intelligence Center (BIC) is the citywide data, intelligence, and AI program that the Mayor’s Office of Performance and Innovation is standing up in partnership with Sand Technologies. It is a 12-month vendor-led build, followed by a 6-month city-led continuation. By the end of month 12, Baltimore should have a trusted data platform, a working semantic layer, two live decision-support products, and the operating discipline to keep building responsibly without the vendor in the room.
 

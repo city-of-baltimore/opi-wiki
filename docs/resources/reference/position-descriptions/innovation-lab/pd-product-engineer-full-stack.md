@@ -1,8 +1,6 @@
 # PD — Product Engineer
 
-{{ page_badge() }}
-
-> Position description for the Product Engineer.
+{{ page_header(summary="Position description for the Product Engineer.") }}
 
 **■ At a Glance**
 

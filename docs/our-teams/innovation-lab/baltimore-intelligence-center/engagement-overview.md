@@ -1,8 +1,6 @@
 # Engagement Overview
 
-{{ page_badge() }}
-
-> Why the Baltimore Intelligence Center exists, what the engagement does about it, and how the squad is organized.
+{{ page_header(summary="Why the Baltimore Intelligence Center exists, what the engagement does about it, and how the squad is organized.") }}
 
 ## The problem we are solving
 

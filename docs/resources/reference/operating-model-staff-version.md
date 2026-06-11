@@ -1,30 +1,6 @@
-# Operating Model
+# Operating Model (Staff Version)
 
-## Portfolio, service, program, and team language
-
-## Cross-Agency Delivery operating clarity
-
-Cross-Agency Delivery is a service overlay, not a standing team and not a cost center. It activates when a priority outcome requires multiple agencies to move together and normal channels are not enough. Its question is: **How do we get multiple agencies to actually ship this together?**
-
-The overlay creates the conditions for delivery: a named Authorizer, a Senior Responsible Owner, agency owners, a commitment ledger, an escalation path, and a closure plan. Agencies still own operations. OPI owns the method, the coordination routine, the evidence, and the handoff discipline.
-
-Cross-Agency Delivery is different from CitiStat. CitiStat surfaces the performance problem, helps leadership decide, and monitors follow-through. Cross-Agency Delivery sequences implementation across agencies when the work cannot move through one agency alone.
-
-
-A portfolio is how OPI organizes people, leadership, and cost centers. A service is what OPI delivers to City leadership, agencies, residents, and partners. A program is a formal named body of work, such as CitiStat or Open Data. A team is the staff group that performs the work.
-
-Use this distinction when writing or editing OPI pages. It prevents Cross-Agency Delivery from being described like a staffed portfolio, keeps CitiStat from being treated as all of performance management, and keeps the Innovation Lab from becoming a catch-all for any special project.
- (Staff Version)
-
-{{ page_badge() }}
-
-> The OPI operating model written for OPI staff.
-
-**SERIES · OPI FOUNDATIONS**
-
-**OPI Operating Model**
-
-**Staff version: how OPI is organized and how work moves**
+{{ page_header(summary="The OPI operating model written for OPI staff.", category="SERIES · OPI FOUNDATIONS", tagline="Staff version: how OPI is organized and how work moves.") }}
 
 A short, plain-language guide for OPI staff. Pairs with the full Operating Model master held by leadership.
 

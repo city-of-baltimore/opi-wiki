@@ -1,8 +1,6 @@
 # Staff Directory
 
-{{ page_badge() }}
-
-> Staff directory derived from the contact sheet and the current roster.
+{{ page_header(summary="Staff directory derived from the contact sheet and the current roster.") }}
 
 **AUDIENCE** OPI staff
 

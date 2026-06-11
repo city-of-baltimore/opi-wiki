@@ -1,6 +1,6 @@
 # Add a Printer
 
-{{ page_badge() }}
+{{ page_header() }}
 
 Use the Baltimore City support article for this task:
 

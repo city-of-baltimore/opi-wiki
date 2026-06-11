@@ -1,16 +1,10 @@
 # Operating Principles and Culture
 
+{{ page_header(summary="How we work together — the rules of the road inside OPI.", tagline="How we work, how we treat each other, and how we hold the line on quality — drawn from our team listening sessions.") }}
+
 ## How this connects to the operating model
 
 Culture shows up in the handoffs. Moving fast with intention means choosing the right routine, naming the owner, documenting the decision, and planning sustainment before launch. Use the operating principles alongside How Work Moves Through OPI when deciding whether work belongs in CitiStat, Data and Analytics, the Innovation Lab, Cross-Agency Delivery, or AdminOps.
-
-
-{{ page_badge() }}
-
-> How we work together — the rules of the road inside OPI.
-**Operating Principles and Culture**
-
-*How we work, how we treat each other, and how we hold the line on quality — drawn from our team listening sessions.*
 
 **NORTH STAR**
 

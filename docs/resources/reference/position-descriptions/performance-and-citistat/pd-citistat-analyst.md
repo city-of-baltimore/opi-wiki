@@ -1,8 +1,6 @@
 # PD — CitiStat Analyst
 
-{{ page_badge() }}
-
-> Position description for the CitiStat Analyst.
+{{ page_header(summary="Position description for the CitiStat Analyst.") }}
 
 **■ At a Glance**
 

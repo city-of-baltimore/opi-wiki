@@ -1,8 +1,6 @@
 # PD — Senior Data Engineer
 
-{{ page_badge() }}
-
-> Position description for the Senior Data Engineer.
+{{ page_header(summary="Position description for the Senior Data Engineer.") }}
 
 **■ At a Glance**
 

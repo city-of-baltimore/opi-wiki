@@ -1,18 +1,12 @@
 # Glossary of OPI Terms
 
-{{ page_badge() }}
-
-> Plain-language definitions of every term used inside OPI.
-
-**SERIES · OPI FOUNDATIONS**
-
-**Glossary of OPI Terms**
+{{ page_header(summary="Plain-language definitions of every term used inside OPI.", category="SERIES · OPI FOUNDATIONS") }}
 
 **The words we use**
 
 A reference of OPI’s active vocabulary.
 
-**VERSION** v1.1
+**VERSION** v1.2
 
 **UPDATED** April 2026
 
@@ -149,6 +143,18 @@ Words shape behavior. When OPI uses one word for something and an agency partner
 **Working purpose of Stat.** The one-to-two-sentence statement that names what a particular Stat exists to do — for example, *“To ensure timely and effective service delivery related to trash, littering, illegal dumping, and overall cleanliness in the city.”* Set during the new-Stat alignment, displayed on the deck, and revisited at frame reviews.
 
 **Workday.** The city’s enterprise system for HR, finance, and AdminOps. The FY26 “maximize Workday” priority focuses on reporting, HR processes, capital budget management, grants, and internal workflows.
+
+**■ Terms to use carefully**
+
+These terms are easy to misuse in a way that blurs OPI's operating model. Use them only as described, and prefer the canonical language in [How Work Moves Through OPI](../../how-we-work/how-work-moves-through-opi.md).
+
+**Citywide Digital Services.** Use only when referring to brand stewardship or digital service request routing. Do not use as a synonym for the Innovation Lab, which is the canonical portfolio for OPI's service-improvement and product craft.
+
+**Baltimore Design Lab.** Treat as a design community of practice or a sub-capability within or alongside the Innovation Lab. Do not present it as a separate portfolio or office unless it is formally approved as one.
+
+**Joint Stat.** Define on first use as a Stat that brings multiple agencies into one performance routine for a shared problem. Distinguish it from a delivery review: a Joint Stat surfaces the problem and monitors the gain; a delivery review runs the cross-agency implementation.
+
+**Delivery room.** Avoid. Prefer *delivery review*, *delivery cadence*, or *delivery activation*, which are defined and less theatrical.
 
 **■ Naming norms**
 

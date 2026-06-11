@@ -1,12 +1,6 @@
 # Intake SOP
 
-{{ page_badge() }}
-
-> How OPI receives, triages, and routes new requests.
-
-**SERIES · OPI FOUNDATIONS**
-
-**Intake SOP**
+{{ page_header(summary="How OPI receives, triages, and routes new requests.", category="SERIES · OPI FOUNDATIONS") }}
 
 How OPI accepts new work. One front door. Clear vetting. No surprise commitments.
 

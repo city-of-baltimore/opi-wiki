@@ -1,6 +1,6 @@
 # Order food or catering from preferred vendors
 
-{{ page_badge() }}
+{{ page_header() }}
 
 It is preferred that you contact Natasha Edmonds (Dir. Administrative Services)
 to place your order if you know your date of need is at least 72Hr's aways.

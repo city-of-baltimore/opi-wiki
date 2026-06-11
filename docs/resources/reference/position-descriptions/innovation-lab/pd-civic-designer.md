@@ -1,8 +1,6 @@
 # PD — Civic Designer
 
-{{ page_badge() }}
-
-> Position description for the Civic Designer.
+{{ page_header(summary="Position description for the Civic Designer.") }}
 
 **■ At a Glance**
 

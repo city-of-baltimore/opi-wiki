@@ -1,14 +1,6 @@
 # How Work Moves Through OPI
 
-{{ page_badge() }}
-
-> The plain-language model for how OPI moves from a signal to a sustained improvement.
-
-**OPI · FOUNDATIONS**
-
-**How Work Moves Through OPI**
-
-*From performance signal to practical solution to sustained improvement.*
+{{ page_header(summary="The plain-language model for how OPI moves from a signal to a sustained improvement.", category="OPI · FOUNDATIONS", tagline="From performance signal to practical solution to sustained improvement.") }}
 
 ## The short version
 

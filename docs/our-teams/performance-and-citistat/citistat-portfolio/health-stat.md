@@ -1,8 +1,6 @@
 # Health Stat
 
-{{ page_badge() }}
-
-> CitiStat brief for Health.
+{{ page_header(summary="CitiStat brief for Health.") }}
 
 | **Field**                      | **Value**                                                                                            |
 |--------------------------------|------------------------------------------------------------------------------------------------------|

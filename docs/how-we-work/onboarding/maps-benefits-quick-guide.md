@@ -1,14 +1,6 @@
 # MAPS Benefits Quick Guide
 
-{{ page_badge() }}
-
-> A plain-language overview of MAPS benefits available to OPI staff.
-
-**SERIES · OPI FOUNDATIONS**
-
-**MAPS Benefits**
-
-**Quick Guide**
+{{ page_header(summary="A plain-language overview of MAPS benefits available to OPI staff.", category="SERIES · OPI FOUNDATIONS") }}
 
 Health, leave, retirement, and time-off benefits for OPI staff covered by the MAPS agreement.
 

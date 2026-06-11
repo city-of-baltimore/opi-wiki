@@ -1,8 +1,6 @@
 # Operating Model
 
-{{ page_badge() }}
-
-> Two organizational homes, one squad — and the city/Sand split that makes the engagement actually run.
+{{ page_header(summary="Two organizational homes, one squad — and the city/Sand split that makes the engagement actually run.") }}
 
 ## Two homes, one squad
 

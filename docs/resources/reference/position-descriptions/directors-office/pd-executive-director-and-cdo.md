@@ -1,12 +1,6 @@
 # PD — Executive Director and Chief Data Officer
 
-{{ page_badge() }}
-
-> Position description for the Executive Director.
-
-**Executive Director**
-
-**and Chief Data Officer**
+{{ page_header(summary="Position description for the Executive Director.") }}
 
 **■ At a Glance**
 

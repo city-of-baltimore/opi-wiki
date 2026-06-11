@@ -1,14 +1,6 @@
 # Performance Standards (Staff)
 
-{{ page_badge() }}
-
-> What performance looks like for individual contributors at OPI.
-
-**SERIES · OPI FOUNDATIONS**
-
-**Performance Standards**
-
-**and Calibration Guide**
+{{ page_header(summary="What performance looks like for individual contributors at OPI.", category="SERIES · OPI FOUNDATIONS") }}
 
 Staff distribution. Eight core dimensions, role craft, evidence-based ratings, and a fair calibration process.
 

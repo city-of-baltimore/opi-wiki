@@ -1,14 +1,6 @@
 # Productivity and Collaboration Playbook
 
-{{ page_badge() }}
-
-> Tools, rituals, and conventions for getting work done together.
-
-**SERIES · OPI FOUNDATIONS**
-
-**Productivity and**
-
-**Collaboration Playbook**
+{{ page_header(summary="Tools, rituals, and conventions for getting work done together.", category="SERIES · OPI FOUNDATIONS") }}
 
 How OPI works in Microsoft 365 (Outlook, Teams, OneDrive, OneNote, SharePoint, Planner) and Jira. Minimum standards for clear, durable, and accountable work.
 

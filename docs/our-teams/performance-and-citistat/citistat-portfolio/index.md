@@ -1,10 +1,6 @@
 # CitiStat Portfolio
 
-{{ page_badge() }}
-
-> The full CitiStat portfolio — every Stat, with its brief, in one place.
-
-*Strategic frame, governance standards, the master register, and full profiles for the 19 monthly Stats.*
+{{ page_header(summary="The full CitiStat portfolio — every Stat, with its brief, in one place.", tagline="Strategic frame, governance standards, the master register, and full profiles for the 19 monthly Stats.") }}
 
 ## Executive summary
 

@@ -90,6 +90,28 @@ For recurring operational source material, keep durable memo-style guidance in
 `docs/how-we-work/how-to/`, then expose those collections intentionally in the
 `How We Work` navigation rather than burying them in unrelated sections.
 
+## Section map: folder ↔ navigation label
+
+Navigation labels are set explicitly in each section's `.pages` `title:` field,
+so a few folder names intentionally differ from the label readers see. Keep this
+mapping in mind when locating content, and keep the `.pages` title, the
+`index.md` H1, and this table in sync if a section is renamed.
+
+| Folder | Navigation label | Notes |
+|---|---|---|
+| `our-teams/directors-office/` | Director's Office | Also houses the **AdminOps** function (operating backbone). |
+| `our-teams/performance-and-citistat/` | Performance | The **CitiStat** program and portfolio live under this team. |
+| `our-teams/cross-agency-delivery/` | Cross-Agency Delivery | A **service overlay**, not a staffed team — it sits under Our Teams for discoverability. |
+| `our-teams/data-and-analytics/` | Data and Analytics | — |
+| `our-teams/innovation-lab/` | Innovation Lab | Owns the Baltimore Intelligence Center subsection. |
+| `how-we-work/` | How We Work | The internal SharePoint KB calls the equivalent pillar **How We Deliver** — different system, different label (see the Wiki Knowledge Base Structure page). |
+
+This public site (OPI Foundations, five sections) and the internal SharePoint
+knowledge base (six pillars) are deliberately separate systems with different
+top-level labels. The
+[Wiki Knowledge Base Structure](docs/resources/reference/wiki-knowledge-base-structure.md)
+page documents the internal KB and the relationship between the two.
+
 ## Landing-page cards
 
 Card grids on section landing pages are shared UI, not one-off HTML snippets.
@@ -102,12 +124,24 @@ overrides, reusable components, and page-specific presentation should live in
 separate files under `docs/assets/stylesheets/` so one-off tweaks do not drift
 into the global theme surface.
 
+## Page headers
+
+Every content page opens with one `{{ page_header(...) }}` call placed directly
+under the `# H1`. It renders the canonical intro — the status badge plus an
+optional `category` eyebrow, `summary` lede, and `tagline` — as a single
+accessible block. Do not hand-build the old stack (badge macro, blockquote
+summary, bold kicker, a bold line restating the title, italic tagline); that
+duplicated the title and split header styling three ways across the corpus. Keep
+the page title as a single `# H1`. Section `index.md` landing pages are the
+exception: they use a plain `>` blockquote summary and no badge.
+
 ## Page badges
 
 Visible status/type pills are shared UI too. Store badge intent in the nearest
 `.metadata.yml` file with `display_badge` values such as `approved`, `draft`,
-`template`, `reference`, or `position-description`, and render them with the
-shared `page_badge()` or `badge(...)` macros instead of inline HTML spans.
+`template`, `reference`, or `position-description`. `page_header()` renders the
+page's badge automatically; use the `badge(...)` macro only for one-off inline
+badges, and never inline raw HTML pill spans.
 
 ## Structured page data
 

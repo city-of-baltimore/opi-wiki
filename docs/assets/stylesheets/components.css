@@ -148,6 +148,49 @@
   color: var(--opi-gold);
 }
 
+/* Page header: canonical eyebrow + summary lede rendered by the page_header()
+   macro. Replaces the hand-built badge / bold kicker / duplicate-title /
+   tagline stack so the page title stays a single semantic <h1>. */
+.opi-page-header {
+  margin: 0 0 1.6rem;
+}
+
+.opi-page-header__eyebrow {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 0 0 0.6rem;
+}
+
+.opi-page-header__category {
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-weight: 700;
+  color: var(--opi-gold-deep);
+}
+
+[data-md-color-scheme="slate"] .opi-page-header__category {
+  color: var(--opi-gold);
+}
+
+.md-typeset .opi-page-header__summary {
+  margin: 0 0 0.4rem;
+  font-size: 1.15rem;
+  line-height: 1.5;
+  font-weight: 600;
+  color: var(--opi-heading);
+}
+
+.md-typeset .opi-page-header__tagline {
+  margin: 0;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  font-style: italic;
+  color: var(--opi-text-muted);
+}
+
 /* Four tenets of Stat: 2×2 card grid with gold accent line. */
 .opi-tenets-grid {
   display: grid;

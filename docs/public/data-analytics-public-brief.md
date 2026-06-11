@@ -1,14 +1,6 @@
 # Data and Analytics — Public Brief
 
-{{ page_badge() }}
-
-> Plain-language public brief on the Data and Analytics team.
-
-**SERIES · OPI FOUNDATIONS**
-
-**Citywide Data and Analytics**
-
-**Open Baltimore, data products, and responsible AI**
+{{ page_header(summary="Plain-language public brief on the Data and Analytics team.", category="SERIES · OPI FOUNDATIONS", tagline="Open Baltimore, data products, and responsible AI.") }}
 
 A plain-language brief on how Baltimore manages, publishes, and uses data — and how to engage with the work.
 

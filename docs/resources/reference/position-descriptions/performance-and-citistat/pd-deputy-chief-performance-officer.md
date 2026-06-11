@@ -1,8 +1,6 @@
 # PD — Deputy Chief Performance Officer
 
-{{ page_badge() }}
-
-> Position description for the Deputy Chief Performance Officer.
+{{ page_header(summary="Position description for the Deputy Chief Performance Officer.") }}
 
 **■ At a Glance**
 

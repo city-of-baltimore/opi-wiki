@@ -1,6 +1,6 @@
 # Transition to 3x/4x per Week In-Office Schedule
 
-{{ page_badge() }}
+{{ page_header() }}
 
 **To:**  
 All OPI Staff

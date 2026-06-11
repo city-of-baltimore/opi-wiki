@@ -1,8 +1,6 @@
 # The Five Workstreams
 
-{{ page_badge() }}
-
-> Five workstreams that build on each other. The platform comes first, because nothing else works without it.
+{{ page_header(summary="Five workstreams that build on each other. The platform comes first, because nothing else works without it.") }}
 
 The engagement is organized into five workstreams. They build on each other: the platform comes first because nothing else works without it; the semantic layer translates the platform into city language; the products prove the platform in real workflows; the internal tools tighten OPI’s own operating discipline; and the design system, adoption practice, and capability-transfer plan make sure what gets built survives the vendor handoff.
 

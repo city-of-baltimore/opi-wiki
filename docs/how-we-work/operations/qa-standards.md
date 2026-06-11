@@ -1,14 +1,6 @@
 # QA Standards
 
-{{ page_badge() }}
-
-> Quality bars for everything OPI ships.
-
-**SERIES · OPI FOUNDATIONS**
-
-**Quality Assurance**
-
-**Standards**
+{{ page_header(summary="Quality bars for everything OPI ships.", category="SERIES · OPI FOUNDATIONS") }}
 
 The minimum bar for any artifact OPI produces. Accessibility, plain language, privacy review, and no surprise launches.
 

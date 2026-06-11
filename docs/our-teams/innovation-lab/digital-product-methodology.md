@@ -1,24 +1,6 @@
-# Digital Product
+# Digital Product Methodology
 
-## Innovation Lab operating clarity
-
-The Innovation Lab owns the craft of solving: discovery, service design, user research, product management, prototyping, civic technology, applied AI pilots, and MVP-and-handoff methods. The Lab's question is: **How do we solve this problem in a way that works for residents and staff?**
-
-The Lab is not an ideas shop, a shadow IT team, or a place for unfunded special projects to drift. It starts with a service problem, designs with the people closest to the work, tests practical improvements, and hands off what works with an owner, runbook, and sustainment plan.
-
-The Lab can work on one-agency or multi-agency problems. When implementation requires several agencies to move together with named decision rights and commitments, the Lab partners with Cross-Agency Delivery.
- Methodology
-
-{{ page_badge() }}
-
-> How OPI ships digital products inside city government.
-**METHOD GUIDE**
-
-**How OPI Designs and Ships Digital Products**
-
-*A practical workflow for service design, product discovery, prototyping, engineering, documentation, and sustainment.*
-
-Method Guide
+{{ page_header(summary="How OPI ships digital products inside city government.", category="METHOD GUIDE", tagline="A practical workflow for service design, product discovery, prototyping, engineering, documentation, and sustainment.") }}
 
 *Read alongside: OPI Innovation Lab Strategy*
 

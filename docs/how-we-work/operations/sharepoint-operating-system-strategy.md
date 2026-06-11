@@ -1,14 +1,6 @@
 # SharePoint Operating System Strategy
 
-{{ page_badge() }}
-
-> How OPI uses SharePoint as an internal operating system.
-
-**SERIES · OPI FOUNDATIONS**
-
-**SharePoint Operating**
-
-**System Strategy**
+{{ page_header(summary="How OPI uses SharePoint as an internal operating system.", category="SERIES · OPI FOUNDATIONS") }}
 
 A searchable, governed, and durable knowledge base for OPI. Strategy, metadata taxonomy, and Project Directory schema.
 

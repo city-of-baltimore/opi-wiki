@@ -1,8 +1,6 @@
 # PD — Project Manager
 
-{{ page_badge() }}
-
-> Position description for the Project Manager.
+{{ page_header(summary="Position description for the Project Manager.") }}
 
 **■ At a Glance**
 

@@ -1,6 +1,6 @@
 # Git Guide
 
-{{ page_badge() }}
+{{ page_header() }}
 
 A guide to using Git, with best practices and procedures to ensure an
 easy-to-understand and navigable Git history.

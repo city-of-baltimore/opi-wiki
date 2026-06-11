@@ -1,14 +1,6 @@
 # Managers' Onboarding Playbook
 
-{{ page_badge() }}
-
-> What managers do — and don't do — to set new hires up for success.
-
-**SERIES · OPI FOUNDATIONS**
-
-**Manager's**
-
-**Onboarding Playbook**
+{{ page_header(summary="What managers do — and don't do — to set new hires up for success.", category="SERIES · OPI FOUNDATIONS") }}
 
 A practical guide for OPI managers — how to make new hires productive, connected, and clear on expectations within 90 days.
 

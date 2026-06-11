@@ -1,6 +1,6 @@
 # Protocol For Responding To City Council Requests
 
-{{ page_badge() }}
+{{ page_header() }}
 
 **To:**  
 All OPI Staff

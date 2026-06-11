@@ -1,14 +1,6 @@
 # CitiStat — Public Brief
 
-{{ page_badge() }}
-
-> Plain-language public brief on CitiStat.
-
-**SERIES · OPI FOUNDATIONS**
-
-**CitiStat in Baltimore**
-
-**How the City turns data into decisions and follow-through**
+{{ page_header(summary="Plain-language public brief on CitiStat.", category="SERIES · OPI FOUNDATIONS", tagline="How the City turns data into decisions and follow-through.") }}
 
 A plain-language brief on Baltimore’s CitiStat program, the 19 Stats, and where to see results.
 

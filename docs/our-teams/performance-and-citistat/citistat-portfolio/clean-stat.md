@@ -1,8 +1,6 @@
 # Clean Stat
 
-{{ page_badge() }}
-
-> CitiStat brief for Clean.
+{{ page_header(summary="CitiStat brief for Clean.") }}
 
 | **Field**                      | **Value**                                                                                                  |
 |--------------------------------|------------------------------------------------------------------------------------------------------------|

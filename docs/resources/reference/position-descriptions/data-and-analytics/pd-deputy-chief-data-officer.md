@@ -1,8 +1,6 @@
 # PD — Deputy Chief Data Officer
 
-{{ page_badge() }}
-
-> Position description for the Deputy Chief Data Officer.
+{{ page_header(summary="Position description for the Deputy Chief Data Officer.") }}
 
 **■ At a Glance**
 

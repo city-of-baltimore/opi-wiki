@@ -1,8 +1,6 @@
 # PD — Principal Platform Engineer
 
-{{ page_badge() }}
-
-> Position description for the Principal Platform Engineer.
+{{ page_header(summary="Position description for the Principal Platform Engineer.") }}
 
 **■ At a Glance**
 

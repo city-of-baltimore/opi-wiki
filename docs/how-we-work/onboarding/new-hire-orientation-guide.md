@@ -1,14 +1,6 @@
 # New Hire Orientation Guide
 
-{{ page_badge() }}
-
-> What a new hire's first weeks at OPI look like.
-
-**SERIES · OPI FOUNDATIONS**
-
-**New Hire**
-
-**Orientation Guide**
+{{ page_header(summary="What a new hire's first weeks at OPI look like.", category="SERIES · OPI FOUNDATIONS") }}
 
 Your first day, your first week, and what to expect at Baltimore’s Mayor’s Office of Performance and Innovation.
 

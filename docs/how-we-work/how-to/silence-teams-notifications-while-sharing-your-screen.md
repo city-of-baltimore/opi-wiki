@@ -1,8 +1,6 @@
 # Silence Teams Notifications While Sharing Your Screen
 
-{{ page_badge() }}
-
-> Short how-to for preventing notification popups during screen sharing in Microsoft Teams.
+{{ page_header(summary="Short how-to for preventing notification popups during screen sharing in Microsoft Teams.") }}
 
 **AUDIENCE** OPI staff
 

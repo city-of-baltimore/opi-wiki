@@ -1,27 +1,10 @@
 # Teams, Programs, Foundations
 
-## How to read this page
-
-## Portfolio, service, program, and team language
-
-A portfolio is how OPI organizes people, leadership, and cost centers. A service is what OPI delivers to City leadership, agencies, residents, and partners. A program is a formal named body of work, such as CitiStat or Open Data. A team is the staff group that performs the work.
-
-Use this distinction when writing or editing OPI pages. It prevents Cross-Agency Delivery from being described like a staffed portfolio, keeps CitiStat from being treated as all of performance management, and keeps the Innovation Lab from becoming a catch-all for any special project.
-
+{{ page_header(summary="The full lineup of teams, recurring programs, and foundational practices.", category="TEAMS, PROGRAMS & FOUNDATIONS", tagline="Portfolio detail, function boundaries, and the foundations that make OPI’s work coherent.") }}
 
 Read this page as the bridge between OPI's structure and OPI's work. Portfolios explain how people and cost centers are organized. Services explain what OPI delivers. Programs and methods explain how recurring work runs.
 
 > **CitiStat identifies the problem. Data helps explain it. The Innovation Lab designs and tests the solution. Cross-Agency Delivery coordinates implementation when multiple agencies must act together. AdminOps keeps the work visible, documented, and sustained.**
-
-
-{{ page_badge() }}
-
-> The full lineup of teams, recurring programs, and foundational practices.
-**TEAMS, PROGRAMS & FOUNDATIONS**
-
-**Teams, Programs & Foundations**
-
-*Portfolio detail, function boundaries, and the foundations that make OPI’s work coherent.*
 
 **WHAT WE OWN AND HOW WE WORK**
 

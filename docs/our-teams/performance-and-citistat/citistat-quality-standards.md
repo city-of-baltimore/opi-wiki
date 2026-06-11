@@ -1,14 +1,6 @@
 # CitiStat Quality Standards
 
-{{ page_badge() }}
-
-> The QA bar for every Stat artifact — from raw data to the session itself.
-
-**QUALITY STANDARDS · AUDIENCE: STAFF**
-
-**CitiStat Quality Standards**
-
-*The standards every Stat product is held to before it leaves the analyst, the Stat lead, and the room.*
+{{ page_header(summary="The QA bar for every Stat artifact — from raw data to the session itself.", category="QUALITY STANDARDS · AUDIENCE: STAFF", tagline="The standards every Stat product is held to before it leaves the analyst, the Stat lead, and the room.") }}
 
 *Read alongside: OPI CitiStat Method Playbook and OPI CitiStat Templates.*
 

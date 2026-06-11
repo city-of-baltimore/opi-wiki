@@ -1,8 +1,6 @@
 # Fire and EMS Stat
 
-{{ page_badge() }}
-
-> CitiStat brief for Fire and EMS.
+{{ page_header(summary="CitiStat brief for Fire and EMS.") }}
 
 | **Field**                      | **Value**                                                                                                         |
 |--------------------------------|-------------------------------------------------------------------------------------------------------------------|

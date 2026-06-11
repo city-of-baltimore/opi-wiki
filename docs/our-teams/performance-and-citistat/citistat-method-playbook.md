@@ -1,14 +1,6 @@
 # CitiStat Method Playbook
 
-{{ page_badge() }}
-
-> The end-to-end CitiStat method — how a Stat session actually runs.
-
-**METHOD PLAYBOOK · AUDIENCE: STAFF**
-
-**CitiStat Method Playbook**
-
-*Standards, routines, templates, and tools for running Baltimore’s performance management system with discipline, candor, and follow-through.*
+{{ page_header(summary="The end-to-end CitiStat method — how a Stat session actually runs.", category="METHOD PLAYBOOK · AUDIENCE: STAFF", tagline="Standards, routines, templates, and tools for running Baltimore’s performance management system with discipline, candor, and follow-through.") }}
 
 *Read alongside: OPI CitiStat Strategic Framework.*
 

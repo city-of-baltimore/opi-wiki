@@ -1,14 +1,18 @@
 # Wiki Knowledge Base Structure
 
-{{ page_badge() }}
+{{ page_header(summary="How OPI organizes its internal SharePoint knowledge base — a separate system from this public site.", category="SERIES · OPI FOUNDATIONS", tagline="Structure, governance, and canonical pages.") }}
 
-> How this wiki is organized and why.
+!!! note "Two different systems"
+    This page documents OPI's **internal SharePoint knowledge base** — the
+    staff-only operating home for project records, directories, and controlled
+    templates. It does **not** describe this public site.
 
-**SERIES · OPI FOUNDATIONS**
-
-**OPI Wiki and Internal Knowledge Base**
-
-**Structure, governance, and canonical pages**
+    **This public site (OPI Foundations)** is a MkDocs site organized into five
+    sections — About Us, How We Work, Our Teams, Resources, and Public — and
+    published openly. The internal SharePoint KB described below is where the
+    non-public, day-to-day operating records live. The two use different
+    top-level labels on purpose (for example, this site's **How We Work**
+    corresponds to the internal KB's **How We Deliver** pillar).
 
 How OPI organizes its internal knowledge so staff can find what they need, trust what they find, and rely on it surviving turnover.
 
@@ -64,7 +68,7 @@ OPI uses Microsoft SharePoint as the wiki platform, consistent with the rest of 
 
 **■ Top-level navigation**
 
-The Wiki uses six top-level pillars. Depth comes from consistent subpages, not from adding more tabs. Every pillar has a named owner.
+The internal SharePoint KB uses six top-level pillars. Depth comes from consistent subpages, not from adding more tabs. Every pillar has a named owner.
 
 | **Pillar**                   | **What lives here**                                                                                 | **Owner**         |
 |------------------------------|-----------------------------------------------------------------------------------------------------|-------------------|

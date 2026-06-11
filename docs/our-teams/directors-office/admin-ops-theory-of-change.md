@@ -1,9 +1,6 @@
 # AdminOps Theory of Change
 
-{{ page_badge() }}
-
-> How AdminOps moves from inputs to outcomes.
-**SERVICE THEORY OF CHANGE · 05 OF 05**
+{{ page_header(summary="How AdminOps moves from inputs to outcomes.", category="SERVICE THEORY OF CHANGE · 05 OF 05") }}
 
 **AdminOps**
 

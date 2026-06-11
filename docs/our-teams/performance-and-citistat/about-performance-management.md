@@ -1,10 +1,6 @@
 # About Performance
 
-{{ page_badge() }}
-
-> The plain-language overview of citywide performance management and CitiStat in Baltimore City government.
-
-**ABOUT · SERVICE 01 OF 05 · AUDIENCE: PUBLIC**
+{{ page_header(summary="The plain-language overview of citywide performance management and CitiStat in Baltimore City government.", category="ABOUT · SERVICE 01 OF 05 · AUDIENCE: PUBLIC") }}
 
 **Citywide Performance Management and CitiStat**
 

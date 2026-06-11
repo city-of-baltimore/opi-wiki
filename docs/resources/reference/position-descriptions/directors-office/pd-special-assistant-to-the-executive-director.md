@@ -1,8 +1,6 @@
 # PD — Special Assistant to the Executive Director
 
-{{ page_badge() }}
-
-> Position description for the Special Assistant to the Executive Director.
+{{ page_header(summary="Position description for the Special Assistant to the Executive Director.") }}
 
 **■ At a Glance**
 

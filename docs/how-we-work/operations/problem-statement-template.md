@@ -1,14 +1,6 @@
 # Problem Statement Template
 
-{{ page_badge() }}
-
-> A structured way to frame a problem before scoping a solution.
-
-**SERIES · OPI FOUNDATIONS**
-
-**Problem Statement**
-
-**Template**
+{{ page_header(summary="A structured way to frame a problem before scoping a solution.", category="SERIES · OPI FOUNDATIONS") }}
 
 A one-to-three sentence framing that names what is failing and who feels it. Sharp problems make sharp work.
 

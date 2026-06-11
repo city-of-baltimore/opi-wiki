@@ -1,8 +1,6 @@
 # Housing Stat
 
-{{ page_badge() }}
-
-> CitiStat brief for Housing.
+{{ page_header(summary="CitiStat brief for Housing.") }}
 
 | **Field**                      | **Value**                                                                                                  |
 |--------------------------------|------------------------------------------------------------------------------------------------------------|

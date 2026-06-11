@@ -1,14 +1,6 @@
 # CitiStat Method — Staff Quick Reference
 
-{{ page_badge() }}
-
-> A one-page quick-reference for OPI staff running Stats.
-
-**QUICK REFERENCE · SERIES: OPI FOUNDATIONS · AUDIENCE: STAFF**
-
-**CitiStat Method — Staff Quick Reference**
-
-*Roles, the cycle, and the escalation path — at a glance.*
+{{ page_header(summary="A one-page quick-reference for OPI staff running Stats.", category="QUICK REFERENCE · SERIES: OPI FOUNDATIONS · AUDIENCE: STAFF", tagline="Roles, the cycle, and the escalation path — at a glance.") }}
 
 *This page is the in-session companion to the [CitiStat Method Playbook](citistat-method-playbook.md). For full standards, definitions, and detail, follow the See-also links at the bottom. For artifact templates use [CitiStat Templates](citistat-templates.md); for the QA bar use [CitiStat Quality Standards](citistat-quality-standards.md).*
 

@@ -1,8 +1,6 @@
 # Team and Roles
 
-{{ page_badge() }}
-
-> Who's on the OPI team and how the roles are organized.
+{{ page_header(summary="Who's on the OPI team and how the roles are organized.") }}
 
 ## How OPI is organized
 

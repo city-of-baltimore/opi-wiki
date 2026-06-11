@@ -1,6 +1,6 @@
 # Reserving the Idea Lab
 
-{{ page_badge() }}
+{{ page_header() }}
 
 Benton Building, 417 E. Fayette St., Room 466, Baltimore, MD 21202
 

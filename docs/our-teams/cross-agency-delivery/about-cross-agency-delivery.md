@@ -1,23 +1,6 @@
 # About Cross-Agency Delivery
 
-## Cross-Agency Delivery operating clarity
-
-Cross-Agency Delivery is a service overlay, not a standing team and not a cost center. It activates when a priority outcome requires multiple agencies to move together and normal channels are not enough. Its question is: **How do we get multiple agencies to actually ship this together?**
-
-The overlay creates the conditions for delivery: a named Authorizer, a Senior Responsible Owner, agency owners, a commitment ledger, an escalation path, and a closure plan. Agencies still own operations. OPI owns the method, the coordination routine, the evidence, and the handoff discipline.
-
-Cross-Agency Delivery is different from CitiStat. CitiStat surfaces the performance problem, helps leadership decide, and monitors follow-through. Cross-Agency Delivery sequences implementation across agencies when the work cannot move through one agency alone.
-
-
-{{ page_badge() }}
-
-> How OPI runs work that crosses agency lines.
-
-**OPI · FOUNDATIONS**
-
-**About OPI · Cross-Agency Delivery**
-
-*How OPI moves work across agencies — from problem framing to durable delivery*
+{{ page_header(summary="How OPI runs work that crosses agency lines.", category="OPI · FOUNDATIONS", tagline="How OPI moves work across agencies — from problem framing to durable delivery.") }}
 
 **Why this service exists**
 

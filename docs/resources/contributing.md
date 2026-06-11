@@ -1,8 +1,6 @@
 # Contributing
 
-{{ page_badge() }}
-
-> How to suggest a change, report a problem, or propose new content.
+{{ page_header(summary="How to suggest a change, report a problem, or propose new content.") }}
 
 ## Three ways to contribute
 

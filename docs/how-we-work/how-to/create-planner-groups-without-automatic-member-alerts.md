@@ -1,8 +1,6 @@
 # Create Planner Groups Without Automatic Member Alerts
 
-{{ page_badge() }}
-
-> Short how-to for reducing inbox noise when setting up Microsoft Planner work.
+{{ page_header(summary="Short how-to for reducing inbox noise when setting up Microsoft Planner work.") }}
 
 **AUDIENCE** OPI staff
 

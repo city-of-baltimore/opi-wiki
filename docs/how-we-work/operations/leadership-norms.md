@@ -1,14 +1,6 @@
 # Leadership Norms
 
-{{ page_badge() }}
-
-> How OPI leaders show up, decide, and communicate.
-
-**SERIES · OPI FOUNDATIONS**
-
-**Leadership**
-
-**Norms**
+{{ page_header(summary="How OPI leaders show up, decide, and communicate.", category="SERIES · OPI FOUNDATIONS") }}
 
 Boundaries, rules, standards, and expectations for managers and people leaders at OPI.
 

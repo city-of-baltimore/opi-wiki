@@ -1,6 +1,6 @@
 # How to Edit a Past Reporting Period in Book of Business
 
-{{ page_badge() }}
+{{ page_header() }}
 
 Follow these steps to locate and edit a past reporting period in the Book of
 Business list.

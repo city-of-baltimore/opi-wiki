@@ -14,5 +14,6 @@ def test_shared_macro_registry_stays_explicit() -> None:
         "card_grid_from",
         "badge",
         "page_badge",
+        "page_header",
         "org_structure_from",
     }

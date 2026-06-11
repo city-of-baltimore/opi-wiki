@@ -1,8 +1,6 @@
 # Workplace Safety Stat
 
-{{ page_badge() }}
-
-> CitiStat brief for Workplace Safety.
+{{ page_header(summary="CitiStat brief for Workplace Safety.") }}
 
 | **Field**                      | **Value**                                                                                                                  |
 |--------------------------------|----------------------------------------------------------------------------------------------------------------------------|

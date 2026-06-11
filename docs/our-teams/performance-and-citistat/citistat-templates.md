@@ -1,14 +1,6 @@
 # CitiStat Templates
 
-{{ page_badge() }}
-
-> Stakeholder agendas, materials send-out standards, and the deliverable-type vocabulary that supports every Stat.
-
-**TEMPLATES · AUDIENCE: STAFF**
-
-**CitiStat Templates**
-
-*The recurring artifacts that sit alongside the Method Playbook — generic by design, ready to adapt.*
+{{ page_header(summary="Stakeholder agendas, materials send-out standards, and the deliverable-type vocabulary that supports every Stat.", category="TEMPLATES · AUDIENCE: STAFF", tagline="The recurring artifacts that sit alongside the Method Playbook — generic by design, ready to adapt.") }}
 
 *Read alongside: OPI CitiStat Method Playbook.*
 

@@ -1,8 +1,6 @@
 # PD — Communications and Partnerships Lead
 
-{{ page_badge() }}
-
-> Position description for the Communications and Partnerships Lead.
+{{ page_header(summary="Position description for the Communications and Partnerships Lead.") }}
 
 **■ At a Glance**
 

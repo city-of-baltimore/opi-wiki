@@ -1,17 +1,6 @@
 # On Innovation and Civic Design
 
-## Innovation Lab operating clarity
-
-The Innovation Lab owns the craft of solving: discovery, service design, user research, product management, prototyping, civic technology, applied AI pilots, and MVP-and-handoff methods. The Lab's question is: **How do we solve this problem in a way that works for residents and staff?**
-
-The Lab is not an ideas shop, a shadow IT team, or a place for unfunded special projects to drift. It starts with a service problem, designs with the people closest to the work, tests practical improvements, and hands off what works with an owner, runbook, and sustainment plan.
-
-The Lab can work on one-agency or multi-agency problems. When implementation requires several agencies to move together with named decision rights and commitments, the Lab partners with Cross-Agency Delivery.
-
-
-{{ page_badge() }}
-
-> What it means to bring innovation discipline and civic design into city hall.
+{{ page_header(summary="What it means to bring innovation discipline and civic design into city hall.") }}
 
 **Innovation Is Practice, Not Theater.**
 

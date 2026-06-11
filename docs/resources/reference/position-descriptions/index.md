@@ -1,14 +1,6 @@
 # Position Descriptions
 
-{{ page_badge() }}
-
-> The full index of OPI position descriptions.
-
-**SERIES · OPI FOUNDATIONS**
-
-**Position Descriptions**
-
-**OPI roles, classifications, and reporting lines**
+{{ page_header(summary="The full index of OPI position descriptions.", category="SERIES · OPI FOUNDATIONS", tagline="OPI roles, classifications, and reporting lines.") }}
 
 A single index of OPI’s position descriptions — grouped by portfolio — with classifications, reporting lines, and where to find the full document.
 

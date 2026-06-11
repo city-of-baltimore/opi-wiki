@@ -1,8 +1,6 @@
 # PD — Analytics Lead
 
-{{ page_badge() }}
-
-> Position description for the Analytics Lead.
+{{ page_header(summary="Position description for the Analytics Lead.") }}
 
 **■ At a Glance**
 

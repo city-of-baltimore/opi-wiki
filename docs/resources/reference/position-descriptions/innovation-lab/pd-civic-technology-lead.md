@@ -1,8 +1,6 @@
 # PD — Civic Technology Lead
 
-{{ page_badge() }}
-
-> Position description for the Civic Technology Lead.
+{{ page_header(summary="Position description for the Civic Technology Lead.") }}
 
 **■ At a Glance**
 

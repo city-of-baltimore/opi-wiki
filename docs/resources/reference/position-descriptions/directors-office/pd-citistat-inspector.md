@@ -1,8 +1,6 @@
 # PD — CitiStat Inspector
 
-{{ page_badge() }}
-
-> Position description for the CitiStat Inspector.
+{{ page_header(summary="Position description for the CitiStat Inspector.") }}
 
 **■ At a Glance**
 

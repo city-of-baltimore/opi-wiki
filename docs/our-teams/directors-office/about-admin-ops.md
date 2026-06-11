@@ -1,9 +1,6 @@
 # About AdminOps
 
-{{ page_badge() }}
-
-> What AdminOps does inside the Director's Office.
-**ABOUT · SERVICE 05 OF 05**
+{{ page_header(summary="What AdminOps does inside the Director's Office.", category="ABOUT · SERVICE 05 OF 05") }}
 
 **AdminOps**
 

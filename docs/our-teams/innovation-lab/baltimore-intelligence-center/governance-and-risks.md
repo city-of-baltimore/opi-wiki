@@ -1,8 +1,6 @@
 # Governance and Risks
 
-{{ page_badge() }}
-
-> Data governance, AI governance, the risks that are big enough to manage explicitly, and the open issues that have to close in the first weeks.
+{{ page_header(summary="Data governance, AI governance, the risks that are big enough to manage explicitly, and the open issues that have to close in the first weeks.") }}
 
 Governance is the discipline that decides whether the platform earns trust and the products earn use. It is also the difference between a city that adopts AI responsibly and one that gets surprised by it.
 

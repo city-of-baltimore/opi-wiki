@@ -1,8 +1,6 @@
 # On Trustworthy Data
 
-{{ page_badge() }}
-
-> Why trustworthy data is a precondition for everything else.
+{{ page_header(summary="Why trustworthy data is a precondition for everything else.") }}
 
 **Trustworthy Data Is the Foundation of Smarter Government**
 

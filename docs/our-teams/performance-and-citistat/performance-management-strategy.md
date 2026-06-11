@@ -1,10 +1,6 @@
 # Performance Management Strategy
 
-{{ page_badge() }}
-
-> OPI’s strategy for citywide performance management.
-
-**STRATEGY · SERVICE 01 OF 05 · AUDIENCE: PUBLIC**
+{{ page_header(summary="OPI’s strategy for citywide performance management.", category="STRATEGY · SERVICE 01 OF 05 · AUDIENCE: PUBLIC") }}
 
 **Citywide Performance Management Strategy**
 

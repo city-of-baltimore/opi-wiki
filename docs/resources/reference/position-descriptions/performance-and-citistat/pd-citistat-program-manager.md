@@ -1,8 +1,6 @@
 # PD — CitiStat Program Manager
 
-{{ page_badge() }}
-
-> Position description for the CitiStat Program Manager.
+{{ page_header(summary="Position description for the CitiStat Program Manager.") }}
 
 **■ At a Glance**
 

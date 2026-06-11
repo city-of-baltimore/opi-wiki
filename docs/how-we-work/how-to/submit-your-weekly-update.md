@@ -1,6 +1,6 @@
 # Submit Your Weekly Book of Business Update
 
-{{ page_badge() }}
+{{ page_header() }}
 
 Welcome to the SharePoint Book of Business (BoB), our centralized way of
 tracking progress, priorities, and key updates across requests, operations,

@@ -1,8 +1,6 @@
 # PD — Chief of Staff
 
-{{ page_badge() }}
-
-> Position description for the Chief of Staff.
+{{ page_header(summary="Position description for the Chief of Staff.") }}
 
 **■ At a Glance**
 

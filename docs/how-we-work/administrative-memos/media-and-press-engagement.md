@@ -1,6 +1,6 @@
 # Guidance on Media and Press Engagement
 
-{{ page_badge() }}
+{{ page_header() }}
 
 **To:**  
 All OPI Staff
