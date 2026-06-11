@@ -1,6 +1,11 @@
 # Operating Principles and Culture
 
-<span class="opi-pill approved">Approved</span>
+## How this connects to the operating model
+
+Culture shows up in the handoffs. Moving fast with intention means choosing the right routine, naming the owner, documenting the decision, and planning sustainment before launch. Use the operating principles alongside How Work Moves Through OPI when deciding whether work belongs in CitiStat, Data and Analytics, the Innovation Lab, Cross-Agency Delivery, or AdminOps.
+
+
+{{ page_badge() }}
 
 > How we work together — the rules of the road inside OPI.
 **Operating Principles and Culture**
@@ -13,7 +18,7 @@
 
 OPI runs on a small number of operating principles. They are deliberately memorable, because they show up in the small daily decisions — how a meeting opens, who gets credit, how a memo is reviewed, how we say no — not just in retreats and onboarding decks.
 
-These principles emerged from team listening sessions, strategy retros, and homework reflections. They are paired with the FY27 values: GRIT, CANDOR, OWNERSHIP, HUMILITY, INTENTION, IMPACT.
+These principles emerged from team listening sessions, strategy retros, and homework reflections. They are paired with the OPI values: GRIT, CANDOR, OWNERSHIP, HUMILITY, INTENTION, IMPACT.
 
 > *Set the temperature. The operating norms we model become the office culture.*
 

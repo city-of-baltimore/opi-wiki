@@ -1,6 +1,15 @@
 # On Cross-Agency Delivery
 
-<span class="opi-pill approved">Approved</span>
+## Cross-Agency Delivery operating clarity
+
+Cross-Agency Delivery is a service overlay, not a standing team and not a cost center. It activates when a priority outcome requires multiple agencies to move together and normal channels are not enough. Its question is: **How do we get multiple agencies to actually ship this together?**
+
+The overlay creates the conditions for delivery: a named Authorizer, a Senior Responsible Owner, agency owners, a commitment ledger, an escalation path, and a closure plan. Agencies still own operations. OPI owns the method, the coordination routine, the evidence, and the handoff discipline.
+
+Cross-Agency Delivery is different from CitiStat. CitiStat surfaces the performance problem, helps leadership decide, and monitors follow-through. Cross-Agency Delivery sequences implementation across agencies when the work cannot move through one agency alone.
+
+
+{{ page_badge() }}
 
 > Why some of the city's most important problems can only be solved across agency boundaries.
 
@@ -20,7 +29,7 @@ At its center is a simple idea: someone has to own the end-to-end experience lon
 
 **How we work**
 
-Most cross-agency delivery work runs through a Tiger Team or a working group with a defined scope and an end date. We start by writing down the problem in language a non-expert can understand. We identify the residents and staff most affected. We map the current state honestly, including where it is breaking down. We agree on what success would look like and how we would know. We assign owners for each step of the new design, with deadlines, and we meet on a cadence that keeps the work moving.
+Most cross-agency delivery work runs through a tiger team or a working group with a defined scope and an end date. We start by writing down the problem in language a non-expert can understand. We identify the residents and staff most affected. We map the current state honestly, including where it is breaking down. We agree on what success would look like and how we would know. We assign owners for each step of the new design, with deadlines, and we meet on a cadence that keeps the work moving.
 
 That sounds straightforward. In practice, the discipline is what is hard. Cross-agency work fails in predictable ways: scope creeps, ownership blurs, the working group keeps meeting without deciding anything, the executive sponsor disappears, and the team confuses activity with progress. Our job is to keep that from happening. We use sharp scoping, written commitments, decision logs, escalation paths, and an honest willingness to stop work that is not going to ship.
 
@@ -65,3 +74,9 @@ Mayor’s Office of Performance and Innovation
 **ToC: Cross-Agency Delivery —** *logic model, governance, and engagement model.*
 
 **Tiger Teams Playbook —** *how OPI runs short-cycle cross-agency improvement work.*
+
+## Plain-language operating distinction
+
+Cross-Agency Delivery is the discipline that helps the City move work across agency boundaries. It is not a new agency and not a substitute for agency leadership. It creates the room, cadence, decision rights, and sustainment commitments that allow agencies to ship together.
+
+The Innovation Lab designs and tests the solution. Cross-Agency Delivery makes sure the agencies required to implement it move together.

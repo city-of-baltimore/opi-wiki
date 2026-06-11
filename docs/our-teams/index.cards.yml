@@ -1,10 +1,10 @@
 - meta: Team
   title: "Director's Office"
-  body: "The Executive Director / CDO's office and the Admin Ops function."
+  body: "The Executive Director's office and the AdminOps function."
   href: directors-office/
 - meta: Team
   title: "Performance and CitiStat"
-  body: "The performance management and CitiStat methodology team, plus cross-agency delivery."
+  body: "The performance management and CitiStat methodology team."
   href: performance-and-citistat/
 - meta: Team
   title: "Innovation Lab"
@@ -14,3 +14,7 @@
   title: "Data and Analytics"
   body: "The team that runs data governance, analytics, and data engineering across the city."
   href: data-and-analytics/
+- meta: Service
+  title: "Cross-Agency Delivery"
+  body: "The service overlay for problems that span agency boundaries — runs across Performance and CitiStat and the Innovation Lab."
+  href: cross-agency-delivery/

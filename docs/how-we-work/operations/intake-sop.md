@@ -1,6 +1,6 @@
 # Intake SOP
 
-<span class="opi-pill approved">Approved</span>
+{{ page_badge() }}
 
 > How OPI receives, triages, and routes new requests.
 

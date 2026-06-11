@@ -1,6 +1,6 @@
 # Operating Frame
 
-<span class="opi-pill approved">Approved</span>
+{{ page_badge() }}
 
 > How OPI is structured, what each team does, and how the parts fit together.
 **ABOUT THE MAYOR’S OFFICE OF PERFORMANCE AND INNOVATION**

@@ -1,6 +1,6 @@
 # QA Standards
 
-<span class="opi-pill approved">Approved</span>
+{{ page_badge() }}
 
 > Quality bars for everything OPI ships.
 
@@ -113,7 +113,7 @@ Every artifact passes four gates before it is shared with an audience outside th
 
 - Datasets published to Open Baltimore have completed the Open Data publication checklist.
 
-**When to consult DCDO designee**
+**When to consult the Deputy Chief Data Officer designee**
 
 - Any new dataset combination or linkage involving residents.
 
@@ -237,4 +237,4 @@ When an artifact fails QA, the failure and the resolution are documented. Repeat
 
 **■ Owner and review**
 
-Owned by Director’s Office with privacy and sensitivity standards co-owned by DCDO. Reviewed semi-annually or after any significant incident.
+Owned by Director’s Office with privacy and sensitivity standards co-owned by the Deputy Chief Data Officer. Reviewed semi-annually or after any significant incident.

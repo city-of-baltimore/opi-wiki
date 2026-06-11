@@ -1,20 +1,8 @@
 # PD — Analytics Lead
 
-<span class="opi-pill internal">Position Description</span>
+{{ page_badge() }}
 
 > Position description for the Analytics Lead.
-
-**CLASSIFICATION** Operations Manager II
-
-**PORTFOLIO** Data and Analytics
-
-**REPORTS TO** Deputy Chief Data Officer
-
-**INCUMBENT** Vera Choo
-
-**POSITION NUMBER** 115655
-
-**EFFECTIVE** OPI Reorganization
 
 **■ At a Glance**
 
@@ -24,8 +12,6 @@
 | **Classification**       | Operations Manager II                                                                             |
 | **Portfolio**            | Data and Analytics                                                                                |
 | **Reports to**           | Deputy Chief Data Officer                                                                         |
-| **Incumbent**            | Vera Choo                                                                                         |
-| **Position number**      | 115655                                                                                            |
 | **Supervision given**    | Senior individual contributor; provides analytical leadership across the Data and Analytics team. |
 | **Supervision received** | Reports to the Deputy Chief Data Officer.                                                         |
 
@@ -33,7 +19,7 @@
 
 The Analytics Lead is OPI’s principal data practitioner: navigating complex city datasets, surfacing actionable insights, and partnering with operational teams to solve real problems through data. The role combines hands-on data investigation, rapid exploration, and strong stakeholder collaboration to drive Baltimore’s data-informed decision-making. A successful Analytics Lead is equally comfortable sitting with agency staff to understand operations as they are diving into the underlying data.
 
-Reporting to the Deputy Chief Data Officer, the Analytics Lead works closely with OPI’s data engineers, the Applied Data Scientist, and CitiStat analysts, as well as with decision-makers and data practitioners across agencies. The position leads efforts to understand patterns in city data, connect findings to operational realities, and translate complex information into clear guidance for stakeholders. The role also provides analytical support to agencies and their data staff.
+Reporting to the Deputy Chief Data Officer, the Analytics Lead works closely with OPI’s data engineers, CitiStat analysts, and Innovation Lab product staff, as well as with decision-makers and data practitioners across agencies. The position leads efforts to understand patterns in city data, connect findings to operational realities, and translate complex information into clear guidance for stakeholders. The role also provides analytical support to agencies and their data staff.
 
 **■ Key Responsibilities**
 
@@ -63,7 +49,7 @@ Reporting to the Deputy Chief Data Officer, the Analytics Lead works closely wit
 
 **Stewardship**
 
-- Coordinate analytical priorities with the Applied Data Scientist, the Senior Performance Analyst (Performance Tracker), and the Senior Product Engineer (Innovation Lab).
+- Coordinate analytical priorities with the Senior Performance Analyst (Performance Tracker) and Innovation Lab partners such as the Senior Product Engineer and Civic Designer.
 
 - Perform other related duties as assigned to support OPI’s mission and innovation agenda.
 
@@ -119,4 +105,4 @@ Employees in this class work a conventional work week. Work is performed in an o
 
 **Supervision given.** Senior individual contributor; provides analytical leadership across the Data and Analytics team.
 
-*This Position Description reflects the FY27 OPI operating model. It describes the typical scope of the role and is not an exhaustive list of duties. OPI is an Equal Opportunity Employer; all qualified applicants will receive consideration without regard to race, color, religion, sex, sexual orientation, gender identity, national origin, disability, age, or veteran status.*
+*This Position Description reflects the OPI operating model. It describes the typical scope of the role and is not an exhaustive list of duties. OPI is an Equal Opportunity Employer; all qualified applicants will receive consideration without regard to race, color, religion, sex, sexual orientation, gender identity, national origin, disability, age, or veteran status.*

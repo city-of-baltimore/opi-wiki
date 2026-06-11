@@ -7,7 +7,7 @@ from html import escape
 from pathlib import Path
 from typing import Any
 
-import yaml
+from scripts.repo_tools.data import load_docs_yaml_file
 
 
 @dataclass(frozen=True)
@@ -53,16 +53,7 @@ def _normalize_card(raw_card: Any, source: str, index: int) -> Card:
 def load_card_sections(docs_dir: Path, relative_path: str) -> dict[str, list[Card]]:
     """Load card sections from a YAML file under the docs directory."""
 
-    data_path = (docs_dir / relative_path).resolve()
-
-    try:
-        raw_data = yaml.safe_load(data_path.read_text(encoding="utf-8"))
-    except FileNotFoundError as error:
-        raise FileNotFoundError(f"Card data file not found: {data_path}") from error
-    except OSError as error:
-        raise RuntimeError(f"Unable to read card data file: {data_path}") from error
-    except yaml.YAMLError as error:
-        raise ValueError(f"Invalid YAML in card data file: {data_path}") from error
+    raw_data = load_docs_yaml_file(docs_dir, relative_path, label="Card data")
 
     if isinstance(raw_data, list):
         return {

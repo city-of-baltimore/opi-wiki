@@ -1,6 +1,15 @@
-# Digital Product Methodology
+# Digital Product
 
-<span class="opi-pill approved">Approved</span>
+## Innovation Lab operating clarity
+
+The Innovation Lab owns the craft of solving: discovery, service design, user research, product management, prototyping, civic technology, applied AI pilots, and MVP-and-handoff methods. The Lab's question is: **How do we solve this problem in a way that works for residents and staff?**
+
+The Lab is not an ideas shop, a shadow IT team, or a place for unfunded special projects to drift. It starts with a service problem, designs with the people closest to the work, tests practical improvements, and hands off what works with an owner, runbook, and sustainment plan.
+
+The Lab can work on one-agency or multi-agency problems. When implementation requires several agencies to move together with named decision rights and commitments, the Lab partners with Cross-Agency Delivery.
+ Methodology
+
+{{ page_badge() }}
 
 > How OPI ships digital products inside city government.
 **METHOD GUIDE**
@@ -11,7 +20,7 @@
 
 Method Guide
 
-*Read alongside: OPI Innovation Lab Strategy FY27..*
+*Read alongside: OPI Innovation Lab Strategy*
 
 *The Lab Strategy explains why we build and the discipline we use. This Methodology is the citywide playbook for how we design and ship digital products. More than the Innovation Lab uses it.*
 
@@ -168,3 +177,9 @@ The two tracks should connect through shared narrative, screenshots, data defini
 OPI’s product workflow is built to avoid two common failures: building tools without understanding the service, and producing design artifacts that never become operational change. The method starts with reality, designs with users, builds in disciplined increments, tests before launch, and plans sustainment from the beginning.
 
 > *The goal is not more products. The goal is better services. Products are one way we make that real.*
+
+## Relationship to Cross-Agency Delivery
+
+Digital product work belongs in the Innovation Lab when the problem requires discovery, user research, prototyping, engineering, or product management. If the product cannot succeed unless multiple agencies change workflows, decision rights, or sustainment commitments together, the work also needs Cross-Agency Delivery activation.
+
+The distinction is simple: the Lab owns the product craft; Cross-Agency Delivery owns the cross-agency authority and implementation cadence.

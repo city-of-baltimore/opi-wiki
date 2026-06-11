@@ -1,9 +1,10 @@
 # Performance Management Theory of Change
 
-<span class="opi-pill approved">Approved</span>
+{{ page_badge() }}
 
 > How performance management moves from inputs to outcomes.
-**SERVICE THEORY OF CHANGE · 01 OF 05**
+
+**SERVICE THEORY OF CHANGE · 01 OF 05 · AUDIENCE: STAFF**
 
 **Citywide Performance Management**
 
@@ -98,19 +99,7 @@ Decisions move when the right people have clear authority, timeboxes, and escala
 
 **Stat admission and continuation criteria**
 
-- A clear performance problem or strategic outcome.
-
-- A named Executive Sponsor / Authorizer.
-
-- A defined agency owner or Senior Responsible Owner.
-
-- Reliable enough data to support decision-making.
-
-- A cadence for commitments, follow-up, and evidence of closure.
-
-- A reason leadership time is required.
-
-*If a Stat does not produce decisions, commitments, or measurable learning after two cycles, redesign it, pause it, or convert it into another operating routine.*
+The full citywide admission criteria, continuation test, and right-routine matrix live in the [CitiStat Method Playbook → Issue selection, admission, and continuation](citistat-method-playbook.md#issue-selection-admission-and-continuation). In short: a routine should be called a Stat only when there is a clear performance problem requiring leadership attention, a named Executive Sponsor or Authorizer, a defined agency owner or Senior Responsible Owner, reliable-enough data, and a cadence for commitments and follow-up. If a Stat does not produce decisions, commitments, or measurable learning after two cycles, redesign it, pause it, or convert it into another operating routine.
 
 **6. Core offerings and target service levels**
 
@@ -156,7 +145,7 @@ Decisions move when the right people have clear authority, timeboxes, and escala
 
 - To the Innovation Lab — service redesigns, digital products, AI pilots, and operational tools that reduce rework and repeat contacts.
 
-- To Cross-Agency Delivery — multi-agency or 90+ day items that need sequencing, authority, and weekly delivery rooms.
+- To Cross-Agency Delivery — multi-agency or 90+ day items that need sequencing, authority, and weekly delivery reviews.
 
 - To AdminOps — portfolio visibility, publishing cadence for briefs, and operational support for the Stat calendar.
 
@@ -179,3 +168,12 @@ Decisions move when the right people have clear authority, timeboxes, and escala
 - Inspection checklist (field validation tools where relevant).
 
 - Data quality notes (caveats, limitations, definitions, refresh cadence, confidence).
+
+## See also
+
+- [About Performance and CitiStat](about-performance-management.md) — plain-language overview of the service.
+- [Performance Management Strategy](performance-management-strategy.md) — the strategic plan this Theory of Change underwrites.
+- [CitiStat Method Playbook → The CitiStat cycle](citistat-method-playbook.md#the-citistat-cycle) — the 12-step operating cycle that delivers the SLAs in section 6 above.
+- [CitiStat Method Playbook → Issue selection, admission, and continuation](citistat-method-playbook.md#issue-selection-admission-and-continuation) — canonical admission criteria and right-routine matrix.
+- [CitiStat Method Playbook → Follow-up, escalation, and sustainment](citistat-method-playbook.md#follow-up-escalation-and-sustainment) — commitment tracking and escalation paths.
+- [CitiStat Strategic Framework](citistat-strategic-framework.md) — the public-facing strategic frame.

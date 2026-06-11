@@ -1,20 +1,8 @@
 # PD — Senior Performance Analyst
 
-<span class="opi-pill internal">Position Description</span>
+{{ page_badge() }}
 
 > Position description for the Senior Performance Analyst.
-
-**CLASSIFICATION** Operations Officer III
-
-**PORTFOLIO** Performance and CitiStat
-
-**REPORTS TO** Deputy Chief Performance Officer
-
-**INCUMBENT** Open / Posting
-
-**POSITION NUMBER** 115657
-
-**EFFECTIVE** OPI Reorganization
 
 **■ At a Glance**
 
@@ -24,8 +12,6 @@
 | **Classification**       | Operations Officer III                                                                                                                           |
 | **Portfolio**            | Performance and CitiStat                                                                                                                         |
 | **Reports to**           | Deputy Chief Performance Officer                                                                                                                 |
-| **Incumbent**            | Open — to be posted                                                                                                                              |
-| **Position number**      | 115657                                                                                                                                           |
 | **Supervision given**    | Individual contributor; no direct reports. Senior peer to the CitiStat Analyst bench; mentors analysts on measurement quality and Tracker usage. |
 | **Supervision received** | Reports to the Deputy Chief Performance Officer.                                                                                                 |
 
@@ -51,7 +37,7 @@ In addition to the citywide performance management function, the Senior Performa
 
 - Coordinate the annual preparation and review of agency performance plans; provide quality assurance and feedback.
 
-- Maintain the KPI Dictionary in coordination with the DCPO; uphold owner, formula, cadence, and equity-lens conventions.
+- Maintain the KPI Dictionary in coordination with the Deputy Chief Performance Officer; uphold owner, formula, cadence, and equity-lens conventions.
 
 - Provide expertise on service-level metrics, outcome-based budgeting, and performance measures.
 
@@ -59,7 +45,7 @@ In addition to the citywide performance management function, the Senior Performa
 
 - Lead one or more CitiStat topics: own the topic, build the analytic baseline, prepare session materials, and follow through on commitments.
 
-- Apply CitiStat method discipline (accurate and timely intelligence, rapid deployment of resources, effective tactics and strategies, relentless follow-up and assessment).
+- Apply CitiStat method discipline (accurate and timely intelligence shared by all, rapid deployment of resources, effective tactics and strategies, relentless follow-up and assessment).
 
 **Analysis, Reporting, and Coordination**
 
@@ -119,4 +105,4 @@ Employees in this class work a conventional work week. Work is performed in an o
 
 **Supervision given.** Individual contributor; no direct reports. Senior peer to the CitiStat Analyst bench; mentors analysts on measurement quality and Tracker usage.
 
-*This Position Description reflects the FY27 OPI operating model. It describes the typical scope of the role and is not an exhaustive list of duties. OPI is an Equal Opportunity Employer; all qualified applicants will receive consideration without regard to race, color, religion, sex, sexual orientation, gender identity, national origin, disability, age, or veteran status.*
+*This Position Description reflects the OPI operating model. It describes the typical scope of the role and is not an exhaustive list of duties. OPI is an Equal Opportunity Employer; all qualified applicants will receive consideration without regard to race, color, religion, sex, sexual orientation, gender identity, national origin, disability, age, or veteran status.*

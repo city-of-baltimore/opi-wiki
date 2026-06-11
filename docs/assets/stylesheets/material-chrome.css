@@ -1,0 +1,69 @@
+/* Material chrome overrides backed by OPI-owned tokens. */
+
+.md-header {
+  background-color: var(--opi-chrome-bg);
+  border-bottom: 3px solid var(--opi-chrome-border);
+  box-shadow: none;
+}
+
+.md-header__title {
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+
+.md-tabs {
+  background-color: var(--opi-chrome-bg);
+}
+
+.md-tabs__link {
+  opacity: 0.85;
+  font-weight: 500;
+}
+
+.md-tabs__link--active,
+.md-tabs__link:hover {
+  opacity: 1;
+  color: var(--opi-link-hover);
+}
+
+.md-nav__link {
+  color: var(--opi-text);
+}
+
+.md-nav__link--passed {
+  color: var(--opi-text-muted);
+}
+
+.md-nav--primary .md-nav__item--active > .md-nav__link,
+.md-nav--primary .md-nav__item--active > .md-nav__link code,
+.md-nav__item--active > .md-nav__link,
+.md-nav__item--active > .md-nav__link code,
+.md-nav__link--active,
+.md-nav__link--active code,
+.md-nav__link:hover,
+.md-nav__link:focus-visible {
+  color: var(--opi-nav-accent);
+}
+
+.md-nav--primary .md-nav__item--active > .md-nav__link {
+  background-color: var(--opi-nav-accent-bg);
+}
+
+.md-nav--primary .md-nav__link:focus-visible {
+  background-color: var(--opi-nav-accent-bg);
+  outline: 2px solid currentcolor;
+  outline-offset: -2px;
+}
+
+.md-nav__title {
+  color: var(--opi-heading);
+}
+
+.md-footer {
+  background-color: var(--opi-chrome-bg);
+  border-top: 3px solid var(--opi-chrome-border);
+}
+
+.md-footer-meta {
+  background-color: #000000;
+}

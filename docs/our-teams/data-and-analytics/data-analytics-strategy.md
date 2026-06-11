@@ -1,6 +1,6 @@
 # Data Analytics Strategy
 
-<span class="opi-pill approved">Approved</span>
+{{ page_badge() }}
 
 > OPI's strategy for citywide data and analytics work.
 **STRATEGY**
@@ -11,7 +11,7 @@
 
 Strategy Document
 
-*Read alongside: OPI About — Citywide Data & Analytics; OPI Service Theory of Change — Data & Analytics; OPI Data Governance Framework FY27..*
+*Read alongside: OPI About — Citywide Data & Analytics; OPI Service Theory of Change — Data & Analytics; OPI Data Governance Framework*
 
 *This document makes the strategic case for citywide data infrastructure. The About doc tells the human story. The ToC shows the operating backbone. The Governance Framework specifies stewardship rules.*
 

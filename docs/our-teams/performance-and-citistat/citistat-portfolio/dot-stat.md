@@ -1,6 +1,6 @@
 # DOT Stat
 
-<span class="opi-pill approved">Approved</span>
+{{ page_badge() }}
 
 > CitiStat brief for DOT.
 
@@ -16,46 +16,36 @@
 | Core Data Product              | Transportation operations dashboard                                                                             |
 | Public Transparency Level      | High. Publish public summaries, maps, dashboards, and progress updates tied to visible transportation services. |
 
-### **Public Purpose**
+### Public Purpose
 
-DOT Stat focuses on Baltimore's transportation system, including streets, traffic safety, parking, traffic calming, streetlights, resurfacing coordination, and mobility infrastructure.
+DOT Stat focuses on Baltimore’s transportation system, including streets, traffic safety, parking, traffic calming, streetlights, resurfacing coordination, and mobility infrastructure.
 
-### **Staff Purpose**
+### Staff Purpose
 
 Staff use DOT Stat to improve operational performance, manage backlogs, coordinate asset inventories, review safety and mobility trends, and resolve workflow issues affecting residents, commuters, businesses, and neighborhoods.
 
-### **Core Management Questions**
+### Core Management Questions
 
-> • Are street, lighting, parking, and traffic safety services being delivered reliably?
->
-> • Where are backlogs, asset data gaps, or workflow barriers affecting residents?
->
-> • How are transportation investments and maintenance aligned to priority corridors and neighborhoods?
->
-> • What decisions are needed to improve safety, mobility, and public realm conditions?
+- Are street, lighting, parking, and traffic safety services being delivered reliably?
+- Where are backlogs, asset data gaps, or workflow barriers affecting residents?
+- How are transportation investments and maintenance aligned to priority corridors and neighborhoods?
+- What decisions are needed to improve safety, mobility, and public realm conditions?
 
-### **Starter 2026 Focus Areas**
+### Starter Focus Areas
 
-> • Traffic calming and parking enforcement reforms
->
-> • Streetlight, pothole, and roadway maintenance performance
->
-> • Resurfacing coordination and asset inventory improvements
+- Traffic calming and parking enforcement reforms
+- Streetlight, pothole, and roadway maintenance performance
+- Resurfacing coordination and asset inventory improvements
 
-### **Standard Artifacts and Data Products**
+### Standard Artifacts and Data Products
 
-> • Pre-meeting memo, Stat deck, follow-up memo, commitment tracker, and decision log.
->
-> • Core data product: Transportation operations dashboard.
->
-> • Public summary, annual report section, data quality notes, and SOP / process maps for major functions.
->
-> • Inspection checklist where field validation or service quality review is needed.
+- Pre-meeting memo, Stat deck, follow-up memo, commitment tracker, and decision log.
+- Core data product: Transportation operations dashboard.
+- Public summary, annual report section, data quality notes, and SOP / process maps for major functions.
+- Inspection checklist where field validation or service quality review is needed.
 
-### **Tiger Team / Delivery Triggers**
+### Tiger Team / Delivery Triggers
 
-> • Cross-agency street or right-of-way issue involving utilities, DPW, DGS, or public safety
->
-> • Operational tool needed to improve enforcement, intake, or field workflow
->
-> • Transportation backlog requiring Tiger Team support
+- Cross-agency street or right-of-way issue involving utilities, DPW, DGS, or public safety
+- Operational tool needed to improve enforcement, intake, or field workflow
+- Transportation backlog requiring tiger team support

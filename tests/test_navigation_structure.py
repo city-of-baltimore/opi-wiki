@@ -40,10 +40,7 @@ NAV_TITLE_EXPECTATIONS = {
     REPO_ROOT / "docs/our-teams/performance-and-citistat/.pages": "Performance and CitiStat",
     REPO_ROOT
     / "docs/our-teams/performance-and-citistat/citistat-portfolio/.pages": "CitiStat Portfolio",
-    REPO_ROOT
-    / "docs/our-teams/performance-and-citistat/cross-agency-delivery/.pages": (
-        "Cross-Agency Delivery"
-    ),
+    REPO_ROOT / "docs/our-teams/cross-agency-delivery/.pages": "Cross-Agency Delivery",
     REPO_ROOT / "docs/our-teams/innovation-lab/.pages": "Innovation Lab",
     REPO_ROOT / "docs/our-teams/data-and-analytics/.pages": "Data and Analytics",
     REPO_ROOT / "docs/public/.pages": "Public",
@@ -51,6 +48,18 @@ NAV_TITLE_EXPECTATIONS = {
     REPO_ROOT / "docs/resources/reference/.pages": "Reference",
     REPO_ROOT
     / "docs/resources/reference/position-descriptions/.pages": "Position Descriptions",
+    REPO_ROOT
+    / "docs/resources/reference/position-descriptions/directors-office/.pages": "Director's Office",
+    REPO_ROOT
+    / "docs/resources/reference/position-descriptions/innovation-lab/.pages": "Innovation Lab",
+    REPO_ROOT
+    / "docs/resources/reference/position-descriptions/performance-and-citistat/.pages": (
+        "Performance and CitiStat"
+    ),
+    REPO_ROOT
+    / "docs/resources/reference/position-descriptions/data-and-analytics/.pages": (
+        "Data and Analytics"
+    ),
 }
 
 

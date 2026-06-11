@@ -1,6 +1,15 @@
-# Innovation Lab — Public Brief
+# Innovation Lab
 
-<span class="opi-pill approved">Approved</span>
+## Innovation Lab operating clarity
+
+The Innovation Lab owns the craft of solving: discovery, service design, user research, product management, prototyping, civic technology, applied AI pilots, and MVP-and-handoff methods. The Lab's question is: **How do we solve this problem in a way that works for residents and staff?**
+
+The Lab is not an ideas shop, a shadow IT team, or a place for unfunded special projects to drift. It starts with a service problem, designs with the people closest to the work, tests practical improvements, and hands off what works with an owner, runbook, and sustainment plan.
+
+The Lab can work on one-agency or multi-agency problems. When implementation requires several agencies to move together with named decision rights and commitments, the Lab partners with Cross-Agency Delivery.
+ — Public Brief
+
+{{ page_badge() }}
 
 > Plain-language public brief on the Innovation Lab.
 
@@ -106,9 +115,13 @@ CitiStat surfaces what is not working. Citywide Data and Analytics explains why.
 
 |                |                                                                                      |
 |----------------|--------------------------------------------------------------------------------------|
-| **Lead**       | Innovation Lab Director (interim: Dartanion Swift-Williams, Executive Director, OPI) |
+| **Lead**       | Interim Innovation Program Manager (Dartanion Swift-Williams, Executive Director, OPI) |
 | **Front door** | OPI Director’s Office · single intake                                                |
 | **Web**        | opi.baltimorecity.gov/innovation-lab                                                 |
 | **Open data**  | data.baltimorecity.gov (Open Baltimore)                                              |
 
 *Owned by the OPI Innovation Lab. Reviewed quarterly. Plain-language brief intended for public use.*
+
+## Plain-language distinction
+
+The Innovation Lab helps Baltimore City design, test, and build practical improvements to services. It is not a shadow IT team and not an ideas shop. When a solution requires several agencies to move together, the Lab works with Cross-Agency Delivery so the right decision-makers, owners, and sustainment commitments are in place.

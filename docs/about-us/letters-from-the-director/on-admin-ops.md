@@ -1,6 +1,6 @@
-# On Admin Ops
+# On AdminOps
 
-<span class="opi-pill approved">Approved</span>
+{{ page_badge() }}
 
 > Why the operational backbone of an office is as important as its strategy.
 

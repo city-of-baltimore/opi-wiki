@@ -1,20 +1,8 @@
 # PD — Deputy Chief Performance Officer
 
-<span class="opi-pill internal">Position Description</span>
+{{ page_badge() }}
 
 > Position description for the Deputy Chief Performance Officer.
-
-**CLASSIFICATION** Operations Director I
-
-**PORTFOLIO** Performance and CitiStat
-
-**REPORTS TO** Executive Director and Chief Data Officer
-
-**INCUMBENT** Danny Heller
-
-**POSITION NUMBER** 54340
-
-**EFFECTIVE** OPI Reorganization
 
 **■ At a Glance**
 
@@ -24,8 +12,6 @@
 | **Classification**       | Operations Director I                                                                                                                                                                                 |
 | **Portfolio**            | Performance and CitiStat                                                                                                                                                                              |
 | **Reports to**           | Executive Director and Chief Data Officer                                                                                                                                                             |
-| **Incumbent**            | Danny Heller                                                                                                                                                                                          |
-| **Position number**      | 54340                                                                                                                                                                                                 |
 | **Supervision given**    | Provides executive oversight to the CitiStat Program Manager, the Senior Performance Analyst, and the CitiStat Analyst bench. Coordinates with the Innovation Program Manager on tiger-team handoffs. |
 | **Supervision received** | Reports to the Executive Director and Chief Data Officer of OPI.                                                                                                                                      |
 
@@ -135,4 +121,4 @@ Employees in this class work a conventional work week. This position may be requ
 
 **Supervision given.** Provides executive oversight to the CitiStat Program Manager, the Senior Performance Analyst, and the CitiStat Analyst bench. Coordinates with the Innovation Program Manager on tiger-team handoffs.
 
-*This Position Description reflects the FY27 OPI operating model. It describes the typical scope of the role and is not an exhaustive list of duties. OPI is an Equal Opportunity Employer; all qualified applicants will receive consideration without regard to race, color, religion, sex, sexual orientation, gender identity, national origin, disability, age, or veteran status.*
+*This Position Description reflects the OPI operating model. It describes the typical scope of the role and is not an exhaustive list of duties. OPI is an Equal Opportunity Employer; all qualified applicants will receive consideration without regard to race, color, religion, sex, sexual orientation, gender identity, national origin, disability, age, or veteran status.*

@@ -1,6 +1,6 @@
 # Capital Stat
 
-<span class="opi-pill approved">Approved</span>
+{{ page_badge() }}
 
 > CitiStat brief for Capital.
 
@@ -16,46 +16,36 @@
 | Core Data Product              | Capital project portfolio and delivery risk dashboard                                                                                                        |
 | Public Transparency Level      | High for selected information. Publish project portfolio summaries, public-facing maps, and progress stories while protecting procurement-sensitive details. |
 
-### **Public Purpose**
+### Public Purpose
 
-Capital Stat focuses on Baltimore's capital delivery system: how the City plans, funds, coordinates, and completes major infrastructure, facilities, public realm, and technology-related capital projects. It helps leadership see where projects are on track, where they are delayed, what decisions are needed, and how capital work connects to mayoral priorities and neighborhood outcomes.
+Capital Stat focuses on Baltimore’s capital delivery system: how the City plans, funds, coordinates, and completes major infrastructure, facilities, public realm, and technology-related capital projects. It helps leadership see where projects are on track, where they are delayed, what decisions are needed, and how capital work connects to mayoral priorities and neighborhood outcomes.
 
-### **Staff Purpose**
+### Staff Purpose
 
 Staff use Capital Stat to review project status, funding readiness, procurement and contracting barriers, permitting or utility conflicts, interagency dependencies, schedule risk, cost escalation, project closeout, and coordination among capital-owning agencies.
 
-### **Core Management Questions**
+### Core Management Questions
 
-> • Which capital projects are on track, delayed, blocked, or at risk?
->
-> • What decisions are needed to move priority projects forward?
->
-> • Where are procurement, permitting, utilities, funding, or interagency dependencies slowing delivery?
->
-> • How does capital investment align to mayoral priorities, equity, and neighborhood outcomes?
+- Which capital projects are on track, delayed, blocked, or at risk?
+- What decisions are needed to move priority projects forward?
+- Where are procurement, permitting, utilities, funding, or interagency dependencies slowing delivery?
+- How does capital investment align to mayoral priorities, equity, and neighborhood outcomes?
 
-### **Starter 2026 Focus Areas**
+### Starter Focus Areas
 
-> • Priority project readiness and risk management
->
-> • Procurement / contracting / permitting bottlenecks
->
-> • Geographic visibility into capital investments and neighborhood outcomes
+- Priority project readiness and risk management
+- Procurement / contracting / permitting bottlenecks
+- Geographic visibility into capital investments and neighborhood outcomes
 
-### **Standard Artifacts and Data Products**
+### Standard Artifacts and Data Products
 
-> • Pre-meeting memo, Stat deck, follow-up memo, commitment tracker, and decision log.
->
-> • Core data product: Capital project portfolio and delivery risk dashboard.
->
-> • Public summary, annual report section, data quality notes, and SOP / process maps for major functions.
->
-> • Inspection checklist where field validation or service quality review is needed.
+- Pre-meeting memo, Stat deck, follow-up memo, commitment tracker, and decision log.
+- Core data product: Capital project portfolio and delivery risk dashboard.
+- Public summary, annual report section, data quality notes, and SOP / process maps for major functions.
+- Inspection checklist where field validation or service quality review is needed.
 
-### **Tiger Team / Delivery Triggers**
+### Tiger Team / Delivery Triggers
 
-> • Priority project delayed by cross-agency dependency
->
-> • Cost escalation or schedule risk requiring executive decision
->
-> • Capital coordination issue requiring Tiger Team support
+- Priority project delayed by cross-agency dependency
+- Cost escalation or schedule risk requiring executive decision
+- Capital coordination issue requiring tiger team support

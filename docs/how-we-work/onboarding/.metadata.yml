@@ -4,3 +4,9 @@ defaults:
   last_reviewed: 2026-04-15
   next_review: 2026-07-15
   change_log: Normalized review metadata for onboarding materials.
+
+pages:
+  maps-benefits-quick-guide.md:
+    display_badge: draft
+  new-hire-announcement-template.md:
+    display_badge: template

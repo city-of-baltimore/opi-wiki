@@ -1,6 +1,20 @@
 # Teams, Programs, Foundations
 
-<span class="opi-pill approved">Approved</span>
+## How to read this page
+
+## Portfolio, service, program, and team language
+
+A portfolio is how OPI organizes people, leadership, and cost centers. A service is what OPI delivers to City leadership, agencies, residents, and partners. A program is a formal named body of work, such as CitiStat or Open Data. A team is the staff group that performs the work.
+
+Use this distinction when writing or editing OPI pages. It prevents Cross-Agency Delivery from being described like a staffed portfolio, keeps CitiStat from being treated as all of performance management, and keeps the Innovation Lab from becoming a catch-all for any special project.
+
+
+Read this page as the bridge between OPI's structure and OPI's work. Portfolios explain how people and cost centers are organized. Services explain what OPI delivers. Programs and methods explain how recurring work runs.
+
+> **CitiStat identifies the problem. Data helps explain it. The Innovation Lab designs and tests the solution. Cross-Agency Delivery coordinates implementation when multiple agencies must act together. AdminOps keeps the work visible, documented, and sustained.**
+
+
+{{ page_badge() }}
 
 > The full lineup of teams, recurring programs, and foundational practices.
 **TEAMS, PROGRAMS & FOUNDATIONS**
@@ -12,6 +26,13 @@
 **WHAT WE OWN AND HOW WE WORK**
 
 This document describes OPI’s four portfolios in operating detail — what each portfolio owns, the typical outputs it produces, the boundaries between functions, and the foundations that make our work coherent across services.
+
+## Signal-to-solution loop
+
+> **CitiStat identifies the problem. Data helps explain it. The Innovation Lab designs and tests the solution. Cross-Agency Delivery coordinates implementation when multiple agencies must act together. AdminOps keeps the work visible, documented, and sustained.**
+
+Use this loop as the plain-language test for OPI's service model. A page that describes OPI's work should make clear whether it is talking about performance management, evidence, service design, delivery coordination, or operating backbone support.
+
 
 Use it alongside the Organization Structure document, which shows the formal portfolio chart, leads, and cost centers.
 
@@ -135,7 +156,11 @@ The Data and Analytics portfolio builds the data foundation that makes OPI’s w
 
 **Innovation Lab**
 
-Interim lead: Dartanion Swift-Williams, until an Innovation Program Manager is identified
+Interim Innovation Program Manager: Dartanion Swift-Williams
+
+Current staffed roles: Interim Innovation Program Manager, Civic Designer,
+Senior Product Engineer, and Product Engineer. Aspirational roles: Civic
+Technology Lead.
 
 > *From service problems to practical solutions.*
 
@@ -163,7 +188,7 @@ Innovation is how OPI helps Baltimore City understand service problems, design w
 
 - Strategic partnerships and civic innovation relationships
 
-- Tiger Teams as an innovation method when discovery, design, or prototyping is required
+- Tiger Teams as an innovation method when discovery, design, or prototyping is required — the Lab provides the team and the Public Innovation Toolkit. The Lab is the capability (*how do we solve this?*); Cross-Agency Delivery is the service overlay (*how do we get multiple agencies to ship this together?*). When a Tiger Team’s work needs that overlay — named Authorizers at the Deputy Mayor or City Administrator level, decision rights across agencies, and sustainment commitments from each agency — it is chartered through Cross-Agency Delivery; otherwise through Innovation Lab intake under the agency director.
 
 **Typical Outputs**
 

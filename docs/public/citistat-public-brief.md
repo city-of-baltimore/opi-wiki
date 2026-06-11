@@ -1,6 +1,6 @@
 # CitiStat — Public Brief
 
-<span class="opi-pill approved">Approved</span>
+{{ page_badge() }}
 
 > Plain-language public brief on CitiStat.
 
@@ -32,11 +32,11 @@ CitiStat is established in the Baltimore City Code (Article 1, Subtitle 61). It 
 
 Every Stat session is grounded in four discipline points:
 
-**Accurate and timely intelligence.** Data shared in advance of the meeting, current enough to act on.
-
-**Effective tactics and strategies.** Clear plans owned by the agency, not by OPI.
+**Accurate and timely intelligence shared by all.** Data shared in advance of the meeting, current enough to act on.
 
 **Rapid deployment of resources.** Agencies and partners reposition staff, dollars, and tools to where the data points.
+
+**Effective tactics and strategies.** Clear plans owned by the agency, not by OPI.
 
 **Relentless follow-up and assessment.** Commitments tracked in writing across sessions, not only inside one meeting.
 

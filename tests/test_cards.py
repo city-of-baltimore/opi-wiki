@@ -5,25 +5,11 @@ from __future__ import annotations
 from pathlib import Path
 
 import pytest
-from main import DOCS_DIR, define_env
+from main import DOCS_DIR
 from scripts.repo_tools.cards import load_card_sections, render_card_grid
+from tests.helpers import register_macros
 
 REPO_ROOT = Path(__file__).resolve().parents[1]
-
-
-class FakeMacroEnvironment:
-    """Minimal stand-in for the MkDocs macros environment."""
-
-    def __init__(self) -> None:
-        """Initialize the fake macro registry."""
-
-        self.macros: dict[str, object] = {}
-
-    def macro(self, function: object) -> object:
-        """Register a macro function and return it unchanged."""
-
-        self.macros[getattr(function, "__name__", "unknown")] = function
-        return function
 
 
 def test_card_renderer_supports_linked_and_non_linked_cards(tmp_path: Path) -> None:
@@ -55,9 +41,7 @@ def test_card_renderer_supports_linked_and_non_linked_cards(tmp_path: Path) -> N
 def test_define_env_registers_card_grid_macro() -> None:
     """The MkDocs macros module should expose the shared card-grid helper."""
 
-    env = FakeMacroEnvironment()
-
-    define_env(env)
+    env = register_macros()
 
     macro = env.macros["card_grid_from"]
     rendered = macro("index.cards.yml")

@@ -1,6 +1,6 @@
 # Managers' Onboarding Playbook
 
-<span class="opi-pill approved">Approved</span>
+{{ page_badge() }}
 
 > What managers do — and don't do — to set new hires up for success.
 
@@ -14,7 +14,7 @@ A practical guide for OPI managers — how to make new hires productive, connect
 
 **AUDIENCE** All OPI managers
 
-**OWNER** Director's Office / AdminOps
+**OWNER** Director's Office
 
 **VERSION** v1.0 · May 2026
 

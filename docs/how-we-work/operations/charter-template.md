@@ -1,6 +1,6 @@
 # Charter Template
 
-<span class="opi-pill internal">Template</span>
+{{ page_badge() }}
 
 > Template for chartering a new initiative or working group.
 
@@ -179,3 +179,22 @@ Who owns the work after the project closes? What routine keeps it alive? Without
 **■ Maintenance**
 
 Update the charter when scope, timeline, or KPIs change materially. Material changes require sponsor and authorizer acknowledgment. The charter and the Project Directory entry are the same record — keep them aligned.
+
+## Required operating model fields
+
+Every charter should make the operating model explicit. Do not advance a charter until these fields are named or intentionally marked not applicable.
+
+| Field | Why it matters |
+| --- | --- |
+| Portfolio | Names the OPI portfolio responsible for the work. |
+| Service | Names what OPI is delivering: performance management, data and analytics, Innovation Lab, Cross-Agency Delivery, or AdminOps. |
+| Routine type | Clarifies whether this is a Stat, Tiger Team, Innovation Lab engagement, data governance decision, product review, delivery activation, or decision memo. |
+| Authorizer | Names the leader with authority to approve scope, resolve blockers, and close the work. |
+| Senior Responsible Owner / operating owner | Names who runs the work day to day. |
+| Agency owner | Names the agency that will own the workflow or sustain the improvement. |
+| User / audience | Names who experiences the service or uses the artifact. |
+| Decision needed | States the decision this work is meant to support. |
+| Data needed | Identifies required data sources, definitions, refresh cadence, and caveats. |
+| Sustainment owner | Names who keeps the gain after OPI steps back. |
+| Definition of done | Defines evidence of completion, not just activity. |
+| Public posture | States whether the work is internal, public-facing, Council-facing, or partner-facing. |

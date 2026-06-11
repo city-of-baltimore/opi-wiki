@@ -28,9 +28,25 @@ poetry run mkdocs build
 
 # run the maintainer verification pass
 ./scripts/verify.sh
+
+# optional: write a machine-readable verification report
+./scripts/verify.sh --json-output /tmp/opi-verify.json
+
+# optional: include browser smoke checks after the strict site build
+./scripts/verify.sh --include-browser-smoke
 ```
 
 `poetry run mkdocs serve` runs at <http://127.0.0.1:8000> with live reload.
+`./scripts/verify.sh` remains the stable entrypoint, but now delegates to a
+structured Python runner that emits step timings and can optionally write a
+JSON report for CI or debugging.
+
+To use the optional browser smoke checks locally, install the Chromium browser
+once per machine:
+
+```bash
+poetry run playwright install chromium
+```
 
 ## Build platform note
 
@@ -50,9 +66,23 @@ commands, and re-verify all plugins and theme behavior together.
 
 - Keep global site config in `mkdocs.yml`.
 - Keep navigation local to the content in `docs/**/.pages`.
+- Keep recurring operational source material grouped in dedicated local collections such as `docs/how-we-work/administrative-memos/` and `docs/how-we-work/how-to/`, and expose those collections intentionally in the nearest section navigation.
 - Keep landing-page card content in neighboring `*.cards.yml` files and render it through the shared `card_grid_from(...)` macro.
+- Keep repeated structured page data in neighboring `*.data.yml` files when one source needs to drive multiple rendered sections.
+- Keep visible page badges in `.metadata.yml` via the `display_badge` field and render them through `page_badge()` or `badge(...)`, not raw HTML spans.
+- Keep shared brand CSS split by responsibility under `docs/assets/stylesheets/` so tokens, Material chrome, reusable components, and page-specific presentation do not drift together.
 - Run `./scripts/verify.sh` before merging structural or config changes.
 - Treat `site/` as generated output, not source.
+
+## Page data model
+
+Use the smallest shared pattern that matches the page need:
+
+- `.metadata.yml` carries inherited page metadata such as owner, review cadence, change log, and optional `display_badge` state.
+- `*.cards.yml` carries repeated landing-page card content and should render only through `card_grid_from(...)`.
+- `*.data.yml` carries structured page-specific source data when one file needs to drive multiple rendered sections, tables, charts, or lists.
+
+If a page can stay plain Markdown, keep it plain Markdown. Only introduce structured data when it removes repeated source-of-truth content or repeated shared UI markup.
 
 ## Repository layout
 
@@ -74,7 +104,11 @@ opi-foundations/
 │   ├── contributing.md
 │   ├── */index.cards.yml   # section-local landing-page card data
 │   └── assets/
-│       ├── stylesheets/opi.css   # OPI brand styles
+│       ├── stylesheets/tokens.css          # shared design tokens + Material bridges
+│       ├── stylesheets/base.css            # typography and content primitives
+│       ├── stylesheets/material-chrome.css # header, nav, tabs, footer
+│       ├── stylesheets/components.css      # cards, pills, reusable shared UI
+│       ├── stylesheets/home.css            # homepage-only presentation
 │       ├── images/               # logos, page images
 │       └── docs/                 # downloadable .docx/.pdf assets
 ├── overrides/              # MkDocs Material theme overrides (empty for now)
@@ -144,3 +178,7 @@ fly scale count 0
 
 Content: [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) — peer cities welcome to adapt with attribution.
 Code (theme, build): MIT.
+
+## Documentation method consistency
+
+This wiki treats method pages and playbooks as sources of truth. When adding or editing documentation, prefer linking to the canonical method page instead of redefining a term in a slightly different way. Update the glossary when a term is introduced, retired, or narrowed.

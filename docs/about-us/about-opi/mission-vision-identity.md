@@ -1,6 +1,11 @@
 # Mission, Vision, Identity
 
-<span class="opi-pill approved">Approved</span>
+## How this document should be used
+
+Use this page as the north star for voice and purpose. It explains why OPI exists and what kind of public institution the office is trying to become. For the operating model, pair it with the organization structure, Teams / Programs / Foundations, and How Work Moves Through OPI pages.
+
+
+{{ page_badge() }}
 
 > Why this office exists, where it's heading, and what it stands for.
 **Mission, Vision, and Identity**
@@ -11,7 +16,7 @@
 
 **A shared answer to the question: who is OPI?**
 
-This document captures what the OPI team has heard, debated, and aligned on about our identity. It is the human side of the FY27 Foundations deck: not the org chart or the service catalog, but the operating story we use to introduce ourselves, recruit teammates, and stay grounded when the work gets hard.
+This document captures what the OPI team has heard, debated, and aligned on about our identity. It is the human side of the OPI Foundations deck: not the org chart or the service catalog, but the operating story we use to introduce ourselves, recruit teammates, and stay grounded when the work gets hard.
 
 > *Better government is not a one-time project. It is a discipline.*
 
@@ -235,12 +240,6 @@ A platform city. 311, permitting, performance, data, and service workflows conne
 **MISSION FRAMINGS**
 
 **Two ways the mission has been articulated by our team**
-
-**Khalid’s mission proposal**
-
-> *Use data and design to deliver visible, lasting improvements to City services — so residents and public servants alike experience a government that listens, works, and learns.*
-
-**Dart’s mission framework**
 
 > *We use data and design to improve city services in ways that residents and public servants can see and feel.*
 

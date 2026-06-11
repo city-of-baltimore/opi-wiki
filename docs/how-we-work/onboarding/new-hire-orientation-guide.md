@@ -1,6 +1,6 @@
 # New Hire Orientation Guide
 
-<span class="opi-pill approved">Approved</span>
+{{ page_badge() }}
 
 > What a new hire's first weeks at OPI look like.
 
@@ -14,7 +14,7 @@ Your first day, your first week, and what to expect at Baltimore’s Mayor’s O
 
 **AUDIENCE** New OPI staff
 
-**OWNER** Director's Office / AdminOps
+**OWNER** Director's Office
 
 **VERSION** v1.0 · May 2026
 
@@ -50,10 +50,10 @@ OPI is organized into four portfolios. Each portfolio has a lead and is responsi
 
 | **Portfolio**                | **Lead**                                       | **What it owns**                                                                         |
 |------------------------------|------------------------------------------------|------------------------------------------------------------------------------------------|
-| Director's Office / AdminOps | Rakeim Young, Chief of Staff                   | Operating backbone, intake, communications, knowledge management, and quality assurance. |
+| Director's Office | Rakeim Young, Chief of Staff                   | Operating backbone, intake, communications, knowledge management, quality assurance, and officewide coordination. |
 | Performance and CitiStat     | Danny Heller, Deputy Chief Performance Officer | CitiStat method, agency performance plans, KPIs, follow-up, and sustainment monitoring.  |
 | Data and Analytics           | Jason Howard, PhD, Deputy Chief Data Officer   | Data platform, analytics, governance, open data, GIS, and AI/data readiness.             |
-| Innovation Lab               | Dartanion Swift-Williams (interim)             | Service design, product discovery, civic technology, AI pilots, and operational tools.   |
+| Innovation Lab               | Dartanion Swift-Williams, Interim Innovation Program Manager | Service design, product discovery, civic technology, AI pilots, partnerships, and operational tools. |
 
 *Cross-Agency Delivery is a service overlay, not a separate portfolio. Danny Heller serves as Interim Delivery Manager; Rakeim Young maintains portfolio visibility and escalation tracking.*
 
@@ -114,7 +114,7 @@ In your first week, the goal is to learn the system before you try to change it.
 
 - Read the OPI Field Guide and the Quick Reference Handbook. They are your shared language.
 
-- Sit in on at least one CitiStat session, one delivery room or product stand-up, and one team meeting in your portfolio.
+- Sit in on at least one CitiStat session, one delivery review or product stand-up, and one team meeting in your portfolio.
 
 - Schedule recurring weekly one-on-ones with your manager and your onboarding buddy.
 

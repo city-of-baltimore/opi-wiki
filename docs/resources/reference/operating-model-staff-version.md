@@ -1,6 +1,22 @@
-# Operating Model (Staff Version)
+# Operating Model
 
-<span class="opi-pill approved">Approved</span>
+## Portfolio, service, program, and team language
+
+## Cross-Agency Delivery operating clarity
+
+Cross-Agency Delivery is a service overlay, not a standing team and not a cost center. It activates when a priority outcome requires multiple agencies to move together and normal channels are not enough. Its question is: **How do we get multiple agencies to actually ship this together?**
+
+The overlay creates the conditions for delivery: a named Authorizer, a Senior Responsible Owner, agency owners, a commitment ledger, an escalation path, and a closure plan. Agencies still own operations. OPI owns the method, the coordination routine, the evidence, and the handoff discipline.
+
+Cross-Agency Delivery is different from CitiStat. CitiStat surfaces the performance problem, helps leadership decide, and monitors follow-through. Cross-Agency Delivery sequences implementation across agencies when the work cannot move through one agency alone.
+
+
+A portfolio is how OPI organizes people, leadership, and cost centers. A service is what OPI delivers to City leadership, agencies, residents, and partners. A program is a formal named body of work, such as CitiStat or Open Data. A team is the staff group that performs the work.
+
+Use this distinction when writing or editing OPI pages. It prevents Cross-Agency Delivery from being described like a staffed portfolio, keeps CitiStat from being treated as all of performance management, and keeps the Innovation Lab from becoming a catch-all for any special project.
+ (Staff Version)
+
+{{ page_badge() }}
 
 > The OPI operating model written for OPI staff.
 
@@ -36,10 +52,10 @@ OPI is organized into four portfolios. Each portfolio has a clear lead and a cle
 
 | **Portfolio**                  | **Lead**                                       | **What it does**                                                                                                       |
 |--------------------------------|------------------------------------------------|------------------------------------------------------------------------------------------------------------------------|
-| Director’s Office and AdminOps | Rakeim Young, Chief of Staff                   | Operating backbone — intake, portfolio visibility, communications, knowledge management, fiscal, HR, facilities.       |
+| Director’s Office | Rakeim Young, Chief of Staff                   | Operating backbone — intake, portfolio visibility, communications, knowledge management, fiscal, HR, facilities, and officewide coordination. |
 | Performance and CitiStat       | Danny Heller, Deputy Chief Performance Officer | Owns the performance method — CitiStat routines, agency performance plans, KPI standards, follow-up.                   |
 | Data and Analytics             | Jason Howard, PhD, Deputy Chief Data Officer   | Builds trusted data infrastructure — analytics, data platform, data engineering, open data, governance, AI readiness.  |
-| Innovation Lab                 | Dartanion Swift-Williams (interim)             | Turns service problems into designed, testable solutions — HCD, product discovery, civic tech, AI pilots, Tiger Teams. |
+| Innovation Lab                 | Dartanion Swift-Williams, Interim Innovation Program Manager | Turns service problems into designed, testable solutions — HCD, product discovery, civic tech, AI pilots, partnerships, and tiger teams. |
 
 **Five services**
 
@@ -53,7 +69,7 @@ The four portfolios deliver five services. The same portfolio can support more t
 | Cross-Agency Delivery           | Coordination of high-priority initiatives that require action across multiple City agencies (a service overlay, not a separate cost center). |
 | AdminOps                        | Administrative, operational, communications, and portfolio management functions that support the rest of OPI.                                |
 
-*Cross-Agency Delivery is staffed across portfolios; it is anchored in the Director’s Office and is not a stand-alone team.*
+*Cross-Agency Delivery is a service overlay, not a stand-alone team. The Innovation Lab provides the team, Performance and CitiStat provides the standing delivery routine, and the Director’s Office provides the authorizing relationships.*
 
 **■ How work enters OPI**
 
@@ -69,7 +85,7 @@ OPI uses a single front door. Every request — from agencies, from leadership, 
 
 4.  If accepted, the work is opened in the Project Directory, given an owner and sponsor, and a charter is drafted within ten business days.
 
-5.  Work runs through the appropriate cadence (CitiStat session, Lab sprint, delivery room) until close-out, with a documented hand-back to the agency that owns the service.
+5.  Work runs through the appropriate cadence (CitiStat session, Lab sprint, delivery review) until close-out, with a documented hand-back to the agency that owns the service.
 
 **What we accept**
 
@@ -133,9 +149,9 @@ OPI’s services are designed to work as a cycle, not as silos.
 
 **Citywide Data and Analytics explains why.** Through trustworthy datasets, analytics products, and data governance.
 
-**The Innovation Lab redesigns what comes next.** Through human-centered design, prototyping, Tiger Teams, and digital service work.
+**The Innovation Lab redesigns what comes next.** Through human-centered design, prototyping, tiger teams, and digital service work.
 
-**Cross-Agency Delivery coordinates the work.** Through delivery rooms, weekly cadences, and unblock decisions.
+**Cross-Agency Delivery coordinates the work.** Through delivery reviews, weekly cadences, and unblock decisions.
 
 **AdminOps keeps it organized.** Through portfolio visibility, intake, QA, communications, and knowledge management.
 

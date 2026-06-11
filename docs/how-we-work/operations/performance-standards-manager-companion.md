@@ -1,6 +1,6 @@
 # Performance Standards — Manager Companion
 
-<span class="opi-pill approved">Approved</span>
+{{ page_badge() }}
 
 > How managers operationalize the staff performance standards.
 

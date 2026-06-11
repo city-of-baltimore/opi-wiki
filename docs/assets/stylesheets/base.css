@@ -1,0 +1,116 @@
+/* Shared typography and content primitives. */
+
+body,
+.md-typeset {
+  font-family: "Calibri", "Segoe UI", system-ui, -apple-system, sans-serif;
+  font-feature-settings: "kern", "liga";
+  color: var(--opi-text);
+}
+
+.md-typeset h1,
+.md-typeset h2,
+.md-typeset h3,
+.md-typeset h4,
+.md-typeset h5,
+.md-typeset h6 {
+  font-family: "Calibri", "Segoe UI", system-ui, sans-serif;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  color: var(--opi-heading);
+}
+
+.md-typeset h1 {
+  font-size: 2.1rem;
+  border-bottom: 2px solid var(--opi-gold);
+  padding-bottom: 0.4rem;
+  margin-bottom: 1.2rem;
+}
+
+.md-typeset h2 {
+  font-size: 1.5rem;
+  margin-top: 2rem;
+  border-left: 4px solid var(--opi-gold);
+  padding-left: 0.6rem;
+}
+
+.md-typeset h3 {
+  font-size: 1.2rem;
+  color: var(--opi-text);
+}
+
+.md-typeset a {
+  color: var(--opi-link-color);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.15s ease;
+}
+
+.md-typeset a:hover {
+  border-bottom-color: var(--opi-link-hover);
+}
+
+.md-typeset a.internal-link::before {
+  content: "🔒 ";
+  font-size: 0.85em;
+  margin-right: 0.15em;
+}
+
+.md-typeset a.internal-link {
+  color: var(--opi-text);
+  border-bottom: 1px dotted var(--opi-text-muted);
+}
+
+.md-typeset a.internal-link:hover {
+  color: var(--opi-link-color);
+  border-bottom-color: var(--opi-link-hover);
+}
+
+.md-typeset table:not([class]) {
+  border: 1px solid var(--opi-border);
+  font-size: 0.85rem;
+}
+
+.md-typeset table:not([class]) th {
+  background-color: var(--opi-gold-soft);
+  color: var(--opi-heading);
+  font-weight: 600;
+  border-bottom: 2px solid var(--opi-gold);
+}
+
+.md-typeset table:not([class]) td {
+  border-top: 1px solid var(--opi-border);
+}
+
+[data-md-color-scheme="slate"] .md-typeset table:not([class]) th {
+  color: var(--opi-gold);
+}
+
+.md-typeset .admonition,
+.md-typeset details {
+  border-left-width: 4px;
+  border-radius: 2px;
+  font-size: 0.85rem;
+}
+
+.md-typeset .admonition.note,
+.md-typeset details.note {
+  border-left-color: var(--opi-gold);
+}
+
+.md-typeset .note > .admonition-title,
+.md-typeset .note > summary {
+  background-color: var(--opi-gold-soft);
+}
+
+@media print {
+  .md-header,
+  .md-tabs,
+  .md-sidebar,
+  .md-footer {
+    display: none;
+  }
+
+  .md-main__inner {
+    margin: 0;
+  }
+}

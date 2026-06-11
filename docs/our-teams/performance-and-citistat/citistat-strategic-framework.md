@@ -1,23 +1,20 @@
 # CitiStat Strategic Framework
 
-<span class="opi-pill approved">Approved</span>
+{{ page_badge() }}
 
 > The strategic frame that gives every Stat session its bearings.
-**STRATEGIC FRAMEWORK**
 
-**CitiStat**
+**STRATEGIC FRAMEWORK · AUDIENCE: PUBLIC**
+
+**CitiStat Strategic Framework**
 
 *Baltimore’s performance management system for turning data, decisions, and follow-through into better city services.*
 
-Strategic Framework
-
-*Read alongside: OPI CitiStat Method Playbook; OPI Citywide Performance Management Strategy FY27..*
+*Read alongside: OPI CitiStat Method Playbook; OPI Citywide Performance Management Strategy.*
 
 *This Framework is the public-facing strategic case. The Method Playbook is the staff-facing operating manual. The Performance Management Strategy explains how CitiStat fits inside the broader citywide system.*
 
-**EXECUTIVE SUMMARY**
-
-**A learning and delivery loop**
+## Executive summary: a learning and delivery loop
 
 CitiStat is Baltimore’s executive performance rhythm. It is the routine through which City leadership, agencies, and the Mayor’s Office of Performance and Innovation use data to see performance clearly, make decisions, assign ownership, and follow through until services improve.
 
@@ -25,37 +22,93 @@ The next phase of CitiStat is not about adding meetings. It is about building a 
 
 This document consolidates the CitiStat strategic argument for City leadership, Council, agency staff, partners, and public-facing use. It also absorbs the case for treating CitiStat as a learning and delivery loop, not a meeting series. A companion operating playbook contains the staff-facing standards, templates, and session mechanics.
 
-> **North star: Run a disciplined, collaborative performance system that turns priorities and data into sustained service improvements residents and public servants can see and feel.**
+<div class="opi-pullquote" markdown="0">North star: Run a disciplined, collaborative performance system that turns priorities and data into sustained service improvements residents and public servants can see and feel.</div>
 
-**WHAT WE ARE REFRAMING**
+**Program leadership.** The Executive Director sets CitiStat strategy and owns the program as the CitiStat Director. The Deputy Chief Performance Officer serves as Deputy Director for the program. The CitiStat Program Manager supports day-to-day program management.
 
-**From reporting to delivery**
+## What we are reframing: from reporting to delivery
 
-| **From**                       | **To**                                                     |
-|--------------------------------|------------------------------------------------------------|
-| Reporting what happened        | Managing what changes next                                 |
-| Dashboards as the product      | Decisions, commitments, and closure as the product         |
-| Meetings that drift            | Routines with purpose, data, ownership, and follow-through |
-| Agency-by-agency problem lists | A citywide operating system for priority services          |
-| Pressure without support       | Accountability with partnership, method, and unblockers    |
+<div class="opi-shift-grid" markdown="0">
+  <div class="opi-shift-card">
+    <div class="opi-shift-card__from"><span class="opi-shift-card__label">From</span>Reporting what happened</div>
+    <div class="opi-shift-card__to"><span class="opi-shift-card__label">To</span>Managing what changes next</div>
+  </div>
+  <div class="opi-shift-card">
+    <div class="opi-shift-card__from"><span class="opi-shift-card__label">From</span>Dashboards as the product</div>
+    <div class="opi-shift-card__to"><span class="opi-shift-card__label">To</span>Decisions, commitments, and closure as the product</div>
+  </div>
+  <div class="opi-shift-card">
+    <div class="opi-shift-card__from"><span class="opi-shift-card__label">From</span>Meetings that drift</div>
+    <div class="opi-shift-card__to"><span class="opi-shift-card__label">To</span>Routines with purpose, data, ownership, and follow-through</div>
+  </div>
+  <div class="opi-shift-card">
+    <div class="opi-shift-card__from"><span class="opi-shift-card__label">From</span>Agency-by-agency problem lists</div>
+    <div class="opi-shift-card__to"><span class="opi-shift-card__label">To</span>A citywide operating system for priority services</div>
+  </div>
+  <div class="opi-shift-card">
+    <div class="opi-shift-card__from"><span class="opi-shift-card__label">From</span>Pressure without support</div>
+    <div class="opi-shift-card__to"><span class="opi-shift-card__label">To</span>Accountability with partnership, method, and unblockers</div>
+  </div>
+</div>
 
-**WHAT CITISTAT IS**
-
-**A learning and accountability loop**
+## What CitiStat is: a learning and accountability loop
 
 CitiStat is Baltimore’s learning and accountability loop: a management routine that converts performance signals into decisions, commitments, and follow-through. CitiStat is a partnership with agencies. Agencies own day-to-day operations and implementation. OPI convenes, analyzes, facilitates, helps unblock, and strengthens the system.
 
-| **CitiStat is…**                                                                                        | **CitiStat is not…**                                                              |
-|---------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------|
-| A performance operating system that turns data into action.                                             | A dashboard, report-out, or slide exercise.                                       |
-| A respectful forum for candor, problem-solving, and accountability.                                     | An ambush, audit, or public shaming ritual.                                       |
-| A way to surface risks early and focus leadership on the highest-leverage bottlenecks.                  | A place for every short-term tactical issue that can be solved within one agency. |
-| A bridge between performance planning, data, service design, delivery, budget, and public transparency. | A substitute for agency management, budget hearings, or policy debates.           |
-| A source of institutional memory: commitments, owners, dates, decisions, and evidence.                  | A meeting series that ends when the meeting ends.                                 |
+<div class="opi-compare-grid" markdown="0">
+  <div class="opi-compare-card">
+    <div class="opi-compare-card__row opi-compare-card__row--is">
+      <span class="opi-compare-card__label">CitiStat is</span>
+      <span class="opi-compare-card__text">A performance operating system that turns data into action.</span>
+    </div>
+    <div class="opi-compare-card__row opi-compare-card__row--isnot">
+      <span class="opi-compare-card__label">CitiStat is not</span>
+      <span class="opi-compare-card__text">A dashboard, report-out, or slide exercise.</span>
+    </div>
+  </div>
+  <div class="opi-compare-card">
+    <div class="opi-compare-card__row opi-compare-card__row--is">
+      <span class="opi-compare-card__label">CitiStat is</span>
+      <span class="opi-compare-card__text">A respectful forum for candor, problem-solving, and accountability.</span>
+    </div>
+    <div class="opi-compare-card__row opi-compare-card__row--isnot">
+      <span class="opi-compare-card__label">CitiStat is not</span>
+      <span class="opi-compare-card__text">An ambush, audit, or public shaming ritual.</span>
+    </div>
+  </div>
+  <div class="opi-compare-card">
+    <div class="opi-compare-card__row opi-compare-card__row--is">
+      <span class="opi-compare-card__label">CitiStat is</span>
+      <span class="opi-compare-card__text">A way to surface risks early and focus leadership on the highest-leverage bottlenecks.</span>
+    </div>
+    <div class="opi-compare-card__row opi-compare-card__row--isnot">
+      <span class="opi-compare-card__label">CitiStat is not</span>
+      <span class="opi-compare-card__text">A place for every short-term tactical issue that can be solved within one agency.</span>
+    </div>
+  </div>
+  <div class="opi-compare-card">
+    <div class="opi-compare-card__row opi-compare-card__row--is">
+      <span class="opi-compare-card__label">CitiStat is</span>
+      <span class="opi-compare-card__text">A bridge between performance planning, data, service design, delivery, budget, and public transparency.</span>
+    </div>
+    <div class="opi-compare-card__row opi-compare-card__row--isnot">
+      <span class="opi-compare-card__label">CitiStat is not</span>
+      <span class="opi-compare-card__text">A substitute for agency management, budget hearings, or policy debates.</span>
+    </div>
+  </div>
+  <div class="opi-compare-card">
+    <div class="opi-compare-card__row opi-compare-card__row--is">
+      <span class="opi-compare-card__label">CitiStat is</span>
+      <span class="opi-compare-card__text">A source of institutional memory: commitments, owners, dates, decisions, and evidence.</span>
+    </div>
+    <div class="opi-compare-card__row opi-compare-card__row--isnot">
+      <span class="opi-compare-card__label">CitiStat is not</span>
+      <span class="opi-compare-card__text">A meeting series that ends when the meeting ends.</span>
+    </div>
+  </div>
+</div>
 
-**WHY CITISTAT MATTERS NOW**
-
-**The failure modes it addresses**
+## Why CitiStat matters now
 
 City government is complex. Many of the problems residents experience are not caused by one person or one agency. They happen when risks are noticed too late, handoffs are unclear, data definitions vary, decisions linger without an owner, and follow-up is not tracked to closure.
 
@@ -73,11 +126,9 @@ CitiStat addresses those failure modes by creating a predictable cadence for tru
 
 - Document what changed so the work can survive staff transitions and leadership changes.
 
-**LEGAL MANDATE AND GOVERNANCE**
+## Legal mandate and governance
 
-**Authority for the work**
-
-Baltimore City Code Article 1, Subtitle 61 establishes the Baltimore City CitiStat Program. The law gives CitiStat a clear management mandate and creates obligations for both OPI and principal agencies.
+[Baltimore City Code Article 1, Subtitle 61](https://codes.baltimorecity.gov/us/md/cities/baltimore/code/1/61) establishes the Baltimore City CitiStat Program. The law gives CitiStat a clear management mandate and creates obligations for both OPI and principal agencies.
 
 | **Mandate**                                                 | **What it means for the operating model**                                                                                                                                   |
 |-------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -93,22 +144,41 @@ The principal agencies listed in Subtitle 61 are: the Fire Department, Departmen
 
 CitiStat is managed by the Executive Director of OPI, method-stewarded by the Performance and CitiStat team, authorized through the relevant Deputy Mayor, Deputy City Administrator, City Administrator, or executive sponsor, and implemented by agencies.
 
-**THE CITISTAT OPERATING MODEL**
-
-**A management routine, not a meeting**
+## The CitiStat operating model
 
 The goal is not more meetings. The goal is a management routine that helps Baltimore see what is working, identify what is stuck, assign ownership, and follow through until conditions improve.
 
-**The four tenets of Stat**
+### The four tenets of Stat
 
-| **Tenet**                                      | **Meaning in practice**                                                                                                     |
-|------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------|
-| Timely and accurate intelligence shared by all | Use reliable data, resident signals, field validation, and a shared KPI dictionary so the room is not debating the numbers. |
-| Rapid deployment of resources                  | Use the session to make or escalate decisions that shift people, attention, tools, or resources toward the bottleneck.      |
-| Effective tactics and strategies               | Ask what the agency tried, what changed, why it worked or did not, and what should be tested next.                          |
-| Relentless follow-up and assessment            | Track commitments until closed with evidence; unresolved issues remain visible until solved or escalated.                   |
+<div class="opi-margin-note" markdown="0">
+  <span class="opi-margin-note__label">Why these four</span>
+  The four tenets are the operating philosophy that has defined Stat-style performance management since CompStat in the 1990s and CitiStat in 1999. Baltimore was the first city government to apply them. They predate any specific dashboard, software, or meeting format and remain the constants every Stat — thematic or agency — must hold to.
+</div>
 
-**The modern CitiStat operating cycle**
+<div class="opi-tenets-grid" markdown="0">
+  <div class="opi-tenet">
+    <div class="opi-tenet__num">Tenet 01</div>
+    <div class="opi-tenet__name">Accurate and timely intelligence shared by all</div>
+    <div class="opi-tenet__meaning">Use reliable data, resident signals, field validation, and a shared KPI dictionary so the room is not debating the numbers.</div>
+  </div>
+  <div class="opi-tenet">
+    <div class="opi-tenet__num">Tenet 02</div>
+    <div class="opi-tenet__name">Rapid deployment of resources</div>
+    <div class="opi-tenet__meaning">Use the session to make or escalate decisions that shift people, attention, tools, or resources toward the bottleneck.</div>
+  </div>
+  <div class="opi-tenet">
+    <div class="opi-tenet__num">Tenet 03</div>
+    <div class="opi-tenet__name">Effective tactics and strategies</div>
+    <div class="opi-tenet__meaning">Ask what the agency tried, what changed, why it worked or did not, and what should be tested next.</div>
+  </div>
+  <div class="opi-tenet">
+    <div class="opi-tenet__num">Tenet 04</div>
+    <div class="opi-tenet__name">Relentless follow-up and assessment</div>
+    <div class="opi-tenet__meaning">Track commitments until closed with evidence; unresolved issues remain visible until solved or escalated.</div>
+  </div>
+</div>
+
+### The modern CitiStat operating cycle
 
 Every effective CitiStat routine follows a cycle. The cycle gives structure to the work before, during, and after the meeting.
 
@@ -122,7 +192,23 @@ Every effective CitiStat routine follows a cycle. The cycle gives structure to t
 | 6\. Follow up        | Did it work?                                                | OPI and agency leads review evidence, measure results, and escalate blockers quickly.                                     |
 | 7\. Institutionalize | How does the improvement stick?                             | SOPs, training, data products, public summaries, and sustainment owners are updated.                                      |
 
-**The monthly rhythm**
+#### Crosswalk: 7 strategic phases and 12 operating steps
+
+The seven phases above describe what changes through the cycle. The [twelve operating steps](citistat-method-playbook.md#analyst-execution-cycle-the-12-steps) in the Method Playbook describe what an analyst does on each business day. They are the same work seen from two angles — strategic intent and operating sequence.
+
+| **Strategic phase**     | **Operating steps**                                              | **Typical timing**                          |
+|-------------------------|------------------------------------------------------------------|---------------------------------------------|
+| 1. Signal               | Step 1 — stakeholder alignment and debrief                       | 0–1 day after the prior Stat                |
+| 2. Frame                | Steps 1a, 3, 4 — initial plan, draft frame, last-call input      | 1 day after prior Stat through T-8          |
+| 3. Diagnose             | Steps 5, 6, 7 — analysis, QC review, revision                    | T-5 through T-3                             |
+| 4. Commit               | Steps 8, 9, 10, 11 — send-out, packet print, room setup, session | T-2 through T (session day)                 |
+| 5. Deploy               | Step 11 — in-session decisions and commitments                   | T (session day)                             |
+| 6. Follow up            | Steps 12, 2 — follow-up memo, then continuous follow-up          | T+1 to T+2, then continuous between Stats   |
+| 7. Institutionalize     | Step 2 sustained, plus the Sustain moment in the monthly rhythm  | Continuous                                  |
+
+For agency-based Stats, the analyst pairs two debriefs (one with the agency, one with Mayor's Office leadership) and two frame reviews in the same split. Interagency or thematic Stats may merge these into a single conversation when no agency-only context is required.
+
+### The monthly rhythm
 
 | **Moment**     | **Purpose**                                                                                                                              | **Core output**                                                         |
 |----------------|------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------|
@@ -132,19 +218,15 @@ Every effective CitiStat routine follows a cycle. The cycle gives structure to t
 | Follow through | Issue the post-memo, update the commitment tracker, and review blockers between sessions.                                                | Follow-up memo, commitment tracker, decision log, and escalation notes. |
 | Sustain        | Convert improvements into SOPs, dashboards, alerts, training, or delivery activations so changes last after the meeting.                 | Sustainment plan, public summary, annual report narrative, or handoff.  |
 
-**TOPIC SELECTION**
-
-**Fewer, sharper, stickier**
+## Topic selection: fewer, sharper, stickier
 
 The strongest CitiStat portfolio is not the biggest portfolio. It is the portfolio where each routine has a clear purpose, a named authorizer, reliable enough data, agency ownership, and a reason leadership time is required.
 
 CitiStat should focus on 1–2 high-value priorities per agency or theme at a time. Each priority should connect to resident pain, frontline workflow, an operational constraint, or a public commitment. The work should stay focused long enough to change behavior, systems, or outcomes.
 
-If a topic does not produce decisions, commitments, measurable learning, or a delivery trigger after two cycles, it should be redesigned, paused, merged into another routine, or converted into a different operating mechanism such as a Tiger Team, product discovery engagement, data governance review, or decision memo.
+If a topic does not produce decisions, commitments, measurable learning, or a delivery trigger after two cycles, it should be redesigned, paused, merged into another routine, or converted into a different operating mechanism such as a tiger team, product discovery engagement, data governance review, or decision memo.
 
-**WHAT BELONGS IN CITISTAT**
-
-**Admission and routing**
+## What belongs in CitiStat
 
 CitiStat time is leadership time. It should be used for issues where recurring executive attention, KPI review, commitments, and follow-up can materially improve a service or unblock a priority.
 
@@ -156,7 +238,7 @@ CitiStat time is leadership time. It should be used for issues where recurring e
 | The problem crosses agencies, systems, geographies, or handoffs.                                                     | The problem is a data definition, data access, or open data publishing issue better suited to data governance. |
 | A commitment can be tracked with owner, date, and evidence.                                                          | There is no named owner, no decision context, or no reliable-enough data to support the conversation.          |
 
-**Right routine decision rule**
+### Right-routine decision rule
 
 | **If the problem primarily requires…**                                                      | **Use…**                                       |
 |---------------------------------------------------------------------------------------------|------------------------------------------------|
@@ -167,9 +249,7 @@ CitiStat time is leadership time. It should be used for issues where recurring e
 | Product ownership, build readiness, launch readiness, or roadmap tradeoff                   | Product Council or product governance          |
 | One-time policy, budget, or executive decision                                              | Decision memo                                  |
 
-**DATA DISCIPLINE**
-
-**From tracking to understanding**
+## Data discipline: from tracking to understanding
 
 CitiStat should prioritize metrics that are trusted, reproducible, operationally useful, and connected to decisions. The goal is not to count everything. The goal is to understand the signals that help leadership and agencies act.
 
@@ -177,15 +257,13 @@ The strongest measures often reveal process and service quality: time-to-complet
 
 Every priority measure should be connected to the KPI dictionary and should include an owner, formula, source, refresh cadence, caveats, and equity or geography cuts where appropriate. When data quality is weak, CitiStat should not hide that weakness. It should name it and assign follow-up to fix it.
 
-**CITISTAT AS A KNOWLEDGE SYSTEM**
-
-**If we cannot find what we learned, we did not learn it**
+## CitiStat as a knowledge system
 
 Slides are useful for framing a conversation. They are not the long-term memory of the performance system. CitiStat should increasingly rely on reusable data products, living notebooks, dashboards, methodology cards, process maps, and commitment trackers that can be searched and reused.
 
-A slide deck should be an entry point and decision summary. The knowledge should live in a CitiStat Hub: a single organizing home for topics, metrics, prior decisions, root causes, commitments, dashboards, data quality notes, public summaries, and annual report sections.
+A slide deck should be an entry point and decision summary. The knowledge should live in a single organizing home for topics, metrics, prior decisions, root causes, commitments, dashboards, data quality notes, public summaries, and annual report sections.
 
-A new analyst should be able to understand a Stat topic in 30 minutes: the problem, the data, the prior decisions, the current commitments, and the next decision needed. The Hub should preserve:
+A new analyst should be able to understand a Stat topic in 30 minutes: the problem, the data, the prior decisions, the current commitments, and the next decision needed. The knowledge system should preserve:
 
 - Past Stat topics and decision history.
 
@@ -201,45 +279,172 @@ A new analyst should be able to understand a Stat topic in 30 minutes: the probl
 
 - Public summaries and annual report sections.
 
-**PEOPLE MATTER**
-
-**A humane CitiStat**
+## A humane CitiStat
 
 CitiStat cannot fix service delivery if it only talks to managers. Frontline workload, training gaps, morale, informal workarounds, union considerations, staffing realities, and resident experience are not side issues. They are evidence.
 
 A humane CitiStat model asks hard questions without assuming bad intent. It recognizes that performance problems often come from system design, resource constraints, unclear ownership, weak data, or tools that do not match the work. The purpose is to make those conditions visible so they can be changed.
 
-**CURRENT CITISTAT PORTFOLIO**
+## Current CitiStat portfolio
 
-**Active Stats and clusters**
+The active portfolio is designed to cover the services, systems, and priorities residents and staff experience most directly. The portfolio should remain disciplined: new Stats should be added only when [admission criteria](citistat-method-playbook.md#issue-selection-admission-and-continuation), executive sponsorship, data readiness, and follow-up mechanisms are clear.
 
-The active portfolio is designed to cover the services, systems, and priorities residents and staff experience most directly. The portfolio should remain disciplined: new Stats should be added only when admission criteria, executive sponsorship, data readiness, and follow-up mechanisms are clear.
+<div class="opi-portfolio-grid" markdown="0">
+  <div class="opi-portfolio-card">
+    <div class="opi-portfolio-card__head">
+      <div class="opi-portfolio-card__name">311 Stat</div>
+      <div class="opi-portfolio-card__type">Thematic</div>
+    </div>
+    <div class="opi-portfolio-card__cluster">Internal Services</div>
+    <div class="opi-portfolio-card__focus">Resident service request experience from intake to closure.</div>
+  </div>
+  <div class="opi-portfolio-card">
+    <div class="opi-portfolio-card__head">
+      <div class="opi-portfolio-card__name">Tech Stat</div>
+      <div class="opi-portfolio-card__type">Thematic</div>
+    </div>
+    <div class="opi-portfolio-card__cluster">Internal Services</div>
+    <div class="opi-portfolio-card__focus">Technology service reliability, project delivery, and IT governance.</div>
+  </div>
+  <div class="opi-portfolio-card">
+    <div class="opi-portfolio-card__head">
+      <div class="opi-portfolio-card__name">Capital Stat</div>
+      <div class="opi-portfolio-card__type">Thematic</div>
+    </div>
+    <div class="opi-portfolio-card__cluster">City Administrator</div>
+    <div class="opi-portfolio-card__focus">Capital project delivery risk, readiness, and coordination.</div>
+  </div>
+  <div class="opi-portfolio-card">
+    <div class="opi-portfolio-card__head">
+      <div class="opi-portfolio-card__name">Clean Stat</div>
+      <div class="opi-portfolio-card__type">Thematic</div>
+    </div>
+    <div class="opi-portfolio-card__cluster">Operations and Infrastructure</div>
+    <div class="opi-portfolio-card__focus">Cleanliness hotspots, illegal dumping, vacant lots, and public realm conditions.</div>
+  </div>
+  <div class="opi-portfolio-card">
+    <div class="opi-portfolio-card__head">
+      <div class="opi-portfolio-card__name">DGS Stat</div>
+      <div class="opi-portfolio-card__type">Agency</div>
+    </div>
+    <div class="opi-portfolio-card__cluster">Operations and Infrastructure</div>
+    <div class="opi-portfolio-card__focus">Facilities, fleet readiness, vendor performance, and internal service support.</div>
+  </div>
+  <div class="opi-portfolio-card">
+    <div class="opi-portfolio-card__head">
+      <div class="opi-portfolio-card__name">Housing Stat</div>
+      <div class="opi-portfolio-card__type">Agency</div>
+    </div>
+    <div class="opi-portfolio-card__cluster">Community and Economic Development</div>
+    <div class="opi-portfolio-card__focus">Housing conditions, code enforcement, vacant buildings, and neighborhood stability.</div>
+  </div>
+  <div class="opi-portfolio-card">
+    <div class="opi-portfolio-card__head">
+      <div class="opi-portfolio-card__name">DOT Stat</div>
+      <div class="opi-portfolio-card__type">Agency</div>
+    </div>
+    <div class="opi-portfolio-card__cluster">Operations and Infrastructure</div>
+    <div class="opi-portfolio-card__focus">Streets, traffic safety, parking, traffic calming, streetlights, and resurfacing.</div>
+  </div>
+  <div class="opi-portfolio-card">
+    <div class="opi-portfolio-card__head">
+      <div class="opi-portfolio-card__name">Downtown Stat</div>
+      <div class="opi-portfolio-card__type">Thematic</div>
+    </div>
+    <div class="opi-portfolio-card__cluster">Community and Economic Development</div>
+    <div class="opi-portfolio-card__focus">Downtown RISE priorities, public realm, safety, cleanliness, and economic vitality.</div>
+  </div>
+  <div class="opi-portfolio-card">
+    <div class="opi-portfolio-card__head">
+      <div class="opi-portfolio-card__name">Finance Stat</div>
+      <div class="opi-portfolio-card__type">Agency</div>
+    </div>
+    <div class="opi-portfolio-card__cluster">City Administrator</div>
+    <div class="opi-portfolio-card__focus">Revenue, procurement, grants, audit findings, payments, and fiscal operations.</div>
+  </div>
+  <div class="opi-portfolio-card">
+    <div class="opi-portfolio-card__head">
+      <div class="opi-portfolio-card__name">Fire & EMS Stat</div>
+      <div class="opi-portfolio-card__type">Agency</div>
+    </div>
+    <div class="opi-portfolio-card__cluster">Public Safety</div>
+    <div class="opi-portfolio-card__focus">Life safety, EMS demand, prevention, readiness, and emergency response.</div>
+  </div>
+  <div class="opi-portfolio-card">
+    <div class="opi-portfolio-card__head">
+      <div class="opi-portfolio-card__name">Health Stat</div>
+      <div class="opi-portfolio-card__type">Agency</div>
+    </div>
+    <div class="opi-portfolio-card__cluster">Health and Human Services</div>
+    <div class="opi-portfolio-card__focus">Public health service performance, overdose strategy, environmental health, and contracts.</div>
+  </div>
+  <div class="opi-portfolio-card">
+    <div class="opi-portfolio-card__head">
+      <div class="opi-portfolio-card__name">HR & Labor Stat</div>
+      <div class="opi-portfolio-card__type">Thematic</div>
+    </div>
+    <div class="opi-portfolio-card__cluster">Internal Services</div>
+    <div class="opi-portfolio-card__focus">Hiring, vacancies, onboarding, classifications, labor processes, and workforce risks.</div>
+  </div>
+  <div class="opi-portfolio-card">
+    <div class="opi-portfolio-card__head">
+      <div class="opi-portfolio-card__name">Permit Stat</div>
+      <div class="opi-portfolio-card__type">Thematic</div>
+    </div>
+    <div class="opi-portfolio-card__cluster">Community and Economic Development</div>
+    <div class="opi-portfolio-card__focus">Permit cycle time, applicant communication, review steps, and transparency.</div>
+  </div>
+  <div class="opi-portfolio-card">
+    <div class="opi-portfolio-card__head">
+      <div class="opi-portfolio-card__name">Police Stat</div>
+      <div class="opi-portfolio-card__type">Agency</div>
+    </div>
+    <div class="opi-portfolio-card__cluster">Public Safety</div>
+    <div class="opi-portfolio-card__focus">Public safety outcomes, priority places, nuisance businesses, and follow-up quality.</div>
+  </div>
+  <div class="opi-portfolio-card">
+    <div class="opi-portfolio-card__head">
+      <div class="opi-portfolio-card__name">Rec Stat</div>
+      <div class="opi-portfolio-card__type">Agency</div>
+    </div>
+    <div class="opi-portfolio-card__cluster">Health and Human Services</div>
+    <div class="opi-portfolio-card__focus">Recreation, parks, forestry, programs, facilities, and staffing readiness.</div>
+  </div>
+  <div class="opi-portfolio-card">
+    <div class="opi-portfolio-card__head">
+      <div class="opi-portfolio-card__name">Solid Waste Stat</div>
+      <div class="opi-portfolio-card__type">Agency</div>
+    </div>
+    <div class="opi-portfolio-card__cluster">Operations and Infrastructure</div>
+    <div class="opi-portfolio-card__focus">Trash, recycling, street sweeping, dirty alleys, dirty streets, and disposal constraints.</div>
+  </div>
+  <div class="opi-portfolio-card">
+    <div class="opi-portfolio-card__head">
+      <div class="opi-portfolio-card__name">Water Stat</div>
+      <div class="opi-portfolio-card__type">Agency</div>
+    </div>
+    <div class="opi-portfolio-card__cluster">Operations and Infrastructure</div>
+    <div class="opi-portfolio-card__focus">Water, wastewater, utility operations, infrastructure, and compliance risks.</div>
+  </div>
+  <div class="opi-portfolio-card">
+    <div class="opi-portfolio-card__head">
+      <div class="opi-portfolio-card__name">Workplace Safety Stat</div>
+      <div class="opi-portfolio-card__type">Thematic</div>
+    </div>
+    <div class="opi-portfolio-card__cluster">Internal Services</div>
+    <div class="opi-portfolio-card__focus">Training, safety committees, vehicle accidents, PPE, and readiness.</div>
+  </div>
+  <div class="opi-portfolio-card">
+    <div class="opi-portfolio-card__head">
+      <div class="opi-portfolio-card__name">Youth Stat</div>
+      <div class="opi-portfolio-card__type">Thematic</div>
+    </div>
+    <div class="opi-portfolio-card__cluster">Health and Human Services</div>
+    <div class="opi-portfolio-card__focus">Cradle-to-career youth priorities, justice handoffs, early childhood, and career pathways.</div>
+  </div>
+</div>
 
-| **Stat**              | **Type** | **Cluster**                        | **Core focus**                                                                             |
-|-----------------------|----------|------------------------------------|--------------------------------------------------------------------------------------------|
-| 311 Stat              | Thematic | Internal Services                  | Resident service request experience from intake to closure.                                |
-| Tech Stat             | Thematic | Internal Services                  | Technology service reliability, project delivery, and IT governance.                       |
-| Capital Stat          | Thematic | City Administrator                 | Capital project delivery risk, readiness, and coordination.                                |
-| Clean Stat            | Thematic | Operations and Infrastructure      | Cleanliness hotspots, illegal dumping, vacant lots, and public realm conditions.           |
-| DGS Stat              | Agency   | Operations and Infrastructure      | Facilities, fleet readiness, vendor performance, and internal service support.             |
-| Housing Stat          | Agency   | Community and Economic Development | Housing conditions, code enforcement, vacant buildings, and neighborhood stability.        |
-| DOT Stat              | Agency   | Operations and Infrastructure      | Streets, traffic safety, parking, traffic calming, streetlights, and resurfacing.          |
-| Downtown Stat         | Thematic | Community and Economic Development | Downtown RISE priorities, public realm, safety, cleanliness, and economic vitality.        |
-| Finance Stat          | Agency   | City Administrator                 | Revenue, procurement, grants, audit findings, payments, and fiscal operations.             |
-| Fire & EMS Stat       | Agency   | Public Safety                      | Life safety, EMS demand, prevention, readiness, and emergency response.                    |
-| Health Stat           | Agency   | Health and Human Services          | Public health service performance, overdose strategy, environmental health, and contracts. |
-| HR & Labor Stat       | Thematic | Internal Services                  | Hiring, vacancies, onboarding, classifications, labor processes, and workforce risks.      |
-| Permit Stat           | Thematic | Community and Economic Development | Permit cycle time, applicant communication, review steps, and transparency.                |
-| Police Stat           | Agency   | Public Safety                      | Public safety outcomes, priority places, nuisance businesses, and follow-up quality.       |
-| Rec Stat              | Agency   | Health and Human Services          | Recreation, parks, forestry, programs, facilities, and staffing readiness.                 |
-| Solid Waste Stat      | Agency   | Operations and Infrastructure      | Trash, recycling, street sweeping, dirty alleys, dirty streets, and disposal constraints.  |
-| Water Stat            | Agency   | Operations and Infrastructure      | Water, wastewater, utility operations, infrastructure, and compliance risks.               |
-| Workplace Safety Stat | Thematic | Internal Services                  | Training, safety committees, vehicle accidents, PPE, and readiness.                        |
-| Youth Stat            | Thematic | Health and Human Services          | Cradle-to-career youth priorities, justice handoffs, early childhood, and career pathways. |
-
-**HOW CITISTAT CONNECTS TO OPI**
-
-**A broader operating system**
+## How CitiStat connects to OPI
 
 CitiStat is the core routine inside OPI’s Citywide Performance Management service, but it only works as part of a broader operating system. Performance surfaces the problem. Data helps explain it. The Innovation Lab designs and tests practical solutions. Cross-Agency Delivery coordinates implementation when no single agency can move the work alone. AdminOps keeps the work visible, documented, communicated, and sustained.
 
@@ -251,13 +456,11 @@ CitiStat is the core routine inside OPI’s Citywide Performance Management serv
 | Cross-Agency Delivery           | Activates when a Stat issue requires sequencing across agencies, named decision rights, and weekly implementation discipline.      |
 | AdminOps                        | Maintains intake, portfolio visibility, public narrative, Council readiness, QA, knowledge management, and publication discipline. |
 
-**TRANSPARENCY AND PUBLIC TRUST**
-
-**Rigorous internally, legible externally**
+## Transparency and public trust
 
 CitiStat should be rigorous internally and legible externally. Residents, Council, journalists, researchers, and agency partners should be able to understand what the City is measuring, what is changing, what remains stuck, and what leadership has committed to do next.
 
-- The public CitiStat Hub should explain each Stat in plain language, publish selected dashboards and summaries, and link to related open datasets where appropriate.
+- The public CitiStat presence on the City’s website should explain each Stat in plain language, publish selected dashboards and summaries, and link to related open datasets where appropriate.
 
 - Monthly or quarterly impact briefs should answer three questions: what metric moved, what blocker was removed, and what residents can expect next.
 
@@ -265,11 +468,9 @@ CitiStat should be rigorous internally and legible externally. Residents, Counci
 
 - Publication decisions should be tiered. Some materials can be published in full, some should be summarized, and sensitive operational, personnel, privacy, or security details should be withheld with a rationale.
 
-**FY27 DIRECTION AND SUCCESS MEASURES**
+## Direction and success measures
 
-**From a meeting series to an operating system**
-
-The FY27 direction is to strengthen CitiStat from a meeting-centered routine into a citywide performance operating system. That means stronger performance planning before sessions, better data products between sessions, clearer triggers for delivery activation, and more public-facing explanation of what changed.
+The direction is to strengthen CitiStat from a meeting-centered routine into a citywide performance operating system. That means stronger performance planning before sessions, better data products between sessions, clearer triggers for delivery activation, and more public-facing explanation of what changed.
 
 | **Dimension**              | **What success looks like**                                                                                                |
 |----------------------------|----------------------------------------------------------------------------------------------------------------------------|
@@ -280,10 +481,23 @@ The FY27 direction is to strengthen CitiStat from a meeting-centered routine int
 | Cross-agency throughput    | Stuck issues move to delivery activation with named authorizers, workplans, milestones, and sustainment owners.            |
 | Public trust               | Residents and Council can see what is being measured, what changed, and what follow-up remains open.                       |
 
-**CLOSING**
+## Not more meetings
 
-**A discipline for the next chapter**
+CitiStat is not a calendar of presentations. It is a management routine that turns data into decisions, commitments, and follow-through. A strong Stat has a clear question, a decision-maker, a defined owner, evidence, and a path to closure.
+
+When the problem needs implementation beyond the Stat room, the Stat should trigger the right next routine: a tiger team, an Innovation Lab engagement, a data quality sprint, a Cross-Agency Delivery activation, or an executive decision memo.
+
+## Closing: a discipline for the next chapter
 
 CitiStat is one of Baltimore’s most important civic management traditions. Its next chapter should be rigorous, humane, modern, and useful. It should help the City learn faster, decide more clearly, act more consistently, and tell the public what changed.
 
-> *Measure what matters. Fix what is broken. Follow through until the improvement sticks.*
+<div class="opi-pullquote" markdown="0">Measure what matters. Fix what is broken. Follow through until the improvement sticks.</div>
+
+## See also
+
+- [CitiStat Method Playbook](citistat-method-playbook.md) — the staff-facing operating standards: the 12-step cycle, admission criteria, and quality bar.
+- [CitiStat — Staff Quick Reference](citistat-method-staff-quick-reference.md) — the at-a-glance version of the method.
+- [CitiStat Templates](citistat-templates.md) — agendas, materials send-out standards, and deliverable types.
+- [CitiStat Portfolio](citistat-portfolio/index.md) — every active Stat brief, including watchlist and right-routine guidance.
+- [About Performance and CitiStat](about-performance-management.md) — plain-language overview of the service.
+- [Performance Management Theory of Change](performance-management-theory-of-change.md) — mandate, governance, staffing, measures, and sustainment.

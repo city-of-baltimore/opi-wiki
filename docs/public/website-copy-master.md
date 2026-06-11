@@ -1,6 +1,6 @@
 # Website Copy Master
 
-<span class="opi-pill approved">Approved</span>
+{{ page_badge() }}
 
 > The master copy doc for the public OPI website.
 
@@ -121,10 +121,10 @@ OPI is led by an Executive Director who serves as the City’s Chief Data Office
 
 | **Portfolio**                  | **What it does**                                                                                                                                                    |
 |--------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Director’s Office and AdminOps | The operating backbone: portfolio management, communications, intake, hiring and onboarding, procurement coordination, knowledge management, and quality assurance. |
+| Director’s Office | The operating backbone: portfolio management, communications, intake, hiring and onboarding, procurement coordination, knowledge management, and quality assurance. |
 | Performance and CitiStat       | Stewards CitiStat, agency performance plans, performance measures, and follow-up. Operates Cross-Agency Delivery as a service overlay.                              |
 | Data and Analytics             | Operates the data platform, analytics products, open data, data governance, and responsible AI readiness.                                                           |
-| Innovation Lab                 | Operates service design, product discovery, civic technology, AI pilots tied to operations, partnerships, and Tiger Teams.                                          |
+| Innovation Lab                 | Operates service design, product discovery, civic technology, AI pilots tied to operations, partnerships, and tiger teams.                                          |
 
 **Leadership**
 
@@ -132,13 +132,13 @@ Page should display:
 
 - Executive Director and Chief Data Officer.
 
-- Chief of Staff (Director’s Office and AdminOps).
+- Chief of Staff (Director’s Office).
 
 - Deputy Chief Performance Officer (Performance and CitiStat).
 
 - Deputy Chief Data Officer (Data and Analytics).
 
-- Innovation Lab lead (interim).
+- Interim Innovation Program Manager (Innovation Lab).
 
 *Names are maintained in the OPI staff directory and updated as roles change.*
 
@@ -300,7 +300,7 @@ CitiStat creates a regular, disciplined moment where leaders confront real perfo
 
 - Each Stat runs on a predictable cadence: a clear pre-read, an in-person session focused on problem-solving, and a written follow-up memo that documents commitments.
 
-- Sessions are guided by four tenets: accurate and timely intelligence; effective tactics and strategies; rapid deployment of resources; relentless follow-up and assessment.
+- Sessions are guided by four tenets: accurate and timely intelligence shared by all; rapid deployment of resources; effective tactics and strategies; and relentless follow-up and assessment.
 
 - Between sessions, OPI tracks commitments, escalates blockers, and helps agencies sustain what works.
 
@@ -364,7 +364,7 @@ Cities move faster when data capacity lives close to the work. Data Fellows help
 
 **Innovation Lab program portfolio**
 
-The Innovation Lab’s public-facing portfolio includes service design and product work the Lab is currently leading. Examples include 311 service request workflow improvements, permitting process and applicant communication, field data collection tools, parking enforcement operational products, AI-assisted resident communication, and Tiger Teams on priority service problems. The portfolio refreshes as projects ship and new ones begin.
+The Innovation Lab’s public-facing portfolio includes service design and product work the Lab is currently leading. Examples include 311 service request workflow improvements, permitting process and applicant communication, field data collection tools, parking enforcement operational products, AI-assisted resident communication, and tiger teams on priority service problems. The portfolio refreshes as projects ship and new ones begin.
 
 **■ Services**
 
@@ -452,7 +452,7 @@ The Innovation Lab is OPI’s citywide service improvement capability. It uses h
 
 - You want a small, evaluated test before building a full solution.
 
-- A priority problem needs a Tiger Team to map the service, prototype solutions, and document what works.
+- A priority problem needs a tiger team to map the service, prototype solutions, and document what works.
 
 **What you can expect from OPI**
 
@@ -496,7 +496,7 @@ Cross-Agency Delivery is how the City tackles problems that do not fit neatly in
 
 - Weekly delivery rhythm: milestones, blockers, and decisions needed, kept tight and action-oriented.
 
-- Rapid fieldwork and prototyping where needed (Tiger Team model).
+- Rapid fieldwork and prototyping where needed (tiger team model).
 
 - A sustainment plan that hands ownership back to the right place with a monitoring routine.
 
@@ -540,7 +540,7 @@ OPI uses a single front door for new work. The intake form is short and routes n
 
 **Project.** A defined piece of work with a problem statement, owner, and approximate scope. Examples: a service redesign sprint, a dashboard, a CitiStat pre-read.
 
-**Major engagement.** A multi-week or multi-month engagement with a charter, milestones, and a sustainment plan. Examples: a flagship digital product, a Tiger Team, a multi-agency delivery effort.
+**Major engagement.** A multi-week or multi-month engagement with a charter, milestones, and a sustainment plan. Examples: a flagship digital product, a tiger team, a multi-agency delivery effort.
 
 **Pathways by audience**
 

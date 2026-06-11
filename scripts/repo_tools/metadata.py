@@ -7,7 +7,7 @@ from fnmatch import fnmatch
 from pathlib import Path
 from typing import Any
 
-import yaml
+from scripts.repo_tools.data import load_yaml_mapping
 
 REQUIRED_FIELDS = ("owner", "status", "last_reviewed", "next_review", "change_log")
 
@@ -42,17 +42,7 @@ def _normalize_mapping(raw: Any, source: Path, label: str) -> dict[str, dict[str
 def load_metadata_config(path: Path) -> MetadataConfig:
     """Load a metadata sidecar file."""
 
-    try:
-        raw_data = yaml.safe_load(path.read_text(encoding="utf-8")) or {}
-    except FileNotFoundError as error:
-        raise FileNotFoundError(f"Metadata file not found: {path}") from error
-    except OSError as error:
-        raise RuntimeError(f"Unable to read metadata file: {path}") from error
-    except yaml.YAMLError as error:
-        raise ValueError(f"Invalid YAML in metadata file: {path}") from error
-
-    if not isinstance(raw_data, dict):
-        raise ValueError(f"Metadata file must contain a mapping: {path}")
+    raw_data = load_yaml_mapping(path, label="Metadata")
 
     defaults = raw_data.get("defaults", {})
     if defaults is None:

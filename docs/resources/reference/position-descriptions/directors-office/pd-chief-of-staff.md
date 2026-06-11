@@ -1,20 +1,8 @@
 # PD — Chief of Staff
 
-<span class="opi-pill internal">Position Description</span>
+{{ page_badge() }}
 
 > Position description for the Chief of Staff.
-
-**CLASSIFICATION** Operations Manager II
-
-**PORTFOLIO** Director's Office
-
-**REPORTS TO** Executive Director and Chief Data Officer
-
-**INCUMBENT** Rakeim Young
-
-**POSITION NUMBER** 50053
-
-**EFFECTIVE** OPI Reorganization
 
 **■ At a Glance**
 
@@ -24,16 +12,14 @@
 | **Classification**       | Operations Manager II                                                                                                                                                                                                                                                                                                               |
 | **Portfolio**            | Director's Office                                                                                                                                                                                                                                                                                                                   |
 | **Reports to**           | Executive Director and Chief Data Officer                                                                                                                                                                                                                                                                                           |
-| **Incumbent**            | Rakeim Young                                                                                                                                                                                                                                                                                                                        |
-| **Position number**      | 50053                                                                                                                                                                                                                                                                                                                               |
-| **Supervision given**    | Directly supervises the Director’s Office team — Project Manager, Communications and Partnerships Lead, Special Assistant, CitiStat Inspector, Innovation Program Manager, and the Director’s Office product/engineering bench. Indirectly coordinates with the Deputy Chief Performance Officer and the Deputy Chief Data Officer. |
+| **Supervision given**    | Directly supervises the Director’s Office team — Communications and Partnerships Lead, Project Manager, Special Assistant, and CitiStat Inspector — and directly oversees the Innovation Program Manager in support of the Innovation Lab portfolio. Indirectly coordinates with the Deputy Chief Performance Officer and the Deputy Chief Data Officer. |
 | **Supervision received** | Reports to the Executive Director and Chief Data Officer of OPI.                                                                                                                                                                                                                                                                    |
 
 **■ Position Summary**
 
 The Chief of Staff is the Executive Director’s principal deputy and the operational leader of OPI’s Director’s Office. The role coordinates strategy and execution on behalf of the Executive Director, owns OPI’s internal operating rhythm, and represents the Executive Director in interagency forums. Externally, the Chief of Staff leads partnerships, communications, and resource development. Internally, the Chief of Staff oversees administrative operations, knowledge management, the SharePoint operating system, quality assurance, the inspections function, and cross-OPI alignment.
 
-The Chief of Staff manages the Director’s Office staff (Project Manager, Communications and Partnerships Lead, Special Assistant, CitiStat Inspector, Innovation Program Manager, and the Director’s Office product engineering bench), oversees personnel, purchasing, and facilities coordination, and maintains continuity practices including OSHA, COOP, and incident response. The role is the connective tissue between the Executive Director and the four service portfolios.
+The Chief of Staff manages the Director’s Office staff (Communications and Partnerships Lead, Project Manager, Special Assistant, and CitiStat Inspector), directly oversees the Innovation Program Manager role on behalf of the Innovation Lab portfolio, oversees personnel, purchasing, and facilities coordination, and maintains continuity practices including OSHA, COOP, and incident response. The role is the connective tissue between the Executive Director and the four service portfolios.
 
 **■ Key Responsibilities**
 
@@ -129,6 +115,6 @@ Employees in this class work a conventional work week. This position may be requ
 
 **Supervision received.** Reports to the Executive Director and Chief Data Officer of OPI.
 
-**Supervision given.** Directly supervises the Director’s Office team — Project Manager, Communications and Partnerships Lead, Special Assistant, CitiStat Inspector, Innovation Program Manager, and the Director’s Office product/engineering bench. Indirectly coordinates with the Deputy Chief Performance Officer and the Deputy Chief Data Officer.
+**Supervision given.** Directly supervises the Director’s Office team — Communications and Partnerships Lead, Project Manager, Special Assistant, and CitiStat Inspector — and directly oversees the Innovation Program Manager in support of the Innovation Lab portfolio. Indirectly coordinates with the Deputy Chief Performance Officer and the Deputy Chief Data Officer.
 
-*This Position Description reflects the FY27 OPI operating model. It describes the typical scope of the role and is not an exhaustive list of duties. OPI is an Equal Opportunity Employer; all qualified applicants will receive consideration without regard to race, color, religion, sex, sexual orientation, gender identity, national origin, disability, age, or veteran status.*
+*This Position Description reflects the OPI operating model. It describes the typical scope of the role and is not an exhaustive list of duties. OPI is an Equal Opportunity Employer; all qualified applicants will receive consideration without regard to race, color, religion, sex, sexual orientation, gender identity, national origin, disability, age, or veteran status.*

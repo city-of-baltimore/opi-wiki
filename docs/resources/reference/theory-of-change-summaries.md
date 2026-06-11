@@ -1,6 +1,13 @@
 # Theory of Change Summaries
 
-<span class="opi-pill internal">Reference</span>
+## Portfolio, service, program, and team language
+
+A portfolio is how OPI organizes people, leadership, and cost centers. A service is what OPI delivers to City leadership, agencies, residents, and partners. A program is a formal named body of work, such as CitiStat or Open Data. A team is the staff group that performs the work.
+
+Use this distinction when writing or editing OPI pages. It prevents Cross-Agency Delivery from being described like a staffed portfolio, keeps CitiStat from being treated as all of performance management, and keeps the Innovation Lab from becoming a catch-all for any special project.
+
+
+{{ page_badge() }}
 
 > All five OPI theories of change in one place.
 
@@ -190,7 +197,7 @@ Many of the city’s hardest problems — permits, vacants, downtown recovery, 3
 
 **Inputs.** PMO and program managers; CitiStat method; design and analytics capacity; mayoral and City Administrator authority; partner agencies’ frontline teams.
 
-**Activities.** Stand up cross-agency delivery rooms; sequence dependencies; integrate data, design, and performance routines; broker decisions; report to the City Administrator and the Mayor.
+**Activities.** Stand up cross-agency delivery reviews; sequence dependencies; integrate data, design, and performance routines; broker decisions; report to the City Administrator and the Mayor.
 
 **Outputs.** Cross-agency delivery plans; integrated dashboards (e.g., Downtown RISE); reform packages (e.g., permit reform); coordinated execution calendars; closure memos.
 

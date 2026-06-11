@@ -1,20 +1,8 @@
 # PD — Senior Data Engineer
 
-<span class="opi-pill internal">Position Description</span>
+{{ page_badge() }}
 
 > Position description for the Senior Data Engineer.
-
-**CLASSIFICATION** Operations Officer V (Non-Civil Service)
-
-**PORTFOLIO** Data and Analytics
-
-**REPORTS TO** Deputy Chief Data Officer (with technical direction from the Principal Data Engineer)
-
-**INCUMBENT** Briya Bhakta
-
-**POSITION NUMBER** 70433
-
-**EFFECTIVE** OPI Reorganization
 
 **■ At a Glance**
 
@@ -24,8 +12,6 @@
 | **Classification**       | Operations Officer V (Non-Civil Service)                                                                 |
 | **Portfolio**            | Data and Analytics                                                                                       |
 | **Reports to**           | Deputy Chief Data Officer (with technical direction from the Principal Data Engineer)                    |
-| **Incumbent**            | Briya Bhakta                                                                                             |
-| **Position number**      | 70433                                                                                                    |
 | **Supervision given**    | Individual contributor.                                                                                  |
 | **Supervision received** | Reports to the Deputy Chief Data Officer. Receives technical direction from the Principal Data Engineer. |
 
@@ -115,4 +101,4 @@ Employees in this class work a conventional work week. This position may be requ
 
 **Supervision given.** Individual contributor.
 
-*This Position Description reflects the FY27 OPI operating model. It describes the typical scope of the role and is not an exhaustive list of duties. OPI is an Equal Opportunity Employer; all qualified applicants will receive consideration without regard to race, color, religion, sex, sexual orientation, gender identity, national origin, disability, age, or veteran status.*
+*This Position Description reflects the OPI operating model. It describes the typical scope of the role and is not an exhaustive list of duties. OPI is an Equal Opportunity Employer; all qualified applicants will receive consideration without regard to race, color, religion, sex, sexual orientation, gender identity, national origin, disability, age, or veteran status.*

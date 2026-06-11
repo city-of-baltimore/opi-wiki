@@ -1,20 +1,8 @@
 # PD — Principal Data Engineer
 
-<span class="opi-pill internal">Position Description</span>
+{{ page_badge() }}
 
 > Position description for the Principal Data Engineer.
-
-**CLASSIFICATION** Operations Manager II
-
-**PORTFOLIO** Data and Analytics
-
-**REPORTS TO** Deputy Chief Data Officer
-
-**INCUMBENT** Alejandro Zuniga Sosa
-
-**POSITION NUMBER** 53411
-
-**EFFECTIVE** OPI Reorganization
 
 **■ At a Glance**
 
@@ -24,8 +12,6 @@
 | **Classification**       | Operations Manager II                                                                                                                                                     |
 | **Portfolio**            | Data and Analytics                                                                                                                                                        |
 | **Reports to**           | Deputy Chief Data Officer                                                                                                                                                 |
-| **Incumbent**            | Alejandro Zuniga Sosa                                                                                                                                                     |
-| **Position number**      | 53411                                                                                                                                                                     |
 | **Supervision given**    | Senior individual contributor with technical leadership over the data-engineering bench (Senior Data Engineer and any future engineers). Leads code review and mentoring. |
 | **Supervision received** | Reports to the Deputy Chief Data Officer.                                                                                                                                 |
 
@@ -125,4 +111,4 @@ Employees in this class work a conventional work week. This position may be requ
 
 **Supervision given.** Senior individual contributor with technical leadership over the data-engineering bench (Senior Data Engineer and any future engineers). Leads code review and mentoring.
 
-*This Position Description reflects the FY27 OPI operating model. It describes the typical scope of the role and is not an exhaustive list of duties. OPI is an Equal Opportunity Employer; all qualified applicants will receive consideration without regard to race, color, religion, sex, sexual orientation, gender identity, national origin, disability, age, or veteran status.*
+*This Position Description reflects the OPI operating model. It describes the typical scope of the role and is not an exhaustive list of duties. OPI is an Equal Opportunity Employer; all qualified applicants will receive consideration without regard to race, color, religion, sex, sexual orientation, gender identity, national origin, disability, age, or veteran status.*

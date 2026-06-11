@@ -1,0 +1,97 @@
+city_administrator:
+  name: Faith P. Leach
+  title: City Administrator
+
+executive_director:
+  name: Dartanion Swift-Williams
+  title: Executive Director & Chief Data Officer
+
+portfolios:
+  - key: directors-office
+    label: Director's Office
+    node_id: DO
+    lead:
+      name: Rakeim Young
+      title: Chief of Staff
+    cost_center: AdminOps
+    primary_value: Operating backbone that keeps work prioritized, documented, communicated, and deliverable.
+    table_lead: Rakeim Young, Chief of Staff
+    staff:
+      - name: Audrey Randazzo
+        title: Communications and Partnerships Lead
+      - name: Mallory Screws
+        title: Project Manager
+      - name: Derek Thomas
+        title: Special Assistant
+      - name: Rashaad Tillery
+        title: CitiStat Inspector
+
+  - key: performance-and-citistat
+    label: Performance and CitiStat
+    node_id: PC
+    lead:
+      name: Danny Heller
+      title: Deputy Chief Performance Officer
+    cost_center: Performance and CitiStat
+    primary_value: Owns the performance method; translates priorities into routines, measures, follow-up, and improvement.
+    table_lead: Danny Heller, Deputy Chief Performance Officer
+    staff:
+      - name: Darren Lu
+        title: CitiStat Program Manager
+      - name: Ethan Buckborough
+        title: CitiStat Analyst
+      - name: Nelson Gomes Boronat
+        title: CitiStat Analyst
+      - name: Ross Hackett
+        title: CitiStat Analyst
+      - name: Griffin Riddler, PhD
+        title: CitiStat Analyst
+      - name: Vacant
+        title: Senior Performance Analyst
+
+  - key: data-and-analytics
+    label: Data and Analytics
+    node_id: DA
+    lead:
+      name: Jason Howard, PhD
+      title: Deputy Chief Data Officer
+    cost_center: Data and Analytics
+    primary_value: Builds trusted data infrastructure and decision-ready analytics; supports CitiStat, transparency, agency operations, and AI readiness.
+    table_lead: Jason Howard, PhD, Deputy Chief Data Officer
+    staff:
+      - name: Roberto Herbruger
+        title: Technical Program Manager
+      - name: Vera Choo
+        title: Analytics Lead
+      - name: Koby Samuel
+        title: Principal Platform Engineer
+      - name: Alejandro Zuniga Sosa
+        title: Principal Data Engineer
+      - name: Briya Bhakta
+        title: Senior Data Engineer
+      - name: Sam Wilson
+        title: Open Data Program Manager
+      - name: Addisalem Abera
+        title: Data Engineer
+
+  - key: innovation-lab
+    label: Innovation Lab
+    node_id: IL
+    lead:
+      name: Dartanion Swift-Williams
+      title: Interim Innovation Program Manager
+    leadership_edge_style: dotted
+    leadership_edge_label: interim oversight
+    cost_center: Innovation Lab
+    primary_value: Turns service problems into designed, usable, testable solutions; coordinates handoff to data, engineering, agency, or BCIT partners.
+    table_lead: Dartanion Swift-Williams, Interim Innovation Program Manager
+    staff:
+      - name: Selenea Gibson
+        title: Civic Designer
+      - name: Chiemeka Okeoma
+        title: Senior Product Engineer
+      - name: Xander Jake de los Santos
+        title: Product Engineer
+      - name: Open / Aspirational
+        title: Civic Technology Lead
+        edge_style: dotted

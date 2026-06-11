@@ -1,19 +1,29 @@
 # Performance Management Strategy
 
-<span class="opi-pill approved">Approved</span>
+{{ page_badge() }}
 
-> OPI's strategy for citywide performance management.
-**STRATEGY**
+> OPI’s strategy for citywide performance management.
+
+**STRATEGY · SERVICE 01 OF 05 · AUDIENCE: PUBLIC**
 
 **Citywide Performance Management Strategy**
 
 *How Baltimore connects priorities, data, routines, delivery, budget, and public trust.*
 
-Strategy Document
+*Read alongside: OPI About Performance and CitiStat; OPI Service Theory of Change — Performance Management; CitiStat Strategic Framework.*
 
-*Read alongside: OPI About — Citywide Performance Management; OPI Service Theory of Change — Performance Management; CitiStat Strategic Framework FY27..*
+*This document is the strategic argument for Baltimore’s performance system — the case for change, the operating principles, the citywide cycle, governance, success measures, and FY priorities. [About Performance and CitiStat](about-performance-management.md) tells the human story of the team. The Theory of Change shows the operating backbone. The CitiStat Strategic Framework explains the executive routine itself.*
 
-*This document is the strategic argument for Baltimore’s performance system. The About doc tells the human story of the team. The Theory of Change doc shows the operating backbone. CitiStat Strategic Framework explains the executive routine itself.*
+## From performance to action
+
+Performance management only matters if it changes decisions and operating conditions. CitiStat should surface the signal, Data and Analytics should help explain the pattern, the Innovation Lab should design and test practical fixes when needed, and Cross-Agency Delivery should coordinate implementation when multiple agencies must move together.
+
+Every Stat should therefore end with one of five outcomes: a closed commitment, a new or revised metric, a process or SOP change, a triggered delivery or product routine, or a documented decision to stop, redesign, or escalate the work.
+
+<div class="opi-margin-note" markdown="0">
+  <span class="opi-margin-note__label">Five Stat outcomes</span>
+  Every effective Stat session resolves to one of five outcomes: (1) a closed commitment with evidence, (2) a new or revised priority metric, (3) a process or SOP change, (4) a triggered delivery activation or product routine, or (5) a documented decision to stop, redesign, or escalate. “Continue discussing” is not an outcome.
+</div>
 
 **EXECUTIVE SUMMARY**
 
@@ -39,7 +49,7 @@ The City already has many ingredients: mayoral priorities, agency performance me
 
 **Disciplined, humane, learning-oriented**
 
-> *Baltimore will operate a disciplined, humane, learning-oriented performance system that turns priorities and data into sustained service improvements residents can see and feel.*
+<div class="opi-pullquote" markdown="0">Baltimore will operate a disciplined, humane, learning-oriented performance system that turns priorities and data into sustained service improvements residents can see and feel.</div>
 
 The system will be disciplined because commitments have owners, dates, evidence, and escalation paths. It will be humane because the purpose is to help agencies solve problems, not perform blame. It will be learning-oriented because every review should produce clearer understanding, better decisions, and stronger routines.
 
@@ -90,7 +100,7 @@ The City’s performance system should operate as a repeating cycle.
 | Plan      | Translate mayoral priorities into agency goals, service targets, and implementation commitments.                  | Agency performance plans; priority outcome maps; annual planning calendar. |
 | Measure   | Define and maintain the indicators that show whether services and outcomes are improving.                         | KPI dictionary; methodology cards; data quality notes; dashboards.         |
 | Review    | Use CitiStat and other executive routines to examine performance, identify barriers, and make decisions.          | Pre-memos; Stat decks; decision logs; follow-up memos.                     |
-| Improve   | Move from diagnosis to intervention through process changes, design work, data products, or delivery activations. | Process maps; Tiger Team charters; product briefs; SOP changes.            |
+| Improve   | Move from diagnosis to intervention through process changes, design work, data products, or delivery activations. | Process maps; tiger team charters; product briefs; SOP changes.            |
 | Report    | Share progress, barriers, and next steps with leadership, Council, staff, and residents.                          | Public summaries; annual reports; budget narratives; website updates.      |
 | Learn     | Assess whether the routine and the intervention worked, then redesign, scale, pause, or institutionalize.         | After-action reviews; sustainment plans; annual refresh.                   |
 
@@ -118,6 +128,31 @@ CitiStat should operate with a common artifact suite: pre-meeting memo, Stat dec
 
 A dashboard can show a signal, but it cannot decide what to do about it. A slide deck can frame a conversation, but it should never be the system of record. CitiStat’s power is the discipline to stay with the right problems long enough to change behavior, systems, and outcomes. See the CitiStat Strategic Framework for the operating cycle and method.
 
+Every effective Stat holds to the four tenets that have defined the discipline since its founding.
+
+<div class="opi-tenets-grid" markdown="0">
+  <div class="opi-tenet">
+    <div class="opi-tenet__num">Tenet 01</div>
+    <div class="opi-tenet__name">Accurate and timely intelligence shared by all</div>
+    <div class="opi-tenet__meaning">Use reliable data, resident signals, field validation, and a shared KPI dictionary so the room is not debating the numbers.</div>
+  </div>
+  <div class="opi-tenet">
+    <div class="opi-tenet__num">Tenet 02</div>
+    <div class="opi-tenet__name">Rapid deployment of resources</div>
+    <div class="opi-tenet__meaning">Use the session to make or escalate decisions that shift people, attention, tools, or resources toward the bottleneck.</div>
+  </div>
+  <div class="opi-tenet">
+    <div class="opi-tenet__num">Tenet 03</div>
+    <div class="opi-tenet__name">Effective tactics and strategies</div>
+    <div class="opi-tenet__meaning">Ask what the agency tried, what changed, why it worked or did not, and what should be tested next.</div>
+  </div>
+  <div class="opi-tenet">
+    <div class="opi-tenet__num">Tenet 04</div>
+    <div class="opi-tenet__name">Relentless follow-up and assessment</div>
+    <div class="opi-tenet__meaning">Track commitments until closed with evidence; unresolved issues remain visible until solved or escalated.</div>
+  </div>
+</div>
+
 **CORE COMPONENT 3**
 
 **Citywide Data & Analytics**
@@ -130,11 +165,11 @@ This data foundation also prepares Baltimore for responsible AI. AI can support 
 
 **CORE COMPONENT 4**
 
-**Cross-agency delivery and Tiger Teams**
+**Cross-Agency Delivery and Tiger Teams**
 
 Many of Baltimore’s toughest service problems do not sit inside one agency. Permitting, 311, illegal dumping, downtown conditions, vacancies, youth transitions, and public safety all require coordination across departments, systems, and authority structures. Performance review can surface the problem. Delivery is what changes the conditions that produced it.
 
-Cross-agency delivery should be activated when the work crosses multiple agencies, has a named authorizer, requires sequencing over at least 90 days, and has a sustainment owner. Tiger Teams should be time-boxed, outcome-owned, and focused on diagnosis, prototype, implementation, and handoff. They should produce concrete outputs: process maps, staffing assessments, data and technology assessments, pilot designs, SOPs, training materials, and sustainment plans.
+Cross-agency delivery should be activated when the work crosses multiple agencies, has a named authorizer, requires sequencing over at least 90 days, and has a sustainment owner. Tiger teams should be time-boxed, outcome-owned, and focused on diagnosis, prototype, implementation, and handoff. They should produce concrete outputs: process maps, staffing assessments, data and technology assessments, pilot designs, SOPs, training materials, and sustainment plans.
 
 **CORE COMPONENT 5**
 
@@ -206,13 +241,13 @@ Standardize Stat charters, pre-memos, follow-up memos, commitment trackers, deci
 
 Build the first version of the KPI dictionary for priority measures used in CitiStat, public dashboards, and budget narratives.
 
-**4. CitiStat Hub.**
+**4. CitiStat knowledge home.**
 
-Launch a CitiStat Hub with internal and public layers for materials, dashboards, commitments, summaries, and annual report sections.
+Stand up a single organizing home for CitiStat materials, dashboards, commitments, summaries, and annual report sections, with internal and public layers.
 
 **5. Cross-agency delivery model.**
 
-Define cross-agency delivery activation criteria and pilot the model through selected Tiger Teams.
+Define cross-agency delivery activation criteria and pilot the model through selected tiger teams.
 
 **6. Public reporting rhythm.**
 
@@ -229,3 +264,11 @@ Run an annual review of the performance system itself and adjust routines that a
 Baltimore’s performance management strategy is not about perfect dashboards or more elaborate reporting. It is about building the discipline to see clearly, decide faster, follow through, and learn. It honors the City’s CitiStat legacy while updating it for a modern government that must manage data, digital services, cross-agency delivery, public trust, and fiscal stewardship at the same time.
 
 > *Better government is not a one-time project. It is a discipline. This strategy is how Baltimore practices that discipline.*
+
+## See also
+
+- [About Performance and CitiStat](about-performance-management.md) — plain-language overview of the service this strategy guides.
+- [Performance Management Theory of Change](performance-management-theory-of-change.md) — the mandate, governance, staffing, measures, and sustainment behind the strategy.
+- [CitiStat Strategic Framework](citistat-strategic-framework.md) — the public-facing strategic frame for CitiStat itself.
+- [CitiStat Method Playbook](citistat-method-playbook.md) — the staff-facing operating standards.
+- [CitiStat Portfolio](citistat-portfolio/index.md) — every active Stat brief.

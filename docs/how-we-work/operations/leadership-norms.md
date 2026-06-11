@@ -1,6 +1,6 @@
 # Leadership Norms
 
-<span class="opi-pill approved">Approved</span>
+{{ page_badge() }}
 
 > How OPI leaders show up, decide, and communicate.
 

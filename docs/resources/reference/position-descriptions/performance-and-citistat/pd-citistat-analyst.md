@@ -1,20 +1,8 @@
 # PD — CitiStat Analyst
 
-<span class="opi-pill internal">Position Description</span>
+{{ page_badge() }}
 
 > Position description for the CitiStat Analyst.
-
-**CLASSIFICATION** CitiStat Analyst I
-
-**PORTFOLIO** Performance and CitiStat
-
-**REPORTS TO** Deputy Chief Performance Officer
-
-**INCUMBENT** Multiple incumbents (PINs 16441, 47946, 52437, 62122) — Hackett, Riddler, Buckborough, Gomes Boronat
-
-**POSITION NUMBER** 16441 / 47946 / 52437 / 62122
-
-**EFFECTIVE** OPI Reorganization
 
 **■ At a Glance**
 
@@ -24,8 +12,6 @@
 | **Classification**       | CitiStat Analyst I                                                                                                 |
 | **Portfolio**            | Performance and CitiStat                                                                                           |
 | **Reports to**           | Deputy Chief Performance Officer                                                                                   |
-| **Incumbent**            | Multiple incumbents (PINs 16441, 47946, 52437, 62122) — Hackett, Riddler, Buckborough, Gomes Boronat               |
-| **Position number**      | 16441 / 47946 / 52437 / 62122                                                                                      |
 | **Supervision given**    | Individual contributor.                                                                                            |
 | **Supervision received** | Reports to the Deputy Chief Performance Officer. Receives professional coaching from the CitiStat Program Manager. |
 
@@ -33,7 +19,7 @@
 
 CitiStat is City Hall’s performance and accountability program. The CitiStat Analyst enables fact-based decisions by producing disciplined analysis, supporting follow-through, and translating data into clear, actionable options.
 
-The role frames problems; collects, validates, analyzes, and interprets datasets across city agencies; and identifies trends, risks, and root causes. Through data analysis, field engagement, and collaboration with agency leaders, the Analyst defines performance metrics, conducts policy research, and supports the implementation of improvement strategies. The CitiStat Analyst applies the program’s core tenets — accurate and timely intelligence, rapid deployment of resources, effective tactics and strategies, and relentless follow-up and assessment — to improve service quality and efficiency. The position reports to the Deputy Chief Performance Officer.
+The role frames problems; collects, validates, analyzes, and interprets datasets across city agencies; and identifies trends, risks, and root causes. Through data analysis, field engagement, and collaboration with agency leaders, the Analyst defines performance metrics, conducts policy research, and supports the implementation of improvement strategies. The CitiStat Analyst applies the program’s core tenets — accurate and timely intelligence shared by all, rapid deployment of resources, effective tactics and strategies, and relentless follow-up and assessment — to improve service quality and efficiency. The position reports to the Deputy Chief Performance Officer.
 
 **■ Key Responsibilities**
 
@@ -111,4 +97,4 @@ Employees in this class work a conventional work week. Work is performed in an o
 
 **Supervision given.** Individual contributor.
 
-*This Position Description reflects the FY27 OPI operating model. It describes the typical scope of the role and is not an exhaustive list of duties. OPI is an Equal Opportunity Employer; all qualified applicants will receive consideration without regard to race, color, religion, sex, sexual orientation, gender identity, national origin, disability, age, or veteran status.*
+*This Position Description reflects the OPI operating model. It describes the typical scope of the role and is not an exhaustive list of duties. OPI is an Equal Opportunity Employer; all qualified applicants will receive consideration without regard to race, color, religion, sex, sexual orientation, gender identity, national origin, disability, age, or veteran status.*

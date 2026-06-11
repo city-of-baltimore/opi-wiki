@@ -1,6 +1,6 @@
 # Productivity and Collaboration Playbook
 
-<span class="opi-pill approved">Approved</span>
+{{ page_badge() }}
 
 > Tools, rituals, and conventions for getting work done together.
 
@@ -106,7 +106,7 @@ Use names that sort, scan, and survive context loss. Recommended format: YYYY-MM
 
 - Grant the minimum access needed (read vs. edit). Time-bound access where possible.
 
-- For sensitive data: do not share via email attachment. Use approved storage and access controls. Ask your manager or DCDO designee if unsure.
+- For sensitive data: do not share via email attachment. Use approved storage and access controls. Ask your manager or the Deputy Chief Data Officer designee if unsure.
 
 **■ 3. Email standards (Outlook)**
 

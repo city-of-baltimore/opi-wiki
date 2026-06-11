@@ -10,8 +10,8 @@ HEADER_SCAN_LIMIT = 30
 OFFICE_LINES = {
     "Mayor’s Office of Performance and Innovation",
     "Mayor's Office of Performance and Innovation",
-    "Mayor’s Office of Performance and Innovation · Baltimore City",
-    "Mayor's Office of Performance and Innovation · Baltimore City",
+    "Mayor’s Office of Performance and Innovation · City of Baltimore",
+    "Mayor's Office of Performance and Innovation · City of Baltimore",
 }
 SIGNER_LINE = "Dartanion Swift-Williams, Executive Director and Chief Data Officer"
 STAT_NUMBER_RE = re.compile(r"^\*\*STAT \d+\*\*$")

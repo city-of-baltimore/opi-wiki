@@ -1,6 +1,15 @@
 # On Innovation and Civic Design
 
-<span class="opi-pill approved">Approved</span>
+## Innovation Lab operating clarity
+
+The Innovation Lab owns the craft of solving: discovery, service design, user research, product management, prototyping, civic technology, applied AI pilots, and MVP-and-handoff methods. The Lab's question is: **How do we solve this problem in a way that works for residents and staff?**
+
+The Lab is not an ideas shop, a shadow IT team, or a place for unfunded special projects to drift. It starts with a service problem, designs with the people closest to the work, tests practical improvements, and hands off what works with an owner, runbook, and sustainment plan.
+
+The Lab can work on one-agency or multi-agency problems. When implementation requires several agencies to move together with named decision rights and commitments, the Lab partners with Cross-Agency Delivery.
+
+
+{{ page_badge() }}
 
 > What it means to bring innovation discipline and civic design into city hall.
 
@@ -62,7 +71,7 @@ And when something works, we document it, hand it off, and make sure the agency 
 
 I do not see design as something separate from leadership. Leadership, at its best, is design. It is designing systems that are clear and accountable. Designing teams that know how to work together. Designing routines that create follow-through. Designing processes that do not break under pressure. Designing outcomes that actually matter to people.
 
-That mindset shows up in how we run CitiStat, how we structure Tiger Teams, how we build products, how we write memos, and how we follow up. I am constantly asking: what problem are we really solving? Who is this working for, and who is it not working for? Where are we adding friction? Where is ownership unclear? How do we redesign this so it works every time, not just when one heroic person pushes it through?
+That mindset shows up in how we run CitiStat, how we structure tiger teams, how we build products, how we write memos, and how we follow up. I am constantly asking: what problem are we really solving? Who is this working for, and who is it not working for? Where are we adding friction? Where is ownership unclear? How do we redesign this so it works every time, not just when one heroic person pushes it through?
 
 **A government that learns**
 
@@ -84,10 +93,14 @@ Mayor’s Office of Performance and Innovation
 
 *City of Baltimore · Brandon M. Scott, Mayor*
 
+## How this shows up in Tiger Teams
+
+A Tiger Team is where civic design becomes operational. The team does not simply study a problem or produce a deck. It goes into the service, listens to the people closest to the work, tests practical changes, and leaves behind a routine the agency can keep using. When more than one agency must move together, Cross-Agency Delivery supplies the authority and cadence that help the change stick.
+
 **READ ALONGSIDE**
 
-**Innovation Lab Strategy FY27 —** *how the Lab operates, what it owns, and FY27 priorities.*
+**Innovation Lab Strategy —** *how the Lab operates, what it owns, and priorities.*
 
-**Digital Product Methodology FY27 —** *how OPI designs, builds, and ships digital products.*
+**Digital Product Methodology —** *how OPI designs, builds, and ships digital products.*
 
 **About OPI: Innovation Lab —** *who is on the team and how to engage them.*

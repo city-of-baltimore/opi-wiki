@@ -1,6 +1,6 @@
 # MAPS Benefits Quick Guide
 
-<span class="opi-pill draft">Draft</span>
+{{ page_badge() }}
 
 > A plain-language overview of MAPS benefits available to OPI staff.
 
@@ -14,7 +14,7 @@ Health, leave, retirement, and time-off benefits for OPI staff covered by the MA
 
 **AUDIENCE** OPI staff covered by MAPS
 
-**OWNER** Director's Office / AdminOps · HR review pending
+**OWNER** Director's Office · HR review pending
 
 **VERSION** v1.0 (DRAFT) · May 2026
 

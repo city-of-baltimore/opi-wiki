@@ -1,8 +1,8 @@
-# About Admin Ops
+# About AdminOps
 
-<span class="opi-pill approved">Approved</span>
+{{ page_badge() }}
 
-> What Admin Ops does inside the Director's Office.
+> What AdminOps does inside the Director's Office.
 **ABOUT · SERVICE 05 OF 05**
 
 **AdminOps**

@@ -1,17 +1,18 @@
-# About Performance Management
+# About Performance and CitiStat
 
-<span class="opi-pill approved">Approved</span>
+{{ page_badge() }}
 
-> What performance management means inside Baltimore City government.
-**ABOUT · SERVICE 01 OF 05**
+> The plain-language overview of citywide performance management and CitiStat in Baltimore City government.
 
-**Citywide Performance Management**
+**ABOUT · SERVICE 01 OF 05 · AUDIENCE: PUBLIC**
+
+**Citywide Performance Management and CitiStat**
 
 *How we help Baltimore turn priorities into action and commitments into measurable improvements.*
 
-*Read alongside: OPI Service Theory of Change — Citywide Performance Management.*
+*Read alongside: OPI Performance Management Strategy; OPI Service Theory of Change — Citywide Performance Management.*
 
-*This About doc explains the service in plain language. The Theory of Change doc explains how the service is mandated, governed, staffed, measured, and sustained.*
+*This About doc is the human story of the service — who we are, what we do, and what we own. The Performance Management Strategy is the strategic argument behind the system. The Theory of Change explains how the service is mandated, governed, staffed, measured, and sustained.*
 
 **PURPOSE**
 
@@ -21,7 +22,7 @@ Citywide Performance Management helps Baltimore City turn priorities into action
 
 This team stewards Baltimore’s performance management system, including CitiStat, agency performance planning, performance measures, follow-up routines, and the operating discipline that helps leaders see what is working, what is stuck, and what needs to change.
 
-The goal is not more meetings. The goal is clearer ownership, faster decisions, better follow-through, and visible improvements residents and public servants can feel.
+<div class="opi-pullquote" markdown="0">The goal is not more meetings. The goal is clearer ownership, faster decisions, better follow-through, and visible improvements residents and public servants can feel.</div>
 
 **Who we are**
 
@@ -63,9 +64,41 @@ We work through a disciplined but humane performance cycle.
 
 A strong performance routine begins with a clear purpose, reliable enough data, a named sponsor, and an agency owner. Each session should produce learning, decisions, commitments, or a clear reason to change the routine.
 
-We use the lightest effective management routine. Some problems belong in a Stat. Some belong in a delivery room. Some need a data sprint, product discovery, or a one-time decision memo. The Performance team helps route the issue to the right operating model.
+We use the lightest effective management routine. Some problems belong in a Stat. Some belong in a delivery review. Some need a data sprint, product discovery, or a one-time decision memo. The Performance team helps route the issue to the right operating model.
+
+<div class="opi-margin-note" markdown="0">
+  <span class="opi-margin-note__label">Lightest effective routine</span>
+  Not every performance question deserves a recurring Stat. The right routine for a problem may be a one-time decision memo, a single delivery review, or a focused data sprint. CitiStat is reserved for problems that need leadership attention, reliable-enough data, commitments, and follow-up over multiple cycles.
+</div>
 
 We do not take over agency operations. Agencies own service delivery. OPI provides the method, the data questions, the follow-up discipline, and the escalation path.
+
+**The four tenets of Stat**
+
+The routine, at every step, holds to the four tenets of Stat.
+
+<div class="opi-tenets-grid" markdown="0">
+  <div class="opi-tenet">
+    <div class="opi-tenet__num">Tenet 01</div>
+    <div class="opi-tenet__name">Accurate and timely intelligence shared by all</div>
+    <div class="opi-tenet__meaning">Use reliable data, resident signals, field validation, and a shared KPI dictionary so the room is not debating the numbers.</div>
+  </div>
+  <div class="opi-tenet">
+    <div class="opi-tenet__num">Tenet 02</div>
+    <div class="opi-tenet__name">Rapid deployment of resources</div>
+    <div class="opi-tenet__meaning">Use the session to make or escalate decisions that shift people, attention, tools, or resources toward the bottleneck.</div>
+  </div>
+  <div class="opi-tenet">
+    <div class="opi-tenet__num">Tenet 03</div>
+    <div class="opi-tenet__name">Effective tactics and strategies</div>
+    <div class="opi-tenet__meaning">Ask what the agency tried, what changed, why it worked or did not, and what should be tested next.</div>
+  </div>
+  <div class="opi-tenet">
+    <div class="opi-tenet__num">Tenet 04</div>
+    <div class="opi-tenet__name">Relentless follow-up and assessment</div>
+    <div class="opi-tenet__meaning">Track commitments until closed with evidence; unresolved issues remain visible until solved or escalated.</div>
+  </div>
+</div>
 
 **What we own**
 
@@ -123,21 +156,9 @@ When public narrative, Council preparation, quality assurance, calendar coordina
 
 Success means the performance system is useful, trusted, and action-oriented.
 
-We know the work is succeeding when:
+In human terms, the work is succeeding when leadership time is spent on the highest-leverage decisions, agencies trust the numbers and use them outside the meeting, priority services show improvements residents can feel, and performance plans become living management tools rather than annual paperwork.
 
-- Stat sessions produce decisions, commitments, or measurable learning.
-
-- Follow-up memos are timely, specific, and connected to evidence.
-
-- Agencies trust the numbers and use them outside the meeting.
-
-- Priority services show measurable improvement in cycle time, backlog, timeliness, quality, or resident experience.
-
-- Leadership time is spent on the highest-leverage decisions.
-
-- Cross-agency blockers are routed quickly to the right authorizer or delivery routine.
-
-- Performance plans become living management tools, not annual paperwork.
+*For the formal success measures — routine reliability, decision quality, data integrity, service improvement, budget linkage, and public trust — see [Performance Management Strategy](performance-management-strategy.md).*
 
 **Common outputs**
 
@@ -162,3 +183,11 @@ We know the work is succeeding when:
 - Delivery trigger recommendations.
 
 > *Performance Management and CitiStat help Baltimore see clearly, decide faster, and follow through until services improve.*
+
+## See also
+
+- [Performance Management Strategy](performance-management-strategy.md) — the strategic argument: case for change, principles, the citywide cycle, governance, success measures, and FY priorities.
+- [Performance Management Theory of Change](performance-management-theory-of-change.md) — how the service is mandated, governed, staffed, measured, and sustained.
+- [CitiStat Strategic Framework](citistat-strategic-framework.md) — the public-facing strategic case for CitiStat itself and the active 19-Stat portfolio.
+- [CitiStat Method Playbook](citistat-method-playbook.md) — the staff-facing operating standards, the 12-step cycle, admission criteria, and quality bar.
+- [CitiStat Portfolio](citistat-portfolio/index.md) — every active Stat brief.

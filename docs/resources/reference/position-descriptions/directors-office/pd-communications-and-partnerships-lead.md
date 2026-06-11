@@ -1,20 +1,8 @@
 # PD — Communications and Partnerships Lead
 
-<span class="opi-pill internal">Position Description</span>
+{{ page_badge() }}
 
 > Position description for the Communications and Partnerships Lead.
-
-**CLASSIFICATION** Operations Officer III
-
-**PORTFOLIO** Director's Office
-
-**REPORTS TO** Chief of Staff (with frequent direct work for the Executive Director)
-
-**INCUMBENT** Audrey Randazzo
-
-**POSITION NUMBER** 53413
-
-**EFFECTIVE** OPI Reorganization
 
 **■ At a Glance**
 
@@ -24,8 +12,6 @@
 | **Classification**       | Operations Officer III                                                                                             |
 | **Portfolio**            | Director's Office                                                                                                  |
 | **Reports to**           | Chief of Staff (with frequent direct work for the Executive Director)                                              |
-| **Incumbent**            | Audrey Randazzo                                                                                                    |
-| **Position number**      | 53413                                                                                                              |
 | **Supervision given**    | Individual contributor; coordinates editorial and brand work across the four portfolios.                           |
 | **Supervision received** | Reports to the Chief of Staff. Works directly with the Executive Director on partner and Council-facing materials. |
 
@@ -67,7 +53,7 @@ The Communications and Partnerships Lead develops and stewards OPI’s external 
 
 **Brand and Publication Standards**
 
-- Maintain OPI’s brand kit and document templates in partnership with the Director’s Office.
+- Maintain OPI’s brand kit and document templates in partnership with the Chief of Staff and the rest of the Director’s Office team.
 
 - Operate OPI’s publication QA process; uphold the Bloomberg/HKS-grade quality bar across deliverables.
 
@@ -121,4 +107,4 @@ Employees in this class work a conventional work week. Work is performed in an o
 
 **Supervision given.** Individual contributor; coordinates editorial and brand work across the four portfolios.
 
-*This Position Description reflects the FY27 OPI operating model. It describes the typical scope of the role and is not an exhaustive list of duties. OPI is an Equal Opportunity Employer; all qualified applicants will receive consideration without regard to race, color, religion, sex, sexual orientation, gender identity, national origin, disability, age, or veteran status.*
+*This Position Description reflects the OPI operating model. It describes the typical scope of the role and is not an exhaustive list of duties. OPI is an Equal Opportunity Employer; all qualified applicants will receive consideration without regard to race, color, religion, sex, sexual orientation, gender identity, national origin, disability, age, or veteran status.*

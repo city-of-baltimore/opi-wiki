@@ -1,6 +1,6 @@
 # Onboarding Process and Checklist
 
-<span class="opi-pill approved">Approved</span>
+{{ page_badge() }}
 
 > The end-to-end onboarding workflow with concrete checkpoints.
 
@@ -14,7 +14,7 @@ A structured 90-day playbook for new hires, managers, and onboarding buddies.
 
 **AUDIENCE** New hires, managers, onboarding buddies, AdminOps
 
-**OWNER** Director's Office / AdminOps
+**OWNER** Director's Office
 
 **VERSION** v1.0 · May 2026
 
@@ -73,7 +73,7 @@ In weeks two through four, the focus shifts from setup to learning the system an
 | **When**        | **Task**                                                                                        | **Owner**          | **How**                                                                          |
 |-----------------|-------------------------------------------------------------------------------------------------|--------------------|----------------------------------------------------------------------------------|
 | Week 2          | Complete tool enablement: SharePoint and Teams hygiene, Planner usage, meeting notes standard.  | New hire           | Follow the Productivity and Collaboration Playbook.                              |
-| Week 2          | Shadow at least two key meetings in your domain (CitiStat, product, delivery room, governance). | New hire + Manager | Focus on how decisions get made and how follow-through is tracked.               |
+| Week 2          | Shadow at least two key meetings in your domain (CitiStat, product, delivery review, governance). | New hire + Manager | Focus on how decisions get made and how follow-through is tracked.               |
 | Week 2–3        | Define your first early win: a small, shippable deliverable with clear definition of done.      | Manager + New hire | Prefer something that reduces friction, improves clarity, or closes a known gap. |
 | Week 3          | Create or update your working-with-me note (preferences, hours, communication style).           | New hire           | Share with manager and team. Revisit after 60 days.                              |
 | Week 4 / Day 30 | 30-day check-in and onboarding feedback survey or interview.                                    | Manager + New hire | What is working, what is missing, and what should we improve in onboarding.      |
@@ -93,7 +93,7 @@ In months two and three, the new hire begins owning a defined slice of work, shi
 
 Use the section for the portfolio you are joining. Managers should also use the manager section.
 
-**Director's Office / AdminOps**
+**Director's Office**
 
 Focus: portfolio visibility, decision support, communications, operations backbone, and quality assurance for public and executive artifacts.
 
@@ -145,7 +145,7 @@ Focus: human-centered design, product discovery, civic technology, AI pilots, an
 
 - Week 1–2: read the Innovation Lab brief and review two recent discovery memos and prototypes.
 
-- Week 2: shadow a service-design session, a user research interview, or a Tiger Team working session.
+- Week 2: shadow a service-design session, a user research interview, or a tiger team working session.
 
 - Week 2–3: learn the Lab’s standard artifacts — product brief, discovery memo, service map, prototype plan.
 
@@ -177,7 +177,7 @@ A starting list of common onboarding sessions. Adapt based on role and portfolio
 | City Government 101                          | Director’s Office             | 30 min     | Who’s who in Baltimore City government and how decisions move.                  |
 | CitiStat overview and a session observation  | Performance and CitiStat lead | 60–90 min  | Method, cadence, pre-reads, follow-up. Observe a real session.                  |
 | Data and Analytics overview                  | Data and Analytics lead       | 30 min     | Platform, governance, open data, and how analytics feed CitiStat and the Lab.   |
-| Innovation Lab overview                      | Innovation Lab lead           | 30 min     | Service design, product discovery, civic tech, AI pilots, and partnerships.     |
+| Innovation Lab overview                      | Interim Innovation Program Manager | 30 min     | Service design, product discovery, civic tech, AI pilots, and partnerships.     |
 | AdminOps and operating cadence               | Chief of Staff                | 30 min     | Intake, charters, portfolio view, weekly Ops Review, monthly Portfolio Council. |
 | HR and benefits orientation                  | City HR                       | 60 min     | Benefits enrollment, time and leave, Workday basics.                            |
 | BCIT onboarding                              | BCIT or designated IT contact | 60 min     | IT account setup, security, MFA, software requests, and trouble tickets.        |

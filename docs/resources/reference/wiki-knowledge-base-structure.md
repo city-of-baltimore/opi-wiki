@@ -1,6 +1,6 @@
 # Wiki Knowledge Base Structure
 
-<span class="opi-pill internal">Reference</span>
+{{ page_badge() }}
 
 > How this wiki is organized and why.
 
@@ -42,7 +42,7 @@ OPI uses Microsoft SharePoint as the wiki platform, consistent with the rest of 
 
 - Canonical OPI Foundations documents (this set), in their final approved form.
 
-- Service playbooks and methods (CitiStat, data governance, Innovation Lab methods, Tiger Teams).
+- Service playbooks and methods (CitiStat, data governance, Innovation Lab methods, tiger teams).
 
 - Templates (charter, problem statement, intake form, pre-read, after-action review).
 
@@ -70,7 +70,7 @@ The Wiki uses six top-level pillars. Depth comes from consistent subpages, not f
 |------------------------------|-----------------------------------------------------------------------------------------------------|-------------------|
 | About OPI                    | Mission, north star, portfolios, services, leadership, organization chart, what we are and are not. | Director’s Office |
 | How We Deliver               | Operating model, intake, charters, decision forums, escalation, governance cadences.                | Chief of Staff    |
-| Playbooks and Methods        | CitiStat, Innovation Lab methods, Tiger Teams, data governance, responsible AI.                     | Portfolio leads   |
+| Playbooks and Methods        | CitiStat, Innovation Lab methods, tiger teams, data governance, responsible AI.                     | Portfolio leads   |
 | Tools and Systems            | City systems 101, OPI tooling, engineering and data platform standards.                             | Deputy CDO        |
 | Operations and Governance    | Policies, telework, productivity playbook, HR and IT how-tos, QA standards, change control.         | Chief of Staff    |
 | People and Project Directory | People directory, Project Directory list, agency liaisons, contact lookup.                          | Chief of Staff    |
@@ -191,7 +191,7 @@ Every Wiki page and every controlled artifact carries a small set of tags so the
 
 **Taxonomy owner (DCDO with Chief of Staff).** Owns term sets, sensitivity labels, and metadata rules.
 
-**Service owners (DCPO, DCDO, Innovation Lab Lead).** Own content for their service playbooks and standards.
+**Service owners (DCPO, DCDO, Innovation Lab portfolio lead).** Own content for their service playbooks and standards.
 
 **Ops librarian (AdminOps).** Audits broken links, archives stale content, enforces naming conventions.
 
@@ -246,3 +246,18 @@ The Wiki is built in three releases so it is useful on day one and improves with
 - Quarterly demo at all-hands: what was added or changed, what is being retired.
 
 *Owned by the Chief of Staff. Reviewed quarterly. Pairs with OPI SharePoint Operating System Strategy for full taxonomy and Project Directory schema.*
+
+## Method pages as sources of truth
+
+Method pages should define how OPI works, not simply describe past work. When a method page is created or updated, it should answer:
+
+1. What routine is this?
+2. When should staff use it?
+3. When should staff not use it?
+4. Who authorizes it?
+5. Who runs it day to day?
+6. What artifacts are required?
+7. What is the handoff or sustainment path?
+8. What public or internal language should other pages reuse?
+
+If a page introduces a new term, update the glossary in the same PR. If a page changes a method, update the relevant template or playbook in the same PR.

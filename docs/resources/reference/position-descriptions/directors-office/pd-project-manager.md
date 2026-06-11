@@ -1,20 +1,8 @@
 # PD — Project Manager
 
-<span class="opi-pill internal">Position Description</span>
+{{ page_badge() }}
 
 > Position description for the Project Manager.
-
-**CLASSIFICATION** Operations Officer III
-
-**PORTFOLIO** Director's Office
-
-**REPORTS TO** Chief of Staff
-
-**INCUMBENT** Mallory Screws
-
-**POSITION NUMBER** 62121
-
-**EFFECTIVE** OPI Reorganization
 
 **■ At a Glance**
 
@@ -24,8 +12,6 @@
 | **Classification**       | Operations Officer III         |
 | **Portfolio**            | Director's Office              |
 | **Reports to**           | Chief of Staff                 |
-| **Incumbent**            | Mallory Screws                 |
-| **Position number**      | 62121                          |
 | **Supervision given**    | Individual contributor.        |
 | **Supervision received** | Reports to the Chief of Staff. |
 
@@ -47,7 +33,7 @@ The Project Manager prepares weekly and monthly status materials, supports the C
 
 - Establish and maintain lightweight portfolio standards: status hygiene, RAG definitions, milestone quality, and decision logs.
 
-**Tiger Team Coordination and Delivery Support**
+**tiger team Coordination and Delivery Support**
 
 - Coordinate tiger-team operating cadences (intake, kickoff, scope alignment, milestone planning, work-plan tracking, closeout).
 
@@ -121,4 +107,4 @@ Employees in this class work a conventional work week. Work is performed in an o
 
 **Supervision given.** Individual contributor.
 
-*This Position Description reflects the FY27 OPI operating model. It describes the typical scope of the role and is not an exhaustive list of duties. OPI is an Equal Opportunity Employer; all qualified applicants will receive consideration without regard to race, color, religion, sex, sexual orientation, gender identity, national origin, disability, age, or veteran status.*
+*This Position Description reflects the OPI operating model. It describes the typical scope of the role and is not an exhaustive list of duties. OPI is an Equal Opportunity Employer; all qualified applicants will receive consideration without regard to race, color, religion, sex, sexual orientation, gender identity, national origin, disability, age, or veteran status.*

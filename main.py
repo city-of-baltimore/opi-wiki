@@ -15,11 +15,43 @@ if str(REPO_ROOT) not in sys.path:
 DOCS_DIR = REPO_ROOT / "docs"
 
 
+class PageFile(Protocol):
+    """Minimal protocol for the current MkDocs page file."""
+
+    src_path: str
+
+
+class Page(Protocol):
+    """Minimal protocol for the current MkDocs page object."""
+
+    file: PageFile
+
+
 class MacroEnvironment(Protocol):
     """Minimal protocol for the MkDocs macros plugin environment."""
 
+    page: Page
+
     def macro(self, function: Callable[..., Any]) -> Callable[..., Any]:
         """Register a callable as a macro."""
+
+
+def _render_markup(rendered: str) -> Markup:
+    """Wrap rendered HTML or Markdown in a Markup object for MkDocs."""
+
+    return Markup(rendered)
+
+
+def _render_docs_markup(
+    relative_path: str,
+    *,
+    load_data: Callable[[Path, str], Any],
+    render_data: Callable[..., str],
+    render_args: tuple[Any, ...] = (),
+) -> Markup:
+    """Load docs-adjacent structured data and render it as markup."""
+
+    return _render_markup(render_data(load_data(DOCS_DIR, relative_path), *render_args))
 
 
 def define_env(env: MacroEnvironment) -> None:
@@ -38,4 +70,36 @@ def define_env(env: MacroEnvironment) -> None:
                 f"Card section '{section}' was not found in '{relative_path}'. "
                 f"Available sections: {available_sections}"
             )
-        return Markup(render_card_grid(sections[section]))
+        return _render_markup(render_card_grid(sections[section]))
+
+    @env.macro
+    def badge(value: str) -> Markup:
+        """Render a shared display badge by token."""
+
+        from scripts.repo_tools.badges import render_badge
+
+        return _render_markup(render_badge(value))
+
+    @env.macro
+    def page_badge() -> Markup:
+        """Render the current page's configured display badge."""
+
+        from scripts.repo_tools.badges import render_badge, resolve_page_badge_value
+        from scripts.repo_tools.metadata import resolve_page_metadata
+
+        page_path = DOCS_DIR / env.page.file.src_path
+        metadata = resolve_page_metadata(DOCS_DIR, page_path)
+        return _render_markup(render_badge(resolve_page_badge_value(metadata)))
+
+    @env.macro
+    def org_structure_from(relative_path: str, section: str) -> Markup:
+        """Render a structured org-structure section from shared YAML data."""
+
+        from scripts.repo_tools.org_structure import load_org_structure, render_org_structure
+
+        return _render_docs_markup(
+            relative_path,
+            load_data=load_org_structure,
+            render_data=render_org_structure,
+            render_args=(section,),
+        )

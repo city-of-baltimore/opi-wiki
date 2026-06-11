@@ -1,6 +1,6 @@
 # On Performance Management
 
-<span class="opi-pill approved">Approved</span>
+{{ page_badge() }}
 
 > What modern performance management looks like inside a city government.
 
@@ -64,8 +64,8 @@ Mayor’s Office of Performance and Innovation
 
 **READ ALONGSIDE**
 
-**Performance Management Strategy FY27 —** *priorities, success measures, and FY27 commitments.*
+**Performance Management Strategy —** *priorities, success measures, and commitments.*
 
-**CitiStat Strategic Framework FY27 —** *mandate, operating model, and the modern CitiStat cycle.*
+**CitiStat Strategic Framework —** *mandate, operating model, and the modern CitiStat cycle.*
 
 **CitiStat Method Playbook —** *session formats, pre/post memo templates, and routines.*

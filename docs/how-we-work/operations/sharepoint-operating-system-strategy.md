@@ -1,6 +1,6 @@
 # SharePoint Operating System Strategy
 
-<span class="opi-pill approved">Approved</span>
+{{ page_badge() }}
 
 > How OPI uses SharePoint as an internal operating system.
 
@@ -66,7 +66,7 @@ Persistent utility links sit in the top right corner: Directory, Project Directo
 
 | **Content type**   | **Use it for**                                                                        | **Example**                                | **Rules**                                                        |
 |--------------------|---------------------------------------------------------------------------------------|--------------------------------------------|------------------------------------------------------------------|
-| SharePoint pages   | Living guidance that needs to be read and searched.                                   | How to run a delivery room.                | Owned page; quarterly review; plain language; link to artifacts. |
+| SharePoint pages   | Living guidance that needs to be read and searched.                                   | How to run a delivery review.                | Owned page; quarterly review; plain language; link to artifacts. |
 | Document libraries | Controlled artifacts and templates that require versioning.                           | Charter template; KPI dictionary template. | Versioned; changes logged; avoid duplicates.                     |
 | Lists              | Systems of record: structured data that must be sortable, filterable, and reportable. | Project Directory; People Directory.       | Required fields; weekly updates; named owners.                   |
 | Folders            | Organizing supporting files inside a project space.                                   | Meeting attachments.                       | Not a system of record. Never store “truth” only in files.       |
@@ -186,11 +186,11 @@ Naming conventions are not cosmetic. They are what makes search work for new hir
 
 - Single request path: a SharePoint list form for “Request a new tag or term,” reviewed weekly by Ops Librarian.
 
-- Monthly taxonomy review (30 minutes): CoS + DCDO + PMO. Approve new terms, retire unused terms.
+- Monthly taxonomy review (30 minutes): Chief of Staff, Deputy Chief Data Officer, and PMO. Approve new terms, retire unused terms.
 
 - Quarterly audit: missing required fields, inconsistent tags, stale pages past review date.
 
-- Sensitivity labels and production-readiness definitions are policy-controlled by DCDO. Changes require a written note.
+- Sensitivity labels and production-readiness definitions are policy-controlled by the Deputy Chief Data Officer. Changes require a written note.
 
 **■ Project Directory schema**
 
@@ -238,7 +238,7 @@ Optional, add when ready:
 | Service area             | Managed metadata          | No           | Resident-facing domain. Examples: 311, permitting.                                                                            |
 | **OPI Owner**            | Person                    | Yes          | Accountable OPI lead. Updates weekly.                                                                                         |
 | **Agency sponsor**       | Person                    | Yes          | Accountable agency leader (or designee) who can make decisions. If missing, work is not accepted.                             |
-| **Authorizer**           | Person                    | Yes          | Senior responsible owner with authority to resolve cross-agency blockers. Often CA or Deputy. Required for cross-agency work. |
+| **Authorizer**           | Person                    | Yes          | Senior Responsible Owner with authority to resolve cross-agency blockers. Often CA or Deputy. Required for cross-agency work. |
 | **Lifecycle phase**      | Choice / managed metadata | Yes          | Intake; Charter; Discovery; Build; Pilot; Scale; Sustain; Closed; Parked.                                                     |
 | **Priority level**       | Choice                    | Yes          | P0 (Mayoral / CA); P1 (service reliability); P2 (enablement); P3 (nice-to-have).                                              |
 | **RAG status**           | Choice                    | Yes          | Green = on track; Amber = risk; Red = off track / blocked. Must include blocker / ask when Amber or Red.                      |
@@ -294,7 +294,7 @@ Optional, add when ready:
 
 - **Weekly:** Ops Review run by CoS / PMO uses “Decisions needed” and “At-risk” views; closes the loop on asks.
 
-- **Monthly:** DCPO and DCDO review service-line views against roadmaps and Stat schedules.
+- **Monthly:** Deputy Chief Performance Officer and Deputy Chief Data Officer review service-line views against roadmaps and Stat schedules.
 
 - **Quarterly:** Archive snapshot (PDF export) for institutional memory and audits.
 

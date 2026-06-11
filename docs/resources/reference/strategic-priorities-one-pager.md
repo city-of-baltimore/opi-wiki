@@ -1,6 +1,6 @@
 # Strategic Priorities One-Pager
 
-<span class="opi-pill approved">Approved</span>
+{{ page_badge() }}
 
 > OPI's strategic priorities, on one page.
 
@@ -58,7 +58,7 @@ FY26 is about getting the foundation right. The three priorities below were name
 
 - CitiStat: stand up and stabilize 19 regularly occurring Stats by end of January 2026; 12 of the 17 are new or relaunched. Performance and CitiStat owns; Method Playbook governs.
 
-- Tiger Teams cohort: six FY26 focus areas — Parking Enforcement, Traffic Calming (DOT); Street Sweeping, Zero Waste (DPW); Code Enforcement (DHCD); Forestry Backlog (BCRP). Innovation Lab leads; sustain by June 2026.
+- tiger teams cohort: six FY26 focus areas — Parking Enforcement, Traffic Calming (DOT); Street Sweeping, Zero Waste (DPW); Code Enforcement (DHCD); Forestry Backlog (BCRP). Innovation Lab leads; sustain by June 2026.
 
 - Citywide data warehouse v1: five core datasets in testing; data governance and catalog infrastructure in testing.
 
@@ -110,3 +110,7 @@ With the foundation in place, FY27 shifts focus to bigger, more visible outcomes
 | Is OPI itself running well?                                              | Intake-to-charter cycle time; project gate adherence; onboarding ramp; staff retention.                   |
 
 *Owned by the Executive Director. Reviewed each fiscal quarter; refreshed as part of the budget cycle. Sources: OPI Budget Hearing Testimony FY26; OPI EOY Report 2025; Visioning Direction.*
+
+## Tiger Team usage note
+
+When this page references Tiger Teams, use the Tiger Teams Playbook definition: a time-boxed, cross-functional delivery and innovation sprint focused on one service problem. The Innovation Lab provides the team and method; Cross-Agency Delivery charters the work when cross-agency authority is required.

@@ -1,6 +1,6 @@
 # Offboarding Process and Checklist
 
-<span class="opi-pill approved">Approved</span>
+{{ page_badge() }}
 
 > How we handle transitions, knowledge handoff, and access changes.
 
@@ -14,7 +14,7 @@ Protecting continuity, security, and OPI’s credibility through humane, predict
 
 **AUDIENCE** Departing staff, managers, AdminOps, IT
 
-**OWNER** Director's Office / AdminOps
+**OWNER** Director's Office
 
 **VERSION** v1.0 · May 2026
 
@@ -79,7 +79,7 @@ Or immediately, if shorter notice.
 
 **■ Portfolio-specific add-ons**
 
-**Director's Office / AdminOps**
+**Director's Office**
 
 Ensure portfolio visibility and decision support artifacts remain current and owned.
 
@@ -121,7 +121,7 @@ Protect engagement continuity and design artifact integrity.
 
 - T-7 days: ensure design files, research notes, and prototypes are stored in SharePoint with current metadata.
 
-- T-5 days: hand off any external partner relationships (universities, philanthropy, civic tech) to the Lab lead or the Communications and Partnerships Lead.
+- T-5 days: hand off any external partner relationships (universities, philanthropy, civic tech) to the Interim Innovation Program Manager or the Communications and Partnerships Lead.
 
 **Manager responsibilities (all portfolios)**
 

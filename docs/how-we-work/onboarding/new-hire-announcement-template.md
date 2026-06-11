@@ -1,6 +1,6 @@
 # New Hire Announcement Template
 
-<span class="opi-pill internal">Template</span>
+{{ page_badge() }}
 
 > A template for the office-wide announcement when someone joins OPI.
 **OPI · ONBOARDING**

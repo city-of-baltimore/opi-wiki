@@ -1,20 +1,8 @@
 # PD — Technical Program Manager
 
-<span class="opi-pill internal">Position Description</span>
+{{ page_badge() }}
 
 > Position description for the Technical Program Manager.
-
-**CLASSIFICATION** Operations Manager II
-
-**PORTFOLIO** Data and Analytics
-
-**REPORTS TO** Deputy Chief Data Officer
-
-**INCUMBENT** Roberto Herbruger
-
-**POSITION NUMBER** 115408
-
-**EFFECTIVE** OPI Reorganization
 
 **■ At a Glance**
 
@@ -24,8 +12,6 @@
 | **Classification**       | Operations Manager II                                                                          |
 | **Portfolio**            | Data and Analytics                                                                             |
 | **Reports to**           | Deputy Chief Data Officer                                                                      |
-| **Incumbent**            | Roberto Herbruger                                                                              |
-| **Position number**      | 115408                                                                                         |
 | **Supervision given**    | Coordinates cross-functional delivery for the Data and Analytics portfolio; no direct reports. |
 | **Supervision received** | Reports to the Deputy Chief Data Officer.                                                      |
 
@@ -123,4 +109,4 @@ Employees in this class work a conventional work week. This position may be requ
 
 **Supervision given.** Coordinates cross-functional delivery for the Data and Analytics portfolio; no direct reports.
 
-*This Position Description reflects the FY27 OPI operating model. It describes the typical scope of the role and is not an exhaustive list of duties. OPI is an Equal Opportunity Employer; all qualified applicants will receive consideration without regard to race, color, religion, sex, sexual orientation, gender identity, national origin, disability, age, or veteran status.*
+*This Position Description reflects the OPI operating model. It describes the typical scope of the role and is not an exhaustive list of duties. OPI is an Equal Opportunity Employer; all qualified applicants will receive consideration without regard to race, color, religion, sex, sexual orientation, gender identity, national origin, disability, age, or veteran status.*

@@ -1,20 +1,8 @@
 # PD — CitiStat Inspector
 
-<span class="opi-pill internal">Position Description</span>
+{{ page_badge() }}
 
 > Position description for the CitiStat Inspector.
-
-**CLASSIFICATION** Operations Officer I
-
-**PORTFOLIO** Director's Office
-
-**REPORTS TO** Chief of Staff (with operational coordination from the Performance and CitiStat team for inspections)
-
-**INCUMBENT** Rashaad Tillery
-
-**POSITION NUMBER** 50509
-
-**EFFECTIVE** OPI Reorganization
 
 **■ At a Glance**
 
@@ -24,8 +12,6 @@
 | **Classification**       | Operations Officer I                                                                                                          |
 | **Portfolio**            | Director's Office                                                                                                             |
 | **Reports to**           | Chief of Staff (with operational coordination from the Performance and CitiStat team for inspections)                         |
-| **Incumbent**            | Rashaad Tillery                                                                                                               |
-| **Position number**      | 50509                                                                                                                         |
 | **Supervision given**    | Individual contributor.                                                                                                       |
 | **Supervision received** | Reports to the Chief of Staff. Receives operational coordination from the Performance and CitiStat team for inspections work. |
 
@@ -119,4 +105,4 @@ Employees in this class work a conventional work week, with regular field work t
 
 **Supervision given.** Individual contributor.
 
-*This Position Description reflects the FY27 OPI operating model. It describes the typical scope of the role and is not an exhaustive list of duties. OPI is an Equal Opportunity Employer; all qualified applicants will receive consideration without regard to race, color, religion, sex, sexual orientation, gender identity, national origin, disability, age, or veteran status.*
+*This Position Description reflects the OPI operating model. It describes the typical scope of the role and is not an exhaustive list of duties. OPI is an Equal Opportunity Employer; all qualified applicants will receive consideration without regard to race, color, religion, sex, sexual orientation, gender identity, national origin, disability, age, or veteran status.*

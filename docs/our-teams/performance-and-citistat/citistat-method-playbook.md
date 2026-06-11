@@ -1,42 +1,102 @@
 # CitiStat Method Playbook
 
-<span class="opi-pill approved">Approved</span>
+{{ page_badge() }}
 
 > The end-to-end CitiStat method — how a Stat session actually runs.
-**METHOD PLAYBOOK**
+
+**METHOD PLAYBOOK · AUDIENCE: STAFF**
 
 **CitiStat Method Playbook**
 
 *Standards, routines, templates, and tools for running Baltimore’s performance management system with discipline, candor, and follow-through.*
 
-Method Playbook
-
-*Read alongside: OPI CitiStat Strategic Framework FY27..*
+*Read alongside: OPI CitiStat Strategic Framework.*
 
 *The Strategic Framework is the public-facing case for CitiStat. This Method Playbook is the staff-facing companion: standards, templates, and the operating discipline.*
 
-**PURPOSE AND USE**
-
-**A practical companion to the Strategic Framework**
+## A practical companion to the Strategic Framework
 
 This playbook is the staff-facing companion to the CitiStat strategic overview. It translates the CitiStat method into practical standards, routines, and templates for OPI staff, agency leaders, Data-Driven Officers, Deputy Mayor teams, the City Administrator’s Office, and other partners who participate in the performance routine.
 
 The playbook is designed to make excellence repeatable. A CitiStat session should not depend on personality, memory, or heroic follow-up. It should have a clear purpose, reliable-enough data, useful pre-work, disciplined facilitation, explicit commitments, evidence of closure, and a public story of progress where appropriate.
 
-> **Working definition: CitiStat is the routine that converts performance signals into decisions, commitments, follow-through, and sustained service improvement.**
+<div class="opi-pullquote" markdown="0">Working definition: CitiStat is the routine that converts performance signals into decisions, commitments, follow-through, and sustained service improvement.</div>
 
-| **Use this playbook when…**                                                                                                     | **Do not use it as…**                                                           |
-|---------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------|
-| Launching, redesigning, or quality-checking a CitiStat session.                                                                 | A substitute for agency ownership of operations.                                |
-| Preparing a pre-memo, deck, follow-up memo, commitment tracker, or public summary.                                              | A budget hearing script or policy debate agenda.                                |
-| Training a new analyst, facilitator, agency Data-Driven Officer, or Deputy Mayor designee.                                      | A one-size-fits-all script that overrides context.                              |
-| Deciding whether an issue belongs in CitiStat, a Tiger Team, the Innovation Lab, a data governance routine, or a decision memo. | Permission to add meetings without a clear decision, owner, and follow-up path. |
+**Program leadership.** The Executive Director leads CitiStat as a citywide program and serves as the CitiStat Director. The Deputy Chief Performance Officer serves as Deputy Director for the program. The CitiStat Program Manager supports day-to-day program management — cadence, artifacts, and follow-through across the portfolio.
 
-**OPERATING PRINCIPLES**
+<div class="opi-compare-grid" markdown="0">
+  <div class="opi-compare-card">
+    <div class="opi-compare-card__row opi-compare-card__row--is">
+      <span class="opi-compare-card__label">Use this playbook when</span>
+      <span class="opi-compare-card__text">Launching, redesigning, or quality-checking a CitiStat session.</span>
+    </div>
+    <div class="opi-compare-card__row opi-compare-card__row--isnot">
+      <span class="opi-compare-card__label">Do not use it as</span>
+      <span class="opi-compare-card__text">A substitute for agency ownership of operations.</span>
+    </div>
+  </div>
+  <div class="opi-compare-card">
+    <div class="opi-compare-card__row opi-compare-card__row--is">
+      <span class="opi-compare-card__label">Use this playbook when</span>
+      <span class="opi-compare-card__text">Preparing a pre-memo, deck, follow-up memo, commitment tracker, or public summary.</span>
+    </div>
+    <div class="opi-compare-card__row opi-compare-card__row--isnot">
+      <span class="opi-compare-card__label">Do not use it as</span>
+      <span class="opi-compare-card__text">A budget hearing script or policy debate agenda.</span>
+    </div>
+  </div>
+  <div class="opi-compare-card">
+    <div class="opi-compare-card__row opi-compare-card__row--is">
+      <span class="opi-compare-card__label">Use this playbook when</span>
+      <span class="opi-compare-card__text">Training a new analyst, facilitator, agency Data-Driven Officer, or Deputy Mayor designee.</span>
+    </div>
+    <div class="opi-compare-card__row opi-compare-card__row--isnot">
+      <span class="opi-compare-card__label">Do not use it as</span>
+      <span class="opi-compare-card__text">A one-size-fits-all script that overrides context.</span>
+    </div>
+  </div>
+  <div class="opi-compare-card">
+    <div class="opi-compare-card__row opi-compare-card__row--is">
+      <span class="opi-compare-card__label">Use this playbook when</span>
+      <span class="opi-compare-card__text">Deciding whether an issue belongs in CitiStat, a tiger team, the Innovation Lab, a data governance routine, or a decision memo.</span>
+    </div>
+    <div class="opi-compare-card__row opi-compare-card__row--isnot">
+      <span class="opi-compare-card__label">Do not use it as</span>
+      <span class="opi-compare-card__text">Permission to add meetings without a clear decision, owner, and follow-up path.</span>
+    </div>
+  </div>
+</div>
 
-**Rigorous and humane**
+## Operating principles: rigorous and humane
 
 CitiStat should feel rigorous and humane. The work must be grounded in facts, but it should never become a ritual of blame. The best sessions create a high-accountability, high-support environment: agencies are expected to own results, and City leadership is expected to help remove the barriers agencies cannot resolve alone.
+
+### The four tenets of Stat
+
+The principles below are how CitiStat behaves in practice. The four tenets are how it has always defined success.
+
+<div class="opi-tenets-grid" markdown="0">
+  <div class="opi-tenet">
+    <div class="opi-tenet__num">Tenet 01</div>
+    <div class="opi-tenet__name">Accurate and timely intelligence shared by all</div>
+    <div class="opi-tenet__meaning">Use reliable data, resident signals, field validation, and a shared KPI dictionary so the room is not debating the numbers.</div>
+  </div>
+  <div class="opi-tenet">
+    <div class="opi-tenet__num">Tenet 02</div>
+    <div class="opi-tenet__name">Rapid deployment of resources</div>
+    <div class="opi-tenet__meaning">Use the session to make or escalate decisions that shift people, attention, tools, or resources toward the bottleneck.</div>
+  </div>
+  <div class="opi-tenet">
+    <div class="opi-tenet__num">Tenet 03</div>
+    <div class="opi-tenet__name">Effective tactics and strategies</div>
+    <div class="opi-tenet__meaning">Ask what the agency tried, what changed, why it worked or did not, and what should be tested next.</div>
+  </div>
+  <div class="opi-tenet">
+    <div class="opi-tenet__num">Tenet 04</div>
+    <div class="opi-tenet__name">Relentless follow-up and assessment</div>
+    <div class="opi-tenet__meaning">Track commitments until closed with evidence; unresolved issues remain visible until solved or escalated.</div>
+  </div>
+</div>
 
 | **Principle**              | **How it shows up**                                                                                                                               |
 |----------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -49,9 +109,7 @@ CitiStat should feel rigorous and humane. The work must be grounded in facts, bu
 | Scope discipline           | Budget debates, broad policy design, and tactical issues that belong inside agencies are captured and routed, not allowed to consume the session. |
 | Sustainment matters        | Success is not a meeting or pilot. Success is a changed process, SOP, dashboard, training routine, or owned handoff that still works later.       |
 
-**GOVERNANCE AND DECISION RIGHTS**
-
-**Clear authority before the routine starts**
+## Governance and decision rights
 
 CitiStat moves work only when decision rights are clear. Before a Stat begins or continues, OPI should know who is sponsoring the routine, who owns implementation, who owns the data, what decisions may be required, and how escalation works.
 
@@ -65,9 +123,7 @@ CitiStat moves work only when decision rights are clear. Before a Stat begins or
 | Analyst / Data Lead                            | Prepares analysis, KPI updates, data quality notes, visuals, maps, and commitment tracking; supports facilitation and follow-up.                                   |
 | Data-Driven Officer                            | Agency lead responsible for managing the internal CitiStat process, coordinating data, maintaining KPI readiness, and tracking agency-side follow-through.         |
 
-**ROLES AND RESPONSIBILITIES**
-
-**Before, during, and after each session**
+## Roles and responsibilities
 
 Each session has three phases: before, during, and after. Roles should be explicit in each phase.
 
@@ -80,9 +136,7 @@ Each session has three phases: before, during, and after. Roles should be explic
 | Analyst / Data Lead            | Builds KPI pack, resident signal, maps, and analysis; drafts pre-memo and facilitation plan.                | Runs analysis segments; logs commitments live; clarifies definitions and evidence.      | Issues follow-up memo; updates commitment tracker; prepares radar/unblock notes.          |
 | Central command staff          | Pre-brief on likely blockers from HR, BCIT, Finance, Law, Labor, Procurement, Comms, or Equity.             | Participate to remove barriers in the room when needed.                                 | Carry through agreed fixes and report status.                                             |
 
-**THE CITISTAT CYCLE**
-
-**A continuous routine, not a single event**
+## The CitiStat cycle
 
 CitiStat runs as a cycle, not a single event. The cycle starts before the meeting and continues until commitments are closed, evidence is verified, and any sustained change is embedded.
 
@@ -97,13 +151,39 @@ CitiStat runs as a cycle, not a single event. The cycle starts before the meetin
 | Weekly / between sessions | Commitment tracking and unblock huddles for the highest-risk items.                                        | Updated tracker, escalations, delivery triggers, and evidence of closure.                |
 | Next cycle                | Carry forward open items, review evidence, and decide whether to close, renegotiate, escalate, or sustain. | Updated pre-memo and continuity from prior session.                                      |
 
-**SESSION DESIGN AND FACILITATION**
+### Analyst execution cycle: the 12 steps
 
-**Designed around decisions and learning**
+The table above describes the cycle conceptually. The 12-step execution cycle below is the operating sequence an analyst uses to run a Stat from one meeting to the next. Days are business days; T is the day of the next Stat. Steps marked with a check-point flag are reviewed with the CitiStat Director or Deputy Director before the analyst proceeds.
+
+| **Step** | **Activity**                                                                  | **Timing**                | **Check-point** |
+|----------|-------------------------------------------------------------------------------|---------------------------|-----------------|
+| 1        | Stakeholder alignment and debrief with the agency and Mayor's Office leadership | 0–1 day after prior Stat  |                 |
+| 1a       | Initial plan for the next Stat: agenda sketch, planned inspections, ride-alongs | 1 day after prior Stat    | ✓               |
+| 2        | Monitor and execute follow-ups; weekly status report and stakeholder email     | Continuous                |                 |
+| 3        | Develop pre-memo frame; determine analyses; confirm participants and seating   | T-9                       | ✓               |
+| 4        | Communicate the frame back to stakeholders for last-call input on the agenda   | T-8                       |                 |
+| 5        | Analyze data; draft the pre-memo and presentation                              | T-5                       |                 |
+| 6        | Quality control review; determine whether additional alignment is needed       | T-4 to T-5                | ✓               |
+| 7        | Re-analyze and revise based on QC feedback; final data refresh                 | T-3                       |                 |
+| 8        | Send out pre-meeting materials to the distribution list and post to SharePoint | T-2                       | ✓               |
+| 9        | Print name tags and packets in the standard order                              | T-1                       |                 |
+| 10       | Room set-up: AV, microphones, name tags, packets ([checklist](citistat-templates.md#room-setup-and-breakdown)) | T                         |                 |
+| 11       | Hold the Stat meeting; clean up afterward                                      | T                         |                 |
+| 12       | Draft and send the follow-up memo; update the commitment tracker               | T+1, no later than T+2    | ✓               |
+
+**Crosswalk to the strategic cycle.** The 12 operating steps map to the seven phases described in the [CitiStat Strategic Framework](citistat-strategic-framework.md#crosswalk-7-strategic-phases-and-12-operating-steps): steps 1 and 12 are the Signal and Frame loop carrying learning from one Stat into the next; steps 3 through 7 are Diagnose; steps 8 through 11 are the in-session Commit and Deploy phases; step 2 — running between meetings — is Follow up and the start of Institutionalize. The Strategic Framework includes a phase-by-phase mapping table.
+
+**Two debriefs and two frame reviews.** For agency-based Stats, the analyst holds two debriefs after each Stat — one with the agency, one with Mayor's Office leadership (Deputy Mayor, City Administrator's Office) — and two frame reviews before the next Stat in the same split. Interagency or thematic Stats may merge these into a single conversation when no agency-only context is required.
+
+## Session design and facilitation
 
 The session should be designed around decisions and learning, not presentation time. Most sessions should focus on 2–3 priority topics, anchored in KPIs and prior commitments.
 
-**Recommended 90-minute run of show**
+### Cabinet attendance expectation
+
+CitiStat is a cabinet-level routine. Mayoral cabinet partners are expected to attend agency Stats where their authority is likely to be required to remove a barrier or make a decision. Standing roles invited across the cabinet include the Chief Human Capital Officer (DHR), Labor Commissioner (OLC), Chief Information Officer (BCIT), Budget Director (DOF), Chief Procurement Officer (DOF), City Solicitor (Law), as well as representatives from the Mayor's Office of Government Relations (MOGR), and the Office of Equity and Civil Rights (OECR). Specific attendance for any given Stat is confirmed during the frame review based on the agenda and the decisions likely to be needed.
+
+### Recommended 90-minute run of show
 
 | **Time**  | **Segment**                    | **Purpose**                                                                                                            |
 |-----------|--------------------------------|------------------------------------------------------------------------------------------------------------------------|
@@ -115,7 +195,7 @@ The session should be designed around decisions and learning, not presentation t
 | 75–85 min | Commitments and escalations    | Confirm owners, dates, evidence standards, and any authorizer decisions or delivery triggers.                          |
 | 85–90 min | Close                          | Repeat back decisions, next steps, and publication or follow-up expectations.                                          |
 
-**Facilitation questions**
+### Facilitation questions
 
 - Since the last session, what did the agency try and what changed?
 
@@ -129,11 +209,9 @@ The session should be designed around decisions and learning, not presentation t
 
 - How will we know whether the action changed the outcome?
 
-- Does this issue stay in CitiStat, move to a Tiger Team or Delivery activation, or route to another governance routine?
+- Does this issue stay in CitiStat, move to a tiger team or Delivery activation, or route to another governance routine?
 
-**DATA STANDARDS AND EVIDENCE**
-
-**Reliable enough, with named caveats**
+## Data standards and evidence
 
 CitiStat depends on trust in the numbers. Every priority metric should have a clear definition, source, owner, refresh cadence, and caveat. The goal is not perfect data before action; the goal is reliable-enough data with transparent limitations.
 
@@ -145,14 +223,22 @@ CitiStat depends on trust in the numbers. Every priority metric should have a cl
 | Map-first when possible | Use geography to identify hotspots, inequities, repeat demand, or spatial patterns that averages hide.                                             |
 | Field validation        | Use inspections, ride-alongs, interviews, or evidence checks for priority topics at least quarterly where the service is observable.               |
 | Open data alignment     | Publishable datasets and methodology notes should be coordinated with the Open Data Program when legally appropriate.                              |
+| Code and accessibility  | Analytic code, queries, and notebooks are documented and version-controlled; public-facing materials and dashboards meet Section 508 accessibility standards. |
 
-**ISSUE SELECTION, ADMISSION, AND CONTINUATION**
+### Inspections and field validation
 
-**Tests that protect the routine**
+Data on a screen is necessary but not sufficient. For service systems that are observable in the field — sanitation routes, code enforcement, recreation facilities, transportation assets, public works projects, permitting counters — analysts validate priority topics through direct observation at least quarterly where appropriate. The CitiStat Inspector is the governance role accountable for planning ride-alongs, site visits, and inspections, coordinating with the agency, and bringing field findings back into the Stat as evidence alongside the data. Findings are recorded in plain language, with photos or notes where useful, and reconciled against the agency's reported metrics in the pre-memo.
+
+## Issue selection, admission, and continuation
 
 A routine should be called a Stat only if it meets admission criteria and continues to produce decisions, commitments, or learning. Without these tests, CitiStat becomes a meeting schedule rather than a management system.
 
-**Admission criteria**
+<div class="opi-margin-note" markdown="0">
+  <span class="opi-margin-note__label">Why admission and continuation matter</span>
+  Stats live or die by these tests. The admission criteria below decide whether a topic earns a recurring routine. The continuation test, applied after two cycles, decides whether it keeps one. Together they keep the portfolio disciplined and protect leadership time from drift.
+</div>
+
+### Admission criteria
 
 - A clear performance problem, strategic outcome, service system, or enabling function that requires recurring leadership attention.
 
@@ -166,9 +252,9 @@ A routine should be called a Stat only if it meets admission criteria and contin
 
 - A reason leadership time is required, not just a desire to report activity.
 
-**Continuation test**
+### Continuation test
 
-After two cycles, ask whether the Stat produced decisions, commitments, measurable learning, process changes, SOP changes, data improvements, or delivery triggers. If not, redesign it, pause it, merge it into another routine, or convert it into a Tiger Team, workgroup, product council item, data governance question, or decision memo.
+After two cycles, ask whether the Stat produced decisions, commitments, measurable learning, process changes, SOP changes, data improvements, or delivery triggers. If not, redesign it, pause it, merge it into another routine, or convert it into a tiger team, workgroup, product council item, data governance question, or decision memo.
 
 | **Issue belongs in CitiStat when…**                                                                | **It should route elsewhere when…**                                                                         |
 |----------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------|
@@ -177,9 +263,7 @@ After two cycles, ask whether the Stat produced decisions, commitments, measurab
 | Leadership can make or escalate a decision that changes the operating condition.                   | The main need is product discovery, user research, or data governance before a Stat conversation is useful. |
 | Commitments can be tracked to closure with evidence.                                               | There is no named owner, no evidence standard, or no practical follow-up path.                              |
 
-**AGENCY INTERNAL STAT AND DATA-DRIVEN OFFICERS**
-
-**Tactical management belongs in the agency**
+## Agency internal Stat and Data-Driven Officers
 
 CitiStat works only if agencies also run their own internal performance routines. Internal agency Stat is where tactical management happens. CitiStat proper is where systemic service failures, cross-agency issues, and stuck commitments receive executive attention.
 
@@ -190,7 +274,7 @@ CitiStat works only if agencies also run their own internal performance routines
 | Thematic Stat                    | Cross-cutting routine focused on a service system or citywide priority that spans multiple agencies.                          | 311, permitting, youth, workplace safety, downtown, cleanliness, capital, technology, workforce.                      |
 | Tiger Team / Delivery activation | Time-boxed implementation routine for multi-agency or stuck issues requiring weekly sequencing and barrier removal.           | A 90+ day blocker, a major handoff redesign, a service workflow rebuild, a priority delivery chain.                   |
 
-**Data-Driven Officer charter**
+### Data-Driven Officer charter
 
 Each principal agency designates a Data-Driven Officer who reports directly to the agency head and manages the agency’s internal CitiStat process. For clarity, agencies may use the public-facing alias Agency Performance and Data Lead.
 
@@ -203,9 +287,7 @@ Each principal agency designates a Data-Driven Officer who reports directly to t
 | Escalation proposals                  | Identify issues that should move from internal Stat to CitiStat, delivery, the Innovation Lab, or data governance.           |
 | Resident and field signal integration | Help incorporate 311, complaints, surveys, community feedback, inspections, and frontline experience where relevant.         |
 
-**FOLLOW-UP, ESCALATION, AND SUSTAINMENT**
-
-**The work after the meeting**
+## Follow-up, escalation, and sustainment
 
 The value of CitiStat is realized after the session. A commitment is not complete because it was discussed. It is complete when the owner provides evidence, the result is verified, and the change is either closed or embedded into the operating system.
 
@@ -215,12 +297,33 @@ The value of CitiStat is realized after the session. A commitment is not complet
 | Evidence of done      | Each commitment includes the evidence needed for closure: data, document, screenshot, SOP, work order, field verification, or decision record.                                 |
 | Escalation path       | If a blocker is unresolved, the tracker names the next authorizer or routine: agency head, Deputy Mayor, DCA, CA, delivery activation, data governance, or product governance. |
 | Weekly unblock huddle | OPI and sponsor designees review the top blockers and decisions needed between sessions.                                                                                       |
-| Delivery trigger      | Cross-agency, authority-dependent, or 90+ day unresolved issues should be considered for Tiger Team or Cross-Agency Delivery activation.                                       |
+| Delivery trigger      | Cross-agency, authority-dependent, or 90+ day unresolved issues should be considered for tiger team or Cross-Agency Delivery activation.                                       |
 | Sustainment plan      | Major changes should end with a named owner, SOP, training, dashboard/alert, monitoring cadence, and review checkpoint.                                                        |
 
-**TRANSPARENCY AND PUBLICATION POLICY**
+### Weekly status report and stakeholder email
 
-**A tiered approach**
+Between Stats, each analyst issues a weekly status report and stakeholder email so leadership and agency partners have a current, written picture of where every active commitment stands. The cadence is Wednesday so the report informs end-of-week decisions and the start of the next week. The audience includes the CitiStat Director, the OPI Executive Director, the responsible Deputy Mayor or City Administrator's Office designee, the agency head, and the agency Data-Driven Officer; other partners are added as the agenda requires.
+
+Each weekly report covers, at minimum:
+
+- Headline status for the portfolio: what changed since last week, what is at risk, what was closed, and what needs a decision.
+
+- Commitment-level update: each open commitment with owner, due date, evidence standard, and current status.
+
+- Upcoming Stat: agenda direction for the next session, draft priority topics, and any data or attendance issues to resolve.
+
+- Risks, blockers, and asks: where leadership intervention would unblock progress.
+
+Follow-up status uses a four-color convention so the same vocabulary appears in the weekly report, the commitment tracker, and the follow-up memo:
+
+| **Color** | **Meaning**                                                                                                            |
+|-----------|------------------------------------------------------------------------------------------------------------------------|
+| Green     | On track. Commitment is progressing toward the agreed outcome and date with evidence in hand or expected on schedule.  |
+| Yellow    | At risk. Commitment is slipping, evidence is incomplete, or a dependency is unresolved; an unblock or renegotiation is likely needed. |
+| Red       | Off track or blocked. Commitment has missed its date, lost its owner, or hit a barrier that requires escalation.        |
+| White     | Closed. Commitment is complete with verified evidence, or it has been formally retired with a documented rationale.    |
+
+## Transparency and publication policy
 
 CitiStat should default toward transparency while protecting privacy, security, personnel matters, procurement-sensitive details, law-enforcement sensitivity, and other legally protected or sensitive information.
 
@@ -231,128 +334,22 @@ CitiStat should default toward transparency while protecting privacy, security, 
 | Withhold / internal only | Publication would create privacy, safety, personnel, procurement, cyber, legal, or operational risk. | Sensitive public safety details, personnel matters, protected data, procurement strategy, security vulnerabilities.           |
 | Rationale log            | Any material is withheld or summarized instead of published.                                         | Record why, who approved, what can be shared instead, and when the posture should be revisited.                               |
 
-**TEMPLATES AND TOOLS**
+## Templates and quality bar
 
-**Consistency without bureaucracy**
+The recurring artifacts produced for every Stat — the pre-memo, the deck, the follow-up memo, the commitment tracker, and the weekly radar — live with stakeholder agendas, the materials send-out standard, room setup, and the deliverable-type vocabulary on the [CitiStat Templates](citistat-templates.md) page. The QA bar each artifact must meet — code and data QC, visualization standards, pre-memo, session, and follow-up checklists — lives on the [CitiStat Quality Standards](citistat-quality-standards.md) page.
 
-Templates should create consistency without creating bureaucracy. Use them to make the work easier to prepare, easier to review, and easier to sustain.
+Every Stat product has a named lead and a named QCer; the QCer is not the same person who built the work. The lead and the QCer sign off before materials go out.
 
-**Template 1: Pre-Meeting Memo**
+## Closing: make excellence repeatable
 
-| **Section**                  | **Purpose**                                                                                            |
-|------------------------------|--------------------------------------------------------------------------------------------------------|
-| Purpose and decisions needed | Name the objective, decision context, sponsor, and what the session must resolve or advance.           |
-| Agenda and attendees         | List topics, time allocations, required participants, and decision-makers.                             |
-| Prior follow-ups             | Show open, closed, overdue, escalated, and renegotiated commitments from the prior session.            |
-| KPI snapshot                 | Summarize core performance measures, targets, trends, and caveats.                                     |
-| Priority topics              | Frame 2–3 issues with data, root-cause hypotheses, resident/field signals, and questions for the room. |
-| Data quality notes           | Define sources, refresh dates, exclusions, limitations, confidence level, and any changes in method.   |
-| Requested preparation        | List agency data, documents, decisions, or participants needed before the session.                     |
+<div class="opi-pullquote" markdown="0">A CitiStat session should not depend on personality, memory, or heroic follow-up. It should have a clear purpose, reliable-enough data, useful pre-work, disciplined facilitation, explicit commitments, evidence of closure, and a public story of progress where appropriate.</div>
 
-**Template 2: Stat Deck**
+## See also
 
-| **Slide / section**               | **Minimum content**                                                                 |
-|-----------------------------------|-------------------------------------------------------------------------------------|
-| 1\. Purpose and decisions         | What this session is for and what decisions are needed.                             |
-| 2\. Commitments from last session | Status by owner, date, and evidence.                                                |
-| 3\. KPI snapshot                  | Core KPIs, targets, trends, and caveats.                                            |
-| 4\. Resident and field signal     | 311, complaints, surveys, field observations, maps, photos, or frontline insights.  |
-| 5\. Deep dive 1                   | Problem statement, data, root causes, options, decision needed, and proposed owner. |
-| 6\. Deep dive 2                   | Same structure; avoid adding topics that cannot receive meaningful discussion.      |
-| 7\. Commitments and next steps    | Owners, dates, evidence standards, and escalation path.                             |
-
-**Template 3: Follow-Up Memo**
-
-| **Section**        | **Purpose**                                                                                         |
-|--------------------|-----------------------------------------------------------------------------------------------------|
-| Session summary    | Briefly state what was reviewed and what changed as a result of the session.                        |
-| Decisions made     | Record decisions, decision-maker, date, and operational effect.                                     |
-| Commitments        | List action item, owner, due date, definition of done, and evidence standard.                       |
-| Data requests      | List requested data, source owner, due date, and intended use.                                      |
-| Escalations        | Name issues needing executive decision, delivery activation, product discovery, or data governance. |
-| Next session focus | Identify likely topics, carry-forward items, and data needed for the next cycle.                    |
-
-**Template 4: Commitment Tracker**
-
-| **Field**             | **Definition**                                                                            |
-|-----------------------|-------------------------------------------------------------------------------------------|
-| ID                    | Unique commitment identifier.                                                             |
-| Stat / agency / issue | Routine and topic that produced the commitment.                                           |
-| Commitment            | Specific action to be taken; written as a result-oriented task.                           |
-| Owner                 | One accountable person, not a group.                                                      |
-| Due date              | Date agreed in session or immediately after.                                              |
-| Evidence of done      | What must be shown to close the item.                                                     |
-| Status                | Not started, in progress, at risk, overdue, escalated, complete, or closed with evidence. |
-| Notes / blockers      | Current update, blocker, or decision needed.                                              |
-| Escalation path       | Named authorizer or routine if the item cannot move.                                      |
-
-**Template 5: Weekly Radar / Unblock Note**
-
-| **Section**                 | **Question answered**                                             |
-|-----------------------------|-------------------------------------------------------------------|
-| New or emerging issues      | What should leadership know before the next Stat?                 |
-| Top blockers                | What decisions or interventions are needed this week?             |
-| Overdue commitments         | Which commitments missed deadlines and what is the recovery plan? |
-| Completed items             | What was closed with evidence this week?                          |
-| Risks to public commitments | What could affect trust, service continuity, or public reporting? |
-| Looking ahead               | What sessions, decisions, or deadlines are coming next?           |
-
-**QUALITY CHECKLISTS**
-
-**Self-check before, during, and after**
-
-**Pre-memo quality checklist**
-
-- Purpose is clear and written in plain language.
-
-- At least one decision, commitment, or learning objective is explicit.
-
-- Prior commitments are updated with status and evidence.
-
-- KPIs are defined, sourced, and paired with caveats.
-
-- Resident signals, maps, or field validation are included where relevant.
-
-- No budget or policy debate is placed in the room without pre-coordination.
-
-- The right decision-makers, data owners, and central command staff are invited.
-
-- The memo was distributed at least 48 hours before the session.
-
-**Session quality checklist**
-
-- Agency voice came first.
-
-- The session focused on 2–3 priority issues rather than a long list of updates.
-
-- Facilitation balanced candor, urgency, and respect.
-
-- Conversation stayed anchored in data, resident impact, root causes, and options.
-
-- Budget and policy issues were captured and routed instead of consuming the session.
-
-- Every commitment had an owner, date, evidence standard, and escalation path.
-
-- Unresolved issues were explicitly kept on the tracker, escalated, or routed to another routine.
-
-**Follow-up quality checklist**
-
-- Follow-up memo was issued within two business days.
-
-- Tracker entries are specific enough that a new staff member could understand the commitment.
-
-- Evidence of done is named before the commitment is closed.
-
-- Delayed items have a revised plan, not just a revised date.
-
-- Open items are carried into the next pre-memo.
-
-- Major changes are embedded into SOPs, dashboards, alerts, training, or sustainment plans.
-
-- Public summaries are updated where appropriate.
-
-**CLOSING**
-
-**Make excellence repeatable**
-
-> *A CitiStat session should not depend on personality, memory, or heroic follow-up. It should have a clear purpose, reliable-enough data, useful pre-work, disciplined facilitation, explicit commitments, evidence of closure, and a public story of progress where appropriate.*
+- [CitiStat Strategic Framework](citistat-strategic-framework.md) — the public-facing strategic frame this playbook operationalizes.
+- [CitiStat — Staff Quick Reference](citistat-method-staff-quick-reference.md) — the at-a-glance version of this playbook for use during sessions.
+- [CitiStat Templates](citistat-templates.md) — stakeholder agendas, materials send-out standards, room setup, deliverable-type vocabulary, and the Stat artifact templates (pre-memo, deck, follow-up memo, commitment tracker, weekly radar).
+- [CitiStat Quality Standards](citistat-quality-standards.md) — the QA bar for code and data, visualization, pre-memos, sessions, and follow-up.
+- [About Performance and CitiStat](about-performance-management.md) — plain-language overview of the service.
+- [Performance Management Theory of Change](performance-management-theory-of-change.md) — how the service is mandated, governed, staffed, measured, and sustained.
+- [CitiStat Portfolio](citistat-portfolio/index.md) — every active Stat brief.

@@ -1,6 +1,6 @@
 # On OPI Foundations
 
-<span class="opi-pill approved">Approved</span>
+{{ page_badge() }}
 
 > Why we're publishing this body of work, and what it's for.
 
@@ -58,6 +58,6 @@ Mayor’s Office of Performance and Innovation
 
 **About OPI: Operating Frame —** *how the office is organized and how we work.*
 
-**Strategic Priorities OnePager —** *what we are committing to in FY27.*
+**Strategic Priorities OnePager —** *what we are committing to in.*
 
 **Theory of Change Summaries —** *logic models for each service area.*

@@ -1,6 +1,15 @@
-# Innovation Lab Theory of Change
+# Innovation Lab
 
-<span class="opi-pill approved">Approved</span>
+## Innovation Lab operating clarity
+
+The Innovation Lab owns the craft of solving: discovery, service design, user research, product management, prototyping, civic technology, applied AI pilots, and MVP-and-handoff methods. The Lab's question is: **How do we solve this problem in a way that works for residents and staff?**
+
+The Lab is not an ideas shop, a shadow IT team, or a place for unfunded special projects to drift. It starts with a service problem, designs with the people closest to the work, tests practical improvements, and hands off what works with an owner, runbook, and sustainment plan.
+
+The Lab can work on one-agency or multi-agency problems. When implementation requires several agencies to move together with named decision rights and commitments, the Lab partners with Cross-Agency Delivery.
+ Theory of Change
+
+{{ page_badge() }}
 
 > How the Innovation Lab moves from inputs to outcomes.
 **SERVICE THEORY OF CHANGE · 03 OF 05**
@@ -75,7 +84,7 @@ Activities performed by this service include service design, user research, proc
 | Why it matters          | Many service problems are not about more staff or more money — they are about how services are designed, delivered, and felt. The Lab makes services easier to use, easier to manage, and more responsive to resident and staff needs.                  |
 | Who we serve            | Residents who use City services; agency program owners and frontline staff; agency leaders managing service delivery; Mayor and CA on priority service improvements.                                                                                    |
 | Mandate                 | Baltimore City Code Article 1, Subtitle 61 (Innovation Lab and continuous service improvement) and CitiStat-driven improvement work.                                                                                                                    |
-| Portfolio home          | Innovation Lab portfolio. Interim portfolio leadership held by the Executive Director until an Innovation Program Manager is identified.                                                                                                                |
+| Portfolio home          | Innovation Lab portfolio. Dartanion Swift-Williams currently serves as Interim Innovation Program Manager.                                                                                                                                    |
 | What success looks like | Priority service flows show higher task success and lower abandonment; rework, repeat contacts, and backlog drop in services we touch; tools we ship have clear owners, documentation, and sustained support; AI pilots improve operations responsibly. |
 
 *OPI is the canonical service name.*
@@ -94,7 +103,7 @@ Activities performed by this service include service design, user research, proc
 
 - Strategic partnerships — civic-tech, philanthropic, academic, and peer-city collaborations that bring talent, methods, and reusable solutions.
 
-- Operational tooling — performance management portals, the CitiStat Hub, internal coordination tools, and field tools used by agency staff.
+- Operational tooling — performance management portals, internal coordination tools, and field tools used by agency staff.
 
 **Out of scope (we partner or refer)**
 
@@ -126,7 +135,7 @@ We run like a product organization. Every initiative has a single accountable ow
 |--------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Inputs             | Multidisciplinary team (design, research, product, engineering, AI); user access and field time; design system and reusable components; data and APIs from the Data and Analytics service; agency partnerships; partnership and procurement support.          |
 | Activities         | Conduct user research; map journeys and workflows; prototype and test; build and ship MVPs; instrument analytics; pilot AI use cases with human oversight; coach agency teams; document patterns for reuse.                                                   |
-| Outputs            | Service blueprints; tested prototypes; shipped MVPs; operational tools (CitiStat Hub, Performance Tracker, data collection apps, field inspection tools, service workflow apps); AI pilots with evaluation memos; reusable design and engineering components. |
+| Outputs            | Service blueprints; tested prototypes; shipped MVPs; operational tools (Performance Tracker, data collection apps, field inspection tools, service workflow apps); AI pilots with evaluation memos; reusable design and engineering components. |
 | Outcomes (0–6 mo)  | Higher task success on touched flows; visible reductions in abandonment, rework, or repeat contacts; first products in production with documented support; agency adoption begins.                                                                            |
 | Outcomes (6–18 mo) | Multiple products in steady use with sustained adoption; reusable patterns reduce time-to-ship for new tools; AI pilots either scale with evidence or sunset cleanly; agencies request the Lab earlier in their planning cycles.                              |
 | Impact (2+ yr)     | Baltimore residents and staff experience services that are easier to use and easier to manage. The Lab is a trusted partner agencies turn to early. Improvements stick because every product ships with an owner and a sustain plan.                          |
@@ -135,7 +144,7 @@ We run like a product organization. Every initiative has a single accountable ow
 
 | **Role**                              | **Responsibility**                                                                                                             |
 |---------------------------------------|--------------------------------------------------------------------------------------------------------------------------------|
-| Innovation Program Manager (Lab Lead) | Owns the Innovation Lab portfolio, intake prioritization, release cadence, and product quality. (Interim: Executive Director.) |
+| Interim Innovation Program Manager | Owns the Innovation Lab portfolio, intake prioritization, release cadence, and product quality. Dartanion Swift-Williams currently serves in this interim capacity. |
 | Product Owner (per initiative)        | Single accountable owner for outcomes, scope, and release decisions. Holds the OKRs.                                           |
 | Sponsor / Authorizer                  | Agency director or DM/DCA who confirms priority, resolves barriers, and approves go/no-go decisions.                           |
 | Engineering Lead                      | Owns build quality, accessibility, performance, security, and production readiness in partnership with BCIT.                   |
@@ -191,3 +200,9 @@ We run like a product organization. Every initiative has a single accountable ow
 - Sustainment plan (owner, support, budget, refresh cadence, sunset criteria).
 
 - AI evaluation memo (use case, data, model, oversight, evaluation, sunset criteria).
+
+## Relationship to Cross-Agency Delivery and Tiger Teams
+
+The Innovation Lab owns the craft of solving: discovery, service design, user research, product management, prototyping, civic technology, applied AI pilots, and MVP-and-handoff. Cross-Agency Delivery owns the coordination overlay when multiple agencies must ship together: Authorizer, Senior Responsible Owner, decision rights, escalation, commitment tracking, and sustainment commitments.
+
+A Tiger Team is one way the Lab applies its craft. If the service problem requires cross-agency authority, the Tiger Team is chartered through Cross-Agency Delivery. If the authority sits cleanly within one agency, the Tiger Team can be chartered through Innovation Lab intake under the agency director.

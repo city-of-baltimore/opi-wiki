@@ -1,6 +1,6 @@
 # Website Information Architecture
 
-<span class="opi-pill approved">Approved</span>
+{{ page_badge() }}
 
 > Information architecture for the public OPI website.
 

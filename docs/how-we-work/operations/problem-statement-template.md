@@ -1,6 +1,6 @@
 # Problem Statement Template
 
-<span class="opi-pill internal">Template</span>
+{{ page_badge() }}
 
 > A structured way to frame a problem before scoping a solution.
 
@@ -123,4 +123,4 @@ Use this structure as your starting point. Once it works, edit for clarity.
 
 **■ Owner**
 
-Owned by the Director’s Office with input from DCPO. Reviewed annually.
+Owned by the Director’s Office with input from the Deputy Chief Performance Officer. Reviewed annually.

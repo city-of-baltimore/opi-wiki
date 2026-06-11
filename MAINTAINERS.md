@@ -6,7 +6,7 @@ This document is for the OPI Foundations docs maintainer. It describes the role,
 
 **Title:** OPI Foundations Docs Maintainer
 **Effort:** 0.4–0.6 FTE (16–24 hours/week)
-**Reports to:** Executive Director and CDO, OPI
+**Reports to:** Executive Director
 
 **Primary responsibilities:**
 
@@ -59,7 +59,7 @@ When in doubt, model the voice on the [Letters from the Director](docs/about-us/
 - Letters from the Director
 - Position Descriptions Index (titles + summaries)
 
-**Baltimore City intranet (SharePoint):**
+**City of Baltimore intranet (SharePoint):**
 
 - Onboarding checklists (with PII)
 - Full Position Descriptions (with compensation)
@@ -85,12 +85,47 @@ Navigation is local to each section. Keep `mkdocs.yml` focused on site-wide
 runtime settings, and update the nearest `docs/**/.pages` file whenever a page
 is added, removed, renamed, or moved.
 
+For recurring operational source material, keep durable memo-style guidance in
+`docs/how-we-work/administrative-memos/` and short step-based procedures in
+`docs/how-we-work/how-to/`, then expose those collections intentionally in the
+`How We Work` navigation rather than burying them in unrelated sections.
+
 ## Landing-page cards
 
 Card grids on section landing pages are shared UI, not one-off HTML snippets.
 Keep the card content in the nearest `*.cards.yml` file and render it through
 the shared `card_grid_from(...)` macro so markup, link affordances, and
 accessibility behavior stay consistent across sections.
+
+Keep shared CSS split by responsibility too: design tokens, Material chrome
+overrides, reusable components, and page-specific presentation should live in
+separate files under `docs/assets/stylesheets/` so one-off tweaks do not drift
+into the global theme surface.
+
+## Page badges
+
+Visible status/type pills are shared UI too. Store badge intent in the nearest
+`.metadata.yml` file with `display_badge` values such as `approved`, `draft`,
+`template`, `reference`, or `position-description`, and render them with the
+shared `page_badge()` or `badge(...)` macros instead of inline HTML spans.
+
+## Structured page data
+
+When one page needs to repeat the same source-of-truth data across charts,
+tables, and roster text, keep that content in a neighboring `*.data.yml` file
+and render it through a shared macro. The org structure page is the current
+example: update `org-structure.data.yml`, not multiple Mermaid blocks and staff
+lists by hand.
+
+## Page data model
+
+Use each data shape intentionally:
+
+- `.metadata.yml` for inherited page metadata, review fields, and optional `display_badge` state.
+- `*.cards.yml` for shared landing-page card content rendered through `card_grid_from(...)`.
+- `*.data.yml` for page-local structured source data that needs to render into more than one repeated section.
+
+Do not invent new adjacent file conventions casually. If a page needs a new shared data pattern, document it in this manual and `README.md` in the same change.
 
 ## Build platform posture
 
@@ -116,6 +151,16 @@ Every quarter, run `./scripts/verify.sh` (which includes `mkdocs build --strict`
 3. Pages with low traffic that may not be needed.
 
 Email the relevant section owner with a one-line ask: "Is this still accurate? Any updates?"
+
+The shell entrypoint now delegates to a structured Python verification runner,
+so maintainers get per-step timing and failure summaries without having to
+change their local workflow. If you need a machine-readable report for CI or
+triage, run `./scripts/verify.sh --json-output /path/to/report.json`.
+
+For UI regressions that static checks will miss, maintainers can opt into a
+browser smoke pass with `./scripts/verify.sh --include-browser-smoke`. That
+pass expects a one-time local browser install via
+`poetry run playwright install chromium`.
 
 ## Bus factor mitigation
 
@@ -147,3 +192,13 @@ Week 1: shadow the previous maintainer through one full intake cycle (issue → 
 Week 2: handle the next intake cycle solo, with the previous maintainer reviewing PRs.
 
 Week 3+: independent.
+
+## Method and playbook maintenance check
+
+When reviewing method pages, confirm that each method has a clear source of truth and does not drift across the wiki. In particular:
+
+- Tiger Team language should defer to the Tiger Teams Playbook.
+- CitiStat language should defer to the CitiStat Method Playbook and portfolio register.
+- Innovation Lab language should defer to the Innovation Lab Strategy and Theory of Change.
+- Cross-Agency Delivery language should defer to the Cross-Agency Delivery overview and Theory of Change.
+- Templates should require portfolio, service, routine type, owner, decision needed, and sustainment path.

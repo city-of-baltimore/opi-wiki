@@ -1,6 +1,6 @@
 # Innovation Lab Strategy
 
-<span class="opi-pill approved">Approved</span>
+{{ page_badge() }}
 
 > What the Innovation Lab is for, and how it operates.
 **STRATEGY**
@@ -11,7 +11,7 @@
 
 Strategy Document
 
-*Read alongside: OPI About — Innovation Lab; OPI Service Theory of Change — Innovation Lab; OPI Digital Product Methodology FY27..*
+*Read alongside: OPI About — Innovation Lab; OPI Service Theory of Change — Innovation Lab; OPI Digital Product Methodology*
 
 *This document makes the strategic argument for the Lab. The About doc tells the human story. The ToC shows the operating backbone. The Digital Product Methodology specifies how products are designed and shipped.*
 
@@ -23,7 +23,7 @@ The Innovation Lab is OPI’s citywide service improvement capability. It exists
 
 Innovation in city government has too often meant novelty, technology for its own sake, or special projects that drift without owners. Baltimore needs a different standard. Innovation should be structured problem-solving in service of delivery: discovery, design, prototyping, piloting, sustainment, and learning.
 
-This strategy defines the Lab’s purpose, posture, methods, governance, and FY27 priorities. It is anchored in four commitments: start with the service, not the screen; design with users, not for them; build only when build is the right answer; and treat sustainment as the test of success.
+This strategy defines the Lab’s purpose, posture, methods, governance, and priorities. It is anchored in four commitments: start with the service, not the screen; design with users, not for them; build only when build is the right answer; and treat sustainment as the test of success.
 
 **THE CASE FOR CHANGE**
 
@@ -36,6 +36,15 @@ These are design problems, data problems, workflow problems, and ownership probl
 > *Performance tells us where the system is falling short. Data helps us understand why. The Innovation Lab designs and tests practical solutions. Cross-Agency Delivery helps implementation stick.*
 
 **NORTH STAR**
+
+## Innovation Lab operating clarity
+
+The Innovation Lab owns the craft of solving: discovery, service design, user research, product management, prototyping, civic technology, applied AI pilots, and MVP-and-handoff methods. The Lab's question is: **How do we solve this problem in a way that works for residents and staff?**
+
+The Lab is not an ideas shop, a shadow IT team, or a place for unfunded special projects to drift. It starts with a service problem, designs with the people closest to the work, tests practical improvements, and hands off what works with an owner, runbook, and sustainment plan.
+
+The Lab can work on one-agency or multi-agency problems. When implementation requires several agencies to move together with named decision rights and commitments, the Lab partners with Cross-Agency Delivery.
+
 
 **Practical innovation in service of delivery**
 
@@ -134,7 +143,7 @@ Every Lab engagement should have a clear admission test: a real problem, named u
 | **Engagement**           | **Use when**                                                                                  | **Typical output**                                                      |
 |--------------------------|-----------------------------------------------------------------------------------------------|-------------------------------------------------------------------------|
 | Service design sprint    | A service problem needs structured diagnosis with frontline staff and residents.              | Service blueprint, journey map, root causes, options memo.              |
-| Tiger Team               | A 90+ day cross-agency problem with named authorizer needs sequencing and barrier removal.    | Process map, pilot design, SOP changes, sustainment plan.               |
+| Tiger Team               | A persistent service problem needs a time-boxed, cross-functional sprint with a named Authorizer. Tiger Teams use the Public Innovation Toolkit and are chartered through Cross-Agency Delivery when the work needs cross-agency coordination authority; otherwise through Lab intake under the agency director. | Process map, pilot design, SOP changes, sustainment plan. |
 | Product build            | Discovery shows a digital product is the right intervention and there is a sustainment owner. | Prototype, production code, runbook, support model, review cadence.     |
 | AI pilot                 | A use case meets responsible AI criteria and improves a real decision or service.             | Use case brief, evaluation memo, human oversight plan, sunset criteria. |
 | Civic design partnership | A university, civic tech, or philanthropic partner can expand capacity or insight.            | Partnership scope, deliverables, public-facing summary, hand-back plan. |
@@ -153,7 +162,7 @@ Data & Analytics provides shared datasets, methodology cards, KPIs, and AI/data 
 
 **With Cross-Agency Delivery**
 
-When a Lab engagement requires sustained sequencing across multiple agencies, Cross-Agency Delivery activates and runs implementation while the Lab continues to support design, evaluation, and product changes.
+Cross-Agency Delivery is the service overlay. The Innovation Lab owns the craft of solving; Cross-Agency Delivery owns the coordination authority when multiple agencies must ship together. The Lab is the capability — the craft team that asks *how do we solve this?* Cross-Agency Delivery owns coordination authority across agencies and asks *how do we get multiple agencies to actually ship this together?* When a Tiger Team’s work needs that overlay, the Lab provides the team and the method (the Public Innovation Toolkit), and Cross-Agency Delivery provides the standing delivery review, the named Authorizer at the Deputy Mayor or City Administrator level, and the closure plan with sustainment commitments from each agency.
 
 **With AdminOps**
 
@@ -193,6 +202,10 @@ Every Lab AI pilot follows the City’s responsible AI review process: problem f
 
 - Learning: documented after-action reviews and decisions to scale, redesign, pause, or stop.
 
+## Tiger Team usage standard
+
+Tiger Teams are one of the Innovation Lab's methods, not a synonym for all innovation work. The Lab provides the craft: discovery, service design, prototyping, product thinking, and learning in real conditions. When the work requires multiple agencies to move together with named authority, Cross-Agency Delivery provides the coordination overlay.
+
 **FY27 PRIORITIES**
 
 **What the Lab will do this year**
@@ -215,7 +228,7 @@ Run a small number of governed AI pilots that improve real decisions or services
 
 **5. Tiger Team activations.**
 
-Activate Tiger Teams for two priority cross-agency problems, with named authorizers, weekly sequencing, and sustainment plans.
+Run two to three Tiger Teams in FY27 — at least one chartered through Cross-Agency Delivery, which carries the cross-agency coordination authority needed when multiple agencies have to ship the fix together. Each team has a named Authorizer, a Senior Responsible Owner, weekly delivery routines, and a sustainment plan.
 
 **6. Civic partnerships.**
 

@@ -1,11 +1,11 @@
 site_name: OPI Foundations
 site_description: How the Mayor's Office of Performance and Innovation works — the public reference for OPI's operating model, methodology, and strategy.
 site_url: https://opi.baltimorecity.gov/
-site_author: Mayor's Office of Performance and Innovation, Baltimore City
-copyright: © Mayor's Office of Performance and Innovation, Baltimore City
+site_author: Mayor's Office of Performance and Innovation, City of Baltimore
+copyright: © Mayor's Office of Performance and Innovation, City of Baltimore
 
-repo_name: baltimorecity/opi-foundations
-repo_url: https://github.com/baltimorecity/opi-foundations
+repo_name: balt-opi/opi-wiki
+repo_url: https://github.com/balt-opi/opi-wiki
 edit_uri: edit/main/docs/
 docs_dir: docs
 strict: true
@@ -20,8 +20,8 @@ theme:
   font:
     text: Calibri
     code: Roboto Mono
-  logo: assets/images/baltimore-seal.jpg
-  favicon: assets/images/baltimore-seal.jpg
+  logo: assets/images/baltimore-seal.png
+  favicon: assets/images/favicon.ico
   icon:
     repo: fontawesome/brands/github
     edit: material/pencil
@@ -64,13 +64,17 @@ theme:
     - announce.dismiss
 
 extra_css:
-  - assets/stylesheets/opi.css
+  - assets/stylesheets/tokens.css
+  - assets/stylesheets/base.css
+  - assets/stylesheets/material-chrome.css
+  - assets/stylesheets/components.css
+  - assets/stylesheets/home.css
 
 extra:
   generator: false
   social:
     - icon: fontawesome/brands/github
-      link: https://github.com/baltimorecity/opi-foundations
+      link: https://github.com/balt-opi/opi-wiki
       name: OPI Foundations on GitHub
   status:
     new: Recently added
@@ -117,21 +121,21 @@ plugins:
       redirect_maps:
         our-teams/directors-office/pd-chief-of-staff.md: resources/reference/position-descriptions/directors-office/pd-chief-of-staff.md
         our-teams/directors-office/pd-citistat-inspector.md: resources/reference/position-descriptions/directors-office/pd-citistat-inspector.md
-        our-teams/directors-office/pd-civic-design-and-ux-lead.md: resources/reference/position-descriptions/directors-office/pd-civic-design-and-ux-lead.md
-        our-teams/directors-office/pd-civic-technology-lead.md: resources/reference/position-descriptions/directors-office/pd-civic-technology-lead.md
+        our-teams/directors-office/pd-civic-design-and-ux-lead.md: resources/reference/position-descriptions/innovation-lab/pd-civic-designer.md
+        our-teams/directors-office/pd-civic-technology-lead.md: resources/reference/position-descriptions/innovation-lab/pd-civic-technology-lead.md
         our-teams/directors-office/pd-communications-and-partnerships-lead.md: resources/reference/position-descriptions/directors-office/pd-communications-and-partnerships-lead.md
         our-teams/directors-office/pd-executive-director-and-cdo.md: resources/reference/position-descriptions/directors-office/pd-executive-director-and-cdo.md
-        our-teams/directors-office/pd-innovation-program-manager.md: resources/reference/position-descriptions/directors-office/pd-innovation-program-manager.md
-        our-teams/directors-office/pd-product-engineer-full-stack.md: resources/reference/position-descriptions/directors-office/pd-product-engineer-full-stack.md
+        our-teams/directors-office/pd-innovation-program-manager.md: resources/reference/position-descriptions/innovation-lab/pd-innovation-program-manager.md
+        our-teams/directors-office/pd-product-engineer-full-stack.md: resources/reference/position-descriptions/innovation-lab/pd-product-engineer-full-stack.md
         our-teams/directors-office/pd-project-manager.md: resources/reference/position-descriptions/directors-office/pd-project-manager.md
-        our-teams/directors-office/pd-senior-product-engineer.md: resources/reference/position-descriptions/directors-office/pd-senior-product-engineer.md
+        our-teams/directors-office/pd-senior-product-engineer.md: resources/reference/position-descriptions/innovation-lab/pd-senior-product-engineer.md
         our-teams/directors-office/pd-special-assistant-to-the-executive-director.md: resources/reference/position-descriptions/directors-office/pd-special-assistant-to-the-executive-director.md
         our-teams/performance-and-citistat/pd-citistat-analyst.md: resources/reference/position-descriptions/performance-and-citistat/pd-citistat-analyst.md
         our-teams/performance-and-citistat/pd-citistat-program-manager.md: resources/reference/position-descriptions/performance-and-citistat/pd-citistat-program-manager.md
         our-teams/performance-and-citistat/pd-deputy-chief-performance-officer.md: resources/reference/position-descriptions/performance-and-citistat/pd-deputy-chief-performance-officer.md
         our-teams/performance-and-citistat/pd-senior-performance-analyst.md: resources/reference/position-descriptions/performance-and-citistat/pd-senior-performance-analyst.md
         our-teams/data-and-analytics/pd-analytics-lead.md: resources/reference/position-descriptions/data-and-analytics/pd-analytics-lead.md
-        our-teams/data-and-analytics/pd-applied-data-scientist.md: resources/reference/position-descriptions/data-and-analytics/pd-applied-data-scientist.md
+        our-teams/data-and-analytics/pd-applied-data-scientist.md: resources/reference/position-descriptions/innovation-lab/pd-civic-designer.md
         our-teams/data-and-analytics/pd-deputy-chief-data-officer.md: resources/reference/position-descriptions/data-and-analytics/pd-deputy-chief-data-officer.md
         our-teams/data-and-analytics/pd-principal-data-engineer.md: resources/reference/position-descriptions/data-and-analytics/pd-principal-data-engineer.md
         our-teams/data-and-analytics/pd-principal-platform-engineer.md: resources/reference/position-descriptions/data-and-analytics/pd-principal-platform-engineer.md
@@ -143,7 +147,18 @@ plugins:
         resources/grants-and-funding/division-narratives.md: resources/index.md
         resources/reference/glossary-additions-april-2026.md: resources/reference/glossary.md
         resources/reference/fy27-eoy-report-refresh.md: resources/reference/index.md
+        resources/reference/position-descriptions/directors-office/pd-civic-design-and-ux-lead.md: resources/reference/position-descriptions/innovation-lab/pd-civic-designer.md
+        resources/reference/position-descriptions/data-and-analytics/pd-applied-data-scientist.md: resources/reference/position-descriptions/innovation-lab/pd-civic-designer.md
+        resources/reference/position-descriptions/innovation-lab/pd-civic-design-and-ux-lead.md: resources/reference/position-descriptions/innovation-lab/pd-civic-designer.md
+        resources/reference/position-descriptions/directors-office/pd-civic-technology-lead.md: resources/reference/position-descriptions/innovation-lab/pd-civic-technology-lead.md
+        resources/reference/position-descriptions/innovation-lab/pd-communications-and-partnerships-lead.md: resources/reference/position-descriptions/directors-office/pd-communications-and-partnerships-lead.md
+        resources/reference/position-descriptions/directors-office/pd-innovation-program-manager.md: resources/reference/position-descriptions/innovation-lab/pd-innovation-program-manager.md
+        resources/reference/position-descriptions/directors-office/pd-product-engineer-full-stack.md: resources/reference/position-descriptions/innovation-lab/pd-product-engineer-full-stack.md
+        resources/reference/position-descriptions/directors-office/pd-senior-product-engineer.md: resources/reference/position-descriptions/innovation-lab/pd-senior-product-engineer.md
         resources/reference/position-descriptions-index.md: resources/reference/position-descriptions/index.md
+        our-teams/performance-and-citistat/cross-agency-delivery/index.md: our-teams/cross-agency-delivery/index.md
+        our-teams/performance-and-citistat/cross-agency-delivery/about-cross-agency-delivery.md: our-teams/cross-agency-delivery/about-cross-agency-delivery.md
+        our-teams/performance-and-citistat/cross-agency-delivery/cross-agency-delivery-theory-of-change.md: our-teams/cross-agency-delivery/cross-agency-delivery-theory-of-change.md
         public/council-public-narrative-template.md: public/index.md
   - macros
   - search:
