@@ -1,0 +1,19 @@
+/* Baltimore civic typography — parity with the balt-design-kit app family.
+   Headings: proxima-nova (the City's licensed Adobe Fonts kit, the only
+   distribution channel for that face). Body: Nunito Sans (loaded by Material
+   from Google Fonts via theme.font.text). @import rules must precede all other
+   rules in the file. Heading/body font families are applied from CSS variables
+   in base.css and components.css; the header lockup is styled here because it
+   lives outside .md-typeset. */
+@import url("https://use.typekit.net/ldk1cya.css");
+
+.md-header__wordmark,
+.md-header__product {
+  font-family: var(--opi-font-heading);
+  letter-spacing: 0;
+}
+
+/* Civic body rhythm. */
+.md-typeset {
+  line-height: 1.65;
+}

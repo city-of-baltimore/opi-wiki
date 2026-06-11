@@ -11,6 +11,57 @@
   letter-spacing: 0.02em;
 }
 
+/* Civic header lockup: City of Baltimore logo + wordmark + divider + product. */
+.md-header__button.md-logo {
+  padding: 0.2rem 0.4rem;
+}
+
+.md-header__button.md-logo img,
+.md-header__button.md-logo svg {
+  height: 2.3rem;
+  width: auto;
+}
+
+.md-header__lockup {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  min-width: 0;
+}
+
+.md-header__wordmark {
+  font-weight: 800;
+  font-size: 1.1rem;
+  line-height: 1.05;
+  color: #ffffff;
+  white-space: nowrap;
+}
+
+.md-header__divider {
+  flex-shrink: 0;
+  align-self: stretch;
+  width: 1px;
+  min-height: 1.6rem;
+  background-color: rgba(255, 255, 255, 0.36);
+}
+
+.md-header__product {
+  min-width: 0;
+  overflow: hidden;
+  font-weight: 700;
+  font-size: 1.05rem;
+  color: var(--opi-gold);
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+@media (max-width: 480px) {
+  .md-header__wordmark,
+  .md-header__divider {
+    display: none;
+  }
+}
+
 .md-tabs {
   background-color: var(--opi-chrome-bg);
 }

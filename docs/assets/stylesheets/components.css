@@ -218,7 +218,7 @@
 }
 
 .opi-tenet__num {
-  font-family: "Calibri", "Segoe UI", system-ui, sans-serif;
+  font-family: var(--opi-font-body);
   font-size: 0.78rem;
   font-weight: 700;
   letter-spacing: 0.08em;
@@ -231,7 +231,7 @@
 }
 
 .opi-tenet__name {
-  font-family: "Calibri", "Segoe UI", system-ui, sans-serif;
+  font-family: var(--opi-font-body);
   font-size: 1rem;
   font-weight: 700;
   color: var(--opi-heading);
@@ -239,7 +239,7 @@
 }
 
 .opi-tenet__meaning {
-  font-family: "Calibri", "Segoe UI", system-ui, sans-serif;
+  font-family: var(--opi-font-body);
   font-size: 0.92rem;
   color: var(--opi-text);
   line-height: 1.5;
@@ -250,7 +250,7 @@
   border-left: 3px solid var(--opi-gold);
   padding: 0.5rem 1.1rem;
   margin: 1.5rem 0;
-  font-family: "Calibri", "Segoe UI", system-ui, sans-serif;
+  font-family: var(--opi-font-body);
   font-size: 1.15rem;
   font-weight: 600;
   font-style: italic;
@@ -265,7 +265,7 @@
   border-bottom: 1px solid var(--opi-border);
   padding: 0.7rem 0;
   margin: 1.25rem 0;
-  font-family: "Calibri", "Segoe UI", system-ui, sans-serif;
+  font-family: var(--opi-font-body);
   font-size: 0.88rem;
   color: var(--opi-text-muted);
   line-height: 1.5;
@@ -311,7 +311,7 @@
 }
 
 .opi-portfolio-card__name {
-  font-family: "Calibri", "Segoe UI", system-ui, sans-serif;
+  font-family: var(--opi-font-body);
   font-size: 1rem;
   font-weight: 700;
   color: var(--opi-heading);
@@ -319,7 +319,7 @@
 }
 
 .opi-portfolio-card__type {
-  font-family: "Calibri", "Segoe UI", system-ui, sans-serif;
+  font-family: var(--opi-font-body);
   font-size: 0.7rem;
   font-weight: 700;
   letter-spacing: 0.06em;
@@ -333,14 +333,14 @@
 }
 
 .opi-portfolio-card__cluster {
-  font-family: "Calibri", "Segoe UI", system-ui, sans-serif;
+  font-family: var(--opi-font-body);
   font-size: 0.78rem;
   color: var(--opi-text-muted);
   font-weight: 600;
 }
 
 .opi-portfolio-card__focus {
-  font-family: "Calibri", "Segoe UI", system-ui, sans-serif;
+  font-family: var(--opi-font-body);
   font-size: 0.88rem;
   color: var(--opi-text);
   line-height: 1.45;
@@ -366,7 +366,7 @@
 
 .opi-shift-card__from,
 .opi-shift-card__to {
-  font-family: "Calibri", "Segoe UI", system-ui, sans-serif;
+  font-family: var(--opi-font-body);
   font-size: 0.92rem;
   line-height: 1.4;
 }
@@ -428,7 +428,7 @@
 }
 
 .opi-compare-card__label {
-  font-family: "Calibri", "Segoe UI", system-ui, sans-serif;
+  font-family: var(--opi-font-body);
   font-size: 0.7rem;
   font-weight: 700;
   letter-spacing: 0.08em;
@@ -448,7 +448,7 @@
 }
 
 .opi-compare-card__text {
-  font-family: "Calibri", "Segoe UI", system-ui, sans-serif;
+  font-family: var(--opi-font-body);
   font-size: 0.92rem;
   line-height: 1.4;
 }

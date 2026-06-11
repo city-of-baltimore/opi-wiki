@@ -2,7 +2,7 @@
 
 body,
 .md-typeset {
-  font-family: "Calibri", "Segoe UI", system-ui, -apple-system, sans-serif;
+  font-family: var(--opi-font-body);
   font-feature-settings: "kern", "liga";
   color: var(--opi-text);
 }
@@ -13,10 +13,14 @@ body,
 .md-typeset h4,
 .md-typeset h5,
 .md-typeset h6 {
-  font-family: "Calibri", "Segoe UI", system-ui, sans-serif;
-  font-weight: 600;
-  letter-spacing: -0.01em;
+  font-family: var(--opi-font-heading);
+  font-weight: 700;
+  letter-spacing: 0;
   color: var(--opi-heading);
+}
+
+.md-typeset h1 {
+  font-weight: 800;
 }
 
 .md-typeset h1 {

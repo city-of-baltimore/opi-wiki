@@ -1,78 +1,99 @@
-/* Shared OPI design tokens and Material theme bridges. */
+/* Shared OPI design tokens and Material theme bridges.
+   Palette is parity with the Baltimore civic app family (balt-design-kit):
+   deep purple brand (#2f1c3d / header #190e21), gold accent (#fabe21), and a
+   supporting teal (#88c7d5). Token NAMES are kept stable (--opi-*) so the rest
+   of the stylesheets carry over; only their values changed. */
 
 :root {
-  --opi-gold: #D6A21A;
-  --opi-gold-deep: #9B7517;
-  --opi-gold-soft: #F2EAD3;
-  --opi-near-black: #1A1A1A;
-  --opi-text: #2A2A2A;
-  --opi-text-muted: #6B6B6B;
-  --opi-border: #D8D8D8;
-  --opi-bg: #FFFFFF;
-  --opi-bg-soft: #FAFAF7;
-  --opi-card-bg: #FFFFFF;
-  --opi-heading: #1A1A1A;
-  --opi-chrome-bg: var(--opi-near-black);
-  --opi-chrome-border: var(--opi-gold);
-  --opi-link-color: var(--opi-gold-deep);
-  --opi-link-hover: var(--opi-gold);
-  --opi-nav-accent: var(--opi-gold-deep);
-  --opi-nav-accent-bg: rgba(155, 117, 23, 0.1);
-  --opi-card-focus-outline: var(--opi-gold-deep);
+  /* Civic typography (parity with balt-design-kit). */
+  --opi-font-body: "Nunito Sans", "Segoe UI", system-ui, -apple-system, sans-serif;
+  --opi-font-heading: "proxima-nova", "Nunito Sans", "Segoe UI", system-ui, sans-serif;
+
+  /* Civic source palette (light). */
+  --civic-purple: #2f1c3d;
+  --civic-purple-deep: #190e21;
+  --civic-gold: #fabe21;
+  --civic-teal: #88c7d5;
+
+  --opi-gold: var(--civic-gold);
+  --opi-gold-deep: #946f10;        /* accessible deep gold for small label text */
+  --opi-gold-soft: #fff4cc;
+  --opi-near-black: var(--civic-purple-deep);
+  --opi-text: #161616;
+  --opi-text-muted: #526270;
+  --opi-border: #d8e2e8;
+  --opi-bg: #ffffff;
+  --opi-bg-soft: #f7fbfc;
+  --opi-card-bg: #ffffff;
+  --opi-heading: var(--civic-purple);
+  --opi-chrome-bg: var(--civic-purple-deep);
+  --opi-chrome-border: var(--civic-gold);
+  --opi-link-color: #5f4d86;       /* accessible civic purple link */
+  --opi-link-hover: var(--civic-purple);
+  --opi-nav-accent: #5f4d86;
+  --opi-nav-accent-bg: rgba(95, 77, 134, 0.1);
+  --opi-card-focus-outline: var(--civic-gold);
 }
 
 [data-md-color-scheme="slate"] {
-  --opi-gold: #E8B635;
-  --opi-gold-deep: #D6A21A;
-  --opi-gold-soft: #3A2F12;
-  --opi-near-black: #0E0E10;
-  --opi-text: #DCDCDA;
-  --opi-text-muted: #9A9A98;
-  --opi-border: #3A3A3D;
-  --opi-bg: #14141A;
-  --opi-bg-soft: #1B1B22;
-  --opi-card-bg: #1B1B22;
-  --opi-heading: #F5F5F2;
-  --opi-link-color: var(--opi-gold);
-  --opi-link-hover: var(--opi-gold);
-  --opi-nav-accent: var(--opi-gold);
-  --opi-nav-accent-bg: rgba(232, 182, 53, 0.12);
-  --opi-card-focus-outline: var(--opi-gold);
+  --civic-purple: #d6c4ff;
+  --civic-purple-deep: #0f0c14;
+  --civic-gold: #f4c54b;
+  --civic-teal: #6faebd;
+
+  --opi-gold: var(--civic-gold);
+  --opi-gold-deep: var(--civic-gold);
+  --opi-gold-soft: #2a2438;
+  --opi-near-black: var(--civic-purple-deep);
+  --opi-text: #f4f7fb;
+  --opi-text-muted: #b5c0d1;
+  --opi-border: #2e384d;
+  --opi-bg: #0e1320;
+  --opi-bg-soft: #171d2a;
+  --opi-card-bg: #171d2a;
+  --opi-heading: #f4f7fb;
+  --opi-chrome-bg: var(--civic-purple-deep);
+  --opi-chrome-border: var(--civic-gold);
+  --opi-link-color: #d6c4ff;
+  --opi-link-hover: var(--civic-gold);
+  --opi-nav-accent: #d6c4ff;
+  --opi-nav-accent-bg: rgba(214, 196, 255, 0.12);
+  --opi-card-focus-outline: var(--civic-gold);
 }
 
 [data-md-color-scheme="default"][data-md-color-primary="custom"] {
-  --md-primary-fg-color: var(--opi-near-black);
-  --md-primary-fg-color--light: #2A2A2A;
-  --md-primary-fg-color--dark: #000000;
-  --md-primary-bg-color: #FFFFFF;
-  --md-primary-bg-color--light: #FFFFFF;
+  --md-primary-fg-color: var(--civic-purple-deep);
+  --md-primary-fg-color--light: #2f1c3d;
+  --md-primary-fg-color--dark: #140d1b;
+  --md-primary-bg-color: #ffffff;
+  --md-primary-bg-color--light: #ffffff;
   --md-typeset-a-color: var(--opi-link-color);
 }
 
 [data-md-color-scheme="default"][data-md-color-accent="custom"] {
-  --md-accent-fg-color: var(--opi-gold-deep);
-  --md-accent-fg-color--transparent: rgba(155, 117, 23, 0.1);
-  --md-accent-bg-color: #FFFFFF;
-  --md-accent-bg-color--light: #FFFFFF;
+  --md-accent-fg-color: var(--opi-link-hover);
+  --md-accent-fg-color--transparent: rgba(95, 77, 134, 0.1);
+  --md-accent-bg-color: #ffffff;
+  --md-accent-bg-color--light: #ffffff;
 }
 
 [data-md-color-scheme="slate"][data-md-color-primary="custom"] {
-  --md-primary-fg-color: #0E0E10;
-  --md-primary-fg-color--light: #1A1A1F;
+  --md-primary-fg-color: #0f0c14;
+  --md-primary-fg-color--light: #1a1320;
   --md-primary-fg-color--dark: #000000;
-  --md-primary-bg-color: #F5F5F2;
-  --md-primary-bg-color--light: #F5F5F2;
+  --md-primary-bg-color: #f4f7fb;
+  --md-primary-bg-color--light: #f4f7fb;
   --md-typeset-a-color: var(--opi-link-color);
-  --md-default-bg-color: #14141A;
-  --md-default-fg-color: #DCDCDA;
-  --md-default-fg-color--light: #B8B8B6;
-  --md-default-fg-color--lighter: #797977;
-  --md-typeset-color: #DCDCDA;
+  --md-default-bg-color: #0e1320;
+  --md-default-fg-color: #f4f7fb;
+  --md-default-fg-color--light: #b5c0d1;
+  --md-default-fg-color--lighter: #7d8aa0;
+  --md-typeset-color: #f4f7fb;
 }
 
 [data-md-color-scheme="slate"][data-md-color-accent="custom"] {
-  --md-accent-fg-color: var(--opi-gold);
-  --md-accent-fg-color--transparent: rgba(232, 182, 53, 0.12);
-  --md-accent-bg-color: #14141A;
-  --md-accent-bg-color--light: #1B1B22;
+  --md-accent-fg-color: var(--civic-gold);
+  --md-accent-fg-color--transparent: rgba(244, 197, 75, 0.12);
+  --md-accent-bg-color: #0e1320;
+  --md-accent-bg-color--light: #171d2a;
 }
