@@ -2,8 +2,14 @@
 
 .md-header {
   background-color: var(--opi-chrome-bg);
-  border-bottom: 3px solid var(--opi-chrome-border);
-  box-shadow: none;
+  border-bottom: 4px solid var(--opi-chrome-border);
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.16);
+}
+
+/* Taller bar to match the civic app lockup proportions (~62px inner). */
+.md-header__inner {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
 }
 
 .md-header__title {
@@ -18,20 +24,20 @@
 
 .md-header__button.md-logo img,
 .md-header__button.md-logo svg {
-  height: 2.3rem;
+  height: 2.9rem;
   width: auto;
 }
 
 .md-header__lockup {
   display: flex;
   align-items: center;
-  gap: 0.7rem;
+  gap: 0.85rem;
   min-width: 0;
 }
 
 .md-header__wordmark {
   font-weight: 800;
-  font-size: 1.1rem;
+  font-size: 1.35rem;
   line-height: 1.05;
   color: #ffffff;
   white-space: nowrap;
@@ -41,21 +47,35 @@
   flex-shrink: 0;
   align-self: stretch;
   width: 1px;
-  min-height: 1.6rem;
+  min-height: 2.2rem;
   background-color: rgba(255, 255, 255, 0.36);
 }
 
 .md-header__product {
   min-width: 0;
   overflow: hidden;
-  font-weight: 700;
-  font-size: 1.05rem;
-  color: var(--opi-gold);
+  font-weight: 650;
+  font-size: 1.35rem;
+  line-height: 1.05;
+  color: #ffffff;
   text-overflow: ellipsis;
   white-space: nowrap;
 }
 
-@media (max-width: 480px) {
+/* Scale the lockup down on smaller viewports, then drop the wordmark. */
+@media (max-width: 1000px) {
+  .md-header__button.md-logo img,
+  .md-header__button.md-logo svg {
+    height: 2.5rem;
+  }
+
+  .md-header__wordmark,
+  .md-header__product {
+    font-size: 1.15rem;
+  }
+}
+
+@media (max-width: 600px) {
   .md-header__wordmark,
   .md-header__divider {
     display: none;
