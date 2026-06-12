@@ -18,11 +18,9 @@ portfolios:
     table_lead: Rakeim Young, Chief of Staff
     staff:
       - name: Audrey Randazzo
-        title: Communications and Partnerships Lead
-      - name: Mallory Screws
-        title: Project Manager
+        title: Data Storyteller
       - name: Derek Thomas
-        title: Special Assistant
+        title: Operations Analyst
       - name: Rashaad Tillery
         title: CitiStat Inspector
 
@@ -59,20 +57,16 @@ portfolios:
     primary_value: Builds trusted data infrastructure and decision-ready analytics; supports CitiStat, transparency, agency operations, and AI readiness.
     table_lead: Jason Howard, PhD, Deputy Chief Data Officer
     staff:
-      - name: Roberto Herbruger
+      - name: TBD
         title: Technical Program Manager
-      - name: Vera Choo
+      - name: TBD
         title: Analytics Lead
-      - name: Koby Samuel
-        title: Principal Platform Engineer
+      - name: Vera Choo
+        title: Data Scientist
       - name: Alejandro Zuniga Sosa
         title: Principal Data Engineer
       - name: Briya Bhakta
         title: Senior Data Engineer
-      - name: Sam Wilson
-        title: Open Data Program Manager
-      - name: Addisalem Abera
-        title: Data Engineer
 
   - key: innovation-lab
     label: Innovation Lab
@@ -86,12 +80,11 @@ portfolios:
     primary_value: Turns service problems into designed, usable, testable solutions; coordinates handoff to data, engineering, agency, or BCIT partners.
     table_lead: Dartanion Swift-Williams, Interim Innovation Program Manager
     staff:
+      - name: Mallory Screws
+        title: Project Manager
       - name: Selenea Gibson
         title: Civic Designer
       - name: Chiemeka Okeoma
-        title: Senior Product Engineer
+        title: Applied Data Scientist
       - name: Xander Jake de los Santos
-        title: Product Engineer
-      - name: Open / Aspirational
-        title: Civic Technology Lead
-        edge_style: dotted
+        title: Full Stack Engineer

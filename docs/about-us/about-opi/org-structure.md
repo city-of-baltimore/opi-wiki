@@ -33,7 +33,7 @@ OPI’s work is organized into four portfolios, each with a named lead, a budget
 
 ## Current Staff Alignment
 
-The alignment below reflects OPI’s current operating chart. It will be updated as vacancies are filled or roles are formally reclassified.
+The alignment below reflects OPI’s current operating chart, as of June 2026.
 
 {{ org_structure_from("about-us/about-opi/org-structure.data.yml", "staff_alignment") }}
 

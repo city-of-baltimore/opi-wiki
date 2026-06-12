@@ -36,7 +36,7 @@ def test_org_structure_renderer_covers_chart_table_and_roster_sections() -> None
     assert "Director&#x27;s Office" not in leadership_chart
     assert "Interim Innovation Program<br/>Manager" in leadership_chart
     assert "| Director's Office | Rakeim Young, Chief of Staff | AdminOps |" in portfolio_table
-    assert "- Audrey Randazzo — Communications and Partnerships Lead" in staff_alignment
+    assert "- Audrey Randazzo — Data Storyteller" in staff_alignment
     assert "- Dartanion Swift-Williams — Interim Innovation Program Manager" in staff_alignment
     assert "cross-portfolio model" not in staff_alignment
 
