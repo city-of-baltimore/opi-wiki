@@ -57,7 +57,7 @@ OPI maintains a position description (PD) for every role on the team. PDs are th
 ### Data and Analytics
 
 - [Deputy Chief Data Officer](data-and-analytics/pd-deputy-chief-data-officer.md)
-- [Senior Applied Data Scientist / Analytics Lead](data-and-analytics/pd-applied-data-scientist.md)
+- [Applied Data Scientist](data-and-analytics/pd-applied-data-scientist.md)
 - [Principal Data Engineer](data-and-analytics/pd-principal-data-engineer.md)
 - [Principal Platform Engineer](data-and-analytics/pd-principal-platform-engineer.md)
 - [Senior Data Engineer](data-and-analytics/pd-senior-data-engineer.md)

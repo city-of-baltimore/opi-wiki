@@ -1,12 +1,12 @@
-# PD — Senior Applied Data Scientist / Analytics Lead
+# PD — Applied Data Scientist
 
-{{ page_header(summary="Position description for the Senior Applied Data Scientist / Analytics Lead.") }}
+{{ page_header(summary="Position description for the Applied Data Scientist.") }}
 
 ## At a Glance
 
 |                          |                                                                                                  |
 |--------------------------|--------------------------------------------------------------------------------------------------|
-| **Working title**        | Senior Applied Data Scientist / Analytics Lead                                                    |
+| **Working title**        | Applied Data Scientist                                                    |
 | **Classification**       | Operations Officer V                                                                              |
 | **Compensation range**   | $95,494 – $152,721                                                                                |
 | **Portfolio**            | Data and Analytics                                                                                |
@@ -16,7 +16,7 @@
 
 ## Position Summary
 
-The Senior Applied Data Scientist / Analytics Lead serves as a senior data practitioner within the Mayor's Office of Performance and Innovation (OPI), responsible for leading applied analytics, data investigation, and decision-ready data products that support priority city initiatives. The position combines the hands-on analytical depth of an applied data scientist with the judgment, stakeholder partnership, and technical leadership expected of a senior analytics lead.
+The Applied Data Scientist serves as a senior data practitioner within the Mayor's Office of Performance and Innovation (OPI), responsible for leading applied analytics, data investigation, and decision-ready data products that support priority city initiatives. The position combines the hands-on analytical depth of an applied data scientist with the judgment, stakeholder partnership, and technical leadership expected of a senior analytics lead.
 
 This role is designed for someone who can move comfortably between messy city datasets, operational field realities, and executive decision-making. A successful candidate should be equally comfortable sitting with program staff to understand how a service actually works, writing SQL or Python to investigate the underlying data, developing models or geospatial analyses where appropriate, and translating findings into clear guidance, reusable tools, and follow-through actions.
 
