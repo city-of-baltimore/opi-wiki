@@ -5,10 +5,10 @@
 A single index of OPI’s position descriptions — grouped by portfolio — with classifications, reporting lines, and where to find the full document.
 
 VERSION
-:   v1.2
+:   v1.3
 
 UPDATED
-:   April 2026
+:   June 2026
 
 OWNER
 :   OPI Director’s Office · with HR partner
@@ -34,8 +34,8 @@ OPI maintains a position description (PD) for every role on the team. PDs are th
 
 - [Executive Director and Chief Data Officer](directors-office/pd-executive-director-and-cdo.md)
 - [Chief of Staff](directors-office/pd-chief-of-staff.md)
-- [Communications and Partnerships Lead](directors-office/pd-communications-and-partnerships-lead.md)
-- [Special Assistant](directors-office/pd-special-assistant-to-the-executive-director.md)
+- [Data Storyteller](directors-office/pd-data-storyteller.md)
+- [Operations Analyst](directors-office/pd-operations-analyst.md)
 - [Project Manager](directors-office/pd-project-manager.md)
 - [CitiStat Inspector](directors-office/pd-citistat-inspector.md)
 
@@ -57,7 +57,7 @@ OPI maintains a position description (PD) for every role on the team. PDs are th
 ### Data and Analytics
 
 - [Deputy Chief Data Officer](data-and-analytics/pd-deputy-chief-data-officer.md)
-- [Analytics Lead](data-and-analytics/pd-analytics-lead.md)
+- [Senior Applied Data Scientist / Analytics Lead](data-and-analytics/pd-applied-data-scientist.md)
 - [Principal Data Engineer](data-and-analytics/pd-principal-data-engineer.md)
 - [Principal Platform Engineer](data-and-analytics/pd-principal-platform-engineer.md)
 - [Senior Data Engineer](data-and-analytics/pd-senior-data-engineer.md)

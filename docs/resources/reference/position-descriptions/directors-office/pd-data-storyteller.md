@@ -1,12 +1,12 @@
-# PD — Communications and Partnerships Lead
+# PD — Data Storyteller
 
-{{ page_header(summary="Position description for the Communications and Partnerships Lead.") }}
+{{ page_header(summary="Position description for the Data Storyteller.") }}
 
 ## At a Glance
 
 |                          |                                                                                                                    |
 |--------------------------|--------------------------------------------------------------------------------------------------------------------|
-| **Working title**        | Communications and Partnerships Lead                                                                               |
+| **Working title**        | Data Storyteller                                                                               |
 | **Classification**       | Operations Officer III                                                                                             |
 | **Portfolio**            | Director's Office                                                                                                  |
 | **Reports to**           | Chief of Staff (with frequent direct work for the Executive Director)                                              |
@@ -15,7 +15,7 @@
 
 ## Position Summary
 
-The Communications and Partnerships Lead develops and stewards OPI’s external narrative, partner relationships, and editorial operations. The role builds clear, plain-language stories about OPI’s work, manages an editorial calendar across reports, dashboards, and public updates, and coordinates philanthropic and civic partnerships that extend OPI’s reach. The position prepares talking points and materials for the Executive Director and OPI leadership, supports grant concepts and proposals, and works with the four portfolios to translate analysis and product work into materials that residents, agency partners, City Council members, and funders can use.
+The Data Storyteller develops and stewards OPI’s external narrative, partner relationships, and editorial operations. The role builds clear, plain-language stories about OPI’s work, manages an editorial calendar across reports, dashboards, and public updates, and coordinates philanthropic and civic partnerships that extend OPI’s reach. The position prepares talking points and materials for the Executive Director and OPI leadership, supports grant concepts and proposals, and works with the four portfolios to translate analysis and product work into materials that residents, agency partners, City Council members, and funders can use.
 
 ## Key Responsibilities
 

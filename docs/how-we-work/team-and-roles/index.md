@@ -33,9 +33,9 @@ Each refined Position Description is filed alongside this roster in the same fol
 
 |                         |                                                                                     |
 |-------------------------|-------------------------------------------------------------------------------------|
-| **Total positions**     | 24                                                                                  |
-| **Filled**              | 22                                                                                  |
-| **Open / aspirational** | 2                                                                                   |
+| **Total positions**     | 22                                                                                  |
+| **Filled**              | 19                                                                                  |
+| **Open / unfilled**     | 3                                                                                   |
 | **Portfolios**          | 4 (Director’s Office, Innovation Lab, Performance, Data and Analytics) |
 | **Cost centers**        | 4 (AdminOps, Innovation Lab, Performance Management, Data and Analytics)            |
 | **Executive sponsor**   | Mayor Brandon M. Scott via City Administrator Faith P. Leach                        |
@@ -62,9 +62,8 @@ Each refined Position Description is filed alongside this roster in the same fol
     |--------------------------|---------------------------------------------|-------------------------------|-----------------|---------|
     | Dartanion Swift-Williams | Executive Director and Chief Data Officer   | Executive Director I          | AdminOps        | 15961   |
     | Rakeim Young             | Chief of Staff                              | Operations Manager II         | AdminOps        | 50053   |
-    | Audrey Randazzo          | Communications and Partnerships Lead        | Operations Officer III | Innovation Lab  | 53413   |
-    | Derek Thomas             | Special Assistant to the Executive Director | Operations Officer III | Innovation Lab  | 70432   |
-    | Mallory Screws           | Project Manager                             | Operations Officer III | AdminOps        | 62121   |
+    | Audrey Randazzo          | Data Storyteller                            | Operations Officer III | Innovation Lab  | 53413   |
+    | Derek Thomas             | Operations Analyst                          | Operations Officer III | Innovation Lab  | 70432   |
     | Rashaad Tillery          | CitiStat Inspector                          | Operations Officer I          | AdminOps        | 50509   |
 
 ### Reporting structure
@@ -73,9 +72,8 @@ Each refined Position Description is filed alongside this roster in the same fol
     |---------------------------------------------|--------------------------|---------------------------------------------|
     | Executive Director and Chief Data Officer   | Dartanion Swift-Williams | City Administrator                          |
     | Chief of Staff                              | Rakeim Young             | Executive Director                          |
-    | Communications and Partnerships Lead        | Audrey Randazzo          | Chief of Staff                              |
-    | Special Assistant to the Executive Director | Derek Thomas             | Executive Director (through Chief of Staff) |
-    | Project Manager                             | Mallory Screws           | Chief of Staff                              |
+    | Data Storyteller                            | Audrey Randazzo          | Chief of Staff                              |
+    | Operations Analyst                          | Derek Thomas             | Executive Director (through Chief of Staff) |
     | CitiStat Inspector                          | Rashaad Tillery          | Chief of Staff                              |
 
 ??? info "Innovation Lab roster and reporting"
@@ -84,20 +82,20 @@ Each refined Position Description is filed alongside this roster in the same fol
     | **Name**                  | **Working title**                    | **Classification**                | **Cost center** | **PIN** |
     |---------------------------|--------------------------------------|-----------------------------------|-----------------|---------|
     | Dartanion Swift-Williams  | Interim Innovation Program Manager   | Executive Director I              | AdminOps        | 15961   |
+    | Mallory Screws            | Project Manager                      | Operations Officer III            | AdminOps        | 62121   |
     | Selenea Gibson            | Civic Designer                       | Operations Officer III            | Innovation Lab  | 53412   |
-    | Chiemeka Okeoma           | Senior Product Engineer              | Operations Officer V              | Innovation Lab  | 62137   |
-    | Xander Jake de los Santos | Product Engineer                     | Operations Officer III            | Innovation Lab  | 70431   |
-    | Aspirational / unfilled   | Civic Technology Lead                | Operations Manager II (proposed)  | Innovation Lab  | TBD     |
+    | Chiemeka Okeoma           | Applied Data Scientist               | Operations Officer V              | Innovation Lab  | 62137   |
+    | Xander Jake de los Santos | Full Stack Engineer                  | Operations Officer III            | Innovation Lab  | 70431   |
 
 ### Reporting structure
 
     | **Position**                         | **Incumbent**            | **Reports to**                                                                                   |
     |--------------------------------------|--------------------------|--------------------------------------------------------------------------------------------------|
     | Interim Innovation Program Manager   | Dartanion Swift-Williams | City Administrator                                                                               |
+    | Project Manager                      | Mallory Screws           | Interim Innovation Program Manager                                                               |
     | Civic Designer                       | Selenea Gibson           | Interim Innovation Program Manager                                                               |
-    | Senior Product Engineer              | Chiemeka Okeoma          | Interim Innovation Program Manager                                                               |
-    | Product Engineer                     | Xander Jake de los Santos | Senior Product Engineer                                                                       |
-    | Civic Technology Lead                | Aspirational / unfilled  | Interim Innovation Program Manager                                                               |
+    | Applied Data Scientist               | Chiemeka Okeoma          | Interim Innovation Program Manager                                                               |
+    | Full Stack Engineer                  | Xander Jake de los Santos | Interim Innovation Program Manager                                                              |
 
 ??? info "Performance roster and reporting"
 
@@ -130,10 +128,10 @@ Each refined Position Description is filed alongside this roster in the same fol
     | **Name**              | **Working title**           | **Classification**     | **Cost center**    | **PIN** |
     |-----------------------|-----------------------------|------------------------|--------------------|---------|
     | Jason Howard, PhD     | Deputy Chief Data Officer   | Operations Director II | Data and Analytics | 114589  |
-    | Roberto Herbruger     | Technical Program Manager   | Operations Manager II  | Data and Analytics | 115408  |
-    | Vera Choo             | Analytics Lead              | Operations Manager II  | Data and Analytics | 115655  |
+    | Open — to be posted   | Technical Program Manager   | Operations Manager II  | Data and Analytics | 115408  |
+    | Open — to be posted   | Analytics Lead              | Operations Officer V   | Data and Analytics | TBD     |
+    | Vera Choo             | Applied Data Scientist      | Operations Officer V   | Data and Analytics | 115655  |
     | Alejandro Zuniga Sosa | Principal Data Engineer     | Operations Manager II  | Data and Analytics | 53411   |
-    | Koby Samuel           | Principal Platform Engineer | Operations Officer V   | Data and Analytics | 115656  |
     | Briya Bhakta          | Senior Data Engineer        | Operations Officer V   | Data and Analytics | 70433   |
 
 ### Reporting structure
@@ -141,16 +139,16 @@ Each refined Position Description is filed alongside this roster in the same fol
     | **Position**                | **Incumbent**         | **Reports to**            |
     |-----------------------------|-----------------------|---------------------------|
     | Deputy Chief Data Officer   | Jason Howard, PhD     | Executive Director        |
-    | Technical Program Manager   | Roberto Herbruger     | Deputy Chief Data Officer |
-    | Analytics Lead              | Vera Choo             | Deputy Chief Data Officer |
+    | Technical Program Manager   | Open — to be posted   | Deputy Chief Data Officer |
+    | Analytics Lead              | Open — to be posted   | Deputy Chief Data Officer |
+    | Applied Data Scientist      | Vera Choo             | Deputy Chief Data Officer |
     | Principal Data Engineer     | Alejandro Zuniga Sosa | Deputy Chief Data Officer |
-    | Principal Platform Engineer | Koby Samuel           | Deputy Chief Data Officer |
     | Senior Data Engineer        | Briya Bhakta          | Principal Data Engineer   |
 
 ??? info "Cost center view"
 
 
-    OPI’s budget is organized into four cost centers. The same person may sit on a portfolio team that does not match their cost center — for example, the Special Assistant currently sits in the Director’s Office portfolio while remaining funded in the Innovation Lab cost center.
+    OPI’s budget is organized into four cost centers. The same person may sit on a portfolio team that does not match their cost center — for example, the Operations Analyst currently sits in the Director’s Office portfolio while remaining funded in the Innovation Lab cost center.
 
 ### AdminOps (CCA001472)
 
@@ -158,7 +156,7 @@ Each refined Position Description is filed alongside this roster in the same fol
     |-------------------------------------------|--------------------------|-------------------|---------|
     | Executive Director and Chief Data Officer | Dartanion Swift-Williams | Director's Office | 15961   |
     | Chief of Staff                            | Rakeim Young             | Director's Office | 50053   |
-    | Project Manager                           | Mallory Screws           | Director's Office | 62121   |
+    | Project Manager                           | Mallory Screws           | Innovation Lab    | 62121   |
     | CitiStat Inspector                        | Rashaad Tillery          | Director's Office | 50509   |
 
 ### Data and Analytics (CCA001472)
@@ -166,22 +164,21 @@ Each refined Position Description is filed alongside this roster in the same fol
     | **Working title**           | **Incumbent**         | **Portfolio**      | **PIN** |
     |-----------------------------|-----------------------|--------------------|---------|
     | Deputy Chief Data Officer   | Jason Howard, PhD     | Data and Analytics | 114589  |
-    | Technical Program Manager   | Roberto Herbruger     | Data and Analytics | 115408  |
-    | Analytics Lead              | Vera Choo             | Data and Analytics | 115655  |
+    | Technical Program Manager   | Open — to be posted   | Data and Analytics | 115408  |
+    | Analytics Lead              | Open — to be posted   | Data and Analytics | TBD     |
+    | Applied Data Scientist      | Vera Choo             | Data and Analytics | 115655  |
     | Principal Data Engineer     | Alejandro Zuniga Sosa | Data and Analytics | 53411   |
-    | Principal Platform Engineer | Koby Samuel           | Data and Analytics | 115656  |
     | Senior Data Engineer        | Briya Bhakta          | Data and Analytics | 70433   |
 
 ### Innovation Lab (CCA001472)
 
     | **Working title**                              | **Incumbent**             | **Portfolio**     | **PIN** |
     |------------------------------------------------|---------------------------|-------------------|---------|
-    | Special Assistant to the Executive Director | Derek Thomas              | Director's Office        | 70432   |
-    | Communications and Partnerships Lead           | Audrey Randazzo           | Director's Office | 53413   |
+    | Operations Analyst                             | Derek Thomas              | Director's Office        | 70432   |
+    | Data Storyteller                               | Audrey Randazzo           | Director's Office | 53413   |
     | Civic Designer                                 | Selenea Gibson            | Innovation Lab    | 53412   |
-    | Senior Product Engineer                        | Chiemeka Okeoma           | Innovation Lab    | 62137   |
-    | Product Engineer                               | Xander Jake de los Santos | Innovation Lab    | 70431   |
-    | Civic Technology Lead                          | Aspirational / unfilled   | Innovation Lab    | TBD     |
+    | Applied Data Scientist                         | Chiemeka Okeoma           | Innovation Lab    | 62137   |
+    | Full Stack Engineer                            | Xander Jake de los Santos | Innovation Lab    | 70431   |
 
 ### Performance Management (CCA001472)
 
@@ -204,13 +201,13 @@ Each refined Position Description is filed alongside this roster in the same fol
     |---------------------------|------------------------------------------------|--------------------------|--------------------------------------------|
     | Dartanion Swift-Williams  | Executive Director and Chief Data Officer      | Director's Office        | dartanion.swift-williams@baltimorecity.gov |
     | Rakeim Young              | Chief of Staff                                 | Director's Office        | rakeim.young@baltimorecity.gov             |
-    | Derek Thomas              | Special Assistant to the Executive Director | Director's Office        | derek.thomas@baltimorecity.gov             |
-    | Mallory Screws            | Project Manager                                | Director's Office        | mallory.screws@baltimorecity.gov           |
-    | Audrey Randazzo           | Communications and Partnerships Lead           | Director's Office        | audrey.randazzo@baltimorecity.gov          |
+    | Derek Thomas              | Operations Analyst                          | Director's Office        | derek.thomas@baltimorecity.gov             |
+    | Mallory Screws            | Project Manager                                | Innovation Lab           | mallory.screws@baltimorecity.gov           |
+    | Audrey Randazzo           | Data Storyteller                               | Director's Office        | audrey.randazzo@baltimorecity.gov          |
     | Rashaad Tillery           | CitiStat Inspector                             | Director's Office        | rashaad.tillery@baltimorecity.gov          |
     | Selenea Gibson            | Civic Designer                                 | Innovation Lab           | selenea.gibson@baltimorecity.gov           |
-    | Chiemeka Okeoma           | Senior Product Engineer                        | Innovation Lab           | chiemeka.okeoma@baltimorecity.gov          |
-    | Xander Jake de los Santos | Product Engineer                               | Innovation Lab           | via Chief of Staff                         |
+    | Chiemeka Okeoma           | Applied Data Scientist                         | Innovation Lab           | chiemeka.okeoma@baltimorecity.gov          |
+    | Xander Jake de los Santos | Full Stack Engineer                            | Innovation Lab           | via Chief of Staff                         |
     | Danny Heller              | Deputy Chief Performance Officer               | Performance | daniel.heller@baltimorecity.gov            |
     | Darren Lu                 | CitiStat Program Manager                       | Performance | darren.lu@baltimorecity.gov                |
     | Ross Hackett              | CitiStat Analyst                               | Performance | ross.hackett@baltimorecity.gov             |
@@ -218,10 +215,8 @@ Each refined Position Description is filed alongside this roster in the same fol
     | Ethan Buckborough         | CitiStat Analyst                               | Performance | ethan.buckborough@baltimorecity.gov        |
     | Nelson Gomes Boronat      | CitiStat Analyst                               | Performance | nelson.gomesboronat@baltimorecity.gov      |
     | Jason Howard, PhD         | Deputy Chief Data Officer                      | Data and Analytics       | jason.howard@baltimorecity.gov             |
-    | Roberto Herbruger         | Technical Program Manager                      | Data and Analytics       | roberto.herbruger@baltimorecity.gov        |
-    | Vera Choo                 | Analytics Lead                                 | Data and Analytics       | vera.choo@baltimorecity.gov                |
+    | Vera Choo                 | Applied Data Scientist                         | Data and Analytics       | vera.choo@baltimorecity.gov                |
     | Alejandro Zuniga Sosa     | Principal Data Engineer                        | Data and Analytics       | alejandro.zunigasosa@baltimorecity.gov     |
-    | Koby Samuel               | Principal Platform Engineer                    | Data and Analytics       | koby.samuel@baltimorecity.gov              |
     | Briya Bhakta              | Senior Data Engineer                           | Data and Analytics       | briya.bhakta@baltimorecity.gov             |
 
 ??? info "Open positions"
@@ -229,7 +224,8 @@ Each refined Position Description is filed alongside this roster in the same fol
 
     | **Title**                  | **Status**          | **Portfolio**            | **PIN / Status** |
     |----------------------------|---------------------|--------------------------|------------------|
-    | Civic Technology Lead      | Aspirational / unfilled | Innovation Lab            | TBD              |
-    | Senior Performance Analyst | Open — to be posted | Performance | 115657           |
+    | Technical Program Manager  | Open — to be posted | Data and Analytics | 115408           |
+    | Analytics Lead             | Open — to be posted | Data and Analytics | TBD              |
+    | Senior Performance Analyst | Open — to be posted | Performance        | 115657           |
 
 *This roster reflects the OPI operating model. Position descriptions for every role listed here are filed in the OPI Foundations / Position Descriptions folder, organized by portfolio. PIN numbers and budget detail come from the City’s authoritative position file.*
