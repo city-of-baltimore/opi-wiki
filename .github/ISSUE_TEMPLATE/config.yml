@@ -1,0 +1,8 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Edit a page directly (GitHub account required)
+    url: https://city-of-baltimore.github.io/opi-wiki/resources/contributing/
+    about: Comfortable with GitHub? Use the Edit button on any page to open a pull request.
+  - name: How contributions work
+    url: https://city-of-baltimore.github.io/opi-wiki/resources/contributing/
+    about: Read how edits are reviewed and published.
