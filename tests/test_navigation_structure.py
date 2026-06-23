@@ -7,22 +7,22 @@ from pathlib import Path
 REPO_ROOT = Path(__file__).resolve().parents[1]
 
 TEAM_NAV_FILES = [
-    REPO_ROOT / "docs/our-teams/directors-office/.pages",
-    REPO_ROOT / "docs/our-teams/performance/.pages",
-    REPO_ROOT / "docs/our-teams/data-and-analytics/.pages",
+    REPO_ROOT / "docs/about-us/our-teams/directors-office/.pages",
+    REPO_ROOT / "docs/about-us/our-teams/performance/.pages",
+    REPO_ROOT / "docs/about-us/our-teams/data-and-analytics/.pages",
 ]
 
 TEAM_LANDING_PAGES = [
-    REPO_ROOT / "docs/our-teams/directors-office/index.md",
-    REPO_ROOT / "docs/our-teams/performance/index.md",
-    REPO_ROOT / "docs/our-teams/data-and-analytics/index.md",
-    REPO_ROOT / "docs/our-teams/innovation-lab/index.md",
+    REPO_ROOT / "docs/about-us/our-teams/directors-office/index.md",
+    REPO_ROOT / "docs/about-us/our-teams/performance/index.md",
+    REPO_ROOT / "docs/about-us/our-teams/data-and-analytics/index.md",
+    REPO_ROOT / "docs/about-us/our-teams/innovation-lab/index.md",
 ]
 
 OLD_TEAM_PD_DIRS = [
-    REPO_ROOT / "docs/our-teams/directors-office",
-    REPO_ROOT / "docs/our-teams/performance",
-    REPO_ROOT / "docs/our-teams/data-and-analytics",
+    REPO_ROOT / "docs/about-us/our-teams/directors-office",
+    REPO_ROOT / "docs/about-us/our-teams/performance",
+    REPO_ROOT / "docs/about-us/our-teams/data-and-analytics",
 ]
 
 POSITION_DESCRIPTIONS_DIR = REPO_ROOT / "docs/resources/reference/position-descriptions"
@@ -36,11 +36,11 @@ NAV_TITLE_EXPECTATIONS = {
     REPO_ROOT / "docs/how-we-work/handbook/onboarding/.pages": "Onboarding",
     REPO_ROOT / "docs/how-we-work/handbook/operations/.pages": "Operations",
     REPO_ROOT / "docs/how-we-work/organization/team-and-roles/.pages": "Team and Roles",
-    REPO_ROOT / "docs/our-teams/.pages": "Our Teams",
-    REPO_ROOT / "docs/our-teams/directors-office/.pages": "Director's Office",
-    REPO_ROOT / "docs/our-teams/performance/.pages": "Performance",
-    REPO_ROOT / "docs/our-teams/innovation-lab/.pages": "Innovation Lab",
-    REPO_ROOT / "docs/our-teams/data-and-analytics/.pages": "Data and Analytics",
+    REPO_ROOT / "docs/about-us/our-teams/.pages": "Our Teams",
+    REPO_ROOT / "docs/about-us/our-teams/directors-office/.pages": "Director's Office",
+    REPO_ROOT / "docs/about-us/our-teams/performance/.pages": "Performance",
+    REPO_ROOT / "docs/about-us/our-teams/innovation-lab/.pages": "Innovation Lab",
+    REPO_ROOT / "docs/about-us/our-teams/data-and-analytics/.pages": "Data and Analytics",
     REPO_ROOT / "docs/what-we-do/.pages": "What We Do",
     REPO_ROOT / "docs/what-we-do/services/.pages": "Services",
     REPO_ROOT / "docs/what-we-do/programs/.pages": "Programs",

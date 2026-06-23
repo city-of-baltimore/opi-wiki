@@ -135,5 +135,5 @@ Not every recurring problem should become a Stat. The first question should be: 
 
 - [CitiStat Method Playbook](../method-playbook.md) — the operating standards every Stat in this portfolio runs on.
 - [CitiStat Strategic Framework](../strategic-framework.md) — the public-facing strategic frame and portfolio rationale.
-- [About Performance](../../../../our-teams/performance/about-performance.md) — plain-language overview of the service.
-- [Performance Management Theory of Change](../../../../our-teams/performance/performance-theory-of-change.md) — mandate, governance, staffing, measures, and sustainment.
+- [About Performance](../../../../about-us/our-teams/performance/about-performance.md) — plain-language overview of the service.
+- [Performance Management Theory of Change](../../../../about-us/our-teams/performance/performance-theory-of-change.md) — mandate, governance, staffing, measures, and sustainment.

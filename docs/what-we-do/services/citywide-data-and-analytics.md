@@ -32,10 +32,10 @@ Baltimore City Code, Article 1, Subtitle 9 (Open Data).
 
 ## Delivered by
 
-The [Data and Analytics team](../../our-teams/data-and-analytics/index.md).
+The [Data and Analytics team](../../about-us/our-teams/data-and-analytics/index.md).
 
 ## Read alongside
 
 - [How Work Moves Through OPI](../../how-we-work/how-work-moves-through-opi.md) — where this service sits in the loop
-- [Data Governance Framework](../../our-teams/data-and-analytics/data-governance-framework.md)
-- [Data and Analytics team](../../our-teams/data-and-analytics/index.md)
+- [Data Governance Framework](../../about-us/our-teams/data-and-analytics/data-governance-framework.md)
+- [Data and Analytics team](../../about-us/our-teams/data-and-analytics/index.md)

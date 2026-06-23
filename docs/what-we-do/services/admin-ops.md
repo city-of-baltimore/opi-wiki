@@ -32,10 +32,10 @@ Operationally required to execute Baltimore City Code, Article 1, Subtitles 61 a
 
 ## Delivered by
 
-The [Director's Office](../../our-teams/directors-office/index.md).
+The [Director's Office](../../about-us/our-teams/directors-office/index.md).
 
 ## Read alongside
 
 - [How Work Moves Through OPI](../../how-we-work/how-work-moves-through-opi.md) — where this service sits in the loop
 - [Operations](../../how-we-work/handbook/operations/index.md) — the operating routines AdminOps maintains
-- [Director's Office](../../our-teams/directors-office/index.md)
+- [Director's Office](../../about-us/our-teams/directors-office/index.md)

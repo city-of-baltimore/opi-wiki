@@ -16,7 +16,7 @@ Every role on the team has a published position description. The full index live
 ## Team Roster
 
 This page is the internal roster reference. For the public-facing narrative, team
-methods, and team pages, start in [Our Teams](../../../our-teams/index.md).
+methods, and team pages, start in [Our Teams](../../../about-us/our-teams/index.md).
 
 For the visual leadership org chart and reporting lines, see [Org Structure](../org-structure.md).
 

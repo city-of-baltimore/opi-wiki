@@ -305,5 +305,5 @@ CitiStat is one of Baltimore’s most important civic management traditions. Its
 - [CitiStat — Staff Quick Reference](method-staff-quick-reference.md) — the at-a-glance version of the method.
 - [CitiStat Templates](templates.md) — agendas, materials send-out standards, and deliverable types.
 - [CitiStat Portfolio](portfolio/index.md) — every active Stat brief, including watchlist and right-routine guidance.
-- [About Performance](../../../our-teams/performance/about-performance.md) — plain-language overview of the service.
-- [Performance Management Theory of Change](../../../our-teams/performance/performance-theory-of-change.md) — mandate, governance, staffing, measures, and sustainment.
+- [About Performance](../../../about-us/our-teams/performance/about-performance.md) — plain-language overview of the service.
+- [Performance Management Theory of Change](../../../about-us/our-teams/performance/performance-theory-of-change.md) — mandate, governance, staffing, measures, and sustainment.

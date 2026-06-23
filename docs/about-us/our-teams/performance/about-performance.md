@@ -184,6 +184,6 @@ In human terms, the work is succeeding when leadership time is spent on the high
 
 - [Performance Management Strategy](performance-strategy.md) — the strategic argument: case for change, principles, the citywide cycle, governance, success measures, and FY priorities.
 - [Performance Management Theory of Change](performance-theory-of-change.md) — how the service is mandated, governed, staffed, measured, and sustained.
-- [CitiStat Strategic Framework](../../what-we-do/programs/citistat/strategic-framework.md) — the public-facing strategic case for CitiStat itself and the active 19-Stat portfolio.
-- [CitiStat Method Playbook](../../what-we-do/programs/citistat/method-playbook.md) — the staff-facing operating standards, the 12-step cycle, admission criteria, and quality bar.
-- [CitiStat Portfolio](../../what-we-do/programs/citistat/portfolio/index.md) — every active Stat brief.
+- [CitiStat Strategic Framework](../../../what-we-do/programs/citistat/strategic-framework.md) — the public-facing strategic case for CitiStat itself and the active 19-Stat portfolio.
+- [CitiStat Method Playbook](../../../what-we-do/programs/citistat/method-playbook.md) — the staff-facing operating standards, the 12-step cycle, admission criteria, and quality bar.
+- [CitiStat Portfolio](../../../what-we-do/programs/citistat/portfolio/index.md) — every active Stat brief.

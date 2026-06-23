@@ -161,7 +161,7 @@ plugins:
         resources/reference/position-descriptions-index.md: resources/reference/position-descriptions/index.md
         our-teams/performance-and-citistat/cross-agency-delivery/index.md: what-we-do/services/cross-agency-delivery.md
         our-teams/performance-and-citistat/cross-agency-delivery/about-cross-agency-delivery.md: what-we-do/services/cross-agency-delivery.md
-        our-teams/performance-and-citistat/cross-agency-delivery/cross-agency-delivery-theory-of-change.md: our-teams/innovation-lab/cross-agency-delivery-service-definition.md
+        our-teams/performance-and-citistat/cross-agency-delivery/cross-agency-delivery-theory-of-change.md: about-us/our-teams/innovation-lab/cross-agency-delivery-service-definition.md
         public/council-public-narrative-template.md: resources/index.md
         how-we-work/team-and-roles/staff-directory.md: how-we-work/organization/team-and-roles/index.md
         public/index.md: index.md
@@ -178,6 +178,26 @@ plugins:
         about-us/about-opi/mission-vision-identity.md: about-us/mission-vision-identity.md
         about-us/about-opi/operating-principles-and-culture.md: about-us/operating-principles-and-culture.md
         about-us/about-opi/index.md: about-us/index.md
+        our-teams/data-and-analytics/about-data-analytics.md: about-us/our-teams/data-and-analytics/about-data-analytics.md
+        our-teams/data-and-analytics/data-analytics-strategy.md: about-us/our-teams/data-and-analytics/data-analytics-strategy.md
+        our-teams/data-and-analytics/data-analytics-theory-of-change.md: about-us/our-teams/data-and-analytics/data-analytics-theory-of-change.md
+        our-teams/data-and-analytics/data-governance-framework.md: about-us/our-teams/data-and-analytics/data-governance-framework.md
+        our-teams/data-and-analytics/index.md: about-us/our-teams/data-and-analytics/index.md
+        our-teams/directors-office/about-admin-ops.md: about-us/our-teams/directors-office/about-admin-ops.md
+        our-teams/directors-office/admin-ops-strategy.md: about-us/our-teams/directors-office/admin-ops-strategy.md
+        our-teams/directors-office/admin-ops-theory-of-change.md: about-us/our-teams/directors-office/admin-ops-theory-of-change.md
+        our-teams/directors-office/index.md: about-us/our-teams/directors-office/index.md
+        our-teams/index.md: about-us/our-teams/index.md
+        our-teams/innovation-lab/about-innovation-lab.md: about-us/our-teams/innovation-lab/about-innovation-lab.md
+        our-teams/innovation-lab/cross-agency-delivery-service-definition.md: about-us/our-teams/innovation-lab/cross-agency-delivery-service-definition.md
+        our-teams/innovation-lab/digital-product-methodology.md: about-us/our-teams/innovation-lab/digital-product-methodology.md
+        our-teams/innovation-lab/index.md: about-us/our-teams/innovation-lab/index.md
+        our-teams/innovation-lab/innovation-lab-strategy.md: about-us/our-teams/innovation-lab/innovation-lab-strategy.md
+        our-teams/innovation-lab/innovation-lab-theory-of-change.md: about-us/our-teams/innovation-lab/innovation-lab-theory-of-change.md
+        our-teams/performance/about-performance.md: about-us/our-teams/performance/about-performance.md
+        our-teams/performance/index.md: about-us/our-teams/performance/index.md
+        our-teams/performance/performance-strategy.md: about-us/our-teams/performance/performance-strategy.md
+        our-teams/performance/performance-theory-of-change.md: about-us/our-teams/performance/performance-theory-of-change.md
         how-we-work/org-structure.md: how-we-work/organization/org-structure.md
         how-we-work/team-and-roles/index.md: how-we-work/organization/team-and-roles/index.md
         how-we-work/onboarding/onboarding-process-and-checklist.md: how-we-work/handbook/onboarding/onboarding-process-and-checklist.md
@@ -212,15 +232,15 @@ plugins:
         how-we-work/operations/index.md: how-we-work/handbook/operations/index.md
         how-we-work/operations/performance-standards-manager-companion.md: how-we-work/handbook/operations/performance-standards-manager-companion.md
         how-we-work/operations/charter-template.md: how-we-work/handbook/operations/charter-template.md
-        what-we-do/services/cross-agency-delivery-theory-of-change.md: our-teams/innovation-lab/cross-agency-delivery-service-definition.md
-        what-we-do/services/cross-agency-delivery-service-definition.md: our-teams/innovation-lab/cross-agency-delivery-service-definition.md
+        what-we-do/services/cross-agency-delivery-theory-of-change.md: about-us/our-teams/innovation-lab/cross-agency-delivery-service-definition.md
+        what-we-do/services/cross-agency-delivery-service-definition.md: about-us/our-teams/innovation-lab/cross-agency-delivery-service-definition.md
         resources/reference/position-descriptions/data-and-analytics/pd-principal-platform-engineer.md: resources/reference/position-descriptions/data-and-analytics/pd-principal-data-engineer.md
         resources/reference/position-descriptions/innovation-lab/pd-civic-technology-lead.md: resources/reference/position-descriptions/innovation-lab/pd-innovation-program-manager.md
         resources/reference/position-descriptions/innovation-lab/pd-senior-product-engineer.md: resources/reference/position-descriptions/innovation-lab/pd-applied-data-scientist.md
-        our-teams/performance-and-citistat/index.md: our-teams/performance/index.md
-        our-teams/performance-and-citistat/about-performance-management.md: our-teams/performance/about-performance.md
-        our-teams/performance-and-citistat/performance-management-strategy.md: our-teams/performance/performance-strategy.md
-        our-teams/performance-and-citistat/performance-management-theory-of-change.md: our-teams/performance/performance-theory-of-change.md
+        our-teams/performance-and-citistat/index.md: about-us/our-teams/performance/index.md
+        our-teams/performance-and-citistat/about-performance-management.md: about-us/our-teams/performance/about-performance.md
+        our-teams/performance-and-citistat/performance-management-strategy.md: about-us/our-teams/performance/performance-strategy.md
+        our-teams/performance-and-citistat/performance-management-theory-of-change.md: about-us/our-teams/performance/performance-theory-of-change.md
         our-teams/performance-and-citistat/citistat-method-playbook.md: what-we-do/programs/citistat/method-playbook.md
         our-teams/performance-and-citistat/citistat-method-staff-quick-reference.md: what-we-do/programs/citistat/method-staff-quick-reference.md
         our-teams/performance-and-citistat/citistat-strategic-framework.md: what-we-do/programs/citistat/strategic-framework.md
@@ -260,7 +280,7 @@ plugins:
         our-teams/innovation-lab/baltimore-intelligence-center/workstreams.md: what-we-do/products/baltimore-intelligence-center/workstreams.md
         our-teams/cross-agency-delivery/index.md: what-we-do/services/cross-agency-delivery.md
         our-teams/cross-agency-delivery/about-cross-agency-delivery.md: what-we-do/services/cross-agency-delivery.md
-        our-teams/cross-agency-delivery/cross-agency-delivery-theory-of-change.md: our-teams/innovation-lab/cross-agency-delivery-service-definition.md
+        our-teams/cross-agency-delivery/cross-agency-delivery-theory-of-change.md: about-us/our-teams/innovation-lab/cross-agency-delivery-service-definition.md
   - macros
   - search:
       separator: '[\s\-,:!=\[\]()"`/]+|\.(?!\d)|&[lg]t;|(?!\b)(?=[A-Z][a-z])'

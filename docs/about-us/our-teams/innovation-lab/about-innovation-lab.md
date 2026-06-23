@@ -38,7 +38,7 @@ Time-boxed, evidence-led, and adoption-first. We design for handoff from day one
 
 - Agency operations — the agency owns the workflow after handoff
 - Long-term operation of the tools we build — handed off with a sustainment plan
-- Cross-agency coordination authority — that is [Cross-Agency Delivery](../../what-we-do/services/cross-agency-delivery.md)
+- Cross-agency coordination authority — that is [Cross-Agency Delivery](../../../what-we-do/services/cross-agency-delivery.md)
 
 ### How we partner across OPI
 

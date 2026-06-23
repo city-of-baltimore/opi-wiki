@@ -10,11 +10,11 @@ office aligned.
 
 ## Pages in this section
 
-{{ card_grid_from("our-teams/directors-office/index.cards.yml") }}
+{{ card_grid_from("about-us/our-teams/directors-office/index.cards.yml") }}
 
 ## Position descriptions
 
 The Director's Office position descriptions now live in the canonical
-[Resources → Position Descriptions](../../resources/reference/position-descriptions/index.md),
+[Resources → Position Descriptions](../../../resources/reference/position-descriptions/index.md),
 which keeps portfolio role definitions in one maintained directory instead of
 duplicating them across team pages.

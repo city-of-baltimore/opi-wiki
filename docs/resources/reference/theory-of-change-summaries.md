@@ -22,11 +22,11 @@ A theory of change is a step-by-step explanation of how the work we do leads to 
 
 | # | Service | Theory of change |
 | --- | --- | --- |
-| 1 | Citywide Performance Management | [Performance Theory of Change](../../our-teams/performance/performance-theory-of-change.md) |
-| 2 | Citywide Data and Analytics | [Data and Analytics Theory of Change](../../our-teams/data-and-analytics/data-analytics-theory-of-change.md) |
-| 3 | Innovation Lab | [Innovation Lab Theory of Change](../../our-teams/innovation-lab/innovation-lab-theory-of-change.md) |
-| 4 | Cross-Agency Delivery | [Cross-Agency Delivery — Service Definition](../../our-teams/innovation-lab/cross-agency-delivery-service-definition.md) |
-| 5 | AdminOps | [AdminOps Theory of Change](../../our-teams/directors-office/admin-ops-theory-of-change.md) |
+| 1 | Citywide Performance Management | [Performance Theory of Change](../../about-us/our-teams/performance/performance-theory-of-change.md) |
+| 2 | Citywide Data and Analytics | [Data and Analytics Theory of Change](../../about-us/our-teams/data-and-analytics/data-analytics-theory-of-change.md) |
+| 3 | Innovation Lab | [Innovation Lab Theory of Change](../../about-us/our-teams/innovation-lab/innovation-lab-theory-of-change.md) |
+| 4 | Cross-Agency Delivery | [Cross-Agency Delivery — Service Definition](../../about-us/our-teams/innovation-lab/cross-agency-delivery-service-definition.md) |
+| 5 | AdminOps | [AdminOps Theory of Change](../../about-us/our-teams/directors-office/admin-ops-theory-of-change.md) |
 
 ## How we test the theories
 

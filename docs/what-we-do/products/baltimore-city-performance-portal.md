@@ -13,4 +13,4 @@ The Baltimore City Performance Portal is the planned public-facing home for city
 
 - [Citywide Performance Management](../services/citywide-performance-management.md)
 - [CitiStat program](../programs/citistat/index.md)
-- [Performance team](../../our-teams/performance/index.md)
+- [Performance team](../../about-us/our-teams/performance/index.md)

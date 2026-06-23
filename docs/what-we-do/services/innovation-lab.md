@@ -32,10 +32,10 @@ Baltimore City Code, Article 1, Subtitle 61 (Innovation Lab / continuous improve
 
 ## Delivered by
 
-The [Innovation Lab](../../our-teams/innovation-lab/index.md). When implementation requires multiple agencies to move together with named decision rights, the Lab's work is coordinated through [Cross-Agency Delivery](cross-agency-delivery.md).
+The [Innovation Lab](../../about-us/our-teams/innovation-lab/index.md). When implementation requires multiple agencies to move together with named decision rights, the Lab's work is coordinated through [Cross-Agency Delivery](cross-agency-delivery.md).
 
 ## Read alongside
 
 - [How Work Moves Through OPI](../../how-we-work/how-work-moves-through-opi.md) — where this service sits in the loop
-- [Digital Product Methodology](../../our-teams/innovation-lab/digital-product-methodology.md)
-- [Innovation Lab](../../our-teams/innovation-lab/index.md)
+- [Digital Product Methodology](../../about-us/our-teams/innovation-lab/digital-product-methodology.md)
+- [Innovation Lab](../../about-us/our-teams/innovation-lab/index.md)

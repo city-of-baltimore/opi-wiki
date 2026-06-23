@@ -8,7 +8,7 @@ A **program** is an ongoing routine that may involve more than one team. Unlike 
 | --- | --- | --- |
 | [CitiStat](citistat/index.md) | Baltimore's recurring, citywide performance routine — surfacing problems, assigning commitments, and tracking follow-through | CitiStat Director, supported by all OPI teams |
 
-CitiStat is supported by every part of OPI: the [Performance team](../../our-teams/performance/index.md) is its operational home, [Data and Analytics](../../our-teams/data-and-analytics/index.md) makes the evidence trustworthy, the [Innovation Lab](../../our-teams/innovation-lab/index.md) designs the fixes it surfaces, and [Cross-Agency Delivery](../services/cross-agency-delivery.md) coordinates the multi-agency work.
+CitiStat is supported by every part of OPI: the [Performance team](../../about-us/our-teams/performance/index.md) is its operational home, [Data and Analytics](../../about-us/our-teams/data-and-analytics/index.md) makes the evidence trustworthy, the [Innovation Lab](../../about-us/our-teams/innovation-lab/index.md) designs the fixes it surfaces, and [Cross-Agency Delivery](../services/cross-agency-delivery.md) coordinates the multi-agency work.
 
 ## Read alongside
 

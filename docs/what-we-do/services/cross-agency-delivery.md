@@ -36,7 +36,7 @@ Supported by CitiStat commitments and the agency roles required under Baltimore 
 
 ## Delivered by
 
-No standing team. Cross-Agency Delivery is activated through the [Innovation Lab](../../our-teams/innovation-lab/index.md) (which provides the Tiger Team and method) and the [Performance team](../../our-teams/performance/index.md) (which owns the standing delivery routine), with authorizing relationships from the Director's Office at the Deputy Mayor and City Administrator level.
+No standing team. Cross-Agency Delivery is activated through the [Innovation Lab](../../about-us/our-teams/innovation-lab/index.md) (which provides the Tiger Team and method) and the [Performance team](../../about-us/our-teams/performance/index.md) (which owns the standing delivery routine), with authorizing relationships from the Director's Office at the Deputy Mayor and City Administrator level.
 
 ## How to request this service
 
@@ -44,7 +44,7 @@ If a problem spans multiple agencies and has stalled in normal channels, raise i
 
 ## Read alongside
 
-- [Cross-Agency Delivery — Service Definition](../../our-teams/innovation-lab/cross-agency-delivery-service-definition.md) — the full method, governance, service levels, and theory of change
+- [Cross-Agency Delivery — Service Definition](../../about-us/our-teams/innovation-lab/cross-agency-delivery-service-definition.md) — the full method, governance, service levels, and theory of change
 - [How Work Moves Through OPI](../../how-we-work/how-work-moves-through-opi.md) — where this service sits in the loop
 - [Tiger Teams Playbook](../../resources/reference/tiger-teams-playbook.md)
-- [Innovation Lab](../../our-teams/innovation-lab/index.md)
+- [Innovation Lab](../../about-us/our-teams/innovation-lab/index.md)

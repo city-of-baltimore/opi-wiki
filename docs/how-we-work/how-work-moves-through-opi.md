@@ -118,6 +118,6 @@ OPI's teams are designed to overlap by intent, not by accident. When more than o
 
 - [Glossary of OPI Terms](../resources/reference/glossary.md)
 - [Tiger Teams Playbook](../resources/reference/tiger-teams-playbook.md)
-- [Innovation Lab Strategy](../our-teams/innovation-lab/innovation-lab-strategy.md)
+- [Innovation Lab Strategy](../about-us/our-teams/innovation-lab/innovation-lab-strategy.md)
 - [Cross-Agency Delivery service](../what-we-do/services/cross-agency-delivery.md)
 - [CitiStat Method Playbook](../what-we-do/programs/citistat/method-playbook.md)

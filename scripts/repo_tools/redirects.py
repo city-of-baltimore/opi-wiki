@@ -22,13 +22,18 @@ ALLOWED_DUPLICATE_DESTINATIONS = {
     "resources/reference/position-descriptions/performance/pd-citistat-program-manager.md",
     "resources/reference/position-descriptions/performance/pd-deputy-chief-performance-officer.md",
     "resources/reference/position-descriptions/performance/pd-senior-performance-analyst.md",
-    "our-teams/innovation-lab/cross-agency-delivery-service-definition.md",
+    "about-us/our-teams/innovation-lab/cross-agency-delivery-service-definition.md",
     "what-we-do/services/cross-agency-delivery.md",
     # Added with the How We Work regroup (Organization / Handbook sub-sections):
     "how-we-work/organization/org-structure.md",
     "how-we-work/organization/team-and-roles/index.md",
     # The two operating-model omnibus pages folded into the canonical loop page:
     "how-we-work/how-work-moves-through-opi.md",
+    # Our Teams folded under About Us (performance pages have 2 legacy paths each):
+    "about-us/our-teams/performance/index.md",
+    "about-us/our-teams/performance/about-performance.md",
+    "about-us/our-teams/performance/performance-strategy.md",
+    "about-us/our-teams/performance/performance-theory-of-change.md",
 }
 
 

@@ -32,10 +32,10 @@ Baltimore City Code, Article 1, Subtitle 61 (CitiStat).
 
 ## Delivered by
 
-The [Performance team](../../our-teams/performance/index.md), which operates the [CitiStat program](../programs/citistat/index.md) supported by all OPI teams.
+The [Performance team](../../about-us/our-teams/performance/index.md), which operates the [CitiStat program](../programs/citistat/index.md) supported by all OPI teams.
 
 ## Read alongside
 
 - [How Work Moves Through OPI](../../how-we-work/how-work-moves-through-opi.md) — where this service sits in the loop
 - [CitiStat program](../programs/citistat/index.md) — the routine that delivers it day to day
-- [Performance team](../../our-teams/performance/index.md)
+- [Performance team](../../about-us/our-teams/performance/index.md)

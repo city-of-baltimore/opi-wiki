@@ -11,7 +11,7 @@ This section is everything OPI produces for Baltimore — its services, programs
 - **[Programs](programs/index.md)** — ongoing routines that may span teams: CitiStat
 - **[Products](products/index.md)** — tools and platforms OPI builds: Baltimore Intelligence Center, Baltimore City Data Platform, Baltimore City Performance Portal
 
-The fourth content type — **teams** (who does the work) — lives under [Our Teams](../our-teams/index.md). The [home page](../index.md#how-this-site-is-organized) and the [glossary](../resources/reference/glossary.md) explain how the four fit together.
+The fourth content type — **teams** (who does the work) — lives under [Our Teams](../about-us/our-teams/index.md). The [home page](../index.md#how-this-site-is-organized) and the [glossary](../resources/reference/glossary.md) explain how the four fit together.
 
 ## Read alongside
 

@@ -18,7 +18,7 @@ Every page on this site is a Markdown document in a [GitHub repository](https://
 
 ## How work moves through OPI
 
-OPI uses a signal-to-solution loop: **[CitiStat](what-we-do/programs/citistat/index.md) identifies the problem → [Data and Analytics](our-teams/data-and-analytics/index.md) explains it → the [Innovation Lab](our-teams/innovation-lab/index.md) designs and tests the solution → [Cross-Agency Delivery](what-we-do/services/cross-agency-delivery.md) coordinates multi-agency implementation → AdminOps sustains it.** Read [How We Work](how-we-work/index.md) for the full model.
+OPI uses a signal-to-solution loop: **[CitiStat](what-we-do/programs/citistat/index.md) identifies the problem → [Data and Analytics](about-us/our-teams/data-and-analytics/index.md) explains it → the [Innovation Lab](about-us/our-teams/innovation-lab/index.md) designs and tests the solution → [Cross-Agency Delivery](what-we-do/services/cross-agency-delivery.md) coordinates multi-agency implementation → AdminOps sustains it.** Read [How We Work](how-we-work/index.md) for the full model.
 
 ## How this site is organized
 
