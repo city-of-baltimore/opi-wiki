@@ -90,7 +90,7 @@ Decisions move when the right people have clear authority, timeboxes, and escala
 | Deputy Chief Performance Officer | Stewards the CitiStat method, standards, templates, cadence, KPI discipline, follow-up expectations, and Stat quality.                                  |
 | Executive Sponsor / Authorizer   | Typically the relevant Deputy Mayor, DCA, or City Administrator. Confirms priorities, resolves barriers, approves commitments, and escalates as needed. |
 | Agency Director / SRO            | Owns operational performance, implementation, resource alignment, and follow-through.                                                                   |
-| OPI Operating Lead               | Runs the Stat session or support model; coordinates artifacts; ensures follow-up moves through the appropriate channel.                                 |
+| OPI lead                         | Runs the Stat session or support model; coordinates artifacts; ensures follow-up moves through the appropriate channel.                                 |
 | Analyst / Data Lead              | Prepares analysis, KPI updates, data quality notes, and dashboard inputs.                                                                               |
 
 #### Stat admission and continuation criteria
