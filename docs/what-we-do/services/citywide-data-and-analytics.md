@@ -16,13 +16,6 @@ Make City data accurate, reliable, accessible, and useful for decision-making, t
 
 Baltimore City Code, Article 1, Subtitle 9 (Open Data).
 
-## Priority outcomes
-
-- Decisions are based on trusted, current numbers rather than stale or missing data.
-- Public data is easy to understand and up to date.
-- Agencies work from one source of truth instead of rebuilding reports.
-- The City is ready to use AI and advanced analytics responsibly.
-
 ## What this means for people
 
 - **As a resident,** I want public data that's easy to understand and up to date.

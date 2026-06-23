@@ -20,13 +20,6 @@ Help City leadership and agencies resolve cross-agency barriers, clarify ownersh
 
 Supported by CitiStat commitments and the agency roles required under Baltimore City Code, Article 1, Subtitles 61 and 9. Cross-Agency Delivery has no standalone code mandate — it is operationally required to deliver on those.
 
-## Priority outcomes
-
-- Cross-agency issues get resolved instead of drifting between departments.
-- Ownership, decision rights, and sequencing are clear before work starts.
-- Hard problems move without standing up new task forces.
-- Improvements stick because sustainment is planned before delivery closes.
-
 ## What this means for people
 
 - **As a resident,** I don't care which agency is responsible — I just want my issue resolved.
