@@ -55,6 +55,8 @@ predictability so everyone knows when teammates will be available and engaged.
 
 ## Core Expectations
 
+These expectations set OPI's in-office rhythm and its remote-day flexibility.
+
 ## In-Office Days
 
 - **Core Days:** Tuesday, Wednesday, and Thursday are mandatory in-office days for everyone.

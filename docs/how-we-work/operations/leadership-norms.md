@@ -149,6 +149,8 @@ Standards ensure consistency without micromanagement.
 
 ### Execution and follow-through
 
+Standards for how work gets done, reported, and unblocked.
+
 ### Status reporting is required and timely
 
 - Due on schedule.
@@ -193,6 +195,8 @@ Any blocker lasting more than 48 hours appears in status with a clear ask.
 
 ### Planning and availability
 
+Standards for planning, time off, and coverage.
+
 ### OOO calendars are mandatory
 
 - PTO is reflected on shared calendars.
@@ -204,6 +208,8 @@ Any blocker lasting more than 48 hours appears in status with a clear ask.
 Work is handed off, rescheduled, or explicitly renegotiated. Never silently dropped.
 
 ### Artifacts and hygiene
+
+Standards for the quality and documentation of work products.
 
 ### Work has a definition of done
 
