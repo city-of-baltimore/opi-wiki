@@ -10,7 +10,7 @@ Culture shows up in the handoffs. Moving fast with intention means choosing the 
 
 OPI runs on a small number of operating principles. They are deliberately memorable, because they show up in the small daily decisions — how a meeting opens, who gets credit, how a memo is reviewed, how we say no — and not just in onboarding.
 
-They are paired with the OPI values: GRIT, CANDOR, OWNERSHIP, HUMILITY, INTENTION, IMPACT.
+They are paired with the OPI core values: GRIT, CANDOR, OWNERSHIP, HUMILITY, INTENTION, IMPACT.
 
 > *Set the temperature. The operating norms we model become the office culture.*
 
