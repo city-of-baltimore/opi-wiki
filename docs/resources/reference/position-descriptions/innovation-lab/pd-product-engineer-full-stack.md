@@ -1,23 +1,23 @@
-# PD — Product Engineer
+# PD — Full Stack Engineer
 
-{{ page_header(summary="Position description for the Product Engineer.") }}
+{{ page_header(summary="Position description for the Full Stack Engineer.") }}
 
 ## At a Glance
 
 |                          |                                                                                                         |
 |--------------------------|---------------------------------------------------------------------------------------------------------|
-| **Working title**        | Product Engineer                                                                           |
+| **Working title**        | Full Stack Engineer                                                                           |
 | **Classification**       | Operations Officer III (Non-Civil Service)                                                              |
 | **Portfolio**            | Innovation Lab                                                                                          |
-| **Reports to**           | Senior Product Engineer (with interim portfolio oversight from the Executive Director)                  |
+| **Reports to**           | Innovation Program Manager                  |
 | **Supervision given**    | Individual contributor.                                                                                 |
-| **Supervision received** | Reports to the Senior Product Engineer. Receives interim portfolio oversight from the Executive Director. |
+| **Supervision received** | Reports to the Innovation Program Manager. |
 
 ## Position Summary
 
-The Product Engineer is a mission-driven full-stack engineer on the Innovation Lab team, building modern, scalable data products that power internal decision-making, public engagement, and transparency in Baltimore City government. The role contributes to high-impact digital products like the citywide Performance Plan, the Mayor’s Executive Dashboard, the 10-Year Financial Plan, economic-intelligence products, and other public-facing data products.
+The Full Stack Engineer is a mission-driven full-stack engineer on the Innovation Lab team, building modern, scalable data products that power internal decision-making, public engagement, and transparency in Baltimore City government. The role contributes to high-impact digital products like the citywide Performance Plan, the Mayor’s Executive Dashboard, the 10-Year Financial Plan, economic-intelligence products, and other public-facing data products.
 
-The Product Engineer works closely with the Civic Designer, the Senior Product Engineer, the Civic Technology Lead, analysts, and policy experts to design and implement full-stack applications, primarily using React, Python, and modern APIs. The engineer helps shape reusable, modular components and patterns to support a growing portfolio of city dashboards and internal tools.
+The Full Stack Engineer works closely with the Civic Designer, the Applied Data Scientist, analysts, and policy experts to design and implement full-stack applications, primarily using React, Python, and modern APIs. The engineer helps shape reusable, modular components and patterns to support a growing portfolio of city dashboards and internal tools.
 
 ## Key Responsibilities
 
@@ -47,7 +47,7 @@ The Product Engineer works closely with the Civic Designer, the Senior Product E
 
 - Contribute to documentation, runbooks, and reusable templates.
 
-- Partner with the Senior Product Engineer and Civic Technology Lead on shared infrastructure and architecture decisions.
+- Partner with the Applied Data Scientist and the Innovation Program Manager on shared infrastructure and architecture decisions.
 
 ## Knowledge, Skills, and Abilities
 
@@ -97,7 +97,7 @@ Employees in this class work a conventional work week. Work is performed in an o
 
 ## Supervision
 
-**Supervision received.** Reports to the Senior Product Engineer. Receives interim portfolio oversight from the Executive Director.
+**Supervision received.** Reports to the Innovation Program Manager.
 
 **Supervision given.** Individual contributor.
 

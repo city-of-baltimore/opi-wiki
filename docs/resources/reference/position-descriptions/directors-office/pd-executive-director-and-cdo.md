@@ -10,7 +10,7 @@
 | **Classification**       | Executive Director I                                                                                                                                                                                                                                 |
 | **Portfolio**            | Director's Office                                                                                                                                                                                                                                    |
 | **Reports to**           | City Administrator (with reporting responsibilities to the Mayor on performance)                                                                                                                                                                     |
-| **Supervision given**    | Provides executive oversight to OPI’s senior leadership team — the Chief of Staff, the Deputy Chief Performance Officer, the Deputy Chief Data Officer, and the Innovation Lab director (or interim) — and indirectly supervises the full OPI staff. |
+| **Supervision given**    | Provides executive oversight to OPI’s senior leadership team — the Chief of Staff, the Deputy Chief Performance Officer, the Deputy Chief Data Officer, and the Innovation Program Manager — and indirectly supervises the full OPI staff. |
 | **Supervision received** | Reports to the City Administrator with regular reporting responsibilities to the Mayor on citywide performance and the CitiStat program.                                                                                                             |
 
 ## Position Summary
@@ -113,6 +113,6 @@ Employees in this class work a conventional work week. This position may be requ
 
 **Supervision received.** Reports to the City Administrator with regular reporting responsibilities to the Mayor on citywide performance and the CitiStat program.
 
-**Supervision given.** Provides executive oversight to OPI’s senior leadership team — the Chief of Staff, the Deputy Chief Performance Officer, the Deputy Chief Data Officer, and the Innovation Lab director (or interim) — and indirectly supervises the full OPI staff.
+**Supervision given.** Provides executive oversight to OPI’s senior leadership team — the Chief of Staff, the Deputy Chief Performance Officer, the Deputy Chief Data Officer, and the Innovation Program Manager — and indirectly supervises the full OPI staff.
 
 *This Position Description reflects the OPI operating model. It describes the typical scope of the role and is not an exhaustive list of duties. OPI is an Equal Opportunity Employer; all qualified applicants will receive consideration without regard to race, color, religion, sex, sexual orientation, gender identity, national origin, disability, age, or veteran status.*

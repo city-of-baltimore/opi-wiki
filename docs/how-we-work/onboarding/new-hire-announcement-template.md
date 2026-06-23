@@ -70,7 +70,7 @@ Welcome to OPI Engineering — \[First Name\] \[Last Name\] starts today
 
 Team —
 
-Please join me in welcoming \[First Name\] \[Last Name\] to OPI. \[First Name\] joins our Data & Analytics portfolio as our new \[Engineering / Product Engineer / Data Engineer\]. \[He / she / they\] will work most closely with \[Engineering lead name\] and is partnered with \[Buddy name\] for onboarding.
+Please join me in welcoming \[First Name\] \[Last Name\] to OPI. \[First Name\] joins our Data & Analytics portfolio as our new \[Engineering / Full Stack Engineer / Data Engineer\]. \[He / she / they\] will work most closely with \[Engineering lead name\] and is partnered with \[Buddy name\] for onboarding.
 
 \[First Name\] comes to us from \[previous role / org\] where \[one-sentence accomplishment\]. At OPI, \[he / she / they\] will focus on \[one-sentence area — e.g., the 311 public portal, the Performance Portal, internal data platform, the State of the City Map\].
 

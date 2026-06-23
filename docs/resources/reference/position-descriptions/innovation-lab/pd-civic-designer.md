@@ -9,9 +9,9 @@
 | **Working title**        | Civic Designer                                                                                                                   |
 | **Classification**       | Operations Officer III                                                                                                           |
 | **Portfolio**            | Innovation Lab                                                                                                                   |
-| **Reports to**           | Innovation Program Manager (with interim portfolio oversight from the Executive Director)                                        |
+| **Reports to**           | Innovation Program Manager                                        |
 | **Supervision given**    | Individual contributor.                                                                                                          |
-| **Supervision received** | Reports to the Innovation Program Manager. Receives interim portfolio oversight from the Executive Director on active priorities. |
+| **Supervision received** | Reports to the Innovation Program Manager. |
 
 ## Position Summary
 
@@ -33,7 +33,7 @@ The Civic Designer applies service design, applied research, and human-centered 
 
 - Facilitate design workshops and co-creation sessions with city staff and stakeholders to prototype and refine service solutions.
 
-- Create and test low-fidelity prototypes or drafts of forms, pages, or messages; partner with the Civic Technology Lead and Product Engineers to implement and scale.
+- Create and test low-fidelity prototypes or drafts of forms, pages, or messages; partner with the Full Stack Engineer to implement and scale.
 
 - Use process mapping and concept sketching to align stakeholders quickly.
 
@@ -93,7 +93,7 @@ Employees in this class work a conventional work week. Work is performed in an o
 
 ## Supervision
 
-**Supervision received.** Reports to the Innovation Program Manager. Receives interim portfolio oversight from the Executive Director on active priorities.
+**Supervision received.** Reports to the Innovation Program Manager.
 
 **Supervision given.** Individual contributor.
 

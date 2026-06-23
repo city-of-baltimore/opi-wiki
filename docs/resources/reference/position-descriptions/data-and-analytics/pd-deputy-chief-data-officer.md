@@ -10,7 +10,7 @@
 | **Classification**       | Operations Director II                                                                                                                                                                                                                                                                      |
 | **Portfolio**            | Data and Analytics                                                                                                                                                                                                                                                                          |
 | **Reports to**           | Executive Director and Chief Data Officer                                                                                                                                                                                                                                                   |
-| **Supervision given**    | Provides executive oversight to the Technical Program Manager, the Analytics Lead, the Principal Data Engineer, the Principal Platform Engineer, and the Senior Data Engineer. Indirectly supervises a wider technical, professional, and administrative staff. |
+| **Supervision given**    | Provides executive oversight to the Technical Program Manager, the Applied Data Scientist, the Principal Data Engineer, and the Senior Data Engineer. Indirectly supervises a wider technical, professional, and administrative staff. |
 | **Supervision received** | Reports to the Executive Director and Chief Data Officer of OPI.                                                                                                                                                                                                                            |
 
 ## Position Summary
@@ -117,6 +117,6 @@ Employees in this class work a conventional work week. This position may be requ
 
 **Supervision received.** Reports to the Executive Director and Chief Data Officer of OPI.
 
-**Supervision given.** Provides executive oversight to the Technical Program Manager, the Analytics Lead, the Principal Data Engineer, the Principal Platform Engineer, and the Senior Data Engineer. Indirectly supervises a wider technical, professional, and administrative staff.
+**Supervision given.** Provides executive oversight to the Technical Program Manager, the Applied Data Scientist, the Principal Data Engineer, and the Senior Data Engineer. Indirectly supervises a wider technical, professional, and administrative staff.
 
 *This Position Description reflects the OPI operating model. It describes the typical scope of the role and is not an exhaustive list of duties. OPI is an Equal Opportunity Employer; all qualified applicants will receive consideration without regard to race, color, religion, sex, sexual orientation, gender identity, national origin, disability, age, or veteran status.*

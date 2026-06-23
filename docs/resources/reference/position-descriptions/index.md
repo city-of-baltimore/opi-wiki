@@ -42,30 +42,28 @@ OPI maintains a position description (PD) for every role on the team. PDs are th
 ### Innovation Lab
 
 - [Innovation Program Manager](innovation-lab/pd-innovation-program-manager.md)
-- [Civic Technology Lead](innovation-lab/pd-civic-technology-lead.md)
 - [Civic Designer](innovation-lab/pd-civic-designer.md)
-- [Senior Product Engineer](innovation-lab/pd-senior-product-engineer.md)
-- [Product Engineer](innovation-lab/pd-product-engineer-full-stack.md)
+- [Applied Data Scientist](innovation-lab/pd-applied-data-scientist.md)
+- [Full Stack Engineer](innovation-lab/pd-product-engineer-full-stack.md)
 
 ### Performance
 
-- [Deputy Chief Performance Officer](performance-and-citistat/pd-deputy-chief-performance-officer.md)
-- [CitiStat Program Manager](performance-and-citistat/pd-citistat-program-manager.md)
-- [CitiStat Analyst](performance-and-citistat/pd-citistat-analyst.md)
-- [Senior Performance Analyst](performance-and-citistat/pd-senior-performance-analyst.md)
+- [Deputy Chief Performance Officer](performance/pd-deputy-chief-performance-officer.md)
+- [CitiStat Program Manager](performance/pd-citistat-program-manager.md)
+- [CitiStat Analyst](performance/pd-citistat-analyst.md)
+- [Senior Performance Analyst](performance/pd-senior-performance-analyst.md)
 
 ### Data and Analytics
 
 - [Deputy Chief Data Officer](data-and-analytics/pd-deputy-chief-data-officer.md)
 - [Applied Data Scientist](data-and-analytics/pd-applied-data-scientist.md)
 - [Principal Data Engineer](data-and-analytics/pd-principal-data-engineer.md)
-- [Principal Platform Engineer](data-and-analytics/pd-principal-platform-engineer.md)
 - [Senior Data Engineer](data-and-analytics/pd-senior-data-engineer.md)
 - [Technical Program Manager](data-and-analytics/pd-technical-program-manager.md)
 
 ### Cross-Agency Delivery
 
-Cross-Agency Delivery is a service overlay, not a separate team or cost center, so it does not have dedicated position descriptions. The Innovation Lab provides the team, Performance provides the standing delivery routine, and the Director's Office provides the authorizing relationships. Staff working in Cross-Agency Delivery engagements remain on their home-portfolio PD. See the [Cross-Agency Delivery overview](../../../our-teams/cross-agency-delivery/about-cross-agency-delivery.md) and the [Tiger Teams Playbook](../tiger-teams-playbook.md) for how engagements are chartered and staffed.
+Cross-Agency Delivery is a service overlay, not a separate team or cost center, so it does not have dedicated position descriptions. The Innovation Lab provides the team, Performance provides the standing delivery routine, and the Director's Office provides the authorizing relationships. Staff working in Cross-Agency Delivery engagements remain on their home-portfolio PD. See the [Cross-Agency Delivery service](../../../how-we-work/services/cross-agency-delivery.md) and the [Tiger Teams Playbook](../tiger-teams-playbook.md) for how engagements are chartered and staffed.
 
 ## How this index is maintained
 

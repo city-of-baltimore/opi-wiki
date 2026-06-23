@@ -15,7 +15,7 @@
 
 ## Position Summary
 
-The Principal Data Engineer is OPI’s lead data engineer and architect, responsible for designing and developing Baltimore’s next-generation data infrastructure. The role co-develops a centralized, enterprise-wide data warehouse and the secure, reliable, scalable pipelines that feed it. Beyond contributing to OPI codebases, the Principal Data Engineer influences data architecture, orchestration, tooling, and governance across the team and the City.
+The Principal Data Engineer is OPI’s lead data engineer and architect, responsible for designing and developing Baltimore’s next-generation data infrastructure. The role co-develops a centralized, enterprise-wide data warehouse and the secure, reliable, scalable pipelines that feed it, and owns the cloud platform, security baselines, and CI/CD that the warehouse and data products run on — platform responsibilities consolidated into this role. Beyond contributing to OPI codebases, the Principal Data Engineer influences data architecture, orchestration, tooling, and governance across the team and the City.
 
 Reporting to the Deputy Chief Data Officer, the role works on an interdisciplinary team of analysts, designers, and managers to ensure data products are adopted by agency staff, policymakers, and the public. The Principal Data Engineer is a hands-on, senior practitioner with both architectural and engineering responsibilities.
 
@@ -27,7 +27,13 @@ Reporting to the Deputy Chief Data Officer, the role works on an interdisciplina
 
 - Establish and maintain data architecture standards: schema design, naming conventions, lineage, and data-quality contracts.
 
-- Partner with the Principal Platform Engineer on cloud architecture, security baselines, and CI/CD.
+### Cloud Platform and CI/CD
+
+- Architect and operate the cloud platform for the citywide data warehouse, data products, and related applications.
+
+- Design and maintain the CI/CD pipeline for data products and services, with logging, monitoring, and alerting for platform reliability.
+
+- Implement security models in compliance with IT security and data-governance standards, managing compute, storage, and security costs.
 
 ### Pipeline Engineering
 
