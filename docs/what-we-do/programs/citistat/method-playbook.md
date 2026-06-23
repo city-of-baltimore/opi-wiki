@@ -61,7 +61,7 @@ This playbook makes a good Stat repeatable, so a session does not depend on pers
 
 ## Operating principles: rigorous and humane
 
-CitiStat is rigorous and humane. The work must be grounded in facts, but it should never become a ritual of blame. The best sessions create a high-accountability, high-support environment: agencies are expected to own results, and City leadership is expected to help remove the barriers agencies cannot resolve alone.
+CitiStat is rigorous and humane. The work must be grounded in facts, but it should never become a ritual of blame. The best sessions hold agencies accountable for results while helping them clear the barriers they cannot resolve alone.
 
 ### The four tenets of Stat
 

@@ -20,7 +20,7 @@ Tech Stat focuses on the technology systems, service delivery, and governance pr
 
 ### Staff Purpose
 
-Staff use Tech Stat to review IT project delivery, service desk performance, enterprise system reliability, technology procurement governance, change management, system implementation risks, and agency technology support.
+Staff use Tech Stat to review IT project delivery, service desk performance, enterprise system reliability, technology procurement governance, system implementation risks, and agency technology support.
 
 ### Core Management Questions
 

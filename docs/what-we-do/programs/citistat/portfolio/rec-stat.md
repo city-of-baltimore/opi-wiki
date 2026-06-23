@@ -20,7 +20,7 @@ Rec Stat focuses on recreation centers, parks, forestry, senior programming, you
 
 ### Staff Purpose
 
-Staff use Rec Stat to monitor recreation participation, program capacity, forestry backlogs, facility maintenance, safety and security conditions, staffing, and capital or operational needs affecting parks and recreation services.
+Staff use Rec Stat to monitor recreation participation, program capacity, forestry backlogs, facility maintenance, safety and security conditions, and capital or operational needs affecting parks and recreation services.
 
 ### Core Management Questions
 

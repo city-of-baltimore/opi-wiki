@@ -17,7 +17,7 @@
 
 The Chief of Staff is the Executive Director’s principal deputy and the operational leader of OPI’s Director’s Office. The role coordinates strategy and execution on behalf of the Executive Director, owns OPI’s internal operating rhythm, and represents the Executive Director in interagency forums. Externally, the Chief of Staff leads partnerships, communications, and resource development. Internally, the Chief of Staff oversees administrative operations, knowledge management, the SharePoint operating system, quality assurance, the inspections function, and cross-OPI alignment.
 
-The Chief of Staff manages the Director’s Office staff (Data Storyteller, Project Manager, Operations Analyst, and CitiStat Inspector), directly oversees the Innovation Program Manager role on behalf of the Innovation Lab, oversees personnel, purchasing, and facilities coordination, and maintains continuity practices including OSHA, COOP, and incident response. The role connects the Executive Director to the four service portfolios.
+The Chief of Staff manages the Director’s Office staff (Data Storyteller, Project Manager, Operations Analyst, and CitiStat Inspector) and directly oversees the Innovation Program Manager on behalf of the Innovation Lab. The role also oversees personnel, purchasing, and facilities coordination, and maintains continuity practices including OSHA, COOP, and incident response. It connects the Executive Director to the four service portfolios.
 
 ## Key Responsibilities
 

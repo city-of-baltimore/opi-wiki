@@ -40,17 +40,10 @@ or obligations under City HR policy, ADA, FMLA, or other applicable laws.
 Requests for accommodation will continue to be handled through the city's
 established HR processes.
 
-Being in the office during core days strengthens our ability to deliver and grow
-as a team. Collaboration moves faster and decisions are clearer when we are
-face-to-face, and the impromptu conversations, brainstorming, and shared wins that build OPI's culture.
-
-In-person time also ensures our work stays tightly aligned as we tackle complex
-challenges that cut across data, design, and performance. It creates
-opportunities for professional development, whether by observing how colleagues
-approach problems, joining working sessions, or building leadership presence.
-
-Just as importantly, a consistent in-office rhythm provides equity and
-predictability so everyone knows when teammates will be available and engaged.
+Core days keep our work aligned and move decisions faster. In-person time
+supports the impromptu conversations, brainstorming, and shared wins that build
+OPI's culture, and a consistent rhythm gives everyone the same predictability
+about when teammates are available.
 
 ## Core Expectations
 

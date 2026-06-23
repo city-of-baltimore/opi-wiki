@@ -4,7 +4,7 @@
 
 ## What this service does
 
-This service — OPI's Administration & Operations function — is responsible for the administrative, operational, communications, and portfolio-management functions that support the Mayor's Office of Performance and Innovation.
+This service is OPI's Administration & Operations function. It runs the administrative, operational, communications, and portfolio-management work that keeps the Mayor's Office of Performance and Innovation moving.
 
 **Activities include** portfolio intake and tracking, project-management coordination, executive briefings, communications, branding and marketing, Council relations, knowledge management, fiscal and procurement coordination, HR and facilities support, internal operating routines, quality assurance for public-facing materials, and maintaining the systems and standards that keep OPI's work consistent and sustainable.
 
@@ -28,7 +28,7 @@ Operationally required to execute Baltimore City Code, Article 1, Subtitles 61 a
 - **As a city leader,** I want confidence that priority work is being driven, tracked, and communicated.
 - **As an agency partner,** I want clear timelines, expectations, and responsive coordination.
 - **As OPI staff,** I want systems, templates, and support that reduce friction and let me focus on impact.
-- **As a resident,** I benefit when city commitments are delivered and progress is transparent.
+- **As a resident,** I benefit when the City keeps its commitments and shows its progress.
 
 ## Delivered by
 

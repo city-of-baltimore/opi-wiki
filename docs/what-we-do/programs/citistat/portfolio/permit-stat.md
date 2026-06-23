@@ -20,7 +20,7 @@ Permit Stat focuses on the permitting system that residents, homeowners, develop
 
 ### Staff Purpose
 
-Staff use Permit Stat to review application backlogs, review timelines, process handoffs, agency review steps, applicant communication, SOPs, system issues, prioritization, and reforms tied to the permitting experience.
+Staff use Permit Stat to review application backlogs, review timelines, process handoffs, applicant communication, system issues, and reforms tied to the permitting experience.
 
 ### Core Management Questions
 

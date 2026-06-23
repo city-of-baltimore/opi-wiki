@@ -17,14 +17,14 @@ This does not mean every issue moves through every service. Some problems stay i
 | 1. See the signal | Citywide Performance Management (via CitiStat) | What is not working, where, and why does leadership time matter? | Stat pre-memo, Stat deck, KPI view, follow-up memo, commitment tracker |
 | 2. Explain the pattern | Citywide Data and Analytics | What does the evidence show, and how confident are we? | Dataset, dashboard, methodology card, data quality note, analytic brief |
 | 3. Design and test the fix | Innovation Lab | How do we solve this in a way that works for residents and staff? | Discovery memo, service blueprint, prototype, pilot, product brief, runbook |
-| 4. Coordinate implementation | Cross-Agency Delivery | How do we get multiple agencies to ship this together? | Activation memo, delivery charter, commitment ledger, decision log, escalation memo, sustainment plan |
+| 4. Coordinate implementation | Cross-Agency Delivery | How do we get multiple agencies to deliver this together? | Activation memo, delivery charter, commitment ledger, decision log, escalation memo, sustainment plan |
 | 5. Keep the gain | AdminOps + responsible team | How do we document, communicate, monitor, and sustain the improvement? | Closure memo, SOP, training materials, public summary, status report, knowledge-base update |
 
 ## What each service owns
 
 ### CitiStat owns the executive performance rhythm
 
-CitiStat is the routine for seeing performance clearly, asking better questions, assigning commitments, and tracking follow-through. It is not just a meeting and not every recurring meeting is a Stat. A real Stat has a performance problem, reliable enough data, a decision-maker, a follow-up mechanism, and a reason leadership time is required.
+CitiStat is the routine for seeing performance clearly, asking better questions, assigning commitments, and tracking follow-through. It is more than a meeting, and not every recurring meeting is a Stat. A real Stat has a performance problem, reliable enough data, a decision-maker, a follow-up mechanism, and a reason leadership time is required.
 
 CitiStat may produce a commitment that stays inside the agency, or it may trigger another OPI routine: a data quality sprint, product discovery, a Tiger Team, a delivery activation, or a one-time executive decision.
 
@@ -32,7 +32,7 @@ CitiStat may produce a commitment that stays inside the agency, or it may trigge
 
 Data and Analytics turns raw administrative data into decision-grade evidence. The team owns shared datasets, data pipelines, analytics products, open data, data governance, methodology cards, and responsible AI/data readiness. Its job is to make evidence reliable enough to act on, not just to produce charts.
 
-### The Innovation Lab owns the craft of solving
+### The Innovation Lab owns how problems get solved
 
 The Innovation Lab is OPI’s service improvement and applied innovation capability. It owns discovery, service design, user research, product management, prototyping, civic technology, applied AI pilots, and MVP-and-handoff methods.
 
@@ -42,13 +42,13 @@ The Lab can work on a single-agency problem or a multi-agency problem. What defi
 
 ### Cross-Agency Delivery owns the coordination
 
-Cross-Agency Delivery is a service overlay: a coordinating function that draws on staff from across OPI rather than a standing team, and not a cost center. It activates when the work requires multiple agencies to move together and normal channels are not enough.
+Cross-Agency Delivery is a service overlay: a coordinating service that draws on staff from across OPI rather than a standing team, and not a cost center. It activates when the work requires multiple agencies to move together and normal channels are not enough.
 
-Cross-Agency Delivery owns the coordination authority: Authorizer, Senior Responsible Owner, decision rights, commitment tracking, escalation, weekly or bi-weekly delivery cadence, and sustainment commitments across agencies.
+Cross-Agency Delivery owns the coordination authority: who authorizes the work, who serves as Senior Responsible Owner, and who holds decision rights, plus commitment tracking, escalation, a weekly or bi-weekly delivery cadence, and sustainment commitments across agencies.
 
-Its question is: **How do we get multiple agencies to actually ship this together?**
+Its question is: **How do we get multiple agencies to deliver this together?**
 
-### AdminOps owns the operating backbone
+### AdminOps owns the routines that keep the office running
 
 AdminOps keeps the work visible, documented, communicated, and sustained. It owns intake discipline, portfolio visibility, knowledge management, executive briefings, Council readiness, communications, QA, and the operating routines that keep a small office from running on individual heroics.
 
@@ -102,7 +102,7 @@ Use these rules before creating a new meeting, workgroup, or project.
 
 ## Function boundaries
 
-OPI's teams overlap by intent, not by accident. When more than one team could plausibly own a piece of work, these rules decide who leads.
+OPI's teams overlap by intent, not by accident. When more than one team could own a piece of work, these rules decide who leads.
 
 | **Function** | **Primary lead** | **Boundary / handoff rule** |
 | --- | --- | --- |

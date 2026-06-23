@@ -1,24 +1,22 @@
 # Operating Principles and Culture
 
-{{ page_header(summary="How we work together — the rules of the road inside OPI.", tagline="How we work, how we treat each other, and how we hold the line on quality — drawn from our team listening sessions.") }}
+{{ page_header(summary="How we work together — the rules of the road inside OPI.", tagline="How we work, how we treat each other, and how we hold the line on quality.") }}
 
 ## How this connects to the operating model
 
 Culture shows up in the handoffs. Moving fast with intention means choosing the right routine, naming the owner, documenting the decision, and planning sustainment before launch. Use the operating principles alongside How Work Moves Through OPI when deciding whether work belongs in CitiStat, Data and Analytics, the Innovation Lab, Cross-Agency Delivery, or AdminOps.
 
-## NORTH STAR
+## The Culture We Choose
 
-**The operating culture we are choosing on purpose**
+OPI runs on a small number of operating principles. They are deliberately memorable, because they show up in the small daily decisions — how a meeting opens, who gets credit, how a memo is reviewed, how we say no — and not just in onboarding.
 
-OPI runs on a small number of operating principles. They are deliberately memorable, because they show up in the small daily decisions — how a meeting opens, who gets credit, how a memo is reviewed, how we say no — and not just in retreats and onboarding decks.
-
-These principles come from our team's listening sessions and strategy reviews. They are paired with the OPI values: GRIT, CANDOR, OWNERSHIP, HUMILITY, INTENTION, IMPACT.
+They are paired with the OPI values: GRIT, CANDOR, OWNERSHIP, HUMILITY, INTENTION, IMPACT.
 
 > *Set the temperature. The operating norms we model become the office culture.*
 
-## OPERATING PRINCIPLES
+## Operating Principles
 
-**Ten statements we repeat until they become reflex**
+Ten statements we repeat until they become reflex.
 
 ### 1. Move fast with intention
 
@@ -62,9 +60,7 @@ Raw data is not a deliverable. Information is data with structure. Knowledge is 
 
 > *Say the true thing kindly. Candor is a value. So is care. They are not in tension.*
 
-## RECOGNITION CULTURE
-
-**How we honor the work and the people who do it**
+## Recognition Culture
 
 Recognition is operational. It helps us keep people who could earn more in the private sector, and it shows the rest of the city what good work looks like.
 
@@ -88,9 +84,9 @@ Recognition is operational. It helps us keep people who could earn more in the p
 
 - Recognition is teaching. By celebrating specific behaviors, we make those behaviors easier to repeat.
 
-## RESIDENT-FOCUSED OPERATING NORMS
+## Resident-Focused Operating Norms
 
-**How we keep residents at the center of the work**
+How we keep residents at the center of the work.
 
 - Constituent Services partnership: 311 and the Mayor’s Action Center are not downstream of OPI. They are an OPI partner whose data and signal feed every Stat and every service redesign.
 
@@ -98,7 +94,7 @@ Recognition is operational. It helps us keep people who could earn more in the p
 
 - Localized data storytelling: district-level dashboards, neighborhood-level performance views, and plain-language summaries that make data legible at the block-and-corner level.
 
-- Citywide Data Network: show-and-tells, hackathons, fellowships, and GitHub-style contribution programs that bring residents and partners into the work.
+- Citywide Data Network: show-and-tells, hackathons, fellowships, and open contribution programs that bring residents and partners into the work.
 
 - Resident-facing Stat: explore models like “Citizen Hall” where residents can interact with city performance data in physical and digital civic spaces.
 
@@ -108,11 +104,9 @@ Recognition is operational. It helps us keep people who could earn more in the p
 
 > *More in-city partnerships, boots on the ground, and relational government. Closes the perception gap. Builds legitimacy. Ensures sustainability.*
 
-## CIVIC DATA COMMUNITY
+## Civic Data Community
 
-### How we extend our team without expanding payroll
-
-We cannot hire fast enough to do everything we want. The Citywide Data Network is how we extend our capacity through partnership.
+We cannot hire fast enough to do everything we want. The Citywide Data Network is how we extend our capacity through partnership, without expanding payroll.
 
 ### Programs we run or sponsor
 
@@ -128,11 +122,9 @@ We cannot hire fast enough to do everything we want. The Citywide Data Network i
 
 - Peer-government partnerships: visiting other cities, hosting visitors, and partnering on shared data, product, and service-delivery work.
 
-## OWNERSHIP MODEL
+## Ownership Model
 
-**Who owns what across the city operating stack**
-
-*Most cross-agency conflict comes from unclear ownership. This is the model we use to sort it out.*
+Most cross-agency conflict comes from unclear ownership. This is the model we use to sort it out, mapped across the city operating stack.
 
 | **Layer**                                    | **Owner**                  | **What they own**                                                                                                                                                                  |
 |----------------------------------------------|----------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -143,9 +135,7 @@ We cannot hire fast enough to do everything we want. The Citywide Data Network i
 
 Where any layer is unclear in a specific engagement, the engagement charter resolves it before delivery starts. We do not let ownership be implicit.
 
-## OPERATING CHEAT CODES
-
-**Frameworks we use across the team**
+## Frameworks We Use
 
 ### SBAR — Situation, Background, Assessment, Recommendation
 
@@ -167,9 +157,7 @@ We find an example before we invent. Other cities, other agencies, other teams w
 
 We invite people outside the obvious stakeholder list — a city photographer, a frontline staff member, a teenager, a retiree — because the strategic insight often lives in the seams the experts cannot see.
 
-## PAST SELVES, FUTURE SELVES
-
-**Why we document and reflect**
+## Past Selves, Future Selves
 
 Two of the most important strategic partners every team member has are their past self and their future self. We treat that relationship as operational.
 
@@ -185,11 +173,9 @@ Two of the most important strategic partners every team member has are their pas
 
 > *A client can fail and you have done your job. A partner is someone whose failure is your failure too. OPI’s real partner is the Mayor’s Office, because our success and failure are intertwined.*
 
-## HOW WE PLAN TEAM TIME
+## How We Plan Team Time
 
-**The 70 / 20 / 10 model**
-
-*We structure how we spend our hours to guard against burnout. The model below is a working baseline — a guide, not a rule — reviewed each fiscal year.*
+The 70 / 20 / 10 model structures how we spend our hours to guard against burnout. It is a working baseline — a guide, not a rule — reviewed each fiscal year.
 
 | **Allocation** | **What it covers**                                                                                                             | **Why it matters**                                                                                                      |
 |----------------|--------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------|
@@ -201,9 +187,7 @@ Practical implications: we draft an annual capacity plan per service. We track a
 
 > *Use strategy to protect against burnout and ensure responsiveness without chaos. Build repeatable models so we can scale even when teams are stretched.*
 
-## LIVING DOCUMENT
-
-**How we keep this honest**
+## Keeping This Honest
 
 - Reviewed each fiscal year. The principles list earns its place. If a principle is not actually showing up in our daily decisions, we revise or remove it.
 

@@ -56,6 +56,6 @@ Mayor’s Office of Performance and Innovation
 
 **About OPI: Admin & Ops —** *who the team is and what they own.*
 
-**ToC: AdminOps —** *logic model, internal SLAs, and core artifacts.*
+**Theory of Change: AdminOps —** *logic model, internal SLAs, and core artifacts.*
 
 **SharePoint Operating System Strategy —** *how OPI runs its institutional memory.*

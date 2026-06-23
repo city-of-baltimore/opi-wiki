@@ -32,7 +32,7 @@ Before opening a documentation PR, check whether the page uses OPI's core operat
 - Does it spell out Cross-Agency Delivery in full, never "CAD"?
 - Does it use Innovation Lab for the craft of solving problems and Cross-Agency Delivery for cross-agency coordination?
 - Does the page (or its section `.metadata.yml`) name an owner and a review cadence?
-- Does it describe CitiStat as an executive performance rhythm rather than a meeting calendar?
+- Does it describe CitiStat as an executive performance routine rather than a meeting calendar?
 - Does it link to the official method page when using terms like Tiger Team, Stat, delivery activation, or product discovery?
 - Does it name the audience and public posture?
 - Does it avoid retired or use-with-care terms unless the historical context requires them?

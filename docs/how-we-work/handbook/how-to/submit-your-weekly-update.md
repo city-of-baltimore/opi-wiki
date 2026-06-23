@@ -16,7 +16,7 @@ initiative.
 
 Link: Book of Business - Weekly Updates
 
-Mallory is your primary point of contact for the BoB. If you have questions,
+Mallory Screws (Project Manager) is your primary point of contact for the BoB. If you have questions,
 need help, or want to walk through your updates together, feel free to reach out
 or set up time with her.
 

@@ -22,7 +22,7 @@ OPI uses a signal-to-solution loop: **[CitiStat](what-we-do/programs/citistat/in
 
 ## How this site is organized
 
-OPI is organized into teams that have staff and budget, delivers services to city government, and runs programs and products that may involve multiple teams.
+OPI is organized into teams with staff and budget. Those teams deliver services to city government and run programs and products, some of which span multiple teams.
 
 | Type | What it means | OPI examples |
 | --- | --- | --- |

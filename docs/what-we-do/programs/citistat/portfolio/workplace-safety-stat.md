@@ -20,7 +20,7 @@ Workplace Safety Stat focuses on the systems that keep City employees safe and r
 
 ### Staff Purpose
 
-Staff use Workplace Safety Stat to monitor training, safety committees, vehicle accidents, workers’ compensation trends, winter readiness, agency safety plans, PPE, and compliance with safety expectations.
+Staff use Workplace Safety Stat to monitor training, safety committees, vehicle accidents, workers’ compensation trends, agency safety plans, and compliance with safety expectations.
 
 ### Core Management Questions
 

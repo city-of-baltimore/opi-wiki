@@ -60,7 +60,7 @@ FY26 is about getting the foundation right. The three priorities below were name
 
 - OPI operating system: Foundations Document Set published; SharePoint operating system in production; intake SOP in use across the team.
 
-## FY27 — The next-level moves
+## FY27 — The next moves
 
 With the foundation in place, FY27 turns to bigger, more visible outcomes. The agenda is grounded in the City Administrator’s priorities and the Mayor’s Action Plan; final scoping is in design as part of the FY27 budget cycle.
 
@@ -72,7 +72,7 @@ With the foundation in place, FY27 turns to bigger, more visible outcomes. The a
 
 - Mature data governance: stewardship, quality SLAs, and a catalog used in agency operations.
 
-### Direction 2 — Prepare Baltimore for AI with intention and integrity
+### Direction 2 — Prepare Baltimore for AI, carefully and openly
 
 - Adopt city-wide AI policy and a sensible review process for high-impact uses.
 

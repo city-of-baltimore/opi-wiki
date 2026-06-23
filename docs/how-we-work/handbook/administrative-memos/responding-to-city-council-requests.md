@@ -37,15 +37,21 @@ access, presentations, written materials, or informal summaries.
 
 ## Process
 
-Upon receiving a request from a City Council member or their staff, OPI staff
-should promptly initiate the review process by engaging the appropriate contact
-from within the Mayor's Office of Government Relations (see chart below). The
-submission should include the document, product, application, or information
-requested, as well as the name of the City Council member (or staff member
-acting on their behalf) who made the request. This information should be
-transmitted to the MOGR through Baltimore city email for review and guidance.
-Materials should not be released or shared externally until the MOGR has
-completed its review and provided authorization to proceed.
+When you receive a request from a City Council member or their staff:
+
+1. Identify the correct MOGR contact for the inquiry type (see chart below).
+
+2. Gather what the requester asked for — the document, product, application, or
+   information — and the name of the City Council member or staff member who made
+   the request.
+
+3. Email that information to the MOGR contact through your Baltimore City email
+   for review and guidance.
+
+4. Wait for the MOGR to complete its review and authorize release.
+
+5. Release the materials only after the MOGR has signed off. Do not share or
+   release anything externally before then.
 
 | Inquiry type                                  | MOGR contact                  |
 |-----------------------------------------------|-------------------------------|

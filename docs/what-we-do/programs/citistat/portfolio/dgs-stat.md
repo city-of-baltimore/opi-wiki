@@ -16,11 +16,11 @@
 
 ### Public Purpose
 
-DGS Stat focuses on the buildings, fleet, facilities, energy, and internal services that City agencies rely on to deliver public services. Residents may not always see DGS directly, but they feel the impact when facilities, vehicles, and operating assets are ready and reliable.
+DGS Stat focuses on the buildings, fleet, facilities, energy, and internal services that City agencies rely on to deliver public services. Residents rarely see DGS directly, but they feel it when facilities, vehicles, and equipment are not ready.
 
 ### Staff Purpose
 
-Staff use DGS Stat to manage facilities work orders, fleet readiness, preventive maintenance, vendor performance, emergency facility needs, capital maintenance coordination, and customer agency support.
+Staff use DGS Stat to manage facilities work orders, fleet readiness, preventive maintenance, vendor performance, emergency facility needs, and customer agency support.
 
 ### Core Management Questions
 

@@ -20,7 +20,7 @@ Housing Stat focuses on housing conditions, neighborhood stability, code enforce
 
 ### Staff Purpose
 
-Staff use Housing Stat to improve code enforcement workflows, vacant building response, in rem foreclosure progress, housing program intake, rental licensing, property maintenance inspections, and coordination with related agencies.
+Staff use Housing Stat to improve code enforcement workflows, vacant building response, in rem foreclosure progress, rental licensing, and property maintenance inspections.
 
 ### Core Management Questions
 

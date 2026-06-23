@@ -15,7 +15,7 @@
 
 ## Position Summary
 
-The Data Storyteller develops and stewards OPI’s external narrative, partner relationships, and editorial operations. The role builds clear, plain-language stories about OPI’s work, manages an editorial calendar across reports, dashboards, and public updates, and coordinates philanthropic and civic partnerships that extend OPI’s reach. The position prepares talking points and materials for the Executive Director and OPI leadership, supports grant concepts and proposals, and works with the four teams to translate analysis and product work into materials that residents, agency partners, City Council members, and funders can use.
+The Data Storyteller develops and stewards OPI’s external narrative, partner relationships, and editorial operations. The role builds clear, plain-language stories about OPI’s work, manages an editorial calendar across reports, dashboards, and public updates, and coordinates philanthropic and civic partnerships that extend OPI’s reach. The position prepares talking points and materials for the Executive Director and OPI leadership and supports grant concepts and proposals. It works with the four teams to translate analysis and product work into materials that residents, agency partners, City Council members, and funders can use.
 
 ## Key Responsibilities
 
@@ -97,7 +97,7 @@ An equivalent combination of education and experience will be considered.
 
 ## Working Conditions
 
-Employees in this class work a conventional work week. Work is performed in an office where work conditions are normal. Work requires minimal physical exertion. Hybrid telework is supported under OPI’s telework policy; staff are expected to be on site at City Hall a minimum of four days per week, with one day per week available as remote.
+Employees in this class work a conventional work week. This position may be required to work evening and weekend hours and 24-hour callback in an emergency. Work is performed in an office where work conditions are normal. Work requires minimal physical exertion. Hybrid telework is supported under OPI’s telework policy; staff are expected to be on site at City Hall a minimum of four days per week, with one day per week available as remote.
 
 ## Supervision
 

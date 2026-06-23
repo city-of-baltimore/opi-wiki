@@ -6,13 +6,13 @@
 
 Baltimore’s CitiStat portfolio is the City’s executive performance rhythm for the services, systems, and priorities residents and staff experience most directly. This register documents the initial 19 monthly Stats; the fields are defined below.
 
-CitiStat is managed by the Executive Director of OPI, method-stewarded by the Performance team, authorized through the relevant Deputy Mayor, Deputy City Administrator, City Administrator, or executive sponsor, and implemented by agencies. OPI leaders may operate selected Stats where the topic aligns with their portfolio, but all Stats follow a common standard: clear purpose, reliable enough data, useful pre-work, disciplined follow-up, evidence of closure, and a public story of progress.
+CitiStat is managed by OPI's Executive Director and implemented by agencies; the [Strategic Framework](../strategic-framework.md#legal-mandate-and-governance) sets out the full governance chain. OPI leaders may operate selected Stats where the topic aligns with their portfolio, but all Stats follow a common standard: clear purpose, reliable enough data, useful pre-work, disciplined follow-up, evidence of closure, and a public story of progress.
 
 This document is a companion to OPI’s operating model. The operating model explains how OPI organizes work; this register explains what each Stat is for, who sponsors it, what it tracks, what artifacts it produces, and how it can trigger delivery, product, data, or executive action.
 
 ## A management routine, not a meeting schedule
 
-The goal is not more meetings. The goal is a management routine that helps Baltimore City see what is working, identify what is stuck, assign ownership, and follow through until conditions improve.
+CitiStat is a management routine, not a meeting schedule. What that means for each audience:
 
 - **For residents**, the portfolio should make visible how the City is improving services such as 311, permits, clean streets, public safety, recreation, housing, water, and transportation.
 - **For staff**, each Stat should clarify the evidence, decisions, owners, deadlines, and follow-up expected before and after the session.

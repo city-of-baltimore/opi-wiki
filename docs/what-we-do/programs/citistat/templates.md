@@ -80,7 +80,7 @@ Printed packets for the room follow a standard top-to-bottom order so panelists 
 
 ## Room setup and breakdown
 
-Room setup is step 10 of the [12-step analyst execution cycle](method-playbook.md#analyst-execution-cycle-the-12-steps). The goal is a clean, organized, and fully functional space that supports both in-person panelists and remote attendees. The same checklist is run before every Stat and reversed after.
+Room setup is step 10 of the [12-step analyst execution cycle](method-playbook.md#analyst-execution-cycle-the-12-steps). The goal is a clean, working space for both in-person panelists and remote attendees. The same checklist is run before every Stat and reversed after.
 
 ### Before the Stat
 

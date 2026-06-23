@@ -20,7 +20,7 @@ Water Stat focuses on the utility operations that provide safe, reliable water a
 
 ### Staff Purpose
 
-Staff use Water Stat to review water main breaks, leaks, sewer overflows, water-in-cellar calls, wastewater treatment, utility infrastructure, billing-related operational issues, capital coordination, and compliance risks.
+Staff use Water Stat to review water main breaks, sewer overflows, water-in-cellar calls, wastewater treatment, billing-related operational issues, and compliance risks.
 
 ### Core Management Questions
 

@@ -10,7 +10,7 @@ This service strengthens Baltimore City's data infrastructure, analytics capacit
 
 ## The goal
 
-Make City data accurate, reliable, accessible, and useful for decision-making, transparency, and public accountability.
+Make City data accurate, accessible, and useful — for decision-making, transparency, and public accountability.
 
 ## Mandate
 

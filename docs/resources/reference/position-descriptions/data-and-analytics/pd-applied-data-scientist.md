@@ -17,7 +17,7 @@
 
 The Applied Data Scientist serves as a senior data practitioner within the Mayor’s Office of Performance and Innovation (OPI), responsible for leading applied analytics, data investigation, and decision-ready data products that support priority city initiatives. The position combines the hands-on analytical depth of an applied data scientist with the judgment, stakeholder partnership, and technical leadership expected of a senior analytics lead.
 
-This role is designed for someone who can move comfortably between messy city datasets, operational field realities, and executive decision-making. A successful candidate should be equally comfortable sitting with program staff to understand how a service actually works, writing SQL or Python to investigate the underlying data, developing models or geospatial analyses where appropriate, and translating findings into clear guidance, reusable tools, and follow-through actions.
+The role moves between messy city datasets, operational field realities, and executive decision-making: sitting with program staff to understand how a service actually works, writing SQL or Python to investigate the underlying data, developing models or geospatial analyses where appropriate, and translating findings into clear guidance, reusable tools, and follow-through actions.
 
 Reporting to the Deputy Chief Data Officer, the role works closely with OPI’s data engineers, platform engineers, CitiStat analysts, product and design staff, and agency partners. It leads complex analytical work, mentors staff on analytical methods, helps define data standards and reusable practices, and contributes to citywide data, open data, GIS, and AI-readiness initiatives.
 

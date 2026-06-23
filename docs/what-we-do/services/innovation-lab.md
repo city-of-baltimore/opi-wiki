@@ -4,7 +4,7 @@
 
 ## What this service does
 
-This service operates OPI's Innovation Lab, a citywide service-improvement capability that uses human-centered design, product management, civic technology, and applied innovation methods to improve city services and internal operations.
+This service operates OPI's Innovation Lab. The Lab uses human-centered design, product management, and civic technology to improve city services and internal operations.
 
 **Activities include** service design, user research, process mapping, prototyping, product discovery, workflow improvement, resident and staff engagement, responsible AI pilots, and development of operational tools — performance management portals, data-collection systems, service-workflow applications, and other products that support agency operations and service delivery.
 

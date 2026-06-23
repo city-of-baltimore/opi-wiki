@@ -75,7 +75,7 @@ Use when a commitment cannot move, a decision is contested, or a blocker spans a
 - **Status creep** — name the performance problem at the top of every meeting; cut the standing tour of every metric.
 - **Performative accountability** — read commitments aloud; close the loop in writing within three days; track to evidence of done.
 - **Data theatre** — every chart answers a specific question; cut the rest.
-- **Brand dilution** — hold the line on the five things; name other things working group, delivery review, product council.
+- **Brand dilution** — hold the line on the five things; call other things what they are: a working group, a delivery review, a product council.
 - **Leader-shaped problems** — ask what kind of problem this is before deciding the intervention.
 
 *Owned by the Deputy Chief Performance Officer. Reviewed quarterly. Update whenever the method, cadence, or QA bar changes.*

@@ -1,6 +1,6 @@
 # How-To Guides
 
-{{ page_header(summary="Draft pages converted from short procedural source documents.") }}
+{{ page_header(summary="Short, durable procedures you can follow and revise as tools change.") }}
 
 This subsection is for durable, updatable procedures. Pages here should stay
 step-based, tool-specific, and easy to revise when settings or workflows change.

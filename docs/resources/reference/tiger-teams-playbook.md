@@ -24,7 +24,7 @@ The **Innovation Lab** provides the method and team. **Cross-Agency Delivery** c
 
 ### When to use a Tiger Team
 
-Use a Tiger Team when the problem has all of these conditions:
+Use a Tiger Team when the problem meets all of these conditions:
 
 1. A real service problem residents or staff can feel.
 2. A named sponsor with authority to approve pilots and remove blockers.
@@ -67,10 +67,6 @@ In both cases, the deliverables, cadences, and standard artifacts that follow ap
 
 *Source: City Services Tiger Teams briefing, OPI 2026.*
 
-## Plain-language test
-
-A Tiger Team is the right routine when a service problem needs a time-boxed team to diagnose, prototype, and test a fix in real conditions. It is not the right routine for routine reporting, a one-time executive decision, or a dashboard request without a service-change owner.
-
 ## What makes a Tiger Team different
 
 - Cross-functional team focused on one service problem.
@@ -83,19 +79,7 @@ A Tiger Team is the right routine when a service problem needs a time-boxed team
 
 - Ends with a sustain plan: ownership, operating procedures, and the data products that keep it honest.
 
-## When to use a Tiger Team
-
-Use a Tiger Team when all of the following are true:
-
-1. The problem is specific enough to scope to one service or service pathway.
-2. The work needs frontline truth, user research, and operational testing.
-3. A pilot or process change can be tested within the time-box.
-4. A sponsor can authorize decisions and remove blockers.
-5. A sustainment owner can take the gain after OPI steps back.
-
-If the team needs multiple agencies to change workflows, decision rights, or sustainment commitments together, charter the Tiger Team through Cross-Agency Delivery. If the authority sits within one agency, charter it through Innovation Lab intake under the agency director.
-
-### Standard outputs
+## Standard outputs
 
 - **1:** Process maps for each service — current state, target state, and the diff.
 

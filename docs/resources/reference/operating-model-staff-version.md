@@ -22,7 +22,7 @@ AUDIENCE
 >
 > *Respond when necessary. Build so we do not have to respond again.*
 
-We are the Mayor’s Office of Performance and Innovation, a small office inside the City Administrator’s Office. Our job is to make sure that when residents call 311, apply for a permit, or rely on trash collection, those services actually work, and that city staff have the routines, data, and tools to keep them working.
+We are the Mayor’s Office of Performance and Innovation, a small office inside the City Administrator’s Office. Our job: when residents call 311, apply for a permit, or rely on trash collection, those services work — and city staff have the routines, data, and tools to keep them working.
 
 ## How we are organized
 

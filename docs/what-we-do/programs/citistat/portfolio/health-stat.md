@@ -20,7 +20,7 @@ Health Stat focuses on Baltimore’s public health infrastructure, including env
 
 ### Staff Purpose
 
-Staff use Health Stat to monitor service timeliness, public health program implementation, contract and grant management, overdose strategy, environmental health response, staffing, and coordination with housing, human services, emergency response, and community partners.
+Staff use Health Stat to monitor service timeliness, public health program implementation, contract and grant management, overdose strategy, environmental health response, and coordination with housing, human services, and community partners.
 
 ### Core Management Questions
 

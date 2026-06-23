@@ -20,7 +20,7 @@ Youth Stat focuses on Baltimore’s cradle-to-career youth priorities, including
 
 ### Staff Purpose
 
-Staff use Youth Stat to align agencies and partners around the Mayor’s youth priorities, track initiative progress, identify service gaps, coordinate youth justice transitions, support program inventories, and connect resources to measurable outcomes.
+Staff use Youth Stat to align agencies and partners around the Mayor’s youth priorities, track initiative progress, identify service gaps, coordinate youth justice transitions, and connect resources to measurable outcomes.
 
 ### Core Management Questions
 

@@ -38,7 +38,7 @@ The alignment below reflects OPI’s current operating chart, as of June 2026.
 
 ## Cost Centers and Budget Services
 
-Cost centers govern budget and expense management. Budget services describe what OPI delivers. Cross-Agency Delivery is tracked as a service overlay (a coordinating function that draws on staff from across OPI rather than a team of its own) unless and until dedicated staff or budget are assigned.
+Cost centers govern budget and expense management. Budget services describe what OPI delivers. Cross-Agency Delivery is tracked as a service overlay — a coordinating service that draws on staff from across OPI rather than a standing team — unless and until dedicated staff or budget are assigned.
 
 ### Cost Centers
 

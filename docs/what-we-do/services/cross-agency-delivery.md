@@ -1,6 +1,6 @@
 # Cross-Agency Delivery
 
-{{ page_header(summary="When problems span multiple agencies or get stuck for months, we step in to help unblock them — fast, collaboratively, and with clear ownership.", category="OPI · SERVICE") }}
+{{ page_header(summary="When problems span multiple agencies or get stuck for months, we step in to unblock them — quickly, and with clear ownership.", category="OPI · SERVICE") }}
 
 Cross-Agency Delivery is a named OPI service, not a standing team. Use the full name; "x-agency delivery" is the only approved short form — never "CAD."
 

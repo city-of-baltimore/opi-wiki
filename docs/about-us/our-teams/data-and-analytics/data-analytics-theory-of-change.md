@@ -29,9 +29,9 @@
 
 ### 2. Operating scope (boundary lines)
 
-*Full ownership / partnership / referral patterns are detailed in the About doc. This is the budget-facing summary.*
+*Full ownership, partnership, and referral patterns are detailed in the About doc. This is the scope summary.*
 
-#### In scope for this cost center
+#### In scope
 
 - Data platform and pipelines — Citywide Data Platform, shared datasets, APIs, lineage, refresh standards.
 
@@ -45,7 +45,7 @@
 
 - Citywide data architecture coordination with BCIT and agency data teams.
 
-#### Routed elsewhere
+#### Out of scope (we partner or refer)
 
 - Enterprise infrastructure / security / identity / production environments → BCIT.
 

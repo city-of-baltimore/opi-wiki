@@ -127,7 +127,7 @@ Every Lab engagement should have a clear admission test: a real problem, named u
 | **Engagement**           | **Use when**                                                                                  | **Typical output**                                                      |
 |--------------------------|-----------------------------------------------------------------------------------------------|-------------------------------------------------------------------------|
 | Service design sprint    | A service problem needs structured diagnosis with frontline staff and residents.              | Service blueprint, journey map, root causes, options memo.              |
-| Tiger Team               | A persistent service problem needs a time-boxed, cross-functional sprint with a named Authorizer. Tiger Teams use the Public Innovation Toolkit and are chartered through Cross-Agency Delivery when the work needs cross-agency coordination authority; otherwise through Lab intake under the agency director. | Process map, pilot design, SOP changes, sustainment plan. |
+| Tiger Team               | A persistent service problem needs a time-boxed, cross-functional sprint with a named Authorizer. Chartered through Cross-Agency Delivery when the work crosses agencies; otherwise through Lab intake under the agency director. | Process map, pilot design, SOP changes, sustainment plan. |
 | Product build            | Discovery shows a digital product is the right intervention and there is a sustainment owner. | Prototype, production code, runbook, support model, review cadence.     |
 | AI pilot                 | A use case meets responsible AI criteria and improves a real decision or service.             | Use case brief, evaluation memo, human oversight plan, sunset criteria. |
 | Civic design partnership | A university, civic tech, or philanthropic partner can expand capacity or insight.            | Partnership scope, deliverables, public-facing summary, hand-back plan. |
@@ -146,7 +146,7 @@ Data and Analytics provides shared datasets, methodology cards, KPIs, and AI/dat
 
 ### With Cross-Agency Delivery
 
-Cross-Agency Delivery is the service overlay. The Innovation Lab owns the craft of solving; Cross-Agency Delivery owns the coordination authority when multiple agencies must ship together. The Lab is the capability, the craft team that asks *how do we solve this?* Cross-Agency Delivery owns coordination authority across agencies and asks *how do we get multiple agencies to ship this together?* When a Tiger Team’s work needs that overlay, the Lab provides the team and the method (the Public Innovation Toolkit), and Cross-Agency Delivery provides the standing delivery review, the named Authorizer at the Deputy Mayor or City Administrator level, and the closure plan with sustainment commitments from each agency.
+The Lab owns the craft of solving; Cross-Agency Delivery owns the coordination authority when multiple agencies must ship together. When a Tiger Team needs that overlay, the Lab provides the team and method while Cross-Agency Delivery provides the activation, cadence, and closure discipline. The [Cross-Agency Delivery service definition](cross-agency-delivery-service-definition.md#relationship-to-the-innovation-lab) sets out the full split.
 
 ### With AdminOps
 
@@ -188,7 +188,7 @@ Every Lab AI pilot follows the City’s responsible AI review process: problem f
 
 ## Tiger Team usage standard
 
-Tiger Teams are one of the Innovation Lab's methods, not a synonym for all innovation work. The Lab provides the craft: discovery, service design, prototyping, product thinking, and learning in real conditions. When the work requires multiple agencies to move together with named authority, Cross-Agency Delivery provides the coordination overlay.
+Tiger Teams are one of the Lab's methods, not a synonym for all innovation work. They carry the Lab's craft — discovery, service design, prototyping, product thinking, and learning in real conditions. When the work requires multiple agencies to move together with named authority, it is chartered through the [Cross-Agency Delivery service definition](cross-agency-delivery-service-definition.md#relationship-to-the-innovation-lab).
 
 ## FY27 PRIORITIES
 

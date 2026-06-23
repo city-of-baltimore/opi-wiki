@@ -20,7 +20,7 @@ Police Stat focuses on public safety outcomes, crime trends, operational coordin
 
 ### Staff Purpose
 
-Staff use Police Stat to review violent crime trends, operational priorities, follow-up on reporting and service issues, nuisance business coordination, multi-agency enforcement, response patterns where appropriate, and data quality.
+Staff use Police Stat to review violent crime trends, operational priorities, reporting and service issues, nuisance business coordination, multi-agency enforcement, and data quality.
 
 ### Core Management Questions
 

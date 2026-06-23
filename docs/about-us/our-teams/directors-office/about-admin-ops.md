@@ -18,7 +18,7 @@ AdminOps keeps OPI aligned, coordinated, resourced, documented, and understood.
 
 This service is the operating backbone for the office. It supports the Executive Director, team leads, staff, agencies, city leadership, Council, partners, and public audiences by making OPI’s work visible, organized, and sustainable.
 
-AdminOps is not overhead. It is the operating system that lets a small, multidisciplinary office deliver citywide work with discipline and credibility.
+AdminOps is not overhead. It is the discipline that lets a small, multidisciplinary office deliver citywide work credibly.
 
 ### Who we are
 
@@ -64,13 +64,13 @@ AdminOps creates the shared standards that make OPI reliable. Clarity is not bur
 
 ### How we work
 
-We make the work legible.
+We make the work easy to follow.
 
 AdminOps uses shared intake, standard problem statements, charters, status reports, portfolio reviews, decision logs, QA checklists, and knowledge systems to keep work moving and understood.
 
 We help OPI say yes responsibly and no on purpose. New work should be routed through intake, assessed for impact and fit, assigned to the right service, and weighed against existing capacity.
 
-We keep the story honest. Communications is not spin. It is how OPI explains what changed, what we learned, what remains hard, and what comes next.
+We keep the story honest. Communications is how OPI explains what changed, what we learned, what remains hard, and what comes next — not spin, but a plain account of the work.
 
 ### What we own
 
@@ -122,7 +122,7 @@ AdminOps does not own:
 
 ### How we partner across OPI
 
-AdminOps is the connective tissue across all services.
+AdminOps supports every other service.
 
 It supports Performance with calendar coordination, public summaries, field validation coordination, annual reporting, and operational support for the Stat portfolio.
 

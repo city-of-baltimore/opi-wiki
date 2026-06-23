@@ -28,7 +28,7 @@ We turn administrative data into shared assets, reliable measures, insight produ
 
 We are translators. We translate between agencies and BCIT, between raw data and policy decisions, and between what a dashboard shows and what leaders need to do next.
 
-We are not just a dashboard team. We build the conditions that make dashboards trustworthy.
+A dashboard is the visible part. Our work is the conditions beneath it that make a dashboard trustworthy in the first place.
 
 ### What we do
 

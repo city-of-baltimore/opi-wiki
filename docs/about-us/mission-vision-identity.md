@@ -2,15 +2,9 @@
 
 {{ page_header(summary="Why this office exists, where it's heading, and what it stands for.", tagline="Who we are, who we serve, and what success looks like.") }}
 
-## How this document should be used
+## How to use this page
 
-Use this page as the north star for voice and purpose. It explains why OPI exists and what kind of public institution the office is trying to become. For the operating model, pair it with the organization structure, Teams / Programs / Foundations, and How Work Moves Through OPI pages.
-
-## NORTH STAR
-
-**A shared answer to the question: who is OPI?**
-
-This document captures what the OPI team has heard, debated, and aligned on about our identity. It is the human side of the OPI Foundations deck: not the org chart or the service catalog, but the operating story we use to introduce ourselves, recruit teammates, and stay grounded when the work gets hard.
+This page is the human side of OPI Foundations — not the org chart or the service catalog, but the story the office uses to introduce itself, recruit, and stay grounded when the work gets hard. It sets the voice and purpose for the office, and explains why OPI exists and what kind of public institution it is trying to become. For the operating model, pair it with the organization structure, Teams / Programs / Foundations, and How Work Moves Through OPI pages.
 
 > *Better government is not a one-time project. It is a discipline.*
 
@@ -41,11 +35,9 @@ This document captures what the OPI team has heard, debated, and aligned on abou
 
 *We move with urgency, but not chaos.*
 
-## MISSION JOURNEY
+## How We Wrote Our Mission
 
-**Five questions we worked through to write our mission**
-
-*We answered these as a team. Each section below is where we landed.*
+We worked through five questions as a team. Each section below is where we landed.
 
 ### 1. Who we are
 
@@ -106,9 +98,7 @@ This document captures what the OPI team has heard, debated, and aligned on abou
 
 - Knowledge artifacts: position descriptions, glossaries, playbooks, transition packets.
 
-## WHO WE ARE (AND ARE NOT)
-
-**A working list from team listening sessions**
+## Who We Are (and Are Not)
 
 ### We are…
 
@@ -142,11 +132,9 @@ This document captures what the OPI team has heard, debated, and aligned on abou
 
 - A standing committee. We work in time-boxed cycles with named owners and exit criteria.
 
-## MISPERCEPTIONS
+## Misperceptions
 
-**What the city thinks we do versus what we actually do**
-
-*Much of our communications work is corrective: closing the gap between how OPI is described and what we actually do.*
+Much of our communications work is corrective: closing the gap between how OPI is described and what we actually do.
 
 | **What city partners often think**   | **What we actually do**                                                                                                                                                            |
 |--------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -157,9 +145,9 @@ This document captures what the OPI team has heard, debated, and aligned on abou
 | “OPI fixes everything cross-agency.” | Cross-Agency Delivery is a coordinating service we activate against specific priority outcomes with named sponsors. It sits on top of the agencies that own the work. It is not a backstop for everything that crosses department lines.       |
 | “OPI is the Mayor’s consultancy.”    | We are an institutional capability built to outlast administrations. Our partner is the Mayor’s Office, and our scope and quality standards travel with us.                     |
 
-## VISION THEMES
+## Vision Themes
 
-**The four threads we hear most often**
+Four threads run through how we talk about where Baltimore is headed.
 
 ### 1. Baltimore as a blueprint
 
@@ -177,9 +165,7 @@ We sit at the seams between agencies, residents, leadership, and technology part
 
 A platform city. 311, permitting, performance, data, and service workflows connected through shared infrastructure, a common design system, and shared conventions, instead of one-off vendor contracts that decay over time.
 
-## CUSTOMER DEFINITION
-
-**Who we serve and how we serve them**
+## Who We Serve
 
 | **Customer**         | **What they need from us**                                      | **How we deliver it**                                                                       |
 |----------------------|-----------------------------------------------------------------|---------------------------------------------------------------------------------------------|
@@ -190,11 +176,9 @@ A platform city. 311, permitting, performance, data, and service workflows conne
 | Residents            | Services that work, data to trust, channels to be heard.        | Better service experiences, Open Baltimore, plain-language reporting, civic data community. |
 | Other governments    | Peer learning, shared playbooks, public reference architecture. | Conference talks, blog posts, code and method published openly.                             |
 
-## STRATEGIC THEMES
+## Strategic Themes
 
-**The six threads we keep returning to**
-
-*Six themes recur across our planning. They are not a strategy on their own; they are the conditions any strategy has to address.*
+Six themes recur across our planning. They are not a strategy on their own; they are the conditions any strategy has to address.
 
 ### 1. Intake and governance
 
@@ -232,26 +216,16 @@ A platform city. 311, permitting, performance, data, and service workflows conne
 
 - Culture is set in small daily acts: how we run a meeting, how we write a memo, how we give credit, how we say no.
 
-## MISSION FRAMINGS
-
-**Two ways the mission has been articulated by our team**
-
-> *We use data and design to improve city services in ways that residents and public servants can see and feel.*
-
-*The current mission statement consolidates these framings. We capture both here because our mission language is a living statement, not a tagline written by committee.*
-
-## HOW WE USE THIS DOCUMENT
-
-**Practical guidance for OPI staff**
+## How We Use This Page
 
 - Use the mission, vision, and tagline verbatim in public materials.
 
 - Use “Who we are / are not” when introducing OPI to a new agency or partner.
 
-- Use “What city partners think vs what we actually do” when you encounter the misperception in the wild.
+- Use “What city partners think vs what we actually do” when you encounter the misperception.
 
 - Use the customer definition table when you scope a new engagement and need to confirm who you are serving.
 
 - Use the strategic themes when you build a roadmap or write a strategy memo. They are the conditions any plan has to address.
 
-*This document will be revised as we learn more. Tag the Communications lead in any proposed change.*
+*We revise this page as we learn more. Tag the Communications lead in any proposed change.*

@@ -93,7 +93,7 @@ An equivalent combination of education and experience will be considered.
 
 ## Working Conditions
 
-Employees in this class work a conventional work week. Work is performed in an office where work conditions are normal. Work requires minimal physical exertion. Hybrid telework is supported under OPI’s telework policy; staff are expected to be on site at City Hall a minimum of four days per week, with one day per week available as remote.
+Employees in this class work a conventional work week. This position may be required to work evening and weekend hours and 24-hour callback in an emergency. Work is performed in an office where work conditions are normal. Work requires minimal physical exertion. Hybrid telework is supported under OPI’s telework policy; staff are expected to be on site at City Hall a minimum of four days per week, with one day per week available as remote.
 
 ## Supervision
 

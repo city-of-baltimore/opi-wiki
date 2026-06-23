@@ -10,9 +10,9 @@
 
 CitiStat is Baltimore’s executive performance rhythm. It is the routine through which City leadership, agencies, and the Mayor’s Office of Performance and Innovation use data to see performance clearly, make decisions, assign ownership, and follow through until services improve.
 
-The next phase of CitiStat is not about adding meetings. It is about building a disciplined, humane, learning-oriented performance system. When the routine works, agencies experience it as help, not heat. Leadership gets decision points, not status updates. Residents experience services that become faster, clearer, more reliable, and easier to trust.
+The next phase of CitiStat is not about adding meetings. It is about building a disciplined, humane, learning-oriented performance system. When the routine works, agencies experience it as help, not heat. Leadership gets decision points, not status updates. Residents get services that are faster, clearer, and easier to trust.
 
-This document consolidates the CitiStat strategic argument for City leadership, Council, agency staff, partners, and the public. It also absorbs the case for treating CitiStat as a learning and accountability loop, not a meeting series. A companion operating playbook contains the staff-facing standards, templates, and session mechanics.
+This document consolidates the CitiStat strategic argument for City leadership, Council, agency staff, partners, and the public. It also makes the case for treating CitiStat as a learning and accountability loop, not a meeting series. A companion operating playbook contains the staff-facing standards, templates, and session mechanics.
 
 <div class="opi-pullquote" markdown="0">North star: Run a disciplined, collaborative performance system that turns priorities and data into sustained service improvements residents and public servants can see and feel.</div>
 
@@ -138,7 +138,7 @@ CitiStat is managed by the Executive Director of OPI, method-stewarded by the Pe
 
 ## The CitiStat operating model
 
-The goal is not more meetings. The goal is a management routine that helps Baltimore see what is working, identify what is stuck, assign ownership, and follow through until conditions improve.
+CitiStat adds a management routine, not more meetings: a way to see what is working, identify what is stuck, assign ownership, and follow through until conditions improve.
 
 ### The four tenets of Stat
 
@@ -184,7 +184,7 @@ For agency-based Stats, the analyst pairs two debriefs (one with the agency, one
 | Follow through | Issue the post-memo, update the commitment tracker, and review blockers between sessions.                                                | Follow-up memo, commitment tracker, decision log, and escalation notes. |
 | Sustain        | Convert improvements into SOPs, dashboards, alerts, training, or delivery activations so changes last after the meeting.                 | Sustainment plan, public summary, annual report narrative, or handoff.  |
 
-## Topic selection: fewer, sharper, stickier
+## Topic selection: fewer, sharper, more durable
 
 The strongest CitiStat portfolio is not the biggest portfolio. It is the portfolio where each routine has a clear purpose, a named authorizer, reliable enough data, agency ownership, and a reason leadership time is required.
 
@@ -210,7 +210,7 @@ CitiStat is one of several OPI routines. For when to use a Stat versus a Tiger T
 
 ## Data discipline: from tracking to understanding
 
-CitiStat should prioritize metrics that are trusted, reproducible, operationally useful, and connected to decisions. The goal is not to count everything. The goal is to understand the signals that help leadership and agencies act.
+CitiStat should prioritize metrics that are trusted, reproducible, operationally useful, and connected to decisions. The aim is not to count everything, but to understand the signals that help leadership and agencies act.
 
 The strongest measures often reveal process and service quality: time-to-complete by step, backlog age distribution, repeat request patterns, exception rates, rework, routing accuracy, closure quality, inspection outcomes, and resident communication. Counts matter, but counts alone rarely explain why a service is or is not working.
 
@@ -240,7 +240,7 @@ A new analyst should be able to understand a Stat topic in 30 minutes: the probl
 
 ## A humane CitiStat
 
-CitiStat cannot fix service delivery if it only talks to managers. Frontline workload, training gaps, morale, informal workarounds, union considerations, staffing realities, and resident experience are not side issues. They are evidence.
+CitiStat cannot fix service delivery if it only talks to managers. Frontline workload, training gaps, morale, staffing realities, and resident experience are not side issues. They are evidence.
 
 A humane CitiStat asks hard questions without assuming bad intent. It recognizes that performance problems often come from system design, resource constraints, unclear ownership, weak data, or tools that do not match the work. The purpose is to make those conditions visible so they can be changed.
 
@@ -295,7 +295,7 @@ When the problem needs implementation beyond the Stat room, the Stat should trig
 
 ## Closing: a discipline for the next chapter
 
-CitiStat is one of Baltimore’s most important civic management traditions. Its next chapter should be rigorous, humane, modern, and useful. It should help the City learn faster, decide more clearly, act more consistently, and tell the public what changed.
+CitiStat is one of Baltimore’s most important civic management traditions. Its next chapter should be rigorous, humane, and modern — helping the City learn faster, act more consistently, and tell the public what changed.
 
 <div class="opi-pullquote" markdown="0">Measure what matters. Fix what is broken. Follow through until the improvement sticks.</div>
 

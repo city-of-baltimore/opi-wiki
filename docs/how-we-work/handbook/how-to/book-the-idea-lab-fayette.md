@@ -2,52 +2,66 @@
 
 {{ page_header() }}
 
-Benton Building, 417 E. Fayette St., Room 466, Baltimore, MD 21202
+To reserve the Idea Lab, review the policies below, complete the reservation
+form, and email it to Jeanine Murphy (Jeanine.Murphy@baltimorecity.gov).
+Questions: 240.713.8508.
 
-- Review policies, sign and complete. For reservation confirmation submit to:
-  Jeanine.Murphy@baltimorecity.gov. Questions? 240.713.8508.
+The Idea Lab is in the Benton Building, 417 E. Fayette St., Room 466,
+Baltimore, MD 21202.
 
-- Idea Lab Rooms: Main Room (#1), 40 pp, Break Room (#2): food service only.
+## Facility details
 
-- Hours of Operation: Monday - Friday, 8:00 am - 5:00 pm.
+- **Rooms:** Main Room (#1), seats 40; Break Room (#2), food service only.
 
-- Access Code: You may access it 30 minutes BEFORE the event. Code: 1, 2, 5 -
-  (Press code on keypad, open the box, retrieve key, open door, put key
-  immediately back in box).
+- **Hours:** Monday–Friday, 8:00 a.m.–5:00 p.m.
 
-- AV Equipment: The Lab is now retrofitted with new equipment. You are
-  responsible for contacting BMORE IT directly for training:
-  Sean Kammer: sean.kammer@baltimorecity.gov
-  Elise Gillespie: Elise.Gillespie@baltimorecity.gov
+- **Access code:** You may enter 30 minutes before your event. Code: 1, 2, 5.
+  Press the code on the keypad, open the box, retrieve the key, open the door,
+  and put the key back in the box immediately.
 
-- "Group" reserving Idea Lab for meetings is solely responsible for securing
-  BMORE IT TECH assistance by contacting BMORE IT directly, before your meeting
-  date.
+- **AV equipment:** The Lab is retrofitted with new equipment. You are
+  responsible for arranging training and tech support with BMORE IT directly,
+  before your meeting date:
 
-- Food/Beverage Set-up: Permitted ONLY in Break Room #2. Spillage of
-  beverages/food, breakage of tables or AV equipment must be reported to Idea
-  Lab Coordinator. Failure to advise may result in extended closure of Idea Lab
-  for cleaning and repairs and agency costs.
+  - Sean Kammer: sean.kammer@baltimorecity.gov
 
-- Meeting Supplies: Group reserving solely responsible for bringing your
-  respective meeting needs. We do not provide or sell snacks, coffee, food,
-  easels, tablecloths, markers, flip charts.
+  - Elise Gillespie: Elise.Gillespie@baltimorecity.gov
 
-- Group Responsibilities:
-  - Cleanliness of meeting facility upon conclusion of event.
-  - Chairs and tables must be straightened and returned to their original
-    position.
-  - Whiteboards must be erased with cleaner, removing all meeting work product.
-  - Group meeting materials cannot be stored in the Idea Lab.
-  - All used bottles, cups, and cans must be placed in trash receptacles in
-    Break Room area, only.
-  - Any items damaged by "Group", (broken tables, chairs, carpet spillage) must
-    be reported to Jeanine Murphy, and are subject to replacement costs by
-    Agency reserving room.
+## Group responsibilities
 
-GROUP FACILITATOR HAS READ THE INFORMATION AND AGREES TO IDEA LAB POLICIES:
+- **Food and beverages:** Set-up is permitted only in Break Room #2. Report any
+  food or beverage spillage, or any breakage of tables or AV equipment, to the
+  Idea Lab Coordinator. Failure to report may result in extended closure for
+  cleaning and repairs, and in agency costs.
 
-Manager/Supervisor Contact:
+- **Supplies:** Bring your own meeting supplies. The Lab does not provide or sell
+  snacks, coffee, food, easels, tablecloths, markers, or flip charts.
 
-Signed:  
-Ph. #:
+- **At the end of your meeting:**
+
+  - Leave the facility clean.
+
+  - Straighten the chairs and tables and return them to their original
+    positions.
+
+  - Erase the whiteboards with cleaner, removing all meeting work product.
+
+  - Remove all meeting materials; nothing may be stored in the Idea Lab.
+
+  - Place all used bottles, cups, and cans in the trash receptacles in the
+    Break Room area only.
+
+  - Report any damage (broken tables or chairs, carpet spillage) to Jeanine
+    Murphy. Replacement costs are charged to the reserving agency.
+
+## Reservation form (sign and return)
+
+By signing, the group facilitator confirms they have read this information and
+agree to the Idea Lab policies. Complete and email to
+Jeanine.Murphy@baltimorecity.gov.
+
+- Manager/Supervisor contact:
+
+- Signed:
+
+- Phone:

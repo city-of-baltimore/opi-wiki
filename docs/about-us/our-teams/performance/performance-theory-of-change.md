@@ -29,9 +29,9 @@
 
 ### 2. Operating scope (boundary lines)
 
-*Full ownership / partnership / referral patterns are detailed in the About doc. This is the budget-facing summary.*
+*Full ownership, partnership, and referral patterns are detailed in the About doc. This is the scope summary.*
 
-#### In scope for this cost center
+#### In scope
 
 - Agency performance planning — goals, KPI trees, owners, cadences, and performance plans aligned to City priorities.
 
@@ -45,7 +45,7 @@
 
 - Capacity-building — communities of practice for agency performance leads, coaching, playbooks, and templates.
 
-#### Routed elsewhere
+#### Out of scope (we partner or refer)
 
 - Agency operations → agency.
 
@@ -78,7 +78,7 @@ This logic model is operational: each stage maps to artifacts, routines, and nam
 | Outputs            | Performance plans; Stat pre-meeting memos, decks, and follow-up memos; live commitment tracker; decision log; updated KPI Dictionary entries; system maps of cross-agency handoffs; monthly Stat impact briefs; annual public report section per Stat.                                        |
 | Outcomes (0–6 mo)  | Higher pre-read fidelity; improved on-time commitment closure; clearer decision rights; leadership time focused on the bottlenecks that matter most; trust in the numbers grows through standardized definitions.                                                                                 |
 | Outcomes (6–18 mo) | Reduced cycle times and aged backlogs in priority services; more sessions producing concrete process or SOP changes; faster resolution of cross-agency blockers via delivery activations; stronger linkage between performance and budget.                                                    |
-| Impact (2+ yr)     | An institutionalized culture of continuous improvement that survives leadership changes, retires chronic problems, and earns resident trust through visible, sustained results.                                                                                                               |
+| Impact (2+ yr)     | A culture of continuous improvement that outlasts leadership changes, retires chronic problems, and earns resident trust through visible results.                                                                                                               |
 
 ### 5. Governance and decision rights
 

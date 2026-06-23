@@ -57,7 +57,7 @@ The role is both strategic and operational: shaping citywide data and AI standar
 
 - Build and align stakeholders, organizational capabilities, and resources to achieve complex objectives.
 
-- Ensure compliance with citywide policy through subordinate managers; integrate information from all sources to communicate a well-informed, diverse perspective.
+- Ensure compliance with citywide policy through subordinate managers, drawing on information from data engineering, analytics, and agency partners to inform decisions.
 
 ## Knowledge, Skills, and Abilities
 

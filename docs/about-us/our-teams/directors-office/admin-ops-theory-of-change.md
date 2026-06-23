@@ -8,7 +8,7 @@
 
 ## NORTH STAR
 
-**A small office that runs like a well-oiled machine.**
+**A small office that runs on routines, not heroics.**
 
 The AdminOps service keeps OPI’s work coordinated, well-documented, properly resourced, and clearly communicated to City leadership, agencies, partners, and the public. It is the operating backbone that lets the other four services do their jobs.
 

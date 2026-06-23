@@ -41,7 +41,7 @@ Reporting to the Executive Director and Chief Data Officer, the Innovation Progr
 
 ### Civic Design and Civic Technology
 
-- Direct the work of the Civic Designer and carry the Lab's civic-technology leadership directly, a scope consolidated into this role, aligning design and technology approach with service-delivery realities.
+- Direct the Civic Designer’s work and lead the Lab’s civic-technology agenda, aligning design and technology with service-delivery realities.
 
 - Sponsor service blueprints, journey maps, prototypes, and tested civic-tech tools that are accessible, equitable, and sustainable.
 

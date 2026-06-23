@@ -136,6 +136,4 @@ We run like a product organization. Every initiative has a single accountable ow
 
 ## Relationship to Cross-Agency Delivery and Tiger Teams
 
-The Innovation Lab owns the craft of solving: discovery, service design, user research, product management, prototyping, civic technology, applied AI pilots, and MVP-and-handoff. Cross-Agency Delivery owns the coordination overlay when multiple agencies must ship together: Authorizer, Senior Responsible Owner, decision rights, escalation, commitment tracking, and sustainment commitments.
-
-A Tiger Team is one way the Lab applies its craft. If the service problem requires cross-agency authority, the Tiger Team is chartered through Cross-Agency Delivery. If the authority sits cleanly within one agency, the Tiger Team can be chartered through Innovation Lab intake under the agency director.
+The Lab owns the craft of solving; Cross-Agency Delivery owns the coordination overlay when multiple agencies must ship together. A Tiger Team is one way the Lab applies its craft: if the work requires cross-agency authority it is chartered through Cross-Agency Delivery; if the authority sits cleanly within one agency it is chartered through Lab intake under the agency director. The [Cross-Agency Delivery service definition](cross-agency-delivery-service-definition.md#relationship-to-the-innovation-lab) sets out the full split.

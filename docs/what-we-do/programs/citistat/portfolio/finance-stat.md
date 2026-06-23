@@ -20,7 +20,7 @@ Finance Stat focuses on the financial systems and processes that allow Baltimore
 
 ### Staff Purpose
 
-Staff use Finance Stat to improve procurement, collections, payment systems, revenue operations, audit findings, contract data, M/WBE reporting, grant compliance, and financial service delivery to agencies and residents.
+Staff use Finance Stat to improve procurement, collections, payment systems, revenue operations, audit findings, and grant compliance.
 
 ### Core Management Questions
 

@@ -6,7 +6,7 @@
 
 *A public letter on data stewardship, AI readiness, and the kind of government Baltimore is building.*
 
-Every generation of city government faces a test. For this generation, one of the clearest tests is whether we can use technology, data, and artificial intelligence in ways that make government more effective without losing the public trust that makes government legitimate.
+Every generation of city government faces a test. Ours is whether we can use data and artificial intelligence to make government more effective without losing the public trust that makes government legitimate.
 
 That is the challenge in front of us. New tools are moving fast. Artificial intelligence can summarize information in seconds, detect patterns across thousands of records, and help public servants make sense of complex systems that used to take weeks to analyze. But in government, speed is not the same as progress. The real question is not whether we can move faster. The real question is whether we can make better decisions, explain those decisions, and ensure they serve residents fairly.
 

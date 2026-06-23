@@ -39,9 +39,3 @@ to build a workflow that assigns tasks without the default Planner alerts.
 
 - Use Power Automate when the plan already exists or when you need more control
   over how tasks are assigned.
-
-## Source note
-
-The source document is brief and assumes a Microsoft 365 environment already in
-place. Confirm the current Planner and Outlook labels before approving this as a
-final support page.

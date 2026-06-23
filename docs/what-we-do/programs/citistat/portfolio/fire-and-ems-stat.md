@@ -20,7 +20,7 @@ Fire and EMS Stat focuses on life safety, emergency medical response, fire preve
 
 ### Staff Purpose
 
-Staff use Fire and EMS Stat to review emergency response performance, high-utilizer trends, fire fatalities, arson, EMS demand, prevention initiatives, deployment issues, and coordination with health, housing, public safety, and human services partners.
+Staff use Fire and EMS Stat to review emergency response performance, high-utilizer trends, EMS demand, prevention initiatives, deployment issues, and coordination with health, housing, and human services partners.
 
 ### Core Management Questions
 

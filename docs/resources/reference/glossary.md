@@ -32,7 +32,7 @@ Words shape behavior. When OPI uses one word for something and an agency partner
 
 **AdminOps.** OPI’s internal backbone and administration and operations function. As a standing service run through the Director’s Office, it owns intake, project management, people operations, knowledge management, partner communications, finance, and contracts.
 
-**Authorizer.** The executive who authorizes a Stat, a Tiger Team, or a Cross-Agency Delivery activation and provides the air cover the work needs. For agency-scoped work, the authorizer is the agency director. For Cross-Agency Delivery activations, the authorizer is a Deputy Mayor or the City Administrator. The authorizer is named on the charter.
+**Authorizer.** The executive who authorizes a Stat, a Tiger Team, or a Cross-Agency Delivery activation and provides the executive cover the work needs. For agency-scoped work, the authorizer is the agency director. For Cross-Agency Delivery activations, the authorizer is a Deputy Mayor or the City Administrator. The authorizer is named on the charter.
 
 **BBMR.** Bureau of the Budget and Management Research — Baltimore’s budget office. OPI partners with BBMR on outcome-based budgeting and performance trainings.
 
@@ -54,7 +54,7 @@ Words shape behavior. When OPI uses one word for something and an agency partner
 
 **Commitment ledger.** The running record of who owns what, by when, in a Cross-Agency Delivery activation. It is the delivery equivalent of the CitiStat commitment tracker. Reviewed at each delivery cadence and carried until closure.
 
-**Cross-Agency Delivery.** OPI’s way of running work on problems that cross agency lines. Not a team and not a cost center. It owns the coordination authority: named Authorizers, Senior Responsible Owners, decision rights, sustainment commitments, and the weekly delivery cadence. The Innovation Lab provides the team and the method; Performance provides the standing performance routine; the Director’s Office provides the authorizing relationships at the Deputy Mayor and City Administrator level. Activates as a Tiger Team, a standing delivery review, or an embedded delivery engagement, depending on the problem. Always written in full; do not abbreviate as CAD, which collides with Computer-Aided Dispatch.
+**Cross-Agency Delivery.** OPI’s way of running work on problems that cross agency lines. Not a team and not a cost center. It owns the coordination authority — named Authorizers, decision rights, sustainment commitments, and the weekly delivery cadence — that lets several agencies ship together. Activates as a Tiger Team, a standing delivery review, or an embedded delivery engagement, depending on the problem; see the Tiger Teams Playbook for the test. Always written in full; do not abbreviate as CAD, which collides with Computer-Aided Dispatch.
 
 **Data and Analytics.** OPI’s service that builds and governs the city’s data platform, produces decision-grade analytics products, and trains agencies. Reports to the Executive Director through the Deputy Chief Data Officer.
 
@@ -82,7 +82,7 @@ Words shape behavior. When OPI uses one word for something and an agency partner
 
 **Frame review.** The standing meeting held five to eight days before each Stat to review the draft frame, deck, and agenda with stakeholders. Confirms attendees, sequences priority topics, and identifies any data still being finalized. For agency-based Stats, two frame reviews are held: one with the agency, one with Mayor’s Office leadership.
 
-**Front door.** The single intake path for new work. All requests for OPI involvement enter through the front door, are scoped, and either chartered, deferred, or declined. Freelance project starts are out of bounds.
+**Front door.** The single intake path for new work. All requests for OPI involvement enter through the front door, are scoped, and either chartered, deferred, or declined. Projects do not start on their own; everything comes through here.
 
 **Handoff.** The transition from a Tiger Team or design engagement to the agency that will operate the result. Designed from week one, not negotiated at the end.
 
@@ -96,7 +96,7 @@ Words shape behavior. When OPI uses one word for something and an agency partner
 
 **Mayor’s Action Plan.** The Mayor’s public commitments. OPI’s strategic priorities are anchored to the Action Plan and the City Administrator’s priorities.
 
-**North star.** “Respond when necessary. Build so we do not have to respond again.” OPI’s shorthand for the bias toward systemic, durable improvement.
+**North star.** “Respond when necessary. Build so we do not have to respond again.” OPI’s shorthand for choosing systemic, durable fixes over one-off responses.
 
 **Operational metrics.** The standing operating measures that appear on every Stat deck — the day-to-day performance signals an agency or service runs by, distinct from the strategic KPIs and the priority deep-dive topics. Operational metrics are reviewed each Stat to surface emerging issues before they become priority topics.
 
@@ -130,7 +130,7 @@ Words shape behavior. When OPI uses one word for something and an agency partner
 
 **Public Innovation Toolkit.** The civic innovation playbook OPI’s Innovation Lab uses for problem framing, human-centered design, product methods, and civic technology. Authored by [Bloomberg Philanthropies in partnership with the Johns Hopkins Bloomberg Center for Government Excellence](https://publicinnovation.jhu.edu/news/new-playbook-on-innovation/). OPI uses it; OPI does not own or author it.
 
-**Senior Responsible Owner (SRO).** The named accountable owner for a delivery review or a Tiger Team. Typically a Deputy Chief, an agency deputy, or an OPI team lead. Owns the routine, the closure plan, and the relationship with the Authorizer. Distinct from the Authorizer, who provides air cover but does not run the work day to day.
+**Senior Responsible Owner (SRO).** The named accountable owner for a delivery review or a Tiger Team. Typically a Deputy Chief, an agency deputy, or an OPI team lead. Owns the routine, the closure plan, and the relationship with the Authorizer. Distinct from the Authorizer, who provides executive cover but does not run the work day to day.
 
 **Service.** A standing capability OPI provides to the city. Five services: Citywide Performance Management; Citywide Data and Analytics; Innovation Lab; Cross-Agency Delivery; AdminOps.
 
@@ -146,9 +146,9 @@ Words shape behavior. When OPI uses one word for something and an agency partner
 
 **Team.** A group with staff and budget; OPI also calls these *portfolios*. Four teams: Director’s Office, Performance, Data and Analytics, Innovation Lab. A team is distinct from a service (what OPI delivers), a program (an ongoing routine), and a product (a tool OPI builds).
 
-**Tiger Team.** A time-boxed, cross-functional delivery sprint focused on one service problem, typically three to six months, scoped to the problem. Uses the Public Innovation Toolkit. The Innovation Lab provides the team and the method. A Tiger Team can serve one agency or several; what determines the path is whether the work needs Cross-Agency Delivery’s coordination authority: named Authorizers at the Deputy Mayor or City Administrator level, decision rights across agencies, and a closure plan with sustainment commitments from each agency. See the Tiger Teams Playbook.
+**Tiger Team.** A time-boxed, cross-functional delivery sprint focused on one service problem, typically three to six months. Uses the Public Innovation Toolkit. The Innovation Lab provides the team and the method. A Tiger Team can serve one agency or several; what determines the path is whether the work needs Cross-Agency Delivery’s coordination authority. See the Tiger Teams Playbook for that test.
 
-**Walk-up music.** The short piece of music played as panelists and attendees enter the Stat room. A small, deliberate cue that the meeting is starting and that the routine takes itself seriously without taking itself too seriously.
+**Walk-up music.** The short piece of music played as panelists and attendees enter the Stat room. A small, deliberate cue that the meeting is starting.
 
 **Weekly Ops Review.** OPI’s internal weekly leadership meeting that reviews the Project Directory, intake decisions, and active commitments.
 

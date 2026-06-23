@@ -66,11 +66,11 @@ That mindset shows up in how we run CitiStat, how we structure tiger teams, how 
 
 The deeper promise of innovation is not the tool. It is the learning culture behind the tool. A learning government can admit when a service is not working, study the problem without blame, test a better approach, and change how it operates. A learning government does not confuse activity with impact. It asks whether residents and staff are actually better off because of the work.
 
-That is the standard we are building toward in Baltimore. We want an Innovation Lab and a civic design practice that help agencies solve real problems, build reusable patterns, strengthen public trust, and show that city government can improve itself with rigor and humility. Civic design helps Baltimore move from fragmented to coordinated, from reactive to proactive, from bureaucratic to human. It helps us build services that make sense to the people who use them and the public servants who deliver them.
+That is the standard we are building toward in Baltimore. We want an Innovation Lab and a civic design practice that help agencies solve real problems, build reusable patterns, strengthen public trust, and show that city government can improve itself with rigor and humility. Civic design helps Baltimore move from fragmented to coordinated, from reactive to proactive. It helps us build services that make sense to the people who use them and the public servants who deliver them.
 
 This is why OPI exists. We use data and design to improve city services in ways that residents and public servants can see and feel. That means the work cannot stop at insight. It has to become a better form, a better route, a better handoff, a better message, a better decision, a better service.
 
-Better government is not a one-time project. It is a discipline. Innovation is one of the ways we practice that discipline. Not as theater, but as civic design in action. Every day. In every system. For every resident.
+Better government is not a one-time project. It is a discipline. Innovation is one of the ways we practice that discipline — not as theater, but as civic design in action, every day, in every system, for every resident.
 
 *With gratitude and resolve,*
 

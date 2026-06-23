@@ -1,6 +1,6 @@
 # Administrative Memos
 
-{{ page_header(summary="Draft pages converted from memo-style source documents that still need policy review.") }}
+{{ page_header(summary="Office memos turned into maintainable, durable guidance.") }}
 
 These pages keep the durable guidance from office memos and drop the email boilerplate, routing details, and one-off headers.
 

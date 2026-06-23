@@ -20,7 +20,7 @@ Capital Stat focuses on Baltimore’s capital delivery system: how the City plan
 
 ### Staff Purpose
 
-Staff use Capital Stat to review project status, funding readiness, procurement and contracting barriers, permitting or utility conflicts, interagency dependencies, schedule risk, cost escalation, project closeout, and coordination among capital-owning agencies.
+Staff use Capital Stat to review project status, funding readiness, procurement and contracting barriers, schedule and cost risk, interagency dependencies, and coordination among capital-owning agencies.
 
 ### Core Management Questions
 
