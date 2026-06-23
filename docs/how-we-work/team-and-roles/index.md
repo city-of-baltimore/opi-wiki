@@ -44,7 +44,6 @@ Each refined Position Description is filed alongside this roster in the same fol
 
 ??? info "Leadership"
 
-
     OPI leadership is the Executive Director, the Chief of Staff, and the two Deputy Chiefs. The Innovation Lab is led by Gabriel Watson, Innovation Program Manager.
 
     | **Role**                                  | **Incumbent**            | **Reports to**     | **PIN** |
@@ -57,8 +56,7 @@ Each refined Position Description is filed alongside this roster in the same fol
 
 ## Roster by Portfolio
 
-??? info "Director's Office roster and reporting"
-
+??? info "Director's Office roster"
 
     | **Name**                 | **Working title**                           | **Classification**            | **Cost center** | **PIN** |
     |--------------------------|---------------------------------------------|-------------------------------|-----------------|---------|
@@ -69,19 +67,7 @@ Each refined Position Description is filed alongside this roster in the same fol
     | Derek Thomas             | Operations Analyst                          | Operations Officer III | Innovation Lab  | 70432   |
     | Rashaad Tillery          | CitiStat Inspector                          | Operations Officer I          | AdminOps        | 50509   |
 
-    **Reporting structure**
-
-    | **Position**                                | **Incumbent**            | **Reports to**                              |
-    |---------------------------------------------|--------------------------|---------------------------------------------|
-    | Executive Director and Chief Data Officer   | Dartanion Swift-Williams | City Administrator                          |
-    | Chief of Staff                              | Rakeim Young             | Executive Director                          |
-    | Data Storyteller                            | Audrey Randazzo          | Chief of Staff                              |
-    | Operations Analyst                          | Derek Thomas             | Executive Director (through Chief of Staff) |
-    | CitiStat Inspector                          | Rashaad Tillery          | Chief of Staff                              |
-    | Project Manager                             | Mallory Screws           | Chief of Staff                              |
-
-??? info "Innovation Lab roster and reporting"
-
+??? info "Innovation Lab roster"
 
     | **Name**                  | **Working title**                    | **Classification**                | **Cost center** | **PIN** |
     |---------------------------|--------------------------------------|-----------------------------------|-----------------|---------|
@@ -90,17 +76,7 @@ Each refined Position Description is filed alongside this roster in the same fol
     | Chiemeka Okeoma           | Applied Data Scientist               | Operations Officer V              | Innovation Lab  | 62137   |
     | Xander Jake de los Santos | Full Stack Engineer                  | Operations Officer III            | Innovation Lab  | 70431   |
 
-    **Reporting structure**
-
-    | **Position**                         | **Incumbent**            | **Reports to**                                                                                   |
-    |--------------------------------------|--------------------------|--------------------------------------------------------------------------------------------------|
-    | Innovation Program Manager   | Gabriel Watson           | Executive Director                                                                               |
-    | Civic Designer                       | Selenea Gibson           | Innovation Program Manager                                                               |
-    | Applied Data Scientist               | Chiemeka Okeoma          | Innovation Program Manager                                                               |
-    | Full Stack Engineer                  | Xander Jake de los Santos | Innovation Program Manager                                                              |
-
-??? info "Performance roster and reporting"
-
+??? info "Performance roster"
 
     | **Name**             | **Working title**                | **Classification**            | **Cost center**        | **PIN** |
     |----------------------|----------------------------------|-------------------------------|------------------------|---------|
@@ -112,20 +88,7 @@ Each refined Position Description is filed alongside this roster in the same fol
     | Ethan Buckborough    | CitiStat Analyst                 | CitiStat Analyst I            | Performance Management | 52437   |
     | Nelson Gomes Boronat | CitiStat Analyst                 | CitiStat Analyst I | Performance Management | 62122   |
 
-    **Reporting structure**
-
-    | **Position**                     | **Incumbent**        | **Reports to**                   |
-    |----------------------------------|----------------------|----------------------------------|
-    | Deputy Chief Performance Officer | Danny Heller         | Executive Director               |
-    | CitiStat Program Manager         | Darren Lu            | Deputy Chief Performance Officer |
-    | Senior Performance Analyst       | Open — to be posted  | Deputy Chief Performance Officer |
-    | CitiStat Analyst                 | Ross Hackett         | CitiStat Program Manager         |
-    | CitiStat Analyst                 | Griffin Riddler, PhD    | CitiStat Program Manager         |
-    | CitiStat Analyst                 | Ethan Buckborough    | CitiStat Program Manager         |
-    | CitiStat Analyst                 | Nelson Gomes Boronat   | CitiStat Program Manager         |
-
-??? info "Data and Analytics roster and reporting"
-
+??? info "Data and Analytics roster"
 
     | **Name**              | **Working title**           | **Classification**     | **Cost center**    | **PIN** |
     |-----------------------|-----------------------------|------------------------|--------------------|---------|
@@ -135,18 +98,7 @@ Each refined Position Description is filed alongside this roster in the same fol
     | Alejandro Zuniga Sosa | Principal Data Engineer     | Operations Manager II  | Data and Analytics | 53411   |
     | Briya Bhakta          | Senior Data Engineer        | Operations Officer V   | Data and Analytics | 70433   |
 
-    **Reporting structure**
-
-    | **Position**                | **Incumbent**         | **Reports to**            |
-    |-----------------------------|-----------------------|---------------------------|
-    | Deputy Chief Data Officer   | Jason Howard, PhD     | Executive Director        |
-    | Technical Program Manager   | Roberto Herbruger     | Deputy Chief Data Officer |
-    | Applied Data Scientist      | Vera Choo             | Deputy Chief Data Officer |
-    | Principal Data Engineer     | Alejandro Zuniga Sosa | Deputy Chief Data Officer |
-    | Senior Data Engineer        | Briya Bhakta          | Principal Data Engineer   |
-
 ??? info "Cost center view"
-
 
     OPI’s budget is organized into four cost centers. The same person may sit on a portfolio team that does not match their cost center — for example, the Operations Analyst currently sits in the Director’s Office portfolio while remaining funded in the Innovation Lab cost center.
 
@@ -191,37 +143,7 @@ Each refined Position Description is filed alongside this roster in the same fol
     | CitiStat Analyst                 | Ethan Buckborough    | Performance | 52437   |
     | CitiStat Analyst                 | Nelson Gomes Boronat   | Performance | 62122   |
 
-??? info "Contact directory"
-
-
-    All staff are reachable through City of Baltimore email. Where addresses are not yet provisioned (incoming hires or open postings), the Chief of Staff is the contact of record.
-
-    | **Name**                  | **Title**                                      | **Portfolio**            | **Email**                                  |
-    |---------------------------|------------------------------------------------|--------------------------|--------------------------------------------|
-    | Dartanion Swift-Williams  | Executive Director and Chief Data Officer      | Director's Office        | dartanion.swift-williams@baltimorecity.gov |
-    | Rakeim Young              | Chief of Staff                                 | Director's Office        | rakeim.young@baltimorecity.gov             |
-    | Derek Thomas              | Operations Analyst                          | Director's Office        | derek.thomas@baltimorecity.gov             |
-    | Mallory Screws            | Project Manager                                | Director's Office        | mallory.screws@baltimorecity.gov           |
-    | Audrey Randazzo           | Data Storyteller                               | Director's Office        | audrey.randazzo@baltimorecity.gov          |
-    | Rashaad Tillery           | CitiStat Inspector                             | Director's Office        | rashaad.tillery@baltimorecity.gov          |
-    | Gabriel Watson            | Innovation Program Manager                     | Innovation Lab           |                                            |
-    | Selenea Gibson            | Civic Designer                                 | Innovation Lab           | selenea.gibson@baltimorecity.gov           |
-    | Chiemeka Okeoma           | Applied Data Scientist                         | Innovation Lab           | chiemeka.okeoma@baltimorecity.gov          |
-    | Xander Jake de los Santos | Full Stack Engineer                            | Innovation Lab           | XanderJake.DeLosSantos@baltimorecity.gov                         |
-    | Danny Heller              | Deputy Chief Performance Officer               | Performance | daniel.heller@baltimorecity.gov            |
-    | Darren Lu                 | CitiStat Program Manager                       | Performance | darren.lu@baltimorecity.gov                |
-    | Ross Hackett              | CitiStat Analyst                               | Performance | ross.hackett@baltimorecity.gov             |
-    | Griffin Riddler, PhD           | CitiStat Analyst                               | Performance | griffin.riddler@baltimorecity.gov          |
-    | Ethan Buckborough         | CitiStat Analyst                               | Performance | ethan.buckborough@baltimorecity.gov        |
-    | Nelson Gomes Boronat      | CitiStat Analyst                               | Performance | nelson.gomesboronat@baltimorecity.gov      |
-    | Jason Howard, PhD         | Deputy Chief Data Officer                      | Data and Analytics       | jason.howard@baltimorecity.gov             |
-    | Roberto Herbruger         | Technical Program Manager                      | Data and Analytics       |                                            |
-    | Vera Choo                 | Applied Data Scientist                         | Data and Analytics       | vera.choo@baltimorecity.gov                |
-    | Alejandro Zuniga Sosa     | Principal Data Engineer                        | Data and Analytics       | alejandro.zunigasosa@baltimorecity.gov     |
-    | Briya Bhakta              | Senior Data Engineer                           | Data and Analytics       | briya.bhakta@baltimorecity.gov             |
-
 ??? info "Open positions"
-
 
     | **Title**                  | **Status**          | **Portfolio**            | **PIN / Status** |
     |----------------------------|---------------------|--------------------------|------------------|
