@@ -6,17 +6,17 @@
 
 OPI runs as four working groups under the Executive Director:
 
-{{ card_grid_from("how-we-work/team-and-roles/index.cards.yml") }}
+{{ card_grid_from("how-we-work/organization/team-and-roles/index.cards.yml") }}
 
 ## Position descriptions
 
 Every role on the team has a published position description. The full index lives in
-[Resources → Position Descriptions](../../resources/reference/position-descriptions/index.md).
+[Resources → Position Descriptions](../../../resources/reference/position-descriptions/index.md).
 
 ## Team Roster
 
 This page is the internal roster reference. For the public-facing narrative, team
-methods, and portfolio pages, start in [Our Teams](../../our-teams/index.md).
+methods, and portfolio pages, start in [Our Teams](../../../our-teams/index.md).
 
 For the visual leadership org chart and reporting lines, see [Org Structure](../org-structure.md).
 

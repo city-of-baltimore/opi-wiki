@@ -163,7 +163,7 @@ plugins:
         our-teams/performance-and-citistat/cross-agency-delivery/about-cross-agency-delivery.md: what-we-do/services/cross-agency-delivery.md
         our-teams/performance-and-citistat/cross-agency-delivery/cross-agency-delivery-theory-of-change.md: what-we-do/services/cross-agency-delivery-service-definition.md
         public/council-public-narrative-template.md: resources/index.md
-        how-we-work/team-and-roles/staff-directory.md: how-we-work/team-and-roles/index.md
+        how-we-work/team-and-roles/staff-directory.md: how-we-work/organization/team-and-roles/index.md
         public/index.md: index.md
         public/citistat-public-brief.md: what-we-do/programs/citistat/index.md
         public/data-analytics-public-brief.md: what-we-do/services/citywide-data-and-analytics.md
@@ -172,10 +172,44 @@ plugins:
         public/website-information-architecture.md: resources/index.md
         about-us/about-opi/operating-frame.md: how-we-work/operating-frame.md
         about-us/about-opi/teams-programs-foundations.md: how-we-work/teams-programs-foundations.md
-        about-us/about-opi/org-structure.md: how-we-work/org-structure.md
+        about-us/about-opi/org-structure.md: how-we-work/organization/org-structure.md
         about-us/about-opi/mission-vision-identity.md: about-us/mission-vision-identity.md
         about-us/about-opi/operating-principles-and-culture.md: about-us/operating-principles-and-culture.md
         about-us/about-opi/index.md: about-us/index.md
+        how-we-work/org-structure.md: how-we-work/organization/org-structure.md
+        how-we-work/team-and-roles/index.md: how-we-work/organization/team-and-roles/index.md
+        how-we-work/onboarding/onboarding-process-and-checklist.md: how-we-work/handbook/onboarding/onboarding-process-and-checklist.md
+        how-we-work/onboarding/new-hire-announcement-template.md: how-we-work/handbook/onboarding/new-hire-announcement-template.md
+        how-we-work/onboarding/managers-onboarding-playbook.md: how-we-work/handbook/onboarding/managers-onboarding-playbook.md
+        how-we-work/onboarding/maps-benefits-quick-guide.md: how-we-work/handbook/onboarding/maps-benefits-quick-guide.md
+        how-we-work/onboarding/index.md: how-we-work/handbook/onboarding/index.md
+        how-we-work/onboarding/offboarding-process-and-checklist.md: how-we-work/handbook/onboarding/offboarding-process-and-checklist.md
+        how-we-work/onboarding/new-hire-orientation-guide.md: how-we-work/handbook/onboarding/new-hire-orientation-guide.md
+        how-we-work/administrative-memos/media-and-press-engagement.md: how-we-work/handbook/administrative-memos/media-and-press-engagement.md
+        how-we-work/administrative-memos/index.md: how-we-work/handbook/administrative-memos/index.md
+        how-we-work/administrative-memos/responding-to-city-council-requests.md: how-we-work/handbook/administrative-memos/responding-to-city-council-requests.md
+        how-we-work/administrative-memos/telework-and-in-office-schedule.md: how-we-work/handbook/administrative-memos/telework-and-in-office-schedule.md
+        how-we-work/administrative-memos/essential-and-emergency-essential-designations.md: how-we-work/handbook/administrative-memos/essential-and-emergency-essential-designations.md
+        how-we-work/how-to/silence-teams-notifications-while-sharing-your-screen.md: how-we-work/handbook/how-to/silence-teams-notifications-while-sharing-your-screen.md
+        how-we-work/how-to/book-the-idea-lab-fayette.md: how-we-work/handbook/how-to/book-the-idea-lab-fayette.md
+        how-we-work/how-to/git-guide.md: how-we-work/handbook/how-to/git-guide.md
+        how-we-work/how-to/add-a-printer.md: how-we-work/handbook/how-to/add-a-printer.md
+        how-we-work/how-to/edit-a-past-reporting-period-in-book-of-business.md: how-we-work/handbook/how-to/edit-a-past-reporting-period-in-book-of-business.md
+        how-we-work/how-to/create-planner-groups-without-automatic-member-alerts.md: how-we-work/handbook/how-to/create-planner-groups-without-automatic-member-alerts.md
+        how-we-work/how-to/index.md: how-we-work/handbook/how-to/index.md
+        how-we-work/how-to/change-your-city-password.md: how-we-work/handbook/how-to/change-your-city-password.md
+        how-we-work/how-to/order-food-catering-from-city-vendors.md: how-we-work/handbook/how-to/order-food-catering-from-city-vendors.md
+        how-we-work/how-to/submit-your-weekly-update.md: how-we-work/handbook/how-to/submit-your-weekly-update.md
+        how-we-work/operations/sharepoint-operating-system-strategy.md: how-we-work/handbook/operations/sharepoint-operating-system-strategy.md
+        how-we-work/operations/qa-standards.md: how-we-work/handbook/operations/qa-standards.md
+        how-we-work/operations/productivity-and-collaboration-playbook.md: how-we-work/handbook/operations/productivity-and-collaboration-playbook.md
+        how-we-work/operations/intake-sop.md: how-we-work/handbook/operations/intake-sop.md
+        how-we-work/operations/performance-standards-staff.md: how-we-work/handbook/operations/performance-standards-staff.md
+        how-we-work/operations/leadership-norms.md: how-we-work/handbook/operations/leadership-norms.md
+        how-we-work/operations/problem-statement-template.md: how-we-work/handbook/operations/problem-statement-template.md
+        how-we-work/operations/index.md: how-we-work/handbook/operations/index.md
+        how-we-work/operations/performance-standards-manager-companion.md: how-we-work/handbook/operations/performance-standards-manager-companion.md
+        how-we-work/operations/charter-template.md: how-we-work/handbook/operations/charter-template.md
         what-we-do/services/cross-agency-delivery-theory-of-change.md: what-we-do/services/cross-agency-delivery-service-definition.md
         resources/reference/position-descriptions/data-and-analytics/pd-principal-platform-engineer.md: resources/reference/position-descriptions/data-and-analytics/pd-principal-data-engineer.md
         resources/reference/position-descriptions/innovation-lab/pd-civic-technology-lead.md: resources/reference/position-descriptions/innovation-lab/pd-innovation-program-manager.md

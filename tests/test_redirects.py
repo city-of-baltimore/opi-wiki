@@ -60,4 +60,6 @@ def test_redirect_allowlist_stays_small_and_explicit() -> None:
         "resources/reference/position-descriptions/performance/pd-senior-performance-analyst.md",
         "what-we-do/services/cross-agency-delivery-service-definition.md",
         "what-we-do/services/cross-agency-delivery.md",
+        "how-we-work/organization/org-structure.md",
+        "how-we-work/organization/team-and-roles/index.md",
     }

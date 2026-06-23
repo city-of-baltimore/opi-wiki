@@ -24,6 +24,9 @@ ALLOWED_DUPLICATE_DESTINATIONS = {
     "resources/reference/position-descriptions/performance/pd-senior-performance-analyst.md",
     "what-we-do/services/cross-agency-delivery-service-definition.md",
     "what-we-do/services/cross-agency-delivery.md",
+    # Added with the How We Work regroup (Organization / Handbook sub-sections):
+    "how-we-work/organization/org-structure.md",
+    "how-we-work/organization/team-and-roles/index.md",
 }
 
 

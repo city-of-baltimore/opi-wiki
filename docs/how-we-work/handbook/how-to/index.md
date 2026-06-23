@@ -7,4 +7,4 @@ step-based, tool-specific, and easy to revise when settings or workflows change.
 
 ## Pages in this subsection
 
-{{ card_grid_from("how-we-work/how-to/index.cards.yml") }}
+{{ card_grid_from("how-we-work/handbook/how-to/index.cards.yml") }}

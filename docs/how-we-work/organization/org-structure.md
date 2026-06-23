@@ -14,7 +14,7 @@ This chart shows the named leadership structure and portfolio ownership. Staff
 alignment appears below in one chart per portfolio so the reporting lines stay
 readable.
 
-{{ org_structure_from("how-we-work/org-structure.data.yml", "leadership_chart") }}
+{{ org_structure_from("how-we-work/organization/org-structure.data.yml", "leadership_chart") }}
 
 ## Staff alignment by portfolio
 
@@ -23,19 +23,19 @@ mobile. Innovation Lab staffing and its adjacent Director's Office support
 roles are shown in their home portfolios, with aspirational seats labeled as
 such so the current team and intended structure stay visible in one place.
 
-{{ org_structure_from("how-we-work/org-structure.data.yml", "portfolio_tabs") }}
+{{ org_structure_from("how-we-work/organization/org-structure.data.yml", "portfolio_tabs") }}
 
 ## The Four Portfolios
 
 OPI’s work is organized into four portfolios, each with a named lead, a budget cost center, a defined set of functions, and a primary value proposition.
 
-{{ org_structure_from("how-we-work/org-structure.data.yml", "portfolio_table") }}
+{{ org_structure_from("how-we-work/organization/org-structure.data.yml", "portfolio_table") }}
 
 ## Current Staff Alignment
 
 The alignment below reflects OPI’s current operating chart, as of June 2026.
 
-{{ org_structure_from("how-we-work/org-structure.data.yml", "staff_alignment") }}
+{{ org_structure_from("how-we-work/organization/org-structure.data.yml", "staff_alignment") }}
 
 ## Cost Centers and Budget Services
 

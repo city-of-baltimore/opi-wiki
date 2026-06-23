@@ -8,4 +8,4 @@ details, and one-off distribution headers.
 
 ## Pages in this subsection
 
-{{ card_grid_from("how-we-work/administrative-memos/index.cards.yml") }}
+{{ card_grid_from("how-we-work/handbook/administrative-memos/index.cards.yml") }}

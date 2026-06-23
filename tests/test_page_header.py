@@ -55,7 +55,7 @@ def test_render_page_header_escapes_text() -> None:
 def test_page_header_macro_resolves_badge_from_metadata() -> None:
     """The macro should pull the badge token from inherited page metadata."""
 
-    env = register_macros("how-we-work/operations/charter-template.md")
+    env = register_macros("how-we-work/handbook/operations/charter-template.md")
 
     rendered = str(env.macros["page_header"](summary="How charters work."))
 

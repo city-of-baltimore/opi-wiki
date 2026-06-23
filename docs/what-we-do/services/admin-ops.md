@@ -39,5 +39,5 @@ The [Director's Office](../../our-teams/directors-office/index.md).
 ## Read alongside
 
 - [How Work Moves Through OPI](../../how-we-work/how-work-moves-through-opi.md) — where this service sits in the loop
-- [Operations](../../how-we-work/operations/index.md) — the operating routines AdminOps maintains
+- [Operations](../../how-we-work/handbook/operations/index.md) — the operating routines AdminOps maintains
 - [Director's Office](../../our-teams/directors-office/index.md)

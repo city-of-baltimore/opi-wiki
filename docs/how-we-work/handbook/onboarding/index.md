@@ -4,4 +4,4 @@
 
 ## Pages in this section
 
-{{ card_grid_from("how-we-work/onboarding/index.cards.yml") }}
+{{ card_grid_from("how-we-work/handbook/onboarding/index.cards.yml") }}
