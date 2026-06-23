@@ -1,19 +1,41 @@
 # Citywide Data and Analytics
 
-> Trustworthy, decision-grade data and analytics for the City.
+{{ page_header(summary="We make city data accurate, shared, and useful — for decision-making inside government and transparency outside it.", category="OPI · SERVICE") }}
 
-Citywide Data and Analytics is the service delivered by the [Data and Analytics team](../../our-teams/data-and-analytics/index.md). It turns raw administrative data into evidence reliable enough to support action.
+## What this service does
 
-## What it does
+This service strengthens Baltimore City's data infrastructure, analytics capacity, open data program, and data governance practices across agencies.
 
-The service owns shared datasets, data pipelines, analytics products, open data, data governance, methodology cards, and responsible AI and data readiness. Its role is to make the evidence trustworthy — not just to produce charts. Much of this work runs on the [Baltimore City Data Platform](../products/baltimore-city-data-platform.md) and powers products like the [Baltimore Intelligence Center](../products/baltimore-intelligence-center/index.md).
+**Activities include** developing and maintaining data pipelines and shared datasets, producing analytics and data products for City leadership and agencies, supporting data quality and governance standards, maintaining the Open Baltimore program, publishing high-quality open datasets, supporting data literacy, and preparing the City for responsible use of artificial intelligence and advanced analytics. Much of this work runs on the [Baltimore City Data Platform](../products/baltimore-city-data-platform.md) and powers products like the [Baltimore Intelligence Center](../products/baltimore-intelligence-center/index.md).
 
-## Why it matters
+## The goal
 
-In the signal-to-solution loop, this is the step that **explains the problem**: Data and Analytics helps agencies understand patterns, root causes, and tradeoffs, and tells leaders how confident they can be in the numbers.
+Make City data accurate, reliable, accessible, and useful for decision-making, transparency, and public accountability.
+
+## Mandate
+
+Baltimore City Code, Article 1, Subtitle 9 (Open Data).
+
+## Priority outcomes
+
+- Decisions are based on trusted, current numbers rather than stale or missing data.
+- Public data is easy to understand and up to date.
+- Agencies work from one source of truth instead of rebuilding reports.
+- The City is ready to use AI and advanced analytics responsibly.
+
+## What this means for people
+
+- **As a resident,** I want public data that's easy to understand and up to date.
+- **As a reporter,** I want reliable data to explain what's happening in the city.
+- **As an analyst,** I want one source of truth instead of rebuilding reports.
+- **As a city leader,** I want confidence that decisions are based on real information.
+
+## Delivered by
+
+The [Data and Analytics team](../../our-teams/data-and-analytics/index.md).
 
 ## Read alongside
 
-- [Data and Analytics team](../../our-teams/data-and-analytics/index.md) — the team that delivers this service
+- [How Work Moves Through OPI](../../how-we-work/how-work-moves-through-opi.md) — where this service sits in the loop
 - [Data Governance Framework](../../our-teams/data-and-analytics/data-governance-framework.md)
-- [How Work Moves Through OPI](../../how-we-work/how-work-moves-through-opi.md)
+- [Data and Analytics team](../../our-teams/data-and-analytics/index.md)

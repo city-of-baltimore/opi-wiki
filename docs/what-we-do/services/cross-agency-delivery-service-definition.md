@@ -1,6 +1,6 @@
-# Cross-Agency Delivery Theory of Change
+# Cross-Agency Delivery — Service Definition
 
-{{ page_header(summary="How cross-agency delivery moves from inputs to outcomes.", category="SERVICE THEORY OF CHANGE · 04 OF 05", tagline="How we move work that no single agency can deliver alone.") }}
+{{ page_header(summary="The full Cross-Agency Delivery method: governance, service levels, engagement model, and theory of change.", category="OPI · SERVICE DEFINITION", tagline="How we move work that no single agency can deliver alone.") }}
 
 ## NORTH STAR
 

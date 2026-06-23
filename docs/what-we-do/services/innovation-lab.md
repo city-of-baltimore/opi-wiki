@@ -1,19 +1,44 @@
 # Innovation Lab
 
-> The craft of solving — design, product, and delivery methods that turn ideas into working approaches.
+{{ page_header(summary="We design and build digital tools that residents and City staff actually use — making services easier to access, track, and complete.", category="OPI · SERVICE") }}
 
-The Innovation Lab is unusual in OPI's taxonomy: it is **both a team and a service**. That is intentional. The [Innovation Lab team](../../our-teams/innovation-lab/index.md) is a group with staff and budget; the Innovation Lab service is the craft that team delivers. We keep both labels because partners ask for "the Lab" as a capability and as a group, and the work reads the same either way.
+!!! note "Both a team and a service — on purpose"
+    The Innovation Lab is the one name in OPI's taxonomy that is **both a [team](../../our-teams/innovation-lab/index.md) and a service.** The team is the group with staff and budget; the service is the craft that team delivers. We keep both labels because partners ask for "the Lab" as a capability *and* as a group — and the work reads the same either way. This is intentional, not a duplication.
 
-## What it does
+## What this service does
 
-The service owns discovery, service design, user research, product management, prototyping, civic technology, applied AI pilots, and MVP-and-handoff methods. The Lab can work on a single-agency problem or a multi-agency one — what defines it is the craft: research, design, prototype, test, build, learn, and hand off.
+This service operates OPI's Innovation Lab, a citywide service-improvement capability that uses human-centered design, product management, civic technology, and applied innovation methods to improve city services and internal operations.
 
-## Why it matters
+**Activities include** service design, user research, process mapping, prototyping, product discovery, workflow improvement, resident and staff engagement, responsible AI pilots, and development of operational tools — performance management portals, data-collection systems, service-workflow applications, and other products that support agency operations and service delivery.
 
-In the signal-to-solution loop, this is the step that **designs and tests the solution**: the Lab turns a problem a Stat surfaced into a practical approach that works for residents and staff. When implementation needs multiple agencies to move together, the Lab's work is coordinated through [Cross-Agency Delivery](cross-agency-delivery.md).
+## The goal
+
+Help agencies design, test, and implement practical solutions that make services easier to use, easier to manage, and more responsive to resident and staff needs.
+
+## Mandate
+
+Baltimore City Code, Article 1, Subtitle 61 (Innovation Lab / continuous improvement).
+
+## Priority outcomes
+
+- Residents can access, track, and complete city services more easily.
+- Agencies absorb and own improved processes and tools after the Lab steps back.
+- A small portfolio of credible, visible service improvements ships each year.
+- Emerging methods like AI are used only where they solve a real operational problem.
+
+## What this means for people
+
+- **As a resident,** I want to track my 311 request without calling multiple times.
+- **As a small business owner,** I want to understand where my permit stands and what's needed next.
+- **As an analyst,** I want tools that support my workflow instead of slowing it down.
+- **As a city leader,** I want dashboards that show progress clearly and honestly.
+
+## Delivered by
+
+The [Innovation Lab team](../../our-teams/innovation-lab/index.md). When implementation requires multiple agencies to move together with named decision rights, the Lab's work is coordinated through [Cross-Agency Delivery](cross-agency-delivery.md).
 
 ## Read alongside
 
-- [Innovation Lab team](../../our-teams/innovation-lab/index.md) — the team that delivers this service
+- [How Work Moves Through OPI](../../how-we-work/how-work-moves-through-opi.md) — where this service sits in the loop
 - [Digital Product Methodology](../../our-teams/innovation-lab/digital-product-methodology.md)
-- [How Work Moves Through OPI](../../how-we-work/how-work-moves-through-opi.md)
+- [Innovation Lab team](../../our-teams/innovation-lab/index.md)

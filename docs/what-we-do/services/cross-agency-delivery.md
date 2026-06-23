@@ -1,77 +1,46 @@
 # Cross-Agency Delivery
 
-{{ page_header(summary="How OPI runs work that crosses agency lines.", category="OPI · FOUNDATIONS", tagline="How OPI moves work across agencies — from problem framing to durable delivery.") }}
+{{ page_header(summary="When problems span multiple agencies or get stuck for months, we step in to help unblock them — fast, collaboratively, and with clear ownership.", category="OPI · SERVICE") }}
 
-Cross-Agency Delivery is a named OPI service, not a standing team. Use the full name; when space is tight, "x-agency delivery" is the only approved short form — never "CAD."
+Cross-Agency Delivery is a named OPI service, not a standing team. Use the full name; "x-agency delivery" is the only approved short form — never "CAD."
 
-**Why this service exists**
+## What this service does
 
-Most of the problems OPI gets called into are bigger than any one agency. Permitting cuts across DHCD, DOT, and Public Works. Vacancies cut across HCD, DPW, and Law. Workforce outcomes cut across MOED, BCPSS, and the Health Department. Cross-Agency Delivery is the OPI service that moves these problems across agency lines without losing momentum and without creating a new agency to do it.
+This service coordinates selected high-priority initiatives and service-delivery challenges that require action across multiple City agencies. It is a coordination *overlay*, not a new agency: it owns named Authorizers, Senior Responsible Owners, decision rights across agencies, a commitment ledger, a weekly delivery cadence, and sustainment commitments from each agency.
 
-## What we do
+**Activities include** standing up delivery routines and Tiger Teams, developing project charters and implementation plans, mapping cross-agency workflows, tracking risks and dependencies, coordinating agency commitments, supporting executive escalation, documenting decisions and follow-up actions, and helping agencies sustain improvements through standard operating procedures, training materials, and performance monitoring.
 
-Cross-Agency Delivery is a service overlay, not a team and not a cost center. It is the way OPI runs work that requires multiple agencies to ship together. The overlay owns coordination authority — named Authorizers, Senior Responsible Owners, decision rights across agencies, sustainment commitments from each agency, and a weekly delivery cadence to keep them aligned. Its question is *how do we get multiple agencies to actually ship this together?*
+It activates in three patterns, chosen to fit the problem: a **Tiger Team activation**, a **standing delivery review**, or an **embedded delivery** engagement.
 
-The Innovation Lab provides the team and method when discovery, design, prototyping, or product work is needed. Performance provides the executive performance routine that can surface the problem and monitor the gain after sustainment. The Director’s Office provides the authorizing relationships at the Deputy Mayor and City Administrator level.
+## The goal
 
-The service activates in three patterns, chosen to fit the problem:
+Help City leadership and agencies resolve cross-agency barriers, clarify ownership, sequence implementation, and deliver improvements that no single department can accomplish alone.
 
-- **Tiger Team activation.** A time-boxed Tiger Team chartered through Cross-Agency Delivery — typically three to six months, scoped to the problem — when the work needs cross-agency coordination authority. Authorized at the Deputy Mayor or City Administrator level. The Innovation Lab provides the team and the method (the Public Innovation Toolkit). Cross-Agency Delivery provides the standing delivery review, the closure plan, and the sustainment commitments from each agency.
+## Mandate
 
-- **Standing delivery review.** A standing cross-agency forum that meets on a fixed cadence to drive a single multi-agency outcome — vacancies, permitting, workforce. Has a named Authorizer, a Senior Responsible Owner, the agencies at the table, and a closure plan. Performance owns the routine.
+Supported by CitiStat commitments and the agency roles required under Baltimore City Code, Article 1, Subtitles 61 and 9. Cross-Agency Delivery has no standalone code mandate — it is operationally required to deliver on those.
 
-- **Embedded delivery.** An embedded delivery engagement where OPI staff sit inside an agency for 90 to 180 days to stand up a routine, train the team, and hand it back.
+## Priority outcomes
 
-## When a Tiger Team needs Cross-Agency Delivery
+- Cross-agency issues get resolved instead of drifting between departments.
+- Ownership, decision rights, and sequencing are clear before work starts.
+- Hard problems move without standing up new task forces.
+- Improvements stick because sustainment is planned before delivery closes.
 
-A Tiger Team needs Cross-Agency Delivery when the work cannot be sustained by one agency alone. The test is not simply how many agencies are in the room. The test is whether the work requires cross-agency decision rights, a named Authorizer, a Senior Responsible Owner, a commitment ledger, escalation, and sustainment commitments from more than one agency.
+## What this means for people
 
-If the authority sits cleanly inside one agency, the Tiger Team can run through Innovation Lab intake under the agency director. If multiple agencies must change how they work together, the Tiger Team should be chartered through Cross-Agency Delivery.
+- **As a resident,** I don't care which agency is responsible — I just want my issue resolved.
+- **As an agency director,** I need help coordinating changes that depend on other departments.
+- **As a city leader,** I want progress on hard problems without creating new task forces.
+- **As frontline staff,** I want clearer processes so I can do my job well.
 
-### How we deliver
+## Delivered by
 
-Every Cross-Agency engagement follows the same three-stage path:
+No standing team. Cross-Agency Delivery is activated through the [Innovation Lab](../../our-teams/innovation-lab/index.md) (which provides the Tiger Team and method) and the [Performance team](../../our-teams/performance/index.md) (which owns the standing delivery routine), with authorizing relationships from the Director's Office at the Deputy Mayor and City Administrator level.
 
-| **Stage** | **What happens**                                                                                   | **Who owns it**                                        |
-|-----------|----------------------------------------------------------------------------------------------------|--------------------------------------------------------|
-| Frame     | Define the problem in one page; identify the agencies, the decision lead, and the success measure. | OPI Performance Management lead, with AdminOps support |
-| Run       | Stand up the squad, the routine, and the data. Run a weekly or bi-weekly cycle, time-boxed to the activation pattern (typically three to six months for a Tiger Team).    | OPI delivery lead embedded with the agencies           |
-| Hand off  | Document the routine, train the agency owner, and exit. OPI stays available for follow-up.         | OPI delivery lead, agency owner                        |
+## Read alongside
 
-### Who we work with
-
-Cross-Agency Delivery typically pairs OPI with one of the following:
-
-- A line agency that owns the outcome (DPW for vacancies, MOED for workforce, BCRP for parks).
-
-- A central function that owns a constraint (DHR for hiring, BBMR for budget, BCIT for technology, Law for procurement).
-
-- Another part of the Mayor’s Office.
-
-### What success looks like
-
-- A signed problem statement and target outcome before work starts.
-
-- A weekly delivery routine that survives staff turnover.
-
-- A clear hand-off memo at exit, with the agency owner identified and trained.
-
-- A measurable change in the indicator the squad set out to move.
-
-### What this service is not
-
-- It is not a long-term seat at the table. OPI is a temporary intervention, not an ongoing operating partner.
-
-- It is not a substitute for agency leadership. The agency owns the outcome; OPI owns the routine.
-
-- It is not a procurement function. Where vendor delivery is needed, OPI partners with the relevant central function or the Innovation Lab.
-
-### Read alongside
-
+- [Cross-Agency Delivery — Service Definition](cross-agency-delivery-service-definition.md) — the full method, governance, service levels, and theory of change
 - [How Work Moves Through OPI](../../how-we-work/how-work-moves-through-opi.md) — where this service sits in the loop
-- [Cross-Agency Delivery — Theory of Change](cross-agency-delivery-theory-of-change.md)
-- [Operating Frame](../../about-us/about-opi/operating-frame.md)
-- [Performance team](../../our-teams/performance/index.md)
-- [Innovation Lab](../../our-teams/innovation-lab/index.md)
 - [Tiger Teams Playbook](../../resources/reference/tiger-teams-playbook.md)
-- [CitiStat Method Playbook](../programs/citistat/method-playbook.md)
+- [Innovation Lab](../../our-teams/innovation-lab/index.md)

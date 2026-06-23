@@ -1,19 +1,43 @@
 # AdminOps
 
-> The operating backbone that keeps OPI visible, documented, and sustained.
+{{ page_header(summary="The service that keeps priority work coordinated, communicated, and delivered.", category="OPI · SERVICE") }}
 
-AdminOps is the service delivered by the [Director's Office](../../our-teams/directors-office/index.md). It is the operating system that lets OPI's other four services produce their best work.
+Also called **OPI Administration & Operations**.
 
-## What it does
+## What this service does
 
-AdminOps owns intake discipline, portfolio visibility, knowledge management, executive briefings, Council readiness, communications, QA, and the operating routines that keep a small office from becoming reactive or personality-dependent. A team that asks City agencies to operate with discipline has to hold itself to the same standard — that is AdminOps.
+This service is responsible for the administrative, operational, communications, and portfolio-management functions that support the Mayor's Office of Performance and Innovation.
 
-## Why it matters
+**Activities include** portfolio intake and tracking, project-management coordination, executive briefings, communications, branding and marketing, Council relations, knowledge management, fiscal and procurement coordination, HR and facilities support, internal operating routines, quality assurance for public-facing materials, and maintaining the systems and standards that allow OPI's work to be delivered consistently and sustainably.
 
-In the signal-to-solution loop, AdminOps is the step that **sustains** the work: it keeps improvements documented, communicated, and monitored so a gain made through a Stat, a data product, or a Tiger Team is still working after OPI steps back.
+## The goal
+
+Keep OPI's work coordinated, well-documented, properly resourced, and clearly communicated to City leadership, agencies, partners, and the public where appropriate.
+
+## Mandate
+
+Operationally required to execute Baltimore City Code, Article 1, Subtitles 61 and 9.
+
+## Priority outcomes
+
+- Priority work is driven, tracked, and communicated rather than left to chance.
+- Partners get clear timelines, expectations, and responsive coordination.
+- OPI staff have systems, templates, and support that reduce friction.
+- City commitments are delivered, and progress is transparent to residents.
+
+## What this means for people
+
+- **As a city leader,** I want confidence that priority work is being driven, tracked, and communicated.
+- **As an agency partner,** I want clear timelines, expectations, and responsive coordination.
+- **As OPI staff,** I want systems, templates, and support that reduce friction and let me focus on impact.
+- **As a resident,** I benefit when city commitments are delivered and progress is transparent.
+
+## Delivered by
+
+The [Director's Office](../../our-teams/directors-office/index.md).
 
 ## Read alongside
 
-- [Director's Office](../../our-teams/directors-office/index.md) — the team that delivers AdminOps
-- [How Work Moves Through OPI](../../how-we-work/how-work-moves-through-opi.md)
+- [How Work Moves Through OPI](../../how-we-work/how-work-moves-through-opi.md) — where this service sits in the loop
 - [Operations](../../how-we-work/operations/index.md) — the operating routines AdminOps maintains
+- [Director's Office](../../our-teams/directors-office/index.md)
