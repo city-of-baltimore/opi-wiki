@@ -44,6 +44,12 @@ BASE_ALLOW = {
     "BCIT", "BBMR", "BCPSS", "BCRP", "DGS", "DOT", "DPW", "BPD", "EMS", "DHR",
     "DHCD", "HCD", "MOED", "MONSE", "MOGR", "BCFD", "MOIT", "DPOB", "LIGHT",
     "MAPS", "RISE", "DDO", "PD", "BI", "AV", "ID", "MCP", "OOO", "PTO", "GenBI",
+    "BCHD", "DJS", "ECB", "HKS", "BDC", "DCPBL", "MWBOO", "WBE", "BMORE", "UMBC",
+    # standard technical / HR acronyms used in how-to guides and memos
+    "WIP", "PR", "QC", "ML", "UAT", "PPE", "JD", "AM", "PM", "FMLA", "ADA",
+    "AVL", "CIO", "COB", "FYI", "GPS", "HVAC", "IDE", "IRS", "ISO", "JIRA",
+    "JSON", "KB", "MD", "RBAC", "SMS", "SSPR", "AA", "GRIT", "AIM", "ORM",
+    "VPN", "SSO", "MFA", "WFH", "SBAR", "NNN", "SMBA",
 }
 
 # Words that are not acronyms but match [A-Z]{2,5} (common in ALL-CAPS headings),
@@ -131,7 +137,9 @@ def load_acronym_allowlist() -> set[str]:
 
 def acronym_report(path: Path, text: str, allow: set[str]) -> list[tuple[str, str]]:
     found = set()
-    for token in ACRONYM_RE.findall(text):
+    # Skip headings — the wiki uses ALL-CAPS section titles that aren't acronyms.
+    body = "\n".join(l for l in text.split("\n") if not HEADING_RE.match(l))
+    for token in ACRONYM_RE.findall(body):
         if token in allow or token in STOPWORDS:
             continue
         if f"({token})" in text:  # expanded somewhere on the page

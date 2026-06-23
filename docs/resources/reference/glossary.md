@@ -154,6 +154,23 @@ Words shape behavior. When OPI uses one word for something and an agency partner
 
 **Workday.** The city’s enterprise system for HR, finance, and AdminOps. The FY26 “maximize Workday” priority focuses on reporting, HR processes, capital budget management, grants, and internal workflows.
 
+## Acronyms and status terms
+
+A quick reference for acronyms that recur across the wiki and are easy to read past.
+
+| Acronym | Expansion |
+| --- | --- |
+| **BoB** | Book of Business — the portfolio register of OPI projects |
+| **DCA** | Deputy City Administrator |
+| **DDO** | Data-Driven Officer (see entry above) |
+| **GIS** | Geographic Information System (mapping and spatial analytics) |
+| **PII** | Personally Identifiable Information |
+| **PIN** | Position Identification Number — the City's budget identifier for a role |
+| **RAG** | Red / Amber / Green status rating |
+| **TPM** | Technical Program Manager (a Data and Analytics role) |
+
+Standard IT and HR acronyms used in the how-to guides and memos — VPN, SSO, MFA, PTO, OOO, WFH — carry their common meanings.
+
 ## Terms to use carefully
 
 These terms are easy to misuse in a way that blurs OPI's operating model. Use them only as described, and prefer the canonical language in [How Work Moves Through OPI](../../how-we-work/how-work-moves-through-opi.md).
