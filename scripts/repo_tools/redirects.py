@@ -10,13 +10,20 @@ import yaml
 ALLOWED_DUPLICATE_DESTINATIONS = {
     "resources/index.md",
     "resources/reference/position-descriptions/innovation-lab/pd-civic-designer.md",
-    "resources/reference/position-descriptions/innovation-lab/pd-civic-technology-lead.md",
     "resources/reference/position-descriptions/directors-office/pd-data-storyteller.md",
     "resources/reference/position-descriptions/directors-office/pd-operations-analyst.md",
     "resources/reference/position-descriptions/data-and-analytics/pd-applied-data-scientist.md",
     "resources/reference/position-descriptions/innovation-lab/pd-innovation-program-manager.md",
     "resources/reference/position-descriptions/innovation-lab/pd-product-engineer-full-stack.md",
-    "resources/reference/position-descriptions/innovation-lab/pd-senior-product-engineer.md",
+    # Added with the June 2026 reorg (PD consolidations, performance rename, CAD moves):
+    "resources/reference/position-descriptions/data-and-analytics/pd-principal-data-engineer.md",
+    "resources/reference/position-descriptions/innovation-lab/pd-applied-data-scientist.md",
+    "resources/reference/position-descriptions/performance/pd-citistat-analyst.md",
+    "resources/reference/position-descriptions/performance/pd-citistat-program-manager.md",
+    "resources/reference/position-descriptions/performance/pd-deputy-chief-performance-officer.md",
+    "resources/reference/position-descriptions/performance/pd-senior-performance-analyst.md",
+    "what-we-do/services/cross-agency-delivery-service-definition.md",
+    "what-we-do/services/cross-agency-delivery.md",
 }
 
 
