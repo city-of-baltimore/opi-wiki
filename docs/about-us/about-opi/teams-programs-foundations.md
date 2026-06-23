@@ -4,8 +4,6 @@
 
 Read this page as the bridge between OPI's structure and OPI's work. Portfolios explain how people and cost centers are organized. Services explain what OPI delivers. Programs and methods explain how recurring work runs.
 
-> **CitiStat identifies the problem. Data helps explain it. The Innovation Lab designs and tests the solution. Cross-Agency Delivery coordinates implementation when multiple agencies must act together. AdminOps keeps the work visible, documented, and sustained.**
-
 ## WHAT WE OWN AND HOW WE WORK
 
 This document describes OPI’s four portfolios in operating detail — what each portfolio owns, the typical outputs it produces, the boundaries between functions, and the foundations that make our work coherent across services.

@@ -205,7 +205,7 @@ Each refined Position Description is filed alongside this roster in the same fol
     | Gabriel Watson            | Innovation Program Manager                     | Innovation Lab           |                                            |
     | Selenea Gibson            | Civic Designer                                 | Innovation Lab           | selenea.gibson@baltimorecity.gov           |
     | Chiemeka Okeoma           | Applied Data Scientist                         | Innovation Lab           | chiemeka.okeoma@baltimorecity.gov          |
-    | Xander Jake de los Santos | Full Stack Engineer                            | Innovation Lab           | via Chief of Staff                         |
+    | Xander Jake de los Santos | Full Stack Engineer                            | Innovation Lab           | XanderJake.DeLosSantos@baltimorecity.gov                         |
     | Danny Heller              | Deputy Chief Performance Officer               | Performance | daniel.heller@baltimorecity.gov            |
     | Darren Lu                 | CitiStat Program Manager                       | Performance | darren.lu@baltimorecity.gov                |
     | Ross Hackett              | CitiStat Analyst                               | Performance | ross.hackett@baltimorecity.gov             |

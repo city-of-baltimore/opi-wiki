@@ -14,7 +14,7 @@ This does not mean every issue moves through every service. Some problems stay i
 
 | Step | OPI service | Core question | Typical outputs |
 | --- | --- | --- | --- |
-| 1. See the signal | Citywide Performance Management / CitiStat | What is not working, where, and why does leadership time matter? | Stat pre-memo, Stat deck, KPI view, follow-up memo, commitment tracker |
+| 1. See the signal | Citywide Performance Management (via CitiStat) | What is not working, where, and why does leadership time matter? | Stat pre-memo, Stat deck, KPI view, follow-up memo, commitment tracker |
 | 2. Explain the pattern | Citywide Data and Analytics | What does the evidence show, and how confident are we? | Dataset, dashboard, methodology card, data quality note, analytic brief |
 | 3. Design and test the fix | Innovation Lab | How do we solve this in a way that works for residents and staff? | Discovery memo, service blueprint, prototype, pilot, product brief, runbook |
 | 4. Coordinate implementation | Cross-Agency Delivery | How do we get multiple agencies to ship this together? | Activation memo, delivery charter, commitment ledger, decision log, escalation memo, sustainment plan |
@@ -95,7 +95,7 @@ Use these rules before creating a new meeting, workgroup, or project.
 | --- | --- | --- |
 | CitiStat | Data and Analytics | KPI definition, source system, data owner, refresh need, decision context |
 | CitiStat | Innovation Lab | Problem statement, users affected, current workflow, baseline metric, sponsor |
-| CitiStat or Innovation Lab | Cross-Agency Delivery | Authorizer, SRO, agencies involved, dependency map, decision rights, expected duration |
+| CitiStat or Innovation Lab | Cross-Agency Delivery | Authorizer, Senior Responsible Owner (SRO), agencies involved, dependency map, decision rights, expected duration |
 | Innovation Lab | Agency owner / BCIT / Data and Analytics | Product brief, runbook, support model, data needs, release notes, sustainment owner |
 | Cross-Agency Delivery | Agency owner / CitiStat | Closure memo, commitment ledger, SOPs, training plan, metric set, review cadence |
 | Any service | AdminOps | Public narrative needs, Council posture, QA needs, portfolio status, knowledge-base updates |

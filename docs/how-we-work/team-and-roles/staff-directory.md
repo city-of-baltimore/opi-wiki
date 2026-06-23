@@ -8,7 +8,7 @@ AUDIENCE
 OWNER
 :   Chief of Staff
 
-| **Team** | **Name** | **Title** | **Work phone** | **Email / route** |
+| **Team** | **Name** | **Title** | **Work phone** | **Email** |
 |---|---|---|---|---|
 | Director's Office | Dartanion Swift-Williams | Executive Director and Chief Data Officer | 410-645-0021 | dartanion.swift-williams@baltimorecity.gov |
 | Director's Office | Rakeim Young | Chief of Staff |  | rakeim.young@baltimorecity.gov |
@@ -19,7 +19,7 @@ OWNER
 | Innovation Lab | Gabriel Watson | Innovation Program Manager |  |  |
 | Innovation Lab | Selenea Gibson | Civic Designer | 443-602-6182 | selenea.gibson@baltimorecity.gov |
 | Innovation Lab | Chiemeka Okeoma | Applied Data Scientist | 240-252-8991 | chiemeka.okeoma@baltimorecity.gov |
-| Innovation Lab | Xander Jake de los Santos | Full Stack Engineer |  | via Chief of Staff |
+| Innovation Lab | Xander Jake de los Santos | Full Stack Engineer |  | XanderJake.DeLosSantos@baltimorecity.gov |
 | Performance | Danny Heller | Deputy Chief Performance Officer | 443-721-9609 | daniel.heller@baltimorecity.gov |
 | Performance | Darren Lu | CitiStat Program Manager |  | darren.lu@baltimorecity.gov |
 | Performance | Ross Hackett | CitiStat Analyst | 443-257-6074 | ross.hackett@baltimorecity.gov |
