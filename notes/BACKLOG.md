@@ -18,11 +18,12 @@ audits (`notes/reviews/audit_content.md`, `notes/reviews/audit_reference.md`).
 - Remove undefined "MAC" (item #5)
 - Quick wins: loop blockquote dedupe, SRO spelled out, CPM/CitiStat slash
 - Audit bugs: "Rock Young" → Rakeim Young; youth-stat + tiger-teams empty headings
+- **IA consolidation** — About Us = identity; How We Work = operating model + machinery; org chart co-located with roster (item #1 partial)
 
 ## 🔜 Pending — decided, ready to execute
 - **#6 Public elimination** — move website-copy + IA to `notes/`; retire 3 briefs (redirect to canonical); drop `public/` from nav
 - **#1 Reporting redesign** — slim roster tables; surface the org chart
-- **IA consolidation** — About Us vs How We Work (see proposal below) — *awaiting confirmation*
+
 
 ## 🔜 Pending — P0 / backlog
 - **Loop consolidation** — make `how-work-moves` the one canonical telling; others excerpt-and-link (mostly done; tighten)
