@@ -10,7 +10,14 @@ OPI moves work through a signal-to-solution loop: CitiStat identifies a problem,
 
 ## What to do with a CitiStat request
 
-A CitiStat follow-up request means a commitment was made in a Stat and OPI is tracking it to closure with evidence. Your agency's Data-Driven Officer coordinates the response. See the [CitiStat program](programs/citistat/index.md) for how the routine works and what's expected.
+A CitiStat follow-up request means a commitment was made in a Stat and OPI is tracking it to closure with evidence. Here's what to expect:
+
+1. **You receive the request** — it names the commitment, the owner, and the due date.
+2. **Your agency's Data-Driven Officer coordinates the response** and partners with the OPI analyst on the pre-memo and follow-up.
+3. **You provide evidence of closure** — a link, a metric, or a changed process, not just a status update.
+4. **OPI tracks it until closed**; unresolved commitments stay visible until solved or escalated.
+
+See the [CitiStat program](programs/citistat/index.md) for how the routine works and what's expected.
 
 ## How to request a service
 
