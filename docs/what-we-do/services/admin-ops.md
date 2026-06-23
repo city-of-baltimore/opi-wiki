@@ -15,5 +15,5 @@ In the signal-to-solution loop, AdminOps is the step that **sustains** the work:
 ## Read alongside
 
 - [Director's Office](../../our-teams/directors-office/index.md) — the team that delivers AdminOps
-- [How Work Moves Through OPI](../how-work-moves-through-opi.md)
-- [Operations](../operations/index.md) — the operating routines AdminOps maintains
+- [How Work Moves Through OPI](../../how-we-work/how-work-moves-through-opi.md)
+- [Operations](../../how-we-work/operations/index.md) — the operating routines AdminOps maintains

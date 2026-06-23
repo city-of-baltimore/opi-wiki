@@ -105,5 +105,5 @@ Use these rules before creating a new meeting, workgroup, or project.
 - [Glossary of OPI Terms](../resources/reference/glossary.md)
 - [Tiger Teams Playbook](../resources/reference/tiger-teams-playbook.md)
 - [Innovation Lab Strategy](../our-teams/innovation-lab/innovation-lab-strategy.md)
-- [Cross-Agency Delivery service](services/cross-agency-delivery.md)
-- [CitiStat Method Playbook](../programs/citistat/method-playbook.md)
+- [Cross-Agency Delivery service](../what-we-do/services/cross-agency-delivery.md)
+- [CitiStat Method Playbook](../what-we-do/programs/citistat/method-playbook.md)

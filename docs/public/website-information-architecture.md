@@ -94,13 +94,13 @@ This document defines the information architecture for opi.baltimorecity.gov bef
 
 *Four primary programs. Each has a detail page.*
 
-- CitiStat — /programs/citistat
+- CitiStat — /what-we-do/programs/citistat
 
-- Open Baltimore — /programs/open-baltimore
+- Open Baltimore — /what-we-do/programs/open-baltimore
 
-- Innovation Lab portfolio — /programs/innovation-lab
+- Innovation Lab portfolio — /what-we-do/programs/innovation-lab
 
-- Data Fellows — /programs/data-fellows
+- Data Fellows — /what-we-do/programs/data-fellows
 
 ### Services — /services
 
@@ -171,7 +171,7 @@ This document defines the information architecture for opi.baltimorecity.gov bef
 
 - Lower-case slugs separated by hyphens. No underscores.
 
-- Short, descriptive slugs. Avoid acronyms in URLs unless the acronym is the official name (for example, /programs/citistat).
+- Short, descriptive slugs. Avoid acronyms in URLs unless the acronym is the official name (for example, /what-we-do/programs/citistat).
 
 - Stable slugs. Avoid renaming after launch. If a slug must change, set up a permanent redirect.
 

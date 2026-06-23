@@ -18,7 +18,7 @@ Every page on this site is a Markdown document in a [GitHub repository](https://
 
 ## How work moves through OPI
 
-OPI uses a signal-to-solution loop: **[CitiStat](programs/citistat/index.md) identifies the problem → [Data and Analytics](our-teams/data-and-analytics/index.md) explains it → the [Innovation Lab](our-teams/innovation-lab/index.md) designs and tests the solution → [Cross-Agency Delivery](how-we-work/services/cross-agency-delivery.md) coordinates multi-agency implementation → AdminOps sustains it.** Read [How We Work](how-we-work/index.md) for the full model.
+OPI uses a signal-to-solution loop: **[CitiStat](what-we-do/programs/citistat/index.md) identifies the problem → [Data and Analytics](our-teams/data-and-analytics/index.md) explains it → the [Innovation Lab](our-teams/innovation-lab/index.md) designs and tests the solution → [Cross-Agency Delivery](what-we-do/services/cross-agency-delivery.md) coordinates multi-agency implementation → AdminOps sustains it.** Read [How We Work](how-we-work/index.md) for the full model.
 
 ## How this site is organized
 
@@ -42,7 +42,7 @@ When in doubt, use the clearest full name. Do not use "CAD" for Cross-Agency Del
 ## Recently updated
 
 - [Letter — On OPI Foundations](about-us/letters-from-the-director/on-opi-foundations.md) {{ badge("approved") }}
-- [CitiStat Strategic Framework](programs/citistat/strategic-framework.md) {{ badge("approved") }}
+- [CitiStat Strategic Framework](what-we-do/programs/citistat/strategic-framework.md) {{ badge("approved") }}
 - [Glossary of OPI Terms](resources/reference/glossary.md) {{ badge("approved") }}
 
 ---

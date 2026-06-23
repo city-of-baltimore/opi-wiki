@@ -68,10 +68,10 @@ Cross-Agency Delivery typically pairs OPI with one of the following:
 
 ### Read alongside
 
-- [How Work Moves Through OPI](../how-work-moves-through-opi.md) — where this service sits in the loop
+- [How Work Moves Through OPI](../../how-we-work/how-work-moves-through-opi.md) — where this service sits in the loop
 - [Cross-Agency Delivery — Theory of Change](cross-agency-delivery-theory-of-change.md)
 - [Operating Frame](../../about-us/about-opi/operating-frame.md)
 - [Performance team](../../our-teams/performance/index.md)
 - [Innovation Lab](../../our-teams/innovation-lab/index.md)
 - [Tiger Teams Playbook](../../resources/reference/tiger-teams-playbook.md)
-- [CitiStat Method Playbook](../../programs/citistat/method-playbook.md)
+- [CitiStat Method Playbook](../programs/citistat/method-playbook.md)

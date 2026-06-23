@@ -265,6 +265,6 @@ Baltimore’s performance management strategy is not about perfect dashboards or
 
 - [About Performance](about-performance.md) — plain-language overview of the service this strategy guides.
 - [Performance Management Theory of Change](performance-theory-of-change.md) — the mandate, governance, staffing, measures, and sustainment behind the strategy.
-- [CitiStat Strategic Framework](../../programs/citistat/strategic-framework.md) — the public-facing strategic frame for CitiStat itself.
-- [CitiStat Method Playbook](../../programs/citistat/method-playbook.md) — the staff-facing operating standards.
-- [CitiStat Portfolio](../../programs/citistat/portfolio/index.md) — every active Stat brief.
+- [CitiStat Strategic Framework](../../what-we-do/programs/citistat/strategic-framework.md) — the public-facing strategic frame for CitiStat itself.
+- [CitiStat Method Playbook](../../what-we-do/programs/citistat/method-playbook.md) — the staff-facing operating standards.
+- [CitiStat Portfolio](../../what-we-do/programs/citistat/portfolio/index.md) — every active Stat brief.

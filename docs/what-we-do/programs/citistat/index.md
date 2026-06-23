@@ -2,7 +2,7 @@
 
 > Baltimore's recurring, citywide performance routine — a program supported by all OPI teams.
 
-CitiStat is a **program**, not a team. It is the standing routine OPI uses to see performance clearly, ask better questions, assign commitments, and track follow-through. The [Performance team](../../our-teams/performance/index.md) is its operational home, but CitiStat draws on every part of OPI: [Data and Analytics](../../our-teams/data-and-analytics/index.md) makes the evidence trustworthy, the [Innovation Lab](../../our-teams/innovation-lab/index.md) designs the fixes a Stat surfaces, [Cross-Agency Delivery](../../how-we-work/services/cross-agency-delivery.md) coordinates the multi-agency work, and AdminOps sustains it.
+CitiStat is a **program**, not a team. It is the standing routine OPI uses to see performance clearly, ask better questions, assign commitments, and track follow-through. The [Performance team](../../../our-teams/performance/index.md) is its operational home, but CitiStat draws on every part of OPI: [Data and Analytics](../../../our-teams/data-and-analytics/index.md) makes the evidence trustworthy, the [Innovation Lab](../../../our-teams/innovation-lab/index.md) designs the fixes a Stat surfaces, [Cross-Agency Delivery](../../services/cross-agency-delivery.md) coordinates the multi-agency work, and AdminOps sustains it.
 
 This section is split cleanly by job: the **Strategic Framework** explains *why* CitiStat exists and how it ties to citywide priorities; the **Method Playbook** explains *how* a Stat actually runs. The quick reference, quality standards, and templates support the people doing the work, and the portfolio holds the live agency briefs.
 
@@ -16,16 +16,16 @@ This section is split cleanly by job: the **Strategic Framework** explains *why*
 
 ## The method
 
-{{ card_grid_from("programs/citistat/index.cards.yml", "method") }}
+{{ card_grid_from("what-we-do/programs/citistat/index.cards.yml", "method") }}
 
 ## The portfolio
 
 The full citywide portfolio of active CitiStats — every agency brief, organized in one place.
 
-{{ card_grid_from("programs/citistat/index.cards.yml", "portfolio") }}
+{{ card_grid_from("what-we-do/programs/citistat/index.cards.yml", "portfolio") }}
 
 ## Read alongside
 
-- [How Work Moves Through OPI](../../how-we-work/how-work-moves-through-opi.md) — where CitiStat sits in the signal-to-solution loop
-- [Performance team](../../our-teams/performance/index.md) — CitiStat's operational home
-- [Glossary of OPI Terms](../../resources/reference/glossary.md)
+- [How Work Moves Through OPI](../../../how-we-work/how-work-moves-through-opi.md) — where CitiStat sits in the signal-to-solution loop
+- [Performance team](../../../our-teams/performance/index.md) — CitiStat's operational home
+- [Glossary of OPI Terms](../../../resources/reference/glossary.md)

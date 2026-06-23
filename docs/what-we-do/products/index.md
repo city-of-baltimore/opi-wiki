@@ -2,7 +2,7 @@
 
 > The tools and platforms OPI builds and supports for the City.
 
-A **product** is a tool, platform, or public-facing resource OPI builds or maintains. Products are distinct from services (what OPI delivers) and programs (ongoing routines): a product is a durable thing with a roadmap, an owner, and users. Products often draw on more than one team — the [Innovation Lab](../our-teams/innovation-lab/index.md) for design and build, [Data and Analytics](../our-teams/data-and-analytics/index.md) for the data layer.
+A **product** is a tool, platform, or public-facing resource OPI builds or maintains. Products are distinct from services (what OPI delivers) and programs (ongoing routines): a product is a durable thing with a roadmap, an owner, and users. Products often draw on more than one team — the [Innovation Lab](../../our-teams/innovation-lab/index.md) for design and build, [Data and Analytics](../../our-teams/data-and-analytics/index.md) for the data layer.
 
 | Product | What it is | Status |
 | --- | --- | --- |
@@ -12,6 +12,6 @@ A **product** is a tool, platform, or public-facing resource OPI builds or maint
 
 ## Read alongside
 
-- [Innovation Lab](../our-teams/innovation-lab/index.md) — the team behind most OPI products
-- [Citywide Data and Analytics](../how-we-work/services/citywide-data-and-analytics.md) — the service that powers the data products
-- [How this site is organized](../index.md#how-this-site-is-organized)
+- [Innovation Lab](../../our-teams/innovation-lab/index.md) — the team behind most OPI products
+- [Citywide Data and Analytics](../services/citywide-data-and-analytics.md) — the service that powers the data products
+- [How this site is organized](../../index.md#how-this-site-is-organized)

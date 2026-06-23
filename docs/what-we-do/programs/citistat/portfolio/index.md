@@ -129,11 +129,11 @@ Not every recurring problem should become a Stat. The first question should be: 
 
 ## All Stats
 
-{{ card_grid_from("programs/citistat/portfolio/index.cards.yml") }}
+{{ card_grid_from("what-we-do/programs/citistat/portfolio/index.cards.yml") }}
 
 ## See also
 
 - [CitiStat Method Playbook](../method-playbook.md) — the operating standards every Stat in this portfolio runs on.
 - [CitiStat Strategic Framework](../strategic-framework.md) — the public-facing strategic frame and portfolio rationale.
-- [About Performance](../../../our-teams/performance/about-performance.md) — plain-language overview of the service.
-- [Performance Management Theory of Change](../../../our-teams/performance/performance-theory-of-change.md) — mandate, governance, staffing, measures, and sustainment.
+- [About Performance](../../../../our-teams/performance/about-performance.md) — plain-language overview of the service.
+- [Performance Management Theory of Change](../../../../our-teams/performance/performance-theory-of-change.md) — mandate, governance, staffing, measures, and sustainment.

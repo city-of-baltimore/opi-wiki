@@ -95,7 +95,7 @@ Decisions move when the right people have clear authority, timeboxes, and escala
 
 #### Stat admission and continuation criteria
 
-The full citywide admission criteria, continuation test, and right-routine matrix live in the [CitiStat Method Playbook → Issue selection, admission, and continuation](../../programs/citistat/method-playbook.md#issue-selection-admission-and-continuation). In short: a routine should be called a Stat only when there is a clear performance problem requiring leadership attention, a named Executive Sponsor or Authorizer, a defined agency owner or Senior Responsible Owner, reliable-enough data, and a cadence for commitments and follow-up. If a Stat does not produce decisions, commitments, or measurable learning after two cycles, redesign it, pause it, or convert it into another operating routine.
+The full citywide admission criteria, continuation test, and right-routine matrix live in the [CitiStat Method Playbook → Issue selection, admission, and continuation](../../what-we-do/programs/citistat/method-playbook.md#issue-selection-admission-and-continuation). In short: a routine should be called a Stat only when there is a clear performance problem requiring leadership attention, a named Executive Sponsor or Authorizer, a defined agency owner or Senior Responsible Owner, reliable-enough data, and a cadence for commitments and follow-up. If a Stat does not produce decisions, commitments, or measurable learning after two cycles, redesign it, pause it, or convert it into another operating routine.
 
 ### 6. Core offerings and target service levels
 
@@ -169,7 +169,7 @@ The full citywide admission criteria, continuation test, and right-routine matri
 
 - [About Performance](about-performance.md) — plain-language overview of the service.
 - [Performance Management Strategy](performance-strategy.md) — the strategic plan this Theory of Change underwrites.
-- [CitiStat Method Playbook → The CitiStat cycle](../../programs/citistat/method-playbook.md#the-citistat-cycle) — the 12-step operating cycle that delivers the SLAs in section 6 above.
-- [CitiStat Method Playbook → Issue selection, admission, and continuation](../../programs/citistat/method-playbook.md#issue-selection-admission-and-continuation) — canonical admission criteria and right-routine matrix.
-- [CitiStat Method Playbook → Follow-up, escalation, and sustainment](../../programs/citistat/method-playbook.md#follow-up-escalation-and-sustainment) — commitment tracking and escalation paths.
-- [CitiStat Strategic Framework](../../programs/citistat/strategic-framework.md) — the public-facing strategic frame.
+- [CitiStat Method Playbook → The CitiStat cycle](../../what-we-do/programs/citistat/method-playbook.md#the-citistat-cycle) — the 12-step operating cycle that delivers the SLAs in section 6 above.
+- [CitiStat Method Playbook → Issue selection, admission, and continuation](../../what-we-do/programs/citistat/method-playbook.md#issue-selection-admission-and-continuation) — canonical admission criteria and right-routine matrix.
+- [CitiStat Method Playbook → Follow-up, escalation, and sustainment](../../what-we-do/programs/citistat/method-playbook.md#follow-up-escalation-and-sustainment) — commitment tracking and escalation paths.
+- [CitiStat Strategic Framework](../../what-we-do/programs/citistat/strategic-framework.md) — the public-facing strategic frame.

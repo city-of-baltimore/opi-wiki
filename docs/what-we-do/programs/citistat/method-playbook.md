@@ -342,6 +342,6 @@ Every Stat product has a named lead and a named QCer; the QCer is not the same p
 - [CitiStat — Staff Quick Reference](method-staff-quick-reference.md) — the at-a-glance version of this playbook for use during sessions.
 - [CitiStat Templates](templates.md) — stakeholder agendas, materials send-out standards, room setup, deliverable-type vocabulary, and the Stat artifact templates (pre-memo, deck, follow-up memo, commitment tracker, weekly radar).
 - [CitiStat Quality Standards](quality-standards.md) — the QA bar for code and data, visualization, pre-memos, sessions, and follow-up.
-- [About Performance](../../our-teams/performance/about-performance.md) — plain-language overview of the service.
-- [Performance Management Theory of Change](../../our-teams/performance/performance-theory-of-change.md) — how the service is mandated, governed, staffed, measured, and sustained.
+- [About Performance](../../../our-teams/performance/about-performance.md) — plain-language overview of the service.
+- [Performance Management Theory of Change](../../../our-teams/performance/performance-theory-of-change.md) — how the service is mandated, governed, staffed, measured, and sustained.
 - [CitiStat Portfolio](portfolio/index.md) — every active Stat brief.

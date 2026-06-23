@@ -16,4 +16,4 @@ In the signal-to-solution loop, this is the step that **designs and tests the so
 
 - [Innovation Lab team](../../our-teams/innovation-lab/index.md) — the team that delivers this service
 - [Digital Product Methodology](../../our-teams/innovation-lab/digital-product-methodology.md)
-- [How Work Moves Through OPI](../how-work-moves-through-opi.md)
+- [How Work Moves Through OPI](../../how-we-work/how-work-moves-through-opi.md)
