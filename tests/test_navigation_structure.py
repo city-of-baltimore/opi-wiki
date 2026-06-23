@@ -29,7 +29,6 @@ POSITION_DESCRIPTIONS_DIR = REPO_ROOT / "docs/resources/reference/position-descr
 
 NAV_TITLE_EXPECTATIONS = {
     REPO_ROOT / "docs/about-us/.pages": "About Us",
-    REPO_ROOT / "docs/about-us/about-opi/.pages": "About OPI",
     REPO_ROOT / "docs/about-us/letters-from-the-director/.pages": "Letters from the Director",
     REPO_ROOT / "docs/how-we-work/.pages": "How We Work",
     REPO_ROOT / "docs/how-we-work/onboarding/.pages": "Onboarding",

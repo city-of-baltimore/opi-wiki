@@ -173,6 +173,9 @@ plugins:
         about-us/about-opi/operating-frame.md: how-we-work/operating-frame.md
         about-us/about-opi/teams-programs-foundations.md: how-we-work/teams-programs-foundations.md
         about-us/about-opi/org-structure.md: how-we-work/org-structure.md
+        about-us/about-opi/mission-vision-identity.md: about-us/mission-vision-identity.md
+        about-us/about-opi/operating-principles-and-culture.md: about-us/operating-principles-and-culture.md
+        about-us/about-opi/index.md: about-us/index.md
         what-we-do/services/cross-agency-delivery-theory-of-change.md: what-we-do/services/cross-agency-delivery-service-definition.md
         resources/reference/position-descriptions/data-and-analytics/pd-principal-platform-engineer.md: resources/reference/position-descriptions/data-and-analytics/pd-principal-data-engineer.md
         resources/reference/position-descriptions/innovation-lab/pd-civic-technology-lead.md: resources/reference/position-descriptions/innovation-lab/pd-innovation-program-manager.md
