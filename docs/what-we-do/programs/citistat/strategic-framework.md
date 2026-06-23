@@ -142,33 +142,7 @@ The goal is not more meetings. The goal is a management routine that helps Balti
 
 ### The four tenets of Stat
 
-<div class="opi-margin-note" markdown="0">
-  <span class="opi-margin-note__label">Why these four</span>
-  The four tenets are the operating philosophy that has defined Stat-style performance management since CompStat in the 1990s and CitiStat in 1999. Baltimore was the first city government to apply them. They predate any specific dashboard, software, or meeting format and remain the constants every Stat — thematic or agency — must hold to.
-</div>
-
-<div class="opi-tenets-grid" markdown="0">
-  <div class="opi-tenet">
-    <div class="opi-tenet__num">Tenet 01</div>
-    <div class="opi-tenet__name">Accurate and timely intelligence shared by all</div>
-    <div class="opi-tenet__meaning">Use reliable data, resident signals, field validation, and a shared KPI dictionary so the room is not debating the numbers.</div>
-  </div>
-  <div class="opi-tenet">
-    <div class="opi-tenet__num">Tenet 02</div>
-    <div class="opi-tenet__name">Rapid deployment of resources</div>
-    <div class="opi-tenet__meaning">Use the session to make or escalate decisions that shift people, attention, tools, or resources toward the bottleneck.</div>
-  </div>
-  <div class="opi-tenet">
-    <div class="opi-tenet__num">Tenet 03</div>
-    <div class="opi-tenet__name">Effective tactics and strategies</div>
-    <div class="opi-tenet__meaning">Ask what the agency tried, what changed, why it worked or did not, and what should be tested next.</div>
-  </div>
-  <div class="opi-tenet">
-    <div class="opi-tenet__num">Tenet 04</div>
-    <div class="opi-tenet__name">Relentless follow-up and assessment</div>
-    <div class="opi-tenet__meaning">Track commitments until closed with evidence; unresolved issues remain visible until solved or escalated.</div>
-  </div>
-</div>
+CitiStat rests on the four tenets that have defined Stat-style performance management since CompStat and Baltimore's own CitiStat in 1999: **accurate and timely intelligence shared by all**, **rapid deployment of resources**, **effective tactics and strategies**, and **relentless follow-up and assessment**. The [Method Playbook](method-playbook.md#the-four-tenets-of-stat) is the single source of truth for what each tenet means in practice.
 
 ### The modern CitiStat operating cycle
 
@@ -232,14 +206,7 @@ CitiStat time is leadership time. It should be used for issues where recurring e
 
 ### Right-routine decision rule
 
-| **If the problem primarily requires…**                                                      | **Use…**                                       |
-|---------------------------------------------------------------------------------------------|------------------------------------------------|
-| Recurring performance review, executive attention, KPI tracking, commitments, and follow-up | CitiStat                                       |
-| Time-boxed cross-agency implementation and barrier removal                                  | Tiger Team or Cross-Agency Delivery activation |
-| User research, prototyping, workflow redesign, or operational product discovery             | Innovation Lab engagement                      |
-| Dataset ownership, data access, open data release, data quality, or governance decision     | Data Governance / Open Data Council            |
-| Product ownership, build readiness, launch readiness, or roadmap tradeoff                   | Product Council or product governance          |
-| One-time policy, budget, or executive decision                                              | Decision memo                                  |
+CitiStat is one of several OPI routines. For when to use a Stat versus a Tiger Team, a Cross-Agency Delivery activation, an Innovation Lab engagement, data governance, or a decision memo, see the routine chooser in [How Work Moves Through OPI](../../../how-we-work/how-work-moves-through-opi.md#how-tiger-teams-fit).
 
 ## Data discipline: from tracking to understanding
 
