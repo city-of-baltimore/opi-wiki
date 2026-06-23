@@ -1,6 +1,6 @@
 # Performance Management Theory of Change
 
-{{ page_header(summary="How performance management moves from inputs to outcomes.", category="SERVICE THEORY OF CHANGE · 01 OF 05 · AUDIENCE: STAFF") }}
+{{ page_header(summary="How performance management moves from inputs to outcomes.", category="SERVICE THEORY OF CHANGE · 01 OF 05") }}
 
 **Citywide Performance Management**
 
