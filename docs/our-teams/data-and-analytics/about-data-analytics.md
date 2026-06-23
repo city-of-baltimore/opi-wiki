@@ -1,6 +1,6 @@
 # About Data Analytics
 
-{{ page_header(summary="What the Data and Analytics team does inside OPI.", category="ABOUT · SERVICE 02 OF 05") }}
+{{ page_header(summary="What the Data and Analytics team does inside OPI.", category="ABOUT · SERVICE") }}
 
 **Citywide Data and Analytics**
 

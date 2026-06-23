@@ -52,6 +52,8 @@ Words shape behavior. When OPI uses one word for something and an agency partner
 
 **Commitment.** The basic unit of accountability in CitiStat. Every commitment has an owner, a date, and a definition of done. Tracked in the CitiStat tracker between meetings.
 
+**Commitment ledger.** The running record of who owns what, by when, in a Cross-Agency Delivery activation — the delivery equivalent of the CitiStat commitment tracker. Reviewed at each delivery cadence and carried until closure.
+
 **Cross-Agency Delivery.** OPI’s service overlay for problems that cross agency lines. Not a team and not a cost center — a way of running work that requires multiple agencies to ship together. It owns the coordination authority: named Authorizers, Senior Responsible Owners, decision rights, sustainment commitments, and the weekly delivery cadence. The Innovation Lab provides the team and the method; Performance provides the standing performance routine; the Director’s Office provides the authorizing relationships at the Deputy Mayor and City Administrator level. Activates as a Tiger Team, a standing delivery review, or an embedded delivery engagement, depending on the problem. Always written in full — do not abbreviate as CAD, which collides with Computer-Aided Dispatch.
 
 **Data and Analytics.** OPI’s service that builds and governs the city’s data platform, produces decision-grade analytics products, and trains agencies. Reports to the Executive Director through the Deputy Chief Data Officer.

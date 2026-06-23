@@ -1,6 +1,6 @@
 # About the Innovation Lab
 
-{{ page_header(summary="What the Innovation Lab team does inside OPI.", category="ABOUT · SERVICE 03 OF 05") }}
+{{ page_header(summary="What the Innovation Lab team does inside OPI.", category="ABOUT · SERVICE") }}
 
 ## PURPOSE
 
