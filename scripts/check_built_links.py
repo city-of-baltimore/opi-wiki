@@ -30,12 +30,21 @@ def find_broken_links(site_dir: pathlib.Path) -> list[str]:
             path = raw.split("#", 1)[0].split("?", 1)[0]
             if not path or not re.search(r"[A-Za-z0-9]", path):
                 continue  # bare "&", empty, etc.
-            target = (
-                site_dir / path.lstrip("/")
-                if path.startswith("/")
-                else (html.parent / path).resolve()
-            )
-            if target.exists() or (target.suffix == "" and (target / "index.html").exists()):
+            if path.startswith("/"):
+                # Absolute links (e.g. Material's 404 page) are emitted from
+                # site_url and carry the deploy base path (/opi-wiki/...). Accept
+                # the link if it resolves with or without that leading base segment.
+                rel = path.lstrip("/")
+                parts = rel.split("/")
+                candidates = [site_dir / rel]
+                if len(parts) > 1:
+                    candidates.append(site_dir / "/".join(parts[1:]))
+            else:
+                candidates = [(html.parent / path).resolve()]
+            if any(
+                c.exists() or (c.suffix == "" and (c / "index.html").exists())
+                for c in candidates
+            ):
                 continue
             broken.add(f"{html.relative_to(site_dir)}  ->  {raw}")
     return sorted(broken)
