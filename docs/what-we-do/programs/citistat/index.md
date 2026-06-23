@@ -24,6 +24,10 @@ The full citywide portfolio of active CitiStats — every agency brief, organize
 
 {{ card_grid_from("what-we-do/programs/citistat/index.cards.yml", "portfolio") }}
 
+## If your agency has a CitiStat request
+
+A CitiStat follow-up request means a commitment was made in a Stat and OPI is tracking it to closure with evidence. Your agency's Data-Driven Officer coordinates the response. For questions or to engage, email [opi@baltimorecity.gov](mailto:opi@baltimorecity.gov) or see [How to Engage OPI](../../how-to-engage-opi.md).
+
 ## Read alongside
 
 - [How Work Moves Through OPI](../../../how-we-work/how-work-moves-through-opi.md) — where CitiStat sits in the signal-to-solution loop
