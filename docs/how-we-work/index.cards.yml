@@ -1,15 +1,27 @@
-- meta: Section
-  title: Onboarding
-  body: "How new hires join OPI, how managers prepare, how transitions happen."
-  href: onboarding/
 - meta: Explainer
   title: "How Work Moves Through OPI"
   body: "How OPI moves from performance signal to practical solution to sustained improvement."
   href: how-work-moves-through-opi/
+- meta: Document
+  title: "Operating Frame"
+  body: "How OPI is structured, what each team does, and how the parts fit together."
+  href: operating-frame/
+- meta: Document
+  title: "Teams, Programs, Foundations"
+  body: "Portfolio detail — what each team owns, the outputs it produces, and the boundaries between functions."
+  href: teams-programs-foundations/
+- meta: Document
+  title: "Org Structure"
+  body: "The org chart — who reports to whom, and how decision rights flow."
+  href: org-structure/
 - meta: Section
-  title: Services
-  body: "The five services OPI delivers — AdminOps, Citywide Performance Management, Citywide Data and Analytics, Innovation Lab, and Cross-Agency Delivery."
-  href: ../what-we-do/services/
+  title: "Team and Roles"
+  body: "The roster — who's on the team and how roles are organized."
+  href: team-and-roles/
+- meta: Section
+  title: Onboarding
+  body: "How new hires join OPI, how managers prepare, how transitions happen."
+  href: onboarding/
 - meta: Section
   title: "Administrative Memos"
   body: "Memo-style operational guidance surfaced as its own collection."
@@ -22,7 +34,3 @@
   title: Operations
   body: "Leadership norms, performance standards, productivity playbook, QA, and operating templates."
   href: operations/
-- meta: Section
-  title: "Team and Roles"
-  body: "Who's on the team and how roles are organized."
-  href: team-and-roles/

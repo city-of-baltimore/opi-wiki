@@ -21,6 +21,8 @@ methods, and portfolio pages, start in [Our Teams](../../our-teams/index.md).
 For a narrower directory view that omits raw phone fields from the archive
 contact sheet, use [Staff Directory](staff-directory.md).
 
+For the visual leadership org chart and reporting lines, see [Org Structure](../org-structure.md).
+
 ## How to read this document
 
 This roster lists every active and pending OPI position. Roles are grouped by portfolio — the team a person works with day to day — and labeled by cost center — the budget line that funds the position. Portfolios and cost centers do not always match one-to-one; the Director’s Office, for example, includes positions funded under AdminOps and positions funded under the Innovation Lab cost center.

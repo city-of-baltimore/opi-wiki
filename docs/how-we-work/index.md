@@ -1,6 +1,6 @@
 # How We Work
 
-OPI moves work through a simple signal-to-solution loop, and runs the office with a set of internal operating routines. This section holds both — the model, the services, and the day-to-day mechanics.
+OPI moves work through a simple signal-to-solution loop, and runs the office with a set of internal operating routines. This section holds the operating model, the office's structure and org chart, and the day-to-day mechanics — onboarding, memos, how-to guides, and operations.
 
 ## The signal-to-solution loop
 

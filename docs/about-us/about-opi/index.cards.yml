@@ -1,8 +1,4 @@
 - meta: Document
-  title: "Operating Frame"
-  body: "How OPI is structured, what each team does, and how the parts fit together."
-  href: operating-frame/
-- meta: Document
   title: "Mission, Vision, Identity"
   body: "Why this office exists, where it's heading, and what it stands for."
   href: mission-vision-identity/
@@ -10,11 +6,3 @@
   title: "Operating Principles and Culture"
   body: "How we work together — the rules of the road inside OPI."
   href: operating-principles-and-culture/
-- meta: Document
-  title: "Org Structure"
-  body: "Who reports to whom, and how decision rights flow."
-  href: org-structure/
-- meta: Document
-  title: "Teams, Programs, Foundations"
-  body: "The full lineup of teams, recurring programs, and foundational practices."
-  href: teams-programs-foundations/
