@@ -55,45 +55,45 @@ Each refined Position Description is filed alongside this roster in the same fol
 
 ??? info "Director's Office roster"
 
-    | **Name**                 | **Working title**                           | **Classification**            | **Cost center** | **PIN** | **Email** |
-    |--------------------------|---------------------------------------------|-------------------------------|-----------------|---------|---|
-    | Dartanion Swift-Williams | Executive Director and Chief Data Officer   | Executive Director I          | AdminOps        | 15961   | dartanion.swift-williams@baltimorecity.gov |
-    | Rakeim Young             | Chief of Staff                              | Operations Manager II         | AdminOps        | 50053   | rakeim.young@baltimorecity.gov |
-    | Mallory Screws           | Project Manager                             | Operations Officer III        | AdminOps        | 62121   | mallory.screws@baltimorecity.gov |
-    | Audrey Randazzo          | Data Storyteller                            | Operations Officer III | Innovation Lab  | 53413   | audrey.randazzo@baltimorecity.gov |
-    | Derek Thomas             | Operations Analyst                          | Operations Officer III | Innovation Lab  | 70432   | derek.thomas@baltimorecity.gov |
-    | Rashaad Tillery          | CitiStat Inspector                          | Operations Officer I          | AdminOps        | 50509   | rashaad.tillery@baltimorecity.gov |
+    | **Name**                 | **Working title**                           | **Classification**            | **Cost center** | **PIN** | **Email** | **Work phone** |
+    |--------------------------|---------------------------------------------|-------------------------------|-----------------|---------|---| --- |
+    | Dartanion Swift-Williams | Executive Director and Chief Data Officer   | Executive Director I          | AdminOps        | 15961   | dartanion.swift-williams@baltimorecity.gov | 410-645-0021 |
+    | Rakeim Young             | Chief of Staff                              | Operations Manager II         | AdminOps        | 50053   | rakeim.young@baltimorecity.gov |  |
+    | Mallory Screws           | Project Manager                             | Operations Officer III        | AdminOps        | 62121   | mallory.screws@baltimorecity.gov | 443-219-9590 |
+    | Audrey Randazzo          | Data Storyteller                            | Operations Officer III | Innovation Lab  | 53413   | audrey.randazzo@baltimorecity.gov |  |
+    | Derek Thomas             | Operations Analyst                          | Operations Officer III | Innovation Lab  | 70432   | derek.thomas@baltimorecity.gov | 443-826-8794 |
+    | Rashaad Tillery          | CitiStat Inspector                          | Operations Officer I          | AdminOps        | 50509   | rashaad.tillery@baltimorecity.gov | 443-845-8921 |
 
 ??? info "Innovation Lab roster"
 
-    | **Name**                  | **Working title**                    | **Classification**                | **Cost center** | **PIN** | **Email** |
-    |---------------------------|--------------------------------------|-----------------------------------|-----------------|---------|---|
-    | Gabriel Watson            | Innovation Program Manager           | Operations Manager II             | Innovation Lab  | 115655  |  |
-    | Selenea Gibson            | Civic Designer                       | Data Fellow                       | Innovation Lab  | 53412   | selenea.gibson@baltimorecity.gov |
-    | Chiemeka Okeoma           | Applied Data Scientist               | Operations Officer V              | Innovation Lab  | 62137   | chiemeka.okeoma@baltimorecity.gov |
-    | Xander Jake de los Santos | Full Stack Engineer                  | Operations Officer III            | Innovation Lab  | 70431   | XanderJake.DeLosSantos@baltimorecity.gov |
+    | **Name**                  | **Working title**                    | **Classification**                | **Cost center** | **PIN** | **Email** | **Work phone** |
+    |---------------------------|--------------------------------------|-----------------------------------|-----------------|---------|---| --- |
+    | Gabriel Watson            | Innovation Program Manager           | Operations Manager II             | Innovation Lab  | 115655  |  |  |
+    | Selenea Gibson            | Civic Designer                       | Data Fellow                       | Innovation Lab  | 53412   | selenea.gibson@baltimorecity.gov | 443-602-6182 |
+    | Chiemeka Okeoma           | Applied Data Scientist               | Operations Officer V              | Innovation Lab  | 62137   | chiemeka.okeoma@baltimorecity.gov | 240-252-8991 |
+    | Xander Jake de los Santos | Full Stack Engineer                  | Operations Officer III            | Innovation Lab  | 70431   | XanderJake.DeLosSantos@baltimorecity.gov |  |
 
 ??? info "Performance roster"
 
-    | **Name**             | **Working title**                | **Classification**            | **Cost center**        | **PIN** | **Email** |
-    |----------------------|----------------------------------|-------------------------------|------------------------|---------|---|
-    | Danny Heller         | Deputy Chief Performance Officer | Operations Director I         | Performance Management | 54340   | daniel.heller@baltimorecity.gov |
-    | Darren Lu            | CitiStat Program Manager         | Operations Manager I          | Performance Management | 15971   | darren.lu@baltimorecity.gov |
-    | Open — to be posted  | Senior Performance Analyst       | Operations Officer III        | Performance Management | 115657  |  |
-    | Ross Hackett         | CitiStat Analyst                 | CitiStat Analyst I            | Performance Management | 16441   | ross.hackett@baltimorecity.gov |
-    | Griffin Riddler, PhD      | CitiStat Analyst                 | CitiStat Analyst I            | Performance Management | 47946   | griffin.riddler@baltimorecity.gov |
-    | Ethan Buckborough    | CitiStat Analyst                 | CitiStat Analyst I            | Performance Management | 52437   | ethan.buckborough@baltimorecity.gov |
-    | Nelson Gomes Boronat | CitiStat Analyst                 | CitiStat Analyst I | Performance Management | 62122   | nelson.gomesboronat@baltimorecity.gov |
+    | **Name**             | **Working title**                | **Classification**            | **Cost center**        | **PIN** | **Email** | **Work phone** |
+    |----------------------|----------------------------------|-------------------------------|------------------------|---------|---| --- |
+    | Danny Heller         | Deputy Chief Performance Officer | Operations Director I         | Performance Management | 54340   | daniel.heller@baltimorecity.gov | 443-721-9609 |
+    | Darren Lu            | CitiStat Program Manager         | Operations Manager I          | Performance Management | 15971   | darren.lu@baltimorecity.gov |  |
+    | Open — to be posted  | Senior Performance Analyst       | Operations Officer III        | Performance Management | 115657  |  |  |
+    | Ross Hackett         | CitiStat Analyst                 | CitiStat Analyst I            | Performance Management | 16441   | ross.hackett@baltimorecity.gov | 443-257-6074 |
+    | Griffin Riddler, PhD      | CitiStat Analyst                 | CitiStat Analyst I            | Performance Management | 47946   | griffin.riddler@baltimorecity.gov |  |
+    | Ethan Buckborough    | CitiStat Analyst                 | CitiStat Analyst I            | Performance Management | 52437   | ethan.buckborough@baltimorecity.gov |  |
+    | Nelson Gomes Boronat | CitiStat Analyst                 | CitiStat Analyst I | Performance Management | 62122   | nelson.gomesboronat@baltimorecity.gov | 443-750-2057 |
 
 ??? info "Data and Analytics roster"
 
-    | **Name**              | **Working title**           | **Classification**     | **Cost center**    | **PIN** | **Email** |
-    |-----------------------|-----------------------------|------------------------|--------------------|---------|---|
-    | Jason Howard, PhD     | Deputy Chief Data Officer   | Operations Director II | Data and Analytics | 114589  | jason.howard@baltimorecity.gov |
-    | Roberto Herbruger     | Technical Program Manager   | Operations Manager II  | Data and Analytics | 115408  |  |
-    | Vera Choo             | Applied Data Scientist      | Operations Officer V   | Data and Analytics | 115656  | vera.choo@baltimorecity.gov |
-    | Alejandro Zuniga Sosa | Principal Data Engineer     | Operations Manager II  | Data and Analytics | 53411   | alejandro.zunigasosa@baltimorecity.gov |
-    | Briya Bhakta          | Senior Data Engineer        | Operations Officer V   | Data and Analytics | 70433   | briya.bhakta@baltimorecity.gov |
+    | **Name**              | **Working title**           | **Classification**     | **Cost center**    | **PIN** | **Email** | **Work phone** |
+    |-----------------------|-----------------------------|------------------------|--------------------|---------|---| --- |
+    | Jason Howard, PhD     | Deputy Chief Data Officer   | Operations Director II | Data and Analytics | 114589  | jason.howard@baltimorecity.gov |  |
+    | Roberto Herbruger     | Technical Program Manager   | Operations Manager II  | Data and Analytics | 115408  |  |  |
+    | Vera Choo             | Applied Data Scientist      | Operations Officer V   | Data and Analytics | 115656  | vera.choo@baltimorecity.gov | 443-683-1541 |
+    | Alejandro Zuniga Sosa | Principal Data Engineer     | Operations Manager II  | Data and Analytics | 53411   | alejandro.zunigasosa@baltimorecity.gov |  |
+    | Briya Bhakta          | Senior Data Engineer        | Operations Officer V   | Data and Analytics | 70433   | briya.bhakta@baltimorecity.gov | 443-915-4091 |
 
 ??? info "Cost center view"
 
