@@ -9,8 +9,7 @@
 | Internal Tag                   | Foundation / enablement                                                                                                                                       |
 | Executive Sponsor / Authorizer | Deputy City Administrator                                                                                                                                     |
 | Primary Agency / Agencies      | BCIT as primary agency; agency CIOs / technology leads from BCRP, BCHD, DPW, Police, Fire, and other major operating agencies                                 |
-| OPI Operating Lead             | Data Team-led                                                                                                                                                 |
-| OPI Support Model              | OPI-operated / Data Team-led with BCIT and agency CIO participation                                                                                           |
+| OPI lead                        | OPI-operated / Data Team-led with BCIT and agency CIO participation                                                                                           |
 | Core Data Product              | Technology portfolio and service reliability dashboard                                                                                                        |
 | Public Transparency Level      | Moderate. Publish plain-language summaries of technology improvements and major public-facing system changes; keep sensitive cyber/security details internal. |
 

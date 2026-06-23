@@ -9,8 +9,7 @@
 | Internal Tag                   | Public realm / cleanliness system                                                                          |
 | Executive Sponsor / Authorizer | Deputy Mayor for Operations                                                                                |
 | Primary Agency / Agencies      | DPW, DHCD, DOT, ECB, Clean Corps, BCRP, community partners, and other agencies as needed                   |
-| OPI Operating Lead             | Performance Team                                                                                           |
-| OPI Support Model              | OPI-operated / Performance Team with delivery support as needed                                            |
+| OPI lead                        | OPI-operated / Performance Team with delivery support as needed                                            |
 | Core Data Product              | Clean Block Scorecard and cleanliness hotspot dashboard                                                    |
 | Public Transparency Level      | High. Publish summaries, maps, what-changed updates, and before / after evidence where appropriate. |
 

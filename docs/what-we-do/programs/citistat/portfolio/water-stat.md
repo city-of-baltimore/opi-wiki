@@ -9,8 +9,7 @@
 | Internal Tag                   | Utility / infrastructure / compliance                                                                                                               |
 | Executive Sponsor / Authorizer | Deputy Mayor for Operations                                                                                                                         |
 | Primary Agency / Agencies      | DPW Water, Wastewater, Engineering and Construction Management, Finance / billing partners as needed                                                |
-| OPI Operating Lead             | Performance Team                                                                                                                                    |
-| OPI Support Model              | OPI-operated / Performance Team                                                                                                                     |
+| OPI lead                        | OPI-operated / Performance Team                                                                                                                     |
 | Core Data Product              | Water and wastewater utility performance dashboard                                                                                                  |
 | Public Transparency Level      | Moderate to high. Publish selected service and infrastructure performance summaries with careful caveats around regulatory and operational context. |
 

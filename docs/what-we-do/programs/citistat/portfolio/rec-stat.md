@@ -9,8 +9,7 @@
 | Internal Tag                   | Parks / recreation / quality of life                                                                               |
 | Executive Sponsor / Authorizer | Deputy Mayor for Health and Human Services                                                                         |
 | Primary Agency / Agencies      | Department of Recreation and Parks                                                                                 |
-| OPI Operating Lead             | Performance Team                                                                                                   |
-| OPI Support Model              | OPI-operated / Performance Team                                                                                    |
+| OPI lead                        | OPI-operated / Performance Team                                                                                    |
 | Core Data Product              | Recreation, parks, and forestry performance dashboard                                                              |
 | Public Transparency Level      | High. Publish selected dashboards and summaries related to parks, recreation centers, forestry, and public spaces. |
 

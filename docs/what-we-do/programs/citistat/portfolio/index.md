@@ -27,7 +27,7 @@ CitiStat is a management routine, not a meeting schedule. What that means for ea
 | Performance Team              | Stewards the method, standards, templates, cadence, KPI discipline, follow-up expectations, and Stat quality.                                                                 |
 | Executive Sponsor / Authorizer             | Typically the relevant Deputy Mayor, Deputy City Administrator, City Administrator, or executive sponsor. Confirms priorities, resolves barriers, and authorizes commitments. |
 | Agency Director / Senior Responsible Owner | Owns operational performance, implementation, resource alignment, and agency follow-through.                                                                                  |
-| OPI Operating Lead                         | Runs the session process or support model, coordinates artifacts, and ensures follow-up moves through the appropriate channel.                                                |
+| OPI lead                                   | Runs the session process or support model, coordinates artifacts, and ensures follow-up moves through the appropriate channel.                                                |
 | Analyst / Data Lead                        | Prepares analysis, data products, KPI updates, data quality notes, and dashboard inputs.                                                                                      |
 
 ## Portfolio metadata
@@ -42,8 +42,7 @@ Each Stat is tracked with consistent metadata so the portfolio stays manageable 
 | Primary Agency / Agencies      | Agencies responsible for implementation, data, or operational follow-through.                                             |
 | Stat Type                      | Agency Stat or Thematic Stat.                                                                                             |
 | Internal Tag                   | Internal management lens such as service system, foundation/enablement, workforce, capital, public realm, or place-based. |
-| OPI Support Model              | OPI-operated; Data Team-led; Director’s Office-led; Deputy Mayor-led / OPI-supported; OPI method support only.            |
-| OPI Operating Lead             | OPI portfolio or person responsible for running or coordinating the Stat support model.                                   |
+| OPI lead                       | How OPI runs or supports the Stat: OPI-operated, Data Team-led, Director’s Office-led, Deputy Mayor-led / OPI-supported, or method support only. |
 | Core Data Product              | Dashboard, tracker, map, register, scorecard, or portfolio view that anchors the session.                                 |
 | Standard Artifacts             | Pre-meeting memo, Stat deck, follow-up memo, commitment tracker, decision log, public summary, and annual report section. |
 | Delivery Trigger               | Condition that moves an issue to a tiger team, data quality sprint, product discovery, or executive escalation.           |

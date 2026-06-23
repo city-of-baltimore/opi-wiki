@@ -9,8 +9,7 @@
 | Internal Tag                   | Service system / resident experience                                                                                                |
 | Executive Sponsor / Authorizer | Deputy City Administrator                                                                                                           |
 | Primary Agency / Agencies      | BCIT / 311; fulfillment agencies including DPW, DOT, DHCD, DGS, BCRP and others                                                     |
-| OPI Operating Lead             | Data Team-led                                                                                                                       |
-| OPI Support Model              | OPI-operated / Data Team-led                                                                                                        |
+| OPI lead                        | OPI-operated / Data Team-led                                                                                                        |
 | Core Data Product              | 311 performance and resident experience dashboard                                                                                   |
 | Public Transparency Level      | High. Publish a public Stat page, selected dashboard views, what-changed updates, and links to related open data where appropriate. |
 

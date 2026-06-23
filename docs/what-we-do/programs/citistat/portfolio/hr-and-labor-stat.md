@@ -9,8 +9,7 @@
 | Internal Tag                   | Workforce / foundation / enablement                                                                                                        |
 | Executive Sponsor / Authorizer | Deputy City Administrator                                                                                                                  |
 | Primary Agency / Agencies      | Department of Human Resources, Office of the Labor Commissioner, agency HR leads                                                           |
-| OPI Operating Lead             | Performance Team                                                                                                                           |
-| OPI Support Model              | OPI-operated / Performance Team                                                                                                            |
+| OPI lead                        | OPI-operated / Performance Team                                                                                                            |
 | Core Data Product              | Workforce and hiring pipeline dashboard                                                                                                    |
 | Public Transparency Level      | Low to moderate. Publish broad workforce improvements and vacancy trends where appropriate; keep personnel-sensitive information internal. |
 

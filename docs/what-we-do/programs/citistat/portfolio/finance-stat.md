@@ -9,8 +9,7 @@
 | Internal Tag                   | Fiscal operations / foundation / enablement                                                                                             |
 | Executive Sponsor / Authorizer | Chief Financial Officer and City Administrator, depending on issue                                                                      |
 | Primary Agency / Agencies      | Department of Finance, BBMR, Procurement, Grants Management, Revenue Collections, MWBOO/SMBA-related partners as needed                 |
-| OPI Operating Lead             | Performance Team                                                                                                                        |
-| OPI Support Model              | OPI-operated / Performance Team                                                                                                         |
+| OPI lead                        | OPI-operated / Performance Team                                                                                                         |
 | Core Data Product              | Financial operations and compliance dashboard                                                                                           |
 | Public Transparency Level      | Moderate. Publish plain-language improvements and selected metrics, while keeping sensitive financial and procurement details internal. |
 

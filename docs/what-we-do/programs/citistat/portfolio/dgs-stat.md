@@ -9,8 +9,7 @@
 | Internal Tag                   | Facilities / fleet / internal services                                                                                                               |
 | Executive Sponsor / Authorizer | Deputy Mayor for Operations                                                                                                                          |
 | Primary Agency / Agencies      | Department of General Services                                                                                                                       |
-| OPI Operating Lead             | Performance Team                                                                                                                                     |
-| OPI Support Model              | OPI-operated / Performance Team                                                                                                                      |
+| OPI lead                        | OPI-operated / Performance Team                                                                                                                      |
 | Core Data Product              | Facilities and fleet readiness dashboard                                                                                                             |
 | Public Transparency Level      | Moderate. Publish summaries and selected performance measures, especially where facilities or fleet readiness affects public-facing services. |
 

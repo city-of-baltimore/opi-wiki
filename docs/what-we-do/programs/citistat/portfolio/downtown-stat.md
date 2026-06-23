@@ -9,8 +9,7 @@
 | Internal Tag                   | Place-based / mayoral priority / service system                                                                                                 |
 | Executive Sponsor / Authorizer | Deputy Mayor for Community and Economic Development                                                                                             |
 | Primary Agency / Agencies      | BDC, Downtown partners, DOT, DPW, Police, DHCD, DGS, Finance, and other Downtown RISE partners                                                  |
-| OPI Operating Lead             | Performance Team                                                                                                                                |
-| OPI Support Model              | Deputy Mayor-led / OPI-supported                                                                                                                |
+| OPI lead                        | Deputy Mayor-led / OPI-supported                                                                                                                |
 | Core Data Product              | Downtown RISE performance dashboard                                                                                                             |
 | Public Transparency Level      | High. Publish public progress updates, dashboard views, and stories that connect service delivery to downtown confidence and economic recovery. |
 

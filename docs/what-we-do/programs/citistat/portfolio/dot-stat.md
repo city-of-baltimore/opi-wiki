@@ -9,8 +9,7 @@
 | Internal Tag                   | Transportation / mobility / public realm                                                                        |
 | Executive Sponsor / Authorizer | Deputy Mayor for Operations                                                                                     |
 | Primary Agency / Agencies      | Department of Transportation                                                                                    |
-| OPI Operating Lead             | Performance Team                                                                                                |
-| OPI Support Model              | OPI-operated / Performance Team                                                                                 |
+| OPI lead                        | OPI-operated / Performance Team                                                                                 |
 | Core Data Product              | Transportation operations dashboard                                                                             |
 | Public Transparency Level      | High. Publish summaries, maps, dashboards, and progress updates tied to visible transportation services. |
 

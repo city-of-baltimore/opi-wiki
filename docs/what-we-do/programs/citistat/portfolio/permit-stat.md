@@ -9,8 +9,7 @@
 | Internal Tag                   | Service system / economic development / resident experience                                                          |
 | Executive Sponsor / Authorizer | Deputy Mayor for Community and Economic Development                                                                  |
 | Primary Agency / Agencies      | DHCD / Permitting and Development Services, BCIT, DOT, DPW, Fire, Planning, DCPBL, and review partners               |
-| OPI Operating Lead             | Data Team-led                                                                                                        |
-| OPI Support Model              | OPI-operated / Data Team-led with agency partners                                                                    |
+| OPI lead                        | OPI-operated / Data Team-led with agency partners                                                                    |
 | Core Data Product              | Permitting performance dashboard                                                                                     |
 | Public Transparency Level      | High. Publish public dashboards, plain-language summaries, and progress updates that improve transparency and trust. |
 

@@ -9,8 +9,7 @@
 | Internal Tag                   | Public health / human services                                                                       |
 | Executive Sponsor / Authorizer | Deputy Mayor for Health and Human Services                                                           |
 | Primary Agency / Agencies      | Baltimore City Health Department                                                                     |
-| OPI Operating Lead             | Performance Team                                                                                     |
-| OPI Support Model              | OPI-operated / Performance Team                                                                      |
+| OPI lead                        | OPI-operated / Performance Team                                                                      |
 | Core Data Product              | Public health service performance dashboard                                                          |
 | Public Transparency Level      | High for selected services and public health updates; sensitive program details may remain internal. |
 

@@ -9,8 +9,7 @@
 | Internal Tag                   | Capital delivery / foundation                                                                                                                                |
 | Executive Sponsor / Authorizer | City Administrator, with Deputy Mayor for Operations and relevant portfolio sponsors as needed                                                               |
 | Primary Agency / Agencies      | MOID, DGS, DOT, DPW, BCRP, Finance/BBMR, Law, Procurement, and agency capital owners                                                                         |
-| OPI Operating Lead             | Performance Team                                                                                                                                             |
-| OPI Support Model              | OPI-operated / Performance Team with delivery support as needed                                                                                              |
+| OPI lead                        | OPI-operated / Performance Team with delivery support as needed                                                                                              |
 | Core Data Product              | Capital project portfolio and delivery risk dashboard                                                                                                        |
 | Public Transparency Level      | High for selected information. Publish project portfolio summaries, public-facing maps, and progress stories while protecting procurement-sensitive details. |
 

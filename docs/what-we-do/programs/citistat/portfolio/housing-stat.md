@@ -9,8 +9,7 @@
 | Internal Tag                   | Housing / neighborhoods                                                                                    |
 | Executive Sponsor / Authorizer | Deputy Mayor for Community and Economic Development                                                        |
 | Primary Agency / Agencies      | Department of Housing and Community Development                                                            |
-| OPI Operating Lead             | Performance Team                                                                                           |
-| OPI Support Model              | OPI-operated / Performance Team                                                                            |
+| OPI lead                        | OPI-operated / Performance Team                                                                            |
 | Core Data Product              | Housing and neighborhood conditions dashboard                                                              |
 | Public Transparency Level      | High. Publish summaries, neighborhood indicators, and selected dashboards with appropriate caveats. |
 

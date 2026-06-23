@@ -9,8 +9,7 @@
 | Internal Tag                   | Youth / mayoral priority / service system                                                                                   |
 | Executive Sponsor / Authorizer | Deputy Mayor for Health and Human Services                                                                                  |
 | Primary Agency / Agencies      | MOCFS, MONSE, BPD, DJS, City Schools partners, MOED, BCRP, BCHD, community partners                                         |
-| OPI Operating Lead             | Performance Team                                                                                                            |
-| OPI Support Model              | OPI-operated / Performance Team                                                                                             |
+| OPI lead                        | OPI-operated / Performance Team                                                                                             |
 | Core Data Product              | Youth outcomes and initiative tracker                                                                                       |
 | Public Transparency Level      | High. Publish summaries and selected indicators that connect youth priorities to actions, investments, and outcomes. |
 

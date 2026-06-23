@@ -9,8 +9,7 @@
 | Internal Tag                   | Public safety / life safety                                                                                       |
 | Executive Sponsor / Authorizer | Deputy Mayor for Public Safety                                                                                    |
 | Primary Agency / Agencies      | Baltimore City Fire Department; Health, Housing, Police, MONSE, MOHS, and other partners as needed                |
-| OPI Operating Lead             | Director’s Office-led                                                                                             |
-| OPI Support Model              | Deputy Mayor-led / OPI-supported                                                                                  |
+| OPI lead                        | Deputy Mayor-led / OPI-supported                                                                                  |
 | Core Data Product              | Fire and EMS performance dashboard                                                                                |
 | Public Transparency Level      | Moderate to high. Publish selected safety outcomes and prevention updates; protect sensitive operational details. |
 

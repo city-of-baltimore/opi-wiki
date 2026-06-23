@@ -9,8 +9,7 @@
 | Internal Tag                   | Sanitation / public realm                                                                                  |
 | Executive Sponsor / Authorizer | Deputy Mayor for Operations                                                                                |
 | Primary Agency / Agencies      | DPW Solid Waste and sanitation functions                                                                   |
-| OPI Operating Lead             | Performance Team                                                                                           |
-| OPI Support Model              | OPI-operated / Performance Team                                                                            |
+| OPI lead                        | OPI-operated / Performance Team                                                                            |
 | Core Data Product              | Solid waste operations dashboard                                                                           |
 | Public Transparency Level      | High. Publish summaries and selected service reliability dashboards where data quality supports it. |
 
