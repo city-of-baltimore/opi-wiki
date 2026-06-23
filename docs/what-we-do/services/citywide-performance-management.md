@@ -16,6 +16,13 @@ Help City leadership and agencies use timely, accurate information to improve se
 
 Baltimore City Code, Article 1, Subtitle 61 (CitiStat).
 
+## Priority outcomes
+
+- Operational problems are addressed before they become chronic.
+- Commitments made in a Stat are commitments kept, with evidence of closure.
+- Leadership can see service performance without digging through spreadsheets.
+- Performance conversations help agencies fix problems, not just explain them.
+
 ## What this means for people
 
 - **As a resident,** I want trash pickup delays addressed before they become a weekly problem.

@@ -16,6 +16,13 @@ Help agencies design, test, and implement practical solutions that make services
 
 Baltimore City Code, Article 1, Subtitle 61 (Innovation Lab / continuous improvement).
 
+## Priority outcomes
+
+- Residents can access, track, and complete city services more easily.
+- Agencies absorb and own improved processes and tools after the Lab steps back.
+- A small portfolio of credible, visible service improvements ships each year.
+- Emerging methods like AI are used only where they solve a real operational problem.
+
 ## What this means for people
 
 - **As a resident,** I want to track my 311 request without calling multiple times.

@@ -161,7 +161,7 @@ plugins:
         resources/reference/position-descriptions-index.md: resources/reference/position-descriptions/index.md
         our-teams/performance-and-citistat/cross-agency-delivery/index.md: what-we-do/services/cross-agency-delivery.md
         our-teams/performance-and-citistat/cross-agency-delivery/about-cross-agency-delivery.md: what-we-do/services/cross-agency-delivery.md
-        our-teams/performance-and-citistat/cross-agency-delivery/cross-agency-delivery-theory-of-change.md: what-we-do/services/cross-agency-delivery-service-definition.md
+        our-teams/performance-and-citistat/cross-agency-delivery/cross-agency-delivery-theory-of-change.md: our-teams/innovation-lab/cross-agency-delivery-service-definition.md
         public/council-public-narrative-template.md: resources/index.md
         how-we-work/team-and-roles/staff-directory.md: how-we-work/organization/team-and-roles/index.md
         public/index.md: index.md
@@ -212,7 +212,8 @@ plugins:
         how-we-work/operations/index.md: how-we-work/handbook/operations/index.md
         how-we-work/operations/performance-standards-manager-companion.md: how-we-work/handbook/operations/performance-standards-manager-companion.md
         how-we-work/operations/charter-template.md: how-we-work/handbook/operations/charter-template.md
-        what-we-do/services/cross-agency-delivery-theory-of-change.md: what-we-do/services/cross-agency-delivery-service-definition.md
+        what-we-do/services/cross-agency-delivery-theory-of-change.md: our-teams/innovation-lab/cross-agency-delivery-service-definition.md
+        what-we-do/services/cross-agency-delivery-service-definition.md: our-teams/innovation-lab/cross-agency-delivery-service-definition.md
         resources/reference/position-descriptions/data-and-analytics/pd-principal-platform-engineer.md: resources/reference/position-descriptions/data-and-analytics/pd-principal-data-engineer.md
         resources/reference/position-descriptions/innovation-lab/pd-civic-technology-lead.md: resources/reference/position-descriptions/innovation-lab/pd-innovation-program-manager.md
         resources/reference/position-descriptions/innovation-lab/pd-senior-product-engineer.md: resources/reference/position-descriptions/innovation-lab/pd-applied-data-scientist.md
@@ -259,7 +260,7 @@ plugins:
         our-teams/innovation-lab/baltimore-intelligence-center/workstreams.md: what-we-do/products/baltimore-intelligence-center/workstreams.md
         our-teams/cross-agency-delivery/index.md: what-we-do/services/cross-agency-delivery.md
         our-teams/cross-agency-delivery/about-cross-agency-delivery.md: what-we-do/services/cross-agency-delivery.md
-        our-teams/cross-agency-delivery/cross-agency-delivery-theory-of-change.md: what-we-do/services/cross-agency-delivery-service-definition.md
+        our-teams/cross-agency-delivery/cross-agency-delivery-theory-of-change.md: our-teams/innovation-lab/cross-agency-delivery-service-definition.md
   - macros
   - search:
       separator: '[\s\-,:!=\[\]()"`/]+|\.(?!\d)|&[lg]t;|(?!\b)(?=[A-Z][a-z])'

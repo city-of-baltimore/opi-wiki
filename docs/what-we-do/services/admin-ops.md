@@ -16,6 +16,13 @@ Keep OPI's work coordinated, well-documented, properly resourced, and clearly co
 
 Operationally required to execute Baltimore City Code, Article 1, Subtitles 61 and 9.
 
+## Priority outcomes
+
+- Priority work is driven, tracked, and communicated rather than left to chance.
+- Partners get clear timelines, expectations, and responsive coordination.
+- OPI staff have systems, templates, and support that reduce friction.
+- City commitments are delivered, and progress is transparent to residents.
+
 ## What this means for people
 
 - **As a city leader,** I want confidence that priority work is being driven, tracked, and communicated.

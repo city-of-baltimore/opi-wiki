@@ -28,6 +28,7 @@ SERVICE_REQUIRED = [
     "## What this service does",
     "## The goal",
     "## Mandate",
+    "## Priority outcomes",
     "## What this means for people",
 ]
 
@@ -131,7 +132,7 @@ def check_duplicate_blockquotes(path: Path, lines: list[str]) -> list[str]:
 def check_service_sections(path: Path, text: str) -> list[str]:
     if path.parent.name != "services":
         return []
-    if path.name in {"index.md", "cross-agency-delivery-service-definition.md"}:
+    if path.name == "index.md":
         return []
     return [
         f"{rel(path)}: service page missing required section '{sec}'"
