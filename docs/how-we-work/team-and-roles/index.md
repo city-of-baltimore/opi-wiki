@@ -67,7 +67,7 @@ Each refined Position Description is filed alongside this roster in the same fol
     | Derek Thomas             | Operations Analyst                          | Operations Officer III | Innovation Lab  | 70432   |
     | Rashaad Tillery          | CitiStat Inspector                          | Operations Officer I          | AdminOps        | 50509   |
 
-### Reporting structure
+    **Reporting structure**
 
     | **Position**                                | **Incumbent**            | **Reports to**                              |
     |---------------------------------------------|--------------------------|---------------------------------------------|
@@ -88,7 +88,7 @@ Each refined Position Description is filed alongside this roster in the same fol
     | Chiemeka Okeoma           | Applied Data Scientist               | Operations Officer V              | Innovation Lab  | 62137   |
     | Xander Jake de los Santos | Full Stack Engineer                  | Operations Officer III            | Innovation Lab  | 70431   |
 
-### Reporting structure
+    **Reporting structure**
 
     | **Position**                         | **Incumbent**            | **Reports to**                                                                                   |
     |--------------------------------------|--------------------------|--------------------------------------------------------------------------------------------------|
@@ -110,7 +110,7 @@ Each refined Position Description is filed alongside this roster in the same fol
     | Ethan Buckborough    | CitiStat Analyst                 | CitiStat Analyst I            | Performance Management | 52437   |
     | Nelson Gomes Boronat | CitiStat Analyst                 | CitiStat Analyst I | Performance Management | 62122   |
 
-### Reporting structure
+    **Reporting structure**
 
     | **Position**                     | **Incumbent**        | **Reports to**                   |
     |----------------------------------|----------------------|----------------------------------|
@@ -133,7 +133,7 @@ Each refined Position Description is filed alongside this roster in the same fol
     | Alejandro Zuniga Sosa | Principal Data Engineer     | Operations Manager II  | Data and Analytics | 53411   |
     | Briya Bhakta          | Senior Data Engineer        | Operations Officer V   | Data and Analytics | 70433   |
 
-### Reporting structure
+    **Reporting structure**
 
     | **Position**                | **Incumbent**         | **Reports to**            |
     |-----------------------------|-----------------------|---------------------------|
@@ -148,7 +148,7 @@ Each refined Position Description is filed alongside this roster in the same fol
 
     OPI’s budget is organized into four cost centers. The same person may sit on a portfolio team that does not match their cost center — for example, the Operations Analyst currently sits in the Director’s Office portfolio while remaining funded in the Innovation Lab cost center.
 
-### AdminOps (CCA001472)
+    **AdminOps (CCA001472)**
 
     | **Working title**                         | **Incumbent**            | **Portfolio**     | **PIN** |
     |-------------------------------------------|--------------------------|-------------------|---------|
@@ -157,7 +157,7 @@ Each refined Position Description is filed alongside this roster in the same fol
     | Project Manager                           | Mallory Screws           | Director's Office | 62121   |
     | CitiStat Inspector                        | Rashaad Tillery          | Director's Office | 50509   |
 
-### Data and Analytics (CCA001472)
+    **Data and Analytics (CCA001472)**
 
     | **Working title**           | **Incumbent**         | **Portfolio**      | **PIN** |
     |-----------------------------|-----------------------|--------------------|---------|
@@ -167,7 +167,7 @@ Each refined Position Description is filed alongside this roster in the same fol
     | Principal Data Engineer     | Alejandro Zuniga Sosa | Data and Analytics | 53411   |
     | Senior Data Engineer        | Briya Bhakta          | Data and Analytics | 70433   |
 
-### Innovation Lab (CCA001472)
+    **Innovation Lab (CCA001472)**
 
     | **Working title**                              | **Incumbent**             | **Portfolio**     | **PIN** |
     |------------------------------------------------|---------------------------|-------------------|---------|
@@ -177,7 +177,7 @@ Each refined Position Description is filed alongside this roster in the same fol
     | Applied Data Scientist                         | Chiemeka Okeoma           | Innovation Lab    | 62137   |
     | Full Stack Engineer                            | Xander Jake de los Santos | Innovation Lab    | 70431   |
 
-### Performance Management (CCA001472)
+    **Performance Management (CCA001472)**
 
     | **Working title**                | **Incumbent**        | **Portfolio**            | **PIN** |
     |----------------------------------|----------------------|--------------------------|---------|
