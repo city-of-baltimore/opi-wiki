@@ -27,12 +27,7 @@ Protocol For Responding To City Council Requests
 ## Purpose
 
 To ensure appropriate coordination and compliance with established oversight
-procedures, any request for information, documents, data, applications, or
-other materials that originates from a member of the Baltimore City Council or
-Baltimore City Council support staff that is received by the Mayor's Office Of
-Performance and Innovation (OPI), must first be reviewed and approved by the
-Mayor's Office of Government Relations (MOGR) prior to being shared or
-released.
+procedures, any request from a Baltimore City Council member or their support staff — for information, documents, data, applications, or other materials — must be reviewed and approved by the Mayor's Office of Government Relations (MOGR) before OPI shares or releases anything.
 
 Staff should not independently provide materials, respond substantively, or
 transmit information in response to such requests without prior authorization
@@ -44,7 +39,7 @@ access, presentations, written materials, or informal summaries.
 
 Upon receiving a request from a City Council member or their staff, OPI staff
 should promptly initiate the review process by engaging the appropriate contact
-from within the Mayor's Office of Government relations (see chart below). The
+from within the Mayor's Office of Government Relations (see chart below). The
 submission should include the document, product, application, or information
 requested, as well as the name of the City Council member (or staff member
 acting on their behalf) who made the request. This information should be

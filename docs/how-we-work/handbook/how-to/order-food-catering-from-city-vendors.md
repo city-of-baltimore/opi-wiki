@@ -3,7 +3,7 @@
 {{ page_header() }}
 
 It is preferred that you contact Natasha Edmonds (Dir. Administrative Services)
-to place your order if you know your date of need is at least 72Hr's aways.
+to place your order if your event is at least 72 hours away.
 
 ## 72Hrs + Away?
 
@@ -15,14 +15,13 @@ to place your order if you know your date of need is at least 72Hr's aways.
 
   - Approx count of people for your planned event (that will need food)
 
-Natasha will take care of the order and chargeback to OPI. You (the requester)
+Natasha places the order and charges it back to OPI. You (the requester)
 will be designated as the contact for the food service delivery.
 
 ## 72Hrs or less Away?
 
 - Go directly to the catering source(s). These restaurants have agreements with
-  the Baltimore City and will bill Natasha, who will in turn, bill you(r) Cost
-  Center.
+  the City and will bill Natasha, who will in turn, bill your Cost Center.
 
 ## Preferred Food Vendors:
 

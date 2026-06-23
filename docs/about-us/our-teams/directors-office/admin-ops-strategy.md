@@ -31,7 +31,7 @@ Without strong intake, project management, communications, and people operations
 
 ## OPERATING POSTURE
 
-Documented over heroic. Processes that survive leadership transitions. A single front door beats freelance project starts. Investment in OPI's own operations returns time to the citywide services.
+Documented over heroic. Processes that survive leadership transitions. A single front door beats ad-hoc project starts. Investment in OPI's own operations returns time to the citywide services.
 
 ## CORE OFFERINGS
 

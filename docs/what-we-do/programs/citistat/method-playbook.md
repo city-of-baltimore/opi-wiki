@@ -10,7 +10,7 @@
 
 This playbook is the staff-facing companion to the CitiStat strategic overview. It translates the CitiStat method into practical standards, routines, and templates for OPI staff, agency leaders, Data-Driven Officers, Deputy Mayor teams, the City Administrator’s Office, and other partners who participate in the performance routine.
 
-The playbook exists to make excellence repeatable. A CitiStat session should not depend on personality, memory, or heroic follow-up. It should have a clear purpose, reliable-enough data, useful pre-work, disciplined facilitation, explicit commitments, evidence of closure, and a public story of progress where appropriate.
+This playbook makes a good Stat repeatable, so a session does not depend on personality, memory, or heroic follow-up.
 
 <div class="opi-pullquote" markdown="0">Working definition: CitiStat is the routine that converts performance signals into decisions, commitments, follow-through, and sustained service improvement.</div>
 
@@ -61,7 +61,7 @@ The playbook exists to make excellence repeatable. A CitiStat session should not
 
 ## Operating principles: rigorous and humane
 
-CitiStat should feel rigorous and humane. The work must be grounded in facts, but it should never become a ritual of blame. The best sessions create a high-accountability, high-support environment: agencies are expected to own results, and City leadership is expected to help remove the barriers agencies cannot resolve alone.
+CitiStat is rigorous and humane. The work must be grounded in facts, but it should never become a ritual of blame. The best sessions create a high-accountability, high-support environment: agencies are expected to own results, and City leadership is expected to help remove the barriers agencies cannot resolve alone.
 
 ### The four tenets of Stat
 

@@ -31,7 +31,7 @@ Reporting to the Executive Director and Chief Data Officer, the Innovation Progr
 
 - Coach Lab staff and tiger-team leads on framing, design discipline, evaluation, and plain-language storytelling.
 
-### tiger team and Cross-Agency Delivery
+### Tiger Teams and Cross-Agency Delivery
 
 - Stand up tiger teams against priority service problems with the Director’s Office; appoint delivery leads, set milestones, and run checkpoints.
 

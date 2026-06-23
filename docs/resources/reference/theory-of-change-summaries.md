@@ -2,11 +2,11 @@
 
 {{ page_header(summary="An index to all five OPI theories of change.", category="SERIES · OPI FOUNDATIONS", tagline="OPI’s five services, on one shared logic.") }}
 
-This page is the index to OPI's five service theories of change. Each service maintains its own theory of change as the official record; this page explains the shared logic they all follow and links to each one. It carries no independent summaries of its own, so there is one place, and only one place, to maintain each service's logic.
+This page is the index to OPI's five service theories of change. Each service maintains its own theory of change as the official record; this page explains the shared logic they all follow and links to each one. It carries no summaries of its own, so each service's logic lives in exactly one place.
 
 ## How to read a theory of change
 
-A theory of change is a step-by-step explanation of how the work we do leads to the change we want to see. It names what we put in, what we do, what we produce, what improves as a result, and the long-term impact we are aiming at. It also surfaces the assumptions that have to hold for the chain to work.
+A theory of change explains, step by step, how the work we do leads to the change we want to see. It names what we put in, what we do, what we produce, what improves as a result, and the long-term impact we are aiming at. It also surfaces the assumptions that have to hold for the chain to work.
 
 | **Step**   | **What it means**                     | **How OPI uses it**                                                           |
 |------------|---------------------------------------|-------------------------------------------------------------------------------|
@@ -30,7 +30,7 @@ A theory of change is a step-by-step explanation of how the work we do leads to 
 
 ## How we test the theories
 
-Each service's assumptions become things we look at in our quarterly review. Where an assumption is not holding, we adjust the activities, not just the outputs. The point of a theory of change is not to be right. It is to be honest about why we believe what we are doing will work, and to find out quickly when it does not.
+Each service's assumptions become items we test in our quarterly review. Where an assumption is not holding, we adjust the activities, not just the outputs. The point of a theory of change is not to be right. It is to be honest about why we believe what we are doing will work, and to find out quickly when it does not.
 
 - **Quarterly:** review signals against targets; revise activities where signals lag.
 - **Annually:** revisit assumptions; rewrite where the world has changed.

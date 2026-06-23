@@ -16,11 +16,11 @@
 
 ### Public Purpose
 
-HR & Labor Stat focuses on the people systems that allow City government to hire, retain, support, and manage its workforce. Strong HR and labor operations affect every agency’s ability to deliver services.
+HR and Labor Stat focuses on the people systems that allow City government to hire, retain, support, and manage its workforce. Strong HR and labor operations affect every agency’s ability to deliver services.
 
 ### Staff Purpose
 
-Staff use HR & Labor Stat to review hiring timelines, vacancy pipelines, classification issues, labor relations, onboarding, workforce planning, employee relations, training, and barriers that slow agency staffing.
+Staff use HR and Labor Stat to review hiring timelines, vacancy pipelines, classification issues, labor relations, onboarding, workforce planning, employee relations, training, and barriers that slow agency staffing.
 
 ### Core Management Questions
 

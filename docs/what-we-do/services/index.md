@@ -2,7 +2,7 @@
 
 > What OPI delivers for the City — five services, delivered by four teams.
 
-A **service** is what OPI delivers. It is distinct from a **team** (a group with staff and budget) and a **program** (an ongoing routine). Each of OPI's four teams delivers a service; Cross-Agency Delivery is delivered across teams, for five services in all.
+A **service** is what OPI delivers. It is distinct from a **team** (a group with staff and budget) and a **program** (an ongoing routine). Each of OPI's four teams delivers a service. Cross-Agency Delivery is delivered across teams — five services in all.
 
 | Service | What OPI delivers | Delivered by |
 | --- | --- | --- |

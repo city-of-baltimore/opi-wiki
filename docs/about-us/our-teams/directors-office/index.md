@@ -2,8 +2,7 @@
 
 > The Executive Director's office, plus the AdminOps function that runs the operational backbone of OPI.
 
-The Director's Office sets direction, manages executive coordination, and runs
-the operational backbone of OPI. The team includes the Executive Director,
+The Director's Office sets direction, coordinates executive work, and owns the AdminOps function beneath it. The team includes the Executive Director,
 Chief of Staff, Communications and Partnerships Lead, Special Assistant,
 Project Manager, CitiStat Inspector, and the AdminOps routines that keep the
 office aligned.

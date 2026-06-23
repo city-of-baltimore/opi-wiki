@@ -4,7 +4,7 @@
 
 ## HOW TO USE THIS TEMPLATE
 
-# **A small, warm welcome**
+**A small, warm welcome**
 
 On the morning of Day 1, while the new hire is still with HR, the Chief of Staff posts a welcome announcement in the OPI Teams channel. This artifact provides two reusable versions: a generic post for any new hire and a specialized version for new engineers.
 
@@ -32,7 +32,7 @@ Replace anything in \[square brackets\]. Keep the tone warm, brief, and specific
 
 ## TEMPLATE A · GENERIC
 
-# **For any new hire**
+**For any new hire**
 
 ## SUBJECT LINE (TEAMS POST TITLE)
 
@@ -52,13 +52,13 @@ Drop a welcome below. \[First Name\] is in HR onboarding this morning and will b
 
 — \[Chief of Staff name\]
 
-Required fields the manager must provide the day before
+### Required fields the manager must provide the day before
 
 First and last name; portfolio; job title; preferred pronouns (or “none”); manager name; buddy name; previous role/org; one-sentence accomplishment from prior role; one-sentence focus at OPI; fun fact (provided by the new hire); arrival time at the office; high-resolution photo (with new hire’s consent).
 
 ## TEMPLATE B · ENGINEERING
 
-# **For new engineers and product engineers**
+**For new engineers and product engineers**
 
 Same structure as Template A, with two changes: the focus area highlights products / repos, and the post tags the Engineering channel as well.
 
@@ -70,7 +70,7 @@ Welcome to OPI Engineering — \[First Name\] \[Last Name\] starts today
 
 Team —
 
-Please join me in welcoming \[First Name\] \[Last Name\] to OPI. \[First Name\] joins our Data & Analytics portfolio as our new \[Engineering / Full Stack Engineer / Data Engineer\]. \[He / she / they\] will work most closely with \[Engineering lead name\] and is partnered with \[Buddy name\] for onboarding.
+Please join me in welcoming \[First Name\] \[Last Name\] to OPI. \[First Name\] joins our Data and Analytics portfolio as our new \[Engineering / Full Stack Engineer / Data Engineer\]. \[He / she / they\] will work most closely with \[Engineering lead name\] and is partnered with \[Buddy name\] for onboarding.
 
 \[First Name\] comes to us from \[previous role / org\] where \[one-sentence accomplishment\]. At OPI, \[he / she / they\] will focus on \[one-sentence area — e.g., the 311 public portal, the Performance Portal, internal data platform, the State of the City Map\].
 
@@ -84,7 +84,7 @@ Drop a welcome below. Come say hi this afternoon.
 
 ## POSTING WORKFLOW
 
-# **Who does what, in order**
+**Who does what, in order**
 
 | **When**        | **Action**                                                                                           | **Owner**   |
 |-----------------|------------------------------------------------------------------------------------------------------|-------------|
@@ -95,6 +95,6 @@ Drop a welcome below. Come say hi this afternoon.
 | Day 1 morning   | CoS reposts a shorter version in the portfolio sub-channel and tags the team.                        | \[CoS\]     |
 | Day 1 afternoon | Manager makes sure the team comes by to say hi after HR ends.                                        | \[Manager\] |
 
-If the new hire opts out
+### If the new hire opts out
 
 Some new hires prefer no public announcement on Day 1. If so, post nothing. Send a smaller note in the portfolio sub-channel only after the new hire arrives and consents.

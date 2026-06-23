@@ -4,7 +4,7 @@
 
 Strategy Document
 
-*Read alongside: OPI About — Citywide Data & Analytics; OPI Service Theory of Change — Data & Analytics; OPI Data Governance Framework*
+*Read alongside: OPI About — Citywide Data and Analytics; OPI Service Theory of Change — Data and Analytics; OPI Data Governance Framework*
 
 *This document makes the strategic case for citywide data infrastructure. The About doc tells the human story. The ToC shows the operating backbone. The Governance Framework specifies stewardship rules.*
 
@@ -12,7 +12,7 @@ Strategy Document
 
 **Build once, reuse many times**
 
-Citywide Data & Analytics is OPI’s service for making Baltimore’s data accurate, accessible, governed, and useful. The Data & Analytics team builds and stewards the shared data, analytics, open data, governance, and AI-readiness infrastructure behind performance management, service delivery, public transparency, and innovation at scale.
+Citywide Data and Analytics is OPI’s service for making Baltimore’s data accurate, accessible, governed, and useful. The Data and Analytics team builds and stewards the shared data, analytics, open data, governance, and AI-readiness infrastructure behind performance management, service delivery, public transparency, and innovation at scale.
 
 The team does not exist to become the default report shop for every agency. It exists to build foundations that make better reporting, analysis, dashboards, open data, and decision support possible across city government. The core posture is to build once and reuse many times.
 
@@ -22,7 +22,7 @@ The service is essential because every major city priority now depends on truste
 
 **What this service is**
 
-Citywide Data & Analytics strengthens Baltimore City’s data infrastructure, analytics capacity, open data program, and data governance practices across agencies. The goal is to make City data accurate, reliable, accessible, and useful for decision-making, transparency, and public accountability.
+Citywide Data and Analytics strengthens Baltimore City’s data infrastructure, analytics capacity, open data program, and data governance practices across agencies. The goal is to make City data accurate, reliable, accessible, and useful for decision-making, transparency, and public accountability.
 
 Activities include developing and maintaining data pipelines and shared datasets, producing analytics and data products, supporting data quality and governance standards, maintaining Open Baltimore, publishing high-quality open datasets, supporting data literacy, and preparing the City for responsible use of artificial intelligence and advanced analytics.
 
@@ -70,7 +70,7 @@ Coaching, training, office hours, show-and-tells, and support for agency Data-Dr
 
 Clear boundaries protect the team from becoming a bottleneck and protect agencies from losing ownership of their own work.
 
-- It does not own performance accountability. Performance owns the routine; Data & Analytics provides trusted data and analysis.
+- It does not own performance accountability. Performance owns the routine; Data and Analytics provides trusted data and analysis.
 
 - It does not own service redesign. The Innovation Lab leads service design, product discovery, and user research.
 
@@ -78,7 +78,7 @@ Clear boundaries protect the team from becoming a bottleneck and protect agencie
 
 - It does not replace BCIT. BCIT owns enterprise infrastructure, security, identity, networking, production environments, and enterprise technology operations.
 
-- It does not own agency systems of record. Agencies own the systems that run their operations; Data & Analytics helps integrate and steward shared data when there is citywide value.
+- It does not own agency systems of record. Agencies own the systems that run their operations; Data and Analytics helps integrate and steward shared data when there is citywide value.
 
 - It does not become the permanent analytics shop for every bespoke agency report. Ad hoc work should either become standardized, transition to an agency, or stop.
 
@@ -86,7 +86,7 @@ Clear boundaries protect the team from becoming a bottleneck and protect agencie
 
 **Platform steward, not central fulfillment shop**
 
-The Data & Analytics team should prioritize work that creates reusable value. A request is strongest when it supports CitiStat, mayoral priorities, public transparency, cross-agency delivery, open data, data governance, or a product that multiple agencies can use. The team can support ad hoc analysis when it unblocks a priority decision, but the long-term goal is to convert repeat requests into shared products.
+The Data and Analytics team should prioritize work that creates reusable value. A request is strongest when it supports CitiStat, mayoral priorities, public transparency, cross-agency delivery, open data, data governance, or a product that multiple agencies can use. The team can support ad hoc analysis when it unblocks a priority decision, but the long-term goal is to convert repeat requests into shared products.
 
 > **Five intake questions: What decision will this support? Who will use it? Can it be reused? What data quality or governance risk exists? Who will sustain it after the first release?**
 
@@ -193,6 +193,6 @@ Expand data literacy and communities of practice so agencies can use data respon
 
 **A foundation, not a support function**
 
-Citywide Data & Analytics is not a support function at the edge of OPI. It is one of the foundations that makes modern government possible. Trusted data enables performance management, service design, transparency, responsible AI, and better decisions. When the foundation is strong, every agency can move faster with more confidence. When it is weak, every improvement effort starts over.
+Citywide Data and Analytics is not a support function at the edge of OPI. It is one of the foundations that makes modern government possible. Trusted data enables performance management, service design, transparency, responsible AI, and better decisions. When the foundation is strong, every agency can move faster with more confidence. When it is weak, every improvement effort starts over.
 
-> *The Data & Analytics team builds the foundation so Baltimore can run on evidence, share truth with the public, and improve services at scale.*
+> *The Data and Analytics team builds the foundation so Baltimore can run on evidence, share truth with the public, and improve services at scale.*

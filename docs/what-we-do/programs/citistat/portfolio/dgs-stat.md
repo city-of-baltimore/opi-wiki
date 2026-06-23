@@ -12,7 +12,7 @@
 | OPI Operating Lead             | Performance Team                                                                                                                                     |
 | OPI Support Model              | OPI-operated / Performance Team                                                                                                                      |
 | Core Data Product              | Facilities and fleet readiness dashboard                                                                                                             |
-| Public Transparency Level      | Moderate. Publish public summaries and selected performance measures, especially where facilities or fleet readiness affects public-facing services. |
+| Public Transparency Level      | Moderate. Publish summaries and selected performance measures, especially where facilities or fleet readiness affects public-facing services. |
 
 ### Public Purpose
 

@@ -38,10 +38,6 @@ the Department of Human Resources (DHR) or the Office of the Labor Commissioner
 
 ## Staff designations (effective March 9, 2026)
 
-Designations support continuity of operations during City activations (for
-example: severe weather, public safety incidents, critical systems outages, or
-other emergency declarations).
-
 | **Designation** | **Who** | **Reporting expectation** |
 |---|---|---|
 | Essential | OPI leadership and Principal Staff (Operations Officer V and above). | Required to report to duty or perform remote duties as directed during emergency operations or continuity activations, unless explicitly released. |

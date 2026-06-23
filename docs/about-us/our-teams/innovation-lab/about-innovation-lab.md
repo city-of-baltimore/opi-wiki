@@ -46,4 +46,4 @@ CitiStat surfaces the problem; Data and Analytics provides the evidence and plat
 
 ### What success looks like
 
-Residents can access, track, and complete services more easily; agencies own the improvements after the Lab steps back; a small portfolio of credible, visible wins ships each year.
+Residents can access, track, and complete services more easily; agencies own the improvements after the Lab steps back; a small portfolio of visible wins ships each year.

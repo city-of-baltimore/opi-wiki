@@ -4,7 +4,7 @@
 
 ## Executive summary
 
-Baltimore’s CitiStat portfolio is the City’s executive performance rhythm for the services, systems, and priorities residents and staff experience most directly. This register documents the initial 19 monthly Stats, their government clusters, Stat types, executive sponsors, OPI support models, core data products, standard artifacts, and starter focus areas.
+Baltimore’s CitiStat portfolio is the City’s executive performance rhythm for the services, systems, and priorities residents and staff experience most directly. This register documents the initial 19 monthly Stats; the fields are defined below.
 
 CitiStat is managed by the Executive Director of OPI, method-stewarded by the Performance team, authorized through the relevant Deputy Mayor, Deputy City Administrator, City Administrator, or executive sponsor, and implemented by agencies. OPI leaders may operate selected Stats where the topic aligns with their portfolio, but all Stats follow a common standard: clear purpose, reliable enough data, useful pre-work, disciplined follow-up, evidence of closure, and a public story of progress.
 
@@ -32,7 +32,7 @@ The goal is not more meetings. The goal is a management routine that helps Balti
 
 ## Portfolio metadata
 
-Each Stat is tracked with consistent metadata so the portfolio is governable without making each session bureaucratic.
+Each Stat is tracked with consistent metadata so the portfolio stays manageable without making each session bureaucratic.
 
 | **Field**                      | **Purpose**                                                                                                               |
 |--------------------------------|---------------------------------------------------------------------------------------------------------------------------|

@@ -30,7 +30,7 @@ AUDIENCE
 
 ## Why the Wiki exists
 
-The OPI Wiki is the single internal home for the way OPI works: mission, model, methods, templates, and active project records. It is not a file dump. It is a maintained operating manual with named owners, review cadences, and a quality bar. The goal is simple: anyone joining OPI should be able to find the official document, the right template, the active project list, and the person who owns each thing, in under five minutes.
+The OPI Wiki is the single internal home for the way OPI works: mission, model, methods, templates, and active project records. It is not a file dump. It is a maintained operating manual with named owners, review cadences, and a quality bar. The goal: anyone joining OPI can find the official document, the right template, the active project list, and the owner of each — in under five minutes.
 
 > *Respond when necessary. Build so we do not have to respond again.*
 
@@ -50,7 +50,7 @@ OPI uses Microsoft SharePoint as the wiki platform, consistent with the rest of 
 
 - The official OPI Foundations documents (this set), in their final approved form.
 
-- Service playbooks and methods (CitiStat, data governance, Innovation Lab methods, tiger teams).
+- Service playbooks and methods (CitiStat, data governance, Innovation Lab methods, Tiger Teams).
 
 - Templates (charter, problem statement, intake form, pre-read, after-action review).
 
@@ -78,7 +78,7 @@ The internal SharePoint KB uses six top-level pillars. Depth comes from consiste
 |------------------------------|-----------------------------------------------------------------------------------------------------|-------------------|
 | About OPI                    | Mission, north star, portfolios, services, leadership, organization chart, what we are and are not. | Director’s Office |
 | How We Deliver               | Operating model, intake, charters, decision forums, escalation, governance cadences.                | Chief of Staff    |
-| Playbooks and Methods        | CitiStat, Innovation Lab methods, tiger teams, data governance, responsible AI.                     | Portfolio leads   |
+| Playbooks and Methods        | CitiStat, Innovation Lab methods, Tiger Teams, data governance, responsible AI.                     | Portfolio leads   |
 | Tools and Systems            | City systems 101, OPI tooling, engineering and data platform standards.                             | Deputy CDO        |
 | Operations and Governance    | Policies, telework, productivity playbook, HR and IT how-tos, QA standards, change control.         | Chief of Staff    |
 | People and Project Directory | People directory, Project Directory list, agency liaisons, contact lookup.                          | Chief of Staff    |
@@ -257,7 +257,7 @@ The Wiki is built in three releases so it is useful on day one and improves with
 
 ## Method pages as sources of truth
 
-Method pages should define how OPI works, not simply describe past work. When a method page is created or updated, it should answer:
+Method pages should define how OPI works, not just describe past work. When a method page is created or updated, it should answer:
 
 1. What routine is this?
 2. When should staff use it?

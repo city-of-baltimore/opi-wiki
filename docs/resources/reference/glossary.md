@@ -44,11 +44,11 @@ Words shape behavior. When OPI uses one word for something and an agency partner
 
 **CitiStat Director.** The leader of the CitiStat Program. The Executive Director of the Mayor’s Office of Performance and Innovation serves as CitiStat Director. The Deputy Chief Performance Officer serves as Deputy Director of the program. The CitiStat Director sets program strategy, owns the citywide portfolio, and is the senior point of accountability for the routine.
 
-**CitiStat Inspector.** The OPI role responsible for ground-truth checks that keep Stat conversations honest: ride-alongs, site visits, and field validation.
+**CitiStat Inspector.** The OPI role responsible for field checks that keep Stat conversations honest: ride-alongs, site visits, and on-the-ground validation.
 
 **Citywide Data Network.** The interagency data forum coordinated by OPI Data and Analytics. Convenes data leaders from agencies, BCIT, and partners to align on data standards, shared definitions, and access.
 
-**Closure.** The end of a commitment, project, or Tiger Team, evidenced by a link, a metric, or a changed process, not just declared. Carry-forward is named explicitly when closure is not complete.
+**Closure.** The end of a commitment, project, or Tiger Team — proven by a link, a metric, or a changed process, not just declared. Carry-forward is named explicitly when closure is not complete.
 
 **Commitment.** The basic unit of accountability in CitiStat. Every commitment has an owner, a date, and a definition of done. Tracked in the CitiStat tracker between meetings.
 

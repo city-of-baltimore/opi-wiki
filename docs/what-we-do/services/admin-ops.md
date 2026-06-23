@@ -6,7 +6,7 @@
 
 This service — OPI's Administration & Operations function — is responsible for the administrative, operational, communications, and portfolio-management functions that support the Mayor's Office of Performance and Innovation.
 
-**Activities include** portfolio intake and tracking, project-management coordination, executive briefings, communications, branding and marketing, Council relations, knowledge management, fiscal and procurement coordination, HR and facilities support, internal operating routines, quality assurance for public-facing materials, and maintaining the systems and standards that allow OPI's work to be delivered consistently and sustainably.
+**Activities include** portfolio intake and tracking, project-management coordination, executive briefings, communications, branding and marketing, Council relations, knowledge management, fiscal and procurement coordination, HR and facilities support, internal operating routines, quality assurance for public-facing materials, and maintaining the systems and standards that keep OPI's work consistent and sustainable.
 
 ## The goal
 

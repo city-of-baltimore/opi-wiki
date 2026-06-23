@@ -53,7 +53,7 @@ The Data Storyteller develops and stewards OPI’s external narrative, partner r
 
 - Maintain OPI’s brand kit and document templates in partnership with the Chief of Staff and the rest of the Director’s Office team.
 
-- Operate OPI’s publication QA process; uphold the Bloomberg/HKS-grade quality bar across deliverables.
+- Operate OPI’s publication QA process; uphold OPI's publication quality bar across deliverables.
 
 ## Knowledge, Skills, and Abilities
 

@@ -15,7 +15,7 @@ VERSION
 
 ## Why onboarding matters
 
-Great onboarding is a retention and performance lever. Staff who land well stay longer, contribute earlier, and trust the office more. Staff who land poorly cost the team energy in ways that compound for months. Treat onboarding as critical infrastructure.
+Great onboarding is a retention and performance lever. Staff who land well stay longer, contribute earlier, and trust the office more. Staff who land poorly drain the team for months. Treat onboarding as critical infrastructure.
 
 > *The first 90 days are the easiest time to set high standards. After that, expectations harden.*
 

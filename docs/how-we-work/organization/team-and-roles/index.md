@@ -4,7 +4,7 @@
 
 ## How OPI is organized
 
-OPI runs as four working groups under the Executive Director:
+OPI runs as four teams under the Executive Director:
 
 {{ card_grid_from("how-we-work/organization/team-and-roles/index.cards.yml") }}
 
@@ -22,7 +22,7 @@ For the visual leadership org chart and reporting lines, see [Org Structure](../
 
 ## How to read this document
 
-This roster lists every active and pending OPI position. Roles are grouped by team (the people a person works with day to day) and labeled by cost center (the budget line that funds the position). Teams and cost centers do not always match one-to-one; the Director’s Office, for example, includes positions funded under AdminOps and positions funded under the Innovation Lab cost center.
+This roster lists every active and pending OPI position. Roles are grouped by team (the people a person works with day to day) and labeled by cost center (the budget line that funds the position). Teams and cost centers do not always match one-to-one. The Director’s Office, for example, includes positions funded under AdminOps and others funded under the Innovation Lab cost center.
 
 Each refined Position Description is filed alongside this roster in the same folder, by team.
 
@@ -146,4 +146,4 @@ Each refined Position Description is filed alongside this roster in the same fol
     |----------------------------|---------------------|--------------------------|------------------|
     | Senior Performance Analyst | Open — to be posted | Performance        | 115657           |
 
-*This roster reflects the OPI operating model. Position descriptions for every role listed here are filed in the OPI Foundations / Position Descriptions folder, organized by team. PIN numbers and budget detail come from Baltimore City’s official position file.*
+*This roster reflects the OPI operating model. Position descriptions for every role listed here are filed in the OPI Foundations / Position Descriptions folder, organized by team. PINs and budget detail come from Baltimore City’s official position file.*

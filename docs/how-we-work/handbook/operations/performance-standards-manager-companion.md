@@ -96,7 +96,7 @@ Run this check before finalizing a rating. If you answer yes to any item, return
 
 - Document the conversation, the plan, and the next check-in date.
 
-**When proposing a 1 or after a trust breach**
+### When proposing a 1 or after a trust breach
 
 - Coordinate with the Director’s Office and HR before the conversation.
 

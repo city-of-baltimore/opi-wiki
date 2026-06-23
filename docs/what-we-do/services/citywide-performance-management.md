@@ -6,7 +6,7 @@
 
 This service administers Baltimore City's citywide performance management routines, including [CitiStat](../programs/citistat/index.md), agency performance planning, performance measures, and follow-up processes.
 
-**Activities include** preparing and facilitating CitiStat sessions, developing pre-session and follow-up memoranda, maintaining performance measures and KPI definitions, supporting agency performance plans, tracking commitments, conducting performance analysis, and identifying issues that require executive decision-making or cross-agency coordination.
+**Activities include** preparing and facilitating CitiStat sessions, developing pre-session and follow-up memos, maintaining performance measures and KPI definitions, supporting agency performance plans, tracking commitments, conducting performance analysis, and identifying issues that require executive decision-making or cross-agency coordination.
 
 ## The goal
 

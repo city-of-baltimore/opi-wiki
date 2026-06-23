@@ -26,7 +26,7 @@ We are the executive and operational core of OPI.
 
 This includes the Director’s Office functions, Chief of Staff function, portfolio management, communications, partnerships coordination, executive support, Council relations, fiscal and procurement coordination, HR and facilities support, knowledge management, internal routines, and quality assurance.
 
-We keep the office moving without letting it become chaotic. We protect priorities, support staff, document decisions, prepare leaders, tell the story, and make sure work does not disappear when a meeting ends or a person changes roles.
+We keep the office moving without letting it slide into chaos. We protect priorities, support staff, document decisions, prepare leaders, tell the story, and make sure work does not disappear when a meeting ends or a person changes roles.
 
 ### What we do
 
@@ -58,7 +58,7 @@ Core work includes:
 
 A small office cannot operate citywide without strong operating discipline.
 
-Without AdminOps, every request has a different intake path, every project has a different status format, every briefing starts from scratch, every folder becomes its own filing system, every public artifact carries risk, and staff spend too much time navigating ambiguity.
+Without AdminOps, every request has a different intake path, every project has a different status format, every briefing starts from scratch, and every public artifact carries risk.
 
 AdminOps creates the shared standards that make OPI reliable. Clarity is not bureaucracy. Clarity protects people, quality, and impact.
 

@@ -25,7 +25,7 @@ The Civic Designer applies service design, applied research, and human-centered 
 
 - Apply design thinking and human-centered methodologies to redesign business processes, workflows, and user experiences.
 
-- Embed human-centered design principles in city operations to keep resident needs and equity at the heart of all service delivery.
+- Embed human-centered design in city operations so resident needs and equity shape service delivery.
 
 - Coordinate resident and staff listening sessions, office hours, and quick-cycle discovery activities.
 

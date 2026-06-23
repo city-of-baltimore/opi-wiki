@@ -24,7 +24,7 @@ This team stewards Baltimore’s performance management system, including CitiSt
 
 We are the city’s performance method team.
 
-We bring structure, analysis, facilitation, and follow-through to the services and priorities that matter most. We help agencies and leadership focus on the right questions: What are we trying to improve? What does the data show? What is causing the problem? Who owns the next step? What decision is needed? How will we know whether anything changed?
+We bring structure, analysis, facilitation, and follow-through to the services and priorities that matter most. We help agencies and leadership focus on the right questions: What are we trying to improve? What does the data show? What is causing the problem? Who owns the next step?
 
 We are not auditors. We are not here to surprise agencies, embarrass teams, or create performance theater. We are partners in disciplined improvement. We hold the line on candor, method, and accountability while helping agencies own and sustain change.
 
@@ -52,7 +52,7 @@ Core work includes:
 
 City government does not improve because someone reports on a problem. It improves when the problem is defined clearly, the right people are in the room, the right data is trusted, commitments are assigned, and follow-up continues until conditions change.
 
-When performance management works, agencies are not simply presenting status updates. They are learning, adjusting, and solving problems in public view of leadership. Residents benefit when service issues are identified earlier, bottlenecks are addressed faster, and agencies build routines that make improvement part of how they work.
+When performance management works, agencies are not simply presenting status updates. They are learning, adjusting, and solving problems in public view of leadership. Residents benefit when the City spots service issues earlier, clears bottlenecks faster, and agencies build routines that make improvement part of how they work.
 
 ### How we work
 

@@ -2,7 +2,7 @@
 
 {{ page_header(summary="One scannable view of OPI's five services: cost center, legal mandate, goal, and the outcomes each one buys.", category="OPI · ACCOUNTABILITY") }}
 
-This page maps each budgeted service to the City Code mandate behind it, the goal it pursues, and the outcomes it is accountable for, so oversight can see how OPI's structure maps to public value. Per-service activity detail lives on each [service page](../../what-we-do/services/index.md); the FY priorities and budget figures live in the [Strategic Priorities one-pager](strategic-priorities-one-pager.md).
+This page maps each budgeted service to its City Code mandate, the goal it pursues, and the outcomes it is accountable for, so oversight can see how OPI's structure delivers public value. Per-service activity detail lives on each [service page](../../what-we-do/services/index.md); the FY priorities and budget figures live in the [Strategic Priorities one-pager](strategic-priorities-one-pager.md).
 
 | Service | Delivered by | Mandate (Baltimore City Code) | Goal | Outcomes it is accountable for |
 | --- | --- | --- | --- | --- |

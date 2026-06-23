@@ -16,7 +16,7 @@
 
 ### Public Purpose
 
-Finance Stat focuses on the financial systems and processes that allow Baltimore City to steward public dollars, collect revenue, pay vendors, procure goods and services, manage grants, and support accountable government operations.
+Finance Stat focuses on the financial systems and processes that allow Baltimore City to steward public dollars, collect revenue, pay vendors, procure goods and services, and manage grants.
 
 ### Staff Purpose
 

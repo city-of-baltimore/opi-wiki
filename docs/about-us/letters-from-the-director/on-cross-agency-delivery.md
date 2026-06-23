@@ -12,7 +12,7 @@ Those seams are where city government most often gets stuck. Not because anyone 
 
 ## What cross-agency delivery is
 
-Cross-agency delivery is the practice of helping Baltimore City finish initiatives that touch multiple agencies. It is not a substitute for agency leadership. The agencies still own their work. It is a discipline for getting complicated, multi-owner outcomes across the line. It combines clear scoping, shared problem framing, joint planning, structured working sessions, evidence-based decisions, and disciplined follow-through.
+Cross-agency delivery is the practice of helping Baltimore City finish initiatives that touch multiple agencies. It is not a substitute for agency leadership. The agencies still own their work. It is a discipline for getting complicated, multi-owner outcomes done. It combines clear scoping, shared problem framing, joint planning, structured working sessions, evidence-based decisions, and disciplined follow-through.
 
 At its center is a simple idea: someone has to own the end-to-end experience long enough to make it work. Not forever. Not as a permanent layer of bureaucracy. Just long enough to clarify roles, redesign the handoffs, document the new way of operating, and hand the running of the system back to the agencies that own it day to day.
 
@@ -44,7 +44,7 @@ That is a high standard. We are not going to meet it on every initiative. But it
 
 In the end, cross-agency delivery is a discipline of finishing. There is no shortage of plans, strategies, working groups, and announcements in city government. There is a shortage of finished work — redesigned services that are running, new routines that are sustained, written commitments that were kept. Our job is to add to that smaller, more important pile.
 
-Baltimore has plenty of talent, plenty of urgency, and plenty of problems worth solving. What we owe residents is the discipline to take the most important of those problems, name them clearly, organize the right people around them, and finish what we start. That is what cross-agency delivery is for.
+Baltimore has plenty of talent, plenty of urgency, and plenty of problems worth solving. What we owe residents is the resolve to take the most important of those problems, name them clearly, organize the right people, and finish what we start. That is what cross-agency delivery is for.
 
 *With gratitude and resolve,*
 
@@ -66,6 +66,6 @@ Mayor’s Office of Performance and Innovation
 
 ## Plain-language operating distinction
 
-Cross-Agency Delivery is the discipline that helps city government move work across agency boundaries. It is not a new agency and not a substitute for agency leadership. It creates the room, cadence, decision rights, and sustainment commitments that allow agencies to ship together.
+Cross-Agency Delivery is the discipline that helps city government move work across agency boundaries. It is not a new agency and not a substitute for agency leadership. It creates the room, cadence, decision rights, and commitments that let agencies ship together.
 
 The Innovation Lab designs and tests the solution. Cross-Agency Delivery makes sure the agencies required to implement it move together.

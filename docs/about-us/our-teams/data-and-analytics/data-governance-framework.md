@@ -4,9 +4,9 @@
 
 Strategy Framework
 
-*Read alongside: OPI Citywide Data & Analytics Strategy*
+*Read alongside: OPI Citywide Data and Analytics Strategy*
 
-*This framework defines the governance rules. The Data & Analytics Strategy explains the broader service and how the rules are operationalized day to day.*
+*This framework defines the governance rules. The Data and Analytics Strategy explains the broader service and how the rules are operationalized day to day.*
 
 ## EXECUTIVE SUMMARY
 
@@ -66,7 +66,7 @@ Data sources, owners, definitions, caveats, and approved uses should be understa
 
 **Authority that already matters in practice**
 
-The framework should formalize roles that already matter in practice and give them consistent authority. The Chief Data Officer should own citywide data strategy, open data stewardship, governance standards, and major data-sharing decisions. The Deputy Chief Data Officer and Data & Analytics leadership should operate the governance practice day to day.
+The framework should formalize roles that already matter in practice and give them consistent authority. The Chief Data Officer should own citywide data strategy, open data stewardship, governance standards, and major data-sharing decisions. The Deputy Chief Data Officer and Data and Analytics leadership should operate the governance practice day to day.
 
 | **Role**                                    | **Core responsibility**                                                                                               |
 |---------------------------------------------|-----------------------------------------------------------------------------------------------------------------------|

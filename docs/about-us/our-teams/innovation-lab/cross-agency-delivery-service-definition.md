@@ -73,7 +73,7 @@ Activities performed by this service include standing up delivery routines and t
 
 ### 2. Activation criteria
 
-We do not run delivery reviews for everything. The overlay activates only when the problem meets all six criteria. If it does not, we use a different routine — a Stat, a product council, a charter and an owner, or a one-time decision memo.
+We do not run delivery reviews for everything. The overlay activates only when the problem meets all six criteria. If it does not, we use a different routine: a Stat, a product council, a charter and an owner, or a one-time decision memo.
 
 - The work crosses three or more agencies or has a critical cross-agency dependency.
 

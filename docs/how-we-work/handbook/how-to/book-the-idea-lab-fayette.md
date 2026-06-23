@@ -7,8 +7,7 @@ Benton Building, 417 E. Fayette St., Room 466, Baltimore, MD 21202
 - Review policies, sign and complete. For reservation confirmation submit to:
   Jeanine.Murphy@baltimorecity.gov. Questions? 240.713.8508.
 
-- Idea Lab Rooms: Main Room (#1), 40 pp, Break Room (#2) food to be served -
-  only.
+- Idea Lab Rooms: Main Room (#1), 40 pp, Break Room (#2): food service only.
 
 - Hours of Operation: Monday - Friday, 8:00 am - 5:00 pm.
 
@@ -38,7 +37,7 @@ Benton Building, 417 E. Fayette St., Room 466, Baltimore, MD 21202
   - Cleanliness of meeting facility upon conclusion of event.
   - Chairs and tables must be straightened and returned to their original
     position.
-  - Whiteboards MUST be erased w/ cleaner, removing ALL meeting work-product.
+  - Whiteboards must be erased with cleaner, removing all meeting work product.
   - Group meeting materials cannot be stored in the Idea Lab.
   - All used bottles, cups, and cans must be placed in trash receptacles in
     Break Room area, only.

@@ -12,7 +12,7 @@
 | OPI Operating Lead             | Performance Team                                                                                                |
 | OPI Support Model              | OPI-operated / Performance Team                                                                                 |
 | Core Data Product              | Transportation operations dashboard                                                                             |
-| Public Transparency Level      | High. Publish public summaries, maps, dashboards, and progress updates tied to visible transportation services. |
+| Public Transparency Level      | High. Publish summaries, maps, dashboards, and progress updates tied to visible transportation services. |
 
 ### Public Purpose
 

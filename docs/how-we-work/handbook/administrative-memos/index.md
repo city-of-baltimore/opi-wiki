@@ -2,9 +2,7 @@
 
 {{ page_header(summary="Draft pages converted from memo-style source documents that still need policy review.") }}
 
-This subsection turns office memos into maintainable pages. The goal is to keep
-durable guidance while stripping out email-style boilerplate, unstable routing
-details, and one-off distribution headers.
+These pages keep the durable guidance from office memos and drop the email boilerplate, routing details, and one-off headers.
 
 ## Pages in this subsection
 

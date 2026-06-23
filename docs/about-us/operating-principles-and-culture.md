@@ -12,7 +12,7 @@ Culture shows up in the handoffs. Moving fast with intention means choosing the 
 
 OPI runs on a small number of operating principles. They are deliberately memorable, because they show up in the small daily decisions — how a meeting opens, who gets credit, how a memo is reviewed, how we say no — and not just in retreats and onboarding decks.
 
-These principles emerged from team listening sessions, strategy retros, and homework reflections. They are paired with the OPI values: GRIT, CANDOR, OWNERSHIP, HUMILITY, INTENTION, IMPACT.
+These principles come from our team's listening sessions and strategy reviews. They are paired with the OPI values: GRIT, CANDOR, OWNERSHIP, HUMILITY, INTENTION, IMPACT.
 
 > *Set the temperature. The operating norms we model become the office culture.*
 
@@ -66,7 +66,7 @@ Raw data is not a deliverable. Information is data with structure. Knowledge is 
 
 **How we honor the work and the people who do it**
 
-Recognition is operational. It is how we retain people who could be paid more in the private sector, and how we communicate to the rest of the city what good work looks like.
+Recognition is operational. It helps us keep people who could earn more in the private sector, and it shows the rest of the city what good work looks like.
 
 ### Routines we keep
 
@@ -122,7 +122,7 @@ We cannot hire fast enough to do everything we want. The Citywide Data Network i
 
 - Fellowships: multi-month placements where civic technologists, designers, or analysts embed in OPI and ship one named deliverable.
 
-- GitHub-style contribution programs: open repositories where partners and residents contribute analyses, data products, and documentation.
+- Open contribution programs: public repositories where partners and residents add analyses, data products, and documentation.
 
 - University research partnerships with Johns Hopkins, UMBC, Morgan State, and others, where research questions and city operating questions inform each other.
 
@@ -132,7 +132,7 @@ We cannot hire fast enough to do everything we want. The Citywide Data Network i
 
 **Who owns what across the city operating stack**
 
-*Most of our cross-agency conflict comes from unclear ownership. This is the working model we use to disambiguate.*
+*Most cross-agency conflict comes from unclear ownership. This is the model we use to sort it out.*
 
 | **Layer**                                    | **Owner**                  | **What they own**                                                                                                                                                                  |
 |----------------------------------------------|----------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -189,7 +189,7 @@ Two of the most important strategic partners every team member has are their pas
 
 **The 70 / 20 / 10 model**
 
-*We protect against burnout and chaos by structuring how we allocate our hours. The model below is the working baseline: a guide, not a constraint, reviewed each fiscal year.*
+*We structure how we spend our hours to guard against burnout. The model below is a working baseline — a guide, not a rule — reviewed each fiscal year.*
 
 | **Allocation** | **What it covers**                                                                                                             | **Why it matters**                                                                                                      |
 |----------------|--------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------|

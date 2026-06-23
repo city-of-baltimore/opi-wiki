@@ -45,9 +45,7 @@ Communications and notify your supervisor.
 The Communications team is responsible for coordinating messaging, ensuring
 accuracy, and aligning external communications with Administration priorities.
 
-This guidance is not intended to discourage thought leadership or professional
-engagement, but rather to ensure that all official communications are
-coordinated, accurate, and consistent.
+This guidance is not meant to discourage thought leadership or professional engagement. It exists to keep official communications coordinated, accurate, and consistent.
 
 If you are unsure whether something qualifies as media engagement, elevate the
 question before responding.

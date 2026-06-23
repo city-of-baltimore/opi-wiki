@@ -94,7 +94,7 @@ Every artifact passes four gates before it is shared with an audience outside th
 
 ## Gate 3 — Privacy and sensitivity
 
-**Minimum standard**
+### Minimum standard
 
 - Sensitivity is labeled: Public, Internal, Restricted (PII), or Confidential.
 
@@ -108,7 +108,7 @@ Every artifact passes four gates before it is shared with an audience outside th
 
 - Datasets published to Open Baltimore have completed the Open Data publication checklist.
 
-**When to consult the Deputy Chief Data Officer designee**
+### When to consult the Deputy Chief Data Officer designee
 
 - Any new dataset combination or linkage involving residents.
 

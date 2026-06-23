@@ -48,7 +48,7 @@ Six risks are material enough to manage explicitly. Each has a named owner, a mi
 
 ## Open issues to resolve at kickoff
 
-The pre-kickoff briefing flagged a number of placeholders. Most are resolved across this hub. The ones below are still open and need to be closed in the first two weeks of the engagement. Each has an owner, a target close date, and a path.
+The pre-kickoff briefing flagged several placeholders. Most are resolved across this hub. The ones below are still open and need to be closed in the first two weeks of the engagement. Each has an owner, a target close date, and a path.
 
 | **Open issue**                                                                   | **Why it matters**                                                                                                                                 | **Owner**                                  | **Close by** |
 |----------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------|--------------|

@@ -26,11 +26,11 @@ QCed before any visualization is built. The QCer fills out this part first.
 
 - Every business-rule decision is documented in the code or a paired memo, and the document is linked from the deck or pre-memo.
 
-- Code is commented well enough that the QCer can read each section and understand its intent without asking the analyst.
+- Comments let the QCer understand each section's intent without asking the analyst.
 
 - Code is version-controlled and can be re-run end to end against the source data.
 
-- The QCer ran the code line by line, confirmed each line accomplishes its intent, and confirmed intermediate outputs match the intent. Issues are returned to the lead with line-by-line notes.
+- The QCer ran the code line by line, confirmed each line does what it should, and checked that intermediate outputs match. Issues are returned to the lead with line-by-line notes.
 
 ### Spreadsheet output and data table
 

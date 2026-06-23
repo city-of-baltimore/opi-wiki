@@ -53,7 +53,7 @@ Boundaries protect focus, prevent burnout, and preserve organizational integrity
 
 - The Director’s Office approves commitments that affect scope, staffing, timelines, budget, or external positioning.
 
-- Deputies and managers do not contradict or override Director’s decisions in public or external settings. This is vital for consistent direction and staff morale.
+- Deputies and managers do not contradict or override Director’s decisions in public or external settings. It keeps direction consistent and protects morale.
 
 ### No new work is accepted without vetting
 
@@ -273,13 +273,13 @@ Our behavior reflects on OPI and the City of Baltimore at all times.
 
 Managers are expected to:
 
-6.  Coach to these norms.
+1.  Coach to these norms.
 
-7.  Model them consistently.
+2.  Model them consistently.
 
-8.  Intervene early when norms are violated.
+3.  Intervene early when norms are violated.
 
-9.  Escalate patterns, not just incidents.
+4.  Escalate patterns, not just incidents.
 
 These norms will be used in:
 
@@ -295,10 +295,10 @@ These norms will be used in:
 
 > *OPI is high-trust and high-standards.*
 
-10. We move fast with intention, not chaos.
+1. We move fast with intention, not chaos.
 
-11. We lead with candor and humility, not silence or side-channels.
+2. We lead with candor and humility, not silence or side-channels.
 
-12. We deliver impact, not just activity.
+3. We deliver impact, not just activity.
 
 These norms exist to protect our people, our credibility, and our mission. We serve the public. We follow through. We do the work the right way.

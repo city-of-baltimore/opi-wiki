@@ -4,7 +4,7 @@
 
 Twelve vendor months, then six city-led months. The vendor-led period is structured around two milestones — Foundation (M1, months 0–6) and Launch (M2, months 7–12). The city-led continuation is the third milestone (M3, months 13–18): an Expansion phase that proves the program runs without daily vendor support.
 
-Source-system sequencing is the single biggest determinant of whether the engagement delivers in 12 months. That is why the roadmap and the source waves are read together on this page.
+Source-system sequencing is the single biggest determinant of whether the engagement delivers in 12 months. That is why this page covers the roadmap and the source waves together.
 
 ## M1 — Foundation (months 0–6)
 

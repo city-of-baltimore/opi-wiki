@@ -40,7 +40,7 @@ Do not use a Tiger Team for routine reporting, a one-time executive decision, an
 
 Baltimore City has lived with persistent gaps in basic service delivery: parking enforcement, traffic calming, sweeping, waste, code enforcement, forestry. These gaps are not surprises; they are systemic. They sit at the intersection of process, staffing, technology, equipment, and contracts, and no one part of the system can fix them alone.
 
-A Tiger Team is a focused delivery sprint, time-boxed to the problem, that brings a cross-functional team to one service problem. It typically runs three to six months. It moves from analysis to action through fast diagnosis and rapid prototypes that test solutions in real conditions, and it ends with a plan to scale: ownership, operating procedures, and data products.
+A Tiger Team is a focused, time-boxed delivery sprint that brings a cross-functional team to one service problem. It typically runs three to six months. It moves from analysis to action through fast diagnosis and prototypes tested in real conditions, then ends with a plan to scale: ownership, operating procedures, and data products.
 
 > *Design prompt: what would have to be true for this service to feel reliable to residents?*
 
@@ -178,7 +178,7 @@ Tiger Teams use the Public Innovation Toolkit, a four-phase method built for pub
 
 - Kickoff with the Deputy Mayor and agency director: charter, mission, plan-on-a-page.
 
-- Mid-cycle review (≋ week 13): is the diagnosis right; are the right pilots running.
+- Mid-cycle review (around week 13): is the diagnosis right; are the right pilots running.
 
 - Closure (week 26): sustain plan signed; CitiStat handoff scheduled; closure memo published.
 
@@ -236,7 +236,7 @@ Tiger Teams use the Public Innovation Toolkit, a four-phase method built for pub
 
 **Data and Analytics.** Provides the diagnosis analytics during the sprint and the data products that ship with the pilot.
 
-**Cross-Agency Delivery.** Owns coordination authority across agencies. When a Tiger Team’s work needs that authority, it is chartered through Cross-Agency Delivery activation. The Innovation Lab still provides the team and the method; Cross-Agency Delivery provides the standing delivery review, the named Authorizer at the Deputy Mayor or City Administrator level, and the closure plan with sustainment commitments from each agency. Cross-Agency Delivery’s question is *how do we get multiple agencies to actually ship this together?*
+**Cross-Agency Delivery.** Owns coordination authority across agencies. When a Tiger Team’s work needs that authority, it is chartered through Cross-Agency Delivery activation. The Innovation Lab still provides the team and the method; Cross-Agency Delivery provides the standing delivery review, the named Authorizer at the Deputy Mayor or City Administrator level, and the closure plan with sustainment commitments from each agency. Cross-Agency Delivery’s question is *how do we get multiple agencies to ship this together?*
 
 **AdminOps.** Charters the team in intake, supports comms and partnerships, and books the closure ceremony.
 

@@ -22,7 +22,7 @@ Three windows are open at the same time, and they will not stay open indefinitel
 
 - **Executive demand.** The Mayor and City Administrator will use disciplined intelligence if the team can produce it.
 
-- **Philanthropic appetite.** The funding environment for data and AI in cities is at a high-water mark.
+- **Philanthropic appetite.** Funding for data and AI in cities is at a high-water mark.
 
 - **Procurement window.** The AI procurement landscape is still soft enough that a city-owned, governed approach can win against off-the-shelf vendor products before lock-in occurs.
 

@@ -28,4 +28,4 @@ so the team page can stay focused on method, service context, and the CitiStat p
 
 ## A note on language
 
-OPI uses *team*, *service*, *program*, and *product* in specific ways. See the [glossary](../../../resources/reference/glossary.md) for the shared definitions, and [how to read the team pages](../index.md#how-to-read-the-portfolio-pages) on the Our Teams overview.
+OPI uses *team*, *service*, *program*, and *product* in specific ways. See the [glossary](../../../resources/reference/glossary.md) for the shared definitions, and [how to read the team pages](../index.md#how-to-read-the-team-pages) on the Our Teams overview.

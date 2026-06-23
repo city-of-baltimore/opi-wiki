@@ -5,11 +5,11 @@
 Follow these steps to locate and edit a past reporting period in the Book of
 Business list.
 
-Below is a video embedded to have visual instructions
+A video walkthrough is embedded below.
 
 ## Step 1: Navigate to Past Periods
 
-On the left navigation select Book of Business and then select weekly update.
+In the left navigation, select **Book of Business**, then **Weekly Update**.
 
 The list will automatically load to active period.
 
@@ -32,8 +32,7 @@ to edit.
 
 ## Step 4: Edit the Item (Quick Method)
 
-Double-click the cell or hit edit in grid view if you want to edit OR click
-directly into a field.
+Double-click the cell, switch to **Edit in grid view**, or click directly into a field.
 
 Make your updates and ensure changes are saved.
 

@@ -12,7 +12,7 @@
 | OPI Operating Lead             | Performance Team                                                                                           |
 | OPI Support Model              | OPI-operated / Performance Team                                                                            |
 | Core Data Product              | Solid waste operations dashboard                                                                           |
-| Public Transparency Level      | High. Publish public summaries and selected service reliability dashboards where data quality supports it. |
+| Public Transparency Level      | High. Publish summaries and selected service reliability dashboards where data quality supports it. |
 
 ### Public Purpose
 

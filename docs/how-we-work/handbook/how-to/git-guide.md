@@ -9,10 +9,7 @@ easy-to-understand and navigable Git history.
 
 ### What is Git?
 
-Git is a version control system (VCS) that is popularly used in many
-development teams in tracking changes done to code in a decentralized manner.
-With Git, one can build an entire history of their application/code from start
-and easily refer to those prior versions for further improvements.
+Git is a version control system. It tracks every change to your code and lets you revisit any earlier version.
 
 ### How does one install Git?
 
@@ -219,8 +216,6 @@ know just what the change will be:
 
 * **Other information**:
 ```
-
-(The above uses markdown, which is why there are so many asterisks.)
 
 While at first glance this may seem like a lot for a pull request, let's break
 it down to see how it's pretty straightforward and actually a good idea to fill

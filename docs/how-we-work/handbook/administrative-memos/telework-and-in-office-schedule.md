@@ -42,8 +42,7 @@ established HR processes.
 
 Being in the office during core days strengthens our ability to deliver and grow
 as a team. Collaboration moves faster and decisions are clearer when we are
-face-to-face, and those small moments, impromptu discussions, brainstorming
-sessions, or celebrating wins, are what build OPI's culture.
+face-to-face, and the impromptu conversations, brainstorming, and shared wins that build OPI's culture.
 
 In-person time also ensures our work stays tightly aligned as we tackle complex
 challenges that cut across data, design, and performance. It creates
@@ -57,7 +56,7 @@ predictability so everyone knows when teammates will be available and engaged.
 
 These expectations set OPI's in-office rhythm and its remote-day flexibility.
 
-## In-Office Days
+### In-Office Days
 
 - **Core Days:** Tuesday, Wednesday, and Thursday are mandatory in-office days for everyone.
 
@@ -65,7 +64,7 @@ These expectations set OPI's in-office rhythm and its remote-day flexibility.
 
 - **Flexibility:** Certain projects or in-person meetings may require attendance on a specific Monday or Friday. In those cases, work with your manager to swap your fourth day as needed. Swaps do not roll over to future weeks.
 
-## Remote Days
+### Remote Days
 
 - Each staff member has one remote day per week.
 
@@ -73,7 +72,7 @@ These expectations set OPI's in-office rhythm and its remote-day flexibility.
 
 - Regular weekly WFH days should be posted on the OPI team calendar. Any exceptions or swaps should also be reflected on the calendar so that expectations are clear across the team.
 
-## Core Hours
+### Core Hours
 
 - All staff are expected to work the typical 7.34-hour work day.
 
@@ -81,7 +80,7 @@ These expectations set OPI's in-office rhythm and its remote-day flexibility.
 
 - Staff may arrive earlier or leave later depending on individual schedules, but all team members must be on-site during core hours.
 
-## Full-Day Presence
+### Full-Day Presence
 
 - In-office days are expected to be full workdays. Split or partial in-office days are not permitted.
 

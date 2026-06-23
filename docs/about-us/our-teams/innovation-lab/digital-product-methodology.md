@@ -14,7 +14,7 @@ OPI designs and ships digital products by starting with the service, not the scr
 
 This method guide defines a practical workflow for moving from problem framing to service design, UX flows, prototypes, engineering, testing, launch, documentation, and sustainment. It also clarifies how tools such as Miro, Figma, AI-assisted coding, engineering stacks, and Adobe InDesign fit together without creating confusion or duplicate work.
 
-The methodology is owned through the Innovation Lab, in partnership with Data & Analytics, BCIT, agencies, and AdminOps. It is intended for citywide use. It applies to operational tools, public-facing portals, field data collection apps, dashboards with workflow components, and other products that improve service delivery.
+The methodology is owned through the Innovation Lab, in partnership with Data and Analytics, BCIT, agencies, and AdminOps. It is intended for citywide use. It applies to operational tools, public-facing portals, field data collection apps, dashboards with workflow components, and other products that improve service delivery.
 
 ## THE CORE RULE
 
@@ -130,7 +130,7 @@ The two tracks should connect through shared narrative, screenshots, data defini
 | Innovation Lab   | Owns product discovery, service design, user research, product briefs, prototypes, and product quality.                          |
 | Product Owner    | Owns scope, outcomes, user value, release priorities, and go/no-go recommendations.                                              |
 | Agency Sponsor   | Owns workflow adoption, staff participation, operational sustainment, and business decisions.                                    |
-| Data & Analytics | Owns shared datasets, methodology, data quality, APIs, analytics, and AI/data readiness review.                                  |
+| Data and Analytics | Owns shared datasets, methodology, data quality, APIs, analytics, and AI/data readiness review.                                  |
 | BCIT             | Owns enterprise infrastructure, security, identity, production environment, architecture partnership, and technology governance. |
 | AdminOps         | Owns public narrative, Council coordination, publication readiness, and portfolio visibility.                                    |
 

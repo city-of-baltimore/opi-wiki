@@ -12,7 +12,7 @@ That is the challenge in front of us. New tools are moving fast. Artificial inte
 
 As Baltimore’s Executive Director and Chief Data Officer, I think about that responsibility every day. Data is not abstract to us. It shows up in 311 service requests, permit applications, fire and EMS calls, water accounts, code inspections, work orders, budgets, grants, parks, streets, and neighborhood conditions. It shapes where crews are deployed, how leaders set priorities, how agencies manage backlogs, and how residents understand whether the city is keeping its promises.
 
-When that data is accurate, timely, and well-governed, it becomes a public asset. It helps us see problems sooner, respond with more precision, and tell the truth about what is working and what is not. When that data is incomplete, inconsistent, or hard to access, the consequences ripple outward. A bad dataset is not just a bad report. It can become a missed intervention, a delayed service, a confused resident, or a decision that looks objective but is built on a weak foundation.
+When that data is accurate, timely, and well-governed, it becomes a public asset. It helps us see problems sooner, respond with more precision, and tell the truth about what is working and what is not. When that data is incomplete, inconsistent, or hard to access, the costs add up. A bad dataset is not just a bad report. It can become a missed intervention, a delayed service, a confused resident, or a decision that looks objective but is built on a weak foundation.
 
 That is why Baltimore’s data work is not back-office work. It is civic infrastructure.
 
@@ -22,7 +22,7 @@ There is a lot of excitement about AI in government, and there should be. Used r
 
 But AI does not replace stewardship. It depends on stewardship. If the underlying data is messy, the model will simply make messy conclusions faster. If the definitions are unclear, the answer will sound confident but mean the wrong thing. If the data does not reflect the lived experience of residents and frontline staff, the tool will miss what matters most. And if the public cannot understand how the city is using data, the technology will not build trust. It will weaken it.
 
-So our first responsibility is not to chase the newest tool. Our first responsibility is to build the conditions under which new tools can be used responsibly: trusted datasets, clear definitions, strong governance, documented lineage, human oversight, and a culture that values evidence over optics.
+So our first responsibility is not to chase the newest tool. It is to build the conditions for using new tools responsibly: trusted datasets, clear definitions, strong governance, documented lineage, human oversight, and a culture that values evidence over optics.
 
 ## What Baltimore is building
 
@@ -34,7 +34,7 @@ Open data is part of that promise. It should not be a graveyard of stale files. 
 
 ## Stewardship is a public value
 
-Good data stewardship is not about control for control’s sake. It is about making responsible use possible. Governance should not be a wall that blocks progress. It should be a set of guardrails that lets us move faster because we know the rules of the road.
+Good data stewardship is not about control for control’s sake. It is about making responsible use possible. Governance should not be a wall that blocks progress. It should be guardrails that let us move faster because we know the rules.
 
 That means we need clear answers to basic questions: Who owns this dataset? How often is it refreshed? What does each field mean? What are the caveats? What information is sensitive? Who can access it? Can it be published? Is it appropriate for AI use? What human decision remains in the loop? These questions are not bureaucratic. They are the difference between a city that experiments responsibly and a city that gets surprised by its own systems.
 
@@ -62,8 +62,8 @@ Mayor’s Office of Performance and Innovation
 
 ## READ ALONGSIDE
 
-**Data & Analytics Strategy —** *how Baltimore is building citywide data infrastructure.*
+**Data and Analytics Strategy —** *how Baltimore is building citywide data infrastructure.*
 
 **Data Governance Framework —** *roles, standards, and decision rights for data stewardship.*
 
-**About OPI: Data & Analytics —** *what the Data & Analytics team owns and how it partners.*
+**About OPI: Data and Analytics —** *what the Data and Analytics team owns and how it partners.*

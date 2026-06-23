@@ -23,7 +23,7 @@ The role is both strategic and operational: shaping citywide data and AI standar
 
 ### Data and AI Leadership
 
-- Set the citywide strategy for data governance, pipelines, lineage, and adoption, building toward trusted, transparent, and responsible data infrastructure.
+- Set the citywide strategy for data governance, pipelines, lineage, and adoption, to build trusted, transparent, and responsible data infrastructure.
 
 - Oversee the Data Platform and AI program, including warehouse ingestion, testing, lineage, and monitoring, with SLAs for citywide datasets.
 
@@ -63,7 +63,7 @@ The role is both strategic and operational: shaping citywide data and AI standar
 
 ### Data and AI leadership
 
-- Visionary leadership in data governance, AI, analytics, and digital platforms.
+- Proven leadership in data governance, AI, analytics, and digital platforms.
 
 - Deep expertise in data engineering, open-data strategy, AI evaluation, and data-product delivery.
 

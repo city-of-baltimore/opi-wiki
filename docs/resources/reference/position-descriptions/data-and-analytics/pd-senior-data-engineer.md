@@ -23,7 +23,7 @@ Reporting to the Deputy Chief Data Officer with technical direction from the Pri
 
 ### Architecture and Modeling
 
-- Contribute to data models, lakehouse-style tiered layers, and orchestration frameworks that make sense for efficient computation, fellow engineers, and data consumers.
+- Contribute to data models, lakehouse-style tiered layers, and orchestration frameworks that serve efficient computation, fellow engineers, and data consumers.
 
 - Apply data-architecture standards (schema design, naming conventions, lineage, and data-quality contracts).
 

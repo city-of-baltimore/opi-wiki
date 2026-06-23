@@ -6,13 +6,13 @@
 
 *This Framework is the public-facing strategic case. The Method Playbook is the staff-facing operating manual. The Performance Management Strategy explains how CitiStat fits inside the broader citywide system.*
 
-## Executive summary: a learning and delivery loop
+## Executive summary: a learning and accountability loop
 
 CitiStat is Baltimore’s executive performance rhythm. It is the routine through which City leadership, agencies, and the Mayor’s Office of Performance and Innovation use data to see performance clearly, make decisions, assign ownership, and follow through until services improve.
 
 The next phase of CitiStat is not about adding meetings. It is about building a disciplined, humane, learning-oriented performance system. When the routine works, agencies experience it as help, not heat. Leadership gets decision points, not status updates. Residents experience services that become faster, clearer, more reliable, and easier to trust.
 
-This document consolidates the CitiStat strategic argument for City leadership, Council, agency staff, partners, and public-facing use. It also absorbs the case for treating CitiStat as a learning and delivery loop, not a meeting series. A companion operating playbook contains the staff-facing standards, templates, and session mechanics.
+This document consolidates the CitiStat strategic argument for City leadership, Council, agency staff, partners, and the public. It also absorbs the case for treating CitiStat as a learning and accountability loop, not a meeting series. A companion operating playbook contains the staff-facing standards, templates, and session mechanics.
 
 <div class="opi-pullquote" markdown="0">North star: Run a disciplined, collaborative performance system that turns priorities and data into sustained service improvements residents and public servants can see and feel.</div>
 
@@ -104,7 +104,7 @@ CitiStat is Baltimore’s learning and accountability loop: a management routine
 
 City government is complex. Many of the problems residents experience are not caused by one person or one agency. They happen when risks are noticed too late, handoffs are unclear, data definitions vary, decisions linger without an owner, and follow-up is not tracked to closure.
 
-CitiStat addresses those failure modes by creating a predictable cadence for truth, decision-making, and follow-through. The routine helps City leadership and agencies:
+CitiStat addresses those failure modes by creating a predictable cadence for facts, decisions, and follow-through. The routine helps City leadership and agencies:
 
 - Spot risks early and focus attention on the bottlenecks that matter most.
 
@@ -218,7 +218,7 @@ Every priority measure should be connected to the KPI dictionary and should incl
 
 ## CitiStat as a knowledge system
 
-Slides are useful for framing a conversation. They are not the long-term memory of the performance system. CitiStat should increasingly rely on reusable data products, living notebooks, dashboards, methodology cards, process maps, and commitment trackers that can be searched and reused.
+Slides are useful for framing a conversation. They are not the long-term memory of the performance system. CitiStat should increasingly rely on reusable data products, living notebooks, dashboards, methodology cards, process maps, and commitment trackers that can be searched.
 
 A slide deck should be an entry point and decision summary. The knowledge should live in a single organizing home for topics, metrics, prior decisions, root causes, commitments, dashboards, data quality notes, public summaries, and annual report sections.
 
@@ -242,7 +242,7 @@ A new analyst should be able to understand a Stat topic in 30 minutes: the probl
 
 CitiStat cannot fix service delivery if it only talks to managers. Frontline workload, training gaps, morale, informal workarounds, union considerations, staffing realities, and resident experience are not side issues. They are evidence.
 
-A humane CitiStat model asks hard questions without assuming bad intent. It recognizes that performance problems often come from system design, resource constraints, unclear ownership, weak data, or tools that do not match the work. The purpose is to make those conditions visible so they can be changed.
+A humane CitiStat asks hard questions without assuming bad intent. It recognizes that performance problems often come from system design, resource constraints, unclear ownership, weak data, or tools that do not match the work. The purpose is to make those conditions visible so they can be changed.
 
 ## Current CitiStat portfolio
 

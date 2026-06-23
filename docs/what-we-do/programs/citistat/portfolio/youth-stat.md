@@ -12,7 +12,7 @@
 | OPI Operating Lead             | Performance Team                                                                                                            |
 | OPI Support Model              | OPI-operated / Performance Team                                                                                             |
 | Core Data Product              | Youth outcomes and initiative tracker                                                                                       |
-| Public Transparency Level      | High. Publish public summaries and selected indicators that connect youth priorities to actions, investments, and outcomes. |
+| Public Transparency Level      | High. Publish summaries and selected indicators that connect youth priorities to actions, investments, and outcomes. |
 
 ### Public Purpose
 
@@ -47,4 +47,3 @@ Staff use Youth Stat to align agencies and partners around the Mayor’s youth p
 - Youth service handoff failure requiring multi-agency coordination
 - Priority initiative stalled due to unclear ownership or data gaps
 - Program inventory or outcome tracking need requiring data product support
-

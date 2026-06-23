@@ -111,7 +111,7 @@ Two flagship intelligence products in months 0–6 — City Services Intelligenc
 
 ## Workstream 4 — OPI Internal Operating Tools
 
-A small set of internal tools that make OPI itself more disciplined: a SharePoint Governance Scanner, a Project Status Reporting Tool, and a Portfolio Reporting Pack.
+A small set of internal tools that strengthen OPI's own operating discipline: a SharePoint Governance Scanner, a Project Status Reporting Tool, and a Portfolio Reporting Pack.
 
 ### What gets done by month 12
 

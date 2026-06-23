@@ -4,7 +4,7 @@
 
 CitiStat is a performance management **program**, housed within OPI. It is the standing routine we use to see performance clearly, ask better questions, assign commitments, and track follow-through. The [Performance team](../../../about-us/our-teams/performance/index.md) is its operational home, although CitiStat draws on every part of OPI: [Data and Analytics](../../../about-us/our-teams/data-and-analytics/index.md) makes the evidence trustworthy, the [Innovation Lab](../../../about-us/our-teams/innovation-lab/index.md) designs the improvements a Stat surfaces, and [Cross-Agency Delivery](../../services/cross-agency-delivery.md) coordinates the multi-agency work.
 
-This section is split cleanly by job: the **Strategic Framework** explains *why* CitiStat exists and how it ties to citywide priorities; the **Method Playbook** explains *how* a Stat actually runs. The quick reference, quality standards, and templates support the people doing the work, and the portfolio holds the live agency briefs.
+This section is split by job: the **Strategic Framework** explains *why* CitiStat exists and how it ties to citywide priorities; the **Method Playbook** explains *how* a Stat actually runs. The quick reference, quality standards, and templates support the people doing the work, and the portfolio holds the active agency briefs.
 
 ## New to CitiStat? Start here
 

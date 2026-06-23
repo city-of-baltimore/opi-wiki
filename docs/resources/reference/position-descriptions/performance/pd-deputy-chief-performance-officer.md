@@ -17,7 +17,7 @@
 
 The Deputy Chief Performance Officer (DCPO) is Baltimore’s senior leader for performance strategy and CitiStat. Reporting to the Executive Director and Chief Data Officer, the DCPO oversees the CitiStat team, runs the citywide performance system (including the monthly CitiStat meetings), partners with agencies to develop and monitor agency performance plans, and works closely with the Bureau of the Budget and Management Research (BBMR) to align performance metrics to mayoral priorities.
 
-The DCPO leads a team of civic-minded analysts who gather and analyze data from city agencies to assess performance, identify operational challenges, and collaborate on solutions. The DCPO also serves as product owner for the citywide Performance Tracker and partners with the Director’s Office on cross-functional projects, including delivery units and tiger teams that translate performance findings into delivered service improvements.
+The DCPO leads a team of analysts who gather and analyze agency data to assess performance, identify operational challenges, and develop solutions. The DCPO also serves as product owner for the citywide Performance Tracker and partners with the Director’s Office on cross-functional projects, including delivery units and tiger teams that translate performance findings into delivered service improvements.
 
 ## Key Responsibilities
 
@@ -37,7 +37,7 @@ The DCPO leads a team of civic-minded analysts who gather and analyze data from 
 
 ### CitiStat Program Management
 
-- Optimize the CitiStat program for consistent stakeholder engagement, planning, deliverables, data use, and program evaluation.
+- Run the CitiStat program for consistent stakeholder engagement, planning, deliverables, data use, and program evaluation.
 
 - Lead CitiStat meetings: manage logistics, prepare materials, facilitate idea generation and consensus-building, and ensure timely follow-up on action items.
 
@@ -65,7 +65,7 @@ The DCPO leads a team of civic-minded analysts who gather and analyze data from 
 
 - Demonstrated experience establishing citywide or enterprise performance routines and translating insights into sustained improvements.
 
-- Ability to run high-signal CitiStat sessions that convert analysis into commitments, delivery charters, and sustained changes.
+- Ability to run focused CitiStat sessions that convert analysis into commitments, delivery charters, and sustained changes.
 
 - Proficiency in KPI design, benchmarking, and outcome-based budgeting, with a product mindset for the Performance Tracker.
 

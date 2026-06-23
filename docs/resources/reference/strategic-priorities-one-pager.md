@@ -44,7 +44,7 @@ FY26 is about getting the foundation right. The three priorities below were name
 
 ### Priority 3 — Maximize Workday
 
-- Use the city’s investment in Workday to its full potential: proper reporting, better HR processes and reporting, capital budget management, grants, and internal workflows that work.
+- Use the city’s Workday investment fully: better reporting, HR processes, capital budget management, grants, and internal workflows that work.
 
 - Owner: OPI Data and Analytics with HR, BBMR, and BCIT.
 
@@ -54,7 +54,7 @@ FY26 is about getting the foundation right. The three priorities below were name
 
 - CitiStat: stand up and stabilize 19 regularly occurring Stats by end of January 2026; 12 of the 19 are new or relaunched. Performance owns; Method Playbook governs.
 
-- tiger teams cohort: six FY26 focus areas — Parking Enforcement, Traffic Calming (DOT); Street Sweeping, Zero Waste (DPW); Code Enforcement (DHCD); Forestry Backlog (BCRP). Innovation Lab leads; sustain by June 2026.
+- Tiger Teams cohort: six FY26 focus areas — Parking Enforcement, Traffic Calming (DOT); Street Sweeping, Zero Waste (DPW); Code Enforcement (DHCD); Forestry Backlog (BCRP). Innovation Lab leads; sustain by June 2026.
 
 - Citywide data warehouse v1: five core datasets in testing; data governance and catalog infrastructure in testing.
 
@@ -62,7 +62,7 @@ FY26 is about getting the foundation right. The three priorities below were name
 
 ## FY27 — The next-level moves
 
-With the foundation in place, FY27 shifts focus to bigger, more visible outcomes. The agenda is grounded in the City Administrator’s priorities and the Mayor’s Action Plan; final scoping is in design as part of the FY27 budget cycle.
+With the foundation in place, FY27 turns to bigger, more visible outcomes. The agenda is grounded in the City Administrator’s priorities and the Mayor’s Action Plan; final scoping is in design as part of the FY27 budget cycle.
 
 ### Direction 1 — Make smarter use of data across city operations
 
@@ -82,11 +82,11 @@ With the foundation in place, FY27 shifts focus to bigger, more visible outcomes
 
 ### Direction 3 — Solve common, recurring operational pain points
 
-- Continue the tiger team model on the next cohort of service problems, drawn from CitiStat findings.
+- Continue the Tiger Team model on the next cohort of service problems, drawn from CitiStat findings.
 
 - Push from “put out the fire” to “find the spark”: root-cause work that prevents the fire next year.
 
-- Sustain handoffs are the test: tiger team gains stay gained because the agency that owns the service keeps the gain.
+- Sustain handoffs are the test: Tiger Team gains stay gained because the agency that owns the service keeps the gain.
 
 ### Direction 4 — Strengthen the citywide performance system
 
@@ -101,7 +101,7 @@ With the foundation in place, FY27 shifts focus to bigger, more visible outcomes
 | **Question**                                                             | **Where to look**                                                                                         |
 |--------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------|
 | Are priority services improving on the metrics that matter to residents? | CitiStat Portfolio Register; agency performance plans; public dashboards.                                 |
-| Are tiger teams ending with sustained gains?                             | Closure memos; CitiStat handoffs; resident satisfaction trends.                                           |
+| Are Tiger Teams ending with sustained gains?                             | Closure memos; CitiStat handoffs; resident satisfaction trends.                                           |
 | Is data trusted, current, and used in agency routines?                   | Warehouse adoption; reduction in ad hoc pulls; agency leaders using OPI dashboards in their own meetings. |
 | Is OPI itself running well?                                              | Intake-to-charter cycle time; project gate adherence; onboarding ramp; staff retention.                   |
 

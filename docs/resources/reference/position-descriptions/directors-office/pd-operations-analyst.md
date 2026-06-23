@@ -25,9 +25,9 @@ In addition to executive support, the Operations Analyst carries a working portf
 
 - Own and manage the Executive Director’s calendar, aligning time with OPI’s strategic priorities (CitiStat, major deliverables, executive briefings, and priority service work).
 
-- Proactively schedule, reschedule, and sequence meetings using rules-based practices; anticipate and resolve conflicts before they escalate.
+- Proactively schedule, reschedule, and sequence meetings using rules-based practices; anticipate and resolve scheduling conflicts.
 
-- Protect daily blocks of strategic work time and ensure the Executive Director has the prep time needed to show up strong.
+- Protect daily blocks of strategic work time and ensure the Executive Director has the prep time needed for each engagement.
 
 - Maintain a 2–4 week forward view of major engagements, deadlines, and risks; flag conflicts and propose solutions.
 

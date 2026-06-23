@@ -4,7 +4,7 @@
 
 ## The short version
 
-OPI works best when each part of the office is clear about what it owns and how the handoffs work.
+OPI works best when every part of the office knows what it owns and how the handoffs work.
 
 > **CitiStat identifies the problem. Data and Analytics explains it. The Innovation Lab designs and tests the solution. Cross-Agency Delivery coordinates implementation when multiple agencies must act together. AdminOps keeps the work visible, documented, and sustained.**
 
@@ -30,7 +30,7 @@ CitiStat may produce a commitment that stays inside the agency, or it may trigge
 
 ### Data and Analytics owns trustworthy evidence
 
-Data and Analytics turns raw administrative data into decision-grade evidence. The team owns shared datasets, data pipelines, analytics products, open data, data governance, methodology cards, and responsible AI/data readiness. Its role is to make the evidence reliable enough to support action, not just to produce charts.
+Data and Analytics turns raw administrative data into decision-grade evidence. The team owns shared datasets, data pipelines, analytics products, open data, data governance, methodology cards, and responsible AI/data readiness. Its job is to make evidence reliable enough to act on, not just to produce charts.
 
 ### The Innovation Lab owns the craft of solving
 
@@ -50,11 +50,11 @@ Its question is: **How do we get multiple agencies to actually ship this togethe
 
 ### AdminOps owns the operating backbone
 
-AdminOps keeps the work visible, documented, communicated, and sustained. It owns intake discipline, portfolio visibility, knowledge management, executive briefings, Council readiness, communications, QA, and the operating routines that keep a small office from becoming reactive or personality-dependent.
+AdminOps keeps the work visible, documented, communicated, and sustained. It owns intake discipline, portfolio visibility, knowledge management, executive briefings, Council readiness, communications, QA, and the operating routines that keep a small office from running on individual heroics.
 
 ## How Tiger Teams fit
 
-A **Tiger Team** is a time-boxed, cross-functional delivery and innovation sprint focused on one service problem. It typically runs three to six months and produces tested pilots, process changes, tools, SOPs, and a sustainment plan, not just recommendations.
+A **Tiger Team** is a time-boxed, cross-functional delivery and innovation sprint focused on one service problem. It typically runs three to six months and produces tested pilots, process changes, tools, SOPs, and a sustainment plan — not a stack of recommendations.
 
 The Innovation Lab provides the method and team. If the work requires cross-agency authority, the Tiger Team is chartered through Cross-Agency Delivery. If authority sits cleanly within one agency, the Tiger Team can be chartered through Innovation Lab intake under the agency director.
 

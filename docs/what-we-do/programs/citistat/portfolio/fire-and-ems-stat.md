@@ -9,24 +9,24 @@
 | Internal Tag                   | Public safety / life safety                                                                                       |
 | Executive Sponsor / Authorizer | Deputy Mayor for Public Safety                                                                                    |
 | Primary Agency / Agencies      | Baltimore City Fire Department; Health, Housing, Police, MONSE, MOHS, and other partners as needed                |
-| OPI Operating Lead             | Director’s Office                                                                                                 |
+| OPI Operating Lead             | Director’s Office-led                                                                                             |
 | OPI Support Model              | Deputy Mayor-led / OPI-supported                                                                                  |
 | Core Data Product              | Fire and EMS performance dashboard                                                                                |
 | Public Transparency Level      | Moderate to high. Publish selected safety outcomes and prevention updates; protect sensitive operational details. |
 
 ### Public Purpose
 
-Fire & EMS Stat focuses on life safety, emergency medical response, fire prevention, overdose response, community risk reduction, and operational readiness. This Stat is Deputy Mayor-led, with OPI analytics and performance support.
+Fire and EMS Stat focuses on life safety, emergency medical response, fire prevention, overdose response, community risk reduction, and operational readiness. This Stat is Deputy Mayor-led, with OPI analytics and performance support.
 
 ### Staff Purpose
 
-Staff use Fire & EMS Stat to review emergency response performance, high-utilizer trends, fire fatalities, arson, EMS demand, prevention initiatives, deployment issues, and coordination with health, housing, public safety, and human services partners.
+Staff use Fire and EMS Stat to review emergency response performance, high-utilizer trends, fire fatalities, arson, EMS demand, prevention initiatives, deployment issues, and coordination with health, housing, public safety, and human services partners.
 
 ### Core Management Questions
 
 - Are emergency response, prevention, and readiness indicators improving?
 - Which places or populations create repeat demand or elevated risk?
-- Where do Fire & EMS priorities require coordination with health, housing, police, or human services?
+- Where do Fire and EMS priorities require coordination with health, housing, police, or human services?
 - What interventions can reduce harm before emergencies occur?
 
 ### Starter Focus Areas

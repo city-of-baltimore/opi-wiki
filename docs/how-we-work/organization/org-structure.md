@@ -20,8 +20,7 @@ readable.
 
 Each team gets its own chart so the roster stays readable on desktop and
 mobile. Innovation Lab staffing and its adjacent Director's Office support
-roles are shown in their home teams, with aspirational seats labeled as
-such so the current team and intended structure stay visible in one place.
+roles are shown in their home teams, with aspirational seats labeled so the current and intended structure stay visible together.
 
 {{ org_structure_from("how-we-work/organization/org-structure.data.yml", "portfolio_tabs") }}
 
@@ -68,7 +67,7 @@ OPI’s services describe the value we deliver, regardless of which team or staf
 
 Cross-Agency Delivery is an OPI-wide service overlay, not a standalone cost center at this stage. It is activated for Mayor, City Administrator, or Deputy Mayor priorities that require coordinated action across agencies.
 
-Danny Heller serves as Interim Delivery Manager, stewarding delivery discipline and cross-agency coordination. Rakeim Young maintains portfolio visibility, intake, status reporting, and escalation tracking through the Director’s Office.
+Danny Heller serves as Interim Delivery Manager, overseeing delivery discipline and cross-agency coordination. Rakeim Young maintains portfolio visibility, intake, status reporting, and escalation tracking through the Director’s Office.
 
 | **Element**                         | **Operating Decision**                                                                                                                                              |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -77,7 +76,7 @@ Danny Heller serves as Interim Delivery Manager, stewarding delivery discipline 
 | Portfolio visibility and escalation | Rakeim Young / Director’s Office                                                                                                                                    |
 | Primary triggers                    | Mayor, City Administrator, or Deputy Mayor priorities; major CitiStat follow-up failures; recurring cross-agency blockers; executive-priority implementation needs. |
 | Activation decision                 | Executive Director, with input from OPI leadership and relevant executive sponsors.                                                                                 |
-| Execution model                     | Assigned lead by activation; time-boxed delivery reviews or working sessions; status tracked through the team leadership council and weekly leadership reporting.               |
+| Execution model                     | Lead assigned at activation; time-boxed delivery reviews or working sessions; status tracked through the leadership council and weekly leadership reporting.               |
 
 ## How to Read This Structure
 
@@ -89,6 +88,6 @@ Three lenses help staff, partners, and leadership read OPI:
 
 - Cost centers are how we account for resources, track spend, and submit our budget request.
 
-When work is intaken, we ask: which team holds the lead? Which service does the work belong to? And which cost center funds it? When the answer is clear, the work moves. When the answer is unclear, intake routes the question to the Director’s Office for triage.
+When we intake work, we ask: which team holds the lead? Which service does the work belong to? And which cost center funds it? When the answer is clear, the work moves. When the answer is unclear, intake routes the question to the Director’s Office for triage.
 
 > *We move with urgency, but not chaos.*

@@ -201,7 +201,7 @@ When performance is inconsistent, OPI responds quickly and fairly. The objective
 
 - Training, pairing, or narrowing scope is used to support improvement.
 
-**When performance is a 1 or a trust breach occurs**
+### When performance is a 1 or a trust breach occurs
 
 - Immediate corrective action and documentation.
 

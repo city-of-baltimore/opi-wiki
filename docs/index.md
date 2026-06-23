@@ -3,7 +3,7 @@
 <div class="opi-hero">
   <div class="opi-hero-eyebrow">Mayor's Office of Performance and Innovation</div>
   <h1>OPI Foundations</h1>
-  <p>How a modern performance and innovation office runs, in public: the methodology, the operating model, the strategy, and the people behind Baltimore City's performance and innovation work.</p>
+  <p>How a modern performance and innovation office runs, in public — its methodology, operating model, strategy, and people.</p>
 </div>
 
 ## Start here
@@ -12,7 +12,7 @@
 
 ## What you'll find here
 
-OPI Foundations is the public reference for how the Mayor's Office of Performance and Innovation operates. It documents the office's methodology, strategy, and operating model so partners, peer cities, and the public can see the work plainly.
+OPI Foundations is the public reference for how the Mayor's Office of Performance and Innovation operates. It documents the office's methodology, strategy, and operating model so partners, peer cities, and the public can see how the work is done.
 
 The whole site lives as Markdown in a [GitHub repository](https://github.com/city-of-baltimore/opi-wiki), so the work is open to read, copy, and correct.
 
@@ -35,7 +35,7 @@ When in doubt, use the clearest full name. Do not use "CAD" for Cross-Agency Del
 
 ## How this site works
 
-- **Every page is Markdown in a [GitHub repository](https://github.com/city-of-baltimore/opi-wiki).** Every page on this site, and every change to every page, has a commit, an author, and a timestamp.
+- **Every page is Markdown in a [GitHub repository](https://github.com/city-of-baltimore/opi-wiki).** Every page, and every change to it, has a commit, an author, and a timestamp.
 - **Every page has an "Edit this page" link** at the top right. It opens the source file on GitHub, so anyone with a GitHub account can suggest a change.
 - **Suggesting changes is welcome.** See [Contributing](resources/contributing.md) for how to propose edits, file corrections, or request new content.
 

@@ -15,14 +15,12 @@ The Innovation Lab is OPI’s citywide service improvement capability, using hum
 
 | **Topic**               | **Summary**                                                                                                                                                                                                                                             |
 |-------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| What it is              | A multidisciplinary lab combining service design, product management, civic technology, applied AI, and strategic partnerships. We help agencies design, test, and implement practical improvements to City services and internal operations.           |
+| What it is              | A multidisciplinary lab combining service design, product management, civic technology, applied AI, and strategic partnerships. We help agencies design, test, and implement practical improvements to City services and internal operations. The Innovation Lab is the official service name.           |
 | Why it matters          | Many service problems are not about more staff or more money — they are about how services are designed, delivered, and felt. The Lab makes services easier to use, easier to manage, and more responsive to resident and staff needs.                  |
 | Who we serve            | Residents who use City services; agency program owners and frontline staff; agency leaders managing service delivery; Mayor and CA on priority service improvements.                                                                                    |
 | Mandate                 | Baltimore City Code Article 1, Subtitle 61 (Innovation Lab and continuous service improvement) and CitiStat-driven improvement work.                                                                                                                    |
 | Portfolio home          | Innovation Lab. Gabriel Watson serves as Innovation Program Manager.                                                                                                                                    |
 | What success looks like | Priority service flows show higher task success and lower abandonment; rework, repeat contacts, and backlog drop in services we touch; tools we ship have clear owners, documentation, and sustained support; AI pilots improve operations responsibly. |
-
-*The Innovation Lab is the official service name.*
 
 ### 2. Operating scope (boundary lines)
 

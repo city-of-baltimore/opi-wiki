@@ -12,7 +12,7 @@
 | OPI Operating Lead             | Data Team-led                                                                                                                       |
 | OPI Support Model              | OPI-operated / Data Team-led                                                                                                        |
 | Core Data Product              | 311 performance and resident experience dashboard                                                                                   |
-| Public Transparency Level      | High. Publish a public Stat page, selected dashboard views, what changed updates, and links to related open data where appropriate. |
+| Public Transparency Level      | High. Publish a public Stat page, selected dashboard views, what-changed updates, and links to related open data where appropriate. |
 
 ### Public Purpose
 
@@ -20,7 +20,7 @@
 
 ### Staff Purpose
 
-Staff use 311 Stat to improve call center performance, digital intake, service request routing, SLA accuracy, agency fulfillment, closure quality, duplicate request handling, resident communication, and feedback loops.
+Staff use 311 Stat to improve digital intake, routing accuracy, closure quality, duplicate handling, and resident communication.
 
 ### Core Management Questions
 

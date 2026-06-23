@@ -26,7 +26,7 @@ We are Baltimore’s civic data infrastructure team.
 
 We turn administrative data into shared assets, reliable measures, insight products, open datasets, maps, dashboards, and decision tools. We sit at the seam between agency operations, executive priorities, public transparency, and technology infrastructure.
 
-We are translators. We translate between agencies and BCIT, between raw data and policy decisions, between technical systems and public meaning, and between what a dashboard shows and what leaders need to do next.
+We are translators. We translate between agencies and BCIT, between raw data and policy decisions, and between what a dashboard shows and what leaders need to do next.
 
 We are not just a dashboard team. We build the conditions that make dashboards trustworthy.
 

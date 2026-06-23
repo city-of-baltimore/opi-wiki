@@ -17,7 +17,7 @@
 
 The CitiStat Program Manager is the senior practitioner of CitiStat method and the principal coach for the CitiStat Analyst bench. Reporting to the Deputy Chief Performance Officer, the Program Manager coordinates and facilitates Stat sessions, conducts deeper-cycle analysis on the most complex topics, ensures rigorous quality assurance of deliverables, and provides coaching to analysts. The role helps agencies use data to identify operational challenges, develop solutions, and track progress on key performance indicators (KPIs).
 
-The Program Manager is a champion of data-driven decision-making, process improvement, and transparency. The role is an individual contributor with respect to direct reports, but carries strong professional responsibility for the quality, cadence, and consistency of the CitiStat program.
+The Program Manager advances data-driven decision-making, process improvement, and transparency. The role is an individual contributor with respect to direct reports, but carries strong professional responsibility for the quality, cadence, and consistency of the CitiStat program.
 
 ## Key Responsibilities
 
@@ -31,11 +31,11 @@ The Program Manager is a champion of data-driven decision-making, process improv
 
 ### CitiStat Process and Operations
 
-- Optimize the CitiStat operating process: intake, topic calendar, planning, deliverables, data use, and follow-through.
+- Run and improve the CitiStat operating process: intake, topic calendar, planning, deliverables, data use, and follow-through.
 
 - Develop and maintain systems for tracking performance data, outcomes, and follow-up actions from CitiStat sessions, in coordination with the Project Manager and the SharePoint operating system.
 
-- Lead planning and follow-up for sessions, ensuring sessions are structured, impactful, and aligned with city priorities.
+- Lead planning and follow-up for sessions, ensuring sessions are structured, decision-focused, and aligned with city priorities.
 
 ### Performance Management Support
 
@@ -65,7 +65,7 @@ The Program Manager is a champion of data-driven decision-making, process improv
 
 - Demonstrated experience in quality assurance, program evaluation, and process improvement.
 
-- Ability to coach, support, and collaborate with a team of analysts in a fast-paced, public-sector environment.
+- Ability to coach, support, and collaborate with a team of analysts in a demanding public-sector environment.
 
 - Proficiency in analytics and performance-management tools (Excel, R, Python, Power BI, SQL).
 

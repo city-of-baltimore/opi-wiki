@@ -28,7 +28,7 @@ This document captures what the OPI team has heard, debated, and aligned on abou
 
 ### Values
 
-*Our six core values guide how we work, both with each other and our partners. They are paired with the operating maxim: we move with urgency, but not chaos.*
+*Six core values guide how we work with each other and our partners, paired with one operating maxim: move with urgency, not chaos.*
 
 | **Value** | **What it means**                                                                |
 |-----------|----------------------------------------------------------------------------------|
@@ -43,9 +43,9 @@ This document captures what the OPI team has heard, debated, and aligned on abou
 
 ## MISSION JOURNEY
 
-**The five framework questions we used to write our mission**
+**Five questions we worked through to write our mission**
 
-*Our mission did not arrive whole. We worked through five questions as a team. Each section below captures the answers we converged on.*
+*We answered these as a team. Each section below is where we landed.*
 
 ### 1. Who we are
 
@@ -146,7 +146,7 @@ This document captures what the OPI team has heard, debated, and aligned on abou
 
 **What the city thinks we do versus what we actually do**
 
-*Some of our biggest narrative work is corrective: closing the gap between how OPI is described in the wild and what we actually do.*
+*Much of our communications work is corrective: closing the gap between how OPI is described and what we actually do.*
 
 | **What city partners often think**   | **What we actually do**                                                                                                                                                            |
 |--------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -194,13 +194,13 @@ A platform city. 311, permitting, performance, data, and service workflows conne
 
 **The six threads we keep returning to**
 
-*From listening sessions and strategy retros, six themes recur. They are not strategy on their own — they are the conditions strategy has to address.*
+*Six themes recur across our planning. They are not a strategy on their own; they are the conditions any strategy has to address.*
 
 ### 1. Intake and governance
 
 - We say yes too often. We need standard intake, problem statements, and rejection criteria.
 
-- Governance — through the Data Governance Council, Open Data Council, and intake committee — is how we share authority instead of bottlenecking on one leader.
+- Governance through the Data Governance Council, Open Data Council, and intake committee is how we share authority instead of bottlenecking on one leader.
 
 ### 2. Documentation and knowledge management
 
@@ -218,7 +218,7 @@ A platform city. 311, permitting, performance, data, and service workflows conne
 
 - Agencies cannot use what they cannot interpret. Data literacy is part of our delivery, not a side program.
 
-- AI without governance is risk. AI evaluation memos, human oversight, and sunset criteria are the table stakes for responsible use.
+- AI without governance is risk. AI evaluation memos, human oversight, and sunset criteria are the minimum for responsible use.
 
 ### 5. Capacity and discipline
 

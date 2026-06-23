@@ -35,7 +35,7 @@ OPI is organized into four teams. Each portfolio has a clear lead and a clear sc
 | Director’s Office | Rakeim Young, Chief of Staff                   | Operating backbone: intake, portfolio visibility, communications, knowledge management, fiscal, HR, facilities, and officewide coordination. |
 | Performance       | Danny Heller, Deputy Chief Performance Officer | Owns the performance method: CitiStat routines, agency performance plans, KPI standards, follow-up.                   |
 | Data and Analytics             | Jason Howard, PhD, Deputy Chief Data Officer   | Builds trusted data infrastructure: analytics, data platform, data engineering, open data, governance, AI readiness.  |
-| Innovation Lab                 | Gabriel Watson, Innovation Program Manager | Turns service problems into designed, testable solutions: HCD, product discovery, civic tech, AI pilots, partnerships, and tiger teams. |
+| Innovation Lab                 | Gabriel Watson, Innovation Program Manager | Turns service problems into designed, testable solutions: HCD, product discovery, civic tech, AI pilots, partnerships, and Tiger Teams. |
 
 ### Five services
 
@@ -129,7 +129,7 @@ OPI’s services work as a cycle, not as silos.
 
 **Citywide Data and Analytics explains why.** Through trustworthy datasets, analytics products, and data governance.
 
-**The Innovation Lab redesigns what comes next.** Through human-centered design, prototyping, tiger teams, and digital service work.
+**The Innovation Lab redesigns what comes next.** Through human-centered design, prototyping, Tiger Teams, and digital service work.
 
 **Cross-Agency Delivery coordinates the work.** Through delivery reviews, weekly cadences, and unblock decisions.
 

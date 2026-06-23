@@ -5,7 +5,7 @@
 !!! tip "Partner agency?"
     See **[How to Engage OPI](how-to-engage-opi.md)** — how to request a service, or what to do when a CitiStat request lands on your desk.
 
-This section is everything OPI produces for Baltimore — its services, programs, and products:
+This section covers everything OPI produces for Baltimore: its services, programs, and products:
 
 - **[Services](services/index.md)** — what OPI delivers for the City: AdminOps, Citywide Performance Management, Citywide Data and Analytics, Innovation Lab, Cross-Agency Delivery
 - **[Programs](programs/index.md)** — ongoing routines that may span teams: CitiStat

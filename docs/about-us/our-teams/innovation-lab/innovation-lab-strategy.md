@@ -106,7 +106,7 @@ A growing library of components, accessibility patterns, intake flows, status co
 
 - It does not own agency operations. Agencies own service delivery, staffing, and sustained workflow adoption.
 
-- It does not own data governance, KPI definitions, or open data. Citywide Data & Analytics owns those.
+- It does not own data governance, KPI definitions, or open data. Citywide Data and Analytics owns those.
 
 - It does not own citywide narrative, Council coordination, or publication readiness. AdminOps owns those.
 
@@ -140,13 +140,13 @@ Every Lab engagement should have a clear admission test: a real problem, named u
 
 The Lab takes problems surfaced in CitiStat and converts them into discovery, design, and pilot work. It returns evidence about what worked back into the performance routine.
 
-### With Citywide Data & Analytics
+### With Citywide Data and Analytics
 
-Data & Analytics provides shared datasets, methodology cards, KPIs, and AI/data readiness review. The Lab does not maintain enterprise data infrastructure; it consumes it through clear contracts.
+Data and Analytics provides shared datasets, methodology cards, KPIs, and AI/data readiness review. The Lab does not maintain enterprise data infrastructure; it consumes it through clear contracts.
 
 ### With Cross-Agency Delivery
 
-Cross-Agency Delivery is the service overlay. The Innovation Lab owns the craft of solving; Cross-Agency Delivery owns the coordination authority when multiple agencies must ship together. The Lab is the capability, the craft team that asks *how do we solve this?* Cross-Agency Delivery owns coordination authority across agencies and asks *how do we get multiple agencies to actually ship this together?* When a Tiger Team’s work needs that overlay, the Lab provides the team and the method (the Public Innovation Toolkit), and Cross-Agency Delivery provides the standing delivery review, the named Authorizer at the Deputy Mayor or City Administrator level, and the closure plan with sustainment commitments from each agency.
+Cross-Agency Delivery is the service overlay. The Innovation Lab owns the craft of solving; Cross-Agency Delivery owns the coordination authority when multiple agencies must ship together. The Lab is the capability, the craft team that asks *how do we solve this?* Cross-Agency Delivery owns coordination authority across agencies and asks *how do we get multiple agencies to ship this together?* When a Tiger Team’s work needs that overlay, the Lab provides the team and the method (the Public Innovation Toolkit), and Cross-Agency Delivery provides the standing delivery review, the named Authorizer at the Deputy Mayor or City Administrator level, and the closure plan with sustainment commitments from each agency.
 
 ### With AdminOps
 

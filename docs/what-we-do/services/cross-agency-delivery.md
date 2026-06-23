@@ -10,7 +10,7 @@ This service coordinates selected high-priority initiatives and service-delivery
 
 **Activities include** standing up delivery routines and Tiger Teams, developing project charters and implementation plans, mapping cross-agency workflows, tracking risks and dependencies, coordinating agency commitments, supporting executive escalation, documenting decisions and follow-up actions, and helping agencies sustain improvements through standard operating procedures, training materials, and performance monitoring.
 
-It activates in three patterns, chosen to fit the problem: a **Tiger Team activation**, a **standing delivery review**, or an **embedded delivery** engagement.
+It activates in three patterns: a **Tiger Team activation**, a **standing delivery review**, or an **embedded delivery** engagement.
 
 ## The goal
 
@@ -24,7 +24,7 @@ Supported by CitiStat commitments and the agency roles required under Baltimore 
 
 - Cross-agency issues get resolved instead of drifting between departments.
 - Ownership, decision rights, and sequencing are clear before work starts.
-- Hard problems move without standing up new task forces.
+- Hard problems move without new task forces.
 - Improvements stick because sustainment is planned before delivery closes.
 
 ## What this means for people

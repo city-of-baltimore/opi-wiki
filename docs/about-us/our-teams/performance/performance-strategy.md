@@ -27,7 +27,7 @@ Every Stat should therefore end with one of five outcomes: a closed commitment, 
 
 Baltimore City is rebuilding performance management as a citywide operating system, not a reporting exercise. The purpose is to help leaders and agencies set clear priorities, measure what matters, review performance with discipline, resolve operational barriers, and deliver improvements residents can see and feel.
 
-This strategy defines how Baltimore will connect the Mayor’s priorities, agency performance plans, CitiStat routines, Citywide Data & Analytics, cross-agency delivery, budget alignment, and public reporting into one coherent system. The goal is not more meetings, dashboards, or measures. The goal is better decisions, clearer ownership, faster follow-through, and sustained service improvement.
+This strategy defines how Baltimore will connect the Mayor’s priorities, agency performance plans, CitiStat routines, Citywide Data and Analytics, cross-agency delivery, budget alignment, and public reporting into one coherent system. The goal is not more meetings, dashboards, or measures. The goal is better decisions, clearer ownership, faster follow-through, and sustained service improvement.
 
 At its best, performance management is a learning discipline. It helps government see reality clearly, act on the evidence, and keep improving. It is also a trust discipline. Residents deserve a government that is candid about what is working, honest about where systems are falling short, and disciplined about what happens next.
 
@@ -37,7 +37,7 @@ At its best, performance management is a learning discipline. It helps governmen
 
 City governments are expected to solve complex problems with urgency, transparency, and fiscal discipline. Residents experience government through the reliability of daily services: trash collection, 311 response, permits, inspections, public safety, parks, transportation, housing, water, and emergency response. When these services work, government earns trust. When they fail repeatedly, residents do not experience a single failed metric. They experience a broken promise.
 
-Baltimore has a powerful legacy in performance management through CitiStat. The next chapter must preserve that discipline while modernizing it. A current performance system has to account for cross-agency work, digital service expectations, data quality, AI readiness, resident experience, equity, and the need to connect performance to budget decisions.
+Baltimore has a powerful legacy in performance management through CitiStat. The next chapter must preserve that discipline while modernizing it. A modern performance system has to account for cross-agency work, digital service expectations, data quality, AI readiness, resident experience, equity, and the need to connect performance to budget decisions.
 
 The City already has many ingredients: mayoral priorities, agency performance measures, CitiStat sessions, public dashboards, budget performance measures, open data, agency leaders, and frontline expertise. The challenge is integration. Too often, goals, measures, meetings, budgets, dashboards, and improvement projects operate in parallel. This strategy brings them into one cycle.
 
@@ -151,9 +151,9 @@ Every effective Stat holds to the four tenets that have defined the discipline s
 
 ### CORE COMPONENT 3
 
-**Citywide Data & Analytics**
+**Citywide Data and Analytics**
 
-A performance system is only as strong as the data beneath it. Citywide Data & Analytics provides the trusted data infrastructure, analytics products, governance practices, open data stewardship, and AI readiness support that make performance management credible.
+A performance system is only as strong as the data beneath it. Citywide Data and Analytics provides the trusted data infrastructure, analytics products, governance practices, open data stewardship, and AI readiness support that make performance management credible.
 
 For priority measures, OPI will maintain a KPI dictionary with definitions, owners, formulas, sources, refresh cadences, equity cuts, and caveats. This prevents parallel definitions and helps agencies, leadership, Council, and the public understand what the numbers mean. When a metric is used in a Stat, dashboard, annual report, or budget narrative, it should map back to a documented definition.
 
@@ -181,7 +181,7 @@ OPI and the budget office should continue aligning agency performance plans, bud
 
 Public reporting should not simply publish more data. It should help residents understand what the City is trying to improve, what progress has been made, what barriers remain, and what actions are next. Reporting should be plain-language, honest, and connected to the services residents experience.
 
-Baltimore’s public performance products should include annual CitiStat reporting, priority dashboards, open datasets where appropriate, district or neighborhood views when data quality supports them, and short narrative updates that explain what changed because of performance review. The public story should avoid triumphalism. It should build trust through candor, specificity, and evidence of follow-through.
+Baltimore’s public performance products should include annual CitiStat reporting, priority dashboards, open datasets where appropriate, district or neighborhood views when data quality supports them, and short narrative updates that explain what changed because of performance review. The public story should avoid overclaiming. It should build trust through candor, specificity, and evidence of follow-through.
 
 ### GOVERNANCE AND DECISION RIGHTS
 
@@ -197,7 +197,7 @@ Clear decision rights are essential.
 
 - The budget office partners on performance measures and resource alignment.
 
-- Citywide Data & Analytics supports trusted data, dashboards, definitions, and data quality.
+- Citywide Data and Analytics supports trusted data, dashboards, definitions, and data quality.
 
 - The Innovation Lab supports service design, product discovery, and practical solutions.
 
@@ -257,7 +257,7 @@ Run an annual review of the performance system itself and adjust routines that a
 
 **A discipline, not a project**
 
-Baltimore’s performance management strategy is not about perfect dashboards or more elaborate reporting. It is about building the discipline to see clearly, decide faster, follow through, and learn. It honors the City’s CitiStat legacy while updating it for a modern government that must manage data, digital services, cross-agency delivery, public trust, and fiscal stewardship at the same time.
+Baltimore’s performance management strategy is not about perfect dashboards or more elaborate reporting. It is about building the discipline to see clearly, decide faster, follow through, and learn. It honors the City’s CitiStat legacy while updating it for a modern government that must manage data, cross-agency delivery, and public trust.
 
 > *Better government is not a one-time project. It is a discipline. This strategy is how Baltimore practices that discipline.*
 

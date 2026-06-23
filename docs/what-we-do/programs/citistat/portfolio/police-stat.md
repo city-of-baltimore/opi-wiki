@@ -9,7 +9,7 @@
 | Internal Tag                   | Public safety                                                                                                                              |
 | Executive Sponsor / Authorizer | Deputy Mayor for Public Safety                                                                                                             |
 | Primary Agency / Agencies      | Baltimore Police Department; MONSE, Law, Health, Fire, and other partners as needed                                                        |
-| OPI Operating Lead             | Director’s Office                                                                                                                          |
+| OPI Operating Lead             | Director’s Office-led                                                                                                                      |
 | OPI Support Model              | Deputy Mayor-led / OPI-supported                                                                                                           |
 | Core Data Product              | Public safety performance dashboard                                                                                                        |
 | Public Transparency Level      | Moderate to high. Publish selected trends and public safety progress with careful attention to privacy, sensitivity, and operational risk. |

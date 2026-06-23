@@ -30,7 +30,7 @@ Each of these capabilities exists because the city needs it. None of them works 
 
 I want OPI to be the kind of office that City employees are glad to work with. That means showing up prepared. Asking better questions than we are asked. Telling the truth, even when the truth is inconvenient. Respecting the time of agency partners. Following through on what we said we would do. Being clear about what we own and what we do not. And remembering, every day, that we are a small office that exists in service of a much larger City government and the residents it serves.
 
-We are also building the kind of place where talented public servants want to do the best work of their careers. That requires more than a good mission. It requires clear roles, fair expectations, real development, honest feedback, and a culture that rewards rigor and humility instead of polish and self-promotion. We are not perfect at any of this yet. We are working on it openly.
+We are also building the kind of place where talented public servants want to do the best work of their careers. That requires more than a good mission. It requires clear roles, fair expectations, real development, honest feedback, and a culture that rewards rigor and humility instead of polish and self-promotion. We are not there yet. We are working on it openly.
 
 ## A discipline, not a program
 

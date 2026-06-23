@@ -12,7 +12,7 @@
 | OPI Operating Lead             | Performance Team                                                                                           |
 | OPI Support Model              | OPI-operated / Performance Team with delivery support as needed                                            |
 | Core Data Product              | Clean Block Scorecard and cleanliness hotspot dashboard                                                    |
-| Public Transparency Level      | High. Publish public summaries, maps, what changed updates, and before / after evidence where appropriate. |
+| Public Transparency Level      | High. Publish summaries, maps, what-changed updates, and before / after evidence where appropriate. |
 
 ### Public Purpose
 

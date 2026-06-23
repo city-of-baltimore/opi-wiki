@@ -16,7 +16,7 @@ Innovation is one of the most overused words in our field. It can mean almost an
 
 It is not theater. It is civic design in action.
 
-**Civic design is how we tell the truth about a service**
+## Civic design is how we tell the truth about a service
 
 Good design starts by telling the truth about how a service actually works. That means going into the field. Talking to frontline staff. Listening to residents. Looking at the data, but not stopping there. Data can show us a pattern, but people help us understand what the pattern means.
 

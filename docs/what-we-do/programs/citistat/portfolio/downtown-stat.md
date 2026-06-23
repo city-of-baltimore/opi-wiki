@@ -16,7 +16,7 @@
 
 ### Public Purpose
 
-Downtown Stat focuses on the health, safety, cleanliness, economic vitality, and public realm conditions of Downtown Baltimore. Downtown is a civic, employment, transit, tourism, and business center, so its performance affects residents, workers, visitors, businesses, and the city’s reputation.
+Downtown Stat focuses on the health, safety, cleanliness, economic vitality, and public realm conditions of Downtown Baltimore. Downtown is a civic, employment, and business center; its performance affects residents, workers, visitors, and the city’s reputation.
 
 ### Staff Purpose
 

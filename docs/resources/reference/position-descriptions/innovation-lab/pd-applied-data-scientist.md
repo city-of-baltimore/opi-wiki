@@ -15,7 +15,7 @@
 
 ## Position Summary
 
-The Applied Data Scientist on the Innovation Lab turns service problems into tested, data-driven solutions. Where the Data and Analytics team's Applied Data Scientist anchors citywide analytics infrastructure, this role is embedded in the Lab's delivery work: it brings analysis, modeling, and applied-AI methods directly into discovery, prototyping, and tiger-team engagements so that the products the Lab ships are grounded in evidence and measurably better for residents and staff.
+The Applied Data Scientist on the Innovation Lab turns service problems into tested, data-driven solutions. Where the Data and Analytics team’s Applied Data Scientist anchors citywide analytics infrastructure, this role is embedded in the Lab’s delivery work: it brings analysis, modeling, and applied-AI methods directly into discovery, prototyping, and tiger-team engagements so that the products the Lab ships are grounded in evidence and measurably better for residents and staff.
 
 Reporting to the Innovation Program Manager, the role partners closely with the Civic Designer, the Full Stack Engineer, CitiStat analysts, and agency staff. It sits inside service problems: understanding how a service actually works, investigating the data behind it, prototyping a solution, and helping prove whether the solution moves the metric that matters.
 
@@ -31,7 +31,7 @@ Reporting to the Innovation Program Manager, the role partners closely with the 
 
 ### Prototyping, Products, and Applied AI
 
-- Build analytical prototypes, models, and decision-support features that the Full Stack Engineer can integrate into the Lab's products.
+- Build analytical prototypes, models, and decision-support features that the Full Stack Engineer can integrate into the Lab’s products.
 
 - Pilot applied-AI and machine-learning approaches in real conditions, with honest evaluation of accuracy, bias, and fitness for use.
 
@@ -75,7 +75,7 @@ Reporting to the Innovation Program Manager, the role partners closely with the 
 
 ### Education
 
-- Bachelor's degree in data science, statistics, computer science, public policy, or another data-heavy or related field. Graduate degrees where data investigation, modeling, or evaluation were central are encouraged.
+- Bachelor’s degree in data science, statistics, computer science, public policy, or another data-heavy or related field. Graduate degrees where data investigation, modeling, or evaluation were central are encouraged.
 
 ### Experience
 
@@ -87,7 +87,7 @@ An equivalent combination of education and experience will be considered.
 
 ## Working Conditions
 
-Employees in this class work a conventional work week. This position may be required to work evening and weekend hours and 24-hour callback in an emergency. Work is performed in an office where work conditions are normal. Work requires minimal physical exertion. Hybrid telework is supported under OPI's telework policy; staff are expected to be on site at City Hall a minimum of four days per week, with one day per week available as remote.
+Employees in this class work a conventional work week. This position may be required to work evening and weekend hours and 24-hour callback in an emergency. Work is performed in an office where work conditions are normal. Work requires minimal physical exertion. Hybrid telework is supported under OPI’s telework policy; staff are expected to be on site at City Hall a minimum of four days per week, with one day per week available as remote.
 
 ## Supervision
 

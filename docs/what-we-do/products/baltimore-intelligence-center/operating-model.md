@@ -39,7 +39,7 @@ The four-stage transfer model that drives this transition is described in [Capab
 
 ## Responsibility split — city vs Sand
 
-The split is read with two questions in mind: who decides, and who delivers.
+Read the split with two questions in mind: who decides, and who delivers.
 
 | **Activity**                            | **Decides**           | **Delivers (months 0–6)** | **Delivers (months 7–12)** |
 |-----------------------------------------|-----------------------|---------------------------|----------------------------|

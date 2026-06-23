@@ -9,7 +9,7 @@
 | Internal Tag                   | Workforce safety / risk / internal operations                                                                              |
 | Executive Sponsor / Authorizer | Deputy City Administrator                                                                                                  |
 | Primary Agency / Agencies      | Finance / Risk Management, DHR, DGS, DPW, DOT, BCRP, DHCD, and operational agencies                                        |
-| OPI Operating Lead             | Director’s Office                                                                                                          |
+| OPI Operating Lead             | Director’s Office-led                                                                                                      |
 | OPI Support Model              | Director’s Office-led with Performance method support                                                                      |
 | Core Data Product              | Workplace safety performance dashboard                                                                                     |
 | Public Transparency Level      | Low to moderate. Publish broad progress on safety infrastructure and readiness; keep personnel-sensitive details internal. |

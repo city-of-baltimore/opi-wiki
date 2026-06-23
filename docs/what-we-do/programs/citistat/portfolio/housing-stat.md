@@ -12,7 +12,7 @@
 | OPI Operating Lead             | Performance Team                                                                                           |
 | OPI Support Model              | OPI-operated / Performance Team                                                                            |
 | Core Data Product              | Housing and neighborhood conditions dashboard                                                              |
-| Public Transparency Level      | High. Publish public summaries, neighborhood indicators, and selected dashboards with appropriate caveats. |
+| Public Transparency Level      | High. Publish summaries, neighborhood indicators, and selected dashboards with appropriate caveats. |
 
 ### Public Purpose
 

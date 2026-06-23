@@ -38,11 +38,11 @@ Pro tip: Filter the list to only show your initiatives that you lead.
 
 3. Update the relevant fields directly in the grid
 
-4. You can also save each entry by hitting the check in each text box
+4. Save each entry by clicking the check mark in the text box.
 
 Pro tip: Exit grid view once complete (changes will auto-save).
 
-## How to Update Your Initiatives open full item panel (better for full edits)
+## How to Update Your Initiatives (Full Item Panel)
 
 - Double Click the Title of the entry.
 
@@ -74,7 +74,7 @@ leader of the initiative.
 
 - Clearly call out blockers and decisions, these are the most critical
 
-- Avoid vague updates (e.g., `working on...`), be specific about what changed
+- Avoid vague updates like `working on...`; say specifically what changed.
 
 ## Important Note
 

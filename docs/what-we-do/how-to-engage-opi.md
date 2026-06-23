@@ -2,7 +2,7 @@
 
 {{ page_header(summary="For partner agencies — how to work with OPI, request a service, and respond to a CitiStat request.", category="OPI · FOR PARTNERS") }}
 
-This page is for **partner agencies** working with the Mayor's Office of Performance and Innovation. It explains how OPI works, how to request help, and what to do when a CitiStat request lands on your desk.
+This page is for **partner agencies** working with the Mayor's Office of Performance and Innovation. It explains how OPI works, how to request help, and what to do when you receive a CitiStat request.
 
 ## How OPI works, in one minute
 
@@ -15,7 +15,7 @@ A CitiStat follow-up request means a commitment was made in a Stat and OPI is tr
 1. **You receive the request** — it names the commitment, the owner, and the due date.
 2. **Your agency's Data-Driven Officer coordinates the response** and partners with the OPI analyst on the pre-memo and follow-up.
 3. **You provide evidence of closure** — a link, a metric, or a changed process, not just a status update.
-4. **OPI tracks it until closed**; unresolved commitments stay visible until solved or escalated.
+4. **OPI tracks it until closed**; unresolved commitments stay visible until they are solved or escalated.
 
 See the [CitiStat program](programs/citistat/index.md) for how the routine works and what's expected.
 
@@ -25,7 +25,7 @@ See the [CitiStat program](programs/citistat/index.md) for how the routine works
 | --- | --- |
 | A recurring performance problem worked through leadership | [Citywide Performance Management](services/citywide-performance-management.md) / CitiStat |
 | Trustworthy data or analytics | [Citywide Data and Analytics](services/citywide-data-and-analytics.md) |
-| A service redesigned, prototyped, or a tool built | [Innovation Lab](services/innovation-lab.md) |
+| A service redesigned or prototyped, or a tool built | [Innovation Lab](services/innovation-lab.md) |
 | A stalled problem that spans multiple agencies | [Cross-Agency Delivery](services/cross-agency-delivery.md) |
 
 Cross-Agency Delivery activations need a sponsoring Authorizer at the Deputy Mayor or City Administrator level; OPI helps you frame the request and identify that sponsor.
