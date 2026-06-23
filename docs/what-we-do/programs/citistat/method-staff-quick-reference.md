@@ -20,7 +20,7 @@
 |---|---|---|
 | Executive owner | Executive Director, OPI | Sets the standard; brokers escalations; signs off on which agencies are in. |
 | Method steward | Deputy Chief Performance Officer | Owns method, calendar, QA bar, and analyst bench. |
-| Stat lead (facilitator) | OPI portfolio leader or PM | Frames the problem; runs the room; captures commitments. |
+| Stat lead (facilitator) | OPI team leader or PM | Frames the problem; runs the room; captures commitments. |
 | Lead analyst | CitiStat Analyst or PM | Builds pre-memo and data pack; owns metrics; briefs the lead. |
 | Inspector | CitiStat Inspector | Conducts ride-alongs, site visits, and ground-truth checks. |
 | Authorizer | Deputy Mayor for the cluster | Authorizes the Stat; unblocks; reinforces decisions outside the room. |

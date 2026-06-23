@@ -9,7 +9,7 @@ A **service** is what OPI delivers. It is distinct from a **team** (a group with
 | [AdminOps](admin-ops.md) | The operating backbone that keeps OPI visible, documented, and sustained | Director's Office |
 | [Citywide Performance Management](citywide-performance-management.md) | The executive performance rhythm that turns priorities into measures and commitments | Performance team (runs the [CitiStat](../programs/citistat/index.md) program) |
 | [Citywide Data and Analytics](citywide-data-and-analytics.md) | Trustworthy, decision-grade data and analytics for the City | Data and Analytics team |
-| [Innovation Lab](innovation-lab.md) | The craft of solving — design, product, and delivery methods | Innovation Lab team |
+| [Innovation Lab](innovation-lab.md) | The craft of solving — design, product, and delivery methods | Innovation Lab |
 | [Cross-Agency Delivery](cross-agency-delivery.md) | Coordination when a problem requires multiple agencies to act together | Activated through the Innovation Lab and Performance; no standing team |
 
 ## How services relate to teams, programs, and products

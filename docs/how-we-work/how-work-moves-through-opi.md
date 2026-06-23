@@ -18,7 +18,7 @@ This does not mean every issue moves through every service. Some problems stay i
 | 2. Explain the pattern | Citywide Data and Analytics | What does the evidence show, and how confident are we? | Dataset, dashboard, methodology card, data quality note, analytic brief |
 | 3. Design and test the fix | Innovation Lab | How do we solve this in a way that works for residents and staff? | Discovery memo, service blueprint, prototype, pilot, product brief, runbook |
 | 4. Coordinate implementation | Cross-Agency Delivery | How do we get multiple agencies to ship this together? | Activation memo, delivery charter, commitment ledger, decision log, escalation memo, sustainment plan |
-| 5. Keep the gain | AdminOps + responsible portfolio | How do we document, communicate, monitor, and sustain the improvement? | Closure memo, SOP, training materials, public summary, status report, knowledge-base update |
+| 5. Keep the gain | AdminOps + responsible team | How do we document, communicate, monitor, and sustain the improvement? | Closure memo, SOP, training materials, public summary, status report, knowledge-base update |
 
 ## What each service owns
 
@@ -86,8 +86,8 @@ Use these rules before creating a new meeting, workgroup, or project.
 | “The Lab owns cross-agency delivery.” | “The Lab owns the craft; Cross-Agency Delivery owns the coordination overlay.” | The Lab can solve across agencies, but delivery authority is a separate overlay. |
 | “Tiger Teams are CitiStat.” | “CitiStat may trigger a Tiger Team.” | CitiStat identifies and monitors; Tiger Teams diagnose, prototype, and pilot. |
 | “Delivery room” | “Delivery review,” “delivery cadence,” or “delivery activation” | These terms are clearer and less theatrical. |
-| “Digital Services” as a team name | “Innovation Lab” or “citywide digital services request,” depending on context | Innovation Lab is the canonical portfolio; Digital Services may describe a request channel or brand posture only when explicitly needed. |
-| “Baltimore Design Lab” as a separate portfolio | “Design community of practice within or alongside the Innovation Lab” | Avoids implying a separate office unless formally approved. |
+| “Digital Services” as a team name | “Innovation Lab” or “citywide digital services request,” depending on context | Innovation Lab is the canonical team; Digital Services may describe a request channel or brand posture only when explicitly needed. |
+| “Baltimore Design Lab” as a separate team | “Design community of practice within or alongside the Innovation Lab” | Avoids implying a separate office unless formally approved. |
 
 ## Standard handoffs
 

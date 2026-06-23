@@ -30,7 +30,7 @@ Words shape behavior. When OPI uses one word for something and an agency partner
 
 **Accela.** The platform that powers Baltimore’s permitting workflows. The FY26 permit reform priority is anchored on improving Accela’s configuration and the processes it supports.
 
-**AdminOps.** OPI’s internal backbone and administration and operations function. As a standing service run through the Director’s Office portfolio, it owns intake, project management, people operations, knowledge management, partner communications, finance, and contracts.
+**AdminOps.** OPI’s internal backbone and administration and operations function. As a standing service run through the Director’s Office, it owns intake, project management, people operations, knowledge management, partner communications, finance, and contracts.
 
 **Authorizer.** The executive who authorizes a Stat, a Tiger Team, or a Cross-Agency Delivery activation and provides the air cover the work needs. For agency-scoped work, the authorizer is the agency director. For Cross-Agency Delivery activations, the authorizer is a Deputy Mayor or the City Administrator. The authorizer is named on the charter.
 
@@ -40,7 +40,7 @@ Words shape behavior. When OPI uses one word for something and an agency partner
 
 **Charter.** The artifact that opens any new OPI project. Names the problem, sponsor, scope, team, decision rights, and intended outcome. Required for intake to advance.
 
-**CitiStat.** The city’s performance management program, established in Baltimore City Code Article 1, Subtitle 61, and operated by OPI’s Performance portfolio. See the CitiStat Method Playbook.
+**CitiStat.** The city’s performance management program, established in Baltimore City Code Article 1, Subtitle 61, and operated by OPI’s Performance team. See the CitiStat Method Playbook.
 
 **CitiStat Director.** The leader of the CitiStat Program. The Executive Director of the Mayor’s Office of Performance and Innovation serves as CitiStat Director. The Deputy Chief Performance Officer serves as Deputy Director of the program. The CitiStat Director sets program strategy, owns the citywide portfolio, and is the senior point of accountability for the routine.
 
@@ -72,7 +72,7 @@ Words shape behavior. When OPI uses one word for something and an agency partner
 
 **Delivery review.** A standing cross-agency forum that meets on a fixed cadence to drive a single multi-agency outcome — vacancies, permitting, workforce. Convened under Cross-Agency Delivery. Has a named Authorizer, a Senior Responsible Owner, the agencies at the table, and a closure plan.
 
-**Director’s Office.** OPI portfolio that hosts AdminOps, the PMO, communications, knowledge management, inspections, and officewide coordination. Led by the Chief of Staff.
+**Director’s Office.** OPI team that hosts AdminOps, the PMO, communications, knowledge management, inspections, and officewide coordination. Led by the Chief of Staff.
 
 **Executive Director.** The OPI agency head, who also serves as the city’s Chief Data Officer and Chief Performance Officer. Currently Dartanion Swift-Williams.
 
@@ -104,7 +104,7 @@ Words shape behavior. When OPI uses one word for something and an agency partner
 
 **OPI Foundations Document Set.** The series of internal reference documents that define how OPI works. Includes onboarding, operations, performance standards, charters, intake SOP, and this glossary.
 
-**OPI Operating Model.** The internal document that defines OPI’s portfolios, services, governance, and decision rights. Held by leadership; the staff version is in the Foundations Document Set.
+**OPI Operating Model.** The internal document that defines OPI’s teams, services, governance, and decision rights. Held by leadership; the staff version is in the Foundations Document Set.
 
 **OPI Wiki.** OPI’s internal knowledge base on SharePoint. The canonical home for the documents in the Foundations Document Set and active project records.
 
@@ -130,7 +130,7 @@ Words shape behavior. When OPI uses one word for something and an agency partner
 
 **Public Innovation Toolkit.** The civic innovation playbook OPI’s Innovation Lab uses for problem framing, human-centered design, product methods, and civic technology. Authored by [Bloomberg Philanthropies in partnership with the Johns Hopkins Bloomberg Center for Government Excellence](https://publicinnovation.jhu.edu/news/new-playbook-on-innovation/). OPI uses it; OPI does not own or author it.
 
-**Senior Responsible Owner (SRO).** The named accountable owner for a delivery review or a Tiger Team. Typically a Deputy Chief, an agency deputy, or an OPI portfolio lead. Owns the routine, the closure plan, and the relationship with the Authorizer. Distinct from the Authorizer, who provides air cover but does not run the work day to day.
+**Senior Responsible Owner (SRO).** The named accountable owner for a delivery review or a Tiger Team. Typically a Deputy Chief, an agency deputy, or an OPI team lead. Owns the routine, the closure plan, and the relationship with the Authorizer. Distinct from the Authorizer, who provides air cover but does not run the work day to day.
 
 **Service.** A standing capability OPI provides to the city. Five services: Citywide Performance Management; Citywide Data and Analytics; Innovation Lab; Cross-Agency Delivery; AdminOps.
 
@@ -177,9 +177,9 @@ Standard IT and HR acronyms used in the how-to guides and memos — VPN, SSO, MF
 
 These terms are easy to misuse in a way that blurs OPI's operating model. Use them only as described, and prefer the canonical language in [How Work Moves Through OPI](../../how-we-work/how-work-moves-through-opi.md).
 
-**Citywide Digital Services.** Use only when referring to brand stewardship or digital service request routing. Do not use as a synonym for the Innovation Lab, which is the canonical portfolio for OPI's service-improvement and product craft.
+**Citywide Digital Services.** Use only when referring to brand stewardship or digital service request routing. Do not use as a synonym for the Innovation Lab, which is the canonical team for OPI's service-improvement and product craft.
 
-**Baltimore Design Lab.** Treat as a design community of practice or a sub-capability within or alongside the Innovation Lab. Do not present it as a separate portfolio or office unless it is formally approved as one.
+**Baltimore Design Lab.** Treat as a design community of practice or a sub-capability within or alongside the Innovation Lab. Do not present it as a separate team or office unless it is formally approved as one.
 
 **Joint Stat.** Define on first use as a Stat that brings multiple agencies into one performance routine for a shared problem. Distinguish it from a delivery review: a Joint Stat surfaces the problem and monitors the gain; a delivery review runs the cross-agency implementation.
 

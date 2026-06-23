@@ -1,6 +1,6 @@
 # PD — Applied Data Scientist
 
-{{ page_header(summary="Position description for the Applied Data Scientist on the Innovation Lab team.") }}
+{{ page_header(summary="Position description for the Applied Data Scientist on the Innovation Lab.") }}
 
 ## At a Glance
 
@@ -15,7 +15,7 @@
 
 ## Position Summary
 
-The Applied Data Scientist on the Innovation Lab team turns service problems into tested, data-driven solutions. Where the Data and Analytics team's Applied Data Scientist anchors citywide analytics infrastructure, this role is embedded in the Lab's delivery work: it brings analysis, modeling, and applied-AI methods directly into discovery, prototyping, and tiger-team engagements so that the products the Lab ships are grounded in evidence and measurably better for residents and staff.
+The Applied Data Scientist on the Innovation Lab turns service problems into tested, data-driven solutions. Where the Data and Analytics team's Applied Data Scientist anchors citywide analytics infrastructure, this role is embedded in the Lab's delivery work: it brings analysis, modeling, and applied-AI methods directly into discovery, prototyping, and tiger-team engagements so that the products the Lab ships are grounded in evidence and measurably better for residents and staff.
 
 Reporting to the Innovation Program Manager, the role partners closely with the Civic Designer, the Full Stack Engineer, CitiStat analysts, and agency staff. It sits inside service problems — understanding how a service actually works, investigating the data behind it, prototyping a solution, and helping prove whether the solution moves the metric that matters.
 

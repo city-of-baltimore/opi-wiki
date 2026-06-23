@@ -71,6 +71,6 @@ Cross-Agency Delivery is a service overlay, not a separate team or cost center, 
 
 **Change control.** Material changes (title, classification, reporting line, scope) require Chief of Staff sign-off and HR partner review.
 
-**Review cadence.** Quarterly review by the Chief of Staff with portfolio leads. Annual sweep aligned to the budget cycle.
+**Review cadence.** Quarterly review by the Chief of Staff with team leads. Annual sweep aligned to the budget cycle.
 
 *Owned by the Chief of Staff with HR partner. Reviewed quarterly. Update whenever a position is posted, filled, vacated, or reclassified.*

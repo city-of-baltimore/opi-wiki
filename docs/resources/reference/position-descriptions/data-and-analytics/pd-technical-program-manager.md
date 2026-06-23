@@ -10,7 +10,7 @@
 | **Classification**       | Operations Manager II                                                                          |
 | **Portfolio**            | Data and Analytics                                                                             |
 | **Reports to**           | Deputy Chief Data Officer                                                                      |
-| **Supervision given**    | Coordinates cross-functional delivery for the Data and Analytics portfolio; no direct reports. |
+| **Supervision given**    | Coordinates cross-functional delivery for the Data and Analytics team; no direct reports. |
 | **Supervision received** | Reports to the Deputy Chief Data Officer.                                                      |
 
 ## Position Summary
@@ -25,7 +25,7 @@ The TPM operates as a single source of truth for the Data and Analytics team’s
 
 - Run standardized intake, producing project briefs (problem, public value, scope, interfaces/APIs, risks, and the Definition of Done).
 
-- Maintain integrated quarterly roadmaps and release calendars for the Data and Analytics portfolio.
+- Maintain integrated quarterly roadmaps and release calendars for the Data and Analytics team.
 
 - Translate needs into user stories, acceptance criteria, data contracts, API specs, observability expectations, privacy impacts, and accessibility requirements.
 
@@ -105,6 +105,6 @@ Employees in this class work a conventional work week. This position may be requ
 
 **Supervision received.** Reports to the Deputy Chief Data Officer.
 
-**Supervision given.** Coordinates cross-functional delivery for the Data and Analytics portfolio; no direct reports.
+**Supervision given.** Coordinates cross-functional delivery for the Data and Analytics team; no direct reports.
 
 *This Position Description reflects the OPI operating model. It describes the typical scope of the role and is not an exhaustive list of duties. OPI is an Equal Opportunity Employer; all qualified applicants will receive consideration without regard to race, color, religion, sex, sexual orientation, gender identity, national origin, disability, age, or veteran status.*

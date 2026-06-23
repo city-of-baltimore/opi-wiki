@@ -28,7 +28,7 @@ We are the Mayor’s Office of Performance and Innovation, a small office inside
 
 ### Four portfolios
 
-OPI is organized into four portfolios. Each portfolio has a clear lead and a clear scope.
+OPI is organized into four teams. Each portfolio has a clear lead and a clear scope.
 
 | **Portfolio**                  | **Lead**                                       | **What it does**                                                                                                       |
 |--------------------------------|------------------------------------------------|------------------------------------------------------------------------------------------------------------------------|
@@ -39,7 +39,7 @@ OPI is organized into four portfolios. Each portfolio has a clear lead and a cle
 
 ### Five services
 
-The four portfolios deliver five services. The same portfolio can support more than one service; one service is delivered as an overlay.
+The four teams deliver five services. The same portfolio can support more than one service; one service is delivered as an overlay.
 
 | **Service**                     | **One-sentence definition**                                                                                                                  |
 |---------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------|
@@ -93,9 +93,9 @@ OPI uses a single front door. Every request — from agencies, from leadership, 
 
 ### Decision rights
 
-- Each portfolio lead decides scope and pace inside their portfolio.
+- Each team lead decides scope and pace inside their portfolio.
 
-- The Executive Director decides cross-portfolio trade-offs and external commitments.
+- The Executive Director decides cross-team trade-offs and external commitments.
 
 - Any decision that affects a partner agency’s service or budget needs the agency’s sign-off, in writing.
 
@@ -113,7 +113,7 @@ OPI uses a single front door. Every request — from agencies, from leadership, 
 
 ### Escalation
 
-- Inside a portfolio: portfolio lead decides; Executive Director if blocked.
+- Inside a portfolio: team lead decides; Executive Director if blocked.
 
 - Cross-portfolio: Executive Director decides; City Administrator if blocked.
 

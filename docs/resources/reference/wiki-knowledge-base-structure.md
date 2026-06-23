@@ -101,7 +101,7 @@ The internal SharePoint KB uses six top-level pillars. Depth comes from consiste
 
 - OPI in one paragraph (mission, north star, who we report to).
 
-- Portfolios and services — the four portfolios and five services, with leads.
+- Portfolios and services — the four teams and five services, with leads.
 
 - Organization chart (current).
 
@@ -184,7 +184,7 @@ Every Wiki page and every controlled artifact carries a small set of tags so the
 |---------------------|--------------|------------------------------------------------------------|
 | Title               | Yes          | Plain language, no acronyms unless universally understood. |
 | Owner               | Yes          | A named OPI staff role (not a person’s name alone).        |
-| Service / Portfolio | Yes          | Tag to one of the five services or four portfolios.        |
+| Service / Portfolio | Yes          | Tag to one of the five services or four teams.        |
 | Last reviewed       | Yes          | Quarterly review minimum; flagged red after 6 months.      |
 | Next review         | Yes          | Date when the next review is due.                          |
 | Status              | Yes          | Draft · Active · Retired · Archived.                       |
@@ -199,7 +199,7 @@ Every Wiki page and every controlled artifact carries a small set of tags so the
 
 **Taxonomy owner (DCDO with Chief of Staff).** Owns term sets, sensitivity labels, and metadata rules.
 
-**Service owners (DCPO, DCDO, Innovation Lab portfolio lead).** Own content for their service playbooks and standards.
+**Service owners (DCPO, DCDO, Innovation Lab lead).** Own content for their service playbooks and standards.
 
 **Ops librarian (AdminOps).** Audits broken links, archives stale content, enforces naming conventions.
 
@@ -207,7 +207,7 @@ Every Wiki page and every controlled artifact carries a small set of tags so the
 
 - Weekly: ops librarian sweeps for broken links and stale items in active spaces.
 
-- Monthly: each portfolio lead reviews their playbooks and methods pages.
+- Monthly: each team lead reviews their playbooks and methods pages.
 
 - Quarterly: every page owner confirms or updates the page; site steward publishes a Change Log digest.
 

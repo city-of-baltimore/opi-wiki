@@ -37,7 +37,7 @@ The role is both strategic and operational: shaping citywide data and AI standar
 
 - Establish UX, accessibility, and equity standards for OPI-led data tools; ensure mobile-friendly, multilingual, and inclusive design.
 
-- Set the engineering bar for the Data and Analytics portfolio: code review, testing, observability, and operational reliability.
+- Set the engineering bar for the Data and Analytics team: code review, testing, observability, and operational reliability.
 
 - Partner with the Innovation Program Manager on shared product infrastructure used by the Innovation Lab.
 
@@ -53,7 +53,7 @@ The role is both strategic and operational: shaping citywide data and AI standar
 
 - Direct programs that have a broad scope and major impact on agency missions and operations.
 
-- Set budgetary direction for the Data and Analytics portfolio; manage compute, storage, security, and licensing.
+- Set budgetary direction for the Data and Analytics team; manage compute, storage, security, and licensing.
 
 - Build and align stakeholders, organizational capabilities, and resources to achieve complex objectives.
 

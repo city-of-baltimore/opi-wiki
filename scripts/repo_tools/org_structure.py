@@ -268,7 +268,7 @@ def render_org_structure(structure: OrgStructure, section: str) -> str:
 
     if section == "portfolio_table":
         lines = [
-            "| **Portfolio** | **Lead** | **Cost Center** | **Primary Value** |",
+            "| **Team** | **Lead** | **Cost Center** | **Primary Value** |",
             "|--------------------------|----------------------------------------------------------------------------------|--------------------------|----------------------------------------------------------------------------------------------------------------------------------------|",
         ]
         for portfolio in structure.portfolios:

@@ -51,7 +51,7 @@ In addition to executive support, the Operations Analyst carries a working portf
 
 - Support Innovation Lab projects and tiger teams as a working team member: scheduling, document hygiene, status updates, and small-cycle deliverables.
 
-- Carry a rotating set of small analytic and operational tasks that move the Director’s Office portfolio forward.
+- Carry a rotating set of small analytic and operational tasks that move the Director’s Office forward.
 
 - Contribute to OPI publications, one-pagers, and visual materials in plain language.
 

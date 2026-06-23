@@ -41,7 +41,7 @@ Every role at OPI sits inside this cycle. Your work will be more useful when you
 
 ### How OPI is organized
 
-OPI is organized into four portfolios. Each portfolio has a lead and is responsible for a set of services and outputs.
+OPI is organized into four teams. Each team has a lead and is responsible for a set of services and outputs.
 
 | **Portfolio**                | **Lead**                                       | **What it owns**                                                                         |
 |------------------------------|------------------------------------------------|------------------------------------------------------------------------------------------|
@@ -117,7 +117,7 @@ In your first week, the goal is to learn the system before you try to change it.
 
 Your manager will schedule introductions with key partners. The list below is a starting point — your role will determine the full set.
 
-- Your portfolio lead.
+- Your team lead.
 
 - The Chief of Staff (intake, portfolio visibility, communications).
 

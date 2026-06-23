@@ -21,7 +21,7 @@ The AdminOps service keeps OPI’s work coordinated, well-documented, properly r
 |-------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | What it is              | The administrative, operational, communications, and portfolio management functions that support the Mayor’s Office of Performance and Innovation.                                                                                     |
 | Why it matters          | A small, multidisciplinary office cannot deliver consistently without strong intake, prioritization, documentation, communications, and quality assurance. AdminOps is the discipline that makes the rest of OPI’s work hold together. |
-| Who we serve            | OPI portfolio leads and staff; agencies engaging OPI; CA, Deputy Mayors, and DCAs; Council; partners; public audiences for OPI’s narrative and artifacts.                                                                              |
+| Who we serve            | OPI team leads and staff; agencies engaging OPI; CA, Deputy Mayors, and DCAs; Council; partners; public audiences for OPI’s narrative and artifacts.                                                                              |
 | Portfolio home          | Director’s Office. Led by the Chief of Staff.                                                                                                                                                                                          |
 | What success looks like | Intake is fast and predictable; portfolio status is current; communications and narrative are coordinated; QA prevents low-quality artifacts from going public; OPI’s knowledge persists across staffing changes.                      |
 
@@ -31,7 +31,7 @@ The AdminOps service keeps OPI’s work coordinated, well-documented, properly r
 
 - Portfolio intake and tracking — single intake path, prioritization, routing, status visibility.
 
-- Project management coordination — cross-portfolio dependencies, calendaring, milestone tracking.
+- Project management coordination — cross-team dependencies, calendaring, milestone tracking.
 
 - Executive briefings — briefing books, talking points, prep for the Mayor, CA, Deputy Mayors, and DCAs.
 

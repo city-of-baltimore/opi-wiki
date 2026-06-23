@@ -10,12 +10,12 @@
 | **Classification**       | Operations Officer III                                                                                             |
 | **Portfolio**            | Director's Office                                                                                                  |
 | **Reports to**           | Chief of Staff (with frequent direct work for the Executive Director)                                              |
-| **Supervision given**    | Individual contributor; coordinates editorial and brand work across the four portfolios.                           |
+| **Supervision given**    | Individual contributor; coordinates editorial and brand work across the four teams.                           |
 | **Supervision received** | Reports to the Chief of Staff. Works directly with the Executive Director on partner and Council-facing materials. |
 
 ## Position Summary
 
-The Data Storyteller develops and stewards OPI’s external narrative, partner relationships, and editorial operations. The role builds clear, plain-language stories about OPI’s work, manages an editorial calendar across reports, dashboards, and public updates, and coordinates philanthropic and civic partnerships that extend OPI’s reach. The position prepares talking points and materials for the Executive Director and OPI leadership, supports grant concepts and proposals, and works with the four portfolios to translate analysis and product work into materials that residents, agency partners, City Council members, and funders can use.
+The Data Storyteller develops and stewards OPI’s external narrative, partner relationships, and editorial operations. The role builds clear, plain-language stories about OPI’s work, manages an editorial calendar across reports, dashboards, and public updates, and coordinates philanthropic and civic partnerships that extend OPI’s reach. The position prepares talking points and materials for the Executive Director and OPI leadership, supports grant concepts and proposals, and works with the four teams to translate analysis and product work into materials that residents, agency partners, City Council members, and funders can use.
 
 ## Key Responsibilities
 
@@ -103,6 +103,6 @@ Employees in this class work a conventional work week. Work is performed in an o
 
 **Supervision received.** Reports to the Chief of Staff. Works directly with the Executive Director on partner and Council-facing materials.
 
-**Supervision given.** Individual contributor; coordinates editorial and brand work across the four portfolios.
+**Supervision given.** Individual contributor; coordinates editorial and brand work across the four teams.
 
 *This Position Description reflects the OPI operating model. It describes the typical scope of the role and is not an exhaustive list of duties. OPI is an Equal Opportunity Employer; all qualified applicants will receive consideration without regard to race, color, religion, sex, sexual orientation, gender identity, national origin, disability, age, or veteran status.*

@@ -168,7 +168,7 @@ A starting list of common onboarding sessions. Adapt based on role and portfolio
 | **Session**                                  | **Who**                       | **Length** | **Purpose**                                                                     |
 |----------------------------------------------|-------------------------------|------------|---------------------------------------------------------------------------------|
 | Welcome meeting                              | Manager                       | 30–45 min  | Introductions and what to expect in the first week.                             |
-| OPI overview and meet the Executive Director | Executive Director            | 30 min     | Office mission, four portfolios, five services, and the cycle.                  |
+| OPI overview and meet the Executive Director | Executive Director            | 30 min     | Office mission, four teams, five services, and the cycle.                  |
 | City Government 101                          | Director’s Office             | 30 min     | Who’s who in Baltimore City government and how decisions move.                  |
 | CitiStat overview and a session observation  | Performance lead | 60–90 min  | Method, cadence, pre-reads, follow-up. Observe a real session.                  |
 | Data and Analytics overview                  | Data and Analytics lead       | 30 min     | Platform, governance, open data, and how analytics feed CitiStat and the Lab.   |
@@ -176,7 +176,7 @@ A starting list of common onboarding sessions. Adapt based on role and portfolio
 | AdminOps and operating cadence               | Chief of Staff                | 30 min     | Intake, charters, portfolio view, weekly Ops Review, monthly Portfolio Council. |
 | HR and benefits orientation                  | City HR                       | 60 min     | Benefits enrollment, time and leave, Workday basics.                            |
 | BCIT onboarding                              | BCIT or designated IT contact | 60 min     | IT account setup, security, MFA, software requests, and trouble tickets.        |
-| Coffee chats                                 | OPI peers                     | 15–30 min  | Informal time with peers across portfolios.                                     |
+| Coffee chats                                 | OPI peers                     | 15–30 min  | Informal time with peers across teams.                                     |
 
 ## Appendix B. Common software and access
 

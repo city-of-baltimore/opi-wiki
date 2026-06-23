@@ -16,15 +16,15 @@ Every role on the team has a published position description. The full index live
 ## Team Roster
 
 This page is the internal roster reference. For the public-facing narrative, team
-methods, and portfolio pages, start in [Our Teams](../../../our-teams/index.md).
+methods, and team pages, start in [Our Teams](../../../our-teams/index.md).
 
 For the visual leadership org chart and reporting lines, see [Org Structure](../org-structure.md).
 
 ## How to read this document
 
-This roster lists every active and pending OPI position. Roles are grouped by portfolio — the team a person works with day to day — and labeled by cost center — the budget line that funds the position. Portfolios and cost centers do not always match one-to-one; the Director’s Office, for example, includes positions funded under AdminOps and positions funded under the Innovation Lab cost center.
+This roster lists every active and pending OPI position. Roles are grouped by team — the people a person works with day to day — and labeled by cost center — the budget line that funds the position. Teams and cost centers do not always match one-to-one; the Director’s Office, for example, includes positions funded under AdminOps and positions funded under the Innovation Lab cost center.
 
-Each refined Position Description is filed alongside this roster in the same folder, by portfolio.
+Each refined Position Description is filed alongside this roster in the same folder, by team.
 
 > *Respond when necessary. Build so we do not have to respond again.*
 
@@ -35,7 +35,7 @@ Each refined Position Description is filed alongside this roster in the same fol
 | **Total positions**     | 22                                                                                  |
 | **Filled**              | 21                                                                                  |
 | **Open / unfilled**     | 1                                                                                   |
-| **Portfolios**          | 4 (Director’s Office, Innovation Lab, Performance, Data and Analytics) |
+| **Teams**               | 4 (Director’s Office, Innovation Lab, Performance, Data and Analytics) |
 | **Cost centers**        | 4 (AdminOps, Innovation Lab, Performance Management, Data and Analytics)            |
 | **Executive sponsor**   | Mayor Brandon M. Scott via City Administrator Faith P. Leach                        |
 
@@ -51,7 +51,7 @@ Each refined Position Description is filed alongside this roster in the same fol
     | Deputy Chief Data Officer                 | Jason Howard, PhD        | Executive Director | 114589  |
     | Innovation Program Manager                | Gabriel Watson           | Executive Director | 115655  |
 
-## Roster by Portfolio
+## Roster by Team
 
 ??? info "Director's Office roster"
 
@@ -97,11 +97,11 @@ Each refined Position Description is filed alongside this roster in the same fol
 
 ??? info "Cost center view"
 
-    OPI’s budget is organized into four cost centers. The same person may sit on a portfolio team that does not match their cost center — for example, the Operations Analyst currently sits in the Director’s Office portfolio while remaining funded in the Innovation Lab cost center.
+    OPI’s budget is organized into four cost centers. The same person may sit on a team that does not match their cost center — for example, the Operations Analyst currently sits in the Director’s Office while remaining funded in the Innovation Lab cost center.
 
     **AdminOps (CCA001472)**
 
-    | **Working title**                         | **Incumbent**            | **Portfolio**     | **PIN** |
+    | **Working title**                         | **Incumbent**            | **Team**     | **PIN** |
     |-------------------------------------------|--------------------------|-------------------|---------|
     | Executive Director and Chief Data Officer | Dartanion Swift-Williams | Director's Office | 15961   |
     | Chief of Staff                            | Rakeim Young             | Director's Office | 50053   |
@@ -110,7 +110,7 @@ Each refined Position Description is filed alongside this roster in the same fol
 
     **Data and Analytics (CCA001472)**
 
-    | **Working title**           | **Incumbent**         | **Portfolio**      | **PIN** |
+    | **Working title**           | **Incumbent**         | **Team**      | **PIN** |
     |-----------------------------|-----------------------|--------------------|---------|
     | Deputy Chief Data Officer   | Jason Howard, PhD     | Data and Analytics | 114589  |
     | Technical Program Manager   | Roberto Herbruger     | Data and Analytics | 115408  |
@@ -120,7 +120,7 @@ Each refined Position Description is filed alongside this roster in the same fol
 
     **Innovation Lab (CCA001472)**
 
-    | **Working title**                              | **Incumbent**             | **Portfolio**     | **PIN** |
+    | **Working title**                              | **Incumbent**             | **Team**     | **PIN** |
     |------------------------------------------------|---------------------------|-------------------|---------|
     | Operations Analyst                             | Derek Thomas              | Director's Office        | 70432   |
     | Data Storyteller                               | Audrey Randazzo           | Director's Office | 53413   |
@@ -130,7 +130,7 @@ Each refined Position Description is filed alongside this roster in the same fol
 
     **Performance Management (CCA001472)**
 
-    | **Working title**                | **Incumbent**        | **Portfolio**            | **PIN** |
+    | **Working title**                | **Incumbent**        | **Team**            | **PIN** |
     |----------------------------------|----------------------|--------------------------|---------|
     | Deputy Chief Performance Officer | Danny Heller         | Performance | 54340   |
     | CitiStat Program Manager         | Darren Lu            | Performance | 15971   |
@@ -142,8 +142,8 @@ Each refined Position Description is filed alongside this roster in the same fol
 
 ??? info "Open positions"
 
-    | **Title**                  | **Status**          | **Portfolio**            | **PIN / Status** |
+    | **Title**                  | **Status**          | **Team**            | **PIN / Status** |
     |----------------------------|---------------------|--------------------------|------------------|
     | Senior Performance Analyst | Open — to be posted | Performance        | 115657           |
 
-*This roster reflects the OPI operating model. Position descriptions for every role listed here are filed in the OPI Foundations / Position Descriptions folder, organized by portfolio. PIN numbers and budget detail come from the City’s authoritative position file.*
+*This roster reflects the OPI operating model. Position descriptions for every role listed here are filed in the OPI Foundations / Position Descriptions folder, organized by team. PIN numbers and budget detail come from the City’s authoritative position file.*
