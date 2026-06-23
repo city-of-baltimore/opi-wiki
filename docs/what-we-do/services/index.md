@@ -20,6 +20,7 @@ A **service** is what OPI delivers. It is distinct from a **team** (a group with
 
 ## Read alongside
 
+- [Service Crosswalk](../../resources/reference/service-crosswalk.md) — mandate → goal → outcomes for all five services, on one page
 - [How Work Moves Through OPI](../../how-we-work/how-work-moves-through-opi.md) — the signal-to-solution loop across all five services
 - [Our Teams](../../our-teams/index.md)
 - [Glossary of OPI Terms](../../resources/reference/glossary.md)
