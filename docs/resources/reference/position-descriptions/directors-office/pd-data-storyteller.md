@@ -10,12 +10,12 @@
 | **Classification**       | Operations Officer III                                                                                             |
 | **Portfolio**            | Director's Office                                                                                                  |
 | **Reports to**           | Chief of Staff (with frequent direct work for the Executive Director)                                              |
-| **Supervision given**    | Individual contributor; coordinates editorial and brand work across the four portfolios.                           |
+| **Supervision given**    | Individual contributor; coordinates editorial and brand work across the four teams.                           |
 | **Supervision received** | Reports to the Chief of Staff. Works directly with the Executive Director on partner and Council-facing materials. |
 
 ## Position Summary
 
-The Data Storyteller develops and stewards OPI’s external narrative, partner relationships, and editorial operations. The role builds clear, plain-language stories about OPI’s work, manages an editorial calendar across reports, dashboards, and public updates, and coordinates philanthropic and civic partnerships that extend OPI’s reach. The position prepares talking points and materials for the Executive Director and OPI leadership, supports grant concepts and proposals, and works with the four portfolios to translate analysis and product work into materials that residents, agency partners, City Council members, and funders can use.
+The Data Storyteller develops and stewards OPI’s external narrative, partner relationships, and editorial operations. The role builds clear, plain-language stories about OPI’s work, manages an editorial calendar across reports, dashboards, and public updates, and coordinates philanthropic and civic partnerships that extend OPI’s reach. The position prepares talking points and materials for the Executive Director and OPI leadership and supports grant concepts and proposals. It works with the four teams to translate analysis and product work into materials that residents, agency partners, City Council members, and funders can use.
 
 ## Key Responsibilities
 
@@ -53,7 +53,7 @@ The Data Storyteller develops and stewards OPI’s external narrative, partner r
 
 - Maintain OPI’s brand kit and document templates in partnership with the Chief of Staff and the rest of the Director’s Office team.
 
-- Operate OPI’s publication QA process; uphold the Bloomberg/HKS-grade quality bar across deliverables.
+- Operate OPI’s publication QA process; uphold OPI's publication quality bar across deliverables.
 
 ## Knowledge, Skills, and Abilities
 
@@ -97,12 +97,12 @@ An equivalent combination of education and experience will be considered.
 
 ## Working Conditions
 
-Employees in this class work a conventional work week. Work is performed in an office where work conditions are normal. Work requires minimal physical exertion. Hybrid telework is supported under OPI’s telework policy; staff are expected to be on site at City Hall a minimum of four days per week, with one day per week available as remote.
+Employees in this class work a conventional work week. This position may be required to work evening and weekend hours and 24-hour callback in an emergency. Work is performed in an office where work conditions are normal. Work requires minimal physical exertion. Hybrid telework is supported under OPI’s telework policy; staff are expected to be on site at City Hall a minimum of four days per week, with one day per week available as remote.
 
 ## Supervision
 
 **Supervision received.** Reports to the Chief of Staff. Works directly with the Executive Director on partner and Council-facing materials.
 
-**Supervision given.** Individual contributor; coordinates editorial and brand work across the four portfolios.
+**Supervision given.** Individual contributor; coordinates editorial and brand work across the four teams.
 
 *This Position Description reflects the OPI operating model. It describes the typical scope of the role and is not an exhaustive list of duties. OPI is an Equal Opportunity Employer; all qualified applicants will receive consideration without regard to race, color, religion, sex, sexual orientation, gender identity, national origin, disability, age, or veteran status.*

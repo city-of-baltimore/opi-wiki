@@ -32,7 +32,7 @@ def test_render_badge_rejects_unknown_badge_tokens() -> None:
 def test_define_env_registers_badge_macros() -> None:
     """The macros module should expose both explicit and page-derived badges."""
 
-    env = register_macros("how-we-work/operations/charter-template.md")
+    env = register_macros("how-we-work/handbook/operations/charter-template.md")
 
     assert str(env.macros["badge"]("reference")) == (
         '<span class="opi-pill internal">Reference</span>'
@@ -57,7 +57,7 @@ def test_badge_pages_retain_metadata_backing() -> None:
 
     badge_pages = [
         DOCS_DIR / "resources/reference/wiki-knowledge-base-structure.md",
-        DOCS_DIR / "how-we-work/onboarding/maps-benefits-quick-guide.md",
+        DOCS_DIR / "how-we-work/handbook/onboarding/maps-benefits-quick-guide.md",
         DOCS_DIR
         / "resources/reference/position-descriptions/directors-office/"
         "pd-project-manager.md",

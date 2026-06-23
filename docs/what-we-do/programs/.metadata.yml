@@ -1,0 +1,6 @@
+defaults:
+  owner: CitiStat Director
+  status: approved
+  last_reviewed: 2026-06-22
+  next_review: 2026-09-22
+  change_log: Established Programs as a top-level section; CitiStat is a program supported by all OPI teams.

@@ -10,7 +10,7 @@
 | **Classification**       | Operations Director II                                                                                                                                                                                                                                                                      |
 | **Portfolio**            | Data and Analytics                                                                                                                                                                                                                                                                          |
 | **Reports to**           | Executive Director and Chief Data Officer                                                                                                                                                                                                                                                   |
-| **Supervision given**    | Provides executive oversight to the Technical Program Manager, the Analytics Lead, the Principal Data Engineer, the Principal Platform Engineer, and the Senior Data Engineer. Indirectly supervises a wider technical, professional, and administrative staff. |
+| **Supervision given**    | Provides executive oversight to the Technical Program Manager, the Applied Data Scientist, the Principal Data Engineer, and the Senior Data Engineer. Indirectly supervises a wider technical, professional, and administrative staff. |
 | **Supervision received** | Reports to the Executive Director and Chief Data Officer of OPI.                                                                                                                                                                                                                            |
 
 ## Position Summary
@@ -23,7 +23,7 @@ The role is both strategic and operational: shaping citywide data and AI standar
 
 ### Data and AI Leadership
 
-- Set the citywide strategy for data governance, pipelines, lineage, and adoption — paving the way for trusted, transparent, and responsible data infrastructure.
+- Set the citywide strategy for data governance, pipelines, lineage, and adoption, to build trusted, transparent, and responsible data infrastructure.
 
 - Oversee the Data Platform and AI program, including warehouse ingestion, testing, lineage, and monitoring, with SLAs for citywide datasets.
 
@@ -37,7 +37,7 @@ The role is both strategic and operational: shaping citywide data and AI standar
 
 - Establish UX, accessibility, and equity standards for OPI-led data tools; ensure mobile-friendly, multilingual, and inclusive design.
 
-- Set the engineering bar for the Data and Analytics portfolio: code review, testing, observability, and operational reliability.
+- Set the engineering bar for the Data and Analytics team: code review, testing, observability, and operational reliability.
 
 - Partner with the Innovation Program Manager on shared product infrastructure used by the Innovation Lab.
 
@@ -53,17 +53,17 @@ The role is both strategic and operational: shaping citywide data and AI standar
 
 - Direct programs that have a broad scope and major impact on agency missions and operations.
 
-- Set budgetary direction for the Data and Analytics portfolio; manage compute, storage, security, and licensing.
+- Set budgetary direction for the Data and Analytics team; manage compute, storage, security, and licensing.
 
 - Build and align stakeholders, organizational capabilities, and resources to achieve complex objectives.
 
-- Ensure compliance with citywide policy through subordinate managers; integrate information from all sources to communicate a well-informed, diverse perspective.
+- Ensure compliance with citywide policy through subordinate managers, drawing on information from data engineering, analytics, and agency partners to inform decisions.
 
 ## Knowledge, Skills, and Abilities
 
 ### Data and AI leadership
 
-- Visionary leadership in data governance, AI, analytics, and digital platforms.
+- Proven leadership in data governance, AI, analytics, and digital platforms.
 
 - Deep expertise in data engineering, open-data strategy, AI evaluation, and data-product delivery.
 
@@ -117,6 +117,6 @@ Employees in this class work a conventional work week. This position may be requ
 
 **Supervision received.** Reports to the Executive Director and Chief Data Officer of OPI.
 
-**Supervision given.** Provides executive oversight to the Technical Program Manager, the Analytics Lead, the Principal Data Engineer, the Principal Platform Engineer, and the Senior Data Engineer. Indirectly supervises a wider technical, professional, and administrative staff.
+**Supervision given.** Provides executive oversight to the Technical Program Manager, the Applied Data Scientist, the Principal Data Engineer, and the Senior Data Engineer. Indirectly supervises a wider technical, professional, and administrative staff.
 
 *This Position Description reflects the OPI operating model. It describes the typical scope of the role and is not an exhaustive list of duties. OPI is an Equal Opportunity Employer; all qualified applicants will receive consideration without regard to race, color, religion, sex, sexual orientation, gender identity, national origin, disability, age, or veteran status.*

@@ -63,6 +63,10 @@ def build_steps(
             command=(python, "scripts/check_brand_terms.py"),
         ),
         VerifyStep(
+            name="Checking page consistency",
+            command=(python, "scripts/check_consistency.py"),
+        ),
+        VerifyStep(
             name="Building MkDocs site with strict validation",
             command=(python, "-m", "mkdocs", "build", "--strict"),
         ),

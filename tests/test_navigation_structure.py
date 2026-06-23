@@ -7,43 +7,47 @@ from pathlib import Path
 REPO_ROOT = Path(__file__).resolve().parents[1]
 
 TEAM_NAV_FILES = [
-    REPO_ROOT / "docs/our-teams/directors-office/.pages",
-    REPO_ROOT / "docs/our-teams/performance-and-citistat/.pages",
-    REPO_ROOT / "docs/our-teams/data-and-analytics/.pages",
+    REPO_ROOT / "docs/about-us/our-teams/directors-office/.pages",
+    REPO_ROOT / "docs/about-us/our-teams/performance/.pages",
+    REPO_ROOT / "docs/about-us/our-teams/data-and-analytics/.pages",
 ]
 
 TEAM_LANDING_PAGES = [
-    REPO_ROOT / "docs/our-teams/directors-office/index.md",
-    REPO_ROOT / "docs/our-teams/performance-and-citistat/index.md",
-    REPO_ROOT / "docs/our-teams/data-and-analytics/index.md",
-    REPO_ROOT / "docs/our-teams/innovation-lab/index.md",
+    REPO_ROOT / "docs/about-us/our-teams/directors-office/index.md",
+    REPO_ROOT / "docs/about-us/our-teams/performance/index.md",
+    REPO_ROOT / "docs/about-us/our-teams/data-and-analytics/index.md",
+    REPO_ROOT / "docs/about-us/our-teams/innovation-lab/index.md",
 ]
 
 OLD_TEAM_PD_DIRS = [
-    REPO_ROOT / "docs/our-teams/directors-office",
-    REPO_ROOT / "docs/our-teams/performance-and-citistat",
-    REPO_ROOT / "docs/our-teams/data-and-analytics",
+    REPO_ROOT / "docs/about-us/our-teams/directors-office",
+    REPO_ROOT / "docs/about-us/our-teams/performance",
+    REPO_ROOT / "docs/about-us/our-teams/data-and-analytics",
 ]
 
 POSITION_DESCRIPTIONS_DIR = REPO_ROOT / "docs/resources/reference/position-descriptions"
 
 NAV_TITLE_EXPECTATIONS = {
     REPO_ROOT / "docs/about-us/.pages": "About Us",
-    REPO_ROOT / "docs/about-us/about-opi/.pages": "About OPI",
     REPO_ROOT / "docs/about-us/letters-from-the-director/.pages": "Letters from the Director",
     REPO_ROOT / "docs/how-we-work/.pages": "How We Work",
-    REPO_ROOT / "docs/how-we-work/onboarding/.pages": "Onboarding",
-    REPO_ROOT / "docs/how-we-work/operations/.pages": "Operations",
-    REPO_ROOT / "docs/how-we-work/team-and-roles/.pages": "Team and Roles",
-    REPO_ROOT / "docs/our-teams/.pages": "Our Teams",
-    REPO_ROOT / "docs/our-teams/directors-office/.pages": "Director's Office",
-    REPO_ROOT / "docs/our-teams/performance-and-citistat/.pages": "Performance",
+    REPO_ROOT / "docs/how-we-work/organization/.pages": "Organization",
+    REPO_ROOT / "docs/how-we-work/handbook/.pages": "Handbook",
+    REPO_ROOT / "docs/how-we-work/handbook/onboarding/.pages": "Onboarding",
+    REPO_ROOT / "docs/how-we-work/handbook/operations/.pages": "Operations",
+    REPO_ROOT / "docs/how-we-work/organization/team-and-roles/.pages": "Team and Roles",
+    REPO_ROOT / "docs/about-us/our-teams/.pages": "Our Teams",
+    REPO_ROOT / "docs/about-us/our-teams/directors-office/.pages": "Director's Office",
+    REPO_ROOT / "docs/about-us/our-teams/performance/.pages": "Performance",
+    REPO_ROOT / "docs/about-us/our-teams/innovation-lab/.pages": "Innovation Lab",
+    REPO_ROOT / "docs/about-us/our-teams/data-and-analytics/.pages": "Data and Analytics",
+    REPO_ROOT / "docs/what-we-do/.pages": "What We Do",
+    REPO_ROOT / "docs/what-we-do/services/.pages": "Services",
+    REPO_ROOT / "docs/what-we-do/programs/.pages": "Programs",
+    REPO_ROOT / "docs/what-we-do/programs/citistat/.pages": "CitiStat",
     REPO_ROOT
-    / "docs/our-teams/performance-and-citistat/citistat-portfolio/.pages": "CitiStat Portfolio",
-    REPO_ROOT / "docs/our-teams/cross-agency-delivery/.pages": "Cross-Agency Delivery",
-    REPO_ROOT / "docs/our-teams/innovation-lab/.pages": "Innovation Lab",
-    REPO_ROOT / "docs/our-teams/data-and-analytics/.pages": "Data and Analytics",
-    REPO_ROOT / "docs/public/.pages": "Public",
+    / "docs/what-we-do/programs/citistat/portfolio/.pages": "CitiStat Portfolio",
+    REPO_ROOT / "docs/what-we-do/products/.pages": "Products",
     REPO_ROOT / "docs/resources/.pages": "Resources",
     REPO_ROOT / "docs/resources/reference/.pages": "Reference",
     REPO_ROOT
@@ -53,9 +57,7 @@ NAV_TITLE_EXPECTATIONS = {
     REPO_ROOT
     / "docs/resources/reference/position-descriptions/innovation-lab/.pages": "Innovation Lab",
     REPO_ROOT
-    / "docs/resources/reference/position-descriptions/performance-and-citistat/.pages": (
-        "Performance"
-    ),
+    / "docs/resources/reference/position-descriptions/performance/.pages": "Performance",
     REPO_ROOT
     / "docs/resources/reference/position-descriptions/data-and-analytics/.pages": (
         "Data and Analytics"

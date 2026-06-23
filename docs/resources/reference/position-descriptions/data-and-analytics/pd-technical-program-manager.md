@@ -10,14 +10,14 @@
 | **Classification**       | Operations Manager II                                                                          |
 | **Portfolio**            | Data and Analytics                                                                             |
 | **Reports to**           | Deputy Chief Data Officer                                                                      |
-| **Supervision given**    | Coordinates cross-functional delivery for the Data and Analytics portfolio; no direct reports. |
+| **Supervision given**    | Coordinates cross-functional delivery for the Data and Analytics team; no direct reports. |
 | **Supervision received** | Reports to the Deputy Chief Data Officer.                                                      |
 
 ## Position Summary
 
 The Technical Program Manager (TPM) leads cross-functional delivery for the Deputy Chief Data Officer’s portfolio: citywide data and analytics, data governance, and OPI-led data products. The role helps the City deliver tools and data products that make services more transparent, efficient, and accessible to residents. The TPM owns portfolio roadmaps, technical requirements, delivery cadence, risk and issue management, quality assurance, and user-acceptance testing, and coordinates closely with Baltimore City Information Technology (BCIT) on change control.
 
-The TPM operates as a single source of truth for the Data and Analytics team’s portfolio using agile project-management tools (such as Jira) and the OPI SharePoint operating system. The TPM ensures that the team ships reliable increments on a predictable cadence with acceptance evidence and stable operations — and measures impact post-release, including data quality, adoption, and resident value.
+The TPM keeps a single, current view of the Data and Analytics team’s portfolio using agile project-management tools (such as Jira) and the OPI SharePoint operating system. The TPM makes sure the team ships reliable increments on a predictable cadence with acceptance evidence and stable operations, and measures impact post-release, including data quality, adoption, and resident value.
 
 ## Key Responsibilities
 
@@ -25,7 +25,7 @@ The TPM operates as a single source of truth for the Data and Analytics team’s
 
 - Run standardized intake, producing project briefs (problem, public value, scope, interfaces/APIs, risks, and the Definition of Done).
 
-- Maintain integrated quarterly roadmaps and release calendars for the Data and Analytics portfolio.
+- Maintain integrated quarterly roadmaps and release calendars for the Data and Analytics team.
 
 - Translate needs into user stories, acceptance criteria, data contracts, API specs, observability expectations, privacy impacts, and accessibility requirements.
 
@@ -105,6 +105,6 @@ Employees in this class work a conventional work week. This position may be requ
 
 **Supervision received.** Reports to the Deputy Chief Data Officer.
 
-**Supervision given.** Coordinates cross-functional delivery for the Data and Analytics portfolio; no direct reports.
+**Supervision given.** Coordinates cross-functional delivery for the Data and Analytics team; no direct reports.
 
 *This Position Description reflects the OPI operating model. It describes the typical scope of the role and is not an exhaustive list of duties. OPI is an Equal Opportunity Employer; all qualified applicants will receive consideration without regard to race, color, religion, sex, sexual orientation, gender identity, national origin, disability, age, or veteran status.*

@@ -1,0 +1,16 @@
+- meta: Team
+  title: "Director's Office"
+  body: "The Executive Director's office and the AdminOps function."
+  href: directors-office/
+- meta: Team
+  title: "Performance"
+  body: "The team that runs citywide performance management and supports the CitiStat program."
+  href: performance/
+- meta: Team
+  title: "Innovation Lab"
+  body: "The team that brings innovation discipline and digital product methodology to city government."
+  href: innovation-lab/
+- meta: Team
+  title: "Data and Analytics"
+  body: "The team that runs data governance, analytics, and data engineering across the city."
+  href: data-and-analytics/

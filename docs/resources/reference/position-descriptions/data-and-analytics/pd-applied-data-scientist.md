@@ -8,7 +8,6 @@
 |--------------------------|--------------------------------------------------------------------------------------------------|
 | **Working title**        | Applied Data Scientist                                                    |
 | **Classification**       | Operations Officer V                                                                              |
-| **Compensation range**   | $95,494 – $152,721                                                                                |
 | **Portfolio**            | Data and Analytics                                                                                |
 | **Reports to**           | Deputy Chief Data Officer                                                                         |
 | **Supervision given**    | Senior individual contributor; mentors analysts and provides technical leadership across the team. |
@@ -16,11 +15,11 @@
 
 ## Position Summary
 
-The Applied Data Scientist serves as a senior data practitioner within the Mayor's Office of Performance and Innovation (OPI), responsible for leading applied analytics, data investigation, and decision-ready data products that support priority city initiatives. The position combines the hands-on analytical depth of an applied data scientist with the judgment, stakeholder partnership, and technical leadership expected of a senior analytics lead.
+The Applied Data Scientist serves as a senior data practitioner within the Mayor’s Office of Performance and Innovation (OPI), responsible for leading applied analytics, data investigation, and decision-ready data products that support priority city initiatives. The position combines the hands-on analytical depth of an applied data scientist with the judgment, stakeholder partnership, and technical leadership expected of a senior analytics lead.
 
-This role is designed for someone who can move comfortably between messy city datasets, operational field realities, and executive decision-making. A successful candidate should be equally comfortable sitting with program staff to understand how a service actually works, writing SQL or Python to investigate the underlying data, developing models or geospatial analyses where appropriate, and translating findings into clear guidance, reusable tools, and follow-through actions.
+The role moves between messy city datasets, operational field realities, and executive decision-making: sitting with program staff to understand how a service actually works, writing SQL or Python to investigate the underlying data, developing models or geospatial analyses where appropriate, and translating findings into clear guidance, reusable tools, and follow-through actions.
 
-Reporting to the Deputy Chief Data Officer, the role works closely with OPI's data engineers, platform engineers, CitiStat analysts, product and design staff, and agency partners. It leads complex analytical work, mentors staff on analytical methods, helps define data standards and reusable practices, and contributes to citywide data, open data, GIS, and AI-readiness initiatives.
+Reporting to the Deputy Chief Data Officer, the role works closely with OPI’s data engineers, platform engineers, CitiStat analysts, product and design staff, and agency partners. It leads complex analytical work, mentors staff on analytical methods, helps define data standards and reusable practices, and contributes to citywide data, open data, GIS, and AI-readiness initiatives.
 
 ## Key Responsibilities
 
@@ -48,7 +47,7 @@ Reporting to the Deputy Chief Data Officer, the role works closely with OPI's da
 
 - Collaborate with data and platform engineers to integrate products with the citywide data platform, establish refresh schedules, validate outputs, and support observability and data-quality monitoring.
 
-- Apply iterative, Agile-style approaches to analytical and product work: moving quickly, learning from stakeholder feedback, refining continuously, and prioritizing practical impact over methodological formality.
+- Work iteratively: move quickly, learn from stakeholder feedback, and prioritize practical impact over methodological formality.
 
 ### GIS, Spatial Analytics, and Open Data
 
@@ -64,7 +63,7 @@ Reporting to the Deputy Chief Data Officer, the role works closely with OPI's da
 
 - Serve as a senior data subject-matter expert and trusted partner to OPI leadership, CitiStat staff, agency partners, and citywide data practitioners.
 
-- Translate complex findings for non-technical audiences and prepare concise briefs, slides, memos, maps, and executive-ready materials for agency leaders, the Mayor's Office, City Council, and other stakeholders.
+- Translate complex findings for non-technical audiences and prepare concise briefs, slides, memos, maps, and executive-ready materials for agency leaders, the Mayor’s Office, City Council, and other stakeholders.
 
 - Build trust with operational and program staff by asking the right questions, validating findings against frontline reality, and developing a working understanding of how city services function.
 
@@ -78,11 +77,11 @@ Reporting to the Deputy Chief Data Officer, the role works closely with OPI's da
 
 - Create reusable templates, examples, and analytical patterns to accelerate future analyses, dashboards, data products, and open data releases.
 
-- Participate in code reviews, data-quality reviews, and method reviews; share lessons learned and contribute to OPI's documentation and knowledge-management culture.
+- Participate in code reviews, data-quality reviews, and method reviews; share lessons learned and contribute to OPI’s documentation and knowledge-management culture.
 
 - Support data governance by documenting definitions, lineage, refresh cadence, quality constraints, and appropriate use for priority datasets and metrics.
 
-- Perform other related duties as assigned to support OPI's mission, innovation agenda, and citywide data strategy.
+- Perform other related duties as assigned to support OPI’s mission, innovation agenda, and citywide data strategy.
 
 ## Knowledge, Skills, and Abilities
 
@@ -116,13 +115,13 @@ Reporting to the Deputy Chief Data Officer, the role works closely with OPI's da
 
 - Ability to research and write complex narrative and statistical reports, present recommendations clearly, and speak effectively before governmental bodies, media, community groups, and business groups.
 
-- Self-starter with a commitment to continuous learning, stakeholder partnership, documentation, follow-through, and delivering tangible impact through data.
+- Commitment to continuous learning, stakeholder partnership, documentation, follow-through, and measurable results.
 
 ## Minimum Qualifications
 
 ### Education
 
-- Bachelor's degree in data science, statistics, economics, computer science, public policy, urban planning, geography, natural sciences, or another data-heavy or related field. Candidates with graduate degrees where data investigation, analysis, modeling, policy evaluation, or spatial analysis were central to their research are encouraged to apply.
+- Bachelor’s degree in data science, statistics, economics, computer science, public policy, urban planning, geography, natural sciences, or another data-heavy or related field. Candidates with graduate degrees where data investigation, analysis, modeling, policy evaluation, or spatial analysis were central to their research are encouraged to apply.
 
 ### Experience
 
@@ -140,7 +139,7 @@ An equivalent combination of education and experience will be considered.
 
 ## Working Conditions
 
-Employees in this class work a conventional work week. This position may be required to work evening and weekend hours and 24-hour callback in an emergency. Work is performed in an office where work conditions are normal. Work requires minimal physical exertion. Hybrid telework is supported under OPI's telework policy; staff are expected to be on site at City Hall a minimum of four days per week, with one day per week available as remote.
+Employees in this class work a conventional work week. This position may be required to work evening and weekend hours and 24-hour callback in an emergency. Work is performed in an office where work conditions are normal. Work requires minimal physical exertion. Hybrid telework is supported under OPI’s telework policy; staff are expected to be on site at City Hall a minimum of four days per week, with one day per week available as remote.
 
 ## Supervision
 

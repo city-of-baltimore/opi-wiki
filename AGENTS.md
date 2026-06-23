@@ -53,6 +53,33 @@ Keep the repo legible:
 Avoid mystery top-level scripts or repo behavior that only one maintainer
 understands.
 
+### Content taxonomy guardrails
+
+OPI content sorts into four distinct types. Do not blur them when adding or
+moving pages.
+
+- **Teams** (staff + budget, also called portfolios): Director's Office,
+  Performance, Data and Analytics, Innovation Lab → `our-teams/`.
+- **Services** (what OPI delivers): AdminOps, Citywide Performance Management,
+  Citywide Data and Analytics, Innovation Lab, Cross-Agency Delivery →
+  `how-we-work/services/`.
+- **Programs** (ongoing routines spanning teams): CitiStat → `programs/`.
+- **Products** (tools OPI builds): Baltimore Intelligence Center and others →
+  `products/`.
+
+Hold these lines:
+
+- Innovation Lab is intentionally both a team and a service — state it, don't
+  "fix" it.
+- CitiStat is a program supported by all teams, owned by the CitiStat Director —
+  never a team.
+- Cross-Agency Delivery is a service, not a staffed team. There is no
+  `our-teams/cross-agency-delivery/`.
+- Never write "CAD." Spell out Cross-Agency Delivery; "x-agency delivery" is the
+  only allowed short form.
+- Every canonical page carries an owner and review cadence via the nearest
+  `.metadata.yml`; new sections add their own.
+
 ## Navigation Rules
 
 - Every major docs section should own its own `.pages` file.

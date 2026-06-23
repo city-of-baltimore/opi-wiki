@@ -10,14 +10,14 @@
 | **Classification**       | Executive Director I                                                                                                                                                                                                                                 |
 | **Portfolio**            | Director's Office                                                                                                                                                                                                                                    |
 | **Reports to**           | City Administrator (with reporting responsibilities to the Mayor on performance)                                                                                                                                                                     |
-| **Supervision given**    | Provides executive oversight to OPI’s senior leadership team — the Chief of Staff, the Deputy Chief Performance Officer, the Deputy Chief Data Officer, and the Innovation Lab director (or interim) — and indirectly supervises the full OPI staff. |
+| **Supervision given**    | Provides executive oversight to OPI’s senior leadership team — the Chief of Staff, the Deputy Chief Performance Officer, the Deputy Chief Data Officer, and the Innovation Program Manager — and indirectly supervises the full OPI staff. |
 | **Supervision received** | Reports to the City Administrator with regular reporting responsibilities to the Mayor on citywide performance and the CitiStat program.                                                                                                             |
 
 ## Position Summary
 
 The Executive Director and Chief Data Officer is the Mayor’s principal executive for performance, data, and innovation. The role sets OPI’s strategy, runs the citywide CitiStat program, leads Baltimore’s data and AI agenda, and partners with agencies to translate the Mayor’s priorities into measurable service improvements. The Executive Director represents OPI to the City Administrator, the Mayor, agency directors, the City Council, philanthropic partners, and the public.
 
-The role is responsible for OPI’s four service portfolios — Director’s Office, Performance, Data and Analytics, and the Innovation Lab — and for the disciplined operating rhythm that turns analysis into commitments and commitments into delivered work. The Executive Director also serves as the City’s Chief Data Officer with accountability for data governance, the Open Data Program, and the responsible adoption of analytics and AI in city government.
+The role is responsible for OPI’s four service portfolios — Director’s Office, Performance, Data and Analytics, and the Innovation Lab — and for the disciplined operating rhythm that turns analysis into commitments and commitments into delivery. The Executive Director also serves as the City’s Chief Data Officer with accountability for data governance, the Open Data Program, and the responsible adoption of analytics and AI in city government.
 
 ## Key Responsibilities
 
@@ -29,7 +29,7 @@ The role is responsible for OPI’s four service portfolios — Director’s Off
 
 - Represent OPI to philanthropy, academic partners, peer cities, and national networks; develop partnerships and resources that extend OPI’s reach.
 
-- Serve as the public face of OPI for testimony, briefings, and major announcements; ensure OPI communications are accurate, accessible, and on-message with the Mayor’s Office of Communications.
+- Serve as the public face of OPI for testimony, briefings, and major announcements; ensure OPI communications are accurate, accessible, and aligned with the Mayor’s Office of Communications.
 
 ### Performance
 
@@ -113,6 +113,6 @@ Employees in this class work a conventional work week. This position may be requ
 
 **Supervision received.** Reports to the City Administrator with regular reporting responsibilities to the Mayor on citywide performance and the CitiStat program.
 
-**Supervision given.** Provides executive oversight to OPI’s senior leadership team — the Chief of Staff, the Deputy Chief Performance Officer, the Deputy Chief Data Officer, and the Innovation Lab director (or interim) — and indirectly supervises the full OPI staff.
+**Supervision given.** Provides executive oversight to OPI’s senior leadership team — the Chief of Staff, the Deputy Chief Performance Officer, the Deputy Chief Data Officer, and the Innovation Program Manager — and indirectly supervises the full OPI staff.
 
 *This Position Description reflects the OPI operating model. It describes the typical scope of the role and is not an exhaustive list of duties. OPI is an Equal Opportunity Employer; all qualified applicants will receive consideration without regard to race, color, religion, sex, sexual orientation, gender identity, national origin, disability, age, or veteran status.*

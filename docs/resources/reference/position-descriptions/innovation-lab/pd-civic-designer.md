@@ -9,9 +9,9 @@
 | **Working title**        | Civic Designer                                                                                                                   |
 | **Classification**       | Operations Officer III                                                                                                           |
 | **Portfolio**            | Innovation Lab                                                                                                                   |
-| **Reports to**           | Innovation Program Manager (with interim portfolio oversight from the Executive Director)                                        |
+| **Reports to**           | Innovation Program Manager                                        |
 | **Supervision given**    | Individual contributor.                                                                                                          |
-| **Supervision received** | Reports to the Innovation Program Manager. Receives interim portfolio oversight from the Executive Director on active priorities. |
+| **Supervision received** | Reports to the Innovation Program Manager. |
 
 ## Position Summary
 
@@ -25,7 +25,7 @@ The Civic Designer applies service design, applied research, and human-centered 
 
 - Apply design thinking and human-centered methodologies to redesign business processes, workflows, and user experiences.
 
-- Embed human-centered design principles in city operations to keep resident needs and equity at the heart of all service delivery.
+- Embed human-centered design in city operations so resident needs and equity shape service delivery.
 
 - Coordinate resident and staff listening sessions, office hours, and quick-cycle discovery activities.
 
@@ -33,7 +33,7 @@ The Civic Designer applies service design, applied research, and human-centered 
 
 - Facilitate design workshops and co-creation sessions with city staff and stakeholders to prototype and refine service solutions.
 
-- Create and test low-fidelity prototypes or drafts of forms, pages, or messages; partner with the Civic Technology Lead and Product Engineers to implement and scale.
+- Create and test low-fidelity prototypes or drafts of forms, pages, or messages; partner with the Full Stack Engineer to implement and scale.
 
 - Use process mapping and concept sketching to align stakeholders quickly.
 
@@ -89,11 +89,11 @@ An equivalent combination of education and experience will be considered.
 
 ## Working Conditions
 
-Employees in this class work a conventional work week. Work is performed in an office where work conditions are normal. Work requires minimal physical exertion. Hybrid telework is supported under OPI’s telework policy; staff are expected to be on site at City Hall a minimum of four days per week, with one day per week available as remote.
+Employees in this class work a conventional work week. This position may be required to work evening and weekend hours and 24-hour callback in an emergency. Work is performed in an office where work conditions are normal. Work requires minimal physical exertion. Hybrid telework is supported under OPI’s telework policy; staff are expected to be on site at City Hall a minimum of four days per week, with one day per week available as remote.
 
 ## Supervision
 
-**Supervision received.** Reports to the Innovation Program Manager. Receives interim portfolio oversight from the Executive Director on active priorities.
+**Supervision received.** Reports to the Innovation Program Manager.
 
 **Supervision given.** Individual contributor.
 

@@ -20,7 +20,7 @@ Take any one of those parts away and the system stops working. Measures without 
 
 ## What CitiStat is, and what it is not
 
-CitiStat, in its modern form, is a citywide management routine. It is not a meeting where agencies are scolded. It is not a press conference. It is not a tool for catching agencies in mistakes. It is the City’s management system for asking, agency by agency and service by service, how we are doing, what we are learning, and what we are deciding to do about it.
+CitiStat, in its modern form, is a citywide management routine. It is not a meeting where agencies are scolded. It is not a press conference. It is not a tool for catching agencies in mistakes. It is Baltimore’s management system for asking, agency by agency and service by service, how we are doing, what we are learning, and what we are deciding to do about it.
 
 The principal agencies named in city law — Fire, Finance, General Services, Health, Housing and Community Development, Police, Public Works, Recreation and Parks, and Transportation — meet on a recurring schedule. Each session has a pre-memo that frames the topic and the data, a structured conversation with the agency head and a designated Data-Driven Officer, and a post-memo that records commitments with owners and due dates. The City Administrator or executive sponsor expects those commitments to be revisited the next time we meet.
 

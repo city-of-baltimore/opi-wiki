@@ -15,23 +15,23 @@
 
 ## Position Summary
 
-The Project Manager coordinates cross-agency delivery work — including tiger teams — and maintains execution visibility across the OPI portfolio. The role owns OPI’s Book of Business and the portfolio tracking system, runs lightweight ceremonies and retrospectives across priority initiatives, and maintains the knowledge-management practices and SharePoint governance that keep OPI work documented, discoverable, and decision-ready.
+The Project Manager coordinates cross-agency delivery work, including tiger teams, and maintains execution visibility across the OPI portfolio. The role owns OPI’s Book of Business and the portfolio tracking system, runs lightweight ceremonies and retrospectives across priority initiatives, and maintains the knowledge-management practices and SharePoint governance that keep OPI work documented, discoverable, and decision-ready.
 
-The Project Manager prepares weekly and monthly status materials, supports the Chief of Staff with analytical and organizational tasks, maintains the integrity of SharePoint and the staff directory, and provides day-to-day operations support. The role works closely with OPI program managers, product and engineering leads, CitiStat staff, and agency partners to ensure that priorities are tracked, risks are surfaced early, and commitments translate into timely delivery.
+The Project Manager prepares weekly and monthly status materials, supports the Chief of Staff with analytical and organizational tasks, maintains the integrity of SharePoint and the staff directory, and provides day-to-day operations support. The role works closely with OPI program managers, product and engineering leads, CitiStat staff, and agency partners to track priorities, surface risks early, and turn commitments into timely delivery.
 
 ## Key Responsibilities
 
 ### Portfolio Management and Executive Reporting
 
-- Maintain a unified, accurate view of the OPI portfolio across programs, products, and tiger teams — including milestones, owners, dependencies, risks, and next steps.
+- Maintain a unified, accurate view of the OPI portfolio across programs, products, and tiger teams, including milestones, owners, dependencies, risks, and next steps.
 
 - Produce the weekly status report (Book of Business) for OPI leadership, including variance notes, key decisions needed, and escalation items.
 
 - Produce monthly progress reports that summarize outcomes, delivery progress, risks/issues, and “what changed” updates suitable for executive audiences.
 
-- Establish and maintain lightweight portfolio standards: status hygiene, RAG definitions, milestone quality, and decision logs.
+- Establish and maintain lightweight portfolio standards: status hygiene, red/amber/green (RAG) status definitions, milestone quality, and decision logs.
 
-### tiger team Coordination and Delivery Support
+### Tiger-Team Coordination and Delivery Support
 
 - Coordinate tiger-team operating cadences (intake, kickoff, scope alignment, milestone planning, work-plan tracking, closeout).
 
@@ -45,7 +45,7 @@ The Project Manager prepares weekly and monthly status materials, supports the C
 
 - Maintain the integrity of OPI’s SharePoint operating system: structure, permissions, naming conventions, and the document library.
 
-- Steward the knowledge management baseline — SOPs, templates, decision logs, the publication archive, and the staff directory.
+- Steward the knowledge management baseline: SOPs, templates, decision logs, the publication archive, and the staff directory.
 
 - Operate quality-assurance checks on portfolio artifacts; uphold the OPI publication standards.
 
@@ -97,7 +97,7 @@ An equivalent combination of education and experience will be considered.
 
 ## Working Conditions
 
-Employees in this class work a conventional work week. Work is performed in an office where work conditions are normal. Work requires minimal physical exertion. Hybrid telework is supported under OPI’s telework policy; staff are expected to be on site at City Hall a minimum of four days per week, with one day per week available as remote.
+Employees in this class work a conventional work week. This position may be required to work evening and weekend hours and 24-hour callback in an emergency. Work is performed in an office where work conditions are normal. Work requires minimal physical exertion. Hybrid telework is supported under OPI’s telework policy; staff are expected to be on site at City Hall a minimum of four days per week, with one day per week available as remote.
 
 ## Supervision
 

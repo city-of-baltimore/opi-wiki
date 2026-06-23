@@ -1,0 +1,10 @@
+defaults:
+  owner: CitiStat Director
+  status: approved
+  last_reviewed: 2026-06-22
+  next_review: 2026-09-22
+  change_log: Moved CitiStat from the Performance team directory to its own program section.
+
+pages:
+  method-staff-quick-reference.md:
+    display_badge: reference
