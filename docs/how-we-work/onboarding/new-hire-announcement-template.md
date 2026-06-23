@@ -76,7 +76,7 @@ Please join me in welcoming \[First Name\] \[Last Name\] to OPI. \[First Name\] 
 
 Fun fact: \[one short, lightly personal fact provided by the new hire\].
 
-Engineers — \[First Name\]’s GitHub will be added to balt-opi and city-of-baltimore today. JIRA project access is being provisioned this morning. The Day 1 product portfolio tour is on the calendar for \[time\].
+Engineers — \[First Name\]’s GitHub will be added to city-of-baltimore today. JIRA project access is being provisioned this morning. The Day 1 product portfolio tour is on the calendar for \[time\].
 
 Drop a welcome below. Come say hi this afternoon.
 
