@@ -438,7 +438,7 @@ The active portfolio is designed to cover the services, systems, and priorities 
 
 ## How CitiStat connects to OPI
 
-CitiStat is the core routine inside OPI’s Citywide Performance Management service, but it only works as part of a broader operating system. Performance surfaces the problem. Data helps explain it. The Innovation Lab designs and tests practical solutions. Cross-Agency Delivery coordinates implementation when no single agency can move the work alone. AdminOps keeps the work visible, documented, communicated, and sustained.
+CitiStat is the core routine inside OPI’s Citywide Performance Management service, but it only works as part of a broader operating system — the [signal-to-solution loop](../../../how-we-work/how-work-moves-through-opi.md), where CitiStat identifies the problem and the rest of OPI explains, designs, delivers, and sustains the fix. Each service supports CitiStat as follows:
 
 | **OPI service**                 | **How it supports CitiStat**                                                                                                       |
 |---------------------------------|------------------------------------------------------------------------------------------------------------------------------------|

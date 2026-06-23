@@ -62,4 +62,5 @@ def test_redirect_allowlist_stays_small_and_explicit() -> None:
         "what-we-do/services/cross-agency-delivery.md",
         "how-we-work/organization/org-structure.md",
         "how-we-work/organization/team-and-roles/index.md",
+        "how-we-work/how-work-moves-through-opi.md",
     }

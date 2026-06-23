@@ -6,7 +6,7 @@
 
 OPI works best when each part of the office is clear about what it owns and how the handoffs work.
 
-> **CitiStat identifies the problem. Data helps explain it. The Innovation Lab designs and tests the solution. Cross-Agency Delivery coordinates implementation when multiple agencies must act together. AdminOps keeps the work visible, documented, and sustained.**
+> **CitiStat identifies the problem. Data and Analytics explains it. The Innovation Lab designs and tests the solution. Cross-Agency Delivery coordinates implementation when multiple agencies must act together. AdminOps keeps the work visible, documented, and sustained.**
 
 This does not mean every issue moves through every service. Some problems stay in CitiStat. Some become data products. Some need product discovery. Some need a Tiger Team. Some need an executive decision. The purpose of this page is to help staff and partners choose the right routine for the work.
 
@@ -99,6 +99,20 @@ Use these rules before creating a new meeting, workgroup, or project.
 | Innovation Lab | Agency owner / BCIT / Data and Analytics | Product brief, runbook, support model, data needs, release notes, sustainment owner |
 | Cross-Agency Delivery | Agency owner / CitiStat | Closure memo, commitment ledger, SOPs, training plan, metric set, review cadence |
 | Any service | AdminOps | Public narrative needs, Council posture, QA needs, portfolio status, knowledge-base updates |
+
+## Function boundaries
+
+OPI's teams are designed to overlap by intent, not by accident. When more than one team could plausibly own a piece of work, these rules decide who leads.
+
+| **Function** | **Primary lead** | **Boundary / handoff rule** |
+| --- | --- | --- |
+| Operational digital products | Innovation Lab | Performance portals, agency operations tools, data collection systems, enforcement products, intake forms, field tools — anything that improves a workflow or service delivery. |
+| Insight and analytics products | Data and Analytics | Dashboards, analytic briefs, models, reusable datasets, and open data releases whose primary purpose is to communicate insight or support analysis. |
+| Product discovery | Innovation Lab | Frames the problem, runs user research, defines the service journey, identifies needs, and develops product concepts and prototypes. |
+| Technical implementation | Innovation Lab or Data and Analytics | Operational service tools: Innovation owns product and coordinates implementation. Data/analytics tools: Data and Analytics owns implementation. Shared products require a joint product brief. |
+| AI governance vs. AI innovation | Data and Analytics (governance); Innovation Lab (pilots) | Data and Analytics owns responsible-AI standards, model evaluation, and data readiness. Innovation owns pilots that improve workflow, experience, or service delivery. |
+| Strategic partnerships | Innovation Lab, with Director oversight | Partnerships tie to a team priority, product roadmap, data capability, fellowship, grant, or innovation agenda. AdminOps brokers, tracks, briefs, and closes out commitments. |
+| Resident and staff engagement | Innovation Lab | Leads the engagement that informs service design, product discovery, and problem framing. |
 
 ## Read alongside
 

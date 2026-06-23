@@ -27,6 +27,8 @@ ALLOWED_DUPLICATE_DESTINATIONS = {
     # Added with the How We Work regroup (Organization / Handbook sub-sections):
     "how-we-work/organization/org-structure.md",
     "how-we-work/organization/team-and-roles/index.md",
+    # The two operating-model omnibus pages folded into the canonical loop page:
+    "how-we-work/how-work-moves-through-opi.md",
 }
 
 

@@ -170,8 +170,10 @@ plugins:
         public/innovation-lab-public-brief.md: what-we-do/services/innovation-lab.md
         public/website-copy-master.md: resources/index.md
         public/website-information-architecture.md: resources/index.md
-        about-us/about-opi/operating-frame.md: how-we-work/operating-frame.md
-        about-us/about-opi/teams-programs-foundations.md: how-we-work/teams-programs-foundations.md
+        about-us/about-opi/operating-frame.md: how-we-work/how-work-moves-through-opi.md
+        about-us/about-opi/teams-programs-foundations.md: how-we-work/how-work-moves-through-opi.md
+        how-we-work/operating-frame.md: how-we-work/how-work-moves-through-opi.md
+        how-we-work/teams-programs-foundations.md: how-we-work/how-work-moves-through-opi.md
         about-us/about-opi/org-structure.md: how-we-work/organization/org-structure.md
         about-us/about-opi/mission-vision-identity.md: about-us/mission-vision-identity.md
         about-us/about-opi/operating-principles-and-culture.md: about-us/operating-principles-and-culture.md

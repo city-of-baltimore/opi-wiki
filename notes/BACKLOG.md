@@ -23,15 +23,27 @@ audits (`notes/reviews/audit_content.md`, `notes/reviews/audit_reference.md`).
 - **About Us flattened** (Mission/Vision + Principles promoted; about-opi layer removed)
 - **How We Work regrouped** into Organization + Handbook sub-sections
 
-## 🔜 Pending — before / during the big review
-- **ToC structural standardization** (focused follow-up) — slim the Innovation Lab + AdminOps theory-of-change pages (they carry SERVICE DEFINITION / PURPOSE sections the Performance + Data ToCs don't, overlapping the about/strategy pages) to the lean NORTH-STAR→logic-model skeleton
-- **Minor polish batch** — service "outcomes vs what-this-means" overlap; `strategic-framework` duplicate portfolio cards (2nd source of truth vs `portfolio/`); memo date-format consistency; cosmetic glyph/title nits
-- **Products placeholders** — Data Platform + Performance Portal are stubs; decide acceptable-with-note vs fill
+## Big agent review — DONE (6/6 agree-with-changes)
+Ran 4 personas + Consistency/Parity + Editor/Streamlining on the live reorg.
+Synthesis: `notes/reviews/SYNTHESIS2.md`. Structure is production-ready; remaining
+work is a streamlining + consistency pass, not re-architecture.
 
-## Big agent review (designed, ready to launch)
-Re-run the 4 personas (staff, partner, funder, storyteller) on the updated site +
-a **Consistency/Parity** reviewer + an **Editor/Streamlining** reviewer, same forced-
-output rubric as round 1, then a synthesis comparing to the round-1 baseline.
+## 🔜 Pending — round-2 P0/P1 (ranked by reviewer consensus)
+- **P0-1 One loop page** — make `how-work-moves` canonical; retire `operating-frame`
+  + merge-then-retire `teams-programs-foundations` (move Function Boundaries table in);
+  replace loop restatements with teaser+link. ⚠️ reverses "keep + group"
+- **P0-2 Naming layer** — one term per concept (model name; team≠portfolio; disambiguate
+  Performance/CPM/CitiStat + Innovation Lab team-vs-service)
+- **P0-3 One ToC skeleton** — strip PURPOSE/SERVICE-DEFINITION from IL+AdminOps, normalize
+  section-2/section-5 headings, fix lying "OF 05" counts, retitle Performance team ToC
+- **P1-1 CitiStat two sources of truth** — cut `strategic-framework` 19-Stat cards → link to `portfolio/`
+- **P1-2 Two CAD pages** in Services — host deep version once, link from service page
+- **P1-3 Service pages** — collapse "Priority outcomes" + "What this means for people". ⚠️ deviates from budget template
+- **P1-4 Team index pages** not parallel (8→32 lines) — shared skeleton
+- **P1-5 Crosswalk dollars** — add cost-center/FTE column. ⚠️ needs per-service budget data
+- **P2 polish** — How-to-Engage homepage anchor + "request landed on my desk" framing;
+  front-door taxonomy de-dup; CAD insider terms/short-form glossary; label nits (AUDIENCE:PUBLIC, casing, full-stack filename)
+- **Products placeholders** — Data Platform + Performance Portal stubs; acceptable-with-note vs fill
 
 ## Decisions captured
 - One roster on Team & Roles (done); fill team parity (done); pre-review cleanup (done)

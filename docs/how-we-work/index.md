@@ -2,15 +2,9 @@
 
 OPI moves work through a simple signal-to-solution loop, and runs the office with a set of internal operating routines. This section holds the operating model, the office's structure and org chart, and the day-to-day mechanics — onboarding, memos, how-to guides, and operations.
 
-## The signal-to-solution loop
+> **CitiStat identifies the problem. Data and Analytics explains it. The Innovation Lab designs and tests the solution. Cross-Agency Delivery coordinates implementation when multiple agencies must act together. AdminOps keeps the work visible, documented, and sustained.**
 
-1. **CitiStat identifies the problem.** The [CitiStat program](../what-we-do/programs/citistat/index.md) brings agencies, OPI, and City leadership together around data, barriers, and commitments.
-2. **Data explains it.** [Data and Analytics](../our-teams/data-and-analytics/index.md) helps clarify what is happening, where, and what patterns matter.
-3. **The Innovation Lab designs and tests a solution.** The [Lab](../our-teams/innovation-lab/index.md) uses design, product, and delivery methods to create practical solutions with users.
-4. **[Cross-Agency Delivery](../what-we-do/services/cross-agency-delivery.md) coordinates implementation.** It aligns decision rights, commitments, timelines, and follow-through across agencies.
-5. **AdminOps sustains it.** The [Director's Office](../our-teams/directors-office/index.md) keeps the routines, staffing, and documentation that hold the gain.
-
-For the full model — when to use a Stat, a data product, an Innovation Lab engagement, a Tiger Team, a Cross-Agency Delivery activation, or a decision memo — read **[How Work Moves Through OPI](how-work-moves-through-opi.md)**. For each service in its own right, see **[Services](../what-we-do/services/index.md)**.
+For the full model — what each service owns, the handoffs, and when to use a Stat, a data product, an Innovation Lab engagement, a Tiger Team, a Cross-Agency Delivery activation, or a decision memo — read **[How Work Moves Through OPI](how-work-moves-through-opi.md)**. For each service in its own right, see **[Services](../what-we-do/services/index.md)**.
 
 ## Pages in this section
 
