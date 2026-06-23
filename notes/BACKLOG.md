@@ -28,21 +28,30 @@ Ran 4 personas + Consistency/Parity + Editor/Streamlining on the live reorg.
 Synthesis: `notes/reviews/SYNTHESIS2.md`. Structure is production-ready; remaining
 work is a streamlining + consistency pass, not re-architecture.
 
-## 🔜 Pending — round-2 P0/P1 (ranked by reviewer consensus)
-- **P0-1 One loop page** — make `how-work-moves` canonical; retire `operating-frame`
-  + merge-then-retire `teams-programs-foundations` (move Function Boundaries table in);
-  replace loop restatements with teaser+link. ⚠️ reverses "keep + group"
-- **P0-2 Naming layer** — one term per concept (model name; team≠portfolio; disambiguate
-  Performance/CPM/CitiStat + Innovation Lab team-vs-service)
-- **P0-3 One ToC skeleton** — strip PURPOSE/SERVICE-DEFINITION from IL+AdminOps, normalize
-  section-2/section-5 headings, fix lying "OF 05" counts, retitle Performance team ToC
-- **P1-1 CitiStat two sources of truth** — cut `strategic-framework` 19-Stat cards → link to `portfolio/`
-- **P1-2 Two CAD pages** in Services — host deep version once, link from service page
-- **P1-3 Service pages** — collapse "Priority outcomes" + "What this means for people". ⚠️ deviates from budget template
-- **P1-4 Team index pages** not parallel (8→32 lines) — shared skeleton
-- **P1-5 Crosswalk dollars** — add cost-center/FTE column. ⚠️ needs per-service budget data
-- **P2 polish** — How-to-Engage homepage anchor + "request landed on my desk" framing;
-  front-door taxonomy de-dup; CAD insider terms/short-form glossary; label nits (AUDIENCE:PUBLIC, casing, full-stack filename)
+## ✅ Round-2 streamlining (committed)
+- **P0-1 One loop page** — `how-work-moves` canonical; `operating-frame` +
+  `teams-programs-foundations` retired (Function Boundaries + About-vs-ToC folded in);
+  loop sentence locked; restatements → pointer+link; landing cards fixed
+- **P0-3 One ToC skeleton** — stripped PURPOSE/SERVICE-DEFINITION from IL+AdminOps,
+  normalized section 2/5/8, dropped "OF 05" counts, retitled Performance/Data ToCs;
+  `check_consistency` now enforces the ToC skeleton
+- **P1-1 CitiStat dedup** — 19-Stat cards cut from `strategic-framework` → link to `portfolio/`
+- **P1-2 Two CAD pages** — service-definition dropped from Services nav (kept, linked)
+- **P1-3 Service pages** — "Priority outcomes" cut from all 5; AdminOps "Also called" folded in
+- **P1-4 Team index parity** — 4 landings normalized to one skeleton
+- **P1-5 Crosswalk** — cost-center + budgeted-positions table added (dollars still in budget book)
+- **P2 (partial)** — about/ToC badges normalized; commitment-ledger glossary term added
+
+## 🔜 Still open (P2 + naming judgment)
+- **P0-2 portfolio → team sweep** — public prose still says "portfolio" for "team"
+  (e.g. our-teams/index "how to read the portfolio pages"); pervasive + judgment-heavy, wants buy-in
+- **How-to-Engage** — reframe from "request a service" to also cover "a CitiStat request
+  landed on my desk → what to expect"; stronger homepage anchor
+- **Front-door taxonomy de-dup** — Home + `what-we-do/index` teach the same service-vs-team
+  lesson; `org-structure` explains the distinction 3×
+- **Cosmetic** — `pd-product-engineer-full-stack` filename vs "Full Stack Engineer" title
+  (redirect churn for low gain — recommend skip)
+- **Per-service dollars** on the crosswalk — needs budget-book figures
 - **Products placeholders** — Data Platform + Performance Portal stubs; acceptable-with-note vs fill
 
 ## Decisions captured
