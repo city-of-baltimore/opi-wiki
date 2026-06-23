@@ -65,7 +65,7 @@ communication procedures.
 ## Questions
 
 If you have questions about this policy, or your expectations within the
-guidance, please contact your OPI Chief of Staff, Rock Young for clarification.
+guidance, please contact your OPI Chief of Staff, Rakeim Young for clarification.
 
 Thank you,
 

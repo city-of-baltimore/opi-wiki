@@ -7,7 +7,7 @@ All OPI Staff
 
 **From:**  
 Dartanion Swift-Williams, Executive Director and Chief Data Officer  
-Rock Young, Chief of Staff
+Rakeim Young, Chief of Staff
 
 **Date:**  
 02/17/2026

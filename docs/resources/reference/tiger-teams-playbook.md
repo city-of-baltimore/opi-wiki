@@ -73,9 +73,17 @@ A Tiger Team is the right routine when a service problem needs a time-boxed team
 
 ## What makes a Tiger Team different
 
-## When to use a Tiger Team
+- Cross-functional team focused on one service problem.
 
-A Tiger Team is the right routine when a service problem needs a time-boxed team to diagnose, prototype, and test a fix in real conditions. It is not the right routine for routine reporting, a one-time executive decision, or a dashboard request without a service-change owner.
+- Time-boxed. The end date is named in the charter — typically three to six months, scoped to the problem. When the time-box ends, the team disbands or transitions to operations.
+
+- Produces tangible pilots — people, process, technology — not just recommendations.
+
+- Uses data, frontline input, and resident input to diagnose root causes and test fixes.
+
+- Ends with a sustain plan: ownership, operating procedures, and the data products that keep it honest.
+
+## When to use a Tiger Team
 
 Use a Tiger Team when all of the following are true:
 
@@ -86,17 +94,6 @@ Use a Tiger Team when all of the following are true:
 5. A sustainment owner can take the gain after OPI steps back.
 
 If the team needs multiple agencies to change workflows, decision rights, or sustainment commitments together, charter the Tiger Team through Cross-Agency Delivery. If the authority sits within one agency, charter it through Innovation Lab intake under the agency director.
-
-
-- Cross-functional team focused on one service problem.
-
-- Time-boxed. The end date is named in the charter — typically three to six months, scoped to the problem. When the time-box ends, the team disbands or transitions to operations.
-
-- Produces tangible pilots — people, process, technology — not just recommendations.
-
-- Uses data, frontline input, and resident input to diagnose root causes and test fixes.
-
-- Ends with a sustain plan: ownership, operating procedures, and the data products that keep it honest.
 
 ### Standard outputs
 

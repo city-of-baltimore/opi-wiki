@@ -48,4 +48,3 @@ Staff use Youth Stat to align agencies and partners around the Mayor’s youth p
 - Priority initiative stalled due to unclear ownership or data gaps
 - Program inventory or outcome tracking need requiring data product support
 
-## CLOSING
