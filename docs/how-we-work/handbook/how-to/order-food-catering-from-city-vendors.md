@@ -37,7 +37,7 @@ You (the requester) are listed as the contact for the food service delivery.
 - Jay's Catering — Kristie (primary contact); 410-685-3861
   (kristie@jaysrestaurantgroup.com)
 
-- Biddle Street Catering — Beatrice Chun (primary contact); 410-727-777?
+- Biddle Street Catering — Beatrice Chun (primary contact); 410-727-7777
   (beatrice@biddlest.com)
 
 - David & Dad's — David or Colin (primary contacts); 410-547-0550

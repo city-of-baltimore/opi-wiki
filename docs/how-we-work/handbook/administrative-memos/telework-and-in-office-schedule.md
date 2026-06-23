@@ -15,23 +15,15 @@ Rakeim Young, Chief of Staff
 **Re:**  
 Transition to 3x/4x per Week In-Office Schedule
 
-Beginning Monday, February 23, 2026, OPI will transition from our current
-policy of 4x per week in office, to a rotating (weekly) 3x/4x in office.
-Starting the week of February 1, 2026, OPI will start alternating our remote
-work/in office days each week. When this adjustment begins (Monday, February
-1st), staff will be required to be onsite that week 4x per (keeping Tuesday's,
-Wednesday's, and Thursdays as core days; and your 4th day as agreed upon with
-your manager.) We will then alternate (each week) from a 4x/onsite to 3x/onsite
-(still keeping the core days of Tuesday, Wednesday, and Thursday with Monday and
-Friday being remote days).
+Beginning Monday, February 23, 2026, OPI moves from its current policy of four days per week in office to a rotating weekly schedule that alternates between four days and three days onsite. In the first week, staff are onsite four days: Tuesday, Wednesday, and Thursday are the core days, and you set the fourth day with your manager. Each following week alternates between four days and three days onsite, holding the core days constant. On three-day weeks, Monday and Friday are the remote days.
 
 Example:
 
 | Week of      | Schedule                                                                |
 |--------------|-------------------------------------------------------------------------|
-| February 16  | All staff onsite 4x (1 remote day, determined by your manager)          |
-| February 23  | All staff onsite 3x (Monday and Friday as remote days)                  |
-| March 2      | All staff onsite 4x (1 remote day, determined by your manager)          |
+| February 23  | All staff onsite 4x (1 remote day, set with your manager)               |
+| March 2      | All staff onsite 3x (Monday and Friday as remote days)                  |
+| March 9      | All staff onsite 4x (1 remote day, set with your manager)               |
 
 This adjustment supports collaboration, culture, and delivery as our team takes
 on more ambitious goals in FY26. This administrative guidance is aligned with

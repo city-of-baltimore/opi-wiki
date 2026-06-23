@@ -34,7 +34,7 @@ The work cuts across OPI’s Innovation Lab, Data and Analytics team, and Perfor
 
 ## Where the BIC sits
 
-Operationally, the BIC runs out of OPI’s Innovation Lab — the home for product delivery and applied technology inside the office. Technically, its center of gravity is the Data and Analytics team, which provides the platform, governance, and engineering muscle. CitiStat is the lead agency-partner anchor for the first wave of intelligence products. The Executive Director and Chief Data Officer provides executive sponsorship. Gabriel Watson serves as Innovation Program Manager.
+Operationally, the BIC runs out of OPI’s Innovation Lab — the home for product delivery and applied technology inside the office. Technically, its center of gravity is the Data and Analytics team, which provides the platform, governance, and engineering muscle. CitiStat is the lead agency-partner anchor for the first wave of intelligence products. Dartanion Swift-Williams, OPI’s Executive Director and Chief Data Officer, is the executive sponsor; Gabriel Watson, the Innovation Program Manager, leads the Innovation Lab that delivers it.
 
 For how the two organizational homes operate as one squad, see [Operating Model](operating-model.md).
 
