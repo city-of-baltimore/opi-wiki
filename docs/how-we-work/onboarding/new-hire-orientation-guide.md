@@ -48,7 +48,7 @@ OPI is organized into four portfolios. Each portfolio has a lead and is responsi
 | Director's Office | Rakeim Young, Chief of Staff                   | Operating backbone, intake, communications, knowledge management, quality assurance, and officewide coordination. |
 | Performance     | Danny Heller, Deputy Chief Performance Officer | CitiStat method, agency performance plans, KPIs, follow-up, and sustainment monitoring.  |
 | Data and Analytics           | Jason Howard, PhD, Deputy Chief Data Officer   | Data platform, analytics, governance, open data, GIS, and AI/data readiness.             |
-| Innovation Lab               | Dartanion Swift-Williams, Interim Innovation Program Manager | Service design, product discovery, civic technology, AI pilots, partnerships, and operational tools. |
+| Innovation Lab               | Gabriel Watson, Innovation Program Manager | Service design, product discovery, civic technology, AI pilots, partnerships, and operational tools. |
 
 *Cross-Agency Delivery is a service overlay, not a separate portfolio. Danny Heller serves as Interim Delivery Manager; Rakeim Young maintains portfolio visibility and escalation tracking.*
 

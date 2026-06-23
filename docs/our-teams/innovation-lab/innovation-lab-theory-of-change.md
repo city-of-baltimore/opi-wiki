@@ -68,7 +68,7 @@ Activities performed by this service include service design, user research, proc
 | Why it matters          | Many service problems are not about more staff or more money — they are about how services are designed, delivered, and felt. The Lab makes services easier to use, easier to manage, and more responsive to resident and staff needs.                  |
 | Who we serve            | Residents who use City services; agency program owners and frontline staff; agency leaders managing service delivery; Mayor and CA on priority service improvements.                                                                                    |
 | Mandate                 | Baltimore City Code Article 1, Subtitle 61 (Innovation Lab and continuous service improvement) and CitiStat-driven improvement work.                                                                                                                    |
-| Portfolio home          | Innovation Lab portfolio. Dartanion Swift-Williams currently serves as Interim Innovation Program Manager.                                                                                                                                    |
+| Portfolio home          | Innovation Lab portfolio. Gabriel Watson serves as Innovation Program Manager.                                                                                                                                    |
 | What success looks like | Priority service flows show higher task success and lower abandonment; rework, repeat contacts, and backlog drop in services we touch; tools we ship have clear owners, documentation, and sustained support; AI pilots improve operations responsibly. |
 
 *OPI is the canonical service name.*
@@ -128,7 +128,7 @@ We run like a product organization. Every initiative has a single accountable ow
 
 | **Role**                              | **Responsibility**                                                                                                             |
 |---------------------------------------|--------------------------------------------------------------------------------------------------------------------------------|
-| Interim Innovation Program Manager | Owns the Innovation Lab portfolio, intake prioritization, release cadence, and product quality. Dartanion Swift-Williams currently serves in this interim capacity. |
+| Innovation Program Manager | Owns the Innovation Lab portfolio, intake prioritization, release cadence, and product quality. Gabriel Watson serves in this role. |
 | Product Owner (per initiative)        | Single accountable owner for outcomes, scope, and release decisions. Holds the OKRs.                                           |
 | Sponsor / Authorizer                  | Agency director or DM/DCA who confirms priority, resolves barriers, and approves go/no-go decisions.                           |
 | Engineering Lead                      | Owns build quality, accessibility, performance, security, and production readiness in partnership with BCIT.                   |

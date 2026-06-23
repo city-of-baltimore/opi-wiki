@@ -172,7 +172,7 @@ A starting list of common onboarding sessions. Adapt based on role and portfolio
 | City Government 101                          | Director’s Office             | 30 min     | Who’s who in Baltimore City government and how decisions move.                  |
 | CitiStat overview and a session observation  | Performance lead | 60–90 min  | Method, cadence, pre-reads, follow-up. Observe a real session.                  |
 | Data and Analytics overview                  | Data and Analytics lead       | 30 min     | Platform, governance, open data, and how analytics feed CitiStat and the Lab.   |
-| Innovation Lab overview                      | Interim Innovation Program Manager | 30 min     | Service design, product discovery, civic tech, AI pilots, and partnerships.     |
+| Innovation Lab overview                      | Innovation Program Manager | 30 min     | Service design, product discovery, civic tech, AI pilots, and partnerships.     |
 | AdminOps and operating cadence               | Chief of Staff                | 30 min     | Intake, charters, portfolio view, weekly Ops Review, monthly Portfolio Council. |
 | HR and benefits orientation                  | City HR                       | 60 min     | Benefits enrollment, time and leave, Workday basics.                            |
 | BCIT onboarding                              | BCIT or designated IT contact | 60 min     | IT account setup, security, MFA, software requests, and trouble tickets.        |

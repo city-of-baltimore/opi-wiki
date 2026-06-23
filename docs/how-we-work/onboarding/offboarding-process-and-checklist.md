@@ -116,7 +116,7 @@ Protect engagement continuity and design artifact integrity.
 
 - T-7 days: ensure design files, research notes, and prototypes are stored in SharePoint with current metadata.
 
-- T-5 days: hand off any external partner relationships (universities, philanthropy, civic tech) to the Interim Innovation Program Manager or the Communications and Partnerships Lead.
+- T-5 days: hand off any external partner relationships (universities, philanthropy, civic tech) to the Innovation Program Manager or the Communications and Partnerships Lead.
 
 ### Manager responsibilities (all portfolios)
 

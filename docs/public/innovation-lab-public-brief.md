@@ -102,7 +102,7 @@ CitiStat surfaces what is not working. Citywide Data and Analytics explains why.
 
 |                |                                                                                      |
 |----------------|--------------------------------------------------------------------------------------|
-| **Lead**       | Interim Innovation Program Manager (Dartanion Swift-Williams, Executive Director, OPI) |
+| **Lead**       | Innovation Program Manager (Gabriel Watson) |
 | **Front door** | OPI Director’s Office · single intake                                                |
 | **Web**        | opi.baltimorecity.gov/innovation-lab                                                 |
 | **Open data**  | data.baltimorecity.gov (Open Baltimore)                                              |

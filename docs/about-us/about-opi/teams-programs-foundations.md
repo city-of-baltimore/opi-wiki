@@ -131,11 +131,10 @@ The Data and Analytics portfolio builds the data foundation that makes OPI’s w
 
 ## Innovation Lab
 
-Interim Innovation Program Manager: Dartanion Swift-Williams
+Innovation Program Manager: Gabriel Watson
 
-Current staffed roles: Interim Innovation Program Manager, Civic Designer,
-Senior Product Engineer, and Product Engineer. Aspirational roles: Civic
-Technology Lead.
+Current staffed roles: Innovation Program Manager, Civic Designer,
+Applied Data Scientist, and Full Stack Engineer.
 
 > *From service problems to practical solutions.*
 
