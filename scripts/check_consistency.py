@@ -28,8 +28,21 @@ SERVICE_REQUIRED = [
     "## What this service does",
     "## The goal",
     "## Mandate",
-    "## Priority outcomes",
     "## What this means for people",
+]
+
+# Every team service-theory-of-change page shares one skeleton (NORTH STAR + the
+# numbered logic model). Enforcing it keeps the ToCs from drifting apart again.
+TOC_REQUIRED = [
+    "## NORTH STAR",
+    "### 1. Service overview",
+    "### 2. Operating scope (boundary lines)",
+    "### 3. Engagement model",
+    "### 4. Theory of Change",
+    "### 5. Governance and decision rights",
+    "### 6. Core offerings and target service levels",
+    "### 7. Metrics, targets, and learning",
+    "### 8. Operational handoffs across OPI services",
 ]
 
 # Common acronyms that are fine unexpanded (curated). The glossary's acronyms
@@ -127,6 +140,16 @@ def check_service_sections(path: Path, text: str) -> list[str]:
     ]
 
 
+def check_toc_sections(path: Path, text: str) -> list[str]:
+    if not path.name.endswith("-theory-of-change.md"):
+        return []
+    return [
+        f"{rel(path)}: theory-of-change page missing required section '{sec}'"
+        for sec in TOC_REQUIRED
+        if sec not in text
+    ]
+
+
 def load_acronym_allowlist() -> set[str]:
     allow = set(BASE_ALLOW)
     glossary = DOCS / "resources" / "reference" / "glossary.md"
@@ -159,6 +182,7 @@ def main() -> int:
         hard += check_empty_headings(path, lines)
         hard += check_duplicate_blockquotes(path, lines)
         hard += check_service_sections(path, text)
+        hard += check_toc_sections(path, text)
         acronyms += acronym_report(path, text, allow)
 
     if acronyms and ("--acronyms" in sys.argv or "-a" in sys.argv):

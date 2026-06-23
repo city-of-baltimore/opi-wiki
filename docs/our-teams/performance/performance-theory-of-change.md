@@ -1,6 +1,6 @@
-# Performance Management Theory of Change
+# Citywide Performance Management Theory of Change
 
-{{ page_header(summary="How performance management moves from inputs to outcomes.", category="SERVICE THEORY OF CHANGE · 01 OF 05") }}
+{{ page_header(summary="How performance management moves from inputs to outcomes.", category="SERVICE THEORY OF CHANGE") }}
 
 **Citywide Performance Management**
 
@@ -80,7 +80,7 @@ This logic model is operational: each stage maps to artifacts, routines, and nam
 | Outcomes (6–18 mo) | Reduced cycle times and aged backlogs in priority services; more sessions producing concrete process or SOP changes; faster resolution of cross-agency blockers via delivery activations; stronger linkage between performance and budget.                                                    |
 | Impact (2+ yr)     | An institutionalized culture of continuous improvement that survives leadership changes, retires chronic problems, and earns resident trust through visible, sustained results.                                                                                                               |
 
-### 5. Governance, decision rights, and operating cadence
+### 5. Governance and decision rights
 
 Decisions move when the right people have clear authority, timeboxes, and escalation paths.
 

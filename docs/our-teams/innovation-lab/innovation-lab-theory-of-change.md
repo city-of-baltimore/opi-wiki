@@ -1,6 +1,6 @@
 # Innovation Lab Theory of Change
 
-{{ page_header(summary="How the Innovation Lab moves from inputs to outcomes.", category="SERVICE THEORY OF CHANGE · 03 OF 05", tagline="From service problems to practical solutions.") }}
+{{ page_header(summary="How the Innovation Lab moves from inputs to outcomes.", category="SERVICE THEORY OF CHANGE", tagline="From service problems to practical solutions.") }}
 
 ## NORTH STAR
 
@@ -10,55 +10,6 @@ The Innovation Lab is OPI’s citywide service improvement capability, using hum
 
 > *We are organized by discipline, but designed to work as one team. The Innovation Lab turns service problems into practical solutions.*
 
-## SERVICE DEFINITION
-
-**What this service does**
-
-This service is responsible for operating OPI’s Innovation Lab, a citywide service improvement capability that uses human-centered design, product management, civic technology, and applied innovation methods to improve City services and internal operations. The goal of this service is to help agencies design, test, and implement practical solutions that make services easier to use, easier to manage, and more responsive to resident and staff needs.
-
-Activities performed by this service include service design, user research, process mapping, prototyping, product discovery, workflow improvement, resident and staff engagement, responsible AI pilots, and development of operational tools such as performance management portals, data collection systems, service workflow applications, and other products that support agency operations and service delivery.
-
-## PURPOSE AND PHILOSOPHIES
-
-### What we heard, what we have aligned on
-
-*These statements come directly from team listening sessions and strategy work. They describe the spirit in which this service is delivered, not just the mechanics.*
-
-### Why this work matters
-
-- Service problems are practical problems. Residents and staff feel them every day in friction, repeat contacts, and abandoned applications.
-
-- Most public-sector “innovation” fails because it skips the user. We start from what residents and staff actually need.
-
-- In-house delivery + design capacity is cheaper, faster, and more durable than McKinsey-style consulting cycles.
-
-- Pilots that never ship operate as expensive theater. Our discipline is shipping, learning, and handing off.
-
-### How we operate
-
-- Human-centered design as a default. We talk to users before we design solutions, and we design with them, not for them.
-
-- MVP-and-handoff model. We build the smallest version that proves value, then hand it to the agency or BCIT for sustain — we do not become the long-run operator.
-
-- Prototyping over PowerPoint. Where possible we test ideas in working code or in service rehearsals, not in slide decks.
-
-- Tiger teams for cross-functional problems — a small group of designers, PMs, engineers, and civic-tech partners who own the outcome end-to-end.
-
-- Responsible AI pilots with documented evaluation, human oversight, and sunset criteria.
-
-- Move fast with intention. Speed is a discipline, not an excuse to skip rigor.
-
-### How we partner
-
-- University research partnerships and civic-technology partners (e.g., Code for America-style relationships) extend our capacity without expanding payroll.
-
-- We co-own outcomes with agencies. The agency owns the workflow; we own the data, design, and product capability.
-
-- We build a portfolio of operational tools — performance management portals, data collection systems, service workflow apps — that are reusable across agencies.
-
-- We say no (or not now) on purpose. Clear rejection criteria protects the team and the work.
-
-> *From service problems to practical solutions. We are not here to make government look better. We are here to make it work better.*
 
 ### 1. Service overview
 
@@ -73,7 +24,7 @@ Activities performed by this service include service design, user research, proc
 
 *OPI is the canonical service name.*
 
-### 2. Scope and service boundaries
+### 2. Operating scope (boundary lines)
 
 #### In scope
 
@@ -159,7 +110,7 @@ We run like a product organization. Every initiative has a single accountable ow
 
 - AI responsibility — share of AI pilots with documented evaluation, human oversight, and sunset criteria.
 
-### 8. Handoffs and synergies across OPI services
+### 8. Operational handoffs across OPI services
 
 - To Performance — service improvements that produce measurable KPIs we want tracked in Stat.
 

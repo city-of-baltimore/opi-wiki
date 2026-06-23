@@ -1,6 +1,6 @@
-# Data Analytics Theory of Change
+# Citywide Data and Analytics Theory of Change
 
-{{ page_header(summary="How data and analytics work moves from inputs to outcomes.", category="SERVICE THEORY OF CHANGE · 02 OF 05") }}
+{{ page_header(summary="How data and analytics work moves from inputs to outcomes.", category="SERVICE THEORY OF CHANGE") }}
 
 **Citywide Data and Analytics**
 

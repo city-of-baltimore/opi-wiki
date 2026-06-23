@@ -1,6 +1,6 @@
 # AdminOps Theory of Change
 
-{{ page_header(summary="How AdminOps moves from inputs to outcomes.", category="SERVICE THEORY OF CHANGE · 05 OF 05") }}
+{{ page_header(summary="How AdminOps moves from inputs to outcomes.", category="SERVICE THEORY OF CHANGE") }}
 
 **AdminOps**
 
@@ -14,65 +14,6 @@ The AdminOps service keeps OPI’s work coordinated, well-documented, properly r
 
 > *Clarity is not bureaucracy. Clarity is how we protect people, quality, and impact.*
 
-## SERVICE DEFINITION
-
-**What this service does**
-
-This service is responsible for the administrative, operational, communications, and portfolio management functions that support the Mayor’s Office of Performance and Innovation. The goal of this service is to keep OPI’s work coordinated, well-documented, properly resourced, and clearly communicated to City leadership, agencies, partners, and the public where appropriate.
-
-Activities performed by this service include portfolio intake and tracking, project management coordination, executive briefings, communications, branding and marketing, Council relations, knowledge management, fiscal and procurement coordination, HR and facilities support, internal operating routines, quality assurance for public-facing materials, and maintaining the systems and standards that allow OPI’s work to be delivered consistently and sustainably.
-
-## PURPOSE AND PHILOSOPHIES
-
-### What we heard, what we have aligned on
-
-*AdminOps is the operating backbone of OPI. These principles describe how we hold the rest of the office together.*
-
-### Why this work matters
-
-- Without intake, governance, and portfolio discipline, OPI defaults to whoever asks loudest — not whoever has the highest leverage.
-
-- Documentation is how good work survives administrations. “Document or it didn’t happen.”
-
-- Quality assurance protects residents and partners from confusion, errors, and broken trust. QA is care made visible.
-
-- Recognition culture is operational — it is how we retain talented people who could be paid more in the private sector.
-
-### How we operate
-
-- Standard intake form, standard problem statement, standard charter — same shape every time, regardless of who is asking.
-
-- A shared “book of business” that makes the portfolio visible — what is open, what is closed, what is at risk, what is queued.
-
-- Knowledge management as discipline — SharePoint operating system, wiki structure, glossary of terms, position descriptions, SOPs, transition packets.
-
-- QA standards before publication. Nothing public-facing leaves without a second set of eyes.
-
-- Branding and storytelling tied to outcomes. Communications is how we tell the truth about what we do, not how we make work look bigger than it is.
-
-- Council relations and executive briefings as a service — prepped, on time, on point.
-
-- Recognition culture is built into the routine — pins, medallions, shout-outs, transparency awards, public credit, and named contributions on every artifact.
-
-### Operating principles for the team
-
-- Move fast with intention.
-
-- Bring your full human self.
-
-- Follow through and finish strong.
-
-- Ask better questions — the quality of our work depends on it.
-
-- Document or it didn’t happen.
-
-- Set the temperature — the operating norms we model become the office culture.
-
-- Say the true thing kindly.
-
-- Celebrate collaboration over heroics.
-
-> *Better government is not a one-time project. It is a discipline. The discipline lives in the operating backbone — the standards, routines, and recognition that hold the work together.*
 
 ### 1. Service overview
 
@@ -84,7 +25,7 @@ Activities performed by this service include portfolio intake and tracking, proj
 | Portfolio home          | Director’s Office. Led by the Chief of Staff.                                                                                                                                                                                          |
 | What success looks like | Intake is fast and predictable; portfolio status is current; communications and narrative are coordinated; QA prevents low-quality artifacts from going public; OPI’s knowledge persists across staffing changes.                      |
 
-### 2. Scope and service boundaries
+### 2. Operating scope (boundary lines)
 
 #### In scope
 
@@ -177,7 +118,7 @@ AdminOps is mostly continuous and rhythm-driven, not project-based. Where projec
 
 - Narrative cadence — public releases per quarter; "What we heard / what we changed" coverage.
 
-### 8. Handoffs and synergies across OPI services
+### 8. Operational handoffs across OPI services
 
 - To Performance — coordination of the Stat calendar, public Stat summaries, and field validation.
 
