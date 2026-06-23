@@ -42,15 +42,19 @@ work is a streamlining + consistency pass, not re-architecture.
 - **P1-5 Crosswalk** — cost-center + budgeted-positions table added (dollars still in budget book)
 - **P2 (partial)** — about/ToC badges normalized; commitment-ledger glossary term added
 
-## 🔜 Still open (P2 + naming judgment)
-- **P0-2 portfolio → team sweep** — public prose still says "portfolio" for "team"
-  (e.g. our-teams/index "how to read the portfolio pages"); pervasive + judgment-heavy, wants buy-in
-- **How-to-Engage** — reframe from "request a service" to also cover "a CitiStat request
-  landed on my desk → what to expect"; stronger homepage anchor
-- **Front-door taxonomy de-dup** — Home + `what-we-do/index` teach the same service-vs-team
-  lesson; `org-structure` explains the distinction 3×
-- **Cosmetic** — `pd-product-engineer-full-stack` filename vs "Full Stack Engineer" title
-  (redirect churn for low gain — recommend skip)
+## ✅ Owner round (committed)
+- **Priority outcomes restored** to all 5 service pages (+ linter contract)
+- **Cross-Agency Delivery → one service page**; Service Definition rehomed with the Innovation Lab
+- **portfolio → team** in public surfaces (prose, org-structure, roster, renderer header, glossary); **"Innovation Lab team" → "Innovation Lab"**
+- **Work phone column restored** to the roster (11 numbers from git)
+- **CitiStat SSOT** — Strategic Framework no longer re-teaches the four tenets / routine table (→ Method Playbook + How Work Moves)
+- **How-to-Engage** — added the "a CitiStat request landed on my desk → what to expect" sequence
+- **Front-door taxonomy de-dup** — Home is the one taxonomy teacher; what-we-do/index + our-teams/index trimmed to nav + glossary pointers
+
+## 🔜 Still open
+- **portfolio → team in internal handbook plumbing** — named bodies ("Portfolio Council"),
+  onboarding sub-channels, charter "Portfolio" field, intake-sop; left for a separate operational pass
+- **Cosmetic** — `pd-product-engineer-full-stack` filename vs "Full Stack Engineer" title (redirect churn for low gain — recommend skip)
 - **Per-service dollars** on the crosswalk — needs budget-book figures
 - **Products placeholders** — Data Platform + Performance Portal stubs; acceptable-with-note vs fill
 
