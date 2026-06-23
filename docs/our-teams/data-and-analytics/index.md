@@ -2,7 +2,9 @@
 
 > Data governance, analytics, data engineering, and platform engineering for the City of Baltimore.
 
-## Strategy and methodology
+The Data and Analytics team builds the data foundation that makes OPI's work trustworthy and useful. It owns data governance and quality, analytics and insight products, data engineering and the data platform, open data, and GIS — turning administrative data into shared, reusable assets that every other OPI service can run on.
+
+## Pages in this section
 
 {{ card_grid_from("our-teams/data-and-analytics/index.cards.yml") }}
 

@@ -12,6 +12,20 @@ This page maps each budgeted service to the City Code mandate behind it, the goa
 | [Cross-Agency Delivery](../../what-we-do/services/cross-agency-delivery.md) | Activated across teams (no standing team) | Operationally required by Subtitles 61 and 9 | Resolve cross-agency barriers, clarify ownership, and deliver what no single department can alone | Cross-agency issues resolved; clear ownership and sequencing; progress without new task forces; durable sustainment |
 | [AdminOps](../../what-we-do/services/admin-ops.md) | Director's Office | Operationally required by Subtitles 61 and 9 | Keep OPI's work coordinated, documented, resourced, and clearly communicated | Priority work driven and tracked; clear partner timelines; commitments delivered and transparent |
 
+## Cost centers and staffing
+
+Each budgeted service maps to a cost center and a set of budgeted positions (PINs). Dollar figures by fiscal year live in the [Strategic Priorities one-pager](strategic-priorities-one-pager.md); the names behind each position are in the [staff roster](../../how-we-work/organization/team-and-roles/index.md).
+
+| Service | Cost center | Budgeted positions |
+| --- | --- | --- |
+| Citywide Performance Management | Performance | 7 (1 vacant) |
+| Citywide Data and Analytics | Data and Analytics | 5 |
+| Innovation Lab | Innovation Lab | 4 |
+| AdminOps | AdminOps (Director's Office) | 5 |
+| Cross-Agency Delivery | — activated across teams, no standing cost center | — |
+
+Counts are drawn from the [org structure](../../how-we-work/organization/org-structure.md) and exclude the Executive Director, who leads across all cost centers.
+
 ## Read alongside
 
 - [Services](../../what-we-do/services/index.md) — the five services in detail
