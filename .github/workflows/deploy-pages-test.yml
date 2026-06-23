@@ -1,0 +1,55 @@
+name: Test deploy to GitHub Pages
+
+# Test deployment from the content-reorg branch. main and the fly.io
+# deployment are left untouched. The committed site_url stays pointed at the
+# custom domain; the Pages base URL is set only inside this CI run.
+
+on:
+  push:
+    branches: [ddw/content-reorg]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: |
+          pip install poetry
+          poetry install --no-interaction --no-ansi
+
+      - name: Point base URL at the Pages subpath (CI only)
+        run: |
+          sed -i 's#^site_url:.*#site_url: https://city-of-baltimore.github.io/opi-wiki/#' mkdocs.yml
+
+      - name: Build (strict)
+        run: poetry run mkdocs build --strict
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: site
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4
