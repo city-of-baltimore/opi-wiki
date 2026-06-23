@@ -8,7 +8,6 @@
 |--------------------------|--------------------------------------------------------------------------------------------------|
 | **Working title**        | Applied Data Scientist                                                    |
 | **Classification**       | Operations Officer V                                                                              |
-| **Compensation range**   | $95,494 – $152,721                                                                                |
 | **Portfolio**            | Data and Analytics                                                                                |
 | **Reports to**           | Deputy Chief Data Officer                                                                         |
 | **Supervision given**    | Senior individual contributor; mentors analysts and provides technical leadership across the team. |

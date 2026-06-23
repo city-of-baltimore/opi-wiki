@@ -34,7 +34,7 @@ FY26 is about getting the foundation right. The three priorities below were name
 
 - Signals: cycle time on priority service request types; rate of misrouted requests; resident satisfaction with the request experience.
 
-**Priority 2 — Accelerate permit reform, starting with Accela**
+### Priority 2 — Accelerate permit reform, starting with Accela
 
 - Streamline confusing steps; clarify who does what; partner with DHCD, DPW, DOT, BCIT, and Fire to make the process transparent and user-friendly.
 
@@ -52,7 +52,7 @@ FY26 is about getting the foundation right. The three priorities below were name
 
 ### FY26 supporting commitments
 
-- CitiStat: stand up and stabilize 19 regularly occurring Stats by end of January 2026; 12 of the 17 are new or relaunched. Performance owns; Method Playbook governs.
+- CitiStat: stand up and stabilize 19 regularly occurring Stats by end of January 2026; 12 of the 19 are new or relaunched. Performance owns; Method Playbook governs.
 
 - tiger teams cohort: six FY26 focus areas — Parking Enforcement, Traffic Calming (DOT); Street Sweeping, Zero Waste (DPW); Code Enforcement (DHCD); Forestry Backlog (BCRP). Innovation Lab leads; sustain by June 2026.
 
@@ -64,7 +64,7 @@ FY26 is about getting the foundation right. The three priorities below were name
 
 With the foundation in place, FY27 shifts focus to bigger, more visible outcomes. The agenda is grounded in the City Administrator’s priorities and the Mayor’s Action Plan; final scoping is in design as part of the FY27 budget cycle.
 
-**Direction 1 — Make smarter use of data across city operations**
+### Direction 1 — Make smarter use of data across city operations
 
 - Move from the warehouse v1 foundation to a portfolio of decision-grade products in agencies’ own routines.
 
@@ -72,7 +72,7 @@ With the foundation in place, FY27 shifts focus to bigger, more visible outcomes
 
 - Mature data governance: stewardship, quality SLAs, and a catalog used in agency operations.
 
-**Direction 2 — Prepare Baltimore for AI with intention and integrity**
+### Direction 2 — Prepare Baltimore for AI with intention and integrity
 
 - Adopt city-wide AI policy and a sensible review process for high-impact uses.
 
@@ -80,7 +80,7 @@ With the foundation in place, FY27 shifts focus to bigger, more visible outcomes
 
 - Publish what we are doing and what we are not, so residents can see and trust how the city is using AI.
 
-**Direction 3 — Solve common, recurring operational pain points**
+### Direction 3 — Solve common, recurring operational pain points
 
 - Continue the tiger team model on the next cohort of service problems, drawn from CitiStat findings.
 

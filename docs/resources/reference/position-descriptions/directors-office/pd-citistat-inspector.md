@@ -17,7 +17,7 @@
 
 The CitiStat Inspector is OPI’s field-validation and service-quality inspector and a coordinator of administrative operations in the Director’s Office. The role supports CitiStat with disciplined, evidence-based inspections — confirming whether the work that’s reported on paper matches what’s happening on the ground — and supports the Director’s Office with day-to-day administrative operations (supplies, facilities coordination, rooms/AV, visitor logistics, and related tasks) to keep the office running smoothly.
 
-For inspections, the role works closely with the Performance team and with agency operations leaders. For office coordination, the role partners with the Chief of Staff and the Special Assistant.
+For inspections, the role works closely with the Performance team and with agency operations leaders. For office coordination, the role partners with the Chief of Staff and the Operations Analyst.
 
 ## Key Responsibilities
 
