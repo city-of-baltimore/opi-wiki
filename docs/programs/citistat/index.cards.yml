@@ -1,0 +1,26 @@
+method:
+  - meta: Framework
+    title: "CitiStat Strategic Framework"
+    body: "The why — the strategic frame that gives every Stat session its bearings and ties the portfolio to citywide priorities."
+    href: strategic-framework/
+  - meta: Playbook
+    title: "CitiStat Method Playbook"
+    body: "The how — the end-to-end CitiStat method, from admission criteria to how a Stat session actually runs and follows up."
+    href: method-playbook/
+  - meta: "Quick reference"
+    title: "CitiStat — Staff Quick Reference"
+    body: "A one-page quick-reference for OPI staff running Stats."
+    href: method-staff-quick-reference/
+  - meta: "Quality standards"
+    title: "CitiStat Quality Standards"
+    body: "The QA bar for code and data, visualization, pre-memos, sessions, and follow-up — the standards every Stat artifact must meet before it goes out."
+    href: quality-standards/
+  - meta: Templates
+    title: "CitiStat Templates"
+    body: "Stakeholder agendas, materials send-out standards, room setup, the deliverable-type vocabulary, and the Stat artifact templates — pre-memo, deck, follow-up memo, commitment tracker, and weekly radar."
+    href: templates/
+portfolio:
+  - meta: Portfolio
+    title: "CitiStat Portfolio"
+    body: "The full CitiStat portfolio — 19 agency briefs covering 311, Capital, Clean, DGS, DOT, Downtown, Finance, Fire/EMS, Health, Housing, HR/Labor, Permits, Police, Rec, Solid Waste, Tech, Water, Workplace Safety, Youth."
+    href: portfolio/

@@ -84,7 +84,7 @@ Words shape behavior. When OPI uses one word for something and an agency partner
 
 **Handoff.** The transition from a Tiger Team or design engagement to the agency that will operate the result. Designed from week one, not negotiated at the end.
 
-**Innovation Lab.** OPI’s capability — the craft team. A portfolio of work and the dedicated team that runs it: civic designers, civic technologists, product engineers, applied data scientists, and an innovation program manager. Owns OPI’s methods (the Public Innovation Toolkit, service design, prototyping, AI pilots, MVP-and-handoff). The Lab’s question is *how do we solve this?* Lab engagements can serve one agency or several; what defines the Lab is the craft, not the agency count. When work crosses agency lines and requires coordination authority, the Lab partners with Cross-Agency Delivery, which owns that overlay. Currently led by Dartanion Swift-Williams on an interim basis.
+**Innovation Lab.** OPI’s capability — the craft team. A portfolio of work and the dedicated team that runs it: civic designers, civic technologists, product engineers, applied data scientists, and an innovation program manager. Owns OPI’s methods (the Public Innovation Toolkit, service design, prototyping, AI pilots, MVP-and-handoff). The Lab’s question is *how do we solve this?* Lab engagements can serve one agency or several; what defines the Lab is the craft, not the agency count. When work crosses agency lines and requires coordination authority, the Lab partners with Cross-Agency Delivery, which owns that overlay. Led by Gabriel Watson, Innovation Program Manager.
 
 **Inspection.** A direct observation — ride-along, site visit, counter visit, or field walk — used to validate what the data describes against what is happening on the ground. Planned during the frame review, conducted by or with the CitiStat Inspector, and brought back into the Stat as evidence alongside the data.
 
@@ -112,11 +112,15 @@ Words shape behavior. When OPI uses one word for something and an agency partner
 
 **PMO.** OPI’s Project Management Office. Sits in the Director’s Office and runs the project gate process across the OPI portfolio.
 
-**Portfolio.** OPI’s organizational unit. Four portfolios: Director’s Office; Performance; Data and Analytics; Innovation Lab.
+**Portfolio.** OPI’s organizational unit — also called a *team*. Four portfolios: Director’s Office; Performance; Data and Analytics; Innovation Lab. See **Team**.
 
 **Pre-memo.** The two-to-four-page document that opens a Stat. Frames the problem, presents the data, names hypotheses, asks for decisions, and lists discussion questions.
 
 **Principal Agency.** A city agency that runs its own internal Stat, designates a Data-Driven Officer, and participates in CitiStat as a primary accountable agency. Distinguished from partner or supporting agencies that participate when their authority is needed but do not host their own Stat.
+
+**Product.** A tool, platform, or public-facing resource OPI builds or supports — distinct from a service (what OPI delivers) and a program (an ongoing routine). OPI products include the Baltimore Intelligence Center, the Baltimore City Data Platform, and the Baltimore City Performance Portal.
+
+**Program.** An ongoing routine or body of work that may involve more than one team — distinct from a team (staff and budget) and a service (what OPI delivers). CitiStat is OPI’s flagship program, operated by the Performance team and supported by all teams.
 
 **Project Directory.** The SharePoint list of all OPI projects — active, paused, and closed. Updated at the Weekly Ops Review. Owned by the PMO.
 
@@ -137,6 +141,8 @@ Words shape behavior. When OPI uses one word for something and an agency partner
 **Sustain plan.** The artifact that closes a Tiger Team. Names the agency owner, SOPs, training, metric set, and CitiStat cadence that will keep the gain after the team disbands.
 
 **System Health.** A standing slide on the Stat deck that summarizes the health of the underlying service or intake system — for example, 311 System Health — alongside the agency’s KPIs and operational metrics. Surfaces upstream issues (intake, routing, data quality) that can distort downstream performance.
+
+**Team.** A group with staff and budget — OPI also calls these *portfolios*. Four teams: Director’s Office, Performance, Data and Analytics, Innovation Lab. A team is distinct from a service (what OPI delivers), a program (an ongoing routine), and a product (a tool OPI builds).
 
 **Tiger Team.** A time-boxed, cross-functional delivery sprint focused on one service problem — typically three to six months, scoped to the problem. Uses the Public Innovation Toolkit. The Innovation Lab provides the team and the method. A Tiger Team can serve one agency or several; what determines the path is whether the work needs Cross-Agency Delivery’s coordination authority — named Authorizers at the Deputy Mayor or City Administrator level, decision rights across agencies, and a closure plan with sustainment commitments from each agency. See the Tiger Teams Playbook.
 

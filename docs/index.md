@@ -16,6 +16,23 @@ OPI Foundations is the public reference for how the Mayor's Office of Performanc
 
 Every page on this site is a Markdown document in a [GitHub repository](https://github.com/balt-opi/opi-wiki). Every change has an author, a commit, and a timestamp.
 
+## How work moves through OPI
+
+OPI uses a signal-to-solution loop: **[CitiStat](programs/citistat/index.md) identifies the problem → [Data and Analytics](our-teams/data-and-analytics/index.md) explains it → the [Innovation Lab](our-teams/innovation-lab/index.md) designs and tests the solution → [Cross-Agency Delivery](how-we-work/services/cross-agency-delivery.md) coordinates multi-agency implementation → AdminOps sustains it.** Read [How We Work](how-we-work/index.md) for the full model.
+
+## How this site is organized
+
+OPI is organized into teams that have staff and budget, delivers services to the City, and runs programs and products that may involve multiple teams.
+
+| Type | What it means | OPI examples |
+| --- | --- | --- |
+| Teams | Groups with staff and budget | Director's Office, Performance, Data and Analytics, Innovation Lab |
+| Services | What OPI delivers for the City | AdminOps, Citywide Performance Management, Citywide Data and Analytics, Innovation Lab, Cross-Agency Delivery |
+| Programs | Ongoing routines that may span teams | CitiStat |
+| Products | Tools and platforms OPI builds | Baltimore Intelligence Center, Baltimore City Data Platform, Baltimore City Performance Portal |
+
+When in doubt, use the clearest full name. Do not use "CAD" for Cross-Agency Delivery — spell it out, or use "x-agency delivery" only when a short form is needed.
+
 ## How this site works
 
 - **The source of truth is Markdown in a [GitHub repository](https://github.com/balt-opi/opi-wiki).** Every page on this site, every change to every page, has a commit, an author, and a timestamp.
@@ -25,7 +42,7 @@ Every page on this site is a Markdown document in a [GitHub repository](https://
 ## Recently updated
 
 - [Letter — On OPI Foundations](about-us/letters-from-the-director/on-opi-foundations.md) {{ badge("approved") }}
-- [CitiStat Strategic Framework](our-teams/performance-and-citistat/citistat-strategic-framework.md) {{ badge("approved") }}
+- [CitiStat Strategic Framework](programs/citistat/strategic-framework.md) {{ badge("approved") }}
 - [Glossary of OPI Terms](resources/reference/glossary.md) {{ badge("approved") }}
 
 ---

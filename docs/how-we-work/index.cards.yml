@@ -7,6 +7,10 @@
   body: "How OPI moves from performance signal to practical solution to sustained improvement."
   href: how-work-moves-through-opi/
 - meta: Section
+  title: Services
+  body: "The five services OPI delivers — AdminOps, Citywide Performance Management, Citywide Data and Analytics, Innovation Lab, and Cross-Agency Delivery."
+  href: services/
+- meta: Section
   title: "Administrative Memos"
   body: "Memo-style operational guidance surfaced as its own collection."
   href: administrative-memos/

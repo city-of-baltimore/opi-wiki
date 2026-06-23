@@ -99,11 +99,13 @@ mapping in mind when locating content, and keep the `.pages` title, the
 
 | Folder | Navigation label | Notes |
 |---|---|---|
-| `our-teams/directors-office/` | Director's Office | Also houses the **AdminOps** function (operating backbone). |
-| `our-teams/performance-and-citistat/` | Performance | The **CitiStat** program and portfolio live under this team. |
-| `our-teams/cross-agency-delivery/` | Cross-Agency Delivery | A **service overlay**, not a staffed team — it sits under Our Teams for discoverability. |
-| `our-teams/data-and-analytics/` | Data and Analytics | — |
-| `our-teams/innovation-lab/` | Innovation Lab | Owns the Baltimore Intelligence Center subsection. |
+| `our-teams/directors-office/` | Director's Office | The team that delivers the **AdminOps** service (operating backbone). |
+| `our-teams/performance/` | Performance | The team that delivers **Citywide Performance Management** and operates the **CitiStat** program. |
+| `our-teams/data-and-analytics/` | Data and Analytics | The team that delivers **Citywide Data and Analytics**. |
+| `our-teams/innovation-lab/` | Innovation Lab | Both a team and a service. The products it builds live under `products/`. |
+| `programs/citistat/` | CitiStat | A **program** supported by all teams — its own top-level section, not owned by one team. |
+| `products/` | Products | Tools and platforms OPI builds (Baltimore Intelligence Center, plus placeholders). |
+| `how-we-work/services/` | Services | The five services OPI delivers, including **Cross-Agency Delivery** — a service, not a staffed team. |
 | `how-we-work/` | How We Work | The internal SharePoint KB calls the equivalent pillar **How We Deliver** — different system, different label (see the Wiki Knowledge Base Structure page). |
 
 This public site (OPI Foundations, five sections) and the internal SharePoint
@@ -111,6 +113,33 @@ knowledge base (six pillars) are deliberately separate systems with different
 top-level labels. The
 [Wiki Knowledge Base Structure](docs/resources/reference/wiki-knowledge-base-structure.md)
 page documents the internal KB and the relationship between the two.
+
+## Content taxonomy guardrails
+
+OPI content sorts into exactly four types. Keep them distinct; do not let a page
+silently reclassify one as another.
+
+| Type | What it is | Members | Lives under |
+|---|---|---|---|
+| **Teams** | Groups with staff and budget (also called portfolios) | Director's Office, Performance, Data and Analytics, Innovation Lab | `our-teams/` |
+| **Services** | What OPI delivers for the City | AdminOps, Citywide Performance Management, Citywide Data and Analytics, Innovation Lab, Cross-Agency Delivery | `how-we-work/services/` |
+| **Programs** | Ongoing routines that may span teams | CitiStat | `programs/` |
+| **Products** | Tools and platforms OPI builds | Baltimore Intelligence Center, Baltimore City Data Platform, Baltimore City Performance Portal | `products/` |
+
+Rules to enforce on every page:
+
+- **Innovation Lab is deliberately both a team and a service.** That is not a
+  duplication error — say so explicitly where it could confuse.
+- **CitiStat is a program, not a team.** It is supported by all teams and owned
+  by the CitiStat Director.
+- **Cross-Agency Delivery is a service, not a staffed team.** There is no
+  `our-teams/cross-agency-delivery/` directory — it activates through Tiger
+  Teams and Innovation Lab projects.
+- **Never write "CAD."** Spell out Cross-Agency Delivery; "x-agency delivery" is
+  the only approved short form.
+- **Every canonical page names an owner and a review cadence** through the
+  nearest `.metadata.yml` (`owner`, `last_reviewed`, `next_review`). New
+  sections get their own `.metadata.yml`.
 
 ## Landing-page cards
 

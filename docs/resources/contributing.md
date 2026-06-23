@@ -27,8 +27,11 @@ This is the public reference. If you're looking for an internal SOP, a personnel
 
 Before opening a documentation PR, check whether the page uses OPI's core operating model consistently.
 
-- Does the page distinguish portfolio, service, program, and team?
+- Does the page distinguish the four content types — team (portfolio), service, program, and product?
+- Does it place CitiStat as a program supported by all teams, and Cross-Agency Delivery as a service (not a staffed team)?
+- Does it spell out Cross-Agency Delivery in full, never "CAD"?
 - Does it use Innovation Lab for the craft of solving and Cross-Agency Delivery for the coordination overlay?
+- Does the page (or its section `.metadata.yml`) name an owner and a review cadence?
 - Does it describe CitiStat as an executive performance rhythm rather than a meeting calendar?
 - Does it link to the canonical method page when using terms like Tiger Team, Stat, delivery activation, or product discovery?
 - Does it name the audience and public posture?

@@ -6,10 +6,10 @@
   title: "Digital Product Methodology"
   body: "How OPI ships digital products inside city government."
   href: digital-product-methodology/
-- meta: Program hub
+- meta: Product
   title: "Baltimore Intelligence Center"
-  body: "The citywide data, intelligence, and AI program — vision, workstreams, governance, and reference."
-  href: baltimore-intelligence-center/
+  body: "OPI's flagship product — the citywide data, intelligence, and AI platform. Now in the Products section."
+  href: ../../products/baltimore-intelligence-center/
 - meta: "Theory of change"
   title: "Innovation Lab ToC"
   body: "How the Innovation Lab moves from inputs to outcomes."

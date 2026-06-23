@@ -123,23 +123,23 @@ plugins:
         our-teams/directors-office/pd-chief-of-staff.md: resources/reference/position-descriptions/directors-office/pd-chief-of-staff.md
         our-teams/directors-office/pd-citistat-inspector.md: resources/reference/position-descriptions/directors-office/pd-citistat-inspector.md
         our-teams/directors-office/pd-civic-design-and-ux-lead.md: resources/reference/position-descriptions/innovation-lab/pd-civic-designer.md
-        our-teams/directors-office/pd-civic-technology-lead.md: resources/reference/position-descriptions/innovation-lab/pd-civic-technology-lead.md
+        our-teams/directors-office/pd-civic-technology-lead.md: resources/reference/position-descriptions/innovation-lab/pd-innovation-program-manager.md
         our-teams/directors-office/pd-communications-and-partnerships-lead.md: resources/reference/position-descriptions/directors-office/pd-data-storyteller.md
         our-teams/directors-office/pd-executive-director-and-cdo.md: resources/reference/position-descriptions/directors-office/pd-executive-director-and-cdo.md
         our-teams/directors-office/pd-innovation-program-manager.md: resources/reference/position-descriptions/innovation-lab/pd-innovation-program-manager.md
         our-teams/directors-office/pd-product-engineer-full-stack.md: resources/reference/position-descriptions/innovation-lab/pd-product-engineer-full-stack.md
         our-teams/directors-office/pd-project-manager.md: resources/reference/position-descriptions/directors-office/pd-project-manager.md
-        our-teams/directors-office/pd-senior-product-engineer.md: resources/reference/position-descriptions/innovation-lab/pd-senior-product-engineer.md
+        our-teams/directors-office/pd-senior-product-engineer.md: resources/reference/position-descriptions/innovation-lab/pd-applied-data-scientist.md
         our-teams/directors-office/pd-special-assistant-to-the-executive-director.md: resources/reference/position-descriptions/directors-office/pd-operations-analyst.md
-        our-teams/performance-and-citistat/pd-citistat-analyst.md: resources/reference/position-descriptions/performance-and-citistat/pd-citistat-analyst.md
-        our-teams/performance-and-citistat/pd-citistat-program-manager.md: resources/reference/position-descriptions/performance-and-citistat/pd-citistat-program-manager.md
-        our-teams/performance-and-citistat/pd-deputy-chief-performance-officer.md: resources/reference/position-descriptions/performance-and-citistat/pd-deputy-chief-performance-officer.md
-        our-teams/performance-and-citistat/pd-senior-performance-analyst.md: resources/reference/position-descriptions/performance-and-citistat/pd-senior-performance-analyst.md
+        our-teams/performance-and-citistat/pd-citistat-analyst.md: resources/reference/position-descriptions/performance/pd-citistat-analyst.md
+        our-teams/performance-and-citistat/pd-citistat-program-manager.md: resources/reference/position-descriptions/performance/pd-citistat-program-manager.md
+        our-teams/performance-and-citistat/pd-deputy-chief-performance-officer.md: resources/reference/position-descriptions/performance/pd-deputy-chief-performance-officer.md
+        our-teams/performance-and-citistat/pd-senior-performance-analyst.md: resources/reference/position-descriptions/performance/pd-senior-performance-analyst.md
         our-teams/data-and-analytics/pd-analytics-lead.md: resources/reference/position-descriptions/data-and-analytics/pd-applied-data-scientist.md
         our-teams/data-and-analytics/pd-applied-data-scientist.md: resources/reference/position-descriptions/data-and-analytics/pd-applied-data-scientist.md
         our-teams/data-and-analytics/pd-deputy-chief-data-officer.md: resources/reference/position-descriptions/data-and-analytics/pd-deputy-chief-data-officer.md
         our-teams/data-and-analytics/pd-principal-data-engineer.md: resources/reference/position-descriptions/data-and-analytics/pd-principal-data-engineer.md
-        our-teams/data-and-analytics/pd-principal-platform-engineer.md: resources/reference/position-descriptions/data-and-analytics/pd-principal-platform-engineer.md
+        our-teams/data-and-analytics/pd-principal-platform-engineer.md: resources/reference/position-descriptions/data-and-analytics/pd-principal-data-engineer.md
         our-teams/data-and-analytics/pd-senior-data-engineer.md: resources/reference/position-descriptions/data-and-analytics/pd-senior-data-engineer.md
         our-teams/data-and-analytics/pd-technical-program-manager.md: resources/reference/position-descriptions/data-and-analytics/pd-technical-program-manager.md
         resources/grants-and-funding/index.md: resources/index.md
@@ -150,19 +150,66 @@ plugins:
         resources/reference/fy27-eoy-report-refresh.md: resources/reference/index.md
         resources/reference/position-descriptions/directors-office/pd-civic-design-and-ux-lead.md: resources/reference/position-descriptions/innovation-lab/pd-civic-designer.md
         resources/reference/position-descriptions/innovation-lab/pd-civic-design-and-ux-lead.md: resources/reference/position-descriptions/innovation-lab/pd-civic-designer.md
-        resources/reference/position-descriptions/directors-office/pd-civic-technology-lead.md: resources/reference/position-descriptions/innovation-lab/pd-civic-technology-lead.md
+        resources/reference/position-descriptions/directors-office/pd-civic-technology-lead.md: resources/reference/position-descriptions/innovation-lab/pd-innovation-program-manager.md
         resources/reference/position-descriptions/innovation-lab/pd-communications-and-partnerships-lead.md: resources/reference/position-descriptions/directors-office/pd-data-storyteller.md
         resources/reference/position-descriptions/directors-office/pd-communications-and-partnerships-lead.md: resources/reference/position-descriptions/directors-office/pd-data-storyteller.md
         resources/reference/position-descriptions/directors-office/pd-special-assistant-to-the-executive-director.md: resources/reference/position-descriptions/directors-office/pd-operations-analyst.md
         resources/reference/position-descriptions/data-and-analytics/pd-analytics-lead.md: resources/reference/position-descriptions/data-and-analytics/pd-applied-data-scientist.md
         resources/reference/position-descriptions/directors-office/pd-innovation-program-manager.md: resources/reference/position-descriptions/innovation-lab/pd-innovation-program-manager.md
         resources/reference/position-descriptions/directors-office/pd-product-engineer-full-stack.md: resources/reference/position-descriptions/innovation-lab/pd-product-engineer-full-stack.md
-        resources/reference/position-descriptions/directors-office/pd-senior-product-engineer.md: resources/reference/position-descriptions/innovation-lab/pd-senior-product-engineer.md
+        resources/reference/position-descriptions/directors-office/pd-senior-product-engineer.md: resources/reference/position-descriptions/innovation-lab/pd-applied-data-scientist.md
         resources/reference/position-descriptions-index.md: resources/reference/position-descriptions/index.md
-        our-teams/performance-and-citistat/cross-agency-delivery/index.md: our-teams/cross-agency-delivery/index.md
-        our-teams/performance-and-citistat/cross-agency-delivery/about-cross-agency-delivery.md: our-teams/cross-agency-delivery/about-cross-agency-delivery.md
-        our-teams/performance-and-citistat/cross-agency-delivery/cross-agency-delivery-theory-of-change.md: our-teams/cross-agency-delivery/cross-agency-delivery-theory-of-change.md
+        our-teams/performance-and-citistat/cross-agency-delivery/index.md: how-we-work/services/cross-agency-delivery.md
+        our-teams/performance-and-citistat/cross-agency-delivery/about-cross-agency-delivery.md: how-we-work/services/cross-agency-delivery.md
+        our-teams/performance-and-citistat/cross-agency-delivery/cross-agency-delivery-theory-of-change.md: how-we-work/services/cross-agency-delivery-theory-of-change.md
         public/council-public-narrative-template.md: public/index.md
+        resources/reference/position-descriptions/data-and-analytics/pd-principal-platform-engineer.md: resources/reference/position-descriptions/data-and-analytics/pd-principal-data-engineer.md
+        resources/reference/position-descriptions/innovation-lab/pd-civic-technology-lead.md: resources/reference/position-descriptions/innovation-lab/pd-innovation-program-manager.md
+        resources/reference/position-descriptions/innovation-lab/pd-senior-product-engineer.md: resources/reference/position-descriptions/innovation-lab/pd-applied-data-scientist.md
+        our-teams/performance-and-citistat/index.md: our-teams/performance/index.md
+        our-teams/performance-and-citistat/about-performance-management.md: our-teams/performance/about-performance.md
+        our-teams/performance-and-citistat/performance-management-strategy.md: our-teams/performance/performance-strategy.md
+        our-teams/performance-and-citistat/performance-management-theory-of-change.md: our-teams/performance/performance-theory-of-change.md
+        our-teams/performance-and-citistat/citistat-method-playbook.md: programs/citistat/method-playbook.md
+        our-teams/performance-and-citistat/citistat-method-staff-quick-reference.md: programs/citistat/method-staff-quick-reference.md
+        our-teams/performance-and-citistat/citistat-strategic-framework.md: programs/citistat/strategic-framework.md
+        our-teams/performance-and-citistat/citistat-quality-standards.md: programs/citistat/quality-standards.md
+        our-teams/performance-and-citistat/citistat-templates.md: programs/citistat/templates.md
+        our-teams/performance-and-citistat/citistat-portfolio/index.md: programs/citistat/portfolio/index.md
+        our-teams/performance-and-citistat/citistat-portfolio/311-stat.md: programs/citistat/portfolio/311-stat.md
+        our-teams/performance-and-citistat/citistat-portfolio/capital-stat.md: programs/citistat/portfolio/capital-stat.md
+        our-teams/performance-and-citistat/citistat-portfolio/clean-stat.md: programs/citistat/portfolio/clean-stat.md
+        our-teams/performance-and-citistat/citistat-portfolio/dgs-stat.md: programs/citistat/portfolio/dgs-stat.md
+        our-teams/performance-and-citistat/citistat-portfolio/dot-stat.md: programs/citistat/portfolio/dot-stat.md
+        our-teams/performance-and-citistat/citistat-portfolio/downtown-stat.md: programs/citistat/portfolio/downtown-stat.md
+        our-teams/performance-and-citistat/citistat-portfolio/finance-stat.md: programs/citistat/portfolio/finance-stat.md
+        our-teams/performance-and-citistat/citistat-portfolio/fire-and-ems-stat.md: programs/citistat/portfolio/fire-and-ems-stat.md
+        our-teams/performance-and-citistat/citistat-portfolio/health-stat.md: programs/citistat/portfolio/health-stat.md
+        our-teams/performance-and-citistat/citistat-portfolio/housing-stat.md: programs/citistat/portfolio/housing-stat.md
+        our-teams/performance-and-citistat/citistat-portfolio/hr-and-labor-stat.md: programs/citistat/portfolio/hr-and-labor-stat.md
+        our-teams/performance-and-citistat/citistat-portfolio/permit-stat.md: programs/citistat/portfolio/permit-stat.md
+        our-teams/performance-and-citistat/citistat-portfolio/police-stat.md: programs/citistat/portfolio/police-stat.md
+        our-teams/performance-and-citistat/citistat-portfolio/rec-stat.md: programs/citistat/portfolio/rec-stat.md
+        our-teams/performance-and-citistat/citistat-portfolio/solid-waste-stat.md: programs/citistat/portfolio/solid-waste-stat.md
+        our-teams/performance-and-citistat/citistat-portfolio/tech-stat.md: programs/citistat/portfolio/tech-stat.md
+        our-teams/performance-and-citistat/citistat-portfolio/water-stat.md: programs/citistat/portfolio/water-stat.md
+        our-teams/performance-and-citistat/citistat-portfolio/workplace-safety-stat.md: programs/citistat/portfolio/workplace-safety-stat.md
+        our-teams/performance-and-citistat/citistat-portfolio/youth-stat.md: programs/citistat/portfolio/youth-stat.md
+        resources/reference/position-descriptions/performance-and-citistat/pd-citistat-analyst.md: resources/reference/position-descriptions/performance/pd-citistat-analyst.md
+        resources/reference/position-descriptions/performance-and-citistat/pd-citistat-program-manager.md: resources/reference/position-descriptions/performance/pd-citistat-program-manager.md
+        resources/reference/position-descriptions/performance-and-citistat/pd-deputy-chief-performance-officer.md: resources/reference/position-descriptions/performance/pd-deputy-chief-performance-officer.md
+        resources/reference/position-descriptions/performance-and-citistat/pd-senior-performance-analyst.md: resources/reference/position-descriptions/performance/pd-senior-performance-analyst.md
+        our-teams/innovation-lab/baltimore-intelligence-center/capability-transfer-and-target-state.md: products/baltimore-intelligence-center/capability-transfer-and-target-state.md
+        our-teams/innovation-lab/baltimore-intelligence-center/engagement-overview.md: products/baltimore-intelligence-center/engagement-overview.md
+        our-teams/innovation-lab/baltimore-intelligence-center/governance-and-risks.md: products/baltimore-intelligence-center/governance-and-risks.md
+        our-teams/innovation-lab/baltimore-intelligence-center/index.md: products/baltimore-intelligence-center/index.md
+        our-teams/innovation-lab/baltimore-intelligence-center/operating-model.md: products/baltimore-intelligence-center/operating-model.md
+        our-teams/innovation-lab/baltimore-intelligence-center/reference.md: products/baltimore-intelligence-center/reference.md
+        our-teams/innovation-lab/baltimore-intelligence-center/roadmap-and-source-systems.md: products/baltimore-intelligence-center/roadmap-and-source-systems.md
+        our-teams/innovation-lab/baltimore-intelligence-center/workstreams.md: products/baltimore-intelligence-center/workstreams.md
+        our-teams/cross-agency-delivery/index.md: how-we-work/services/cross-agency-delivery.md
+        our-teams/cross-agency-delivery/about-cross-agency-delivery.md: how-we-work/services/cross-agency-delivery.md
+        our-teams/cross-agency-delivery/cross-agency-delivery-theory-of-change.md: how-we-work/services/cross-agency-delivery-theory-of-change.md
   - macros
   - search:
       separator: '[\s\-,:!=\[\]()"`/]+|\.(?!\d)|&[lg]t;|(?!\b)(?=[A-Z][a-z])'

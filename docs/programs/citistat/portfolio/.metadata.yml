@@ -1,0 +1,6 @@
+defaults:
+  owner: CitiStat Director
+  status: approved
+  last_reviewed: 2026-06-22
+  next_review: 2026-09-22
+  change_log: Moved CitiStat portfolio into the Programs section under the CitiStat Director.
