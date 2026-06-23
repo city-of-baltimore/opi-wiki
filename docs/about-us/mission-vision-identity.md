@@ -53,43 +53,44 @@ This document captures what the OPI team has heard, debated, and aligned on abou
 
 - Both a political instrument (accountable to the Mayor’s vision) and an institutional force (meant to endure across administrations).
 
-- A team of operators, analysts, designers, product managers, and storytellers — not a consultancy, not a research lab, not a press shop.
+- A team of operators, analysts, designers, product managers, and storytellers. We are not a consultancy, not a research lab, not a press shop.
 
 ### 2. Who our customers are
 
-- Mayor and City Administrator — priority outcomes, executive decisions, public narrative.
+- Mayor and City Administrator: priority outcomes, executive decisions, public narrative.
 
-- Deputy Mayors and DCAs — portfolio oversight, escalation, cross-agency authority.
+- Deputy Mayors and DCAs: portfolio oversight, escalation, cross-agency authority.
 
-- Agency directors, performance leads, and Data-Driven Officers — method, coaching, shared infrastructure.
+- Agency directors, performance leads, and Data-Driven Officers: method, coaching, shared infrastructure.
 
-- City Council — transparent reporting, district-level performance views, oversight support.
+- City Council: transparent reporting, district-level performance views, oversight support.
 
-- Residents — services that work, data they can trust, channels to be heard.
+- Residents: services that work, data they can trust, channels to be heard.
 
-- Other governments — peers we learn from and share with, so Baltimore becomes a blueprint.
+- Other governments: peers we learn from and share with, so Baltimore becomes a blueprint.
 
 ### 3. What benefit we deliver
 
-- Faster, clearer decisions for leadership — Stat sessions that produce commitments, not just discussion.
+- Faster, clearer decisions for leadership: Stat sessions that produce commitments, not just discussion.
 
-- Reusable infrastructure for agencies — data products, dashboards, and operational tools they build on instead of reinventing.
+- Reusable infrastructure for agencies: data products, dashboards, and operational tools they build on instead of reinventing.
 
 - Practical service improvements residents and staff actually use.
 
-- Public accountability — plain-language reporting, open data, and visible follow-through.
+- Public accountability: plain-language reporting, open data, and visible follow-through.
 
 - A pipeline of city talent who learn the discipline of public-sector delivery and carry it elsewhere.
 
+
 ### 4. What expertise we bring
 
-- Performance management and CitiStat method — routines, KPI discipline, follow-up.
+- Performance management and CitiStat method: routines, KPI discipline, follow-up.
 
 - Data engineering, analytics, governance, and open data.
 
 - Human-centered design, service design, product management, and civic technology.
 
-- Cross-agency delivery — charters, tiger teams, sequencing, and sustainment planning.
+- Cross-agency delivery: charters, tiger teams, sequencing, and sustainment planning.
 
 - Communications, storytelling, executive briefings, and Council relations.
 
@@ -119,7 +120,7 @@ This document captures what the OPI team has heard, debated, and aligned on abou
 
 - Coaches and method-keepers for performance and data routines.
 
-- Builders of reusable infrastructure — not one-off favors.
+- Builders of reusable infrastructure, not one-off favors.
 
 - Partners with agencies, not auditors of them.
 
@@ -131,9 +132,9 @@ This document captures what the OPI team has heard, debated, and aligned on abou
 
 - A press shop that exists to make government look better than it is.
 
-- An IT department — BCIT owns enterprise infrastructure.
+- An IT department. BCIT owns enterprise infrastructure.
 
-- An audit function — we are not here to grade agencies.
+- An audit function. We are not here to grade agencies.
 
 - A research lab — we ship.
 
@@ -145,16 +146,16 @@ This document captures what the OPI team has heard, debated, and aligned on abou
 
 **What the city thinks we do versus what we actually do**
 
-*Some of our biggest narrative work is corrective — closing the gap between how OPI is described in the wild and what we actually do.*
+*Some of our biggest narrative work is corrective: closing the gap between how OPI is described in the wild and what we actually do.*
 
 | **What city partners often think**   | **What we actually do**                                                                                                                                                            |
 |--------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | “OPI runs CitiStat.”                 | We run a portfolio of citywide performance routines (Agency Stats and Thematic Stats) plus agency performance planning, KPI standards, and follow-up. CitiStat is one part.        |
-| “OPI builds dashboards.”             | We build reusable data products with charters and sustain plans — pipelines, shared datasets, open data publications, methodology cards, AI evaluations — not just visualizations. |
+| “OPI builds dashboards.”             | We build reusable data products with charters and sustain plans: pipelines, shared datasets, open data publications, methodology cards, and AI evaluations, not just visualizations. |
 | “OPI is the city’s IT or data team.” | BCIT owns enterprise IT and infrastructure. We own data strategy, governance, analytics, and citywide data products — in partnership with BCIT.                                    |
 | “OPI is innovation theater.”         | The Innovation Lab ships practical tools and service redesigns that residents and staff actually use. We measure ourselves on adoption, not press.                                 |
-| “OPI fixes everything cross-agency.” | Cross-Agency Delivery is a service overlay we activate against specific priority outcomes with named sponsors — not a backstop for everything that crosses department lines.       |
-| “OPI is the Mayor’s consultancy.”    | We are an institutional capability designed to outlast administrations. Our partner is the Mayor’s Office, and our scope and quality standards travel with us.                     |
+| “OPI fixes everything cross-agency.” | Cross-Agency Delivery is a coordinating service we activate against specific priority outcomes with named sponsors. It sits on top of the agencies that own the work. It is not a backstop for everything that crosses department lines.       |
+| “OPI is the Mayor’s consultancy.”    | We are an institutional capability built to outlast administrations. Our partner is the Mayor’s Office, and our scope and quality standards travel with us.                     |
 
 ## VISION THEMES
 
@@ -162,19 +163,19 @@ This document captures what the OPI team has heard, debated, and aligned on abou
 
 ### 1. Baltimore as a blueprint
 
-A city other cities study — not because we are bigger, but because we have built durable performance, data, and service-design capacity that other places can borrow.
+A city other cities study, not because we are bigger, but because we have built durable performance, data, and service-design capacity that other places can borrow.
 
 ### 2. Civic data leadership
 
-Baltimore becomes a national leader in how cities steward, share, and use data — through Open Baltimore, citywide data infrastructure, and a Citywide Data Network of residents and partners.
+Baltimore becomes a national leader in how cities steward, share, and use data, through Open Baltimore, citywide data infrastructure, and a Citywide Data Network of residents and partners.
 
 ### 3. Translators
 
-We sit at the seams between agencies, residents, leadership, and technology partners. The vision is to be the most trusted translator in city government — the team people call when something needs to be understood across boundaries.
+We sit at the seams between agencies, residents, leadership, and technology partners. The vision is to be the most trusted translator in city government, the team people call when something needs to be understood across boundaries.
 
 ### 4. Shared infrastructure
 
-A platform city. 311, permitting, performance, data, and service workflows connected via shared infrastructure, design system, and conventions — instead of one-off vendor contracts that decay over time.
+A platform city. 311, permitting, performance, data, and service workflows connected through shared infrastructure, a common design system, and shared conventions, instead of one-off vendor contracts that decay over time.
 
 ## CUSTOMER DEFINITION
 
@@ -199,13 +200,13 @@ A platform city. 311, permitting, performance, data, and service workflows conne
 
 - We say yes too often. We need standard intake, problem statements, and rejection criteria.
 
-- Governance — Data Governance Council, Open Data Council, intake committee — is how we share authority instead of bottlenecking on one leader.
+- Governance — through the Data Governance Council, Open Data Council, and intake committee — is how we share authority instead of bottlenecking on one leader.
 
 ### 2. Documentation and knowledge management
 
 - “Document or it didn’t happen.” Documentation is the bridge between past selves, present selves, and future selves.
 
-- SharePoint operating system, wiki, glossary, position descriptions, transition packets — these are not administrative chores. They are the substrate of institutional memory.
+- SharePoint operating system, wiki, glossary, position descriptions, transition packets: these are not administrative chores. They are the substrate of institutional memory.
 
 ### 3. Refocus on residents
 
@@ -221,13 +222,13 @@ A platform city. 311, permitting, performance, data, and service workflows conne
 
 ### 5. Capacity and discipline
 
-- We protect against burnout by being disciplined about scope. The 70 / 20 / 10 model anchors how we plan team time — see Operating Principles & Culture for the full breakdown.
+- We protect against burnout by being disciplined about scope. The 70 / 20 / 10 model anchors how we plan team time. See Operating Principles & Culture for the full breakdown.
 
 - We say no on purpose. Saying no is how we protect quality and impact.
 
 ### 6. Recognition and culture
 
-- Recognition is operational. Pins, transparency awards, public credit on artifacts — these retain talent we cannot match on salary alone.
+- Recognition is operational. Pins, transparency awards, and public credit on artifacts retain talent we cannot match on salary alone.
 
 - Culture is set in small daily acts: how we run a meeting, how we write a memo, how we give credit, how we say no.
 
@@ -237,7 +238,7 @@ A platform city. 311, permitting, performance, data, and service workflows conne
 
 > *We use data and design to improve city services in ways that residents and public servants can see and feel.*
 
-*The current mission statement is the consolidation of these framings. The point of capturing both here is that our mission language is a living statement, not a tagline written by committee.*
+*The current mission statement consolidates these framings. We capture both here because our mission language is a living statement, not a tagline written by committee.*
 
 ## HOW WE USE THIS DOCUMENT
 
@@ -251,6 +252,6 @@ A platform city. 311, permitting, performance, data, and service workflows conne
 
 - Use the customer definition table when you scope a new engagement and need to confirm who you are serving.
 
-- Use the strategic themes when you build a roadmap or write a strategy memo — they are the conditions any plan has to address.
+- Use the strategic themes when you build a roadmap or write a strategy memo. They are the conditions any plan has to address.
 
 *This document will be revised as we learn more. Tag the Communications lead in any proposed change.*

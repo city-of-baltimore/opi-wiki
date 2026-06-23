@@ -8,7 +8,7 @@
 
 The Innovation Lab is OPI’s citywide service improvement capability, using human-centered design, product management, civic technology, AI innovation, and partnerships to help agencies design, test, and implement practical improvements to City services.
 
-> *We are organized by discipline, but designed to work as one team. The Innovation Lab turns service problems into practical solutions.*
+> *We are organized by discipline, but we work as one team. The Innovation Lab turns service problems into practical solutions.*
 
 
 ### 1. Service overview
@@ -22,7 +22,7 @@ The Innovation Lab is OPI’s citywide service improvement capability, using hum
 | Portfolio home          | Innovation Lab. Gabriel Watson serves as Innovation Program Manager.                                                                                                                                    |
 | What success looks like | Priority service flows show higher task success and lower abandonment; rework, repeat contacts, and backlog drop in services we touch; tools we ship have clear owners, documentation, and sustained support; AI pilots improve operations responsibly. |
 
-*OPI is the canonical service name.*
+*The Innovation Lab is the official service name.*
 
 ### 2. Operating scope (boundary lines)
 

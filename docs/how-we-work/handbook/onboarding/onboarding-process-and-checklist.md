@@ -100,7 +100,7 @@ Focus: portfolio visibility, decision support, communications, operations backbo
 
 - Week 2–3: set up SharePoint governance hygiene for your area (naming, metadata, permissions, archiving).
 
-- Month 1: ship an ops leverage win (template improvement, faster turnaround, better visibility, or QA uplift).
+- Month 1: ship an operations win that frees up time (template improvement, faster turnaround, better visibility, or QA uplift).
 
 ### Performance
 

@@ -10,11 +10,11 @@ Strategy Document
 
 ## EXECUTIVE SUMMARY
 
-**Foundations plus leverage**
+**Build once, reuse many times**
 
-Citywide Data & Analytics is OPI’s service for making Baltimore’s data accurate, accessible, governed, and useful. The Data & Analytics team builds and stewards the shared data, analytics, open data, governance, and AI-readiness infrastructure that enables performance management, service delivery, public transparency, and innovation at scale.
+Citywide Data & Analytics is OPI’s service for making Baltimore’s data accurate, accessible, governed, and useful. The Data & Analytics team builds and stewards the shared data, analytics, open data, governance, and AI-readiness infrastructure behind performance management, service delivery, public transparency, and innovation at scale.
 
-The team does not exist to become the default report shop for every agency. It exists to build foundations that make better reporting, analysis, dashboards, open data, and decision support possible across the City. The core posture is foundations plus leverage: build once, reuse many times.
+The team does not exist to become the default report shop for every agency. It exists to build foundations that make better reporting, analysis, dashboards, open data, and decision support possible across city government. The core posture is to build once and reuse many times.
 
 The service is essential because every major city priority now depends on trusted data: CitiStat, 311, permitting, housing, public safety, cleaning, budget alignment, open data, digital products, and responsible AI. Without strong data stewardship, every other OPI service is weaker.
 

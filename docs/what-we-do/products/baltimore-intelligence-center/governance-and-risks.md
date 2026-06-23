@@ -31,7 +31,7 @@ AI governance is a six-step operating process, not a 60-page document. It runs t
 
 ## Audit and oversight readiness
 
-The platform, the semantic layer, and the AI governance process are designed to be readable from the outside. At any point, an external reviewer should be able to see: every data source, its owner, and its lineage; every KPI definition; every approved use case and its risk tier; every production output’s grounding and logging trail. This is what “responsible AI” looks like in operation.
+The platform, the semantic layer, and the AI governance process are built to be readable from the outside. At any point, an external reviewer should be able to see: every data source, its owner, and its lineage; every KPI definition; every approved use case and its risk tier; every production output’s grounding and logging trail. This is what “responsible AI” looks like in operation.
 
 ## Risks and mitigations
 

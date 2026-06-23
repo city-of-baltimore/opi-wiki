@@ -20,14 +20,14 @@ Baltimore City Code, Article 1, Subtitle 9 (Open Data).
 
 - Decisions are based on trusted, current numbers rather than stale or missing data.
 - Public data is easy to understand and up to date.
-- Agencies work from one source of truth instead of rebuilding reports.
+- Agencies work from one shared, authoritative dataset instead of rebuilding reports.
 - The City is ready to use AI and advanced analytics responsibly.
 
 ## What this means for people
 
 - **As a resident,** I want public data that's easy to understand and up to date.
 - **As a reporter,** I want reliable data to explain what's happening in the city.
-- **As an analyst,** I want one source of truth instead of rebuilding reports.
+- **As an analyst,** I want one authoritative dataset instead of rebuilding reports.
 - **As a city leader,** I want confidence that decisions are based on real information.
 
 ## Delivered by

@@ -15,7 +15,7 @@
 
 ## Position Summary
 
-The Project Manager coordinates cross-agency delivery work — including tiger teams — and maintains execution visibility across the OPI portfolio. The role owns OPI’s Book of Business and the portfolio tracking system, runs lightweight ceremonies and retrospectives across priority initiatives, and maintains the knowledge-management practices and SharePoint governance that keep OPI work documented, discoverable, and decision-ready.
+The Project Manager coordinates cross-agency delivery work, including tiger teams, and maintains execution visibility across the OPI portfolio. The role owns OPI’s Book of Business and the portfolio tracking system, runs lightweight ceremonies and retrospectives across priority initiatives, and maintains the knowledge-management practices and SharePoint governance that keep OPI work documented, discoverable, and decision-ready.
 
 The Project Manager prepares weekly and monthly status materials, supports the Chief of Staff with analytical and organizational tasks, maintains the integrity of SharePoint and the staff directory, and provides day-to-day operations support. The role works closely with OPI program managers, product and engineering leads, CitiStat staff, and agency partners to ensure that priorities are tracked, risks are surfaced early, and commitments translate into timely delivery.
 
@@ -23,7 +23,7 @@ The Project Manager prepares weekly and monthly status materials, supports the C
 
 ### Portfolio Management and Executive Reporting
 
-- Maintain a unified, accurate view of the OPI portfolio across programs, products, and tiger teams — including milestones, owners, dependencies, risks, and next steps.
+- Maintain a unified, accurate view of the OPI portfolio across programs, products, and tiger teams, including milestones, owners, dependencies, risks, and next steps.
 
 - Produce the weekly status report (Book of Business) for OPI leadership, including variance notes, key decisions needed, and escalation items.
 
@@ -45,7 +45,7 @@ The Project Manager prepares weekly and monthly status materials, supports the C
 
 - Maintain the integrity of OPI’s SharePoint operating system: structure, permissions, naming conventions, and the document library.
 
-- Steward the knowledge management baseline — SOPs, templates, decision logs, the publication archive, and the staff directory.
+- Steward the knowledge management baseline: SOPs, templates, decision logs, the publication archive, and the staff directory.
 
 - Operate quality-assurance checks on portfolio artifacts; uphold the OPI publication standards.
 

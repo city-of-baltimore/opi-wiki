@@ -18,7 +18,7 @@ REVIEW
 
 ## Purpose
 
-OPI exists to raise the City’s capacity to deliver. That requires consistent standards for quality, rigor, trust, and follow-through. This guide defines performance expectations for all OPI staff and the process leaders use to assess performance in a fair, evidence-based way.
+OPI exists to raise Baltimore City’s capacity to deliver. That requires consistent standards for quality, rigor, trust, and follow-through. This guide defines performance expectations for all OPI staff and the process leaders use to assess performance in a fair, evidence-based way.
 
 This guide complements City performance management and HR procedures. It does not replace required City forms or policies. It provides OPI-specific clarity on how we define excellence and how we calibrate performance across roles.
 
@@ -63,7 +63,7 @@ OPI is not a typical agency. We operate as a high-trust, high-output delivery un
 
 ## The OPI rating scale
 
-The scale is designed to be clear and calibratable. A 3 is strong performance at OPI’s standard. A 4 and 5 are reserved for performance that clearly exceeds role expectations and raises the bar for others.
+The scale is meant to be clear and calibratable. A 3 is strong performance at OPI’s standard. A 4 and 5 are reserved for performance that clearly exceeds role expectations and raises the bar for others.
 
 | **Rating** | **Label**                 | **Behavior anchors**                                                                                                                   |
 |------------|---------------------------|----------------------------------------------------------------------------------------------------------------------------------------|
@@ -111,7 +111,7 @@ Each role selects two to four craft dimensions at the start of the cycle. These 
 
 ## The performance process
 
-The process is consistent across teams and is designed to reduce bias and surprises.
+The process is consistent across teams and works to reduce bias and surprises.
 
 ### Start-of-cycle alignment (first two weeks)
 

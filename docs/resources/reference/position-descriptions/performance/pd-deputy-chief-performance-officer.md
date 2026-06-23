@@ -43,7 +43,7 @@ The DCPO leads a team of civic-minded analysts who gather and analyze data from 
 
 - Oversee clear, actionable analyses and presentations; translate complex data into insights for non-technical audiences and city leadership.
 
-- Maintain a single source of truth for CitiStat follow-ups; escalate blockers with clear recommendations; track outcomes and decision points.
+- Maintain one current record of CitiStat follow-ups; escalate blockers with clear recommendations; track outcomes and decision points.
 
 ### Process Improvement and Implementation Support
 

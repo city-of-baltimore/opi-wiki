@@ -6,7 +6,7 @@
 
 **Multi-agency commitments that ship, get used, and stick.**
 
-Cross-Agency Delivery is a service overlay — not a standalone cost center. We coordinate selected high-priority initiatives that require action across multiple agencies, helping leadership and agencies resolve cross-agency barriers, clarify ownership, sequence implementation, and deliver improvements no department can accomplish alone.
+Cross-Agency Delivery is a service overlay: a coordinating service that runs across the four teams rather than a standalone team with its own staff and budget. We coordinate selected high-priority initiatives that require action across multiple agencies. We help leadership and agencies resolve cross-agency barriers, clarify ownership, sequence implementation, and deliver improvements no department can accomplish alone.
 
 > *Performance management often fails because the people in the room can analyze the problem but cannot change the conditions that produce it. Delivery is where conditions change.*
 
@@ -14,7 +14,7 @@ Cross-Agency Delivery is a service overlay — not a standalone cost center. We 
 
 **What this service does**
 
-This service is responsible for coordinating selected high-priority initiatives and service delivery challenges that require action across multiple City agencies. The goal of this service is to help City leadership and agencies resolve cross-agency barriers, clarify ownership, sequence implementation, and deliver improvements that no single department can accomplish alone.
+This service coordinates selected high-priority initiatives and service delivery challenges that require action across multiple city agencies. The goal is to help city leadership and agencies resolve cross-agency barriers, clarify ownership, sequence implementation, and deliver improvements that no single department can accomplish alone.
 
 Activities performed by this service include standing up delivery routines and tiger teams, developing project charters and implementation plans, mapping cross-agency workflows, tracking risks and dependencies, coordinating agency commitments, supporting executive escalation, documenting decisions and follow-up actions, and helping agencies sustain improvements through standard operating procedures, training materials, and performance monitoring.
 
@@ -22,27 +22,27 @@ Activities performed by this service include standing up delivery routines and t
 
 ### What we heard, what we have aligned on
 
-*Cross-agency delivery is an overlay service — it borrows people, methods, and authority from across OPI and convenes them around a specific cross-agency outcome. These are the principles we operate by.*
+*Cross-agency delivery is an overlay service. It borrows people, methods, and authority from across OPI and convenes them around a specific cross-agency outcome. These are the principles we operate by.*
 
 ### Why this work matters
 
-- The hardest problems in city government are cross-agency by nature — permitting, vacants, overdose response, workforce, public safety. No single department can fix them alone.
+- The hardest problems in city government are cross-agency by nature: permitting, vacants, overdose response, workforce, public safety. No single department can fix them alone.
 
-- Without a delivery overlay, cross-agency work defaults to the agency with the loudest stakeholder — not the one with the right ownership.
+- Without a delivery overlay, cross-agency work defaults to the agency with the loudest stakeholder, not the one with the right ownership.
 
 - Delivery is where conditions change. Stat surfaces the problem; delivery resolves it.
 
-- Communities feel the failure of coordination. They do not care which agency owns what — they want the service to work.
+- Communities feel the failure of coordination. They do not care which agency owns what. They want the service to work.
 
 ### How we operate
 
 - Convene the right people at the right moment. Our craft is recognizing when a problem needs a room, who belongs in it, and what decision the room owes back.
 
-- Clarify ownership before we clarify the plan. Multi-agency owner clarity is the gating step — without it, every plan is theater.
+- Clarify ownership before we clarify the plan. Multi-agency owner clarity is the gating step. Without it, every plan is theater.
 
 - Tiger Teams over standing committees. Time-boxed, outcome-owned, with a named Authorizer and exit criteria. The Innovation Lab provides the team and the method; Cross-Agency Delivery provides the standing delivery review and the closure plan.
 
-- Documentation discipline — charters, decision logs, follow-up memos, and SOPs that survive personnel changes.
+- Documentation discipline: charters, decision logs, follow-up memos, and SOPs that survive personnel changes.
 
 - Sustain is the success measure, not launch. Improvements only count if agencies can run them after we leave.
 
@@ -56,7 +56,7 @@ Activities performed by this service include standing up delivery routines and t
 
 - A reasonable theory of change with measurable milestones.
 
-- A 90-day-or-more horizon — short-cycle issues route to Stat, not delivery.
+- A 90-day-or-more horizon. Short-cycle issues route to Stat, not delivery.
 
 > *We resist the urge to take over agency work. Instead, we build systems that help agencies own and sustain change.*
 
@@ -170,6 +170,6 @@ We do not run delivery reviews for everything. The overlay activates only when t
 
 ## Relationship to the Innovation Lab
 
-Cross-Agency Delivery does not replace the Innovation Lab. The Lab owns the craft of solving: discovery, design, prototyping, civic technology, product management, and MVP-and-handoff. Cross-Agency Delivery owns the coordination overlay when multiple agencies need to move together: Authorizer, Senior Responsible Owner, decision rights, escalation, commitment tracking, and sustainment commitments.
+Cross-Agency Delivery does not replace the Innovation Lab. The Lab owns the craft of solving: discovery, design, prototyping, civic technology, product management, and MVP-and-handoff. Cross-Agency Delivery owns the coordination layer when multiple agencies need to move together: Authorizer, Senior Responsible Owner, decision rights, escalation, commitment tracking, and sustainment commitments.
 
 When a Tiger Team needs cross-agency authority, the Lab provides the team and method while Cross-Agency Delivery provides the activation, cadence, and closure discipline.

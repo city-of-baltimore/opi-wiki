@@ -1,14 +1,14 @@
 # Wiki Knowledge Base Structure
 
-{{ page_header(summary="How OPI organizes its internal SharePoint knowledge base — a separate system from this public site.", category="SERIES · OPI FOUNDATIONS", tagline="Structure, governance, and canonical pages.") }}
+{{ page_header(summary="How OPI organizes its internal SharePoint knowledge base — a separate system from this public site.", category="SERIES · OPI FOUNDATIONS", tagline="Structure, governance, and what each pillar must contain.") }}
 
 !!! note "Two different systems"
-    This page documents OPI's **internal SharePoint knowledge base** — the
+    This page documents OPI's **internal SharePoint knowledge base**, the
     staff-only operating home for project records, directories, and controlled
     templates. It does **not** describe this public site.
 
     **This public site (OPI Foundations)** is a MkDocs site organized into five
-    sections — About Us, How We Work, Our Teams, Resources, and Public — and
+    sections (About Us, How We Work, Our Teams, Resources, and Public) and
     published openly. The internal SharePoint KB described below is where the
     non-public, day-to-day operating records live. The two use different
     top-level labels on purpose (for example, this site's **How We Work**
@@ -30,13 +30,13 @@ AUDIENCE
 
 ## Why the Wiki exists
 
-The OPI Wiki is the single internal home for the way OPI works — mission, model, methods, templates, and active project records. It is not a file dump. It is a maintained operating manual with named owners, review cadences, and a quality bar. The goal is simple: anyone joining OPI should be able to find the canonical document, the right template, the active project list, and the person who owns each thing — in under five minutes.
+The OPI Wiki is the single internal home for the way OPI works: mission, model, methods, templates, and active project records. It is not a file dump. It is a maintained operating manual with named owners, review cadences, and a quality bar. The goal is simple: anyone joining OPI should be able to find the official document, the right template, the active project list, and the person who owns each thing, in under five minutes.
 
 > *Respond when necessary. Build so we do not have to respond again.*
 
 ### Three jobs of the Wiki
 
-**Find.** Surface the canonical document, person, or routine the user needs, fast.
+**Find.** Surface the official document, person, or routine the user needs, fast.
 
 **Trust.** Make it obvious which documents are current, who owns them, and when they were last reviewed.
 
@@ -48,7 +48,7 @@ OPI uses Microsoft SharePoint as the wiki platform, consistent with the rest of 
 
 ### What lives in the Wiki
 
-- Canonical OPI Foundations documents (this set), in their final approved form.
+- The official OPI Foundations documents (this set), in their final approved form.
 
 - Service playbooks and methods (CitiStat, data governance, Innovation Lab methods, tiger teams).
 
@@ -95,7 +95,7 @@ The internal SharePoint KB uses six top-level pillars. Depth comes from consiste
 
 - Change Log — what is new and updated.
 
-## Canonical pages — what each pillar must contain
+## What each pillar must contain
 
 ### About OPI
 
@@ -174,7 +174,7 @@ Every Wiki contributor must know which content type to use. Mismatch is the lead
 | SharePoint page  | Living guidance that needs to be read and searched.                 | How to run a Stat session; charter standards. |
 | Document library | Controlled artifacts and templates that need versioning.            | Charter template; KPI Dictionary template.    |
 | List             | Systems of record — structured, sortable, filterable, reportable.   | Project Directory; People Directory.          |
-| Folder           | Supporting files inside a project space; never the source of truth. | Meeting attachments inside a project hub.     |
+| Folder           | Supporting files inside a project space; never the official record. | Meeting attachments inside a project hub.     |
 
 ## Metadata — minimum effective tagging
 
@@ -229,7 +229,7 @@ The Wiki is built in three releases so it is useful on day one and improves with
 
 **MVP (2 weeks).** Top-level structure, Project Directory, People Directory, Templates library, Start Here, Change Log. Linked from the OPI Foundations document set.
 
-**V1 (30 to 45 days).** Service playbooks, methods pages, City systems 101, engineering standards, full Foundations set published as canonical.
+**V1 (30 to 45 days).** Service playbooks, methods pages, City systems 101, engineering standards, full Foundations set published in final approved form.
 
 **V2 (quarterly).** Expand systems-of-record lists, add dashboards and views, harden governance (audits, term updates, archive policy).
 

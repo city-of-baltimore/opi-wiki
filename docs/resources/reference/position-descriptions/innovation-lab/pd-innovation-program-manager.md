@@ -15,7 +15,7 @@
 
 ## Position Summary
 
-The Innovation Program Manager leads the day-to-day operations of OPI’s Innovation Lab — the portfolio that takes service problems surfaced by CitiStat or Director’s Office sponsorship and turns them into tested, adopted solutions. The role runs the Lab’s intake, scoping, and delivery routines; orchestrates tiger teams; sponsors civic-tech and service-design work; and coaches Lab staff (Civic Designer, Applied Data Scientist, and Full Stack Engineer) toward decision-ready outcomes.
+The Innovation Program Manager leads the day-to-day operations of OPI’s Innovation Lab, the portfolio that takes service problems surfaced by CitiStat or Director’s Office sponsorship and turns them into tested, adopted solutions. The role runs the Lab’s intake, scoping, and delivery routines; orchestrates tiger teams; sponsors civic-tech and service-design work; and coaches Lab staff (Civic Designer, Applied Data Scientist, and Full Stack Engineer) toward decision-ready outcomes.
 
 Reporting to the Executive Director and Chief Data Officer, the Innovation Program Manager partners closely with the Deputy Chief Performance Officer (CitiStat handoffs) and the Deputy Chief Data Officer (data and product collaboration). The role ensures Lab projects are framed for adoption from day one, evaluated honestly, and either scaled, sustained by the agency owner, or sunset with a clear lessons-learned record.
 
@@ -25,7 +25,7 @@ Reporting to the Executive Director and Chief Data Officer, the Innovation Progr
 
 - Operate the Innovation Lab’s intake-to-closeout pipeline: charter, scoping, design and discovery, prototyping, evaluation, and handoff.
 
-- Maintain the Lab’s portfolio register — active projects, charters, milestones, evaluation plans, and delivery status — in coordination with the Project Manager.
+- Maintain the Lab’s portfolio register (active projects, charters, milestones, evaluation plans, and delivery status) in coordination with the Project Manager.
 
 - Sponsor each project’s adoption plan: the agency owner, the operating model after the Lab steps back, and the post-Lab measurement plan.
 
@@ -41,7 +41,7 @@ Reporting to the Executive Director and Chief Data Officer, the Innovation Progr
 
 ### Civic Design and Civic Technology
 
-- Direct the work of the Civic Designer and carry the Lab's civic-technology leadership directly — a scope consolidated into this role — aligning design and technology approach with service-delivery realities.
+- Direct the work of the Civic Designer and carry the Lab's civic-technology leadership directly, a scope consolidated into this role, aligning design and technology approach with service-delivery realities.
 
 - Sponsor service blueprints, journey maps, prototypes, and tested civic-tech tools that are accessible, equitable, and sustainable.
 

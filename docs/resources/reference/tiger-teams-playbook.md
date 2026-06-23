@@ -16,9 +16,9 @@ OWNER
 AUDIENCE
 :   OPI staff and agency partners on a Tiger Team; Deputy Mayors and the City Administrator’s Office.
 
-## Canonical Tiger Team definition
+## The official Tiger Team definition
 
-A **Tiger Team** is a time-boxed, cross-functional delivery and innovation sprint focused on one service problem. It typically runs three to six months and produces tested pilots, process changes, tools, SOPs, and a sustainment plan — not just recommendations.
+A **Tiger Team** is a time-boxed, cross-functional delivery and innovation sprint focused on one service problem. It typically runs three to six months and produces tested pilots, process changes, tools, SOPs, and a sustainment plan, not just recommendations.
 
 The **Innovation Lab** provides the method and team. **Cross-Agency Delivery** charters the work when cross-agency authority is required.
 
@@ -38,9 +38,9 @@ Do not use a Tiger Team for routine reporting, a one-time executive decision, an
 
 ## Why Tiger Teams now
 
-Baltimore City has lived with persistent gaps in basic service delivery — in parking enforcement, traffic calming, sweeping, waste, code enforcement, forestry. These gaps are not surprises; they are systemic. They sit at the intersection of process, staffing, technology, equipment, and contracts, and no one part of the system can fix them alone.
+Baltimore City has lived with persistent gaps in basic service delivery: parking enforcement, traffic calming, sweeping, waste, code enforcement, forestry. These gaps are not surprises; they are systemic. They sit at the intersection of process, staffing, technology, equipment, and contracts, and no one part of the system can fix them alone.
 
-A Tiger Team is a focused delivery sprint, time-boxed to the problem — typically three to six months — that brings a cross-functional team to one service problem. It moves from analysis to action through fast diagnosis and rapid prototypes that test solutions in real conditions — and ends with a plan to scale: ownership, operating procedures, and data products.
+A Tiger Team is a focused delivery sprint, time-boxed to the problem, that brings a cross-functional team to one service problem. It typically runs three to six months. It moves from analysis to action through fast diagnosis and rapid prototypes that test solutions in real conditions, and it ends with a plan to scale: ownership, operating procedures, and data products.
 
 > *Design prompt: what would have to be true for this service to feel reliable to residents?*
 
@@ -48,11 +48,11 @@ A Tiger Team is a focused delivery sprint, time-boxed to the problem — typical
 
 The Innovation Lab provides the team and the method for every Tiger Team. The Lab’s question is *how do we solve this?* — the craft, the discovery, the design, the build.
 
-When a Tiger Team’s work needs cross-agency coordination authority — named Authorizers at the Deputy Mayor or City Administrator level, decision rights across multiple agencies, sustainment commitments from each agency, and a weekly delivery cadence to keep them aligned — the team is chartered through Cross-Agency Delivery activation. Cross-Agency Delivery owns that overlay: it is *how* the agencies actually ship the fix together, not who builds it.
+Some work needs cross-agency coordination authority: named Authorizers at the Deputy Mayor or City Administrator level, decision rights across multiple agencies, sustainment commitments from each agency, and a weekly delivery cadence to keep them aligned. That work is chartered through Cross-Agency Delivery activation. Cross-Agency Delivery is a way of running work that several agencies have to ship together. It owns the coordination, not the building.
 
-When the work does not need that overlay — the authority sits cleanly inside one agency, or the cross-agency coordination is light — the Tiger Team is chartered through Innovation Lab intake under the agency director’s authority.
+When the work does not need that coordination, because the authority sits cleanly inside one agency or the cross-agency work is light, the Tiger Team is chartered through Innovation Lab intake under the agency director’s authority.
 
-In both cases, the deliverables, cadences, and standard artifacts that follow apply unchanged. What differs is where the work is chartered, who authorizes it, and whether Cross-Agency Delivery’s coordination overlay is in play.
+In both cases, the deliverables, cadences, and standard artifacts that follow apply unchanged. What differs is where the work is chartered, who authorizes it, and whether Cross-Agency Delivery’s coordination is in play.
 
 **Six focus areas — FY26 (January → June 2026)**
 
@@ -109,7 +109,7 @@ If the team needs multiple agencies to change workflows, decision rights, or sus
 
 ## The method — Public Innovation Toolkit
 
-Tiger Teams use the Public Innovation Toolkit, a four-phase method designed for public-sector delivery. The phases are sequential but the work iterates: diagnosis informs design, prototypes inform diagnosis, and the sustain plan starts taking shape from week one.
+Tiger Teams use the Public Innovation Toolkit, a four-phase method built for public-sector delivery. The phases are sequential but the work iterates: diagnosis informs design, prototypes inform diagnosis, and the sustain plan starts taking shape from week one.
 
 ### Phase 1 — AIM: Set the mission
 
@@ -133,7 +133,7 @@ Tiger Teams use the Public Innovation Toolkit, a four-phase method designed for 
 
 ### Phase 3 — ACTIVATE: Deliver initiatives
 
-**Purpose.** Prototype, pilot, and scale initiatives in real conditions — not in slides.
+**Purpose.** Prototype, pilot, and scale initiatives in real conditions, not in slides.
 
 **Activities.** Standing up pilots in field conditions; partnering with BCIT and the agency on tooling; weekly delivery routines; mid-cycle review with the Deputy Mayor.
 
@@ -155,7 +155,7 @@ Tiger Teams use the Public Innovation Toolkit, a four-phase method designed for 
 
 | **Role**            | **Owned by**                   | **What they do**                                                               |
 |---------------------|--------------------------------|--------------------------------------------------------------------------------|
-| Authorizer          | Agency director, Deputy Mayor, or City Administrator | Authorizes the team, unblocks, and closes the work at the end. The level depends on whether Cross-Agency Delivery’s coordination overlay is in play. |
+| Authorizer          | Agency director, Deputy Mayor, or City Administrator | Authorizes the team, unblocks, and closes the work at the end. The level depends on whether Cross-Agency Delivery coordination is in play. |
 | Agency partner lead | Agency director or designee    | Owns the agency’s side of the work and the sustain plan.                       |
 | Tiger Team lead     | OPI Innovation Lab PM          | Runs the sprint; owns plan-on-a-page, weekly delivery, and final sustain memo. |
 | Civic designer      | OPI · Civic Designer           | Frontline and resident research; service maps; co-design.                      |
@@ -206,11 +206,11 @@ Tiger Teams use the Public Innovation Toolkit, a four-phase method designed for 
 
 ## What makes a Tiger Team succeed
 
-**Real authority.** A named Authorizer at the right level — the agency director when the authority sits inside one agency, or a Deputy Mayor or the City Administrator when the work needs Cross-Agency Delivery’s coordination overlay — who shows up, decides, and closes the work.
+**Real authority.** A named Authorizer at the right level who shows up, decides, and closes the work. That is the agency director when the authority sits inside one agency, or a Deputy Mayor or the City Administrator when the work needs Cross-Agency Delivery coordination.
 
-**Frontline truth.** The team spends time in the field, in trucks, on routes, in inspections — not just in conference rooms.
+**Frontline truth.** The team spends time in the field: in trucks, on routes, in inspections, not just in conference rooms.
 
-**Time-box discipline.** The end date is named in the charter and treated as real — typically three to six months. Scope flexes; the date does not.
+**Time-box discipline.** The end date is named in the charter and treated as real, typically three to six months. Scope flexes; the date does not.
 
 **Pilots in the world.** No paper recommendations. Every recommendation is tested in real conditions before it is taken seriously.
 
@@ -236,7 +236,7 @@ Tiger Teams use the Public Innovation Toolkit, a four-phase method designed for 
 
 **Data and Analytics.** Provides the diagnosis analytics during the sprint and the data products that ship with the pilot.
 
-**Cross-Agency Delivery.** The service overlay — owns coordination authority across agencies. When a Tiger Team’s work needs that overlay, it is chartered through Cross-Agency Delivery activation. The Innovation Lab still provides the team and the method; Cross-Agency Delivery provides the standing delivery review, the named Authorizer at the Deputy Mayor or City Administrator level, and the closure plan with sustainment commitments from each agency. Cross-Agency Delivery’s question is *how do we get multiple agencies to actually ship this together?*
+**Cross-Agency Delivery.** Owns coordination authority across agencies. When a Tiger Team’s work needs that authority, it is chartered through Cross-Agency Delivery activation. The Innovation Lab still provides the team and the method; Cross-Agency Delivery provides the standing delivery review, the named Authorizer at the Deputy Mayor or City Administrator level, and the closure plan with sustainment commitments from each agency. Cross-Agency Delivery’s question is *how do we get multiple agencies to actually ship this together?*
 
 **AdminOps.** Charters the team in intake, supports comms and partnerships, and books the closure ceremony.
 

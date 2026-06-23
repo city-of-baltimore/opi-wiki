@@ -61,7 +61,7 @@ Twelve principles, written so they can be read by anyone working on the program 
 
 - **Govern first, build second.** Every dataset and KPI has a named owner before it powers a product.
 - **Ground every output.** AI responses are grounded through the MCP/tool layer; freeform model-only answers do not ship.
-- **One definition per metric.** The KPI dictionary is the canonical source; no parallel definitions in product code.
+- **One definition per metric.** The KPI dictionary is the official source; no parallel definitions in product code.
 - **Intake is single-channel.** No side projects, no shadow data products.
 
 ### Delivery discipline

@@ -15,7 +15,7 @@ VERSION
 
 ## Purpose
 
-OPI operates at the intersection of performance, data, design, and delivery. Our effectiveness depends not only on analytical and technical skill, but on how we work together, how we make decisions, and how we protect trust — with each other, with agencies, and within the Mayor’s Office.
+OPI operates at the intersection of performance, data, design, and delivery. Our effectiveness depends not only on analytical and technical skill, but on how we work together, how we make decisions, and how we protect trust with each other, with agencies, and within the Mayor’s Office.
 
 This document establishes a shared leadership operating model for OPI. It applies to all managers and people leaders, and is inherited across teams.
 
@@ -263,7 +263,7 @@ Silence is not professionalism. Early escalation is a sign of ownership.
 
 ### We protect trust
 
-Undermining peers, managers, or leadership — explicitly or implicitly — is unacceptable.
+Undermining peers, managers, or leadership, explicitly or implicitly, is unacceptable.
 
 ### We serve the public, not ourselves
 

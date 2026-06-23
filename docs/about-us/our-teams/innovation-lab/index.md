@@ -12,9 +12,9 @@ Read this section alongside [How Work Moves Through OPI](../../../how-we-work/ho
 
 ## Position descriptions
 
-The canonical
+The
 [Resources → Position Descriptions](../../../resources/reference/position-descriptions/index.md)
-directory is the source of truth for Innovation Lab roles. Current staffed
+directory is the single maintained record of Innovation Lab roles. Current staffed
 roles are the Innovation Program Manager (Gabriel Watson), Civic Designer,
 Applied Data Scientist, and Full Stack Engineer. The Lab's civic-technology
 leadership is held directly by the Innovation Program Manager.

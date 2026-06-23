@@ -4,7 +4,7 @@
 
 ## EXECUTIVE SUMMARY
 
-AdminOps is the service the Director's Office delivers to keep OPI's work coordinated, documented, resourced, and clearly communicated. A team that asks City agencies to operate with discipline must hold itself to the same standard — AdminOps is how OPI does that.
+AdminOps is the service the Director's Office delivers to keep OPI's work coordinated, documented, resourced, and clearly communicated. A team that asks city agencies to operate with discipline must hold itself to the same standard. AdminOps is how OPI does that.
 
 ## SERVICE DEFINITION
 
@@ -12,7 +12,7 @@ AdminOps owns the administrative, operational, communications, and portfolio-man
 
 ## WHY THIS WORK MATTERS
 
-Without strong intake, project management, communications, and people operations, a small office becomes reactive and personality-dependent. AdminOps is the operating system beneath the other four services — the difference between a team that ships reliably and one that runs on heroics.
+Without strong intake, project management, communications, and people operations, a small office becomes reactive and personality-dependent. AdminOps is the operating system beneath the other four services. It is the difference between a team that ships reliably and one that runs on heroics.
 
 ## WHAT THE SERVICE OWNS
 
@@ -26,7 +26,7 @@ Without strong intake, project management, communications, and people operations
 
 ## WHAT THE SERVICE DOES NOT OWN
 
-- The substance of the four citywide services — AdminOps supports them; it does not deliver them
+- The substance of the four citywide services. AdminOps supports them; it does not deliver them
 - Agency operations
 
 ## OPERATING POSTURE

@@ -12,7 +12,7 @@ Those seams are where city government most often gets stuck. Not because anyone 
 
 ## What cross-agency delivery is
 
-Cross-agency delivery is the practice of helping the City finish initiatives that touch multiple agencies. It is not a substitute for agency leadership — the agencies still own their work — but it is a discipline for getting complicated, multi-owner outcomes across the line. It combines clear scoping, shared problem framing, joint planning, structured working sessions, evidence-based decisions, and disciplined follow-through.
+Cross-agency delivery is the practice of helping Baltimore City finish initiatives that touch multiple agencies. It is not a substitute for agency leadership. The agencies still own their work. It is a discipline for getting complicated, multi-owner outcomes across the line. It combines clear scoping, shared problem framing, joint planning, structured working sessions, evidence-based decisions, and disciplined follow-through.
 
 At its center is a simple idea: someone has to own the end-to-end experience long enough to make it work. Not forever. Not as a permanent layer of bureaucracy. Just long enough to clarify roles, redesign the handoffs, document the new way of operating, and hand the running of the system back to the agencies that own it day to day.
 
@@ -66,6 +66,6 @@ Mayor’s Office of Performance and Innovation
 
 ## Plain-language operating distinction
 
-Cross-Agency Delivery is the discipline that helps the City move work across agency boundaries. It is not a new agency and not a substitute for agency leadership. It creates the room, cadence, decision rights, and sustainment commitments that allow agencies to ship together.
+Cross-Agency Delivery is the discipline that helps city government move work across agency boundaries. It is not a new agency and not a substitute for agency leadership. It creates the room, cadence, decision rights, and sustainment commitments that allow agencies to ship together.
 
 The Innovation Lab designs and tests the solution. Cross-Agency Delivery makes sure the agencies required to implement it move together.

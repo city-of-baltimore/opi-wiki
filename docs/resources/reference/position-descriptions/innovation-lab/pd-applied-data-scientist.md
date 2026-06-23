@@ -17,13 +17,13 @@
 
 The Applied Data Scientist on the Innovation Lab turns service problems into tested, data-driven solutions. Where the Data and Analytics team's Applied Data Scientist anchors citywide analytics infrastructure, this role is embedded in the Lab's delivery work: it brings analysis, modeling, and applied-AI methods directly into discovery, prototyping, and tiger-team engagements so that the products the Lab ships are grounded in evidence and measurably better for residents and staff.
 
-Reporting to the Innovation Program Manager, the role partners closely with the Civic Designer, the Full Stack Engineer, CitiStat analysts, and agency staff. It sits inside service problems — understanding how a service actually works, investigating the data behind it, prototyping a solution, and helping prove whether the solution moves the metric that matters.
+Reporting to the Innovation Program Manager, the role partners closely with the Civic Designer, the Full Stack Engineer, CitiStat analysts, and agency staff. It sits inside service problems: understanding how a service actually works, investigating the data behind it, prototyping a solution, and helping prove whether the solution moves the metric that matters.
 
 ## Key Responsibilities
 
 ### Applied Analysis and Problem Framing
 
-- Investigate the data behind a service problem a Lab project or tiger team is tackling — surfacing patterns, root causes, and opportunities that shape the solution.
+- Investigate the data behind a service problem a Lab project or tiger team is tackling, surfacing patterns, root causes, and opportunities that shape the solution.
 
 - Partner with designers, engineers, and agency staff to frame ambiguous questions, define baselines and target metrics, and state the assumptions a solution depends on.
 
@@ -35,7 +35,7 @@ Reporting to the Innovation Program Manager, the role partners closely with the 
 
 - Pilot applied-AI and machine-learning approaches in real conditions, with honest evaluation of accuracy, bias, and fitness for use.
 
-- Package methods for handoff — scoring scripts, monitoring plans, and documentation — so a solution can be sustained by the agency owner or the Data and Analytics team after the Lab steps back.
+- Package methods for handoff (scoring scripts, monitoring plans, and documentation) so a solution can be sustained by the agency owner or the Data and Analytics team after the Lab steps back.
 
 ### Evaluation and Measurement
 
@@ -57,7 +57,7 @@ Reporting to the Innovation Program Manager, the role partners closely with the 
 
 - Strong skills in Python or R and SQL for analysis, modeling, dataset preparation, and reproducible research.
 
-- Experience with applied machine learning or AI methods, and the judgment to know when they are — and are not — the right tool.
+- Experience with applied machine learning or AI methods, and the judgment to know when they are, and are not, the right tool.
 
 - Comfort building analytical prototypes and integrating outputs into web-based products or APIs.
 
@@ -65,7 +65,7 @@ Reporting to the Innovation Program Manager, the role partners closely with the 
 
 ### Product and delivery competencies
 
-- Experience with rapid, iterative, user-centered delivery — shipping lightweight increments and learning from feedback.
+- Experience with rapid, iterative, user-centered delivery: shipping lightweight increments and learning from feedback.
 
 - Ability to work closely with designers, engineers, and non-technical stakeholders to connect analysis to service-delivery decisions.
 

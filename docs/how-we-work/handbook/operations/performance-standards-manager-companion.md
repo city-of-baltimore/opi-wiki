@@ -62,7 +62,7 @@ Run this check before finalizing a rating. If you answer yes to any item, return
 
 ## Calibration principles
 
-- **Not stack ranking:** Calibration is to ensure fairness and shared standards. It is not designed to enforce a distribution.
+- **Not stack ranking:** Calibration is to ensure fairness and shared standards. It does not enforce a distribution.
 
 - **Not rewarding politics:** Visibility is not the same as impact. Politics is not the same as performance.
 

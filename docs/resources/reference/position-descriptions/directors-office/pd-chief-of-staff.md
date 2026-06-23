@@ -51,9 +51,9 @@ The Chief of Staff manages the Director’s Office staff (Data Storyteller, Proj
 
 ### Operations, Knowledge, and SharePoint
 
-- Manage OPI’s internal operations: personnel actions, purchasing, facilities coordination, and the OPI SharePoint operating system as the source of truth.
+- Manage OPI’s internal operations: personnel actions, purchasing, facilities coordination, and the OPI SharePoint operating system as the official record.
 
-- Sponsor knowledge management practices — SOPs, templates, decision logs, the wiki, and the publication archive.
+- Sponsor knowledge management practices: SOPs, templates, decision logs, the wiki, and the publication archive.
 
 - Direct OPI’s administrative-operations function (CitiStat Inspector and related coordination), including supplies, facilities, AV, and visitor logistics.
 

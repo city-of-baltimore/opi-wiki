@@ -2,9 +2,9 @@
 
 {{ page_header(summary="Who reports to whom, and how decision rights flow.", tagline="Teams, leads, staff alignment, services, cost centers, and the Cross-Agency Delivery overlay.") }}
 
-OPI delivers its mission through four teams and five services. The teams are how we organize people, leadership, and cost centers. The services are how we describe what OPI delivers to residents, agencies, and City leadership.
+OPI delivers its mission through four teams and five services. The teams are how we organize people, leadership, and cost centers. The services are how we describe what OPI delivers to residents, agencies, and city leadership.
 
-This document is the canonical view of OPI’s structure: leads, staff alignment, teams, services, cost centers, and the Cross-Agency Delivery overlay. For the full staff roster — position numbers, classifications, and reporting lines — see [Team and Roles](team-and-roles/index.md).
+This document is the official view of OPI’s structure: leads, staff alignment, teams, services, cost centers, and Cross-Agency Delivery. For the full staff roster (position numbers, classifications, and reporting lines), see [Team and Roles](team-and-roles/index.md).
 
 > *Better government is not a one-time project. It is a discipline.*
 
@@ -39,7 +39,7 @@ The alignment below reflects OPI’s current operating chart, as of June 2026.
 
 ## Cost Centers and Budget Services
 
-Cost centers govern budget and expense management. Budget services describe what OPI delivers. Cross-Agency Delivery is tracked as a service overlay unless and until dedicated staff or budget are assigned.
+Cost centers govern budget and expense management. Budget services describe what OPI delivers. Cross-Agency Delivery is tracked as a service overlay (a coordinating function that draws on staff from across OPI rather than a team of its own) unless and until dedicated staff or budget are assigned.
 
 ### Cost Centers
 
@@ -85,7 +85,7 @@ Three lenses help staff, partners, and leadership read OPI:
 
 - Teams are how we organize people, leads, and budgets.
 
-- Services are how we describe what we deliver to residents, agencies, and City leadership.
+- Services are how we describe what we deliver to residents, agencies, and city leadership.
 
 - Cost centers are how we account for resources, track spend, and submit our budget request.
 

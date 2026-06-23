@@ -16,7 +16,7 @@
 
 AdminOps keeps OPI aligned, coordinated, resourced, documented, and understood.
 
-This service is the operating backbone for the office. It supports the Executive Director, team leads, staff, agencies, City leadership, Council, partners, and public audiences by making OPI’s work visible, organized, high-quality, and sustainable.
+This service is the operating backbone for the office. It supports the Executive Director, team leads, staff, agencies, city leadership, Council, partners, and public audiences by making OPI’s work visible, organized, and sustainable.
 
 AdminOps is not overhead. It is the operating system that lets a small, multidisciplinary office deliver citywide work with discipline and credibility.
 

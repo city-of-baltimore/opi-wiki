@@ -21,18 +21,18 @@ OPI Foundations is written in plain language. We avoid jargon where we can, defi
 
 ## What lives where
 
-This is the public reference. If you're looking for an internal SOP, a personnel record, or a vendor contract, that lives elsewhere — in SharePoint, in HR systems, or in procurement records — and not in this wiki.
+This is the public reference. If you're looking for an internal SOP, a personnel record, or a vendor contract, that lives elsewhere: in SharePoint, in HR systems, or in procurement records, not in this wiki.
 
 ## Operating model consistency checklist
 
 Before opening a documentation PR, check whether the page uses OPI's core operating model consistently.
 
-- Does the page distinguish the four content types — team (portfolio), service, program, and product?
+- Does the page distinguish the four content types: team (portfolio), service, program, and product?
 - Does it place CitiStat as a program supported by all teams, and Cross-Agency Delivery as a service (not a staffed team)?
 - Does it spell out Cross-Agency Delivery in full, never "CAD"?
-- Does it use Innovation Lab for the craft of solving and Cross-Agency Delivery for the coordination overlay?
+- Does it use Innovation Lab for the craft of solving and Cross-Agency Delivery for the cross-agency coordination?
 - Does the page (or its section `.metadata.yml`) name an owner and a review cadence?
 - Does it describe CitiStat as an executive performance rhythm rather than a meeting calendar?
-- Does it link to the canonical method page when using terms like Tiger Team, Stat, delivery activation, or product discovery?
+- Does it link to the official method page when using terms like Tiger Team, Stat, delivery activation, or product discovery?
 - Does it name the audience and public posture?
 - Does it avoid retired or use-carefully terms unless the historical context requires them?

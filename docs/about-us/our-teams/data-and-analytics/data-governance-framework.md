@@ -48,7 +48,7 @@ The City must clearly protect sensitive information while explaining how data is
 
 **5. One definition per metric.**
 
-Priority KPIs and shared data elements should have canonical definitions, owners, and methodology.
+Priority KPIs and shared data elements should have a single official definition, an owner, and documented methodology.
 
 **6. Human judgment remains accountable.**
 
@@ -183,7 +183,7 @@ Any external sharing of non-public data should document the purpose, dataset, pe
 
 This strategy can evolve into formal authority through a staged approach. First, OPI can issue administrative standards and templates under the Chief Data Officer’s role. Second, the City Administrator or Mayor can issue an executive directive establishing governance routines, agency responsibilities, and AI review expectations. Third, City Council can codify core responsibilities such as the data inventory, open data roadmap, annual report, agency data stewards, and governance councils.
 
-The framework should be designed to survive leadership transitions. Strong data governance should not depend on one person, one platform, or one initiative. It should become part of how Baltimore City operates.
+The framework should survive leadership transitions. Strong data governance should not depend on one person, one platform, or one initiative. It should become part of how Baltimore City operates.
 
 ## CLOSING
 

@@ -10,7 +10,7 @@
 
 This playbook is the staff-facing companion to the CitiStat strategic overview. It translates the CitiStat method into practical standards, routines, and templates for OPI staff, agency leaders, Data-Driven Officers, Deputy Mayor teams, the City Administrator’s Office, and other partners who participate in the performance routine.
 
-The playbook is designed to make excellence repeatable. A CitiStat session should not depend on personality, memory, or heroic follow-up. It should have a clear purpose, reliable-enough data, useful pre-work, disciplined facilitation, explicit commitments, evidence of closure, and a public story of progress where appropriate.
+The playbook exists to make excellence repeatable. A CitiStat session should not depend on personality, memory, or heroic follow-up. It should have a clear purpose, reliable-enough data, useful pre-work, disciplined facilitation, explicit commitments, evidence of closure, and a public story of progress where appropriate.
 
 <div class="opi-pullquote" markdown="0">Working definition: CitiStat is the routine that converts performance signals into decisions, commitments, follow-through, and sustained service improvement.</div>
 
@@ -285,7 +285,7 @@ The value of CitiStat is realized after the session. A commitment is not complet
 
 | **Follow-up element** | **Standard**                                                                                                                                                                   |
 |-----------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Commitment tracker    | Single source of truth for open, closed, overdue, escalated, and renegotiated commitments.                                                                                     |
+| Commitment tracker    | The official record of open, closed, overdue, escalated, and renegotiated commitments.                                                                                     |
 | Evidence of done      | Each commitment includes the evidence needed for closure: data, document, screenshot, SOP, work order, field verification, or decision record.                                 |
 | Escalation path       | If a blocker is unresolved, the tracker names the next authorizer or routine: agency head, Deputy Mayor, DCA, CA, delivery activation, data governance, or product governance. |
 | Weekly unblock huddle | OPI and sponsor designees review the top blockers and decisions needed between sessions.                                                                                       |

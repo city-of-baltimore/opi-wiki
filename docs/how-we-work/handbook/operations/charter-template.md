@@ -173,7 +173,7 @@ Who owns the work after the project closes? What routine keeps it alive? Without
 
 ## Maintenance
 
-Update the charter when scope, timeline, or KPIs change materially. Material changes require sponsor and authorizer acknowledgment. The charter and the Project Directory entry are the same record — keep them aligned.
+Update the charter when scope, timeline, or KPIs change materially. Material changes require sponsor and authorizer acknowledgment. The charter and the Project Directory entry are the same record, so keep them aligned.
 
 ## Required operating model fields
 

@@ -46,7 +46,7 @@ other emergency declarations).
 |---|---|---|
 | Essential | OPI leadership and Principal Staff (Operations Officer V and above). | Required to report to duty or perform remote duties as directed during emergency operations or continuity activations, unless explicitly released. |
 | Emergency Essential | All other OPI staff. | May be required to report to duty or perform remote duties as directed based on the incident and operational needs. Be prepared for activation and schedule changes. |
-| Non-Essential | No OPI positions are designated Non-Essential at this time. | Not applicable for OPI at this. |
+| Non-Essential | No OPI positions are designated Non-Essential at this time. | Not applicable for OPI at this time. |
 
 ## How activation works
 

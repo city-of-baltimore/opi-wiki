@@ -6,7 +6,7 @@
 
 ### What this service is for
 
-The Innovation Lab turns service problems into tested, adopted solutions. It is OPI's service-improvement and applied-innovation capability — the craft of solving — used to make city services easier to access, track, and complete.
+The Innovation Lab turns service problems into tested, adopted solutions. It is OPI's service-improvement and applied-innovation capability, the craft of solving, used to make city services easier to access, track, and complete.
 
 ### Who we are
 
@@ -18,7 +18,7 @@ Discovery, service design, user research, product management, prototyping, civic
 
 ### Why it matters
 
-Service problems usually look like technology, policy, or staffing problems in isolation — they are usually all three. Without a team that can hold the whole problem and design across boundaries, agencies cannot move from analysis to action.
+Service problems usually look like technology, policy, or staffing problems in isolation. They are usually all three. Without a team that can hold the whole problem and design across boundaries, agencies cannot move from analysis to action.
 
 ### How we work
 

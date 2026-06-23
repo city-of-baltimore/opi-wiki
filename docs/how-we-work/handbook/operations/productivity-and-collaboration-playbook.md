@@ -77,7 +77,7 @@ Our tools are powerful but only if we use them consistently. The goal is simple:
 
 - Share links, not files. Use version history rather than creating duplicates.
 
-- Maintain one source of truth. Do not keep parallel copies in Teams chat, email attachments, and OneDrive.
+- Keep one official copy. Do not keep parallel copies in Teams chat, email attachments, and OneDrive.
 
 ### Naming conventions
 
@@ -127,7 +127,7 @@ Use names that sort, scan, and survive context loss. Recommended format: YYYY-MM
 
 - Lead with the ask: what you need, by when, and why it matters.
 
-- Provide context in bullets, not paragraphs. Link to the source-of-truth doc.
+- Provide context in bullets, not paragraphs. Link to the official doc.
 
 - End with next steps and owner.
 
@@ -159,7 +159,7 @@ Keep signatures consistent, professional, and accessible. No oversized images.
 
 - Meeting chat is not a system of record. Copy key decisions and action items into notes.
 
-- If you share a file in Teams, confirm where it is stored. Teams Files are backed by SharePoint, but duplicates happen. Use a single canonical link.
+- If you share a file in Teams, confirm where it is stored. Teams Files are backed by SharePoint, but duplicates happen. Use a single official link.
 
 ## 5. Meeting management
 

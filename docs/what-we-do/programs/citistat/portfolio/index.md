@@ -57,7 +57,7 @@ Every Stat does not have identical content, but it has a consistent operating pa
 | Pre-meeting memo         | Frames purpose, agenda, data highlights, risks, decisions needed, and follow-ups from the prior session.   |
 | Stat deck                | Visual decision support for the session; focuses on signal, bottlenecks, options, and commitments.         |
 | Follow-up memo           | Documents commitments, owners, due dates, definitions of done, evidence expectations, and escalation path. |
-| Commitment tracker       | Single source of truth for open, closed, overdue, and escalated follow-ups.                                |
+| Commitment tracker       | The official record of open, closed, overdue, and escalated follow-ups.                                    |
 | Decision log             | Records decisions made, who made them, when, and what changed because of the decision.                     |
 | Public summary           | Plain-language summary of what the Stat is about, what changed, and what is next — for the website.        |
 | Dashboard / data product | Recurring data product that supports the Stat and reduces one-off analysis.                                |

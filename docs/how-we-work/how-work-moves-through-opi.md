@@ -40,9 +40,9 @@ The Lab’s question is: **How do we solve this problem in a way that works for 
 
 The Lab can work on a single-agency problem or a multi-agency problem. What defines the Lab is the craft: research, design, prototype, test, build, learn, and hand off.
 
-### Cross-Agency Delivery owns the coordination overlay
+### Cross-Agency Delivery owns the coordination
 
-Cross-Agency Delivery is a service overlay, not a standing team and not a cost center. It activates when the work requires multiple agencies to move together and normal channels are not enough.
+Cross-Agency Delivery is a service overlay: a coordinating function that draws on staff from across OPI rather than a standing team, and not a cost center. It activates when the work requires multiple agencies to move together and normal channels are not enough.
 
 Cross-Agency Delivery owns the coordination authority: Authorizer, Senior Responsible Owner, decision rights, commitment tracking, escalation, weekly or bi-weekly delivery cadence, and sustainment commitments across agencies.
 
@@ -54,7 +54,7 @@ AdminOps keeps the work visible, documented, communicated, and sustained. It own
 
 ## How Tiger Teams fit
 
-A **Tiger Team** is a time-boxed, cross-functional delivery and innovation sprint focused on one service problem. It typically runs three to six months and produces tested pilots, process changes, tools, SOPs, and a sustainment plan — not just recommendations.
+A **Tiger Team** is a time-boxed, cross-functional delivery and innovation sprint focused on one service problem. It typically runs three to six months and produces tested pilots, process changes, tools, SOPs, and a sustainment plan, not just recommendations.
 
 The Innovation Lab provides the method and team. If the work requires cross-agency authority, the Tiger Team is chartered through Cross-Agency Delivery. If authority sits cleanly within one agency, the Tiger Team can be chartered through Innovation Lab intake under the agency director.
 
@@ -83,10 +83,10 @@ Use these rules before creating a new meeting, workgroup, or project.
 
 | Confusing phrase | Use instead | Why |
 | --- | --- | --- |
-| “The Lab owns cross-agency delivery.” | “The Lab owns the craft; Cross-Agency Delivery owns the coordination overlay.” | The Lab can solve across agencies, but delivery authority is a separate overlay. |
+| “The Lab owns cross-agency delivery.” | “The Lab owns the craft; Cross-Agency Delivery owns the coordination.” | The Lab can solve across agencies, but delivery authority is a separate function. |
 | “Tiger Teams are CitiStat.” | “CitiStat may trigger a Tiger Team.” | CitiStat identifies and monitors; Tiger Teams diagnose, prototype, and pilot. |
 | “Delivery room” | “Delivery review,” “delivery cadence,” or “delivery activation” | These terms are clearer and less theatrical. |
-| “Digital Services” as a team name | “Innovation Lab” or “citywide digital services request,” depending on context | Innovation Lab is the canonical team; Digital Services may describe a request channel or brand posture only when explicitly needed. |
+| “Digital Services” as a team name | “Innovation Lab” or “citywide digital services request,” depending on context | Innovation Lab is the official team name; Digital Services may describe a request channel or brand posture only when explicitly needed. |
 | “Baltimore Design Lab” as a separate team | “Design community of practice within or alongside the Innovation Lab” | Avoids implying a separate office unless formally approved. |
 
 ## Standard handoffs
@@ -102,7 +102,7 @@ Use these rules before creating a new meeting, workgroup, or project.
 
 ## Function boundaries
 
-OPI's teams are designed to overlap by intent, not by accident. When more than one team could plausibly own a piece of work, these rules decide who leads.
+OPI's teams overlap by intent, not by accident. When more than one team could plausibly own a piece of work, these rules decide who leads.
 
 | **Function** | **Primary lead** | **Boundary / handoff rule** |
 | --- | --- | --- |

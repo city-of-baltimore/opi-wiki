@@ -25,7 +25,7 @@ This is not a file dump. It is a living operating manual with clear ownership, s
 
 - Simple top-level navigation. Depth comes from consistent subpages, not more tabs.
 
-- One source of truth for every “what, who, when.” No shadow guidance in chats or personal folders.
+- One official home for every “what, who, when.” No shadow guidance in chats or personal folders.
 
 - Pages for guidance. Documents for controlled artifacts. Lists for systems of record.
 
@@ -293,7 +293,7 @@ Optional, add when ready:
 
 - **Quarterly:** Archive snapshot (PDF export) for institutional memory and audits.
 
-### Automations (high leverage)
+### Automations (high payoff)
 
 - Reminder: if a project has not been updated in 7 days and is Active, notify Owner and copy PMO.
 

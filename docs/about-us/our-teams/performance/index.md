@@ -22,7 +22,7 @@ The team works closely with [Cross-Agency Delivery](../../../what-we-do/services
 
 ## Position descriptions
 
-Performance position descriptions live in the canonical
+Performance position descriptions live in
 [Resources → Position Descriptions](../../../resources/reference/position-descriptions/index.md),
 so the team page can stay focused on method, service context, and the CitiStat program.
 

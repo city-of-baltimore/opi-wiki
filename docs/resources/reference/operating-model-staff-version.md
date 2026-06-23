@@ -22,7 +22,7 @@ AUDIENCE
 >
 > *Respond when necessary. Build so we do not have to respond again.*
 
-We are the Mayor’s Office of Performance and Innovation, a small office inside the City Administrator’s Office. Our job is to make sure that when residents call 311, apply for a permit, or rely on trash collection, those services actually work — and that City staff have the routines, data, and tools to keep them working.
+We are the Mayor’s Office of Performance and Innovation, a small office inside the City Administrator’s Office. Our job is to make sure that when residents call 311, apply for a permit, or rely on trash collection, those services actually work, and that city staff have the routines, data, and tools to keep them working.
 
 ## How we are organized
 
@@ -32,28 +32,28 @@ OPI is organized into four teams. Each portfolio has a clear lead and a clear sc
 
 | **Portfolio**                  | **Lead**                                       | **What it does**                                                                                                       |
 |--------------------------------|------------------------------------------------|------------------------------------------------------------------------------------------------------------------------|
-| Director’s Office | Rakeim Young, Chief of Staff                   | Operating backbone — intake, portfolio visibility, communications, knowledge management, fiscal, HR, facilities, and officewide coordination. |
-| Performance       | Danny Heller, Deputy Chief Performance Officer | Owns the performance method — CitiStat routines, agency performance plans, KPI standards, follow-up.                   |
-| Data and Analytics             | Jason Howard, PhD, Deputy Chief Data Officer   | Builds trusted data infrastructure — analytics, data platform, data engineering, open data, governance, AI readiness.  |
-| Innovation Lab                 | Gabriel Watson, Innovation Program Manager | Turns service problems into designed, testable solutions — HCD, product discovery, civic tech, AI pilots, partnerships, and tiger teams. |
+| Director’s Office | Rakeim Young, Chief of Staff                   | Operating backbone: intake, portfolio visibility, communications, knowledge management, fiscal, HR, facilities, and officewide coordination. |
+| Performance       | Danny Heller, Deputy Chief Performance Officer | Owns the performance method: CitiStat routines, agency performance plans, KPI standards, follow-up.                   |
+| Data and Analytics             | Jason Howard, PhD, Deputy Chief Data Officer   | Builds trusted data infrastructure: analytics, data platform, data engineering, open data, governance, AI readiness.  |
+| Innovation Lab                 | Gabriel Watson, Innovation Program Manager | Turns service problems into designed, testable solutions: HCD, product discovery, civic tech, AI pilots, partnerships, and tiger teams. |
 
 ### Five services
 
-The four teams deliver five services. The same portfolio can support more than one service; one service is delivered as an overlay.
+The four teams deliver five services. The same portfolio can support more than one service. One service, Cross-Agency Delivery, is not a stand-alone team: it is a way of running work that several agencies have to ship together, drawing staff from the other portfolios.
 
 | **Service**                     | **One-sentence definition**                                                                                                                  |
 |---------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------|
 | Citywide Performance Management | Citywide performance management routines, including CitiStat, agency performance planning, performance measures, and follow-up.              |
 | Citywide Data and Analytics     | Data infrastructure, analytics capacity, open data program, and data governance practices across agencies.                                   |
-| Innovation Lab                  | OPI’s service-improvement capability — human-centered design, product management, civic technology, and applied innovation.                  |
-| Cross-Agency Delivery           | Coordination of high-priority initiatives that require action across multiple City agencies (a service overlay, not a separate cost center). |
+| Innovation Lab                  | OPI’s service-improvement capability: human-centered design, product management, civic technology, and applied innovation.                  |
+| Cross-Agency Delivery           | Coordination of high-priority initiatives that require action across multiple city agencies. A way of running work, not a separate cost center. |
 | AdminOps                        | Administrative, operational, communications, and portfolio management functions that support the rest of OPI.                                |
 
-*Cross-Agency Delivery is a service overlay, not a stand-alone team. The Innovation Lab provides the team, Performance provides the standing delivery routine, and the Director’s Office provides the authorizing relationships.*
+*Cross-Agency Delivery is a way of running work, not a stand-alone team. The Innovation Lab provides the team, Performance provides the standing delivery routine, and the Director’s Office provides the authorizing relationships.*
 
 ## How work enters OPI
 
-OPI uses a single front door. Every request — from agencies, from leadership, from inside OPI — enters the same way and gets routed by the same standard.
+OPI uses a single front door. Every request, whether from agencies, from leadership, or from inside OPI, enters the same way and gets routed by the same standard.
 
 ### The intake path
 
@@ -81,13 +81,13 @@ OPI uses a single front door. Every request — from agencies, from leadership, 
 
 ### What we decline or redirect
 
-- Long-term operating responsibility for an agency’s service — we are a time-boxed partner, not the operator.
+- Long-term operating responsibility for an agency’s service. We are a time-boxed partner, not the operator.
 
-- Single-agency work without cross-agency leverage — unless a Stat or Mayor’s priority makes it an exception.
+- Single-agency work without a cross-agency angle, unless a Stat or Mayor’s priority makes it an exception.
 
 - Vendor-led implementations without an owner inside OPI or the partner agency.
 
-- Unsponsored or unscoped requests — we send them back with a problem-statement template.
+- Unsponsored or unscoped requests. We send them back with a problem-statement template.
 
 ## How we govern decisions
 
@@ -123,7 +123,7 @@ OPI uses a single front door. Every request — from agencies, from leadership, 
 
 ## How the services interlock
 
-OPI’s services are designed to work as a cycle, not as silos.
+OPI’s services work as a cycle, not as silos.
 
 **CitiStat surfaces what is not working.** Through the monthly Stat routine, performance memos, and follow-up tracking.
 
@@ -139,13 +139,13 @@ OPI’s services are designed to work as a cycle, not as silos.
 
 - Know which portfolio you are in and which services you contribute to.
 
-- Use the single front door for all incoming work — do not freelance projects.
+- Use the single front door for all incoming work. Do not freelance projects.
 
 - Charter every project. Open it in the Project Directory. Update it at Weekly Ops Review.
 
 - Tag your work in SharePoint with portfolio, service, and sensitivity. Metadata is part of the work.
 
-- Hand off cleanly. Every project closes with a sustain plan — the agency that owns the service keeps the gain.
+- Hand off cleanly. Every project closes with a sustain plan, and the agency that owns the service keeps the gain.
 
 ## Where to learn more
 

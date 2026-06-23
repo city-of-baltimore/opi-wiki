@@ -2,7 +2,7 @@
 
 {{ page_header(summary="OPI's strategic priorities, on one page.", category="SERIES · OPI FOUNDATIONS") }}
 
-What OPI is finishing this year and starting next — anchored to the City Administrator’s priorities and the Mayor’s Action Plan.
+What OPI is finishing this year and starting next, anchored to the City Administrator’s priorities and the Mayor’s Action Plan.
 
 VERSION
 :   v1.0
@@ -20,11 +20,11 @@ AUDIENCE
 
 > *Respond when necessary. Build so we do not have to respond again.*
 
-OPI exists to make Baltimore City government continuously better at delivering services that residents can see and feel. We do that through five services — Citywide Performance Management, Citywide Data and Analytics, Innovation Lab, Cross-Agency Delivery, and AdminOps — and we measure ourselves on whether the city’s services are getting more reliable, not on the volume of activity in our office.
+OPI exists to make Baltimore City government continuously better at delivering services that residents can see and feel. We do that through five services: Citywide Performance Management, Citywide Data and Analytics, Innovation Lab, Cross-Agency Delivery, and AdminOps. We measure ourselves on whether the city’s services are getting more reliable, not on the volume of activity in our office.
 
 ## FY26 — The foundation in delivery
 
-FY26 is about getting the foundation right. The three priorities below were named to City Council at the FY26 budget hearing and remain our primary focus through June 2026. The recommended FY26 budget is $2.03M.
+FY26 is about getting the foundation right. The three priorities below were named to City Council at the FY26 budget hearing and remain our main focus through June 2026. The recommended FY26 budget is $2.03M.
 
 ### Priority 1 — Continue modernizing 311
 
@@ -84,7 +84,7 @@ With the foundation in place, FY27 shifts focus to bigger, more visible outcomes
 
 - Continue the tiger team model on the next cohort of service problems, drawn from CitiStat findings.
 
-- Push from “put out the fire” to “find the spark” — root-cause work that prevents the fire next year.
+- Push from “put out the fire” to “find the spark”: root-cause work that prevents the fire next year.
 
 - Sustain handoffs are the test: tiger team gains stay gained because the agency that owns the service keeps the gain.
 
@@ -92,7 +92,7 @@ With the foundation in place, FY27 shifts focus to bigger, more visible outcomes
 
 - Continue stabilizing CitiStat as the city’s shared management language; add the FY27 target of 50% of agencies achieving 90% of their commitment targets.
 
-- Tighter integration with BBMR on outcome-based budgeting — performance and budget aligned in the same conversation.
+- Tighter integration with BBMR on outcome-based budgeting, so performance and budget are aligned in the same conversation.
 
 - A standing Cross-Agency Delivery capability for the small set of multi-agency outcomes that matter most.
 

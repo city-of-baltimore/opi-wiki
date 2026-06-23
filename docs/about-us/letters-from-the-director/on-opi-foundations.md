@@ -8,9 +8,9 @@
 
 Every city in America is being asked to do more with less, move faster than it used to, and earn public trust in conditions that make trust harder to build. Baltimore is no exception. The honest question is not whether we feel that pressure. The honest question is whether we are organized to meet it.
 
-That is why the Mayor’s Office of Performance and Innovation exists. We are the City’s in-house capability for performance management, data and analytics, civic design, cross-agency delivery, and disciplined innovation. We sit inside government, work alongside agencies, and carry one job: help Baltimore deliver better services to residents and run a better government for the people who do that work.
+That is why the Mayor’s Office of Performance and Innovation exists. We are Baltimore’s in-house capability for performance management, data and analytics, civic design, cross-agency delivery, and disciplined innovation. We sit inside government, work alongside agencies, and carry one job: help Baltimore deliver better services to residents and run a better government for the people who do that work.
 
-OPI is small relative to the City we serve. We will never be the agency that fixes a pothole, answers a 311 call, inspects a building, runs a recreation center, or drives a fire truck. The people who do that work are why government works at all. Our job is to help them do it well, and to help the Mayor and City Administrator see the system clearly enough to lead it.
+OPI is small relative to the city government we serve. We will never be the agency that fixes a pothole, answers a 311 call, inspects a building, runs a recreation center, or drives a fire truck. The people who do that work are why government works at all. Our job is to help them do it well, and to help the Mayor and City Administrator see the system clearly enough to lead it.
 
 ## What we believe
 
@@ -24,7 +24,7 @@ Those beliefs shape how we operate. We start with real problems. We talk to the 
 
 OPI organizes its work into a connected set of capabilities. Performance management runs the routines that turn data into decisions — CitiStat, agency stat, executive briefings, and the citywide measures that show how Baltimore is doing. Data and analytics builds the trusted datasets, definitions, and tools that make those routines possible. The Innovation Lab partners with agencies to redesign services that are not working and to test practical improvements. Cross-agency delivery helps complex initiatives that touch multiple departments actually get implemented. And our administration and operations team is the spine that makes all of it run — hiring, contracts, finance, communications, and the internal systems that keep us honest.
 
-Each of these capabilities exists because the City needs it. None of them works in isolation. A dashboard without a routine is a screen no one looks at. A redesigned service without sustained ownership reverts within a year. A management meeting without data is opinion. A dataset without governance is a liability. Our advantage is putting these pieces together so that insight, action, and follow-through happen in the same place.
+Each of these capabilities exists because the city needs it. None of them works in isolation. A dashboard without a routine is a screen no one looks at. A redesigned service without sustained ownership reverts within a year. A management meeting without data is opinion. A dataset without governance is a liability. Our advantage is putting these pieces together so that insight, action, and follow-through happen in the same place.
 
 ## The standard we hold ourselves to
 
@@ -34,11 +34,11 @@ We are also building the kind of place where talented public servants want to do
 
 ## A discipline, not a program
 
-The deepest version of our job is not to run programs. It is to help the City build a discipline. A discipline of asking better questions about service delivery. A discipline of using evidence to make decisions. A discipline of designing systems around the people they are supposed to serve. A discipline of finishing what we start. A discipline of telling residents the truth about what is working and what is not.
+The deepest version of our job is not to run programs. It is to help Baltimore build a discipline. A discipline of asking better questions about service delivery. A discipline of using evidence to make decisions. A discipline of designing systems around the people they are supposed to serve. A discipline of finishing what we start. A discipline of telling residents the truth about what is working and what is not.
 
-That discipline is hard to build and easy to lose. It depends less on any one tool, dashboard, or initiative than on whether the City’s leaders, agencies, and frontline staff trust that the routines are real, the analysis is honest, and the work will be sustained beyond a single news cycle or budget year.
+That discipline is hard to build and easy to lose. It depends less on any one tool, dashboard, or initiative than on whether the city’s leaders, agencies, and frontline staff trust that the routines are real, the analysis is honest, and the work will be sustained beyond a single news cycle or budget year.
 
-Baltimore is full of public servants who already practice that discipline every day, often without anyone watching. OPI’s job is to give that practice better tools, clearer routines, and a stronger institutional home — so that better government is not a project we run, but a standard the whole City lives by.
+Baltimore is full of public servants who already practice that discipline every day, often without anyone watching. OPI’s job is to give that practice better tools, clearer routines, and a stronger institutional home — so that better government is not a project we run, but a standard the whole city lives by.
 
 That is the work. That is the standard. That is the office we are building.
 
@@ -56,6 +56,6 @@ Mayor’s Office of Performance and Innovation
 
 **About OPI: Operating Frame —** *how the office is organized and how we work.*
 
-**Strategic Priorities OnePager —** *what we are committing to in.*
+**Strategic Priorities OnePager —** *what we are committing to.*
 
 **Theory of Change Summaries —** *logic models for each service area.*

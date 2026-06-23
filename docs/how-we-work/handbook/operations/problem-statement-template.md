@@ -67,7 +67,7 @@ Use this structure as your starting point. Once it works, edit for clarity.
 
 ### Worked example — Internal data access
 
-> *“OPI analysts request operational data from agency systems via email and wait an average of 11 business days per request. The same datasets are requested repeatedly, with no cataloged source of truth, which delays performance reviews and produces inconsistent metric definitions.”*
+> *“OPI analysts request operational data from agency systems via email and wait an average of 11 business days per request. The same datasets are requested repeatedly, with no cataloged official copy, which delays performance reviews and produces inconsistent metric definitions.”*
 
 ## Quality checks
 

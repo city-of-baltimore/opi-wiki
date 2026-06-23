@@ -17,7 +17,7 @@
 
 The Senior Performance Analyst is the principal individual contributor for citywide performance management. Reporting to the Deputy Chief Performance Officer, the Senior Performance Analyst is the product owner for Baltimore’s Performance Tracker, leads the development and refinement of citywide performance measures, and coordinates the preparation and review of agency performance plans. The role works closely with agency performance analysts, the Bureau of the Budget and Management Research (BBMR), and OPI data and engineering staff.
 
-In addition to the citywide performance management function, the Senior Performance Analyst leads one or more CitiStat topics in the same way a CitiStat Analyst does — framing the problem, building the analytic baseline, preparing the session, and following through on commitments. The role is a senior peer to the CitiStat Analyst bench, with no direct reports.
+In addition to the citywide performance management function, the Senior Performance Analyst leads one or more CitiStat topics in the same way a CitiStat Analyst does: framing the problem, building the analytic baseline, preparing the session, and following through on commitments. The role is a senior peer to the CitiStat Analyst bench, with no direct reports.
 
 ## Key Responsibilities
 

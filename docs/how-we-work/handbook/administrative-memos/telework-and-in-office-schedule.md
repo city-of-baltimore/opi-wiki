@@ -37,7 +37,7 @@ This adjustment supports collaboration, culture, and delivery as our team takes
 on more ambitious goals in FY26. This administrative guidance is aligned with
 the City of Baltimore's hybrid work framework and does not supersede any rights
 or obligations under City HR policy, ADA, FMLA, or other applicable laws.
-Requests for accommodation will continue to be handled through the City's
+Requests for accommodation will continue to be handled through the city's
 established HR processes.
 
 Being in the office during core days strengthens our ability to deliver and grow

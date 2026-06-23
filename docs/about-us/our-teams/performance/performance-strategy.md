@@ -37,7 +37,7 @@ At its best, performance management is a learning discipline. It helps governmen
 
 City governments are expected to solve complex problems with urgency, transparency, and fiscal discipline. Residents experience government through the reliability of daily services: trash collection, 311 response, permits, inspections, public safety, parks, transportation, housing, water, and emergency response. When these services work, government earns trust. When they fail repeatedly, residents do not experience a single failed metric. They experience a broken promise.
 
-Baltimore has a powerful legacy in performance management through CitiStat. The next chapter must preserve that discipline while modernizing it for today’s operating environment. Today’s performance system has to account for cross-agency work, digital service expectations, data quality, AI readiness, resident experience, equity, and the need to connect performance to budget decisions.
+Baltimore has a powerful legacy in performance management through CitiStat. The next chapter must preserve that discipline while modernizing it. A current performance system has to account for cross-agency work, digital service expectations, data quality, AI readiness, resident experience, equity, and the need to connect performance to budget decisions.
 
 The City already has many ingredients: mayoral priorities, agency performance measures, CitiStat sessions, public dashboards, budget performance measures, open data, agency leaders, and frontline expertise. The challenge is integration. Too often, goals, measures, meetings, budgets, dashboards, and improvement projects operate in parallel. This strategy brings them into one cycle.
 
@@ -171,7 +171,7 @@ Cross-agency delivery should be activated when the work crosses multiple agencie
 
 **Budget alignment**
 
-The budget is one of the City’s most powerful performance tools. Performance management should inform what the City funds, what it stops funding, what it redesigns, and what it expects in return for new investments. This does not mean every decision can be reduced to a metric. It means budget conversations should be informed by clear goals, service demand, implementation capacity, equity, and evidence of effectiveness.
+The budget is one of Baltimore’s most powerful performance tools. Performance management should inform what the city funds, what it stops funding, what it redesigns, and what it expects in return for new investments. This does not mean every decision can be reduced to a metric. It means budget conversations should be informed by clear goals, service demand, implementation capacity, equity, and evidence of effectiveness.
 
 OPI and the budget office should continue aligning agency performance plans, budget performance measures, CitiStat findings, and outcome narratives. Budget reviews should ask: What problem is this investment solving? What result should change? What evidence suggests this approach will work? What capacity is needed to implement it? How will the City know whether it worked?
 
@@ -247,7 +247,7 @@ Define cross-agency delivery activation criteria and pilot the model through sel
 
 **6. Public reporting rhythm.**
 
-Create a public reporting rhythm that tells residents what the City is improving, what remains hard, and what actions are underway.
+Create a public reporting rhythm that tells residents what the city is improving, what remains hard, and what actions are underway.
 
 **7. Annual self-review.**
 

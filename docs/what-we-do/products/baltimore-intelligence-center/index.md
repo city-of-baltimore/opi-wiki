@@ -4,7 +4,7 @@
 
 The Baltimore Intelligence Center (BIC) is the citywide data, intelligence, and AI program that the Mayor’s Office of Performance and Innovation is standing up in partnership with Sand Technologies. It is a 12-month vendor-led build, followed by a 6-month city-led continuation. By the end of month 12, Baltimore should have a trusted data platform, a working semantic layer, two live decision-support products, and the operating discipline to keep building responsibly without the vendor in the room.
 
-This hub is the single guiding reference for the engagement. It consolidates the four scoping artifacts — the policymaker brief, the long-form scope, the pre-kickoff briefing, and the AI readiness materials — into one operating reference.
+This hub is the single guiding reference for the engagement. It consolidates the four scoping artifacts into one operating reference: the policymaker brief, the long-form scope, the pre-kickoff briefing, and the AI readiness materials.
 
 ## How to use this hub
 
@@ -20,7 +20,7 @@ The pages are organized so three audiences can read what they need.
 
 | **Outcome**                            | **What it means**                                                                                                                                                  |
 |----------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Governed data platform                 | Canonical sources are ingested on schedule, data quality rules are running, lineage is visible, and the catalog is populated.                                      |
+| Governed data platform                 | The official source systems are ingested on schedule, data quality rules are running, lineage is visible, and the catalog is populated.                                      |
 | Semantic layer                         | Covers at least two priority domains (city services and public safety), with KPI definitions standardized through a citywide dictionary.                           |
 | City Services Intelligence in pilot    | A grounded decision-support product running a disciplined pilot with named users and weekly usage measurement.                                                     |
 | StatGPT pilot                          | A grounded assistant for CitiStat preparation, in pilot with City Services and Public Safety Stat leads.                                                           |
@@ -58,8 +58,8 @@ The full squad roster (including engineering, design, CitiStat leads, and Sand r
 
 ## What this hub is — and is not
 
-**It is** a single source of truth for engagement scope, sequencing, decision rights, and target state; a working playbook for the BIC squad and Sand delivery teams; a governance anchor for how use cases are reviewed, approved, measured, and retired; and a briefing artifact for executives, agency partners, philanthropy, and audit/oversight audiences.
+**It is** the official reference for engagement scope, sequencing, decision rights, and target state; a working playbook for the BIC squad and Sand delivery teams; a governance anchor for how use cases are reviewed, approved, measured, and retired; and a briefing artifact for executives, agency partners, philanthropy, and audit/oversight audiences.
 
-**It is not** a contract — the Sand statement of work governs commercial terms. It is not a substitute for individual workstream plans — each workstream produces its own detailed plan during month one. And it is not an awards nomination — the discipline modeled here positions Baltimore for awards, philanthropy, and replication, but the goal is operating maturity, not prizes.
+**It is not** a contract; the Sand statement of work governs commercial terms. It is not a substitute for individual workstream plans, since each workstream produces its own detailed plan during month one. And it is not an awards nomination — the discipline modeled here positions Baltimore for awards, philanthropy, and replication, but the goal is operating maturity, not prizes.
 
 Where the source documents had open placeholders, this hub locks them down. Any further changes to the engagement scope, sequencing, or decision rights are tracked in [Open Issues](governance-and-risks.md#open-issues-to-resolve-at-kickoff) and resolved by the Executive Sponsor in consultation with the Project Lead and Sand TPM.

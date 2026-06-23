@@ -13,7 +13,7 @@ OWNER
 VERSION
 :   v1.0 (DRAFT) · May 2026
 
-> *This guide is a quick reference. For authoritative answers, consult the MAPS agreement and Baltimore City Human Resources. Plan years, deductibles, and contribution rates may change — confirm with HR before making decisions.*
+> *This guide is a quick reference. For authoritative answers, consult the MAPS agreement and Baltimore City Human Resources. Plan years, deductibles, and contribution rates may change, so confirm with HR before making decisions.*
 
 ## Who this is for
 

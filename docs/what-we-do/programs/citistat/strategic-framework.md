@@ -71,7 +71,7 @@ CitiStat is Baltimore’s learning and accountability loop: a management routine
   <div class="opi-compare-card">
     <div class="opi-compare-card__row opi-compare-card__row--is">
       <span class="opi-compare-card__label">CitiStat is</span>
-      <span class="opi-compare-card__text">A way to surface risks early and focus leadership on the highest-leverage bottlenecks.</span>
+      <span class="opi-compare-card__text">A way to surface risks early and focus leadership on the bottlenecks that matter most.</span>
     </div>
     <div class="opi-compare-card__row opi-compare-card__row--isnot">
       <span class="opi-compare-card__label">CitiStat is not</span>
@@ -106,7 +106,7 @@ City government is complex. Many of the problems residents experience are not ca
 
 CitiStat addresses those failure modes by creating a predictable cadence for truth, decision-making, and follow-through. The routine helps City leadership and agencies:
 
-- Spot risks early and focus attention on the highest-leverage bottlenecks.
+- Spot risks early and focus attention on the bottlenecks that matter most.
 
 - Clarify accountability through owners, due dates, evidence standards, and escalation paths.
 
@@ -142,7 +142,7 @@ The goal is not more meetings. The goal is a management routine that helps Balti
 
 ### The four tenets of Stat
 
-CitiStat rests on the four tenets that have defined Stat-style performance management since CompStat and Baltimore's own CitiStat in 1999: **accurate and timely intelligence shared by all**, **rapid deployment of resources**, **effective tactics and strategies**, and **relentless follow-up and assessment**. The [Method Playbook](method-playbook.md#the-four-tenets-of-stat) is the single source of truth for what each tenet means in practice.
+CitiStat rests on the four tenets that have defined Stat-style performance management since CompStat and Baltimore's own CitiStat in 1999: **accurate and timely intelligence shared by all**, **rapid deployment of resources**, **effective tactics and strategies**, and **relentless follow-up and assessment**. The [Method Playbook](method-playbook.md#the-four-tenets-of-stat) is the official reference for what each tenet means in practice.
 
 ### The modern CitiStat operating cycle
 
@@ -246,9 +246,9 @@ A humane CitiStat model asks hard questions without assuming bad intent. It reco
 
 ## Current CitiStat portfolio
 
-The active portfolio is designed to cover the services, systems, and priorities residents and staff experience most directly. The portfolio should remain disciplined: new Stats should be added only when [admission criteria](method-playbook.md#issue-selection-admission-and-continuation), executive sponsorship, data readiness, and follow-up mechanisms are clear.
+The active portfolio covers the services, systems, and priorities residents and staff experience most directly. The portfolio should remain disciplined: new Stats should be added only when [admission criteria](method-playbook.md#issue-selection-admission-and-continuation), executive sponsorship, data readiness, and follow-up mechanisms are clear.
 
-The current register of active Stats — each one's type, cluster, and focus — lives in the [CitiStat Portfolio](portfolio/index.md), the single source of truth for what is in the portfolio today.
+The current register of active Stats, with each one's type, cluster, and focus, lives in the [CitiStat Portfolio](portfolio/index.md), the official record of what is in the portfolio today.
 
 ## How CitiStat connects to OPI
 

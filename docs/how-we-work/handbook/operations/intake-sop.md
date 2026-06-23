@@ -15,7 +15,7 @@ VERSION
 
 ## Why this exists
 
-OPI is a high-trust, high-output unit. Our credibility depends on disciplined commitments and reliable follow-through. Every new request — whether it comes from the Mayor’s Office, an agency partner, or an internal team — enters through a single intake process. The process protects focus, makes tradeoffs explicit, and prevents quiet commitments that distort capacity.
+OPI is a high-trust, high-output unit. Our credibility depends on disciplined commitments and reliable follow-through. Every new request, whether it comes from the Mayor’s Office, an agency partner, or an internal team, enters through a single intake process. The process protects focus, makes tradeoffs explicit, and prevents quiet commitments that distort capacity.
 
 > *Respond when necessary. Build so we do not have to respond again.*
 

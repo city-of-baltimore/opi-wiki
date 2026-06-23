@@ -146,7 +146,7 @@ Data & Analytics provides shared datasets, methodology cards, KPIs, and AI/data 
 
 ### With Cross-Agency Delivery
 
-Cross-Agency Delivery is the service overlay. The Innovation Lab owns the craft of solving; Cross-Agency Delivery owns the coordination authority when multiple agencies must ship together. The Lab is the capability — the craft team that asks *how do we solve this?* Cross-Agency Delivery owns coordination authority across agencies and asks *how do we get multiple agencies to actually ship this together?* When a Tiger Team’s work needs that overlay, the Lab provides the team and the method (the Public Innovation Toolkit), and Cross-Agency Delivery provides the standing delivery review, the named Authorizer at the Deputy Mayor or City Administrator level, and the closure plan with sustainment commitments from each agency.
+Cross-Agency Delivery is the service overlay. The Innovation Lab owns the craft of solving; Cross-Agency Delivery owns the coordination authority when multiple agencies must ship together. The Lab is the capability, the craft team that asks *how do we solve this?* Cross-Agency Delivery owns coordination authority across agencies and asks *how do we get multiple agencies to actually ship this together?* When a Tiger Team’s work needs that overlay, the Lab provides the team and the method (the Public Innovation Toolkit), and Cross-Agency Delivery provides the standing delivery review, the named Authorizer at the Deputy Mayor or City Administrator level, and the closure plan with sustainment commitments from each agency.
 
 ### With AdminOps
 
@@ -212,7 +212,7 @@ Run a small number of governed AI pilots that improve real decisions or services
 
 **5. Tiger Team activations.**
 
-Run two to three Tiger Teams in FY27 — at least one chartered through Cross-Agency Delivery, which carries the cross-agency coordination authority needed when multiple agencies have to ship the fix together. Each team has a named Authorizer, a Senior Responsible Owner, weekly delivery routines, and a sustainment plan.
+Run two to three Tiger Teams in FY27, at least one chartered through Cross-Agency Delivery, which carries the cross-agency coordination authority needed when multiple agencies have to ship the fix together. Each team has a named Authorizer, a Senior Responsible Owner, weekly delivery routines, and a sustainment plan.
 
 **6. Civic partnerships.**
 

@@ -15,7 +15,7 @@
 
 ## Position Summary
 
-The Principal Data Engineer is OPI’s lead data engineer and architect, responsible for designing and developing Baltimore’s next-generation data infrastructure. The role co-develops a centralized, enterprise-wide data warehouse and the secure, reliable, scalable pipelines that feed it, and owns the cloud platform, security baselines, and CI/CD that the warehouse and data products run on — platform responsibilities consolidated into this role. Beyond contributing to OPI codebases, the Principal Data Engineer influences data architecture, orchestration, tooling, and governance across the team and the City.
+The Principal Data Engineer is OPI’s lead data engineer and architect, responsible for designing and developing Baltimore’s next-generation data infrastructure. The role co-develops a centralized, enterprise-wide data warehouse and the secure, reliable, scalable pipelines that feed it, and owns the cloud platform, security baselines, and CI/CD that the warehouse and data products run on. These platform responsibilities are consolidated into this role. Beyond contributing to OPI codebases, the Principal Data Engineer influences data architecture, orchestration, tooling, and governance across the team and the city.
 
 Reporting to the Deputy Chief Data Officer, the role works on an interdisciplinary team of analysts, designers, and managers to ensure data products are adopted by agency staff, policymakers, and the public. The Principal Data Engineer is a hands-on, senior practitioner with both architectural and engineering responsibilities.
 

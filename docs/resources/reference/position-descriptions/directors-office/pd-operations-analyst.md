@@ -17,7 +17,7 @@
 
 The Operations Analyst is a high-impact, trusted partner to the Executive Director and the Director’s Office. The role goes well beyond traditional administrative support: the Operations Analyst protects and amplifies the Executive Director’s capacity by running a disciplined calendar and briefing system, orchestrating meetings and follow-through, and keeping commitments closed on time.
 
-In addition to executive support, the Operations Analyst carries a working portfolio of innovation and delivery support — helping move tiger teams, Innovation Lab projects, and ad-hoc analytic work forward — and provides Stat support with a focus on public-safety topics, including pre-session preparation, evidence collation, and post-session follow-through. The role reports administratively through the Chief of Staff and works directly with the Executive Director on day-to-day priorities.
+In addition to executive support, the Operations Analyst carries a working portfolio of innovation and delivery support, helping move tiger teams, Innovation Lab projects, and ad-hoc analytic work forward. The role also provides Stat support with a focus on public-safety topics, including pre-session preparation, evidence collation, and post-session follow-through. The role reports administratively through the Chief of Staff and works directly with the Executive Director on day-to-day priorities.
 
 ## Key Responsibilities
 

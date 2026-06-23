@@ -17,7 +17,7 @@
 
 CitiStat is City Hall’s performance and accountability program. The CitiStat Analyst enables fact-based decisions by producing disciplined analysis, supporting follow-through, and translating data into clear, actionable options.
 
-The role frames problems; collects, validates, analyzes, and interprets datasets across city agencies; and identifies trends, risks, and root causes. Through data analysis, field engagement, and collaboration with agency leaders, the Analyst defines performance metrics, conducts policy research, and supports the implementation of improvement strategies. The CitiStat Analyst applies the program’s core tenets — accurate and timely intelligence shared by all, rapid deployment of resources, effective tactics and strategies, and relentless follow-up and assessment — to improve service quality and efficiency. The position reports to the Deputy Chief Performance Officer.
+The role frames problems; collects, validates, analyzes, and interprets datasets across city agencies; and identifies trends, risks, and root causes. Through data analysis, field engagement, and collaboration with agency leaders, the Analyst defines performance metrics, conducts policy research, and supports the implementation of improvement strategies. The CitiStat Analyst applies the program’s core tenets to improve service quality and efficiency: accurate and timely intelligence shared by all, rapid deployment of resources, effective tactics and strategies, and relentless follow-up and assessment. The position reports to the Deputy Chief Performance Officer.
 
 ## Key Responsibilities
 

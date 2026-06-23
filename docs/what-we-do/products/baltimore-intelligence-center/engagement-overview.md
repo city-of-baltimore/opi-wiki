@@ -4,7 +4,7 @@
 
 ## The problem we are solving
 
-Baltimore City has the demand and the talent for data-driven government, but not the infrastructure. Every time an agency asks OPI for help — on 311 backlogs, permit performance, public safety, vacants, capital projects — the team first has to orient to the data, clean it, and reconcile it before any analysis can begin. Three things follow. Cycle times are long. Insights are inconsistent. And AI cannot be adopted responsibly because the underlying data is neither governed nor trusted.
+Baltimore City has the demand and the talent for data-driven government, but not the infrastructure. Every time an agency asks OPI for help (on 311 backlogs, permit performance, public safety, vacants, capital projects), the team first has to orient to the data, clean it, and reconcile it before any analysis can begin. Three things follow. Cycle times are long. Insights are inconsistent. And AI cannot be adopted responsibly because the underlying data is neither governed nor trusted.
 
 OPI is also being asked to lead the city’s response to artificial intelligence. That work cannot succeed on top of fragmented data, undefined KPIs, and informal governance. A trusted data foundation, a semantic layer that encodes how the city actually thinks, and a small set of grounded intelligence products are the prerequisites for everything else.
 
@@ -12,7 +12,7 @@ OPI is also being asked to lead the city’s response to artificial intelligence
 
 This engagement establishes the Baltimore Intelligence Center — a citywide data and AI capability that lives operationally inside OPI and serves the whole city. Sand Technologies is the implementation partner for the first 12 months. OPI staff carry the program forward in months 13 to 18 and beyond.
 
-The work is organized around five workstreams that build on each other. A governed data platform comes first, because nothing else works without it. A semantic layer encodes city KPIs and domain logic. Two flagship intelligence products — City Services Intelligence and a CitiStat-aligned StatGPT pilot — prove the platform in real workflows. A small set of internal operating tools makes OPI itself more disciplined. And a design system, adoption practice, and capability-transfer plan ensure the work survives and scales after the vendor leaves.
+The work is organized around five workstreams that build on each other. A governed data platform comes first, because nothing else works without it. A semantic layer encodes city KPIs and domain logic. Two flagship intelligence products, City Services Intelligence and a CitiStat-aligned StatGPT pilot, prove the platform in real workflows. A small set of internal operating tools makes OPI itself more disciplined. And a design system, adoption practice, and capability-transfer plan ensure the work survives and scales after the vendor leaves.
 
 See [Workstreams](workstreams.md) for the detailed breakdown of all five.
 

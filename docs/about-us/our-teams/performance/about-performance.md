@@ -8,7 +8,7 @@
 
 *Read alongside: OPI Performance Management Strategy; OPI Service Theory of Change — Citywide Performance Management.*
 
-*This About doc is the human story of the service — who we are, what we do, and what we own. The Performance Management Strategy is the strategic argument behind the system. The Theory of Change explains how the service is mandated, governed, staffed, measured, and sustained.*
+*This About doc is the human story of the service: who we are, what we do, and what we own. The Performance Management Strategy is the strategic argument behind the system. The Theory of Change explains how the service is mandated, governed, staffed, measured, and sustained.*
 
 ## PURPOSE
 
@@ -152,7 +152,7 @@ When public narrative, Council preparation, quality assurance, calendar coordina
 
 Success means the performance system is useful, trusted, and action-oriented.
 
-In human terms, the work is succeeding when leadership time is spent on the highest-leverage decisions, agencies trust the numbers and use them outside the meeting, priority services show improvements residents can feel, and performance plans become living management tools rather than annual paperwork.
+In human terms, the work is succeeding when leadership time is spent on the highest-impact decisions, agencies trust the numbers and use them outside the meeting, priority services show improvements residents can feel, and performance plans become living management tools rather than annual paperwork.
 
 *For the formal success measures — routine reliability, decision quality, data integrity, service improvement, budget linkage, and public trust — see [Performance Management Strategy](performance-strategy.md).*
 

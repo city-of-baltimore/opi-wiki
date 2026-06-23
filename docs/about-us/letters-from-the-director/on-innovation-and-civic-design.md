@@ -52,7 +52,7 @@ Sometimes the most innovative thing we can do is simplify. Remove a redundant st
 
 The Innovation Lab is not a place where unfunded special projects go to drift. Every engagement needs a real problem, a real user, a real owner, a real decision, and a plan for sustainment. We start with discovery. We talk to residents and staff. We map the service. We define what success would look like. We build the smallest useful version that can prove value. Then we test, learn, iterate, and decide whether to scale, redesign, or stop.
 
-That discipline protects the City from expensive theater. It also protects our staff and agency partners. Not every idea deserves a build. Not every pilot deserves to scale. Not every problem should become a product. Sometimes the right answer is training, policy, procurement, staffing, or a better management routine. A good Innovation Lab is honest enough to say that.
+That discipline protects the city from expensive theater. It also protects our staff and agency partners. Not every idea deserves a build. Not every pilot deserves to scale. Not every problem should become a product. Sometimes the right answer is training, policy, procurement, staffing, or a better management routine. A good Innovation Lab is honest enough to say that.
 
 And when something works, we document it, hand it off, and make sure the agency can sustain it. Launch is not success. Sustainment is success. A better workflow only counts if staff can keep using it. A new tool only counts if it is maintained. A process map only counts if it changes how people actually work.
 
@@ -66,7 +66,7 @@ That mindset shows up in how we run CitiStat, how we structure tiger teams, how 
 
 The deeper promise of innovation is not the tool. It is the learning culture behind the tool. A learning government can admit when a service is not working, study the problem without blame, test a better approach, and change how it operates. A learning government does not confuse activity with impact. It asks whether residents and staff are actually better off because of the work.
 
-That is the standard we are building toward in Baltimore. We want an Innovation Lab and a civic design practice that help agencies solve real problems, build reusable patterns, strengthen public trust, and show that City government can improve itself with rigor and humility. Civic design helps Baltimore move from fragmented to coordinated, from reactive to proactive, from bureaucratic to human. It helps us build services that make sense to the people who use them and the public servants who deliver them.
+That is the standard we are building toward in Baltimore. We want an Innovation Lab and a civic design practice that help agencies solve real problems, build reusable patterns, strengthen public trust, and show that city government can improve itself with rigor and humility. Civic design helps Baltimore move from fragmented to coordinated, from reactive to proactive, from bureaucratic to human. It helps us build services that make sense to the people who use them and the public servants who deliver them.
 
 This is why OPI exists. We use data and design to improve city services in ways that residents and public servants can see and feel. That means the work cannot stop at insight. It has to become a better form, a better route, a better handoff, a better message, a better decision, a better service.
 

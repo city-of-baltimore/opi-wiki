@@ -15,7 +15,7 @@ VERSION
 
 ## Why QA matters
 
-OPI’s work is used by senior leaders, agency partners, and sometimes the public. Quality is not optional, and it is not a separate phase. It is part of the work. This document describes the QA bar that applies to everything OPI publishes — internally and externally.
+OPI’s work is used by senior leaders, agency partners, and sometimes the public. Quality is not optional, and it is not a separate phase. It is part of the work. This document describes the QA bar that applies to everything OPI publishes, internally and externally.
 
 > *No public artifact ships without QA. No surprise launches.*
 
@@ -124,7 +124,7 @@ Every artifact passes four gates before it is shared with an audience outside th
 
 - Stakeholders are informed before publication. Internal notice precedes external launch by at least one business day for routine work, more for sensitive work.
 
-- Communications coordination is in place — messaging is aligned across OPI, the agency, and (where relevant) the Mayor’s Office.
+- Communications coordination is in place. Messaging is aligned across OPI, the agency, and (where relevant) the Mayor’s Office.
 
 - A correction or rollback plan exists. We know how we would fix or retract the artifact if needed.
 

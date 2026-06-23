@@ -23,7 +23,7 @@ This guide is your map for the first day and the first week. It tells you what t
 
 ### Our mission and how we operate
 
-OPI is the City’s in-house performance, data, design, and delivery team. We do four things at the same time: we make performance visible, we build trustworthy data, we design and test better services, and we help agencies follow through.
+OPI is Baltimore City’s in-house performance, data, design, and delivery team. We do four things at the same time: we make performance visible, we build trustworthy data, we design and test better services, and we help agencies follow through.
 
 You will hear us describe this as a cycle:
 
@@ -50,7 +50,7 @@ OPI is organized into four teams. Each team has a lead and is responsible for a 
 | Data and Analytics           | Jason Howard, PhD, Deputy Chief Data Officer   | Data platform, analytics, governance, open data, GIS, and AI/data readiness.             |
 | Innovation Lab               | Gabriel Watson, Innovation Program Manager | Service design, product discovery, civic technology, AI pilots, partnerships, and operational tools. |
 
-*Cross-Agency Delivery is a service overlay, not a separate portfolio. Danny Heller serves as Interim Delivery Manager; Rakeim Young maintains portfolio visibility and escalation tracking.*
+*Cross-Agency Delivery is a coordinating function that draws on staff from across OPI, not a separate portfolio. Danny Heller serves as Interim Delivery Manager; Rakeim Young maintains portfolio visibility and escalation tracking.*
 
 ### What we deliver
 
@@ -64,7 +64,7 @@ OPI is organized into four teams. Each team has a lead and is responsible for a 
 
 ## Your first day
 
-Day one is for setup, introductions, and getting your bearings. Your manager and onboarding buddy will guide you. The goal is not for you to start producing today — it is for you to leave the day knowing where everything is and who to ask.
+Day one is for setup, introductions, and getting your bearings. Your manager and onboarding buddy will guide you. The goal is not for you to start producing today. It is for you to leave the day knowing where everything is and who to ask.
 
 ### What to bring
 
@@ -101,7 +101,7 @@ In your first week, the goal is to learn the system before you try to change it.
 
 ### What you will do
 
-- Complete required HR and Workday onboarding tasks. These are time-sensitive — do them first.
+- Complete required HR and Workday onboarding tasks. These are time-sensitive, so do them first.
 
 - Join your team’s Microsoft Teams channels and bookmark the SharePoint sites you will use most.
 
@@ -115,7 +115,7 @@ In your first week, the goal is to learn the system before you try to change it.
 
 ### Who you will meet
 
-Your manager will schedule introductions with key partners. The list below is a starting point — your role will determine the full set.
+Your manager will schedule introductions with key partners. The list below is a starting point; your role will determine the full set.
 
 - Your team lead.
 
@@ -129,7 +129,7 @@ Your manager will schedule introductions with key partners. The list below is a 
 
 ### What “good” looks like by Day 30
 
-By the end of your first month, you should be able to describe what OPI does, who does what, and where to find the systems of record. You should have produced or contributed to at least one early win — something small, real, and shippable. You should know how to escalate a question, file an intake request, and use the standard artifact templates.
+By the end of your first month, you should be able to describe what OPI does, who does what, and where to find the systems of record. You should have produced or contributed to at least one early win: something small, real, and shippable. You should know how to escalate a question, file an intake request, and use the standard artifact templates.
 
 ## How we work
 
