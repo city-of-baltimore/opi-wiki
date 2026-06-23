@@ -20,6 +20,8 @@ audits (`notes/reviews/audit_content.md`, `notes/reviews/audit_reference.md`).
 - Audit fixes: stale PD names, PD compensation parity, strategic-priorities, empty headings, name bug
 - Consistency linter (`check_consistency.py`) wired into verify.py
 - **Test suite green** (55); ToC category labels normalized
+- **About Us flattened** (Mission/Vision + Principles promoted; about-opi layer removed)
+- **How We Work regrouped** into Organization + Handbook sub-sections
 
 ## 🔜 Pending — before / during the big review
 - **ToC structural standardization** (focused follow-up) — slim the Innovation Lab + AdminOps theory-of-change pages (they carry SERVICE DEFINITION / PURPOSE sections the Performance + Data ToCs don't, overlapping the about/strategy pages) to the lean NORTH-STAR→logic-model skeleton
