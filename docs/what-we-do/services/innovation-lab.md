@@ -2,9 +2,6 @@
 
 {{ page_header(summary="We design and build digital tools that residents and City staff actually use — making services easier to access, track, and complete.", category="OPI · SERVICE") }}
 
-!!! note "Both a team and a service — on purpose"
-    The Innovation Lab is the one name in OPI's taxonomy that is **both a [team](../../our-teams/innovation-lab/index.md) and a service.** The team is the group with staff and budget; the service is the craft that team delivers. We keep both labels because partners ask for "the Lab" as a capability *and* as a group — and the work reads the same either way. This is intentional, not a duplication.
-
 ## What this service does
 
 This service operates OPI's Innovation Lab, a citywide service-improvement capability that uses human-centered design, product management, civic technology, and applied innovation methods to improve city services and internal operations.
