@@ -1,0 +1,38 @@
+name: Suggest a change
+description: Propose a fix or improvement to a wiki page. No Markdown or Git knowledge needed.
+title: "[Edit] "
+labels: ["content"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for helping improve OPI Foundations. Fill in what you can — a steward
+        will turn it into a pull request and review it before it publishes.
+  - type: input
+    id: page
+    attributes:
+      label: Which page?
+      description: Paste the page URL or its title.
+      placeholder: https://city-of-baltimore.github.io/opi-wiki/...
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: What's wrong, missing, or unclear?
+      description: Describe it in plain language. Big or small is fine.
+    validations:
+      required: true
+  - type: textarea
+    id: suggestion
+    attributes:
+      label: Suggested wording (optional)
+      description: If you have specific wording in mind, drop it here.
+    validations:
+      required: false
+  - type: input
+    id: who
+    attributes:
+      label: Your name and team (optional)
+    validations:
+      required: false

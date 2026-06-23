@@ -1,0 +1,48 @@
+name: CI
+
+# Runs on every pull request to main. This is the required gate before merge:
+# strict build, link checks (including card/HTML hrefs), validators, and tests.
+
+on:
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  checks:
+    name: Build & test
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: |
+          pip install poetry
+          poetry install --no-interaction --no-ansi
+
+      - name: Build (strict)
+        run: poetry run mkdocs build --strict
+
+      - name: Internal link check (cards + raw HTML hrefs)
+        run: poetry run python scripts/check_built_links.py site
+
+      - name: Validators
+        run: |
+          poetry run python scripts/check_brand_terms.py
+          poetry run python scripts/check_page_metadata.py
+          poetry run python scripts/check_html_links.py
+          poetry run python scripts/check_consistency.py
+
+      - name: Tests
+        run: poetry run python -m pytest -q

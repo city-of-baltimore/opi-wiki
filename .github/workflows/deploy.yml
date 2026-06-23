@@ -1,12 +1,12 @@
-name: Test deploy to GitHub Pages
+name: Deploy to GitHub Pages
 
-# Test deployment from the content-reorg branch. main and the fly.io
-# deployment are left untouched. The committed site_url stays pointed at the
-# custom domain; the Pages base URL is set only inside this CI run.
+# Builds and deploys the site to GitHub Pages on every push to main (i.e. after a
+# PR merges). The committed site_url stays pointed at the custom domain for the
+# fly.io build; the Pages base URL is set only inside this CI run.
 
 on:
   push:
-    branches: [ddw/content-reorg]
+    branches: [main]
   workflow_dispatch:
 
 permissions:
