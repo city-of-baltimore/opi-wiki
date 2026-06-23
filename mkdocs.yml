@@ -162,7 +162,13 @@ plugins:
         our-teams/performance-and-citistat/cross-agency-delivery/index.md: what-we-do/services/cross-agency-delivery.md
         our-teams/performance-and-citistat/cross-agency-delivery/about-cross-agency-delivery.md: what-we-do/services/cross-agency-delivery.md
         our-teams/performance-and-citistat/cross-agency-delivery/cross-agency-delivery-theory-of-change.md: what-we-do/services/cross-agency-delivery-service-definition.md
-        public/council-public-narrative-template.md: public/index.md
+        public/council-public-narrative-template.md: index.md
+        public/index.md: index.md
+        public/citistat-public-brief.md: what-we-do/programs/citistat/index.md
+        public/data-analytics-public-brief.md: what-we-do/services/citywide-data-and-analytics.md
+        public/innovation-lab-public-brief.md: what-we-do/services/innovation-lab.md
+        public/website-copy-master.md: resources/index.md
+        public/website-information-architecture.md: resources/index.md
         about-us/about-opi/operating-frame.md: how-we-work/operating-frame.md
         about-us/about-opi/teams-programs-foundations.md: how-we-work/teams-programs-foundations.md
         about-us/about-opi/org-structure.md: how-we-work/org-structure.md
