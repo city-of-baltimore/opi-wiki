@@ -1,0 +1,28 @@
+version: 2
+updates:
+  # GitHub Actions — keeps action versions (and their Node runtime) current.
+  - package-ecosystem: github-actions
+    directory: "/"
+    schedule:
+      interval: weekly
+    groups:
+      actions:
+        patterns: ["*"]
+
+  # Python deps (Poetry / pyproject.toml + poetry.lock).
+  - package-ecosystem: pip
+    directory: "/"
+    schedule:
+      interval: weekly
+    groups:
+      python:
+        patterns: ["*"]
+    ignore:
+      # Held back on purpose: these versions pull in / advocate ProperDocs, an
+      # MkDocs ecosystem fork (Material 9.7+ prints a migration warning;
+      # mkdocs-redirects 1.2.3 depends on properdocs). Re-evaluate manually
+      # when that situation settles, then bump deliberately.
+      - dependency-name: "mkdocs-material"
+        versions: [">=9.7.0"]
+      - dependency-name: "mkdocs-redirects"
+        versions: [">=1.2.3"]
