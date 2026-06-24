@@ -2,8 +2,6 @@
 
 {{ page_header(summary="When problems span multiple agencies or get stuck for months, we step in to unblock them — quickly, and with clear ownership.", category="OPI · SERVICE") }}
 
-Cross-Agency Delivery is a named OPI service, not a standing team. Use the full name; "x-agency delivery" is the only approved short form — never "CAD."
-
 ## What this service does
 
 This service coordinates selected high-priority initiatives and service-delivery challenges that require action across multiple City agencies. It is a coordination layer that sits on top of existing agencies rather than a new agency of its own: it owns named Authorizers, Senior Responsible Owners, decision rights across agencies, a commitment ledger, a weekly delivery cadence, and sustainment commitments from each agency.
