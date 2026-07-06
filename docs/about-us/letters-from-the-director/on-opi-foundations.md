@@ -6,7 +6,7 @@
 
 *A public letter on what the Mayor’s Office of Performance and Innovation does, why it exists, and the standard we hold ourselves to.*
 
-Every city in America is being asked to do more with less, move faster than it used to, and earn public trust in conditions that make trust harder to build. Baltimore is no exception. The honest question is not whether we feel that pressure. The honest question is whether we are organized to meet it.
+Every city in America is being asked to do more with less, move faster than it used to, and earn public trust in conditions that make trust harder to build. Baltimore is no exception. The honest question is not whether we feel that pressure. The honest question is whether we are organized to meet it. Test
 
 That is why the Mayor’s Office of Performance and Innovation exists. We are Baltimore’s in-house capability for performance management, data and analytics, civic design, cross-agency delivery, and disciplined innovation. We sit inside government, work alongside agencies, and carry one job: help Baltimore deliver better services to residents and run a better government for the people who do that work.
 
