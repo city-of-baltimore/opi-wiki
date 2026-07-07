@@ -318,7 +318,7 @@ def render_org_structure(structure: OrgStructure, section: str) -> str:
             blocks.append(f"- {portfolio.lead.name} — {portfolio.lead.title}{lead_suffix}")
             blocks.append("")
             for person in portfolio.staff:
-                tag = _WORKER_ROSTER_TAG.get(person.worker_type)
+                tag = _WORKER_ROSTER_TAG.get(person.worker_type, "")
                 suffix = f" {tag}" if tag else ""
                 blocks.append(f"- {person.name} — {person.title}{suffix}")
                 blocks.append("")

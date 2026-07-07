@@ -25,11 +25,12 @@ def main() -> int:
 
     from scripts.repo_tools.brand_terms import find_brand_term_issues
 
-    return run_issue_check(
+    result: int = run_issue_check(
         check_name="Brand-term validation",
         success_message="Brand terms validated.",
         issue_finder=lambda: find_brand_term_issues(SCAN_PATHS),
     )
+    return result
 
 
 if __name__ == "__main__":

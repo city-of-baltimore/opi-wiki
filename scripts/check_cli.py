@@ -5,8 +5,9 @@ from __future__ import annotations
 
 import logging
 import sys
+from collections.abc import Callable, Sequence
 from pathlib import Path
-from typing import Callable, Sequence, TextIO
+from typing import TextIO
 
 REPO_ROOT = Path(__file__).resolve().parents[1]
 

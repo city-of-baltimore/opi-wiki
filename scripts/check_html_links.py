@@ -18,11 +18,12 @@ def main() -> int:
 
     from scripts.repo_tools.html_links import find_unresolved_html_links
 
-    return run_issue_check(
+    result: int = run_issue_check(
         check_name="Raw HTML link validation",
         success_message="Raw HTML links validated.",
         issue_finder=lambda: find_unresolved_html_links(DOCS_DIR),
     )
+    return result
 
 
 if __name__ == "__main__":

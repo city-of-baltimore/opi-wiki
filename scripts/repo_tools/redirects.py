@@ -44,7 +44,9 @@ class _MkDocsConfigLoader(yaml.SafeLoader):
 def _construct_python_name(loader: _MkDocsConfigLoader, node: yaml.Node) -> str:
     """Treat Python-name tags as plain scalar strings for config inspection."""
 
-    return loader.construct_scalar(node)
+    if not isinstance(node, yaml.ScalarNode):
+        raise ValueError(f"Expected a scalar node for Python-name tag, got {node!r}.")
+    return str(loader.construct_scalar(node))
 
 
 def _construct_env_default(loader: _MkDocsConfigLoader, node: yaml.Node) -> str:
@@ -57,6 +59,8 @@ def _construct_env_default(loader: _MkDocsConfigLoader, node: yaml.Node) -> str:
     if isinstance(node, yaml.SequenceNode):
         values = loader.construct_sequence(node)
         return str(values[-1]) if values else ""
+    if not isinstance(node, yaml.ScalarNode):
+        raise ValueError(f"Expected a scalar or sequence !ENV node, got {node!r}.")
     return str(loader.construct_scalar(node))
 
 

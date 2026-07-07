@@ -2,13 +2,14 @@
 
 from __future__ import annotations
 
+from collections.abc import Iterator
 from contextlib import contextmanager
 from dataclasses import dataclass
 from functools import partial
 from http.server import SimpleHTTPRequestHandler, ThreadingHTTPServer
 from pathlib import Path
 from threading import Thread
-from typing import Any, Iterator
+from typing import Any
 from urllib.parse import urljoin
 
 
@@ -64,7 +65,8 @@ def local_site_server(site_dir: Path) -> Iterator[str]:
     try:
         thread = Thread(target=server.serve_forever, daemon=True)
         thread.start()
-        host, port = server.server_address
+        host_raw, port = server.server_address[0], server.server_address[1]
+        host = host_raw.decode() if isinstance(host_raw, bytes) else host_raw
         yield f"http://{host}:{port}/"
     finally:
         server.shutdown()
@@ -84,7 +86,7 @@ def _resolve_theme_color(page: Any, css_variable: str) -> str:
       return resolved;
     }
     """
-    return page.evaluate(script, [css_variable])
+    return str(page.evaluate(script, [css_variable]))
 
 
 def _check_mobile_nav_state(page: Any, target: BrowserSmokeTarget, scheme: str) -> list[str]:

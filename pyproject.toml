@@ -29,7 +29,9 @@ build-backend = "poetry.core.masonry.api"
 dev = [
     "pytest (>=9.0.3,<10.0.0)",
     "ruff (>=0.15.12,<0.16.0)",
-    "playwright (>=1.58.0,<2.0.0)"
+    "playwright (>=1.58.0,<2.0.0)",
+    "mypy (>=2.1.0,<3.0.0)",
+    "types-pyyaml (>=6.0.12.20260518,<7.0.0.0)"
 ]
 
 [tool.pytest.ini_options]
@@ -42,4 +44,29 @@ src = ["main.py", "scripts", "tests"]
 target-version = "py311"
 
 [tool.ruff.lint]
-select = ["E", "F", "I", "B", "BLE"]
+select = ["E", "F", "I", "B", "BLE", "D", "UP"]
+ignore = ["D202"]
+
+# D202 is excluded on purpose: the house style separates a docstring from the
+# body with one blank line, consistently, across the whole codebase.
+[tool.ruff.lint.pydocstyle]
+convention = "google"
+
+[tool.ruff.lint.per-file-ignores]
+# Small pure helpers in check scripts read clearly without docstrings.
+"scripts/check_built_links.py" = ["D103"]
+"scripts/check_consistency.py" = ["D103"]
+
+[tool.mypy]
+files = ["main.py", "scripts"]
+strict = true
+# Tests exercise fakes and fixtures; strict typing there adds noise, not safety.
+exclude = ["tests/"]
+
+# check_* scripts import check_cli bare when run as `python scripts/check_x.py`
+# (with scripts/ on sys.path) and as scripts.check_cli when imported. mypy only
+# sees the package form; ignore the bare-module fallback.
+[[tool.mypy.overrides]]
+module = "check_cli"
+ignore_missing_imports = true
+

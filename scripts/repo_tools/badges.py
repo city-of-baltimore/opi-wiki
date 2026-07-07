@@ -2,9 +2,9 @@
 
 from __future__ import annotations
 
+from collections.abc import Mapping
 from dataclasses import dataclass
 from html import escape
-from typing import Mapping
 
 DISPLAY_BADGE_FIELD = "display_badge"
 

@@ -8,9 +8,10 @@ import json
 import subprocess
 import sys
 import time
+from collections.abc import Sequence
 from dataclasses import asdict, dataclass
 from pathlib import Path
-from typing import Sequence, TextIO
+from typing import TextIO
 
 REPO_ROOT = Path(__file__).resolve().parents[1]
 
@@ -48,6 +49,10 @@ def build_steps(
         VerifyStep(
             name="Linting repo automation",
             command=(python, "-m", "ruff", "check", "main.py", "scripts", "tests"),
+        ),
+        VerifyStep(
+            name="Type-checking repo automation",
+            command=(python, "-m", "mypy"),
         ),
         VerifyStep(
             name="Running repo automation tests",

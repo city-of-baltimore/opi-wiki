@@ -18,11 +18,12 @@ def main() -> int:
 
     from scripts.repo_tools.accessibility import find_accessibility_issues
 
-    return run_issue_check(
+    result: int = run_issue_check(
         check_name="Accessibility smoke check",
         success_message="Accessibility smoke check passed.",
         issue_finder=lambda: find_accessibility_issues(SITE_DIR),
     )
+    return result
 
 
 if __name__ == "__main__":

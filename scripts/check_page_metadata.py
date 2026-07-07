@@ -18,11 +18,12 @@ def main() -> int:
 
     from scripts.repo_tools.metadata import find_metadata_issues
 
-    return run_issue_check(
+    result: int = run_issue_check(
         check_name="Page metadata validation",
         success_message="Page metadata validated.",
         issue_finder=lambda: find_metadata_issues(DOCS_DIR),
     )
+    return result
 
 
 if __name__ == "__main__":

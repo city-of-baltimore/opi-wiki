@@ -4,8 +4,8 @@
 from __future__ import annotations
 
 import argparse
+from collections.abc import Sequence
 from pathlib import Path
-from typing import Sequence
 
 if __package__ in {None, ""}:
     from check_cli import REPO_ROOT, ensure_repo_root_on_path, run_issue_check
@@ -40,11 +40,12 @@ def main(argv: Sequence[str] | None = None) -> int:
     """Run browser smoke checks from the command line."""
 
     args = parse_args(argv)
-    return run_issue_check(
+    result: int = run_issue_check(
         check_name="Browser smoke check",
         success_message="Browser smoke check passed.",
         issue_finder=lambda: find_browser_smoke_issues(args.site_dir, base_url=args.base_url),
     )
+    return result
 
 
 if __name__ == "__main__":
