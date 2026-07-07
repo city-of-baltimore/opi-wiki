@@ -11,7 +11,7 @@ OPI staff who are part of the BIC, with full positions and home teams. Sand role
 | Executive Sponsor and interim BIC Project Lead | Dartanion Swift-Williams  | Executive Director and Chief Data Officer, OPI | OPI — Director’s Office        |
 | Product Manager                                | Chiemeka Okeoma           | Applied Data Scientist                         | OPI — Innovation Lab           |
 | Project Manager                                | Mallory Screws            | Project Manager                                | OPI                            |
-| Data Engineering Lead                          | Alejandro Zuniga Sosa     | Principal Data Engineer                        | OPI — Data and Analytics       |
+| Data Engineering Lead                          | Vacant — recruiting       | Principal Data Engineer                        | OPI — Data and Analytics       |
 | Civic Design and Evaluation                    | Selenea Gibson            | Civic Designer                                 | OPI — Innovation Lab           |
 | Data Engineering                               | Briya Bhakta              | Senior Data Engineer                           | OPI — Data and Analytics       |
 | Technical Program Management                   | Roberto Herbruger         | Technical Program Manager                      | OPI — Data and Analytics       |
@@ -20,7 +20,7 @@ OPI staff who are part of the BIC, with full positions and home teams. Sand role
 | Product Engineering                            | Xander Jake de los Santos | Full Stack Engineer                            | OPI — Innovation Lab           |
 | CitiStat — City Services lead                  | Nelson Gomes Boronat      | CitiStat Analyst                               | OPI — Performance |
 | CitiStat — City Services lead                  | Ross Hackett              | CitiStat Analyst                               | OPI — Performance |
-| CitiStat — Public Safety lead                  | Derek Thomas              | CitiStat Analyst                               | OPI — Performance |
+| CitiStat — Public Safety lead                  | Derek Thomas              | Operations Analyst                             | OPI — Innovation Lab |
 
 ## Sand Technologies — expected roles
 

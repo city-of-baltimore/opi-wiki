@@ -32,7 +32,7 @@ Stand up the governed Azure data environment that everything else runs on. Medal
 
 ### Roles and dependencies
 
-**OPI lead.** Alejandro Zuniga Sosa (Data Engineering Lead). Vera Choo owns governance ratification.
+**OPI lead.** Principal Data Engineer (Data Engineering Lead) — vacant, recruiting. Vera Choo owns governance ratification.
 
 **Sand role.** Principal Architect (lead), Data Engineering team, DevOps engineer, Governance Advisor. Sand drafts the Data Governance Policy as an M1 deliverable; Vera owns ratification.
 
@@ -63,7 +63,7 @@ Translate raw city data into the city’s actual decision-making language. Domai
 
 ### Roles and dependencies
 
-**OPI lead.** Vera Choo (Data Governance and Analytics Manager) for KPI dictionary and definitions; Alejandro Zuniga Sosa for technical implementation; Selenea Gibson for evaluation framework.
+**OPI lead.** Vera Choo (Applied Data Scientist) for KPI dictionary and definitions; the Principal Data Engineer (vacant — recruiting) for technical implementation; Selenea Gibson for evaluation framework.
 
 **Sand role.** Semantic Layer Lead (lead), AI/ML Engineer, Domain Modeling support. Sand drives implementation; OPI owns the meaning of every KPI.
 

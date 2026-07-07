@@ -33,8 +33,8 @@ Each refined Position Description is filed alongside this roster in the same fol
 |                         |                                                                                     |
 |-------------------------|-------------------------------------------------------------------------------------|
 | **Total positions**     | 22                                                                                  |
-| **Filled**              | 21                                                                                  |
-| **Open / unfilled**     | 1                                                                                   |
+| **Filled**              | 20                                                                                  |
+| **Open / unfilled**     | 2                                                                                   |
 | **Teams**               | 4 (Director’s Office, Innovation Lab, Performance, Data and Analytics) |
 | **Cost centers**        | 4 (AdminOps, Innovation Lab, Performance Management, Data and Analytics)            |
 | **Contractors**         | 16 embedded across Data and Analytics, Innovation Lab, and AI Enablement (BIC)      |
@@ -93,7 +93,7 @@ Each refined Position Description is filed alongside this roster in the same fol
     | Jason Howard, PhD     | Deputy Chief Data Officer   | Operations Director II | Data and Analytics | 114589  | jason.howard@baltimorecity.gov |  |
     | Roberto Herbruger     | Technical Program Manager   | Operations Manager II  | Data and Analytics | 115408  |  |  |
     | Vera Choo             | Applied Data Scientist      | Operations Officer V   | Data and Analytics | 115656  | vera.choo@baltimorecity.gov | 443-683-1541 |
-    | Alejandro Zuniga Sosa | Principal Data Engineer     | Operations Manager II  | Data and Analytics | 53411   | alejandro.zunigasosa@baltimorecity.gov |  |
+    | Open — recruiting     | Principal Data Engineer     | Operations Manager II  | Data and Analytics | 53411   |  |  |
     | Briya Bhakta          | Senior Data Engineer        | Operations Officer V   | Data and Analytics | 70433   | briya.bhakta@baltimorecity.gov | 443-915-4091 |
 
 ??? info "Cost center view"
@@ -116,7 +116,7 @@ Each refined Position Description is filed alongside this roster in the same fol
     | Deputy Chief Data Officer   | Jason Howard, PhD     | Data and Analytics | 114589  |
     | Technical Program Manager   | Roberto Herbruger     | Data and Analytics | 115408  |
     | Applied Data Scientist      | Vera Choo             | Data and Analytics | 115656  |
-    | Principal Data Engineer     | Alejandro Zuniga Sosa | Data and Analytics | 53411   |
+    | Principal Data Engineer     | Open — recruiting     | Data and Analytics | 53411   |
     | Senior Data Engineer        | Briya Bhakta          | Data and Analytics | 70433   |
 
     **Innovation Lab (CCA001472)**
@@ -146,6 +146,7 @@ Each refined Position Description is filed alongside this roster in the same fol
     | **Title**                  | **Status**          | **Team**            | **PIN / Status** |
     |----------------------------|---------------------|--------------------------|------------------|
     | Senior Performance Analyst | Open — to be posted | Performance        | 115657           |
+    | Principal Data Engineer    | Open — recruiting   | Data and Analytics | 53411            |
 
 ## Contractors and the BIC engagement
 

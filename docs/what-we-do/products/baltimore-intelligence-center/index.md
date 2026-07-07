@@ -38,7 +38,7 @@ The BIC is a named squad with one backlog and one operating cadence. Operational
 | Executive Sponsor and interim BIC Project Lead | Dartanion Swift-Williams | OPI — Director’s Office   |
 | Product Manager                                | Chiemeka Okeoma          | OPI — Innovation Lab      |
 | Project Manager                                | Mallory Screws           | OPI                       |
-| Data Engineering Lead                          | Alejandro Zuniga Sosa    | OPI — Data and Analytics  |
+| Data Engineering Lead                          | Vacant — Principal Data Engineer (recruiting) | OPI — Data and Analytics  |
 | Data Governance and Analytics                  | Vera Choo                | OPI — Data and Analytics  |
 | Deputy CDO and platform partnership            | Jason Howard, PhD        | OPI — Data and Analytics  |
 
