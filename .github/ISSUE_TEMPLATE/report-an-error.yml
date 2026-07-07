@@ -1,0 +1,43 @@
+name: Report an error
+description: Something on the wiki is factually wrong, outdated, or broken.
+title: "[Error] "
+labels: ["error"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for flagging this. Factual errors and broken pages get priority —
+        a steward will confirm and correct the page, usually within two business days.
+  - type: input
+    id: page
+    attributes:
+      label: Which page?
+      description: Paste the page URL or its title.
+      placeholder: https://city-of-baltimore.github.io/opi-wiki/...
+    validations:
+      required: true
+  - type: textarea
+    id: error
+    attributes:
+      label: What is wrong?
+      description: Quote the incorrect text if you can, and say what is wrong with it.
+    validations:
+      required: true
+  - type: textarea
+    id: correction
+    attributes:
+      label: What is correct?
+      description: The correct fact, and — if you have one — a source we can cite.
+    validations:
+      required: true
+  - type: dropdown
+    id: kind
+    attributes:
+      label: Kind of error
+      options:
+        - Factual error (wrong name, date, number, or claim)
+        - Outdated content (was true, is not anymore)
+        - Broken page (bad link, rendering problem, missing content)
+        - Other
+    validations:
+      required: true

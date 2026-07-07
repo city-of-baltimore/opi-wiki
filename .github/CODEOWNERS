@@ -1,0 +1,22 @@
+# Review routing for pull requests. The last matching line wins.
+#
+# Default: the Executive Director / repo maintainer reviews everything.
+# As section owners get GitHub handles, uncomment and fill in their rows so
+# the three-tier editorial workflow (see MAINTAINERS.md) routes automatically.
+
+* @DartDoesData
+
+# --- Section owners (fill in handles, then uncomment) -----------------------
+# /docs/about-us/our-teams/performance/          @<deputy-chief-performance-officer>
+# /docs/what-we-do/programs/citistat/            @<deputy-chief-performance-officer>
+# /docs/about-us/our-teams/data-and-analytics/   @<deputy-chief-data-officer>
+# /docs/about-us/our-teams/innovation-lab/       @<innovation-program-manager>
+# /docs/what-we-do/products/                     @<innovation-program-manager>
+# /docs/how-we-work/handbook/                    @<chief-of-staff>
+
+# Engineering surfaces stay with the maintainer.
+/scripts/       @DartDoesData
+/tests/         @DartDoesData
+/.github/       @DartDoesData
+mkdocs.yml      @DartDoesData
+main.py         @DartDoesData
