@@ -41,9 +41,9 @@ When in doubt, use the clearest full name. Do not use "CAD" for Cross-Agency Del
 
 ## Recently updated
 
-- [Letter — On OPI Foundations](about-us/letters-from-the-director/on-opi-foundations.md) {{ badge("approved") }}
-- [CitiStat Strategic Framework](what-we-do/programs/citistat/strategic-framework.md) {{ badge("approved") }}
-- [Glossary of OPI Terms](resources/reference/glossary.md) {{ badge("approved") }}
+- [Letter — On OPI Foundations](about-us/letters-from-the-director/on-opi-foundations.md)
+- [CitiStat Strategic Framework](what-we-do/programs/citistat/strategic-framework.md)
+- [Glossary of OPI Terms](resources/reference/glossary.md)
 
 ---
 

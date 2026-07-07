@@ -16,7 +16,7 @@ from scripts.repo_tools.badges import render_badge
 
 
 def render_page_header(
-    badge_value: str,
+    badge_value: str | None,
     *,
     summary: str | None = None,
     category: str | None = None,
@@ -25,7 +25,9 @@ def render_page_header(
     """Render the shared page header as HTML.
 
     Args:
-        badge_value: The badge token to render in the eyebrow row.
+        badge_value: The badge token to render in the eyebrow row, or None
+            when the page carries no badge (the common case — badges are
+            opt-in signals such as ``draft`` or ``template``).
         summary: Optional one-line lede describing the page.
         category: Optional short category label shown before the badge.
         tagline: Optional supporting italic line shown under the summary.
@@ -38,15 +40,17 @@ def render_page_header(
     category = (category or "").strip()
     tagline = (tagline or "").strip()
 
-    eyebrow = ['  <p class="opi-page-header__eyebrow">']
-    if category:
-        eyebrow.append(
-            f'<span class="opi-page-header__category">{escape(category)}</span>'
-        )
-    eyebrow.append(render_badge(badge_value))
-    eyebrow.append("</p>")
-
-    fragments = ['<div class="opi-page-header">', "".join(eyebrow)]
+    fragments = ['<div class="opi-page-header">']
+    if category or badge_value:
+        eyebrow = ['  <p class="opi-page-header__eyebrow">']
+        if category:
+            eyebrow.append(
+                f'<span class="opi-page-header__category">{escape(category)}</span>'
+            )
+        if badge_value:
+            eyebrow.append(render_badge(badge_value))
+        eyebrow.append("</p>")
+        fragments.append("".join(eyebrow))
     if summary:
         fragments.append(
             f'  <p class="opi-page-header__summary">{escape(summary)}</p>'

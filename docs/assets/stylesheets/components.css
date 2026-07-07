@@ -103,11 +103,6 @@
   color: #8A6800;
 }
 
-.opi-pill.approved {
-  background: var(--opi-gold-soft);
-  color: var(--opi-gold-deep);
-}
-
 .opi-pill.public {
   background: #E5F2E0;
   color: #3E6B2E;
@@ -126,11 +121,6 @@
 [data-md-color-scheme="slate"] .opi-pill.draft {
   background: #3A2F12;
   color: #E8B635;
-}
-
-[data-md-color-scheme="slate"] .opi-pill.approved {
-  background: #3A2F12;
-  color: var(--opi-gold);
 }
 
 [data-md-color-scheme="slate"] .opi-pill.public {

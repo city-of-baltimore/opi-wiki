@@ -15,7 +15,7 @@ REPO_ROOT = Path(__file__).resolve().parents[1]
 def test_render_badge_uses_shared_label_and_variant_mapping() -> None:
     """Badge tokens should render through the shared mapping table."""
 
-    assert render_badge("approved") == '<span class="opi-pill approved">Approved</span>'
+    assert render_badge("draft") == '<span class="opi-pill draft">Draft</span>'
     assert (
         render_badge("position-description")
         == '<span class="opi-pill internal">Position Description</span>'
@@ -27,6 +27,13 @@ def test_render_badge_rejects_unknown_badge_tokens() -> None:
 
     with pytest.raises(ValueError, match="Unknown display badge"):
         render_badge("retired")
+
+
+def test_approved_badge_token_is_retired() -> None:
+    """The blanket 'approved' badge was removed; the token must stay invalid."""
+
+    with pytest.raises(ValueError, match="Unknown display badge"):
+        render_badge("approved")
 
 
 def test_define_env_registers_badge_macros() -> None:

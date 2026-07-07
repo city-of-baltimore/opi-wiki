@@ -14,7 +14,7 @@ def test_render_page_header_renders_eyebrow_summary_and_tagline() -> None:
     """A full header should render category, badge, summary, and tagline."""
 
     html = render_page_header(
-        "approved",
+        "draft",
         summary="What this page covers.",
         category="SERIES · OPI FOUNDATIONS",
         tagline="A supporting line.",
@@ -25,7 +25,7 @@ def test_render_page_header_renders_eyebrow_summary_and_tagline() -> None:
         '<span class="opi-page-header__category">SERIES · OPI FOUNDATIONS</span>'
         in html
     )
-    assert '<span class="opi-pill approved">Approved</span>' in html
+    assert '<span class="opi-pill draft">Draft</span>' in html
     assert (
         '<p class="opi-page-header__summary">What this page covers.</p>' in html
     )
@@ -43,10 +43,20 @@ def test_render_page_header_omits_empty_optional_parts() -> None:
     assert '<span class="opi-pill internal">Reference</span>' in html
 
 
+def test_render_page_header_without_badge_omits_the_eyebrow() -> None:
+    """Badges are opt-in: no badge and no category means no eyebrow row at all."""
+
+    html = render_page_header(None, summary="Just a summary.")
+
+    assert "opi-page-header__eyebrow" not in html
+    assert "opi-pill" not in html
+    assert '<p class="opi-page-header__summary">Just a summary.</p>' in html
+
+
 def test_render_page_header_escapes_text() -> None:
     """Author-supplied text should be HTML-escaped."""
 
-    html = render_page_header("approved", summary="A & B <c>")
+    html = render_page_header("draft", summary="A & B <c>")
 
     assert "A &amp; B &lt;c&gt;" in html
     assert "<c>" not in html

@@ -99,13 +99,13 @@ def define_env(env: MacroEnvironment) -> None:
     ) -> Markup:
         """Render the current page's canonical header from metadata and args."""
 
-        from scripts.repo_tools.badges import resolve_page_badge_value
+        from scripts.repo_tools.badges import resolve_optional_page_badge_value
         from scripts.repo_tools.metadata import resolve_page_metadata
         from scripts.repo_tools.page_header import render_page_header
 
         page_path = DOCS_DIR / env.page.file.src_path
         metadata = resolve_page_metadata(DOCS_DIR, page_path)
-        badge_value = resolve_page_badge_value(metadata)
+        badge_value = resolve_optional_page_badge_value(metadata)
         return _render_markup(
             render_page_header(
                 badge_value,

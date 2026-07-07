@@ -170,11 +170,13 @@ exception: they use a plain `>` blockquote summary and no badge.
 
 ## Page badges
 
-Visible status/type pills are shared UI too. Store badge intent in the nearest
-`.metadata.yml` file with `display_badge` values such as `approved`, `draft`,
-`template`, `reference`, or `position-description`. `page_header()` renders the
-page's badge automatically; use the `badge(...)` macro only for one-off inline
-badges, and never inline raw HTML pill spans.
+Visible status/type pills are shared UI too, and they are **opt-in**: a page
+renders a pill only when a `.metadata.yml` scope sets `display_badge` to
+`draft`, `template`, `reference`, or `position-description`. Most pages set no
+badge — the old blanket `approved` badge was retired because labeling the
+default state added noise (and the token is now rejected by validation).
+`page_header()` renders the page's badge automatically; use the `badge(...)`
+macro only for one-off inline badges, and never inline raw HTML pill spans.
 
 ## Headings
 

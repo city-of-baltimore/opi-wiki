@@ -17,8 +17,10 @@ class BadgeDefinition:
     label: str
 
 
+# "approved" was retired on purpose: approval is the default state of published
+# pages, so labeling it added noise. Badges are opt-in signals for the
+# exceptions (draft) and content types (template, reference, PD).
 BADGE_DEFINITIONS = {
-    "approved": BadgeDefinition(css_variant="approved", label="Approved"),
     "draft": BadgeDefinition(css_variant="draft", label="Draft"),
     "position-description": BadgeDefinition(
         css_variant="internal",
@@ -67,4 +69,16 @@ def resolve_page_badge_value(metadata: Mapping[str, str]) -> str:
             f"Page metadata is missing the '{DISPLAY_BADGE_FIELD}' field needed "
             "for page_badge()."
         )
+    return normalize_badge_key(raw_value)
+
+
+def resolve_optional_page_badge_value(metadata: Mapping[str, str]) -> str | None:
+    """Return the page's badge token, or None when no badge is configured.
+
+    Badges are opt-in: most pages set no display_badge and render no pill.
+    """
+
+    raw_value = metadata.get(DISPLAY_BADGE_FIELD, "")
+    if not raw_value:
+        return None
     return normalize_badge_key(raw_value)
