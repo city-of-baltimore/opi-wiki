@@ -240,6 +240,21 @@ If the team wants ProperDocs later, treat it as a full platform change:
 2. Update local commands, CI, and preview/deploy scripts from `mkdocs` to `properdocs`.
 3. Re-verify theme, plugins, redirects, and navigation behavior in one slice.
 
+## Review-date enforcement
+
+`scripts/check_page_metadata.py` (run by verify, CI, and the deploy gate)
+enforces the freshness contract, not just field presence:
+
+- `last_reviewed` and `next_review` must be ISO dates (`YYYY-MM-DD`).
+- A page whose `last_reviewed` is more than **183 days** old fails validation —
+  the build breaks until someone actually reviews the content and bumps the
+  dates in the nearest `.metadata.yml`.
+- `next_review` must not precede `last_reviewed`.
+
+This is deliberate: the quarterly staleness audit below now has teeth. When a
+review pass completes, bump the section's `last_reviewed`/`next_review` in one
+sidecar edit.
+
 ## Staleness audit (quarterly)
 
 Every quarter, run `./scripts/verify.sh` (which includes `mkdocs build --strict`) and audit:
