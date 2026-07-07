@@ -7,8 +7,8 @@
     staff-only operating home for project records, directories, and controlled
     templates. It does **not** describe this public site.
 
-    **This public site (OPI Foundations)** is a MkDocs site organized into five
-    sections (About Us, How We Work, Our Teams, Resources, and Public) and
+    **This public site (OPI Foundations)** is a MkDocs site organized into four
+    sections (About Us, How We Work, What We Do, and Resources) and
     published openly. The internal SharePoint KB described below is where the
     non-public, day-to-day operating records live. The two use different
     top-level labels on purpose (for example, this site's **How We Work**

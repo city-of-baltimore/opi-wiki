@@ -98,12 +98,10 @@ opi-foundations/
 │   ├── .pages              # top-level nav ownership
 │   ├── index.md            # home
 │   ├── index.cards.yml     # shared card-grid data for home
-│   ├── about-us/
-│   ├── how-we-work/
-│   ├── our-teams/
-│   ├── resources/
-│   ├── public/
-│   ├── contributing.md
+│   ├── about-us/           # mission, letters, our-teams/
+│   ├── how-we-work/        # organization/ (org chart, team & roles), handbook/
+│   ├── what-we-do/         # services, programs (CitiStat), products (BIC)
+│   ├── resources/          # reference, glossary, position descriptions
 │   ├── */index.cards.yml   # section-local landing-page card data
 │   └── assets/
 │       ├── stylesheets/tokens.css          # shared design tokens + Material bridges

@@ -21,8 +21,9 @@ readable.
 ## Staff alignment by team
 
 Each team gets its own chart so the roster stays readable on desktop and
-mobile. Innovation Lab staffing and its adjacent Director's Office support
-roles are shown in their home teams, with aspirational seats labeled so the current and intended structure stay visible together.
+mobile. Embedded contractors appear alongside City staff — purple for onshore
+contractors, gray for the offshore BIC delivery team — and vacant seats are
+labeled so the current and intended structure stay visible together.
 
 {{ org_structure_from("how-we-work/organization/org-structure.data.yml", "portfolio_tabs") }}
 

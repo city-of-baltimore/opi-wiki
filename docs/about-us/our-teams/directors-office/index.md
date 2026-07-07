@@ -3,9 +3,9 @@
 > The Executive Director's office, plus the AdminOps function that runs the operational backbone of OPI.
 
 The Director's Office sets direction, coordinates executive work, and owns the AdminOps function beneath it. The team includes the Executive Director,
-Chief of Staff, Communications and Partnerships Lead, Special Assistant,
-Project Manager, CitiStat Inspector, and the AdminOps routines that keep the
-office aligned.
+Chief of Staff, Project Manager, Data Storyteller, and the AdminOps routines
+that keep the office aligned. The CitiStat Inspector sits with the Performance
+team, and the Operations Analyst sits with the Innovation Lab.
 
 ## Pages in this section
 

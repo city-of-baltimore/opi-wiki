@@ -99,10 +99,14 @@ mapping in mind when locating content, and keep the `.pages` title, the
 
 | Folder | Navigation label | Notes |
 |---|---|---|
-| `our-teams/directors-office/` | Director's Office | The team that delivers the **AdminOps** service (operating backbone). |
-| `our-teams/performance/` | Performance | The team that delivers **Citywide Performance Management** and operates the **CitiStat** program. |
-| `our-teams/data-and-analytics/` | Data and Analytics | The team that delivers **Citywide Data and Analytics**. |
-| `our-teams/innovation-lab/` | Innovation Lab | Both a team and a service. The products it builds live under `products/`. |
+| `about-us/our-teams/` | Our Teams | The four team pages live under About Us. |
+| `about-us/our-teams/directors-office/` | Director's Office | The team that delivers the **AdminOps** service (operating backbone). |
+| `about-us/our-teams/performance/` | Performance | The team that delivers **Citywide Performance Management**; the **CitiStat** program itself lives in `what-we-do/programs/citistat/`. |
+| `about-us/our-teams/data-and-analytics/` | Data and Analytics | The team that delivers **Citywide Data and Analytics**. |
+| `about-us/our-teams/innovation-lab/` | Innovation Lab | Both a team and a service; the products it builds live in `what-we-do/products/`. |
+| `how-we-work/organization/` | Organization | Org chart, org data (`org-structure.data.yml`), and the Team & Roles roster. |
+| `how-we-work/handbook/` | Handbook | Onboarding, operations, how-to guides, and administrative memos. |
+| `what-we-do/` | What We Do | Services, programs (CitiStat and portfolio), and products (Baltimore Intelligence Center). |
 | `programs/citistat/` | CitiStat | A **program** supported by all teams — its own top-level section, not owned by one team. |
 | `products/` | Products | Tools and platforms OPI builds (Baltimore Intelligence Center, plus placeholders). |
 | `how-we-work/services/` | Services | The five services OPI delivers, including **Cross-Agency Delivery** — a service, not a staffed team. |

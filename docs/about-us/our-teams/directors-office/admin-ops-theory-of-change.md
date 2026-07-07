@@ -88,9 +88,9 @@ AdminOps is mostly continuous and rhythm-driven, not project-based. Where projec
 | **Role**                                   | **Responsibility**                                                                                                                  |
 |--------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------|
 | Chief of Staff                             | Owns the AdminOps service. Final decision rights on intake routing, portfolio sequencing, communications posture, and QA standards. |
-| Communications & Partnerships Lead         | Owns narrative, branding, public-facing artifacts, partner cultivation, and Council coordination in collaboration with the CoS.     |
-| CitiStat Inspector                         | Field validation, evidence verification, and on-the-ground checks for AdminOps quality and Stat closure.                            |
-| Special Assistant                          | Executive coordination, scheduling, briefings, and follow-through for the Executive Director.                                       |
+| Data Storyteller                           | Owns narrative, branding, public-facing artifacts, partner cultivation, and Council coordination in collaboration with the CoS.     |
+| CitiStat Inspector (Performance team)      | Field validation, evidence verification, and on-the-ground checks for AdminOps quality and Stat closure.                            |
+| Operations Analyst (Innovation Lab team)   | Executive coordination, scheduling, briefings, and follow-through for the Executive Director.                                       |
 | Full Stack Engineer                        | Build and maintain OPI’s internal operational tools, intake system, and knowledge base infrastructure.                              |
 | Project Manager                            | Cross-portfolio coordination, milestone tracking, and delivery support for AdminOps initiatives.                                    |
 
