@@ -2,13 +2,13 @@
 
 The public docs site for Baltimore City's Mayor's Office of Performance and Innovation.
 
-Live site: https://opi.baltimorecity.gov *(once deployed)*
+Live site: https://city-of-baltimore.github.io/opi-wiki/ (custom domain https://opi.baltimorecity.gov pending DNS)
 Repo: this repository
 Maintainer: see [`MAINTAINERS.md`](MAINTAINERS.md)
 
 ## What this is
 
-A docs-as-code site, written in Markdown, rendered with [MkDocs Material](https://squidfunk.github.io/mkdocs-material/), version-controlled in GitHub Enterprise, and auto-deployed via GitHub Actions.
+A docs-as-code site, written in Markdown, rendered with [MkDocs Material](https://squidfunk.github.io/mkdocs-material/), version-controlled on GitHub, and auto-deployed via GitHub Actions.
 
 The site is **public-facing**. Internal companion documents (PDs, performance standards, onboarding checklists) live on Baltimore City's SharePoint intranet and are linked from this site with a 🔒 marker.
 
@@ -59,8 +59,8 @@ worth evaluating later, but it should happen as an explicit repo decision, not
 as a side effect of a plugin upgrade.
 
 If OPI chooses to adopt ProperDocs in the future, do it as a single migration
-slice: rename `mkdocs.yml`, update local commands, CI, Docker/Fly preview
-commands, and re-verify all plugins and theme behavior together.
+slice: rename `mkdocs.yml`, update local commands and CI, and re-verify all
+plugins and theme behavior together.
 
 ## Repository conventions
 
@@ -70,7 +70,7 @@ commands, and re-verify all plugins and theme behavior together.
 - Open each content page with one `{{ page_header(...) }}` call directly under the `# H1`, not a hand-built stack of badge, blockquote, bold kicker, restated bold title, and italic tagline. The macro renders the status badge (from `.metadata.yml`) plus an optional `category`, `summary`, and `tagline`. Keep the title as a single `# H1` — never restate it as a bold paragraph. Section `index.md` landing pages stay on a plain `>` blockquote summary and carry no badge.
 - Keep landing-page card content in neighboring `*.cards.yml` files and render it through the shared `card_grid_from(...)` macro.
 - Keep repeated structured page data in neighboring `*.data.yml` files when one source needs to drive multiple rendered sections.
-- Keep visible page badges in `.metadata.yml` via the `display_badge` field and render them through `page_badge()` or `badge(...)`, not raw HTML spans.
+- Page badges are opt-in: set `display_badge` (`draft`, `template`, `reference`, `position-description`) in the nearest `.metadata.yml` only when a page needs a pill; `page_header()` renders it. Never inline raw HTML pill spans.
 - Keep shared brand CSS split by responsibility under `docs/assets/stylesheets/` so tokens, Material chrome, reusable components, and page-specific presentation do not drift together.
 - Run `./scripts/verify.sh` before merging structural or config changes.
 - Treat `site/` as generated output, not source.
@@ -79,7 +79,7 @@ commands, and re-verify all plugins and theme behavior together.
 
 Use the smallest shared pattern that matches the page need:
 
-- `{{ page_header(...) }}` renders the canonical page intro (status badge + optional `category`, `summary`, `tagline`) once, from the page and its `.metadata.yml`. It is the only supported way to render the header chrome.
+- `{{ page_header(...) }}` renders the canonical page intro (optional opt-in badge + optional `category`, `summary`, `tagline`) once, from the page and its `.metadata.yml`. It is the only supported way to render the header chrome.
 - `.metadata.yml` carries inherited page metadata such as owner, review cadence, change log, and optional `display_badge` state.
 - `*.cards.yml` carries repeated landing-page card content and should render only through `card_grid_from(...)`.
 - `*.data.yml` carries structured page-specific source data when one file needs to drive multiple rendered sections, tables, charts, or lists.
@@ -117,7 +117,6 @@ opi-foundations/
 │   ├── check_html_links.py # raw HTML href validation
 │   ├── check_page_metadata.py
 │   ├── check_brand_terms.py
-│   └── cleanup_doc_headers.py
 ├── .github/
 │   ├── workflows/ci.yml          # PR/push verification
 │   ├── workflows/deploy.yml      # GitHub Actions auto-deploy
@@ -141,38 +140,6 @@ See [`MAINTAINERS.md`](MAINTAINERS.md) for the full operating manual.
 
 `main` branch deploys automatically to GitHub Pages via the workflow in `.github/workflows/deploy.yml`. To deploy to a custom domain (`opi.baltimorecity.gov`), the city DNS team needs to add a `CNAME` record pointing to GitHub Pages, and a `CNAME` file should be added to `docs/`.
 
-## Fly.io Test Deploy
-
-For a disposable preview on Fly.io, this repo includes a `Dockerfile` and `fly.toml` that run:
-
-```bash
-poetry run mkdocs serve --dev-addr=0.0.0.0:8080 --no-livereload
-```
-
-This is a test setup only. `mkdocs serve` is MkDocs' development server, so keep GitHub Pages as the production path.
-
-```bash
-# 1) authenticate if needed
-fly auth login
-
-# 2) create the Fly app from this repo config
-# pick a unique name; this also avoids extra spare machines for a test app
-fly launch --copy-config --no-deploy --ha=false --name your-unique-app-name
-
-# 3) deploy a single test machine
-fly deploy --ha=false
-
-# 4) open the preview
-fly open
-```
-
-Useful follow-ups:
-
-```bash
-fly status
-fly logs
-fly scale count 0
-```
 
 ## License
 

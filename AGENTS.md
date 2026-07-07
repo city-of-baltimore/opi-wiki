@@ -125,11 +125,12 @@ Hold these lines:
 
 ## Runtime And Deployment Rules
 
-- GitHub Pages is the canonical production deployment path.
-- Fly.io is preview/test infrastructure only unless the repo's deployment
-  posture changes intentionally and the docs are updated with it.
-- The checked-in `Dockerfile` should remain a real preview artifact, not an
-  abandoned convenience file.
+- GitHub Pages is the canonical production deployment path
+  (`.github/workflows/deploy.yml` on push to `main`).
+- Preview changes locally with `poetry run mkdocs serve`. There is no separate
+  preview infrastructure; do not reintroduce one (the old Fly.io/Docker preview
+  stack was retired when the Fly app was deleted) without updating these rules
+  and the README in the same change.
 - Do not edit generated `site/` output.
 
 ## Verification Rules

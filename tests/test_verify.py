@@ -70,19 +70,6 @@ def test_run_verification_stops_on_first_failure(
     assert "- Broken step: failed (exit 3)" in captured.err
 
 
-def test_build_steps_keeps_fly_validation_optional(monkeypatch: pytest.MonkeyPatch) -> None:
-    """Fly validation should only appear when both the binary and config are present."""
-
-    repo_root = Path("/tmp/example")
-
-    monkeypatch.setattr("scripts.verify.shutil.which", lambda command: None)
-    assert [step.name for step in build_steps(repo_root)][-1] != "Validating Fly config"
-
-    monkeypatch.setattr("scripts.verify.shutil.which", lambda command: "/usr/local/bin/flyctl")
-    monkeypatch.setattr(Path, "exists", lambda self: self.name == "fly.toml")
-    assert [step.name for step in build_steps(repo_root)][-1] == "Validating Fly config"
-
-
 def test_parse_args_supports_optional_browser_smoke_flag() -> None:
     """The verification runner should support opting into browser smoke coverage."""
 

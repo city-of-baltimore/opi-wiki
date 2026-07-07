@@ -5,7 +5,6 @@ from __future__ import annotations
 
 import argparse
 import json
-import shutil
 import subprocess
 import sys
 import time
@@ -85,14 +84,6 @@ def build_steps(
             VerifyStep(
                 name="Running browser smoke checks",
                 command=(python, "scripts/check_browser_smoke.py"),
-            )
-        )
-
-    if shutil.which("flyctl") and (repo_root / "fly.toml").exists():
-        steps.append(
-            VerifyStep(
-                name="Validating Fly config",
-                command=("flyctl", "config", "validate"),
             )
         )
 
