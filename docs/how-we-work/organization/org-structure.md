@@ -2,7 +2,7 @@
 
 {{ page_header(summary="Who reports to whom, and how decision rights flow.", tagline="Teams, leads, staff alignment, services, cost centers, and the Cross-Agency Delivery overlay.") }}
 
-OPI delivers its mission through four teams and five services. The teams are how we organize people, leadership, and cost centers. The services are how we describe what OPI delivers to residents, agencies, and city leadership.
+OPI delivers its mission through four city teams and five services. The teams are how we organize people, leadership, and cost centers. The services are how we describe what OPI delivers to residents, agencies, and city leadership. Contractors — including the AI Enablement engagement that stands up the Baltimore Intelligence Center — are embedded alongside City staff and shown in the charts below.
 
 This document is the official view of OPI’s structure: leads, staff alignment, teams, services, cost centers, and Cross-Agency Delivery. For the full staff roster (position numbers, classifications, and reporting lines), see [Team and Roles](team-and-roles/index.md).
 
@@ -16,6 +16,8 @@ readable.
 
 {{ org_structure_from("how-we-work/organization/org-structure.data.yml", "leadership_chart") }}
 
+**Chart key.** City staff appear on the default (dark) node style. **Purple** nodes are OPI contractors; **gray** nodes are offshore contractors. AI Enablement is the contractor engagement standing up the [Baltimore Intelligence Center](../../what-we-do/products/baltimore-intelligence-center/index.md); its team is shown for visibility and is not part of OPI's permanent position count.
+
 ## Staff alignment by team
 
 Each team gets its own chart so the roster stays readable on desktop and
@@ -24,9 +26,9 @@ roles are shown in their home teams, with aspirational seats labeled so the curr
 
 {{ org_structure_from("how-we-work/organization/org-structure.data.yml", "portfolio_tabs") }}
 
-## The Four Teams
+## The Teams
 
-OPI’s work is organized into four teams, each with a named lead, a budget cost center, a defined set of functions, and a primary value proposition.
+OPI’s work is organized into four city teams — each with a named lead, a budget cost center, a defined set of functions, and a primary value proposition — plus the AI Enablement contractor engagement that stands up the Baltimore Intelligence Center.
 
 {{ org_structure_from("how-we-work/organization/org-structure.data.yml", "portfolio_table") }}
 

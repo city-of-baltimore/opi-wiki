@@ -37,6 +37,7 @@ Each refined Position Description is filed alongside this roster in the same fol
 | **Open / unfilled**     | 1                                                                                   |
 | **Teams**               | 4 (Director’s Office, Innovation Lab, Performance, Data and Analytics) |
 | **Cost centers**        | 4 (AdminOps, Innovation Lab, Performance Management, Data and Analytics)            |
+| **Contractors**         | 16 embedded across Data and Analytics, Innovation Lab, and AI Enablement (BIC)      |
 | **Executive sponsor**   | Mayor Brandon M. Scott via City Administrator Faith P. Leach                        |
 
 ??? info "Leadership"
@@ -61,14 +62,13 @@ Each refined Position Description is filed alongside this roster in the same fol
     | Rakeim Young             | Chief of Staff                              | Operations Manager II         | AdminOps        | 50053   | rakeim.young@baltimorecity.gov |  |
     | Mallory Screws           | Project Manager                             | Operations Officer III        | AdminOps        | 62121   | mallory.screws@baltimorecity.gov | 443-219-9590 |
     | Audrey Randazzo          | Data Storyteller                            | Operations Officer III | Innovation Lab  | 53413   | audrey.randazzo@baltimorecity.gov |  |
-    | Derek Thomas             | Operations Analyst                          | Operations Officer III | Innovation Lab  | 70432   | derek.thomas@baltimorecity.gov | 443-826-8794 |
-    | Rashaad Tillery          | CitiStat Inspector                          | Operations Officer I          | AdminOps        | 50509   | rashaad.tillery@baltimorecity.gov | 443-845-8921 |
 
 ??? info "Innovation Lab roster"
 
     | **Name**                  | **Working title**                    | **Classification**                | **Cost center** | **PIN** | **Email** | **Work phone** |
     |---------------------------|--------------------------------------|-----------------------------------|-----------------|---------|---| --- |
     | Gabriel Watson            | Innovation Program Manager           | Operations Manager II             | Innovation Lab  | 115655  |  |  |
+    | Derek Thomas              | Operations Analyst                   | Operations Officer III            | Innovation Lab  | 70432   | derek.thomas@baltimorecity.gov | 443-826-8794 |
     | Selenea Gibson            | Civic Designer                       | Data Fellow                       | Innovation Lab  | 53412   | selenea.gibson@baltimorecity.gov | 443-602-6182 |
     | Chiemeka Okeoma           | Applied Data Scientist               | Operations Officer V              | Innovation Lab  | 62137   | chiemeka.okeoma@baltimorecity.gov | 240-252-8991 |
     | Xander Jake de los Santos | Full Stack Engineer                  | Operations Officer III            | Innovation Lab  | 70431   | XanderJake.DeLosSantos@baltimorecity.gov |  |
@@ -84,6 +84,7 @@ Each refined Position Description is filed alongside this roster in the same fol
     | Griffin Riddler, PhD      | CitiStat Analyst                 | CitiStat Analyst I            | Performance Management | 47946   | griffin.riddler@baltimorecity.gov |  |
     | Ethan Buckborough    | CitiStat Analyst                 | CitiStat Analyst I            | Performance Management | 52437   | ethan.buckborough@baltimorecity.gov |  |
     | Nelson Gomes Boronat | CitiStat Analyst                 | CitiStat Analyst I | Performance Management | 62122   | nelson.gomesboronat@baltimorecity.gov | 443-750-2057 |
+    | Rashaad Tillery      | CitiStat Inspector               | Operations Officer I          | AdminOps               | 50509   | rashaad.tillery@baltimorecity.gov | 443-845-8921 |
 
 ??? info "Data and Analytics roster"
 
@@ -97,7 +98,7 @@ Each refined Position Description is filed alongside this roster in the same fol
 
 ??? info "Cost center view"
 
-    OPI’s budget is organized into four cost centers. The same person may sit on a team that does not match their cost center — for example, the Operations Analyst currently sits in the Director’s Office while remaining funded in the Innovation Lab cost center.
+    OPI’s budget is organized into four cost centers. The same person may sit on a team that does not match their cost center — for example, the Data Storyteller currently sits in the Director’s Office while remaining funded in the Innovation Lab cost center.
 
     **AdminOps (CCA001472)**
 
@@ -106,7 +107,7 @@ Each refined Position Description is filed alongside this roster in the same fol
     | Executive Director and Chief Data Officer | Dartanion Swift-Williams | Director's Office | 15961   |
     | Chief of Staff                            | Rakeim Young             | Director's Office | 50053   |
     | Project Manager                           | Mallory Screws           | Director's Office | 62121   |
-    | CitiStat Inspector                        | Rashaad Tillery          | Director's Office | 50509   |
+    | CitiStat Inspector                        | Rashaad Tillery          | Performance       | 50509   |
 
     **Data and Analytics (CCA001472)**
 
@@ -122,7 +123,7 @@ Each refined Position Description is filed alongside this roster in the same fol
 
     | **Working title**                              | **Incumbent**             | **Team**     | **PIN** |
     |------------------------------------------------|---------------------------|-------------------|---------|
-    | Operations Analyst                             | Derek Thomas              | Director's Office        | 70432   |
+    | Operations Analyst                             | Derek Thomas              | Innovation Lab           | 70432   |
     | Data Storyteller                               | Audrey Randazzo           | Director's Office | 53413   |
     | Civic Designer                                 | Selenea Gibson            | Innovation Lab    | 53412   |
     | Applied Data Scientist                         | Chiemeka Okeoma           | Innovation Lab    | 62137   |
@@ -145,5 +146,30 @@ Each refined Position Description is filed alongside this roster in the same fol
     | **Title**                  | **Status**          | **Team**            | **PIN / Status** |
     |----------------------------|---------------------|--------------------------|------------------|
     | Senior Performance Analyst | Open — to be posted | Performance        | 115657           |
+
+## Contractors and the BIC engagement
+
+OPI embeds contractors alongside City staff. Contractors hold no PIN and are not part of the 22-position count. Onshore contractors and the offshore Baltimore Intelligence Center (BIC) delivery team are listed below and color-coded on the [org chart](../org-structure.md) — purple for contractors, gray for offshore contractors. Contractors do not have position descriptions.
+
+??? info "Contractors by team"
+
+    | **Name** | **Role** | **Team** | **Location** |
+    |---|---|---|---|
+    | Safi Mojidi | Data Governance Lead | Data and Analytics | Onshore |
+    | Ben Illunga | Senior Data Scientist | Data and Analytics | Onshore |
+    | TBD | Data Engineer | Data and Analytics | Onshore |
+    | TBD | Senior Data Engineer | Data and Analytics | Onshore |
+    | TBD | Data Scientist | Data and Analytics | Onshore |
+    | Daniel De Freitas | Technical Program Manager | Innovation Lab | Onshore |
+    | TBD | Change Manager | Innovation Lab | Onshore |
+    | TBD | Sr. Software Engineer | Innovation Lab | Onshore |
+    | TBD | Software Engineer | Innovation Lab | Onshore |
+    | Ifeanyi Akila | AI Enablement Lead | AI Enablement (BIC) | Onshore |
+    | Byron Roelofsz | Product Lead | AI Enablement (BIC) | Offshore |
+    | Catalin Ghiorghisor | Technical Lead | AI Enablement (BIC) | Offshore |
+    | Mercia Malan | Data Engineering Lead | AI Enablement (BIC) | Offshore |
+    | McGregor Jackson | Semantic Layer Lead | AI Enablement (BIC) | Offshore |
+    | Chris Dawson | UX Lead | AI Enablement (BIC) | Offshore |
+    | Andrei Morgan | UX Designer | AI Enablement (BIC) | Offshore |
 
 *This roster reflects the OPI operating model. Position descriptions for every role listed here are filed in the OPI Foundations / Position Descriptions folder, organized by team. PINs and budget detail come from Baltimore City’s official position file.*

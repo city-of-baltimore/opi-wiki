@@ -18,9 +18,11 @@ def test_org_structure_data_loads_cleanly() -> None:
     structure = load_org_structure(DOCS_DIR, "how-we-work/organization/org-structure.data.yml")
 
     assert structure.city_administrator.name == "Faith P. Leach"
-    assert len(structure.portfolios) == 4
+    assert len(structure.portfolios) == 5
     assert structure.portfolios[-1].leadership_edge_style == "solid"
-    assert structure.portfolios[-1].lead.name == "Gabriel Watson"
+    assert structure.portfolios[-1].lead.name == "Ifeanyi Akila"
+    assert structure.portfolios[-1].lead.worker_type == "contractor"
+    assert structure.portfolios[3].lead.name == "Gabriel Watson"
 
 
 def test_org_structure_renderer_covers_chart_table_and_roster_sections() -> None:
@@ -39,7 +41,25 @@ def test_org_structure_renderer_covers_chart_table_and_roster_sections() -> None
     assert "| Director's Office | Rakeim Young, Chief of Staff | AdminOps |" in portfolio_table
     assert "- Audrey Randazzo — Data Storyteller" in staff_alignment
     assert "- Gabriel Watson — Innovation Program Manager" in staff_alignment
+    assert "- Ifeanyi Akila — AI Enablement Lead (Contractor)" in staff_alignment
+    assert "- Byron Roelofsz — Product Lead (Contractor · offshore)" in staff_alignment
     assert "cross-portfolio model" not in staff_alignment
+
+
+def test_org_structure_marks_contractors_in_chart_and_roster() -> None:
+    """Contractors should be color-coded on the chart and tagged in the roster."""
+
+    structure = load_org_structure(DOCS_DIR, "how-we-work/organization/org-structure.data.yml")
+
+    leadership_chart = render_org_structure(structure, "leadership_chart")
+    tabs = render_org_structure(structure, "portfolio_tabs")
+
+    assert "classDef contractor" in leadership_chart
+    assert "classDef offshore" in leadership_chart
+    # The AI Enablement branch lead is an onshore contractor.
+    assert ":::contractor" in leadership_chart
+    # Offshore BIC members are color-coded in the portfolio tab.
+    assert ":::offshore" in tabs
 
 
 def test_define_env_registers_org_structure_macro() -> None:

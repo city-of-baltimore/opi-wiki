@@ -12,6 +12,17 @@ from scripts.repo_tools.data import load_docs_yaml_file
 
 MERMAID_LABEL_WRAP = 26
 
+WORKER_TYPES = frozenset({"staff", "contractor", "offshore-contractor"})
+_WORKER_MERMAID_CLASS = {"contractor": "contractor", "offshore-contractor": "offshore"}
+_WORKER_ROSTER_TAG = {
+    "contractor": "(Contractor)",
+    "offshore-contractor": "(Contractor · offshore)",
+}
+_MERMAID_CLASSDEFS = (
+    "  classDef contractor fill:#7e57c2,stroke:#5e35b1,color:#ffffff;",
+    "  classDef offshore fill:#78909c,stroke:#546e7a,color:#ffffff;",
+)
+
 
 @dataclass(frozen=True)
 class OrgPerson:
@@ -20,6 +31,7 @@ class OrgPerson:
     name: str
     title: str
     edge_style: str = "solid"
+    worker_type: str = "staff"
 
 
 @dataclass(frozen=True)
@@ -63,10 +75,15 @@ def _normalize_person(raw_person: Any, source: str) -> OrgPerson:
     if edge_style not in {"solid", "dotted"}:
         raise ValueError(f"{source} has unsupported edge_style '{edge_style}'.")
 
+    worker_type = str(raw_person.get("worker_type", "staff")).strip() or "staff"
+    if worker_type not in WORKER_TYPES:
+        raise ValueError(f"{source} has unsupported worker_type '{worker_type}'.")
+
     return OrgPerson(
         name=str(raw_person["name"]).strip(),
         title=str(raw_person["title"]).strip(),
         edge_style=edge_style,
+        worker_type=worker_type,
     )
 
 
@@ -152,7 +169,7 @@ def load_org_structure(docs_dir: Path, relative_path: str) -> OrgStructure:
     )
 
 
-def _mermaid_node(node_id: str, *parts: str) -> str:
+def _mermaid_node(node_id: str, *parts: str, css_class: str | None = None) -> str:
     """Render a Mermaid node with escaped HTML line breaks."""
 
     label_lines: list[str] = []
@@ -171,7 +188,10 @@ def _mermaid_node(node_id: str, *parts: str) -> str:
         escape(line, quote=False).replace('"', "&quot;")
         for line in label_lines
     )
-    return f'  {node_id}["{label}"]'
+    node = f'  {node_id}["{label}"]'
+    if css_class:
+        node = f"{node}:::{css_class}"
+    return node
 
 
 def _mermaid_edge(origin: str, target: str, style: str = "solid", label: str | None = None) -> str:
@@ -196,6 +216,7 @@ def render_org_structure(structure: OrgStructure, section: str) -> str:
         lines = [
             "```mermaid",
             "flowchart TD",
+            *_MERMAID_CLASSDEFS,
             _mermaid_node(
                 "CA",
                 structure.city_administrator.name,
@@ -214,6 +235,7 @@ def render_org_structure(structure: OrgStructure, section: str) -> str:
                     portfolio.label,
                     portfolio.lead.name,
                     portfolio.lead.title,
+                    css_class=_WORKER_MERMAID_CLASS.get(portfolio.lead.worker_type),
                 )
             )
         lines.extend(
@@ -241,17 +263,25 @@ def render_org_structure(structure: OrgStructure, section: str) -> str:
                 f"{portfolio.node_id}Lead",
                 portfolio.lead.name,
                 portfolio.lead.title,
+                css_class=_WORKER_MERMAID_CLASS.get(portfolio.lead.worker_type),
             ).strip()
             lines = [
                 f'=== "{portfolio.label}"',
                 "",
                 "    ```mermaid",
                 "    flowchart TB",
+                *[f"    {classdef.strip()}" for classdef in _MERMAID_CLASSDEFS],
                 f"    {lead_node}",
             ]
             for index, person in enumerate(portfolio.staff, start=1):
                 node_id = f"{portfolio.node_id}{index}"
-                lines.append(f"    {_mermaid_node(node_id, person.name, person.title).strip()}")
+                staff_node = _mermaid_node(
+                    node_id,
+                    person.name,
+                    person.title,
+                    css_class=_WORKER_MERMAID_CLASS.get(person.worker_type),
+                ).strip()
+                lines.append(f"    {staff_node}")
             lines.append("")
             for index, person in enumerate(portfolio.staff, start=1):
                 edge = _mermaid_edge(
@@ -289,10 +319,14 @@ def render_org_structure(structure: OrgStructure, section: str) -> str:
                 blocks.append("")
                 continue
 
-            blocks.append(f"- {portfolio.lead.name} — {portfolio.lead.title}")
+            lead_tag = _WORKER_ROSTER_TAG.get(portfolio.lead.worker_type)
+            lead_suffix = f" {lead_tag}" if lead_tag else ""
+            blocks.append(f"- {portfolio.lead.name} — {portfolio.lead.title}{lead_suffix}")
             blocks.append("")
             for person in portfolio.staff:
-                blocks.append(f"- {person.name} — {person.title}")
+                tag = _WORKER_ROSTER_TAG.get(person.worker_type)
+                suffix = f" {tag}" if tag else ""
+                blocks.append(f"- {person.name} — {person.title}{suffix}")
                 blocks.append("")
         return "\n".join(blocks).rstrip()
 

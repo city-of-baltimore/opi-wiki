@@ -53,7 +53,7 @@ BASE_ALLOW = {
     "ED", "CA", "DM", "CDO", "DCDO", "DCPO", "DCA", "SRO", "PMO", "ORF", "PIN",
     "RAG", "COOP", "OSHA", "WCAG", "ETL", "ELT", "GIS", "API", "APIs", "CSV",
     "PDF", "URL", "MVP", "UX", "UI", "FAQ", "FY", "MOU", "RFP", "BIC", "BCDP",
-    "CCA", "EOY", "TBD", "FAQ", "SQL", "CI", "CD", "ICYMI",
+    "CCA", "EOY", "TBD", "SQL", "CI", "CD", "ICYMI",
     # Baltimore agencies / offices
     "BCIT", "BBMR", "BCPSS", "BCRP", "DGS", "DOT", "DPW", "BPD", "EMS", "DHR",
     "DHCD", "HCD", "MOED", "MONSE", "MOGR", "BCFD", "MOIT", "DPOB", "LIGHT",
@@ -162,7 +162,7 @@ def load_acronym_allowlist() -> set[str]:
 def acronym_report(path: Path, text: str, allow: set[str]) -> list[tuple[str, str]]:
     found = set()
     # Skip headings — the wiki uses ALL-CAPS section titles that aren't acronyms.
-    body = "\n".join(l for l in text.split("\n") if not HEADING_RE.match(l))
+    body = "\n".join(line for line in text.split("\n") if not HEADING_RE.match(line))
     for token in ACRONYM_RE.findall(body):
         if token in allow or token in STOPWORDS:
             continue

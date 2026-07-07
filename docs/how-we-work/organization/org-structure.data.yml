@@ -21,10 +21,6 @@ portfolios:
         title: Project Manager
       - name: Audrey Randazzo
         title: Data Storyteller
-      - name: Derek Thomas
-        title: Operations Analyst
-      - name: Rashaad Tillery
-        title: CitiStat Inspector
 
   - key: performance
     label: Performance
@@ -46,6 +42,8 @@ portfolios:
         title: CitiStat Analyst
       - name: Griffin Riddler, PhD
         title: CitiStat Analyst
+      - name: Rashaad Tillery
+        title: CitiStat Inspector
       - name: Vacant
         title: Senior Performance Analyst
 
@@ -67,6 +65,21 @@ portfolios:
         title: Principal Data Engineer
       - name: Briya Bhakta
         title: Senior Data Engineer
+      - name: Safi Mojidi
+        title: Data Governance Lead
+        worker_type: contractor
+      - name: Ben Illunga
+        title: Senior Data Scientist
+        worker_type: contractor
+      - name: TBD
+        title: Data Engineer
+        worker_type: contractor
+      - name: TBD
+        title: Senior Data Engineer
+        worker_type: contractor
+      - name: TBD
+        title: Data Scientist
+        worker_type: contractor
 
   - key: innovation-lab
     label: Innovation Lab
@@ -78,9 +91,53 @@ portfolios:
     primary_value: Turns service problems into designed, usable, testable solutions; coordinates handoff to data, engineering, agency, or BCIT partners.
     table_lead: Gabriel Watson, Innovation Program Manager
     staff:
+      - name: Derek Thomas
+        title: Operations Analyst
       - name: Selenea Gibson
         title: Civic Designer
       - name: Chiemeka Okeoma
         title: Applied Data Scientist
       - name: Xander Jake de los Santos
         title: Full Stack Engineer
+      - name: Daniel De Freitas
+        title: Technical Program Manager
+        worker_type: contractor
+      - name: TBD
+        title: Change Manager
+        worker_type: contractor
+      - name: TBD
+        title: Sr. Software Engineer
+        worker_type: contractor
+      - name: TBD
+        title: Software Engineer
+        worker_type: contractor
+
+  - key: ai-enablement
+    label: AI Enablement
+    node_id: AI
+    lead:
+      name: Ifeanyi Akila
+      title: AI Enablement Lead
+      worker_type: contractor
+    cost_center: BIC engagement (contract)
+    primary_value: Contractor engagement standing up the Baltimore Intelligence Center — the citywide data, intelligence, and AI platform — with capability transfer to City staff.
+    table_lead: Ifeanyi Akila, AI Enablement Lead
+    staff:
+      - name: Byron Roelofsz
+        title: Product Lead
+        worker_type: offshore-contractor
+      - name: Catalin Ghiorghisor
+        title: Technical Lead
+        worker_type: offshore-contractor
+      - name: Mercia Malan
+        title: Data Engineering Lead
+        worker_type: offshore-contractor
+      - name: McGregor Jackson
+        title: Semantic Layer Lead
+        worker_type: offshore-contractor
+      - name: Chris Dawson
+        title: UX Lead
+        worker_type: offshore-contractor
+      - name: Andrei Morgan
+        title: UX Designer
+        worker_type: offshore-contractor
