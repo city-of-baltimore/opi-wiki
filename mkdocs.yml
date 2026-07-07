@@ -1,6 +1,9 @@
 site_name: OPI Foundations
 site_description: How the Mayor's Office of Performance and Innovation works — the public reference for OPI's operating model, methodology, and strategy.
-site_url: https://opi.baltimorecity.gov/
+# site_url defaults to the future custom domain; the Pages deploy overrides it
+# by exporting OPI_SITE_URL (see .github/workflows/deploy.yml) instead of
+# rewriting this file at deploy time.
+site_url: !ENV [OPI_SITE_URL, 'https://opi.baltimorecity.gov/']
 site_author: Mayor's Office of Performance and Innovation, City of Baltimore
 copyright: © Mayor's Office of Performance and Innovation, City of Baltimore
 

@@ -70,6 +70,10 @@ def build_steps(
             command=(python, "-m", "mkdocs", "build", "--strict"),
         ),
         VerifyStep(
+            name="Checking built-site internal links",
+            command=(python, "scripts/check_built_links.py", "site"),
+        ),
+        VerifyStep(
             name="Checking raw HTML links",
             command=(python, "scripts/check_html_links.py"),
         ),

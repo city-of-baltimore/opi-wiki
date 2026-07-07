@@ -87,3 +87,12 @@ def test_build_steps_can_append_browser_smoke_checks() -> None:
     ]
 
     assert "Running browser smoke checks" in step_names
+
+
+def test_build_steps_checks_built_links_right_after_the_strict_build() -> None:
+    """The built-site link crawl needs the freshly built site/ directory."""
+
+    step_names = [step.name for step in build_steps(Path("/tmp/example"))]
+
+    build_index = step_names.index("Building MkDocs site with strict validation")
+    assert step_names[build_index + 1] == "Checking built-site internal links"

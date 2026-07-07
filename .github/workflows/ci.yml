@@ -1,7 +1,8 @@
 name: CI
 
-# Runs on every pull request to main. This is the required gate before merge:
-# strict build, link checks (including card/HTML hrefs), validators, and tests.
+# Runs on every pull request to main. This is the required gate before merge.
+# It runs the same scripts/verify.py suite maintainers run locally: lint,
+# tests, validators, strict build, built-site link crawl, and a11y smoke.
 
 on:
   pull_request:
@@ -31,18 +32,8 @@ jobs:
           pip install poetry==2.4.1
           poetry install --no-interaction --no-ansi
 
-      - name: Build (strict)
-        run: poetry run mkdocs build --strict
-
-      - name: Internal link check (cards + raw HTML hrefs)
-        run: poetry run python scripts/check_built_links.py site
-
-      - name: Validators
-        run: |
-          poetry run python scripts/check_brand_terms.py
-          poetry run python scripts/check_page_metadata.py
-          poetry run python scripts/check_html_links.py
-          poetry run python scripts/check_consistency.py
-
-      - name: Tests
-        run: poetry run python -m pytest -q
+      # scripts/verify.py is the single source of truth for the check suite.
+      # Do not add ad-hoc check steps here — add them to build_steps() so
+      # local runs, CI, and the deploy gate can never drift apart.
+      - name: Run verification suite
+        run: poetry run python scripts/verify.py

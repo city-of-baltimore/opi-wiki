@@ -38,7 +38,7 @@ ALLOWED_DUPLICATE_DESTINATIONS = {
 
 
 class _MkDocsConfigLoader(yaml.SafeLoader):
-    """Safe loader that tolerates MkDocs Python-name tags."""
+    """Safe loader that tolerates MkDocs Python-name and !ENV tags."""
 
 
 def _construct_python_name(loader: _MkDocsConfigLoader, node: yaml.Node) -> str:
@@ -47,10 +47,24 @@ def _construct_python_name(loader: _MkDocsConfigLoader, node: yaml.Node) -> str:
     return loader.construct_scalar(node)
 
 
+def _construct_env_default(loader: _MkDocsConfigLoader, node: yaml.Node) -> str:
+    """Resolve MkDocs !ENV tags to their default value for config inspection.
+
+    ``!ENV [VAR, default]`` reads VAR at build time; for validation we only
+    care about the committed default (the last sequence entry).
+    """
+
+    if isinstance(node, yaml.SequenceNode):
+        values = loader.construct_sequence(node)
+        return str(values[-1]) if values else ""
+    return str(loader.construct_scalar(node))
+
+
 _MkDocsConfigLoader.add_constructor(
     "tag:yaml.org,2002:python/name:pymdownx.superfences.fence_code_format",
     _construct_python_name,
 )
+_MkDocsConfigLoader.add_constructor("!ENV", _construct_env_default)
 
 
 def load_redirect_map(config_path: Path) -> dict[str, str]:

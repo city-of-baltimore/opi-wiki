@@ -1,8 +1,10 @@
 name: Deploy to GitHub Pages
 
-# Builds and deploys the site to GitHub Pages on every push to main (i.e. after a
-# PR merges). The committed site_url stays pointed at the custom domain for the
-# fly.io build; the Pages base URL is set only inside this CI run.
+# Builds and deploys the site to GitHub Pages on every push to main. The full
+# scripts/verify.py suite gates the deploy, so a direct-to-main commit gets the
+# same checks as a PR. The committed site_url defaults to the future custom
+# domain; OPI_SITE_URL (read via !ENV in mkdocs.yml) points this build at the
+# Pages base URL without rewriting any tracked file.
 
 on:
   push:
@@ -33,15 +35,12 @@ jobs:
           pip install poetry==2.4.1
           poetry install --no-interaction --no-ansi
 
-      - name: Point base URL at the Pages subpath (CI only)
-        run: |
-          sed -i 's#^site_url:.*#site_url: https://city-of-baltimore.github.io/opi-wiki/#' mkdocs.yml
-
-      - name: Build (strict)
-        run: poetry run mkdocs build --strict
-
-      - name: Check built-site internal links (catches card/HTML hrefs strict misses)
-        run: poetry run python scripts/check_built_links.py site
+      # scripts/verify.py is the single source of truth for the check suite;
+      # its strict-build step produces the site/ artifact uploaded below.
+      - name: Run verification suite (gates the deploy, builds site/)
+        env:
+          OPI_SITE_URL: https://city-of-baltimore.github.io/opi-wiki/
+        run: poetry run python scripts/verify.py
 
       - uses: actions/upload-pages-artifact@fc324d3547104276b827a68afc52ff2a11cc49c9 # v5.0.0
         with:
