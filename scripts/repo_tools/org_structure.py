@@ -256,43 +256,37 @@ def render_org_structure(structure: OrgStructure, section: str) -> str:
         lines.append("```")
         return "\n".join(lines)
 
-    if section == "portfolio_tabs":
+    if section == "staff_cards":
         tab_blocks: list[str] = []
         for portfolio in structure.portfolios:
-            lead_node = _mermaid_node(
-                f"{portfolio.node_id}Lead",
-                portfolio.lead.name,
-                portfolio.lead.title,
-                css_class=_WORKER_MERMAID_CLASS.get(portfolio.lead.worker_type),
-            ).strip()
-            lines = [
-                f'=== "{portfolio.label}"',
-                "",
-                "    ```mermaid",
-                "    flowchart TB",
-                *[f"    {classdef.strip()}" for classdef in _MERMAID_CLASSDEFS],
-                f"    {lead_node}",
-            ]
-            for index, person in enumerate(portfolio.staff, start=1):
-                node_id = f"{portfolio.node_id}{index}"
-                staff_node = _mermaid_node(
-                    node_id,
-                    person.name,
-                    person.title,
-                    css_class=_WORKER_MERMAID_CLASS.get(person.worker_type),
-                ).strip()
-                lines.append(f"    {staff_node}")
-            lines.append("")
-            for index, person in enumerate(portfolio.staff, start=1):
-                edge = _mermaid_edge(
-                    f"{portfolio.node_id}Lead",
-                    f"{portfolio.node_id}{index}",
-                    person.edge_style,
-                ).strip()
-                lines.append(
-                    f"    {edge}"
+            lines = [f'=== "{portfolio.label}"', ""]
+            cards = ['    <div class="opi-org-grid">']
+            people = [(portfolio.lead, True)] + [(p, False) for p in portfolio.staff]
+            for person, is_lead in people:
+                classes = ["opi-org-card"]
+                if is_lead:
+                    classes.append("opi-org-card--lead")
+                if person.worker_type == "contractor":
+                    classes.append("opi-org-card--contractor")
+                elif person.worker_type == "offshore-contractor":
+                    classes.append("opi-org-card--offshore")
+                if person.name.casefold() in {"vacant", "tbd", "open — recruiting"}:
+                    classes.append("opi-org-card--open")
+                tag = _WORKER_ROSTER_TAG.get(person.worker_type, "")
+                tag_html = (
+                    f'<span class="opi-org-card__tag">{escape(tag.strip("()"))}</span>'
+                    if tag
+                    else ""
                 )
-            lines.extend(["    ```", ""])
+                cards.append(
+                    f'      <div class="{" ".join(classes)}">'
+                    f'<span class="opi-org-card__name">{escape(person.name)}</span>'
+                    f'<span class="opi-org-card__title">{escape(person.title)}</span>'
+                    f"{tag_html}</div>"
+                )
+            cards.append("    </div>")
+            lines.extend(cards)
+            lines.append("")
             tab_blocks.extend(lines)
         return "\n".join(tab_blocks).rstrip()
 
@@ -332,5 +326,5 @@ def render_org_structure(structure: OrgStructure, section: str) -> str:
 
     raise ValueError(
         f"Unknown org-structure section '{section}'. Expected one of: "
-        "leadership_chart, portfolio_tabs, portfolio_table, staff_alignment."
+        "leadership_chart, staff_cards, portfolio_table, staff_alignment."
     )

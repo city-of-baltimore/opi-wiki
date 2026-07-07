@@ -191,6 +191,88 @@
   color: var(--opi-text-muted);
 }
 
+/* Org roster cards: data-driven team rosters rendered by org_structure_from(
+   ..., "staff_cards"). Replaces the per-team Mermaid trees, which shrank to
+   unreadable sizes on wide teams. Purple = onshore contractor, gray = offshore
+   contractor, dashed = vacant seat. */
+.opi-org-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(190px, 1fr));
+  gap: 0.6rem;
+  margin: 0.4rem 0 1rem;
+}
+
+.opi-org-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+  padding: 0.65rem 0.8rem;
+  background: var(--opi-card-bg);
+  border: 1px solid var(--opi-border);
+  border-left: 3px solid var(--opi-border);
+  border-radius: 4px;
+}
+
+.opi-org-card--lead {
+  grid-column: 1 / -1;
+  border-left-color: var(--opi-gold);
+}
+
+.opi-org-card--contractor {
+  border-left-color: #7e57c2;
+}
+
+.opi-org-card--offshore {
+  border-left-color: #78909c;
+}
+
+.opi-org-card--open {
+  border-style: dashed;
+}
+
+.opi-org-card__name {
+  font-family: var(--opi-font-heading, inherit);
+  font-weight: 700;
+  font-size: 0.95rem;
+  color: var(--opi-heading);
+  line-height: 1.25;
+}
+
+.opi-org-card--open .opi-org-card__name {
+  color: var(--opi-text-muted);
+  font-style: italic;
+}
+
+.opi-org-card__title {
+  font-size: 0.8rem;
+  color: var(--opi-text-muted);
+  line-height: 1.35;
+}
+
+.opi-org-card__tag {
+  margin-top: 0.3rem;
+  font-size: 0.66rem;
+  font-weight: 700;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+}
+
+.opi-org-card--contractor .opi-org-card__tag {
+  color: #7e57c2;
+}
+
+.opi-org-card--offshore .opi-org-card__tag {
+  color: #78909c;
+}
+
+[data-md-color-scheme="slate"] .opi-org-card--contractor .opi-org-card__tag {
+  color: #b39ddb;
+}
+
+[data-md-color-scheme="slate"] .opi-org-card--contractor {
+  border-left-color: #9575cd;
+}
+
 /* Four tenets of Stat: 2×2 card grid with gold accent line. */
 .opi-tenets-grid {
   display: grid;

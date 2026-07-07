@@ -20,12 +20,13 @@ readable.
 
 ## Staff alignment by team
 
-Each team gets its own chart so the roster stays readable on desktop and
-mobile. Embedded contractors appear alongside City staff — purple for onshore
-contractors, gray for the offshore BIC delivery team — and vacant seats are
-labeled so the current and intended structure stay visible together.
+Each team gets its own roster so staffing stays readable on desktop and
+mobile. The gold card is the team lead. Embedded contractors appear alongside
+City staff — purple for onshore contractors, gray for the offshore BIC
+delivery team — and vacant seats are shown dashed so the current and intended
+structure stay visible together.
 
-{{ org_structure_from("how-we-work/organization/org-structure.data.yml", "portfolio_tabs") }}
+{{ org_structure_from("how-we-work/organization/org-structure.data.yml", "staff_cards") }}
 
 ## The Teams
 

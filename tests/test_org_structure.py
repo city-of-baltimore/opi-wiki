@@ -52,14 +52,18 @@ def test_org_structure_marks_contractors_in_chart_and_roster() -> None:
     structure = load_org_structure(DOCS_DIR, "how-we-work/organization/org-structure.data.yml")
 
     leadership_chart = render_org_structure(structure, "leadership_chart")
-    tabs = render_org_structure(structure, "portfolio_tabs")
+    cards = render_org_structure(structure, "staff_cards")
 
     assert "classDef contractor" in leadership_chart
     assert "classDef offshore" in leadership_chart
     # The AI Enablement branch lead is an onshore contractor.
     assert ":::contractor" in leadership_chart
-    # Offshore BIC members are color-coded in the portfolio tab.
-    assert ":::offshore" in tabs
+    # Offshore BIC members are color-coded on the roster cards.
+    assert "opi-org-card--offshore" in cards
+    assert "opi-org-card--contractor" in cards
+    # Leads render as the full-width gold card; vacant seats render dashed.
+    assert "opi-org-card--lead" in cards
+    assert "opi-org-card--open" in cards
 
 
 def test_define_env_registers_org_structure_macro() -> None:
@@ -69,12 +73,11 @@ def test_define_env_registers_org_structure_macro() -> None:
 
     rendered = env.macros["org_structure_from"](
         "how-we-work/organization/org-structure.data.yml",
-        "portfolio_tabs",
+        "staff_cards",
     )
 
     assert '=== "Director\'s Office"' in str(rendered)
-    assert "Rakeim Young&lt;br/&gt;Chief of Staff" not in str(rendered)
-    assert 'Rakeim Young<br/>Chief of Staff' in str(rendered)
+    assert '<span class="opi-org-card__name">Rakeim Young</span>' in str(rendered)
 
 
 def test_org_structure_renderer_rejects_unknown_sections() -> None:
