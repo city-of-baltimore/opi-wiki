@@ -275,7 +275,7 @@ triage, run `./scripts/verify.sh --json-output /path/to/report.json`.
 For UI regressions that static checks will miss, maintainers can opt into a
 browser smoke pass with `./scripts/verify.sh --include-browser-smoke`. That
 pass expects a one-time local browser install via
-`poetry run playwright install chromium`.
+`uv run playwright install chromium`.
 
 ## Bus factor mitigation
 
@@ -290,7 +290,7 @@ This role has a high bus factor by design (it's one person). Mitigations:
 | Tool | Purpose |
 |---|---|
 | GitHub Enterprise (this repo) | Source of truth, version control, CI/CD |
-| Poetry | Python dependency and environment management |
+| uv | Python dependency and environment management |
 | MkDocs Material | Site renderer (local preview + production build) |
 | `./scripts/verify.sh` | Standard local verification pass |
 | Pandoc | Convert .docx → Markdown when migrating Drive content |
@@ -300,7 +300,7 @@ This role has a high bus factor by design (it's one person). Mitigations:
 
 ## Onboarding a new maintainer
 
-Day 1: read this document and `CONTRIBUTING.md`. Run `poetry run mkdocs serve` locally. Read every page on the live site.
+Day 1: read this document and `CONTRIBUTING.md`. Run `uv run mkdocs serve` locally. Read every page on the live site.
 
 Week 1: shadow the previous maintainer through one full intake cycle (issue → PR → merge → deploy).
 

@@ -18,20 +18,18 @@ dependencies = [
   "pymdown-extensions==10.21.3",
 ]
 
-[tool.poetry]
-package-mode = false
-
-[build-system]
-requires = ["poetry-core>=2.0.0,<3.0.0"]
-build-backend = "poetry.core.masonry.api"
+# This is an application, not a distributable package, so uv does not build or
+# install the project itself — only its dependencies.
+[tool.uv]
+package = false
 
 [dependency-groups]
 dev = [
-    "pytest (>=9.0.3,<10.0.0)",
-    "ruff (>=0.15.12,<0.16.0)",
-    "playwright (>=1.58.0,<2.0.0)",
-    "mypy (>=2.1.0,<3.0.0)",
-    "types-pyyaml (>=6.0.12.20260518,<7.0.0.0)"
+    "pytest>=9.0.3,<10.0.0",
+    "ruff>=0.15.12,<0.16.0",
+    "playwright>=1.58.0,<2.0.0",
+    "mypy>=2.1.0,<3.0.0",
+    "types-pyyaml>=6.0.12.20260518,<7.0.0.0",
 ]
 
 [tool.pytest.ini_options]
