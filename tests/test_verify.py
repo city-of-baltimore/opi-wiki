@@ -101,6 +101,7 @@ def test_ci_plan_keeps_every_static_check() -> None:
         "Checking hosted CI policy",
         "Linting repo automation",
         "Type-checking repo automation",
+        "Scanning repo automation for security issues",
         "Validating page metadata",
         "Validating brand terms",
         "Checking editorial voice guardrail",

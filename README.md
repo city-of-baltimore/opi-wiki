@@ -19,46 +19,46 @@ platform) and [uv](https://docs.astral.sh/uv/). Editing the wiki does not
 require running anything locally — content contributions can go through the
 GitHub web editor and the checks run in CI.
 
-```bash
-# one-time setup
-uv sync
+`Taskfile.yml` is the command surface, the same task names every repo in the
+family exposes. It needs [Task](https://taskfile.dev) and `uv`.
 
-# preview the site locally
-uv run mkdocs serve
+```bash
+# one-time: install dependencies and the pre-push hook
+task setup
+
+# preview the site locally, with live reload
+task serve
 
 # build a static site
-uv run mkdocs build
+task build
 
 # the pre-push pass: static checks + tests + strict build + built-site checks
-./scripts/verify.sh                       # --plan prepush is the default
+task prepush
 
 # the hosted-CI subset — static checks only. No tests, no site build.
 # Fast inner loop, and exactly what pull-request CI runs.
-./scripts/verify.sh --plan ci
+task ci
 
 # the pre-deploy pass: everything above plus the Playwright browser smoke checks
-./scripts/verify.sh --plan validate
+task validate
 
-# optional: write a machine-readable verification report
-./scripts/verify.sh --json-output /tmp/opi-verify.json
+# `task --list` shows the rest (fmt, lint, typecheck, test, security:snyk)
 ```
 
-Install the git hooks once per clone so the pre-push gate is active:
+`scripts/verify.sh` is still the underlying runner if you need its flags
+directly — for example `./scripts/verify.sh --json-output /tmp/opi-verify.json`
+to write a machine-readable report.
 
-```bash
-./scripts/install-hooks.sh
-```
-
-`uv run mkdocs serve` runs at <http://127.0.0.1:5208> with live reload.
+`task serve` runs at <http://127.0.0.1:5208> with live reload.
 
 That port is not arbitrary: this repo holds slot 8 in the Baltimore
 civic-platform port registry (`patapsco/contracts/ports.toml`), so its local
 preview never collides with a sibling app's stack. `mkdocs.yml` pins
 `dev_addr` to `127.0.0.1:5208` — loopback only, never `0.0.0.0`. See
 [`.baltimore-lab-app.toml`](.baltimore-lab-app.toml).
-`./scripts/verify.sh` remains the stable entrypoint, but now delegates to a
-structured Python runner that emits step timings and can optionally write a
-JSON report for CI or debugging.
+
+Every tier delegates to `scripts/verify.py`, a structured runner that emits step
+timings and can optionally write a JSON report for CI or debugging.
 
 To use the optional browser smoke checks locally, install the Chromium browser
 once per machine:
@@ -84,28 +84,30 @@ Pages, not this image.
 Three tiers, defined once in `scripts/verify.py` and shared by every gate.
 This is section 4 of the civic-app consistency standard, applied here:
 
-| Plan | Where it runs | What it covers |
-| --- | --- | --- |
-| `ci` | pull-request CI, fast local loop | workflow policy, lint, mypy, and the validators that read `docs/` source |
-| `prepush` | the pre-push hook and the Pages deploy gate | everything in `ci`, plus pytest, `mkdocs build --strict`, the built-site link crawl, and the accessibility checks |
-| `validate` | before a deploy, locally | everything in `prepush`, plus the Playwright browser smoke checks |
+| Tier | Command | Where it runs | What it covers |
+| --- | --- | --- | --- |
+| `ci` | `task ci` | pull-request CI, fast local loop | workflow policy, lint, mypy, bandit, and the validators that read `docs/` source |
+| `prepush` | `task prepush` | the pre-push hook and the Pages deploy gate | everything in `ci`, plus pytest, `mkdocs build --strict`, the built-site link crawl, and the accessibility checks |
+| `validate` | `task validate` | before a deploy, locally | everything in `prepush`, plus the Playwright browser smoke checks |
 
 Each tier is a strict superset of the one above it, so a check that moves down
 a tier is never a check that was dropped.
 
-**Hosted CI runs `ci` only — no test suite, no site build, no browser.** That is
-deliberate, and it has a cost worth stating plainly: a broken test is caught at
-`git push`, not on the pull request. `./scripts/install-hooks.sh` installs the
+**Hosted CI runs `task ci` verbatim — no test suite, no site build, no
+browser.** That is deliberate, and it has a cost worth stating plainly: a broken
+test is caught at `git push`, not on the pull request. `task setup` installs the
 pre-push hook that is now the backstop.
 
 `scripts/check_hosted_ci_policy.py` enforces the boundary mechanically. It fails
 the build if a hosted workflow reaches a test suite, a site build, an image
-build, or a browser suite — including transitively, by resolving which
-`verify.py` plan the workflow actually asks for — or if a job forgets
-`timeout-minutes`.
+build, or a browser suite — including transitively, through *both* indirection
+layers: it statically resolves the `Taskfile.yml` task graph and the `verify.py`
+plan the workflow asks for, and the two compose. It also fails a job that
+forgets `timeout-minutes`. A task it cannot resolve is a violation, not a pass.
 
-Do not add a test, build, or browser step to the pull-request workflow; add
-checks to `build_steps()` in `scripts/verify.py` so every gate stays in sync.
+Do not add a test, build, or browser step to the pull-request workflow, and do
+not add one to a task `ci` reaches. Add checks to `build_steps()` in
+`scripts/verify.py`, in the right tier, so every gate stays in sync.
 
 ## Security scanning
 
@@ -137,7 +139,7 @@ plugins and theme behavior together.
 - Keep repeated structured page data in neighboring `*.data.yml` files when one source needs to drive multiple rendered sections.
 - Page badges are opt-in: set `display_badge` (`draft`, `template`, `reference`, `position-description`) in the nearest `.metadata.yml` only when a page needs a pill; `page_header()` renders it. Never inline raw HTML pill spans.
 - Keep shared brand CSS split by responsibility under `docs/assets/stylesheets/` so tokens, Material chrome, reusable components, and page-specific presentation do not drift together.
-- Run `./scripts/verify.sh` before merging structural or config changes.
+- Run `task prepush` before merging structural or config changes.
 - Treat `site/` as generated output, not source.
 
 ## Page data model
@@ -177,8 +179,9 @@ opi-foundations/
 │       ├── images/               # logos, page images
 │       └── docs/                 # downloadable .docx/.pdf assets
 ├── overrides/              # MkDocs Material theme overrides (empty for now)
+├── Taskfile.yml            # the shared task surface (ci/prepush/validate + helpers)
 ├── scripts/
-│   ├── verify.sh           # local verification entrypoint
+│   ├── verify.sh           # underlying runner entrypoint (Taskfile calls it)
 │   ├── verify.py           # the three-tier check plan (ci/prepush/validate)
 │   ├── check_hosted_ci_policy.py # keeps hosted CI static-only
 │   ├── install-hooks.sh    # installs the pre-push gate

@@ -1,0 +1,86 @@
+# Task runner for opi-wiki — the one command contract, per section 5 of
+# patapsco/docs/app-consistency-standard.md.
+#
+# The tiers are nested: `ci` is what hosted GitHub Actions runs verbatim,
+# `prepush` is the local hook, `validate` is the pre-deploy gate. Every tier
+# delegates to scripts/verify.py, which owns the step list so the three lanes
+# can never drift apart.
+#
+# `ci` must never reach a test suite, a site build, an image build, or a
+# browser suite — directly or through any task it calls. `task ci:policy`
+# proves that mechanically by resolving both this file's task graph and
+# verify.py's plans; Patapsco's platform-check resolves this file's graph
+# independently.
+
+version: "3"
+
+tasks:
+  setup:
+    desc: Install dependencies and this repository's git hooks
+    cmds:
+      - uv sync --frozen
+      - ./scripts/install-hooks.sh
+
+  fmt:
+    desc: Format and auto-fix the repo automation in place
+    cmds:
+      - uv run ruff format main.py scripts tests
+      - uv run ruff check --fix main.py scripts tests
+
+  fmt:check:
+    desc: Check formatting without writing
+    cmds:
+      - uv run ruff format --check main.py scripts tests
+
+  lint:
+    desc: Lint the repo automation
+    cmds:
+      - uv run ruff check main.py scripts tests
+
+  typecheck:
+    desc: Type-check the repo automation
+    cmds:
+      - uv run mypy
+
+  ci:policy:
+    desc: Prove the hosted lane reaches no test, build, or browser suite
+    cmds:
+      - uv run python scripts/check_hosted_ci_policy.py
+
+  ci:
+    desc: Lean hosted gate — static checks, content validators, policy guard
+    cmds:
+      - task: ci:policy
+      - uv run python scripts/verify.py --plan ci
+
+  test:
+    desc: Run the repo-automation test suite
+    cmds:
+      - uv run python -m pytest
+
+  build:
+    desc: Build the site with strict validation
+    cmds:
+      - uv run mkdocs build --strict
+
+  serve:
+    desc: Preview the site on the slot-8 loopback port (registry port 5208)
+    cmds:
+      - uv run mkdocs serve -a 127.0.0.1:5208
+
+  prepush:
+    desc: Everything in ci plus tests, the strict build, and built-site checks
+    cmds:
+      - task: ci:policy
+      - uv run python scripts/verify.py --plan prepush
+
+  validate:
+    desc: Everything in prepush plus the browser smoke suite
+    cmds:
+      - task: ci:policy
+      - uv run python scripts/verify.py --plan validate
+
+  security:snyk:
+    desc: Manual, advisory Snyk scan — deliberately not part of any gate
+    cmds:
+      - ./scripts/security_snyk.sh

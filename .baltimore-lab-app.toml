@@ -24,12 +24,20 @@ frontend = 5208 # `mkdocs serve` / docker compose preview (5200 + slot)
 [runtime]
 python = "3.14" # local + CI interpreter; the platform range is >=3.13,<3.15
 
+[tasks]
+# The one command contract (consistency standard §5): Taskfile.yml exposes the
+# shared surface, and hosted CI runs `task ci` verbatim. The tiers delegate to
+# scripts/verify.py, which owns the step list for all three lanes.
+runner = "Taskfile.yml"
+
 [docs_site]
 # Production deploy target. There is no container in the deploy path.
 deploy = "github-pages"
-# The hosted pull-request lane is static-only (`scripts/verify.py --plan ci`):
-# no test suite, no site build, no browser suite. The tests, the strict build,
-# the built-site link crawl, and the a11y checks run in the pre-push hook and
-# the deploy gate (`--plan prepush`); `--plan validate` adds browser smoke.
-# scripts/check_hosted_ci_policy.py enforces the boundary mechanically.
+# The hosted pull-request lane is static-only (`task ci`): no test suite, no
+# site build, no browser suite. The tests, the strict build, the built-site link
+# crawl, and the a11y checks run in the pre-push hook and the deploy gate
+# (`task prepush`); `task validate` adds browser smoke.
+# scripts/check_hosted_ci_policy.py enforces the boundary mechanically, walking
+# both the Taskfile graph and the verify.py plans so indirection cannot hide a
+# forbidden command.
 lean_ci = true
