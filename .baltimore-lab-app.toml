@@ -1,0 +1,32 @@
+# Baltimore civic-platform app marker — machine-readable metadata consumed by
+# Patapsco's `platform:check`. Ports mirror the shared registry
+# (patapsco/contracts/ports.toml) so every app can run under docker compose at
+# once without host-port clashes.
+
+contract_version = 2
+
+[app]
+# MkDocs documentation site, not an application: no backend, no database, no
+# nginx, no bromo. It publishes a single loopback port for local preview and
+# deploys to GitHub Pages. Most of the civic-app compose/runtime baseline does
+# not apply here — see docs_site notes below.
+kind = "docs-site"
+name = "opi-wiki"
+packaging = "uv"
+slot = 8
+
+[ports] # host ports, all bound to 127.0.0.1
+frontend = 5208 # `mkdocs serve` / docker compose preview (5200 + slot)
+# backend 8208, postgres 5448, and redis 6408 are reserved-but-idle for this
+# slot: the docs site runs none of them, but the registry holds the numbers so a
+# future adoption can never collide.
+
+[runtime]
+python = "3.12" # local + CI interpreter; the platform range is >=3.13,<3.15
+
+[docs_site]
+# Production deploy target. There is no container in the deploy path.
+deploy = "github-pages"
+# The hosted pull-request lane is static-only (`scripts/verify.py --lean`); the
+# strict build, built-site link crawl, and a11y smoke run in the deploy gate.
+lean_ci = true

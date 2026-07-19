@@ -277,6 +277,27 @@ browser smoke pass with `./scripts/verify.sh --include-browser-smoke`. That
 pass expects a one-time local browser install via
 `uv run playwright install chromium`.
 
+### Which gate runs what
+
+The suite is defined once in `scripts/verify.py` and runs in two plans:
+
+| Plan | Where | Covers |
+|---|---|---|
+| `--lean` | pull-request CI, fast local loop | lint, mypy, pytest, metadata, brand terms, style, consistency, raw HTML links |
+| full (default) | Pages deploy gate, `./scripts/verify.sh` locally | everything above, plus `mkdocs build --strict`, the built-site link crawl, and accessibility smoke |
+
+Pull-request CI is deliberately lean — no site build, no browser — per the
+civic-app consistency standard. **The practical consequence: a broken strict
+build is not caught on the PR; it surfaces on the deploy run after merge.** Run
+the full `./scripts/verify.sh` before pushing structural or config changes.
+
+### Advisory security scan
+
+`./scripts/security_snyk.sh` runs a manual Snyk source-code scan. It is in no
+gate by design (Snyk plans cap scan counts), and it does not cover this repo's
+uv-managed Python dependencies — that coverage comes from the server-side Snyk
+integration. See `patapsco/docs/operations/snyk-scanning.md`.
+
 ## Bus factor mitigation
 
 This role has a high bus factor by design (it's one person). Mitigations:
@@ -292,7 +313,8 @@ This role has a high bus factor by design (it's one person). Mitigations:
 | GitHub Enterprise (this repo) | Source of truth, version control, CI/CD |
 | uv | Python dependency and environment management |
 | MkDocs Material | Site renderer (local preview + production build) |
-| `./scripts/verify.sh` | Standard local verification pass |
+| `./scripts/verify.sh` | Standard local verification pass (full plan; `--lean` for the PR-CI subset) |
+| `./scripts/security_snyk.sh` | Manual, advisory Snyk source scan (never a gate) |
 | Pandoc | Convert .docx → Markdown when migrating Drive content |
 | VS Code (or any Markdown editor) | Authoring |
 | Google Drive | Read-access to the OPI Foundations folder for source materials |

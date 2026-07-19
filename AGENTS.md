@@ -131,7 +131,25 @@ Hold these lines:
   `docker compose up` (the `Dockerfile` / `docker-compose.yml` run the same
   uv-based `mkdocs serve` in a container with live reload). Both are local
   developer conveniences only; the production deploy path stays GitHub Pages.
+- Both preview paths serve on <http://127.0.0.1:5208>. That is this repo's slot
+  in the Baltimore civic-platform port registry
+  (`patapsco/contracts/ports.toml`, slot 8), recorded in
+  `.baltimore-lab-app.toml`. Keep the host binding on loopback, never
+  `0.0.0.0`, and do not change the port without changing the registry first.
 - Do not edit generated `site/` output.
+
+## Civic-platform Baseline
+
+This repo is a **docs site**, not an application, so most of the civic-app
+consistency standard does not apply: no compose backend stack, no postgres, no
+nginx/TLS, no Django, no Node/bromo frontend. What it does adopt, and must
+keep:
+
+- uv for all Python dependency management (never Poetry).
+- The registry port pin above.
+- `.baltimore-lab-app.toml` as the machine-readable marker.
+- The lean/full CI split described under Verification Rules.
+- Snyk as a manual, non-gated scan (`./scripts/security_snyk.sh`).
 
 ## Verification Rules
 
@@ -151,6 +169,33 @@ At minimum, verification should cover:
 - strict MkDocs build validation
 - raw HTML link validation
 - lightweight accessibility smoke checks on generated output
+
+### The lean / full split
+
+`scripts/verify.py` defines the suite once and exposes two plans:
+
+- `--lean` — static checks only: lint, mypy, pytest, and the validators that
+  read `docs/` source. Nothing builds the site; nothing reads `site/`.
+- default (full) — the lean checks plus `mkdocs build --strict`, the
+  built-site link crawl, and the accessibility smoke checks.
+
+Hosted pull-request CI runs the **lean** plan; the Pages deploy workflow runs
+the **full** plan and gates production. This follows the civic-app consistency
+standard: the on-push lane stays static checks, contracts, and security, and
+the build plus anything browser- or output-shaped moves to the pre-deploy gate.
+
+Two rules follow from that:
+
+- **Never add a build or browser step to `.github/workflows/ci.yml`.** Add
+  checks to `build_steps()` in `scripts/verify.py` instead, in the right half.
+- **Run the full `./scripts/verify.sh` locally before pushing.** PR CI will not
+  catch a broken strict build for you.
+
+Optional Playwright browser smoke (`--include-browser-smoke`) stays out of both
+hosted gates and is a local maintenance tool.
+
+Snyk is advisory and manual: `./scripts/security_snyk.sh`. Do not wire it into
+`verify.py` or any workflow — Snyk plans cap scan counts.
 
 If you change repo structure, navigation, or maintainer workflow, update:
 

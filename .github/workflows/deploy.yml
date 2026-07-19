@@ -1,8 +1,10 @@
 name: Deploy to GitHub Pages
 
-# Builds and deploys the site to GitHub Pages on every push to main. The full
-# scripts/verify.py suite gates the deploy, so a direct-to-main commit gets the
-# same checks as a PR. The committed site_url defaults to the future custom
+# Builds and deploys the site to GitHub Pages on every push to main. This is the
+# pre-deploy gate: it runs the FULL scripts/verify.py plan — the lean static
+# checks that pull-request CI runs, plus the strict MkDocs build, the built-site
+# link crawl, and the accessibility smoke checks that need site/. Nothing the PR
+# lane skips reaches production unchecked. The committed site_url defaults to the future custom
 # domain; OPI_SITE_URL (read via !ENV in mkdocs.yml) points this build at the
 # Pages base URL without rewriting any tracked file.
 
@@ -37,8 +39,9 @@ jobs:
         run: uv sync --frozen
 
       # scripts/verify.py is the single source of truth for the check suite;
-      # its strict-build step produces the site/ artifact uploaded below.
-      - name: Run verification suite (gates the deploy, builds site/)
+      # its strict-build step produces the site/ artifact uploaded below. Run the
+      # full plan here (no --lean) — this is the gate that owns the heavy checks.
+      - name: Run verification suite (full plan; gates the deploy, builds site/)
         env:
           OPI_SITE_URL: https://city-of-baltimore.github.io/opi-wiki/
         run: uv run python scripts/verify.py

@@ -1,8 +1,17 @@
 name: CI
 
 # Runs on every pull request to main. This is the required gate before merge.
-# It runs the same scripts/verify.py suite maintainers run locally: lint,
-# tests, validators, strict build, built-site link crawl, and a11y smoke.
+#
+# It is deliberately LEAN: static checks only — lint, type-check, tests, and the
+# content validators that read docs/ source. It does NOT build the site and does
+# NOT run anything that inspects built HTML or drives a browser. Per the civic-app
+# consistency standard (patapsco/docs/app-consistency-standard.md, §4), the
+# on-push lane stays cheap; the strict MkDocs build, the built-site link crawl,
+# and the accessibility smoke checks run in the pre-deploy gate
+# (.github/workflows/deploy.yml) and locally via ./scripts/verify.sh.
+#
+# Do not add a build or browser step here. If a check needs site/, it belongs in
+# the full plan, not this workflow.
 
 on:
   pull_request:
@@ -18,7 +27,7 @@ concurrency:
 
 jobs:
   checks:
-    name: Build & test
+    name: Static checks
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@9c091bb21b7c1c1d1991bb908d89e4e9dddfe3e0 # v7.0.0
@@ -36,5 +45,5 @@ jobs:
       # scripts/verify.py is the single source of truth for the check suite.
       # Do not add ad-hoc check steps here — add them to build_steps() so
       # local runs, CI, and the deploy gate can never drift apart.
-      - name: Run verification suite
-        run: uv run python scripts/verify.py
+      - name: Run verification suite (lean plan)
+        run: uv run python scripts/verify.py --lean

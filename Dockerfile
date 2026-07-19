@@ -8,7 +8,10 @@ FROM ghcr.io/astral-sh/uv:python3.12-bookworm-slim
 
 WORKDIR /app
 
-# Let mkdocs serve be reachable from outside the container.
+# Let mkdocs serve be reachable from outside the container. mkdocs.yml reads this
+# via !ENV and defaults to 127.0.0.1:5208 (the registry slot) when it is unset, so
+# a host-side `mkdocs serve` stays on loopback while the container binds all
+# interfaces and docker-compose publishes it back to 127.0.0.1:5208.
 ENV MKDOCS_DEV_ADDR=0.0.0.0:8000
 
 # Install dependencies first, from the lockfile, for cacheable layers.

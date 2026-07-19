@@ -26,8 +26,12 @@ uv run mkdocs serve
 # build a static site
 uv run mkdocs build
 
-# run the maintainer verification pass
+# run the maintainer verification pass (full: static checks + strict build)
 ./scripts/verify.sh
+
+# the lean subset — static checks only, no site build. This is what
+# pull-request CI runs; use it for a fast inner loop.
+./scripts/verify.sh --lean
 
 # optional: write a machine-readable verification report
 ./scripts/verify.sh --json-output /tmp/opi-verify.json
@@ -36,7 +40,13 @@ uv run mkdocs build
 ./scripts/verify.sh --include-browser-smoke
 ```
 
-`uv run mkdocs serve` runs at <http://127.0.0.1:8000> with live reload.
+`uv run mkdocs serve` runs at <http://127.0.0.1:5208> with live reload.
+
+That port is not arbitrary: this repo holds slot 8 in the Baltimore
+civic-platform port registry (`patapsco/contracts/ports.toml`), so its local
+preview never collides with a sibling app's stack. `mkdocs.yml` pins
+`dev_addr` to `127.0.0.1:5208` — loopback only, never `0.0.0.0`. See
+[`.baltimore-lab-app.toml`](.baltimore-lab-app.toml).
 `./scripts/verify.sh` remains the stable entrypoint, but now delegates to a
 structured Python runner that emits step timings and can optionally write a
 JSON report for CI or debugging.
@@ -56,9 +66,32 @@ No local Python or uv install required — preview the site in a container:
 docker compose up
 ```
 
-This serves the wiki at <http://localhost:8000> with live reload; edits to
+This serves the wiki at <http://127.0.0.1:5208> with live reload; edits to
 `docs/` on the host refresh the browser. Production still deploys to GitHub
 Pages, not this image.
+
+## How CI is split
+
+Two gates, on purpose:
+
+- **Pull requests** (`.github/workflows/ci.yml`) run `scripts/verify.py --lean`:
+  lint, mypy, pytest, and the validators that read `docs/` source. No site
+  build, no browser. This lane is meant to stay cheap.
+- **Deploy to Pages** (`.github/workflows/deploy.yml`) runs the full plan: the
+  lean checks plus the strict MkDocs build, the built-site link crawl, and the
+  accessibility smoke checks. Nothing reaches production unchecked.
+
+Locally, `./scripts/verify.sh` runs the full plan — run it before pushing
+structural or config changes.
+
+Do not add a build or browser step to the pull-request workflow; add checks to
+`build_steps()` in `scripts/verify.py` so both gates stay in sync.
+
+## Security scanning
+
+`./scripts/security_snyk.sh` runs an advisory Snyk source-code scan. It is
+manual and deliberately wired into no gate — Snyk plans cap scan counts. See
+`patapsco/docs/operations/snyk-scanning.md`.
 
 ## Build platform note
 
