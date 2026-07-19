@@ -4,7 +4,7 @@
 # contributor can preview the site with `docker compose up` and no local
 # Python or uv install. Production still deploys to GitHub Pages, not this
 # image (see .github/workflows/deploy.yml and AGENTS.md).
-FROM ghcr.io/astral-sh/uv:python3.12-bookworm-slim
+FROM ghcr.io/astral-sh/uv:python3.14-bookworm-slim
 
 WORKDIR /app
 

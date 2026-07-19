@@ -22,11 +22,14 @@ frontend = 5208 # `mkdocs serve` / docker compose preview (5200 + slot)
 # future adoption can never collide.
 
 [runtime]
-python = "3.12" # local + CI interpreter; the platform range is >=3.13,<3.15
+python = "3.14" # local + CI interpreter; the platform range is >=3.13,<3.15
 
 [docs_site]
 # Production deploy target. There is no container in the deploy path.
 deploy = "github-pages"
-# The hosted pull-request lane is static-only (`scripts/verify.py --lean`); the
-# strict build, built-site link crawl, and a11y smoke run in the deploy gate.
+# The hosted pull-request lane is static-only (`scripts/verify.py --plan ci`):
+# no test suite, no site build, no browser suite. The tests, the strict build,
+# the built-site link crawl, and the a11y checks run in the pre-push hook and
+# the deploy gate (`--plan prepush`); `--plan validate` adds browser smoke.
+# scripts/check_hosted_ci_policy.py enforces the boundary mechanically.
 lean_ci = true

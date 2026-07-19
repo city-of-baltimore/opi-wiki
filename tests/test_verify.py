@@ -2,12 +2,22 @@
 
 from __future__ import annotations
 
+import io
 import json
 import sys
+from collections.abc import Sequence
 from pathlib import Path
 
 import pytest
-from scripts.verify import VerifyStep, build_steps, main, parse_args, run_verification
+from scripts.verify import (
+    PLANS,
+    VerifyStep,
+    build_steps,
+    main,
+    parse_args,
+    run_step,
+    run_verification,
+)
 
 
 def _python_command(source: str) -> tuple[str, ...]:
@@ -70,54 +80,27 @@ def test_run_verification_stops_on_first_failure(
     assert "- Broken step: failed (exit 3)" in captured.err
 
 
-def test_parse_args_supports_optional_browser_smoke_flag() -> None:
-    """The verification runner should support opting into browser smoke coverage."""
+def test_ci_plan_excludes_the_test_suite_the_build_and_every_built_site_check() -> None:
+    """Hosted CI must stay static: no test suite, no site build, nothing reading site/."""
 
-    args = parse_args(["--include-browser-smoke", "--json-output", "report.json"])
+    ci_names = [step.name for step in build_steps(Path("/tmp/example"), plan="ci")]
 
-    assert args.include_browser_smoke is True
-    assert args.json_output == Path("report.json")
-
-
-def test_build_steps_can_append_browser_smoke_checks() -> None:
-    """Optional browser smoke should append after the fast static checks."""
-
-    step_names = [
-        step.name for step in build_steps(Path("/tmp/example"), include_browser_smoke=True)
-    ]
-
-    assert "Running browser smoke checks" in step_names
+    assert "Running repo automation tests" not in ci_names
+    assert "Building MkDocs site with strict validation" not in ci_names
+    assert "Checking built-site internal links" not in ci_names
+    assert "Running accessibility smoke checks" not in ci_names
+    assert "Running browser smoke checks" not in ci_names
 
 
-def test_build_steps_checks_built_links_right_after_the_strict_build() -> None:
-    """The built-site link crawl needs the freshly built site/ directory."""
+def test_ci_plan_keeps_every_static_check() -> None:
+    """Trimming the hosted lane must not drop a static check."""
 
-    step_names = [step.name for step in build_steps(Path("/tmp/example"))]
+    ci_names = [step.name for step in build_steps(Path("/tmp/example"), plan="ci")]
 
-    build_index = step_names.index("Building MkDocs site with strict validation")
-    assert step_names[build_index + 1] == "Checking built-site internal links"
-
-
-def test_lean_plan_excludes_the_build_and_every_built_site_check() -> None:
-    """Hosted PR CI must stay static: no site build, nothing that reads site/."""
-
-    lean_names = [step.name for step in build_steps(Path("/tmp/example"), lean=True)]
-
-    assert "Building MkDocs site with strict validation" not in lean_names
-    assert "Checking built-site internal links" not in lean_names
-    assert "Running accessibility smoke checks" not in lean_names
-    assert "Running browser smoke checks" not in lean_names
-
-
-def test_lean_plan_keeps_every_static_check() -> None:
-    """Moving the build out of PR CI must not drop any static check."""
-
-    lean_names = [step.name for step in build_steps(Path("/tmp/example"), lean=True)]
-
-    assert lean_names == [
+    assert ci_names == [
+        "Checking hosted CI policy",
         "Linting repo automation",
         "Type-checking repo automation",
-        "Running repo automation tests",
         "Validating page metadata",
         "Validating brand terms",
         "Checking editorial voice guardrail",
@@ -126,31 +109,144 @@ def test_lean_plan_keeps_every_static_check() -> None:
     ]
 
 
-def test_full_plan_is_the_lean_plan_plus_the_built_site_checks() -> None:
-    """The deploy gate still runs everything; lean is a strict prefix of it."""
+def test_prepush_plan_owns_the_tests_the_build_and_the_built_site_checks() -> None:
+    """Everything removed from the hosted lane still runs, one tier down."""
 
-    lean_names = [step.name for step in build_steps(Path("/tmp/example"), lean=True)]
-    full_names = [step.name for step in build_steps(Path("/tmp/example"))]
+    prepush_names = [step.name for step in build_steps(Path("/tmp/example"), plan="prepush")]
 
-    assert full_names[: len(lean_names)] == lean_names
-    assert full_names[len(lean_names) :] == [
-        "Building MkDocs site with strict validation",
-        "Checking built-site internal links",
-        "Running accessibility smoke checks",
-    ]
+    assert "Running repo automation tests" in prepush_names
+    assert "Building MkDocs site with strict validation" in prepush_names
+    assert "Checking built-site internal links" in prepush_names
+    assert "Running accessibility smoke checks" in prepush_names
 
 
-def test_parse_args_supports_the_lean_flag() -> None:
-    """The runner exposes the lean plan to the hosted workflow."""
+def test_built_link_crawl_runs_right_after_the_strict_build() -> None:
+    """The built-site link crawl needs the freshly built site/ directory."""
 
-    assert parse_args(["--lean"]).lean is True
-    assert parse_args([]).lean is False
+    step_names = [step.name for step in build_steps(Path("/tmp/example"), plan="prepush")]
+
+    build_index = step_names.index("Building MkDocs site with strict validation")
+    assert step_names[build_index + 1] == "Checking built-site internal links"
 
 
-def test_main_rejects_lean_plus_browser_smoke(capsys: pytest.CaptureFixture[str]) -> None:
-    """Browser smoke needs the built site, so it cannot ride the lean plan."""
+def test_validate_plan_adds_the_browser_smoke_checks() -> None:
+    """Browser smoke is the pre-deploy tier: it needs a real downloaded browser."""
 
-    exit_code = main(["--lean", "--include-browser-smoke"])
+    validate_names = [step.name for step in build_steps(Path("/tmp/example"), plan="validate")]
 
-    assert exit_code == 2
-    assert "mutually exclusive" in capsys.readouterr().err
+    assert validate_names[-1] == "Running browser smoke checks"
+
+
+def test_each_plan_is_a_strict_prefix_of_the_next() -> None:
+    """Nested tiers are what guarantees moving a check between them never drops it."""
+
+    ci_names = [step.name for step in build_steps(Path("/tmp/example"), plan="ci")]
+    prepush_names = [step.name for step in build_steps(Path("/tmp/example"), plan="prepush")]
+    validate_names = [step.name for step in build_steps(Path("/tmp/example"), plan="validate")]
+
+    assert prepush_names[: len(ci_names)] == ci_names
+    assert validate_names[: len(prepush_names)] == prepush_names
+    assert len(ci_names) < len(prepush_names) < len(validate_names)
+
+
+def test_every_declared_plan_builds() -> None:
+    """The CLI choices and the plan builder cannot drift apart."""
+
+    for plan in PLANS:
+        assert build_steps(Path("/tmp/example"), plan=plan)  # type: ignore[arg-type]
+
+
+def test_parse_args_defaults_to_the_prepush_plan() -> None:
+    """A bare local run gets the tests and the build, not just the static checks."""
+
+    assert parse_args([]).plan == "prepush"
+    assert parse_args(["--plan", "ci"]).plan == "ci"
+    assert parse_args(["--plan", "validate"]).plan == "validate"
+
+
+def test_parse_args_rejects_an_unknown_plan() -> None:
+    """An unrecognised tier is a typo, not a silent fall-through to a lean run."""
+
+    with pytest.raises(SystemExit):
+        parse_args(["--plan", "lean"])
+
+
+def test_run_step_kills_a_hung_command_instead_of_hanging_the_runner(tmp_path: Path) -> None:
+    """A step that never returns must fail by name, not stall the job."""
+
+    step = VerifyStep("Hanging step", _python_command("import time; time.sleep(30)"))
+
+    result = run_step(step, tmp_path, timeout_seconds=1)
+
+    assert result.exit_code == 124
+    assert "Hanging step timed out after 1s" in result.stderr
+    assert result.duration_seconds < 30
+
+
+def test_run_step_closes_stdin_so_a_prompting_command_cannot_block(tmp_path: Path) -> None:
+    """Reading stdin must hit EOF immediately rather than wait on a runner forever."""
+
+    step = VerifyStep(
+        "Prompting step",
+        _python_command("import sys; print(repr(sys.stdin.read()))"),
+    )
+
+    result = run_step(step, tmp_path, timeout_seconds=10)
+
+    assert result.exit_code == 0
+    assert "''" in result.stdout
+
+
+def test_run_verification_flushes_progress_for_live_logs(tmp_path: Path) -> None:
+    """Progress lines must reach the log as they happen, not in one dump at exit."""
+
+    flushes: list[str] = []
+
+    class RecordingStream(io.StringIO):
+        def flush(self) -> None:
+            flushes.append(self.getvalue())
+
+    stdout = RecordingStream()
+    steps = [VerifyStep("Only step", _python_command("print('alpha')"))]
+
+    exit_code = run_verification(steps, tmp_path, stdout=stdout, stderr=io.StringIO())
+
+    assert exit_code == 0
+    assert flushes, "progress was never flushed"
+    assert "[1/1] Only step..." in flushes[0]
+
+
+def test_main_runs_the_requested_plan(monkeypatch: pytest.MonkeyPatch) -> None:
+    """The CLI plan flag selects the tier that actually runs."""
+
+    recorded: list[str] = []
+
+    def _capture(steps: Sequence[VerifyStep], cwd: Path, **kwargs: object) -> int:
+        recorded.extend(step.name for step in steps)
+        return 0
+
+    monkeypatch.setattr("scripts.verify.run_verification", _capture)
+
+    assert main(["--plan", "ci"]) == 0
+    assert "Checking hosted CI policy" in recorded
+    assert "Running repo automation tests" not in recorded
+
+    recorded.clear()
+    assert main(["--plan", "validate"]) == 0
+    assert "Running repo automation tests" in recorded
+    assert "Running browser smoke checks" in recorded
+
+
+def test_main_passes_the_step_timeout_through(monkeypatch: pytest.MonkeyPatch) -> None:
+    """The hang guard must be reachable from the command line."""
+
+    seen: dict[str, object] = {}
+
+    def _capture(steps: Sequence[VerifyStep], cwd: Path, **kwargs: object) -> int:
+        seen.update(kwargs)
+        return 0
+
+    monkeypatch.setattr("scripts.verify.run_verification", _capture)
+
+    assert main(["--plan", "ci", "--step-timeout", "12"]) == 0
+    assert seen["timeout_seconds"] == 12.0

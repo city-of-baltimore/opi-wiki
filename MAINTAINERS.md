@@ -272,24 +272,46 @@ so maintainers get per-step timing and failure summaries without having to
 change their local workflow. If you need a machine-readable report for CI or
 triage, run `./scripts/verify.sh --json-output /path/to/report.json`.
 
-For UI regressions that static checks will miss, maintainers can opt into a
-browser smoke pass with `./scripts/verify.sh --include-browser-smoke`. That
-pass expects a one-time local browser install via
+For UI regressions that static checks will miss, maintainers run the pre-deploy
+pass with `./scripts/verify.sh --plan validate`, which adds the browser smoke
+checks. That pass expects a one-time local browser install via
 `uv run playwright install chromium`.
 
 ### Which gate runs what
 
-The suite is defined once in `scripts/verify.py` and runs in two plans:
+The suite is defined once in `scripts/verify.py` and runs in three nested tiers:
 
 | Plan | Where | Covers |
 |---|---|---|
-| `--lean` | pull-request CI, fast local loop | lint, mypy, pytest, metadata, brand terms, style, consistency, raw HTML links |
-| full (default) | Pages deploy gate, `./scripts/verify.sh` locally | everything above, plus `mkdocs build --strict`, the built-site link crawl, and accessibility smoke |
+| `--plan ci` | pull-request CI, fast local loop | hosted-CI policy guard, lint, mypy, metadata, brand terms, style, consistency, raw HTML links |
+| `--plan prepush` (default) | the pre-push hook and the Pages deploy gate | everything above, plus pytest, `mkdocs build --strict`, the built-site link crawl, and the accessibility checks |
+| `--plan validate` | locally, before a deploy | everything above, plus the Playwright browser smoke checks |
 
-Pull-request CI is deliberately lean — no site build, no browser — per the
-civic-app consistency standard. **The practical consequence: a broken strict
-build is not caught on the PR; it surfaces on the deploy run after merge.** Run
-the full `./scripts/verify.sh` before pushing structural or config changes.
+Each tier is a strict prefix of the next, so nothing is lost by moving a check
+down a tier — it runs later, not never.
+
+Pull-request CI is deliberately lean — **no test suite, no site build, no
+browser** — per section 4 of the civic-app consistency standard, and
+`scripts/check_hosted_ci_policy.py` fails the build if that ever regresses.
+**The practical consequence: a broken test or strict build is not caught on the
+PR; it surfaces at `git push` (via the hook) or on the deploy run after merge.**
+
+Install the hook once per clone:
+
+```bash
+./scripts/install-hooks.sh
+```
+
+`git push --no-verify` skips it entirely. With tests out of hosted CI, that flag
+is the one way a broken suite reaches `main` unnoticed — use it knowingly.
+
+### If a hosted run looks stuck
+
+Every hosted job declares `timeout-minutes`, and every verification step is
+bounded by `--step-timeout` (600 seconds by default), so a hang fails with a
+named step rather than burning GitHub's six-hour default. Progress lines are
+flushed as they happen, so the live log always shows which step is running.
+If a run still looks stuck, the last flushed `[n/m] <step>...` line names it.
 
 ### Advisory security scan
 
@@ -313,7 +335,7 @@ This role has a high bus factor by design (it's one person). Mitigations:
 | GitHub Enterprise (this repo) | Source of truth, version control, CI/CD |
 | uv | Python dependency and environment management |
 | MkDocs Material | Site renderer (local preview + production build) |
-| `./scripts/verify.sh` | Standard local verification pass (full plan; `--lean` for the PR-CI subset) |
+| `./scripts/verify.sh` | Standard local verification pass (`prepush` by default; `--plan ci` for the PR-CI subset, `--plan validate` before a deploy) |
 | `./scripts/security_snyk.sh` | Manual, advisory Snyk source scan (never a gate) |
 | Pandoc | Convert .docx → Markdown when migrating Drive content |
 | VS Code (or any Markdown editor) | Authoring |

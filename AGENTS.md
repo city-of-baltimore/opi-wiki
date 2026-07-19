@@ -148,7 +148,9 @@ keep:
 - uv for all Python dependency management (never Poetry).
 - The registry port pin above.
 - `.baltimore-lab-app.toml` as the machine-readable marker.
-- The lean/full CI split described under Verification Rules.
+- The three-tier check split (`ci` / `prepush` / `validate`) described under
+  Verification Rules, and the Python floor from the platform bill of
+  materials (`>=3.13,<3.15`; 3.14 is the default).
 - Snyk as a manual, non-gated scan (`./scripts/security_snyk.sh`).
 
 ## Verification Rules
@@ -170,29 +172,44 @@ At minimum, verification should cover:
 - raw HTML link validation
 - lightweight accessibility smoke checks on generated output
 
-### The lean / full split
+### The three tiers
 
-`scripts/verify.py` defines the suite once and exposes two plans:
+`scripts/verify.py` defines the suite once and exposes three nested plans, the
+same three every repo in the family uses:
 
-- `--lean` — static checks only: lint, mypy, pytest, and the validators that
-  read `docs/` source. Nothing builds the site; nothing reads `site/`.
-- default (full) — the lean checks plus `mkdocs build --strict`, the
-  built-site link crawl, and the accessibility smoke checks.
+- `--plan ci` — static checks only: the workflow-policy guard, lint, mypy, and
+  the validators that read `docs/` source. **No test suite, no site build,
+  nothing that reads `site/`, no browser.**
+- `--plan prepush` (the default) — everything in `ci`, plus pytest,
+  `mkdocs build --strict`, the built-site link crawl, and the accessibility
+  checks.
+- `--plan validate` — everything in `prepush`, plus the Playwright browser
+  smoke checks, which need `uv run playwright install chromium`.
 
-Hosted pull-request CI runs the **lean** plan; the Pages deploy workflow runs
-the **full** plan and gates production. This follows the civic-app consistency
-standard: the on-push lane stays static checks, contracts, and security, and
-the build plus anything browser- or output-shaped moves to the pre-deploy gate.
+Each plan is a strict prefix of the next, and `tests/test_verify.py` asserts it,
+so moving a check to a lower tier can never quietly drop it.
 
-Two rules follow from that:
+Hosted pull-request CI runs **`ci`**. The Pages deploy workflow runs
+**`prepush`** and gates production. This follows section 4 of the civic-app
+consistency standard: the hosted lane is static checks, contracts, and security
+only — tests, builds, and browser suites are forbidden there, directly or
+through an aggregate runner.
 
-- **Never add a build or browser step to `.github/workflows/ci.yml`.** Add
-  checks to `build_steps()` in `scripts/verify.py` instead, in the right half.
-- **Run the full `./scripts/verify.sh` locally before pushing.** PR CI will not
-  catch a broken strict build for you.
+Three rules follow from that:
 
-Optional Playwright browser smoke (`--include-browser-smoke`) stays out of both
-hosted gates and is a local maintenance tool.
+- **Never add a test, build, or browser step to `.github/workflows/ci.yml`.**
+  Add checks to `build_steps()` in `scripts/verify.py` instead, in the right
+  tier. `scripts/check_hosted_ci_policy.py` fails the build if you do — it
+  resolves which plan the workflow asks for and scans the commands that plan
+  expands to, so an allowlisted-looking string cannot smuggle the heavy chain
+  in.
+- **Every hosted job declares `timeout-minutes`,** and every verification step
+  is bounded by `--step-timeout` (600s default). A hung step must fail fast
+  with a named step, not sit on GitHub's six-hour default. The policy guard
+  fails a job that has no timeout.
+- **Install the hooks (`./scripts/install-hooks.sh`) and let the pre-push gate
+  run.** With tests out of the hosted lane, that hook is the only backstop; a
+  broken test now surfaces at `git push`, not on the pull request.
 
 Snyk is advisory and manual: `./scripts/security_snyk.sh`. Do not wire it into
 `verify.py` or any workflow — Snyk plans cap scan counts.
