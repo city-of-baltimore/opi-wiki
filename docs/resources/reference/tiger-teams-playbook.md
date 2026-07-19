@@ -1,6 +1,6 @@
 # Tiger Teams Playbook
 
-{{ page_header(summary="How OPI runs short-cycle, cross-functional Tiger Teams.", category="SERIES · OPI FOUNDATIONS", tagline="A time-boxed delivery + innovation method.") }}
+{{ page_header(summary="How OPI runs short-cycle, cross-functional Tiger Teams.", category="SERIES · OPI FOUNDATIONS", tagline="A time-boxed way to fix one stuck service.") }}
 
 How OPI runs cross-functional, time-boxed teams that prototype, prove, and scale solutions to persistent service problems.
 

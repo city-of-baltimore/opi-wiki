@@ -71,7 +71,7 @@ Where any layer is unclear in a specific engagement, the engagement charter reso
 
 ## How We Plan Team Time
 
-The 70 / 20 / 10 model structures how we spend our hours to guard against burnout. It is a working baseline, a guide rather than a rule, reviewed each fiscal year.
+The 70 / 20 / 10 model structures how we spend our hours to guard against burnout. It is a working baseline reviewed each fiscal year, a guide rather than a rule.
 
 | **Allocation** | **What it covers**                                                                                                             | **Why it matters**                                                                                                      |
 |----------------|--------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------|

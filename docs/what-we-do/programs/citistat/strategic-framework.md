@@ -1,6 +1,6 @@
 # CitiStat Strategic Framework
 
-{{ page_header(summary="How Baltimore uses CitiStat to turn priority outcomes into focused, measurable action.", category="CITISTAT · STRATEGIC FRAMEWORK", tagline="Focus, place, action, and follow-through.") }}
+{{ page_header(summary="How Baltimore uses CitiStat to turn priority outcomes into focused, measurable action.", category="CITISTAT · STRATEGIC FRAMEWORK", tagline="How the City focuses on a few priority problems and stays with them until they move.") }}
 
 ## What CitiStat is
 

@@ -6,7 +6,7 @@
 
 Baltimore’s CitiStat portfolio is how the City reviews performance across the services, systems, and priorities residents and staff experience most directly. This register documents all 19 active Stats; the fields are defined below.
 
-CitiStat is managed by OPI's Executive Director and implemented by agencies; the [Strategic Framework](../strategic-framework.md#governance-and-roles) sets out the full governance chain. OPI leaders may operate selected Stats where the topic aligns with their portfolio, but all Stats follow a common standard: clear purpose, reliable enough data, useful pre-work, disciplined follow-up, evidence of closure, and a public story of progress.
+CitiStat is managed by the Executive Director and implemented by agencies; the [Strategic Framework](../strategic-framework.md#governance-and-roles) sets out the full governance chain. OPI leaders may operate selected Stats where the topic aligns with their portfolio, but all Stats follow a common standard: clear purpose, reliable enough data, useful pre-work, disciplined follow-up, evidence of closure, and a public story of progress.
 
 This document is a companion to OPI’s operating model. The operating model explains how OPI organizes work; this register explains what each Stat is for, who sponsors it, what it tracks, what artifacts it produces, and how it can trigger delivery, product, data, or executive action.
 

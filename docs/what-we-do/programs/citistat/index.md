@@ -4,7 +4,7 @@ Baltimore's citywide performance program, run by OPI with support from every tea
 
 CitiStat is how the city reviews performance. In regular sessions, City leadership and agencies look at the data together, ask sharper questions, assign follow-ups, and track them to closure. The [Performance team](../../../about-us/our-teams/performance/index.md) runs it day to day, but the whole office pitches in: [Data and Analytics](../../../about-us/our-teams/data-and-analytics/index.md) makes the evidence trustworthy, the [Innovation Lab](../../../about-us/our-teams/innovation-lab/index.md) designs the improvements a session turns up, and [Cross-Agency Delivery](../../services/cross-agency-delivery/index.md) coordinates work that spans agencies.
 
-This section is split by job. The Strategic Framework explains why CitiStat exists and how it ties to citywide priorities. The Method Playbook explains how a Stat actually runs. The quality standards and templates support the people doing the work, and the portfolio holds the active agency briefs.
+This section is split by job. The Strategic Framework explains why CitiStat exists and how it ties to citywide priorities. The Method Playbook shows how a Stat runs. The quality standards and templates support the people doing the work, and the portfolio holds the active agency briefs.
 
 ## New to CitiStat? Start here
 
