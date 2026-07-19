@@ -87,7 +87,7 @@ Every dataset carries one of four sensitivity tiers, aligned to the State of Mar
 | **Confidential** | Could harm individuals or the City if disclosed — most PII and precise geolocation; access is named and justified. |
 | **Restricted** | Governed by law, contract, or investigation; disclosure carries regulatory or criminal exposure; individually authorized. |
 
-Using any tier's data in AI — for model training or AI-enabled output — requires additional review first, regardless of tier. Classification is not permanent: data may become publishable after aggregation, redaction, or de-identification, or need tighter controls as risks become clearer, so the inventory is reviewed regularly.
+Using any tier's data in AI, whether for model training or AI-enabled output, requires additional review first, regardless of tier. Classification is not permanent: data may become publishable after aggregation, redaction, or de-identification, or need tighter controls as risks become clearer, so the inventory is reviewed regularly.
 
 ## Data Quality, Metadata, and Methodology
 
@@ -178,4 +178,4 @@ The framework should survive leadership transitions. Strong data governance shou
 
 ## Closing
 
-Comprehensive data governance is the operating foundation for trustworthy data, better decisions, public transparency, responsible AI, and durable service improvement. Baltimore can build a governance model that is practical, enabling, readable from the outside, and worthy of public trust.
+Comprehensive data governance is the foundation for trustworthy data, better decisions, public transparency, responsible AI, and service improvements that last. Baltimore can build a governance model that is practical, enabling, clear to people outside the office, and worthy of public trust.

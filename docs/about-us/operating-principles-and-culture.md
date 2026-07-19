@@ -1,6 +1,6 @@
 # Operating Principles and Culture
 
-{{ page_header(summary="How we work together — the rules of the road inside OPI.", tagline="How we work, how we treat each other, and how we hold the line on quality.") }}
+{{ page_header(summary="How we work together: the rules of the road inside OPI.", tagline="How we work, how we treat each other, and how we hold the line on quality.") }}
 
 ## How this connects to the operating model
 
@@ -8,7 +8,7 @@ Culture shows up in the handoffs: choosing the right routine, naming the owner, 
 
 ## The Culture We Choose
 
-OPI runs on a small number of operating principles. They are deliberately memorable, because they show up in the small daily decisions — how a meeting opens, who gets credit, how a memo is reviewed, how we say no — and not just in onboarding.
+OPI runs on a small number of operating principles. They are deliberately memorable, because they show up in the small daily decisions (how a meeting opens, who gets credit, how a memo is reviewed, how we say no), not just in onboarding.
 
 They are paired with the OPI core values: GRIT, CANDOR, OWNERSHIP, HUMILITY, INTENTION, IMPACT.
 
@@ -50,13 +50,11 @@ How we run a meeting, write a memo, give feedback, give credit, and respond to a
 
 ### 9. Don’t fight the problem on its turf
 
-When a problem keeps winning in its own arena — a recurring agency conflict, a stalled procurement, a permanent escalation — we change the arena. We move the conversation to a place where we can win, or we hand the work to a function that can.
+When a problem keeps winning in its own arena (a recurring agency conflict, a stalled procurement, a permanent escalation), we change the arena. We move the conversation to a place where we can win, or we hand the work to a function that can.
 
 ### 10. Data \> Information \> Knowledge
 
-Raw data is not a deliverable. Information is data with structure. Knowledge is information that changes a decision. Our craft is moving up that chain on purpose, every cycle.
-
-> *Say the true thing kindly. Candor is a value. So is care.*
+Raw data is not a deliverable. Information is data with structure. Knowledge is information that changes a decision. Our job is to move up that chain on purpose, every cycle.
 
 ## Ownership Model
 
@@ -64,7 +62,7 @@ Most cross-agency conflict comes from unclear ownership. This is the model we us
 
 | **Layer**                                    | **Owner**                  | **What they own**                                                                                                                                                                  |
 |----------------------------------------------|----------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| User experience and resident-facing channels | City Hall (Mayor’s Office) | Citywide narrative, public communications, resident channels (311), and the executive view of how the city shows up.                                                          |
+| User experience and resident-facing channels | City Hall (Mayor’s Office) | Citywide narrative, public communications, resident channels, and the executive view of how the city shows up.                                                          |
 | Data, method, and performance discipline     | OPI                        | Citywide performance routines, KPI standards, data infrastructure and governance, service design method, cross-agency delivery, executive briefings, knowledge management. |
 | Workflow and operations                      | Agencies                   | Day-to-day service delivery, agency-specific operations, agency systems of record, frontline staff, agency performance plans.                                                      |
 | Infrastructure and technology                | BCIT                       | Enterprise IT, security, identity, networking, production environments, integration architecture, city technology procurement.                                                     |
@@ -73,7 +71,7 @@ Where any layer is unclear in a specific engagement, the engagement charter reso
 
 ## How We Plan Team Time
 
-The 70 / 20 / 10 model structures how we spend our hours to guard against burnout. It is a working baseline — a guide, not a rule — reviewed each fiscal year.
+The 70 / 20 / 10 model structures how we spend our hours to guard against burnout. It is a working baseline, a guide rather than a rule, reviewed each fiscal year.
 
 | **Allocation** | **What it covers**                                                                                                             | **Why it matters**                                                                                                      |
 |----------------|--------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------|

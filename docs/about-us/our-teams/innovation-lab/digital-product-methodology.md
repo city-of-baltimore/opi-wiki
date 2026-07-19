@@ -2,7 +2,7 @@
 
 {{ page_header(summary="How OPI ships digital products inside city government.", category="METHOD GUIDE", tagline="A practical workflow for service design, product discovery, prototyping, engineering, documentation, and sustainment.") }}
 
-This is OPI's citywide playbook for how digital products are designed and shipped — the Innovation Lab's build method, usable by any team building a digital product for the City.
+This is OPI's citywide playbook for how digital products are designed and shipped. It is the Innovation Lab's build method, and any team building a digital product for the City can use it.
 
 ## Executive Summary
 
@@ -160,4 +160,4 @@ OPI’s product workflow is built to avoid two common failures: building tools w
 
 Digital product work belongs in the Innovation Lab when the problem requires discovery, user research, prototyping, engineering, or product management. If the product cannot succeed unless multiple agencies change workflows, decision rights, or sustainment commitments together, the work also needs Cross-Agency Delivery activation.
 
-The distinction is simple: the Lab owns the product craft; Cross-Agency Delivery owns the cross-agency authority and implementation cadence.
+The distinction is simple: the Lab owns the product work; Cross-Agency Delivery owns the cross-agency authority and implementation cadence.
