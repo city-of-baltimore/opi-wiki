@@ -1,22 +1,29 @@
-# Review routing for pull requests. The last matching line wins.
+# Code owners for review routing.
 #
-# Default: the Executive Director / repo maintainer reviews everything.
-# As section owners get GitHub handles, uncomment and fill in their rows so
-# the three-tier editorial workflow (see MAINTAINERS.md) routes automatically.
+# Ownership follows the change's blast radius, not its file type: anything that
+# can alter how the repository builds, ships, or is gated belongs to Platform
+# Admins; product behaviour belongs to Product Engineering.
+#
+# Dependency manifests are deliberately NOT owned by Platform Admins. Product
+# engineers change them constantly, and routing every bump through infra review
+# is the friction that gets CODEOWNERS deleted. Dependency risk is already
+# covered by pip-audit, npm audit, and Snyk.
+#
+# NOTE: a team must have write access to this repository for GitHub to honour
+# it here. Without that, these lines are silently ignored.
 
-* @DartDoesData
+# Default owner — product behaviour.
+*                           @city-of-baltimore/product-engineering
 
-# --- Section owners (fill in handles, then uncomment) -----------------------
-# /docs/about-us/our-teams/performance/          @<deputy-chief-performance-officer>
-# /docs/what-we-do/programs/citistat/            @<deputy-chief-performance-officer>
-# /docs/about-us/our-teams/data-and-analytics/   @<deputy-chief-data-officer>
-# /docs/about-us/our-teams/innovation-lab/       @<innovation-program-manager>
-# /docs/what-we-do/products/                     @<innovation-program-manager>
-# /docs/how-we-work/handbook/                    @<chief-of-staff>
-
-# Engineering surfaces stay with the maintainer.
-/scripts/       @DartDoesData
-/tests/         @DartDoesData
-/.github/       @DartDoesData
-mkdocs.yml      @DartDoesData
-main.py         @DartDoesData
+# CI, containers, orchestration, and the platform baseline.
+/.github/                   @city-of-baltimore/platform-admins
+/Dockerfile*                @city-of-baltimore/platform-admins
+/compose*.yml               @city-of-baltimore/platform-admins
+/compose*.yaml              @city-of-baltimore/platform-admins
+/docker-compose*.yml        @city-of-baltimore/platform-admins
+/nginx/                     @city-of-baltimore/platform-admins
+/Taskfile.yml               @city-of-baltimore/platform-admins
+/scripts/                   @city-of-baltimore/platform-admins
+/.pre-commit-config.yaml    @city-of-baltimore/platform-admins
+/.baltimore-lab-app.toml    @city-of-baltimore/platform-admins
+/fly.toml                   @city-of-baltimore/platform-admins
