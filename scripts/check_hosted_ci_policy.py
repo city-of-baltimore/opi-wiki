@@ -36,37 +36,60 @@ dependencies so it can run under a bare interpreter.
 Two checkers, on purpose
 ------------------------
 The ``ci`` plan runs **both** this module and Patapsco's ``platform-check``
-(``baltimore-patapsco==0.4.0``). That is not duplication left by accident; the
-consolidation to the shared checker was attempted and measured, and 0.4.0 does
-not yet subsume this guard. Four violations this module fails on were injected
-one at a time and ``platform-check`` returned ``conforms`` / exit 0 for each:
+(``baltimore-patapsco==0.4.1``). That is not duplication left by accident. The
+consolidation to the shared checker has now been attempted and measured twice —
+against 0.4.0 and again against 0.4.1 — and neither release subsumes this guard.
+Each violation below was injected on its own, both checkers were run, and
+``platform-check`` returned ``conforms`` / exit 0 for each while this module
+exited 1:
 
-1. **A forbidden command inside a ``verify.py`` plan.** ``platform-check``
-   resolves the ``Taskfile.yml`` graph but treats
-   ``uv run python scripts/verify.py --plan ci`` as an opaque leaf string. This
-   repository's hosted lane has *two* indirection layers, and the shared
-   checker walks only the first — so adding ``pytest`` to the ``ci`` tier of
-   :func:`scripts.verify.build_steps` passes it while the hosted lane really
-   runs the test suite. This is the same shape as the ``task --dry`` bug: green
-   while vacuous.
-2. **A missing job ``timeout-minutes``** (invariant 3). No equivalent rule.
-3. **An unallowlisted ``run:`` command** (invariant 1) — e.g. a piped
+1. **A forbidden command inside a ``verify.py`` plan.** ``platform-check`` 0.4.1
+   expands ``npm`` script bodies and ``*.sh`` bodies, but a **Python plan
+   module** is still an opaque leaf: ``uv run python scripts/verify.py --plan
+   ci`` is matched against the forbidden-pattern list as a *string* and nothing
+   below it is read. Adding ``pytest`` — or ``mkdocs build`` — to the ``ci``
+   tier of :func:`scripts.verify.build_steps` therefore passes it while the
+   hosted lane really runs that step. Same shape as the ``task --dry`` bug:
+   green while vacuous.
+2. **The same gap reached through a shell script.** 0.4.1 *does* read ``.sh``
+   bodies, but ``scripts/verify.sh`` is a two-line wrapper whose payload is
+   ``uv run python scripts/verify.py "$@"`` — so the new expansion runs, walks
+   one hop, and lands on the same Python-module wall. Pointing the ``ci`` task
+   at ``./scripts/verify.sh --plan prepush`` is missed for that reason. A
+   control injection confirmed the mechanism: a ``.sh`` whose body contains
+   ``mkdocs build`` *directly* is caught, so the expander works and the wall is
+   specifically the plan module.
+3. **A missing job ``timeout-minutes``** (invariant 3). No equivalent rule.
+4. **An unallowlisted ``run:`` command** (invariant 1) — e.g. a piped
    ``curl … | sh``. ``platform-check`` matches a *forbidden* pattern list, which
    is a denylist; it has no allowlist, so an arbitrary new command passes.
-4. **An unpinned ``uses:`` reference** (invariant 1) — e.g.
+5. **An unpinned ``uses:`` reference** (invariant 1) — e.g.
    ``actions/checkout@main`` instead of a SHA. No equivalent rule.
 
-Gaps 3 and 4 are supply-chain surface, not lean-CI surface, so they may never
-belong in the shared checker. Gap 1 is the one that matters for consolidation:
-when ``platform-check`` learns to expand an aggregate runner's plans, re-run the
-injection above and delete this module if it catches all four. Until then,
-deleting this module would be a silent, measurable loss of enforcement.
+The traffic runs both ways, which is the argument for keeping both rather than
+for keeping this one. The same sweep found two forms **this** module missed and
+``platform-check`` caught — a block-list ``deps:`` and a ``silent: true`` task
+in the chain. Both are fixed here, with regression tests, rather than left to
+the other checker to cover.
+
+Gaps 4 and 5 are supply-chain surface, not lean-CI surface, so they may never
+belong in the shared checker. Gaps 1 and 2 are the ones that matter for
+consolidation, and they share one root cause: **the shared resolver has no way
+to expand a Python aggregate.** The retirement condition for this module is
+therefore concrete — when ``platform-check`` can resolve a plan module (see the
+suggestion in ``docs/`` and the PR that introduced this note: a declared
+``[tasks] aggregate`` entry in ``.baltimore-lab-app.toml`` naming the module and
+the flag that selects a tier, so the resolver can import it and enumerate the
+tier's commands), re-run the injection matrix and delete this module if it
+catches all five. Until then, deleting it is a silent, measurable loss of
+enforcement.
 """
 
 from __future__ import annotations
 
 import re
 import sys
+from dataclasses import dataclass, field
 from pathlib import Path
 
 if __package__ in {None, ""}:
@@ -127,6 +150,24 @@ FORBIDDEN_COMMAND_PATTERNS: tuple[tuple[str, re.Pattern[str]], ...] = (
 TASK_INVOCATION = re.compile(r"\btask\s+(?!-)([A-Za-z][\w:.-]*)")
 #: Taskfile structure: task headers sit at exactly this indent under ``tasks:``.
 TASK_HEADER_INDENT = 2
+#: Keys that end a ``deps:`` block list. Anything else at list depth inside one
+#: is a dependency name, not a shell command.
+TASK_BLOCK_KEYS = re.compile(r"(cmds|vars|env|desc|dir|sources|generates|status|preconditions):")
+
+
+@dataclass(frozen=True)
+class TaskGraph:
+    """A parsed Taskfile: what each task runs, calls, and hides.
+
+    ``silent`` is tracked because a ``silent: true`` task suppresses its own
+    command echo. Its commands are still parsed here, but the flag is a signal
+    that the task is deliberately opaque to any dry-run-based resolver, so it is
+    reported rather than trusted.
+    """
+
+    subtasks: dict[str, list[str]] = field(default_factory=dict)
+    commands: dict[str, list[str]] = field(default_factory=dict)
+    silent: set[str] = field(default_factory=set)
 
 
 def _normalize_command(command: str) -> str:
@@ -136,18 +177,30 @@ def _normalize_command(command: str) -> str:
     return normalized
 
 
-def parse_taskfile(source: str) -> tuple[dict[str, list[str]], dict[str, list[str]]]:
-    """Parse a Taskfile into ``(subtasks, commands)``, both keyed by task name.
+def parse_taskfile(source: str) -> TaskGraph:
+    """Parse a Taskfile into the graph the resolver walks.
 
     Deliberately hand-rolled rather than YAML-parsed so the guard runs under a
-    bare interpreter. Only the two edges that can carry a forbidden command are
-    modelled: ``task:``/``deps:`` references and ``cmds:`` shell strings.
+    bare interpreter. Only what can carry or hide a forbidden command is
+    modelled: ``task:``/``deps:`` edges, ``cmds:`` shell strings, and the
+    ``silent:`` flag.
+
+    ``deps:`` is accepted in **both** YAML forms. Only the inline
+    ``deps: [a, b]`` form was parsed originally, so the block form ::
+
+        deps:
+          - test
+
+    fell through to the generic ``- `` branch and was recorded as a *command*
+    named ``test`` — a string no forbidden pattern matches. That let a block
+    ``deps:`` pull the whole test suite into the hosted lane unseen; the
+    regression test is ``test_parse_taskfile_reads_block_list_deps``.
     """
 
-    subtasks: dict[str, list[str]] = {}
-    commands: dict[str, list[str]] = {}
+    graph = TaskGraph()
     inside_tasks = False
     current: str | None = None
+    in_deps_block = False
 
     for raw_line in source.splitlines():
         line = raw_line.rstrip()
@@ -160,6 +213,7 @@ def parse_taskfile(source: str) -> tuple[dict[str, list[str]], dict[str, list[st
         if indentation == 0:
             inside_tasks = stripped == "tasks:"
             current = None
+            in_deps_block = False
             continue
         if not inside_tasks:
             continue
@@ -171,49 +225,62 @@ def parse_taskfile(source: str) -> tuple[dict[str, list[str]], dict[str, list[st
         )
         if is_header:
             current = stripped[:-1]
-            subtasks.setdefault(current, [])
-            commands.setdefault(current, [])
+            graph.subtasks.setdefault(current, [])
+            graph.commands.setdefault(current, [])
+            in_deps_block = False
             continue
         if current is None:
             continue
 
-        if match := re.match(r"-?\s*task:\s*([A-Za-z][\w:.-]*)", stripped):
-            subtasks[current].append(match.group(1))
+        if re.match(r"silent:\s*true", stripped):
+            graph.silent.add(current)
             continue
+
         if match := re.match(r"deps:\s*\[(.+)\]", stripped):
-            subtasks[current].extend(
+            graph.subtasks[current].extend(
                 dependency.strip().strip("\"'") for dependency in match.group(1).split(",")
             )
+            in_deps_block = False
+            continue
+        if re.match(r"deps:\s*$", stripped):
+            in_deps_block = True
+            continue
+        if TASK_BLOCK_KEYS.match(stripped):
+            in_deps_block = False
+
+        if match := re.match(r"-?\s*task:\s*([A-Za-z][\w:.-]*)", stripped):
+            graph.subtasks[current].append(match.group(1))
+            continue
+        if in_deps_block and (match := re.match(r"-\s*([A-Za-z][\w:.-]*)\s*$", stripped)):
+            graph.subtasks[current].append(match.group(1))
             continue
         if match := re.match(r"-\s*cmd:\s*(.+)", stripped):
-            commands[current].append(_normalize_command(match.group(1)))
+            graph.commands[current].append(_normalize_command(match.group(1)))
             continue
         if stripped.startswith("- "):
-            commands[current].append(_normalize_command(stripped[2:]))
+            graph.commands[current].append(_normalize_command(stripped[2:]))
 
-    return subtasks, commands
+    return graph
 
 
-def _load_task_graph() -> tuple[dict[str, list[str]], dict[str, list[str]]]:
-    """Return this repository's parsed task graph, or empty graphs if absent."""
+def _load_task_graph() -> TaskGraph:
+    """Return this repository's parsed task graph, or an empty graph if absent."""
 
     try:
         source = TASKFILE_PATH.read_text(encoding="utf-8")
     except OSError:
-        return {}, {}
+        return TaskGraph()
     return parse_taskfile(source)
 
 
-def resolve_task(
-    name: str,
-    subtasks: dict[str, list[str]],
-    commands: dict[str, list[str]],
-) -> tuple[list[tuple[str, str]], list[str]]:
+def resolve_task(name: str, graph: TaskGraph) -> tuple[list[tuple[str, str]], list[str]]:
     """Walk a task transitively.
 
     Returns ``(reached, unresolved)``, where *reached* pairs each leaf shell
     command with the ``task:a -> task:b`` chain that reaches it, and
-    *unresolved* lists chains ending at a task this file does not define.
+    *unresolved* lists chains this guard cannot vouch for: a task the Taskfile
+    does not define, or one marked ``silent: true``. Both are reported rather
+    than passed — unverifiable is not the same as innocent.
     """
 
     reached: list[tuple[str, str]] = []
@@ -225,12 +292,14 @@ def resolve_task(
             return
         seen.add(task_name)
         path = [*chain, f"task:{task_name}"]
-        if task_name not in commands:
+        if task_name not in graph.commands:
             unresolved.append(" -> ".join(path))
             return
-        for command in commands[task_name]:
+        if task_name in graph.silent:
+            unresolved.append(" -> ".join([*path, "silent: true (commands hidden)"]))
+        for command in graph.commands[task_name]:
             reached.append((" -> ".join(path), command))
-        for child in subtasks.get(task_name, []):
+        for child in graph.subtasks.get(task_name, []):
             walk(child, path)
 
     walk(name, [])
@@ -240,10 +309,10 @@ def resolve_task(
 def expand_task_invocations(command: str) -> list[tuple[str, str]]:
     """Expand every ``task <name>`` in a command into (provenance, command) pairs."""
 
-    subtasks, commands = _load_task_graph()
+    graph = _load_task_graph()
     expanded: list[tuple[str, str]] = []
     for name in TASK_INVOCATION.findall(command):
-        reached, _ = resolve_task(name, subtasks, commands)
+        reached, _ = resolve_task(name, graph)
         expanded.extend(
             (f"{chain} -> {reached_command}", reached_command) for chain, reached_command in reached
         )
@@ -257,10 +326,10 @@ def unresolved_task_invocations(command: str) -> list[str]:
     inspected, so it cannot be shown to be lean.
     """
 
-    subtasks, commands = _load_task_graph()
+    graph = _load_task_graph()
     chains: list[str] = []
     for name in TASK_INVOCATION.findall(command):
-        _, unresolved = resolve_task(name, subtasks, commands)
+        _, unresolved = resolve_task(name, graph)
         chains.extend(unresolved)
     return chains
 
@@ -432,7 +501,7 @@ def find_forbidden_reach(command: str) -> list[str]:
     findings: list[str] = []
     for provenance, candidate in reachable_commands(command):
         for chain in unresolved_task_invocations(candidate):
-            findings.append(f"{chain} [unresolvable task: its commands cannot be inspected]")
+            findings.append(f"{chain} [cannot verify what this task runs]")
         for reason, pattern in FORBIDDEN_COMMAND_PATTERNS:
             if pattern.search(candidate):
                 findings.append(f"{provenance} [{reason}]")

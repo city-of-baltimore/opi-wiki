@@ -195,28 +195,98 @@ tasks:
 def test_parse_taskfile_reads_commands_and_subtask_edges() -> None:
     """Both edge kinds a task can carry must be visible to the resolver."""
 
-    subtasks, commands = parse_taskfile(TASKFILE)
+    graph = parse_taskfile(TASKFILE)
 
-    assert subtasks["ci"] == ["policy"]
-    assert commands["ci"] == ["uv run python scripts/verify.py --plan ci"]
-    assert commands["test"] == ["uv run python -m pytest"]
+    assert graph.subtasks["ci"] == ["policy"]
+    assert graph.commands["ci"] == ["uv run python scripts/verify.py --plan ci"]
+    assert graph.commands["test"] == ["uv run python -m pytest"]
 
 
 def test_parse_taskfile_ignores_descriptions_and_non_task_blocks() -> None:
     """`desc:` text and top-level keys are not commands and must not be scanned."""
 
-    _, commands = parse_taskfile(TASKFILE)
+    graph = parse_taskfile(TASKFILE)
 
-    assert all("Guard" not in command for command in commands["policy"])
-    assert "version" not in commands
+    assert all("Guard" not in command for command in graph.commands["policy"])
+    assert "version" not in graph.commands
+
+
+def test_parse_taskfile_reads_inline_deps() -> None:
+    """The inline `deps: [a, b]` form is a graph edge."""
+
+    graph = parse_taskfile(TASKFILE.replace("  ci:\n    desc:", "  ci:\n    deps: [policy]\n    desc:"))
+
+    assert "policy" in graph.subtasks["ci"]
+
+
+def test_parse_taskfile_reads_block_list_deps() -> None:
+    """A block-form `deps:` is an edge, not a command named after the task.
+
+    Regression: only the inline `deps: [a, b]` form was parsed, so a block list
+    fell through to the generic `- ` branch and was recorded as a *command*
+    named `test` — which no forbidden pattern matches. A block `deps:` could
+    therefore pull the whole test suite into the hosted lane unseen.
+    """
+
+    source = TASKFILE.replace(
+        "  ci:\n    desc: Lean gate",
+        "  ci:\n    deps:\n      - test\n    desc: Lean gate",
+    )
+
+    graph = parse_taskfile(source)
+
+    assert "test" in graph.subtasks["ci"]
+    assert "test" not in graph.commands["ci"]
+
+
+def test_a_block_list_deps_edge_into_the_test_suite_is_a_violation() -> None:
+    """End to end: a block `deps:` reaching pytest fails the guard."""
+
+    source = TASKFILE.replace(
+        "  ci:\n    desc: Lean gate",
+        "  ci:\n    deps:\n      - test\n    desc: Lean gate",
+    )
+    graph = parse_taskfile(source)
+
+    reached, _ = resolve_task("ci", graph)
+
+    assert ("task:ci -> task:test", "uv run python -m pytest") in reached
+
+
+def test_parse_taskfile_records_a_silent_task() -> None:
+    """`silent: true` is tracked so the resolver can refuse to vouch for it."""
+
+    source = TASKFILE.replace(
+        "  policy:\n    desc: Guard",
+        "  policy:\n    silent: true\n    desc: Guard",
+    )
+
+    graph = parse_taskfile(source)
+
+    assert "policy" in graph.silent
+    assert all("silent" not in command for command in graph.commands["policy"])
+
+
+def test_resolve_task_refuses_a_silent_task_in_the_chain() -> None:
+    """A task that hides its commands is reported, not trusted."""
+
+    source = TASKFILE.replace(
+        "  policy:\n    desc: Guard",
+        "  policy:\n    silent: true\n    desc: Guard",
+    )
+    graph = parse_taskfile(source)
+
+    _, unresolved = resolve_task("ci", graph)
+
+    assert unresolved == ["task:ci -> task:policy -> silent: true (commands hidden)"]
 
 
 def test_resolve_task_walks_transitively_with_a_chain() -> None:
     """A command two hops down is reported with the path that reaches it."""
 
-    subtasks, commands = parse_taskfile(TASKFILE)
+    graph = parse_taskfile(TASKFILE)
 
-    reached, unresolved = resolve_task("sneaky", subtasks, commands)
+    reached, unresolved = resolve_task("sneaky", graph)
 
     assert unresolved == []
     assert (
@@ -229,9 +299,9 @@ def test_resolve_task_walks_transitively_with_a_chain() -> None:
 def test_resolve_task_reports_an_undefined_task_rather_than_passing_it() -> None:
     """A task that cannot be inspected is never assumed innocent."""
 
-    subtasks, commands = parse_taskfile(TASKFILE)
+    graph = parse_taskfile(TASKFILE)
 
-    _, unresolved = resolve_task("nope", subtasks, commands)
+    _, unresolved = resolve_task("nope", graph)
 
     assert unresolved == ["task:nope"]
 
@@ -274,7 +344,8 @@ def test_an_undefined_task_invocation_is_a_violation() -> None:
 
     reasons = " ".join(find_forbidden_reach("task ci:does-not-exist"))
 
-    assert "unresolvable task" in reasons
+    assert "cannot verify what this task runs" in reasons
+    assert "ci:does-not-exist" in reasons
 
 
 def test_find_policy_violations_reports_an_unallowlisted_command(tmp_path: Path) -> None:
