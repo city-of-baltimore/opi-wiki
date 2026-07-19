@@ -8,6 +8,9 @@ GitHub or Markdown knowledge required there.
 **For maintainers:** [`MAINTAINERS.md`](MAINTAINERS.md) is the operating
 manual (editorial voice, review tiers, conventions).
 
+**Editorial style:** [`STYLE.md`](STYLE.md) is the writing standard — voice,
+the jargon we replace, and how we handle bullets, tables, and em-dashes.
+
 ## Working in this repo
 
 ```bash
