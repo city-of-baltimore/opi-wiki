@@ -1,4 +1,4 @@
-# PD — Senior Performance Analyst
+# PD: Senior Performance Analyst
 
 {{ page_header(summary="Position description for the Senior Performance Analyst.") }}
 
@@ -27,7 +27,7 @@ In addition to the citywide performance management function, the Senior Performa
 
 - Maintain training and onboarding materials for agency users of the Performance Tracker.
 
-- Operate a clear backlog and release rhythm; partner with the Technical Program Manager (Data and Analytics) on dependencies.
+- Operate a clear backlog and release schedule; partner with the Technical Program Manager (Data and Analytics) on dependencies.
 
 ### Citywide Performance Measures and Plans
 
@@ -35,7 +35,7 @@ In addition to the citywide performance management function, the Senior Performa
 
 - Coordinate the annual preparation and review of agency performance plans; provide quality assurance and feedback.
 
-- Maintain the KPI Dictionary in coordination with the Deputy Chief Performance Officer; uphold owner, formula, cadence, and equity-lens conventions.
+- Maintain the KPI Dictionary in coordination with the Deputy Chief Performance Officer; uphold owner, formula, update frequency, and equity-lens conventions.
 
 - Provide expertise on service-level metrics, outcome-based budgeting, and performance measures.
 
@@ -73,9 +73,9 @@ In addition to the citywide performance management function, the Senior Performa
 
 ### Operations and stewardship
 
-- Diplomacy with senior leaders; reliable follow-through in a visible cadence.
+- Diplomacy with senior leaders; reliable follow-through on a visible schedule.
 
-- Ability to manage multiple priorities, maintain documentation, and deliver on a defined cadence.
+- Ability to manage multiple priorities, maintain documentation, and deliver on a defined schedule.
 
 - Ability to maintain confidentiality of sensitive information.
 

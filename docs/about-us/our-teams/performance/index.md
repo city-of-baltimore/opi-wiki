@@ -1,8 +1,8 @@
 # Performance
 
-> The team that runs citywide performance management and supports the CitiStat program.
+The team that runs citywide performance management and supports the CitiStat program.
 
-This is the Performance section of the OPI wiki. The Performance team owns Baltimore's executive performance rhythm: how priorities become measures, how leaders see what is working and what is stuck, and how follow-ups turn into measurable service improvements.
+This is the Performance section of the OPI wiki. The Performance team owns how the city reviews performance: how priorities become measures, how leaders see what is working and what is stuck, and how follow-ups turn into service improvements you can measure.
 
 A Stat is the right routine when a recurring performance problem needs leadership attention, reliable-enough data, follow-up, and a closure mechanism. When a problem needs more than the Stat room, it can trigger a data quality sprint, product discovery, a Cross-Agency Delivery activation (a Tiger Team), or a one-time executive decision.
 

@@ -1,4 +1,4 @@
-# PD — Deputy Chief Data Officer
+# PD: Deputy Chief Data Officer
 
 {{ page_header(summary="Position description for the Deputy Chief Data Officer.") }}
 
@@ -17,7 +17,7 @@
 
 The Deputy Chief Data Officer (DCDO) is Baltimore’s principal leader for data infrastructure, analytics, open data, and applied analytics products. Reporting to the Executive Director and Chief Data Officer, the DCDO directs OPI’s Data Platform program and the citywide analytics function and partners with the Innovation Lab on shared product infrastructure.
 
-The role is both strategic and operational: shaping citywide data and AI standards, governing data pipelines and products, publishing open data, and supporting resident-facing analytics products such as the executive dashboards and the Mayor’s reporting tools. The DCDO leads senior professionals across data engineering, analytics, and product management and partners with agency executives, Baltimore City Information Technology (BCIT), and external stakeholders to build a modern, trusted data and AI ecosystem for Baltimore.
+The role is both strategic and operational: shaping citywide data and AI standards, governing data pipelines and products, publishing open data, and supporting resident-facing analytics products such as the executive dashboards and the Mayor’s reporting tools. The DCDO leads senior professionals across data engineering, analytics, and product management and partners with agency executives, Baltimore City Information Technology (BCIT), and external stakeholders to build a modern, trusted data and AI environment for Baltimore.
 
 ## Key Responsibilities
 

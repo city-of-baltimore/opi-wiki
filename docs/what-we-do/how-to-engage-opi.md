@@ -1,12 +1,12 @@
 # How to Engage OPI
 
-{{ page_header(summary="For partner agencies — how to work with OPI and request a service.", category="OPI · FOR PARTNERS") }}
+{{ page_header(summary="For partner agencies: how to work with OPI and request a service.", category="OPI · FOR PARTNERS") }}
 
 This page is for **partner agencies** working with the Mayor's Office of Performance and Innovation. It explains how OPI works and how to request help.
 
 ## How OPI works, in one minute
 
-OPI moves work through a signal-to-solution loop: CitiStat identifies a problem, Data and Analytics explains it, the Innovation Lab designs and tests a fix, Cross-Agency Delivery coordinates multi-agency implementation, and AdminOps sustains it. See [How Work Moves Through OPI](../how-we-work/how-work-moves-through-opi.md) for the full model.
+OPI moves work from a problem to a fix in a set sequence. CitiStat identifies a problem, Data and Analytics explains it, the Innovation Lab designs and tests a fix, Cross-Agency Delivery coordinates the work when it spans multiple agencies, and AdminOps sustains it. See [How Work Moves Through OPI](../how-we-work/how-work-moves-through-opi.md) for the full model.
 
 ## How to request a service
 

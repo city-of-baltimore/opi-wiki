@@ -6,9 +6,7 @@ The minimum bar for any artifact OPI produces. Accessibility, plain language, pr
 
 ## Why QA matters
 
-OPI’s work is used by senior leaders, agency partners, and sometimes the public. Quality is not optional, and it is not a separate phase. It is part of the work. This document describes the QA bar that applies to everything OPI publishes, internally and externally.
-
-> *No public artifact ships without QA. No surprise launches.*
+OPI’s work is used by senior leaders, agency partners, and sometimes the public. Quality is not optional, and it is not a separate phase. It is part of the work. This document describes the QA bar that applies to everything OPI publishes, internally and externally. Two rules sit above the rest: no public artifact ships without QA, and there are no surprise launches.
 
 ### Principles
 
@@ -33,7 +31,7 @@ Every artifact passes four gates before it is shared with an audience outside th
 | Privacy and sensitivity | The artifact does not expose PII or restricted information. Sensitivity is labeled. Approvals are in place.                                         |
 | Launch readiness        | Stakeholders are informed before publication. Comms are coordinated. Rollback or correction plan is in place. No surprise launches.                 |
 
-## Gate 1 — Accessibility
+## Gate 1: Accessibility
 
 ### Minimum standard
 
@@ -59,7 +57,7 @@ Every artifact passes four gates before it is shared with an audience outside th
 
 - Verify alt text is descriptive, not “image” or “photo.”
 
-## Gate 2 — Plain language
+## Gate 2: Plain language
 
 ### Minimum standard
 
@@ -83,7 +81,7 @@ Every artifact passes four gates before it is shared with an audience outside th
 
 - Every claim is either obvious or sourced.
 
-## Gate 3 — Privacy and sensitivity
+## Gate 3: Privacy and sensitivity
 
 ### Minimum standard
 
@@ -109,7 +107,7 @@ Every artifact passes four gates before it is shared with an audience outside th
 
 - Any visualization with cell sizes below the agreed minimum (typically \<10 records).
 
-## Gate 4 — Launch readiness
+## Gate 4: Launch readiness
 
 ### Minimum standard
 

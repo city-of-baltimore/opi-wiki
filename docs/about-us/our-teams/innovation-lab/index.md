@@ -1,8 +1,6 @@
 # Innovation Lab
 
-> Service improvement, civic design, product methods, and applied innovation — used to make city services easier to use and easier to manage.
-
-The Innovation Lab is Baltimore's in-house public-innovation team. It runs the [Path to Public Innovation](https://publicinnovation.jhu.edu/) method — discovery, service design, research, prototyping, piloting, and the build and handoff of digital products — to turn priority challenges into service improvements residents and staff actually use. The Lab can work on one-agency or multi-agency problems; when implementation requires multiple agencies to move together with named decision rights, it partners with [Cross-Agency Delivery](../../../what-we-do/services/cross-agency-delivery/index.md).
+The Innovation Lab is Baltimore's in-house public-innovation team. It uses service design, civic design, product methods, and applied innovation to make city services easier to use and easier to manage. The Lab runs the [Path to Public Innovation](https://publicinnovation.jhu.edu/) method, which moves from discovery through service design, research, prototyping, and piloting to the build and handoff of digital products, and turns priority challenges into service improvements residents and staff actually use. The Lab can work on one-agency or multi-agency problems; when a fix requires several agencies to move together with named decision rights, it partners with [Cross-Agency Delivery](../../../what-we-do/services/cross-agency-delivery/index.md).
 
 Read this section alongside [How Work Moves Through OPI](../../../how-we-work/how-work-moves-through-opi.md), which explains how CitiStat, Data and Analytics, the Innovation Lab, Cross-Agency Delivery, and AdminOps fit together.
 

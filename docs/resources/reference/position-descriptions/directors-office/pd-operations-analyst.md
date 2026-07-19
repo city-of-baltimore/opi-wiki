@@ -1,4 +1,4 @@
-# PD — Operations Analyst
+# PD: Operations Analyst
 
 {{ page_header(summary="Position description for the Operations Analyst.") }}
 
@@ -71,7 +71,7 @@ In addition to executive support, the Operations Analyst carries a working portf
 
 ### Executive support and operations
 
-- Demonstrated experience supporting senior executives in high-volume, high-trust environments.
+- Demonstrated experience supporting senior executives in high-volume environments that run on trust.
 
 - Strong calendar management and meeting orchestration skills; rules-based scheduling and prioritization.
 

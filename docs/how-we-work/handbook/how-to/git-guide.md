@@ -39,7 +39,7 @@ You are now ready to clone and work on repositories.
 
 ## Push your code
 
-A commit is a set of file changes — additions, edits, or deletions — packaged around a single idea, such as part of a feature, a bug fix, or a variable update. Each commit is a snapshot of your code at that point in time.
+A commit is a set of file changes (additions, edits, or deletions) packaged around a single idea, such as part of a feature, a bug fix, or a variable update. Each commit is a snapshot of your code at that point in time.
 
 1. Stage your changes. New files stage automatically; for edited files, run `git add <filename>`, or `git add .` to stage every changed file in the current directory and its subdirectories.
 
@@ -65,7 +65,7 @@ Good Git habits let solo developers and teams understand each change, add it saf
 
 ### Write clear, concise commits
 
-Keep commits small and scoped to a single change. Do not commit a slew of files that change unrelated parts of the program. For features and bug fixes, break commits out by the component being changed — for example, the login page in one commit, the authentication module in another, and the build instructions in a third.
+Keep commits small and scoped to a single change. Do not commit a slew of files that change unrelated parts of the program. For features and bug fixes, break commits out by the component being changed. For example, put the login page in one commit, the authentication module in another, and the build instructions in a third.
 
 Follow the Conventional Commits specification for messages:
 
@@ -93,17 +93,17 @@ Never push directly to `main`, especially on a larger team. Pushing straight to 
 
 Use the Conventional Branch standard instead of vague names like `dev`, `develop`, or your username. The format is `<type>/<description>`, where the type is one of:
 
-- `feat` — a feature change
+- `feat`: a feature change
 
-- `fix` — a bug fix
+- `fix`: a bug fix
 
-- `hotfix` — an urgent bug fix
+- `hotfix`: an urgent bug fix
 
-- `release` — release preparation
+- `release`: release preparation
 
-- `chore` — updates and documentation changes
+- `chore`: updates and documentation changes
 
-The description should be short and specific — the feature name, the fix in broad terms, or the semantic version tag for a release. Use only lowercase letters, numbers, and dashes, and do not begin or end the description with a dash.
+The description should be short and specific: the feature name, the fix in broad terms, or the semantic version tag for a release. Use only lowercase letters, numbers, and dashes, and do not begin or end the description with a dash.
 
 ### Open a pull request
 
@@ -111,7 +111,7 @@ A branch only adds value once it merges into `main`. A pull request gets your wo
 
 1. Push your branch. The repository site shows a banner offering to open a pull request; click it.
 
-2. Add a title — an expanded version of your branch description, written as a short phrase with spaces and capitalization.
+2. Add a title, an expanded version of your branch description, written as a short phrase with spaces and capitalization.
 
 3. Fill in the description using this template:
 
@@ -136,12 +136,12 @@ A branch only adds value once it merges into `main`. A pull request gets your wo
 
 What to put in each field:
 
-- **Checklist** — Confirm the commit messages follow the conventions above. Tests and docs are not strict requirements yet, but add them where you can; they are best practice.
+- **Checklist**: Confirm the commit messages follow the conventions above. Tests and docs are not strict requirements yet, but add them where you can; they are best practice.
 
-- **Kind of change** — Feature, bug fix, hotfix, release, or chore, as with branch names.
+- **Kind of change**: Feature, bug fix, hotfix, release, or chore, as with branch names.
 
-- **Current behavior** — How the program handles the functionality you are changing today.
+- **Current behavior**: How the program handles the functionality you are changing today.
 
-- **New behavior** — What is changing, from the overall effect down to the components affected. List the modules and rough changes, not every file.
+- **New behavior**: What is changing, from the overall effect down to the components affected. List the modules and rough changes, not every file.
 
-- **Breaking change** — Note any change to API endpoints, design, or functionality so users can prepare. A breaking change may warrant a release schedule and advance notice to customers.
+- **Breaking change**: Note any change to API endpoints, design, or functionality so users can prepare. A breaking change may warrant a release schedule and advance notice to customers.

@@ -11,48 +11,46 @@ Baltimore, MD 21202.
 
 ## Facility details
 
-- **Rooms:** Main Room (#1), seats 40; Break Room (#2), food service only.
+The Lab has two rooms: the Main Room (#1) seats 40, and the Break Room (#2) is
+for food service only. It is open Monday–Friday, 8:00 a.m.–5:00 p.m.
 
-- **Hours:** Monday–Friday, 8:00 a.m.–5:00 p.m.
+You may enter 30 minutes before your event. The entry procedure and door code
+are in the internal Idea Lab booking guide (SharePoint link to come); if you
+don't have it, ask AdminOps.
 
-- **Access:** You may enter 30 minutes before your event. The entry procedure
-  and door code are in the internal Idea Lab booking guide (SharePoint link to
-  come); if you don't have it, ask AdminOps.
+The Lab is retrofitted with new AV equipment. You are responsible for arranging
+training and tech support with BMORE IT directly, before your meeting date:
 
-- **AV equipment:** The Lab is retrofitted with new equipment. You are
-  responsible for arranging training and tech support with BMORE IT directly,
-  before your meeting date:
+- Sean Kammer: sean.kammer@baltimorecity.gov
 
-  - Sean Kammer: sean.kammer@baltimorecity.gov
-
-  - Elise Gillespie: Elise.Gillespie@baltimorecity.gov
+- Elise Gillespie: Elise.Gillespie@baltimorecity.gov
 
 ## Group responsibilities
 
-- **Food and beverages:** Set-up is permitted only in Break Room #2. Report any
-  food or beverage spillage, or any breakage of tables or AV equipment, to the
-  Idea Lab Coordinator. Failure to report may result in extended closure for
-  cleaning and repairs, and in agency costs.
+Food and beverage set-up is permitted only in Break Room #2. Report any food or
+beverage spillage, or any breakage of tables or AV equipment, to the Idea Lab
+Coordinator. Failure to report may result in extended closure for cleaning and
+repairs, and in agency costs.
 
-- **Supplies:** Bring your own meeting supplies. The Lab does not provide or sell
-  snacks, coffee, food, easels, tablecloths, markers, or flip charts.
+Bring your own meeting supplies. The Lab does not provide or sell snacks,
+coffee, food, easels, tablecloths, markers, or flip charts.
 
-- **At the end of your meeting:**
+At the end of your meeting:
 
-  - Leave the facility clean.
+- Leave the facility clean.
 
-  - Straighten the chairs and tables and return them to their original
-    positions.
+- Straighten the chairs and tables and return them to their original
+  positions.
 
-  - Erase the whiteboards with cleaner, removing all meeting work product.
+- Erase the whiteboards with cleaner, removing all meeting work product.
 
-  - Remove all meeting materials; nothing may be stored in the Idea Lab.
+- Remove all meeting materials; nothing may be stored in the Idea Lab.
 
-  - Place all used bottles, cups, and cans in the trash receptacles in the
-    Break Room area only.
+- Place all used bottles, cups, and cans in the trash receptacles in the
+  Break Room area only.
 
-  - Report any damage (broken tables or chairs, carpet spillage) to Jeanine
-    Murphy. Replacement costs are charged to the reserving agency.
+- Report any damage (broken tables or chairs, carpet spillage) to Jeanine
+  Murphy. Replacement costs are charged to the reserving agency.
 
 ## Reservation form (sign and return)
 

@@ -1,8 +1,8 @@
 # CitiStat Templates
 
-{{ page_header(summary="Stakeholder agendas, materials send-out standards, and the deliverable-type vocabulary that supports every Stat.", category="TEMPLATES", tagline="The recurring artifacts that sit alongside the Method Playbook — generic by design, ready to adapt.") }}
+{{ page_header(summary="Stakeholder agendas, materials send-out standards, and the deliverable-type vocabulary that supports every Stat.", category="TEMPLATES", tagline="The recurring artifacts that sit alongside the Method Playbook: generic by design, ready to adapt.") }}
 
-Templates are intentionally generic — names, dates, and content are placeholders to be replaced for each Stat.
+Templates are intentionally generic. Names, dates, and content are placeholders to be replaced for each Stat.
 
 ## Stakeholder agenda templates
 
@@ -36,7 +36,7 @@ Use 5 to 8 days before each Stat. Length is typically 45 minutes.
 
 ### Debrief agenda
 
-Use within 24 hours after each Stat. Length is typically 30 minutes. For agency-based Stats, hold two debriefs — one with the agency, one with Mayor's Office leadership — as described in the Method Playbook.
+Use within 24 hours after each Stat. Length is typically 30 minutes. For agency-based Stats, hold two debriefs, one with the agency and one with Mayor's Office leadership, as described in the Method Playbook.
 
 | **Time**     | **Topic**                                                                                                                                                          |
 |--------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -87,15 +87,15 @@ Every follow-up recorded in the follow-up memo and tracker uses one of eight sta
 | Meeting                  | A working session is required to align stakeholders, resolve a question, or sequence next steps.                                           |
 | New Workgroup/Project    | The issue is large enough to warrant a chartered workgroup, tiger team, or project with its own owner, scope, and end date.                |
 | Stat-Agenda Item         | The issue should return as a discussion topic at a future Stat, with a defined frame, data, and decision needed.                           |
-| Stat-Report-Out          | The deliverable is a structured update from the agency at a future Stat — typically a status, dashboard, or progress brief.                |
+| Stat-Report-Out          | The deliverable is a structured update from the agency at a future Stat, typically a status, dashboard, or progress brief.                |
 | To-Do                    | A discrete operational action with a clear owner, due date, and definition of done.                                                        |
-| Written Update (formal)  | A formal written update, often to leadership or external stakeholders, beyond an email — for example, a memo packet, brief, or report.     |
+| Written Update (formal)  | A formal written update, often to leadership or external stakeholders, beyond an email, such as a memo packet, brief, or report.     |
 
 Each deliverable type pairs with an evidence standard in the follow-up tracker so closure is unambiguous: the email itself, the memo, the meeting notes and decisions, the workgroup charter, the next Stat agenda, the report-out artifact, the verified action, or the formal document.
 
 ## Stat artifact templates
 
-Templates should create consistency without creating bureaucracy. Use them to make the work easier to prepare, easier to review, and easier to sustain. The templates below are for the artifacts produced inside a Stat — the pre-memo, the deck, the follow-up memo, the follow-up tracker, and the weekly status report. Every artifact below pairs with a checklist on the [CitiStat Quality Standards](quality-standards.md) page.
+Templates should create consistency without creating bureaucracy. Use them to make the work easier to prepare, easier to review, and easier to sustain. The templates below are for the artifacts produced inside a Stat: the pre-memo, the deck, the follow-up memo, the follow-up tracker, and the weekly status report. Every artifact below pairs with a checklist on the [CitiStat Quality Standards](quality-standards.md) page.
 
 !!! note "Where to get the fillable files"
     This page documents each template's structure. The current fillable versions are controlled documents in the internal SharePoint template library at **Playbooks and Methods › CitiStat › Templates**. Retrieve the file from SharePoint before each Stat so you are always working from the latest controlled version. *(SharePoint links to be added once the library is published.)*
@@ -162,5 +162,5 @@ Templates should create consistency without creating bureaucracy. Use them to ma
 
 ## See also
 
-- [CitiStat Method Playbook](method-playbook.md) — the operating standards these templates support.
-- [CitiStat Quality Standards](quality-standards.md) — the QA bar every template output must meet.
+- [CitiStat Method Playbook](method-playbook.md): the operating standards these templates support.
+- [CitiStat Quality Standards](quality-standards.md): the QA bar every template output must meet.

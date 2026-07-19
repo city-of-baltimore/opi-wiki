@@ -10,7 +10,7 @@ Residents do not experience government as an organization chart. They experience
 
 They call 311. They apply for a permit. They wait for a service request to close. They try to understand why something was denied, delayed, redirected, or repeated. They navigate forms, phone numbers, websites, inspections, field crews, departments, and policies that may make sense inside government but feel confusing from the outside.
 
-That is where civic design begins. And that is what makes civic design — not novelty, not technology for its own sake — the actual core of innovation in city government.
+That is where civic design begins. And that is what makes civic design, not novelty or technology for its own sake, the actual core of innovation in city government.
 
 Innovation is one of the most overused words in our field. It can mean almost anything: a new app, a brainstorming session, a pilot, a press release, a vendor demo, or a room full of smart people talking about the future. That is not enough for Baltimore. At the Mayor’s Office of Performance and Innovation, innovation has to mean something more disciplined and more useful. Innovation is the practice of identifying service delivery problems, designing with the people closest to them, testing practical solutions, and implementing improvements that make government work better for residents and staff.
 
@@ -32,7 +32,7 @@ That matters because many city service problems live in the seams. One departmen
 
 ## Why the Innovation Lab exists
 
-The Innovation Lab is OPI’s citywide service improvement capability — and the institutional home where civic design becomes delivery. It brings together human-centered design, product management, civic technology, responsible AI pilots, strategic partnerships, and disciplined delivery methods to help agencies improve how services work.
+The Innovation Lab is OPI’s citywide service improvement capability, and the institutional home where civic design becomes delivery. It brings together human-centered design, product management, civic technology, responsible AI pilots, strategic partnerships, and disciplined delivery methods to help agencies improve how services work.
 
 The Lab exists because many of the problems residents feel every day are not caused by a lack of commitment. They are caused by systems that were not designed around the people using them. A resident may not know which agency owns a request. Staff may be working across systems that do not speak to each other. A supervisor may not have the data needed to manage a backlog. A process may have been built over years through workarounds instead of intentional design. These are design problems, data problems, workflow problems, and ownership problems. They require more than a meeting. They require a method.
 
@@ -70,7 +70,7 @@ That is the standard we are building toward in Baltimore. We want an Innovation 
 
 This is why OPI exists. We use data and design to improve city services in ways that residents and public servants can see and feel. That means the work cannot stop at insight. It has to become a better form, a better route, a better handoff, a better message, a better decision, a better service.
 
-Better government is not a one-time project. It is a discipline. Innovation is one of the ways we practice that discipline — not as theater, but as civic design in action, every day, in every system, for every resident.
+Better government is not a one-time project. It is a discipline. Innovation is one of the ways we practice that discipline, not as theater but as civic design in action, every day, in every system, for every resident.
 
 *With gratitude and resolve,*
 
@@ -88,8 +88,8 @@ A Tiger Team is where civic design becomes operational. The team does not simply
 
 ## Read Alongside
 
-**Innovation Lab Strategy —** *how the Lab operates, what it owns, and priorities.*
+**Innovation Lab Strategy:** *how the Lab operates, what it owns, and priorities.*
 
-**Digital Product Methodology —** *how OPI designs, builds, and ships digital products.*
+**Digital Product Methodology:** *how OPI designs, builds, and ships digital products.*
 
-**About OPI: Innovation Lab —** *who is on the team and how to engage them.*
+**About OPI: Innovation Lab:** *who is on the team and how to engage them.*

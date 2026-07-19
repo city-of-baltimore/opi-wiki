@@ -6,9 +6,9 @@ A short, plain-language guide for OPI staff. Pairs with the full Operating Model
 
 ## OPI in one sentence
 
-> *OPI combines performance, data, design, and delivery to help Baltimore City improve services in ways residents and staff can see and feel.*
+OPI combines performance, data, design, and delivery to help Baltimore City improve services in ways residents and staff can see and feel.
 
-We are the Mayor’s Office of Performance and Innovation, a small office inside the City Administrator’s Office. Our job: when residents call 311, apply for a permit, or rely on trash collection, those services work — and city staff have the routines, data, and tools to keep them working.
+We are the Mayor’s Office of Performance and Innovation, a small office inside the City Administrator’s Office. Our job is simple to state: when residents call 311, apply for a permit, or rely on trash collection, those services work, and city staff have the routines, data, and tools to keep them working.
 
 ## How we are organized
 
@@ -18,7 +18,7 @@ OPI is organized into four teams. Each portfolio has a clear lead and a clear sc
 
 | **Portfolio**                  | **Lead**                                       | **What it does**                                                                                                       |
 |--------------------------------|------------------------------------------------|------------------------------------------------------------------------------------------------------------------------|
-| Director’s Office | {{ role_holder("Chief of Staff") }}, Chief of Staff                   | Operating backbone: intake, portfolio visibility, communications, knowledge management, fiscal, HR, facilities, and officewide coordination. |
+| Director’s Office | {{ role_holder("Chief of Staff") }}, Chief of Staff                   | Keeps the office running: intake, portfolio visibility, communications, knowledge management, fiscal, HR, facilities, and officewide coordination. |
 | Performance       | {{ role_holder("Deputy Chief Performance Officer") }}, Deputy Chief Performance Officer | Owns the performance method: CitiStat routines, agency performance plans, KPI standards, follow-up.                   |
 | Data and Analytics             | {{ role_holder("Deputy Chief Data Officer") }}, Deputy Chief Data Officer   | Builds trusted data infrastructure: analytics, data platform, data engineering, open data, governance, AI readiness.  |
 | Innovation Lab                 | {{ role_holder("Innovation Program Manager") }}, Innovation Program Manager | Turns service problems into designed, testable solutions: HCD, product discovery, civic tech, AI pilots, partnerships, and Tiger Teams. |
@@ -93,7 +93,7 @@ OPI uses a single front door. Every request, whether from agencies, from leaders
 |-----------------------------|-----------------------------------------------------------------------------------------------------------------|
 | Weekly Ops Review           | Each portfolio reports RAG status, top risks, next two weeks. Time-boxed; decisions and unblocks captured live. |
 | Monthly Portfolio Council   | Cross-portfolio review of the Project Directory. Sequencing, risks, change control.                             |
-| Monthly CitiStat sessions   | Each priority Stat — memo, meeting, commitments, follow-up.                                                     |
+| Monthly CitiStat sessions   | Each priority Stat: memo, meeting, commitments, follow-up.                                                     |
 | Quarterly leadership review | Strategic priorities, service-level targets, staffing, partnerships, budget.                                    |
 | Annual planning             | Strategic Priorities update, FY budget submission, Foundations document refresh.                                |
 
@@ -109,17 +109,7 @@ OPI uses a single front door. Every request, whether from agencies, from leaders
 
 ## How the services interlock
 
-OPI’s services work as a cycle, not as silos.
-
-**CitiStat surfaces what is not working.** Through the monthly Stat routine, performance memos, and follow-up tracking.
-
-**Citywide Data and Analytics explains why.** Through trustworthy datasets, analytics products, and data governance.
-
-**The Innovation Lab redesigns what comes next.** Through human-centered design, prototyping, Tiger Teams, and digital service work.
-
-**Cross-Agency Delivery coordinates the work.** Through delivery reviews, weekly cadences, and unblock decisions.
-
-**AdminOps keeps it organized.** Through portfolio visibility, intake, QA, communications, and knowledge management.
+OPI’s services work as a cycle, not as silos. CitiStat surfaces what is not working, through the monthly Stat routine, performance memos, and follow-up tracking. Citywide Data and Analytics explains why, with trustworthy datasets, analytics products, and data governance. The Innovation Lab redesigns what comes next, through human-centered design, prototyping, Tiger Teams, and digital service work. Cross-Agency Delivery coordinates the work across delivery reviews, weekly cadences, and unblock decisions. And AdminOps keeps it organized, through portfolio visibility, intake, QA, communications, and knowledge management.
 
 ## What this means for you
 
@@ -135,7 +125,7 @@ OPI’s services work as a cycle, not as silos.
 
 ## Where to learn more
 
-- OPI Foundations Document Set — onboarding, operations, performance standards, charters, intake SOP.
+- OPI Foundations Document Set: onboarding, operations, performance standards, charters, intake SOP.
 
 - CitiStat Method Playbook.
 

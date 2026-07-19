@@ -1,4 +1,4 @@
-# PD — Innovation Program Manager
+# PD: Innovation Program Manager
 
 {{ page_header(summary="Position description for the Innovation Program Manager.") }}
 
@@ -15,7 +15,7 @@
 
 ## Position Summary
 
-The Innovation Program Manager leads the day-to-day operations of OPI’s Innovation Lab, the portfolio that takes service problems surfaced by CitiStat or Director’s Office sponsorship and turns them into tested, adopted solutions. The role runs the Lab’s intake, scoping, and delivery routines; orchestrates tiger teams; sponsors civic-tech and service-design work; and coaches Lab staff (Civic Designer, Applied Data Scientist, and Full Stack Engineer) toward decision-ready outcomes.
+The Innovation Program Manager leads the day-to-day operations of OPI’s Innovation Lab, the portfolio that takes service problems raised by CitiStat or Director’s Office sponsorship and turns them into tested, adopted solutions. The role runs the Lab’s intake, scoping, and delivery routines; orchestrates tiger teams; sponsors civic-tech and service-design work; and coaches Lab staff (Civic Designer, Applied Data Scientist, and Full Stack Engineer) toward decision-ready outcomes.
 
 Reporting to the Executive Director and Chief Data Officer, the Innovation Program Manager partners closely with the Deputy Chief Performance Officer (CitiStat handoffs) and the Deputy Chief Data Officer (data and product collaboration). The role ensures Lab projects are framed for adoption from day one, evaluated honestly, and either scaled, sustained by the agency owner, or sunset with a clear lessons-learned record.
 
@@ -35,7 +35,7 @@ Reporting to the Executive Director and Chief Data Officer, the Innovation Progr
 
 - Stand up tiger teams against priority service problems with the Director’s Office; appoint delivery leads, set milestones, and run checkpoints.
 
-- Facilitate planning sessions, working sessions, and retrospectives; surface blockers and route decisions to the Executive Director or City Administrator as appropriate.
+- Facilitate planning sessions, working sessions, and retrospectives; raise blockers and route decisions to the Executive Director or City Administrator as appropriate.
 
 - Partner with CitiStat to convert Stat findings into delivery work where the bar for tiger-team activation is met.
 

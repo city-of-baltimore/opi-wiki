@@ -4,7 +4,7 @@
 
 Health, leave, retirement, and time-off benefits for OPI staff covered by the MAPS agreement.
 
-> *This guide is a quick reference. For authoritative answers, consult the MAPS agreement and Baltimore City Human Resources. Plan years, deductibles, and contribution rates may change, so confirm with HR before making decisions.*
+This guide is a quick reference. For authoritative answers, consult the MAPS agreement and Baltimore City Human Resources. Plan years, deductibles, and contribution rates change, so confirm with HR before you make decisions.
 
 ## Who this is for
 
@@ -12,11 +12,7 @@ This guide summarizes core benefits, leave, and retirement provisions for OPI st
 
 ## Health and wellness benefits
 
-**Eligibility.** Employees working 20 or more hours per week.
-
-**Enrollment window.** Within 45 days of hire.
-
-**Coverage typically begins.** First day of the month following your hire date.
+You are eligible if you work 20 or more hours per week. Enroll within 45 days of hire. Coverage typically begins on the first day of the month after your hire date.
 
 ### Medical and insurance
 
@@ -62,7 +58,7 @@ This guide summarizes core benefits, leave, and retirement provisions for OPI st
 
 **Eligibility.** Begins after one year of employment.
 
-### Employee contribution — 401(a)
+### Employee contribution: 401(a)
 
 5 percent of pay is deducted automatically, pre-tax.
 
@@ -104,13 +100,7 @@ Confirm current City contribution rates and vesting schedule with HR.
 
 ## Where to go for help
 
-**Benefits questions.** City Human Resources through Workday.
-
-**Pay and timekeeping.** Your AdminOps point of contact and the City payroll team.
-
-**MAPS-specific questions.** Your MAPS representative or City HR.
-
-**Retirement details.** The City retirement office.
+Take benefits questions to City Human Resources through Workday. For pay and timekeeping, go to your AdminOps point of contact and the City payroll team. For MAPS-specific questions, ask your MAPS representative or City HR. For retirement details, contact the City retirement office.
 
 ## Important reminders
 
@@ -124,4 +114,4 @@ Confirm current City contribution rates and vesting schedule with HR.
 
 - This guide summarizes provisions. The MAPS agreement and City HR are authoritative.
 
-*Reference summary, current as of July 2026. It summarizes provisions only — the MAPS agreement and City HR are the authoritative sources.*
+*Reference summary, current as of July 2026. It summarizes provisions only; the MAPS agreement and City HR are the authoritative sources.*

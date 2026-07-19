@@ -2,17 +2,13 @@
 
 {{ page_header(summary="The full Cross-Agency Delivery method: governance, service levels, engagement model, and theory of change.", category="OPI · SERVICE DEFINITION", tagline="How we move work that no single agency can deliver alone.") }}
 
-## North Star
+## Goal
 
-**Multi-agency commitments that ship, get used, and stick.**
+Multi-agency commitments that ship, get used, and stick. Cross-Agency Delivery is a coordinating service supported by all of OPI rather than a standalone team with its own staff and budget. We coordinate selected high-priority initiatives that require action across multiple agencies, and we help leadership and agencies resolve cross-agency barriers, clarify ownership, sequence implementation, and deliver improvements no department can accomplish alone.
 
-Cross-Agency Delivery is a coordinating service supported by all of OPI rather than a standalone team with its own staff and budget. We coordinate selected high-priority initiatives that require action across multiple agencies. We help leadership and agencies resolve cross-agency barriers, clarify ownership, sequence implementation, and deliver improvements no department can accomplish alone.
-
-> *Performance management often fails because the people in the room can analyze the problem but cannot change the conditions that produce it. Delivery is where conditions change.*
+Performance management often fails because the people in the room can analyze a problem but cannot change the conditions that produce it. Delivery is where those conditions change.
 
 ## Service Definition
-
-**What this service does**
 
 This service coordinates selected high-priority initiatives and service delivery challenges that require action across multiple city agencies. The goal is to help city leadership and agencies resolve cross-agency barriers, clarify ownership, sequence implementation, and deliver improvements that no single department can accomplish alone.
 
@@ -22,43 +18,23 @@ Activities performed by this service include standing up delivery routines and t
 
 ### What we heard, what we have aligned on
 
-*Cross-Agency Delivery is supported by all of OPI. It draws people, methods, and authority from across the office and convenes them around a specific cross-agency outcome. These are the principles we operate by.*
+Cross-Agency Delivery is supported by all of OPI. It draws people, methods, and authority from across the office and convenes them around a specific cross-agency outcome. These are the principles we operate by.
 
 ### Why this work matters
 
-- The hardest problems in city government are cross-agency by nature: permitting, vacants, overdose response, workforce, public safety. No single department can fix them alone.
-
-- Without a coordinating owner, cross-agency work defaults to the agency with the loudest stakeholder, not the one with the right ownership.
-
-- Delivery is where conditions change. Stat surfaces the problem; delivery resolves it.
-
-- Communities feel the failure of coordination. They do not care which agency owns what. They want the service to work.
+The hardest problems in city government are cross-agency by nature: permitting, vacants, overdose response, workforce, public safety. No single department can fix them alone, and without a coordinating owner the work defaults to the agency with the loudest stakeholder rather than the one with the right ownership. Stat surfaces the problem; delivery is where conditions change and the problem gets resolved. Communities feel the failure of coordination. They do not care which agency owns what. They want the service to work.
 
 ### How we operate
 
-- Convene the right people at the right moment. Our craft is recognizing when a problem needs a room, who belongs in it, and what decision the room owes back.
+We convene the right people at the right moment. The work is recognizing when a problem needs a room, who belongs in it, and what decision the room owes back. We clarify ownership before we clarify the plan, because multi-agency owner clarity is the gating step; without it, every plan is theater.
 
-- Clarify ownership before we clarify the plan. Multi-agency owner clarity is the gating step. Without it, every plan is theater.
+We favor Tiger Teams over standing committees: time-boxed, outcome-owned, with a named Authorizer and exit criteria. The Innovation Lab provides the team and the method, and Cross-Agency Delivery provides the standing delivery review and the closure plan. We hold documentation discipline through charters, decision logs, follow-up memos, and SOPs that survive personnel changes.
 
-- Tiger Teams over standing committees. Time-boxed, outcome-owned, with a named Authorizer and exit criteria. The Innovation Lab provides the team and the method; Cross-Agency Delivery provides the standing delivery review and the closure plan.
-
-- Documentation discipline: charters, decision logs, follow-up memos, and SOPs that survive personnel changes.
-
-- Sustain is the success measure, not launch. Improvements only count if agencies can run them after we leave.
-
-- We do not own agency workflows. City Hall owns the user experience, OPI owns the data and method, agencies own the workflow, BCIT owns the infrastructure.
+Sustainment is the success measure, not launch. Improvements only count if agencies can run them after we leave. We do not own agency workflows: City Hall owns the user experience, OPI owns the data and method, agencies own the workflow, and BCIT owns the infrastructure.
 
 ### When we activate
 
-- A priority outcome with a named Authorizer at the Deputy Mayor or City Administrator level.
-
-- Cross-agency dependencies that have stalled in normal channels.
-
-- A reasonable theory of change with measurable milestones.
-
-- A 90-day-or-more horizon. Short-cycle issues route to Stat, not delivery.
-
-> *We resist the urge to take over agency work. Instead, we build systems that help agencies own and sustain change.*
+We activate for a priority outcome with a named Authorizer at the Deputy Mayor or City Administrator level, where cross-agency dependencies have stalled in normal channels and there is a reasonable theory of change with measurable milestones. The horizon is 90 days or more; short-cycle issues route to Stat, not delivery. We resist the urge to take over agency work, and instead build systems that help agencies own and sustain change.
 
 ### 1. Service overview
 
@@ -85,7 +61,7 @@ We do not run delivery reviews for everything. Cross-Agency Delivery activates o
 
 - Expected duration is 90+ days, or a critical procurement / authority gap requires sequencing.
 
-- A sustainment owner is identified before activation closes — we do not start what cannot be sustained.
+- A sustainment owner is identified before activation closes, because we do not start what cannot be sustained.
 
 ### 3. Engagement model
 
@@ -130,15 +106,15 @@ We do not run delivery reviews for everything. Cross-Agency Delivery activates o
 
 ### 7. Metrics, targets, and learning
 
-- Activation discipline — share of activations with current charters, named SROs, and active Authorizers.
+- Activation discipline: share of activations with current charters, named SROs, and active Authorizers.
 
-- Cadence reliability — weekly delivery reviews held; commitment closure rate; blocker escalation lead time.
+- Cadence reliability: weekly delivery reviews held; commitment closure rate; blocker escalation lead time.
 
-- Milestone delivery — share of activations hitting their primary milestone within 90 days of charter.
+- Milestone delivery: share of activations hitting their primary milestone within 90 days of charter.
 
-- Sustainment quality — share of closed activations still meeting target outcomes 12 months later.
+- Sustainment quality: share of closed activations still meeting target outcomes 12 months later.
 
-- Decision velocity — Authorizer decision SLA met (target: 10 business days for non-routine decisions).
+- Decision velocity: Authorizer decision SLA met (target: 10 business days for non-routine decisions).
 
 ### 8. Handoffs and synergies across OPI services
 
@@ -170,6 +146,6 @@ We do not run delivery reviews for everything. Cross-Agency Delivery activates o
 
 ## Relationship to the Innovation Lab
 
-Cross-Agency Delivery does not replace the Innovation Lab. The Lab owns the craft of solving: discovery, design, prototyping, civic technology, product management, and MVP-and-handoff. Cross-Agency Delivery owns the coordination layer when multiple agencies need to move together: Authorizer, Senior Responsible Owner, decision rights, escalation, commitment tracking, and sustainment commitments.
+Cross-Agency Delivery does not replace the Innovation Lab. The Lab owns the work of solving: discovery, design, prototyping, civic technology, product management, and MVP-and-handoff. Cross-Agency Delivery owns the coordination layer when multiple agencies need to move together: Authorizer, Senior Responsible Owner, decision rights, escalation, commitment tracking, and sustainment commitments.
 
 When a Tiger Team needs cross-agency authority, the Lab provides the team and method while Cross-Agency Delivery provides the activation, cadence, and closure discipline.

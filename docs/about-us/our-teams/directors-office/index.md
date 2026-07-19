@@ -1,10 +1,8 @@
 # Director's Office
 
-> The Executive Director's office, plus the AdminOps function that runs the operational backbone of OPI.
+The Executive Director's office, plus the AdminOps function that keeps OPI running day to day.
 
-The Director's Office sets direction, coordinates executive work, and owns the AdminOps function beneath it. The team includes the Executive Director,
-Chief of Staff, Project Manager, Data Storyteller, and the AdminOps routines
-that keep the office aligned.
+The Director's Office sets direction, coordinates executive work, and owns the AdminOps function beneath it. The team includes the Executive Director, Chief of Staff, Project Manager, and Data Storyteller, along with the AdminOps routines that keep the office aligned.
 
 ## Pages in this section
 
