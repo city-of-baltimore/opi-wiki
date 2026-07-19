@@ -45,7 +45,7 @@ dev = [
     # instead of it. The two cover different ground and 0.4.1 does not subsume
     # the local guard — see the "Two checkers" note in that module's docstring
     # for the gaps that were re-measured against 0.4.1.
-    "baltimore-patapsco==0.4.1",
+    "baltimore-patapsco==0.4.2",
 ]
 
 [tool.pytest.ini_options]
