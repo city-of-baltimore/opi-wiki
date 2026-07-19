@@ -86,7 +86,7 @@ wheels = [
 
 [[package]]
 name = "baltimore-patapsco"
-version = "0.4.2"
+version = "0.4.3"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "asgiref" },
@@ -94,9 +94,9 @@ dependencies = [
     { name = "djangorestframework" },
     { name = "drf-spectacular" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/43/7f/58a67193b62c1a8350693e4d312c5a83e77e653e4971fd51cb217480592e/baltimore_patapsco-0.4.2.tar.gz", hash = "sha256:36ddce781417503134acfcebc799e02d1c9491b2df905d9012307759245482bf", size = 85536, upload-time = "2026-07-19T21:05:00.589Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/bf/8f/03770f3a645da7302c4eb1ea86336b44faa7317d5c7061bf280ab20b580d/baltimore_patapsco-0.4.3.tar.gz", hash = "sha256:1c28f3587a18c8241e305330cc00a1cb847dede47b82bd9645b34a7dc6ff4b25", size = 89809, upload-time = "2026-07-19T22:50:14.734Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/6e/d1/9cfa4ad8ab893da8a2d1258c687cd618232ebab4d4f8b8ce7a0535a93930/baltimore_patapsco-0.4.2-py3-none-any.whl", hash = "sha256:da12acfeb5e395a37b7911a164a821a767031ae076ccbcc9cb07eec7d531ad9a", size = 98168, upload-time = "2026-07-19T21:04:59.495Z" },
+    { url = "https://files.pythonhosted.org/packages/d7/4e/c5dc213dddf7f69be9e890aa5b58fb1e465cfacf95be043a8bf4e5d3362e/baltimore_patapsco-0.4.3-py3-none-any.whl", hash = "sha256:095186445593e94ef62100888343eef7c5e262979e09f79e4d1671a78e6fb010", size = 103183, upload-time = "2026-07-19T22:50:13.563Z" },
 ]
 
 [[package]]
@@ -716,7 +716,7 @@ requires-dist = [
 
 [package.metadata.requires-dev]
 dev = [
-    { name = "baltimore-patapsco", specifier = "==0.4.2" },
+    { name = "baltimore-patapsco", specifier = "==0.4.3" },
     { name = "bandit", extras = ["toml"], specifier = ">=1.9.2,<2.0.0" },
     { name = "mypy", specifier = ">=2.1.0,<3.0.0" },
     { name = "playwright", specifier = ">=1.58.0,<2.0.0" },

@@ -68,16 +68,20 @@ Resolution is static on purpose in both: `task --dry` writes its plan to stderr,
 so a guard that shells out and reads stdout passes vacuously.
 
 **Do not delete the local guard as "duplicated by `platform-check`".** That has
-been attempted and measured twice, against 0.4.0 and again against 0.4.1. 0.4.1
-expands `npm` script and `.sh` bodies, but a **Python plan module** is still an
-opaque leaf, so a `pytest` step added to the `ci` tier of `build_steps()` passes
-it while the hosted lane really runs the suite — the same green-but-vacuous
-failure mode as the `task --dry` bug. Routing `ci` through `scripts/verify.sh`
-is missed for the same reason: the `.sh` body is read, then lands on the same
-Python wall. It also misses a missing `timeout-minutes`, an unallowlisted `run:`
-command, and an unpinned `uses:` ref. The retirement condition is in the "Two
-checkers" note in that module's docstring — and the injection matrix that
-produced these numbers is reproducible; re-run it on every pin bump.
+been attempted and measured three times, against 0.4.0, 0.4.1, and again against
+0.4.3. 0.4.3 expands `npm` script and `.sh` bodies and unwraps `bash -c`, but a
+**Python plan module** is still an opaque leaf, so a `pytest` step added to the
+`ci` tier of `build_steps()` passes it while the hosted lane really runs the
+suite — the same green-but-vacuous failure mode as the `task --dry` bug. Routing
+`ci` through `scripts/verify.sh` is missed for the same reason: the `.sh` body is
+read, then lands on the same Python wall. It also misses a missing
+`timeout-minutes` and an unpinned `uses:` ref, and its `run:` coverage is a
+denylist, so an arbitrary unallowlisted command still passes. Four of the five
+injected cases are still missed at 0.4.3; the one that closed (`curl … | sh`)
+closed in 0.4.2 and is a single denylist entry, not a structural fix. The
+retirement condition is in the "Two checkers" note in that module's docstring and
+is **not** met — and the injection matrix that produced these numbers is
+reproducible; re-run it on every pin bump.
 
 Because tests live pre-push, **the hook is the only backstop**. Run
 `./scripts/install-hooks.sh` after cloning. A broken test surfaces at

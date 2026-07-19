@@ -114,15 +114,17 @@ ruff/mypy/bandit configuration, and the pre-push hook — and it is the authorit
 on rules that span every sibling repo.
 
 The two are complementary, not redundant, and the split is measured rather than
-assumed — re-measured against `platform-check` 0.4.1, which expands `npm` and
+assumed — re-measured against `platform-check` 0.4.3, which expands `npm` and
 `.sh` bodies but still treats a **Python plan module** as an opaque leaf. It
 therefore does not see this repo's second indirection layer
 (`verify.py --plan ci`), including when that layer is reached through
-`scripts/verify.sh`; it also has no job-timeout rule and no workflow allowlist.
-The five cases it misses, and the two this repo's guard missed until 0.4.1
-exposed them, are documented in the "Two checkers" note in
+`scripts/verify.sh`; it also has no job-timeout rule, and its `run:` coverage is
+a denylist rather than an allowlist. Of the five injected cases, 0.4.3 misses
+four — one fewer than 0.4.1, because a piped `curl … | sh` joined the shared
+denylist in 0.4.2. Those four, and the forms this repo's own guard misses in the
+other direction, are documented in the "Two checkers" note in
 `scripts/check_hosted_ci_policy.py`, with the condition for retiring the local
-guard.
+guard — which 0.4.3 does not meet.
 
 Do not add a test, build, or browser step to the pull-request workflow, and do
 not add one to a task `ci` reaches. Add checks to `build_steps()` in
