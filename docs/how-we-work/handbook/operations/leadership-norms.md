@@ -6,33 +6,13 @@ Boundaries, rules, standards, and expectations for managers and people leaders a
 
 ## Purpose
 
-OPI operates at the intersection of performance, data, design, and delivery. Our effectiveness depends not only on analytical and technical skill, but on how we work together, how we make decisions, and how we protect trust with each other, with agencies, and within the Mayor’s Office.
+OPI works across performance, data, design, and delivery. How well we do depends not just on analytical and technical skill, but on how we work together, how we make decisions, and how we protect trust: with each other, with agencies, and within the Mayor’s Office.
 
-This document establishes a shared leadership operating model for OPI. It applies to all managers and people leaders, and is inherited across teams.
-
-**These norms exist to:**
-
-1.  Reduce ambiguity and friction.
-
-2.  Protect staff capacity and morale.
-
-3.  Ensure quality, follow-through, and credibility.
-
-4.  Enable candid, respectful, high-performance collaboration.
-
-5.  Make excellence repeatable, not personality-dependent.
+This document sets a shared way of leading at OPI. It applies to all managers and people leaders, and every team inherits it. The norms are here to reduce ambiguity and friction, protect staff capacity and morale, hold the line on quality and follow-through, make candid and respectful collaboration possible, and make good management repeatable rather than dependent on who happens to be in the room.
 
 ### How to use this document
 
-- **Boundaries:** Clarify what we do, what we do not, and who decides.
-
-- **Rules:** Define the non-negotiables.
-
-- **Standards:** Define what “good” looks like.
-
-- **Expectations:** Define how we show up.
-
-Together, they form OPI’s management and leadership baseline.
+The document is organized in four parts. Boundaries clarify what we do, what we do not, and who decides. Rules are the non-negotiables. Standards describe what good looks like. Expectations describe how we show up. Together they form OPI’s baseline for management and leadership.
 
 ## I. Boundaries
 
@@ -42,9 +22,7 @@ Boundaries protect focus, prevent burnout, and preserve organizational integrity
 
 ### Decision rights are respected
 
-- The Director’s Office approves commitments that affect scope, staffing, timelines, budget, or external positioning.
-
-- Deputies and managers do not contradict or override Director’s decisions in public or external settings. It keeps direction consistent and protects morale.
+The Director’s Office approves commitments that affect scope, staffing, timelines, budget, or how OPI is positioned externally. Deputies and managers do not contradict or override a Director’s decision in public or external settings. That keeps direction consistent and protects morale.
 
 ### No new work is accepted without vetting
 
@@ -80,7 +58,7 @@ No multi-agency work begins without a named Senior Responsible Owner (SRO).
 
 ### OPI does not own agency operations
 
-Agencies own service delivery. OPI convenes, analyzes, designs, enables, and unblocks.
+Agencies own service delivery. OPI convenes, analyzes, designs, helps agencies act, and clears blockers.
 
 ### OPI does not become a shadow operator
 
@@ -180,9 +158,7 @@ Any blocker lasting more than 48 hours appears in status with a clear ask.
 
 ### Delays are escalated early
 
-- If a deliverable is at risk, raise it within 24 hours of discovery.
-
-- There are no “surprise misses.”
+If a deliverable is at risk, raise it within 24 hours of discovery. There are no surprise misses.
 
 ### Planning and availability
 
@@ -190,9 +166,7 @@ Standards for planning, time off, and coverage.
 
 ### OOO calendars are mandatory
 
-- PTO is reflected on shared calendars.
-
-- Coverage is arranged for any deliverables due during absence.
+Time off goes on the shared calendars, and coverage is arranged for any deliverables due during an absence.
 
 ### PTO does not pause accountability
 
@@ -232,9 +206,7 @@ Commitments are tracked, closed, or renegotiated. Never forgotten.
 
 ### We work issues directly
 
-- Staff raise concerns with their manager first.
-
-- Managers coach performance. Issues are not litigated sideways or in groups.
+Staff raise concerns with their manager first. Managers coach performance. Issues are not argued sideways or aired in groups.
 
 ### No triangulation
 
@@ -242,7 +214,7 @@ Disagreements are handled directly and professionally, not through side conversa
 
 ### Leaders align before speaking externally
 
-Disagree in the room. Align outside it.
+Disagree inside the room. Once a decision is made, present it as one voice outside it.
 
 ### We trust but verify
 
@@ -284,12 +256,6 @@ These norms will be used in:
 
 ## Closing
 
-> *OPI is high-trust and high-standards.*
+At OPI we trust each other and hold a high bar. We move fast on purpose, not in chaos. We lead with candor and humility, rather than silence or side channels. And we measure ourselves by what we deliver, not by how busy we look.
 
-1. We move fast with intention, not chaos.
-
-2. We lead with candor and humility, not silence or side-channels.
-
-3. We deliver impact, not just activity.
-
-These norms exist to protect our people, our credibility, and our mission. We serve the public. We follow through. We do the work the right way.
+These norms protect our people, our credibility, and our mission. We serve the public, we follow through, and we do the work the right way.

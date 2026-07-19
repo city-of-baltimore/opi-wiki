@@ -1,6 +1,6 @@
 # Operations
 
-> Leadership norms, performance standards, the productivity playbook, QA, and the templates we use.
+Leadership norms, performance standards, the productivity playbook, QA, and the templates we use.
 
 ## Pages in this section
 

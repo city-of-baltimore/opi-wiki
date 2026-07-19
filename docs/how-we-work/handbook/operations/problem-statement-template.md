@@ -2,13 +2,11 @@
 
 {{ page_header(summary="A structured way to frame a problem before scoping a solution.", category="SERIES · OPI FOUNDATIONS") }}
 
-A one-to-three sentence framing that names what is failing and who feels it. Sharp problems make sharp work.
+One to three sentences that name what is failing and who feels it. The clearer the problem, the sharper the work that follows.
 
 ## Why we write problem statements
 
-A good problem statement is the cheapest piece of work in the entire project. Get it right and the rest of the project becomes obvious. Get it wrong and no amount of execution will save the outcome.
-
-> *A problem statement names what is failing and who feels it. It is not a diagnosis, a solution, or a press release.*
+A good problem statement is the cheapest piece of work in the whole project. Get it right and the rest becomes obvious. Get it wrong and no amount of execution will save the outcome. A problem statement names what is failing and who feels it. It is not a diagnosis, a solution, or a press release.
 
 ### What good looks like
 
@@ -38,7 +36,7 @@ Use this structure as your starting point. Once it works, edit for clarity.
 
 > *\[Population\] who \[verb / experience\] \[service or process\] \[face / wait / receive\] \[failure mode\], measured by \[metric or evidence\], with the result that \[consequence\].*
 
-### Worked example — 311 / Forestry
+### Worked example: 311 and Forestry
 
 - Population: residents who report tree damage after storms.
 
@@ -52,11 +50,11 @@ Use this structure as your starting point. Once it works, edit for clarity.
 
 > *Final form: “Residents who report tree damage after storms wait an average of 19 days for status. Forestry case loads spike by 3x and DPW receives duplicate complaints.”*
 
-### Worked example — Permitting
+### Worked example: Permitting
 
 > *“Small contractors applying for residential permits wait a median of 42 days for first review, against a target of 14 days. Two-thirds of applications need rework due to unclear requirements, which extends the cycle and erodes trust in the permitting system.”*
 
-### Worked example — Internal data access
+### Worked example: Internal data access
 
 > *“OPI analysts request operational data from agency systems via email and wait an average of 11 business days per request. The same datasets are requested repeatedly, with no cataloged official copy, which delays performance reviews and produces inconsistent metric definitions.”*
 
@@ -82,11 +80,7 @@ Use this structure as your starting point. Once it works, edit for clarity.
 
 ### Stress tests
 
-- **The “so what” test:** If we solve this, what changes?
-
-- **The “inaction cost” test:** If we ignore this for one more year, what happens?
-
-- **The “wrong problem” test:** Could a clever team produce a perfect solution to the wrong problem here?
+Put the statement through three quick tests. The so-what test: if we solve this, what actually changes? The inaction-cost test: if we ignore it for one more year, what happens? And the wrong-problem test: could a clever team build a perfect solution to the wrong problem here?
 
 ## Anti-patterns and rewrites
 
@@ -99,13 +93,7 @@ Use this structure as your starting point. Once it works, edit for clarity.
 
 ## Where this lives in the operating model
 
-- Project Directory — every accepted project has a problem statement field.
-
-- Charter — the problem statement opens the charter and is rarely changed without sponsor and authorizer acknowledgment.
-
-- Stat artifacts — commitments out of Stat reference the underlying problem statement.
-
-- Decision memos — the problem statement is the first paragraph.
+The problem statement shows up in a few places. Every accepted project carries one in the Project Directory. It opens the charter, where it is rarely changed without the sponsor and authorizer acknowledging the change. Commitments coming out of a Stat point back to it. And in a decision memo, it is the first paragraph.
 
 ## Owner
 

@@ -34,7 +34,7 @@ Executive sponsor: Mayor Brandon M. Scott via City Administrator Faith P. Leach.
 
 ## Roster by Team
 
-*Contacts below are City work email and work phone lines; PIN is the City payroll identifier. This roster is generated from the [canonical people directory](../../../_data/people.yml) — one file that also drives the [org chart](../org-structure.md) and the [position-description index](../../../resources/reference/position-descriptions/index.md).*
+*Contacts below are City work email and work phone lines; PIN is the City payroll identifier. This roster is generated from the [canonical people directory](../../../_data/people.yml), one file that also drives the [org chart](../org-structure.md) and the [position-description index](../../../resources/reference/position-descriptions/index.md).*
 
 {{ people("roster") }}
 
@@ -44,7 +44,7 @@ Executive sponsor: Mayor Brandon M. Scott via City Administrator Faith P. Leach.
 
 ## Contractors and the BIC engagement
 
-OPI embeds contractors alongside City staff. Contractors hold no PIN and are not part of the position count. Onshore contractors and the offshore Baltimore Intelligence Center (BIC) delivery team are color-coded on the [org chart](../org-structure.md) — purple for contractors, gray for offshore contractors. Contractors do not have position descriptions.
+OPI embeds contractors alongside City staff. Contractors hold no PIN and are not part of the position count. Onshore contractors and the offshore Baltimore Intelligence Center (BIC) delivery team are color-coded on the [org chart](../org-structure.md): purple for contractors, gray for offshore contractors. Contractors do not have position descriptions.
 
 {{ people("contractors") }}
 

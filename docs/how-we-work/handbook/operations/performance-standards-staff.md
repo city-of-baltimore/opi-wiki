@@ -2,7 +2,7 @@
 
 {{ page_header(summary="What performance looks like for individual contributors at OPI.", category="SERIES · OPI FOUNDATIONS") }}
 
-Staff distribution. Eight core dimensions, role craft, evidence-based ratings, and a fair calibration process.
+For all staff. Eight core dimensions plus role-specific ones, ratings anchored to evidence, and a calibration process built to be fair.
 
 EFFECTIVE
 :   July 1, 2026
@@ -18,31 +18,15 @@ This guide complements City performance management and HR procedures. It does no
 
 ## The OPI Way
 
-OPI is not a typical agency. We operate as a high-trust, high-output delivery unit. Our work is used by senior leaders, partner agencies, and sometimes the public. We protect OPI’s credibility through disciplined craft, accurate analysis, clear communication, and documented decisions.
+OPI is not a typical agency. We trust each other, we hold a high bar, and we ship a lot. Our work is used by senior leaders, partner agencies, and sometimes the public. We protect OPI’s credibility through careful work, accurate analysis, clear communication, and documented decisions.
 
-- **Evidence over opinion:** Ratings are anchored to deliverables and outcomes.
-
-- **No surprises:** Escalate risk early. Close the loop.
-
-- **Tested and ready:** We do not ship unvetted work.
-
-- **Documented by default:** If it is not documented, it is not durable.
-
-- **Candid and respectful:** We say the true thing kindly and early.
+A few habits carry most of that weight. We anchor ratings to what was delivered, not to opinion. We escalate risk early and close the loop, so there are no surprises. We do not ship work that has not been tested. We document as we go, because anything undocumented is lost the moment someone moves on. And we say the true thing kindly and early.
 
 ## How to use this guide
 
-- Start-of-cycle alignment on priorities and expectations.
+The guide runs across the full performance cycle. It sets priorities and expectations at the start, keeps work visible through quarterly check-ins, brings in partner perspective at the mid-cycle 360-lite, drives the end-of-cycle review, and holds ratings consistent across teams through leadership calibration.
 
-- Quarterly check-ins to keep work visible and reduce rework.
-
-- Mid-cycle 360-lite to surface partner perspective.
-
-- End-of-cycle performance reviews.
-
-- Leadership calibration to ensure consistency across teams.
-
-> *A 3 is the bar. Strong, reliable OPI-standard performance. 4 and 5 are reserved for performance that clearly exceeds role expectations and raises the bar for others.*
+One thing to keep in mind throughout: a 3 is the bar. It means strong, reliable work at OPI’s standard. A 4 or a 5 is reserved for performance that clearly exceeds what the role expects and raises the bar for everyone else.
 
 ## Key definitions
 
@@ -61,7 +45,7 @@ The scale is meant to be clear and calibratable. A 3 is strong performance at OP
 
 | **Rating** | **Label**                 | **Behavior anchors**                                                                                                                   |
 |------------|---------------------------|----------------------------------------------------------------------------------------------------------------------------------------|
-| 5          | Transformational          | Delivers step-change impact and creates durable systems others reuse. Sets a new bar for OPI.                                          |
+| 5          | Transformational          | Delivers step-change impact and creates lasting systems others reuse. Sets a new bar for OPI.                                          |
 | 4          | Exceptional               | Consistently exceeds role expectations. Anticipates risk, unblocks others, and produces publish-ready work with minimal revision.      |
 | 3          | Strong (the bar)          | Reliably delivers high-quality work on time with sound judgment. Communicates clearly, documents consistently, and closes loops.       |
 | 2          | Developing / Inconsistent | Quality, reliability, or judgment is inconsistent. Rework recurs. Deadlines slip without early escalation. Documentation gaps persist. |
@@ -84,7 +68,7 @@ All staff are assessed on eight core dimensions. Managers also assess role craft
 | Results and follow-through                  | Delivers outcomes, closes loops, and makes progress legible to partners and leadership.                      | Ships work that changes decisions or operations. Tracks commitments. Closes items with evidence. |
 | Craft quality and QA discipline             | Produces accurate, tested, and audience-ready work. Uses checklists and peer review.                         | First-pass quality. Minimal avoidable errors. Uses peer review and test plans where relevant.    |
 | Judgment and analytical rigor               | Frames problems well, uses evidence, states assumptions, and recommends actionable options.                  | Sharp problem framing. Separates signal from noise. Makes tradeoffs explicit.                    |
-| Communication and executive readiness       | Writes and briefs with clarity. Tailors content to the audience. Produces decision-grade materials.          | Skimmable structure. Clear asks. Slides and memos that stand on their own.                       |
+| Communication and executive readiness       | Writes and briefs with clarity. Tailors content to the audience. Produces materials leaders can act on.       | Skimmable structure. Clear asks. Slides and memos that stand on their own.                       |
 | Documentation and operational hygiene       | Keeps work discoverable and reproducible. Maintains decision logs, runbooks, and organized files.            | Decisions captured. Work can be picked up by others. Clean repositories and folders.             |
 | Collaboration and trust-building            | Works through agencies, not around them. Communicates candidly and respectfully. Protects OPI credibility.   | Partners feel respected and informed. No surprises. Conflicts resolved directly.                 |
 | Ownership, initiative, and learning agility | Acts without waiting for perfect direction. Escalates risk early. Learns fast and improves systems.          | Proposes solutions. Prevents recurring issues. Turns lessons into standards.                     |
@@ -203,7 +187,7 @@ When performance is inconsistent, OPI responds quickly and fairly. The objective
 
 - Formal HR-aligned steps are used when required.
 
-## Appendix A — Scorecard template
+## Appendix A: Scorecard template
 
 *Eight core dimensions plus two role craft dimensions. Total weight = 100%.*
 
@@ -220,7 +204,7 @@ When performance is inconsistent, OPI responds quickly and fairly. The objective
 | Role craft dimension 1                      | 5%         |                  |                      |           |
 | Role craft dimension 2                      | 5%         |                  |                      |           |
 
-## Appendix B — Self-review template
+## Appendix B: Self-review template
 
 *Staff complete this self-review at the end of each cycle. Each prompt is a short paragraph with links.*
 
@@ -234,7 +218,7 @@ When performance is inconsistent, OPI responds quickly and fairly. The objective
 
 **Prompt 5.** Growth plan: one to two skills, plus next assignments that build them.
 
-## Appendix C — Manager review template
+## Appendix C: Manager review template
 
 *Managers complete this review at the end of each cycle alongside the staff self-review and the evidence bundle.*
 
@@ -248,7 +232,7 @@ When performance is inconsistent, OPI responds quickly and fairly. The objective
 
 **Prompt 5.** Growth plan with specific coaching and assignments.
 
-## Appendix D — 30-day reset plan template
+## Appendix D: 30-day reset plan template
 
 | **Area**                                               | **Plan** |
 |--------------------------------------------------------|----------|
@@ -257,7 +241,7 @@ When performance is inconsistent, OPI responds quickly and fairly. The objective
 | Supports (training, pairing, scope changes)            |          |
 | Evidence of improvement (what will be true in 30 days) |          |
 
-## Appendix E — 360-lite feedback prompts
+## Appendix E: 360-lite feedback prompts
 
 - Where did this person raise the bar for quality or clarity?
 
@@ -269,4 +253,4 @@ When performance is inconsistent, OPI responds quickly and fairly. The objective
 
 ## Owner and review cadence
 
-Owned by the OPI Director’s Office. Reviewed annually before the start of each fiscal year, or as required by operational changes. Companion document: OPI Performance Standards — Manager Companion.
+Owned by the OPI Director’s Office. Reviewed annually before the start of each fiscal year, or as required by operational changes. Its companion is the Manager Companion to these standards.
