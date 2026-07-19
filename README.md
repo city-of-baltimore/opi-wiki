@@ -103,7 +103,23 @@ the build if a hosted workflow reaches a test suite, a site build, an image
 build, or a browser suite — including transitively, through *both* indirection
 layers: it statically resolves the `Taskfile.yml` task graph and the `verify.py`
 plan the workflow asks for, and the two compose. It also fails a job that
-forgets `timeout-minutes`. A task it cannot resolve is a violation, not a pass.
+forgets `timeout-minutes`, and holds a strict allowlist for every `run:` command
+and every pinned `uses:` action. A task it cannot resolve is a violation, not a
+pass.
+
+Alongside it, the `ci` plan runs **`platform-check`** from Patapsco's published
+`baltimore-patapsco` package (exact-pinned in the dev group). That is the shared
+estate baseline — the app marker, the reserved port slot, the task surface,
+ruff/mypy/bandit configuration, and the pre-push hook — and it is the authority
+on rules that span every sibling repo.
+
+The two are complementary, not redundant, and the split was measured rather than
+assumed. `platform-check` 0.4.0 resolves the `Taskfile.yml` graph but treats
+`verify.py --plan ci` as an opaque leaf, so it does not see this repo's second
+indirection layer; it also has no job-timeout rule and no workflow allowlist.
+The four cases it misses are documented in the "Two checkers" note in
+`scripts/check_hosted_ci_policy.py`, with the condition for retiring the local
+guard.
 
 Do not add a test, build, or browser step to the pull-request workflow, and do
 not add one to a task `ci` reaches. Add checks to `build_steps()` in
@@ -183,7 +199,7 @@ opi-foundations/
 ├── scripts/
 │   ├── verify.sh           # underlying runner entrypoint (Taskfile calls it)
 │   ├── verify.py           # the three-tier check plan (ci/prepush/validate)
-│   ├── check_hosted_ci_policy.py # keeps hosted CI static-only
+│   ├── check_hosted_ci_policy.py # keeps hosted CI static-only (repo-local guard)
 │   ├── install-hooks.sh    # installs the pre-push gate
 │   ├── hooks/pre-push      # runs the prepush plan before every push
 │   ├── check_html_links.py # raw HTML href validation

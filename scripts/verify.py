@@ -13,7 +13,10 @@ Invariants:
   ``patapsco/docs/app-consistency-standard.md``: no test suite, no site build,
   no browser suite. ``scripts/check_hosted_ci_policy.py`` enforces that
   mechanically, by resolving this module's plans rather than trusting the
-  workflow's command string.
+  workflow's command string. Note that it is the *only* check that does so:
+  Patapsco's ``platform-check``, which the ``ci`` plan also runs, stops at the
+  ``Taskfile.yml`` graph and cannot see a forbidden step added to the ``ci``
+  tier of :func:`build_steps`. Both checks are therefore load-bearing.
 * No step can hang the runner: stdin is closed and every step is bounded by a
   timeout.
 
@@ -108,6 +111,19 @@ def build_steps(
         VerifyStep(
             name="Checking hosted CI policy",
             command=(python, "scripts/check_hosted_ci_policy.py"),
+        ),
+        # Patapsco's shared estate baseline: the app marker, the reserved port
+        # slot, the shared task surface, ruff/mypy/bandit configuration, and the
+        # pre-push hook. Invoked as `-m` rather than via the `platform-check`
+        # console script so it resolves through this interpreter like every
+        # other step, instead of depending on what is first on PATH.
+        #
+        # This is additive to the guard above, not a replacement for it. The
+        # local guard walks the verify.py plans and holds the workflow
+        # allowlists; platform-check 0.4.0 does neither.
+        VerifyStep(
+            name="Checking platform baseline conformance",
+            command=(python, "-m", "baltimore.patapsco.baseline.cli", "--repo", "."),
         ),
         VerifyStep(
             name="Linting repo automation",

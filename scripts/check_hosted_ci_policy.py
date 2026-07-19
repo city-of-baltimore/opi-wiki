@@ -32,6 +32,35 @@ verification plan definition. Resolution is **static** — it never shells out t
 ``task --dry``, which writes its plan to stderr and so silently returns nothing
 to a stdout-reading resolver, passing vacuously. It stays free of third-party
 dependencies so it can run under a bare interpreter.
+
+Two checkers, on purpose
+------------------------
+The ``ci`` plan runs **both** this module and Patapsco's ``platform-check``
+(``baltimore-patapsco==0.4.0``). That is not duplication left by accident; the
+consolidation to the shared checker was attempted and measured, and 0.4.0 does
+not yet subsume this guard. Four violations this module fails on were injected
+one at a time and ``platform-check`` returned ``conforms`` / exit 0 for each:
+
+1. **A forbidden command inside a ``verify.py`` plan.** ``platform-check``
+   resolves the ``Taskfile.yml`` graph but treats
+   ``uv run python scripts/verify.py --plan ci`` as an opaque leaf string. This
+   repository's hosted lane has *two* indirection layers, and the shared
+   checker walks only the first — so adding ``pytest`` to the ``ci`` tier of
+   :func:`scripts.verify.build_steps` passes it while the hosted lane really
+   runs the test suite. This is the same shape as the ``task --dry`` bug: green
+   while vacuous.
+2. **A missing job ``timeout-minutes``** (invariant 3). No equivalent rule.
+3. **An unallowlisted ``run:`` command** (invariant 1) — e.g. a piped
+   ``curl … | sh``. ``platform-check`` matches a *forbidden* pattern list, which
+   is a denylist; it has no allowlist, so an arbitrary new command passes.
+4. **An unpinned ``uses:`` reference** (invariant 1) — e.g.
+   ``actions/checkout@main`` instead of a SHA. No equivalent rule.
+
+Gaps 3 and 4 are supply-chain surface, not lean-CI surface, so they may never
+belong in the shared checker. Gap 1 is the one that matters for consolidation:
+when ``platform-check`` learns to expand an aggregate runner's plans, re-run the
+injection above and delete this module if it catches all four. Until then,
+deleting this module would be a silent, measurable loss of enforcement.
 """
 
 from __future__ import annotations

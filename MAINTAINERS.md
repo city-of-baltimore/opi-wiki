@@ -297,6 +297,16 @@ browser** — per section 4 of the civic-app consistency standard.
 including through indirection: it statically resolves both the `Taskfile.yml`
 task graph and the `verify.py` plans, so adding a heavy step to any task `ci`
 reaches is caught.
+
+The `ci` plan also runs Patapsco's published `platform-check`
+(`baltimore-patapsco`, exact-pinned in the dev group), which owns the shared
+estate baseline: the app marker, the slot-8 ports, the task surface, tooling
+configuration, and the pre-push hook. Keep **both**. `platform-check` 0.4.0 does
+not expand `verify.py` plans, has no job-timeout rule, and has no `run:`/`uses:`
+allowlist, so it returns "conforms" for four violations the local guard fails
+on. The measured gaps, and the condition under which the local guard can finally
+be deleted, are recorded in the "Two checkers" note in that module's docstring.
+If you bump the pin, re-run that comparison before assuming it is now redundant.
 **The practical consequence: a broken test or strict build is not caught on the
 PR; it surfaces at `git push` (via the hook) or on the deploy run after merge.**
 

@@ -18,7 +18,8 @@ name: CI
 # same command. Do not add a test, build, or browser step here, and do not add
 # one to a task `ci` reaches: scripts/check_hosted_ci_policy.py resolves the
 # Taskfile graph and verify.py's plans transitively and fails this job if a
-# forbidden command becomes reachable at any depth.
+# forbidden command becomes reachable at any depth. The `ci` plan additionally
+# runs Patapsco's platform-check for the shared estate baseline.
 
 on:
   pull_request:

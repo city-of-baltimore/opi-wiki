@@ -99,6 +99,7 @@ def test_ci_plan_keeps_every_static_check() -> None:
 
     assert ci_names == [
         "Checking hosted CI policy",
+        "Checking platform baseline conformance",
         "Linting repo automation",
         "Type-checking repo automation",
         "Scanning repo automation for security issues",
@@ -108,6 +109,24 @@ def test_ci_plan_keeps_every_static_check() -> None:
         "Checking page consistency",
         "Checking raw HTML links",
     ]
+
+
+def test_ci_plan_runs_both_policy_checkers() -> None:
+    """The lean gate runs the local guard AND Patapsco's shared baseline check.
+
+    They are not interchangeable, and the difference is measured rather than
+    assumed: ``platform-check`` 0.4.0 resolves the ``Taskfile.yml`` graph but
+    treats ``verify.py --plan ci`` as an opaque leaf, so a forbidden command
+    added to this module's ``ci`` tier passes it. It also has no job-timeout
+    rule and no ``run:``/``uses:`` allowlist. Dropping either checker is a real
+    loss of coverage; see the "Two checkers" note in
+    ``scripts/check_hosted_ci_policy.py``.
+    """
+
+    commands = [" ".join(step.command) for step in build_steps(Path("/tmp/example"), plan="ci")]
+
+    assert any("check_hosted_ci_policy.py" in command for command in commands)
+    assert any("baltimore.patapsco.baseline.cli" in command for command in commands)
 
 
 def test_prepush_plan_owns_the_tests_the_build_and_the_built_site_checks() -> None:
