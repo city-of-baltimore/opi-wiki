@@ -15,12 +15,15 @@ the jargon we replace, and how we handle bullets, tables, and em-dashes.
 
 ```bash
 uv sync                         # one-time setup
-uv run mkdocs serve             # live preview at http://127.0.0.1:8000
-./scripts/verify.sh             # the full check suite (same gate CI runs)
+uv run mkdocs serve             # live preview at http://127.0.0.1:5208
+./scripts/verify.sh             # the full check suite — run before you push
+./scripts/verify.sh --lean      # static checks only (what PR CI runs)
 ```
 
-Ground rules, enforced by `./scripts/verify.sh` (and by CI on every PR and
-deploy — the suite is defined once, in `scripts/verify.py`):
+Ground rules, enforced by `./scripts/verify.sh` (and by CI — the suite is
+defined once, in `scripts/verify.py`). Pull-request CI runs the lean static
+subset; the strict build and the checks that read built HTML run in the deploy
+gate, so run the full `./scripts/verify.sh` locally before pushing:
 
 - Strict MkDocs build: broken links and nav entries fail the build.
 - Page metadata sidecars (`.metadata.yml`) must be complete and fresh —

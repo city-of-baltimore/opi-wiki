@@ -13,6 +13,13 @@ edit_uri: edit/main/docs/
 docs_dir: docs
 strict: true
 
+# Local preview binds loopback on this repo's slot in the Baltimore civic-platform
+# port registry (slot 8 => 5200 + 8). Keeping it pinned here means `mkdocs serve`
+# never clashes with a sibling app's local stack and never listens on 0.0.0.0.
+# The container overrides it via MKDOCS_DEV_ADDR (see Dockerfile/docker-compose.yml),
+# where binding inside the container is what makes the published loopback port work.
+dev_addr: !ENV [MKDOCS_DEV_ADDR, '127.0.0.1:5208']
+
 # Keep global site/runtime config here.
 # Own section navigation locally in docs/**/.pages.
 

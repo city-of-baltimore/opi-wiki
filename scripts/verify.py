@@ -40,12 +40,25 @@ def build_steps(
     repo_root: Path,
     python_executable: str | None = None,
     *,
+    lean: bool = False,
     include_browser_smoke: bool = False,
 ) -> list[VerifyStep]:
-    """Return the ordered verification steps for this repository."""
+    """Return the ordered verification steps for this repository.
+
+    The full plan is the release gate: static checks, then the strict MkDocs
+    build, then everything that inspects the built ``site/`` output.
+
+    ``lean=True`` returns only the static half — no site build and nothing that
+    reads ``site/``. That is what hosted pull-request CI runs, per the civic-app
+    consistency standard: the on-push lane stays static checks, contracts, and
+    security, while the build and the built-output checks belong to the
+    pre-deploy gate (``.github/workflows/deploy.yml``, which runs the full plan
+    before publishing). Nothing is dropped — the same assertions still run, just
+    in the gate that can afford them.
+    """
 
     python = python_executable or sys.executable
-    steps = [
+    static_steps = [
         VerifyStep(
             name="Linting repo automation",
             command=(python, "-m", "ruff", "check", "main.py", "scripts", "tests"),
@@ -75,16 +88,24 @@ def build_steps(
             command=(python, "scripts/check_consistency.py"),
         ),
         VerifyStep(
+            name="Checking raw HTML links",
+            command=(python, "scripts/check_html_links.py"),
+        ),
+    ]
+
+    if lean:
+        return static_steps
+
+    # Everything below needs a freshly built site/ directory.
+    steps = [
+        *static_steps,
+        VerifyStep(
             name="Building MkDocs site with strict validation",
             command=(python, "-m", "mkdocs", "build", "--strict"),
         ),
         VerifyStep(
             name="Checking built-site internal links",
             command=(python, "scripts/check_built_links.py", "site"),
-        ),
-        VerifyStep(
-            name="Checking raw HTML links",
-            command=(python, "scripts/check_html_links.py"),
         ),
         VerifyStep(
             name="Running accessibility smoke checks",
@@ -225,6 +246,15 @@ def parse_args(argv: Sequence[str] | None = None) -> argparse.Namespace:
 
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument(
+        "--lean",
+        action="store_true",
+        help=(
+            "Run only the static checks — no MkDocs build and nothing that reads "
+            "site/. This is the hosted pull-request lane; the full plan runs in "
+            "the deploy gate."
+        ),
+    )
+    parser.add_argument(
         "--include-browser-smoke",
         action="store_true",
         help="Run optional Playwright smoke checks against the built site.",
@@ -242,8 +272,19 @@ def main(argv: Sequence[str] | None = None) -> int:
 
     args = parse_args(argv)
 
+    if args.lean and args.include_browser_smoke:
+        sys.stderr.write(
+            "--lean and --include-browser-smoke are mutually exclusive: browser "
+            "smoke checks need the built site/ directory the lean plan skips.\n"
+        )
+        return 2
+
     try:
-        steps = build_steps(REPO_ROOT, include_browser_smoke=args.include_browser_smoke)
+        steps = build_steps(
+            REPO_ROOT,
+            lean=args.lean,
+            include_browser_smoke=args.include_browser_smoke,
+        )
         return run_verification(
             steps,
             REPO_ROOT,

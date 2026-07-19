@@ -2,13 +2,18 @@
 #
 #   docker compose up
 #
-# serves the site at http://localhost:8000 with live reload. Production still
+# serves the site at http://127.0.0.1:5208 with live reload. Production still
 # deploys to GitHub Pages (see .github/workflows/deploy.yml), not this container.
+#
+# 5208 is this repo's slot in the Baltimore civic-platform port registry
+# (patapsco/contracts/ports.toml, slot 8 => 5200 + 8), so the wiki can run at the
+# same time as every sibling app's local stack. The published port binds 127.0.0.1
+# only — never 0.0.0.0 — while the container keeps the conventional MkDocs port.
 services:
   wiki:
     build: .
     ports:
-      - "8401:8000"
+      - "127.0.0.1:5208:8000"
     volumes:
       # Live reload: edits on the host refresh the browser.
       - .:/app
