@@ -8,13 +8,7 @@ Multi-agency commitments that ship, get used, and stick. Cross-Agency Delivery i
 
 Performance management often fails because the people in the room can analyze a problem but cannot change the conditions that produce it. Delivery is where those conditions change.
 
-## Service Definition
-
-This service coordinates selected high-priority initiatives and service delivery challenges that require action across multiple city agencies. The goal is to help city leadership and agencies resolve cross-agency barriers, clarify ownership, sequence implementation, and deliver improvements that no single department can accomplish alone.
-
-Activities performed by this service include standing up delivery routines and tiger teams, developing project charters and implementation plans, mapping cross-agency workflows, tracking risks and dependencies, coordinating agency commitments, supporting executive escalation, documenting decisions and follow-up actions, and helping agencies sustain improvements through standard operating procedures, training materials, and performance monitoring.
-
-## Purpose and Philosophies
+## Purpose and philosophies
 
 ### What we heard, what we have aligned on
 

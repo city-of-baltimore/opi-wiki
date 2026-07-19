@@ -12,7 +12,7 @@ The Lab does design research and problem framing: frontline listening, journey m
 
 It runs applied AI pilots, responsible use cases that improve a real decision or service, under the City's [responsible-AI review](../data-and-analytics/data-governance-framework.md). It runs design and innovation sprints, time-boxed engagements that bring agencies, residents, designers, engineers, and analysts together to diagnose, prototype, and pilot. And it builds reusable patterns: a shared design system and a public innovation toolkit that future products build on.
 
-## How the Lab works: the Path to Public Innovation
+## How the Lab works: the Public Innovation Toolkit
 
 The Lab runs a four-phase method and adapts it to each challenge:
 
