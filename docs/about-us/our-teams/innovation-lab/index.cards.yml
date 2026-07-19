@@ -1,12 +1,12 @@
 - meta: Document
   title: "About the Innovation Lab"
-  body: "What the Lab is, the Path to Public Innovation method it runs, what it builds, and what it owns."
+  body: "What the Lab is, the Public Innovation Toolkit method it runs, what it builds, and what it owns."
   href: about-innovation-lab/
 - meta: Methodology
   title: "Digital Product Methodology"
   body: "How the Lab designs and ships digital products inside city government."
   href: digital-product-methodology/
-- meta: Product
+- meta: Program
   title: "Baltimore Intelligence Center"
-  body: "OPI's citywide data, intelligence, and AI program. In the Products section."
+  body: "OPI's citywide data, intelligence, and AI program. In the Programs section."
   href: ../../../what-we-do/programs/baltimore-intelligence-center/

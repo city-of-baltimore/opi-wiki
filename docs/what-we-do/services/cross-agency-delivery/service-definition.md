@@ -8,13 +8,7 @@ Multi-agency commitments that ship, get used, and stick. Cross-Agency Delivery i
 
 Performance management often fails because the people in the room can analyze a problem but cannot change the conditions that produce it. Delivery is where those conditions change.
 
-## Service Definition
-
-This service coordinates selected high-priority initiatives and service delivery challenges that require action across multiple city agencies. The goal is to help city leadership and agencies resolve cross-agency barriers, clarify ownership, sequence implementation, and deliver improvements that no single department can accomplish alone.
-
-Activities performed by this service include standing up delivery routines and tiger teams, developing project charters and implementation plans, mapping cross-agency workflows, tracking risks and dependencies, coordinating agency commitments, supporting executive escalation, documenting decisions and follow-up actions, and helping agencies sustain improvements through standard operating procedures, training materials, and performance monitoring.
-
-## Purpose and Philosophies
+## Purpose and philosophies
 
 ### What we heard, what we have aligned on
 
@@ -42,14 +36,14 @@ We activate for a priority outcome with a named Authorizer at the Deputy Mayor o
 |----------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | What it is                       | A coordinating service that activates when a problem requires sequencing across agencies, named decision rights, and weekly delivery discipline. Tiger Teams, delivery reviews, and cross-agency workplans are the core mechanisms.               |
 | Why it matters                   | The hardest problems sit between agencies. Without an owner, a sequence, and an authorizer, they drift. Cross-Agency Delivery gives them a home until they are resolved.                                                       |
-| Supported by all teams | Cross-Agency Delivery is staffed and operated across all of OPI. Danny Heller (Deputy Chief Performance Officer) serves as Interim Delivery Manager. Rakeim Young (Chief of Staff) provides portfolio visibility and escalation. |
+| Supported by all teams | Cross-Agency Delivery is staffed and operated across all of OPI. {{ role_holder("Deputy Chief Performance Officer") }} (Deputy Chief Performance Officer) serves as Interim Delivery Manager. {{ role_holder("Chief of Staff") }} (Chief of Staff) provides portfolio visibility and escalation. |
 | Who we serve                     | Mayor, CA, Deputy Mayors, DCAs (Authorizers); agency directors and SROs; cross-agency working groups; resident outcomes that require coordinated action.                                                                                   |
 | Mandate                          | Mayoral and CA priorities that meet the delivery activation criteria; Stat-driven escalations; cross-agency commitments from charters.                                                                                                     |
 | What success looks like          | Activations close their core deliverables on time; the cross-agency workplan stays current; sustainment is named and held; the improvement is still working twelve months later.                                                           |
 
 ### 2. Activation criteria
 
-We do not run delivery reviews for everything. Cross-Agency Delivery activates only when the problem meets all six criteria. If it does not, we use a different routine: a Stat, a product council, a charter and an owner, or a one-time decision memo.
+We do not run delivery reviews for everything. Cross-Agency Delivery activates only when the problem meets all six criteria. If it does not, we use a different approach: a Stat, a product council, a charter and an owner, or a one-time decision memo.
 
 - The work crosses two or more agencies or has a critical cross-agency dependency.
 
@@ -116,7 +110,7 @@ We do not run delivery reviews for everything. Cross-Agency Delivery activates o
 
 - Decision velocity: Authorizer decision SLA met (target: 10 business days for non-routine decisions).
 
-### 8. Handoffs and synergies across OPI services
+### 8. Handoffs across OPI services
 
 - From Performance → cross-agency commitments from Stat charters; KPI reporting on activations.
 

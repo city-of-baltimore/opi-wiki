@@ -4,7 +4,7 @@
 
 **Performance Management Is How a City Tells the Truth**
 
-*A public letter on CitiStat, citywide measures, and the management routines that turn data into decisions.*
+*A public letter on CitiStat, citywide measures, and the management practices that turn data into decisions.*
 
 Most cities do not fail because they lack data. They fail because the data does not change what anyone does on Tuesday morning.
 
@@ -20,7 +20,7 @@ Take any one of those parts away and the system stops working. Measures without 
 
 ## What CitiStat is, and what it is not
 
-CitiStat, in its modern form, is a citywide management routine. It is not a meeting where agencies are scolded. It is not a press conference. It is not a tool for catching agencies in mistakes. It is Baltimore’s management system for asking, agency by agency and service by service, how we are doing, what we are learning, and what we are deciding to do about it.
+CitiStat, in its modern form, is a citywide management system. It is not a meeting where agencies are scolded. It is not a press conference. It is not a tool for catching agencies in mistakes. It is Baltimore’s management system for asking, agency by agency and service by service, how we are doing, what we are learning, and what we are deciding to do about it.
 
 The principal agencies named in city law (Fire, Finance, General Services, Health, Housing and Community Development, Police, Public Works, Recreation and Parks, and Transportation) meet on a recurring schedule. Each session has a pre-memo that frames the topic and the data, a structured conversation with the agency head and a designated Data-Driven Officer, and a post-memo that records commitments with owners and due dates. The City Administrator or executive sponsor expects those commitments to be revisited the next time we meet.
 
@@ -30,7 +30,7 @@ That is the routine. It is unglamorous on purpose. Performance management does n
 
 We are reframing CitiStat from a session you attend to a system you operate. The session is one part of a larger learning loop that runs the whole month: data is prepared, the topic is scoped, frontline context is gathered, the conversation happens, decisions are documented, and the next pre-memo builds on what we learned last time. The work between sessions is where the value lives.
 
-We are also broadening what performance management measures. Not just outputs and response times. Outcomes that residents feel. Equity, so we can tell whether services land the same way across neighborhoods. Process health, so we can spot a routine that is breaking down before it becomes a crisis. And learning, because a city that cannot say what it learned this quarter will struggle to be better next quarter.
+We are also broadening what performance management measures. Not just outputs and response times. Outcomes that residents feel. Equity, so we can tell whether services land the same way across neighborhoods. Process health, so we can spot a process that is breaking down before it becomes a crisis. And learning, because a city that cannot say what it learned this quarter will struggle to be better next quarter.
 
 ## Why this matters for residents
 
@@ -42,13 +42,13 @@ That is the test. Performance management is not the room where leaders gather. P
 
 We do not ask agencies to be perfect. We ask them to be honest about what their service is doing, ready to talk about what they are learning, and willing to commit to next steps with timelines that are realistic. Our job at OPI is to make that conversation worth their time, by bringing better data, sharper analysis, useful comparisons, and a clear written record they can use the next day.
 
-When the routine is run well, agencies start to use it. They bring their own questions. They prepare their own analysis. They use the discipline of the cycle to drive their internal improvement work. That is when performance management has actually taken root.
+When it is run well, agencies start to use it. They bring their own questions. They prepare their own analysis. They use the discipline of the cycle to drive their internal improvement work. That is when performance management has actually taken root.
 
 ## A city that learns
 
 The deepest reason this work matters is not management efficiency. It is democracy. Residents are entitled to a government that knows how it is performing, can explain its choices, can show its work, and can change course when the evidence demands it. Performance management is one of the ways a city earns that standing.
 
-Baltimore has the people, the legal mandate, and the urgency to run this routine at a level few cities reach. Our job at OPI is to make sure the discipline shows up the same way every month, in every session, for every agency, with the rigor the work deserves and the humility public service requires.
+Baltimore has the people, the legal mandate, and the urgency to run this work at a level few cities reach. Our job at OPI is to make sure the discipline shows up the same way every month, in every session, for every agency, with the rigor the work deserves and the humility public service requires.
 
 *With gratitude and resolve,*
 
@@ -60,10 +60,12 @@ Mayor’s Office of Performance and Innovation
 
 *City of Baltimore · Brandon M. Scott, Mayor*
 
-## Read Alongside
+## Read alongside
 
 **Performance Management Strategy:** *priorities, success measures, and commitments.*
 
 **CitiStat Strategic Framework:** *mandate, operating model, and the modern CitiStat cycle.*
 
-**CitiStat Method Playbook:** *session formats, pre/post memo templates, and routines.*
+**CitiStat Method Playbook:** *session formats, pre/post memo templates, and the cycle.*
+
+**[About OPI: Performance](../our-teams/performance/about-performance.md):** *what the Performance team owns and how it partners.*

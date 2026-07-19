@@ -38,7 +38,7 @@ The Lab can work on a single-agency problem or a multi-agency problem. What defi
 
 ### Cross-Agency Delivery owns the coordination
 
-Cross-Agency Delivery is a coordinating service that draws on staff from across OPI rather than a standing team, and not a cost center. It activates when the work requires multiple agencies to move together and normal channels are not enough.
+Cross-Agency Delivery is a coordinating service, not a standing team or a cost center. It draws on staff from across OPI and activates when the work requires multiple agencies to move together and normal channels are not enough.
 
 Cross-Agency Delivery owns the coordination authority: who authorizes the work, who serves as Senior Responsible Owner, and who holds decision rights, plus commitment tracking, escalation, a weekly or bi-weekly delivery schedule, and sustainment commitments across agencies. Its question is how to get multiple agencies to deliver something together.
 

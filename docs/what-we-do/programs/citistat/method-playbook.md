@@ -6,6 +6,18 @@ This is the operating manual for CitiStat: the roles, the preparation cycle, the
 
 **Program leadership.** OPI's Executive Director owns CitiStat as a citywide program. The **Deputy Chief Performance Officer** leads it day to day: method, calendar, standards, and follow-through. The **CitiStat Program Manager** runs independent quality review on every product before it reaches a session.
 
+## On this page
+
+Jump to the section you need:
+
+- [Roles and decision rights](#roles-and-decision-rights): who sponsors, owns, and decides.
+- [The CitiStat cycle](#the-citistat-cycle): the preparation timeline keyed to the session date.
+- [The session agendas](#the-session-agendas): the monthly and place-based formats.
+- [Data standards and evidence](#data-standards-and-evidence): the bar for the numbers.
+- [Issue selection, admission, and continuation](#issue-selection-admission-and-continuation): what earns and keeps Stat status.
+- [Follow-ups, escalation, and sustainment](#follow-ups-escalation-and-sustainment): how the work closes after the session.
+- [The quality bar](#the-quality-bar): the review every product passes before the room.
+
 ## Five things every Stat must have
 
 If a session is missing any of these, it is not yet a Stat. Reschedule it, reframe it, or route it elsewhere.
@@ -98,7 +110,7 @@ For operating agencies (Housing/DHCD, DOT, Police, Fire & EMS), chaired by the C
 - Where is the bottleneck: people, process, technology, procurement, policy, data, or decision rights?
 - What decision can be made today, and who has the authority to make it?
 - What will be done, by whom, by when, and with what evidence of completion?
-- Does this stay in CitiStat, or move to a Cross-Agency Delivery activation (a Tiger Team) or another routine?
+- Does this stay in CitiStat, or move to a Cross-Agency Delivery activation (a Tiger Team) or another venue?
 
 ### Cabinet attendance
 
@@ -121,7 +133,7 @@ The **CitiStat Inspector** plans the ride-alongs and site visits, coordinates wi
 
 ## Issue selection, admission, and continuation
 
-A routine should be called a Stat only if it meets the admission criteria and keeps producing decisions, commitments, or learning.
+A recurring meeting should be called a Stat only if it meets the admission criteria and keeps producing decisions, commitments, or learning.
 
 A routine earns Stat status when it meets these criteria:
 
@@ -144,11 +156,11 @@ Under City Code Subtitle 61-5, each principal agency names a **Data-Driven Offic
 
 | Responsibility | Minimum expectation |
 | --- | --- |
-| Internal Stat schedule | Run the agency's internal performance routine. |
+| Internal Stat schedule | Run the agency's internal performance cycle. |
 | KPI readiness | Maintain agency KPI definitions, sources, owners, and refresh schedules, aligned to the citywide standard. |
 | Pre-memo support | Provide timely data, context, and prior follow-up status. |
 | Follow-up management | Track agency follow-ups, confirm evidence, and surface delays early. |
-| Escalation | Identify issues that should move from internal Stat to CitiStat or another routine. |
+| Escalation | Identify issues that should move from internal Stat to CitiStat or another forum. |
 
 ## Follow-ups, escalation, and sustainment
 
@@ -174,7 +186,7 @@ Follow-up status uses one shared color scheme across the weekly report, the trac
 Use it when a follow-up cannot move, a decision is contested, or a blocker spans agencies:
 
 1. The **analyst** records the blocker and the decision needed in the tracker and surfaces it in the weekly report.
-2. The **Deputy Chief Performance Officer** reviews and routes it to the right next routine.
+2. The **Deputy Chief Performance Officer** reviews and routes it to the right next step.
 3. The **chair or authorizer** (City Administrator or Deputy Mayor) decides, allocates, or signals the call.
 4. If it needs sequencing across agencies → a **Cross-Agency Delivery activation** (a Tiger Team).
 5. If it is a data-governance, product, or policy question → the matching routine or a decision memo.
@@ -199,7 +211,7 @@ Every Stat product passes an independent quality review before it is presented. 
 
 A few failure modes recur. Status creep is the standing tour of every metric; name the performance problem at the top and cut the tour. Performative accountability is reading follow-ups aloud without closing them; close the loop in writing within two business days and track to evidence. Data theatre is charts that answer no real question; make every chart answer a specific one and cut the rest. Brand dilution is calling every meeting a Stat; hold the line on the five things and call other meetings what they are.
 
-## See also
+## Read alongside
 
 - [CitiStat Strategic Framework](strategic-framework.md): the strategy this playbook puts into practice.
 - [CitiStat Templates](templates.md): the pre-memo, deck, follow-up memo, and agenda templates.

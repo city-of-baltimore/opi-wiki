@@ -19,7 +19,7 @@ OPI is organized into four teams. Each portfolio has a clear lead and a clear sc
 | **Portfolio**                  | **Lead**                                       | **What it does**                                                                                                       |
 |--------------------------------|------------------------------------------------|------------------------------------------------------------------------------------------------------------------------|
 | Director’s Office | {{ role_holder("Chief of Staff") }}, Chief of Staff                   | Keeps the office running: intake, portfolio visibility, communications, knowledge management, fiscal, HR, facilities, and officewide coordination. |
-| Performance       | {{ role_holder("Deputy Chief Performance Officer") }}, Deputy Chief Performance Officer | Owns the performance method: CitiStat routines, agency performance plans, KPI standards, follow-up.                   |
+| Performance       | {{ role_holder("Deputy Chief Performance Officer") }}, Deputy Chief Performance Officer | Owns the performance method: CitiStat sessions, agency performance plans, KPI standards, follow-up.                   |
 | Data and Analytics             | {{ role_holder("Deputy Chief Data Officer") }}, Deputy Chief Data Officer   | Builds trusted data infrastructure: analytics, data platform, data engineering, open data, governance, AI readiness.  |
 | Innovation Lab                 | {{ role_holder("Innovation Program Manager") }}, Innovation Program Manager | Turns service problems into designed, testable solutions: HCD, product discovery, civic tech, AI pilots, partnerships, and Tiger Teams. |
 
@@ -29,13 +29,13 @@ The four teams deliver five services. The same portfolio can support more than o
 
 | **Service**                     | **One-sentence definition**                                                                                                                  |
 |---------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------|
-| Citywide Performance Management | Citywide performance management routines, including CitiStat, agency performance planning, performance measures, and follow-up.              |
+| Citywide Performance Management | Citywide performance management, including CitiStat, agency performance planning, performance measures, and follow-up.              |
 | Citywide Data and Analytics     | Data infrastructure, analytics capacity, open data program, and data governance practices across agencies.                                   |
 | Innovation Lab                  | OPI’s service-improvement capability: human-centered design, product management, civic technology, and applied innovation.                  |
 | Cross-Agency Delivery           | Coordination of high-priority initiatives that require action across multiple city agencies. A way of running work, not a separate cost center. |
 | AdminOps                        | Administrative, operational, communications, and portfolio management functions that support the rest of OPI.                                |
 
-*Cross-Agency Delivery is a way of running work, not a stand-alone team. The Innovation Lab provides the team, Performance provides the standing delivery routine, and the Director’s Office provides the authorizing relationships.*
+*Cross-Agency Delivery is a way of running work, not a stand-alone team. The Innovation Lab provides the team, Performance provides the standing delivery review, and the Director’s Office provides the authorizing relationships.*
 
 ## How work enters OPI
 

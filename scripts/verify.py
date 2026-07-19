@@ -67,6 +67,10 @@ def build_steps(
             command=(python, "scripts/check_brand_terms.py"),
         ),
         VerifyStep(
+            name="Checking editorial voice guardrail",
+            command=(python, "scripts/check_style.py"),
+        ),
+        VerifyStep(
             name="Checking page consistency",
             command=(python, "scripts/check_consistency.py"),
         ),

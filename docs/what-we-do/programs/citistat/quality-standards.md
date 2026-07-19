@@ -116,7 +116,7 @@ Applied once the data table is QCed and the lead is building visuals.
 
 - Public summaries are updated where appropriate.
 
-## See also
+## Read alongside
 
 - [CitiStat Method Playbook](method-playbook.md): the operating standards these quality bars enforce.
 - [CitiStat Templates](templates.md): the artifacts these standards apply to.

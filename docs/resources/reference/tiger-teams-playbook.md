@@ -1,6 +1,6 @@
 # Tiger Teams Playbook
 
-{{ page_header(summary="How OPI runs short-cycle, cross-functional Tiger Teams.", category="SERIES · OPI FOUNDATIONS", tagline="A time-boxed delivery + innovation method.") }}
+{{ page_header(summary="How OPI runs short-cycle, cross-functional Tiger Teams.", category="SERIES · OPI FOUNDATIONS", tagline="A time-boxed way to fix one stuck service.") }}
 
 How OPI runs cross-functional, time-boxed teams that prototype, prove, and scale solutions to persistent service problems.
 
@@ -87,11 +87,11 @@ The team uses design research, data analysis, and creative ideation to understan
 
 ### Phase 3 (ACTIVATE): Deliver initiatives
 
-The team prototypes, pilots, and scales initiatives in real conditions, not in slides. It stands up pilots in the field, partners with BCIT and the agency on tooling, runs weekly delivery routines, and holds a mid-cycle review with the Deputy Mayor. The result is live pilots with evidence of impact, redesigned workflows in use by frontline staff, and data products in production. This runs roughly weeks 13 to 22.
+The team prototypes, pilots, and scales initiatives in real conditions, not in slides. It stands up pilots in the field, partners with BCIT and the agency on tooling, runs the weekly delivery cadence, and holds a mid-cycle review with the Deputy Mayor. The result is live pilots with evidence of impact, redesigned workflows in use by frontline staff, and data products in production. This runs roughly weeks 13 to 22.
 
 ### Phase 4 (SUSTAIN): Ingrain the work
 
-The team hands off the gain so it survives the team, because the agency that owns the service keeps the gain. That means transitioning ownership, writing SOPs and training, handing off to CitiStat to monitor performance, and folding data products into the agency’s routine. It closes with a sustain plan signed by the agency director and the Deputy Mayor, SOPs in agency control, a defined CitiStat cadence and metric set, and a closure memo. This runs roughly weeks 23 to 26.
+The team hands off the gain so it survives the team, because the agency that owns the service keeps the gain. That means transitioning ownership, writing SOPs and training, handing off to CitiStat to monitor performance, and folding data products into the agency’s operations. It closes with a sustain plan signed by the agency director and the Deputy Mayor, SOPs in agency control, a defined CitiStat cadence and metric set, and a closure memo. This runs roughly weeks 23 to 26.
 
 ## Roles on a Tiger Team
 

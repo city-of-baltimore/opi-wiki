@@ -2,17 +2,15 @@
 
 {{ page_header(summary="The full CitiStat portfolio: every Stat, with its brief, in one place.", tagline="The master register and a brief for every active Stat.") }}
 
-## Executive summary
-
 Baltimore’s CitiStat portfolio is how the City reviews performance across the services, systems, and priorities residents and staff experience most directly. This register documents all 19 active Stats; the fields are defined below.
 
-CitiStat is managed by OPI's Executive Director and implemented by agencies; the [Strategic Framework](../strategic-framework.md#governance-and-roles) sets out the full governance chain. OPI leaders may operate selected Stats where the topic aligns with their portfolio, but all Stats follow a common standard: clear purpose, reliable enough data, useful pre-work, disciplined follow-up, evidence of closure, and a public story of progress.
+CitiStat is managed by the Executive Director and implemented by agencies; the [Strategic Framework](../strategic-framework.md#governance-and-roles) sets out the full governance chain. OPI leaders may operate selected Stats where the topic aligns with their portfolio, but all Stats follow a common standard: clear purpose, reliable enough data, useful pre-work, disciplined follow-up, evidence of closure, and a public story of progress.
 
 This document is a companion to OPI’s operating model. The operating model explains how OPI organizes work; this register explains what each Stat is for, who sponsors it, what it tracks, what artifacts it produces, and how it can trigger delivery, product, data, or executive action.
 
-## A management routine, not a meeting schedule
+## A management practice, not a meeting schedule
 
-CitiStat is a management routine, not a meeting schedule. What that means for each audience:
+CitiStat is a management practice, not a meeting schedule. What that means for each audience:
 
 - **For residents**, the portfolio should make visible how the City is improving services such as 311, permits, clean streets, public safety, recreation, housing, water, and transportation.
 - **For staff**, each Stat should clarify the evidence, decisions, owners, deadlines, and follow-up expected before and after the session.
@@ -56,30 +54,30 @@ Agency Stats run monthly; the place-based operating Stats (Housing, DOT, Police,
 
 | **Stat**              | **Cluster**                        | **Type** | **OPI Lead**          | **Core Data Product**                                   |
 |-----------------------|------------------------------------|----------|-----------------------|---------------------------------------------------------|
-| 311 Stat              | Internal Services                  | Thematic | Data Team-led         | 311 performance and resident experience dashboard       |
-| Tech Stat             | Internal Services                  | Thematic | Data Team-led         | Technology portfolio and service reliability dashboard  |
-| Capital Stat          | City Administrator                 | Thematic | Performance Team      | Capital project portfolio and delivery risk dashboard   |
-| Clean Stat            | Operations and Infrastructure      | Thematic | Performance Team      | Clean Block Scorecard and cleanliness hotspot dashboard |
-| DGS Stat              | Operations and Infrastructure      | Agency   | Performance Team      | Facilities and fleet readiness dashboard                |
-| Housing Stat          | Community and Economic Development | Agency   | Performance Team      | Housing and neighborhood conditions dashboard           |
-| DOT Stat              | Operations and Infrastructure      | Agency   | Performance Team      | Transportation operations dashboard                     |
-| Downtown Stat         | Community and Economic Development | Thematic | Performance Team      | Downtown RISE performance dashboard                     |
-| Finance Stat          | City Administrator                 | Agency   | Performance Team      | Financial operations and compliance dashboard           |
-| Fire & EMS Stat       | Public Safety                      | Agency   | Director’s Office-led | Fire and EMS performance dashboard                      |
-| Health Stat           | Health and Human Services          | Agency   | Performance Team      | Public health service performance dashboard             |
-| HR & Labor Stat       | Internal Services                  | Thematic | Performance Team      | Workforce and hiring pipeline dashboard                 |
-| Permit Stat           | Community and Economic Development | Thematic | Data Team-led         | Permitting performance dashboard                        |
-| Police Stat           | Public Safety                      | Agency   | Director’s Office-led | Public safety performance dashboard                     |
-| Rec Stat              | Health and Human Services          | Agency   | Performance Team      | Recreation, parks, and forestry performance dashboard   |
-| Solid Waste Stat      | Operations and Infrastructure      | Agency   | Performance Team      | Solid waste operations dashboard                        |
-| Water Stat            | Operations and Infrastructure      | Agency   | Performance Team      | Water and wastewater utility performance dashboard      |
-| Workplace Safety Stat | Internal Services                  | Thematic | Director’s Office-led | Workplace safety performance dashboard                  |
-| Youth Stat            | Health and Human Services          | Thematic | Performance Team      | Youth outcomes and initiative tracker                   |
+| [311 Stat](311-stat.md)              | Internal Services                  | Thematic | Data Team-led         | 311 performance and resident experience dashboard       |
+| [Tech Stat](tech-stat.md)             | Internal Services                  | Thematic | Data Team-led         | Technology portfolio and service reliability dashboard  |
+| [Capital Stat](capital-stat.md)          | City Administrator                 | Thematic | Performance Team      | Capital project portfolio and delivery risk dashboard   |
+| [Clean Stat](clean-stat.md)            | Operations and Infrastructure      | Thematic | Performance Team      | Clean Block Scorecard and cleanliness hotspot dashboard |
+| [DGS Stat](dgs-stat.md)              | Operations and Infrastructure      | Agency   | Performance Team      | Facilities and fleet readiness dashboard                |
+| [Housing Stat](housing-stat.md)          | Community and Economic Development | Agency   | Performance Team      | Housing and neighborhood conditions dashboard           |
+| [DOT Stat](dot-stat.md)              | Operations and Infrastructure      | Agency   | Performance Team      | Transportation operations dashboard                     |
+| [Downtown Stat](downtown-stat.md)         | Community and Economic Development | Thematic | Performance Team      | Downtown RISE performance dashboard                     |
+| [Finance Stat](finance-stat.md)          | City Administrator                 | Agency   | Performance Team      | Financial operations and compliance dashboard           |
+| [Fire & EMS Stat](fire-and-ems-stat.md)       | Public Safety                      | Agency   | Director’s Office-led | Fire and EMS performance dashboard                      |
+| [Health Stat](health-stat.md)           | Health and Human Services          | Agency   | Performance Team      | Public health service performance dashboard             |
+| [HR & Labor Stat](hr-and-labor-stat.md)       | Internal Services                  | Thematic | Performance Team      | Workforce and hiring pipeline dashboard                 |
+| [Permit Stat](permit-stat.md)           | Community and Economic Development | Thematic | Data Team-led         | Permitting performance dashboard                        |
+| [Police Stat](police-stat.md)           | Public Safety                      | Agency   | Director’s Office-led | Public safety performance dashboard                     |
+| [Rec Stat](rec-stat.md)              | Health and Human Services          | Agency   | Performance Team      | Recreation, parks, and forestry performance dashboard   |
+| [Solid Waste Stat](solid-waste-stat.md)      | Operations and Infrastructure      | Agency   | Performance Team      | Solid waste operations dashboard                        |
+| [Water Stat](water-stat.md)            | Operations and Infrastructure      | Agency   | Performance Team      | Water and wastewater utility performance dashboard      |
+| [Workplace Safety Stat](workplace-safety-stat.md) | Internal Services                  | Thematic | Director’s Office-led | Workplace safety performance dashboard                  |
+| [Youth Stat](youth-stat.md)            | Health and Human Services          | Thematic | Performance Team      | Youth outcomes and initiative tracker                   |
 
 
 ## Admission and continuation criteria
 
-A routine should be called a Stat only when it meets the citywide admission criteria and continues to produce decisions, follow-ups, or learning. The full criteria, continuation test, and right-routine matrix live in the [CitiStat Method Playbook → Issue selection, admission, and continuation](../method-playbook.md#issue-selection-admission-and-continuation).
+A recurring meeting should be called a Stat only when it meets the citywide admission criteria and continues to produce decisions, follow-ups, or learning. The full criteria, continuation test, and right-routine matrix live in the [CitiStat Method Playbook → Issue selection, admission, and continuation](../method-playbook.md#issue-selection-admission-and-continuation).
 
 ## Right-routine decision rule
 
@@ -98,7 +96,7 @@ Not every recurring problem should become a Stat. The first question should be: 
 
 {{ card_grid_from("what-we-do/programs/citistat/portfolio/index.cards.yml") }}
 
-## See also
+## Read alongside
 
 - [CitiStat Method Playbook](../method-playbook.md): the operating standards every Stat in this portfolio runs on.
 - [CitiStat Strategic Framework](../strategic-framework.md): the public-facing strategic frame and portfolio rationale.

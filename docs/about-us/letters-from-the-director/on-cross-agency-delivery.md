@@ -56,7 +56,7 @@ Mayor’s Office of Performance and Innovation
 
 *City of Baltimore · Brandon M. Scott, Mayor*
 
-## Read Alongside
+## Read alongside
 
 **About OPI: Cross-Agency Delivery:** *what the team owns and how to engage it.*
 

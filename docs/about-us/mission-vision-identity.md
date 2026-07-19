@@ -1,4 +1,4 @@
-# Mission, Vision, Identity
+# Mission, Vision, and Values
 
 {{ page_header(summary="Why this office exists, where it's heading, and what it stands for.", tagline="Who we are, who we serve, and what success looks like.") }}
 
@@ -27,7 +27,7 @@ Six values guide how we work with each other and our partners, with one rule of 
 
 ## Who we are
 
-OPI is a small, citywide office. We pair disciplined performance management with applied service design and trustworthy data, and we are a team of operators, analysts, designers, product managers, and storytellers. We answer to the Mayor's priorities, but we are built to last across administrations. We are not a consultancy, a research lab, or a press shop.
+OPI is a small, citywide office. We pair disciplined performance management with applied service design and trustworthy data. We are a team of operators, analysts, designers, product managers, and storytellers. We answer to the Mayor's priorities, but we are built to last across administrations. We are not a consultancy, a research lab, or a press shop.
 
 We serve a range of people. The Mayor and City Administrator rely on us for priority outcomes, executive decisions, and public narrative. The Deputy City Administrator and Deputy Mayors work with us on portfolio oversight, escalation, and cross-agency authority. Agency directors, performance leads, and Data-Driven Officers come to us for method, coaching, and shared infrastructure. The City Council counts on transparent reporting and oversight support. Residents get services that work, data they can trust, and channels to be heard. And we learn from and share with other governments, so Baltimore can be a blueprint.
 

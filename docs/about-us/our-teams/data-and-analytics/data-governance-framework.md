@@ -2,25 +2,21 @@
 
 {{ page_header(summary="The framework OPI uses to govern city data assets.", category="STRATEGY FRAMEWORK", tagline="A framework for trustworthy data, responsible use, open data, privacy, sharing, and AI readiness.") }}
 
-## Executive Summary
+This framework sets the rules for how Baltimore City manages its data as shared civic infrastructure. It covers how data is created, accessed, shared, published, protected, and retired, and it applies whether the data supports an internal decision, a performance review, an open data release, work between agencies, an external partnership, or an AI tool. The point is to make city data reliable and safe to use, share, and publish.
 
-**Clear governance enables responsible speed**
-
-Baltimore City needs a comprehensive data governance framework that treats data as civic infrastructure. The framework should make data easier to use, easier to share responsibly, easier to publish, easier to protect, and easier to trust. It should support internal decision-making, performance management, open data, inter-agency collaboration, external partnerships, and responsible AI adoption.
-
-This document is written as a strategy framework that could evolve into legislation, executive order, administrative policy, or agency guidance. It does not begin from the assumption that governance should slow the City down. It begins from the opposite premise: clear governance enables responsible speed.
+This document is written as a strategy framework that could evolve into legislation, executive order, administrative policy, or agency guidance. It does not assume that governance should slow the City down. It starts from the opposite premise: clear governance lets the City move at responsible speed.
 
 Good stewardship is the foundation for every modern data and AI capability. Without shared definitions, quality standards, access rules, privacy protections, data inventories, and ownership models, the City cannot responsibly scale analytics, open data, dashboards, AI pilots, or cross-agency decision support.
 
-## Purpose and Scope
+## Purpose and scope
 
 **A citywide approach across the data lifecycle**
 
 The purpose of the framework is to establish a citywide approach for managing data across its lifecycle: creation, collection, access, sharing, use, publication, retention, and disposal. It applies to data created or maintained by City agencies, data created by contractors on behalf of the City, data shared between agencies, data published to the public, and data used in analytics or AI-enabled tools.
 
-The framework should strengthen transparency without compromising privacy, improve data sharing without weakening security, support innovation without enabling shadow systems, and ensure AI readiness without allowing ungoverned automation.
+The framework is meant to balance openness against protection. It should expand transparency, data sharing, and AI use while still protecting privacy and security, so the City does not trade one for the other or drift into shadow systems and ungoverned automation.
 
-## Guiding Principles
+## Guiding principles
 
 **How the framework should behave**
 
@@ -56,7 +52,7 @@ Shared datasets, reusable pipelines, and common standards should reduce duplicat
 
 Data sources, owners, definitions, caveats, and approved uses should be understandable to oversight bodies and the public where appropriate.
 
-## Governance Structure and Roles
+## Governance structure and roles
 
 **Authority that already matters in practice**
 
@@ -72,7 +68,7 @@ The framework should formalize roles that already matter in practice and give th
 | Law / Privacy / Security partners           | Advise on legal risk, privacy, sensitive data, records retention, security, and public release.                       |
 | Executive Sponsors                          | Resolve cross-agency barriers and authorize major policy or operational shifts.                                       |
 
-## Enterprise Data Inventory and Classification
+## Enterprise data inventory and classification
 
 **Knowing what we have and how it can be used**
 
@@ -89,7 +85,7 @@ Every dataset carries one of four sensitivity tiers, aligned to the State of Mar
 
 Using any tier's data in AI, whether for model training or AI-enabled output, requires additional review first, regardless of tier. Classification is not permanent: data may become publishable after aggregation, redaction, or de-identification, or need tighter controls as risks become clearer, so the inventory is reviewed regularly.
 
-## Data Quality, Metadata, and Methodology
+## Data quality, metadata, and methodology
 
 **Quality is a governance requirement**
 
@@ -99,7 +95,7 @@ For priority KPIs, the City should maintain a KPI dictionary. The dictionary sho
 
 The City should also identify authoritative sources for commonly used reference data such as addresses, neighborhoods, agency names, service request types, permit statuses, facilities, fleet assets, and employee or position identifiers where appropriate. This reduces confusion across systems and supports better integration.
 
-## Inter-agency Data Sharing
+## Inter-agency data sharing
 
 **A presumption of responsible sharing**
 
@@ -107,7 +103,7 @@ Baltimore should adopt a presumption of responsible internal sharing. Agencies s
 
 This does not mean unmanaged access. It means a clear path. The City should maintain standard data-sharing agreements, access request processes, and escalation routes for disputes. The Data Governance Council should help resolve definition conflicts, access questions, and quality disputes. Sensitive data should be shared only with documented purpose, approved users, retention expectations, and security controls.
 
-## Open Data and Public Transparency
+## Open data and public transparency
 
 **Public accountability infrastructure**
 
@@ -117,7 +113,7 @@ Every high-value open dataset should include metadata, a data dictionary or meth
 
 The City should also publish a public open data roadmap that identifies planned dataset releases, improvements, and refresh priorities. This helps residents, journalists, researchers, and civic technologists understand what is coming and hold the City accountable for follow-through.
 
-## Privacy, Security, and Responsible Access
+## Privacy, security, and responsible access
 
 **Transparency balanced with protection**
 
@@ -127,7 +123,7 @@ Privacy impact assessments should be required for new systems, data-sharing arra
 
 Contracts with vendors should require data protection terms, breach notification, limits on secondary use, return or deletion of City data at the end of the engagement, and compliance with City governance standards. Data created by contractors on behalf of the City should be treated as City data unless a specific legal agreement says otherwise.
 
-## AI and Algorithmic Accountability
+## AI and algorithmic accountability
 
 **Governance scales to algorithms**
 
@@ -149,7 +145,7 @@ No production AI use case should operate without:
 
 For higher-risk algorithmic systems, the City should consider a public registry or plain-language disclosure describing the purpose of the system, the data used, the decision supported, and the oversight mechanism. The goal is not to freeze innovation. The goal is to ensure innovation remains explainable, fair, and accountable.
 
-## External Data Partnerships
+## External data partnerships
 
 **Capacity expansion through clear agreements**
 
@@ -157,7 +153,7 @@ The City should support responsible partnerships with universities, nonprofits, 
 
 Any external sharing of non-public data should document the purpose, dataset, permitted use, security requirements, retention period, publication restrictions, and responsibilities of the receiving party. When external partners produce data products, analyses, or models on behalf of the City, the City should retain sufficient rights, documentation, and access to sustain the work.
 
-## Implementation Roadmap
+## Implementation roadmap
 
 **Phased adoption over 18+ months**
 
@@ -168,7 +164,7 @@ Any external sharing of non-public data should document the purpose, dataset, pe
 | Phase 3: Operationalize   | 12–18 months  | Apply quality rules to priority datasets; resolve definition conflicts; expand open data publication; implement privacy review for high-risk projects; track compliance. |
 | Phase 4: Institutionalize | 18+ months    | Convert framework into executive order, legislation, or administrative rules where appropriate; publish annual governance report; continue annual policy refresh.        |
 
-## Pathway to Legislation or Executive Order
+## Pathway to legislation or executive order
 
 **A staged approach**
 

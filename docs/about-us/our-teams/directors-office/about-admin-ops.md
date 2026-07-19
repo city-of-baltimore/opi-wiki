@@ -18,13 +18,13 @@ Communications is how OPI explains what changed, what it learned, what is still 
 
 ## What AdminOps owns
 
-Officewide intake and routing; the Book of Business and portfolio visibility; leadership routines; communications, branding, and editorial planning; Council relations and executive briefing support; partnership tracking and closeout; knowledge management and document standards; fiscal, procurement, HR, and facilities coordination; onboarding and offboarding; and QA and publication readiness.
+Officewide intake and routing; the Book of Business and portfolio visibility; leadership meetings; communications, branding, and editorial planning; Council relations and executive briefing support; partnership tracking and closeout; knowledge management and document standards; fiscal, procurement, HR, and facilities coordination; onboarding and offboarding; and QA and publication readiness.
 
 ## What AdminOps does not own
 
 AdminOps coordinates, tracks, briefs, and supports these areas, but the work itself belongs to others:
 
-- Stat methodology and performance routines belong to [Performance](../performance/index.md). Field validation and inspections sit there too, though the CitiStat Inspector is budgeted in the AdminOps cost center, because team and cost center do not always line up (see the [cost center view](../../../how-we-work/organization/team-and-roles/index.md#cost-center-view)).
+- Stat methodology and performance practices belong to [Performance](../performance/index.md). Field validation and inspections sit there too, though the CitiStat Inspector is budgeted in the AdminOps cost center, because team and cost center do not always line up (see the [cost center view](../../../how-we-work/organization/team-and-roles/index.md#cost-center-view)).
 - Data engineering, open data, and KPI definitions belong to [Data and Analytics](../data-and-analytics/index.md).
 - Service design, product builds, and digital tools belong to the [Innovation Lab](../innovation-lab/index.md).
 - Long-horizon cross-agency delivery belongs to [Cross-Agency Delivery](../../../what-we-do/services/cross-agency-delivery/index.md).
@@ -38,10 +38,11 @@ AdminOps supports every other team: Performance with calendar coordination, publ
 
 Intake is fast, predictable, and routed to the right team. Portfolio status is current, and leaders can see risk and capacity at a glance. Briefings are on time, accurate, and aligned. Public materials are clear, accessible, factual, and checked before they ship. New staff get up to speed quickly, and what the office knows survives turnover. The office moves fast, with intention.
 
-## See also
+## Read alongside
 
 - [Director's Office](index.md): the team AdminOps runs within.
 - [Team and Roles](../../../how-we-work/organization/team-and-roles/index.md): the live roster, cost centers, and open positions.
 - [Org Structure](../../../how-we-work/organization/org-structure.md): current reporting lines and staff alignment.
 - [Operations handbook](../../../how-we-work/handbook/operations/index.md): the routines AdminOps maintains.
 - [How Work Moves Through OPI](../../../how-we-work/how-work-moves-through-opi.md): where AdminOps sits in the operating model.
+- [On AdminOps](../../letters-from-the-director/on-admin-ops.md): the Director's letter on why this work matters.

@@ -4,7 +4,7 @@
 
 ## What this service does
 
-This service coordinates selected high-priority initiatives and service-delivery challenges that require action across multiple City agencies. It is a coordination layer that sits on top of existing agencies rather than a new agency of its own: it owns named Authorizers, Senior Responsible Owners, decision rights across agencies, a commitment ledger, a weekly delivery routine, and sustainment commitments from each agency.
+This service coordinates selected high-priority initiatives and service-delivery challenges that require action across multiple City agencies. It is a coordination layer that sits on top of existing agencies rather than a new agency of its own: it owns named Authorizers, Senior Responsible Owners, decision rights across agencies, a commitment ledger, a weekly delivery review, and sustainment commitments from each agency.
 
 The work includes standing up delivery routines and Tiger Teams, developing project charters and implementation plans, mapping cross-agency workflows, tracking risks and dependencies, coordinating agency commitments, supporting executive escalation, documenting decisions and follow-up actions, and helping agencies sustain improvements through standard operating procedures, training materials, and performance monitoring.
 
@@ -31,7 +31,7 @@ Residents don't care which agency is responsible; they just want the issue resol
 
 ## Delivered by
 
-No standing team. Cross-Agency Delivery is drawn from across all of OPI: the [Innovation Lab](../../../about-us/our-teams/innovation-lab/index.md) provides the Tiger Team and method, the [Performance team](../../../about-us/our-teams/performance/index.md) runs the standing delivery routine, and other teams contribute staff and authority as the work requires. Danny Heller serves as interim Delivery Manager, with authorizing relationships from the Director's Office at the Deputy Mayor and City Administrator level.
+No standing team. Cross-Agency Delivery is drawn from across all of OPI: the [Innovation Lab](../../../about-us/our-teams/innovation-lab/index.md) provides the Tiger Team and method, the [Performance team](../../../about-us/our-teams/performance/index.md) runs the standing delivery review, and other teams contribute staff and authority as the work requires. {{ role_holder("Deputy Chief Performance Officer") }} serves as interim Delivery Manager, with authorizing relationships from the Director's Office at the Deputy Mayor and City Administrator level.
 
 ## How to request this service
 

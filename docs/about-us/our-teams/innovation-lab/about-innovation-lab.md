@@ -1,6 +1,6 @@
 # About the Innovation Lab
 
-{{ page_header(summary="Baltimore's in-house public-innovation team, and how the city turns priority challenges into tested, adopted service improvements.") }}
+{{ page_header(summary="Baltimore's in-house public-innovation team, and how the city turns priority challenges into tested, adopted service improvements.", category="ABOUT · SERVICE") }}
 
 The Innovation Lab is Baltimore's in-house public-innovation team. It works across agencies on the Mayor's priority challenges, using human-centered design, data, and disciplined delivery to turn service problems into solutions residents and staff actually use.
 
@@ -12,7 +12,7 @@ The Lab does design research and problem framing: frontline listening, journey m
 
 It runs applied AI pilots, responsible use cases that improve a real decision or service, under the City's [responsible-AI review](../data-and-analytics/data-governance-framework.md). It runs design and innovation sprints, time-boxed engagements that bring agencies, residents, designers, engineers, and analysts together to diagnose, prototype, and pilot. And it builds reusable patterns: a shared design system and a public innovation toolkit that future products build on.
 
-## How the Lab works: the Path to Public Innovation
+## How the Lab works: the Public Innovation Toolkit
 
 The Lab runs a four-phase method and adapts it to each challenge:
 
@@ -52,8 +52,9 @@ The Lab is OPI's hands-on build team, and it works through the other services ra
 - AI pilots improve real operations responsibly, with evaluation and human oversight.
 - A small portfolio of credible, visible wins ships each year.
 
-## See also
+## Read alongside
 
 - [Digital Product Methodology](digital-product-methodology.md): how the Lab designs and ships digital products.
 - [Tiger Teams Playbook](../../../resources/reference/tiger-teams-playbook.md): the time-boxed delivery model.
 - [Cross-Agency Delivery](../../../what-we-do/services/cross-agency-delivery/index.md): the service that coordinates multi-agency work.
+- [On Innovation and Civic Design](../../letters-from-the-director/on-innovation-and-civic-design.md): the Director's letter on why this work matters.
