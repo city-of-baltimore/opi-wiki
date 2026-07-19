@@ -37,4 +37,13 @@ What comes out of it is practical. Leadership gets faster, clearer decisions, be
 
 ## What we are not
 
-We are not a consulting firm that produces decks and disappears, and we are not a press shop that exists to make government look better than it is. We are not an IT department; BCIT owns enterprise infrastructure. We are not auditors, and we are not here to grade agencies. We are not a research lab; we ship. And we do not do the agency's job for it. We help agencies own and sustain change, working in time-boxed cycles with named owners and clear exit criteria.
+Naming what we are not keeps the role clear.
+
+| We are not | What that means |
+| --- | --- |
+| A consulting firm that produces decks and disappears | We stay through delivery and sustainment. |
+| A press shop | We give a plain account of the work, not spin. |
+| An IT department | BCIT owns enterprise infrastructure. |
+| An audit function | We help agencies improve; we do not grade them. |
+| A research lab | We ship. |
+| The agency's own staff | We help agencies own and sustain change, in time-boxed cycles with named owners and clear exit criteria. |
