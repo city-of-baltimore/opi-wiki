@@ -15,7 +15,7 @@ REPO_ROOT = Path(__file__).resolve().parents[1]
 def test_org_structure_data_loads_cleanly() -> None:
     """The checked-in org-structure data file should parse as valid structured data."""
 
-    structure = load_org_structure(DOCS_DIR, "how-we-work/organization/org-structure.data.yml")
+    structure = load_org_structure(DOCS_DIR, "_data/people.yml")
 
     assert structure.city_administrator.name == "Faith P. Leach"
     assert len(structure.portfolios) == 5
@@ -28,7 +28,7 @@ def test_org_structure_data_loads_cleanly() -> None:
 def test_org_structure_renderer_covers_chart_table_and_roster_sections() -> None:
     """The renderer should emit the major repeated org-structure sections."""
 
-    structure = load_org_structure(DOCS_DIR, "how-we-work/organization/org-structure.data.yml")
+    structure = load_org_structure(DOCS_DIR, "_data/people.yml")
 
     leadership_chart = render_org_structure(structure, "leadership_chart")
     portfolio_table = render_org_structure(structure, "portfolio_table")
@@ -49,7 +49,7 @@ def test_org_structure_renderer_covers_chart_table_and_roster_sections() -> None
 def test_org_structure_marks_contractors_in_chart_and_roster() -> None:
     """Contractors should be color-coded on the chart and tagged in the roster."""
 
-    structure = load_org_structure(DOCS_DIR, "how-we-work/organization/org-structure.data.yml")
+    structure = load_org_structure(DOCS_DIR, "_data/people.yml")
 
     leadership_chart = render_org_structure(structure, "leadership_chart")
     cards = render_org_structure(structure, "staff_cards")
@@ -72,7 +72,7 @@ def test_define_env_registers_org_structure_macro() -> None:
     env = register_macros()
 
     rendered = env.macros["org_structure_from"](
-        "how-we-work/organization/org-structure.data.yml",
+        "_data/people.yml",
         "staff_cards",
     )
 
@@ -83,7 +83,7 @@ def test_define_env_registers_org_structure_macro() -> None:
 def test_org_structure_renderer_rejects_unknown_sections() -> None:
     """Invalid render-section requests should fail clearly."""
 
-    structure = load_org_structure(DOCS_DIR, "how-we-work/organization/org-structure.data.yml")
+    structure = load_org_structure(DOCS_DIR, "_data/people.yml")
 
     with pytest.raises(ValueError, match="Unknown org-structure section"):
         render_org_structure(structure, "unknown")
@@ -95,5 +95,5 @@ def test_org_structure_page_uses_shared_data_macros() -> None:
     org_page = REPO_ROOT / "docs/how-we-work/organization/org-structure.md"
     text = org_page.read_text(encoding="utf-8")
 
-    assert 'org_structure_from("how-we-work/organization/org-structure.data.yml"' in text
+    assert 'org_structure_from("_data/people.yml"' in text
     assert "```mermaid" not in text
