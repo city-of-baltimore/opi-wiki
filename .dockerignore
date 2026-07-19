@@ -1,0 +1,15 @@
+# Keep the build context small and avoid copying host-only artifacts into the
+# image (the container builds its own .venv and site/).
+.git
+.github
+.venv
+venv/
+site/
+.claude/
+node_modules/
+__pycache__/
+**/__pycache__/
+*.pyc
+.mypy_cache/
+.ruff_cache/
+.pytest_cache/
