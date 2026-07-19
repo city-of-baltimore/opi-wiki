@@ -2,15 +2,9 @@
 
 {{ page_header(summary="Plain-language definitions of every term used inside OPI.", category="SERIES · OPI FOUNDATIONS") }}
 
-**The words we use**
-
-A reference of OPI’s active vocabulary.
-
 ## Why this glossary exists
 
-Words shape behavior. When OPI uses one word for something and an agency partner uses another, simple conversations turn into translation work. This glossary is the single list of OPI’s active vocabulary.
-
-> *If a term is on the active list, it is in the wild on purpose. Use it as written.*
+Words shape behavior. When OPI uses one word for something and an agency partner uses another, simple conversations turn into translation work. This glossary is the single list of OPI’s active vocabulary. If a term is here, it is in use on purpose, so use it as written.
 
 ## Active terms
 
@@ -22,9 +16,9 @@ Words shape behavior. When OPI uses one word for something and an agency partner
 
 **Authorizer.** The executive who authorizes a Stat, a Tiger Team, or a Cross-Agency Delivery activation and provides the executive cover the work needs. For agency-scoped work, the authorizer is the agency director. For Cross-Agency Delivery activations, the authorizer is a Deputy Mayor or the City Administrator. The authorizer is named on the charter.
 
-**BBMR.** Bureau of the Budget and Management Research — Baltimore’s budget office. OPI partners with BBMR on outcome-based budgeting and performance trainings.
+**BBMR.** Bureau of the Budget and Management Research, Baltimore’s budget office. OPI partners with BBMR on outcome-based budgeting and performance trainings.
 
-**BCIT.** Baltimore City Information Technology — the city’s IT agency. OPI partners with BCIT on platforms, integration, and engineering work.
+**BCIT.** Baltimore City Information Technology, the city’s IT agency. OPI partners with BCIT on platforms, integration, and engineering work.
 
 **Charter.** The artifact that opens any new OPI project. Names the problem, sponsor, scope, team, decision rights, and intended outcome. Required for intake to advance.
 
@@ -36,13 +30,13 @@ Words shape behavior. When OPI uses one word for something and an agency partner
 
 **Citywide Data Network.** The interagency data forum coordinated by OPI Data and Analytics. Convenes data leaders from agencies, BCIT, and partners to align on data standards, shared definitions, and access.
 
-**Closure.** The end of a commitment, project, or Tiger Team — proven by a link, a metric, or a changed process, not just declared. Carry-forward is named explicitly when closure is not complete.
+**Closure.** The end of a commitment, project, or Tiger Team, proven by a link, a metric, or a changed process rather than just declared. Carry-forward is named explicitly when closure is not complete.
 
 **Commitment.** The basic unit of accountability in CitiStat. Every commitment has an owner, a date, and a definition of done. Tracked as a follow-up in the CitiStat follow-up tracker (MS Planner) between meetings.
 
 **Commitment ledger.** The running record of who owns what, by when, in a Cross-Agency Delivery activation. It is the delivery equivalent of the CitiStat follow-up tracker. Reviewed at each delivery cadence and carried until closure.
 
-**Cross-Agency Delivery.** OPI’s way of running work on problems that cross agency lines. Not a team and not a cost center. It owns the coordination authority — named Authorizers, decision rights, sustainment commitments, and the weekly delivery cadence — that lets several agencies ship together. Activates as a Tiger Team, a standing delivery review, or an embedded delivery engagement, depending on the problem; see the Tiger Teams Playbook for the test. Always written in full; do not abbreviate as CAD, which collides with Computer-Aided Dispatch.
+**Cross-Agency Delivery.** OPI’s way of running work on problems that cross agency lines. Not a team and not a cost center. It owns the coordination authority (named Authorizers, decision rights, sustainment commitments, and the weekly delivery cadence) that lets several agencies ship together. Activates as a Tiger Team, a standing delivery review, or an embedded delivery engagement, depending on the problem; see the Tiger Teams Playbook for the test. Always written in full; do not abbreviate as CAD, which collides with Computer-Aided Dispatch.
 
 **Data and Analytics.** OPI’s service that builds and governs the city’s data platform, produces decision-grade analytics products, and trains agencies. Reports to the Executive Director through the Deputy Chief Data Officer.
 
@@ -86,7 +80,7 @@ Words shape behavior. When OPI uses one word for something and an agency partner
 
 **North star.** “Respond when necessary. Build so we do not have to respond again.” OPI’s shorthand for choosing systemic, durable fixes over one-off responses.
 
-**Operational metrics.** The standing operating measures that appear on every Stat deck — the day-to-day performance signals an agency or service runs by, distinct from the strategic KPIs and the priority deep-dive topics. Operational metrics are reviewed each Stat to surface emerging issues before they become priority topics.
+**Operational metrics.** The standing operating measures that appear on every Stat deck: the day-to-day performance signals an agency or service runs by, distinct from the strategic KPIs and the priority deep-dive topics. Operational metrics are reviewed each Stat to surface emerging issues before they become priority topics.
 
 **Open Baltimore.** The city’s open data portal product. Operated by OPI Data and Analytics, it publishes datasets for residents, researchers, and partners.
 
@@ -102,7 +96,7 @@ Words shape behavior. When OPI uses one word for something and an agency partner
 
 **PMO.** OPI’s Project Management Office. Sits in the Director’s Office and runs the project gate process across the OPI portfolio.
 
-**Portfolio.** OPI’s organizational unit — also called a *team*. Four portfolios: Director’s Office; Performance; Data and Analytics; Innovation Lab. See **Team**.
+**Portfolio.** OPI’s organizational unit, also called a *team*. Four portfolios: Director’s Office; Performance; Data and Analytics; Innovation Lab. See **Team**.
 
 **Pre-memo.** The two-to-four-page document that opens a Stat. Frames the problem, presents the data, names hypotheses, asks for decisions, and lists discussion questions.
 
@@ -150,13 +144,13 @@ A quick reference for acronyms that recur across the wiki and are easy to read p
 
 | Acronym | Expansion |
 | --- | --- |
-| **BoB** | Book of Business — the portfolio register of OPI projects |
+| **BoB** | Book of Business, the portfolio register of OPI projects |
 | **DCA** | Deputy City Administrator |
 | **DDO** | Data-Driven Officer (see entry above) |
 | **GIS** | Geographic Information System (mapping and spatial analytics) |
 | **PII** | Personally Identifiable Information |
-| **PIN** | Position Identification Number — the City's budget identifier for a role |
+| **PIN** | Position Identification Number, the City's budget identifier for a role |
 | **RAG** | Red / Amber / Green status rating |
 | **TPM** | Technical Program Manager (a Data and Analytics role) |
 
-Standard IT and HR acronyms used in the how-to guides and memos — VPN, SSO, MFA, PTO, OOO, WFH — carry their common meanings.
+Standard IT and HR acronyms used in the how-to guides and memos (VPN, SSO, MFA, PTO, OOO, WFH) carry their common meanings.

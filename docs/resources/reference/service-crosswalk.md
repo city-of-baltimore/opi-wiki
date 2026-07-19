@@ -1,4 +1,4 @@
-# Service Crosswalk — Mandate to Outcomes
+# Service Crosswalk: Mandate to Outcomes
 
 {{ page_header(summary="One scannable view of OPI's five services: cost center, legal mandate, goal, and the outcomes each one buys.", category="OPI · ACCOUNTABILITY") }}
 
@@ -22,11 +22,11 @@ Each budgeted service maps to a cost center and a set of budgeted positions (PIN
 | Citywide Data and Analytics | Data and Analytics | 5 |
 | Innovation Lab | Innovation Lab | 4 |
 | AdminOps | AdminOps (Director's Office) | 5 |
-| Cross-Agency Delivery | — activated across teams, no standing cost center | — |
+| Cross-Agency Delivery | Activated across teams, no standing cost center | None |
 
 Counts are drawn from the [org structure](../../how-we-work/organization/org-structure.md) and exclude the Executive Director, who leads across all cost centers.
 
 ## Read alongside
 
-- [Services](../../what-we-do/services/index.md) — the five services in detail
-- [Strategic Priorities one-pager](strategic-priorities-one-pager.md) — FY priorities and budget
+- [Services](../../what-we-do/services/index.md): the five services in detail
+- [Strategic Priorities one-pager](strategic-priorities-one-pager.md): FY priorities and budget

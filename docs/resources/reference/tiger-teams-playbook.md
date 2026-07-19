@@ -26,15 +26,13 @@ Do not use a Tiger Team for routine reporting, a one-time executive decision, an
 
 ## Why Tiger Teams now
 
-Baltimore City has lived with persistent gaps in basic service delivery: parking enforcement, traffic calming, sweeping, waste, code enforcement, forestry. These gaps are not surprises; they are systemic. They sit at the intersection of process, staffing, technology, equipment, and contracts, and no one part of the system can fix them alone.
+Baltimore City has lived with persistent gaps in basic service delivery: parking enforcement, traffic calming, sweeping, waste, code enforcement, forestry. These gaps are not surprises; they are systemic. They cut across process, staffing, technology, equipment, and contracts, and no one part of the system can fix them alone.
 
-A Tiger Team is a focused, time-boxed delivery sprint that brings a cross-functional team to one service problem. It typically runs three to six months. It moves from analysis to action through fast diagnosis and prototypes tested in real conditions, then ends with a plan to scale: ownership, operating procedures, and data products.
-
-> *Design prompt: what would have to be true for this service to feel reliable to residents?*
+A Tiger Team is a focused, time-boxed delivery sprint that brings a cross-functional team to one service problem. It typically runs three to six months. It moves from analysis to action through fast diagnosis and prototypes tested in real conditions, then ends with a plan to scale: ownership, operating procedures, and data products. The question it keeps asking is what would have to be true for this service to feel reliable to residents.
 
 ## How Tiger Teams are chartered
 
-The Innovation Lab provides the team and the method for every Tiger Team. The Lab’s question is *how do we solve this?* The craft, the discovery, the design, the build.
+The Innovation Lab provides the team and the method for every Tiger Team. The Lab’s question is how do we solve this? It owns the discovery, the design, and the build.
 
 Some work needs cross-agency coordination authority: named Authorizers at the Deputy Mayor or City Administrator level, decision rights across multiple agencies, sustainment commitments from each agency, and a weekly delivery cadence to keep them aligned. That work is chartered through Cross-Agency Delivery activation. Cross-Agency Delivery is a way of running work that several agencies have to ship together. It owns the coordination, not the building.
 
@@ -42,7 +40,7 @@ When the work does not need that coordination, because the authority sits cleanl
 
 In both cases, the deliverables, cadences, and standard artifacts that follow apply unchanged. What differs is where the work is chartered, who authorizes it, and whether Cross-Agency Delivery’s coordination is in play.
 
-**Six focus areas — FY26 (January → June 2026)**
+### Six focus areas: FY26 (January to June 2026)
 
 | **Focus area**      | **Lead agency**                                        |
 |---------------------|--------------------------------------------------------|
@@ -69,59 +67,31 @@ In both cases, the deliverables, cadences, and standard artifacts that follow ap
 
 ## Standard outputs
 
-- **1:** Process maps for each service — current state, target state, and the diff.
+- Process maps for each service: current state, target state, and the diff.
+- A staffing assessment: FTEs, vacant positions, peer-city comparison, and market research.
+- A contract and professional services evaluation.
+- An equipment assessment.
+- A data and technology assessment: systems of record, gaps, and the data products needed to operate.
 
-- **2:** Staffing assessment: FTEs, vacant positions, peer-city comparison, market research.
-
-- **3:** Contract and professional services evaluation.
-
-- **4:** Equipment assessment.
-
-- **5:** Data and technology assessment — systems of record, gaps, and the data products needed to operate.
-
-## The method — Public Innovation Toolkit
+## The method: Public Innovation Toolkit
 
 Tiger Teams use the Public Innovation Toolkit, a four-phase method built for public-sector delivery. The phases are sequential but the work iterates: diagnosis informs design, prototypes inform diagnosis, and the sustain plan starts taking shape from week one.
 
-### Phase 1 — AIM: Set the mission
+### Phase 1 (AIM): Set the mission
 
-**Purpose.** Establish an Ambitious, Impactful Mission. Get the team aligned on what would have to be true for the service to feel reliable to residents.
+The goal is an ambitious, impactful mission: getting the team aligned on what would have to be true for the service to feel reliable to residents. The team frames the mission with the Deputy Mayor and agency director, interviews residents and frontline staff, reviews baseline data, and writes the problem statement. It comes out of this phase with a mission statement, a problem statement, a team charter, a decision-rights map, and a plan-on-a-page scoped to the time-box. This runs roughly weeks 1 to 4.
 
-**Activities.** Mission framing with the Deputy Mayor and agency director; resident and frontline interviews; baseline data review; problem statement.
+### Phase 2 (DESIGN): Reimagine solutions
 
-**Outputs.** Mission statement; problem statement; team charter; decision rights map; plan-on-a-page (scoped to the time-box).
+The team uses design research, data analysis, and creative ideation to understand the problem and build candidate solutions with the people who live it. That means process mapping, field observation and ride-alongs, resident and staff design sessions, and analytics and root-cause work, ending in a set of options with their tradeoffs. It produces current-state and target-state process maps, staffing, equipment, and technology assessments, and a portfolio of options with recommended pilots. This runs roughly weeks 5 to 12.
 
-**Duration.** Approximately weeks 1–4.
+### Phase 3 (ACTIVATE): Deliver initiatives
 
-### Phase 2 — DESIGN: Reimagine solutions
+The team prototypes, pilots, and scales initiatives in real conditions, not in slides. It stands up pilots in the field, partners with BCIT and the agency on tooling, runs weekly delivery routines, and holds a mid-cycle review with the Deputy Mayor. The result is live pilots with evidence of impact, redesigned workflows in use by frontline staff, and data products in production. This runs roughly weeks 13 to 22.
 
-**Purpose.** Use design research, data analysis, and creative ideation to understand the problem and co-create candidate solutions.
+### Phase 4 (SUSTAIN): Ingrain the work
 
-**Activities.** Process mapping; field observation and ride-alongs; resident and staff design sessions; analytics and root-cause work; portfolio of options with tradeoffs.
-
-**Outputs.** Current-state and target-state process maps; staffing, equipment, and technology assessments; option portfolio with recommended pilots.
-
-**Duration.** Approximately weeks 5–12.
-
-### Phase 3 — ACTIVATE: Deliver initiatives
-
-**Purpose.** Prototype, pilot, and scale initiatives in real conditions, not in slides.
-
-**Activities.** Standing up pilots in field conditions; partnering with BCIT and the agency on tooling; weekly delivery routines; mid-cycle review with the Deputy Mayor.
-
-**Outputs.** Live pilots with evidence of impact; redesigned workflows in use by frontline staff; data products in production.
-
-**Duration.** Approximately weeks 13–22.
-
-### Phase 4 — SUSTAIN: Ingrain the work
-
-**Purpose.** Hand off the gain so it survives the team. The agency that owns the service keeps the gain.
-
-**Activities.** Ownership transition; standard operating procedures and training; CitiStat handoff to monitor performance; data products into the agency’s rhythm.
-
-**Outputs.** Sustain plan signed by the agency director and the Deputy Mayor; SOPs in agency control; CitiStat cadence and metric set defined; a closure memo.
-
-**Duration.** Approximately weeks 23–26.
+The team hands off the gain so it survives the team, because the agency that owns the service keeps the gain. That means transitioning ownership, writing SOPs and training, handing off to CitiStat to monitor performance, and folding data products into the agency’s routine. It closes with a sustain plan signed by the agency director and the Deputy Mayor, SOPs in agency control, a defined CitiStat cadence and metric set, and a closure memo. This runs roughly weeks 23 to 26.
 
 ## Roles on a Tiger Team
 
@@ -162,31 +132,17 @@ Tiger Teams use the Public Innovation Toolkit, a four-phase method built for pub
 
 ## Standard artifacts
 
-- Charter — mission, problem statement, scope, sponsors, team, decision rights.
-
-- Plan-on-a-page — full time-box plan, milestones, dependencies, named risks.
-
+- Charter: mission, problem statement, scope, sponsors, team, decision rights.
+- Plan-on-a-page: full time-box plan, milestones, dependencies, named risks.
 - Current-state and target-state process maps.
-
 - Staffing, equipment, contract, and technology assessments.
-
-- Pilot designs and pilot evaluations — what we tested, what we learned, what we kept.
-
-- Sustain plan — ownership, SOPs, metric set, training, CitiStat cadence.
-
-- Closure memo — what changed in the world, what is left to do, what we learned.
+- Pilot designs and pilot evaluations: what we tested, what we learned, what we kept.
+- Sustain plan: ownership, SOPs, metric set, training, CitiStat cadence.
+- Closure memo: what changed in the world, what is left to do, what we learned.
 
 ## What makes a Tiger Team succeed
 
-**Real authority.** A named Authorizer at the right level who shows up, decides, and closes the work. That is the agency director when the authority sits inside one agency, or a Deputy Mayor or the City Administrator when the work needs Cross-Agency Delivery coordination.
-
-**Frontline truth.** The team spends time in the field: in trucks, on routes, in inspections, not just in conference rooms.
-
-**Time-box discipline.** The end date is named in the charter and treated as real, typically three to six months. Scope flexes; the date does not.
-
-**Pilots in the world.** No paper recommendations. Every recommendation is tested in real conditions before it is taken seriously.
-
-**Sustain from week one.** The agency that will own the service is in the room from the start. The handoff is designed, not negotiated at the end.
+A Tiger Team succeeds on a few things. It needs real authority: a named Authorizer at the right level who shows up, decides, and closes the work, whether that is the agency director when the authority sits inside one agency, or a Deputy Mayor or the City Administrator when the work needs Cross-Agency Delivery coordination. It needs frontline truth, so the team spends time in the field, in trucks, on routes, and in inspections, not just in conference rooms. It needs time-box discipline: the end date is named in the charter and treated as real, typically three to six months, and scope flexes while the date does not. It runs pilots in the world rather than on paper, testing every recommendation in real conditions before taking it seriously. And it sustains from week one, with the agency that will own the service in the room from the start and the handoff designed rather than negotiated at the end.
 
 ### Common failure modes
 
@@ -202,23 +158,12 @@ Tiger Teams use the Public Innovation Toolkit, a four-phase method built for pub
 
 ## How Tiger Teams fit with the rest of OPI
 
-**Innovation Lab.** The capability: owns the Tiger Team method, the lead, and most of the team. The Lab’s question is *how do we solve this?*
-
-**Performance.** Owns the metric set and absorbs the work into a Stat at sustain. The Stat is how the gain stays gained.
-
-**Data and Analytics.** Provides the diagnosis analytics during the sprint and the data products that ship with the pilot.
-
-**Cross-Agency Delivery.** Owns coordination authority across agencies. When a Tiger Team’s work needs that authority, it is chartered through Cross-Agency Delivery activation. The Innovation Lab still provides the team and the method; Cross-Agency Delivery provides the standing delivery review, the named Authorizer at the Deputy Mayor or City Administrator level, and the closure plan with sustainment commitments from each agency. Cross-Agency Delivery’s question is *how do we get multiple agencies to ship this together?*
-
-**AdminOps.** Charters the team in intake, supports comms and partnerships, and books the closure ceremony.
+The Innovation Lab is the capability: it owns the Tiger Team method, the lead, and most of the team, and its question is how do we solve this? Performance owns the metric set and absorbs the work into a Stat at sustain, which is how the gain stays gained. Data and Analytics provides the diagnosis analytics during the sprint and the data products that ship with the pilot. Cross-Agency Delivery owns coordination authority across agencies: when a Tiger Team’s work needs that authority, it is chartered through a Cross-Agency Delivery activation, where the Innovation Lab still provides the team and the method while Cross-Agency Delivery provides the standing delivery review, the named Authorizer at the Deputy Mayor or City Administrator level, and the closure plan with sustainment commitments from each agency. Its question is how do we get multiple agencies to ship this together? And AdminOps charters the team in intake, supports comms and partnerships, and books the closure ceremony.
 
 ## Where to learn more
 
-- Innovation Lab Public Brief — the public-facing explainer of how the Lab works.
-
-- CitiStat Method Playbook — the Stat method that absorbs the work at sustain.
-
-- OPI Charter Template and Problem Statement Template — the artifacts every Tiger Team uses at kickoff.
-
-- Public Innovation Toolkit — the underlying method.
+- Innovation Lab Public Brief: the public-facing explainer of how the Lab works.
+- CitiStat Method Playbook: the Stat method that absorbs the work at sustain.
+- OPI Charter Template and Problem Statement Template: the artifacts every Tiger Team uses at kickoff.
+- Public Innovation Toolkit: the underlying method.
 

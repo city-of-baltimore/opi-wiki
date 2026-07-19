@@ -1,4 +1,4 @@
-# PD — Principal Data Engineer
+# PD: Principal Data Engineer
 
 {{ page_header(summary="Position description for the Principal Data Engineer.") }}
 
@@ -45,7 +45,7 @@ Reporting to the Deputy Chief Data Officer, the role works on an interdisciplina
 
 ### Stakeholder Partnership
 
-- Work with agency stakeholders, analysts, and data scientists to understand what datasets mean and how they are used; translate business questions into technical solutions and data products that surface insights and guide action.
+- Work with agency stakeholders, analysts, and data scientists to understand what datasets mean and how they are used; translate business questions into technical solutions and data products that reveal insights and guide action.
 
 - Broadly support ad-hoc data curation, visualization, and statistical needs in City Hall.
 

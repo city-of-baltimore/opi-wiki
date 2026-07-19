@@ -1,6 +1,6 @@
 # Wiki Knowledge Base Structure
 
-{{ page_header(summary="How OPI organizes its internal SharePoint knowledge base — a separate system from this public site.", category="SERIES · OPI FOUNDATIONS", tagline="Structure, governance, and what each pillar must contain.") }}
+{{ page_header(summary="How OPI organizes its internal SharePoint knowledge base, a separate system from this public site.", category="SERIES · OPI FOUNDATIONS", tagline="Structure, governance, and what each pillar must contain.") }}
 
 !!! note "Two different systems"
     This page documents OPI's **internal SharePoint knowledge base**, the
@@ -22,11 +22,7 @@ The OPI Wiki is the single internal home for the way OPI works: mission, model, 
 
 ### Three jobs of the Wiki
 
-**Find.** Surface the official document, person, or routine the user needs, fast.
-
-**Trust.** Make it obvious which documents are current, who owns them, and when they were last reviewed.
-
-**Survive.** Outlast turnover. The Wiki is a record of how OPI works, not how any one person works.
+The Wiki does three jobs. It helps people find the official document, person, or routine they need, fast. It helps them trust what they find, by making it obvious which documents are current, who owns them, and when they were last reviewed. And it is built to survive turnover, so it stays a record of how OPI works, not how any one person works.
 
 ## Platform and scope
 
@@ -40,21 +36,21 @@ OPI uses Microsoft SharePoint as the wiki platform, consistent with the rest of 
 
 - Templates (charter, problem statement, intake form, pre-read, after-action review).
 
-- Project Directory — the live list of every active and recent OPI project.
+- Project Directory: the live list of every active and recent OPI project.
 
-- People and Contacts Directory — OPI staff, agency liaisons, and key partners.
+- People and Contacts Directory: OPI staff, agency liaisons, and key partners.
 
-- Change Log — what was added, updated, or retired in the last 90 days.
+- Change Log: what was added, updated, or retired in the last 90 days.
 
 ### What does not live in the Wiki
 
 - Personally identifiable information about residents.
 
-- Live HR or compensation data — owned in Workday and HR systems.
+- Live HR or compensation data, owned in Workday and HR systems.
 
-- Sensitive operational drafts — stored in restricted Leadership space, not the open Wiki.
+- Sensitive operational drafts, stored in restricted Leadership space, not the open Wiki.
 
-- Working chat threads — those live in Teams; only decisions and outcomes flow into the Wiki.
+- Working chat threads, which live in Teams; only decisions and outcomes flow into the Wiki.
 
 ## Top-level navigation
 
@@ -71,15 +67,15 @@ The internal SharePoint KB uses six top-level pillars. Depth comes from consiste
 
 ### Persistent utility links (top of every page)
 
-- Start Here — new hire onboarding hub.
+- Start Here: new hire onboarding hub.
 
-- Directory — people and contacts.
+- Directory: people and contacts.
 
-- Project Directory — active project list.
+- Project Directory: active project list.
 
-- Templates — controlled library.
+- Templates: controlled library.
 
-- Change Log — what is new and updated.
+- Change Log: what is new and updated.
 
 ## What each pillar must contain
 
@@ -87,47 +83,47 @@ The internal SharePoint KB uses six top-level pillars. Depth comes from consiste
 
 - OPI in one paragraph (mission, north star, who we report to).
 
-- Portfolios and services — the four teams and five services, with leads.
+- Portfolios and services: the four teams and five services, with leads.
 
 - Organization chart (current).
 
-- Leadership team — photos, titles, two-line bios.
+- Leadership team: photos, titles, two-line bios.
 
 - What OPI does and does not do (scope and boundaries).
 
 ### How We Deliver
 
-- Operating Model — staff version (this set, doc 27).
+- Operating Model, staff version (this set, doc 27).
 
-- Intake SOP — the single front door process.
+- Intake SOP: the single front door process.
 
 - Charter and Problem Statement templates.
 
 - Decision forums and cadences (weekly ops, monthly portfolio, quarterly review).
 
-- Escalation paths — who decides what, with timeboxes.
+- Escalation paths: who decides what, with timeboxes.
 
 ### Playbooks and Methods
 
-- CitiStat Method Playbook — staff and agency version (this set, doc 28).
+- CitiStat Method Playbook, staff and agency version (this set, doc 28).
 
 - Tiger Teams Playbook (this set, doc 30).
 
-- Innovation Lab methods — discovery, prototyping, sustain.
+- Innovation Lab methods: discovery, prototyping, sustain.
 
 - Data governance and KPI Dictionary standards.
 
-- Responsible AI readiness — use-case intake and review process.
+- Responsible AI readiness: use-case intake and review process.
 
 ### Tools and Systems
 
-- City systems 101 — 311, Accela, Workday, BCIT supported tooling.
+- City systems 101: 311, Accela, Workday, BCIT supported tooling.
 
-- OPI productivity stack — M365, Teams, Planner, Jira (see Productivity Playbook).
+- OPI productivity stack: M365, Teams, Planner, Jira (see Productivity Playbook).
 
-- Engineering and data platform standards — source control, CI/CD, secrets, runbooks.
+- Engineering and data platform standards: source control, CI/CD, secrets, runbooks.
 
-- Data and analytics tools — warehouse, BI, open data publishing.
+- Data and analytics tools: warehouse, BI, open data publishing.
 
 ### Operations and Governance
 
@@ -143,15 +139,15 @@ The internal SharePoint KB uses six top-level pillars. Depth comes from consiste
 
 ### People and Project Directory
 
-- People Directory — every OPI staff member, role, portfolio, contact.
+- People Directory: every OPI staff member, role, portfolio, contact.
 
-- Project Directory — every active and recent OPI project, with owner, status, sponsor, and last update.
+- Project Directory: every active and recent OPI project, with owner, status, sponsor, and last update.
 
-- Agency Liaisons — named partners at every City agency we work with.
+- Agency Liaisons: named partners at every City agency we work with.
 
 - Position Descriptions Index (this set, doc 31).
 
-## Page types — what to use, when
+## Page types: what to use, when
 
 Every Wiki contributor must know which content type to use. Mismatch is the leading cause of drift.
 
@@ -159,10 +155,10 @@ Every Wiki contributor must know which content type to use. Mismatch is the lead
 |------------------|---------------------------------------------------------------------|-----------------------------------------------|
 | SharePoint page  | Living guidance that needs to be read and searched.                 | How to run a Stat session; charter standards. |
 | Document library | Controlled artifacts and templates that need versioning.            | Charter template; KPI Dictionary template.    |
-| List             | Systems of record — structured, sortable, filterable, reportable.   | Project Directory; People Directory.          |
+| List             | Systems of record: structured, sortable, filterable, reportable.   | Project Directory; People Directory.          |
 | Folder           | Supporting files inside a project space; never the official record. | Meeting attachments inside a project hub.     |
 
-## Metadata — minimum effective tagging
+## Metadata: minimum effective tagging
 
 Every Wiki page and every controlled artifact carries a small set of tags so the Wiki stays findable and governable. The principle: minimum effective metadata. Required fields must be accurate; everything else is optional.
 
@@ -177,17 +173,11 @@ Every Wiki page and every controlled artifact carries a small set of tags so the
 | Sensitivity         | Yes          | Public · Internal · Restricted.                            |
 | Change log          | Yes          | A short note of what changed in the last update.           |
 
-## Governance — keep it sharp
+## Governance
 
 ### Roles
 
-**Site steward (Chief of Staff).** Owns navigation, standards, change control, and the overall structure.
-
-**Taxonomy owner (DCDO with Chief of Staff).** Owns term sets, sensitivity labels, and metadata rules.
-
-**Service owners (DCPO, DCDO, Innovation Lab lead).** Own content for their service playbooks and standards.
-
-**Ops librarian (AdminOps).** Audits broken links, archives stale content, enforces naming conventions.
+The site steward, the Chief of Staff, owns navigation, standards, change control, and the overall structure. The taxonomy owner, the DCDO working with the Chief of Staff, owns term sets, sensitivity labels, and metadata rules. The service owners, the DCPO, DCDO, and Innovation Lab lead, own the content for their service playbooks and standards. And the ops librarian in AdminOps audits broken links, archives stale content, and enforces naming conventions.
 
 ### Cadence
 
@@ -209,25 +199,13 @@ Every Wiki page and every controlled artifact carries a small set of tags so the
 
 - Stale content (no review for 6+ months) is flagged red and reviewed or retired.
 
-## Implementation — three releases
+## Implementation: three releases
 
-The Wiki is built in three releases so it is useful on day one and improves with use.
-
-**MVP (2 weeks).** Top-level structure, Project Directory, People Directory, Templates library, Start Here, Change Log. Linked from the OPI Foundations document set.
-
-**V1 (30 to 45 days).** Service playbooks, methods pages, City systems 101, engineering standards, full Foundations set published in final approved form.
-
-**V2 (quarterly).** Expand systems-of-record lists, add dashboards and views, harden governance (audits, term updates, archive policy).
+The Wiki is built in three releases so it is useful on day one and improves with use. The MVP, in about two weeks, is the top-level structure, the Project Directory, the People Directory, the Templates library, Start Here, and the Change Log, all linked from the OPI Foundations document set. V1, over 30 to 45 days, adds the service playbooks, methods pages, City systems 101, engineering standards, and the full Foundations set published in final approved form. V2, on a quarterly basis, expands the systems-of-record lists, adds dashboards and views, and hardens governance with audits, term updates, and an archive policy.
 
 ## Access and sensitivity
 
-- **Default open:** Most of the Wiki is open to all OPI staff. Defaulting to open is intentional.
-
-- **Leadership space:** A small Leadership space holds sensitive operational documents (recruitment trackers, draft personnel actions, equity assessment drafts, and partner due-diligence notes).
-
-- **Partner space:** Some agency-shared spaces are joint with our partners; access is granted by named role.
-
-- **No resident PII:** Resident PII does not live in SharePoint. Operational data with PII lives in the system of record (for example, Workday, BCIT-managed systems).
+Most of the Wiki is open to all OPI staff, and defaulting to open is intentional. A small Leadership space holds sensitive operational documents: recruitment trackers, draft personnel actions, equity assessment drafts, and partner due-diligence notes. Some agency-shared spaces are joint with our partners, with access granted by named role. Resident PII does not live in SharePoint at all; operational data with PII stays in the system of record, for example Workday or BCIT-managed systems.
 
 ## Rollout to staff
 

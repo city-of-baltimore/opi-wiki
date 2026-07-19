@@ -1,4 +1,4 @@
-# PD — Data Storyteller
+# PD: Data Storyteller
 
 {{ page_header(summary="Position description for the Data Storyteller.") }}
 
@@ -31,7 +31,7 @@ The Data Storyteller develops and stewards OPI’s external narrative, partner r
 
 ### Storytelling and Editorial Operations
 
-- Maintain an editorial calendar for reports, dashboards, impact briefs, and public updates; align timelines with CitiStat and portfolio cadences.
+- Maintain an editorial calendar for reports, dashboards, impact briefs, and public updates; align timelines with CitiStat and portfolio schedules.
 
 - Produce concise copy, visuals, and executive summaries that explain outcomes, methods, and next steps in plain language.
 
@@ -67,7 +67,7 @@ The Data Storyteller develops and stewards OPI’s external narrative, partner r
 
 ### Partnerships and resource development
 
-- Working knowledge of philanthropic and civic-tech partner ecosystems.
+- Working knowledge of philanthropic and civic-tech partner networks.
 
 - Comfort drafting concept notes, grant proposals, and partner-facing memos.
 

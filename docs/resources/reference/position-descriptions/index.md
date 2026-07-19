@@ -10,10 +10,7 @@ OPI maintains a position description (PD) for every role on the team. PDs are th
 
 ### Conventions
 
-- **Role** links to the full position description; the **Classification** column carries the City classification.
-- **Reports to** is the position the role reports to in the OPI Operating Model.
-- **Status** is "Filled" or "Open," maintained against the personnel roster.
-- Roles are grouped by the team the person sits on, which is not always where the PD document is filed.
+In the table below, the Role column links to the full position description, and the Classification column carries the City classification. Reports to is the position the role reports to in the OPI Operating Model. Status is either "Filled" or "Open," maintained against the personnel roster. Roles are grouped by the team the person sits on, which is not always where the PD document is filed.
 
 This index is generated from the [canonical people directory](../../../how-we-work/organization/team-and-roles/index.md); update a role there and it updates here.
 
@@ -27,9 +24,5 @@ Cross-Agency Delivery is a way of running work, not a separate team or cost cent
 
 ## How this index is maintained
 
-**Owner.** The Chief of Staff owns the PD index and is the final word on working titles, reporting lines, and status.
-
-**Change control.** Material changes (title, classification, reporting line, scope) require Chief of Staff sign-off and HR partner review.
-
-**Review cadence.** Quarterly review by the Chief of Staff with team leads. Annual sweep aligned to the budget cycle.
+The Chief of Staff owns the PD index and is the final word on working titles, reporting lines, and status. Material changes to a title, classification, reporting line, or scope require Chief of Staff sign-off and HR partner review. The Chief of Staff reviews the index with team leads each quarter, with an annual sweep aligned to the budget cycle.
 

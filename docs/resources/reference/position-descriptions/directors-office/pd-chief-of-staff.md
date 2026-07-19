@@ -1,4 +1,4 @@
-# PD — Chief of Staff
+# PD: Chief of Staff
 
 {{ page_header(summary="Position description for the Chief of Staff.") }}
 
@@ -10,12 +10,12 @@
 | **Classification**       | Operations Manager II                                                                                                                                                                                                                                                                                                               |
 | **Portfolio**            | Director's Office                                                                                                                                                                                                                                                                                                                   |
 | **Reports to**           | Executive Director and Chief Data Officer                                                                                                                                                                                                                                                                                           |
-| **Supervision given**    | Directly supervises the Director’s Office team — Data Storyteller, Project Manager, Operations Analyst, and CitiStat Inspector — and directly oversees the Innovation Program Manager in support of the Innovation Lab. Indirectly coordinates with the Deputy Chief Performance Officer and the Deputy Chief Data Officer. |
+| **Supervision given**    | Directly supervises the Director’s Office team (Data Storyteller, Project Manager, Operations Analyst, and CitiStat Inspector) and directly oversees the Innovation Program Manager in support of the Innovation Lab. Indirectly coordinates with the Deputy Chief Performance Officer and the Deputy Chief Data Officer. |
 | **Supervision received** | Reports to the Executive Director and Chief Data Officer of OPI.                                                                                                                                                                                                                                                                    |
 
 ## Position Summary
 
-The Chief of Staff is the Executive Director’s principal deputy and the operational leader of OPI’s Director’s Office. The role coordinates strategy and execution on behalf of the Executive Director, owns OPI’s internal operating rhythm, and represents the Executive Director in interagency forums. Externally, the Chief of Staff leads partnerships, communications, and resource development. Internally, the Chief of Staff oversees administrative operations, knowledge management, the SharePoint operating system, quality assurance, the inspections function, and cross-OPI alignment.
+The Chief of Staff is the Executive Director’s principal deputy and the operational leader of OPI’s Director’s Office. The role coordinates strategy and execution on behalf of the Executive Director, owns OPI’s internal operating routines, and represents the Executive Director in interagency forums. Externally, the Chief of Staff leads partnerships, communications, and resource development. Internally, the Chief of Staff oversees administrative operations, knowledge management, the SharePoint operating system, quality assurance, the inspections function, and cross-OPI alignment.
 
 The Chief of Staff manages the Director’s Office staff (Data Storyteller, Project Manager, Operations Analyst, and CitiStat Inspector) and directly oversees the Innovation Program Manager on behalf of the Innovation Lab. The role also oversees personnel, purchasing, and facilities coordination, and maintains continuity practices including OSHA, COOP, and incident response. It connects the Executive Director to the four service portfolios.
 
@@ -31,7 +31,7 @@ The Chief of Staff manages the Director’s Office staff (Data Storyteller, Proj
 
 - Coordinate leadership inputs and testimony for City Council, Board of Estimates, and public meetings; ensure materials are accurate, accessible, and on time.
 
-- Manage the Director’s operating rhythm, including leadership huddles, all-hands, and one-on-ones; publish agendas and notes and track actions.
+- Manage the Director’s operating routines, including leadership huddles, all-hands, and one-on-ones; publish agendas and notes and track actions.
 
 - Maintain continuity protocols for executive coverage, incident response, and after-action reviews.
 
@@ -39,7 +39,7 @@ The Chief of Staff manages the Director’s Office staff (Data Storyteller, Proj
 
 - Partner with team leads (Performance, Data and Analytics, Innovation Lab) to align priorities, milestones, and the OPI Book of Business.
 
-- Oversee the Project Manager and the OPI portfolio register; review weekly and monthly status, surface risks, and direct decision points to the Executive Director.
+- Oversee the Project Manager and the OPI portfolio register; review weekly and monthly status, flag risks, and direct decision points to the Executive Director.
 
 - Sponsor the office’s quality-assurance standards and ensure deliverables meet the OPI publication bar.
 
@@ -67,7 +67,7 @@ The Chief of Staff manages the Director’s Office staff (Data Storyteller, Proj
 
 ### Operations and program leadership
 
-- Strong executive operations and chief-of-staff skills, including running operating rhythms, briefing executives, and converting decisions into delivered work.
+- Strong executive operations and chief-of-staff skills, including running operating routines, briefing executives, and converting decisions into delivered work.
 
 - Skill in cross-functional program management across data, analytics, performance, and design teams.
 
@@ -113,6 +113,6 @@ Employees in this class work a conventional work week. This position may be requ
 
 **Supervision received.** Reports to the Executive Director and Chief Data Officer of OPI.
 
-**Supervision given.** Directly supervises the Director’s Office team — Data Storyteller, Project Manager, Operations Analyst, and CitiStat Inspector — and directly oversees the Innovation Program Manager in support of the Innovation Lab. Indirectly coordinates with the Deputy Chief Performance Officer and the Deputy Chief Data Officer.
+**Supervision given.** Directly supervises the Director’s Office team (Data Storyteller, Project Manager, Operations Analyst, and CitiStat Inspector) and directly oversees the Innovation Program Manager in support of the Innovation Lab. Indirectly coordinates with the Deputy Chief Performance Officer and the Deputy Chief Data Officer.
 
 *This Position Description reflects the OPI operating model. It describes the typical scope of the role and is not an exhaustive list of duties. OPI is an Equal Opportunity Employer; all qualified applicants will receive consideration without regard to race, color, religion, sex, sexual orientation, gender identity, national origin, disability, age, or veteran status.*

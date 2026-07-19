@@ -1,4 +1,4 @@
-# PD — Deputy Chief Performance Officer
+# PD: Deputy Chief Performance Officer
 
 {{ page_header(summary="Position description for the Deputy Chief Performance Officer.") }}
 
@@ -33,7 +33,7 @@ The DCPO leads a team of analysts who gather and analyze agency data to assess p
 
 - Provide technical assistance, coaching, and training to agency staff and analysts to strengthen performance practices and accountability.
 
-- Own and maintain the KPI Dictionary standard (owners, formulas, cadence, equity lens) and drive adoption across agencies.
+- Own and maintain the KPI Dictionary standard (owners, formulas, update frequency, equity lens) and drive adoption across agencies.
 
 ### CitiStat Program Management
 

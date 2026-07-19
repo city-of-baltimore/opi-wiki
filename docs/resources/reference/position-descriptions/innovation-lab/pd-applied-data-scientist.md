@@ -1,4 +1,4 @@
-# PD — Applied Data Scientist
+# PD: Applied Data Scientist
 
 {{ page_header(summary="Position description for the Applied Data Scientist on the Innovation Lab.") }}
 
@@ -23,7 +23,7 @@ Reporting to the Innovation Program Manager, the role partners closely with the 
 
 ### Applied Analysis and Problem Framing
 
-- Investigate the data behind a service problem a Lab project or tiger team is tackling, surfacing patterns, root causes, and opportunities that shape the solution.
+- Investigate the data behind a service problem a Lab project or tiger team is tackling, revealing patterns, root causes, and opportunities that shape the solution.
 
 - Partner with designers, engineers, and agency staff to frame ambiguous questions, define baselines and target metrics, and state the assumptions a solution depends on.
 

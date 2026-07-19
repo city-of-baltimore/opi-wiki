@@ -1,4 +1,4 @@
-# PD — CitiStat Analyst
+# PD: CitiStat Analyst
 
 {{ page_header(summary="Position description for the CitiStat Analyst.") }}
 
@@ -25,7 +25,7 @@ The role frames problems; collects, validates, analyzes, and interprets datasets
 
 - Monitor KPIs and service trends; conduct deep-dive analyses on priority issues such as cycle time, backlog, and quality.
 
-- Perform quality assurance on sources, definitions, and calculations; maintain links to the KPI Dictionary, data owners, and refresh cadence.
+- Perform quality assurance on sources, definitions, and calculations; maintain links to the KPI Dictionary, data owners, and refresh schedule.
 
 - Coordinate with agency analysts and program leads to align metrics with goals and to resolve definition or data-quality issues.
 
@@ -41,7 +41,7 @@ The role frames problems; collects, validates, analyzes, and interprets datasets
 
 - Prepare and disseminate meeting materials, including pre- and post-session memos, in accordance with established deadlines.
 
-- Track, escalate, and close follow-ups; surface cross-agency blockers for tiger-team activation when criteria are met.
+- Track, escalate, and close follow-ups; flag cross-agency blockers for tiger-team activation when criteria are met.
 
 - Conduct site visits/inspections and staff interviews to validate data and refine definitions.
 
@@ -65,7 +65,7 @@ The role frames problems; collects, validates, analyzes, and interprets datasets
 
 ### Operations and stewardship
 
-- Diplomacy with senior leaders; reliable follow-through in a visible cadence.
+- Diplomacy with senior leaders; reliable follow-through on a visible schedule.
 
 - Ability to maintain confidentiality of sensitive information.
 
