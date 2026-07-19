@@ -4,9 +4,7 @@
 
 ## What this service does
 
-This service is OPI's Administration & Operations function. It runs the administrative, operational, communications, and portfolio-management work that keeps the Mayor's Office of Performance and Innovation moving.
-
-**Activities include** portfolio intake and tracking, project-management coordination, executive briefings, communications, branding and marketing, Council relations, knowledge management, fiscal and procurement coordination, HR and facilities support, internal operating routines, quality assurance for public-facing materials, and maintaining the systems and standards that keep OPI's work consistent and sustainable.
+AdminOps runs the administrative, operational, communications, and portfolio work that keeps the Mayor's Office of Performance and Innovation moving. That covers portfolio intake and tracking, project coordination, executive briefings, communications, branding and marketing, Council relations, knowledge management, fiscal and procurement coordination, HR and facilities support, internal operating routines, quality assurance on anything headed to the public, and the systems and standards that keep OPI's work consistent over time.
 
 ## The goal
 
@@ -25,10 +23,7 @@ Operationally required to execute Baltimore City Code, Article 1, Subtitles 61 a
 
 ## What this means for people
 
-- **As a city leader,** I want confidence that priority work is being driven, tracked, and communicated.
-- **As an agency partner,** I want clear timelines, expectations, and responsive coordination.
-- **As OPI staff,** I want systems, templates, and support that reduce friction and let me focus on impact.
-- **As a resident,** I benefit when the City keeps its commitments and shows its progress.
+City leaders want confidence that priority work is being driven, tracked, and communicated. Agency partners want clear timelines, expectations, and responsive coordination. OPI staff want systems, templates, and support that reduce friction so they can focus on the work. And residents benefit when the City keeps its commitments and shows its progress.
 
 ## Delivered by
 
@@ -36,6 +31,6 @@ The [Director's Office](../../about-us/our-teams/directors-office/index.md).
 
 ## Read alongside
 
-- [How Work Moves Through OPI](../../how-we-work/how-work-moves-through-opi.md) — where this service sits in the loop
-- [Operations](../../how-we-work/handbook/operations/index.md) — the operating routines AdminOps maintains
+- [How Work Moves Through OPI](../../how-we-work/how-work-moves-through-opi.md): where this service sits in the loop
+- [Operations](../../how-we-work/handbook/operations/index.md): the operating routines AdminOps maintains
 - [Director's Office](../../about-us/our-teams/directors-office/index.md)

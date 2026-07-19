@@ -1,18 +1,18 @@
 # CitiStat Quality Standards
 
-{{ page_header(summary="The QA bar for every Stat artifact — from raw data to the session itself.", category="QUALITY STANDARDS", tagline="The standards every Stat product is held to before it leaves the analyst, the Stat lead, and the room.") }}
+{{ page_header(summary="The QA bar for every Stat artifact, from raw data to the session itself.", category="QUALITY STANDARDS", tagline="The standards every Stat product is held to before it leaves the analyst, the Stat lead, and the room.") }}
 
 ## How quality control runs
 
-Quality control runs from raw data through the analytic product to the session itself. Every Stat product has a named lead and an independent reviewer — the **CitiStat Program Manager**, who did not build the work. Both sign off before materials go out.
+Quality control runs from raw data through the analytic product to the session itself. Every Stat product has a named lead and an independent reviewer, the **CitiStat Program Manager**, who did not build the work. Both sign off before materials go out.
 
 The standards on this page apply in sequence:
 
-1. **Code and data QC** — checked before any visualization is built.
-2. **Visualization and product standards** — applied as the lead builds visuals from QCed data.
-3. **Pre-memo quality checklist** — confirmed before the pre-memo is distributed.
-4. **Session quality checklist** — observed during and immediately after the session.
-5. **Follow-up quality checklist** — confirmed before follow-up materials are issued and as follow-ups close.
+1. Code and data QC, checked before any visualization is built.
+2. Visualization and product standards, applied as the lead builds visuals from QCed data.
+3. Pre-memo quality checklist, confirmed before the pre-memo is distributed.
+4. Session quality checklist, observed during and immediately after the session.
+5. Follow-up quality checklist, confirmed before follow-up materials are issued and as follow-ups close.
 
 ## Code and data QC
 
@@ -36,7 +36,7 @@ QCed before any visualization is built. The Program Manager fills out this part 
 
 - No cells in the final output are unexplained or implausible.
 
-- The output contains the data needed for the final deliverable — nothing missing, nothing extraneous.
+- The output contains the data needed for the final deliverable, nothing missing and nothing extraneous.
 
 ## Visualization and product standards
 
@@ -118,7 +118,7 @@ Applied once the data table is QCed and the lead is building visuals.
 
 ## See also
 
-- [CitiStat Method Playbook](method-playbook.md) — the operating standards these quality bars enforce.
-- [CitiStat Templates](templates.md) — the artifacts these standards apply to.
-- [CitiStat Method Playbook → Data standards and evidence](method-playbook.md#data-standards-and-evidence) — the data discipline that feeds these checklists.
-- [CitiStat Method Playbook → Follow-ups, escalation, and sustainment](method-playbook.md#follow-ups-escalation-and-sustainment) — what the follow-up checklist supports.
+- [CitiStat Method Playbook](method-playbook.md): the operating standards these quality bars enforce.
+- [CitiStat Templates](templates.md): the artifacts these standards apply to.
+- [CitiStat Method Playbook → Data standards and evidence](method-playbook.md#data-standards-and-evidence): the data discipline that feeds these checklists.
+- [CitiStat Method Playbook → Follow-ups, escalation, and sustainment](method-playbook.md#follow-ups-escalation-and-sustainment): what the follow-up checklist supports.

@@ -4,7 +4,7 @@
 
 ## What CitiStat is
 
-CitiStat is Baltimore's executive performance routine: the standing forum where City leadership, agencies, and the Mayor's Office of Performance and Innovation (OPI) use data to choose a small number of problems that matter, decide what to do about them, and follow through until conditions change. Baltimore pioneered CitiStat in 1999. [City Code Article 1, Subtitle 61](https://codes.baltimorecity.gov/us/md/cities/baltimore/code/1/61) makes it law.
+CitiStat is how Baltimore reviews performance at the top. In these sessions, City leadership, agencies, and the Mayor's Office of Performance and Innovation (OPI) use data to choose a small number of problems that matter, decide what to do about them, and follow through until conditions change. Baltimore pioneered CitiStat in 1999. [City Code Article 1, Subtitle 61](https://codes.baltimorecity.gov/us/md/cities/baltimore/code/1/61) makes it law.
 
 CitiStat works because it does one job and refuses the others. It does not review everything an agency does. It finds the places where a priority outcome is required but not moving, concentrates attention and resources there, tests a specific tactic, and stays with it until the result changes or the approach is retired.
 
@@ -14,9 +14,9 @@ CitiStat is one link in a connected chain. The Mayor's Action Plan sets the dest
 
 | Layer | What it sets | How it connects to CitiStat |
 | --- | --- | --- |
-| **Mayor's Action Plan** | The Mayor's strategic priorities — goals, strategies, and KPIs | The source of the outcomes CitiStat drives toward |
+| **Mayor's Action Plan** | The Mayor's strategic priorities: goals, strategies, and KPIs | The source of the outcomes CitiStat drives toward |
 | **Agency Performance Plans** | Each agency's services, initiatives, and measures | Translate the Mayor's goals into what each agency delivers and how it is measured |
-| **CitiStat** | The executive routine for the priorities that need leadership attention | Takes the goals and measures that are off track or need coordination and drives them — in specific places — until they move |
+| **CitiStat** | Where leadership works the priorities that need its attention | Takes the goals and measures that are off track or need coordination and drives them, in specific places, until they move |
 
 The three reinforce each other: every CitiStat topic should trace back to a Mayor's Action Plan goal and an Agency Performance Plan measure. If a problem is not important enough to sit in the Action Plan or a Performance Plan, it is not important enough for CitiStat.
 
@@ -32,20 +32,18 @@ The three reinforce each other: every CitiStat topic should trace back to a Mayo
 
 ## The four tenets of Stat
 
-Every Stat holds to the four tenets that have defined the discipline since Baltimore founded CitiStat in 1999:
+Every Stat holds to the four tenets that have defined the work since Baltimore founded CitiStat in 1999:
 
-1. **Timely, accurate intelligence shared by all** — reliable data, resident signals, and field validation, so the room is not arguing about the numbers.
-2. **Rapid deployment of resources** — use the session to move people, attention, tools, and funding toward the problem.
-3. **Effective tactics and strategies** — ask what was tried, what changed, why, and what to test next.
-4. **Relentless follow-up and assessment** — track every follow-up to closure with evidence.
+1. Timely, accurate intelligence shared by all: reliable data, resident signals, and field validation, so the room is not arguing about the numbers.
+2. Rapid deployment of resources: use the session to move people, attention, tools, and funding toward the problem.
+3. Effective tactics and strategies: ask what was tried, what changed, why, and what to test next.
+4. Relentless follow-up and assessment: track every follow-up to closure with evidence.
 
 ## The place-based model
 
-For operating agencies, CitiStat is moving to a place-based model, beginning with Housing (DHCD) and DOT and extending to Police and Fire & EMS. **Place is the primary unit of action.**
+For operating agencies, CitiStat is moving to a place-based model, beginning with Housing (DHCD) and DOT and extending to Police and Fire & EMS. Place is the unit of action.
 
-Citywide averages describe Baltimore's overall condition, but they hide sharp differences between blocks, corridors, and neighborhoods. An agency can improve on average while the places with the greatest need stay stuck. So CitiStat narrows its focus: each session takes **one outcome, no more than two geographies, and two or three operational pressure points.** A geography is drawn to fit the problem: a cluster of blocks for vacant housing, a single corridor or intersection for traffic safety. It is precise enough to guide where resources go, and stable enough to measure progress over time.
-
-> Data identifies the location. The location focuses the conversation. The conversation informs the solution. Follow-through determines whether it worked.
+Citywide averages describe Baltimore's overall condition, but they hide sharp differences between blocks, corridors, and neighborhoods. An agency can improve on average while the places with the greatest need stay stuck. So CitiStat narrows its focus. Each session takes one outcome, no more than two geographies, and two or three operational pressure points. A geography is drawn to fit the problem: a cluster of blocks for vacant housing, a single corridor or intersection for traffic safety. It is precise enough to guide where resources go, and stable enough to measure progress over time. The data points to the location, the location focuses the conversation, and follow-through shows whether the fix worked.
 
 ### When a place earns executive attention
 
@@ -77,13 +75,7 @@ The mechanics that make a Stat repeatable are in the [Method Playbook](method-pl
 
 ## When to escalate an issue to CitiStat
 
-An issue moves from an agency's own performance management into CitiStat when executive attention can materially change the outcome, and at least one of these holds:
-
-- **Performance is materially off track** — a Mayor's Action Plan outcome or Agency Performance Plan milestone has missed its target for two straight cycles, or is projected to miss by a wide margin.
-- **A place-based intervention can produce results** — the problem is concentrated where coordinated action could achieve a visible improvement.
-- **Resolution requires cross-agency action** — two or more agencies share responsibility and none can clear the barrier alone.
-- **The issue carries significant risk** — a life-safety, legal, financial, reputational, or resident-service risk needs timely executive attention.
-- **An executive decision is required** — a tactic has produced enough evidence to decide whether to expand, fund, standardize, redesign, or stop it.
+An issue moves from an agency's own performance management into CitiStat when executive attention can materially change the outcome, and at least one of these holds. Performance is materially off track, meaning a Mayor's Action Plan outcome or Agency Performance Plan milestone has missed its target for two straight cycles or is projected to miss by a wide margin. The problem is concentrated where coordinated action could produce a visible improvement. Two or more agencies share responsibility and none can clear the barrier alone. There is a significant risk to life-safety, legal, financial, reputational, or resident-service interests that needs timely executive attention. Or a tactic has produced enough evidence to decide whether to expand, fund, standardize, redesign, or stop it.
 
 Admission is not permanent. A Stat that stops producing decisions, commitments, or learning is redesigned, paused, merged, or handed off. The [continuation test](method-playbook.md#issue-selection-admission-and-continuation) in the Playbook sets the bar.
 
@@ -102,13 +94,9 @@ The nine principal agencies are the Fire Department, Department of Finance, Depa
 
 ## Governance and roles
 
-CitiStat depends on a clear division of authority:
+CitiStat depends on a clear division of authority. The City Administrator chairs the place-based sessions, sets a collaborative tone, and keeps agencies accountable for attendance, data, and follow-through. The Mayor, or a designee, sets the priority outcomes, approves the priority geographies, receives a short update each cycle, and attends at least once a quarter. Deputy Mayors advocate for their agencies in agenda-setting and hold them accountable to the schedule. Agencies provide data in the least restrictive form the law allows, complete their follow-ups, and manage their own CitiStat process through their Data-Driven Officer.
 
-- **The City Administrator** chairs the place-based sessions, sets the collaborative tone, and keeps agencies accountable for attendance, data, and follow-through.
-- **The Mayor (or a designee)** sets the priority outcomes, approves the priority geographies, receives a concise update each cycle, and attends at least once a quarter.
-- **Deputy Mayors** advocate for their agencies in agenda-setting and hold them accountable to the cycle.
-- **Agencies** provide data in the least restrictive form the law allows, complete their follow-ups, and manage the agency's CitiStat process through their **Data-Driven Officer**.
-- **The CitiStat team** runs the routine and applies the four tenets. The Executive Director is the CitiStat Director and owns the program; the Deputy Chief Performance Officer leads it day to day. The Playbook's [roles and decision rights](method-playbook.md#roles-and-decision-rights) set out who owns each deliverable.
+The CitiStat team runs the sessions and applies the four tenets. The Executive Director is the CitiStat Director and owns the program; the Deputy Chief Performance Officer leads it day to day. The Playbook's [roles and decision rights](method-playbook.md#roles-and-decision-rights) set out who owns each deliverable.
 
 CitiStat has no agency management authority. It recommends, coordinates, and monitors commitments; agencies own the work.
 
@@ -133,7 +121,7 @@ CitiStat identifies the problem; the rest of OPI helps explain, design, deliver,
 | Dimension | What success looks like |
 | --- | --- |
 | Routine reliability | Sessions happen as scheduled; memos are on time; follow-ups are tracked and closed with evidence. |
-| Service improvement | Priority places show measurable gains — shorter cycle times, smaller backlogs, fewer repeat problems. |
+| Service improvement | Priority places show measurable gains: shorter cycle times, smaller backlogs, fewer repeat problems. |
 | Data integrity | Priority measures are defined with owner, formula, source, cadence, caveats, and equity or geographic cuts. |
 | Agency utility and culture | Agencies find sessions useful, humane, and decision-oriented, and act on them outside the room. |
 | Cross-agency throughput | Stuck issues move to delivery with named owners, milestones, and sustainment plans. |
@@ -141,6 +129,6 @@ CitiStat identifies the problem; the rest of OPI helps explain, design, deliver,
 
 ## See also
 
-- [CitiStat Method Playbook](method-playbook.md) — the operating manual: roles, the full session cycle, admission criteria, and the quality bar.
-- [CitiStat Portfolio](portfolio/index.md) — the current schedule of active Stats.
-- [About Performance](../../../about-us/our-teams/performance/about-performance.md) — how CitiStat fits inside citywide performance management.
+- [CitiStat Method Playbook](method-playbook.md): the operating manual, covering roles, the full session cycle, admission criteria, and the quality bar.
+- [CitiStat Portfolio](portfolio/index.md): the current schedule of active Stats.
+- [About Performance](../../../about-us/our-teams/performance/about-performance.md): how CitiStat fits inside citywide performance management.

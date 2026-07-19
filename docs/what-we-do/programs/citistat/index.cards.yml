@@ -1,22 +1,22 @@
 method:
   - meta: Framework
     title: "CitiStat Strategic Framework"
-    body: "The why — the strategic frame that gives every Stat session its bearings and ties the portfolio to citywide priorities."
+    body: "The why: the strategic frame that gives every Stat session its bearings and ties the portfolio to citywide priorities."
     href: strategic-framework/
   - meta: Playbook
     title: "CitiStat Method Playbook"
-    body: "The how — the end-to-end CitiStat method, from admission criteria to how a Stat session actually runs and follows up."
+    body: "The how: the end-to-end CitiStat method, from admission criteria to how a Stat session actually runs and follows up."
     href: method-playbook/
   - meta: "Quality standards"
     title: "CitiStat Quality Standards"
-    body: "The QA bar for code and data, visualization, pre-memos, sessions, and follow-up — the standards every Stat artifact must meet before it goes out."
+    body: "The QA bar for code and data, visualization, pre-memos, sessions, and follow-up: the standards every Stat artifact must meet before it goes out."
     href: quality-standards/
   - meta: Templates
     title: "CitiStat Templates"
-    body: "The Stat artifact templates — pre-memo, deck, follow-up memo — plus stakeholder agendas and materials send-out standards."
+    body: "The Stat artifact templates: pre-memo, deck, follow-up memo, plus stakeholder agendas and materials send-out standards."
     href: templates/
 portfolio:
   - meta: Portfolio
     title: "CitiStat Portfolio"
-    body: "The full CitiStat portfolio — 19 agency briefs covering 311, Capital, Clean, DGS, DOT, Downtown, Finance, Fire/EMS, Health, Housing, HR/Labor, Permits, Police, Rec, Solid Waste, Tech, Water, Workplace Safety, Youth."
+    body: "The full CitiStat portfolio: 19 agency briefs covering 311, Capital, Clean, DGS, DOT, Downtown, Finance, Fire/EMS, Health, Housing, HR/Labor, Permits, Police, Rec, Solid Waste, Tech, Water, Workplace Safety, Youth."
     href: portfolio/

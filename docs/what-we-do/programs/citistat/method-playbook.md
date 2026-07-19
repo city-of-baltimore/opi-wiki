@@ -1,6 +1,6 @@
 # CitiStat Method Playbook
 
-{{ page_header(summary="How a Stat actually runs — the operating manual behind the Strategic Framework.", category="CITISTAT · METHOD PLAYBOOK", tagline="Roles, the cycle, the agendas, and the quality bar.") }}
+{{ page_header(summary="How a Stat actually runs: the operating manual behind the Strategic Framework.", category="CITISTAT · METHOD PLAYBOOK", tagline="Roles, the cycle, the agendas, and the quality bar.") }}
 
 This is the operating manual for CitiStat: the roles, the preparation cycle, the session agendas, the follow-up discipline, and the quality bar. It exists so a good Stat is repeatable and does not depend on any one person's memory or heroics. For the strategy behind it, including the place-based model and how CitiStat fits citywide, see the [Strategic Framework](strategic-framework.md).
 
@@ -8,22 +8,21 @@ This is the operating manual for CitiStat: the roles, the preparation cycle, the
 
 ## Five things every Stat must have
 
-If a session is missing any of these, it is not yet a Stat — reschedule it, reframe it, or route it elsewhere.
+If a session is missing any of these, it is not yet a Stat. Reschedule it, reframe it, or route it elsewhere.
 
-1. **A performance problem** — not a status update.
-2. **A decision-maker in the room** — if none can attend, reschedule.
-3. **Reliable-enough data** — agreed sources, agreed cutoff, reviewed before the meeting.
-4. **Pre-read discipline** — the pre-memo and deck go out at least 48 hours ahead.
-5. **A closure mechanism** — every follow-up has a name, a date, and evidence of done.
+1. A performance problem, not a status update.
+2. A decision-maker in the room. If none can attend, reschedule.
+3. Reliable-enough data: agreed sources, an agreed cutoff, reviewed before the meeting.
+4. Pre-read discipline: the pre-memo and deck go out at least 48 hours ahead.
+5. A closure mechanism: every follow-up has a name, a date, and evidence of done.
 
 ## The CitiStat culture
 
 CitiStat is rigorous and humane. The work is grounded in facts, but it is never a ritual of blame. The best sessions hold agencies accountable for results while helping them clear the barriers they cannot resolve alone.
 
-- **Collaborative, with gratitude.** We are here to make progress. We celebrate wins and thank the civil servants who deliver them. The panel asks hard questions and holds the agency accountable — and the agency uses the time to ask command staff and partners for help.
-- **A clear purpose and goal.** Every Stat exists to accomplish something specific, tied to an established goal — the Mayor's Action Plan, an Agency Performance Plan, ARPA or Council commitments.
-- **Accountability and consistency.** Agencies complete their follow-ups and give OPI access to data and systems. Stats start on time and follow the posted schedule; cancellations damage the program.
-- **An empowered CitiStat team.** Analysts are empowered to request updates on follow-ups and to convene the meetings needed to complete them.
+The tone is collaborative and grateful. We are here to make progress, so we celebrate wins and thank the civil servants who deliver them. The panel asks hard questions and holds the agency accountable, and the agency uses the time to ask command staff and partners for help. Every Stat exists to accomplish something specific, tied to an established goal: the Mayor's Action Plan, an Agency Performance Plan, or ARPA or Council commitments.
+
+Consistency matters as much as candor. Agencies complete their follow-ups and give OPI access to data and systems. Stats start on time and follow the posted schedule, because cancellations damage the program. And analysts can request updates on follow-ups and call the meetings needed to complete them.
 
 ### The four tenets of Stat
 
@@ -55,7 +54,7 @@ CitiStat has no agency management authority. It recommends, coordinates, and mon
 
 ## The CitiStat cycle
 
-CitiStat runs on a repeating cycle keyed to the next session date (**T**). Days are business days. Checkpoint steps are reviewed before the analyst proceeds — with the Deputy Chief Performance Officer (DCPO) or the CitiStat Program Manager (PgM).
+CitiStat runs on a repeating cycle keyed to the next session date (**T**). Days are business days. Checkpoint steps are reviewed with the Deputy Chief Performance Officer (DCPO) or the CitiStat Program Manager (PgM) before the analyst proceeds.
 
 | Step | Activity | Timing | Checkpoint |
 | --- | --- | --- | --- |
@@ -67,7 +66,7 @@ CitiStat runs on a repeating cycle keyed to the next session date (**T**). Days 
 | 5 | Analyze data; draft the pre-memo and deck | T-5 | |
 | 6 | Quality review; determine whether more alignment is needed | T-4 to T-5 | PgM |
 | 7 | Re-analyze and revise; final data refresh | T-3 | |
-| 8 | Release materials to the distribution list and the Stat site — the 48-hour release | T-2 | DCPO |
+| 8 | Release materials to the distribution list and the Stat site (the 48-hour release) | T-2 | DCPO |
 | 9 | Prepare the room and packets | T-1 | |
 | 10–11 | Hold the Stat | T | |
 | 12 | Draft and send the follow-up memo; update the tracker | T+1, no later than T+2 | DCPO |
@@ -84,7 +83,7 @@ CitiStat runs in two formats. Design each session around decisions and learning,
 | --- | --- | --- |
 | 0–5 min | Opening | Purpose of the Stat and the four tenets. |
 | 5–15 min | Follow-up review | Recap prior follow-ups, next steps, and the responsible party's responses. |
-| 15–25 min | KPI review | Operational KPIs and the performance KPI chart — year-to-date, against the last Stat, and against Performance Plan goals — with resident signals. |
+| 15–25 min | KPI review | Operational KPIs and the performance KPI chart (year-to-date, against the last Stat, and against Performance Plan goals), with resident signals. |
 | 25–85 min | Priority topics | Two or three issues: standing topics tied to the KPIs, plus new items from news, audits, or Inspector General reports. |
 | 85–90 min | Close | Repeat back the follow-ups, owners, and dates. |
 
@@ -96,7 +95,7 @@ For operating agencies (Housing/DHCD, DOT, Police, Fire & EMS), chaired by the C
 
 - Since the last session, what did the agency try and what changed?
 - What does the data show, and what caveats should the room understand?
-- Where is the bottleneck — people, process, technology, procurement, policy, data, or decision rights?
+- Where is the bottleneck: people, process, technology, procurement, policy, data, or decision rights?
 - What decision can be made today, and who has the authority to make it?
 - What will be done, by whom, by when, and with what evidence of completion?
 - Does this stay in CitiStat, or move to a Cross-Agency Delivery activation (a Tiger Team) or another routine?
@@ -111,29 +110,29 @@ CitiStat depends on trust in the numbers. The goal is not perfect data before ac
 
 | Standard | Minimum expectation |
 | --- | --- |
-| KPI definition | A name, plain-language definition, formula, source system, owner, refresh cadence, and caveats. |
+| KPI definition | A name, plain-language definition, formula, source system, owner, refresh schedule, and caveats. |
 | Data quality notes | Every deck names known limits, missing data, method changes, and confidence. |
 | Resident signals | Include 311 trends, resident feedback, surveys, or case examples when relevant. |
 | Map-first when possible | Use geography to find the hotspots, inequities, and repeat demand that averages hide. |
 | Field validation | Ground priority topics in inspections, ride-alongs, or interviews at least quarterly where the service is observable. |
 | Documentation | Analytic code and queries are commented, attributed, dated, and stored so the work is reproducible; public materials meet Section 508 accessibility. |
 
-The **CitiStat Inspector** plans the ride-alongs and site visits, coordinates with the agency, and brings field findings back into the Stat as evidence alongside the data — reconciled against the agency's reported metrics in the pre-memo.
+The **CitiStat Inspector** plans the ride-alongs and site visits, coordinates with the agency, and brings field findings back into the Stat as evidence alongside the data, reconciled against the agency's reported metrics in the pre-memo.
 
 ## Issue selection, admission, and continuation
 
 A routine should be called a Stat only if it meets the admission criteria and keeps producing decisions, commitments, or learning.
 
-**Admission criteria:**
+A routine earns Stat status when it meets these criteria:
 
 - A clear performance problem tied to a priority outcome that needs recurring leadership attention.
 - A named chair or authorizer.
 - A defined agency owner.
 - Reliable-enough data, with caveats documented.
-- A cadence for follow-up and evidence of closure.
-- **OPI capacity to support it** — the program only takes on what it can run well.
+- A schedule for follow-up and evidence of closure.
+- OPI capacity to support it, since the program only takes on what it can run well.
 
-**Continuation test.** After two cycles, ask whether the Stat produced decisions, follow-ups closed with evidence, process or SOP changes, data improvements, or delivery triggers. If not, redesign it, pause it, merge it, or convert it into a Tiger Team, a data-governance review, or a decision memo.
+The continuation test comes after two cycles: ask whether the Stat produced decisions, follow-ups closed with evidence, process or SOP changes, data improvements, or delivery triggers. If not, redesign it, pause it, merge it, or convert it into a Tiger Team, a data-governance review, or a decision memo.
 
 Not every Stat is run by OPI. Some are led by other offices with OPI's method support, and this framework applies to those as well.
 
@@ -145,8 +144,8 @@ Under City Code Subtitle 61-5, each principal agency names a **Data-Driven Offic
 
 | Responsibility | Minimum expectation |
 | --- | --- |
-| Internal Stat cadence | Run the agency's internal performance routine. |
-| KPI readiness | Maintain agency KPI definitions, sources, owners, and cadence, aligned to the citywide standard. |
+| Internal Stat schedule | Run the agency's internal performance routine. |
+| KPI readiness | Maintain agency KPI definitions, sources, owners, and refresh schedules, aligned to the citywide standard. |
 | Pre-memo support | Provide timely data, context, and prior follow-up status. |
 | Follow-up management | Track agency follow-ups, confirm evidence, and surface delays early. |
 | Escalation | Identify issues that should move from internal Stat to CitiStat or another routine. |
@@ -155,7 +154,7 @@ Under City Code Subtitle 61-5, each principal agency names a **Data-Driven Offic
 
 The value of CitiStat is realized after the session. A follow-up is not done because it was discussed; it is done when the owner provides evidence, the result is verified, and the change is closed or embedded.
 
-Follow-ups are tracked in **MS Planner**, the official record for each Stat. Each follow-up is one task with a single responsible person (named, not an agency), a due date, and the deliverable spelled out. Between sessions, the analyst works the tracker on a regular cadence — a reminder every three to four days is a good rule of thumb, and never more than a week.
+Follow-ups are tracked in **MS Planner**, the official record for each Stat. Each follow-up is one task with a single responsible person (named, not an agency), a due date, and the deliverable spelled out. Between sessions, the analyst works the tracker regularly: a reminder every three to four days is a good rule of thumb, and never more than a week.
 
 ### Weekly status report
 
@@ -165,8 +164,8 @@ Follow-up status uses one shared color scheme across the weekly report, the trac
 
 | Color | Meaning |
 | --- | --- |
-| **White** | Not due yet — on track. |
-| **Green** | Complete — closed with evidence. |
+| **White** | Not due yet, on track. |
+| **Green** | Complete, closed with evidence. |
 | **Yellow** | In progress or partially complete. |
 | **Red** | Overdue or not received. |
 
@@ -180,7 +179,7 @@ Use it when a follow-up cannot move, a decision is contested, or a blocker spans
 4. If it needs sequencing across agencies → a **Cross-Agency Delivery activation** (a Tiger Team).
 5. If it is a data-governance, product, or policy question → the matching routine or a decision memo.
 
-Major changes end with a sustainment plan: a named owner, an SOP, training, a dashboard or alert, a monitoring cadence, and a review checkpoint.
+Major changes end with a sustainment plan: a named owner, an SOP, training, a dashboard or alert, a monitoring schedule, and a review checkpoint.
 
 ## The quality bar
 
@@ -198,14 +197,11 @@ Every Stat product passes an independent quality review before it is presented. 
 
 ### Common failure modes
 
-- **Status creep** — name the performance problem at the top; cut the standing tour of every metric.
-- **Performative accountability** — read follow-ups aloud, close the loop in writing within two business days, track to evidence.
-- **Data theatre** — every chart answers a specific question; cut the rest.
-- **Brand dilution** — hold the line on the five things; call other meetings what they are.
+A few failure modes recur. Status creep is the standing tour of every metric; name the performance problem at the top and cut the tour. Performative accountability is reading follow-ups aloud without closing them; close the loop in writing within two business days and track to evidence. Data theatre is charts that answer no real question; make every chart answer a specific one and cut the rest. Brand dilution is calling every meeting a Stat; hold the line on the five things and call other meetings what they are.
 
 ## See also
 
-- [CitiStat Strategic Framework](strategic-framework.md) — the strategy this playbook operationalizes.
-- [CitiStat Templates](templates.md) — the pre-memo, deck, follow-up memo, and agenda templates.
-- [CitiStat Portfolio](portfolio/index.md) — the current schedule of active Stats.
-- [About Performance](../../../about-us/our-teams/performance/about-performance.md) — how CitiStat fits inside citywide performance management.
+- [CitiStat Strategic Framework](strategic-framework.md): the strategy this playbook puts into practice.
+- [CitiStat Templates](templates.md): the pre-memo, deck, follow-up memo, and agenda templates.
+- [CitiStat Portfolio](portfolio/index.md): the current schedule of active Stats.
+- [About Performance](../../../about-us/our-teams/performance/about-performance.md): how CitiStat fits inside citywide performance management.
