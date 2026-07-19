@@ -42,10 +42,10 @@ dev = [
     # a deliberate, reviewable commit.
     #
     # It runs in the `ci` plan ALONGSIDE scripts/check_hosted_ci_policy.py, not
-    # instead of it. The two cover different ground and 0.4.0 does not subsume
+    # instead of it. The two cover different ground and 0.4.1 does not subsume
     # the local guard — see the "Two checkers" note in that module's docstring
-    # for the four gaps that were measured before this dependency was added.
-    "baltimore-patapsco==0.4.0",
+    # for the gaps that were re-measured against 0.4.1.
+    "baltimore-patapsco==0.4.1",
 ]
 
 [tool.pytest.ini_options]
