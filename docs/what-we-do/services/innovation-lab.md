@@ -32,7 +32,7 @@ Baltimore City Code, Article 1, Subtitle 61 (Innovation Lab / continuous improve
 
 ## Delivered by
 
-The [Innovation Lab](../../about-us/our-teams/innovation-lab/index.md). When implementation requires multiple agencies to move together with named decision rights, the Lab's work is coordinated through [Cross-Agency Delivery](cross-agency-delivery.md).
+The [Innovation Lab](../../about-us/our-teams/innovation-lab/index.md). When implementation requires multiple agencies to move together with named decision rights, the Lab's work is coordinated through [Cross-Agency Delivery](cross-agency-delivery/index.md).
 
 ## Read alongside
 

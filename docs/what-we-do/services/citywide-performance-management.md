@@ -6,7 +6,7 @@
 
 This service administers Baltimore City's citywide performance management routines, including [CitiStat](../programs/citistat/index.md), agency performance planning, performance measures, and follow-up processes.
 
-**Activities include** preparing and facilitating CitiStat sessions, developing pre-session and follow-up memos, maintaining performance measures and KPI definitions, supporting agency performance plans, tracking commitments, conducting performance analysis, and identifying issues that require executive decision-making or cross-agency coordination.
+**Activities include** preparing and facilitating CitiStat sessions, developing pre-session and follow-up memos, maintaining, improving, and updating performance measures and KPI definitions, supporting agency performance plans, tracking follow-ups, conducting performance analysis, and identifying issues that require executive decision-making or cross-agency coordination.
 
 ## The goal
 
@@ -19,7 +19,7 @@ Baltimore City Code, Article 1, Subtitle 61 (CitiStat).
 ## Priority outcomes
 
 - Operational problems are addressed before they become chronic.
-- Commitments made in a Stat are commitments kept, with evidence of closure.
+- Follow-ups from a Stat are tracked to closure with evidence.
 - Leadership can see service performance without digging through spreadsheets.
 - Performance conversations help agencies fix problems, not just explain them.
 
@@ -28,7 +28,7 @@ Baltimore City Code, Article 1, Subtitle 61 (CitiStat).
 - **As a resident,** I want trash pickup delays addressed before they become a weekly problem.
 - **As a City Administrator,** I want clear answers about service performance without digging through spreadsheets.
 - **As an agency leader,** I want performance conversations that help me fix problems, not just explain them.
-- **As a Council member,** I want confidence that commitments made are commitments kept.
+- **As a Council member,** I want confidence that follow-ups are tracked to closure.
 
 ## Delivered by
 

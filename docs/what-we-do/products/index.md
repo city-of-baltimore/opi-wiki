@@ -6,9 +6,8 @@ A **product** is a tool, platform, or public-facing resource OPI builds or maint
 
 | Product | What it is | Status |
 | --- | --- | --- |
-| [Baltimore Intelligence Center](baltimore-intelligence-center/index.md) | OPI's flagship citywide data, intelligence, and AI platform | Active |
-| [Baltimore City Data Platform](baltimore-city-data-platform.md) | The shared data platform and warehouse behind OPI's analytics products | Placeholder |
-| [Baltimore City Performance Portal](baltimore-city-performance-portal.md) | The public-facing home for citywide performance data | Placeholder |
+| [Baltimore City Data Platform](baltimore-city-data-platform.md) | The governed data foundation behind the city's analytics and AI | In build |
+| [Baltimore City Performance Portal](baltimore-city-performance-portal.md) | The public-facing home for citywide performance data (an Innovation Lab product) | Planned |
 
 ## Read alongside
 
