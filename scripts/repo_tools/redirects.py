@@ -85,9 +85,12 @@ _MkDocsConfigLoader.add_constructor("!ENV", _construct_env_default)
 def load_redirect_map(config_path: Path) -> dict[str, str]:
     """Return the configured MkDocs redirect map."""
 
-    config = yaml.load(
+    # S506: _MkDocsConfigLoader subclasses yaml.SafeLoader — it only adds
+    # constructors for the two MkDocs tags, and instantiates no arbitrary
+    # objects. ruff cannot see the base class through the subclass.
+    config = yaml.load(  # nosec B506
         config_path.read_text(encoding="utf-8"),
-        Loader=_MkDocsConfigLoader,
+        Loader=_MkDocsConfigLoader,  # noqa: S506
     )
     plugins = config.get("plugins", [])
 

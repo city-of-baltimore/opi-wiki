@@ -25,7 +25,11 @@ from __future__ import annotations
 
 import argparse
 import json
-import subprocess
+
+# B404: sequencing subprocesses is this module's entire job. Every command is a
+# literal tuple from build_steps(); none is built from caller input, and none
+# runs through a shell.
+import subprocess  # nosec B404
 import sys
 import time
 from collections.abc import Sequence
@@ -114,6 +118,20 @@ def build_steps(
             command=(python, "-m", "mypy"),
         ),
         VerifyStep(
+            name="Scanning repo automation for security issues",
+            command=(
+                python,
+                "-m",
+                "bandit",
+                "-q",
+                "-c",
+                "pyproject.toml",
+                "-r",
+                "main.py",
+                "scripts",
+            ),
+        ),
+        VerifyStep(
             name="Validating page metadata",
             command=(python, "scripts/check_page_metadata.py"),
         ),
@@ -191,7 +209,9 @@ def run_step(
 
     started_at = time.monotonic()
     try:
-        completed = subprocess.run(
+        # S603: every command is a literal tuple built in build_steps() above and
+        # run without a shell. No caller-supplied string reaches this call.
+        completed = subprocess.run(  # nosec B603  # noqa: S603
             step.command,
             cwd=cwd,
             capture_output=True,
@@ -279,9 +299,7 @@ def _summary_lines(results: Sequence[VerifyResult]) -> list[str]:
     lines: list[str] = []
     for result in results:
         status = "passed" if result.exit_code == 0 else f"failed (exit {result.exit_code})"
-        lines.append(
-            f"- {result.name}: {status} in {result.duration_seconds:.2f}s"
-        )
+        lines.append(f"- {result.name}: {status} in {result.duration_seconds:.2f}s")
     return lines
 
 
@@ -329,8 +347,7 @@ def run_verification(
         if result.exit_code == 0:
             _write_line(
                 stdout,
-                f"[{index}/{len(steps)}] {step.name} passed in "
-                f"{result.duration_seconds:.2f}s.",
+                f"[{index}/{len(steps)}] {step.name} passed in {result.duration_seconds:.2f}s.",
             )
             continue
 

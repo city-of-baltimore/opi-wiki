@@ -29,6 +29,8 @@ package = false
 
 [dependency-groups]
 dev = [
+    # The `toml` extra lets bandit read its configuration from this file.
+    "bandit[toml]>=1.9.2,<2.0.0",
     "pytest>=9.0.3,<10.0.0",
     "ruff>=0.15.12,<0.16.0",
     "playwright>=1.58.0,<2.0.0",
@@ -46,7 +48,10 @@ src = ["main.py", "scripts", "tests"]
 target-version = "py313"
 
 [tool.ruff.lint]
-select = ["E", "F", "I", "B", "BLE", "D", "UP"]
+# The baseline families from the family engineering standard (E,F,I,D,S,T20,B,UP),
+# plus BLE. PL is omitted deliberately: this repository's automation is small,
+# flat, and already held to the no-God-files ceiling by review.
+select = ["E", "F", "I", "B", "BLE", "D", "S", "T20", "UP"]
 ignore = ["D202"]
 
 # D202 is excluded on purpose: the house style separates a docstring from the
@@ -56,8 +61,21 @@ convention = "google"
 
 [tool.ruff.lint.per-file-ignores]
 # Small pure helpers in check scripts read clearly without docstrings.
-"scripts/check_built_links.py" = ["D103"]
-"scripts/check_consistency.py" = ["D103"]
+"scripts/check_built_links.py" = ["D103", "T201"]
+"scripts/check_consistency.py" = ["D103", "T201"]
+# The check_* scripts are argv-driven CLIs whose stdout IS their output, so T201
+# is scoped off there rather than repeated as a per-call noqa. The standard's
+# "no print for status" rule targets library and service code; there is none here.
+"scripts/check_hosted_ci_policy.py" = ["T201"]
+# Tests assert (S101) and pass a literal "/tmp/example" path to fake subprocess
+# runners as a stand-in cwd (S108). Neither string is ever opened or created.
+"tests/*" = ["S101", "S108"]
+
+# Security scanning stays in the lean gate (consistency standard §6); Snyk is
+# manual-only and lives in scripts/security_snyk.sh. Tests are excluded: they
+# assert, and bandit's B101 would flag every one of them.
+[tool.bandit]
+exclude_dirs = ["tests", ".venv", "site", "node_modules"]
 
 [tool.mypy]
 files = ["main.py", "scripts"]

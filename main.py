@@ -43,7 +43,10 @@ class MacroEnvironment(Protocol):
 def _render_markup(rendered: str) -> Markup:
     """Wrap rendered HTML or Markdown in a Markup object for MkDocs."""
 
-    return Markup(rendered)
+    # S704: the wrapped string is always HTML this repository's own renderers
+    # built from tracked docs/ data at build time. There is no request, no user
+    # input, and no runtime template rendering anywhere in a static docs build.
+    return Markup(rendered)  # nosec B704  # noqa: S704
 
 
 def _render_docs_markup(
