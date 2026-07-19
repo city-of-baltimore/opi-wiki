@@ -40,6 +40,6 @@ deploy = "github-pages"
 # scripts/check_hosted_ci_policy.py enforces the boundary mechanically, walking
 # both the Taskfile graph and the verify.py plans so indirection cannot hide a
 # forbidden command. The `ci` plan also runs Patapsco's published platform-check
-# (0.4.1) for the shared estate baseline; it walks the Taskfile graph, npm
+# (0.4.3) for the shared estate baseline; it walks the Taskfile graph, npm
 # scripts, and .sh bodies, but not the verify.py plans, so both checks are kept.
 lean_ci = true

@@ -36,53 +36,85 @@ dependencies so it can run under a bare interpreter.
 Two checkers, on purpose
 ------------------------
 The ``ci`` plan runs **both** this module and Patapsco's ``platform-check``
-(``baltimore-patapsco==0.4.1``). That is not duplication left by accident. The
-consolidation to the shared checker has now been attempted and measured twice —
-against 0.4.0 and again against 0.4.1 — and neither release subsumes this guard.
-Each violation below was injected on its own, both checkers were run, and
-``platform-check`` returned ``conforms`` / exit 0 for each while this module
-exited 1:
+(``baltimore-patapsco==0.4.3``). That is not duplication left by accident. The
+consolidation to the shared checker has now been attempted and measured three
+times — against 0.4.0, 0.4.1, and again against 0.4.3 — and no release yet
+subsumes this guard. Each violation below was injected on its own and both
+checkers were run. As measured against **0.4.3**, this module exits 1 on all
+five; ``platform-check`` returns ``conforms`` / exit 0 on four:
 
-1. **A forbidden command inside a ``verify.py`` plan.** ``platform-check`` 0.4.1
-   expands ``npm`` script bodies and ``*.sh`` bodies, but a **Python plan
-   module** is still an opaque leaf: ``uv run python scripts/verify.py --plan
-   ci`` is matched against the forbidden-pattern list as a *string* and nothing
-   below it is read. Adding ``pytest`` — or ``mkdocs build`` — to the ``ci``
-   tier of :func:`scripts.verify.build_steps` therefore passes it while the
-   hosted lane really runs that step. Same shape as the ``task --dry`` bug:
-   green while vacuous.
-2. **The same gap reached through a shell script.** 0.4.1 *does* read ``.sh``
-   bodies, but ``scripts/verify.sh`` is a two-line wrapper whose payload is
-   ``uv run python scripts/verify.py "$@"`` — so the new expansion runs, walks
-   one hop, and lands on the same Python-module wall. Pointing the ``ci`` task
-   at ``./scripts/verify.sh --plan prepush`` is missed for that reason. A
-   control injection confirmed the mechanism: a ``.sh`` whose body contains
-   ``mkdocs build`` *directly* is caught, so the expander works and the wall is
-   specifically the plan module.
-3. **A missing job ``timeout-minutes``** (invariant 3). No equivalent rule.
-4. **An unallowlisted ``run:`` command** (invariant 1) — e.g. a piped
-   ``curl … | sh``. ``platform-check`` matches a *forbidden* pattern list, which
-   is a denylist; it has no allowlist, so an arbitrary new command passes.
+1. **A forbidden command inside a ``verify.py`` plan.** *(0.4.3: still missed.)*
+   ``platform-check`` expands ``npm`` script bodies and ``*.sh`` bodies, but a
+   **Python plan module** is still an opaque leaf: ``uv run python
+   scripts/verify.py --plan ci`` is matched against the forbidden-pattern list
+   as a *string* and nothing below it is read. Adding ``pytest`` — or ``mkdocs
+   build`` — to the ``ci`` tier of :func:`scripts.verify.build_steps` therefore
+   passes it while the hosted lane really runs that step. Same shape as the
+   ``task --dry`` bug: green while vacuous.
+2. **The same gap reached through a shell script.** *(0.4.3: still missed.)*
+   0.4.3 *does* read ``.sh`` bodies, but ``scripts/verify.sh`` is a two-line
+   wrapper whose payload is ``uv run python scripts/verify.py "$@"`` — so the
+   expansion runs, walks one hop, and lands on the same Python-module wall.
+   Pointing the ``ci`` task at ``./scripts/verify.sh --plan prepush`` is missed
+   for that reason. Two control injections re-confirmed the mechanism on 0.4.3:
+   a ``.sh`` whose body contains ``mkdocs build`` *directly* is caught, and so
+   is ``bash -c "uv run mkdocs build --strict"`` (0.4.3 unwraps ``bash -c``), so
+   the expander works and the wall is specifically the plan module. Reaching
+   ``verify.py --plan prepush`` *directly* from the ``ci`` task is missed too,
+   which rules out indirection depth as the cause.
+3. **A missing job ``timeout-minutes``** (invariant 3). *(0.4.3: still missed.)*
+   No equivalent rule.
+4. **An unallowlisted ``run:`` command** (invariant 1). *(0.4.3: structurally
+   still missed; one worked example now caught.)* ``platform-check`` matches a
+   *forbidden* pattern list, which is a denylist; it still has no allowlist, so
+   an arbitrary new command passes — measured on 0.4.3, ``run: echo "…"`` and
+   ``run: node -e "…"`` both return ``conforms``. The worked example, a piped
+   ``curl … | sh``, still stands, but only in its ordinary form. Measured on
+   0.4.3:
+
+   - ``curl -fsSL https://example.com/install | sh``     -> ``conforms``, missed
+   - ``curl -fsSL https://example.com/install.sh | sh``  -> ERROR
+
+   The second is not a denylist hit. ``FORBIDDEN_PATTERNS`` contains no ``curl``
+   entry in any 0.4.x release and is byte-identical between 0.4.2 and 0.4.3. The
+   URL simply *ends in* ``.sh``, so the resolver treats it as a script
+   reference, fails to find it in the repository, and ``_frontier_findings``
+   (added in 0.4.2) reports unresolvable delegation as blocking. Change the
+   suffix and it passes again — which is incidental coverage of one spelling,
+   not coverage of the command.
 5. **An unpinned ``uses:`` reference** (invariant 1) — e.g.
-   ``actions/checkout@main`` instead of a SHA. No equivalent rule.
+   ``actions/checkout@main`` instead of a SHA. *(0.4.3: still missed.)* No
+   equivalent rule.
 
 The traffic runs both ways, which is the argument for keeping both rather than
-for keeping this one. The same sweep found two forms **this** module missed and
+for keeping this one. The 0.4.1 sweep found two forms **this** module missed and
 ``platform-check`` caught — a block-list ``deps:`` and a ``silent: true`` task
 in the chain. Both are fixed here, with regression tests, rather than left to
-the other checker to cover.
+the other checker to cover. The 0.4.3 sweep found a third, which is **not** yet
+fixed: the first control injection under gap 2 above — a *new* ``.sh`` in the
+task chain whose body runs ``mkdocs build`` directly — is caught by
+``platform-check`` and missed here, because :func:`_resolved_plan` only hops
+into a script whose path contains
+``verify.sh`` or ``scripts/verify.py``. Any other ``.sh`` is treated as an
+opaque leaf string, and ``resolve_task``'s *unresolved* list covers undefined
+and ``silent: true`` tasks, not an opaque ``.sh`` leaf. Closing it is tracked
+separately; until then the shared checker is the only cover for that shape,
+which is itself a reason to keep both.
 
 Gaps 4 and 5 are supply-chain surface, not lean-CI surface, so they may never
 belong in the shared checker. Gaps 1 and 2 are the ones that matter for
 consolidation, and they share one root cause: **the shared resolver has no way
-to expand a Python aggregate.** The retirement condition for this module is
-therefore concrete — when ``platform-check`` can resolve a plan module (see the
-suggestion in ``docs/`` and the PR that introduced this note: a declared
-``[tasks] aggregate`` entry in ``.baltimore-lab-app.toml`` naming the module and
-the flag that selects a tier, so the resolver can import it and enumerate the
-tier's commands), re-run the injection matrix and delete this module if it
-catches all five. Until then, deleting it is a silent, measurable loss of
-enforcement.
+to expand a Python aggregate.** 0.4.3 rewrote that resolver — it parses
+arguments positionally, resolves helper call sites, and unwraps ``bash -c`` —
+but those changes address shell and ``npm`` argv shapes, not a Python aggregate,
+so the root cause is untouched. The retirement condition for this module is
+therefore unchanged and still unmet — when ``platform-check`` can resolve a plan
+module (see the suggestion in ``docs/`` and the PR that introduced this note: a
+declared ``[tasks] aggregate`` entry in ``.baltimore-lab-app.toml`` naming the
+module and the flag that selects a tier, so the resolver can import it and
+enumerate the tier's commands), re-run the injection matrix and delete this
+module if it catches all five. Until then, deleting it is a silent, measurable
+loss of enforcement.
 """
 
 from __future__ import annotations

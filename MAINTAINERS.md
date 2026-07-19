@@ -301,15 +301,17 @@ reaches is caught.
 The `ci` plan also runs Patapsco's published `platform-check`
 (`baltimore-patapsco`, exact-pinned in the dev group), which owns the shared
 estate baseline: the app marker, the slot-8 ports, the task surface, tooling
-configuration, and the pre-push hook. Keep **both**. `platform-check` 0.4.1 does
+configuration, and the pre-push hook. Keep **both**. `platform-check` 0.4.3 does
 not expand `verify.py` plans (it expands `npm` and `.sh` bodies, but not a
 Python plan module), has no job-timeout rule, and has no `run:`/`uses:`
-allowlist, so it returns "conforms" for five violations the local guard fails
-on. The comparison runs both ways: 0.4.1 also caught two Taskfile forms the
-local guard missed — a block-list `deps:` and a `silent: true` task — which are
-now fixed and regression-tested here. The measured gaps, and the condition under
-which the local guard can finally be deleted, are recorded in the "Two checkers"
-note in that module's docstring.
+allowlist, so it returns "conforms" for four of the five violations the local
+guard fails on. The comparison runs both ways: the 0.4.1 sweep caught two
+Taskfile forms the local guard missed — a block-list `deps:` and a `silent: true`
+task — which are now fixed and regression-tested here, and the 0.4.3 sweep found
+a third that is not yet fixed (a new `.sh` in the task chain that runs a
+forbidden command directly). The measured gaps, and the condition under which
+the local guard can finally be deleted — still unmet at 0.4.3 — are recorded in
+the "Two checkers" note in that module's docstring.
 If you bump the pin, re-run that comparison before assuming it is now redundant.
 **The practical consequence: a broken test or strict build is not caught on the
 PR; it surfaces at `git push` (via the hook) or on the deploy run after merge.**
