@@ -11,7 +11,6 @@
 | Primary Agency / Agencies      | BCIT / 311; fulfillment agencies including DPW, DOT, DHCD, DGS, BCRP and others                                                     |
 | OPI lead                        | OPI-operated / Data Team-led                                                                                                        |
 | Core Data Product              | 311 performance and resident experience dashboard                                                                                   |
-| Public Transparency Level      | High. Publish a public Stat page, selected dashboard views, what-changed updates, and links to related open data where appropriate. |
 
 ### Public Purpose
 
@@ -36,10 +35,8 @@ Staff use 311 Stat to improve digital intake, routing accuracy, closure quality,
 
 ### Standard Artifacts and Data Products
 
-- Pre-meeting memo, Stat deck, follow-up memo, commitment tracker, and decision log.
+- Pre-meeting memo, Stat deck, follow-up memo, and follow-up tracker.
 - Core data product: 311 performance and resident experience dashboard.
-- Public summary, annual report section, data quality notes, and SOP / process maps for major functions.
-- Inspection checklist where field validation or service quality review is needed.
 
 ### Tiger Team / Delivery Triggers
 

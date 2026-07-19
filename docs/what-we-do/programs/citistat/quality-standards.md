@@ -1,14 +1,10 @@
 # CitiStat Quality Standards
 
-{{ page_header(summary="The QA bar for every Stat artifact — from raw data to the session itself.", category="QUALITY STANDARDS · AUDIENCE: STAFF", tagline="The standards every Stat product is held to before it leaves the analyst, the Stat lead, and the room.") }}
-
-*Read alongside: OPI CitiStat Method Playbook and OPI CitiStat Templates.*
-
-*The Method Playbook describes the operating system. The Templates page provides the artifacts. This page is the quality bar each artifact must meet.*
+{{ page_header(summary="The QA bar for every Stat artifact — from raw data to the session itself.", category="QUALITY STANDARDS", tagline="The standards every Stat product is held to before it leaves the analyst, the Stat lead, and the room.") }}
 
 ## How quality control runs
 
-Quality control runs from raw data through the analytic product to the session itself. Every Stat product has a named lead and a named QCer; the QCer is not the same person who built the work. The lead and the QCer sign off before materials go out.
+Quality control runs from raw data through the analytic product to the session itself. Every Stat product has a named lead and an independent reviewer — the **CitiStat Program Manager**, who did not build the work. Both sign off before materials go out.
 
 The standards on this page apply in sequence:
 
@@ -16,21 +12,21 @@ The standards on this page apply in sequence:
 2. **Visualization and product standards** — applied as the lead builds visuals from QCed data.
 3. **Pre-memo quality checklist** — confirmed before the pre-memo is distributed.
 4. **Session quality checklist** — observed during and immediately after the session.
-5. **Follow-up quality checklist** — confirmed before follow-up materials are issued and as commitments close.
+5. **Follow-up quality checklist** — confirmed before follow-up materials are issued and as follow-ups close.
 
 ## Code and data QC
 
-QCed before any visualization is built. The QCer fills out this part first.
+QCed before any visualization is built. The Program Manager fills out this part first.
 
 ### Code
 
 - Every business-rule decision is documented in the code or a paired memo, and the document is linked from the deck or pre-memo.
 
-- Comments let the QCer understand each section's intent without asking the analyst.
+- Comments let the reviewer understand each section's intent without asking the analyst.
 
 - Code is version-controlled and can be re-run end to end against the source data.
 
-- The QCer ran the code line by line, confirmed each line does what it should, and checked that intermediate outputs match. Issues are returned to the lead with line-by-line notes.
+- The Program Manager ran the code line by line, confirmed each line does what it should, and checked that intermediate outputs match. Issues are returned to the lead with line-by-line notes.
 
 ### Spreadsheet output and data table
 
@@ -72,9 +68,9 @@ Applied once the data table is QCed and the lead is building visuals.
 
 - Purpose is clear and written in plain language.
 
-- At least one decision, commitment, or learning objective is explicit.
+- At least one decision, follow-up, or learning objective is explicit.
 
-- Prior commitments are updated with status and evidence.
+- Prior follow-ups are updated with status and evidence.
 
 - KPIs are defined, sourced, and paired with caveats.
 
@@ -100,7 +96,7 @@ Applied once the data table is QCed and the lead is building visuals.
 
 - Budget and policy issues were captured and routed instead of consuming the session.
 
-- Every commitment had an owner, date, evidence standard, and escalation path.
+- Every follow-up had an owner, date, evidence standard, and escalation path.
 
 - Unresolved issues were explicitly kept on the tracker, escalated, or routed to another routine.
 
@@ -108,9 +104,9 @@ Applied once the data table is QCed and the lead is building visuals.
 
 - Follow-up memo was issued within two business days.
 
-- Tracker entries are specific enough that a new staff member could understand the commitment.
+- Tracker entries are specific enough that a new staff member could understand the follow-up.
 
-- Evidence of done is named before the commitment is closed.
+- Evidence of done is named before the follow-up is closed.
 
 - Delayed items have a revised plan, not just a revised date.
 
@@ -124,6 +120,5 @@ Applied once the data table is QCed and the lead is building visuals.
 
 - [CitiStat Method Playbook](method-playbook.md) — the operating standards these quality bars enforce.
 - [CitiStat Templates](templates.md) — the artifacts these standards apply to.
-- [CitiStat — Staff Quick Reference](method-staff-quick-reference.md) — the at-a-glance method companion.
 - [CitiStat Method Playbook → Data standards and evidence](method-playbook.md#data-standards-and-evidence) — the data discipline that feeds these checklists.
-- [CitiStat Method Playbook → Follow-up, escalation, and sustainment](method-playbook.md#follow-up-escalation-and-sustainment) — what the follow-up checklist supports.
+- [CitiStat Method Playbook → Follow-ups, escalation, and sustainment](method-playbook.md#follow-ups-escalation-and-sustainment) — what the follow-up checklist supports.

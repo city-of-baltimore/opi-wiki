@@ -11,7 +11,6 @@
 | Primary Agency / Agencies      | DPW, DHCD, DOT, ECB, Clean Corps, BCRP, community partners, and other agencies as needed                   |
 | OPI lead                        | OPI-operated / Performance Team with delivery support as needed                                            |
 | Core Data Product              | Clean Block Scorecard and cleanliness hotspot dashboard                                                    |
-| Public Transparency Level      | High. Publish summaries, maps, what-changed updates, and before / after evidence where appropriate. |
 
 ### Public Purpose
 
@@ -36,10 +35,8 @@ Staff use Clean Stat to coordinate work across agencies and partners. It should 
 
 ### Standard Artifacts and Data Products
 
-- Pre-meeting memo, Stat deck, follow-up memo, commitment tracker, and decision log.
+- Pre-meeting memo, Stat deck, follow-up memo, and follow-up tracker.
 - Core data product: Clean Block Scorecard and cleanliness hotspot dashboard.
-- Public summary, annual report section, data quality notes, and SOP / process maps for major functions.
-- Inspection checklist where field validation or service quality review is needed.
 
 ### Tiger Team / Delivery Triggers
 

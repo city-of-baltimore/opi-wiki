@@ -11,7 +11,6 @@
 | Primary Agency / Agencies      | BDC, Downtown partners, DOT, DPW, Police, DHCD, DGS, Finance, and other Downtown RISE partners                                                  |
 | OPI lead                        | Deputy Mayor-led / OPI-supported                                                                                                                |
 | Core Data Product              | Downtown RISE performance dashboard                                                                                                             |
-| Public Transparency Level      | High. Publish public progress updates, dashboard views, and stories that connect service delivery to downtown confidence and economic recovery. |
 
 ### Public Purpose
 
@@ -36,10 +35,8 @@ Staff use Downtown Stat to coordinate implementation of Downtown RISE priorities
 
 ### Standard Artifacts and Data Products
 
-- Pre-meeting memo, Stat deck, follow-up memo, commitment tracker, and decision log.
+- Pre-meeting memo, Stat deck, follow-up memo, and follow-up tracker.
 - Core data product: Downtown RISE performance dashboard.
-- Public summary, annual report section, data quality notes, and SOP / process maps for major functions.
-- Inspection checklist where field validation or service quality review is needed.
 
 ### Tiger Team / Delivery Triggers
 

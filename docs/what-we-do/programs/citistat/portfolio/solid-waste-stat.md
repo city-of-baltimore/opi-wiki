@@ -11,7 +11,6 @@
 | Primary Agency / Agencies      | DPW Solid Waste and sanitation functions                                                                   |
 | OPI lead                        | OPI-operated / Performance Team                                                                            |
 | Core Data Product              | Solid waste operations dashboard                                                                           |
-| Public Transparency Level      | High. Publish summaries and selected service reliability dashboards where data quality supports it. |
 
 ### Public Purpose
 
@@ -36,10 +35,8 @@ Staff use Solid Waste Stat to manage core sanitation operations, improve service
 
 ### Standard Artifacts and Data Products
 
-- Pre-meeting memo, Stat deck, follow-up memo, commitment tracker, and decision log.
+- Pre-meeting memo, Stat deck, follow-up memo, and follow-up tracker.
 - Core data product: Solid waste operations dashboard.
-- Public summary, annual report section, data quality notes, and SOP / process maps for major functions.
-- Inspection checklist where field validation or service quality review is needed.
 
 ### Tiger Team / Delivery Triggers
 
