@@ -11,20 +11,27 @@ Invariants enforced here:
    :data:`ALLOWED_ACTION_REFERENCES`.
 2. No hosted workflow step reaches a forbidden command — a test suite, a
    coverage run, a site/application build, an image build, or a browser suite —
-   **directly or transitively through an aggregate runner**. Invariant 1 alone
-   would let ``scripts/verify.py --plan prepush`` smuggle the whole heavy chain
-   in behind one allowlisted-looking string, so this module resolves the
-   verification plan the workflow actually asks for and scans the commands that
-   plan expands to. In this repository ``scripts/verify.py`` plays the role
-   ``Taskfile.yml`` plays in the app repos.
+   **directly or transitively, at any depth**. Invariant 1 alone would let
+   ``task ci`` or ``scripts/verify.py --plan prepush`` smuggle the whole heavy
+   chain in behind one allowlisted-looking string, so this module walks two
+   graphs and scans every command they expand to:
+
+   * ``Taskfile.yml`` — ``task ci`` resolves through its ``task:``/``deps:``
+     edges to the leaf shell commands it actually runs.
+   * ``scripts/verify.py`` — a resolved plan expands to its subprocess list.
+
+   The two compose: ``task ci`` → ``verify.py --plan ci`` → the step commands.
+   A task that cannot be resolved is reported, never assumed innocent.
 3. Every hosted job declares ``timeout-minutes``. Without one, a hung step burns
    GitHub's six-hour default instead of failing fast.
 
 Publish/deploy/release workflows are exempt: building the site is their job.
 
-Boundary: this module reads workflow YAML as text and imports the verification
-plan definition. It never executes a command it inspects, and it stays free of
-third-party dependencies so it can run under a bare interpreter.
+Boundary: this module reads workflow YAML, ``Taskfile.yml``, and the
+verification plan definition. Resolution is **static** — it never shells out to
+``task --dry``, which writes its plan to stderr and so silently returns nothing
+to a stdout-reading resolver, passing vacuously. It stays free of third-party
+dependencies so it can run under a bare interpreter.
 """
 
 from __future__ import annotations
@@ -40,18 +47,20 @@ from scripts.verify import PLANS, Plan, build_steps  # noqa: E402
 
 REPOSITORY_ROOT = Path(__file__).resolve().parents[1]
 WORKFLOW_DIRECTORY = REPOSITORY_ROOT / ".github" / "workflows"
+TASKFILE_PATH = REPOSITORY_ROOT / "Taskfile.yml"
 
 ALLOWED_RUN_COMMANDS = frozenset(
     {
         "pip install uv==0.11.28",
         "uv sync --frozen",
-        "uv run python scripts/verify.py --plan ci",
+        "task ci",
     }
 )
 ALLOWED_ACTION_REFERENCES = frozenset(
     {
         "actions/checkout@9c091bb21b7c1c1d1991bb908d89e4e9dddfe3e0",
         "actions/setup-python@ece7cb06caefa5fff74198d8649806c4678c61a1",
+        "arduino/setup-task@c0bc642852239c2689f73f4ea6459c29405f3c52",
     }
 )
 
@@ -85,11 +94,146 @@ FORBIDDEN_COMMAND_PATTERNS: tuple[tuple[str, re.Pattern[str]], ...] = (
 )
 
 
+#: A ``task <name>`` invocation. ``(?!-)`` skips flags such as ``task --list``.
+TASK_INVOCATION = re.compile(r"\btask\s+(?!-)([A-Za-z][\w:.-]*)")
+#: Taskfile structure: task headers sit at exactly this indent under ``tasks:``.
+TASK_HEADER_INDENT = 2
+
+
 def _normalize_command(command: str) -> str:
     normalized = " ".join(command.split(" #", maxsplit=1)[0].split())
     if len(normalized) >= 2 and normalized[0] == normalized[-1] and normalized[0] in {"'", '"'}:
         return normalized[1:-1]
     return normalized
+
+
+def parse_taskfile(source: str) -> tuple[dict[str, list[str]], dict[str, list[str]]]:
+    """Parse a Taskfile into ``(subtasks, commands)``, both keyed by task name.
+
+    Deliberately hand-rolled rather than YAML-parsed so the guard runs under a
+    bare interpreter. Only the two edges that can carry a forbidden command are
+    modelled: ``task:``/``deps:`` references and ``cmds:`` shell strings.
+    """
+
+    subtasks: dict[str, list[str]] = {}
+    commands: dict[str, list[str]] = {}
+    inside_tasks = False
+    current: str | None = None
+
+    for raw_line in source.splitlines():
+        line = raw_line.rstrip()
+        if not line.strip() or line.lstrip().startswith("#"):
+            continue
+
+        indentation = len(line) - len(line.lstrip())
+        stripped = line.strip()
+
+        if indentation == 0:
+            inside_tasks = stripped == "tasks:"
+            current = None
+            continue
+        if not inside_tasks:
+            continue
+
+        is_header = (
+            indentation == TASK_HEADER_INDENT
+            and stripped.endswith(":")
+            and " " not in stripped[:-1]
+        )
+        if is_header:
+            current = stripped[:-1]
+            subtasks.setdefault(current, [])
+            commands.setdefault(current, [])
+            continue
+        if current is None:
+            continue
+
+        if match := re.match(r"-?\s*task:\s*([A-Za-z][\w:.-]*)", stripped):
+            subtasks[current].append(match.group(1))
+            continue
+        if match := re.match(r"deps:\s*\[(.+)\]", stripped):
+            subtasks[current].extend(
+                dependency.strip().strip("\"'") for dependency in match.group(1).split(",")
+            )
+            continue
+        if match := re.match(r"-\s*cmd:\s*(.+)", stripped):
+            commands[current].append(_normalize_command(match.group(1)))
+            continue
+        if stripped.startswith("- "):
+            commands[current].append(_normalize_command(stripped[2:]))
+
+    return subtasks, commands
+
+
+def _load_task_graph() -> tuple[dict[str, list[str]], dict[str, list[str]]]:
+    """Return this repository's parsed task graph, or empty graphs if absent."""
+
+    try:
+        source = TASKFILE_PATH.read_text(encoding="utf-8")
+    except OSError:
+        return {}, {}
+    return parse_taskfile(source)
+
+
+def resolve_task(
+    name: str,
+    subtasks: dict[str, list[str]],
+    commands: dict[str, list[str]],
+) -> tuple[list[tuple[str, str]], list[str]]:
+    """Walk a task transitively.
+
+    Returns ``(reached, unresolved)``, where *reached* pairs each leaf shell
+    command with the ``task:a -> task:b`` chain that reaches it, and
+    *unresolved* lists chains ending at a task this file does not define.
+    """
+
+    reached: list[tuple[str, str]] = []
+    unresolved: list[str] = []
+    seen: set[str] = set()
+
+    def walk(task_name: str, chain: list[str]) -> None:
+        if task_name in seen:
+            return
+        seen.add(task_name)
+        path = [*chain, f"task:{task_name}"]
+        if task_name not in commands:
+            unresolved.append(" -> ".join(path))
+            return
+        for command in commands[task_name]:
+            reached.append((" -> ".join(path), command))
+        for child in subtasks.get(task_name, []):
+            walk(child, path)
+
+    walk(name, [])
+    return reached, unresolved
+
+
+def expand_task_invocations(command: str) -> list[tuple[str, str]]:
+    """Expand every ``task <name>`` in a command into (provenance, command) pairs."""
+
+    subtasks, commands = _load_task_graph()
+    expanded: list[tuple[str, str]] = []
+    for name in TASK_INVOCATION.findall(command):
+        reached, _ = resolve_task(name, subtasks, commands)
+        expanded.extend(
+            (f"{chain} -> {reached_command}", reached_command) for chain, reached_command in reached
+        )
+    return expanded
+
+
+def unresolved_task_invocations(command: str) -> list[str]:
+    """Return chains for tasks a command invokes that the Taskfile does not define.
+
+    An unresolvable task is a policy failure, not a pass: its commands cannot be
+    inspected, so it cannot be shown to be lean.
+    """
+
+    subtasks, commands = _load_task_graph()
+    chains: list[str] = []
+    for name in TASK_INVOCATION.findall(command):
+        _, unresolved = resolve_task(name, subtasks, commands)
+        chains.extend(unresolved)
+    return chains
 
 
 def extract_run_commands(source: str) -> list[str]:
@@ -222,14 +366,44 @@ def expand_aggregate_commands(command: str) -> list[tuple[str, str]]:
     return expanded
 
 
-def find_forbidden_reach(command: str) -> list[str]:
-    """Return reasons ``command`` reaches a forbidden operation, aggregates included."""
+def _direct_expansions(command: str) -> list[tuple[str, str]]:
+    """Return the (provenance, command) pairs exactly one level below a command."""
+
+    return [*expand_task_invocations(command), *expand_aggregate_commands(command)]
+
+
+def reachable_commands(command: str) -> list[tuple[str, str]]:
+    """Return every command reachable from ``command``, paired with how it is reached.
+
+    Breadth-first across both indirection layers, so a chain that crosses them —
+    ``task ci`` -> ``verify.py --plan ci`` -> a step command — is walked to the
+    end rather than stopping at the first hop.
+    """
 
     reachable: list[tuple[str, str]] = [(command, command)]
-    reachable.extend(expand_aggregate_commands(command))
+    seen: set[str] = {command}
+    queue: list[tuple[str, str]] = [("", command)]
+
+    while queue:
+        parent_provenance, current = queue.pop(0)
+        for label, expanded in _direct_expansions(current):
+            if expanded in seen:
+                continue
+            seen.add(expanded)
+            provenance = f"{parent_provenance} -> {label}" if parent_provenance else label
+            reachable.append((provenance, expanded))
+            queue.append((provenance, expanded))
+
+    return reachable
+
+
+def find_forbidden_reach(command: str) -> list[str]:
+    """Return reasons ``command`` reaches a forbidden operation, at any depth."""
 
     findings: list[str] = []
-    for provenance, candidate in reachable:
+    for provenance, candidate in reachable_commands(command):
+        for chain in unresolved_task_invocations(candidate):
+            findings.append(f"{chain} [unresolvable task: its commands cannot be inspected]")
         for reason, pattern in FORBIDDEN_COMMAND_PATTERNS:
             if pattern.search(candidate):
                 findings.append(f"{provenance} [{reason}]")
@@ -243,9 +417,7 @@ def find_policy_violations(workflow_path: Path) -> list[str]:
     source = workflow_path.read_text(encoding="utf-8")
     commands = extract_run_commands(source)
 
-    violations = [
-        f"run: {command}" for command in commands if command not in ALLOWED_RUN_COMMANDS
-    ]
+    violations = [f"run: {command}" for command in commands if command not in ALLOWED_RUN_COMMANDS]
     violations.extend(
         f"uses: {reference}"
         for reference in extract_action_references(source)

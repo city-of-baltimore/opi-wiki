@@ -6,12 +6,17 @@ from pathlib import Path
 
 from scripts.check_hosted_ci_policy import (
     expand_aggregate_commands,
+    expand_task_invocations,
     extract_action_references,
     extract_run_commands,
     find_all_policy_violations,
     find_forbidden_reach,
     find_jobs_without_timeout,
     find_policy_violations,
+    parse_taskfile,
+    reachable_commands,
+    resolve_task,
+    unresolved_task_invocations,
 )
 
 WORKFLOW_PREAMBLE = """name: CI
@@ -151,6 +156,125 @@ def test_a_job_with_a_timeout_is_accepted() -> None:
     """The guard recognises a declared job-level timeout."""
 
     assert find_jobs_without_timeout(WORKFLOW_PREAMBLE) == []
+
+
+# --------------------------------------------------------------------------
+# Taskfile resolution — the indirection layer the lean-CI rule regresses through
+# --------------------------------------------------------------------------
+TASKFILE = """version: "3"
+
+tasks:
+  policy:
+    desc: Guard
+    cmds:
+      - uv run python scripts/check_hosted_ci_policy.py
+
+  test:
+    desc: Tests
+    cmds:
+      - uv run python -m pytest
+
+  build:
+    desc: Build
+    cmds:
+      - uv run mkdocs build --strict
+
+  ci:
+    desc: Lean gate
+    cmds:
+      - task: policy
+      - uv run python scripts/verify.py --plan ci
+
+  sneaky:
+    cmds:
+      - task: ci
+      - task: test
+"""
+
+
+def test_parse_taskfile_reads_commands_and_subtask_edges() -> None:
+    """Both edge kinds a task can carry must be visible to the resolver."""
+
+    subtasks, commands = parse_taskfile(TASKFILE)
+
+    assert subtasks["ci"] == ["policy"]
+    assert commands["ci"] == ["uv run python scripts/verify.py --plan ci"]
+    assert commands["test"] == ["uv run python -m pytest"]
+
+
+def test_parse_taskfile_ignores_descriptions_and_non_task_blocks() -> None:
+    """`desc:` text and top-level keys are not commands and must not be scanned."""
+
+    _, commands = parse_taskfile(TASKFILE)
+
+    assert all("Guard" not in command for command in commands["policy"])
+    assert "version" not in commands
+
+
+def test_resolve_task_walks_transitively_with_a_chain() -> None:
+    """A command two hops down is reported with the path that reaches it."""
+
+    subtasks, commands = parse_taskfile(TASKFILE)
+
+    reached, unresolved = resolve_task("sneaky", subtasks, commands)
+
+    assert unresolved == []
+    assert (
+        "task:sneaky -> task:ci -> task:policy",
+        "uv run python scripts/check_hosted_ci_policy.py",
+    ) in reached
+    assert ("task:sneaky -> task:test", "uv run python -m pytest") in reached
+
+
+def test_resolve_task_reports_an_undefined_task_rather_than_passing_it() -> None:
+    """A task that cannot be inspected is never assumed innocent."""
+
+    subtasks, commands = parse_taskfile(TASKFILE)
+
+    _, unresolved = resolve_task("nope", subtasks, commands)
+
+    assert unresolved == ["task:nope"]
+
+
+def test_this_repository_task_ci_is_the_command_the_workflow_runs() -> None:
+    """The committed Taskfile must define the `ci` task hosted CI invokes."""
+
+    assert expand_task_invocations("task ci")
+    assert unresolved_task_invocations("task ci") == []
+
+
+def test_task_ci_reaches_nothing_forbidden_in_this_repository() -> None:
+    """The real gate, resolved through the real Taskfile and the real plan."""
+
+    assert find_forbidden_reach("task ci") == []
+
+
+def test_task_ci_reaches_the_policy_guard_and_the_lean_plan() -> None:
+    """The lean gate must actually run the guard; a gate that skips it is a no-op."""
+
+    reached = {command for _, command in reachable_commands("task ci")}
+
+    assert "uv run python scripts/check_hosted_ci_policy.py" in reached
+    assert "uv run python scripts/verify.py --plan ci" in reached
+    # And the walk crosses into the plan's own subprocess list.
+    assert any("check_page_metadata.py" in command for command in reached)
+
+
+def test_a_heavy_task_is_caught_through_the_task_graph() -> None:
+    """`task prepush` runs a test suite and a build; the hosted lane must refuse it."""
+
+    reasons = " ".join(find_forbidden_reach("task prepush"))
+
+    assert "unit/integration test suite" in reasons
+    assert "application or site build" in reasons
+
+
+def test_an_undefined_task_invocation_is_a_violation() -> None:
+    """A workflow cannot point at a task this repository does not define."""
+
+    reasons = " ".join(find_forbidden_reach("task ci:does-not-exist"))
+
+    assert "unresolvable task" in reasons
 
 
 def test_find_policy_violations_reports_an_unallowlisted_command(tmp_path: Path) -> None:
