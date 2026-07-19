@@ -4,7 +4,7 @@
 
 ## What this service does
 
-This service runs Baltimore City's performance management routines: [CitiStat](../programs/citistat/index.md), agency performance planning, performance measures, and follow-up. The team prepares and facilitates CitiStat sessions, writes pre-session and follow-up memos, maintains and improves performance measures and KPI definitions, supports agency performance plans, tracks follow-ups, analyzes performance, and flags the issues that need an executive decision or cross-agency coordination.
+This service runs Baltimore City's performance management: [CitiStat](../programs/citistat/index.md), agency performance planning, performance measures, and follow-up. The team prepares and facilitates CitiStat sessions, writes pre-session and follow-up memos, maintains and improves performance measures and KPI definitions, supports agency performance plans, tracks follow-ups, analyzes performance, and flags the issues that need an executive decision or cross-agency coordination.
 
 ## The goal
 

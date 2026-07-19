@@ -24,7 +24,7 @@ Words shape behavior. When OPI uses one word for something and an agency partner
 
 **CitiStat.** The city’s performance management program, established in Baltimore City Code Article 1, Subtitle 61, and operated by OPI’s Performance team. See the CitiStat Method Playbook.
 
-**CitiStat Director.** The leader of the CitiStat Program. The Executive Director of the Mayor’s Office of Performance and Innovation serves as CitiStat Director. The Deputy Chief Performance Officer serves as Deputy Director of the program. The CitiStat Director sets program strategy, owns the citywide portfolio, and is the senior point of accountability for the routine.
+**CitiStat Director.** The leader of the CitiStat Program. The Executive Director of the Mayor’s Office of Performance and Innovation serves as CitiStat Director. The Deputy Chief Performance Officer serves as Deputy Director of the program. The CitiStat Director sets program strategy, owns the citywide portfolio, and is the senior point of accountability for the program.
 
 **CitiStat Inspector.** The OPI role responsible for field checks that keep Stat conversations honest: ride-alongs, site visits, and on-the-ground validation.
 
@@ -102,7 +102,7 @@ Words shape behavior. When OPI uses one word for something and an agency partner
 
 **Principal Agency.** A city agency that runs its own internal Stat, designates a Data-Driven Officer, and participates in CitiStat as a primary accountable agency. Distinguished from partner or supporting agencies that participate when their authority is needed but do not host their own Stat.
 
-**Product.** A tool, platform, or public-facing resource OPI builds or supports, distinct from a service (what OPI delivers) and a program (an ongoing routine). OPI products include the Baltimore Intelligence Center, the Baltimore City Data Platform, and the Baltimore City Performance Portal.
+**Product.** A tool, platform, or public-facing resource OPI builds or supports, distinct from a service (what OPI delivers) and a program (an ongoing effort). OPI products include the Baltimore Intelligence Center, the Baltimore City Data Platform, and the Baltimore City Performance Portal.
 
 **Program.** An ongoing routine or body of work that may involve more than one team, distinct from a team (staff and budget) and a service (what OPI delivers). CitiStat is OPI’s flagship program, operated by the Performance team and supported by all teams.
 
@@ -126,7 +126,7 @@ Words shape behavior. When OPI uses one word for something and an agency partner
 
 **System Health.** A standing slide on the Stat deck that summarizes the health of the underlying service or intake system (for example, 311 System Health) alongside the agency’s KPIs and operational metrics. Surfaces upstream issues (intake, routing, data quality) that can distort downstream performance.
 
-**Team.** A group with staff and budget; OPI also calls these *portfolios*. Four teams: Director’s Office, Performance, Data and Analytics, Innovation Lab. A team is distinct from a service (what OPI delivers), a program (an ongoing routine), and a product (a tool OPI builds).
+**Team.** A group with staff and budget; OPI also calls these *portfolios*. Four teams: Director’s Office, Performance, Data and Analytics, Innovation Lab. A team is distinct from a service (what OPI delivers), a program (an ongoing effort), and a product (a tool OPI builds).
 
 **Tiger Team.** A time-boxed, cross-functional delivery sprint focused on one service problem, typically three to six months. Uses the Public Innovation Toolkit. The Innovation Lab provides the team and the method. A Tiger Team can serve one agency or several; what determines the path is whether the work needs Cross-Agency Delivery’s coordination authority. See the Tiger Teams Playbook for that test.
 

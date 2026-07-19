@@ -18,9 +18,9 @@ A redesigned service that nobody can hire to staff fails. A data product that ha
 
 ## What our administration and operations team does
 
-Our administration and operations team is the spine of OPI. They run our hiring and onboarding, our position descriptions and performance standards, our contracts and procurement, our budget and grants, our internal communications and SharePoint operating system, our knowledge management and wiki, our policies on telework and collaboration, our orientation for new staff and managers, our offboarding when people leave, and the day-to-day routines that make a small office run like a serious one.
+Our administration and operations team is the spine of OPI. They run our hiring and onboarding, our position descriptions and performance standards, our contracts and procurement, our budget and grants, our internal communications and SharePoint operating system, our knowledge management and wiki, our policies on telework and collaboration, our orientation for new staff and managers, our offboarding when people leave, and the day-to-day operations that make a small office run like a serious one.
 
-The team also operates the institutional memory of OPI: the templates, playbooks, intake routines, charter formats, problem-statement standards, quality assurance checklists, and shared assets that keep us from starting each new engagement from scratch. When that memory is well-maintained, the office gets faster, more consistent, and more useful to its partners. When it is not, the office burns out the people who are trying to build on it.
+The team also operates the institutional memory of OPI: the templates, playbooks, intake processes, charter formats, problem-statement standards, quality assurance checklists, and shared assets that keep us from starting each new engagement from scratch. When that memory is well-maintained, the office gets faster, more consistent, and more useful to its partners. When it is not, the office burns out the people who are trying to build on it.
 
 ## What good administrative work looks like
 

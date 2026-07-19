@@ -2,10 +2,6 @@
 
 {{ page_header(summary="The framework OPI uses to govern city data assets.", category="STRATEGY FRAMEWORK", tagline="A framework for trustworthy data, responsible use, open data, privacy, sharing, and AI readiness.") }}
 
-## Executive Summary
-
-**Clear governance enables responsible speed**
-
 Baltimore City needs a comprehensive data governance framework that treats data as civic infrastructure. The framework should make data easier to use, easier to share responsibly, easier to publish, easier to protect, and easier to trust. It should support internal decision-making, performance management, open data, inter-agency collaboration, external partnerships, and responsible AI adoption.
 
 This document is written as a strategy framework that could evolve into legislation, executive order, administrative policy, or agency guidance. It does not begin from the assumption that governance should slow the City down. It begins from the opposite premise: clear governance enables responsible speed.

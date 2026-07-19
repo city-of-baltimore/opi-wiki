@@ -98,7 +98,7 @@ For operating agencies (Housing/DHCD, DOT, Police, Fire & EMS), chaired by the C
 - Where is the bottleneck: people, process, technology, procurement, policy, data, or decision rights?
 - What decision can be made today, and who has the authority to make it?
 - What will be done, by whom, by when, and with what evidence of completion?
-- Does this stay in CitiStat, or move to a Cross-Agency Delivery activation (a Tiger Team) or another routine?
+- Does this stay in CitiStat, or move to a Cross-Agency Delivery activation (a Tiger Team) or another venue?
 
 ### Cabinet attendance
 
@@ -121,7 +121,7 @@ The **CitiStat Inspector** plans the ride-alongs and site visits, coordinates wi
 
 ## Issue selection, admission, and continuation
 
-A routine should be called a Stat only if it meets the admission criteria and keeps producing decisions, commitments, or learning.
+A recurring meeting should be called a Stat only if it meets the admission criteria and keeps producing decisions, commitments, or learning.
 
 A routine earns Stat status when it meets these criteria:
 
@@ -144,11 +144,11 @@ Under City Code Subtitle 61-5, each principal agency names a **Data-Driven Offic
 
 | Responsibility | Minimum expectation |
 | --- | --- |
-| Internal Stat schedule | Run the agency's internal performance routine. |
+| Internal Stat schedule | Run the agency's internal performance cycle. |
 | KPI readiness | Maintain agency KPI definitions, sources, owners, and refresh schedules, aligned to the citywide standard. |
 | Pre-memo support | Provide timely data, context, and prior follow-up status. |
 | Follow-up management | Track agency follow-ups, confirm evidence, and surface delays early. |
-| Escalation | Identify issues that should move from internal Stat to CitiStat or another routine. |
+| Escalation | Identify issues that should move from internal Stat to CitiStat or another forum. |
 
 ## Follow-ups, escalation, and sustainment
 
@@ -174,7 +174,7 @@ Follow-up status uses one shared color scheme across the weekly report, the trac
 Use it when a follow-up cannot move, a decision is contested, or a blocker spans agencies:
 
 1. The **analyst** records the blocker and the decision needed in the tracker and surfaces it in the weekly report.
-2. The **Deputy Chief Performance Officer** reviews and routes it to the right next routine.
+2. The **Deputy Chief Performance Officer** reviews and routes it to the right next step.
 3. The **chair or authorizer** (City Administrator or Deputy Mayor) decides, allocates, or signals the call.
 4. If it needs sequencing across agencies → a **Cross-Agency Delivery activation** (a Tiger Team).
 5. If it is a data-governance, product, or policy question → the matching routine or a decision memo.

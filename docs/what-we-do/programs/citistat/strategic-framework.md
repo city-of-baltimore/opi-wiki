@@ -88,7 +88,7 @@ Subtitle 61 gives CitiStat a management mandate and sets obligations for both OP
 | Monthly Stats with each principal agency | OPI keeps an annual schedule and convenes recurring sessions with the agencies Subtitle 61 covers. |
 | Annual report to the Mayor and Council by January 31 | The report summarizes agency performance, areas to improve, and recommendations for the year ahead. |
 | Authority to request relevant data | Agencies provide the data needed for review, analysis, transparency, and follow-up. |
-| Agency internal Stat and Data-Driven Officer | Each principal agency runs its own internal performance routine and names a Data-Driven Officer reporting to the agency head. |
+| Agency internal Stat and Data-Driven Officer | Each principal agency runs its own internal Stat and names a Data-Driven Officer reporting to the agency head. |
 
 The nine principal agencies are the Fire Department, Department of Finance, Department of General Services, Health Department, Department of Housing and Community Development, Police Department, Department of Public Works, Department of Recreation and Parks, and Department of Transportation.
 

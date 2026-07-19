@@ -18,13 +18,13 @@ Communications is how OPI explains what changed, what it learned, what is still 
 
 ## What AdminOps owns
 
-Officewide intake and routing; the Book of Business and portfolio visibility; leadership routines; communications, branding, and editorial planning; Council relations and executive briefing support; partnership tracking and closeout; knowledge management and document standards; fiscal, procurement, HR, and facilities coordination; onboarding and offboarding; and QA and publication readiness.
+Officewide intake and routing; the Book of Business and portfolio visibility; leadership meetings; communications, branding, and editorial planning; Council relations and executive briefing support; partnership tracking and closeout; knowledge management and document standards; fiscal, procurement, HR, and facilities coordination; onboarding and offboarding; and QA and publication readiness.
 
 ## What AdminOps does not own
 
 AdminOps coordinates, tracks, briefs, and supports these areas, but the work itself belongs to others:
 
-- Stat methodology and performance routines belong to [Performance](../performance/index.md). Field validation and inspections sit there too, though the CitiStat Inspector is budgeted in the AdminOps cost center, because team and cost center do not always line up (see the [cost center view](../../../how-we-work/organization/team-and-roles/index.md#cost-center-view)).
+- Stat methodology and performance practices belong to [Performance](../performance/index.md). Field validation and inspections sit there too, though the CitiStat Inspector is budgeted in the AdminOps cost center, because team and cost center do not always line up (see the [cost center view](../../../how-we-work/organization/team-and-roles/index.md#cost-center-view)).
 - Data engineering, open data, and KPI definitions belong to [Data and Analytics](../data-and-analytics/index.md).
 - Service design, product builds, and digital tools belong to the [Innovation Lab](../innovation-lab/index.md).
 - Long-horizon cross-agency delivery belongs to [Cross-Agency Delivery](../../../what-we-do/services/cross-agency-delivery/index.md).

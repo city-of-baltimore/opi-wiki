@@ -49,7 +49,7 @@ We activate for a priority outcome with a named Authorizer at the Deputy Mayor o
 
 ### 2. Activation criteria
 
-We do not run delivery reviews for everything. Cross-Agency Delivery activates only when the problem meets all six criteria. If it does not, we use a different routine: a Stat, a product council, a charter and an owner, or a one-time decision memo.
+We do not run delivery reviews for everything. Cross-Agency Delivery activates only when the problem meets all six criteria. If it does not, we use a different approach: a Stat, a product council, a charter and an owner, or a one-time decision memo.
 
 - The work crosses two or more agencies or has a critical cross-agency dependency.
 
@@ -116,7 +116,7 @@ We do not run delivery reviews for everything. Cross-Agency Delivery activates o
 
 - Decision velocity: Authorizer decision SLA met (target: 10 business days for non-routine decisions).
 
-### 8. Handoffs and synergies across OPI services
+### 8. Handoffs across OPI services
 
 - From Performance → cross-agency commitments from Stat charters; KPI reporting on activations.
 
