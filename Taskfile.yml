@@ -9,10 +9,10 @@
 # `ci` must never reach a test suite, a site build, an image build, or a
 # browser suite — directly or through any task it calls. `task ci:policy`
 # proves that mechanically by resolving both this file's task graph and
-# verify.py's plans. Patapsco's published platform-check runs inside the `ci`
-# plan as well; it resolves this file's graph independently and owns the shared
-# estate baseline, but it does NOT expand verify.py's plans, so the two are
-# complementary. See the "Two checkers" note in
+# verify.py's plans. Patapsco's published platform-check (0.4.1) runs inside the
+# `ci` plan as well; it resolves this file's graph independently and owns the
+# shared estate baseline, but it does NOT expand verify.py's plans, so the two
+# are complementary. See the "Two checkers" note in
 # scripts/check_hosted_ci_policy.py before removing either.
 
 version: "3"

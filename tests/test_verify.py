@@ -115,12 +115,12 @@ def test_ci_plan_runs_both_policy_checkers() -> None:
     """The lean gate runs the local guard AND Patapsco's shared baseline check.
 
     They are not interchangeable, and the difference is measured rather than
-    assumed: ``platform-check`` 0.4.0 resolves the ``Taskfile.yml`` graph but
-    treats ``verify.py --plan ci`` as an opaque leaf, so a forbidden command
-    added to this module's ``ci`` tier passes it. It also has no job-timeout
-    rule and no ``run:``/``uses:`` allowlist. Dropping either checker is a real
-    loss of coverage; see the "Two checkers" note in
-    ``scripts/check_hosted_ci_policy.py``.
+    assumed: ``platform-check`` 0.4.1 expands ``npm`` and ``.sh`` bodies but
+    still treats a Python plan module — ``verify.py --plan ci`` — as an opaque
+    leaf, so a forbidden command added to this module's ``ci`` tier passes it.
+    It also has no job-timeout rule and no ``run:``/``uses:`` allowlist.
+    Dropping either checker is a real loss of coverage; see the "Two checkers"
+    note in ``scripts/check_hosted_ci_policy.py``.
     """
 
     commands = [" ".join(step.command) for step in build_steps(Path("/tmp/example"), plan="ci")]

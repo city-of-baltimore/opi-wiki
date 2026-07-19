@@ -214,7 +214,9 @@ def test_parse_taskfile_ignores_descriptions_and_non_task_blocks() -> None:
 def test_parse_taskfile_reads_inline_deps() -> None:
     """The inline `deps: [a, b]` form is a graph edge."""
 
-    graph = parse_taskfile(TASKFILE.replace("  ci:\n    desc:", "  ci:\n    deps: [policy]\n    desc:"))
+    source = TASKFILE.replace("  ci:\n    desc:", "  ci:\n    deps: [policy]\n    desc:")
+
+    graph = parse_taskfile(source)
 
     assert "policy" in graph.subtasks["ci"]
 

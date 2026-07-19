@@ -113,11 +113,14 @@ estate baseline — the app marker, the reserved port slot, the task surface,
 ruff/mypy/bandit configuration, and the pre-push hook — and it is the authority
 on rules that span every sibling repo.
 
-The two are complementary, not redundant, and the split was measured rather than
-assumed. `platform-check` 0.4.0 resolves the `Taskfile.yml` graph but treats
-`verify.py --plan ci` as an opaque leaf, so it does not see this repo's second
-indirection layer; it also has no job-timeout rule and no workflow allowlist.
-The four cases it misses are documented in the "Two checkers" note in
+The two are complementary, not redundant, and the split is measured rather than
+assumed — re-measured against `platform-check` 0.4.1, which expands `npm` and
+`.sh` bodies but still treats a **Python plan module** as an opaque leaf. It
+therefore does not see this repo's second indirection layer
+(`verify.py --plan ci`), including when that layer is reached through
+`scripts/verify.sh`; it also has no job-timeout rule and no workflow allowlist.
+The five cases it misses, and the two this repo's guard missed until 0.4.1
+exposed them, are documented in the "Two checkers" note in
 `scripts/check_hosted_ci_policy.py`, with the condition for retiring the local
 guard.
 
