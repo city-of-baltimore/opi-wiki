@@ -86,10 +86,10 @@ Mayor’s Office of Performance and Innovation
 
 A Tiger Team is where civic design becomes operational. The team does not simply study a problem or produce a deck. It goes into the service, listens to the people closest to the work, tests practical changes, and leaves behind a routine the agency can keep using. When more than one agency must move together, Cross-Agency Delivery supplies the authority and cadence that help the change stick.
 
-## Read Alongside
+## Read alongside
 
 **Innovation Lab Strategy:** *how the Lab operates, what it owns, and priorities.*
 
 **Digital Product Methodology:** *how OPI designs, builds, and ships digital products.*
 
-**About OPI: Innovation Lab:** *who is on the team and how to engage them.*
+**[About OPI: Innovation Lab](../our-teams/innovation-lab/about-innovation-lab.md):** *who is on the team and how to engage them.*

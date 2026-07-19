@@ -127,7 +127,7 @@ CitiStat identifies the problem; the rest of OPI helps explain, design, deliver,
 | Cross-agency throughput | Stuck issues move to delivery with named owners, milestones, and sustainment plans. |
 | Public trust | Residents and Council can see what is being measured, what changed, and what remains open. |
 
-## See also
+## Read alongside
 
 - [CitiStat Method Playbook](method-playbook.md): the operating manual, covering roles, the full session cycle, admission criteria, and the quality bar.
 - [CitiStat Portfolio](portfolio/index.md): the current schedule of active Stats.

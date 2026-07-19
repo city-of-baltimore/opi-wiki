@@ -52,7 +52,7 @@ Mayor’s Office of Performance and Innovation
 
 *City of Baltimore · Brandon M. Scott, Mayor*
 
-## Read Alongside
+## Read alongside
 
 **About OPI: Operating Frame:** *how the office is organized and how we work.*
 

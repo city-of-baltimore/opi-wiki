@@ -6,6 +6,18 @@ This is the operating manual for CitiStat: the roles, the preparation cycle, the
 
 **Program leadership.** OPI's Executive Director owns CitiStat as a citywide program. The **Deputy Chief Performance Officer** leads it day to day: method, calendar, standards, and follow-through. The **CitiStat Program Manager** runs independent quality review on every product before it reaches a session.
 
+## On this page
+
+Jump to the section you need:
+
+- [Roles and decision rights](#roles-and-decision-rights): who sponsors, owns, and decides.
+- [The CitiStat cycle](#the-citistat-cycle): the preparation timeline keyed to the session date.
+- [The session agendas](#the-session-agendas): the monthly and place-based formats.
+- [Data standards and evidence](#data-standards-and-evidence): the bar for the numbers.
+- [Issue selection, admission, and continuation](#issue-selection-admission-and-continuation): what earns and keeps Stat status.
+- [Follow-ups, escalation, and sustainment](#follow-ups-escalation-and-sustainment): how the work closes after the session.
+- [The quality bar](#the-quality-bar): the review every product passes before the room.
+
 ## Five things every Stat must have
 
 If a session is missing any of these, it is not yet a Stat. Reschedule it, reframe it, or route it elsewhere.
@@ -199,7 +211,7 @@ Every Stat product passes an independent quality review before it is presented. 
 
 A few failure modes recur. Status creep is the standing tour of every metric; name the performance problem at the top and cut the tour. Performative accountability is reading follow-ups aloud without closing them; close the loop in writing within two business days and track to evidence. Data theatre is charts that answer no real question; make every chart answer a specific one and cut the rest. Brand dilution is calling every meeting a Stat; hold the line on the five things and call other meetings what they are.
 
-## See also
+## Read alongside
 
 - [CitiStat Strategic Framework](strategic-framework.md): the strategy this playbook puts into practice.
 - [CitiStat Templates](templates.md): the pre-memo, deck, follow-up memo, and agenda templates.

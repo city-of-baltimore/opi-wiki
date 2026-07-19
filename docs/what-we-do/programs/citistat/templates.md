@@ -160,7 +160,7 @@ Templates should create consistency without creating bureaucracy. Use them to ma
 | Risks to public commitments | What could affect trust, service continuity, or public reporting? |
 | Looking ahead               | What sessions, decisions, or deadlines are coming next?           |
 
-## See also
+## Read alongside
 
 - [CitiStat Method Playbook](method-playbook.md): the operating standards these templates support.
 - [CitiStat Quality Standards](quality-standards.md): the QA bar every template output must meet.

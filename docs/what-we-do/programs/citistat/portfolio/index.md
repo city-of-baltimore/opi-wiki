@@ -54,25 +54,25 @@ Agency Stats run monthly; the place-based operating Stats (Housing, DOT, Police,
 
 | **Stat**              | **Cluster**                        | **Type** | **OPI Lead**          | **Core Data Product**                                   |
 |-----------------------|------------------------------------|----------|-----------------------|---------------------------------------------------------|
-| 311 Stat              | Internal Services                  | Thematic | Data Team-led         | 311 performance and resident experience dashboard       |
-| Tech Stat             | Internal Services                  | Thematic | Data Team-led         | Technology portfolio and service reliability dashboard  |
-| Capital Stat          | City Administrator                 | Thematic | Performance Team      | Capital project portfolio and delivery risk dashboard   |
-| Clean Stat            | Operations and Infrastructure      | Thematic | Performance Team      | Clean Block Scorecard and cleanliness hotspot dashboard |
-| DGS Stat              | Operations and Infrastructure      | Agency   | Performance Team      | Facilities and fleet readiness dashboard                |
-| Housing Stat          | Community and Economic Development | Agency   | Performance Team      | Housing and neighborhood conditions dashboard           |
-| DOT Stat              | Operations and Infrastructure      | Agency   | Performance Team      | Transportation operations dashboard                     |
-| Downtown Stat         | Community and Economic Development | Thematic | Performance Team      | Downtown RISE performance dashboard                     |
-| Finance Stat          | City Administrator                 | Agency   | Performance Team      | Financial operations and compliance dashboard           |
-| Fire & EMS Stat       | Public Safety                      | Agency   | Director’s Office-led | Fire and EMS performance dashboard                      |
-| Health Stat           | Health and Human Services          | Agency   | Performance Team      | Public health service performance dashboard             |
-| HR & Labor Stat       | Internal Services                  | Thematic | Performance Team      | Workforce and hiring pipeline dashboard                 |
-| Permit Stat           | Community and Economic Development | Thematic | Data Team-led         | Permitting performance dashboard                        |
-| Police Stat           | Public Safety                      | Agency   | Director’s Office-led | Public safety performance dashboard                     |
-| Rec Stat              | Health and Human Services          | Agency   | Performance Team      | Recreation, parks, and forestry performance dashboard   |
-| Solid Waste Stat      | Operations and Infrastructure      | Agency   | Performance Team      | Solid waste operations dashboard                        |
-| Water Stat            | Operations and Infrastructure      | Agency   | Performance Team      | Water and wastewater utility performance dashboard      |
-| Workplace Safety Stat | Internal Services                  | Thematic | Director’s Office-led | Workplace safety performance dashboard                  |
-| Youth Stat            | Health and Human Services          | Thematic | Performance Team      | Youth outcomes and initiative tracker                   |
+| [311 Stat](311-stat.md)              | Internal Services                  | Thematic | Data Team-led         | 311 performance and resident experience dashboard       |
+| [Tech Stat](tech-stat.md)             | Internal Services                  | Thematic | Data Team-led         | Technology portfolio and service reliability dashboard  |
+| [Capital Stat](capital-stat.md)          | City Administrator                 | Thematic | Performance Team      | Capital project portfolio and delivery risk dashboard   |
+| [Clean Stat](clean-stat.md)            | Operations and Infrastructure      | Thematic | Performance Team      | Clean Block Scorecard and cleanliness hotspot dashboard |
+| [DGS Stat](dgs-stat.md)              | Operations and Infrastructure      | Agency   | Performance Team      | Facilities and fleet readiness dashboard                |
+| [Housing Stat](housing-stat.md)          | Community and Economic Development | Agency   | Performance Team      | Housing and neighborhood conditions dashboard           |
+| [DOT Stat](dot-stat.md)              | Operations and Infrastructure      | Agency   | Performance Team      | Transportation operations dashboard                     |
+| [Downtown Stat](downtown-stat.md)         | Community and Economic Development | Thematic | Performance Team      | Downtown RISE performance dashboard                     |
+| [Finance Stat](finance-stat.md)          | City Administrator                 | Agency   | Performance Team      | Financial operations and compliance dashboard           |
+| [Fire & EMS Stat](fire-and-ems-stat.md)       | Public Safety                      | Agency   | Director’s Office-led | Fire and EMS performance dashboard                      |
+| [Health Stat](health-stat.md)           | Health and Human Services          | Agency   | Performance Team      | Public health service performance dashboard             |
+| [HR & Labor Stat](hr-and-labor-stat.md)       | Internal Services                  | Thematic | Performance Team      | Workforce and hiring pipeline dashboard                 |
+| [Permit Stat](permit-stat.md)           | Community and Economic Development | Thematic | Data Team-led         | Permitting performance dashboard                        |
+| [Police Stat](police-stat.md)           | Public Safety                      | Agency   | Director’s Office-led | Public safety performance dashboard                     |
+| [Rec Stat](rec-stat.md)              | Health and Human Services          | Agency   | Performance Team      | Recreation, parks, and forestry performance dashboard   |
+| [Solid Waste Stat](solid-waste-stat.md)      | Operations and Infrastructure      | Agency   | Performance Team      | Solid waste operations dashboard                        |
+| [Water Stat](water-stat.md)            | Operations and Infrastructure      | Agency   | Performance Team      | Water and wastewater utility performance dashboard      |
+| [Workplace Safety Stat](workplace-safety-stat.md) | Internal Services                  | Thematic | Director’s Office-led | Workplace safety performance dashboard                  |
+| [Youth Stat](youth-stat.md)            | Health and Human Services          | Thematic | Performance Team      | Youth outcomes and initiative tracker                   |
 
 
 ## Admission and continuation criteria
@@ -96,7 +96,7 @@ Not every recurring problem should become a Stat. The first question should be: 
 
 {{ card_grid_from("what-we-do/programs/citistat/portfolio/index.cards.yml") }}
 
-## See also
+## Read alongside
 
 - [CitiStat Method Playbook](../method-playbook.md): the operating standards every Stat in this portfolio runs on.
 - [CitiStat Strategic Framework](../strategic-framework.md): the public-facing strategic frame and portfolio rationale.

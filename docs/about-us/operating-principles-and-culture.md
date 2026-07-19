@@ -6,13 +6,13 @@
 
 Culture shows up in the handoffs: choosing the right routine, naming the owner, documenting the decision, and planning sustainment before launch. Read these principles alongside [How Work Moves Through OPI](../how-we-work/how-work-moves-through-opi.md).
 
-## The Culture We Choose
+## The culture we choose
 
 OPI runs on a small number of operating principles. They are deliberately memorable, because they show up in the small daily decisions (how a meeting opens, who gets credit, how a memo is reviewed, how we say no), not just in onboarding.
 
 They are paired with the OPI core values: GRIT, CANDOR, OWNERSHIP, HUMILITY, INTENTION, IMPACT.
 
-## Operating Principles
+## Operating principles
 
 Ten statements we repeat until they become reflex.
 
@@ -56,7 +56,7 @@ When a problem keeps winning in its own arena (a recurring agency conflict, a st
 
 Raw data is not a deliverable. Information is data with structure. Knowledge is information that changes a decision. Our job is to move up that chain on purpose, every cycle.
 
-## Ownership Model
+## Ownership model
 
 Most cross-agency conflict comes from unclear ownership. This is the model we use to sort it out, mapped across the city operating stack.
 
@@ -69,7 +69,7 @@ Most cross-agency conflict comes from unclear ownership. This is the model we us
 
 Where any layer is unclear in a specific engagement, the engagement charter resolves it before delivery starts. We do not let ownership be implicit.
 
-## How We Plan Team Time
+## How we plan team time
 
 The 70 / 20 / 10 model structures how we spend our hours to guard against burnout. It is a working baseline reviewed each fiscal year, a guide rather than a rule.
 

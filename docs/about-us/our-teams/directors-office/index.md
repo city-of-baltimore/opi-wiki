@@ -14,3 +14,7 @@ The Director's Office position descriptions now live in
 [Resources → Position Descriptions](../../../resources/reference/position-descriptions/index.md),
 which keeps portfolio role definitions in one maintained directory instead of
 duplicating them across team pages.
+
+## Read alongside
+
+- [Team and Roles](../../../how-we-work/organization/team-and-roles/index.md): the live staff roster, cost centers, and open positions.

@@ -16,3 +16,7 @@ directory is the single maintained record of Innovation Lab roles. Current staff
 roles are the Innovation Program Manager ({{ role_holder("Innovation Program Manager") }}), Civic Designer,
 Applied Data Scientist, and Full Stack Engineer. The Lab's civic-technology
 leadership is held directly by the Innovation Program Manager.
+
+## Read alongside
+
+- [Team and Roles](../../../how-we-work/organization/team-and-roles/index.md): the live staff roster, cost centers, and open positions.

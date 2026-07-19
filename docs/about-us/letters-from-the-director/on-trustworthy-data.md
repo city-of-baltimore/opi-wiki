@@ -60,10 +60,10 @@ Mayor’s Office of Performance and Innovation
 
 *City of Baltimore · Brandon M. Scott, Mayor*
 
-## Read Alongside
+## Read alongside
 
 **Data and Analytics Strategy:** *how Baltimore is building citywide data infrastructure.*
 
 **Data Governance Framework:** *roles, standards, and decision rights for data stewardship.*
 
-**About OPI: Data and Analytics:** *what the Data and Analytics team owns and how it partners.*
+**[About OPI: Data and Analytics](../our-teams/data-and-analytics/about-data-analytics.md):** *what the Data and Analytics team owns and how it partners.*

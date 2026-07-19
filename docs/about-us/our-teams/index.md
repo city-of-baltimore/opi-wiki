@@ -15,3 +15,7 @@ Use this distinction when writing or editing OPI pages. It prevents Cross-Agency
 Each team's section leads with an About page that covers what the team is for, how it works, what it owns, and what it's building. Some teams add a focused method or policy guide: the CitiStat Method Playbook, the Data Governance Framework, and the Digital Product Methodology.
 
 Before comparing team pages, read [How Work Moves Through OPI](../../how-we-work/how-work-moves-through-opi.md) for the shared model of how work moves from a problem to a fix.
+
+## Read alongside
+
+- [Team and Roles](../../how-we-work/organization/team-and-roles/index.md): the live staff roster, cost centers, and open positions across all the teams.

@@ -45,8 +45,9 @@ Data and Analytics is the evidence layer for the whole office. It gives Performa
 - AI use cases carry evaluation, human oversight, and sunset criteria before they scale.
 - Residents, Council, researchers, and journalists can verify what the City reports.
 
-## See also
+## Read alongside
 
 - [Baltimore City Data Platform](../../../what-we-do/products/baltimore-city-data-platform.md): the governed data foundation this team builds.
 - [Baltimore Intelligence Center](../../../what-we-do/programs/baltimore-intelligence-center/index.md): the program building the semantic layer and AI products on top.
 - [Data Governance Framework](data-governance-framework.md): classification, stewardship, quality, privacy, and AI accountability.
+- [On Trustworthy Data](../../letters-from-the-director/on-trustworthy-data.md): the Director's letter on why this work matters.

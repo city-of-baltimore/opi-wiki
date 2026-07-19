@@ -52,6 +52,6 @@ Mayor’s Office of Performance and Innovation
 
 *City of Baltimore · Brandon M. Scott, Mayor*
 
-## Read Alongside
+## Read alongside
 
 - [About AdminOps](../our-teams/directors-office/about-admin-ops.md): who the team is and what they own.

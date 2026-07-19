@@ -23,3 +23,7 @@ The team contributes to [Cross-Agency Delivery](../../../what-we-do/services/cro
 Performance position descriptions live in
 [Resources → Position Descriptions](../../../resources/reference/position-descriptions/index.md),
 so the team page can stay focused on method, service context, and the CitiStat program.
+
+## Read alongside
+
+- [Team and Roles](../../../how-we-work/organization/team-and-roles/index.md): the live staff roster, cost centers, and open positions.

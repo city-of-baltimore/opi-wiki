@@ -60,10 +60,12 @@ Mayor’s Office of Performance and Innovation
 
 *City of Baltimore · Brandon M. Scott, Mayor*
 
-## Read Alongside
+## Read alongside
 
 **Performance Management Strategy:** *priorities, success measures, and commitments.*
 
 **CitiStat Strategic Framework:** *mandate, operating model, and the modern CitiStat cycle.*
 
 **CitiStat Method Playbook:** *session formats, pre/post memo templates, and the cycle.*
+
+**[About OPI: Performance](../our-teams/performance/about-performance.md):** *what the Performance team owns and how it partners.*

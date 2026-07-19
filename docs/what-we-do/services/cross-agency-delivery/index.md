@@ -31,7 +31,7 @@ Residents don't care which agency is responsible; they just want the issue resol
 
 ## Delivered by
 
-No standing team. Cross-Agency Delivery is drawn from across all of OPI: the [Innovation Lab](../../../about-us/our-teams/innovation-lab/index.md) provides the Tiger Team and method, the [Performance team](../../../about-us/our-teams/performance/index.md) runs the standing delivery review, and other teams contribute staff and authority as the work requires. Danny Heller serves as interim Delivery Manager, with authorizing relationships from the Director's Office at the Deputy Mayor and City Administrator level.
+No standing team. Cross-Agency Delivery is drawn from across all of OPI: the [Innovation Lab](../../../about-us/our-teams/innovation-lab/index.md) provides the Tiger Team and method, the [Performance team](../../../about-us/our-teams/performance/index.md) runs the standing delivery review, and other teams contribute staff and authority as the work requires. {{ role_holder("Deputy Chief Performance Officer") }} serves as interim Delivery Manager, with authorizing relationships from the Director's Office at the Deputy Mayor and City Administrator level.
 
 ## How to request this service
 
