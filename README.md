@@ -14,7 +14,10 @@ The site is **public-facing**. Internal companion documents (PDs, performance st
 
 ## Local development
 
-Requires Python 3.11+ and [uv](https://docs.astral.sh/uv/).
+Requires Python 3.13 or 3.14 (3.14 is the default across the Baltimore civic
+platform) and [uv](https://docs.astral.sh/uv/). Editing the wiki does not
+require running anything locally — content contributions can go through the
+GitHub web editor and the checks run in CI.
 
 ```bash
 # one-time setup
@@ -26,18 +29,24 @@ uv run mkdocs serve
 # build a static site
 uv run mkdocs build
 
-# run the maintainer verification pass (full: static checks + strict build)
-./scripts/verify.sh
+# the pre-push pass: static checks + tests + strict build + built-site checks
+./scripts/verify.sh                       # --plan prepush is the default
 
-# the lean subset — static checks only, no site build. This is what
-# pull-request CI runs; use it for a fast inner loop.
-./scripts/verify.sh --lean
+# the hosted-CI subset — static checks only. No tests, no site build.
+# Fast inner loop, and exactly what pull-request CI runs.
+./scripts/verify.sh --plan ci
+
+# the pre-deploy pass: everything above plus the Playwright browser smoke checks
+./scripts/verify.sh --plan validate
 
 # optional: write a machine-readable verification report
 ./scripts/verify.sh --json-output /tmp/opi-verify.json
+```
 
-# optional: include browser smoke checks after the strict site build
-./scripts/verify.sh --include-browser-smoke
+Install the git hooks once per clone so the pre-push gate is active:
+
+```bash
+./scripts/install-hooks.sh
 ```
 
 `uv run mkdocs serve` runs at <http://127.0.0.1:5208> with live reload.
@@ -72,20 +81,31 @@ Pages, not this image.
 
 ## How CI is split
 
-Two gates, on purpose:
+Three tiers, defined once in `scripts/verify.py` and shared by every gate.
+This is section 4 of the civic-app consistency standard, applied here:
 
-- **Pull requests** (`.github/workflows/ci.yml`) run `scripts/verify.py --lean`:
-  lint, mypy, pytest, and the validators that read `docs/` source. No site
-  build, no browser. This lane is meant to stay cheap.
-- **Deploy to Pages** (`.github/workflows/deploy.yml`) runs the full plan: the
-  lean checks plus the strict MkDocs build, the built-site link crawl, and the
-  accessibility smoke checks. Nothing reaches production unchecked.
+| Plan | Where it runs | What it covers |
+| --- | --- | --- |
+| `ci` | pull-request CI, fast local loop | workflow policy, lint, mypy, and the validators that read `docs/` source |
+| `prepush` | the pre-push hook and the Pages deploy gate | everything in `ci`, plus pytest, `mkdocs build --strict`, the built-site link crawl, and the accessibility checks |
+| `validate` | before a deploy, locally | everything in `prepush`, plus the Playwright browser smoke checks |
 
-Locally, `./scripts/verify.sh` runs the full plan — run it before pushing
-structural or config changes.
+Each tier is a strict superset of the one above it, so a check that moves down
+a tier is never a check that was dropped.
 
-Do not add a build or browser step to the pull-request workflow; add checks to
-`build_steps()` in `scripts/verify.py` so both gates stay in sync.
+**Hosted CI runs `ci` only — no test suite, no site build, no browser.** That is
+deliberate, and it has a cost worth stating plainly: a broken test is caught at
+`git push`, not on the pull request. `./scripts/install-hooks.sh` installs the
+pre-push hook that is now the backstop.
+
+`scripts/check_hosted_ci_policy.py` enforces the boundary mechanically. It fails
+the build if a hosted workflow reaches a test suite, a site build, an image
+build, or a browser suite — including transitively, by resolving which
+`verify.py` plan the workflow actually asks for — or if a job forgets
+`timeout-minutes`.
+
+Do not add a test, build, or browser step to the pull-request workflow; add
+checks to `build_steps()` in `scripts/verify.py` so every gate stays in sync.
 
 ## Security scanning
 
@@ -159,6 +179,10 @@ opi-foundations/
 ├── overrides/              # MkDocs Material theme overrides (empty for now)
 ├── scripts/
 │   ├── verify.sh           # local verification entrypoint
+│   ├── verify.py           # the three-tier check plan (ci/prepush/validate)
+│   ├── check_hosted_ci_policy.py # keeps hosted CI static-only
+│   ├── install-hooks.sh    # installs the pre-push gate
+│   ├── hooks/pre-push      # runs the prepush plan before every push
 │   ├── check_html_links.py # raw HTML href validation
 │   ├── check_page_metadata.py
 │   ├── check_brand_terms.py

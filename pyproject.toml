@@ -3,7 +3,11 @@ name = "opi-wiki"
 version = "0.1.0"
 description = "A Wiki for all things OPI."
 readme = "README.md"
-requires-python = ">=3.11,<4.0"
+# Platform bill of materials (patapsco/contracts/platform-bom.toml): default
+# 3.14, floor 3.13. Contributions to this wiki arrive through git, not local
+# runs, so a modern floor costs contributors nothing and keeps the toolchain
+# aligned with every sibling repo.
+requires-python = ">=3.13,<3.15"
 dependencies = [
   "mkdocs==1.6.1",
   # Held on the 9.6.x line on purpose: Material 9.7+ prints a build-time advisory
@@ -39,7 +43,7 @@ testpaths = ["tests"]
 [tool.ruff]
 line-length = 100
 src = ["main.py", "scripts", "tests"]
-target-version = "py311"
+target-version = "py313"
 
 [tool.ruff.lint]
 select = ["E", "F", "I", "B", "BLE", "D", "UP"]

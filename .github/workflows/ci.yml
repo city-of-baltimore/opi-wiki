@@ -2,16 +2,21 @@ name: CI
 
 # Runs on every pull request to main. This is the required gate before merge.
 #
-# It is deliberately LEAN: static checks only — lint, type-check, tests, and the
-# content validators that read docs/ source. It does NOT build the site and does
-# NOT run anything that inspects built HTML or drives a browser. Per the civic-app
-# consistency standard (patapsco/docs/app-consistency-standard.md, §4), the
-# on-push lane stays cheap; the strict MkDocs build, the built-site link crawl,
-# and the accessibility smoke checks run in the pre-deploy gate
-# (.github/workflows/deploy.yml) and locally via ./scripts/verify.sh.
+# It is deliberately LEAN: static checks only — lint, type-check, the workflow
+# policy guard, and the content validators that read docs/ source. It does NOT
+# run the test suite, does NOT build the site, and does NOT run anything that
+# inspects built HTML or drives a browser. Per the civic-app consistency
+# standard (patapsco/docs/app-consistency-standard.md, §4), the hosted lane is
+# static checks, contracts, and security only.
 #
-# Do not add a build or browser step here. If a check needs site/, it belongs in
-# the full plan, not this workflow.
+# The test suite, the strict MkDocs build, the built-site link crawl, and the
+# accessibility checks all still run — in the pre-push hook and the pre-deploy
+# gate (.github/workflows/deploy.yml), via './scripts/verify.sh --plan prepush'.
+# Nothing was dropped; it moved to the tier that can afford it.
+#
+# Do not add a test, build, or browser step here. scripts/verify.py owns the
+# plan, and scripts/check_hosted_ci_policy.py fails this job if a forbidden
+# command becomes reachable — including through the verify.py plan itself.
 
 on:
   pull_request:
@@ -29,21 +34,30 @@ jobs:
   checks:
     name: Static checks
     runs-on: ubuntu-latest
+    # The whole lean plan runs in seconds. Ten minutes is pure headroom, and it
+    # means a hung step fails fast instead of sitting on GitHub's six-hour
+    # default. scripts/verify.py additionally bounds each individual step.
+    timeout-minutes: 10
     steps:
       - uses: actions/checkout@9c091bb21b7c1c1d1991bb908d89e4e9dddfe3e0 # v7.0.0
 
       - uses: actions/setup-python@ece7cb06caefa5fff74198d8649806c4678c61a1 # v6.3.0
         with:
-          python-version: "3.12"
+          python-version: "3.14"
 
+      # The two network steps get their own tighter caps: a wedged package
+      # index is the one thing here that can hang without any local symptom.
       - name: Install uv
+        timeout-minutes: 5
         run: pip install uv==0.11.28
 
       - name: Install dependencies
+        timeout-minutes: 5
         run: uv sync --frozen
 
       # scripts/verify.py is the single source of truth for the check suite.
       # Do not add ad-hoc check steps here — add them to build_steps() so
       # local runs, CI, and the deploy gate can never drift apart.
-      - name: Run verification suite (lean plan)
-        run: uv run python scripts/verify.py --lean
+      - name: Run verification suite (ci plan)
+        timeout-minutes: 5
+        run: uv run python scripts/verify.py --plan ci
