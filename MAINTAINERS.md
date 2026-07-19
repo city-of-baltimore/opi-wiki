@@ -259,7 +259,7 @@ sidecar edit.
 
 ## Staleness audit (quarterly)
 
-Every quarter, run `./scripts/verify.sh` (which includes `mkdocs build --strict`) and audit:
+Every quarter, run `task prepush` (which includes `mkdocs build --strict`) and audit:
 
 1. Pages whose `Last reviewed` field is more than 6 months old.
 2. Pages whose linked source documents have been updated.
@@ -267,39 +267,43 @@ Every quarter, run `./scripts/verify.sh` (which includes `mkdocs build --strict`
 
 Email the relevant section owner with a one-line ask: "Is this still accurate? Any updates?"
 
-The shell entrypoint now delegates to a structured Python verification runner,
-so maintainers get per-step timing and failure summaries without having to
-change their local workflow. If you need a machine-readable report for CI or
-triage, run `./scripts/verify.sh --json-output /path/to/report.json`.
+Every tier delegates to a structured Python verification runner, so maintainers
+get per-step timing and failure summaries. If you need a machine-readable report
+for CI or triage, call the runner directly:
+`./scripts/verify.sh --json-output /path/to/report.json`.
 
 For UI regressions that static checks will miss, maintainers run the pre-deploy
-pass with `./scripts/verify.sh --plan validate`, which adds the browser smoke
-checks. That pass expects a one-time local browser install via
+pass with `task validate`, which adds the browser smoke checks. That pass
+expects a one-time local browser install via
 `uv run playwright install chromium`.
 
 ### Which gate runs what
 
-The suite is defined once in `scripts/verify.py` and runs in three nested tiers:
+`Taskfile.yml` exposes the tiers; `scripts/verify.py` defines the suite once and
+runs it in three nested tiers:
 
-| Plan | Where | Covers |
+| Tier | Where | Covers |
 |---|---|---|
-| `--plan ci` | pull-request CI, fast local loop | hosted-CI policy guard, lint, mypy, metadata, brand terms, style, consistency, raw HTML links |
-| `--plan prepush` (default) | the pre-push hook and the Pages deploy gate | everything above, plus pytest, `mkdocs build --strict`, the built-site link crawl, and the accessibility checks |
-| `--plan validate` | locally, before a deploy | everything above, plus the Playwright browser smoke checks |
+| `task ci` | pull-request CI, fast local loop | hosted-CI policy guard, lint, mypy, bandit, metadata, brand terms, style, consistency, raw HTML links |
+| `task prepush` | the pre-push hook and the Pages deploy gate | everything above, plus pytest, `mkdocs build --strict`, the built-site link crawl, and the accessibility checks |
+| `task validate` | locally, before a deploy | everything above, plus the Playwright browser smoke checks |
 
 Each tier is a strict prefix of the next, so nothing is lost by moving a check
 down a tier — it runs later, not never.
 
 Pull-request CI is deliberately lean — **no test suite, no site build, no
-browser** — per section 4 of the civic-app consistency standard, and
-`scripts/check_hosted_ci_policy.py` fails the build if that ever regresses.
+browser** — per section 4 of the civic-app consistency standard.
+`scripts/check_hosted_ci_policy.py` fails the build if that ever regresses,
+including through indirection: it statically resolves both the `Taskfile.yml`
+task graph and the `verify.py` plans, so adding a heavy step to any task `ci`
+reaches is caught.
 **The practical consequence: a broken test or strict build is not caught on the
 PR; it surfaces at `git push` (via the hook) or on the deploy run after merge.**
 
 Install the hook once per clone:
 
 ```bash
-./scripts/install-hooks.sh
+task setup
 ```
 
 `git push --no-verify` skips it entirely. With tests out of hosted CI, that flag
@@ -335,7 +339,7 @@ This role has a high bus factor by design (it's one person). Mitigations:
 | GitHub Enterprise (this repo) | Source of truth, version control, CI/CD |
 | uv | Python dependency and environment management |
 | MkDocs Material | Site renderer (local preview + production build) |
-| `./scripts/verify.sh` | Standard local verification pass (`prepush` by default; `--plan ci` for the PR-CI subset, `--plan validate` before a deploy) |
+| `task` ([Taskfile](https://taskfile.dev)) | The command surface: `task prepush` is the standard local pass, `task ci` the PR-CI subset, `task validate` the pre-deploy pass. `task --list` shows the rest |
 | `./scripts/security_snyk.sh` | Manual, advisory Snyk source scan (never a gate) |
 | Pandoc | Convert .docx → Markdown when migrating Drive content |
 | VS Code (or any Markdown editor) | Authoring |
@@ -344,7 +348,7 @@ This role has a high bus factor by design (it's one person). Mitigations:
 
 ## Onboarding a new maintainer
 
-Day 1: read this document and `CONTRIBUTING.md`. Run `uv run mkdocs serve` locally. Read every page on the live site.
+Day 1: read this document and `CONTRIBUTING.md`. Run `task setup` then `task serve` locally. Read every page on the live site.
 
 Week 1: shadow the previous maintainer through one full intake cycle (issue → PR → merge → deploy).
 
