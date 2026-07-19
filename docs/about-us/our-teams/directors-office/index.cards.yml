@@ -1,12 +1,4 @@
 - meta: Function
   title: "About AdminOps"
-  body: "What AdminOps does inside the Director's Office."
+  body: "OPI's internal operations and communications backbone — intake, portfolio, briefings, comms, and knowledge management."
   href: about-admin-ops/
-- meta: Strategy
-  title: "AdminOps Strategy"
-  body: "OPI's strategy for the operating backbone."
-  href: admin-ops-strategy/
-- meta: "Theory of change"
-  title: "AdminOps Theory of Change"
-  body: "How AdminOps moves from inputs to outcomes."
-  href: admin-ops-theory-of-change/

@@ -2,11 +2,9 @@
 
 {{ page_header(summary="How OPI ships digital products inside city government.", category="METHOD GUIDE", tagline="A practical workflow for service design, product discovery, prototyping, engineering, documentation, and sustainment.") }}
 
-*Read alongside: OPI Innovation Lab Strategy*
+This is OPI's citywide playbook for how digital products are designed and shipped — the Innovation Lab's build method, usable by any team building a digital product for the City.
 
-*The Lab Strategy explains why we build and the discipline we use. This Methodology is the citywide playbook for how we design and ship digital products. More than the Innovation Lab uses it.*
-
-## EXECUTIVE SUMMARY
+## Executive Summary
 
 **Start with the service, not the screen**
 
@@ -16,7 +14,7 @@ This method guide defines a practical workflow for moving from problem framing t
 
 The methodology is owned through the Innovation Lab, in partnership with Data and Analytics, BCIT, agencies, and AdminOps. It is intended for citywide use. It applies to operational tools, public-facing portals, field data collection apps, dashboards with workflow components, and other products that improve service delivery.
 
-## THE CORE RULE
+## The Core Rule
 
 **Start with the service**
 
@@ -24,7 +22,7 @@ A digital product should not begin with a screen. It should begin with a problem
 
 This protects OPI from building tools that digitize broken processes. If the handoff is unclear, the product will not fix it. If ownership is unresolved, the product will expose it. If data quality is weak, the product will amplify the weakness. The first design task is therefore to understand the service end to end.
 
-## WORKFLOW AT A GLANCE
+## Workflow at a Glance
 
 **Eight stages from intake to publication**
 
@@ -39,7 +37,7 @@ This protects OPI from building tools that digitize broken processes. If the han
 | 7\. Launch and sustain | Runbook / knowledge base / status tool               | Release responsibly, monitor use, support users, transfer ownership.                           | Runbook; support model; sustainment plan; annual review.    |
 | 8\. Publication track  | InDesign / document tools                            | Create public reports, playbooks, briefs, polished documentation separate from product design. | Publication PDF; implementation playbook; public summary.   |
 
-## STAGE 1
+## Stage 1
 
 **Intake and problem framing**
 
@@ -47,7 +45,7 @@ Every product begins with intake. Intake should clarify the requestor, user, pro
 
 The product brief should answer: What problem are we solving? Who experiences it? What decision or workflow will change? What does success look like? What data is required? Who will own the product after launch?
 
-## STAGE 2
+## Stage 2
 
 **Service design in Miro**
 
@@ -63,7 +61,7 @@ Miro is best for collaborative service design. It helps teams map complex system
 
 - Pain point and root cause analysis.
 
-## STAGE 3
+## Stage 3
 
 **UX flow and interaction logic in Figma**
 
@@ -71,7 +69,7 @@ Figma translates the service design into product flows. At this stage, designs c
 
 For a permitting product, the UX flow might move from dashboard to permit list, new application form, upload documents, review status, agency comments, applicant action needed, approval, and inspection scheduling. Each step should map back to the service blueprint.
 
-## STAGE 4
+## Stage 4
 
 **UI design, components, and prototypes in Figma**
 
@@ -79,7 +77,7 @@ Once the flow is validated, Figma becomes the place for detailed UI design. Desi
 
 The prototype should be tested with users before engineering begins at full speed. Testing should include residents or staff who reflect the real users of the service. A beautiful prototype that users cannot understand is not ready.
 
-## STAGE 5
+## Stage 5
 
 **Developer handoff and implementation**
 
@@ -87,7 +85,7 @@ Figma Dev Mode supports handoff by giving developers access to spacing, fonts, c
 
 Engineering should follow OPI’s standard discipline: modular design, API contracts, smoke tests, documented environment variables, version control, code review, deployment checks, and no drift between frontend assumptions and backend schemas. AI-assisted coding tools can accelerate implementation, but they do not remove the need for human review, testing, security, and maintainability.
 
-## STAGE 6
+## Stage 6
 
 **QA, pilot, and readiness gates**
 
@@ -105,7 +103,7 @@ No product should be demonstrated, piloted, or launched without internal vetting
 
 - Go/no-go memo summarizing risks, decisions, and mitigation.
 
-## STAGE 7
+## Stage 7
 
 **Launch, adoption, and sustainment**
 
@@ -113,7 +111,7 @@ Launch is not success. Adoption and sustainment are success. Every product shoul
 
 A sustainment plan should define who owns content, who owns data, who owns code, who handles support, how bugs are reported, how enhancements are prioritized, how the product is funded, and when the product will be reviewed for continued value.
 
-## PUBLICATION TRACK
+## Publication Track
 
 **Where Adobe InDesign fits**
 
@@ -121,7 +119,7 @@ InDesign and publication tools belong in a parallel track, not inside the produc
 
 The two tracks should connect through shared narrative, screenshots, data definitions, and implementation learning. But they should not be confused. Figma designs products. Adobe InDesign publishes documents.
 
-## GOVERNANCE AND DECISION RIGHTS
+## Governance and Decision Rights
 
 **Who owns what across the workflow**
 
@@ -134,7 +132,7 @@ The two tracks should connect through shared narrative, screenshots, data defini
 | BCIT             | Owns enterprise infrastructure, security, identity, production environment, architecture partnership, and technology governance. |
 | AdminOps         | Owns public narrative, Council coordination, publication readiness, and portfolio visibility.                                    |
 
-## METRICS FOR PRODUCT SUCCESS
+## Metrics for Product Success
 
 **How we know a product is working**
 
@@ -152,13 +150,11 @@ The two tracks should connect through shared narrative, screenshots, data defini
 
 - Reuse: components, patterns, APIs, or methods are reused in future OPI products.
 
-## CLOSING
+## Closing
 
-**Better services, not more products**
+**Better services through products**
 
-OPI’s product workflow is built to avoid two common failures: building tools without understanding the service, and producing design artifacts that never become operational change. The method starts with reality, designs with users, builds in disciplined increments, tests before launch, and plans sustainment from the beginning.
-
-> *The goal is not more products. The goal is better services. Products are one way we make that real.*
+OPI’s product workflow is built to avoid two common failures: building tools without understanding the service, and producing design artifacts that never become operational change. The method starts with reality, designs with users, builds in disciplined increments, tests before launch, and plans sustainment from the beginning. Better services are the goal; a product is one way OPI gets there.
 
 ## Relationship to Cross-Agency Delivery
 

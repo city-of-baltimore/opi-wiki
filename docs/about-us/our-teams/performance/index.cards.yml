@@ -1,12 +1,8 @@
 - meta: Document
   title: "About Performance"
-  body: "What citywide performance management means inside Baltimore City government — the human story of the team and how it works."
+  body: "What citywide performance management is, how the team works, the quality bar, and this year's priorities."
   href: about-performance/
-- meta: Strategy
-  title: "Performance Strategy"
-  body: "The strategic argument for Baltimore's performance system — case for change, principles, the citywide cycle, governance, success measures, and FY priorities."
-  href: performance-strategy/
-- meta: "Theory of change"
-  title: "Performance Theory of Change"
-  body: "How performance management moves from inputs to outcomes."
-  href: performance-theory-of-change/
+- meta: Program
+  title: "CitiStat"
+  body: "The executive performance program the team operates — strategic framework, method playbook, and the full agency portfolio."
+  href: ../../../what-we-do/programs/citistat/

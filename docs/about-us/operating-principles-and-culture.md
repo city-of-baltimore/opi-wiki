@@ -4,15 +4,13 @@
 
 ## How this connects to the operating model
 
-Culture shows up in the handoffs. Moving fast with intention means choosing the right routine, naming the owner, documenting the decision, and planning sustainment before launch. Use the operating principles alongside How Work Moves Through OPI when deciding whether work belongs in CitiStat, Data and Analytics, the Innovation Lab, Cross-Agency Delivery, or AdminOps.
+Culture shows up in the handoffs: choosing the right routine, naming the owner, documenting the decision, and planning sustainment before launch. Read these principles alongside [How Work Moves Through OPI](../how-we-work/how-work-moves-through-opi.md).
 
 ## The Culture We Choose
 
 OPI runs on a small number of operating principles. They are deliberately memorable, because they show up in the small daily decisions — how a meeting opens, who gets credit, how a memo is reviewed, how we say no — and not just in onboarding.
 
 They are paired with the OPI core values: GRIT, CANDOR, OWNERSHIP, HUMILITY, INTENTION, IMPACT.
-
-> *Set the temperature. The operating norms we model become the office culture.*
 
 ## Operating Principles
 
@@ -58,69 +56,7 @@ When a problem keeps winning in its own arena — a recurring agency conflict, a
 
 Raw data is not a deliverable. Information is data with structure. Knowledge is information that changes a decision. Our craft is moving up that chain on purpose, every cycle.
 
-> *Say the true thing kindly. Candor is a value. So is care. They are not in tension.*
-
-## Recognition Culture
-
-Recognition is operational. It helps us keep people who could earn more in the private sector, and it shows the rest of the city what good work looks like.
-
-### Routines we keep
-
-- Team recognition rituals: small, memorable awards given by peers, in front of peers, at the moment the work happens.
-
-- The Transparency Award honors team members whose documentation made institutional memory possible.
-
-- Named contributions on every artifact: if you wrote it, designed it, analyzed it, or built it, your name appears on it.
-
-- Public credit at every leadership briefing and every Stat session. The people who did the work get the room’s attention, not just the chart.
-
-- Annual recognition tied to outcomes, not seniority. The team members who shipped, learned, and finished are the ones we celebrate.
-
-### Why this matters
-
-- Public-sector compensation cannot match private sector. Recognition, agency, growth, and meaning are how we compete for talent.
-
-- Recognition is corrective. It surfaces who is actually carrying the work, especially when titles or hierarchy hide it.
-
-- Recognition is teaching. By celebrating specific behaviors, we make those behaviors easier to repeat.
-
-## Resident-Focused Operating Norms
-
-How we keep residents at the center of the work.
-
-- Constituent Services partnership: 311 and the Mayor’s Action Center are not downstream of OPI. They are an OPI partner whose data and signal feed every Stat and every service redesign.
-
-- Neighborhood liaisons and community partners are co-designers, not stakeholders to inform.
-
-- Localized data storytelling: district-level dashboards, neighborhood-level performance views, and plain-language summaries that make data legible at the block-and-corner level.
-
-- Citywide Data Network: show-and-tells, hackathons, fellowships, and open contribution programs that bring residents and partners into the work.
-
-- Resident-facing Stat: explore models like “Citizen Hall” where residents can interact with city performance data in physical and digital civic spaces.
-
-- Bounty and gamification models that incentivize residents to surface waste, inefficiency, and service gaps. Treat civic data as a two-way street.
-
-- Closing the perception gap. Residents and city partners should understand what OPI does and what we stand for. Communications is part of the operating model, not a press function.
-
-> *More in-city partnerships, boots on the ground, and relational government. Closes the perception gap. Builds legitimacy. Ensures sustainability.*
-
-## Civic Data Community
-
-We cannot hire fast enough to do everything we want. The Citywide Data Network is how we extend our capacity through partnership, without expanding payroll.
-
-### Programs we run or sponsor
-
-- Show-and-tells: monthly forums where agencies, civic technologists, and residents demo what they have built with city data.
-
-- Hackathons: themed weekends where teams prototype against real city problems with real city data.
-
-- Fellowships: multi-month placements where civic technologists, designers, or analysts embed in OPI and ship one named deliverable.
-
-- Open contribution programs: public repositories where partners and residents add analyses, data products, and documentation.
-
-- University research partnerships with Johns Hopkins, UMBC, Morgan State, and others, where research questions and city operating questions inform each other.
-
-- Peer-government partnerships: visiting other cities, hosting visitors, and partnering on shared data, product, and service-delivery work.
+> *Say the true thing kindly. Candor is a value. So is care.*
 
 ## Ownership Model
 
@@ -135,44 +71,6 @@ Most cross-agency conflict comes from unclear ownership. This is the model we us
 
 Where any layer is unclear in a specific engagement, the engagement charter resolves it before delivery starts. We do not let ownership be implicit.
 
-## Frameworks We Use
-
-### SBAR — Situation, Background, Assessment, Recommendation
-
-Used for executive briefings, escalations, and Stat memos. Forces us to land the recommendation before we narrate the history.
-
-### STAR — Situation, Task, Action, Result
-
-Used for performance documentation, retros, and case studies. Forces us to name what changed because we acted, not just what we did.
-
-### Repeat-back framing
-
-In every alignment conversation, we repeat back what we heard before we agree. It catches misalignment in the room instead of in the deliverable.
-
-### SOPs and precedent
-
-We find an example before we invent. Other cities, other agencies, other teams within OPI. Reinventing the wheel is a tell that we did not do the research.
-
-### Atypical observers
-
-We invite people outside the obvious stakeholder list — a city photographer, a frontline staff member, a teenager, a retiree — because the strategic insight often lives in the seams the experts cannot see.
-
-## Past Selves, Future Selves
-
-Two of the most important strategic partners every team member has are their past self and their future self. We treat that relationship as operational.
-
-- Your past self is a reference: reflection, mistakes, lessons. Retros, after-action reviews, and journal-style memos are how we keep the relationship.
-
-- Your future self is the person inheriting your systems. Transition packets, SOPs, and runbooks are how we set them up.
-
-- Tools with embedded documentation: if a tool can carry its own user guide, the future self does not have to find it.
-
-- First principles and SOPs as onboarding scaffolds: the institutional memory of OPI is the onboarding curriculum, not a separate artifact.
-
-- Cross-functional onboarding: finance, web, permitting, and communications team members are introduced to CitiStat workflows so the seams between functions become legible.
-
-> *A client can fail and you have done your job. A partner is someone whose failure is your failure too. OPI’s real partner is the Mayor’s Office, because our success and failure are intertwined.*
-
 ## How We Plan Team Time
 
 The 70 / 20 / 10 model structures how we spend our hours to guard against burnout. It is a working baseline — a guide, not a rule — reviewed each fiscal year.
@@ -184,17 +82,3 @@ The 70 / 20 / 10 model structures how we spend our hours to guard against burnou
 | 10%            | Flight capacity: experimentation, learning, prototyping new methods, attending conferences, building communities of practice. | This is how we stay sharp. Without protected time for learning, we slowly become a delivery machine that cannot evolve. |
 
 Practical implications: we draft an annual capacity plan per service. We track actuals against the model in monthly retros. We say no, or not now, when accepting new work would push any allocation out of bounds.
-
-> *Use strategy to protect against burnout and ensure responsiveness without chaos. Build repeatable models so we can scale even when teams are stretched.*
-
-## Keeping This Honest
-
-- Reviewed each fiscal year. The principles list earns its place. If a principle is not actually showing up in our daily decisions, we revise or remove it.
-
-- Tested in retros. After-action reviews ask which principles helped and which were ignored, and why.
-
-- Tied to performance norms. Manager and staff performance standards reference these operating principles directly.
-
-- Owned by the leadership team. Edits are proposed in writing, debated in a leadership meeting, and tracked in version history.
-
-*If you see a gap between what this document says and what you observe at OPI, name it. That is the only way the document stays true.*

@@ -52,10 +52,10 @@ Mayor’s Office of Performance and Innovation
 
 *City of Baltimore · Brandon M. Scott, Mayor*
 
-## READ ALONGSIDE
+## Read Alongside
 
 **About OPI: Operating Frame —** *how the office is organized and how we work.*
 
 **Strategic Priorities OnePager —** *what we are committing to.*
 
-**Theory of Change Summaries —** *logic models for each service area.*
+**Service Crosswalk —** *how each service ties to its mandate, goal, and outcomes.*

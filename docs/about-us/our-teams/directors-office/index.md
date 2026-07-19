@@ -4,8 +4,7 @@
 
 The Director's Office sets direction, coordinates executive work, and owns the AdminOps function beneath it. The team includes the Executive Director,
 Chief of Staff, Project Manager, Data Storyteller, and the AdminOps routines
-that keep the office aligned. The CitiStat Inspector sits with the Performance
-team, and the Operations Analyst sits with the Innovation Lab.
+that keep the office aligned.
 
 ## Pages in this section
 

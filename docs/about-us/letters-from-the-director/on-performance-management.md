@@ -60,7 +60,7 @@ Mayor’s Office of Performance and Innovation
 
 *City of Baltimore · Brandon M. Scott, Mayor*
 
-## READ ALONGSIDE
+## Read Alongside
 
 **Performance Management Strategy —** *priorities, success measures, and commitments.*
 

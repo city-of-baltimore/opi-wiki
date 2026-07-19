@@ -1,24 +1,12 @@
 - meta: Document
   title: "About the Innovation Lab"
-  body: "What the Innovation Lab does inside OPI — the human story of the team."
+  body: "What the Lab is, the Path to Public Innovation method it runs, what it builds, and what it owns."
   href: about-innovation-lab/
-- meta: Strategy
-  title: "Innovation Lab Strategy"
-  body: "What the Innovation Lab is for, and how it operates."
-  href: innovation-lab-strategy/
 - meta: Methodology
   title: "Digital Product Methodology"
-  body: "How OPI ships digital products inside city government."
+  body: "How the Lab designs and ships digital products inside city government."
   href: digital-product-methodology/
 - meta: Product
   title: "Baltimore Intelligence Center"
-  body: "OPI's flagship product — the citywide data, intelligence, and AI platform. Now in the Products section."
-  href: ../../../what-we-do/products/baltimore-intelligence-center/
-- meta: "Theory of change"
-  title: "Innovation Lab ToC"
-  body: "How the Innovation Lab moves from inputs to outcomes."
-  href: innovation-lab-theory-of-change/
-- meta: "Service definition"
-  title: "Cross-Agency Delivery — Service Definition"
-  body: "The full delivery method, governance, and service levels — the Lab provides the team and method that runs it."
-  href: cross-agency-delivery-service-definition/
+  body: "OPI's citywide data, intelligence, and AI program. In the Products section."
+  href: ../../../what-we-do/programs/baltimore-intelligence-center/
