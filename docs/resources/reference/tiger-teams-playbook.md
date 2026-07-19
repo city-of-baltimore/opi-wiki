@@ -4,18 +4,6 @@
 
 How OPI runs cross-functional, time-boxed teams that prototype, prove, and scale solutions to persistent service problems.
 
-VERSION
-:   v1.2
-
-UPDATED
-:   April 2026
-
-OWNER
-:   Innovation Lab — with Performance at sustain, and Cross-Agency Delivery when the work needs cross-agency coordination authority
-
-AUDIENCE
-:   OPI staff and agency partners on a Tiger Team; Deputy Mayors and the City Administrator’s Office.
-
 ## The official Tiger Team definition
 
 A **Tiger Team** is a time-boxed, cross-functional delivery and innovation sprint focused on one service problem. It typically runs three to six months and produces tested pilots, process changes, tools, SOPs, and a sustainment plan, not just recommendations.
@@ -46,7 +34,7 @@ A Tiger Team is a focused, time-boxed delivery sprint that brings a cross-functi
 
 ## How Tiger Teams are chartered
 
-The Innovation Lab provides the team and the method for every Tiger Team. The Lab’s question is *how do we solve this?* — the craft, the discovery, the design, the build.
+The Innovation Lab provides the team and the method for every Tiger Team. The Lab’s question is *how do we solve this?* The craft, the discovery, the design, the build.
 
 Some work needs cross-agency coordination authority: named Authorizers at the Deputy Mayor or City Administrator level, decision rights across multiple agencies, sustainment commitments from each agency, and a weekly delivery cadence to keep them aligned. That work is chartered through Cross-Agency Delivery activation. Cross-Agency Delivery is a way of running work that several agencies have to ship together. It owns the coordination, not the building.
 
@@ -71,9 +59,9 @@ In both cases, the deliverables, cadences, and standard artifacts that follow ap
 
 - Cross-functional team focused on one service problem.
 
-- Time-boxed. The end date is named in the charter — typically three to six months, scoped to the problem. When the time-box ends, the team disbands or transitions to operations.
+- Time-boxed. The end date is named in the charter: typically three to six months, scoped to the problem. When the time-box ends, the team disbands or transitions to operations.
 
-- Produces tangible pilots — people, process, technology — not just recommendations.
+- Produces tangible pilots (people, process, technology), not just recommendations.
 
 - Uses data, frontline input, and resident input to diagnose root causes and test fixes.
 
@@ -170,7 +158,7 @@ Tiger Teams use the Public Innovation Toolkit, a four-phase method built for pub
 
 - Monthly delivery brief shared with the City Administrator and OPI leadership.
 
-- At sustain, a closure brief shared internally and — where appropriate — publicly.
+- At sustain, a closure brief shared internally and, where appropriate, publicly.
 
 ## Standard artifacts
 
@@ -214,7 +202,7 @@ Tiger Teams use the Public Innovation Toolkit, a four-phase method built for pub
 
 ## How Tiger Teams fit with the rest of OPI
 
-**Innovation Lab.** The capability — owns the Tiger Team method, the lead, and most of the team. The Lab’s question is *how do we solve this?*
+**Innovation Lab.** The capability: owns the Tiger Team method, the lead, and most of the team. The Lab’s question is *how do we solve this?*
 
 **Performance.** Owns the metric set and absorbs the work into a Stat at sustain. The Stat is how the gain stays gained.
 
@@ -234,4 +222,3 @@ Tiger Teams use the Public Innovation Toolkit, a four-phase method built for pub
 
 - Public Innovation Toolkit — the underlying method.
 
-*Owned by the Innovation Lab. Reviewed at the start of each fiscal year and after each sprint cohort. Update whenever the method, cadence, or sustain protocol changes.*

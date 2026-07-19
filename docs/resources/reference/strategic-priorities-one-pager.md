@@ -4,21 +4,7 @@
 
 What OPI is finishing this year and starting next, anchored to the City Administrator’s priorities and the Mayor’s Action Plan.
 
-VERSION
-:   v1.0
-
-UPDATED
-:   April 2026
-
-OWNER
-:   Executive Director, OPI
-
-AUDIENCE
-:   City Council; City Administrator’s Office; agency partners; OPI staff.
-
 ## North star
-
-> *Respond when necessary. Build so we do not have to respond again.*
 
 OPI exists to make Baltimore City government continuously better at delivering services that residents can see and feel. We do that through five services: Citywide Performance Management, Citywide Data and Analytics, Innovation Lab, Cross-Agency Delivery, and AdminOps. We measure ourselves on whether the city’s services are getting more reliable, not on the volume of activity in our office.
 
@@ -104,8 +90,6 @@ With the foundation in place, FY27 turns to bigger, more visible outcomes. The a
 | Are Tiger Teams ending with sustained gains?                             | Closure memos; CitiStat handoffs; resident satisfaction trends.                                           |
 | Is data trusted, current, and used in agency routines?                   | Warehouse adoption; reduction in ad hoc pulls; agency leaders using OPI dashboards in their own meetings. |
 | Is OPI itself running well?                                              | Intake-to-charter cycle time; project gate adherence; onboarding ramp; staff retention.                   |
-
-*Owned by the Executive Director. Reviewed each fiscal quarter; refreshed as part of the budget cycle. Sources: OPI Budget Hearing Testimony FY26; OPI EOY Report 2025; Visioning Direction.*
 
 ## Tiger Team usage note
 
