@@ -119,9 +119,10 @@ assumed — re-measured against `platform-check` 0.4.3, which expands `npm` and
 therefore does not see this repo's second indirection layer
 (`verify.py --plan ci`), including when that layer is reached through
 `scripts/verify.sh`; it also has no job-timeout rule, and its `run:` coverage is
-a denylist rather than an allowlist. Of the five injected cases, 0.4.3 misses
-four — one fewer than 0.4.1, because a piped `curl … | sh` joined the shared
-denylist in 0.4.2. Those four, and the forms this repo's own guard misses in the
+a denylist rather than an allowlist. 0.4.3 still misses all five injected cases
+in their ordinary form; a piped `curl … | sh` is caught only when the URL
+happens to end in `.sh`, via the unresolvable-delegation rule rather than any
+`curl` denylist entry. Those five, and the forms this repo's own guard misses in the
 other direction, are documented in the "Two checkers" note in
 `scripts/check_hosted_ci_policy.py`, with the condition for retiring the local
 guard — which 0.4.3 does not meet.

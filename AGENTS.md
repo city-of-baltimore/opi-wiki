@@ -76,9 +76,12 @@ suite — the same green-but-vacuous failure mode as the `task --dry` bug. Routi
 `ci` through `scripts/verify.sh` is missed for the same reason: the `.sh` body is
 read, then lands on the same Python wall. It also misses a missing
 `timeout-minutes` and an unpinned `uses:` ref, and its `run:` coverage is a
-denylist, so an arbitrary unallowlisted command still passes. Four of the five
-injected cases are still missed at 0.4.3; the one that closed (`curl … | sh`)
-closed in 0.4.2 and is a single denylist entry, not a structural fix. The
+denylist, so an arbitrary unallowlisted command still passes. All five injected
+cases are still missed at 0.4.3 in their ordinary form. A piped `curl … | sh`
+*is* now caught when the URL ends in `.sh` — not from a denylist entry (there is
+no `curl` pattern in any 0.4.x release) but from `_frontier_findings`, a
+structural rule added in 0.4.2 that reports unresolvable delegation as blocking.
+That is incidental coverage of one spelling; drop the suffix and it passes. The
 retirement condition is in the "Two checkers" note in that module's docstring and
 is **not** met — and the injection matrix that produced these numbers is
 reproducible; re-run it on every pin bump.

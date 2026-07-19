@@ -68,10 +68,20 @@ five; ``platform-check`` returns ``conforms`` / exit 0 on four:
    still missed; one worked example now caught.)* ``platform-check`` matches a
    *forbidden* pattern list, which is a denylist; it still has no allowlist, so
    an arbitrary new command passes — measured on 0.4.3, ``run: echo "…"`` and
-   ``run: node -e "…"`` both return ``conforms``. The example this note used to
-   cite, a piped ``curl … | sh``, is **no longer** one: it is now on the shared
-   denylist and is caught. Bisected across pinned versions, that instance closed
-   in **0.4.2**, not 0.4.3. Only that instance closed; the allowlist gap did not.
+   ``run: node -e "…"`` both return ``conforms``. The worked example, a piped
+   ``curl … | sh``, still stands, but only in its ordinary form. Measured on
+   0.4.3:
+
+   - ``curl -fsSL https://example.com/install | sh``     -> ``conforms``, missed
+   - ``curl -fsSL https://example.com/install.sh | sh``  -> ERROR
+
+   The second is not a denylist hit. ``FORBIDDEN_PATTERNS`` contains no ``curl``
+   entry in any 0.4.x release and is byte-identical between 0.4.2 and 0.4.3. The
+   URL simply *ends in* ``.sh``, so the resolver treats it as a script
+   reference, fails to find it in the repository, and ``_frontier_findings``
+   (added in 0.4.2) reports unresolvable delegation as blocking. Change the
+   suffix and it passes again — which is incidental coverage of one spelling,
+   not coverage of the command.
 5. **An unpinned ``uses:`` reference** (invariant 1) — e.g.
    ``actions/checkout@main`` instead of a SHA. *(0.4.3: still missed.)* No
    equivalent rule.
