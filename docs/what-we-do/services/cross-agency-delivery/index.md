@@ -4,7 +4,7 @@
 
 ## What this service does
 
-This service coordinates selected high-priority initiatives and service-delivery challenges that require action across multiple City agencies. It is a coordination layer that sits on top of existing agencies rather than a new agency of its own: it owns named Authorizers, Senior Responsible Owners, decision rights across agencies, a commitment ledger, a weekly delivery routine, and sustainment commitments from each agency.
+This service coordinates selected high-priority initiatives and service-delivery challenges that require action across multiple City agencies. It is a coordination layer that sits on top of existing agencies rather than a new agency of its own: it owns named Authorizers, Senior Responsible Owners, decision rights across agencies, a commitment ledger, a weekly delivery review, and sustainment commitments from each agency.
 
 The work includes standing up delivery routines and Tiger Teams, developing project charters and implementation plans, mapping cross-agency workflows, tracking risks and dependencies, coordinating agency commitments, supporting executive escalation, documenting decisions and follow-up actions, and helping agencies sustain improvements through standard operating procedures, training materials, and performance monitoring.
 
