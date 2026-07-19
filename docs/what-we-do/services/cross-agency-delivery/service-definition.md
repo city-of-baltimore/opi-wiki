@@ -1,16 +1,16 @@
-# Cross-Agency Delivery — Service Definition
+# Service Definition
 
 {{ page_header(summary="The full Cross-Agency Delivery method: governance, service levels, engagement model, and theory of change.", category="OPI · SERVICE DEFINITION", tagline="How we move work that no single agency can deliver alone.") }}
 
-## NORTH STAR
+## North Star
 
 **Multi-agency commitments that ship, get used, and stick.**
 
-Cross-Agency Delivery is a service overlay: a coordinating service that runs across the four teams rather than a standalone team with its own staff and budget. We coordinate selected high-priority initiatives that require action across multiple agencies. We help leadership and agencies resolve cross-agency barriers, clarify ownership, sequence implementation, and deliver improvements no department can accomplish alone.
+Cross-Agency Delivery is a coordinating service supported by all of OPI rather than a standalone team with its own staff and budget. We coordinate selected high-priority initiatives that require action across multiple agencies. We help leadership and agencies resolve cross-agency barriers, clarify ownership, sequence implementation, and deliver improvements no department can accomplish alone.
 
 > *Performance management often fails because the people in the room can analyze the problem but cannot change the conditions that produce it. Delivery is where conditions change.*
 
-## SERVICE DEFINITION
+## Service Definition
 
 **What this service does**
 
@@ -18,17 +18,17 @@ This service coordinates selected high-priority initiatives and service delivery
 
 Activities performed by this service include standing up delivery routines and tiger teams, developing project charters and implementation plans, mapping cross-agency workflows, tracking risks and dependencies, coordinating agency commitments, supporting executive escalation, documenting decisions and follow-up actions, and helping agencies sustain improvements through standard operating procedures, training materials, and performance monitoring.
 
-## PURPOSE AND PHILOSOPHIES
+## Purpose and Philosophies
 
 ### What we heard, what we have aligned on
 
-*Cross-agency delivery is an overlay service. It borrows people, methods, and authority from across OPI and convenes them around a specific cross-agency outcome. These are the principles we operate by.*
+*Cross-Agency Delivery is supported by all of OPI. It draws people, methods, and authority from across the office and convenes them around a specific cross-agency outcome. These are the principles we operate by.*
 
 ### Why this work matters
 
 - The hardest problems in city government are cross-agency by nature: permitting, vacants, overdose response, workforce, public safety. No single department can fix them alone.
 
-- Without a delivery overlay, cross-agency work defaults to the agency with the loudest stakeholder, not the one with the right ownership.
+- Without a coordinating owner, cross-agency work defaults to the agency with the loudest stakeholder, not the one with the right ownership.
 
 - Delivery is where conditions change. Stat surfaces the problem; delivery resolves it.
 
@@ -64,18 +64,18 @@ Activities performed by this service include standing up delivery routines and t
 
 | **Topic**                        | **Summary**                                                                                                                                                                                                                                |
 |----------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| What it is                       | A service overlay that activates when a problem requires sequencing across agencies, named decision rights, and weekly delivery discipline. Tiger Teams, delivery reviews, and cross-agency workplans are the core mechanisms.               |
-| Why it matters                   | The hardest problems sit between agencies. Without an owner, a sequence, and an authorizer, they drift. The Cross-Agency Delivery overlay gives them a home until they are resolved.                                                       |
-| Service overlay, not a portfolio | Cross-Agency Delivery is staffed and operated through the four teams. Danny Heller (Deputy Chief Performance Officer) serves as Interim Delivery Manager. Rakeim Young (Chief of Staff) provides portfolio visibility and escalation. |
+| What it is                       | A coordinating service that activates when a problem requires sequencing across agencies, named decision rights, and weekly delivery discipline. Tiger Teams, delivery reviews, and cross-agency workplans are the core mechanisms.               |
+| Why it matters                   | The hardest problems sit between agencies. Without an owner, a sequence, and an authorizer, they drift. Cross-Agency Delivery gives them a home until they are resolved.                                                       |
+| Supported by all teams | Cross-Agency Delivery is staffed and operated across all of OPI. Danny Heller (Deputy Chief Performance Officer) serves as Interim Delivery Manager. Rakeim Young (Chief of Staff) provides portfolio visibility and escalation. |
 | Who we serve                     | Mayor, CA, Deputy Mayors, DCAs (Authorizers); agency directors and SROs; cross-agency working groups; resident outcomes that require coordinated action.                                                                                   |
 | Mandate                          | Mayoral and CA priorities that meet the delivery activation criteria; Stat-driven escalations; cross-agency commitments from charters.                                                                                                     |
 | What success looks like          | Activations close their core deliverables on time; the cross-agency workplan stays current; sustainment is named and held; the improvement is still working twelve months later.                                                           |
 
 ### 2. Activation criteria
 
-We do not run delivery reviews for everything. The overlay activates only when the problem meets all six criteria. If it does not, we use a different routine: a Stat, a product council, a charter and an owner, or a one-time decision memo.
+We do not run delivery reviews for everything. Cross-Agency Delivery activates only when the problem meets all six criteria. If it does not, we use a different routine: a Stat, a product council, a charter and an owner, or a one-time decision memo.
 
-- The work crosses three or more agencies or has a critical cross-agency dependency.
+- The work crosses two or more agencies or has a critical cross-agency dependency.
 
 - The problem has been named with a clear desired outcome and decision context.
 
@@ -114,7 +114,7 @@ We do not run delivery reviews for everything. The overlay activates only when t
 |--------------------------------|--------------------------------------------------------------------------------------------------------------------------------------|
 | Authorizer                     | Mayor, CA, Deputy Mayor, or DCA. Confirms priority; resolves cross-agency barriers; approves major commitments; escalates as needed. |
 | Senior Responsible Owner (SRO) | Single accountable agency leader for the activation outcome.                                                                         |
-| Interim Delivery Manager (OPI) | Operates the overlay across activations. Currently held by the Deputy Chief Performance Officer.                                     |
+| Interim Delivery Manager (OPI) | Operates Cross-Agency Delivery across activations. Currently held by the Deputy Chief Performance Officer.                                     |
 | Delivery Lead (per activation) | Runs the delivery review, maintains the workplan, tracks commitments, and packages escalations for the Authorizer.                     |
 | Chief of Staff (OPI)           | Provides portfolio visibility and ensures activations are coordinated with other OPI work.                                           |
 | Agency Owners                  | Hold agency commitments; bring evidence to delivery reviews; sustain after closure.                                                    |

@@ -11,7 +11,6 @@
 | Primary Agency / Agencies      | MOCFS, MONSE, BPD, DJS, City Schools partners, MOED, BCRP, BCHD, community partners                                         |
 | OPI lead                        | OPI-operated / Performance Team                                                                                             |
 | Core Data Product              | Youth outcomes and initiative tracker                                                                                       |
-| Public Transparency Level      | High. Publish summaries and selected indicators that connect youth priorities to actions, investments, and outcomes. |
 
 ### Public Purpose
 
@@ -36,10 +35,8 @@ Staff use Youth Stat to align agencies and partners around the Mayor’s youth p
 
 ### Standard Artifacts and Data Products
 
-- Pre-meeting memo, Stat deck, follow-up memo, commitment tracker, and decision log.
+- Pre-meeting memo, Stat deck, follow-up memo, and follow-up tracker.
 - Core data product: Youth outcomes and initiative tracker.
-- Public summary, annual report section, data quality notes, and SOP / process maps for major functions.
-- Inspection checklist where field validation or service quality review is needed.
 
 ### Tiger Team / Delivery Triggers
 

@@ -11,7 +11,8 @@
 | Primary Agency / Agencies      | Department of Housing and Community Development                                                            |
 | OPI lead                        | OPI-operated / Performance Team                                                                            |
 | Core Data Product              | Housing and neighborhood conditions dashboard                                                              |
-| Public Transparency Level      | High. Publish summaries, neighborhood indicators, and selected dashboards with appropriate caveats. |
+
+Housing is one of the first operating agencies moving to the [place-based model](../strategic-framework.md#the-place-based-model), alongside DOT. It runs today as an agency Stat; as the model takes hold, sessions will increasingly concentrate on the specific geographies where a priority housing outcome is stuck, taking one outcome, no more than two geographies, and two or three operational pressure points at a time.
 
 ### Public Purpose
 
@@ -36,10 +37,8 @@ Staff use Housing Stat to improve code enforcement workflows, vacant building re
 
 ### Standard Artifacts and Data Products
 
-- Pre-meeting memo, Stat deck, follow-up memo, commitment tracker, and decision log.
+- Pre-meeting memo, Stat deck, follow-up memo, and follow-up tracker.
 - Core data product: Housing and neighborhood conditions dashboard.
-- Public summary, annual report section, data quality notes, and SOP / process maps for major functions.
-- Inspection checklist where field validation or service quality review is needed.
 
 ### Tiger Team / Delivery Triggers
 

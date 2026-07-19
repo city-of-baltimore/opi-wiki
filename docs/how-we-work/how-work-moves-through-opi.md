@@ -14,7 +14,7 @@ This does not mean every issue moves through every service. Some problems stay i
 
 | Step | OPI service | Core question | Typical outputs |
 | --- | --- | --- | --- |
-| 1. See the signal | Citywide Performance Management (via CitiStat) | What is not working, where, and why does leadership time matter? | Stat pre-memo, Stat deck, KPI view, follow-up memo, commitment tracker |
+| 1. See the signal | Citywide Performance Management (via CitiStat) | What is not working, where, and why does leadership time matter? | Stat pre-memo, Stat deck, KPI view, follow-up memo, follow-up tracker |
 | 2. Explain the pattern | Citywide Data and Analytics | What does the evidence show, and how confident are we? | Dataset, dashboard, methodology card, data quality note, analytic brief |
 | 3. Design and test the fix | Innovation Lab | How do we solve this in a way that works for residents and staff? | Discovery memo, service blueprint, prototype, pilot, product brief, runbook |
 | 4. Coordinate implementation | Cross-Agency Delivery | How do we get multiple agencies to deliver this together? | Activation memo, delivery charter, commitment ledger, decision log, escalation memo, sustainment plan |
@@ -42,7 +42,7 @@ The Lab can work on a single-agency problem or a multi-agency problem. What defi
 
 ### Cross-Agency Delivery owns the coordination
 
-Cross-Agency Delivery is a service overlay: a coordinating service that draws on staff from across OPI rather than a standing team, and not a cost center. It activates when the work requires multiple agencies to move together and normal channels are not enough.
+Cross-Agency Delivery is a coordinating service that draws on staff from across OPI rather than a standing team, and not a cost center. It activates when the work requires multiple agencies to move together and normal channels are not enough.
 
 Cross-Agency Delivery owns the coordination authority: who authorizes the work, who serves as Senior Responsible Owner, and who holds decision rights, plus commitment tracking, escalation, a weekly or bi-weekly delivery cadence, and sustainment commitments across agencies.
 
@@ -118,6 +118,6 @@ OPI's teams overlap by intent, not by accident. When more than one team could ow
 
 - [Glossary of OPI Terms](../resources/reference/glossary.md)
 - [Tiger Teams Playbook](../resources/reference/tiger-teams-playbook.md)
-- [Innovation Lab Strategy](../about-us/our-teams/innovation-lab/innovation-lab-strategy.md)
-- [Cross-Agency Delivery service](../what-we-do/services/cross-agency-delivery.md)
+- [About the Innovation Lab](../about-us/our-teams/innovation-lab/about-innovation-lab.md)
+- [Cross-Agency Delivery service](../what-we-do/services/cross-agency-delivery/index.md)
 - [CitiStat Method Playbook](../what-we-do/programs/citistat/method-playbook.md)

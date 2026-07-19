@@ -4,14 +4,8 @@
 
 Staff distribution. Eight core dimensions, role craft, evidence-based ratings, and a fair calibration process.
 
-VERSION
-:   v2.0
-
 EFFECTIVE
 :   July 1, 2026
-
-OWNER
-:   OPI Director’s Office
 
 REVIEW
 :   Annual, or as required by operational changes

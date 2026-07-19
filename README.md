@@ -14,17 +14,17 @@ The site is **public-facing**. Internal companion documents (PDs, performance st
 
 ## Local development
 
-Requires Python 3.11+ and Poetry 2.x.
+Requires Python 3.11+ and [uv](https://docs.astral.sh/uv/).
 
 ```bash
 # one-time setup
-poetry install
+uv sync
 
 # preview the site locally
-poetry run mkdocs serve
+uv run mkdocs serve
 
 # build a static site
-poetry run mkdocs build
+uv run mkdocs build
 
 # run the maintainer verification pass
 ./scripts/verify.sh
@@ -36,7 +36,7 @@ poetry run mkdocs build
 ./scripts/verify.sh --include-browser-smoke
 ```
 
-`poetry run mkdocs serve` runs at <http://127.0.0.1:8000> with live reload.
+`uv run mkdocs serve` runs at <http://127.0.0.1:8000> with live reload.
 `./scripts/verify.sh` remains the stable entrypoint, but now delegates to a
 structured Python runner that emits step timings and can optionally write a
 JSON report for CI or debugging.
@@ -45,8 +45,20 @@ To use the optional browser smoke checks locally, install the Chromium browser
 once per machine:
 
 ```bash
-poetry run playwright install chromium
+uv run playwright install chromium
 ```
+
+### Run with Docker
+
+No local Python or uv install required — preview the site in a container:
+
+```bash
+docker compose up
+```
+
+This serves the wiki at <http://localhost:8000> with live reload; edits to
+`docs/` on the host refresh the browser. Production still deploys to GitHub
+Pages, not this image.
 
 ## Build platform note
 
@@ -92,8 +104,8 @@ If a page can stay plain Markdown, keep it plain Markdown. Only introduce struct
 opi-foundations/
 ├── AGENTS.md               # standing repo rules
 ├── mkdocs.yml              # site-wide MkDocs config
-├── pyproject.toml          # Poetry project metadata + deps
-├── poetry.lock             # locked Python dependencies
+├── pyproject.toml          # project metadata + deps (uv / PEP 621)
+├── uv.lock                 # locked Python dependencies
 ├── docs/                   # all content (Markdown)
 │   ├── .pages              # top-level nav ownership
 │   ├── index.md            # home

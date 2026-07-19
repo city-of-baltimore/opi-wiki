@@ -15,6 +15,9 @@ if str(REPO_ROOT) not in sys.path:
 
 DOCS_DIR = REPO_ROOT / "docs"
 
+# Canonical single-source people directory, relative to DOCS_DIR.
+PEOPLE_DATA_PATH = "_data/people.yml"
+
 
 class PageFile(Protocol):
     """Minimal protocol for the current MkDocs page file."""
@@ -128,3 +131,24 @@ def define_env(env: MacroEnvironment) -> None:
             render_data=render_org_structure,
             render_args=(section,),
         )
+
+    @env.macro
+    def people(section: str) -> Markup:
+        """Render a section of the canonical people directory (_data/people.yml)."""
+
+        from scripts.repo_tools.people import load_people, render_people
+
+        return _render_docs_markup(
+            PEOPLE_DATA_PATH,
+            load_data=load_people,
+            render_data=render_people,
+            render_args=(section,),
+        )
+
+    @env.macro
+    def role_holder(title: str) -> str:
+        """Return the name of the staff member holding the given working title."""
+
+        from scripts.repo_tools.people import find_role_holder, load_people
+
+        return find_role_holder(load_people(DOCS_DIR, PEOPLE_DATA_PATH), title)

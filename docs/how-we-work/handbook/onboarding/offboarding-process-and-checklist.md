@@ -4,15 +4,6 @@
 
 Protecting continuity, security, and OPI’s credibility through humane, predictable transitions.
 
-AUDIENCE
-:   Departing staff, managers, AdminOps, IT
-
-OWNER
-:   Director's Office
-
-VERSION
-:   v1.0 · May 2026
-
 ## Principles
 
 - **No surprises:** Leaders and key partners know the transition plan early.
@@ -88,7 +79,7 @@ Ensure portfolio visibility and decision support artifacts remain current and ow
 
 Protect continuity of performance routines, Stat preparation, and agency relationships.
 
-- T-10 days: transfer ownership of Stat calendars, pre-read folders, memo templates, and commitment trackers.
+- T-10 days: transfer ownership of Stat calendars, pre-read folders, memo templates, and follow-up trackers.
 
 - T-10 days: document key agency relationships — contacts, sensitivities, open commitments, next decision points.
 

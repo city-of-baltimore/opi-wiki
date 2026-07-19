@@ -6,7 +6,7 @@
 
 This service strengthens Baltimore City's data infrastructure, analytics capacity, open data program, and data governance practices across agencies.
 
-**Activities include** developing and maintaining data pipelines and shared datasets, producing analytics and data products for City leadership and agencies, supporting data quality and governance standards, maintaining the Open Baltimore program, publishing high-quality open datasets, supporting data literacy, and preparing the City for responsible use of artificial intelligence and advanced analytics. Much of this work runs on the [Baltimore City Data Platform](../products/baltimore-city-data-platform.md) and powers products like the [Baltimore Intelligence Center](../products/baltimore-intelligence-center/index.md).
+**Activities include** developing and maintaining data pipelines and shared datasets, producing analytics and data products for City leadership and agencies, supporting data quality and governance standards, maintaining the Open Baltimore program, publishing high-quality open datasets, supporting data literacy, and preparing the City for responsible use of artificial intelligence and advanced analytics. Much of this work runs on the [Baltimore City Data Platform](../products/baltimore-city-data-platform.md) and powers the [Baltimore Intelligence Center](../programs/baltimore-intelligence-center/index.md) program.
 
 ## The goal
 

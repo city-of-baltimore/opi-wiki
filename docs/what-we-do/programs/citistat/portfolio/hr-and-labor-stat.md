@@ -11,7 +11,6 @@
 | Primary Agency / Agencies      | Department of Human Resources, Office of the Labor Commissioner, agency HR leads                                                           |
 | OPI lead                        | OPI-operated / Performance Team                                                                                                            |
 | Core Data Product              | Workforce and hiring pipeline dashboard                                                                                                    |
-| Public Transparency Level      | Low to moderate. Publish broad workforce improvements and vacancy trends where appropriate; keep personnel-sensitive information internal. |
 
 ### Public Purpose
 
@@ -36,10 +35,8 @@ Staff use HR and Labor Stat to review hiring timelines, vacancy pipelines, class
 
 ### Standard Artifacts and Data Products
 
-- Pre-meeting memo, Stat deck, follow-up memo, commitment tracker, and decision log.
+- Pre-meeting memo, Stat deck, follow-up memo, and follow-up tracker.
 - Core data product: Workforce and hiring pipeline dashboard.
-- Public summary, annual report section, data quality notes, and SOP / process maps for major functions.
-- Inspection checklist where field validation or service quality review is needed.
 
 ### Tiger Team / Delivery Triggers
 

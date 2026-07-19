@@ -127,10 +127,10 @@ Hold these lines:
 
 - GitHub Pages is the canonical production deployment path
   (`.github/workflows/deploy.yml` on push to `main`).
-- Preview changes locally with `poetry run mkdocs serve`. There is no separate
-  preview infrastructure; do not reintroduce one (the old Fly.io/Docker preview
-  stack was retired when the Fly app was deleted) without updating these rules
-  and the README in the same change.
+- Preview changes locally with `uv run mkdocs serve`, or with
+  `docker compose up` (the `Dockerfile` / `docker-compose.yml` run the same
+  uv-based `mkdocs serve` in a container with live reload). Both are local
+  developer conveniences only; the production deploy path stays GitHub Pages.
 - Do not edit generated `site/` output.
 
 ## Verification Rules

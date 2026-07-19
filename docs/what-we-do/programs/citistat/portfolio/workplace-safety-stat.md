@@ -11,7 +11,6 @@
 | Primary Agency / Agencies      | Finance / Risk Management, DHR, DGS, DPW, DOT, BCRP, DHCD, and operational agencies                                        |
 | OPI lead                        | Director’s Office-led with Performance method support                                                                      |
 | Core Data Product              | Workplace safety performance dashboard                                                                                     |
-| Public Transparency Level      | Low to moderate. Publish broad progress on safety infrastructure and readiness; keep personnel-sensitive details internal. |
 
 ### Public Purpose
 
@@ -36,10 +35,8 @@ Staff use Workplace Safety Stat to monitor training, safety committees, vehicle 
 
 ### Standard Artifacts and Data Products
 
-- Pre-meeting memo, Stat deck, follow-up memo, commitment tracker, and decision log.
+- Pre-meeting memo, Stat deck, follow-up memo, and follow-up tracker.
 - Core data product: Workplace safety performance dashboard.
-- Public summary, annual report section, data quality notes, and SOP / process maps for major functions.
-- Inspection checklist where field validation or service quality review is needed.
 
 ### Tiger Team / Delivery Triggers
 

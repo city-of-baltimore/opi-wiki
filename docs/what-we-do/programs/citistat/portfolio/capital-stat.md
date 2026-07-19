@@ -11,7 +11,6 @@
 | Primary Agency / Agencies      | MOID, DGS, DOT, DPW, BCRP, Finance/BBMR, Law, Procurement, and agency capital owners                                                                         |
 | OPI lead                        | OPI-operated / Performance Team with delivery support as needed                                                                                              |
 | Core Data Product              | Capital project portfolio and delivery risk dashboard                                                                                                        |
-| Public Transparency Level      | High for selected information. Publish project portfolio summaries, public-facing maps, and progress stories while protecting procurement-sensitive details. |
 
 ### Public Purpose
 
@@ -36,10 +35,8 @@ Staff use Capital Stat to review project status, funding readiness, procurement 
 
 ### Standard Artifacts and Data Products
 
-- Pre-meeting memo, Stat deck, follow-up memo, commitment tracker, and decision log.
+- Pre-meeting memo, Stat deck, follow-up memo, and follow-up tracker.
 - Core data product: Capital project portfolio and delivery risk dashboard.
-- Public summary, annual report section, data quality notes, and SOP / process maps for major functions.
-- Inspection checklist where field validation or service quality review is needed.
 
 ### Tiger Team / Delivery Triggers
 

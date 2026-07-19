@@ -6,18 +6,6 @@
 
 A reference of OPI’s active vocabulary.
 
-VERSION
-:   v1.2
-
-UPDATED
-:   April 2026
-
-OWNER
-:   OPI Director’s Office · Chief of Staff
-
-AUDIENCE
-:   OPI staff, agency partners, City Council and CA staff, and the public.
-
 ## Why this glossary exists
 
 Words shape behavior. When OPI uses one word for something and an agency partner uses another, simple conversations turn into translation work. This glossary is the single list of OPI’s active vocabulary.
@@ -50,9 +38,9 @@ Words shape behavior. When OPI uses one word for something and an agency partner
 
 **Closure.** The end of a commitment, project, or Tiger Team — proven by a link, a metric, or a changed process, not just declared. Carry-forward is named explicitly when closure is not complete.
 
-**Commitment.** The basic unit of accountability in CitiStat. Every commitment has an owner, a date, and a definition of done. Tracked in the CitiStat tracker between meetings.
+**Commitment.** The basic unit of accountability in CitiStat. Every commitment has an owner, a date, and a definition of done. Tracked as a follow-up in the CitiStat follow-up tracker (MS Planner) between meetings.
 
-**Commitment ledger.** The running record of who owns what, by when, in a Cross-Agency Delivery activation. It is the delivery equivalent of the CitiStat commitment tracker. Reviewed at each delivery cadence and carried until closure.
+**Commitment ledger.** The running record of who owns what, by when, in a Cross-Agency Delivery activation. It is the delivery equivalent of the CitiStat follow-up tracker. Reviewed at each delivery cadence and carried until closure.
 
 **Cross-Agency Delivery.** OPI’s way of running work on problems that cross agency lines. Not a team and not a cost center. It owns the coordination authority — named Authorizers, decision rights, sustainment commitments, and the weekly delivery cadence — that lets several agencies ship together. Activates as a Tiger Team, a standing delivery review, or an embedded delivery engagement, depending on the problem; see the Tiger Teams Playbook for the test. Always written in full; do not abbreviate as CAD, which collides with Computer-Aided Dispatch.
 
@@ -68,7 +56,7 @@ Words shape behavior. When OPI uses one word for something and an agency partner
 
 **Deputy Chief Performance Officer.** OPI’s senior leader for performance strategy and CitiStat, and Deputy Director of the CitiStat Program. Reports to the Executive Director. Oversees the CitiStat team, runs the citywide performance system, and partners with agencies on performance plans and BBMR on metric alignment.
 
-**Deliverable type.** The fixed vocabulary used to classify each commitment in the follow-up memo and commitment tracker. Eight types: E-mail Update, Memo, Meeting, New Workgroup/Project, Stat-Agenda Item, Stat-Report-Out, To-Do, Written Update (formal). Each type pairs with an evidence standard for closure.
+**Deliverable type.** The fixed vocabulary used to classify each follow-up in the follow-up memo and follow-up tracker (MS Planner). Eight types: E-mail Update, Memo, Meeting, New Workgroup/Project, Stat-Agenda Item, Stat-Report-Out, To-Do, Written Update (formal). Each type pairs with an evidence standard for closure.
 
 **Delivery review.** A standing cross-agency forum that meets on a fixed cadence to drive a single multi-agency outcome, such as vacancies, permitting, or workforce. Convened under Cross-Agency Delivery. Has a named Authorizer, a Senior Responsible Owner, the agencies at the table, and a closure plan.
 
@@ -86,7 +74,7 @@ Words shape behavior. When OPI uses one word for something and an agency partner
 
 **Handoff.** The transition from a Tiger Team or design engagement to the agency that will operate the result. Designed from week one, not negotiated at the end.
 
-**Innovation Lab.** OPI’s craft team: a portfolio of work and the dedicated team that runs it: civic designers, civic technologists, product engineers, applied data scientists, and an innovation program manager. Owns OPI’s methods (the Public Innovation Toolkit, service design, prototyping, AI pilots, MVP-and-handoff). The Lab’s question is *how do we solve this?* Lab engagements can serve one agency or several; what defines the Lab is the craft, not the agency count. When work crosses agency lines and requires coordination authority, the Lab partners with Cross-Agency Delivery, which owns that coordination. Led by Gabriel Watson, Innovation Program Manager.
+**Innovation Lab.** OPI’s craft team: a portfolio of work and the dedicated team that runs it: civic designers, civic technologists, product engineers, applied data scientists, and an innovation program manager. Owns OPI’s methods (the Public Innovation Toolkit, service design, prototyping, AI pilots, and building and handing off minimum viable products). The Lab’s question is *how do we solve this?* Lab engagements can serve one agency or several; what defines the Lab is the craft, not the agency count. When work crosses agency lines and requires coordination authority, the Lab partners with Cross-Agency Delivery, which owns that coordination. Led by {{ role_holder("Innovation Program Manager") }}, Innovation Program Manager.
 
 **Inspection.** A direct observation used to validate what the data describes against what is happening on the ground: a ride-along, site visit, counter visit, or field walk. Planned during the frame review, conducted by or with the CitiStat Inspector, and brought back into the Stat as evidence alongside the data.
 
@@ -134,7 +122,7 @@ Words shape behavior. When OPI uses one word for something and an agency partner
 
 **Service.** A standing capability OPI provides to the city. Five services: Citywide Performance Management; Citywide Data and Analytics; Innovation Lab; Cross-Agency Delivery; AdminOps.
 
-**SharePoint operating system.** The structured set of SharePoint sites, libraries, lists, and metadata that organizes OPI’s work. Defined in the SharePoint Operating System Strategy.
+**SharePoint operating system.** The structured set of SharePoint sites, libraries, lists, and metadata that organizes OPI’s work. See [Wiki Knowledge Base Structure](wiki-knowledge-base-structure.md) for how the internal SharePoint knowledge base is organized.
 
 **Standing topic.** A recurring section of a Stat agenda that appears at every meeting: typically the four tenets, working purpose, prior follow-ups, KPI chart, operational metrics, system health, and repeat-back. Standing topics give the meeting a predictable spine; priority deep dives change cycle to cycle.
 
@@ -172,29 +160,3 @@ A quick reference for acronyms that recur across the wiki and are easy to read p
 | **TPM** | Technical Program Manager (a Data and Analytics role) |
 
 Standard IT and HR acronyms used in the how-to guides and memos — VPN, SSO, MFA, PTO, OOO, WFH — carry their common meanings.
-
-## Terms to use carefully
-
-These terms are easy to misuse in a way that blurs OPI's operating model. Use them only as described, and prefer the official language in [How Work Moves Through OPI](../../how-we-work/how-work-moves-through-opi.md).
-
-**Citywide Digital Services.** Use only when referring to brand stewardship or digital service request routing. Do not use as a synonym for the Innovation Lab, which is the team for OPI's service-improvement and product craft.
-
-**Baltimore Design Lab.** Treat as a design community of practice or a sub-capability within or alongside the Innovation Lab. Do not present it as a separate team or office unless it is formally approved as one.
-
-**Joint Stat.** Define on first use as a Stat that brings multiple agencies into one performance routine for a shared problem. Distinguish it from a delivery review: a Joint Stat surfaces the problem and monitors the gain, while a delivery review runs the cross-agency implementation.
-
-**Delivery room.** Avoid. Prefer *delivery review*, *delivery cadence*, or *delivery activation*, which are defined and less theatrical.
-
-## Naming norms
-
-- Sentence case for service and document names; Title Case only for proper nouns and program names (e.g., CitiStat, Innovation Lab).
-
-- Use “City Administrator’s Office”, not “CAO”, on first reference.
-
-- “Deputy Mayor”, not “DM”, in any external-facing document.
-
-- “Stat” is acceptable shorthand inside OPI; in writing for partners, expand to “CitiStat” on first reference.
-
-- Avoid “scrape” and “crawl” in resident-facing copy; prefer “collect,” “gather,” or “extract.”
-
-*Owned by the Chief of Staff. Reviewed quarterly. Send proposed additions or retirements through the OPI front door.*

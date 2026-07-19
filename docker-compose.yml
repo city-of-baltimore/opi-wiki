@@ -1,0 +1,17 @@
+# Local preview for the OPI Foundations wiki.
+#
+#   docker compose up
+#
+# serves the site at http://localhost:8000 with live reload. Production still
+# deploys to GitHub Pages (see .github/workflows/deploy.yml), not this container.
+services:
+  wiki:
+    build: .
+    ports:
+      - "8000:8000"
+    volumes:
+      # Live reload: edits on the host refresh the browser.
+      - .:/app
+      # Anonymous volume keeps the container's uv virtualenv from being
+      # shadowed by the bind mount above.
+      - /app/.venv

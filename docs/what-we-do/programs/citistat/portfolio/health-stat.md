@@ -11,7 +11,6 @@
 | Primary Agency / Agencies      | Baltimore City Health Department                                                                     |
 | OPI lead                        | OPI-operated / Performance Team                                                                      |
 | Core Data Product              | Public health service performance dashboard                                                          |
-| Public Transparency Level      | High for selected services and public health updates; sensitive program details may remain internal. |
 
 ### Public Purpose
 
@@ -36,10 +35,8 @@ Staff use Health Stat to monitor service timeliness, public health program imple
 
 ### Standard Artifacts and Data Products
 
-- Pre-meeting memo, Stat deck, follow-up memo, commitment tracker, and decision log.
+- Pre-meeting memo, Stat deck, follow-up memo, and follow-up tracker.
 - Core data product: Public health service performance dashboard.
-- Public summary, annual report section, data quality notes, and SOP / process maps for major functions.
-- Inspection checklist where field validation or service quality review is needed.
 
 ### Tiger Team / Delivery Triggers
 

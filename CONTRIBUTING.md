@@ -11,8 +11,8 @@ manual (editorial voice, review tiers, conventions).
 ## Working in this repo
 
 ```bash
-poetry install                  # one-time setup
-poetry run mkdocs serve         # live preview at http://127.0.0.1:8000
+uv sync                         # one-time setup
+uv run mkdocs serve             # live preview at http://127.0.0.1:8000
 ./scripts/verify.sh             # the full check suite (same gate CI runs)
 ```
 

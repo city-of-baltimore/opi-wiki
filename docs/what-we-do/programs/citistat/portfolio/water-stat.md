@@ -11,7 +11,6 @@
 | Primary Agency / Agencies      | DPW Water, Wastewater, Engineering and Construction Management, Finance / billing partners as needed                                                |
 | OPI lead                        | OPI-operated / Performance Team                                                                                                                     |
 | Core Data Product              | Water and wastewater utility performance dashboard                                                                                                  |
-| Public Transparency Level      | Moderate to high. Publish selected service and infrastructure performance summaries with careful caveats around regulatory and operational context. |
 
 ### Public Purpose
 
@@ -36,10 +35,8 @@ Staff use Water Stat to review water main breaks, sewer overflows, water-in-cell
 
 ### Standard Artifacts and Data Products
 
-- Pre-meeting memo, Stat deck, follow-up memo, commitment tracker, and decision log.
+- Pre-meeting memo, Stat deck, follow-up memo, and follow-up tracker.
 - Core data product: Water and wastewater utility performance dashboard.
-- Public summary, annual report section, data quality notes, and SOP / process maps for major functions.
-- Inspection checklist where field validation or service quality review is needed.
 
 ### Tiger Team / Delivery Triggers
 

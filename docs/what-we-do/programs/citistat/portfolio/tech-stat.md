@@ -11,7 +11,6 @@
 | Primary Agency / Agencies      | BCIT as primary agency; agency CIOs / technology leads from BCRP, BCHD, DPW, Police, Fire, and other major operating agencies                                 |
 | OPI lead                        | OPI-operated / Data Team-led with BCIT and agency CIO participation                                                                                           |
 | Core Data Product              | Technology portfolio and service reliability dashboard                                                                                                        |
-| Public Transparency Level      | Moderate. Publish plain-language summaries of technology improvements and major public-facing system changes; keep sensitive cyber/security details internal. |
 
 ### Public Purpose
 
@@ -36,10 +35,8 @@ Staff use Tech Stat to review IT project delivery, service desk performance, ent
 
 ### Standard Artifacts and Data Products
 
-- Pre-meeting memo, Stat deck, follow-up memo, commitment tracker, and decision log.
+- Pre-meeting memo, Stat deck, follow-up memo, and follow-up tracker.
 - Core data product: Technology portfolio and service reliability dashboard.
-- Public summary, annual report section, data quality notes, and SOP / process maps for major functions.
-- Inspection checklist where field validation or service quality review is needed.
 
 ### Tiger Team / Delivery Triggers
 

@@ -11,7 +11,8 @@
 | Primary Agency / Agencies      | Baltimore City Fire Department; Health, Housing, Police, MONSE, MOHS, and other partners as needed                |
 | OPI lead                        | Deputy Mayor-led / OPI-supported                                                                                  |
 | Core Data Product              | Fire and EMS performance dashboard                                                                                |
-| Public Transparency Level      | Moderate to high. Publish selected safety outcomes and prevention updates; protect sensitive operational details. |
+
+Fire and EMS is part of the public-safety extension of the [place-based model](../strategic-framework.md#the-place-based-model), after Housing and DOT. Fire and EMS Stat runs today as a Deputy Mayor-led agency Stat; as the model reaches life safety, sessions will increasingly concentrate on the places and populations that drive repeat risk and demand.
 
 ### Public Purpose
 
@@ -36,10 +37,8 @@ Staff use Fire and EMS Stat to review emergency response performance, high-utili
 
 ### Standard Artifacts and Data Products
 
-- Pre-meeting memo, Stat deck, follow-up memo, commitment tracker, and decision log.
+- Pre-meeting memo, Stat deck, follow-up memo, and follow-up tracker.
 - Core data product: Fire and EMS performance dashboard.
-- Public summary, annual report section, data quality notes, and SOP / process maps for major functions.
-- Inspection checklist where field validation or service quality review is needed.
 
 ### Tiger Team / Delivery Triggers
 

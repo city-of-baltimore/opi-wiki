@@ -4,23 +4,9 @@
 
 A short, plain-language guide for OPI staff. Pairs with the full Operating Model master held by leadership.
 
-VERSION
-:   v1.0
-
-UPDATED
-:   April 2026
-
-OWNER
-:   OPI Director’s Office
-
-AUDIENCE
-:   All OPI staff
-
 ## OPI in one sentence
 
 > *OPI combines performance, data, design, and delivery to help Baltimore City improve services in ways residents and staff can see and feel.*
->
-> *Respond when necessary. Build so we do not have to respond again.*
 
 We are the Mayor’s Office of Performance and Innovation, a small office inside the City Administrator’s Office. Our job: when residents call 311, apply for a permit, or rely on trash collection, those services work — and city staff have the routines, data, and tools to keep them working.
 
@@ -32,10 +18,10 @@ OPI is organized into four teams. Each portfolio has a clear lead and a clear sc
 
 | **Portfolio**                  | **Lead**                                       | **What it does**                                                                                                       |
 |--------------------------------|------------------------------------------------|------------------------------------------------------------------------------------------------------------------------|
-| Director’s Office | Rakeim Young, Chief of Staff                   | Operating backbone: intake, portfolio visibility, communications, knowledge management, fiscal, HR, facilities, and officewide coordination. |
-| Performance       | Danny Heller, Deputy Chief Performance Officer | Owns the performance method: CitiStat routines, agency performance plans, KPI standards, follow-up.                   |
-| Data and Analytics             | Jason Howard, PhD, Deputy Chief Data Officer   | Builds trusted data infrastructure: analytics, data platform, data engineering, open data, governance, AI readiness.  |
-| Innovation Lab                 | Gabriel Watson, Innovation Program Manager | Turns service problems into designed, testable solutions: HCD, product discovery, civic tech, AI pilots, partnerships, and Tiger Teams. |
+| Director’s Office | {{ role_holder("Chief of Staff") }}, Chief of Staff                   | Operating backbone: intake, portfolio visibility, communications, knowledge management, fiscal, HR, facilities, and officewide coordination. |
+| Performance       | {{ role_holder("Deputy Chief Performance Officer") }}, Deputy Chief Performance Officer | Owns the performance method: CitiStat routines, agency performance plans, KPI standards, follow-up.                   |
+| Data and Analytics             | {{ role_holder("Deputy Chief Data Officer") }}, Deputy Chief Data Officer   | Builds trusted data infrastructure: analytics, data platform, data engineering, open data, governance, AI readiness.  |
+| Innovation Lab                 | {{ role_holder("Innovation Program Manager") }}, Innovation Program Manager | Turns service problems into designed, testable solutions: HCD, product discovery, civic tech, AI pilots, partnerships, and Tiger Teams. |
 
 ### Five services
 
@@ -155,4 +141,3 @@ OPI’s services work as a cycle, not as silos.
 
 - Tiger Teams Playbook.
 
-*Owned by the Director’s Office. Reviewed quarterly. Update whenever portfolios, services, or governance change.*

@@ -1,0 +1,334 @@
+# Canonical people directory for OPI Foundations.
+#
+# Single source of truth for staff and contractors. Populates the org chart,
+# the team roster, the position-description index, and inline role references —
+# via the shared macros in main.py / scripts/repo_tools/people.py. Update a
+# person here and every surface across the wiki updates.
+#
+# Per-person fields: name, title (working title), worker_type (staff |
+# contractor | offshore-contractor), status (filled | open), cost_center,
+# classification, reports_to, pin, email, phone, location, pd (path under
+# resources/reference/position-descriptions/, or omit for roles without a PD).
+# Contractors carry no pin and no pd.
+
+city_administrator:
+  name: Faith P. Leach
+  title: City Administrator
+
+executive_director:
+  name: Dartanion Swift-Williams
+  title: Executive Director and Chief Data Officer
+  team: Director's Office
+  cost_center: AdminOps
+  classification: Executive Director I
+  reports_to: City Administrator
+  status: filled
+  pin: "15961"
+  email: dartanion.swift-williams@baltimorecity.gov
+  phone: 410-645-0021
+  pd: directors-office/pd-executive-director-and-cdo.md
+
+portfolios:
+  - key: directors-office
+    label: Director's Office
+    node_id: DO
+    cost_center: AdminOps
+    primary_value: Operating backbone that keeps work prioritized, documented, communicated, and deliverable.
+    table_lead: Rakeim Young, Chief of Staff
+    lead:
+      name: Rakeim Young
+      title: Chief of Staff
+      cost_center: AdminOps
+      classification: Operations Manager II
+      reports_to: Executive Director
+      status: filled
+      pin: "50053"
+      email: rakeim.young@baltimorecity.gov
+      pd: directors-office/pd-chief-of-staff.md
+    staff:
+      - name: Mallory Screws
+        title: Project Manager
+        cost_center: AdminOps
+        classification: Operations Officer III
+        reports_to: Chief of Staff
+        status: filled
+        pin: "62121"
+        email: mallory.screws@baltimorecity.gov
+        phone: 443-219-9590
+        pd: directors-office/pd-project-manager.md
+      - name: Audrey Randazzo
+        title: Data Storyteller
+        cost_center: Innovation Lab
+        classification: Operations Officer III
+        reports_to: Chief of Staff
+        status: filled
+        pin: "53413"
+        email: audrey.randazzo@baltimorecity.gov
+        pd: directors-office/pd-data-storyteller.md
+
+  - key: performance
+    label: Performance
+    node_id: PC
+    cost_center: Performance
+    primary_value: Owns the performance method; translates priorities into routines, measures, follow-up, and improvement.
+    table_lead: Danny Heller, Deputy Chief Performance Officer
+    lead:
+      name: Danny Heller
+      title: Deputy Chief Performance Officer
+      cost_center: Performance Management
+      classification: Operations Director I
+      reports_to: Executive Director
+      status: filled
+      pin: "54340"
+      email: daniel.heller@baltimorecity.gov
+      phone: 443-721-9609
+      pd: performance/pd-deputy-chief-performance-officer.md
+    staff:
+      - name: Darren Lu
+        title: CitiStat Program Manager
+        cost_center: Performance Management
+        classification: Operations Manager I
+        reports_to: Deputy Chief Performance Officer
+        status: filled
+        pin: "15971"
+        email: darren.lu@baltimorecity.gov
+        pd: performance/pd-citistat-program-manager.md
+      - name: Ross Hackett
+        title: CitiStat Analyst
+        cost_center: Performance Management
+        classification: CitiStat Analyst I
+        reports_to: Deputy Chief Performance Officer
+        status: filled
+        pin: "16441"
+        email: ross.hackett@baltimorecity.gov
+        phone: 443-257-6074
+        pd: performance/pd-citistat-analyst.md
+      - name: "Griffin Riddler, PhD"
+        title: CitiStat Analyst
+        cost_center: Performance Management
+        classification: CitiStat Analyst I
+        reports_to: Deputy Chief Performance Officer
+        status: filled
+        pin: "47946"
+        email: griffin.riddler@baltimorecity.gov
+        pd: performance/pd-citistat-analyst.md
+      - name: Ethan Buckborough
+        title: CitiStat Analyst
+        cost_center: Performance Management
+        classification: CitiStat Analyst I
+        reports_to: Deputy Chief Performance Officer
+        status: filled
+        pin: "52437"
+        email: ethan.buckborough@baltimorecity.gov
+        pd: performance/pd-citistat-analyst.md
+      - name: Nelson Gomes Boronat
+        title: CitiStat Analyst
+        cost_center: Performance Management
+        classification: CitiStat Analyst I
+        reports_to: Deputy Chief Performance Officer
+        status: filled
+        pin: "62122"
+        email: nelson.gomesboronat@baltimorecity.gov
+        phone: 443-750-2057
+        pd: performance/pd-citistat-analyst.md
+      - name: Rashaad Tillery
+        title: CitiStat Inspector
+        cost_center: AdminOps
+        classification: Operations Officer I
+        reports_to: Deputy Chief Performance Officer
+        status: filled
+        pin: "50509"
+        email: rashaad.tillery@baltimorecity.gov
+        phone: 443-845-8921
+        pd: directors-office/pd-citistat-inspector.md
+      - name: Open — recruiting
+        title: Senior Performance Analyst
+        cost_center: Performance Management
+        classification: Operations Officer III
+        reports_to: Deputy Chief Performance Officer
+        status: open
+        pin: "115657"
+        pd: performance/pd-senior-performance-analyst.md
+
+  - key: data-and-analytics
+    label: Data and Analytics
+    node_id: DA
+    cost_center: Data and Analytics
+    primary_value: Builds trusted data infrastructure and decision-ready analytics; supports CitiStat, transparency, agency operations, and AI readiness.
+    table_lead: Jason Howard, PhD, Deputy Chief Data Officer
+    lead:
+      name: "Jason Howard, PhD"
+      title: Deputy Chief Data Officer
+      cost_center: Data and Analytics
+      classification: Operations Director II
+      reports_to: Executive Director
+      status: filled
+      pin: "114589"
+      email: jason.howard@baltimorecity.gov
+      pd: data-and-analytics/pd-deputy-chief-data-officer.md
+    staff:
+      - name: Roberto Herbruger
+        title: Technical Program Manager
+        cost_center: Data and Analytics
+        classification: Operations Manager II
+        reports_to: Deputy Chief Data Officer
+        status: filled
+        pin: "115408"
+        pd: data-and-analytics/pd-technical-program-manager.md
+      - name: Vera Choo
+        title: Applied Data Scientist
+        cost_center: Data and Analytics
+        classification: Operations Officer V
+        reports_to: Deputy Chief Data Officer
+        status: filled
+        pin: "115656"
+        email: vera.choo@baltimorecity.gov
+        phone: 443-683-1541
+        pd: data-and-analytics/pd-applied-data-scientist.md
+      - name: Open — recruiting
+        title: Principal Data Engineer
+        cost_center: Data and Analytics
+        classification: Operations Manager II
+        reports_to: Deputy Chief Data Officer
+        status: open
+        pin: "53411"
+        pd: data-and-analytics/pd-principal-data-engineer.md
+      - name: Briya Bhakta
+        title: Senior Data Engineer
+        cost_center: Data and Analytics
+        classification: Operations Officer V
+        reports_to: Deputy Chief Data Officer
+        status: filled
+        pin: "70433"
+        email: briya.bhakta@baltimorecity.gov
+        phone: 443-915-4091
+        pd: data-and-analytics/pd-senior-data-engineer.md
+      - name: TBD
+        title: Data Governance Lead
+        worker_type: contractor
+        location: Onshore
+      - name: TBD
+        title: Senior Data Scientist
+        worker_type: contractor
+        location: Onshore
+      - name: TBD
+        title: Data Engineer
+        worker_type: contractor
+        location: Onshore
+      - name: TBD
+        title: Senior Data Engineer
+        worker_type: contractor
+        location: Onshore
+      - name: TBD
+        title: Data Scientist
+        worker_type: contractor
+        location: Onshore
+
+  - key: innovation-lab
+    label: Innovation Lab
+    node_id: IL
+    cost_center: Innovation Lab
+    primary_value: Turns service problems into designed, usable, testable solutions; coordinates handoff to data, engineering, agency, or BCIT partners.
+    table_lead: Gabriel Watson, Innovation Program Manager
+    lead:
+      name: Gabriel Watson
+      title: Innovation Program Manager
+      cost_center: Innovation Lab
+      classification: Operations Manager II
+      reports_to: Executive Director
+      status: filled
+      pin: "115655"
+      pd: innovation-lab/pd-innovation-program-manager.md
+    staff:
+      - name: Derek Thomas
+        title: Operations Analyst
+        cost_center: Innovation Lab
+        classification: Operations Officer III
+        reports_to: Innovation Program Manager
+        status: filled
+        pin: "70432"
+        email: derek.thomas@baltimorecity.gov
+        phone: 443-826-8794
+        pd: directors-office/pd-operations-analyst.md
+      - name: Selenea Gibson
+        title: Civic Designer
+        cost_center: Innovation Lab
+        classification: Data Fellow
+        reports_to: Innovation Program Manager
+        status: filled
+        pin: "53412"
+        email: selenea.gibson@baltimorecity.gov
+        phone: 443-602-6182
+        pd: innovation-lab/pd-civic-designer.md
+      - name: Chiemeka Okeoma
+        title: Applied Data Scientist
+        cost_center: Innovation Lab
+        classification: Operations Officer V
+        reports_to: Innovation Program Manager
+        status: filled
+        pin: "62137"
+        email: chiemeka.okeoma@baltimorecity.gov
+        phone: 240-252-8991
+        pd: innovation-lab/pd-applied-data-scientist.md
+      - name: Xander Jake de los Santos
+        title: Full Stack Engineer
+        cost_center: Innovation Lab
+        classification: Operations Officer III
+        reports_to: Innovation Program Manager
+        status: filled
+        pin: "70431"
+        email: XanderJake.DeLosSantos@baltimorecity.gov
+        pd: innovation-lab/pd-product-engineer-full-stack.md
+      - name: Daniel De Freitas
+        title: Technical Program Manager
+        worker_type: contractor
+        location: Onshore
+      - name: TBD
+        title: Change Manager
+        worker_type: contractor
+        location: Onshore
+      - name: TBD
+        title: Sr. Software Engineer
+        worker_type: contractor
+        location: Onshore
+      - name: TBD
+        title: Software Engineer
+        worker_type: contractor
+        location: Onshore
+
+  - key: ai-enablement
+    label: AI Enablement
+    node_id: AI
+    cost_center: BIC engagement (contract)
+    primary_value: Contractor engagement standing up the Baltimore Intelligence Center — the citywide data, intelligence, and AI platform — with capability transfer to City staff.
+    table_lead: Ifeanyi Akila, AI Enablement Lead
+    lead:
+      name: Ifeanyi Akila
+      title: AI Enablement Lead
+      worker_type: contractor
+      location: Onshore
+    staff:
+      - name: Byron Roelofsz
+        title: Product Lead
+        worker_type: offshore-contractor
+        location: Offshore
+      - name: Catalin Ghiorghisor
+        title: Technical Lead
+        worker_type: offshore-contractor
+        location: Offshore
+      - name: Mercia Malan
+        title: Data Engineering Lead
+        worker_type: offshore-contractor
+        location: Offshore
+      - name: McGregor Jackson
+        title: Semantic Layer Lead
+        worker_type: offshore-contractor
+        location: Offshore
+      - name: Chris Dawson
+        title: UX Lead
+        worker_type: offshore-contractor
+        location: Offshore
+      - name: Andrei Morgan
+        title: UX Designer
+        worker_type: offshore-contractor
+        location: Offshore

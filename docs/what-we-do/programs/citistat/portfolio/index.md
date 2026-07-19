@@ -1,12 +1,12 @@
 # CitiStat Portfolio
 
-{{ page_header(summary="The full CitiStat portfolio — every Stat, with its brief, in one place.", tagline="Strategic frame, governance standards, the master register, and full profiles for the 19 monthly Stats.") }}
+{{ page_header(summary="The full CitiStat portfolio — every Stat, with its brief, in one place.", tagline="The master register and a brief for every active Stat.") }}
 
 ## Executive summary
 
-Baltimore’s CitiStat portfolio is the City’s executive performance rhythm for the services, systems, and priorities residents and staff experience most directly. This register documents the initial 19 monthly Stats; the fields are defined below.
+Baltimore’s CitiStat portfolio is the City’s executive performance rhythm for the services, systems, and priorities residents and staff experience most directly. This register documents all 19 active Stats; the fields are defined below.
 
-CitiStat is managed by OPI's Executive Director and implemented by agencies; the [Strategic Framework](../strategic-framework.md#legal-mandate-and-governance) sets out the full governance chain. OPI leaders may operate selected Stats where the topic aligns with their portfolio, but all Stats follow a common standard: clear purpose, reliable enough data, useful pre-work, disciplined follow-up, evidence of closure, and a public story of progress.
+CitiStat is managed by OPI's Executive Director and implemented by agencies; the [Strategic Framework](../strategic-framework.md#governance-and-roles) sets out the full governance chain. OPI leaders may operate selected Stats where the topic aligns with their portfolio, but all Stats follow a common standard: clear purpose, reliable enough data, useful pre-work, disciplined follow-up, evidence of closure, and a public story of progress.
 
 This document is a companion to OPI’s operating model. The operating model explains how OPI organizes work; this register explains what each Stat is for, who sponsors it, what it tracks, what artifacts it produces, and how it can trigger delivery, product, data, or executive action.
 
@@ -18,17 +18,9 @@ CitiStat is a management routine, not a meeting schedule. What that means for ea
 - **For staff**, each Stat should clarify the evidence, decisions, owners, deadlines, and follow-up expected before and after the session.
 - **For leadership**, the portfolio should provide one place to see progress, blockers, decisions needed, and the story of what changed.
 
-## Common governance
+## Governance
 
-| **Role**                                   | **Responsibility**                                                                                                                                                            |
-|--------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Executive Director, OPI                    | Owns CitiStat as a citywide management program and resolves major questions of scope, quality, and operating model.                                                           |
-| Deputy Chief Performance Officer           | Serves as Deputy Director for the CitiStat program. Supports the Executive Director on program leadership and method discipline; takes on session leadership as delegated.    |
-| Performance Team              | Stewards the method, standards, templates, cadence, KPI discipline, follow-up expectations, and Stat quality.                                                                 |
-| Executive Sponsor / Authorizer             | Typically the relevant Deputy Mayor, Deputy City Administrator, City Administrator, or executive sponsor. Confirms priorities, resolves barriers, and authorizes commitments. |
-| Agency Director / Senior Responsible Owner | Owns operational performance, implementation, resource alignment, and agency follow-through.                                                                                  |
-| OPI lead                                   | Runs the session process or support model, coordinates artifacts, and ensures follow-up moves through the appropriate channel.                                                |
-| Analyst / Data Lead                        | Prepares analysis, data products, KPI updates, data quality notes, and dashboard inputs.                                                                                      |
+Every Stat runs on the same roles and decision rights. OPI's Executive Director owns CitiStat as a program; the Deputy Chief Performance Officer leads it day to day; the CitiStat Program Manager runs independent quality review; and each Stat has a chair or authorizer, an agency owner, and an analyst. The full roles are in the [Method Playbook](../method-playbook.md#roles-and-decision-rights).
 
 ## Portfolio metadata
 
@@ -38,37 +30,29 @@ Each Stat is tracked with consistent metadata so the portfolio stays manageable 
 |--------------------------------|---------------------------------------------------------------------------------------------------------------------------|
 | Stat Name                      | Standard name used in decks, memos, and the website.                                                                       |
 | Government Cluster             | Executive portfolio or cluster responsible for sponsorship and authorizing decisions.                                     |
-| Executive Sponsor / Authorizer | Leader with authority to resolve barriers, approve commitments, and escalate issues.                                      |
+| Executive Sponsor / Authorizer | Leader with authority to resolve barriers, authorize decisions and follow-ups, and escalate issues.                                      |
 | Primary Agency / Agencies      | Agencies responsible for implementation, data, or operational follow-through.                                             |
 | Stat Type                      | Agency Stat or Thematic Stat.                                                                                             |
 | Internal Tag                   | Internal management lens such as service system, foundation/enablement, workforce, capital, public realm, or place-based. |
 | OPI lead                       | How OPI runs or supports the Stat: OPI-operated, Data Team-led, Director’s Office-led, Deputy Mayor-led / OPI-supported, or method support only. |
 | Core Data Product              | Dashboard, tracker, map, register, scorecard, or portfolio view that anchors the session.                                 |
-| Standard Artifacts             | Pre-meeting memo, Stat deck, follow-up memo, commitment tracker, decision log, public summary, and annual report section. |
+| Standard Artifacts             | Pre-meeting memo, Stat deck, follow-up memo, and follow-up tracker. |
 | Delivery Trigger               | Condition that moves an issue to a tiger team, data quality sprint, product discovery, or executive escalation.           |
 
 ## Standard artifact suite
 
-Every Stat does not have identical content, but it has a consistent operating package so staff, agencies, and executive sponsors know what to expect.
+Every Stat produces the same core package, so staff, agencies, and sponsors know what to expect. Dashboards, decision logs, and other products are maintained centrally rather than rebuilt for each Stat.
 
-| **Artifact**             | **Purpose**                                                                                                |
-|--------------------------|------------------------------------------------------------------------------------------------------------|
-| Pre-meeting memo         | Frames purpose, agenda, data highlights, risks, decisions needed, and follow-ups from the prior session.   |
-| Stat deck                | Visual decision support for the session; focuses on signal, bottlenecks, options, and commitments.         |
-| Follow-up memo           | Documents commitments, owners, due dates, definitions of done, evidence expectations, and escalation path. |
-| Commitment tracker       | The official record of open, closed, overdue, and escalated follow-ups.                                    |
-| Decision log             | Records decisions made, who made them, when, and what changed because of the decision.                     |
-| Public summary           | Plain-language summary of what the Stat is about, what changed, and what is next — for the website.        |
-| Dashboard / data product | Recurring data product that supports the Stat and reduces one-off analysis.                                |
-| Annual report section    | Annual public documentation of progress, barriers, and next-step recommendations.                          |
-| Inspection checklist     | Field validation tool for conditions, closure quality, evidence, or service quality where relevant.        |
-| Delivery trigger         | Criteria for moving the issue into a tiger team, product discovery, data sprint, or executive escalation.  |
-| Data quality notes       | Known caveats, system limitations, definitions, exclusions, refresh cadence, and confidence level.         |
-| SOP / process maps       | Process maps and operating procedures for major functions or recurring bottlenecks.                        |
+| **Artifact** | **Purpose** |
+| --- | --- |
+| Pre-meeting memo | Frames purpose, agenda, data highlights, risks, decisions needed, and prior follow-ups. |
+| Stat deck | Visual decision support for the session — signal, bottlenecks, options, and follow-ups. |
+| Follow-up memo | Documents follow-ups, owners, due dates, evidence expectations, and escalation path. |
+| Follow-up tracker | The MS Planner record of open, closed, overdue, and escalated follow-ups. |
 
 ## Master Stat portfolio
 
-All active Stats operate monthly. Calendar details are maintained separately.
+Agency Stats run monthly; the place-based operating Stats (Housing, DOT, Police, Fire & EMS) run biweekly. Calendar details are maintained separately.
 
 | **Stat**              | **Cluster**                        | **Type** | **OPI Lead**          | **Core Data Product**                                   |
 |-----------------------|------------------------------------|----------|-----------------------|---------------------------------------------------------|
@@ -92,24 +76,10 @@ All active Stats operate monthly. Calendar details are maintained separately.
 | Workplace Safety Stat | Internal Services                  | Thematic | Director’s Office-led | Workplace safety performance dashboard                  |
 | Youth Stat            | Health and Human Services          | Thematic | Performance Team      | Youth outcomes and initiative tracker                   |
 
-## The 19 Stats
-
-Each Stat profile follows a consistent structure: metadata, public purpose, staff purpose, core management questions, starter focus areas, standard artifacts, and tiger team or Delivery Triggers.
-
-## Watchlist and future routines
-
-The 19 monthly Stats are the active portfolio. OPI avoids adding new Stats without applying admission criteria and confirming executive sponsorship, capacity, data readiness, and a follow-up mechanism. Several topics are tracked through councils, existing Stats, or temporary tiger teams before becoming standing Stats.
-
-| **Topic**                    | **Recommended Home**                                                                                                                          |
-|------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------|
-| Workday / Enterprise Systems | Track through Tech Stat, Finance Stat, HR & Labor Stat, and Product Council unless a dedicated routine is required by the City Administrator. |
-| Grants / Audit Compliance    | Track through Finance Stat unless audit findings or grant compliance require a dedicated executive cadence.                                   |
-| Open Data / Data Governance  | Track through Data Governance and Open Data Council, not a Stat, unless performance oversight requires escalation.                            |
-| Resident Experience          | Use 311 Stat, Permit Stat, Innovation Lab, and public summaries as the starting point rather than launching a separate Stat.                  |
 
 ## Admission and continuation criteria
 
-A routine should be called a Stat only when it meets the citywide admission criteria and continues to produce decisions, commitments, or learning. The full criteria, continuation test, and right-routine matrix live in the [CitiStat Method Playbook → Issue selection, admission, and continuation](../method-playbook.md#issue-selection-admission-and-continuation).
+A routine should be called a Stat only when it meets the citywide admission criteria and continues to produce decisions, follow-ups, or learning. The full criteria, continuation test, and right-routine matrix live in the [CitiStat Method Playbook → Issue selection, admission, and continuation](../method-playbook.md#issue-selection-admission-and-continuation).
 
 ## Right-routine decision rule
 
@@ -117,14 +87,12 @@ Not every recurring problem should become a Stat. The first question should be: 
 
 | **If the problem primarily requires...**                                                    | **Use...**                            |
 |---------------------------------------------------------------------------------------------|---------------------------------------|
-| Recurring performance review, executive attention, KPI tracking, commitments, and follow-up | Stat                                  |
+| Recurring performance review, executive attention, KPI tracking, and follow-up | Stat                                  |
 | Time-boxed cross-agency implementation and barrier removal                                  | Tiger Team                            |
 | User research, prototyping, workflow redesign, or operational product discovery             | Innovation Lab engagement             |
 | Dataset ownership, data access, open data release, data quality, or governance decision     | Data Governance and Open Data Council |
 | Product ownership, build readiness, launch readiness, or roadmap tradeoff                   | Product Council                       |
 | One-time policy, budget, or executive decision                                              | Decision memo                         |
-
-> *The goal is not more meetings. The goal is a management routine that helps Baltimore City see what is working, identify what is stuck, assign ownership, and follow through until conditions improve.*
 
 ## All Stats
 
@@ -135,4 +103,3 @@ Not every recurring problem should become a Stat. The first question should be: 
 - [CitiStat Method Playbook](../method-playbook.md) — the operating standards every Stat in this portfolio runs on.
 - [CitiStat Strategic Framework](../strategic-framework.md) — the public-facing strategic frame and portfolio rationale.
 - [About Performance](../../../../about-us/our-teams/performance/about-performance.md) — plain-language overview of the service.
-- [Performance Management Theory of Change](../../../../about-us/our-teams/performance/performance-theory-of-change.md) — mandate, governance, staffing, measures, and sustainment.

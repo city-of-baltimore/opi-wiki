@@ -52,10 +52,6 @@ Mayor’s Office of Performance and Innovation
 
 *City of Baltimore · Brandon M. Scott, Mayor*
 
-## READ ALONGSIDE
+## Read Alongside
 
-**About OPI: Admin & Ops —** *who the team is and what they own.*
-
-**Theory of Change: AdminOps —** *logic model, internal SLAs, and core artifacts.*
-
-**SharePoint Operating System Strategy —** *how OPI runs its institutional memory.*
+- [About AdminOps](../our-teams/directors-office/about-admin-ops.md) — who the team is and what they own.

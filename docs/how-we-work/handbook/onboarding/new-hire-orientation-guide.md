@@ -4,15 +4,6 @@
 
 Your first day, your first week, and what to expect at Baltimore’s Mayor’s Office of Performance and Innovation.
 
-AUDIENCE
-:   New OPI staff
-
-OWNER
-:   Director's Office
-
-VERSION
-:   v1.0 · May 2026
-
 ## Welcome to OPI
 
 Welcome to the Mayor’s Office of Performance and Innovation. You are joining a team that combines performance, data, design, and delivery to help Baltimore City improve services in ways residents and staff can see and feel.
@@ -107,7 +98,7 @@ In your first week, the goal is to learn the system before you try to change it.
 
 - Set up your personal working system: a OneNote notebook for meeting notes, calendar blocks for focus time, and a task list in Planner or Jira.
 
-- Read the OPI Field Guide and the Quick Reference Handbook. They are your shared language.
+- Read the [Operating Model (staff version)](../../../resources/reference/operating-model-staff-version.md) and the [Glossary of OPI Terms](../../../resources/reference/glossary.md). They are your shared language.
 
 - Sit in on at least one CitiStat session, one delivery review or product stand-up, and one team meeting in your portfolio.
 
@@ -161,7 +152,7 @@ We use Microsoft 365 for communication and documentation, and Jira for engineeri
 | Planner    | Portfolio and task tracking for non-engineering work and cross-functional workstreams.                     |
 | Jira       | Engineering backlog, sprints, incidents, and delivery tracking for product and tech work.                  |
 
-*See the Productivity and Collaboration Playbook for details on how each tool fits together.*
+*See the [Productivity and Collaboration Playbook](../operations/productivity-and-collaboration-playbook.md) for details on how each tool fits together.*
 
 ## Where to go for help
 
@@ -171,7 +162,7 @@ We use Microsoft 365 for communication and documentation, and Jira for engineeri
 
 **Question about HR, benefits, or pay?** Contact City HR through Workday or your AdminOps point of contact.
 
-**Question about culture or norms?** Your onboarding buddy and your portfolio peers are your first stop. Read the OPI Leadership Norms for the long version.
+**Question about culture or norms?** Your onboarding buddy and your portfolio peers are your first stop. Read the [Leadership Norms](../operations/leadership-norms.md) for the long version.
 
 **Need to escalate a risk or blocker?** Tell your manager. If urgent, copy the Chief of Staff. We treat early escalation as professionalism, not failure.
 
@@ -179,7 +170,7 @@ We use Microsoft 365 for communication and documentation, and Jira for engineeri
 
 The first 30 days are for learning the system. Days 31–60 are for owning a defined slice of work. Days 61–90 are for shipping meaningful outputs and documenting them so they survive turnover. By day 100, we ask you for a brief readout: what shipped, what you learned, and what you need next.
 
-You will use the OPI 30/60/90-Day Plan and First 100 Days Template to structure this. Your manager will help you draft it during week one and finalize it by day 10.
+Your manager will help you draft a 30/60/90-day plan during week one and finalize it by day 10, then run [30/60/90 check-ins](managers-onboarding-playbook.md#templates-and-prompts) with you at each mark.
 
 ## Welcome again
 

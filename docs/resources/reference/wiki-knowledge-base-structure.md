@@ -16,23 +16,9 @@
 
 How OPI organizes its internal knowledge so staff can find what they need, trust what they find, and rely on it surviving turnover.
 
-VERSION
-:   v1.0
-
-UPDATED
-:   April 2026
-
-OWNER
-:   OPI Director’s Office · Chief of Staff
-
-AUDIENCE
-:   All OPI staff; SharePoint site stewards; HR and BCIT partners
-
 ## Why the Wiki exists
 
-The OPI Wiki is the single internal home for the way OPI works: mission, model, methods, templates, and active project records. It is not a file dump. It is a maintained operating manual with named owners, review cadences, and a quality bar. The goal: anyone joining OPI can find the official document, the right template, the active project list, and the owner of each — in under five minutes.
-
-> *Respond when necessary. Build so we do not have to respond again.*
+The OPI Wiki is the single internal home for the way OPI works: mission, model, methods, templates, and active project records. It is not a file dump. It is a maintained operating manual with named owners, review cadences, and a quality bar. The goal: anyone joining OPI can find the official document, the right template, the active project list, and the owner of each, in under five minutes.
 
 ### Three jobs of the Wiki
 
@@ -44,7 +30,7 @@ The OPI Wiki is the single internal home for the way OPI works: mission, model, 
 
 ## Platform and scope
 
-OPI uses Microsoft SharePoint as the wiki platform, consistent with the rest of City government. SharePoint provides pages for living guidance, document libraries for controlled artifacts, and lists for systems of record (project directory, people directory, change log). Other tools (Teams chats, OneDrive, personal folders) are not the system of record — by policy.
+OPI uses Microsoft SharePoint as the wiki platform, consistent with the rest of City government. SharePoint provides pages for living guidance, document libraries for controlled artifacts, and lists for systems of record (project directory, people directory, change log). Other tools (Teams chats, OneDrive, personal folders) are not the system of record. That is policy.
 
 ### What lives in the Wiki
 
@@ -151,7 +137,7 @@ The internal SharePoint KB uses six top-level pillars. Depth comes from consiste
 
 - Onboarding and Offboarding processes (this set, Wave 1).
 
-- QA Standards and SharePoint Operating System (this set, Wave 2).
+- QA Standards (this set, Wave 2), and the SharePoint operating-system standards maintained in the internal KB.
 
 - Equity, accessibility, and privacy standards.
 
@@ -252,8 +238,6 @@ The Wiki is built in three releases so it is useful on day one and improves with
 - Every recurring meeting (weekly ops, portfolio reviews, Stat) starts the year with the Wiki location for its agenda, pre-read, and follow-up.
 
 - Quarterly demo at all-hands: what was added or changed, what is being retired.
-
-*Owned by the Chief of Staff. Reviewed quarterly. Pairs with OPI SharePoint Operating System Strategy for full taxonomy and Project Directory schema.*
 
 ## Method pages as sources of truth
 

@@ -4,15 +4,6 @@
 
 Boundaries, rules, standards, and expectations for managers and people leaders at OPI.
 
-AUDIENCE
-:   OPI managers and people leaders
-
-OWNER
-:   Director’s Office
-
-VERSION
-:   v1.0 · February 2026
-
 ## Purpose
 
 OPI operates at the intersection of performance, data, design, and delivery. Our effectiveness depends not only on analytical and technical skill, but on how we work together, how we make decisions, and how we protect trust with each other, with agencies, and within the Mayor’s Office.

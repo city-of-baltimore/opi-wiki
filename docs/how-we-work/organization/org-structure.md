@@ -1,12 +1,10 @@
 # Org Structure
 
-{{ page_header(summary="Who reports to whom, and how decision rights flow.", tagline="Teams, leads, staff alignment, services, cost centers, and the Cross-Agency Delivery overlay.") }}
+{{ page_header(summary="Who reports to whom, and how decision rights flow.", tagline="Teams, leads, staff alignment, and how work is organized.") }}
 
 OPI delivers its mission through four city teams and five services. The teams are how we organize people, leadership, and cost centers. The services are how we describe what OPI delivers to residents, agencies, and city leadership. Contractors — including the AI Enablement engagement that stands up the Baltimore Intelligence Center — are embedded alongside City staff and shown in the charts below.
 
 This document is the official view of OPI’s structure: leads, staff alignment, teams, services, cost centers, and Cross-Agency Delivery. For the full staff roster (position numbers, classifications, and reporting lines), see [Team and Roles](team-and-roles/index.md).
-
-> *Better government is not a one-time project. It is a discipline.*
 
 ## Leadership org chart
 
@@ -14,9 +12,9 @@ This chart shows the named leadership structure and team ownership. Staff
 alignment appears below in one chart per team so the reporting lines stay
 readable.
 
-{{ org_structure_from("how-we-work/organization/org-structure.data.yml", "leadership_chart") }}
+{{ org_structure_from("_data/people.yml", "leadership_chart") }}
 
-**Chart key.** City staff appear on the default (dark) node style. **Purple** nodes are OPI contractors; **gray** nodes are offshore contractors. AI Enablement is the contractor engagement standing up the [Baltimore Intelligence Center](../../what-we-do/products/baltimore-intelligence-center/index.md); its team is shown for visibility and is not part of OPI's permanent position count.
+**Chart key.** City staff appear on the default (dark) node style. **Purple** nodes are OPI contractors; **gray** nodes are offshore contractors. AI Enablement is the contractor engagement standing up the [Baltimore Intelligence Center](../../what-we-do/programs/baltimore-intelligence-center/index.md); its team is shown for visibility and is not part of OPI's permanent position count.
 
 ## Staff alignment by team
 
@@ -26,61 +24,20 @@ City staff — purple for onshore contractors, gray for the offshore BIC
 delivery team — and vacant seats are shown dashed so the current and intended
 structure stay visible together.
 
-{{ org_structure_from("how-we-work/organization/org-structure.data.yml", "staff_cards") }}
+{{ org_structure_from("_data/people.yml", "staff_cards") }}
 
 ## The Teams
 
 OPI’s work is organized into four city teams — each with a named lead, a budget cost center, a defined set of functions, and a primary value proposition — plus the AI Enablement contractor engagement that stands up the Baltimore Intelligence Center.
 
-{{ org_structure_from("how-we-work/organization/org-structure.data.yml", "portfolio_table") }}
+{{ org_structure_from("_data/people.yml", "portfolio_table") }}
 
 ## Current Staff Alignment
 
 The alignment below reflects OPI’s current operating chart, as of June 2026.
 
-{{ org_structure_from("how-we-work/organization/org-structure.data.yml", "staff_alignment") }}
+{{ org_structure_from("_data/people.yml", "staff_alignment") }}
 
-## Cost Centers and Budget Services
-
-Cost centers govern budget and expense management. Budget services describe what OPI delivers. Cross-Agency Delivery is tracked as a service overlay — a coordinating service that draws on staff from across OPI rather than a standing team — unless and until dedicated staff or budget are assigned.
-
-### Cost Centers
-
-| **Cost Center**          | **Description**                                                                                                                                                                                                              |
-|--------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| AdminOps                 | Personnel and operating costs for OPI executive support, communications, portfolio management, intake, knowledge management, fiscal, HR, facilities, Council relations, quality assurance, and agencywide operations.        |
-| Performance | Personnel and operating costs for CitiStat, citywide performance management, agency performance planning, performance measures, follow-up tracking, performance analysis, and performance method stewardship.                |
-| Data and Analytics       | Personnel and operating costs for analytics, data platform development, data engineering, data governance, open data, GIS and spatial analytics, data literacy, and responsible data and AI readiness.                       |
-| Innovation Lab           | Personnel and operating costs for human-centered design, product discovery, service design, prototyping, operational tools, civic technology, applied innovation projects, strategic partnerships, and AI innovation pilots. |
-
-### Five Services
-
-OPI’s services describe the value we deliver, regardless of which team or staff member is involved.
-
-- Citywide Performance Management — administered by Performance.
-
-- Citywide Data and Analytics — administered by Data and Analytics.
-
-- Innovation Lab — administered by the Innovation Lab.
-
-- Cross-Agency Delivery — service overlay; activated when Mayor, City Administrator, or Deputy Mayor priorities require coordinated action across agencies.
-
-- AdminOps — administered by the Director’s Office.
-
-## Cross-Agency Delivery Overlay
-
-Cross-Agency Delivery is an OPI-wide service overlay, not a standalone cost center at this stage. It is activated for Mayor, City Administrator, or Deputy Mayor priorities that require coordinated action across agencies.
-
-Danny Heller serves as Interim Delivery Manager, overseeing delivery discipline and cross-agency coordination. Rakeim Young maintains portfolio visibility, intake, status reporting, and escalation tracking through the Director’s Office.
-
-| **Element**                         | **Operating Decision**                                                                                                                                              |
-|-------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Status                              | Service overlay. Not a separate cost center or fully staffed team yet.                                                                                         |
-| Interim Delivery Manager            | Danny Heller                                                                                                                                                        |
-| Portfolio visibility and escalation | Rakeim Young / Director’s Office                                                                                                                                    |
-| Primary triggers                    | Mayor, City Administrator, or Deputy Mayor priorities; major CitiStat follow-up failures; recurring cross-agency blockers; executive-priority implementation needs. |
-| Activation decision                 | Executive Director, with input from OPI leadership and relevant executive sponsors.                                                                                 |
-| Execution model                     | Lead assigned at activation; time-boxed delivery reviews or working sessions; status tracked through the leadership council and weekly leadership reporting.               |
 
 ## How to Read This Structure
 

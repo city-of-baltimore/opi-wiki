@@ -4,15 +4,6 @@
 
 A practical guide for OPI managers on how to make new hires productive, connected, and clear on expectations within 90 days.
 
-AUDIENCE
-:   All OPI managers
-
-OWNER
-:   Director's Office
-
-VERSION
-:   v1.0 · May 2026
-
 ## Why onboarding matters
 
 Great onboarding is a retention and performance lever. Staff who land well stay longer, contribute earlier, and trust the office more. Staff who land poorly drain the team for months. Treat onboarding as critical infrastructure.
@@ -47,7 +38,7 @@ Translate the job description into three to five outcomes the new hire is respon
 
 ### 2. The norms conversation
 
-How we communicate, how we make decisions, when to escalate, and what quality looks like. Walk through the OPI Quick Reference Handbook together.
+How we communicate, how we make decisions, when to escalate, and what quality looks like. Walk through the [Operating Principles and Culture](../../../about-us/operating-principles-and-culture.md) together.
 
 ### 3. The relationships conversation
 

@@ -7,7 +7,7 @@
 
 ## What it is
 
-The Baltimore City Performance Portal is the planned public-facing home for citywide performance data — a way for residents, Council, and partners to see how the City is performing on the priorities tracked through [CitiStat](../programs/citistat/index.md) and citywide performance management.
+The Baltimore City Performance Portal is the planned public-facing home for citywide performance data — a way for residents, Council, and partners to see how the City is performing on the priorities tracked through [CitiStat](../programs/citistat/index.md) and citywide performance management. It is an [Innovation Lab](../../about-us/our-teams/innovation-lab/index.md) product, and will draw on the governed data behind the [Baltimore Intelligence Center](../programs/baltimore-intelligence-center/index.md).
 
 ## Read alongside
 

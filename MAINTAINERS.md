@@ -104,7 +104,7 @@ mapping in mind when locating content, and keep the `.pages` title, the
 | `about-us/our-teams/performance/` | Performance | The team that delivers **Citywide Performance Management**; the **CitiStat** program itself lives in `what-we-do/programs/citistat/`. |
 | `about-us/our-teams/data-and-analytics/` | Data and Analytics | The team that delivers **Citywide Data and Analytics**. |
 | `about-us/our-teams/innovation-lab/` | Innovation Lab | Both a team and a service; the products it builds live in `what-we-do/products/`. |
-| `how-we-work/organization/` | Organization | Org chart, org data (`org-structure.data.yml`), and the Team & Roles roster. |
+| `how-we-work/organization/` | Organization | Org chart and the Team & Roles roster, both generated from the canonical people directory (`docs/_data/people.yml`). |
 | `how-we-work/handbook/` | Handbook | Onboarding, operations, how-to guides, and administrative memos. |
 | `what-we-do/` | What We Do | Services, programs (CitiStat and portfolio), and products (Baltimore Intelligence Center). |
 | `programs/citistat/` | CitiStat | A **program** supported by all teams — its own top-level section, not owned by one team. |
@@ -210,10 +210,12 @@ build-time `.metadata.yml`, which drives review cadence and the status badge.)
 ## Structured page data
 
 When one page needs to repeat the same source-of-truth data across charts,
-tables, and roster text, keep that content in a neighboring `*.data.yml` file
-and render it through a shared macro. The org structure page is the current
-example: update `org-structure.data.yml`, not multiple Mermaid blocks and staff
-lists by hand.
+tables, and roster text, keep that content in a shared YAML file and render it
+through a macro. Staff and contractors are the canonical example: the single
+`docs/_data/people.yml` directory drives the org chart, the Team & Roles
+roster, the position-description index, and inline role references (via the
+`people(...)` and `role_holder(...)` macros). Update a person there, not the
+Mermaid blocks, staff lists, or PD index by hand.
 
 ## Page data model
 
@@ -273,7 +275,7 @@ triage, run `./scripts/verify.sh --json-output /path/to/report.json`.
 For UI regressions that static checks will miss, maintainers can opt into a
 browser smoke pass with `./scripts/verify.sh --include-browser-smoke`. That
 pass expects a one-time local browser install via
-`poetry run playwright install chromium`.
+`uv run playwright install chromium`.
 
 ## Bus factor mitigation
 
@@ -288,7 +290,7 @@ This role has a high bus factor by design (it's one person). Mitigations:
 | Tool | Purpose |
 |---|---|
 | GitHub Enterprise (this repo) | Source of truth, version control, CI/CD |
-| Poetry | Python dependency and environment management |
+| uv | Python dependency and environment management |
 | MkDocs Material | Site renderer (local preview + production build) |
 | `./scripts/verify.sh` | Standard local verification pass |
 | Pandoc | Convert .docx → Markdown when migrating Drive content |
@@ -298,7 +300,7 @@ This role has a high bus factor by design (it's one person). Mitigations:
 
 ## Onboarding a new maintainer
 
-Day 1: read this document and `CONTRIBUTING.md`. Run `poetry run mkdocs serve` locally. Read every page on the live site.
+Day 1: read this document and `CONTRIBUTING.md`. Run `uv run mkdocs serve` locally. Read every page on the live site.
 
 Week 1: shadow the previous maintainer through one full intake cycle (issue → PR → merge → deploy).
 

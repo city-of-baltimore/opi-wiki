@@ -9,8 +9,8 @@ updates:
       actions:
         patterns: ["*"]
 
-  # Python deps (Poetry / pyproject.toml + poetry.lock).
-  - package-ecosystem: pip
+  # Python deps (uv / pyproject.toml + uv.lock).
+  - package-ecosystem: uv
     directory: "/"
     schedule:
       interval: weekly

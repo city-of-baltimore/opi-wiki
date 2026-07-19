@@ -186,8 +186,8 @@ def find_browser_smoke_issues(site_dir: Path, base_url: str | None = None) -> li
         from playwright.sync_api import sync_playwright
     except ModuleNotFoundError as error:
         raise RuntimeError(
-            "Playwright is not installed. Run 'poetry install' and "
-            "'poetry run playwright install chromium' first."
+            "Playwright is not installed. Run 'uv sync' and "
+            "'uv run playwright install chromium' first."
         ) from error
 
     if base_url is not None:
