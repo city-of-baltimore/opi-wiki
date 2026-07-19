@@ -4,20 +4,9 @@
 
 How OPI works in Microsoft 365 (Outlook, Teams, OneDrive, OneNote, SharePoint, Planner) and Jira. Minimum standards for clear, durable, and accountable work.
 
-AUDIENCE
-:   All OPI staff
-
-OWNER
-:   Director’s Office
-
-VERSION
-:   v1.1 · Effective February 2026
-
 ## Why this exists
 
 OPI operates at the intersection of performance, data, design, and delivery. We work fast and we work in public-trust contexts. This playbook sets the minimum standards for how we communicate, document, plan, and deliver so that our work is easy to find, easy to reuse, and trustworthy when it leaves the building.
-
-> *Respond when necessary. Build so we do not have to respond again.*
 
 ### OPI in 10 working norms
 

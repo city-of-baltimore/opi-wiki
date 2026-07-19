@@ -6,7 +6,5 @@ defaults:
   change_log: Normalized review metadata for operations pages.
 
 pages:
-  charter-template.md:
-    display_badge: template
   problem-statement-template.md:
     display_badge: template

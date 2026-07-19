@@ -4,15 +4,6 @@
 
 A one-to-three sentence framing that names what is failing and who feels it. Sharp problems make sharp work.
 
-AUDIENCE
-:   All OPI staff
-
-OWNER
-:   Director’s Office
-
-VERSION
-:   v1.0 · February 2026
-
 ## Why we write problem statements
 
 A good problem statement is the cheapest piece of work in the entire project. Get it right and the rest of the project becomes obvious. Get it wrong and no amount of execution will save the outcome.

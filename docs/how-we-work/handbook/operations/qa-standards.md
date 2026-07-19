@@ -4,15 +4,6 @@
 
 The minimum bar for any artifact OPI produces. Accessibility, plain language, privacy review, and no surprise launches.
 
-AUDIENCE
-:   All OPI staff and managers
-
-OWNER
-:   Director’s Office · DCDO (privacy)
-
-VERSION
-:   v1.0 · February 2026
-
 ## Why QA matters
 
 OPI’s work is used by senior leaders, agency partners, and sometimes the public. Quality is not optional, and it is not a separate phase. It is part of the work. This document describes the QA bar that applies to everything OPI publishes, internally and externally.

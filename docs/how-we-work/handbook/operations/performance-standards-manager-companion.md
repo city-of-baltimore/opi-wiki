@@ -4,17 +4,8 @@
 
 Calibration packet, calibration questions, and a bias check. Companion to the Staff v2 guide.
 
-VERSION
-:   v2.0
-
 EFFECTIVE
 :   July 1, 2026
-
-AUDIENCE
-:   OPI managers and calibration leads
-
-OWNER
-:   OPI Director’s Office
 
 ## How to use this companion
 

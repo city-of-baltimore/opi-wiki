@@ -4,15 +4,6 @@
 
 A structured 90-day playbook for new hires, managers, and onboarding buddies.
 
-AUDIENCE
-:   New hires, managers, onboarding buddies, AdminOps
-
-OWNER
-:   Director's Office
-
-VERSION
-:   v1.0 · May 2026
-
 ## Purpose
 
 This document standardizes how OPI brings new staff into the office. The goal is that every new hire is productive, connected, and clear on expectations within the first 30 days, owns a defined slice of work by day 60, and is delivering meaningful outputs by day 90.
@@ -150,7 +141,7 @@ Focus: human-centered design, product discovery, civic technology, AI pilots, an
 
 ### Manager checklist (all portfolios)
 
-Onboarding is a manager responsibility. The minimum standard is below.
+Onboarding is a manager responsibility. This table is the minimum standard; the full method — the four conversations, the first early win, coaching, and the check-in scripts — is in the [Managers' Onboarding Playbook](managers-onboarding-playbook.md).
 
 | **When**     | **Task**                                                                   | **How**                                                             |
 |--------------|----------------------------------------------------------------------------|---------------------------------------------------------------------|
@@ -159,7 +150,7 @@ Onboarding is a manager responsibility. The minimum standard is below.
 | Week 1       | Set explicit expectations (communication, work quality, escalation, docs). | Use OPI norms and performance standards as the baseline.            |
 | Week 1–2     | Introduce the new hire to key partners and explain decision rights.        | Avoid surprise stakeholders. Clarify who approves what.             |
 | Month 1      | Create space for early wins. Protect focus from ad hoc churn.              | Use WIP limits. Say "not now" with rationale and a revisit date.    |
-| Day 30/60/90 | Run structured check-ins. Document outcomes.                               | Use the 30/60/90 template. Capture agreements in writing.           |
+| Day 30/60/90 | Run structured check-ins. Document outcomes.                               | Use the [30/60/90 check-in scripts](managers-onboarding-playbook.md#templates-and-prompts). Capture agreements in writing. |
 
 ## Appendix A. Suggested onboarding meetings
 

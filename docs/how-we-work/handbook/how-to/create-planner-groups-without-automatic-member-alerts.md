@@ -2,12 +2,6 @@
 
 {{ page_header(summary="Short how-to for reducing inbox noise when setting up Microsoft Planner work.") }}
 
-AUDIENCE
-:   OPI staff
-
-OWNER
-:   Chief of Staff
-
 ## Why this guide exists
 
 Creating a Planner plan or assigning tasks can trigger member notifications by

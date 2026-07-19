@@ -15,9 +15,9 @@ Baltimore, MD 21202.
 
 - **Hours:** Monday–Friday, 8:00 a.m.–5:00 p.m.
 
-- **Access code:** You may enter 30 minutes before your event. Code: 1, 2, 5.
-  Press the code on the keypad, open the box, retrieve the key, open the door,
-  and put the key back in the box immediately.
+- **Access:** You may enter 30 minutes before your event. The entry procedure
+  and door code are in the internal Idea Lab booking guide (SharePoint link to
+  come); if you don't have it, ask AdminOps.
 
 - **AV equipment:** The Lab is retrofitted with new equipment. You are
   responsible for arranging training and tech support with BMORE IT directly,

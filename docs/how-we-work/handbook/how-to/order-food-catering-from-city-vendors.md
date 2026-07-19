@@ -21,9 +21,9 @@ You (the requester) are listed as the contact for the food service delivery.
 
 ## Event is less than 72 hours away
 
-1. Order directly from one of the preferred vendors below. These restaurants
-   have agreements with the City and will bill Natasha, who in turn bills your
-   Cost Center.
+1. Order directly from one of the City's preferred vendors (see **Preferred food
+   vendors**, below). These restaurants have agreements with the City and will
+   bill Natasha, who in turn bills your Cost Center.
 
 2. When placing your order, give the vendor a delivery time, a contact name, and
    a cell number they can reach to meet the delivery person. If asked, tell the
@@ -34,11 +34,8 @@ You (the requester) are listed as the contact for the food service delivery.
 
 ## Preferred food vendors
 
-- Jay's Catering — Kristie (primary contact); 410-685-3861
-  (kristie@jaysrestaurantgroup.com)
-
-- Biddle Street Catering — Beatrice Chun (primary contact); 410-727-7777
-  (beatrice@biddlest.com)
-
-- David & Dad's — David or Colin (primary contacts); 410-547-0550
-  (catering@davidanddads.com)
+The current list of preferred vendors and their contacts is maintained as an
+internal document in SharePoint (**Operations and Governance › AdminOps ›
+Preferred Vendors**). *(SharePoint link to be added once the library is
+published.)* If you cannot reach it, ask Natasha Edmonds or Desimoune McCoy for
+the current list.

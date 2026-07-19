@@ -4,15 +4,6 @@
 
 Health, leave, retirement, and time-off benefits for OPI staff covered by the MAPS agreement.
 
-AUDIENCE
-:   OPI staff covered by MAPS
-
-OWNER
-:   Director's Office · HR review pending
-
-VERSION
-:   v1.0 (DRAFT) · May 2026
-
 > *This guide is a quick reference. For authoritative answers, consult the MAPS agreement and Baltimore City Human Resources. Plan years, deductibles, and contribution rates may change, so confirm with HR before making decisions.*
 
 ## Who this is for
@@ -133,6 +124,4 @@ Confirm current City contribution rates and vesting schedule with HR.
 
 - This guide summarizes provisions. The MAPS agreement and City HR are authoritative.
 
-## Document status
-
-> *This guide is a draft pending HR review. Do not distribute to new hires until City HR confirms accuracy of plan years, contribution rates, and benefit details.*
+*Reference summary, current as of July 2026. It summarizes provisions only — the MAPS agreement and City HR are the authoritative sources.*

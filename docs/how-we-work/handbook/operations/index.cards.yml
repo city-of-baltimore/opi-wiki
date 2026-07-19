@@ -18,18 +18,6 @@
   title: "QA Standards"
   body: "Quality bars for everything OPI ships."
   href: qa-standards/
-- meta: Strategy
-  title: "SharePoint Operating System Strategy"
-  body: "How OPI uses SharePoint as an internal operating system."
-  href: sharepoint-operating-system-strategy/
-- meta: Template
-  title: "Charter Template"
-  body: "Template for chartering a new initiative or working group."
-  href: charter-template/
-- meta: Document
-  title: "Intake SOP"
-  body: "How OPI receives, triages, and routes new requests."
-  href: intake-sop/
 - meta: Template
   title: "Problem Statement Template"
   body: "A structured way to frame a problem before scoping a solution."
