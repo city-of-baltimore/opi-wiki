@@ -8,16 +8,23 @@ GitHub or Markdown knowledge required there.
 **For maintainers:** [`MAINTAINERS.md`](MAINTAINERS.md) is the operating
 manual (editorial voice, review tiers, conventions).
 
+**Editorial style:** [`STYLE.md`](STYLE.md) is the writing standard — voice,
+the jargon we replace, and how we handle bullets, tables, and em-dashes.
+
 ## Working in this repo
 
 ```bash
-poetry install                  # one-time setup
-poetry run mkdocs serve         # live preview at http://127.0.0.1:8000
-./scripts/verify.sh             # the full check suite (same gate CI runs)
+task setup      # one-time: installs dependencies and the pre-push gate
+task serve      # live preview at http://127.0.0.1:5208
+task prepush    # tests + strict build + built-site checks
+task ci         # static checks only (what PR CI runs)
 ```
 
-Ground rules, enforced by `./scripts/verify.sh` (and by CI on every PR and
-deploy — the suite is defined once, in `scripts/verify.py`):
+Ground rules, enforced by `task prepush` (and by CI — the suite is defined once,
+in `scripts/verify.py`). Pull-request CI runs the static `ci` tier only. The
+test suite, the strict build, and the checks that read built HTML run in the
+pre-push hook and the deploy gate — so install the hooks, and run
+`task prepush` before you push:
 
 - Strict MkDocs build: broken links and nav entries fail the build.
 - Page metadata sidecars (`.metadata.yml`) must be complete and fresh —

@@ -1,0 +1,45 @@
+# Baltimore civic-platform app marker — machine-readable metadata consumed by
+# Patapsco's `platform:check`. Ports mirror the shared registry
+# (patapsco/contracts/ports.toml) so every app can run under docker compose at
+# once without host-port clashes.
+
+contract_version = 2
+
+[app]
+# MkDocs documentation site, not an application: no backend, no database, no
+# nginx, no bromo. It publishes a single loopback port for local preview and
+# deploys to GitHub Pages. Most of the civic-app compose/runtime baseline does
+# not apply here — see docs_site notes below.
+kind = "docs-site"
+name = "opi-wiki"
+packaging = "uv"
+slot = 8
+
+[ports] # host ports, all bound to 127.0.0.1
+frontend = 5208 # `mkdocs serve` / docker compose preview (5200 + slot)
+# backend 8208, postgres 5448, and redis 6408 are reserved-but-idle for this
+# slot: the docs site runs none of them, but the registry holds the numbers so a
+# future adoption can never collide.
+
+[runtime]
+python = "3.14" # local + CI interpreter; the platform range is >=3.13,<3.15
+
+[tasks]
+# The one command contract (consistency standard §5): Taskfile.yml exposes the
+# shared surface, and hosted CI runs `task ci` verbatim. The tiers delegate to
+# scripts/verify.py, which owns the step list for all three lanes.
+runner = "Taskfile.yml"
+
+[docs_site]
+# Production deploy target. There is no container in the deploy path.
+deploy = "github-pages"
+# The hosted pull-request lane is static-only (`task ci`): no test suite, no
+# site build, no browser suite. The tests, the strict build, the built-site link
+# crawl, and the a11y checks run in the pre-push hook and the deploy gate
+# (`task prepush`); `task validate` adds browser smoke.
+# scripts/check_hosted_ci_policy.py enforces the boundary mechanically, walking
+# both the Taskfile graph and the verify.py plans so indirection cannot hide a
+# forbidden command. The `ci` plan also runs Patapsco's published platform-check
+# (0.4.3) for the shared estate baseline; it walks the Taskfile graph, npm
+# scripts, and .sh bodies, but not the verify.py plans, so both checks are kept.
+lean_ci = true

@@ -1,0 +1,45 @@
+/* Breadcrumbs — the nav trail above each page title. */
+.opi-breadcrumbs {
+  margin: 0 0 0.75rem;
+  font-size: 0.7rem;
+  line-height: 1.4;
+}
+
+.opi-breadcrumbs ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.15rem 0.35rem;
+}
+
+.opi-breadcrumbs li {
+  display: inline-flex;
+  align-items: center;
+  color: var(--md-default-fg-color--light);
+}
+
+/* Separator between crumbs */
+.opi-breadcrumbs li:not(:first-child)::before {
+  content: "/";
+  margin-right: 0.35rem;
+  color: var(--md-default-fg-color--lighter);
+}
+
+.opi-breadcrumbs a {
+  color: var(--md-default-fg-color--light);
+  text-decoration: none;
+}
+
+.opi-breadcrumbs a:hover {
+  color: var(--md-accent-fg-color);
+  text-decoration: underline;
+}
+
+/* The current page crumb — not a link, slightly stronger */
+.opi-breadcrumbs li[aria-current="page"] {
+  color: var(--md-default-fg-color);
+  font-weight: 600;
+}

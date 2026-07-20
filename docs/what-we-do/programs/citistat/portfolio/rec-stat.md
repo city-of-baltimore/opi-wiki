@@ -11,7 +11,6 @@
 | Primary Agency / Agencies      | Department of Recreation and Parks                                                                                 |
 | OPI lead                        | OPI-operated / Performance Team                                                                                    |
 | Core Data Product              | Recreation, parks, and forestry performance dashboard                                                              |
-| Public Transparency Level      | High. Publish selected dashboards and summaries related to parks, recreation centers, forestry, and public spaces. |
 
 ### Public Purpose
 
@@ -36,10 +35,8 @@ Staff use Rec Stat to monitor recreation participation, program capacity, forest
 
 ### Standard Artifacts and Data Products
 
-- Pre-meeting memo, Stat deck, follow-up memo, commitment tracker, and decision log.
+- Pre-meeting memo, Stat deck, follow-up memo, and follow-up tracker.
 - Core data product: Recreation, parks, and forestry performance dashboard.
-- Public summary, annual report section, data quality notes, and SOP / process maps for major functions.
-- Inspection checklist where field validation or service quality review is needed.
 
 ### Tiger Team / Delivery Triggers
 

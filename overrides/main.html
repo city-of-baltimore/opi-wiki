@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+
+{#- Community-edition breadcrumbs (navigation.path is Insiders-only).
+    Renders the nav trail above the page H1, built from page.ancestors. -#}
+{% block content %}
+  {% if page.ancestors %}
+    <nav class="opi-breadcrumbs" aria-label="Breadcrumb">
+      <ol>
+        <li><a href="{{ '' | url }}">Home</a></li>
+        {% for ancestor in page.ancestors | reverse %}
+          <li>
+            {% if ancestor.url %}
+              <a href="{{ ancestor.url | url }}">{{ ancestor.title }}</a>
+            {% elif ancestor.children and ancestor.children[0].is_index %}
+              {#- Section with a landing page (navigation.indexes): link to its index. -#}
+              <a href="{{ ancestor.children[0].url | url }}">{{ ancestor.title }}</a>
+            {% else %}
+              <span>{{ ancestor.title }}</span>
+            {% endif %}
+          </li>
+        {% endfor %}
+        {%- if not (page.ancestors and page.ancestors[0].title == page.title) %}
+          <li aria-current="page">{{ page.title }}</li>
+        {%- endif %}
+      </ol>
+    </nav>
+  {% endif %}
+  {{ super() }}
+{% endblock %}

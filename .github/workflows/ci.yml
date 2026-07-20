@@ -1,8 +1,25 @@
 name: CI
 
 # Runs on every pull request to main. This is the required gate before merge.
-# It runs the same scripts/verify.py suite maintainers run locally: lint,
-# tests, validators, strict build, built-site link crawl, and a11y smoke.
+#
+# It is deliberately LEAN: static checks only — lint, type-check, the workflow
+# policy guard, and the content validators that read docs/ source. It does NOT
+# run the test suite, does NOT build the site, and does NOT run anything that
+# inspects built HTML or drives a browser. Per the civic-app consistency
+# standard (patapsco/docs/app-consistency-standard.md, §4), the hosted lane is
+# static checks, contracts, and security only.
+#
+# The test suite, the strict MkDocs build, the built-site link crawl, and the
+# accessibility checks all still run — in the pre-push hook and the pre-deploy
+# gate (.github/workflows/deploy.yml), via './scripts/verify.sh --plan prepush'.
+# Nothing was dropped; it moved to the tier that can afford it.
+#
+# This job runs `task ci` verbatim, so the hosted lane and a local run are the
+# same command. Do not add a test, build, or browser step here, and do not add
+# one to a task `ci` reaches: scripts/check_hosted_ci_policy.py resolves the
+# Taskfile graph and verify.py's plans transitively and fails this job if a
+# forbidden command becomes reachable at any depth. The `ci` plan additionally
+# runs Patapsco's platform-check for the shared estate baseline.
 
 on:
   pull_request:
@@ -18,22 +35,38 @@ concurrency:
 
 jobs:
   checks:
-    name: Build & test
+    name: Static checks
     runs-on: ubuntu-latest
+    # The whole lean plan runs in seconds. Ten minutes is pure headroom, and it
+    # means a hung step fails fast instead of sitting on GitHub's six-hour
+    # default. scripts/verify.py additionally bounds each individual step.
+    timeout-minutes: 10
     steps:
       - uses: actions/checkout@9c091bb21b7c1c1d1991bb908d89e4e9dddfe3e0 # v7.0.0
-
-      - uses: actions/setup-python@a309ff8b426b58ec0e2a45f0f869d46889d02405 # v6.2.0
         with:
-          python-version: "3.12"
+          persist-credentials: false
+
+      - uses: actions/setup-python@ece7cb06caefa5fff74198d8649806c4678c61a1 # v6.3.0
+        with:
+          python-version: "3.14"
+
+      - uses: arduino/setup-task@c0bc642852239c2689f73f4ea6459c29405f3c52 # v2
+        with:
+          version: 3.49.1
+
+      # The two network steps get their own tighter caps: a wedged package
+      # index is the one thing here that can hang without any local symptom.
+      - name: Install uv
+        timeout-minutes: 5
+        run: pip install uv==0.11.28
 
       - name: Install dependencies
-        run: |
-          pip install poetry==2.4.1
-          poetry install --no-interaction --no-ansi
+        timeout-minutes: 5
+        run: uv sync --frozen
 
-      # scripts/verify.py is the single source of truth for the check suite.
-      # Do not add ad-hoc check steps here — add them to build_steps() so
-      # local runs, CI, and the deploy gate can never drift apart.
-      - name: Run verification suite
-        run: poetry run python scripts/verify.py
+      # `task ci` is the whole gate. Its steps live in Taskfile.yml and
+      # scripts/verify.py, so a local run, this workflow, and the deploy gate
+      # cannot drift apart. Never list an ad-hoc check step here.
+      - name: Run the lean gate
+        timeout-minutes: 5
+        run: task ci

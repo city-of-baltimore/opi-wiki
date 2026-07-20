@@ -4,40 +4,17 @@
 
 Your first day, your first week, and what to expect at Baltimore’s Mayor’s Office of Performance and Innovation.
 
-AUDIENCE
-:   New OPI staff
-
-OWNER
-:   Director's Office
-
-VERSION
-:   v1.0 · May 2026
-
 ## Welcome to OPI
 
 Welcome to the Mayor’s Office of Performance and Innovation. You are joining a team that combines performance, data, design, and delivery to help Baltimore City improve services in ways residents and staff can see and feel.
 
-> *Respond when necessary. Build so we do not have to respond again.*
-
-This guide is your map for the first day and the first week. It tells you what to expect, who you’ll meet, what you need to do to get set up, and how to find your footing. Read it once before you start and keep it open through your first week.
+This guide is your map for the first day and the first week. It tells you what to expect, who you’ll meet, what you need to do to get set up, and how to find your footing. Read it once before you start, and keep it open through your first week.
 
 ### Our mission and how we operate
 
 OPI is Baltimore City’s in-house performance, data, design, and delivery team. We do four things at the same time: we make performance visible, we build trustworthy data, we design and test better services, and we help agencies follow through.
 
-You will hear us describe this as a cycle:
-
-- Performance tells us where the system is falling short.
-
-- Data helps us understand why.
-
-- Innovation helps us design, test, and implement what comes next.
-
-- Cross-Agency Delivery helps coordinate implementation when work crosses agencies.
-
-- AdminOps keeps the work visible, documented, and accountable.
-
-Every role at OPI sits inside this cycle. Your work will be more useful when you understand where it fits.
+You will hear us describe this as a cycle. Performance shows where the system is falling short. Data helps us understand why. The Innovation Lab designs, tests, and builds what comes next. Cross-Agency Delivery coordinates the work when it crosses agencies. And AdminOps keeps all of it visible, documented, and accountable. Every role at OPI sits inside this cycle, and your work is more useful when you understand where it fits.
 
 ### How OPI is organized
 
@@ -45,7 +22,7 @@ OPI is organized into four teams. Each team has a lead and is responsible for a 
 
 | **Portfolio**                | **Lead**                                       | **What it owns**                                                                         |
 |------------------------------|------------------------------------------------|------------------------------------------------------------------------------------------|
-| Director's Office | Rakeim Young, Chief of Staff                   | Operating backbone, intake, communications, knowledge management, quality assurance, and officewide coordination. |
+| Director's Office | Rakeim Young, Chief of Staff                   | Office operations, intake, communications, knowledge management, quality assurance, and officewide coordination. |
 | Performance     | Danny Heller, Deputy Chief Performance Officer | CitiStat method, agency performance plans, KPIs, follow-up, and sustainment monitoring.  |
 | Data and Analytics           | Jason Howard, PhD, Deputy Chief Data Officer   | Data platform, analytics, governance, open data, GIS, and AI/data readiness.             |
 | Innovation Lab               | Gabriel Watson, Innovation Program Manager | Service design, product discovery, civic technology, AI pilots, partnerships, and operational tools. |
@@ -107,7 +84,7 @@ In your first week, the goal is to learn the system before you try to change it.
 
 - Set up your personal working system: a OneNote notebook for meeting notes, calendar blocks for focus time, and a task list in Planner or Jira.
 
-- Read the OPI Field Guide and the Quick Reference Handbook. They are your shared language.
+- Read the [Operating Model (staff version)](../../../resources/reference/operating-model-staff-version.md) and the [Glossary of OPI Terms](../../../resources/reference/glossary.md). They are your shared language.
 
 - Sit in on at least one CitiStat session, one delivery review or product stand-up, and one team meeting in your portfolio.
 
@@ -135,17 +112,7 @@ By the end of your first month, you should be able to describe what OPI does, wh
 
 ### The OPI way
 
-OPI operates with high trust and high standards. The non-negotiables apply to every staff member from day one:
-
-- **Protect trust:** No misinformation, no privacy mishandling, no surprise public work.
-
-- **No untested work:** Products, analyses, dashboards, and tools are vetted before use or demo.
-
-- **Write it down:** Decisions, definitions, and commitments live in the system of record — not in DMs.
-
-- **Close loops:** Every commitment has an owner, a date, and evidence of closure.
-
-- **Escalate early:** Raise risks when they are small. Avoid surprise misses.
+At OPI we trust each other and hold a high bar. A few rules apply to everyone from day one. Protect trust: no misinformation, no mishandled private data, no public work that catches people by surprise. Do not ship untested work; vet products, analyses, dashboards, and tools before you use or demo them. Write things down, so decisions, definitions, and commitments live in the official record instead of in DMs. Close your loops, so every commitment has an owner, a date, and proof it was finished. And escalate early, while a risk is still small, so nothing turns into a surprise miss.
 
 ### Tools, in plain language
 
@@ -161,28 +128,18 @@ We use Microsoft 365 for communication and documentation, and Jira for engineeri
 | Planner    | Portfolio and task tracking for non-engineering work and cross-functional workstreams.                     |
 | Jira       | Engineering backlog, sprints, incidents, and delivery tracking for product and tech work.                  |
 
-*See the Productivity and Collaboration Playbook for details on how each tool fits together.*
+*See the [Productivity and Collaboration Playbook](../operations/productivity-and-collaboration-playbook.md) for details on how each tool fits together.*
 
 ## Where to go for help
 
-**Stuck on a tool or access?** Ask your onboarding buddy first. If you are blocked for more than 24 hours, escalate to your manager.
-
-**Question about your work?** Bring it to your weekly one-on-one. If it is urgent, message your manager in Teams.
-
-**Question about HR, benefits, or pay?** Contact City HR through Workday or your AdminOps point of contact.
-
-**Question about culture or norms?** Your onboarding buddy and your portfolio peers are your first stop. Read the OPI Leadership Norms for the long version.
-
-**Need to escalate a risk or blocker?** Tell your manager. If urgent, copy the Chief of Staff. We treat early escalation as professionalism, not failure.
+If you are stuck on a tool or access, ask your onboarding buddy first, and escalate to your manager if you are blocked for more than 24 hours. Questions about your work belong in your weekly one-on-one, or a Teams message to your manager if they are urgent. For HR, benefits, or pay, contact City HR through Workday or your AdminOps point of contact. For culture or norms, start with your onboarding buddy and your portfolio peers, and read the [Leadership Norms](../operations/leadership-norms.md) for the long version. To escalate a risk or blocker, tell your manager, and copy the Chief of Staff if it is urgent. We treat early escalation as professionalism, not failure.
 
 ### A note on the first 90 days
 
 The first 30 days are for learning the system. Days 31–60 are for owning a defined slice of work. Days 61–90 are for shipping meaningful outputs and documenting them so they survive turnover. By day 100, we ask you for a brief readout: what shipped, what you learned, and what you need next.
 
-You will use the OPI 30/60/90-Day Plan and First 100 Days Template to structure this. Your manager will help you draft it during week one and finalize it by day 10.
+Your manager will help you draft a 30/60/90-day plan during week one and finalize it by day 10, then run [30/60/90 check-ins](managers-onboarding-playbook.md#templates-and-prompts) with you at each mark.
 
 ## Welcome again
 
-You are joining OPI at a build-and-scale moment for Baltimore. We are building citywide routines that are dependable, modernizing data and digital foundations, and proving visible improvements in core services. Your work will matter quickly. Take the first week to learn how things fit together, ask early questions, and start building the relationships that will make the rest of your time here productive.
-
-> *Be curious. Be disciplined. Be kind and candid. Build for durability.*
+You are joining OPI at a moment when Baltimore is building and scaling this work. We are making citywide routines dependable, modernizing the data and digital foundations, and proving visible improvements in core services. Your work will matter quickly. Take the first week to learn how things fit together, ask early questions, and start building the relationships that will make the rest of your time here productive.

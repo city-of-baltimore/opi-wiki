@@ -11,7 +11,8 @@
 | Primary Agency / Agencies      | Baltimore Police Department; MONSE, Law, Health, Fire, and other partners as needed                                                        |
 | OPI lead                        | Deputy Mayor-led / OPI-supported                                                                                                           |
 | Core Data Product              | Public safety performance dashboard                                                                                                        |
-| Public Transparency Level      | Moderate to high. Publish selected trends and public safety progress with careful attention to privacy, sensitivity, and operational risk. |
+
+Public safety is where the [place-based model](../strategic-framework.md#the-place-based-model) extends next, after Housing and DOT. Police Stat runs today as a Deputy Mayor-led agency Stat; as the model reaches public safety, sessions will increasingly focus on the specific places where a priority safety outcome is concentrated.
 
 ### Public Purpose
 
@@ -36,10 +37,8 @@ Staff use Police Stat to review violent crime trends, operational priorities, re
 
 ### Standard Artifacts and Data Products
 
-- Pre-meeting memo, Stat deck, follow-up memo, commitment tracker, and decision log.
+- Pre-meeting memo, Stat deck, follow-up memo, and follow-up tracker.
 - Core data product: Public safety performance dashboard.
-- Public summary, annual report section, data quality notes, and SOP / process maps for major functions.
-- Inspection checklist where field validation or service quality review is needed.
 
 ### Tiger Team / Delivery Triggers
 

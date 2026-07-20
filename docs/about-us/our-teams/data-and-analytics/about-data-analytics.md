@@ -1,171 +1,53 @@
-# About Data Analytics
+# About Data and Analytics
 
-{{ page_header(summary="What the Data and Analytics team does inside OPI.", category="ABOUT · SERVICE") }}
+{{ page_header(summary="How OPI makes Baltimore's data trustworthy, governed, and useful, and builds the platform the city's analytics run on.", category="ABOUT · SERVICE") }}
 
-**Citywide Data and Analytics**
+The Data and Analytics team builds and runs Baltimore's civic data infrastructure. It takes the scattered administrative data that agencies collect and turns it into shared, governed assets: reliable measures, reusable datasets, dashboards, maps, open data, and the platform the city's analytics and AI products run on. The work sits where agency operations, executive priorities, public transparency, and BCIT's infrastructure meet.
 
-*How we make Baltimore’s data trustworthy, transparent, and useful for decisions.*
+The team owns the meaning of the city's data: what a metric is, who owns it, how sensitive it is, and how it may be used. That idea runs through everything below.
 
-*Read alongside: OPI Service Theory of Change — Citywide Data and Analytics.*
+## What the team does
 
-*This About doc explains the service in plain language. The Theory of Change doc explains how the service is mandated, governed, staffed, measured, and sustained.*
+The team builds and runs the [Baltimore City Data Platform](../../../what-we-do/products/baltimore-city-data-platform.md), the governed foundation that holds the city's ingestion pipelines, a medallion warehouse, shared datasets, and APIs. On top of that platform it develops dashboards, maps, spatial analysis, and reusable insight products, and it stewards Open Baltimore and the rest of the city's open data.
 
-## PURPOSE
+It maintains the citywide KPI dictionary, which gives each priority metric one official definition with an owner, formula, source, refresh cadence, and caveats. It sets the standards for data governance, classification, quality, and methodology (see the [Data Governance Framework](data-governance-framework.md)). And it prepares Baltimore for responsible AI, running use-case intake, risk tiering, human oversight, grounding, logging, and evaluation before anything scales. All of this supplies the reliable data behind CitiStat, delivery work, and public reporting.
 
-### What this service is for
+## How the work fits together
 
-Citywide Data and Analytics makes Baltimore’s data accurate, accessible, governed, and useful for decisions, transparency, service delivery, and public trust.
+The team builds in layers and keeps them distinct. The [Baltimore City Data Platform](../../../what-we-do/products/baltimore-city-data-platform.md) is the governed foundation, where raw sources land, get cleaned, and become governed marts that serve as the official record. The [Baltimore Intelligence Center](../../../what-we-do/programs/baltimore-intelligence-center/index.md) is the program that builds the semantic layer, knowledge graph, and AI products on top of those governed marts; by firm agreement, the intelligence layer reads the governed marts and never re-ingests raw data. Products and portals, including StatGPT, City Services Intelligence, and the Performance Portal, draw on that governed output rather than the raw systems.
 
-This team builds the data foundation that allows OPI and the City to move from questions to insight, from insight to action, and from action to sustained improvement.
+The team insists on definitions, lineage, and ownership up front because everything downstream inherits them.
 
-The work is both technical and civic. It is about pipelines, dashboards, open data, GIS, data governance, AI readiness, and analytics. It is also about trust, accountability, and making sure the City can explain what it knows and how it knows it.
+## What the team owns
 
-### Who we are
+The team owns the Baltimore City Data Platform and the shared data infrastructure around it: pipelines, reusable datasets, and APIs. It owns the analytics and insight products, the executive and Stat dashboards, and GIS. It owns Open Data and Open Baltimore, along with the data governance, classification, quality standards, and KPI dictionary that keep all of it reliable. And it owns the city's responsible-AI readiness standards, working with the Innovation Lab on applied pilots.
 
-We are Baltimore’s civic data infrastructure team.
+## What the team does not own
 
-We turn administrative data into shared assets, reliable measures, insight products, open datasets, maps, dashboards, and decision tools. We sit at the seam between agency operations, executive priorities, public transparency, and technology infrastructure.
+The team does not own agency systems of record or agencies' day-to-day operations. Enterprise infrastructure, identity, security, and production environments belong to BCIT. The performance routines themselves belong to the Performance team. Service redesign and product builds, where the main need is workflow or user experience, belong to the Innovation Lab, with Data as a partner.
 
-We are translators. We translate between agencies and BCIT, between raw data and policy decisions, and between what a dashboard shows and what leaders need to do next.
+The team works closely on all of these. It does not replace the agency, BCIT, Performance, or Innovation roles.
 
-A dashboard is the visible part. Our work is the conditions beneath it that make a dashboard trustworthy in the first place.
+## Governance: OPI owns meaning and enforces it at the gate
 
-### What we do
+Every data element carries a sensitivity tier (Public, Protected, Confidential, or Restricted) aligned to the State of Maryland's four-tier scheme. The tier drives who can see the data, how it is encrypted, and whether an AI product may show it. Access defaults to deny. A governance gate refuses to serve any field or metric that has not cleared governance, no matter what sits in the warehouse. The full model covers classification, stewardship, quality, privacy, and AI accountability, and it lives in the [Data Governance Framework](data-governance-framework.md).
 
-We strengthen Baltimore’s data infrastructure, analytics capacity, open data program, GIS practice, data governance, and AI/data readiness.
+## How the team partners across OPI
 
-Core work includes:
+Data and Analytics is the evidence layer for the whole office. It gives Performance the KPI definitions, dashboards, and data-quality notes behind every Stat. It gives the Innovation Lab the data, APIs, and AI-evaluation support behind its products. It gives Cross-Agency Delivery the shared data models and milestone instrumentation that show whether implementation is working. And it gives AdminOps the publishing cadence and QA behind public-facing data products.
 
-- Building and maintaining data pipelines and shared datasets.
-
-- Developing dashboards, maps, analytics, and reusable insight products.
-
-- Supporting Open Baltimore and high-quality open data publication.
-
-- Establishing data definitions, ownership, methodology cards, refresh standards, and quality rules.
-
-- Supporting data governance routines and data-sharing decisions.
-
-- Helping agencies build data literacy and use data responsibly.
-
-- Preparing Baltimore for responsible AI through evaluation, human oversight, and governance.
-
-- Supporting performance management, delivery activations, and Innovation Lab products with reliable data.
-
-### Why it matters
-
-Every OPI service depends on trustworthy data.
-
-Performance routines fail when agencies use different numbers. Delivery work stalls when data cannot show whether conditions changed. Innovation work suffers when products are built on unstable datasets. Public trust erodes when residents, Council, researchers, and journalists cannot verify what the City reports.
-
-Data is not a side function. It is civic infrastructure.
-
-When this team succeeds, agencies do not rebuild the same extract for every request. Leaders do not debate whose spreadsheet is right. Residents can find public data that is current and understandable. AI pilots are grounded, evaluated, and governed before they scale.
-
-### How we work
-
-We build for reuse, trust, and decision value.
-
-A data product begins with a decision or public need, not with a chart. We clarify who will use the data, what decision it supports, what source systems are involved, who owns the data, how often it refreshes, what caveats apply, and how the product will be sustained.
-
-We prioritize lineage, definitions, and ownership. Methodology is not paperwork after the work. It is part of the work.
-
-We also distinguish analytics products from operational products. If the primary purpose is insight, analysis, open data, governance, or executive reporting, Data and Analytics leads. If the primary purpose is a workflow tool, resident or staff interface, or operational application, the Innovation Lab leads with Data as a partner.
-
-### What we own
-
-The team owns:
-
-- Citywide data platform development and shared data infrastructure.
-
-- Data pipelines, reusable datasets, and APIs.
-
-- Analytics and insight products.
-
-- Executive dashboards and Stat dashboards.
-
-- GIS and spatial analytics.
-
-- Open Data and Open Baltimore.
-
-- Data governance standards, methodology cards, and data quality practices.
-
-- Data literacy and data communities of practice.
-
-- AI/data readiness standards, in partnership with the Innovation Lab on applied pilots.
-
-- Data support for CitiStat, delivery activations, and public reporting.
-
-### What we do not own
-
-The team does not own:
-
-- Agency systems of record.
-
-- Enterprise infrastructure, identity, cybersecurity, and production environments owned by BCIT.
-
-- Agency day-to-day operations.
-
-- Performance routines themselves.
-
-- Service redesign or product builds where the primary need is user experience, workflow, or tool adoption.
-
-*We partner closely on these areas, but we do not replace the agency, BCIT, Performance, or Innovation roles.*
-
-### How we partner across OPI
-
-Data and Analytics is the evidence layer for OPI.
-
-We support Performance with KPI definitions, dashboards, data quality notes, and shared measures.
-
-We support the Innovation Lab with data, APIs, instrumentation, AI evaluation support, and analytics for products and pilots.
-
-We support Cross-Agency Delivery with shared data models, milestone instrumentation, and evidence of whether implementation is working.
-
-We support AdminOps with publishing cadence, public-facing data product coordination, quality assurance, and narrative support.
-
-### What success looks like
-
-Success means Baltimore has data people can trust and use.
-
-We know the work is succeeding when:
+## What success looks like
 
 - Priority datasets have owners, definitions, refresh schedules, and quality standards.
-
 - Stat decks and executive briefings use the same numbers.
-
 - Open Baltimore is current, complete, and useful.
-
-- Agencies reuse shared data products instead of requesting one-off extracts.
-
-- Data quality issues are resolved through governance, not last-minute escalation.
-
-- AI use cases have evaluation memos, human oversight, and sunset criteria.
-
+- Agencies reuse shared data products instead of rebuilding the same extract.
+- AI use cases carry evaluation, human oversight, and sunset criteria before they scale.
 - Residents, Council, researchers, and journalists can verify what the City reports.
 
-- The City’s data infrastructure reduces duplication, vendor dependence, and time spent cleaning the same data repeatedly.
+## Read alongside
 
-### Common outputs
-
-- Dashboards and analytic briefs.
-
-- Data pipelines and reusable datasets.
-
-- Methodology cards.
-
-- Open data releases.
-
-- Data quality dashboards.
-
-- Data product charters.
-
-- GIS maps and spatial analyses.
-
-- Data governance memos.
-
-- AI evaluation memos.
-
-- Data literacy materials and training.
-
-> *Citywide Data and Analytics makes Baltimore’s data trustworthy enough to manage with, transparent enough to share, and useful enough to change decisions.*
+- [Baltimore City Data Platform](../../../what-we-do/products/baltimore-city-data-platform.md): the governed data foundation this team builds.
+- [Baltimore Intelligence Center](../../../what-we-do/programs/baltimore-intelligence-center/index.md): the program building the semantic layer and AI products on top.
+- [Data Governance Framework](data-governance-framework.md): classification, stewardship, quality, privacy, and AI accountability.
+- [On Trustworthy Data](../../letters-from-the-director/on-trustworthy-data.md): the Director's letter on why this work matters.

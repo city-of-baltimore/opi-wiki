@@ -1,14 +1,12 @@
 # CitiStat Templates
 
-{{ page_header(summary="Stakeholder agendas, materials send-out standards, and the deliverable-type vocabulary that supports every Stat.", category="TEMPLATES · AUDIENCE: STAFF", tagline="The recurring artifacts that sit alongside the Method Playbook — generic by design, ready to adapt.") }}
+{{ page_header(summary="Stakeholder agendas, materials send-out standards, and the deliverable-type vocabulary that supports every Stat.", category="TEMPLATES", tagline="The recurring artifacts that sit alongside the Method Playbook: generic by design, ready to adapt.") }}
 
-*Read alongside: OPI CitiStat Method Playbook.*
-
-*The Method Playbook describes the system; this page describes the recurring artifacts each Stat produces. Templates are intentionally generic — names, dates, and content are placeholders to be replaced for each Stat.*
+Templates are intentionally generic. Names, dates, and content are placeholders to be replaced for each Stat.
 
 ## Stakeholder agenda templates
 
-CitiStat uses three recurring stakeholder meetings: a new-Stat alignment, a frame review before each Stat, and a debrief after each Stat. These are the working agendas analysts adapt for their portfolio. None of these templates name individuals; specific attendees are determined by the analyst with the CitiStat Director and the agency Data-Driven Officer.
+CitiStat uses three recurring stakeholder meetings: a new-Stat alignment, a frame review before each Stat, and a debrief after each Stat. These are the working agendas analysts adapt for their portfolio. None of these templates name individuals; specific attendees are determined by the analyst with the Deputy Chief Performance Officer and the agency Data-Driven Officer.
 
 ### New-Stat alignment agenda
 
@@ -38,7 +36,7 @@ Use 5 to 8 days before each Stat. Length is typically 45 minutes.
 
 ### Debrief agenda
 
-Use within 24 hours after each Stat. Length is typically 30 minutes. For agency-based Stats, hold two debriefs — one with the agency, one with Mayor's Office leadership — as described in the Method Playbook.
+Use within 24 hours after each Stat. Length is typically 30 minutes. For agency-based Stats, hold two debriefs, one with the agency and one with Mayor's Office leadership, as described in the Method Playbook.
 
 | **Time**     | **Topic**                                                                                                                                                          |
 |--------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -50,7 +48,7 @@ Use within 24 hours after each Stat. Length is typically 30 minutes. For agency-
 
 ## Materials send-out standard
 
-Pre-meeting materials are distributed at least 48 hours before the Stat (T-2 in the [12-step analyst cycle](method-playbook.md#analyst-execution-cycle-the-12-steps)). The standard send-out includes the prior follow-up memo, the pre-memo, and the deck with questions, posted to the Stat's SharePoint location and distributed by email to the standing distribution list.
+Pre-meeting materials are distributed at least 48 hours before the Stat (T-2 in the [CitiStat cycle](method-playbook.md#the-citistat-cycle)). The standard send-out includes the prior follow-up memo, the pre-memo, and the deck with questions, posted to the Stat's SharePoint location and distributed by email to the standing distribution list.
 
 ### File naming
 
@@ -78,46 +76,9 @@ Printed packets for the room follow a standard top-to-bottom order so panelists 
 2. Pre-memo for the current Stat.
 3. Deck with questions.
 
-## Room setup and breakdown
-
-Room setup is step 10 of the [12-step analyst execution cycle](method-playbook.md#analyst-execution-cycle-the-12-steps). The goal is a clean, working space for both in-person panelists and remote attendees. The same checklist is run before every Stat and reversed after.
-
-### Before the Stat
-
-#### Cleaning and preparation
-
-- Pre-clean the main tables where placards go.
-- Place name-card placards according to the seating chart.
-
-#### AV setup
-
-- Turn on the TVs using the iPad control at the podium.
-- Pull microphones from the AV control room, space them across the main tables, and set one at the podium.
-- Test each microphone and adjust volume.
-
-#### Remote attendees
-
-- Test the Microsoft Teams meeting link with the deck loaded in PowerPoint.
-- Confirm a remote volunteer can see the slides, hear the room, and be heard back.
-
-### After the Stat
-
-#### Cleaning and breakdown
-
-- Collect any Stat memos or printouts left behind.
-- Wipe down the main tables.
-- Collect all name tags and placards and return them to the pre-named folder for that Stat.
-
-#### AV shutdown
-
-- Turn off the TVs using the iPad control at the podium.
-- Mute and turn off all microphones.
-- Return microphones to the AV room — four fit on the charger dock; the rest sit directly next to it.
-- Close the AV room door for security.
-
 ## Follow-up deliverable types
 
-Every commitment recorded in the follow-up memo and commitment tracker uses one of eight standard deliverable types. Using a fixed vocabulary makes the tracker filterable, the weekly status report consistent, and the difference between an information-only update and a substantive deliverable explicit.
+Every follow-up recorded in the follow-up memo and tracker uses one of eight standard deliverable types. Using a fixed vocabulary makes the tracker filterable, the weekly status report consistent, and the difference between an information-only update and a substantive deliverable explicit.
 
 | **Deliverable type**     | **Use when…**                                                                                                                              |
 |--------------------------|--------------------------------------------------------------------------------------------------------------------------------------------|
@@ -126,15 +87,18 @@ Every commitment recorded in the follow-up memo and commitment tracker uses one 
 | Meeting                  | A working session is required to align stakeholders, resolve a question, or sequence next steps.                                           |
 | New Workgroup/Project    | The issue is large enough to warrant a chartered workgroup, tiger team, or project with its own owner, scope, and end date.                |
 | Stat-Agenda Item         | The issue should return as a discussion topic at a future Stat, with a defined frame, data, and decision needed.                           |
-| Stat-Report-Out          | The deliverable is a structured update from the agency at a future Stat — typically a status, dashboard, or progress brief.                |
+| Stat-Report-Out          | The deliverable is a structured update from the agency at a future Stat, typically a status, dashboard, or progress brief.                |
 | To-Do                    | A discrete operational action with a clear owner, due date, and definition of done.                                                        |
-| Written Update (formal)  | A formal written update, often to leadership or external stakeholders, beyond an email — for example, a memo packet, brief, or report.     |
+| Written Update (formal)  | A formal written update, often to leadership or external stakeholders, beyond an email, such as a memo packet, brief, or report.     |
 
-Each deliverable type pairs with an evidence standard in the commitment tracker so closure is unambiguous: the email itself, the memo, the meeting notes and decisions, the workgroup charter, the next Stat agenda, the report-out artifact, the verified action, or the formal document.
+Each deliverable type pairs with an evidence standard in the follow-up tracker so closure is unambiguous: the email itself, the memo, the meeting notes and decisions, the workgroup charter, the next Stat agenda, the report-out artifact, the verified action, or the formal document.
 
 ## Stat artifact templates
 
-Templates should create consistency without creating bureaucracy. Use them to make the work easier to prepare, easier to review, and easier to sustain. The templates below are for the artifacts produced inside a Stat — the pre-memo, the deck, the follow-up memo, the commitment tracker, and the weekly radar. Every artifact below pairs with a checklist on the [CitiStat Quality Standards](quality-standards.md) page.
+Templates should create consistency without creating bureaucracy. Use them to make the work easier to prepare, easier to review, and easier to sustain. The templates below are for the artifacts produced inside a Stat: the pre-memo, the deck, the follow-up memo, the follow-up tracker, and the weekly status report. Every artifact below pairs with a checklist on the [CitiStat Quality Standards](quality-standards.md) page.
+
+!!! note "Where to get the fillable files"
+    This page documents each template's structure. The current fillable versions are controlled documents in the internal SharePoint template library at **Playbooks and Methods › CitiStat › Templates**. Retrieve the file from SharePoint before each Stat so you are always working from the latest controlled version. *(SharePoint links to be added once the library is published.)*
 
 ### Template 1: Pre-meeting memo
 
@@ -142,7 +106,7 @@ Templates should create consistency without creating bureaucracy. Use them to ma
 |------------------------------|--------------------------------------------------------------------------------------------------------|
 | Purpose and decisions needed | Name the objective, decision context, sponsor, and what the session must resolve or advance.           |
 | Agenda and attendees         | List topics, time allocations, required participants, and decision-makers.                             |
-| Prior follow-ups             | Show open, closed, overdue, escalated, and renegotiated commitments from the prior session.            |
+| Prior follow-ups             | Show open, closed, overdue, and escalated follow-ups from the prior session.            |
 | KPI snapshot                 | Summarize core performance measures, targets, trends, and caveats.                                     |
 | Priority topics              | Frame 2–3 issues with data, root-cause hypotheses, resident/field signals, and questions for the room. |
 | Data quality notes           | Define sources, refresh dates, exclusions, limitations, confidence level, and any changes in method.   |
@@ -153,12 +117,12 @@ Templates should create consistency without creating bureaucracy. Use them to ma
 | **Slide / section**               | **Minimum content**                                                                 |
 |-----------------------------------|-------------------------------------------------------------------------------------|
 | 1\. Purpose and decisions         | What this session is for and what decisions are needed.                             |
-| 2\. Commitments from last session | Status by owner, date, and evidence.                                                |
+| 2\. Follow-ups from last session | Status by owner, date, and evidence.                                                |
 | 3\. KPI snapshot                  | Core KPIs, targets, trends, and caveats.                                            |
 | 4\. Resident and field signal     | 311, complaints, surveys, field observations, maps, photos, or frontline insights.  |
 | 5\. Deep dive 1                   | Problem statement, data, root causes, options, decision needed, and proposed owner. |
 | 6\. Deep dive 2                   | Same structure; avoid adding topics that cannot receive meaningful discussion.      |
-| 7\. Commitments and next steps    | Owners, dates, evidence standards, and escalation path.                             |
+| 7\. Follow-ups and next steps    | Owners, dates, evidence standards, and escalation path.                             |
 
 ### Template 3: Follow-up memo
 
@@ -166,38 +130,37 @@ Templates should create consistency without creating bureaucracy. Use them to ma
 |--------------------|-----------------------------------------------------------------------------------------------------|
 | Session summary    | Briefly state what was reviewed and what changed as a result of the session.                        |
 | Decisions made     | Record decisions, decision-maker, date, and operational effect.                                     |
-| Commitments        | List action item, owner, due date, definition of done, and evidence standard.                       |
+| Follow-ups          | List action item, owner, due date, definition of done, and evidence standard.                       |
 | Data requests      | List requested data, source owner, due date, and intended use.                                      |
 | Escalations        | Name issues needing executive decision, delivery activation, product discovery, or data governance. |
 | Next session focus | Identify likely topics, carry-forward items, and data needed for the next cycle.                    |
 
-### Template 4: Commitment tracker
+### Template 4: Follow-up tracker (MS Planner)
 
 | **Field**             | **Definition**                                                                            |
 |-----------------------|-------------------------------------------------------------------------------------------|
-| ID                    | Unique commitment identifier.                                                             |
-| Stat / agency / issue | Routine and topic that produced the commitment.                                           |
-| Commitment            | Specific action to be taken; written as a result-oriented task.                           |
+| ID                    | Unique follow-up identifier.                                                             |
+| Stat / agency / issue | Routine and topic that produced the follow-up.                                           |
+| Follow-up             | Specific action to be taken; written as a result-oriented task.                           |
 | Owner                 | One accountable person, not a group.                                                      |
 | Due date              | Date agreed in session or immediately after.                                              |
 | Evidence of done      | What must be shown to close the item.                                                     |
-| Status                | Not started, in progress, at risk, overdue, escalated, complete, or closed with evidence. |
+| Status                | One of the follow-up colors: White (not due), Yellow (in progress), Red (overdue), Green (complete). |
 | Notes / blockers      | Current update, blocker, or decision needed.                                              |
 | Escalation path       | Named authorizer or routine if the item cannot move.                                      |
 
-### Template 5: Weekly radar / unblock note
+### Template 5: Weekly status report
 
 | **Section**                 | **Question answered**                                             |
 |-----------------------------|-------------------------------------------------------------------|
 | New or emerging issues      | What should leadership know before the next Stat?                 |
 | Top blockers                | What decisions or interventions are needed this week?             |
-| Overdue commitments         | Which commitments missed deadlines and what is the recovery plan? |
+| Overdue follow-ups          | Which follow-ups missed deadlines and what is the recovery plan? |
 | Completed items             | What was closed with evidence this week?                          |
 | Risks to public commitments | What could affect trust, service continuity, or public reporting? |
 | Looking ahead               | What sessions, decisions, or deadlines are coming next?           |
 
-## See also
+## Read alongside
 
-- [CitiStat Method Playbook](method-playbook.md) — the operating standards these templates support.
-- [CitiStat Quality Standards](quality-standards.md) — the QA bar every template output must meet.
-- [CitiStat — Staff Quick Reference](method-staff-quick-reference.md) — the at-a-glance method companion.
+- [CitiStat Method Playbook](method-playbook.md): the operating standards these templates support.
+- [CitiStat Quality Standards](quality-standards.md): the QA bar every template output must meet.

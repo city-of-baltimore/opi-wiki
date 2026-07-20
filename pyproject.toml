@@ -3,7 +3,11 @@ name = "opi-wiki"
 version = "0.1.0"
 description = "A Wiki for all things OPI."
 readme = "README.md"
-requires-python = ">=3.11,<4.0"
+# Platform bill of materials (patapsco/contracts/platform-bom.toml): default
+# 3.14, floor 3.13. Contributions to this wiki arrive through git, not local
+# runs, so a modern floor costs contributors nothing and keeps the toolchain
+# aligned with every sibling repo.
+requires-python = ">=3.13,<3.15"
 dependencies = [
   "mkdocs==1.6.1",
   # Held on the 9.6.x line on purpose: Material 9.7+ prints a build-time advisory
@@ -18,20 +22,30 @@ dependencies = [
   "pymdown-extensions==10.21.3",
 ]
 
-[tool.poetry]
-package-mode = false
-
-[build-system]
-requires = ["poetry-core>=2.0.0,<3.0.0"]
-build-backend = "poetry.core.masonry.api"
+# This is an application, not a distributable package, so uv does not build or
+# install the project itself — only its dependencies.
+[tool.uv]
+package = false
 
 [dependency-groups]
 dev = [
-    "pytest (>=9.0.3,<10.0.0)",
-    "ruff (>=0.15.12,<0.16.0)",
-    "playwright (>=1.58.0,<2.0.0)",
-    "mypy (>=2.1.0,<3.0.0)",
-    "types-pyyaml (>=6.0.12.20260518,<7.0.0.0)"
+    # The `toml` extra lets bandit read its configuration from this file.
+    "bandit[toml]>=1.9.2,<2.0.0",
+    "pytest>=9.0.3,<10.0.0",
+    "ruff>=0.15.12,<0.16.0",
+    "playwright>=1.58.0,<2.0.0",
+    "mypy>=2.1.0,<3.0.0",
+    "types-pyyaml>=6.0.12.20260518,<7.0.0.0",
+    # Patapsco's estate baseline gate, exposed as the `platform-check` console
+    # script. Exact-pinned, not ranged: it is a gate, and a gate that changes
+    # its rule set under you on a routine `uv sync` is not a gate. Bumping it is
+    # a deliberate, reviewable commit.
+    #
+    # It runs in the `ci` plan ALONGSIDE scripts/check_hosted_ci_policy.py, not
+    # instead of it. The two cover different ground and 0.4.3 does not subsume
+    # the local guard — see the "Two checkers" note in that module's docstring
+    # for the gaps that were re-measured against 0.4.3.
+    "baltimore-patapsco==0.4.3",
 ]
 
 [tool.pytest.ini_options]
@@ -41,10 +55,13 @@ testpaths = ["tests"]
 [tool.ruff]
 line-length = 100
 src = ["main.py", "scripts", "tests"]
-target-version = "py311"
+target-version = "py313"
 
 [tool.ruff.lint]
-select = ["E", "F", "I", "B", "BLE", "D", "UP"]
+# The baseline families from the family engineering standard (E,F,I,D,S,T20,B,UP),
+# plus BLE. PL is omitted deliberately: this repository's automation is small,
+# flat, and already held to the no-God-files ceiling by review.
+select = ["E", "F", "I", "B", "BLE", "D", "S", "T20", "UP"]
 ignore = ["D202"]
 
 # D202 is excluded on purpose: the house style separates a docstring from the
@@ -54,8 +71,21 @@ convention = "google"
 
 [tool.ruff.lint.per-file-ignores]
 # Small pure helpers in check scripts read clearly without docstrings.
-"scripts/check_built_links.py" = ["D103"]
-"scripts/check_consistency.py" = ["D103"]
+"scripts/check_built_links.py" = ["D103", "T201"]
+"scripts/check_consistency.py" = ["D103", "T201"]
+# The check_* scripts are argv-driven CLIs whose stdout IS their output, so T201
+# is scoped off there rather than repeated as a per-call noqa. The standard's
+# "no print for status" rule targets library and service code; there is none here.
+"scripts/check_hosted_ci_policy.py" = ["T201"]
+# Tests assert (S101) and pass a literal "/tmp/example" path to fake subprocess
+# runners as a stand-in cwd (S108). Neither string is ever opened or created.
+"tests/*" = ["S101", "S108"]
+
+# Security scanning stays in the lean gate (consistency standard §6); Snyk is
+# manual-only and lives in scripts/security_snyk.sh. Tests are excluded: they
+# assert, and bandit's B101 would flag every one of them.
+[tool.bandit]
+exclude_dirs = ["tests", ".venv", "site", "node_modules"]
 
 [tool.mypy]
 files = ["main.py", "scripts"]

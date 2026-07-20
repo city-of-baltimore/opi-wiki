@@ -22,8 +22,8 @@ ALLOWED_DUPLICATE_DESTINATIONS = {
     "resources/reference/position-descriptions/performance/pd-citistat-program-manager.md",
     "resources/reference/position-descriptions/performance/pd-deputy-chief-performance-officer.md",
     "resources/reference/position-descriptions/performance/pd-senior-performance-analyst.md",
-    "about-us/our-teams/innovation-lab/cross-agency-delivery-service-definition.md",
-    "what-we-do/services/cross-agency-delivery.md",
+    "what-we-do/services/cross-agency-delivery/service-definition.md",
+    "what-we-do/services/cross-agency-delivery/index.md",
     # Added with the How We Work regroup (Organization / Handbook sub-sections):
     "how-we-work/organization/org-structure.md",
     "how-we-work/organization/team-and-roles/index.md",
@@ -32,8 +32,19 @@ ALLOWED_DUPLICATE_DESTINATIONS = {
     # Our Teams folded under About Us (performance pages have 2 legacy paths each):
     "about-us/our-teams/performance/index.md",
     "about-us/our-teams/performance/about-performance.md",
-    "about-us/our-teams/performance/performance-strategy.md",
-    "about-us/our-teams/performance/performance-theory-of-change.md",
+    # July 2026 content consolidation: each team's About page absorbs its retired
+    # Strategy and Theory-of-Change pages; the BIC 7-pager collapses to 4; the
+    # CitiStat Method Playbook absorbs the Staff Quick Reference.
+    "about-us/our-teams/data-and-analytics/about-data-analytics.md",
+    "about-us/our-teams/innovation-lab/about-innovation-lab.md",
+    "about-us/our-teams/directors-office/about-admin-ops.md",
+    "what-we-do/programs/baltimore-intelligence-center/index.md",
+    "what-we-do/programs/baltimore-intelligence-center/architecture-and-roadmap.md",
+    "what-we-do/programs/citistat/method-playbook.md",
+    # July 2026 handbook trims (admin-memos folder, charter/intake retired):
+    "how-we-work/handbook/index.md",
+    "how-we-work/handbook/operations/index.md",
+    "how-we-work/handbook/onboarding/index.md",
 }
 
 
@@ -74,9 +85,12 @@ _MkDocsConfigLoader.add_constructor("!ENV", _construct_env_default)
 def load_redirect_map(config_path: Path) -> dict[str, str]:
     """Return the configured MkDocs redirect map."""
 
-    config = yaml.load(
+    # S506: _MkDocsConfigLoader subclasses yaml.SafeLoader — it only adds
+    # constructors for the two MkDocs tags, and instantiates no arbitrary
+    # objects. ruff cannot see the base class through the subclass.
+    config = yaml.load(  # nosec B506
         config_path.read_text(encoding="utf-8"),
-        Loader=_MkDocsConfigLoader,
+        Loader=_MkDocsConfigLoader,  # noqa: S506
     )
     plugins = config.get("plugins", [])
 

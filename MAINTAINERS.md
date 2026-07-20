@@ -104,7 +104,7 @@ mapping in mind when locating content, and keep the `.pages` title, the
 | `about-us/our-teams/performance/` | Performance | The team that delivers **Citywide Performance Management**; the **CitiStat** program itself lives in `what-we-do/programs/citistat/`. |
 | `about-us/our-teams/data-and-analytics/` | Data and Analytics | The team that delivers **Citywide Data and Analytics**. |
 | `about-us/our-teams/innovation-lab/` | Innovation Lab | Both a team and a service; the products it builds live in `what-we-do/products/`. |
-| `how-we-work/organization/` | Organization | Org chart, org data (`org-structure.data.yml`), and the Team & Roles roster. |
+| `how-we-work/organization/` | Organization | Org chart and the Team & Roles roster, both generated from the canonical people directory (`docs/_data/people.yml`). |
 | `how-we-work/handbook/` | Handbook | Onboarding, operations, how-to guides, and administrative memos. |
 | `what-we-do/` | What We Do | Services, programs (CitiStat and portfolio), and products (Baltimore Intelligence Center). |
 | `programs/citistat/` | CitiStat | A **program** supported by all teams — its own top-level section, not owned by one team. |
@@ -210,10 +210,12 @@ build-time `.metadata.yml`, which drives review cadence and the status badge.)
 ## Structured page data
 
 When one page needs to repeat the same source-of-truth data across charts,
-tables, and roster text, keep that content in a neighboring `*.data.yml` file
-and render it through a shared macro. The org structure page is the current
-example: update `org-structure.data.yml`, not multiple Mermaid blocks and staff
-lists by hand.
+tables, and roster text, keep that content in a shared YAML file and render it
+through a macro. Staff and contractors are the canonical example: the single
+`docs/_data/people.yml` directory drives the org chart, the Team & Roles
+roster, the position-description index, and inline role references (via the
+`people(...)` and `role_holder(...)` macros). Update a person there, not the
+Mermaid blocks, staff lists, or PD index by hand.
 
 ## Page data model
 
@@ -257,7 +259,7 @@ sidecar edit.
 
 ## Staleness audit (quarterly)
 
-Every quarter, run `./scripts/verify.sh` (which includes `mkdocs build --strict`) and audit:
+Every quarter, run `task prepush` (which includes `mkdocs build --strict`) and audit:
 
 1. Pages whose `Last reviewed` field is more than 6 months old.
 2. Pages whose linked source documents have been updated.
@@ -265,15 +267,78 @@ Every quarter, run `./scripts/verify.sh` (which includes `mkdocs build --strict`
 
 Email the relevant section owner with a one-line ask: "Is this still accurate? Any updates?"
 
-The shell entrypoint now delegates to a structured Python verification runner,
-so maintainers get per-step timing and failure summaries without having to
-change their local workflow. If you need a machine-readable report for CI or
-triage, run `./scripts/verify.sh --json-output /path/to/report.json`.
+Every tier delegates to a structured Python verification runner, so maintainers
+get per-step timing and failure summaries. If you need a machine-readable report
+for CI or triage, call the runner directly:
+`./scripts/verify.sh --json-output /path/to/report.json`.
 
-For UI regressions that static checks will miss, maintainers can opt into a
-browser smoke pass with `./scripts/verify.sh --include-browser-smoke`. That
-pass expects a one-time local browser install via
-`poetry run playwright install chromium`.
+For UI regressions that static checks will miss, maintainers run the pre-deploy
+pass with `task validate`, which adds the browser smoke checks. That pass
+expects a one-time local browser install via
+`uv run playwright install chromium`.
+
+### Which gate runs what
+
+`Taskfile.yml` exposes the tiers; `scripts/verify.py` defines the suite once and
+runs it in three nested tiers:
+
+| Tier | Where | Covers |
+|---|---|---|
+| `task ci` | pull-request CI, fast local loop | hosted-CI policy guard, lint, mypy, bandit, metadata, brand terms, style, consistency, raw HTML links |
+| `task prepush` | the pre-push hook and the Pages deploy gate | everything above, plus pytest, `mkdocs build --strict`, the built-site link crawl, and the accessibility checks |
+| `task validate` | locally, before a deploy | everything above, plus the Playwright browser smoke checks |
+
+Each tier is a strict prefix of the next, so nothing is lost by moving a check
+down a tier — it runs later, not never.
+
+Pull-request CI is deliberately lean — **no test suite, no site build, no
+browser** — per section 4 of the civic-app consistency standard.
+`scripts/check_hosted_ci_policy.py` fails the build if that ever regresses,
+including through indirection: it statically resolves both the `Taskfile.yml`
+task graph and the `verify.py` plans, so adding a heavy step to any task `ci`
+reaches is caught.
+
+The `ci` plan also runs Patapsco's published `platform-check`
+(`baltimore-patapsco`, exact-pinned in the dev group), which owns the shared
+estate baseline: the app marker, the slot-8 ports, the task surface, tooling
+configuration, and the pre-push hook. Keep **both**. `platform-check` 0.4.3 does
+not expand `verify.py` plans (it expands `npm` and `.sh` bodies, but not a
+Python plan module), has no job-timeout rule, and has no `run:`/`uses:`
+allowlist, so it returns "conforms" for four of the five violations the local
+guard fails on. The comparison runs both ways: the 0.4.1 sweep caught two
+Taskfile forms the local guard missed — a block-list `deps:` and a `silent: true`
+task — which are now fixed and regression-tested here, and the 0.4.3 sweep found
+a third that is not yet fixed (a new `.sh` in the task chain that runs a
+forbidden command directly). The measured gaps, and the condition under which
+the local guard can finally be deleted — still unmet at 0.4.3 — are recorded in
+the "Two checkers" note in that module's docstring.
+If you bump the pin, re-run that comparison before assuming it is now redundant.
+**The practical consequence: a broken test or strict build is not caught on the
+PR; it surfaces at `git push` (via the hook) or on the deploy run after merge.**
+
+Install the hook once per clone:
+
+```bash
+task setup
+```
+
+`git push --no-verify` skips it entirely. With tests out of hosted CI, that flag
+is the one way a broken suite reaches `main` unnoticed — use it knowingly.
+
+### If a hosted run looks stuck
+
+Every hosted job declares `timeout-minutes`, and every verification step is
+bounded by `--step-timeout` (600 seconds by default), so a hang fails with a
+named step rather than burning GitHub's six-hour default. Progress lines are
+flushed as they happen, so the live log always shows which step is running.
+If a run still looks stuck, the last flushed `[n/m] <step>...` line names it.
+
+### Advisory security scan
+
+`./scripts/security_snyk.sh` runs a manual Snyk source-code scan. It is in no
+gate by design (Snyk plans cap scan counts), and it does not cover this repo's
+uv-managed Python dependencies — that coverage comes from the server-side Snyk
+integration. See `patapsco/docs/operations/snyk-scanning.md`.
 
 ## Bus factor mitigation
 
@@ -288,9 +353,10 @@ This role has a high bus factor by design (it's one person). Mitigations:
 | Tool | Purpose |
 |---|---|
 | GitHub Enterprise (this repo) | Source of truth, version control, CI/CD |
-| Poetry | Python dependency and environment management |
+| uv | Python dependency and environment management |
 | MkDocs Material | Site renderer (local preview + production build) |
-| `./scripts/verify.sh` | Standard local verification pass |
+| `task` ([Taskfile](https://taskfile.dev)) | The command surface: `task prepush` is the standard local pass, `task ci` the PR-CI subset, `task validate` the pre-deploy pass. `task --list` shows the rest |
+| `./scripts/security_snyk.sh` | Manual, advisory Snyk source scan (never a gate) |
 | Pandoc | Convert .docx → Markdown when migrating Drive content |
 | VS Code (or any Markdown editor) | Authoring |
 | Google Drive | Read-access to the OPI Foundations folder for source materials |
@@ -298,7 +364,7 @@ This role has a high bus factor by design (it's one person). Mitigations:
 
 ## Onboarding a new maintainer
 
-Day 1: read this document and `CONTRIBUTING.md`. Run `poetry run mkdocs serve` locally. Read every page on the live site.
+Day 1: read this document and `CONTRIBUTING.md`. Run `task setup` then `task serve` locally. Read every page on the live site.
 
 Week 1: shadow the previous maintainer through one full intake cycle (issue → PR → merge → deploy).
 

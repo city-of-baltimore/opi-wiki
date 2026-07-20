@@ -15,6 +15,9 @@ if str(REPO_ROOT) not in sys.path:
 
 DOCS_DIR = REPO_ROOT / "docs"
 
+# Canonical single-source people directory, relative to DOCS_DIR.
+PEOPLE_DATA_PATH = "_data/people.yml"
+
 
 class PageFile(Protocol):
     """Minimal protocol for the current MkDocs page file."""
@@ -40,7 +43,10 @@ class MacroEnvironment(Protocol):
 def _render_markup(rendered: str) -> Markup:
     """Wrap rendered HTML or Markdown in a Markup object for MkDocs."""
 
-    return Markup(rendered)
+    # S704: the wrapped string is always HTML this repository's own renderers
+    # built from tracked docs/ data at build time. There is no request, no user
+    # input, and no runtime template rendering anywhere in a static docs build.
+    return Markup(rendered)  # nosec B704  # noqa: S704
 
 
 def _render_docs_markup(
@@ -128,3 +134,24 @@ def define_env(env: MacroEnvironment) -> None:
             render_data=render_org_structure,
             render_args=(section,),
         )
+
+    @env.macro
+    def people(section: str) -> Markup:
+        """Render a section of the canonical people directory (_data/people.yml)."""
+
+        from scripts.repo_tools.people import load_people, render_people
+
+        return _render_docs_markup(
+            PEOPLE_DATA_PATH,
+            load_data=load_people,
+            render_data=render_people,
+            render_args=(section,),
+        )
+
+    @env.macro
+    def role_holder(title: str) -> str:
+        """Return the name of the staff member holding the given working title."""
+
+        from scripts.repo_tools.people import find_role_holder, load_people
+
+        return find_role_holder(load_people(DOCS_DIR, PEOPLE_DATA_PATH), title)

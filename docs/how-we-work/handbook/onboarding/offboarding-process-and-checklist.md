@@ -4,26 +4,9 @@
 
 Protecting continuity, security, and OPI’s credibility through humane, predictable transitions.
 
-AUDIENCE
-:   Departing staff, managers, AdminOps, IT
-
-OWNER
-:   Director's Office
-
-VERSION
-:   v1.0 · May 2026
-
 ## Principles
 
-- **No surprises:** Leaders and key partners know the transition plan early.
-
-- **Continuity by design:** Work is easy to pick up because documentation is current.
-
-- **Security and privacy:** Access is removed on time and sensitive data is handled correctly.
-
-- **Respectful transitions:** Clear expectations, predictable steps, and professional closure.
-
-> *Offboarding is how we protect the trust we built during onboarding.*
+Four ideas guide how we handle a departure. There are no surprises: leaders and key partners learn the transition plan early. Continuity is built in, so the work is easy to pick up because the documentation is current. Security and privacy hold, so access is removed on time and sensitive data is handled correctly. And the transition stays respectful, with clear expectations, predictable steps, and a professional close. Done well, offboarding protects the trust we built during onboarding.
 
 ## When notice is received (Day 0 – Day 2)
 
@@ -88,9 +71,9 @@ Ensure portfolio visibility and decision support artifacts remain current and ow
 
 Protect continuity of performance routines, Stat preparation, and agency relationships.
 
-- T-10 days: transfer ownership of Stat calendars, pre-read folders, memo templates, and commitment trackers.
+- T-10 days: transfer ownership of Stat calendars, pre-read folders, memo templates, and follow-up trackers.
 
-- T-10 days: document key agency relationships — contacts, sensitivities, open commitments, next decision points.
+- T-10 days: document key agency relationships (contacts, sensitivities, open commitments, next decision points).
 
 - T-7 days: ensure KPI Dictionary updates are complete. Avoid orphaned metric definitions and stale dashboards.
 
@@ -120,7 +103,7 @@ Protect engagement continuity and design artifact integrity.
 
 ### Manager responsibilities (all portfolios)
 
-- Day 0–2: clarify communications — who needs to know, when, and what will be shared.
+- Day 0–2: clarify communications (who needs to know, when, and what will be shared).
 
 - T-10 days: re-plan commitments. Reassign owners, re-scope, or formally pause work.
 
@@ -130,20 +113,20 @@ Protect engagement continuity and design artifact integrity.
 
 ## Appendix. Handoff Pack template
 
-Create a SharePoint document titled: \[LastName\] — Handoff Pack — \[Role\] — \[YYYY-MM-DD\]. The template has eight sections.
+Create a SharePoint document titled `[LastName] - Handoff Pack - [Role] - [YYYY-MM-DD]`. The template has eight sections.
 
-1.  Work summary — what I owned and what I contributed to.
+1.  Work summary: what I owned and what I contributed to.
 
-2.  Current status — what is done, what is in progress, what is blocked.
+2.  Current status: what is done, what is in progress, what is blocked.
 
-3.  Next 30 days — critical deadlines, meetings, decisions.
+3.  Next 30 days: critical deadlines, meetings, decisions.
 
-4.  Key stakeholders and relationships — internal and agency partners.
+4.  Key stakeholders and relationships: internal and agency partners.
 
-5.  Key links — SharePoint folders, Planner plans, Jira boards, dashboards, repos.
+5.  Key links: SharePoint folders, Planner plans, Jira boards, dashboards, repos.
 
-6.  Risks and watch-outs — what can go wrong, early warning signals.
+6.  Risks and watch-outs: what can go wrong, early warning signals.
 
-7.  Decisions and rationale — what we decided and why.
+7.  Decisions and rationale: what we decided and why.
 
 8.  Open questions and recommendations.

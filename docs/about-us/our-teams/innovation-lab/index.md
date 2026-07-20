@@ -1,8 +1,6 @@
 # Innovation Lab
 
-> Service improvement, civic design, product methods, and applied innovation — used to make city services easier to use and easier to manage.
-
-The Innovation Lab is OPI’s service improvement and applied innovation capability. It owns the craft of solving: discovery, service design, user research, product management, prototyping, civic technology, applied AI pilots, and MVP-and-handoff methods. The Lab can work on one-agency or multi-agency problems. When implementation requires multiple agencies to move together with named decision rights, the Lab partners with [Cross-Agency Delivery](../../../what-we-do/services/cross-agency-delivery.md).
+The Innovation Lab is Baltimore's in-house public-innovation team. It uses service design, civic design, product methods, and applied innovation to make city services easier to use and easier to manage. The Lab runs the [Public Innovation Toolkit](https://publicinnovation.jhu.edu/) method, which moves from discovery through service design, research, prototyping, and piloting to the build and handoff of digital products, and turns priority challenges into service improvements residents and staff actually use. The Lab can work on one-agency or multi-agency problems; when a fix requires several agencies to move together with named decision rights, it partners with [Cross-Agency Delivery](../../../what-we-do/services/cross-agency-delivery/index.md).
 
 Read this section alongside [How Work Moves Through OPI](../../../how-we-work/how-work-moves-through-opi.md), which explains how CitiStat, Data and Analytics, the Innovation Lab, Cross-Agency Delivery, and AdminOps fit together.
 
@@ -15,6 +13,10 @@ Read this section alongside [How Work Moves Through OPI](../../../how-we-work/ho
 The
 [Resources → Position Descriptions](../../../resources/reference/position-descriptions/index.md)
 directory is the single maintained record of Innovation Lab roles. Current staffed
-roles are the Innovation Program Manager (Gabriel Watson), Civic Designer,
+roles are the Innovation Program Manager ({{ role_holder("Innovation Program Manager") }}), Civic Designer,
 Applied Data Scientist, and Full Stack Engineer. The Lab's civic-technology
 leadership is held directly by the Innovation Program Manager.
+
+## Read alongside
+
+- [Team and Roles](../../../how-we-work/organization/team-and-roles/index.md): the live staff roster, cost centers, and open positions.

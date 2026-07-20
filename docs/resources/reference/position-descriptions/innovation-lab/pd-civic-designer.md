@@ -1,4 +1,4 @@
-# PD — Civic Designer
+# PD: Civic Designer
 
 {{ page_header(summary="Position description for the Civic Designer.") }}
 
@@ -41,7 +41,7 @@ The Civic Designer applies service design, applied research, and human-centered 
 
 - Coordinate partner meetings and briefings; prepare one-pagers, talking points, and follow-up notes.
 
-- Track commitments, deliverables, and dates; surface risks and needed decisions to the Innovation Program Manager.
+- Track commitments, deliverables, and dates; flag risks and needed decisions to the Innovation Program Manager.
 
 ### Storytelling and Communications Support
 
@@ -67,7 +67,7 @@ The Civic Designer applies service design, applied research, and human-centered 
 
 ### Operations management
 
-- Ability to manage multiple priorities and deliver on a defined cadence.
+- Ability to manage multiple priorities and deliver on a defined schedule.
 
 - Ability to compile financial and operational data and to analyze charts, reports, and statistical statements.
 

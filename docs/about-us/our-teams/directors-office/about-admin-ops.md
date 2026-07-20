@@ -1,209 +1,48 @@
 # About AdminOps
 
-{{ page_header(summary="What AdminOps does inside the Director's Office.", category="ABOUT · SERVICE") }}
+{{ page_header(summary="The operations and communications team that lets a small office deliver citywide work.", category="ABOUT · SERVICE") }}
 
-**AdminOps**
+AdminOps keeps OPI running. A small office doing citywide work still has to schedule the meetings, track the budget, hire and onboard people, keep the records, and explain the work to leadership and the City Council. AdminOps does that, so the performance, data, design, and delivery teams can focus on the work itself. It covers the Director's Office and Chief of Staff functions, portfolio management, communications, executive and Council support, and knowledge management.
 
-*The operating backbone that keeps OPI aligned, coordinated, resourced, and credible.*
+This is not overhead. It is what lets a small, multidisciplinary office deliver citywide work credibly, and it keeps the other four teams working as one system rather than five separate ones.
 
-*Read alongside: OPI Service Theory of Change — AdminOps.*
+## Internal operations
 
-*This About doc explains the service in plain language. The Theory of Change doc explains how the service is mandated, governed, staffed, measured, and sustained.*
+New work comes in one front door. AdminOps sizes it up, weighs it against the office's capacity, and routes it to the right team, which is how OPI says yes responsibly and no on purpose. Once work is underway, the Book of Business keeps it visible, so leaders can see risks, blockers, decisions, and capacity in one place.
 
-## PURPOSE
+The office runs on a set of standing routines: leadership huddles, portfolio reviews, All Hands, and retrospectives that keep things moving without sliding into chaos. AdminOps maintains the knowledge base so that what the office knows survives staffing changes, including SharePoint standards, templates, SOPs, glossaries, and transition packets. It handles the administrative core, from fiscal and procurement to HR, facilities, equipment, and onboarding and offboarding. And it runs quality assurance on anything headed to the public or to leadership.
 
-### What this service is for
+## Communications
 
-AdminOps keeps OPI aligned, coordinated, resourced, documented, and understood.
+Communications is how OPI explains what changed, what it learned, what is still hard, and what comes next. It is a plain account of the work, not spin. That means executive and Council support (briefings, talking points, testimony, and hearing prep), public content (branding, website, editorial planning, and plain-language summaries), and partnership coordination (brokering, tracking, and closing the loop on commitments).
 
-This service is the operating backbone for the office. It supports the Executive Director, team leads, staff, agencies, city leadership, Council, partners, and public audiences by making OPI’s work visible, organized, and sustainable.
+## What AdminOps owns
 
-AdminOps is not overhead. It is the discipline that lets a small, multidisciplinary office deliver citywide work credibly.
+Officewide intake and routing; the Book of Business and portfolio visibility; leadership meetings; communications, branding, and editorial planning; Council relations and executive briefing support; partnership tracking and closeout; knowledge management and document standards; fiscal, procurement, HR, and facilities coordination; onboarding and offboarding; and QA and publication readiness.
 
-### Who we are
+## What AdminOps does not own
 
-We are the executive and operational core of OPI.
+AdminOps coordinates, tracks, briefs, and supports these areas, but the work itself belongs to others:
 
-This includes the Director’s Office functions, Chief of Staff function, portfolio management, communications, partnerships coordination, executive support, Council relations, fiscal and procurement coordination, HR and facilities support, knowledge management, internal routines, and quality assurance.
+- Stat methodology and performance practices belong to [Performance](../performance/index.md). Field validation and inspections sit there too, though the CitiStat Inspector is budgeted in the AdminOps cost center, because team and cost center do not always line up (see the [cost center view](../../../how-we-work/organization/team-and-roles/index.md#cost-center-view)).
+- Data engineering, open data, and KPI definitions belong to [Data and Analytics](../data-and-analytics/index.md).
+- Service design, product builds, and digital tools belong to the [Innovation Lab](../innovation-lab/index.md).
+- Long-horizon cross-agency delivery belongs to [Cross-Agency Delivery](../../../what-we-do/services/cross-agency-delivery/index.md).
+- Agency operations, and citywide HR, IT, finance, and procurement systems, belong to those agencies.
 
-We keep the office moving without letting it slide into chaos. We protect priorities, support staff, document decisions, prepare leaders, tell the story, and make sure work does not disappear when a meeting ends or a person changes roles.
+## How AdminOps partners across OPI
 
-### What we do
+AdminOps supports every other team: Performance with calendar coordination, public summaries, and annual reporting for the Stat portfolio; Data and Analytics with publishing cadence and partner communications; the Innovation Lab with launch communications, briefings, and QA; and Cross-Agency Delivery with portfolio visibility, escalation tracking, and closeout. Partnerships are tied to a portfolio priority, not loose relationship-building. Each team owns the partnerships tied to its work, and AdminOps brokers, tracks, briefs, and closes the loop.
 
-AdminOps coordinates the conditions that allow OPI’s five services to work as one system.
+## What success looks like
 
-Core work includes:
+Intake is fast, predictable, and routed to the right team. Portfolio status is current, and leaders can see risk and capacity at a glance. Briefings are on time, accurate, and aligned. Public materials are clear, accessible, factual, and checked before they ship. New staff get up to speed quickly, and what the office knows survives turnover. The office moves fast, with intention.
 
-- Officewide intake and triage.
+## Read alongside
 
-- Portfolio visibility and Book of Business management.
-
-- Leadership huddles, portfolio reviews, All Hands, retrospectives, and internal operating routines.
-
-- Executive briefings, talking points, Q&A trees, testimony, and Council preparation.
-
-- Communications, branding, narrative, website content, and public summaries.
-
-- Partnership tracking, briefing, follow-up, and closeout.
-
-- Knowledge management, SharePoint standards, templates, glossaries, SOPs, and onboarding materials.
-
-- Fiscal, procurement, HR, facilities, equipment, and administrative coordination.
-
-- Quality assurance for public-facing and leadership-facing materials.
-
-- Field validation coordination when evidence is needed to confirm conditions or closure.
-
-### Why it matters
-
-A small office cannot operate citywide without strong operating discipline.
-
-Without AdminOps, every request has a different intake path, every project has a different status format, every briefing starts from scratch, and every public artifact carries risk.
-
-AdminOps creates the shared standards that make OPI reliable. Clarity is not bureaucracy. Clarity protects people, quality, and impact.
-
-### How we work
-
-We make the work easy to follow.
-
-AdminOps uses shared intake, standard problem statements, charters, status reports, portfolio reviews, decision logs, QA checklists, and knowledge systems to keep work moving and understood.
-
-We help OPI say yes responsibly and no on purpose. New work should be routed through intake, assessed for impact and fit, assigned to the right service, and weighed against existing capacity.
-
-We keep the story honest. Communications is how OPI explains what changed, what we learned, what remains hard, and what comes next — not spin, but a plain account of the work.
-
-### What we own
-
-AdminOps owns:
-
-- Officewide intake and routing.
-
-- Book of Business and portfolio visibility.
-
-- Leadership routines and internal operating cadence.
-
-- Communications, branding, narrative, and editorial planning.
-
-- Council relations and executive briefing support.
-
-- Partnership tracking, coordination, and closeout.
-
-- Knowledge management and document standards.
-
-- Fiscal, procurement, HR, facilities, and administrative coordination.
-
-- Onboarding and offboarding coordination.
-
-- QA and publication readiness.
-
-- Internal operating tools that support portfolio visibility and office management.
-
-- Field validation coordination when connected to quality assurance, Stat closure, or executive evidence.
-
-### What we do not own
-
-AdminOps does not own:
-
-- Stat methodology.
-
-- Data engineering or open data publication.
-
-- Service design, user research, prototyping, or UAT.
-
-- Product builds or digital service tools.
-
-- Long-horizon cross-agency delivery activations.
-
-- Agency day-to-day operations.
-
-- Citywide HR, IT, finance, or procurement systems.
-
-*AdminOps coordinates, tracks, briefs, and supports these areas. It does not replace the service owners.*
-
-### How we partner across OPI
-
-AdminOps supports every other service.
-
-It supports Performance with calendar coordination, public summaries, field validation coordination, annual reporting, and operational support for the Stat portfolio.
-
-It supports Data and Analytics with publishing cadence, public-facing data product coordination, partner communications, and narrative support.
-
-It supports the Innovation Lab with launch communications, Council and executive briefings, partnership tracking, public narrative, and QA.
-
-It supports Cross-Agency Delivery with portfolio visibility, escalation tracking, executive briefing materials, Council coordination, and closeout documentation.
-
-### Field evidence rule
-
-Fieldwork has different homes depending on the purpose.
-
-If the purpose is discovery, user research, usability, or service design, the Innovation Lab leads.
-
-If the purpose is verifying whether a Stat commitment was completed or whether a condition changed, Performance leads with AdminOps coordination.
-
-If the purpose is confirming implementation conditions for a delivery activation, Cross-Agency Delivery leads.
-
-AdminOps coordinates field logistics, evidence standards, documentation, and quality assurance where needed.
-
-### Partnership operating rule
-
-Partnerships should be tied to a portfolio priority, not managed as disconnected relationship-building.
-
-Innovation Lab owns partnerships tied to service improvement, civic technology, design, fellowships, applied AI, and innovation funding.
-
-Data and Analytics owns partnerships tied to open data, data governance, research, civic data, and analytics.
-
-Performance owns partnerships tied to performance practice, CitiStat methods, delivery learning, and performance management capacity.
-
-AdminOps brokers, tracks, briefs, documents, and closes the loop on partnership commitments.
-
-### What success looks like
-
-Success means OPI runs with clarity, credibility, and continuity.
-
-We know the work is succeeding when:
-
-- Intake is fast, predictable, and routed to the right service.
-
-- Portfolio status is current and useful.
-
-- Leaders can see risks, blockers, decisions, and capacity.
-
-- Briefings are on time, accurate, and aligned.
-
-- Public-facing materials are clear, accessible, factual, and QA’d.
-
-- Staff onboard quickly and understand how OPI works.
-
-- Knowledge survives staffing changes.
-
-- Council, agencies, funders, and partners understand OPI’s value.
-
-- The office can move fast with intention, not chaos.
-
-### Common outputs
-
-- Intake records.
-
-- Portfolio status snapshots.
-
-- Book of Business reports.
-
-- Leadership agendas and notes.
-
-- Briefing books.
-
-- Talking points and Q&A trees.
-
-- Council testimony and hearing prep.
-
-- Editorial calendars.
-
-- Website and public narrative content.
-
-- QA checklists.
-
-- Onboarding packages.
-
-- SOPs, templates, glossaries, and transition packets.
-
-> *AdminOps makes OPI’s work visible, coordinated, credible, and sustainable.*
+- [Director's Office](index.md): the team AdminOps runs within.
+- [Team and Roles](../../../how-we-work/organization/team-and-roles/index.md): the live roster, cost centers, and open positions.
+- [Org Structure](../../../how-we-work/organization/org-structure.md): current reporting lines and staff alignment.
+- [Operations handbook](../../../how-we-work/handbook/operations/index.md): the routines AdminOps maintains.
+- [How Work Moves Through OPI](../../../how-we-work/how-work-moves-through-opi.md): where AdminOps sits in the operating model.
+- [On AdminOps](../../letters-from-the-director/on-admin-ops.md): the Director's letter on why this work matters.

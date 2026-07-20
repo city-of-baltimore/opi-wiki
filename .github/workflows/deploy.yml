@@ -1,10 +1,15 @@
 name: Deploy to GitHub Pages
 
-# Builds and deploys the site to GitHub Pages on every push to main. The full
-# scripts/verify.py suite gates the deploy, so a direct-to-main commit gets the
-# same checks as a PR. The committed site_url defaults to the future custom
-# domain; OPI_SITE_URL (read via !ENV in mkdocs.yml) points this build at the
-# Pages base URL without rewriting any tracked file.
+# Builds and deploys the site to GitHub Pages on every push to main. This is the
+# pre-deploy gate: it runs the prepush plan — the static checks that pull-request
+# CI runs, plus the repo-automation test suite, the strict MkDocs build, the
+# built-site link crawl, and the accessibility checks that need site/. Nothing
+# the PR lane skips reaches production unchecked. The committed site_url defaults
+# to the future custom domain; OPI_SITE_URL (read via !ENV in mkdocs.yml) points
+# this build at the Pages base URL without rewriting any tracked file.
+#
+# Deploy workflows are exempt from the lean-CI rule — building is their job —
+# so scripts/check_hosted_ci_policy.py does not scan this file.
 
 on:
   push:
@@ -23,24 +28,36 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
+    timeout-minutes: 20
     steps:
       - uses: actions/checkout@9c091bb21b7c1c1d1991bb908d89e4e9dddfe3e0 # v7.0.0
-
-      - uses: actions/setup-python@a309ff8b426b58ec0e2a45f0f869d46889d02405 # v6.2.0
         with:
-          python-version: "3.12"
+          persist-credentials: false
+
+      - uses: actions/setup-python@ece7cb06caefa5fff74198d8649806c4678c61a1 # v6.3.0
+        with:
+          python-version: "3.14"
+
+      - uses: arduino/setup-task@c0bc642852239c2689f73f4ea6459c29405f3c52 # v2
+        with:
+          version: 3.49.1
+
+      - name: Install uv
+        timeout-minutes: 5
+        run: pip install uv==0.11.28
 
       - name: Install dependencies
-        run: |
-          pip install poetry==2.4.1
-          poetry install --no-interaction --no-ansi
+        timeout-minutes: 5
+        run: uv sync --frozen
 
-      # scripts/verify.py is the single source of truth for the check suite;
-      # its strict-build step produces the site/ artifact uploaded below.
-      - name: Run verification suite (gates the deploy, builds site/)
+      # `task prepush` is the same command the local pre-push hook runs; its
+      # strict-build step produces the site/ artifact uploaded below. This is
+      # the gate that owns the tests, the build, and the built-site checks.
+      - name: Run the prepush gate (gates the deploy, builds site/)
+        timeout-minutes: 10
         env:
           OPI_SITE_URL: https://city-of-baltimore.github.io/opi-wiki/
-        run: poetry run python scripts/verify.py
+        run: task prepush
 
       - uses: actions/upload-pages-artifact@fc324d3547104276b827a68afc52ff2a11cc49c9 # v5.0.0
         with:
@@ -49,6 +66,7 @@ jobs:
   deploy:
     needs: build
     runs-on: ubuntu-latest
+    timeout-minutes: 10
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}

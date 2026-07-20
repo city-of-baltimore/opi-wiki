@@ -42,7 +42,7 @@ That is a high standard. We are not going to meet it on every initiative. But it
 
 ## A discipline of finishing
 
-In the end, cross-agency delivery is a discipline of finishing. There is no shortage of plans, strategies, working groups, and announcements in city government. There is a shortage of finished work — redesigned services that are running, new routines that are sustained, written commitments that were kept. Our job is to add to that smaller, more important pile.
+In the end, cross-agency delivery is a discipline of finishing. There is no shortage of plans, strategies, working groups, and announcements in city government. There is a shortage of finished work: redesigned services that are running, new routines that are sustained, written commitments that were kept. Our job is to add to that smaller, more important pile.
 
 Baltimore has plenty of talent, plenty of urgency, and plenty of problems worth solving. What we owe residents is the resolve to take the most important of those problems, name them clearly, organize the right people, and finish what we start. That is what cross-agency delivery is for.
 
@@ -56,13 +56,13 @@ Mayor’s Office of Performance and Innovation
 
 *City of Baltimore · Brandon M. Scott, Mayor*
 
-## READ ALONGSIDE
+## Read alongside
 
-**About OPI: Cross-Agency Delivery —** *what the team owns and how to engage it.*
+**About OPI: Cross-Agency Delivery:** *what the team owns and how to engage it.*
 
-**ToC: Cross-Agency Delivery —** *logic model, governance, and engagement model.*
+**ToC: Cross-Agency Delivery:** *logic model, governance, and engagement model.*
 
-**Tiger Teams Playbook —** *how OPI runs short-cycle cross-agency improvement work.*
+**Tiger Teams Playbook:** *how OPI runs short-cycle cross-agency improvement work.*
 
 ## Plain-language operating distinction
 

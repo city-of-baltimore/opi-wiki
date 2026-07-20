@@ -1,26 +1,17 @@
-# Performance Standards — Manager Companion
+# Performance Standards: Manager Companion
 
 {{ page_header(summary="How managers operationalize the staff performance standards.", category="SERIES · OPI FOUNDATIONS") }}
 
-Calibration packet, calibration questions, and a bias check. Companion to the Staff v2 guide.
-
-VERSION
-:   v2.0
+The calibration packet, the calibration questions, and a bias check. Companion to the staff guide.
 
 EFFECTIVE
 :   July 1, 2026
 
-AUDIENCE
-:   OPI managers and calibration leads
-
-OWNER
-:   OPI Director’s Office
-
 ## How to use this companion
 
-This document is a manager-only companion to the OPI Performance Standards — Staff v2 guide. It defines the calibration packet, calibration questions, and a brief bias check. Use it before every quarterly check-in, mid-cycle 360-lite, and end-of-cycle calibration. Bring it to calibration meetings.
+This is a manager-only companion to the OPI Performance Standards (Staff) guide. It defines the calibration packet, the calibration questions, and a short bias check. Use it before every quarterly check-in, mid-cycle 360-lite, and end-of-cycle calibration, and bring it to calibration meetings.
 
-> *Calibration is for fairness and shared standards. It is not stack ranking, it does not reward politics, and it does not punish people for constraints outside their control when they escalated appropriately.*
+Keep the point of calibration in view. It is there for fairness and shared standards. It is not stack ranking, it does not reward politics, and it does not punish people for constraints outside their control when they raised the risk in time.
 
 ## The calibration packet
 
@@ -36,17 +27,17 @@ Each manager brings a calibration packet for each staff member. The packet is th
 
 ## Calibration questions
 
-Use these five questions for each staff member during calibration. Anchor every claim to a link in the evidence bundle.
+Ask these five questions for each staff member during calibration, and anchor every claim to a link in the evidence bundle.
 
-- **Impact:** What changed because of this person’s work? What is the evidence?
+1.  What changed because of this person’s work, and what is the evidence?
 
-- **Scope and constraints:** What was the scope and constraint context for the cycle?
+2.  What was the scope, and what constraints shaped the cycle?
 
-- **Ownership:** What did they own, and what did they support?
+3.  What did they own, and what did they support?
 
-- **Risk handling:** How was risk handled across accuracy, approvals, privacy, and QA?
+4.  How was risk handled across accuracy, approvals, privacy, and QA?
 
-- **Durable assets:** Did they build durable assets that others can reuse (templates, SOPs, datasets, components, runbooks)?
+5.  Did they build assets others can reuse, such as templates, SOPs, datasets, components, or runbooks?
 
 ## Bias check
 
@@ -62,13 +53,7 @@ Run this check before finalizing a rating. If you answer yes to any item, return
 
 ## Calibration principles
 
-- **Not stack ranking:** Calibration is to ensure fairness and shared standards. It does not enforce a distribution.
-
-- **Not rewarding politics:** Visibility is not the same as impact. Politics is not the same as performance.
-
-- **Not penalizing escalation:** Staff who flagged risk early and worked the problem are not penalized when external constraints prevented an outcome.
-
-- **Consistency across teams:** Two staff members with comparable scope, evidence, and outcomes should land at comparable ratings, regardless of team.
+Calibration exists for fairness and shared standards, and a few principles keep it honest. It does not enforce a distribution, so it is not stack ranking. It does not reward politics: visibility is not impact, and being seen is not the same as performing. It does not penalize escalation, so staff who flagged risk early and worked the problem are not marked down when constraints outside their control blocked the outcome. And it holds across teams: two staff members with comparable scope, evidence, and outcomes should land at comparable ratings, whatever team they sit on.
 
 ## Manager checklist before calibration
 

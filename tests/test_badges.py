@@ -39,7 +39,7 @@ def test_approved_badge_token_is_retired() -> None:
 def test_define_env_registers_badge_macros() -> None:
     """The macros module should expose both explicit and page-derived badges."""
 
-    env = register_macros("how-we-work/handbook/operations/charter-template.md")
+    env = register_macros("how-we-work/handbook/operations/problem-statement-template.md")
 
     assert str(env.macros["badge"]("reference")) == (
         '<span class="opi-pill internal">Reference</span>'

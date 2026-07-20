@@ -1,16 +1,8 @@
 - meta: Document
-  title: "About Data Analytics"
-  body: "What the Data and Analytics team does inside OPI."
+  title: "About Data and Analytics"
+  body: "What the team does, what it owns, how it governs city data, and what it's building."
   href: about-data-analytics/
-- meta: Strategy
-  title: "Data Analytics Strategy"
-  body: "OPI's strategy for citywide data and analytics work."
-  href: data-analytics-strategy/
 - meta: Framework
   title: "Data Governance Framework"
-  body: "The framework OPI uses to govern city data assets."
+  body: "How OPI classifies, stewards, secures, and governs city data, and holds AI accountable."
   href: data-governance-framework/
-- meta: "Theory of change"
-  title: "Data Analytics ToC"
-  body: "How data and analytics work moves from inputs to outcomes."
-  href: data-analytics-theory-of-change/

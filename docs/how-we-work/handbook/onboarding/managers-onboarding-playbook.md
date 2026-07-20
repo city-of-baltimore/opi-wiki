@@ -1,23 +1,12 @@
 # Managers' Onboarding Playbook
 
-{{ page_header(summary="What managers do — and don't do — to set new hires up for success.", category="SERIES · OPI FOUNDATIONS") }}
+{{ page_header(summary="What managers do, and don't do, to set new hires up for success.", category="SERIES · OPI FOUNDATIONS") }}
 
 A practical guide for OPI managers on how to make new hires productive, connected, and clear on expectations within 90 days.
 
-AUDIENCE
-:   All OPI managers
-
-OWNER
-:   Director's Office
-
-VERSION
-:   v1.0 · May 2026
-
 ## Why onboarding matters
 
-Great onboarding is a retention and performance lever. Staff who land well stay longer, contribute earlier, and trust the office more. Staff who land poorly drain the team for months. Treat onboarding as critical infrastructure.
-
-> *The first 90 days are the easiest time to set high standards. After that, expectations harden.*
+Good onboarding keeps people and makes them productive. Staff who land well stay longer, contribute earlier, and trust the office more. Staff who land poorly drain the team for months. Treat onboarding as core work, not a favor you do when you have time. The first 90 days are the easiest window to set a high bar. After that, expectations harden and are harder to raise.
 
 ## Your minimum standard
 
@@ -47,7 +36,7 @@ Translate the job description into three to five outcomes the new hire is respon
 
 ### 2. The norms conversation
 
-How we communicate, how we make decisions, when to escalate, and what quality looks like. Walk through the OPI Quick Reference Handbook together.
+How we communicate, how we make decisions, when to escalate, and what quality looks like. Walk through the [Operating Principles and Culture](../../../about-us/operating-principles-and-culture.md) together.
 
 ### 3. The relationships conversation
 
@@ -59,17 +48,7 @@ What the new hire wants to learn. What skills and exposure they need. How you wi
 
 ## How to assign the first early win
 
-A good early win is small, real, and shippable in the first three to four weeks. It builds confidence and gives the new hire concrete experience with our tools and norms.
-
-- Pick something that reduces friction, improves clarity, or closes a known gap.
-
-- Define done before they start. What does "complete" look like?
-
-- Give them a real partner who can review and sign off.
-
-- Protect time for it. Do not let ad hoc churn crowd it out.
-
-- Celebrate it when it ships. Use a Teams channel or all-staff moment.
+A good early win is small, real, and shippable in the first three to four weeks. It builds confidence and gives the new hire concrete experience with our tools and norms. Pick something that reduces friction, improves clarity, or closes a known gap. Define what done looks like before they start, and give them a real partner who can review and sign off. Protect the time for it so ad hoc churn does not crowd it out. When it ships, say so in a Teams channel or an all-staff moment.
 
 ## Coaching on OPI performance dimensions
 
@@ -85,17 +64,7 @@ Use OPI’s five performance dimensions as your check-in rubric. Be specific. Ti
 
 ## Common mistakes to avoid
 
-- **Treating day-one readiness as someone else’s problem:** It is yours, not IT’s. Coordinate access and hardware four to six weeks ahead.
-
-- **Overloading the calendar in week one:** Leave space for unstructured time, reading, and one-on-ones.
-
-- **Skipping the onboarding buddy:** Buddies are about culture and navigation, not redundant management.
-
-- **Vague expectations:** "Do good work" is not a target. Use outcomes and OPI performance dimensions.
-
-- **Letting ad hoc churn crowd out the early win:** Use WIP limits. Say "not now." Protect the early win.
-
-- **Waiting until day 90 to give feedback:** Calibrate weekly. Surface issues early in writing.
+Day-one readiness is your job, not IT’s, so coordinate access and hardware four to six weeks ahead. Do not overload the first week; leave space for unstructured time, reading, and one-on-ones. Do not skip the onboarding buddy, whose job is culture and navigation, not a second layer of management. Avoid vague expectations, because "do good work" is not a target; use concrete outcomes and the OPI performance dimensions instead. Protect the early win from ad hoc churn with WIP limits and a clear "not now." And do not wait until day 90 to give feedback. Calibrate weekly and surface issues early, in writing.
 
 ## Templates and prompts
 
@@ -139,7 +108,7 @@ Close with the day-100 readout plan and the leadership audience.
 
 ## Manager commitments to share with new hires
 
-> *Copy these into the new hire’s welcome email or share them in the first one-on-one.*
+Copy these into the new hire’s welcome email, or share them in the first one-on-one.
 
 - I will ensure day-one readiness: accounts, access, workspace, and a clear first-week plan.
 

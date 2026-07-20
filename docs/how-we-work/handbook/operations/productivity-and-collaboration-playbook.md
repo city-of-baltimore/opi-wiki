@@ -2,22 +2,11 @@
 
 {{ page_header(summary="Tools, rituals, and conventions for getting work done together.", category="SERIES · OPI FOUNDATIONS") }}
 
-How OPI works in Microsoft 365 (Outlook, Teams, OneDrive, OneNote, SharePoint, Planner) and Jira. Minimum standards for clear, durable, and accountable work.
-
-AUDIENCE
-:   All OPI staff
-
-OWNER
-:   Director’s Office
-
-VERSION
-:   v1.1 · Effective February 2026
+How OPI works in Microsoft 365 (Outlook, Teams, OneDrive, OneNote, SharePoint, Planner) and Jira. The minimum standards for work that is clear, lasting, and accountable.
 
 ## Why this exists
 
-OPI operates at the intersection of performance, data, design, and delivery. We work fast and we work in public-trust contexts. This playbook sets the minimum standards for how we communicate, document, plan, and deliver so that our work is easy to find, easy to reuse, and trustworthy when it leaves the building.
-
-> *Respond when necessary. Build so we do not have to respond again.*
+OPI works across performance, data, design, and delivery. We move fast, and we work in settings where the public has to trust the result. This playbook sets the minimum standards for how we communicate, document, plan, and deliver, so our work is easy to find, easy to reuse, and trustworthy when it leaves the building.
 
 ### OPI in 10 working norms
 
@@ -49,11 +38,7 @@ Our tools are powerful but only if we use them consistently. The goal is simple:
 
 ### Three systems of record (non-negotiable)
 
-- **Work tracking:** Planner for most staff; Jira for engineering.
-
-- **Artifacts:** SharePoint document libraries hold anything official or shared across the team.
-
-- **Decisions:** Meeting notes and a simple decision log stored in the project or team space.
+Three systems hold the truth. Work is tracked in Planner for most staff and in Jira for engineering. Artifacts live in SharePoint document libraries, which hold anything official or shared across the team. Decisions are captured in meeting notes and a simple decision log kept in the project or team space.
 
 ### Tool roles matrix
 
@@ -67,7 +52,7 @@ Our tools are powerful but only if we use them consistently. The goal is simple:
 | Planner          | Team task boards, ad hoc intake, operational checklists, action items.                  | Complex engineering workflows that belong in Jira.                           | Yes (non-engineering work) |
 | Jira             | Engineering epics, stories, bugs, sprint tracking, releases, incidents, technical debt. | Tracking non-engineering work for the whole org unless explicitly agreed.    | Yes (engineering work)     |
 
-> *Practical rule: drafts can live in OneDrive; anything you expect others to use or reference must be moved to the appropriate SharePoint space.*
+The practical rule: drafts can live in OneDrive, but anything you expect others to use or reference moves to the appropriate SharePoint space.
 
 ## 2. Document hygiene and sharing
 
@@ -107,9 +92,7 @@ Use names that sort, scan, and survive context loss. Recommended format: YYYY-MM
 
 ### When to use email vs. Teams
 
-- **Email:** External stakeholders, approvals, formal requests, and information that must be forwarded.
-
-- **Teams:** Internal coordination, quick questions, and team updates. Capture decisions elsewhere.
+Use email for external stakeholders, approvals, formal requests, and anything that has to be forwarded. Use Teams for internal coordination, quick questions, and team updates, and capture any decisions in the system of record.
 
 ### Subject line tags
 
@@ -135,7 +118,7 @@ Use names that sort, scan, and survive context loss. Recommended format: YYYY-MM
 
 Keep signatures consistent, professional, and accessible. No oversized images.
 
-> *First Last — Title \| Mayor’s Office of Performance and Innovation (OPI), City of Baltimore — m: (###) \###-#### \| e: first.last@baltimorecity.gov*
+> *First Last \| Title \| Mayor’s Office of Performance and Innovation (OPI), City of Baltimore \| m: (###) \###-#### \| e: first.last@baltimorecity.gov*
 
 ## 4. Teams standards
 
@@ -217,7 +200,7 @@ Work is only manageable if it is visible. We use boards to make work, ownership,
 
 ### Jira (engineering)
 
-> *Engineering rule of thumb: no ticket, no work. Tickets include acceptance criteria, risk notes, and links to designs and data definitions. Definition of done includes testing, documentation, and deployment / verification steps.*
+The engineering rule is simple: if there is no ticket, there is no work. Tickets carry acceptance criteria, risk notes, and links to designs and data definitions. The definition of done covers testing, documentation, and deployment and verification steps.
 
 - Use Epics for multi-sprint initiatives and link them to non-engineering artifacts (SharePoint, briefs).
 
@@ -305,7 +288,7 @@ OPI’s data and performance outputs are products. They must be trustworthy, doc
 
 Copy and paste these templates to reduce friction and keep norms consistent.
 
-### Template A — Meeting agenda and notes
+### Template A: Meeting agenda and notes
 
 - Title format: YYYY-MM-DD – Meeting Name.
 
@@ -323,7 +306,7 @@ Copy and paste these templates to reduce friction and keep norms consistent.
 
 - Links.
 
-### Template B — Decision log
+### Template B: Decision log
 
 | **Date** | **Decision** | **Context / options** | **Owner** | **Link** |
 |----------|--------------|-----------------------|-----------|----------|
@@ -331,7 +314,7 @@ Copy and paste these templates to reduce friction and keep norms consistent.
 |          |              |                       |           |          |
 |          |              |                       |           |          |
 
-### Template C — Status update
+### Template C: Status update
 
 - Subject: OPI – \[Team / Project\] – Weekly Status – YYYY-MM-DD.
 
@@ -345,7 +328,7 @@ Copy and paste these templates to reduce friction and keep norms consistent.
 
 - Links.
 
-### Template D — Ad hoc request
+### Template D: Ad hoc request
 
 - What you need.
 
@@ -357,7 +340,7 @@ Copy and paste these templates to reduce friction and keep norms consistent.
 
 - Primary contact and approver.
 
-### Template E — Planner task standard
+### Template E: Planner task standard
 
 - Title: verb + object (for example, Draft Council memo on X).
 
@@ -371,7 +354,7 @@ Copy and paste these templates to reduce friction and keep norms consistent.
 
 - Attachments: links only (SharePoint). Avoid file uploads.
 
-### Template F — Jira story standard
+### Template F: Jira story standard
 
 - User story or objective.
 

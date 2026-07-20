@@ -1,6 +1,6 @@
 # Onboarding
 
-> How OPI welcomes new staff, prepares managers, and handles transitions.
+How OPI welcomes new staff, prepares managers, and handles transitions.
 
 ## Pages in this section
 

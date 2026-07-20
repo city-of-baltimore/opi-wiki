@@ -11,7 +11,6 @@
 | Primary Agency / Agencies      | Department of Finance, BBMR, Procurement, Grants Management, Revenue Collections, MWBOO/SMBA-related partners as needed                 |
 | OPI lead                        | OPI-operated / Performance Team                                                                                                         |
 | Core Data Product              | Financial operations and compliance dashboard                                                                                           |
-| Public Transparency Level      | Moderate. Publish plain-language improvements and selected metrics, while keeping sensitive financial and procurement details internal. |
 
 ### Public Purpose
 
@@ -36,10 +35,8 @@ Staff use Finance Stat to improve procurement, collections, payment systems, rev
 
 ### Standard Artifacts and Data Products
 
-- Pre-meeting memo, Stat deck, follow-up memo, commitment tracker, and decision log.
+- Pre-meeting memo, Stat deck, follow-up memo, and follow-up tracker.
 - Core data product: Financial operations and compliance dashboard.
-- Public summary, annual report section, data quality notes, and SOP / process maps for major functions.
-- Inspection checklist where field validation or service quality review is needed.
 
 ### Tiger Team / Delivery Triggers
 

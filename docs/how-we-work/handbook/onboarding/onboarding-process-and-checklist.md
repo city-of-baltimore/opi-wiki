@@ -4,32 +4,15 @@
 
 A structured 90-day playbook for new hires, managers, and onboarding buddies.
 
-AUDIENCE
-:   New hires, managers, onboarding buddies, AdminOps
-
-OWNER
-:   Director's Office
-
-VERSION
-:   v1.0 · May 2026
-
 ## Purpose
 
 This document standardizes how OPI brings new staff into the office. The goal is that every new hire is productive, connected, and clear on expectations within the first 30 days, owns a defined slice of work by day 60, and is delivering meaningful outputs by day 90.
 
-Onboarding is a shared responsibility. The new hire owns their learning. The manager owns day-one readiness, expectations, and feedback. The onboarding buddy owns culture and navigation. AdminOps owns accounts, equipment, and access.
-
-> *Great onboarding is a retention and performance lever. Treat it as critical infrastructure.*
+Onboarding is a shared responsibility, and good onboarding keeps people and makes them productive, so treat it as core work rather than a favor.
 
 ### Roles
 
-**New hire.** Completes setup tasks, reads required materials, asks early questions, and keeps notes of blockers.
-
-**Manager.** Owns day-one readiness, sets expectations, assigns an onboarding buddy, and protects focus and time.
-
-**Onboarding buddy.** Helps the new hire navigate culture, tools, and how things actually work. Meets weekly for the first month.
-
-**AdminOps and IT.** Coordinate accounts, equipment, access, and facilities logistics. Day-one readiness is non-negotiable.
+The new hire owns their own learning: they complete the setup tasks, read the required materials, ask early questions, and keep notes on what is blocking them. The manager owns day-one readiness, sets expectations, assigns an onboarding buddy, and protects the new hire’s focus and time. The onboarding buddy helps the new hire navigate the culture, the tools, and how things actually work, and meets with them weekly for the first month. AdminOps and IT coordinate accounts, equipment, access, and facilities logistics, and day-one readiness is not optional.
 
 ## Pre-start checklist (T-6 weeks to Day 0)
 
@@ -90,13 +73,13 @@ Use the section for the portfolio you are joining. Managers should also use the 
 
 ### Director's Office
 
-Focus: portfolio visibility, decision support, communications, operations backbone, and quality assurance for public and executive artifacts.
+Focus: portfolio visibility, decision support, communications, office operations, and quality assurance for public and executive artifacts.
 
 - Week 1: gain access to the Director’s Office SharePoint, portfolio boards, templates library, and key distribution lists.
 
-- Week 1–2: review OPI operating cadence — weekly Ops Review, monthly Portfolio Council, intake and chartering workflow.
+- Week 1–2: review the OPI operating cadence (weekly Ops Review, monthly Portfolio Council, intake and chartering workflow).
 
-- Week 2: learn the standard artifact set — two-page charters, decision memos, status updates, QA checklist, after-action template.
+- Week 2: learn the standard artifact set (two-page charters, decision memos, status updates, QA checklist, after-action template).
 
 - Week 2–3: set up SharePoint governance hygiene for your area (naming, metadata, permissions, archiving).
 
@@ -108,29 +91,29 @@ Focus: performance routines, Stat preparation and follow-through, KPI definition
 
 - Week 1: gain access to performance trackers, Stat Teams channels, the Stat archive, and Power BI workspaces as needed.
 
-- Week 1–2: orientation meetings — What is Stat, City Government 101, portfolio and agency introductions.
+- Week 1–2: orientation meetings (What is Stat, City Government 101, portfolio and agency introductions).
 
 - Week 2: observe at least one Stat session and one prep meeting. Learn pre-read and memo standards.
 
 - Week 2–4: learn KPI Dictionary expectations (definitions, owners, cadence, equity cuts) and complete one KPI update.
 
-- Month 2–3: own a follow-through workstream — commitments tracker hygiene, agency coaching, or analysis-to-action pipeline.
+- Month 2–3: own a follow-through workstream (commitments tracker hygiene, agency coaching, or analysis-to-action pipeline).
 
 ### Data and Analytics
 
 Focus: reliable data and digital products, governance, quality gates, and production discipline.
 
-- Week 1: accounts and access — VPN, Azure DevOps, GitHub orgs, Jira, SharePoint, relevant cloud environments.
+- Week 1: accounts and access (VPN, Azure DevOps, GitHub orgs, Jira, SharePoint, relevant cloud environments).
 
-- Week 1: environment setup — Python, Docker, IDE, database client. Validate by running a local build and accessing at least one repo.
+- Week 1: environment setup (Python, Docker, IDE, database client). Validate by running a local build and accessing at least one repo.
 
-- Week 2: production standards — testing, CI/CD, observability, incident response, and release checklists.
+- Week 2: production standards (testing, CI/CD, observability, incident response, and release checklists).
 
-- Week 2–3: review key governance cadences — Data Governance Council, Data Product Council, change control.
+- Week 2–3: review key governance cadences (Data Governance Council, Data Product Council, change control).
 
 - Month 1: ship a safe, small improvement (bug fix, dashboard improvement, data quality check, runbook update).
 
-- Month 2–3: own a component or dataset end-to-end — owner, SLA, tests, documentation, adoption path.
+- Month 2–3: own a component or dataset end-to-end (owner, SLA, tests, documentation, adoption path).
 
 ### Innovation Lab
 
@@ -142,15 +125,15 @@ Focus: human-centered design, product discovery, civic technology, AI pilots, an
 
 - Week 2: shadow a service-design session, a user research interview, or a tiger team working session.
 
-- Week 2–3: learn the Lab’s standard artifacts — product brief, discovery memo, service map, prototype plan.
+- Week 2–3: learn the Lab’s standard artifacts (product brief, discovery memo, service map, prototype plan).
 
-- Month 1: ship a small contribution — a research synthesis, a wireframe iteration, or a prototype improvement.
+- Month 1: ship a small contribution: a research synthesis, a wireframe iteration, or a prototype improvement.
 
 - Month 2–3: own a discovery thread or prototype on an active engagement.
 
 ### Manager checklist (all portfolios)
 
-Onboarding is a manager responsibility. The minimum standard is below.
+Onboarding is a manager responsibility. This table is the minimum standard; the full method, covering the four conversations, the first early win, coaching, and the check-in scripts, is in the [Managers' Onboarding Playbook](managers-onboarding-playbook.md).
 
 | **When**     | **Task**                                                                   | **How**                                                             |
 |--------------|----------------------------------------------------------------------------|---------------------------------------------------------------------|
@@ -159,7 +142,7 @@ Onboarding is a manager responsibility. The minimum standard is below.
 | Week 1       | Set explicit expectations (communication, work quality, escalation, docs). | Use OPI norms and performance standards as the baseline.            |
 | Week 1–2     | Introduce the new hire to key partners and explain decision rights.        | Avoid surprise stakeholders. Clarify who approves what.             |
 | Month 1      | Create space for early wins. Protect focus from ad hoc churn.              | Use WIP limits. Say "not now" with rationale and a revisit date.    |
-| Day 30/60/90 | Run structured check-ins. Document outcomes.                               | Use the 30/60/90 template. Capture agreements in writing.           |
+| Day 30/60/90 | Run structured check-ins. Document outcomes.                               | Use the [30/60/90 check-in scripts](managers-onboarding-playbook.md#templates-and-prompts). Capture agreements in writing. |
 
 ## Appendix A. Suggested onboarding meetings
 

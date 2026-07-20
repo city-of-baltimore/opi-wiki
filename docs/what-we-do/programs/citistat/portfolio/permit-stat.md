@@ -11,7 +11,6 @@
 | Primary Agency / Agencies      | DHCD / Permitting and Development Services, BCIT, DOT, DPW, Fire, Planning, DCPBL, and review partners               |
 | OPI lead                        | OPI-operated / Data Team-led with agency partners                                                                    |
 | Core Data Product              | Permitting performance dashboard                                                                                     |
-| Public Transparency Level      | High. Publish public dashboards, plain-language summaries, and progress updates that improve transparency and trust. |
 
 ### Public Purpose
 
@@ -36,10 +35,8 @@ Staff use Permit Stat to review application backlogs, review timelines, process 
 
 ### Standard Artifacts and Data Products
 
-- Pre-meeting memo, Stat deck, follow-up memo, commitment tracker, and decision log.
+- Pre-meeting memo, Stat deck, follow-up memo, and follow-up tracker.
 - Core data product: Permitting performance dashboard.
-- Public summary, annual report section, data quality notes, and SOP / process maps for major functions.
-- Inspection checklist where field validation or service quality review is needed.
 
 ### Tiger Team / Delivery Triggers
 

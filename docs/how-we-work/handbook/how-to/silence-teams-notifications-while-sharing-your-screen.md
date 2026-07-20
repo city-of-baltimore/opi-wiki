@@ -2,12 +2,6 @@
 
 {{ page_header(summary="Short how-to for preventing notification popups during screen sharing in Microsoft Teams.") }}
 
-AUDIENCE
-:   OPI staff
-
-OWNER
-:   Chief of Staff
-
 ## Before you start
 
 Microsoft Teams can automatically switch your status to `Do not disturb` while

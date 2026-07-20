@@ -1,4 +1,4 @@
-# PD — Full Stack Engineer
+# PD: Full Stack Engineer
 
 {{ page_header(summary="Position description for the Full Stack Engineer.") }}
 

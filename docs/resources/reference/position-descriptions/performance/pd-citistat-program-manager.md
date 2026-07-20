@@ -1,4 +1,4 @@
-# PD — CitiStat Program Manager
+# PD: CitiStat Program Manager
 
 {{ page_header(summary="Position description for the CitiStat Program Manager.") }}
 
@@ -17,7 +17,7 @@
 
 The CitiStat Program Manager is the senior practitioner of CitiStat method and the principal coach for the CitiStat Analyst bench. Reporting to the Deputy Chief Performance Officer, the Program Manager coordinates and facilitates Stat sessions, conducts deeper-cycle analysis on the most complex topics, ensures rigorous quality assurance of deliverables, and provides coaching to analysts. The role helps agencies use data to identify operational challenges, develop solutions, and track progress on key performance indicators (KPIs).
 
-The Program Manager advances data-driven decision-making, process improvement, and transparency. The role is an individual contributor with respect to direct reports, but carries strong professional responsibility for the quality, cadence, and consistency of the CitiStat program.
+The Program Manager advances data-driven decision-making, process improvement, and transparency. The role is an individual contributor with respect to direct reports, but carries strong professional responsibility for the quality, pace, and consistency of the CitiStat program.
 
 ## Key Responsibilities
 

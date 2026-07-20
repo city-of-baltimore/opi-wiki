@@ -1,4 +1,4 @@
-# PD — CitiStat Inspector
+# PD: CitiStat Inspector
 
 {{ page_header(summary="Position description for the CitiStat Inspector.") }}
 

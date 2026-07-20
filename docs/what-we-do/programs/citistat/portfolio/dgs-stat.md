@@ -11,7 +11,6 @@
 | Primary Agency / Agencies      | Department of General Services                                                                                                                       |
 | OPI lead                        | OPI-operated / Performance Team                                                                                                                      |
 | Core Data Product              | Facilities and fleet readiness dashboard                                                                                                             |
-| Public Transparency Level      | Moderate. Publish summaries and selected performance measures, especially where facilities or fleet readiness affects public-facing services. |
 
 ### Public Purpose
 
@@ -36,10 +35,8 @@ Staff use DGS Stat to manage facilities work orders, fleet readiness, preventive
 
 ### Standard Artifacts and Data Products
 
-- Pre-meeting memo, Stat deck, follow-up memo, commitment tracker, and decision log.
+- Pre-meeting memo, Stat deck, follow-up memo, and follow-up tracker.
 - Core data product: Facilities and fleet readiness dashboard.
-- Public summary, annual report section, data quality notes, and SOP / process maps for major functions.
-- Inspection checklist where field validation or service quality review is needed.
 
 ### Tiger Team / Delivery Triggers
 

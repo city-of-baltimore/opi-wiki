@@ -3,7 +3,7 @@
 <div class="opi-hero">
   <div class="opi-hero-eyebrow">Mayor's Office of Performance and Innovation</div>
   <h1>OPI Foundations</h1>
-  <p>How a modern performance and innovation office runs, in public — its methodology, operating model, strategy, and people.</p>
+  <p>How a modern performance and innovation office runs, in public: its methodology, operating model, strategy, and people.</p>
 </div>
 
 ## Start here
@@ -18,7 +18,7 @@ The whole site lives as Markdown in a [GitHub repository](https://github.com/cit
 
 ## How work moves through OPI
 
-OPI uses a signal-to-solution loop: **[CitiStat](what-we-do/programs/citistat/index.md) identifies the problem → [Data and Analytics](about-us/our-teams/data-and-analytics/index.md) explains it → the [Innovation Lab](about-us/our-teams/innovation-lab/index.md) designs and tests the solution → [Cross-Agency Delivery](what-we-do/services/cross-agency-delivery.md) coordinates multi-agency implementation → AdminOps sustains it.** Read [How We Work](how-we-work/index.md) for the full model.
+Work moves from a problem to a fix in a repeatable way. [CitiStat](what-we-do/programs/citistat/index.md) identifies the problem, [Data and Analytics](about-us/our-teams/data-and-analytics/index.md) explains it, the [Innovation Lab](about-us/our-teams/innovation-lab/index.md) designs and tests the solution, [Cross-Agency Delivery](what-we-do/services/cross-agency-delivery/index.md) coordinates when several agencies have to act together, and [AdminOps](what-we-do/services/admin-ops.md) keeps it running. Read [How We Work](how-we-work/index.md) for the full model.
 
 ## How this site is organized
 
@@ -28,10 +28,10 @@ OPI is organized into teams with staff and budget. Those teams deliver services 
 | --- | --- | --- |
 | Teams | Groups with staff and budget | Director's Office, Performance, Data and Analytics, Innovation Lab |
 | Services | What OPI delivers for Baltimore | AdminOps, Citywide Performance Management, Citywide Data and Analytics, Innovation Lab, Cross-Agency Delivery |
-| Programs | Ongoing routines that may span teams | CitiStat |
-| Products | Tools and platforms OPI builds | Baltimore Intelligence Center, Baltimore City Data Platform, Baltimore City Performance Portal |
+| Programs | Ongoing routines that may span teams | CitiStat, Baltimore Intelligence Center, Data Governance, Open Data, Citywide Data Network |
+| Products | Tools and platforms OPI builds | Baltimore City Data Platform, Baltimore City Performance Portal |
 
-When in doubt, use the clearest full name. Do not use "CAD" for Cross-Agency Delivery — spell it out, or use "x-agency delivery" only when a short form is needed.
+When in doubt, use the clearest full name. Do not use "CAD" for Cross-Agency Delivery; spell it out, or use "x-agency delivery" only when a short form is needed.
 
 ## How this site works
 
@@ -41,7 +41,7 @@ When in doubt, use the clearest full name. Do not use "CAD" for Cross-Agency Del
 
 ## Recently updated
 
-- [Letter — On OPI Foundations](about-us/letters-from-the-director/on-opi-foundations.md)
+- [Letter: On OPI Foundations](about-us/letters-from-the-director/on-opi-foundations.md)
 - [CitiStat Strategic Framework](what-we-do/programs/citistat/strategic-framework.md)
 - [Glossary of OPI Terms](resources/reference/glossary.md)
 

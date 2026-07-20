@@ -1,4 +1,4 @@
-# PD — Applied Data Scientist
+# PD: Applied Data Scientist
 
 {{ page_header(summary="Position description for the Applied Data Scientist.") }}
 
@@ -25,7 +25,7 @@ Reporting to the Deputy Chief Data Officer, the role works closely with OPI’s 
 
 ### Analytics, Applied Research, and Problem Framing
 
-- Lead investigation and analysis of complex, messy, and disconnected city datasets to surface patterns, risks, opportunities, and actionable insights that inform operational decisions.
+- Lead investigation and analysis of complex, messy, and disconnected city datasets to reveal patterns, risks, opportunities, and actionable insights that inform operational decisions.
 
 - Partner with city stakeholders to frame ambiguous operational questions, translate them into analytic plans, and define clear measures, baselines, expected outcomes, assumptions, and limitations.
 
@@ -39,7 +39,7 @@ Reporting to the Deputy Chief Data Officer, the role works closely with OPI’s 
 
 ### Data Products, Dashboards, and Model Delivery
 
-- Build and guide development of decision-ready products such as dashboards, parameterized reports, APIs, reusable analytical datasets, and lightweight web applications that surface analytic and model outputs.
+- Build and guide development of decision-ready products such as dashboards, parameterized reports, APIs, reusable analytical datasets, and lightweight web applications that present analytic and model outputs.
 
 - Develop and maintain data workflows, exploratory tools, and reusable analytical assets that allow OPI and partner teams to work more effectively with data.
 
@@ -79,7 +79,7 @@ Reporting to the Deputy Chief Data Officer, the role works closely with OPI’s 
 
 - Participate in code reviews, data-quality reviews, and method reviews; share lessons learned and contribute to OPI’s documentation and knowledge-management culture.
 
-- Support data governance by documenting definitions, lineage, refresh cadence, quality constraints, and appropriate use for priority datasets and metrics.
+- Support data governance by documenting definitions, lineage, refresh schedule, quality constraints, and appropriate use for priority datasets and metrics.
 
 - Perform other related duties as assigned to support OPI’s mission, innovation agenda, and citywide data strategy.
 
@@ -87,7 +87,7 @@ Reporting to the Deputy Chief Data Officer, the role works closely with OPI’s 
 
 ### Technical and analytical competencies
 
-- Advanced proficiency in exploratory data analysis, with the ability to navigate large, complex, imperfect, and disconnected datasets to surface meaningful findings.
+- Advanced proficiency in exploratory data analysis, with the ability to navigate large, complex, imperfect, and disconnected datasets to bring out meaningful findings.
 
 - Strong skills in Python or R and SQL for data analysis, modeling, dataset preparation, validation, and reproducible research.
 
@@ -127,7 +127,7 @@ Reporting to the Deputy Chief Data Officer, the role works closely with OPI’s 
 
 - Five (5) or more years of experience in applied analytics, data science, policy analysis, operational analytics, or related work, with a proven track record investigating complex datasets and delivering actionable insights.
 
-- Experience producing decision-ready dashboards, reports, APIs, analytical tools, models, or lightweight web applications that surface analytic results for operational users or decision-makers.
+- Experience producing decision-ready dashboards, reports, APIs, analytical tools, models, or lightweight web applications that present analytic results for operational users or decision-makers.
 
 - Experience with GIS or spatial analytics is strongly preferred.
 

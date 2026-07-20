@@ -1,4 +1,4 @@
-# PD — Technical Program Manager
+# PD: Technical Program Manager
 
 {{ page_header(summary="Position description for the Technical Program Manager.") }}
 
@@ -15,9 +15,9 @@
 
 ## Position Summary
 
-The Technical Program Manager (TPM) leads cross-functional delivery for the Deputy Chief Data Officer’s portfolio: citywide data and analytics, data governance, and OPI-led data products. The role helps the City deliver tools and data products that make services more transparent, efficient, and accessible to residents. The TPM owns portfolio roadmaps, technical requirements, delivery cadence, risk and issue management, quality assurance, and user-acceptance testing, and coordinates closely with Baltimore City Information Technology (BCIT) on change control.
+The Technical Program Manager (TPM) leads cross-functional delivery for the Deputy Chief Data Officer’s portfolio: citywide data and analytics, data governance, and OPI-led data products. The role helps the City deliver tools and data products that make services more transparent, efficient, and accessible to residents. The TPM owns portfolio roadmaps, technical requirements, delivery schedule, risk and issue management, quality assurance, and user-acceptance testing, and coordinates closely with Baltimore City Information Technology (BCIT) on change control.
 
-The TPM keeps a single, current view of the Data and Analytics team’s portfolio using agile project-management tools (such as Jira) and the OPI SharePoint operating system. The TPM makes sure the team ships reliable increments on a predictable cadence with acceptance evidence and stable operations, and measures impact post-release, including data quality, adoption, and resident value.
+The TPM keeps a single, current view of the Data and Analytics team’s portfolio using agile project-management tools (such as Jira) and the OPI SharePoint operating system. The TPM makes sure the team ships reliable increments on a predictable schedule with acceptance evidence and stable operations, and measures impact post-release, including data quality, adoption, and resident value.
 
 ## Key Responsibilities
 
