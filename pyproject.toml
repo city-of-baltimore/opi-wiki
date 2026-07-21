@@ -30,7 +30,7 @@ package = false
 [dependency-groups]
 dev = [
     # The `toml` extra lets bandit read its configuration from this file.
-    "bandit[toml]>=1.9.2,<2.0.0",
+    "bandit[toml]>=1.9.4,<2.0.0",
     "pytest>=9.0.3,<10.0.0",
     "ruff>=0.15.12,<0.16.0",
     "playwright>=1.58.0,<2.0.0",
