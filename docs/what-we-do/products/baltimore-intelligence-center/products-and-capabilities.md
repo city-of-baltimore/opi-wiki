@@ -24,10 +24,10 @@ Every experience draws on the same governed capabilities, built once and reused.
 
 ## What makes them trustworthy
 
-No product reaches raw data directly. Every AI-facing query passes through a governed tool that enforces the data tiers and refuses anything that has not cleared governance, and every answer is grounded in an approved definition and shows where it came from. The full model is in [Responsible data & AI](responsible-data-and-ai.md).
+No product reaches raw data directly. Every AI-facing query passes through a governed tool that enforces the data tiers and refuses anything that has not cleared governance, and every answer is grounded in an approved definition and shows where it came from. The full model is in [Data Governance](../../programs/data-governance/index.md).
 
 ## Read alongside
 
 - [Architecture](architecture-and-roadmap.md): the layers these capabilities run on.
-- [Responsible data & AI](responsible-data-and-ai.md): how uses are approved, governed, and reviewed.
+- [Data Governance](../../programs/data-governance/index.md): how uses are approved, governed, and reviewed.
 - [CitiStat](../../programs/citistat/index.md): the performance program a performance assistant can support.

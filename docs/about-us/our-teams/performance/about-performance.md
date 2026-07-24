@@ -44,5 +44,5 @@ Success is a performance system that is useful, trusted, and acted on outside th
 
 - [CitiStat](../../../what-we-do/programs/citistat/index.md): the program the team operates, with its strategic framework, method playbook, and portfolio.
 - [How Work Moves Through OPI](../../../how-we-work/how-work-moves-through-opi.md): where performance management sits in the wider operating model.
-- [Performance position descriptions](../../../resources/reference/position-descriptions/index.md).
+- [Team and Roles](../team-and-roles.md).
 - [On Performance Management](../../letters-from-the-director/on-performance-management.md): the Director's letter on why this work matters.

@@ -21,4 +21,4 @@ The integration contract is one rule: the intelligence layers read governed outp
 
 - [Baltimore City Data Platform](../../products/baltimore-city-data-platform.md): the data foundation and its pipeline.
 - [Capabilities](products-and-capabilities.md): what this architecture can support.
-- [Responsible data & AI](responsible-data-and-ai.md): the governance that runs through every layer.
+- [Data Governance](../../programs/data-governance/index.md): the governance that runs through every layer.

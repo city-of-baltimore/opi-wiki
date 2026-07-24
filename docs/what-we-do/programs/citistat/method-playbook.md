@@ -14,7 +14,7 @@ Jump to the section you need:
 - [The CitiStat cycle](#the-citistat-cycle): the preparation timeline keyed to the session date.
 - [The session agendas](#the-session-agendas): the monthly and place-based formats.
 - [Data standards and evidence](#data-standards-and-evidence): the bar for the numbers.
-- [Issue selection, admission, and continuation](#issue-selection-admission-and-continuation): what earns and keeps Stat status.
+- [Issue selection and continuation](#issue-selection-and-continuation): what keeps Stat status.
 - [Follow-ups, escalation, and sustainment](#follow-ups-escalation-and-sustainment): how the work closes after the session.
 - [The quality bar](#the-quality-bar): the review every product passes before the room.
 
@@ -131,18 +131,9 @@ CitiStat depends on trust in the numbers. The goal is not perfect data before ac
 
 The **CitiStat Inspector** plans the ride-alongs and site visits, coordinates with the agency, and brings field findings back into the Stat as evidence alongside the data, reconciled against the agency's reported metrics in the pre-memo.
 
-## Issue selection, admission, and continuation
+## Issue selection and continuation
 
-A recurring meeting should be called a Stat only if it meets the admission criteria and keeps producing decisions, commitments, or learning.
-
-A routine earns Stat status when it meets these criteria:
-
-- A clear performance problem tied to a priority outcome that needs recurring leadership attention.
-- A named chair or authorizer.
-- A defined agency owner.
-- Reliable-enough data, with caveats documented.
-- A schedule for follow-up and evidence of closure.
-- OPI capacity to support it, since the program only takes on what it can run well.
+A recurring meeting should be called a Stat only if it keeps producing decisions, commitments, or learning.
 
 The continuation test comes after two cycles: ask whether the Stat produced decisions, follow-ups closed with evidence, process or SOP changes, data improvements, or delivery triggers. If not, redesign it, pause it, merge it, or convert it into a Tiger Team, a data-governance review, or a decision memo.
 

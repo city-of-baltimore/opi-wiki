@@ -31,14 +31,6 @@ communicated. Agency partners want clear timelines, expectations, and
 responsive coordination. Residents benefit when the City keeps its commitments
 and shows its progress.
 
-## Delivered by
-
-The [Director's Office](../../about-us/our-teams/directors-office/index.md).
-
-## How to request this service
-
-AdminOps mostly supports OPI's other services rather than being requested on its own. If you are coordinating a partnership with OPI, need communications or Council-facing support tied to OPI's work, or want to route a new request into the office, email [opi@baltimorecity.gov](mailto:opi@baltimorecity.gov). See [How to Engage OPI](../how-to-engage-opi.md) for the full path.
-
 ## Read alongside
 
 - [How Work Moves Through OPI](../../how-we-work/how-work-moves-through-opi.md): where this service sits in the loop

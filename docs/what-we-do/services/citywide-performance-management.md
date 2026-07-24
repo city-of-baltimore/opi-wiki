@@ -25,14 +25,6 @@ Baltimore City Code, Article 1, Subtitle 61 (CitiStat).
 
 Residents want trash pickup delays addressed before they become a weekly problem. The City Administrator wants clear answers about service performance without digging through spreadsheets. Agency leaders want performance conversations that help them fix problems, not just explain them. And Council members want confidence that follow-ups are tracked to closure.
 
-## Delivered by
-
-The [Performance team](../../about-us/our-teams/performance/index.md), which operates the [CitiStat program](../programs/citistat/index.md) supported by all OPI teams.
-
-## How to request this service
-
-Agencies in the CitiStat portfolio work with the Performance team through their scheduled Stats and their Data-Driven Officer. To raise a performance problem, add a measure to a performance plan, or get help with a KPI definition, contact your Stat analyst or email [opi@baltimorecity.gov](mailto:opi@baltimorecity.gov). See [How to Engage OPI](../how-to-engage-opi.md) for the full path.
-
 ## Read alongside
 
 - [How Work Moves Through OPI](../../how-we-work/how-work-moves-through-opi.md): where this service sits in the loop

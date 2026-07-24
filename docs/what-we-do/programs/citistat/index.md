@@ -10,9 +10,9 @@ This section is split by job. The Strategic Framework explains why CitiStat exis
 
 If you are a public reader, start with the [CitiStat Strategic Framework](strategic-framework.md) for the case and the active portfolio, then browse the [CitiStat Portfolio](portfolio/index.md) to see specific Stats.
 
-If you are OPI staff running or supporting a Stat, start with the [Method Playbook](method-playbook.md) for the operating cycle and admission criteria. Pull artifact templates from [CitiStat Templates](templates.md), and hold every artifact to the [CitiStat Quality Standards](quality-standards.md).
+If you are OPI staff running or supporting a Stat, start with the [Method Playbook](method-playbook.md) for the operating cycle. Pull artifact templates from [CitiStat Templates](templates.md), and hold every artifact to the [CitiStat Quality Standards](quality-standards.md).
 
-If you work in a Deputy Mayor's office, the City Administrator's Office, or as an agency Data-Driven Officer, read the [Strategic Framework](strategic-framework.md), the [Method Playbook](method-playbook.md) (especially admission criteria, follow-up, and escalation), and the brief for the Stats you take part in.
+If you work in a Deputy Mayor's office, the City Administrator's Office, or as an agency Data-Driven Officer, read the [Strategic Framework](strategic-framework.md), the [Method Playbook](method-playbook.md) (especially follow-up and escalation), and the brief for the Stats you take part in.
 
 ## The method
 
@@ -23,10 +23,6 @@ If you work in a Deputy Mayor's office, the City Administrator's Office, or as a
 The full citywide portfolio of active CitiStats: every agency brief, organized in one place.
 
 {{ card_grid_from("what-we-do/programs/citistat/index.cards.yml", "portfolio") }}
-
-## If your agency has a CitiStat request
-
-A CitiStat follow-up request means a follow-up was assigned in a Stat and OPI is tracking it to closure with evidence. Your agency's Data-Driven Officer coordinates the response. For questions or to engage, email [opi@baltimorecity.gov](mailto:opi@baltimorecity.gov) or see [How to Engage OPI](../../how-to-engage-opi.md).
 
 ## Read alongside
 

@@ -29,14 +29,6 @@ Supported by CitiStat commitments and the agency roles required under Baltimore 
 
 Residents don't care which agency is responsible; they just want the issue resolved. Agency directors need help coordinating changes that depend on other departments. City leaders want progress on hard problems without creating new task forces. And frontline staff want clearer processes so they can do their jobs well.
 
-## Delivered by
-
-No standing team. Cross-Agency Delivery is drawn from across all of OPI: the [Innovation Lab](../../../about-us/our-teams/innovation-lab/index.md) provides the Tiger Team and method, the [Performance team](../../../about-us/our-teams/performance/index.md) runs the standing delivery review, and other teams contribute staff and authority as the work requires. {{ role_holder("Deputy Chief Performance Officer") }} serves as interim Delivery Manager, with authorizing relationships from the Director's Office at the Deputy Mayor and City Administrator level.
-
-## How to request this service
-
-If a problem spans multiple agencies and has stalled in normal channels, raise it through your agency's CitiStat process or email [opi@baltimorecity.gov](mailto:opi@baltimorecity.gov). Activation requires a sponsoring Authorizer at the Deputy Mayor or City Administrator level. OPI helps you frame the request, name the agencies, and identify that sponsor. See [How to Engage OPI](../../how-to-engage-opi.md) for the full path.
-
 ## Read alongside
 
 - [Cross-Agency Delivery: Service Definition](service-definition.md): the full method, governance, service levels, and theory of change

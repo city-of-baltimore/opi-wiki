@@ -1,6 +1,6 @@
 # How Work Moves Through OPI
 
-{{ page_header(summary="The plain-language model for how OPI moves from a signal to a sustained improvement.", category="OPI · FOUNDATIONS", tagline="How OPI moves from a problem signal to a fix that lasts.") }}
+{{ page_header(summary="How OPI turns a problem into a fix and keeps it working.", category="OPI · FOUNDATIONS", tagline="From a problem signal to a fix that lasts.") }}
 
 ## The short version
 
