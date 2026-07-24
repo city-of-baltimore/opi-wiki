@@ -87,7 +87,7 @@ def test_extract_run_commands_supports_scalar_modifiers_and_comments() -> None:
 
 
 def test_extract_action_references_reads_pinned_uses() -> None:
-    """Action references are checked against the pinned allowlist."""
+    """Action references are extracted for the SHA-pin check."""
 
     source = _workflow("      - uses: actions/checkout@abc123 # v7.0.0\n")
 
@@ -531,6 +531,29 @@ def test_find_policy_violations_accepts_the_allowed_hosted_command(tmp_path: Pat
     workflow.write_text(_workflow("      - run: task ci\n"), encoding="utf-8")
 
     assert find_policy_violations(workflow) == []
+
+
+def test_find_policy_violations_accepts_a_sha_pinned_action(tmp_path: Path) -> None:
+    """A full-SHA action pin satisfies the supply-chain invariant on its own."""
+
+    workflow = tmp_path / "ci.yml"
+    workflow.write_text(
+        _workflow(f"      - uses: actions/checkout@{'a' * 40} # v9.9.9\n"),
+        encoding="utf-8",
+    )
+
+    assert find_policy_violations(workflow) == []
+
+
+def test_find_policy_violations_reports_an_unpinned_action(tmp_path: Path) -> None:
+    """A tag-pinned action is mutable upstream, so the guard must reject it."""
+
+    workflow = tmp_path / "ci.yml"
+    workflow.write_text(_workflow("      - uses: actions/checkout@v7\n"), encoding="utf-8")
+
+    violations = find_policy_violations(workflow)
+
+    assert any("uses: actions/checkout@v7" in violation for violation in violations)
 
 
 def test_find_policy_violations_scans_a_taskfile_block_body(tmp_path: Path) -> None:
