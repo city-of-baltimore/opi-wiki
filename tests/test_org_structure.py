@@ -17,26 +17,37 @@ def test_org_structure_data_loads_cleanly() -> None:
 
     structure = load_org_structure(DOCS_DIR, "_data/people.yml")
 
+    assert structure.mayor.name == "Brandon M. Scott"
     assert structure.city_administrator.name == "Faith P. Leach"
     assert len(structure.portfolios) == 4
     assert structure.portfolios[3].lead.name == "Gabriel Watson"
 
 
-def test_leadership_chart_is_the_reporting_spine_only() -> None:
-    """The chart is City Administrator -> Executive Director; teams live in a table."""
+def test_leadership_chart_renders_the_full_public_org() -> None:
+    """The chart renders the current public reporting hierarchy."""
 
     structure = load_org_structure(DOCS_DIR, "_data/people.yml")
     chart = render_org_structure(structure, "leadership_chart")
 
     assert chart.startswith('<figure class="opi-org-chart"')
+    assert chart.count('data-org-level="mayor"') == 1
     assert chart.count('data-org-level="city"') == 1
     assert chart.count('data-org-level="executive"') == 1
+    assert chart.count('data-org-level="senior-lead"') == 3
+    assert chart.count('data-org-level="manager"') == 1
+    assert chart.count('data-org-level="team"') == 1
+    assert chart.count('data-org-level="staff"') == 17
+    assert "Brandon M. Scott" in chart
     assert "Faith P. Leach" in chart
     assert "Dartanion Swift-Williams" in chart
-    # Teams, staff, and contractors are not chart nodes here.
-    assert 'data-org-level="team"' not in chart
-    assert 'data-org-level="report"' not in chart
-    assert "Gabriel Watson" not in chart
+    assert "Rakeim Young" in chart
+    assert "Danny Heller" in chart
+    assert "Jason Howard, PhD" in chart
+    assert "Gabriel Watson" in chart
+    assert chart.index("Jason Howard, PhD") < chart.index("Gabriel Watson")
+    # Contractors are not published in the public org chart.
+    assert "Byron Roelofsz" not in chart
+    assert "Sand Technologies" not in chart
     assert "```mermaid" not in chart
 
 
@@ -106,4 +117,7 @@ def test_org_structure_page_uses_shared_data_macros() -> None:
     text = org_page.read_text(encoding="utf-8")
 
     assert 'org_structure_from("_data/people.yml"' in text
+    assert "team_reports_table" not in text
+    assert "Designed to stack" not in text
+    assert "Who reports to whom" not in text
     assert "```mermaid" not in text

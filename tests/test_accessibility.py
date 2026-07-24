@@ -156,8 +156,14 @@ def test_accessibility_checker_accepts_complete_built_org_chart(tmp_path: Path) 
     site_dir = tmp_path / "site"
     site_dir.mkdir()
     nodes = [
+        ("mayor", "Brandon M. Scott"),
         ("city", "Faith P. Leach"),
         ("executive", "Dartanion Swift-Williams"),
+        ("senior-lead", "Rakeim Young"),
+        ("senior-lead", "Danny Heller"),
+        ("senior-lead", "Jason Howard, PhD"),
+        ("manager", "Gabriel Watson"),
+        ("team", "Data and Analytics"),
     ]
     node_markup = "".join(
         f'<div class="opi-org-chart__node" data-org-level="{level}">'

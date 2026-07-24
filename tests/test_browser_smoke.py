@@ -14,7 +14,6 @@ import scripts.repo_tools.browser_smoke as browser_smoke
 from scripts.check_browser_smoke import parse_args
 from scripts.repo_tools.browser_smoke import (
     ORG_CHART_NAMES,
-    ORG_LEAD_NAMES,
     SMOKE_TARGETS,
     _check_org_chart_state,
     _check_page_load,
@@ -175,9 +174,15 @@ def test_org_chart_exposes_the_expected_visible_hierarchy() -> None:
         {
             "chartVisible": True,
             "chartNames": list(ORG_CHART_NAMES),
-            "cityCount": 1,
-            "executiveCount": 1,
-            "reportsCellsText": [f"{lead}, Lead" for lead in ORG_LEAD_NAMES],
+            "counts": {
+                "mayor": 1,
+                "city": 1,
+                "executive": 1,
+                "seniorLead": 3,
+                "manager": 1,
+                "team": 1,
+                "staff": 17,
+            },
         }
     )
 
@@ -191,19 +196,24 @@ def test_org_chart_reports_missing_names_and_hierarchy_drift() -> None:
         {
             "chartVisible": False,
             "chartNames": [],
-            "cityCount": 0,
-            "executiveCount": 0,
-            "reportsCellsText": [],
+            "counts": {
+                "mayor": 0,
+                "city": 0,
+                "executive": 0,
+                "seniorLead": 0,
+                "manager": 0,
+                "team": 0,
+                "staff": 0,
+            },
         }
     )
 
     issues = _check_org_chart_state(page, "dark", "instant navigation")
 
-    assert len(issues) == 4
+    assert len(issues) == 3
     assert "no visible dimensions" in issues[0]
     assert "public leadership names were not visible" in issues[1]
-    assert "team leads were not visible in the reports table" in issues[2]
-    assert "hierarchy counts" in issues[3]
+    assert "hierarchy counts" in issues[2]
 
 
 def test_source_override_keeps_static_repo_link_without_stats_hook() -> None:
