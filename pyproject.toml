@@ -30,9 +30,9 @@ package = false
 [dependency-groups]
 dev = [
     # The `toml` extra lets bandit read its configuration from this file.
-    "bandit[toml]>=1.9.2,<2.0.0",
+    "bandit[toml]>=1.9.4,<2.0.0",
     "pytest>=9.0.3,<10.0.0",
-    "ruff>=0.15.12,<0.16.0",
+    "ruff>=0.16.0,<0.17.0",
     "playwright>=1.58.0,<2.0.0",
     "mypy>=2.1.0,<3.0.0",
     "types-pyyaml>=6.0.12.20260518,<7.0.0.0",
@@ -45,7 +45,7 @@ dev = [
     # instead of it. The two cover different ground and 0.4.3 does not subsume
     # the local guard — see the "Two checkers" note in that module's docstring
     # for the gaps that were re-measured against 0.4.3.
-    "baltimore-patapsco==0.4.3",
+    "baltimore-patapsco==0.4.5",
 ]
 
 [tool.pytest.ini_options]
