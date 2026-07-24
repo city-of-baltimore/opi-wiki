@@ -22,42 +22,41 @@ def test_org_structure_data_loads_cleanly() -> None:
     assert structure.portfolios[3].lead.name == "Gabriel Watson"
 
 
-def test_org_structure_renderer_covers_public_chart_and_team_table() -> None:
-    """The renderer should emit only the public leadership and team views."""
-
-    structure = load_org_structure(DOCS_DIR, "_data/people.yml")
-
-    leadership_chart = render_org_structure(structure, "leadership_chart")
-    portfolio_table = render_org_structure(structure, "portfolio_table")
-
-    assert leadership_chart.startswith('<figure class="opi-org-chart"')
-    assert 'data-org-level="city"' in leadership_chart
-    assert 'data-org-level="executive"' in leadership_chart
-    assert leadership_chart.count('data-org-level="team"') == 4
-    assert 'data-org-key="innovation-lab"' in leadership_chart
-    assert "Director&#x27;s Office" in leadership_chart
-    assert "Gabriel Watson" in leadership_chart
-    assert "Innovation Program Manager" in leadership_chart
-    assert "```mermaid" not in leadership_chart
-    assert "| Director's Office | Rakeim Young, Chief of Staff |" in portfolio_table
-    assert "Cost Center" not in portfolio_table
-    assert "Ifeanyi Akila" not in leadership_chart
-
-
-def test_leadership_chart_includes_full_team_without_contractors() -> None:
-    """The chart shows every City staff member under their lead, and no contractors."""
+def test_leadership_chart_is_the_reporting_spine_only() -> None:
+    """The chart is City Administrator -> Executive Director; teams live in a table."""
 
     structure = load_org_structure(DOCS_DIR, "_data/people.yml")
     chart = render_org_structure(structure, "leadership_chart")
 
-    assert 'class="opi-org-chart__reports"' in chart
-    assert chart.count('data-org-level="report"') == 17
-    assert "Rashaad Tillery" in chart
-    assert "Xander Jake de los Santos" in chart
-    # Open roles appear without an incumbent; contractors never appear.
-    assert ">Open</strong>" in chart
-    assert "Byron Roelofsz" not in chart
-    assert "Sand Technologies" not in chart
+    assert chart.startswith('<figure class="opi-org-chart"')
+    assert chart.count('data-org-level="city"') == 1
+    assert chart.count('data-org-level="executive"') == 1
+    assert "Faith P. Leach" in chart
+    assert "Dartanion Swift-Williams" in chart
+    # Teams, staff, and contractors are not chart nodes here.
+    assert 'data-org-level="team"' not in chart
+    assert 'data-org-level="report"' not in chart
+    assert "Gabriel Watson" not in chart
+    assert "```mermaid" not in chart
+
+
+def test_team_reports_table_lists_each_lead_and_their_reports() -> None:
+    """The team_reports table pairs every team lead with their direct reports."""
+
+    structure = load_org_structure(DOCS_DIR, "_data/people.yml")
+    table = render_org_structure(structure, "team_reports_table")
+    portfolio_table = render_org_structure(structure, "portfolio_table")
+
+    assert table.startswith("| **Team** | **Lead** | **Reports** |")
+    assert "| Director's Office | Rakeim Young, Chief of Staff | Roberto Herbruger" in table
+    assert "Xander Jake de los Santos" in table
+    # Open roles show their title marked open; contractors never appear.
+    assert "Senior Performance Analyst (open)" in table
+    assert "| Open |" not in table
+    assert "Byron Roelofsz" not in table
+    assert "Sand Technologies" not in table
+    assert "| Director's Office | Rakeim Young, Chief of Staff |" in portfolio_table
+    assert "Cost Center" not in portfolio_table
 
 
 def test_team_roles_table_lists_people_with_role_summaries() -> None:
@@ -66,12 +65,12 @@ def test_team_roles_table_lists_people_with_role_summaries() -> None:
     structure = load_org_structure(DOCS_DIR, "_data/people.yml")
     roles = render_org_structure(structure, "team_roles")
 
-    # The Executive Director is listed with the Director's Office (above the
-    # Chief of Staff), not under a separate standalone heading.
-    assert roles.startswith("## Director's Office")
+    # The Executive Director leads a group of one, headed by the role title
+    # (not "Office of the Executive Director", which reads as an office of one).
+    assert roles.startswith("## Executive Director and Chief Data Officer")
     assert "## Office of the Executive Director" not in roles
     assert "| Dartanion Swift-Williams | Executive Director and Chief Data Officer |" in roles
-    assert roles.index("Dartanion Swift-Williams") < roles.index("Rakeim Young")
+    assert "## Director's Office" in roles
     assert "| Name | Title | What the role does |" in roles
     assert "| Rashaad Tillery | CitiStat Inspector |" in roles
     assert "| Open | Senior Performance Analyst |" in roles

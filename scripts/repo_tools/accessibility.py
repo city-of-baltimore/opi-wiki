@@ -231,7 +231,9 @@ def find_accessibility_issues(site_dir: Path) -> list[str]:
                 issues.append(f"{relative_file}: public leadership chart is missing its caption")
 
             levels = [node.level for node in chart.nodes]
-            expected_counts = {"city": 1, "executive": 1, "team": 4}
+            # The chart is the reporting spine only (City Administrator ->
+            # Executive Director); teams and reports live in the adjacent table.
+            expected_counts = {"city": 1, "executive": 1}
             for level, expected_count in expected_counts.items():
                 actual_count = levels.count(level)
                 if actual_count != expected_count:

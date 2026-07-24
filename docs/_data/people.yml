@@ -25,7 +25,6 @@ executive_director:
 portfolios:
   - key: directors-office
     label: Director's Office
-    node_id: DO
     primary_value: Keeps work prioritized, documented, communicated, and deliverable.
     table_lead: Rakeim Young, Chief of Staff
     lead:
@@ -45,7 +44,6 @@ portfolios:
 
   - key: performance
     label: Performance
-    node_id: PC
     primary_value: Owns the performance method; translates priorities into measures, follow-up, and improvement.
     table_lead: Danny Heller, Deputy Chief Performance Officer
     lead:
@@ -77,7 +75,6 @@ portfolios:
 
   - key: data-and-analytics
     label: Data and Analytics
-    node_id: DA
     primary_value: Builds trusted data infrastructure and decision-ready analytics; supports CitiStat, transparency, agency operations, and AI readiness.
     table_lead: Jason Howard, PhD, Deputy Chief Data Officer
     lead:
@@ -97,7 +94,6 @@ portfolios:
 
   - key: innovation-lab
     label: Innovation Lab
-    node_id: IL
     primary_value: Turns service problems into designed, usable, testable solutions; coordinates handoff to data, engineering, agency, or BCIT partners.
     table_lead: Gabriel Watson, Innovation Program Manager
     lead:

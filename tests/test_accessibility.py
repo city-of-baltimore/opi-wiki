@@ -158,10 +158,6 @@ def test_accessibility_checker_accepts_complete_built_org_chart(tmp_path: Path) 
     nodes = [
         ("city", "Faith P. Leach"),
         ("executive", "Dartanion Swift-Williams"),
-        ("team", "Rakeim Young"),
-        ("team", "Danny Heller"),
-        ("team", "Jason Howard, PhD"),
-        ("team", "Gabriel Watson"),
     ]
     node_markup = "".join(
         f'<div class="opi-org-chart__node" data-org-level="{level}">'
@@ -194,7 +190,6 @@ def test_accessibility_checker_flags_incomplete_built_org_chart(tmp_path: Path) 
 
     assert any("missing its caption" in issue for issue in issues)
     assert any("'executive' nodes; expected 1" in issue for issue in issues)
-    assert any("'team' nodes; expected 4" in issue for issue in issues)
     assert any("node #1 is missing a visible name" in issue for issue in issues)
 
 

@@ -1,13 +1,10 @@
-/* Dependency-free public leadership hierarchy. The nested lists preserve the
-   reporting structure for assistive technology; these rules add the visual
-   connectors and responsive card layout without relying on client-side JS. */
+/* Dependency-free public reporting spine (City Administrator -> Executive
+   Director). The nested list preserves the reporting line for assistive
+   technology; these rules add the visual connector and card layout without
+   relying on client-side JS. The four teams and their reports render in the
+   adjacent Markdown table, not in this figure. */
 
 .md-typeset .opi-org-chart {
-  /* Team accents, keyed to data-org-key on each node. */
-  --opi-team-directors-office: #b0791f;
-  --opi-team-performance: #2f8f7f;
-  --opi-team-data-and-analytics: #2f6fb0;
-  --opi-team-innovation-lab: #7a3b9a;
   margin: 1.4rem 0 2rem;
   padding: 1.15rem;
   overflow-x: auto;
@@ -26,7 +23,7 @@
   text-align: center;
 }
 
-.md-typeset :where(.opi-org-chart__tree, .opi-org-chart__branch, .opi-org-chart__teams) {
+.md-typeset :where(.opi-org-chart__tree, .opi-org-chart__branch) {
   margin: 0;
   padding-left: 0;
   list-style: none;
@@ -43,7 +40,7 @@
 .opi-org-chart__node {
   display: flex;
   flex-direction: column;
-  width: min(100%, 19rem);
+  width: min(100%, 22rem);
   min-height: 5.5rem;
   padding: 0.8rem 0.9rem;
   border: 1px solid var(--opi-border);
@@ -67,16 +64,6 @@
 .opi-org-chart__node[data-org-level="executive"] {
   border-width: 2px;
   border-color: var(--opi-gold);
-}
-
-.opi-org-chart__team {
-  margin-bottom: 0.3rem;
-  color: var(--opi-gold-deep);
-  font-size: 0.68rem;
-  font-weight: 800;
-  letter-spacing: 0.07em;
-  line-height: 1.35;
-  text-transform: uppercase;
 }
 
 .opi-org-chart__name {
@@ -107,204 +94,6 @@
   height: 3rem;
   border-left: 2px solid var(--opi-border);
   content: "";
-}
-
-.opi-org-chart__teams {
-  display: grid;
-  position: relative;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-  gap: 0.8rem;
-  width: 100%;
-  margin-top: 1.5rem;
-  padding-top: 1.5rem;
-}
-
-.opi-org-chart__teams::after {
-  position: absolute;
-  top: -1.5rem;
-  left: 50%;
-  height: 1.5rem;
-  border-left: 2px solid var(--opi-border);
-  content: "";
-}
-
-.opi-org-chart__team-item {
-  position: relative;
-}
-
-.opi-org-chart__team-item::before {
-  position: absolute;
-  top: -1.5rem;
-  left: -0.4rem;
-  width: calc(100% + 0.8rem);
-  border-top: 2px solid var(--opi-border);
-  content: "";
-}
-
-.opi-org-chart__team-item:first-child::before {
-  left: 50%;
-  width: calc(50% + 0.4rem);
-}
-
-.opi-org-chart__team-item:last-child::before {
-  width: calc(50% + 0.4rem);
-}
-
-.opi-org-chart__team-item::after {
-  position: absolute;
-  top: -1.5rem;
-  left: 50%;
-  height: 1.5rem;
-  border-left: 2px solid var(--opi-border);
-  content: "";
-}
-
-.opi-org-chart__team-item .opi-org-chart__node {
-  width: 100%;
-  min-height: 7.5rem;
-}
-
-/* Staff reporting to each team lead, stacked below the lead card. */
-.opi-org-chart__reports {
-  display: flex;
-  position: relative;
-  flex-direction: column;
-  gap: 0.55rem;
-  margin: 0.9rem 0 0;
-  padding-left: 0;
-  list-style: none;
-}
-
-.opi-org-chart__report-item {
-  position: relative;
-}
-
-.opi-org-chart__report-item::before {
-  position: absolute;
-  top: -0.9rem;
-  left: 50%;
-  height: 0.9rem;
-  border-left: 2px solid var(--opi-border);
-  content: "";
-}
-
-.opi-org-chart__report-item + .opi-org-chart__report-item::before {
-  top: -0.55rem;
-  height: 0.55rem;
-}
-
-.opi-org-chart__report-item .opi-org-chart__node {
-  width: 100%;
-  min-height: 0;
-  padding: 0.6rem 0.7rem;
-}
-
-.opi-org-chart__report-item .opi-org-chart__name {
-  font-size: 0.82rem;
-}
-
-.opi-org-chart__report-item .opi-org-chart__title {
-  font-size: 0.7rem;
-}
-
-/* Color each team's cards by its accent. */
-.opi-org-chart__node[data-org-key="directors-office"] {
-  border-top-color: var(--opi-team-directors-office);
-}
-
-.opi-org-chart__node[data-org-key="performance"] {
-  border-top-color: var(--opi-team-performance);
-}
-
-.opi-org-chart__node[data-org-key="data-and-analytics"] {
-  border-top-color: var(--opi-team-data-and-analytics);
-}
-
-.opi-org-chart__node[data-org-key="innovation-lab"] {
-  border-top-color: var(--opi-team-innovation-lab);
-}
-
-.opi-org-chart__team-item .opi-org-chart__team {
-  color: inherit;
-}
-
-.opi-org-chart__node[data-org-key="directors-office"] .opi-org-chart__team {
-  color: var(--opi-team-directors-office);
-}
-
-.opi-org-chart__node[data-org-key="performance"] .opi-org-chart__team {
-  color: var(--opi-team-performance);
-}
-
-.opi-org-chart__node[data-org-key="data-and-analytics"] .opi-org-chart__team {
-  color: var(--opi-team-data-and-analytics);
-}
-
-.opi-org-chart__node[data-org-key="innovation-lab"] .opi-org-chart__team {
-  color: var(--opi-team-innovation-lab);
-}
-
-[data-md-color-scheme="slate"] .opi-org-chart__team {
-  color: var(--opi-gold);
-}
-
-@media (max-width: 800px) {
-  .md-typeset .opi-org-chart {
-    padding: 0.85rem;
-  }
-
-  .opi-org-chart__teams {
-    display: block;
-    margin-top: 1.25rem;
-    padding-top: 0;
-    padding-left: 1.5rem;
-  }
-
-  .opi-org-chart__teams::before {
-    position: absolute;
-    top: 0;
-    right: 50%;
-    left: 0.75rem;
-    border-top: 2px solid var(--opi-border);
-    content: "";
-  }
-
-  .opi-org-chart__teams::after {
-    top: -1.25rem;
-    height: 1.25rem;
-  }
-
-  .opi-org-chart__team-item {
-    margin-bottom: 0.75rem;
-  }
-
-  .opi-org-chart__team-item::before,
-  .opi-org-chart__team-item:first-child::before,
-  .opi-org-chart__team-item:last-child::before {
-    top: 0;
-    bottom: -0.75rem;
-    left: -0.75rem;
-    width: 0;
-    border-top: 0;
-    border-left: 2px solid var(--opi-border);
-  }
-
-  .opi-org-chart__team-item:last-child::before {
-    bottom: 50%;
-  }
-
-  .opi-org-chart__team-item::after {
-    top: 50%;
-    left: -0.75rem;
-    width: 0.75rem;
-    height: 0;
-    border-top: 2px solid var(--opi-border);
-    border-left: 0;
-  }
-
-  .opi-org-chart__team-item .opi-org-chart__node {
-    min-height: 0;
-  }
 }
 
 @media print {
