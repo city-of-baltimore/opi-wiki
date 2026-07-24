@@ -7,8 +7,8 @@ Ownership: repository tooling, enforcing section 4 ("Lean CI") of
 Invariants enforced here:
 
 1. Every ``run:`` step in a hosted workflow matches the exact allowlist in
-   :data:`ALLOWED_RUN_COMMANDS`, and every ``uses:`` reference matches
-   :data:`ALLOWED_ACTION_REFERENCES`.
+   :data:`ALLOWED_RUN_COMMANDS`, and every ``uses:`` reference is pinned to a
+   full commit SHA (:data:`SHA_PINNED_ACTION`).
 2. No hosted workflow step reaches a forbidden command — a test suite, a
    coverage run, a site/application build, an image build, or a browser suite —
    **directly or transitively, at any depth**. Invariant 1 alone would let
@@ -144,13 +144,12 @@ ALLOWED_RUN_COMMANDS = frozenset(
         "task ci",
     }
 )
-ALLOWED_ACTION_REFERENCES = frozenset(
-    {
-        "actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1",
-        "actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97",
-        "arduino/setup-task@c0bc642852239c2689f73f4ea6459c29405f3c52",
-    }
-)
+# Every ``uses:`` must be pinned to a full 40-character commit SHA. A SHA is
+# immutable, so a tag like ``@v7`` (which upstream can silently repoint) never
+# reaches CI. Which SHA is current is Dependabot's job to bump and a reviewer's
+# job to approve at merge; the guard only enforces that the pin is a SHA, so
+# routine action bumps do not need a code change here.
+SHA_PINNED_ACTION = re.compile(r"^[^@\s]+@[0-9a-f]{40}$")
 
 # Publish/deploy/release workflows legitimately build artifacts; that is their
 # job. Only the always-on quality lane is held to the lean-CI boundary.
@@ -391,7 +390,7 @@ def find_policy_violations(workflow_path: Path) -> list[str]:
     violations.extend(
         f"uses: {reference}"
         for reference in extract_action_references(source)
-        if reference not in ALLOWED_ACTION_REFERENCES
+        if not SHA_PINNED_ACTION.match(reference)
     )
     for command in commands:
         violations.extend(find_forbidden_reach(command))
