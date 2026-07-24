@@ -180,9 +180,12 @@ A quick reference for acronyms that recur across the wiki and are easy to read p
 
 | Acronym | Expansion |
 | --- | --- |
+| **ARPA** | American Rescue Plan Act |
 | **DCA** | Deputy City Administrator |
 | **DDO** | Data-Driven Officer (see entry above) |
 | **GIS** | Geographic Information System (mapping and spatial analytics) |
+| **MOCFS** | Mayor's Office of Child and Family Services |
+| **MOHS** | Mayor's Office of Homeless Services |
 | **PII** | Personally Identifiable Information |
 | **RAG** | Red / Amber / Green status rating |
 | **TPM** | Technical Program Manager (a Data and Analytics role) |

@@ -38,6 +38,18 @@ def test_publication_boundary_rejects_yaml_pin_and_phone_output(tmp_path: Path) 
     ]
 
 
+def test_publication_boundary_rejects_excluded_handbook_output(tmp_path: Path) -> None:
+    """Internal handbook source must not reappear in the public generated site."""
+
+    handbook_page = tmp_path / "how-we-work" / "handbook" / "index.html"
+    handbook_page.parent.mkdir(parents=True)
+    handbook_page.write_text("<h1>Handbook</h1>", encoding="utf-8")
+
+    assert find_publication_boundary_issues(tmp_path) == [
+        "how-we-work/handbook/index.html: excluded source path was published"
+    ]
+
+
 def test_publication_boundary_requires_a_built_site(tmp_path: Path) -> None:
     """A missing build must fail rather than pass vacuously."""
 

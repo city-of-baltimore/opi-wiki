@@ -1,8 +1,9 @@
 """Load and query the public OPI organization directory.
 
-The source file deliberately contains only information published by the org
-chart. Payroll identifiers and phone numbers are forbidden at the loader
-boundary so those fields cannot silently return to the public build.
+The source file deliberately contains only public staff names, working titles,
+team assignments, reporting relationships, and short role summaries. Sensitive
+personnel, payroll, contact, and classification fields are forbidden at the
+loader boundary so they cannot silently return to the public build.
 """
 
 from __future__ import annotations
@@ -12,7 +13,23 @@ from typing import Any
 
 from scripts.repo_tools.data import load_docs_yaml_file
 
-_FORBIDDEN_PUBLIC_FIELDS = frozenset({"pin", "phone"})
+_FORBIDDEN_PUBLIC_FIELDS = frozenset(
+    {
+        "classification",
+        "compensation",
+        "cost_center",
+        "cost center",
+        "email",
+        "employment_status",
+        "employment status",
+        "payroll",
+        "personnel_status",
+        "personnel status",
+        "phone",
+        "pin",
+        "salary",
+    }
+)
 
 
 def _forbidden_field_paths(value: Any, path: str = "root") -> list[str]:

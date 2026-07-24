@@ -3,6 +3,9 @@
 .git
 .github
 .env*
+.cache/
+.coverage
+.coverage.*
 .venv
 venv/
 site/

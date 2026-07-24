@@ -1,9 +1,10 @@
 # Public organization data for OPI Foundations.
 #
 # Single source for the public org chart and the Team and Roles table. It holds
-# only information OPI publishes about its structure: names, working titles,
-# team labels and leads, each team's high-level purpose, and a one-line public
-# summary of what each role does. City staff appear here; contractors do not.
+# only information OPI publishes about its structure: City staff names, working
+# titles, team labels and leads, reporting relationships, each team's high-level
+# purpose, and a one-line public summary of what each role does. Contractors do
+# not appear here.
 #
 # Personal or employment data must never be added: payroll identifiers, phone
 # numbers, email addresses, classifications, cost centers, personnel status, and
