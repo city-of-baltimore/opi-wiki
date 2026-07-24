@@ -77,7 +77,7 @@ The mechanics that make a Stat repeatable are in the [Method Playbook](method-pl
 
 An issue moves from an agency's own performance management into CitiStat when executive attention can materially change the outcome, and at least one of these holds. Performance is materially off track, meaning a Mayor's Action Plan outcome or Agency Performance Plan milestone has missed its target for two straight cycles or is projected to miss by a wide margin. The problem is concentrated where coordinated action could produce a visible improvement. Two or more agencies share responsibility and none can clear the barrier alone. There is a significant risk to life-safety, legal, financial, reputational, or resident-service interests that needs timely executive attention. Or a tactic has produced enough evidence to decide whether to expand, fund, standardize, redesign, or stop it.
 
-Admission is not permanent. A Stat that stops producing decisions, commitments, or learning is redesigned, paused, merged, or handed off. The [continuation test](method-playbook.md#issue-selection-admission-and-continuation) in the Playbook sets the bar.
+Admission is not permanent. A Stat that stops producing decisions, commitments, or learning is redesigned, paused, merged, or handed off. The [continuation test](method-playbook.md#issue-selection-and-continuation) in the Playbook sets the bar.
 
 ## The legal mandate
 
@@ -129,6 +129,6 @@ CitiStat identifies the problem; the rest of OPI helps explain, design, deliver,
 
 ## Read alongside
 
-- [CitiStat Method Playbook](method-playbook.md): the operating manual, covering roles, the full session cycle, admission criteria, and the quality bar.
+- [CitiStat Method Playbook](method-playbook.md): the operating manual, covering roles, the full session cycle, and the quality bar.
 - [CitiStat Portfolio](portfolio/index.md): the current schedule of active Stats.
 - [About Performance](../../../about-us/our-teams/performance/about-performance.md): how CitiStat fits inside citywide performance management.

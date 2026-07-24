@@ -18,4 +18,3 @@ delivers public value. Per-service activity detail lives on each
 ## Read alongside
 
 - [Services](../../what-we-do/services/index.md): the five services in detail
-- [Strategic Priorities one-pager](strategic-priorities-one-pager.md): FY priorities and budget

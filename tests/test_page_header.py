@@ -60,12 +60,12 @@ def test_render_page_header_escapes_text() -> None:
 def test_page_header_macro_resolves_badge_from_metadata() -> None:
     """The macro should pull the badge token from inherited page metadata."""
 
-    env = register_macros("resources/reference/position-descriptions/index.md")
+    env = register_macros("resources/reference/glossary.md")
 
-    rendered = str(env.macros["page_header"](summary="How charters work."))
+    rendered = str(env.macros["page_header"](summary="What this page covers."))
 
     assert '<span class="opi-pill neutral">Reference</span>' in rendered
-    assert '<p class="opi-page-header__summary">How charters work.</p>' in rendered
+    assert '<p class="opi-page-header__summary">What this page covers.</p>' in rendered
 
 
 def test_pages_do_not_duplicate_title_as_bold_paragraph() -> None:

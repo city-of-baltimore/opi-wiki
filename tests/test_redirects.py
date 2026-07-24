@@ -69,7 +69,7 @@ def test_redirect_allowlist_stays_small_and_explicit() -> None:
     assert ALLOWED_DUPLICATE_DESTINATIONS == {
         "resources/index.md",
         "resources/reference/index.md",
-        "resources/reference/position-descriptions/index.md",
+        "about-us/our-teams/team-and-roles.md",
         "what-we-do/services/cross-agency-delivery/service-definition.md",
         "what-we-do/services/cross-agency-delivery/index.md",
         "how-we-work/organization/org-structure.md",
@@ -83,6 +83,6 @@ def test_redirect_allowlist_stays_small_and_explicit() -> None:
         "what-we-do/products/baltimore-intelligence-center/index.md",
         "what-we-do/products/baltimore-intelligence-center/architecture-and-roadmap.md",
         "what-we-do/products/baltimore-intelligence-center/products-and-capabilities.md",
-        "what-we-do/products/baltimore-intelligence-center/responsible-data-and-ai.md",
         "what-we-do/programs/citistat/method-playbook.md",
+        "what-we-do/programs/data-governance/index.md",
     }

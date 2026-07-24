@@ -1,18 +1,19 @@
 # Org Structure
 
-{{ page_header(summary="Who reports to whom, and how decision rights flow.", tagline="Leadership, team leads, and how work is organized.") }}
+{{ page_header(summary="Who reports to whom, and how decision rights flow.", tagline="The team, its leads, and how work is organized.") }}
 
 OPI delivers its mission through four City teams and five services. The teams
 are how the office organizes leadership and expertise. The services are how OPI
 describes what it delivers to residents, agencies, and City leadership.
 
-This document is the public view of OPI’s leadership and team structure.
-Internal personnel, staffing, contractor, contact, and cost-center records are
-maintained in City systems and are not published here.
+This is the public view of OPI’s team and structure. Contact, payroll, and
+cost-center records are maintained in City systems and are not published here.
 
-## Leadership org chart
+## Org chart
 
-This chart shows the named leadership structure and team ownership.
+This chart shows the OPI team, grouped by team and colored by team. City staff
+appear here; contractors are not shown. For what each role does, see
+[Team and Roles](../../about-us/our-teams/team-and-roles.md).
 
 {{ org_structure_from("_data/people.yml", "leadership_chart") }}
 

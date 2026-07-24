@@ -34,16 +34,3 @@ We serve a range of people. The Mayor and City Administrator rely on us for prio
 We bring five things to that work: performance management and the CitiStat method; data engineering, analytics, governance, and open data; human-centered and service design, product management, and civic technology; cross-agency delivery through charters, tiger teams, sequencing, and sustainment planning; and communications, from executive briefings to Council relations.
 
 What comes out of it is practical. Leadership gets faster, clearer decisions, because Stat sessions produce follow-ups instead of just discussion. Agencies get reusable infrastructure they can build on instead of reinventing: data products, dashboards, and operational tools. Residents and staff get service improvements they actually use. The public gets accountability through plain-language reporting, open data, and visible follow-through. And the city gets a pipeline of talent who learn public-sector delivery here and carry it forward.
-
-## What we are not
-
-Naming what we are not keeps the role clear.
-
-| We are not | What that means |
-| --- | --- |
-| A consulting firm that produces decks and disappears | We stay through delivery and sustainment. |
-| A press shop | We give a plain account of the work, not spin. |
-| An IT department | BCIT owns enterprise infrastructure. |
-| An audit function | We help agencies improve; we do not grade them. |
-| A research lab | We ship. |
-| The agency's own staff | We help agencies own and sustain change, in time-boxed cycles with named owners and clear exit criteria. |

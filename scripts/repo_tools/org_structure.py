@@ -12,10 +12,11 @@ from scripts.repo_tools.data import load_docs_yaml_file
 
 @dataclass(frozen=True)
 class OrgPerson:
-    """A named org-chart node."""
+    """A named org-chart node, with an optional public role summary."""
 
     name: str
     title: str
+    summary: str = ""
 
 
 @dataclass(frozen=True)
@@ -28,6 +29,7 @@ class Portfolio:
     lead: OrgPerson
     primary_value: str
     table_lead: str
+    staff: tuple[OrgPerson, ...] = ()
 
 
 @dataclass(frozen=True)
@@ -53,6 +55,7 @@ def _normalize_person(raw_person: Any, source: str) -> OrgPerson:
     return OrgPerson(
         name=str(raw_person["name"]).strip(),
         title=str(raw_person["title"]).strip(),
+        summary=str(raw_person.get("summary", "")).strip(),
     )
 
 
@@ -77,6 +80,10 @@ def _normalize_portfolio(raw_portfolio: Any, index: int, source: str) -> Portfol
             f"{source} portfolio #{index} is missing required fields: {missing_fields}"
         )
 
+    raw_staff = raw_portfolio.get("staff") or []
+    if not isinstance(raw_staff, list):
+        raise ValueError(f"{source} portfolio #{index} 'staff' must be a list when present.")
+
     return Portfolio(
         key=str(raw_portfolio["key"]).strip(),
         label=str(raw_portfolio["label"]).strip(),
@@ -84,6 +91,10 @@ def _normalize_portfolio(raw_portfolio: Any, index: int, source: str) -> Portfol
         lead=_normalize_person(raw_portfolio["lead"], f"{source} portfolio #{index} lead"),
         primary_value=str(raw_portfolio["primary_value"]).strip(),
         table_lead=str(raw_portfolio["table_lead"]).strip(),
+        staff=tuple(
+            _normalize_person(member, f"{source} portfolio #{index} staff #{member_index}")
+            for member_index, member in enumerate(raw_staff, start=1)
+        ),
     )
 
 
@@ -153,7 +164,7 @@ def render_org_structure(structure: OrgStructure, section: str) -> str:
         lines = [
             '<figure class="opi-org-chart" aria-labelledby="opi-org-chart-caption">',
             '  <figcaption id="opi-org-chart-caption" class="opi-org-chart__caption">',
-            "    OPI public leadership reporting hierarchy",
+            "    OPI public reporting hierarchy",
             "  </figcaption>",
             '  <ul class="opi-org-chart__tree" role="list">',
             '    <li class="opi-org-chart__root">',
@@ -174,20 +185,27 @@ def render_org_structure(structure: OrgStructure, section: str) -> str:
             '          <ul class="opi-org-chart__teams" role="list">',
         ]
         for portfolio in structure.portfolios:
-            lines.extend(
-                [
-                    '            <li class="opi-org-chart__team-item">',
-                    "              "
-                    + _org_chart_node(
-                        portfolio.lead,
-                        "team",
-                        team=portfolio.label,
-                        key=portfolio.key,
-                        node_id=portfolio.node_id,
-                    ),
-                    "            </li>",
-                ]
+            lines.append('            <li class="opi-org-chart__team-item">')
+            lines.append(
+                "              "
+                + _org_chart_node(
+                    portfolio.lead,
+                    "team",
+                    team=portfolio.label,
+                    key=portfolio.key,
+                    node_id=portfolio.node_id,
+                )
             )
+            if portfolio.staff:
+                lines.append('              <ul class="opi-org-chart__reports" role="list">')
+                for member in portfolio.staff:
+                    lines.append(
+                        '                <li class="opi-org-chart__report-item">'
+                        + _org_chart_node(member, "report", key=portfolio.key)
+                        + "</li>"
+                    )
+                lines.append("              </ul>")
+            lines.append("            </li>")
         lines.extend(
             [
                 "          </ul>",
@@ -210,7 +228,35 @@ def render_org_structure(structure: OrgStructure, section: str) -> str:
             lines.append(row)
         return "\n".join(lines)
 
+    if section == "team_roles":
+        return _render_team_roles(structure)
+
     raise ValueError(
         f"Unknown org-structure section '{section}'. Expected one of: "
-        "leadership_chart, portfolio_table."
+        "leadership_chart, portfolio_table, team_roles."
     )
+
+
+def _team_roles_group(heading: str, people: list[OrgPerson]) -> list[str]:
+    """Render one team's roles table: name, title, and what the role does."""
+
+    lines = [
+        f"## {heading}",
+        "",
+        "| Name | Title | What the role does |",
+        "| --- | --- | --- |",
+    ]
+    for person in people:
+        summary = person.summary or ""
+        lines.append(f"| {person.name} | {person.title} | {summary} |")
+    lines.append("")
+    return lines
+
+
+def _render_team_roles(structure: OrgStructure) -> str:
+    """Render the combined team-and-roles tables, grouped by team."""
+
+    lines = _team_roles_group("Office of the Executive Director", [structure.executive_director])
+    for portfolio in structure.portfolios:
+        lines.extend(_team_roles_group(portfolio.label, [portfolio.lead, *portfolio.staff]))
+    return "\n".join(lines).rstrip()

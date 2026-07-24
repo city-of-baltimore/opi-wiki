@@ -1,6 +1,6 @@
 # CitiStat Portfolio
 
-{{ page_header(summary="The full CitiStat portfolio: every Stat, with its brief, in one place.", tagline="The master register and a brief for every active Stat.") }}
+{{ page_header(summary="The active CitiStat portfolio, with a brief for each Stat.", tagline="A brief for every active Stat.") }}
 
 Baltimore’s CitiStat portfolio is how the City reviews performance across the services, systems, and priorities residents and staff experience most directly. This register documents all 19 active Stats; the fields are defined below.
 
@@ -8,13 +8,9 @@ CitiStat is managed by the Executive Director and implemented by agencies; the [
 
 This document is a companion to OPI’s operating model. The operating model explains how OPI organizes work; this register explains what each Stat is for, who sponsors it, what it tracks, what artifacts it produces, and how it can trigger delivery, product, data, or executive action.
 
-## A management practice, not a meeting schedule
+## What the portfolio is for
 
-CitiStat is a management practice, not a meeting schedule. What that means for each audience:
-
-- **For residents**, the portfolio should make visible how the City is improving services such as 311, permits, clean streets, public safety, recreation, housing, water, and transportation.
-- **For staff**, each Stat should clarify the evidence, decisions, owners, deadlines, and follow-up expected before and after the session.
-- **For leadership**, the portfolio should provide one place to see progress, blockers, decisions needed, and the story of what changed.
+CitiStat is a management practice, and the portfolio serves three audiences. For residents, it shows how the City is improving services such as 311, permits, clean streets, public safety, recreation, housing, water, and transportation. For staff, each Stat clarifies the evidence, decisions, owners, deadlines, and follow-up expected before and after the session. For leadership, it gives one view of progress, blockers, decisions needed, and what changed.
 
 ## Governance
 
@@ -76,7 +72,7 @@ Agency Stats run monthly. Housing, DOT, Police, and Fire & EMS run as agency Sta
 
 ## Admission and continuation criteria
 
-A recurring meeting should be called a Stat only when it meets the citywide admission criteria and continues to produce decisions, follow-ups, or learning. The full criteria, continuation test, and right-routine matrix live in the [CitiStat Method Playbook → Issue selection, admission, and continuation](../method-playbook.md#issue-selection-admission-and-continuation).
+A recurring meeting should be called a Stat only when it keeps producing decisions, follow-ups, or learning. The continuation test and right-routine matrix live in the [CitiStat Method Playbook](../method-playbook.md#issue-selection-and-continuation).
 
 ## Right-routine decision rule
 

@@ -21,7 +21,7 @@ The team contributes to [Cross-Agency Delivery](../../../what-we-do/services/cro
 ## Role overview
 
 Public summaries of Performance roles are available in
-[Resources → Position Descriptions](../../../resources/reference/position-descriptions/index.md),
+[Team and Roles](../team-and-roles.md),
 while full position descriptions remain in the City's SharePoint environment.
 
 ## Read alongside

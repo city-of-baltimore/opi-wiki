@@ -44,6 +44,36 @@ def test_org_structure_renderer_covers_public_chart_and_team_table() -> None:
     assert "Ifeanyi Akila" not in leadership_chart
 
 
+def test_leadership_chart_includes_full_team_without_contractors() -> None:
+    """The chart shows every City staff member under their lead, and no contractors."""
+
+    structure = load_org_structure(DOCS_DIR, "_data/people.yml")
+    chart = render_org_structure(structure, "leadership_chart")
+
+    assert 'class="opi-org-chart__reports"' in chart
+    assert chart.count('data-org-level="report"') == 17
+    assert "Rashaad Tillery" in chart
+    assert "Xander Jake de los Santos" in chart
+    # Open roles appear without an incumbent; contractors never appear.
+    assert ">Open</strong>" in chart
+    assert "Byron Roelofsz" not in chart
+    assert "Sand Technologies" not in chart
+
+
+def test_team_roles_table_lists_people_with_role_summaries() -> None:
+    """The team_roles view is one table per team: name, title, and what the role does."""
+
+    structure = load_org_structure(DOCS_DIR, "_data/people.yml")
+    roles = render_org_structure(structure, "team_roles")
+
+    assert roles.startswith("## Office of the Executive Director")
+    assert "| Name | Title | What the role does |" in roles
+    assert "## Director's Office" in roles
+    assert "| Rashaad Tillery | CitiStat Inspector |" in roles
+    assert "| Open | Senior Performance Analyst |" in roles
+    assert "Byron Roelofsz" not in roles
+
+
 def test_define_env_registers_org_structure_macro() -> None:
     """The MkDocs macros module should expose the shared org-structure helper."""
 

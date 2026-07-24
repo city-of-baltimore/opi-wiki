@@ -12,9 +12,9 @@ import yaml
 ALLOWED_DUPLICATE_DESTINATIONS = {
     "resources/index.md",
     "resources/reference/index.md",
-    # Full position descriptions were removed from the public repository in
-    # July 2026. Canonical and legacy URLs now converge on the public summary.
-    "resources/reference/position-descriptions/index.md",
+    # Position descriptions were retired; role summaries now live on the public
+    # Team and Roles page, where the legacy PD URLs converge.
+    "about-us/our-teams/team-and-roles.md",
     "what-we-do/services/cross-agency-delivery/service-definition.md",
     "what-we-do/services/cross-agency-delivery/index.md",
     # Added with the How We Work regroup and public/private boundary cleanup:
@@ -34,8 +34,9 @@ ALLOWED_DUPLICATE_DESTINATIONS = {
     "what-we-do/products/baltimore-intelligence-center/index.md",
     "what-we-do/products/baltimore-intelligence-center/architecture-and-roadmap.md",
     "what-we-do/products/baltimore-intelligence-center/products-and-capabilities.md",
-    "what-we-do/products/baltimore-intelligence-center/responsible-data-and-ai.md",
     "what-we-do/programs/citistat/method-playbook.md",
+    # BIC's Responsible data & AI page folded into the Data Governance program.
+    "what-we-do/programs/data-governance/index.md",
 }
 
 

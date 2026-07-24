@@ -36,7 +36,7 @@ def test_approved_badge_token_is_retired() -> None:
 def test_define_env_registers_explicit_badge_macro() -> None:
     """The macros module should expose the supported inline badge helper."""
 
-    env = register_macros("resources/reference/position-descriptions/index.md")
+    env = register_macros("resources/reference/glossary.md")
 
     assert str(env.macros["badge"]("reference")) == (
         '<span class="opi-pill neutral">Reference</span>'
@@ -55,10 +55,10 @@ def test_markdown_pages_do_not_inline_raw_pill_markup() -> None:
 
 
 def test_badge_page_retains_metadata_backing() -> None:
-    """The checked-in reference page should stay wired to metadata-driven badges."""
+    """The checked-in reference pages should stay wired to metadata-driven badges."""
 
     badge_pages = [
-        DOCS_DIR / "resources/reference/position-descriptions/index.md",
+        DOCS_DIR / "resources/reference/glossary.md",
     ]
 
     for markdown_file in badge_pages:
