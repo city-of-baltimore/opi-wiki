@@ -132,7 +132,7 @@ def _display_name(person: OrgPerson) -> str:
     """Return the public name shown in an org-chart card."""
 
     if person.name.strip().lower() == "open":
-        return "Open"
+        return "(Vacant)"
     return person.name
 
 
@@ -303,7 +303,7 @@ def _report_label(person: OrgPerson) -> str:
     """Label a report by name, or by the title marked open for a vacancy."""
 
     if person.name.strip().lower() == "open":
-        return f"{person.title} (open)"
+        return f"{person.title} (Vacant)"
     return person.name
 
 
@@ -331,7 +331,7 @@ def _team_roles_group(heading: str, people: list[OrgPerson]) -> list[str]:
     ]
     for person in people:
         summary = person.summary or ""
-        lines.append(f"| {person.name} | {person.title} | {summary} |")
+        lines.append(f"| {_display_name(person)} | {person.title} | {summary} |")
     lines.append("")
     return lines
 

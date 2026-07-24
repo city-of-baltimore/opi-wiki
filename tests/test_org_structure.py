@@ -61,8 +61,8 @@ def test_team_reports_table_lists_each_lead_and_their_reports() -> None:
     assert table.startswith("| **Team** | **Lead** | **Reports** |")
     assert "| Director's Office | Rakeim Young, Chief of Staff | Roberto Herbruger" in table
     assert "Xander Jake de los Santos" in table
-    # Open roles show their title marked open; contractors never appear.
-    assert "Senior Performance Analyst (open)" in table
+    # Open roles show their title marked vacant; contractors never appear.
+    assert "Senior Performance Analyst (Vacant)" in table
     assert "| Open |" not in table
     assert "Byron Roelofsz" not in table
     assert "Sand Technologies" not in table
@@ -84,7 +84,8 @@ def test_team_roles_table_lists_people_with_role_summaries() -> None:
     assert "## Director's Office" in roles
     assert "| Name | Title | What the role does |" in roles
     assert "| Rashaad Tillery | CitiStat Inspector |" in roles
-    assert "| Open | Senior Performance Analyst |" in roles
+    assert "| (Vacant) | Senior Performance Analyst |" in roles
+    assert "| Open |" not in roles
     assert "Byron Roelofsz" not in roles
 
 
