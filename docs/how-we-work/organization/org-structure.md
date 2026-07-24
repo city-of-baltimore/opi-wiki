@@ -11,11 +11,14 @@ cost-center records are maintained in City systems and are not published here.
 
 ## Org chart
 
-This chart shows the OPI team, grouped by team and colored by team. City staff
-appear here; contractors are not shown. For what each role does, see
+The chart shows OPI's reporting line up to the City. The table lists each team,
+its lead, and the lead's direct reports. City staff appear here; contractors are
+not shown, and open roles are marked "(open)." For what each role does, see
 [Team and Roles](../../about-us/our-teams/team-and-roles.md).
 
 {{ org_structure_from("_data/people.yml", "leadership_chart") }}
+
+{{ org_structure_from("_data/people.yml", "team_reports_table") }}
 
 ## The teams
 
