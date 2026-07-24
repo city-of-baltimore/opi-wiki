@@ -20,7 +20,7 @@ city_administrator:
 executive_director:
   name: Dartanion Swift-Williams
   title: Executive Director and Chief Data Officer
-  summary: Sets OPI's strategy and quality bar and leads the City's performance, data, innovation, and cross-agency delivery work.
+  summary: Sets OPI's strategy, standards, and priorities, and leads the City's performance, data, innovation, and cross-agency delivery agenda.
 
 portfolios:
   - key: directors-office
@@ -51,14 +51,14 @@ portfolios:
     lead:
       name: Danny Heller
       title: Deputy Chief Performance Officer
-      summary: Directs Baltimore's citywide performance-management system and the CitiStat program.
+      summary: Leads monitoring of the Mayor's Action Plan implementation, agency performance plans, and CitiStat operations.
     staff:
       - name: Darren Lu
         title: CitiStat Program Manager
         summary: Manages the CitiStat method, session cycle, quality assurance, and analyst coaching.
       - name: Open
         title: Senior Performance Analyst
-        summary: Leads citywide performance measures, agency performance plans, and the Performance Tracker product.
+        summary: Leads citywide performance measures, agency performance plans, and performance management products.
       - name: Ethan Buckborough
         title: CitiStat Analyst
         summary: Analyzes agency performance, prepares decision-focused sessions, and tracks follow-through.
@@ -73,7 +73,7 @@ portfolios:
         summary: Analyzes agency performance, prepares decision-focused sessions, and tracks follow-through.
       - name: Rashaad Tillery
         title: CitiStat Inspector
-        summary: Validates performance data through field observation and documents service-delivery conditions.
+        summary: Inspects service delivery in the field to check reported results and surface issues the data doesn't show, and documents conditions on the ground.
 
   - key: data-and-analytics
     label: Data and Analytics
@@ -103,17 +103,17 @@ portfolios:
     lead:
       name: Gabriel Watson
       title: Innovation Program Manager
-      summary: Leads service design, product discovery, prototyping, delivery partnerships, and sustainment planning.
+      summary: Leads service design, product discovery, prototyping, digital product development, delivery partnerships, and sustainment planning.
     staff:
       - name: Chiemeka Okeoma
         title: Applied Data Scientist
         summary: Uses analysis and rapid prototyping to help the Lab test solutions and turn evidence into usable products.
       - name: Derek Thomas
         title: Operations Analyst
-        summary: Supports discovery, project coordination, process analysis, documentation, and implementation follow-through.
+        summary: Supports public safety and operations projects with discovery, project coordination, process analysis, documentation, and implementation follow-through.
       - name: Selenea Gibson
         title: Civic Designer
-        summary: Conducts user research and turns findings into accessible journeys, service blueprints, prototypes, and recommendations.
+        summary: Conducts user research and turns findings into accessible journeys, service blueprints, prototypes, products, and recommendations.
       - name: Xander Jake de los Santos
         title: Full Stack Engineer
         summary: Builds accessible, secure web applications and APIs for public and operational data products.

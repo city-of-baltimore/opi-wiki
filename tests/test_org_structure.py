@@ -66,9 +66,13 @@ def test_team_roles_table_lists_people_with_role_summaries() -> None:
     structure = load_org_structure(DOCS_DIR, "_data/people.yml")
     roles = render_org_structure(structure, "team_roles")
 
-    assert roles.startswith("## Office of the Executive Director")
+    # The Executive Director is listed with the Director's Office (above the
+    # Chief of Staff), not under a separate standalone heading.
+    assert roles.startswith("## Director's Office")
+    assert "## Office of the Executive Director" not in roles
+    assert "| Dartanion Swift-Williams | Executive Director and Chief Data Officer |" in roles
+    assert roles.index("Dartanion Swift-Williams") < roles.index("Rakeim Young")
     assert "| Name | Title | What the role does |" in roles
-    assert "## Director's Office" in roles
     assert "| Rashaad Tillery | CitiStat Inspector |" in roles
     assert "| Open | Senior Performance Analyst |" in roles
     assert "Byron Roelofsz" not in roles

@@ -9,6 +9,10 @@ from typing import Any
 
 from scripts.repo_tools.data import load_docs_yaml_file
 
+# Portfolio key whose roles table also lists the Executive Director (above the
+# Chief of Staff). Kept as a named constant so the coupling is explicit.
+_DIRECTORS_OFFICE_KEY = "directors-office"
+
 
 @dataclass(frozen=True)
 class OrgPerson:
@@ -256,7 +260,13 @@ def _team_roles_group(heading: str, people: list[OrgPerson]) -> list[str]:
 def _render_team_roles(structure: OrgStructure) -> str:
     """Render the combined team-and-roles tables, grouped by team."""
 
-    lines = _team_roles_group("Office of the Executive Director", [structure.executive_director])
+    lines: list[str] = []
     for portfolio in structure.portfolios:
-        lines.extend(_team_roles_group(portfolio.label, [portfolio.lead, *portfolio.staff]))
+        people = [portfolio.lead, *portfolio.staff]
+        # The Executive Director is listed with the Director's Office in this
+        # roster, above the Chief of Staff. The org chart is unchanged: there the
+        # ED remains the top node above every team.
+        if portfolio.key == _DIRECTORS_OFFICE_KEY:
+            people = [structure.executive_director, *people]
+        lines.extend(_team_roles_group(portfolio.label, people))
     return "\n".join(lines).rstrip()
