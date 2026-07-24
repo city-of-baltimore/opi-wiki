@@ -14,6 +14,10 @@
 # Open (unfilled) City roles use the name "Open" so they show in the structure
 # without implying a current incumbent.
 
+mayor:
+  name: Brandon M. Scott
+  title: Mayor
+
 city_administrator:
   name: Faith P. Leach
   title: City Administrator

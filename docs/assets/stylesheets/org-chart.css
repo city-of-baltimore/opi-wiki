@@ -1,103 +1,265 @@
-/* Dependency-free public reporting spine (City Administrator -> Executive
-   Director). The nested list preserves the reporting line for assistive
-   technology; these rules add the visual connector and card layout without
-   relying on client-side JS. The four teams and their reports render in the
-   adjacent Markdown table, not in this figure. */
+/* Public org chart.
+   The chart is semantic HTML sourced from docs/_data/people.yml. CSS provides
+   the visual hierarchy and responsive stacking; no separate image asset is
+   required to keep the org structure current. */
 
 .md-typeset .opi-org-chart {
+  --org-line: #c9d3dc;
+  --org-card-width: 8rem;
+  --org-card-height: 3.55rem;
+  --org-gap: 0.55rem;
+  --org-wide-width: calc(var(--org-card-width) + var(--org-card-width) + var(--org-gap));
+  --org-chart-width: calc(
+    var(--org-card-width) + var(--org-card-width) + var(--org-wide-width) +
+      var(--org-gap) + var(--org-gap)
+  );
+  --org-card-fill: #f7fbfc;
+  --org-card-border: #506274;
+  --org-card-text: #182433;
+  --org-manager-fill: #2d4157;
+  --org-manager-border: #1d2c3c;
+  --org-manager-text: #fff;
   margin: 1.4rem 0 2rem;
-  padding: 1.15rem;
   overflow-x: auto;
-  border: 1px solid var(--opi-border);
-  border-radius: 6px;
-  background: var(--opi-bg-soft);
+  color: var(--opi-text);
 }
 
 .md-typeset .opi-org-chart__caption {
-  margin-bottom: 1.25rem;
-  color: var(--opi-heading);
-  font-family: var(--opi-font-heading);
-  font-size: 0.85rem;
-  font-weight: 700;
-  line-height: 1.4;
-  text-align: center;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
 }
 
-.md-typeset :where(.opi-org-chart__tree, .opi-org-chart__branch) {
-  margin: 0;
-  padding-left: 0;
-  list-style: none;
+.opi-org-chart__leadership {
+  display: grid;
+  justify-items: center;
 }
 
-.opi-org-chart__root,
-.opi-org-chart__executive {
+.opi-org-chart__leadership > .opi-org-chart__node + .opi-org-chart__node {
+  margin-top: 0.8rem;
+}
+
+.opi-org-chart__leadership > .opi-org-chart__node:not(:last-child)::after,
+.opi-org-chart__columns::before,
+.opi-org-chart__column::before,
+.opi-org-chart__split::before,
+.opi-org-chart__subcolumn::before {
+  position: absolute;
+  background: var(--org-line);
+  content: "";
+}
+
+.opi-org-chart__leadership > .opi-org-chart__node:not(:last-child)::after {
+  right: 50%;
+  bottom: -0.8rem;
+  width: 2px;
+  height: 0.8rem;
+}
+
+.opi-org-chart__columns {
+  display: grid;
+  position: relative;
+  grid-template-columns:
+    var(--org-card-width)
+    var(--org-card-width)
+    var(--org-wide-width);
+  gap: var(--org-gap);
+  width: var(--org-chart-width);
+  max-width: 100%;
+  margin-top: 1.9rem;
+  margin-inline: auto;
+  padding-top: 1.5rem;
+}
+
+.opi-org-chart__columns::before {
+  top: 0;
+  right: calc(var(--org-wide-width) / 2);
+  left: calc(var(--org-card-width) / 2);
+  height: 2px;
+}
+
+.opi-org-chart__column,
+.opi-org-chart__subcolumn {
   display: flex;
   position: relative;
   flex-direction: column;
   align-items: center;
+  min-width: 0;
+}
+
+.opi-org-chart__column::before,
+.opi-org-chart__subcolumn::before {
+  top: -1.5rem;
+  left: 50%;
+  width: 2px;
+  height: 1.5rem;
+}
+
+.opi-org-chart__split {
+  display: grid;
+  position: relative;
+  grid-template-columns: repeat(2, var(--org-card-width));
+  gap: var(--org-gap);
+  width: var(--org-wide-width);
+  max-width: 100%;
+  margin-top: 1rem;
+  padding-top: 1.5rem;
+}
+
+.opi-org-chart__split::before {
+  top: 0;
+  right: 25%;
+  left: 25%;
+  height: 2px;
+}
+
+.opi-org-chart__reports {
+  display: grid;
+  gap: 0.48rem;
+  margin-top: 0.7rem;
 }
 
 .opi-org-chart__node {
   display: flex;
+  position: relative;
   flex-direction: column;
-  width: min(100%, 22rem);
-  min-height: 5.5rem;
-  padding: 0.8rem 0.9rem;
-  border: 1px solid var(--opi-border);
-  border-top: 3px solid var(--opi-gold);
-  border-radius: 4px;
-  background: var(--opi-card-bg);
-  box-shadow: 0 1px 4px rgba(25, 14, 33, 0.08);
+  justify-content: center;
+  width: var(--org-card-width);
+  min-height: var(--org-card-height);
+  padding: 0.55rem 0.55rem;
+  border: 2px solid var(--org-card-border);
+  border-radius: 5px;
+  background: var(--org-card-fill);
+  color: var(--org-card-text);
   text-align: center;
 }
 
+.opi-org-chart__node[data-org-level="mayor"],
 .opi-org-chart__node[data-org-level="city"] {
-  border-color: var(--opi-chrome-bg);
-  border-top-color: var(--opi-gold);
-  background: var(--opi-chrome-bg);
-}
-
-.opi-org-chart__node[data-org-level="city"] :where(.opi-org-chart__name, .opi-org-chart__title) {
-  color: #fff;
+  min-height: auto;
+  padding: 0.1rem 0;
+  border: 0;
+  background: transparent;
 }
 
 .opi-org-chart__node[data-org-level="executive"] {
-  border-width: 2px;
-  border-color: var(--opi-gold);
+  border-color: var(--org-manager-border);
+  background: var(--org-manager-fill);
+  color: var(--org-manager-text);
 }
 
+.opi-org-chart__node[data-org-level="senior-lead"],
+.opi-org-chart__node[data-org-level="manager"] {
+  border-color: var(--org-manager-border);
+  border-top-color: var(--opi-gold);
+  border-top-width: 4px;
+  background: var(--org-manager-fill);
+  color: var(--org-manager-text);
+}
+
+.opi-org-chart__node--team {
+  border-style: dashed;
+  background: transparent;
+  color: var(--org-card-text);
+}
+
+.opi-org-chart__node--staff {
+  min-height: var(--org-card-height);
+  padding-block: 0.48rem;
+}
+
+.opi-org-chart__title,
 .opi-org-chart__name {
-  color: var(--opi-heading);
+  display: block;
   font-family: var(--opi-font-heading);
-  font-size: 0.9rem;
-  line-height: 1.3;
+  line-height: 1.18;
 }
 
 .opi-org-chart__title {
-  margin-top: 0.22rem;
-  color: var(--opi-text-muted);
-  font-size: 0.75rem;
-  line-height: 1.35;
+  font-size: 0.6rem;
+  font-weight: 500;
 }
 
-.opi-org-chart__branch {
-  position: relative;
-  width: 100%;
-  margin-top: 1.5rem;
-  padding-top: 1.5rem;
+.opi-org-chart__name {
+  margin-top: 0.16rem;
+  font-size: 0.6rem;
+  font-weight: 800;
 }
 
-.opi-org-chart__branch::before {
-  position: absolute;
-  top: -1.5rem;
-  left: 50%;
-  height: 3rem;
-  border-left: 2px solid var(--opi-border);
-  content: "";
+.opi-org-chart__node[data-org-level="mayor"] .opi-org-chart__title,
+.opi-org-chart__node[data-org-level="city"] .opi-org-chart__title {
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+.opi-org-chart__node[data-org-level="mayor"] .opi-org-chart__name,
+.opi-org-chart__node[data-org-level="city"] .opi-org-chart__name {
+  font-size: 0.8rem;
+}
+
+[data-md-color-scheme="slate"] .md-typeset .opi-org-chart {
+  --org-line: #41506a;
+  --org-card-fill: #162131;
+  --org-card-border: #38506c;
+  --org-card-text: #f4f7fb;
+  --org-manager-fill: #2d4157;
+  --org-manager-border: #59728e;
+  --org-manager-text: #fff;
+}
+
+@media (max-width: 980px) {
+  .opi-org-chart__columns,
+  .opi-org-chart__split {
+    grid-template-columns: 1fr;
+    width: 100%;
+  }
+
+  .opi-org-chart__columns::before,
+  .opi-org-chart__split::before,
+  .opi-org-chart__column::before,
+  .opi-org-chart__subcolumn::before {
+    display: none;
+  }
+
+  .opi-org-chart__column,
+  .opi-org-chart__subcolumn {
+    max-width: 28rem;
+    margin-inline: auto;
+    width: 100%;
+  }
+
+  .opi-org-chart__reports {
+    justify-items: center;
+    width: 100%;
+  }
+
+  .opi-org-chart__node,
+  .opi-org-chart__node[data-org-level="executive"] {
+    width: min(100%, 18rem);
+  }
+}
+
+@media (max-width: 640px) {
+  .md-typeset .opi-org-chart {
+    margin-inline: -0.2rem;
+  }
+
+  .md-typeset .opi-org-chart__caption {
+    font-size: 0.92rem;
+  }
+
+  .opi-org-chart__columns {
+    gap: 0.82rem;
+  }
 }
 
 @media print {
   .md-typeset .opi-org-chart {
     break-inside: avoid;
+    overflow: visible;
   }
 }

@@ -35,6 +35,7 @@ class Portfolio:
 class OrgStructure:
     """Complete structured data for the org-structure page."""
 
+    mayor: OrgPerson
     city_administrator: OrgPerson
     executive_director: OrgPerson
     portfolios: list[Portfolio]
@@ -108,6 +109,10 @@ def load_org_structure(docs_dir: Path, relative_path: str) -> OrgStructure:
         raise ValueError(f"{relative_path} must define a non-empty 'portfolios' list.")
 
     return OrgStructure(
+        mayor=_normalize_person(
+            raw_data.get("mayor"),
+            f"{relative_path}:mayor",
+        ),
         city_administrator=_normalize_person(
             raw_data.get("city_administrator"),
             f"{relative_path}:city_administrator",
@@ -123,15 +128,116 @@ def load_org_structure(docs_dir: Path, relative_path: str) -> OrgStructure:
     )
 
 
-def _org_chart_node(person: OrgPerson, level: str) -> str:
-    """Render one escaped, semantic public-leadership card."""
+def _display_name(person: OrgPerson) -> str:
+    """Return the public name shown in an org-chart card."""
+
+    if person.name.strip().lower() == "open":
+        return "Open"
+    return person.name
+
+
+def _org_chart_node(
+    person: OrgPerson,
+    level: str,
+    *,
+    class_name: str = "",
+    accent: str = "",
+) -> str:
+    """Render one escaped, semantic org-chart card."""
+
+    classes = "opi-org-chart__node"
+    if class_name:
+        classes = f"{classes} {class_name}"
+    accent_attr = f' data-org-accent="{escape(accent, quote=True)}"' if accent else ""
 
     return (
-        '<div class="opi-org-chart__node" '
-        f'data-org-level="{escape(level, quote=True)}">'
-        f'<strong class="opi-org-chart__name">{escape(person.name)}</strong>'
+        f'<div class="{classes}" '
+        f'data-org-level="{escape(level, quote=True)}"{accent_attr}>'
         f'<span class="opi-org-chart__title">{escape(person.title)}</span>'
+        f'<strong class="opi-org-chart__name">{escape(_display_name(person))}</strong>'
         "</div>"
+    )
+
+
+def _team_node(label: str, accent: str) -> str:
+    """Render a lightweight team grouping node inside the chart."""
+
+    return (
+        '<div class="opi-org-chart__node opi-org-chart__node--team" '
+        f'data-org-level="team" data-org-accent="{escape(accent, quote=True)}">'
+        f'<strong class="opi-org-chart__name">{escape(label)}</strong>'
+        "</div>"
+    )
+
+
+def _portfolio_by_key(structure: OrgStructure, key: str) -> Portfolio:
+    """Return one portfolio by key, failing clearly if the source data drifts."""
+
+    for portfolio in structure.portfolios:
+        if portfolio.key == key:
+            return portfolio
+    raise ValueError(f"Org-structure data is missing required portfolio: {key}")
+
+
+def _staff_stack(people: tuple[OrgPerson, ...], accent: str) -> str:
+    """Render a stack of staff cards for one reporting group."""
+
+    escaped_accent = escape(accent, quote=True)
+    opening = f'      <div class="opi-org-chart__reports" data-org-accent="{escaped_accent}">'
+    items = [
+        "        "
+        + _org_chart_node(
+            person,
+            "staff",
+            class_name="opi-org-chart__node--staff",
+            accent=accent,
+        )
+        for person in people
+    ]
+    return "\n".join(
+        [
+            opening,
+            *items,
+            "      </div>",
+        ]
+    )
+
+
+def _lead_column(portfolio: Portfolio, accent: str) -> str:
+    """Render a senior lead and direct reports as one chart column."""
+
+    escaped_accent = escape(accent, quote=True)
+    opening = f'    <section class="opi-org-chart__column" data-org-accent="{escaped_accent}">'
+    return "\n".join(
+        [
+            opening,
+            "      " + _org_chart_node(portfolio.lead, "senior-lead", accent=accent),
+            _staff_stack(portfolio.staff, accent),
+            "    </section>",
+        ]
+    )
+
+
+def _data_and_innovation_column(data: Portfolio, innovation: Portfolio) -> str:
+    """Render Deputy CDO, Data and Analytics, and Innovation Lab reporting lines."""
+
+    return "\n".join(
+        [
+            '    <section class="opi-org-chart__column '
+            'opi-org-chart__column--wide" data-org-accent="data">',
+            "      " + _org_chart_node(data.lead, "senior-lead", accent="data"),
+            '      <div class="opi-org-chart__split">',
+            '        <section class="opi-org-chart__subcolumn" data-org-accent="data">',
+            "          " + _team_node(data.label, "data"),
+            _staff_stack(data.staff, "data"),
+            "        </section>",
+            '        <section class="opi-org-chart__subcolumn" data-org-accent="innovation">',
+            "          " + _org_chart_node(innovation.lead, "manager", accent="innovation"),
+            _staff_stack(innovation.staff, "innovation"),
+            "        </section>",
+            "      </div>",
+            "    </section>",
+        ]
     )
 
 
@@ -139,22 +245,34 @@ def render_org_structure(structure: OrgStructure, section: str) -> str:
     """Render one org-structure section as repository-owned markup."""
 
     if section == "leadership_chart":
+        directors_office = _portfolio_by_key(structure, "directors-office")
+        performance = _portfolio_by_key(structure, "performance")
+        data = _portfolio_by_key(structure, "data-and-analytics")
+        innovation = _portfolio_by_key(structure, "innovation-lab")
         return "\n".join(
             [
                 '<figure class="opi-org-chart" aria-labelledby="opi-org-chart-caption">',
                 '  <figcaption id="opi-org-chart-caption" class="opi-org-chart__caption">',
-                "    OPI public reporting hierarchy",
+                "    Mayor's Office of Performance and Innovation organizational structure",
                 "  </figcaption>",
-                '  <ul class="opi-org-chart__tree" role="list">',
-                '    <li class="opi-org-chart__root">',
-                "      " + _org_chart_node(structure.city_administrator, "city"),
-                '      <ul class="opi-org-chart__branch" role="list">',
-                '        <li class="opi-org-chart__executive">',
-                "          " + _org_chart_node(structure.executive_director, "executive"),
-                "        </li>",
-                "      </ul>",
-                "    </li>",
-                "  </ul>",
+                '  <div class="opi-org-chart__leadership">',
+                "    "
+                + _org_chart_node(
+                    structure.mayor, "mayor", class_name="opi-org-chart__node--plain"
+                ),
+                "    "
+                + _org_chart_node(
+                    structure.city_administrator,
+                    "city",
+                    class_name="opi-org-chart__node--plain",
+                ),
+                "    " + _org_chart_node(structure.executive_director, "executive"),
+                "  </div>",
+                '  <div class="opi-org-chart__columns">',
+                _lead_column(directors_office, "directors-office"),
+                _lead_column(performance, "performance"),
+                _data_and_innovation_column(data, innovation),
+                "  </div>",
                 "</figure>",
             ]
         )

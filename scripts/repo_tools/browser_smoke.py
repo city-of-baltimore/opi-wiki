@@ -47,17 +47,15 @@ TABLE_FOCUS_SOURCE_PATH = "/what-we-do/services/cross-agency-delivery/"
 TABLE_FOCUS_TARGET_PATH = "/what-we-do/services/cross-agency-delivery/service-definition/"
 ORG_SOURCE_PATH = "/how-we-work/organization/"
 ORG_TARGET_PATH = "/how-we-work/organization/org-structure/"
-# The chart is the reporting spine (City Administrator -> Executive Director);
-# the four team leads render in the adjacent reports table, not as chart nodes.
 ORG_CHART_NAMES = (
+    "Brandon M. Scott",
     "Faith P. Leach",
     "Dartanion Swift-Williams",
-)
-ORG_LEAD_NAMES = (
     "Rakeim Young",
     "Danny Heller",
     "Jason Howard, PhD",
     "Gabriel Watson",
+    "Xander Jake de los Santos",
 )
 REPOSITORY_URL = "https://github.com/city-of-baltimore/opi-wiki"
 REPOSITORY_NAME = "city-of-baltimore/opi-wiki"
@@ -236,23 +234,23 @@ def _check_org_chart_state(page: Any, scheme: str, navigation: str) -> list[str]
               Number(style.opacity) !== 0 && rect.width > 0 && rect.height > 0;
           };
           const nodes = [...chart.querySelectorAll(".opi-org-chart__node")];
-          const content = document.querySelector(".md-content") || document.body;
-          const cells = [...content.querySelectorAll("td")]
-            .filter(isVisible)
-            .map((cell) => cell.textContent.trim());
+          const count = (level) =>
+            chart.querySelectorAll(`.opi-org-chart__node[data-org-level='${level}']`).length;
           return {
             chartVisible: isVisible(chart),
             chartNames: nodes
               .filter(isVisible)
               .map((node) => node.querySelector(".opi-org-chart__name")?.textContent?.trim())
               .filter(Boolean),
-            cityCount: chart.querySelectorAll(
-              ".opi-org-chart__root > .opi-org-chart__node[data-org-level='city']"
-            ).length,
-            executiveCount: chart.querySelectorAll(
-              ".opi-org-chart__executive > .opi-org-chart__node[data-org-level='executive']"
-            ).length,
-            reportsCellsText: cells,
+            counts: {
+              mayor: count("mayor"),
+              city: count("city"),
+              executive: count("executive"),
+              seniorLead: count("senior-lead"),
+              manager: count("manager"),
+              team: count("team"),
+              staff: count("staff"),
+            },
           };
         }
         """
@@ -267,18 +265,19 @@ def _check_org_chart_state(page: Any, scheme: str, navigation: str) -> list[str]
     missing_chart = [name for name in ORG_CHART_NAMES if name not in result["chartNames"]]
     if missing_chart:
         issues.append(f"{label}: public leadership names were not visible: {missing_chart}.")
-    cells_text = "\n".join(result["reportsCellsText"])
-    missing_leads = [name for name in ORG_LEAD_NAMES if name not in cells_text]
-    if missing_leads:
-        issues.append(
-            f"{label}: team leads were not visible in the reports table: {missing_leads}."
-        )
-    expected_counts = (1, 1)
-    actual_counts = (result["cityCount"], result["executiveCount"])
+    expected_counts = {
+        "mayor": 1,
+        "city": 1,
+        "executive": 1,
+        "seniorLead": 3,
+        "manager": 1,
+        "team": 1,
+        "staff": 17,
+    }
+    actual_counts = result["counts"]
     if actual_counts != expected_counts:
         issues.append(
-            f"{label}: hierarchy counts were city/executive {actual_counts}, "
-            f"expected {expected_counts}."
+            f"{label}: hierarchy counts were {actual_counts}, expected {expected_counts}."
         )
     return issues
 
