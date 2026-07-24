@@ -146,8 +146,8 @@ ALLOWED_RUN_COMMANDS = frozenset(
 )
 ALLOWED_ACTION_REFERENCES = frozenset(
     {
-        "actions/checkout@9c091bb21b7c1c1d1991bb908d89e4e9dddfe3e0",
-        "actions/setup-python@ece7cb06caefa5fff74198d8649806c4678c61a1",
+        "actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1",
+        "actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97",
         "arduino/setup-task@c0bc642852239c2689f73f4ea6459c29405f3c52",
     }
 )
