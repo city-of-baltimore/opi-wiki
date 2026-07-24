@@ -53,9 +53,13 @@ TABLE_FOCUS_SOURCE_PATH = "/what-we-do/services/cross-agency-delivery/"
 TABLE_FOCUS_TARGET_PATH = "/what-we-do/services/cross-agency-delivery/service-definition/"
 ORG_SOURCE_PATH = "/how-we-work/organization/"
 ORG_TARGET_PATH = "/how-we-work/organization/org-structure/"
-ORG_EXPECTED_NAMES = (
+# The chart is the reporting spine (City Administrator -> Executive Director);
+# the four team leads render in the adjacent reports table, not as chart nodes.
+ORG_CHART_NAMES = (
     "Faith P. Leach",
     "Dartanion Swift-Williams",
+)
+ORG_LEAD_NAMES = (
     "Rakeim Young",
     "Danny Heller",
     "Jason Howard, PhD",
@@ -315,9 +319,13 @@ def _check_org_chart_state(page: Any, scheme: str, navigation: str) -> list[str]
               Number(style.opacity) !== 0 && rect.width > 0 && rect.height > 0;
           };
           const nodes = [...chart.querySelectorAll(".opi-org-chart__node")];
+          const content = document.querySelector(".md-content") || document.body;
+          const cells = [...content.querySelectorAll("td")]
+            .filter(isVisible)
+            .map((cell) => cell.textContent.trim());
           return {
             chartVisible: isVisible(chart),
-            visibleNames: nodes
+            chartNames: nodes
               .filter(isVisible)
               .map((node) => node.querySelector(".opi-org-chart__name")?.textContent?.trim())
               .filter(Boolean),
@@ -327,10 +335,7 @@ def _check_org_chart_state(page: Any, scheme: str, navigation: str) -> list[str]
             executiveCount: chart.querySelectorAll(
               ".opi-org-chart__executive > .opi-org-chart__node[data-org-level='executive']"
             ).length,
-            teamCount: chart.querySelectorAll(
-              ".opi-org-chart__team-item > .opi-org-chart__node" +
-              "[data-org-level='team'][data-org-key]"
-            ).length,
+            reportsCellsText: cells,
           };
         }
         """
@@ -342,14 +347,20 @@ def _check_org_chart_state(page: Any, scheme: str, navigation: str) -> list[str]
     issues: list[str] = []
     if not result["chartVisible"]:
         issues.append(f"{label}: chart container had no visible dimensions.")
-    missing_names = [name for name in ORG_EXPECTED_NAMES if name not in result["visibleNames"]]
-    if missing_names:
-        issues.append(f"{label}: public leadership names were not visible: {missing_names}.")
-    expected_counts = (1, 1, 4)
-    actual_counts = (result["cityCount"], result["executiveCount"], result["teamCount"])
+    missing_chart = [name for name in ORG_CHART_NAMES if name not in result["chartNames"]]
+    if missing_chart:
+        issues.append(f"{label}: public leadership names were not visible: {missing_chart}.")
+    cells_text = "\n".join(result["reportsCellsText"])
+    missing_leads = [name for name in ORG_LEAD_NAMES if name not in cells_text]
+    if missing_leads:
+        issues.append(
+            f"{label}: team leads were not visible in the reports table: {missing_leads}."
+        )
+    expected_counts = (1, 1)
+    actual_counts = (result["cityCount"], result["executiveCount"])
     if actual_counts != expected_counts:
         issues.append(
-            f"{label}: hierarchy counts were city/executive/team {actual_counts}, "
+            f"{label}: hierarchy counts were city/executive {actual_counts}, "
             f"expected {expected_counts}."
         )
     return issues
