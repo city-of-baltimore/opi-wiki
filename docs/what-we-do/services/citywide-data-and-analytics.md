@@ -25,14 +25,6 @@ Baltimore City Code, Article 1, Subtitle 9 (Open Data).
 
 Residents want public data that's easy to understand and up to date. Reporters want reliable data to explain what's happening in the city. Analysts want one authoritative dataset instead of rebuilding reports. And city leaders want confidence that decisions rest on real information.
 
-## Delivered by
-
-The [Data and Analytics team](../../about-us/our-teams/data-and-analytics/index.md).
-
-## How to request this service
-
-To request a dataset, a dashboard, data access, or analytics support, email [opi@baltimorecity.gov](mailto:opi@baltimorecity.gov) with the decision or question you are trying to answer and the agency data involved. Access and sharing follow the classification in the [Data Governance Framework](../../about-us/our-teams/data-and-analytics/data-governance-framework.md). See [How to Engage OPI](../how-to-engage-opi.md) for the full path.
-
 ## Read alongside
 
 - [How Work Moves Through OPI](../../how-we-work/how-work-moves-through-opi.md): where this service sits in the loop

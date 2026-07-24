@@ -18,7 +18,7 @@ One firm rule holds the seam together: the intelligence layer reads the platform
 
 ## What it delivers
 
-BIC delivers a shared [intelligence architecture](architecture-and-roadmap.md), reusable [analytical and AI capabilities](products-and-capabilities.md), and a practical model for [responsible data and AI](responsible-data-and-ai.md). Together, those parts support city-service analysis and performance questions while keeping classification, access control, human oversight, source grounding, and monitoring in the workflow.
+BIC delivers a shared [intelligence architecture](architecture-and-roadmap.md), reusable [analytical and AI capabilities](products-and-capabilities.md), and a practical model for [responsible data and AI](../../programs/data-governance/index.md). Together, those parts support city-service analysis and performance questions while keeping classification, access control, human oversight, source grounding, and monitoring in the workflow.
 
 ## Where it's headed
 
@@ -28,4 +28,4 @@ BIC develops in stages. OPI first establishes the governed foundation, then test
 
 - [Architecture](architecture-and-roadmap.md): how the platform and intelligence layers fit together.
 - [Capabilities](products-and-capabilities.md): the analytical and AI capabilities the product can support.
-- [Responsible data & AI](responsible-data-and-ai.md): how classification, approval, oversight, and monitoring apply.
+- [Data Governance](../../programs/data-governance/index.md): how classification, approval, oversight, and monitoring apply.

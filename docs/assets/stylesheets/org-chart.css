@@ -3,9 +3,14 @@
    connectors and responsive card layout without relying on client-side JS. */
 
 .md-typeset .opi-org-chart {
+  /* Team accents, keyed to data-org-key on each node. */
+  --opi-team-directors-office: #b0791f;
+  --opi-team-performance: #2f8f7f;
+  --opi-team-data-and-analytics: #2f6fb0;
+  --opi-team-innovation-lab: #7a3b9a;
   margin: 1.4rem 0 2rem;
   padding: 1.15rem;
-  overflow: hidden;
+  overflow-x: auto;
   border: 1px solid var(--opi-border);
   border-radius: 6px;
   background: var(--opi-bg-soft);
@@ -157,6 +162,86 @@
 .opi-org-chart__team-item .opi-org-chart__node {
   width: 100%;
   min-height: 7.5rem;
+}
+
+/* Staff reporting to each team lead, stacked below the lead card. */
+.opi-org-chart__reports {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  gap: 0.55rem;
+  margin: 0.9rem 0 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+.opi-org-chart__report-item {
+  position: relative;
+}
+
+.opi-org-chart__report-item::before {
+  position: absolute;
+  top: -0.9rem;
+  left: 50%;
+  height: 0.9rem;
+  border-left: 2px solid var(--opi-border);
+  content: "";
+}
+
+.opi-org-chart__report-item + .opi-org-chart__report-item::before {
+  top: -0.55rem;
+  height: 0.55rem;
+}
+
+.opi-org-chart__report-item .opi-org-chart__node {
+  width: 100%;
+  min-height: 0;
+  padding: 0.6rem 0.7rem;
+}
+
+.opi-org-chart__report-item .opi-org-chart__name {
+  font-size: 0.82rem;
+}
+
+.opi-org-chart__report-item .opi-org-chart__title {
+  font-size: 0.7rem;
+}
+
+/* Color each team's cards by its accent. */
+.opi-org-chart__node[data-org-key="directors-office"] {
+  border-top-color: var(--opi-team-directors-office);
+}
+
+.opi-org-chart__node[data-org-key="performance"] {
+  border-top-color: var(--opi-team-performance);
+}
+
+.opi-org-chart__node[data-org-key="data-and-analytics"] {
+  border-top-color: var(--opi-team-data-and-analytics);
+}
+
+.opi-org-chart__node[data-org-key="innovation-lab"] {
+  border-top-color: var(--opi-team-innovation-lab);
+}
+
+.opi-org-chart__team-item .opi-org-chart__team {
+  color: inherit;
+}
+
+.opi-org-chart__node[data-org-key="directors-office"] .opi-org-chart__team {
+  color: var(--opi-team-directors-office);
+}
+
+.opi-org-chart__node[data-org-key="performance"] .opi-org-chart__team {
+  color: var(--opi-team-performance);
+}
+
+.opi-org-chart__node[data-org-key="data-and-analytics"] .opi-org-chart__team {
+  color: var(--opi-team-data-and-analytics);
+}
+
+.opi-org-chart__node[data-org-key="innovation-lab"] .opi-org-chart__team {
+  color: var(--opi-team-innovation-lab);
 }
 
 [data-md-color-scheme="slate"] .opi-org-chart__team {

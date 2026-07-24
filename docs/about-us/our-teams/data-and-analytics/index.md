@@ -9,7 +9,7 @@ The Data and Analytics team builds the data foundation that makes OPI's work tru
 ## Role overview
 
 Public summaries of Data and Analytics roles are available in
-[Resources → Position Descriptions](../../../resources/reference/position-descriptions/index.md),
+[Team and Roles](../team-and-roles.md),
 while full position descriptions remain in the City's SharePoint environment.
 
 ## Read alongside

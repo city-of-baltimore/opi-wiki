@@ -11,7 +11,7 @@ Read this section alongside [How Work Moves Through OPI](../../../how-we-work/ho
 ## Role overview
 
 The
-[Resources → Position Descriptions](../../../resources/reference/position-descriptions/index.md)
+[Team and Roles](../team-and-roles.md)
 page provides public summaries of Innovation Lab roles. Full position
 descriptions remain in the City's SharePoint environment. Current roles include
 the Innovation Program Manager ({{ role_holder("Innovation Program Manager") }}),

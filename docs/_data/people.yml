@@ -1,12 +1,17 @@
 # Public organization data for OPI Foundations.
 #
-# This file contains only the information rendered on the public leadership
-# chart: names and titles for City leadership, team labels, team leads, and
-# each team's high-level purpose. Staff rosters, contractor details, payroll
-# identifiers, phone numbers, email addresses, classifications, personnel
-# status, cost centers, and full position descriptions belong in City systems
-# or SharePoint and must not be added here. The people-data loader rejects
-# legacy `pin` and `phone` keys as an additional publication safeguard.
+# Single source for the public org chart and the Team and Roles table. It holds
+# only information OPI publishes about its structure: names, working titles,
+# team labels and leads, each team's high-level purpose, and a one-line public
+# summary of what each role does. City staff appear here; contractors do not.
+#
+# Personal or employment data must never be added: payroll identifiers, phone
+# numbers, email addresses, classifications, cost centers, personnel status, and
+# full position descriptions live in City systems or SharePoint. The people-data
+# loader rejects `pin` and `phone` keys as an additional publication safeguard.
+#
+# Open (unfilled) City roles use the name "Open" so they show in the structure
+# without implying a current incumbent.
 
 city_administrator:
   name: Faith P. Leach
@@ -15,25 +20,60 @@ city_administrator:
 executive_director:
   name: Dartanion Swift-Williams
   title: Executive Director and Chief Data Officer
+  summary: Sets OPI's strategy, standards, and priorities, and leads the City's performance, data, innovation, and cross-agency delivery agenda.
 
 portfolios:
   - key: directors-office
     label: Director's Office
     node_id: DO
-    primary_value: Operating backbone that keeps work prioritized, documented, communicated, and deliverable.
+    primary_value: Keeps work prioritized, documented, communicated, and deliverable.
     table_lead: Rakeim Young, Chief of Staff
     lead:
       name: Rakeim Young
       title: Chief of Staff
+      summary: Leads AdminOps, officewide planning, governance, communications, and fiscal, human-resources, and facilities coordination.
+    staff:
+      - name: Roberto Herbruger
+        title: Technical Program Manager
+        summary: Coordinates roadmaps, requirements, risks, testing, and delivery across OPI's products and projects.
+      - name: Mallory Screws
+        title: Project Manager
+        summary: Maintains delivery plans, coordinates dependencies, and keeps commitments, risks, and follow-up visible.
+      - name: Audrey Randazzo
+        title: Partnerships and Storytelling Lead
+        summary: Builds OPI's partnerships and turns the office's data and work into clear public information, briefings, and accessible communications.
 
   - key: performance
     label: Performance
     node_id: PC
-    primary_value: Owns the performance method; translates priorities into routines, measures, follow-up, and improvement.
+    primary_value: Owns the performance method; translates priorities into measures, follow-up, and improvement.
     table_lead: Danny Heller, Deputy Chief Performance Officer
     lead:
       name: Danny Heller
       title: Deputy Chief Performance Officer
+      summary: Leads monitoring of the Mayor's Action Plan implementation, agency performance plans, and CitiStat operations.
+    staff:
+      - name: Darren Lu
+        title: CitiStat Program Manager
+        summary: Manages the CitiStat method, session cycle, quality assurance, and analyst coaching.
+      - name: Open
+        title: Senior Performance Analyst
+        summary: Leads citywide performance measures, agency performance plans, and performance management products.
+      - name: Ethan Buckborough
+        title: CitiStat Analyst
+        summary: Analyzes agency performance, prepares decision-focused sessions, and tracks follow-through.
+      - name: Nelson Gomes
+        title: CitiStat Analyst
+        summary: Analyzes agency performance, prepares decision-focused sessions, and tracks follow-through.
+      - name: Ross Hackett
+        title: CitiStat Analyst
+        summary: Analyzes agency performance, prepares decision-focused sessions, and tracks follow-through.
+      - name: "Griffin Riddler, PhD"
+        title: CitiStat Analyst
+        summary: Analyzes agency performance, prepares decision-focused sessions, and tracks follow-through.
+      - name: Rashaad Tillery
+        title: CitiStat Inspector
+        summary: Inspects service delivery in the field to check reported results and surface issues the data doesn't show, and documents conditions on the ground.
 
   - key: data-and-analytics
     label: Data and Analytics
@@ -43,6 +83,17 @@ portfolios:
     lead:
       name: "Jason Howard, PhD"
       title: Deputy Chief Data Officer
+      summary: Leads citywide data strategy, infrastructure, analytics, open data, governance, and responsible AI readiness.
+    staff:
+      - name: Vera Choo
+        title: Applied Data Scientist
+        summary: Produces applied research, geospatial analysis, models, and decision-ready data products for City priorities.
+      - name: Open
+        title: Principal Data Engineer
+        summary: Sets data architecture and engineering standards and leads secure, reliable platform and pipeline development.
+      - name: Briya Bhakta
+        title: Senior Data Engineer
+        summary: Builds and maintains shared data models, ingestion pipelines, quality controls, and technical documentation.
 
   - key: innovation-lab
     label: Innovation Lab
@@ -52,3 +103,17 @@ portfolios:
     lead:
       name: Gabriel Watson
       title: Innovation Program Manager
+      summary: Leads service design, product discovery, prototyping, digital product development, delivery partnerships, and sustainment planning.
+    staff:
+      - name: Chiemeka Okeoma
+        title: Applied Data Scientist
+        summary: Uses analysis and rapid prototyping to help the Lab test solutions and turn evidence into usable products.
+      - name: Derek Thomas
+        title: Operations Analyst
+        summary: Supports public safety and operations projects with discovery, project coordination, process analysis, documentation, and implementation follow-through.
+      - name: Selenea Gibson
+        title: Civic Designer
+        summary: Conducts user research and turns findings into accessible journeys, service blueprints, prototypes, products, and recommendations.
+      - name: Xander Jake de los Santos
+        title: Full Stack Engineer
+        summary: Builds accessible, secure web applications and APIs for public and operational data products.

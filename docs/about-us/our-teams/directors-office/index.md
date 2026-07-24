@@ -12,7 +12,7 @@ the AdminOps service that keeps the office aligned.
 ## Role overview
 
 Public summaries of Director's Office roles are available in
-[Resources → Position Descriptions](../../../resources/reference/position-descriptions/index.md).
+[Team and Roles](../team-and-roles.md).
 Full position descriptions are not published on this site.
 
 ## Read alongside
