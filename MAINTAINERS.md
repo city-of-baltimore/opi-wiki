@@ -57,13 +57,14 @@ When in doubt, model the voice on the [Letters from the Director](docs/about-us/
 - Public briefs and website material
 - Public methods, service definitions, and the Glossary
 - Letters from the Director
-- Position Descriptions Index (titles + summaries)
+- Public staff roster and role-summary index (names, working titles, team
+  assignments, reporting relationships, and short role summaries)
 
 **City of Baltimore intranet (SharePoint):**
 
-- Onboarding checklists (with PII)
-- Full Position Descriptions (with compensation)
-- Performance Standards (signed)
+- Internal onboarding working materials
+- Full Position Descriptions (with compensation or classification details)
+- Performance records and signed evaluations
 - MAPS Benefits guides
 - Internal SOPs and intake queues
 - Telework Policy (formal HR doc)
@@ -87,10 +88,13 @@ Navigation is local to each section. Keep `mkdocs.yml` focused on site-wide
 runtime settings, and update the nearest `docs/**/.pages` file whenever a page
 is added, removed, renamed, or moved.
 
-Internal operating guidance, onboarding material, personnel records, and
-contact data belong in SharePoint or the appropriate City system. Do not add
-those collections under `docs/` or expose them through public navigation,
-redirects, raw data files, or generated assets.
+Internal operating guidance, onboarding working material, personnel records, and
+contact data belong in SharePoint or the appropriate City system. Public staff
+names, working titles, team assignments, reporting relationships, and short role
+summaries may be published when OPI has approved them for the public roster. Do
+not publish payroll identifiers, compensation, classifications, personnel
+status, phone numbers, individual email addresses, or controlled working copies
+through navigation, redirects, raw data files, or generated assets.
 
 ## Section map: folder ↔ navigation label
 
@@ -206,11 +210,12 @@ build-time `.metadata.yml`, which drives review cadence and the status badge.)
 
 When one public page needs to repeat the same source-of-truth data across
 charts and tables, keep that content in a shared YAML file and render it
-through a macro. `docs/_data/people.yml` is deliberately limited to public
-leadership names, titles, team labels, and team purposes; it drives the public
-leadership chart and inline `role_holder(...)` references. It must never carry
-staff rosters, contractors, payroll identifiers, phone numbers, email
-addresses, classifications, personnel status, or full position descriptions.
+through a macro. `docs/_data/people.yml` is deliberately limited to public staff
+names, working titles, team labels, reporting relationships, and short role
+summaries; it drives the public leadership chart, Team and Roles page, and
+inline `role_holder(...)` references. It must never carry contractors, payroll
+identifiers, phone numbers, individual email addresses, classifications, cost
+centers, personnel status, compensation, or full position descriptions.
 
 ## Page data model
 

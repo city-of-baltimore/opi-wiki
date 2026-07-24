@@ -9,6 +9,7 @@ from urllib.request import urlopen
 
 import pytest
 import scripts.check_browser_smoke as browser_cli
+import scripts.repo_tools.browser_routes as browser_routes
 import scripts.repo_tools.browser_smoke as browser_smoke
 from scripts.check_browser_smoke import parse_args
 from scripts.repo_tools.browser_smoke import (
@@ -89,9 +90,9 @@ def test_canonical_route_paths_are_derived_from_the_sitemap(
 ) -> None:
     """The route crawl should use canonical sitemap URLs and strip the deploy base."""
 
-    monkeypatch.setattr(browser_smoke, "discover_site_base_path", lambda _site: "/opi-wiki/")
+    monkeypatch.setattr(browser_routes, "discover_site_base_path", lambda _site: "/opi-wiki/")
     monkeypatch.setattr(
-        browser_smoke,
+        browser_routes,
         "load_sitemap_locations",
         lambda _site: [
             "https://example.test/opi-wiki/",

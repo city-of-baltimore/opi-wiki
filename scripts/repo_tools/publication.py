@@ -9,6 +9,7 @@ PHONE_NUMBER_RE = re.compile(r"(?<!\d)(?:\+?1[ .-]?)?(?:\(?\d{3}\)?[ .-])\d{3}[ 
 PIN_LABEL_RE = re.compile(r"\bPINs?\b")
 TEXT_OUTPUT_SUFFIXES = frozenset({".html", ".json", ".txt", ".xml"})
 YAML_SUFFIXES = frozenset({".yaml", ".yml"})
+EXCLUDED_PUBLIC_PATH_PREFIXES = ("how-we-work/handbook/",)
 
 
 def find_publication_boundary_issues(site_dir: Path) -> list[str]:
@@ -20,6 +21,11 @@ def find_publication_boundary_issues(site_dir: Path) -> list[str]:
     issues: list[str] = []
     for published_file in sorted(path for path in site_dir.rglob("*") if path.is_file()):
         relative_file = published_file.relative_to(site_dir)
+        relative_text = relative_file.as_posix()
+        for prefix in EXCLUDED_PUBLIC_PATH_PREFIXES:
+            if relative_text.startswith(prefix):
+                issues.append(f"{relative_file}: excluded source path was published")
+                break
         suffix = published_file.suffix.casefold()
 
         if suffix in YAML_SUFFIXES:

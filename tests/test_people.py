@@ -24,8 +24,8 @@ def test_public_people_data_loads_cleanly() -> None:
     assert data["portfolios"][0]["key"] == "directors-office"
 
 
-def test_people_data_rejects_legacy_pin_or_phone_fields(tmp_path: Path) -> None:
-    """Private legacy fields must fail even when nested inside a staff record."""
+def test_people_data_rejects_private_personnel_fields(tmp_path: Path) -> None:
+    """Private personnel fields must fail even when nested inside public staff data."""
 
     people_file = tmp_path / "people.yml"
     people_file.write_text(
@@ -35,6 +35,7 @@ def test_people_data_rejects_legacy_pin_or_phone_fields(tmp_path: Path) -> None:
         "      name: Example Person\n"
         "      title: Example Lead\n"
         "      phone: 410-555-0100\n"
+        "      email: example@baltimorecity.gov\n"
         "    staff:\n"
         "      - name: Open\n"
         "        title: Example Role\n"
@@ -44,7 +45,7 @@ def test_people_data_rejects_legacy_pin_or_phone_fields(tmp_path: Path) -> None:
 
     with pytest.raises(
         ValueError,
-        match=r"fields forbidden from public people data: .*phone.*PIN",
+        match=r"fields forbidden from public people data: .*phone.*email.*PIN",
     ):
         load_people(tmp_path, "people.yml")
 

@@ -10,11 +10,12 @@ Maintainer: see [`MAINTAINERS.md`](MAINTAINERS.md)
 
 A docs-as-code site, written in Markdown, rendered with [MkDocs Material](https://squidfunk.github.io/mkdocs-material/), version-controlled on GitHub, and auto-deployed via GitHub Actions.
 
-The site is **public-facing**. Internal companion documents, including full
-position descriptions, performance standards, onboarding materials, staff
-rosters, and contact records, live in Baltimore City's SharePoint and City
-systems. They are not published from this repository. The public site provides
-only a concise role-summary index and a leadership-level org chart.
+The site is **public-facing**. It may publish public staff names, working
+titles, team assignments, reporting relationships, and short role summaries.
+Internal companion documents, including full position descriptions, detailed
+performance records, onboarding working materials, contact records, payroll
+data, and personnel-status fields, live in Baltimore City's SharePoint and City
+systems. They are not published from this repository.
 
 ## Local development
 
@@ -180,10 +181,10 @@ Use the smallest shared pattern that matches the page need:
 - `*.cards.yml` carries repeated landing-page card content and should render only through `card_grid_from(...)`.
 - `*.data.yml` carries structured page-specific source data when one file needs to drive multiple rendered sections, tables, charts, or lists.
 
-MkDocs excludes `_data/`, `*.cards.yml`, and `*.data.yml` from the generated
-site. These files are build inputs, not public downloads; the pre-push
-publication-boundary check enforces that separation and rejects visible PIN or
-phone-number fields in the built artifact.
+MkDocs excludes `_data/`, the Handbook source folder, `*.cards.yml`, and
+`*.data.yml` from the generated site. These files are build inputs, not public
+downloads; the pre-push publication-boundary check enforces that separation and
+rejects visible PIN or phone-number fields in the built artifact.
 
 If a page can stay plain Markdown, keep it plain Markdown. Only introduce structured data when it removes repeated source-of-truth content or repeated shared UI markup.
 

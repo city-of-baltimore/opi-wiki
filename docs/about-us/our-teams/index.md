@@ -18,6 +18,6 @@ Before comparing team pages, read [How Work Moves Through OPI](../../how-we-work
 
 ## Read alongside
 
-- [Team and Roles](team-and-roles.md): the public roster of who is on each team, with City work email.
+- [Team and Roles](team-and-roles.md): the public roster of who is on each team and what each role does.
 - [Org Structure](../../how-we-work/organization/org-structure.md): the public
   leadership chart, team leads, and operating structure.
