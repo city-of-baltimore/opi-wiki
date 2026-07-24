@@ -2,15 +2,22 @@
 
 {{ page_header(summary="OPI's strategic priorities, on one page.", category="SERIES · OPI FOUNDATIONS") }}
 
-What OPI is finishing this year and starting next, anchored to the City Administrator’s priorities and the Mayor’s Action Plan.
+OPI's current direction for fiscal year 2027, with the fiscal year 2026
+priorities retained as a closeout record. The priorities are anchored to the
+City Administrator's priorities and the Mayor's Action Plan.
 
 ## Our goal
 
 OPI exists to make Baltimore City government continuously better at delivering services that residents can see and feel. We do that through five services: Citywide Performance Management, Citywide Data and Analytics, Innovation Lab, Cross-Agency Delivery, and AdminOps. We measure ourselves on whether the city’s services are getting more reliable, not on the volume of activity in our office.
 
-## FY26: The foundation in delivery
+## FY26: Foundation priorities (closeout)
 
-FY26 is about getting the foundation right. The three priorities below were named to City Council at the FY26 budget hearing and remain our main focus through June 2026. The recommended FY26 budget is $2.03M.
+Fiscal year 2026 ended on June 30, 2026. The three priorities below were
+presented to City Council during OPI's
+[FY26 budget hearing](https://baltimore.legistar.com/LegislationDetail.aspx?GUID=E145B00D-890B-47D6-AA82-DB0D7B8A42DB&ID=7397268)
+and are retained here as the record against which closeout work is reviewed.
+The City's adopted budget is available in the
+[FY26 Summary of the Adopted Budget](https://s3.amazonaws.com/baltimorecity.gov.if-us-east-1/s3fs-public/2026-02/FY2026%20Summary%20of%20the%20Adopted.pdf).
 
 ### Priority 1: Continue modernizing 311
 
@@ -24,19 +31,27 @@ We streamline confusing steps and clarify who does what, working with DHCD, DPW,
 
 We use the city’s Workday investment fully: better reporting, HR processes, capital budget management, grants, and internal workflows that actually work. OPI Data and Analytics owns it with HR, BBMR, and BCIT. We watch the number of citywide reports delivered from Workday on schedule, the reduction in manual data pulls, and HR cycle-time improvements on priority processes.
 
-### FY26 supporting commitments
+### FY26 supporting work
 
-- CitiStat: stand up and stabilize 19 regularly occurring Stats by end of January 2026; 12 of the 19 are new or relaunched. Performance owns; Method Playbook governs.
+- CitiStat: stabilize regular performance routines under the Method Playbook.
 
-- Tiger Teams cohort: six FY26 focus areas, namely Parking Enforcement and Traffic Calming (DOT); Street Sweeping and Zero Waste (DPW); Code Enforcement (DHCD); and Forestry Backlog (BCRP). Innovation Lab leads; sustain by June 2026.
+- Tiger Teams: apply the time-boxed delivery model to priority service
+  challenges across transportation, sanitation, code enforcement, and
+  forestry, with sustainment owned by the responsible agencies.
 
-- Citywide data warehouse v1: five core datasets in testing; data governance and catalog infrastructure in testing.
+- Citywide data foundation: establish governed data infrastructure that can
+  support reliable analytics and public products.
 
-- OPI operating system: Foundations Document Set published; SharePoint operating system in production; intake SOP in use across the team.
+- OPI Foundations: publish a clear public account of OPI's teams, services,
+  programs, products, and methods.
 
-## FY27: The next moves
+## FY27: Current direction
 
-With the foundation in place, FY27 turns to bigger, more visible outcomes. The agenda is grounded in the City Administrator’s priorities and the Mayor’s Action Plan; final scoping is in design as part of the FY27 budget cycle.
+Fiscal year 2027 began on July 1, 2026. The directions below are the current
+public summary reviewed by OPI on July 19, 2026. The City Council enacted the
+FY27 operating budget on June 25, 2026; see
+[Ordinance 26-141 (File 26-0188)](https://baltimore.legistar.com/LegislationDetail.aspx?GUID=CEF58A85-70C1-4731-A1B7-602213BD63C2&ID=8024369&Options=&Search=)
+for the legislative record.
 
 ### Direction 1: Make smarter use of data across city operations
 
@@ -77,7 +92,6 @@ With the foundation in place, FY27 turns to bigger, more visible outcomes. The a
 | Are priority services improving on the metrics that matter to residents? | CitiStat Portfolio Register; agency performance plans; public dashboards.                                 |
 | Are Tiger Teams ending with sustained gains?                             | Closure memos; CitiStat handoffs; resident satisfaction trends.                                           |
 | Is data trusted, current, and used in agency routines?                   | Warehouse adoption; reduction in ad hoc pulls; agency leaders using OPI dashboards in their own meetings. |
-| Is OPI itself running well?                                              | Intake-to-charter cycle time; project gate adherence; onboarding ramp; staff retention.                   |
 
 ## Tiger Team usage note
 

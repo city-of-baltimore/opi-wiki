@@ -1,9 +1,9 @@
 site_name: OPI Foundations
 site_description: How the Mayor's Office of Performance and Innovation works — the public reference for OPI's operating model, methodology, and strategy.
-# site_url defaults to the future custom domain; the Pages deploy overrides it
-# by exporting OPI_SITE_URL (see .github/workflows/deploy.yml) instead of
-# rewriting this file at deploy time.
-site_url: !ENV [OPI_SITE_URL, 'https://opi.baltimorecity.gov/']
+# GitHub Pages is the canonical deployment. OPI_SITE_URL remains overridable
+# for preview/deploy jobs without making a stale custom domain the local build
+# default.
+site_url: !ENV [OPI_SITE_URL, 'https://city-of-baltimore.github.io/opi-wiki/']
 site_author: Mayor's Office of Performance and Innovation, City of Baltimore
 copyright: © Mayor's Office of Performance and Innovation, City of Baltimore
 
@@ -11,6 +11,12 @@ repo_name: city-of-baltimore/opi-wiki
 repo_url: https://github.com/city-of-baltimore/opi-wiki
 edit_uri: edit/main/docs/
 docs_dir: docs
+# Structured YAML drives macros at build time; it is source, not a public
+# download surface. Keep it out of the generated site/ artifact.
+exclude_docs: |
+  _data/
+  **/*.cards.yml
+  **/*.data.yml
 strict: true
 
 # Local preview binds loopback on this repo's slot in the Baltimore civic-platform
@@ -78,6 +84,7 @@ extra_css:
   - assets/stylesheets/base.css
   - assets/stylesheets/material-chrome.css
   - assets/stylesheets/components.css
+  - assets/stylesheets/org-chart.css
   - assets/stylesheets/breadcrumbs.css
   - assets/stylesheets/home.css
 
@@ -115,11 +122,7 @@ markdown_extensions:
   - pymdownx.mark
   - pymdownx.smartsymbols
   - pymdownx.snippets
-  - pymdownx.superfences:
-      custom_fences:
-        - name: mermaid
-          class: mermaid
-          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.superfences
   - pymdownx.tabbed:
       alternate_style: true
   - pymdownx.tasklist:
@@ -130,28 +133,28 @@ plugins:
   - awesome-pages
   - redirects:
       redirect_maps:
-        our-teams/directors-office/pd-chief-of-staff.md: resources/reference/position-descriptions/directors-office/pd-chief-of-staff.md
-        our-teams/directors-office/pd-citistat-inspector.md: resources/reference/position-descriptions/directors-office/pd-citistat-inspector.md
-        our-teams/directors-office/pd-civic-design-and-ux-lead.md: resources/reference/position-descriptions/innovation-lab/pd-civic-designer.md
-        our-teams/directors-office/pd-civic-technology-lead.md: resources/reference/position-descriptions/innovation-lab/pd-innovation-program-manager.md
-        our-teams/directors-office/pd-communications-and-partnerships-lead.md: resources/reference/position-descriptions/directors-office/pd-data-storyteller.md
-        our-teams/directors-office/pd-executive-director-and-cdo.md: resources/reference/position-descriptions/directors-office/pd-executive-director-and-cdo.md
-        our-teams/directors-office/pd-innovation-program-manager.md: resources/reference/position-descriptions/innovation-lab/pd-innovation-program-manager.md
-        our-teams/directors-office/pd-product-engineer-full-stack.md: resources/reference/position-descriptions/innovation-lab/pd-product-engineer-full-stack.md
-        our-teams/directors-office/pd-project-manager.md: resources/reference/position-descriptions/directors-office/pd-project-manager.md
-        our-teams/directors-office/pd-senior-product-engineer.md: resources/reference/position-descriptions/innovation-lab/pd-applied-data-scientist.md
-        our-teams/directors-office/pd-special-assistant-to-the-executive-director.md: resources/reference/position-descriptions/directors-office/pd-operations-analyst.md
-        our-teams/performance-and-citistat/pd-citistat-analyst.md: resources/reference/position-descriptions/performance/pd-citistat-analyst.md
-        our-teams/performance-and-citistat/pd-citistat-program-manager.md: resources/reference/position-descriptions/performance/pd-citistat-program-manager.md
-        our-teams/performance-and-citistat/pd-deputy-chief-performance-officer.md: resources/reference/position-descriptions/performance/pd-deputy-chief-performance-officer.md
-        our-teams/performance-and-citistat/pd-senior-performance-analyst.md: resources/reference/position-descriptions/performance/pd-senior-performance-analyst.md
-        our-teams/data-and-analytics/pd-analytics-lead.md: resources/reference/position-descriptions/data-and-analytics/pd-applied-data-scientist.md
-        our-teams/data-and-analytics/pd-applied-data-scientist.md: resources/reference/position-descriptions/data-and-analytics/pd-applied-data-scientist.md
-        our-teams/data-and-analytics/pd-deputy-chief-data-officer.md: resources/reference/position-descriptions/data-and-analytics/pd-deputy-chief-data-officer.md
-        our-teams/data-and-analytics/pd-principal-data-engineer.md: resources/reference/position-descriptions/data-and-analytics/pd-principal-data-engineer.md
-        our-teams/data-and-analytics/pd-principal-platform-engineer.md: resources/reference/position-descriptions/data-and-analytics/pd-principal-data-engineer.md
-        our-teams/data-and-analytics/pd-senior-data-engineer.md: resources/reference/position-descriptions/data-and-analytics/pd-senior-data-engineer.md
-        our-teams/data-and-analytics/pd-technical-program-manager.md: resources/reference/position-descriptions/data-and-analytics/pd-technical-program-manager.md
+        our-teams/directors-office/pd-chief-of-staff.md: resources/reference/position-descriptions/index.md
+        our-teams/directors-office/pd-citistat-inspector.md: resources/reference/position-descriptions/index.md
+        our-teams/directors-office/pd-civic-design-and-ux-lead.md: resources/reference/position-descriptions/index.md
+        our-teams/directors-office/pd-civic-technology-lead.md: resources/reference/position-descriptions/index.md
+        our-teams/directors-office/pd-communications-and-partnerships-lead.md: resources/reference/position-descriptions/index.md
+        our-teams/directors-office/pd-executive-director-and-cdo.md: resources/reference/position-descriptions/index.md
+        our-teams/directors-office/pd-innovation-program-manager.md: resources/reference/position-descriptions/index.md
+        our-teams/directors-office/pd-product-engineer-full-stack.md: resources/reference/position-descriptions/index.md
+        our-teams/directors-office/pd-project-manager.md: resources/reference/position-descriptions/index.md
+        our-teams/directors-office/pd-senior-product-engineer.md: resources/reference/position-descriptions/index.md
+        our-teams/directors-office/pd-special-assistant-to-the-executive-director.md: resources/reference/position-descriptions/index.md
+        our-teams/performance-and-citistat/pd-citistat-analyst.md: resources/reference/position-descriptions/index.md
+        our-teams/performance-and-citistat/pd-citistat-program-manager.md: resources/reference/position-descriptions/index.md
+        our-teams/performance-and-citistat/pd-deputy-chief-performance-officer.md: resources/reference/position-descriptions/index.md
+        our-teams/performance-and-citistat/pd-senior-performance-analyst.md: resources/reference/position-descriptions/index.md
+        our-teams/data-and-analytics/pd-analytics-lead.md: resources/reference/position-descriptions/index.md
+        our-teams/data-and-analytics/pd-applied-data-scientist.md: resources/reference/position-descriptions/index.md
+        our-teams/data-and-analytics/pd-deputy-chief-data-officer.md: resources/reference/position-descriptions/index.md
+        our-teams/data-and-analytics/pd-principal-data-engineer.md: resources/reference/position-descriptions/index.md
+        our-teams/data-and-analytics/pd-principal-platform-engineer.md: resources/reference/position-descriptions/index.md
+        our-teams/data-and-analytics/pd-senior-data-engineer.md: resources/reference/position-descriptions/index.md
+        our-teams/data-and-analytics/pd-technical-program-manager.md: resources/reference/position-descriptions/index.md
         resources/grants-and-funding/index.md: resources/index.md
         resources/grants-and-funding/investment-prospectus.md: resources/index.md
         resources/grants-and-funding/investment-prospectus-appendix.md: resources/index.md
@@ -159,22 +162,43 @@ plugins:
         resources/reference/theory-of-change-summaries.md: what-we-do/services/index.md
         resources/reference/glossary-additions-april-2026.md: resources/reference/glossary.md
         resources/reference/fy27-eoy-report-refresh.md: resources/reference/index.md
-        resources/reference/position-descriptions/directors-office/pd-civic-design-and-ux-lead.md: resources/reference/position-descriptions/innovation-lab/pd-civic-designer.md
-        resources/reference/position-descriptions/innovation-lab/pd-civic-design-and-ux-lead.md: resources/reference/position-descriptions/innovation-lab/pd-civic-designer.md
-        resources/reference/position-descriptions/directors-office/pd-civic-technology-lead.md: resources/reference/position-descriptions/innovation-lab/pd-innovation-program-manager.md
-        resources/reference/position-descriptions/innovation-lab/pd-communications-and-partnerships-lead.md: resources/reference/position-descriptions/directors-office/pd-data-storyteller.md
-        resources/reference/position-descriptions/directors-office/pd-communications-and-partnerships-lead.md: resources/reference/position-descriptions/directors-office/pd-data-storyteller.md
-        resources/reference/position-descriptions/directors-office/pd-special-assistant-to-the-executive-director.md: resources/reference/position-descriptions/directors-office/pd-operations-analyst.md
-        resources/reference/position-descriptions/data-and-analytics/pd-analytics-lead.md: resources/reference/position-descriptions/data-and-analytics/pd-applied-data-scientist.md
-        resources/reference/position-descriptions/directors-office/pd-innovation-program-manager.md: resources/reference/position-descriptions/innovation-lab/pd-innovation-program-manager.md
-        resources/reference/position-descriptions/directors-office/pd-product-engineer-full-stack.md: resources/reference/position-descriptions/innovation-lab/pd-product-engineer-full-stack.md
-        resources/reference/position-descriptions/directors-office/pd-senior-product-engineer.md: resources/reference/position-descriptions/innovation-lab/pd-applied-data-scientist.md
+        resources/reference/wiki-knowledge-base-structure.md: resources/reference/index.md
+        resources/reference/operating-model-staff-version.md: how-we-work/how-work-moves-through-opi.md
+        resources/reference/position-descriptions/directors-office/pd-civic-design-and-ux-lead.md: resources/reference/position-descriptions/index.md
+        resources/reference/position-descriptions/innovation-lab/pd-civic-design-and-ux-lead.md: resources/reference/position-descriptions/index.md
+        resources/reference/position-descriptions/directors-office/pd-civic-technology-lead.md: resources/reference/position-descriptions/index.md
+        resources/reference/position-descriptions/innovation-lab/pd-communications-and-partnerships-lead.md: resources/reference/position-descriptions/index.md
+        resources/reference/position-descriptions/directors-office/pd-communications-and-partnerships-lead.md: resources/reference/position-descriptions/index.md
+        resources/reference/position-descriptions/directors-office/pd-special-assistant-to-the-executive-director.md: resources/reference/position-descriptions/index.md
+        resources/reference/position-descriptions/data-and-analytics/pd-analytics-lead.md: resources/reference/position-descriptions/index.md
+        resources/reference/position-descriptions/directors-office/pd-innovation-program-manager.md: resources/reference/position-descriptions/index.md
+        resources/reference/position-descriptions/directors-office/pd-product-engineer-full-stack.md: resources/reference/position-descriptions/index.md
+        resources/reference/position-descriptions/directors-office/pd-senior-product-engineer.md: resources/reference/position-descriptions/index.md
         resources/reference/position-descriptions-index.md: resources/reference/position-descriptions/index.md
+        resources/reference/position-descriptions/directors-office/pd-executive-director-and-cdo.md: resources/reference/position-descriptions/index.md
+        resources/reference/position-descriptions/directors-office/pd-chief-of-staff.md: resources/reference/position-descriptions/index.md
+        resources/reference/position-descriptions/directors-office/pd-data-storyteller.md: resources/reference/position-descriptions/index.md
+        resources/reference/position-descriptions/directors-office/pd-operations-analyst.md: resources/reference/position-descriptions/index.md
+        resources/reference/position-descriptions/directors-office/pd-project-manager.md: resources/reference/position-descriptions/index.md
+        resources/reference/position-descriptions/directors-office/pd-citistat-inspector.md: resources/reference/position-descriptions/index.md
+        resources/reference/position-descriptions/performance/pd-deputy-chief-performance-officer.md: resources/reference/position-descriptions/index.md
+        resources/reference/position-descriptions/performance/pd-citistat-program-manager.md: resources/reference/position-descriptions/index.md
+        resources/reference/position-descriptions/performance/pd-citistat-analyst.md: resources/reference/position-descriptions/index.md
+        resources/reference/position-descriptions/performance/pd-senior-performance-analyst.md: resources/reference/position-descriptions/index.md
+        resources/reference/position-descriptions/data-and-analytics/pd-deputy-chief-data-officer.md: resources/reference/position-descriptions/index.md
+        resources/reference/position-descriptions/data-and-analytics/pd-applied-data-scientist.md: resources/reference/position-descriptions/index.md
+        resources/reference/position-descriptions/data-and-analytics/pd-principal-data-engineer.md: resources/reference/position-descriptions/index.md
+        resources/reference/position-descriptions/data-and-analytics/pd-senior-data-engineer.md: resources/reference/position-descriptions/index.md
+        resources/reference/position-descriptions/data-and-analytics/pd-technical-program-manager.md: resources/reference/position-descriptions/index.md
+        resources/reference/position-descriptions/innovation-lab/pd-innovation-program-manager.md: resources/reference/position-descriptions/index.md
+        resources/reference/position-descriptions/innovation-lab/pd-civic-designer.md: resources/reference/position-descriptions/index.md
+        resources/reference/position-descriptions/innovation-lab/pd-applied-data-scientist.md: resources/reference/position-descriptions/index.md
+        resources/reference/position-descriptions/innovation-lab/pd-product-engineer-full-stack.md: resources/reference/position-descriptions/index.md
         our-teams/performance-and-citistat/cross-agency-delivery/index.md: what-we-do/services/cross-agency-delivery/index.md
         our-teams/performance-and-citistat/cross-agency-delivery/about-cross-agency-delivery.md: what-we-do/services/cross-agency-delivery/index.md
         our-teams/performance-and-citistat/cross-agency-delivery/cross-agency-delivery-theory-of-change.md: what-we-do/services/cross-agency-delivery/service-definition.md
         public/council-public-narrative-template.md: resources/index.md
-        how-we-work/team-and-roles/staff-directory.md: how-we-work/organization/team-and-roles/index.md
+        how-we-work/team-and-roles/staff-directory.md: how-we-work/organization/org-structure.md
         public/index.md: index.md
         public/citistat-public-brief.md: what-we-do/programs/citistat/index.md
         public/data-analytics-public-brief.md: what-we-do/services/citywide-data-and-analytics.md
@@ -213,42 +237,61 @@ plugins:
         our-teams/performance/performance-strategy.md: about-us/our-teams/performance/about-performance.md
         our-teams/performance/performance-theory-of-change.md: about-us/our-teams/performance/about-performance.md
         how-we-work/org-structure.md: how-we-work/organization/org-structure.md
-        how-we-work/team-and-roles/index.md: how-we-work/organization/team-and-roles/index.md
-        how-we-work/onboarding/onboarding-process-and-checklist.md: how-we-work/handbook/onboarding/onboarding-process-and-checklist.md
-        how-we-work/onboarding/new-hire-announcement-template.md: how-we-work/handbook/onboarding/index.md
-        how-we-work/onboarding/managers-onboarding-playbook.md: how-we-work/handbook/onboarding/managers-onboarding-playbook.md
-        how-we-work/onboarding/maps-benefits-quick-guide.md: how-we-work/handbook/onboarding/maps-benefits-quick-guide.md
-        how-we-work/onboarding/index.md: how-we-work/handbook/onboarding/index.md
-        how-we-work/onboarding/offboarding-process-and-checklist.md: how-we-work/handbook/onboarding/offboarding-process-and-checklist.md
-        how-we-work/onboarding/new-hire-orientation-guide.md: how-we-work/handbook/onboarding/new-hire-orientation-guide.md
-        how-we-work/administrative-memos/media-and-press-engagement.md: how-we-work/handbook/index.md
-        how-we-work/administrative-memos/index.md: how-we-work/handbook/index.md
-        how-we-work/administrative-memos/responding-to-city-council-requests.md: how-we-work/handbook/index.md
-        how-we-work/administrative-memos/telework-and-in-office-schedule.md: how-we-work/handbook/index.md
-        how-we-work/administrative-memos/essential-and-emergency-essential-designations.md: how-we-work/handbook/index.md
-        how-we-work/how-to/silence-teams-notifications-while-sharing-your-screen.md: how-we-work/handbook/how-to/silence-teams-notifications-while-sharing-your-screen.md
-        how-we-work/how-to/book-the-idea-lab-fayette.md: how-we-work/handbook/how-to/book-the-idea-lab-fayette.md
-        how-we-work/how-to/git-guide.md: how-we-work/handbook/how-to/git-guide.md
-        how-we-work/how-to/add-a-printer.md: how-we-work/handbook/how-to/add-a-printer.md
-        how-we-work/how-to/edit-a-past-reporting-period-in-book-of-business.md: how-we-work/handbook/how-to/edit-a-past-reporting-period-in-book-of-business.md
-        how-we-work/how-to/create-planner-groups-without-automatic-member-alerts.md: how-we-work/handbook/how-to/create-planner-groups-without-automatic-member-alerts.md
-        how-we-work/how-to/index.md: how-we-work/handbook/how-to/index.md
-        how-we-work/how-to/change-your-city-password.md: how-we-work/handbook/how-to/change-your-city-password.md
-        how-we-work/how-to/order-food-catering-from-city-vendors.md: how-we-work/handbook/how-to/order-food-catering-from-city-vendors.md
-        how-we-work/how-to/submit-your-weekly-update.md: how-we-work/handbook/how-to/submit-your-weekly-update.md
-        how-we-work/operations/qa-standards.md: how-we-work/handbook/operations/qa-standards.md
-        how-we-work/operations/productivity-and-collaboration-playbook.md: how-we-work/handbook/operations/productivity-and-collaboration-playbook.md
-        how-we-work/operations/intake-sop.md: how-we-work/handbook/operations/index.md
-        how-we-work/operations/performance-standards-staff.md: how-we-work/handbook/operations/performance-standards-staff.md
-        how-we-work/operations/leadership-norms.md: how-we-work/handbook/operations/leadership-norms.md
-        how-we-work/operations/problem-statement-template.md: how-we-work/handbook/operations/problem-statement-template.md
-        how-we-work/operations/index.md: how-we-work/handbook/operations/index.md
-        how-we-work/operations/performance-standards-manager-companion.md: how-we-work/handbook/operations/performance-standards-manager-companion.md
-        how-we-work/operations/charter-template.md: how-we-work/handbook/operations/index.md
+        how-we-work/team-and-roles/index.md: how-we-work/organization/org-structure.md
+        how-we-work/organization/team-and-roles/index.md: how-we-work/organization/org-structure.md
+        how-we-work/handbook/onboarding/managers-onboarding-playbook.md: how-we-work/index.md
+        how-we-work/handbook/onboarding/maps-benefits-quick-guide.md: how-we-work/index.md
+        how-we-work/handbook/onboarding/new-hire-orientation-guide.md: how-we-work/index.md
+        how-we-work/handbook/onboarding/offboarding-process-and-checklist.md: how-we-work/index.md
+        how-we-work/handbook/how-to/index.md: how-we-work/index.md
+        how-we-work/handbook/how-to/add-a-printer.md: how-we-work/index.md
+        how-we-work/handbook/how-to/book-the-idea-lab-fayette.md: how-we-work/index.md
+        how-we-work/handbook/how-to/change-your-city-password.md: how-we-work/index.md
+        how-we-work/handbook/how-to/create-planner-groups-without-automatic-member-alerts.md: how-we-work/index.md
+        how-we-work/handbook/how-to/edit-a-past-reporting-period-in-book-of-business.md: how-we-work/index.md
+        how-we-work/handbook/how-to/git-guide.md: how-we-work/index.md
+        how-we-work/handbook/how-to/order-food-catering-from-city-vendors.md: how-we-work/index.md
+        how-we-work/handbook/how-to/silence-teams-notifications-while-sharing-your-screen.md: how-we-work/index.md
+        how-we-work/handbook/how-to/submit-your-weekly-update.md: how-we-work/index.md
+        how-we-work/handbook/operations/leadership-norms.md: how-we-work/index.md
+        how-we-work/handbook/operations/problem-statement-template.md: how-we-work/index.md
+        how-we-work/handbook/operations/productivity-and-collaboration-playbook.md: how-we-work/index.md
+        how-we-work/handbook/operations/qa-standards.md: how-we-work/index.md
+        how-we-work/onboarding/onboarding-process-and-checklist.md: how-we-work/index.md
+        how-we-work/onboarding/new-hire-announcement-template.md: how-we-work/index.md
+        how-we-work/onboarding/managers-onboarding-playbook.md: how-we-work/index.md
+        how-we-work/onboarding/maps-benefits-quick-guide.md: how-we-work/index.md
+        how-we-work/onboarding/index.md: how-we-work/index.md
+        how-we-work/onboarding/offboarding-process-and-checklist.md: how-we-work/index.md
+        how-we-work/onboarding/new-hire-orientation-guide.md: how-we-work/index.md
+        how-we-work/administrative-memos/media-and-press-engagement.md: how-we-work/index.md
+        how-we-work/administrative-memos/index.md: how-we-work/index.md
+        how-we-work/administrative-memos/responding-to-city-council-requests.md: how-we-work/index.md
+        how-we-work/administrative-memos/telework-and-in-office-schedule.md: how-we-work/index.md
+        how-we-work/administrative-memos/essential-and-emergency-essential-designations.md: how-we-work/index.md
+        how-we-work/how-to/silence-teams-notifications-while-sharing-your-screen.md: how-we-work/index.md
+        how-we-work/how-to/book-the-idea-lab-fayette.md: how-we-work/index.md
+        how-we-work/how-to/git-guide.md: how-we-work/index.md
+        how-we-work/how-to/add-a-printer.md: how-we-work/index.md
+        how-we-work/how-to/edit-a-past-reporting-period-in-book-of-business.md: how-we-work/index.md
+        how-we-work/how-to/create-planner-groups-without-automatic-member-alerts.md: how-we-work/index.md
+        how-we-work/how-to/index.md: how-we-work/index.md
+        how-we-work/how-to/change-your-city-password.md: how-we-work/index.md
+        how-we-work/how-to/order-food-catering-from-city-vendors.md: how-we-work/index.md
+        how-we-work/how-to/submit-your-weekly-update.md: how-we-work/index.md
+        how-we-work/operations/qa-standards.md: how-we-work/index.md
+        how-we-work/operations/productivity-and-collaboration-playbook.md: how-we-work/index.md
+        how-we-work/operations/intake-sop.md: how-we-work/index.md
+        how-we-work/operations/performance-standards-staff.md: how-we-work/index.md
+        how-we-work/operations/leadership-norms.md: how-we-work/index.md
+        how-we-work/operations/problem-statement-template.md: how-we-work/index.md
+        how-we-work/operations/index.md: how-we-work/index.md
+        how-we-work/operations/performance-standards-manager-companion.md: how-we-work/index.md
+        how-we-work/operations/charter-template.md: how-we-work/index.md
         what-we-do/services/cross-agency-delivery-theory-of-change.md: what-we-do/services/cross-agency-delivery/service-definition.md
-        resources/reference/position-descriptions/data-and-analytics/pd-principal-platform-engineer.md: resources/reference/position-descriptions/data-and-analytics/pd-principal-data-engineer.md
-        resources/reference/position-descriptions/innovation-lab/pd-civic-technology-lead.md: resources/reference/position-descriptions/innovation-lab/pd-innovation-program-manager.md
-        resources/reference/position-descriptions/innovation-lab/pd-senior-product-engineer.md: resources/reference/position-descriptions/innovation-lab/pd-applied-data-scientist.md
+        resources/reference/position-descriptions/data-and-analytics/pd-principal-platform-engineer.md: resources/reference/position-descriptions/index.md
+        resources/reference/position-descriptions/innovation-lab/pd-civic-technology-lead.md: resources/reference/position-descriptions/index.md
+        resources/reference/position-descriptions/innovation-lab/pd-senior-product-engineer.md: resources/reference/position-descriptions/index.md
         our-teams/performance-and-citistat/index.md: about-us/our-teams/performance/index.md
         our-teams/performance-and-citistat/about-performance-management.md: about-us/our-teams/performance/about-performance.md
         our-teams/performance-and-citistat/performance-management-strategy.md: about-us/our-teams/performance/about-performance.md
@@ -278,18 +321,22 @@ plugins:
         our-teams/performance-and-citistat/citistat-portfolio/water-stat.md: what-we-do/programs/citistat/portfolio/water-stat.md
         our-teams/performance-and-citistat/citistat-portfolio/workplace-safety-stat.md: what-we-do/programs/citistat/portfolio/workplace-safety-stat.md
         our-teams/performance-and-citistat/citistat-portfolio/youth-stat.md: what-we-do/programs/citistat/portfolio/youth-stat.md
-        resources/reference/position-descriptions/performance-and-citistat/pd-citistat-analyst.md: resources/reference/position-descriptions/performance/pd-citistat-analyst.md
-        resources/reference/position-descriptions/performance-and-citistat/pd-citistat-program-manager.md: resources/reference/position-descriptions/performance/pd-citistat-program-manager.md
-        resources/reference/position-descriptions/performance-and-citistat/pd-deputy-chief-performance-officer.md: resources/reference/position-descriptions/performance/pd-deputy-chief-performance-officer.md
-        resources/reference/position-descriptions/performance-and-citistat/pd-senior-performance-analyst.md: resources/reference/position-descriptions/performance/pd-senior-performance-analyst.md
-        our-teams/innovation-lab/baltimore-intelligence-center/capability-transfer-and-target-state.md: what-we-do/programs/baltimore-intelligence-center/index.md
-        our-teams/innovation-lab/baltimore-intelligence-center/engagement-overview.md: what-we-do/programs/baltimore-intelligence-center/index.md
-        our-teams/innovation-lab/baltimore-intelligence-center/governance-and-risks.md: what-we-do/programs/baltimore-intelligence-center/responsible-data-and-ai.md
-        our-teams/innovation-lab/baltimore-intelligence-center/index.md: what-we-do/programs/baltimore-intelligence-center/index.md
-        our-teams/innovation-lab/baltimore-intelligence-center/operating-model.md: what-we-do/programs/baltimore-intelligence-center/architecture-and-roadmap.md
-        our-teams/innovation-lab/baltimore-intelligence-center/reference.md: what-we-do/programs/baltimore-intelligence-center/index.md
-        our-teams/innovation-lab/baltimore-intelligence-center/roadmap-and-source-systems.md: what-we-do/programs/baltimore-intelligence-center/architecture-and-roadmap.md
-        our-teams/innovation-lab/baltimore-intelligence-center/workstreams.md: what-we-do/programs/baltimore-intelligence-center/products-and-capabilities.md
+        resources/reference/position-descriptions/performance-and-citistat/pd-citistat-analyst.md: resources/reference/position-descriptions/index.md
+        resources/reference/position-descriptions/performance-and-citistat/pd-citistat-program-manager.md: resources/reference/position-descriptions/index.md
+        resources/reference/position-descriptions/performance-and-citistat/pd-deputy-chief-performance-officer.md: resources/reference/position-descriptions/index.md
+        resources/reference/position-descriptions/performance-and-citistat/pd-senior-performance-analyst.md: resources/reference/position-descriptions/index.md
+        what-we-do/programs/baltimore-intelligence-center/index.md: what-we-do/products/baltimore-intelligence-center/index.md
+        what-we-do/programs/baltimore-intelligence-center/architecture-and-roadmap.md: what-we-do/products/baltimore-intelligence-center/architecture-and-roadmap.md
+        what-we-do/programs/baltimore-intelligence-center/products-and-capabilities.md: what-we-do/products/baltimore-intelligence-center/products-and-capabilities.md
+        what-we-do/programs/baltimore-intelligence-center/responsible-data-and-ai.md: what-we-do/products/baltimore-intelligence-center/responsible-data-and-ai.md
+        our-teams/innovation-lab/baltimore-intelligence-center/capability-transfer-and-target-state.md: what-we-do/products/baltimore-intelligence-center/index.md
+        our-teams/innovation-lab/baltimore-intelligence-center/engagement-overview.md: what-we-do/products/baltimore-intelligence-center/index.md
+        our-teams/innovation-lab/baltimore-intelligence-center/governance-and-risks.md: what-we-do/products/baltimore-intelligence-center/responsible-data-and-ai.md
+        our-teams/innovation-lab/baltimore-intelligence-center/index.md: what-we-do/products/baltimore-intelligence-center/index.md
+        our-teams/innovation-lab/baltimore-intelligence-center/operating-model.md: what-we-do/products/baltimore-intelligence-center/architecture-and-roadmap.md
+        our-teams/innovation-lab/baltimore-intelligence-center/reference.md: what-we-do/products/baltimore-intelligence-center/index.md
+        our-teams/innovation-lab/baltimore-intelligence-center/roadmap-and-source-systems.md: what-we-do/products/baltimore-intelligence-center/architecture-and-roadmap.md
+        our-teams/innovation-lab/baltimore-intelligence-center/workstreams.md: what-we-do/products/baltimore-intelligence-center/products-and-capabilities.md
         our-teams/cross-agency-delivery/index.md: what-we-do/services/cross-agency-delivery/index.md
         our-teams/cross-agency-delivery/about-cross-agency-delivery.md: what-we-do/services/cross-agency-delivery/index.md
         our-teams/cross-agency-delivery/cross-agency-delivery-theory-of-change.md: what-we-do/services/cross-agency-delivery/service-definition.md

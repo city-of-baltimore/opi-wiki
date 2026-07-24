@@ -6,7 +6,6 @@
 |--------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Government Cluster             | Operations and Infrastructure                                                                                                                        |
 | Stat Type                      | Agency Stat                                                                                                                                          |
-| Internal Tag                   | Facilities / fleet / internal services                                                                                                               |
 | Executive Sponsor / Authorizer | Deputy Mayor for Operations                                                                                                                          |
 | Primary Agency / Agencies      | Department of General Services                                                                                                                       |
 | OPI lead                        | OPI-operated / Performance Team                                                                                                                      |

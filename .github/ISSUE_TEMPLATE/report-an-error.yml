@@ -7,7 +7,7 @@ body:
     attributes:
       value: |
         Thanks for flagging this. Factual errors and broken pages get priority —
-        a steward will confirm and correct the page, usually within two business days.
+        a steward will review the report and confirm the appropriate correction.
   - type: input
     id: page
     attributes:

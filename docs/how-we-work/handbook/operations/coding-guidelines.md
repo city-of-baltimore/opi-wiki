@@ -117,9 +117,9 @@ what the code does in comments. The code should be self-explanatory, else the
 naming might need improvement.
 
 
-# Collaboration
+## Collaboration
 
-## Source-Control Workflow
+### Source-Control Workflow
 
 We use [trunk based development](https://trunkbaseddevelopment.com/) flow. 
 

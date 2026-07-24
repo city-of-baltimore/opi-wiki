@@ -55,7 +55,7 @@ When in doubt, model the voice on the [Letters from the Director](docs/about-us/
 
 - Methodology, strategy, operating model
 - Public briefs and website material
-- Theory of Change and Glossary
+- Public methods, service definitions, and the Glossary
 - Letters from the Director
 - Position Descriptions Index (titles + summaries)
 
@@ -68,15 +68,17 @@ When in doubt, model the voice on the [Letters from the Director](docs/about-us/
 - Internal SOPs and intake queues
 - Telework Policy (formal HR doc)
 
-When in doubt, **ask the section owner**. Default to public unless there's a specific reason it's internal.
+When publication posture is unclear, **ask the section owner and do not publish
+until they confirm**. A public repository is itself a publication surface even
+when a file is outside `docs/`.
 
 ## Cross-link discipline
 
 The Reference section (`docs/resources/reference/`) is cross-cutting. Every section page should link to:
 
 - The [Glossary](docs/resources/reference/glossary.md) when a term is first used in a section.
-- The [Operating Model](docs/resources/reference/operating-model-staff-version.md) when a page is about how OPI is structured.
-- The relevant [Theory of Change](docs/resources/reference/theory-of-change-summaries.md) summary when a page is about what a division does.
+- [How Work Moves Through OPI](docs/how-we-work/how-work-moves-through-opi.md)
+  when a page is about OPI's structure or describes team and service handoffs.
 - The [Strategic Priorities](docs/resources/reference/strategic-priorities-one-pager.md) when a page connects to current FY priorities.
 
 ## Navigation ownership
@@ -85,10 +87,10 @@ Navigation is local to each section. Keep `mkdocs.yml` focused on site-wide
 runtime settings, and update the nearest `docs/**/.pages` file whenever a page
 is added, removed, renamed, or moved.
 
-For recurring operational source material, keep durable memo-style guidance in
-`docs/how-we-work/administrative-memos/` and short step-based procedures in
-`docs/how-we-work/how-to/`, then expose those collections intentionally in the
-`How We Work` navigation rather than burying them in unrelated sections.
+Internal operating guidance, onboarding material, personnel records, and
+contact data belong in SharePoint or the appropriate City system. Do not add
+those collections under `docs/` or expose them through public navigation,
+redirects, raw data files, or generated assets.
 
 ## Section map: folder ↔ navigation label
 
@@ -104,19 +106,12 @@ mapping in mind when locating content, and keep the `.pages` title, the
 | `about-us/our-teams/performance/` | Performance | The team that delivers **Citywide Performance Management**; the **CitiStat** program itself lives in `what-we-do/programs/citistat/`. |
 | `about-us/our-teams/data-and-analytics/` | Data and Analytics | The team that delivers **Citywide Data and Analytics**. |
 | `about-us/our-teams/innovation-lab/` | Innovation Lab | Both a team and a service; the products it builds live in `what-we-do/products/`. |
-| `how-we-work/organization/` | Organization | Org chart and the Team & Roles roster, both generated from the canonical people directory (`docs/_data/people.yml`). |
-| `how-we-work/handbook/` | Handbook | Onboarding, operations, how-to guides, and administrative memos. |
+| `how-we-work/organization/` | Organization | Public leadership chart and team-purpose overview, generated from the limited public organization data in `docs/_data/people.yml`. |
 | `what-we-do/` | What We Do | Services, programs (CitiStat and portfolio), and products (Baltimore Intelligence Center). |
-| `programs/citistat/` | CitiStat | A **program** supported by all teams — its own top-level section, not owned by one team. |
-| `products/` | Products | Tools and platforms OPI builds (Baltimore Intelligence Center, plus placeholders). |
-| `how-we-work/services/` | Services | The five services OPI delivers, including **Cross-Agency Delivery** — a service, not a staffed team. |
-| `how-we-work/` | How We Work | The internal SharePoint KB calls the equivalent pillar **How We Deliver** — different system, different label (see the Wiki Knowledge Base Structure page). |
-
-This public site (OPI Foundations, five sections) and the internal SharePoint
-knowledge base (six pillars) are deliberately separate systems with different
-top-level labels. The
-[Wiki Knowledge Base Structure](docs/resources/reference/wiki-knowledge-base-structure.md)
-page documents the internal KB and the relationship between the two.
+| `what-we-do/programs/citistat/` | CitiStat | A **program** supported by all teams — its own section, not a team. |
+| `what-we-do/products/` | Products | Tools and platforms OPI builds, including the Baltimore Intelligence Center. |
+| `what-we-do/services/` | Services | The five services OPI delivers, including **Cross-Agency Delivery** — a service, not a staffed team. |
+| `how-we-work/` | How We Work | Public operating model and leadership structure. Internal operating guidance remains in SharePoint and is not published here. |
 
 ## Content taxonomy guardrails
 
@@ -125,10 +120,10 @@ silently reclassify one as another.
 
 | Type | What it is | Members | Lives under |
 |---|---|---|---|
-| **Teams** | Groups with staff and budget (also called portfolios) | Director's Office, Performance, Data and Analytics, Innovation Lab | `our-teams/` |
-| **Services** | What OPI delivers for the City | AdminOps, Citywide Performance Management, Citywide Data and Analytics, Innovation Lab, Cross-Agency Delivery | `how-we-work/services/` |
-| **Programs** | Ongoing routines that may span teams | CitiStat | `programs/` |
-| **Products** | Tools and platforms OPI builds | Baltimore Intelligence Center, Baltimore City Data Platform, Baltimore City Performance Portal | `products/` |
+| **Teams** | Groups with staff and budget (also called portfolios) | Director's Office, Performance, Data and Analytics, Innovation Lab | `about-us/our-teams/` |
+| **Services** | What OPI delivers for the City | AdminOps, Citywide Performance Management, Citywide Data and Analytics, Innovation Lab, Cross-Agency Delivery | `what-we-do/services/` |
+| **Programs** | Ongoing routines that may span teams | CitiStat | `what-we-do/programs/` |
+| **Products** | Tools and platforms OPI builds | Baltimore Intelligence Center, Baltimore City Data Platform, Baltimore City Performance Portal | `what-we-do/products/` |
 
 Rules to enforce on every page:
 
@@ -137,7 +132,7 @@ Rules to enforce on every page:
 - **CitiStat is a program, not a team.** It is supported by all teams and owned
   by the CitiStat Director.
 - **Cross-Agency Delivery is a service, not a staffed team.** There is no
-  `our-teams/cross-agency-delivery/` directory — it activates through Tiger
+  `about-us/our-teams/cross-agency-delivery/` directory — it activates through Tiger
   Teams and Innovation Lab projects.
 - **Never write "CAD."** Spell out Cross-Agency Delivery; "x-agency delivery" is
   the only approved short form.
@@ -172,7 +167,7 @@ exception: they use a plain `>` blockquote summary and no badge.
 
 Visible status/type pills are shared UI too, and they are **opt-in**: a page
 renders a pill only when a `.metadata.yml` scope sets `display_badge` to
-`draft`, `template`, `reference`, or `position-description`. Most pages set no
+`draft`, `template`, or `reference`. Most pages set no
 badge — the old blanket `approved` badge was retired because labeling the
 default state added noise (and the token is now rejected by validation).
 `page_header()` renders the page's badge automatically; use the `badge(...)`
@@ -209,13 +204,13 @@ build-time `.metadata.yml`, which drives review cadence and the status badge.)
 
 ## Structured page data
 
-When one page needs to repeat the same source-of-truth data across charts,
-tables, and roster text, keep that content in a shared YAML file and render it
-through a macro. Staff and contractors are the canonical example: the single
-`docs/_data/people.yml` directory drives the org chart, the Team & Roles
-roster, the position-description index, and inline role references (via the
-`people(...)` and `role_holder(...)` macros). Update a person there, not the
-Mermaid blocks, staff lists, or PD index by hand.
+When one public page needs to repeat the same source-of-truth data across
+charts and tables, keep that content in a shared YAML file and render it
+through a macro. `docs/_data/people.yml` is deliberately limited to public
+leadership names, titles, team labels, and team purposes; it drives the public
+leadership chart and inline `role_holder(...)` references. It must never carry
+staff rosters, contractors, payroll identifiers, phone numbers, email
+addresses, classifications, personnel status, or full position descriptions.
 
 ## Page data model
 
@@ -248,10 +243,11 @@ If the team wants ProperDocs later, treat it as a full platform change:
 enforces the freshness contract, not just field presence:
 
 - `last_reviewed` and `next_review` must be ISO dates (`YYYY-MM-DD`).
-- A page whose `last_reviewed` is more than **183 days** old fails validation —
-  the build breaks until someone actually reviews the content and bumps the
-  dates in the nearest `.metadata.yml`.
-- `next_review` must not precede `last_reviewed`.
+- `last_reviewed` cannot be in the future.
+- `next_review` must not precede `last_reviewed` or be overdue.
+- A scheduled review interval cannot exceed **200 days**. The explicit
+  `next_review` date is the deadline, so a valid review round does not fail
+  before its own scheduled date.
 
 This is deliberate: the quarterly staleness audit below now has teeth. When a
 review pass completes, bump the section's `last_reviewed`/`next_review` in one
@@ -261,7 +257,7 @@ sidecar edit.
 
 Every quarter, run `task prepush` (which includes `mkdocs build --strict`) and audit:
 
-1. Pages whose `Last reviewed` field is more than 6 months old.
+1. Pages whose `next_review` date is approaching or overdue.
 2. Pages whose linked source documents have been updated.
 3. Pages with low traffic that may not be needed.
 
@@ -284,8 +280,8 @@ runs it in three nested tiers:
 
 | Tier | Where | Covers |
 |---|---|---|
-| `task ci` | pull-request CI, fast local loop | hosted-CI policy guard, lint, mypy, bandit, metadata, brand terms, style, consistency, raw HTML links |
-| `task prepush` | the pre-push hook and the Pages deploy gate | everything above, plus pytest, `mkdocs build --strict`, the built-site link crawl, and the accessibility checks |
+| `task ci` | pull-request CI, fast local loop | hosted-CI policy guard, format, lint, mypy, bandit, metadata, brand terms, style, consistency, raw HTML links |
+| `task prepush` | the pre-push hook and the Pages deploy gate | everything above, plus pytest, `mkdocs build --strict`, publication-boundary and built-link checks, and accessibility checks |
 | `task validate` | locally, before a deploy | everything above, plus the Playwright browser smoke checks |
 
 Each tier is a strict prefix of the next, so nothing is lost by moving a check
@@ -337,8 +333,9 @@ If a run still looks stuck, the last flushed `[n/m] <step>...` line names it.
 
 `./scripts/security_snyk.sh` runs a manual Snyk source-code scan. It is in no
 gate by design (Snyk plans cap scan counts), and it does not cover this repo's
-uv-managed Python dependencies — that coverage comes from the server-side Snyk
-integration. See `patapsco/docs/operations/snyk-scanning.md`.
+uv-managed Python dependencies. Confirm any server-side dependency integration
+in Snyk before relying on it; repository configuration alone does not prove
+that coverage. See `patapsco/docs/operations/snyk-scanning.md`.
 
 ## Bus factor mitigation
 
@@ -378,6 +375,9 @@ When reviewing method pages, confirm that each method has a clear source of trut
 
 - Tiger Team language should defer to the Tiger Teams Playbook.
 - CitiStat language should defer to the CitiStat Method Playbook and portfolio register.
-- Innovation Lab language should defer to the Innovation Lab Strategy and Theory of Change.
-- Cross-Agency Delivery language should defer to the Cross-Agency Delivery overview and Theory of Change.
-- Templates should require portfolio, service, routine type, owner, decision needed, and sustainment path.
+- Innovation Lab language should defer to About the Innovation Lab and the
+  Digital Product Methodology.
+- Cross-Agency Delivery language should defer to its service overview and
+  service definition.
+- Public template pages should explain structure without publishing internal
+  system locations, contact lists, or controlled working copies.

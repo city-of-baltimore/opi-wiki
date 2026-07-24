@@ -32,10 +32,6 @@ NAV_TITLE_EXPECTATIONS = {
     REPO_ROOT / "docs/about-us/letters-from-the-director/.pages": "Letters from the Director",
     REPO_ROOT / "docs/how-we-work/.pages": "How We Work",
     REPO_ROOT / "docs/how-we-work/organization/.pages": "Organization",
-    REPO_ROOT / "docs/how-we-work/handbook/.pages": "Handbook",
-    REPO_ROOT / "docs/how-we-work/handbook/onboarding/.pages": "Onboarding",
-    REPO_ROOT / "docs/how-we-work/handbook/operations/.pages": "Operations",
-    REPO_ROOT / "docs/how-we-work/organization/team-and-roles/.pages": "Team and Roles",
     REPO_ROOT / "docs/about-us/our-teams/.pages": "Our Teams",
     REPO_ROOT / "docs/about-us/our-teams/directors-office/.pages": "Director's Office",
     REPO_ROOT / "docs/about-us/our-teams/performance/.pages": "Performance",
@@ -45,23 +41,11 @@ NAV_TITLE_EXPECTATIONS = {
     REPO_ROOT / "docs/what-we-do/services/.pages": "Services",
     REPO_ROOT / "docs/what-we-do/programs/.pages": "Programs",
     REPO_ROOT / "docs/what-we-do/programs/citistat/.pages": "CitiStat",
-    REPO_ROOT
-    / "docs/what-we-do/programs/citistat/portfolio/.pages": "CitiStat Portfolio",
+    REPO_ROOT / "docs/what-we-do/programs/citistat/portfolio/.pages": "CitiStat Portfolio",
     REPO_ROOT / "docs/what-we-do/products/.pages": "Products",
     REPO_ROOT / "docs/resources/.pages": "Resources",
     REPO_ROOT / "docs/resources/reference/.pages": "Reference",
-    REPO_ROOT
-    / "docs/resources/reference/position-descriptions/.pages": "Position Descriptions",
-    REPO_ROOT
-    / "docs/resources/reference/position-descriptions/directors-office/.pages": "Director's Office",
-    REPO_ROOT
-    / "docs/resources/reference/position-descriptions/innovation-lab/.pages": "Innovation Lab",
-    REPO_ROOT
-    / "docs/resources/reference/position-descriptions/performance/.pages": "Performance",
-    REPO_ROOT
-    / "docs/resources/reference/position-descriptions/data-and-analytics/.pages": (
-        "Data and Analytics"
-    ),
+    REPO_ROOT / "docs/resources/reference/position-descriptions/.pages": "Position Descriptions",
 }
 
 
@@ -70,9 +54,9 @@ def test_team_nav_files_do_not_list_position_description_pages() -> None:
 
     for nav_file in TEAM_NAV_FILES:
         nav_text = nav_file.read_text(encoding="utf-8")
-        assert not any(
-            line.strip().startswith("- pd-") for line in nav_text.splitlines()
-        ), f"{nav_file} still lists PD pages in nav."
+        assert not any(line.strip().startswith("- pd-") for line in nav_text.splitlines()), (
+            f"{nav_file} still lists PD pages in nav."
+        )
 
 
 def test_team_landing_pages_point_to_canonical_position_description_index() -> None:
@@ -86,14 +70,15 @@ def test_team_landing_pages_point_to_canonical_position_description_index() -> N
         )
 
 
-def test_position_descriptions_live_only_in_shared_reference_section() -> None:
-    """PD source files should live under the shared reference section."""
+def test_full_position_descriptions_are_not_published() -> None:
+    """Only the public role-summary index should remain in the docs tree."""
 
     for team_dir in OLD_TEAM_PD_DIRS:
         assert list(team_dir.glob("pd-*.md")) == []
 
     shared_pd_files = list(POSITION_DESCRIPTIONS_DIR.rglob("pd-*.md"))
-    assert shared_pd_files
+    assert shared_pd_files == []
+    assert (POSITION_DESCRIPTIONS_DIR / "index.md").is_file()
 
 
 def test_major_sections_define_explicit_nav_titles() -> None:

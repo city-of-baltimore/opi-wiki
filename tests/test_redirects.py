@@ -4,7 +4,12 @@ from __future__ import annotations
 
 from pathlib import Path
 
-from scripts.repo_tools.redirects import ALLOWED_DUPLICATE_DESTINATIONS, find_redirect_issues
+import pytest
+from scripts.repo_tools.redirects import (
+    ALLOWED_DUPLICATE_DESTINATIONS,
+    find_redirect_issues,
+    load_redirect_map,
+)
 
 REPO_ROOT = Path(__file__).resolve().parents[1]
 MKDOCS_CONFIG = REPO_ROOT / "mkdocs.yml"
@@ -41,37 +46,43 @@ def test_redirect_duplicate_destinations_require_allowlist(tmp_path: Path) -> No
     ]
 
 
+def test_redirect_loader_rejects_duplicate_yaml_keys(tmp_path: Path) -> None:
+    """A repeated redirect source must not be silently overwritten by YAML."""
+
+    config_path = tmp_path / "mkdocs.yml"
+    config_path.write_text(
+        "plugins:\n"
+        "  - redirects:\n"
+        "      redirect_maps:\n"
+        "        retired.md: current-a.md\n"
+        "        retired.md: current-b.md\n",
+        encoding="utf-8",
+    )
+
+    with pytest.raises(ValueError, match="Duplicate YAML key 'retired.md'"):
+        load_redirect_map(config_path)
+
+
 def test_redirect_allowlist_stays_small_and_explicit() -> None:
     """Intentional many-to-one redirects should remain rare and documented."""
 
     assert ALLOWED_DUPLICATE_DESTINATIONS == {
         "resources/index.md",
-        "resources/reference/position-descriptions/innovation-lab/pd-civic-designer.md",
-        "resources/reference/position-descriptions/directors-office/pd-data-storyteller.md",
-        "resources/reference/position-descriptions/directors-office/pd-operations-analyst.md",
-        "resources/reference/position-descriptions/data-and-analytics/pd-applied-data-scientist.md",
-        "resources/reference/position-descriptions/innovation-lab/pd-innovation-program-manager.md",
-        "resources/reference/position-descriptions/innovation-lab/pd-product-engineer-full-stack.md",
-        "resources/reference/position-descriptions/data-and-analytics/pd-principal-data-engineer.md",
-        "resources/reference/position-descriptions/innovation-lab/pd-applied-data-scientist.md",
-        "resources/reference/position-descriptions/performance/pd-citistat-analyst.md",
-        "resources/reference/position-descriptions/performance/pd-citistat-program-manager.md",
-        "resources/reference/position-descriptions/performance/pd-deputy-chief-performance-officer.md",
-        "resources/reference/position-descriptions/performance/pd-senior-performance-analyst.md",
+        "resources/reference/index.md",
+        "resources/reference/position-descriptions/index.md",
         "what-we-do/services/cross-agency-delivery/service-definition.md",
         "what-we-do/services/cross-agency-delivery/index.md",
         "how-we-work/organization/org-structure.md",
-        "how-we-work/organization/team-and-roles/index.md",
+        "how-we-work/index.md",
         "how-we-work/how-work-moves-through-opi.md",
         "about-us/our-teams/performance/index.md",
         "about-us/our-teams/performance/about-performance.md",
         "about-us/our-teams/data-and-analytics/about-data-analytics.md",
         "about-us/our-teams/innovation-lab/about-innovation-lab.md",
         "about-us/our-teams/directors-office/about-admin-ops.md",
-        "what-we-do/programs/baltimore-intelligence-center/index.md",
-        "what-we-do/programs/baltimore-intelligence-center/architecture-and-roadmap.md",
+        "what-we-do/products/baltimore-intelligence-center/index.md",
+        "what-we-do/products/baltimore-intelligence-center/architecture-and-roadmap.md",
+        "what-we-do/products/baltimore-intelligence-center/products-and-capabilities.md",
+        "what-we-do/products/baltimore-intelligence-center/responsible-data-and-ai.md",
         "what-we-do/programs/citistat/method-playbook.md",
-        "how-we-work/handbook/index.md",
-        "how-we-work/handbook/operations/index.md",
-        "how-we-work/handbook/onboarding/index.md",
     }

@@ -1,6 +1,6 @@
 # About Data and Analytics
 
-{{ page_header(summary="How OPI makes Baltimore's data trustworthy, governed, and useful, and builds the platform the city's analytics run on.", category="ABOUT · SERVICE") }}
+{{ page_header(summary="How OPI makes Baltimore's data trustworthy, governed, and useful, and builds the platform the city's analytics run on.", category="ABOUT · TEAM") }}
 
 The Data and Analytics team builds and runs Baltimore's civic data infrastructure. It takes the scattered administrative data that agencies collect and turns it into shared, governed assets: reliable measures, reusable datasets, dashboards, maps, open data, and the platform the city's analytics and AI products run on. The work sits where agency operations, executive priorities, public transparency, and BCIT's infrastructure meet.
 
@@ -14,7 +14,7 @@ It maintains the citywide KPI dictionary, which gives each priority metric one o
 
 ## How the work fits together
 
-The team builds in layers and keeps them distinct. The [Baltimore City Data Platform](../../../what-we-do/products/baltimore-city-data-platform.md) is the governed foundation, where raw sources land, get cleaned, and become governed marts that serve as the official record. The [Baltimore Intelligence Center](../../../what-we-do/programs/baltimore-intelligence-center/index.md) is the program that builds the semantic layer, knowledge graph, and AI products on top of those governed marts; by firm agreement, the intelligence layer reads the governed marts and never re-ingests raw data. Products and portals, including StatGPT, City Services Intelligence, and the Performance Portal, draw on that governed output rather than the raw systems.
+The team builds in layers and keeps them distinct. The [Baltimore City Data Platform](../../../what-we-do/products/baltimore-city-data-platform.md) is the governed foundation, where raw sources land, get cleaned, and become governed marts that serve as the official record. The [Baltimore Intelligence Center](../../../what-we-do/products/baltimore-intelligence-center/index.md) is the product that adds shared definitions, relationships, analytics, and AI capabilities on top of those governed marts; by firm agreement, the intelligence layer reads the governed marts and never re-ingests raw data. Products and portals draw on that governed output rather than the raw systems.
 
 The team insists on definitions, lineage, and ownership up front because everything downstream inherits them.
 
@@ -48,6 +48,6 @@ Data and Analytics is the evidence layer for the whole office. It gives Performa
 ## Read alongside
 
 - [Baltimore City Data Platform](../../../what-we-do/products/baltimore-city-data-platform.md): the governed data foundation this team builds.
-- [Baltimore Intelligence Center](../../../what-we-do/programs/baltimore-intelligence-center/index.md): the program building the semantic layer and AI products on top.
+- [Baltimore Intelligence Center](../../../what-we-do/products/baltimore-intelligence-center/index.md): the product adding governed intelligence and responsible-AI capabilities on top.
 - [Data Governance Framework](data-governance-framework.md): classification, stewardship, quality, privacy, and AI accountability.
 - [On Trustworthy Data](../../letters-from-the-director/on-trustworthy-data.md): the Director's letter on why this work matters.

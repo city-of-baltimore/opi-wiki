@@ -6,7 +6,6 @@
 |--------------------------------|------------------------------------------------------------------------------------------------------|
 | Government Cluster             | Health and Human Services                                                                            |
 | Stat Type                      | Agency Stat                                                                                          |
-| Internal Tag                   | Public health / human services                                                                       |
 | Executive Sponsor / Authorizer | Deputy Mayor for Health and Human Services                                                           |
 | Primary Agency / Agencies      | Baltimore City Health Department                                                                     |
 | OPI lead                        | OPI-operated / Performance Team                                                                      |

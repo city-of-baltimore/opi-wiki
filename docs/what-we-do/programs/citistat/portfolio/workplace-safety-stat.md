@@ -6,7 +6,6 @@
 |--------------------------------|----------------------------------------------------------------------------------------------------------------------------|
 | Government Cluster             | Internal Services                                                                                                          |
 | Stat Type                      | Thematic Stat                                                                                                              |
-| Internal Tag                   | Workforce safety / risk / internal operations                                                                              |
 | Executive Sponsor / Authorizer | Deputy City Administrator                                                                                                  |
 | Primary Agency / Agencies      | Finance / Risk Management, DHR, DGS, DPW, DOT, BCRP, DHCD, and operational agencies                                        |
 | OPI lead                        | Director’s Office-led with Performance method support                                                                      |

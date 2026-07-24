@@ -6,7 +6,6 @@
 |--------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Government Cluster             | Internal Services                                                                                                                                             |
 | Stat Type                      | Thematic Stat                                                                                                                                                 |
-| Internal Tag                   | Foundation / enablement                                                                                                                                       |
 | Executive Sponsor / Authorizer | Deputy City Administrator                                                                                                                                     |
 | Primary Agency / Agencies      | BCIT as primary agency; agency CIOs / technology leads from BCRP, BCHD, DPW, Police, Fire, and other major operating agencies                                 |
 | OPI lead                        | OPI-operated / Data Team-led with BCIT and agency CIO participation                                                                                           |

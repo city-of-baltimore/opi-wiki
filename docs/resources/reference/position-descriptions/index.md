@@ -1,28 +1,65 @@
 # Position Descriptions
 
-{{ page_header(summary="The full index of OPI position descriptions.", category="SERIES · OPI FOUNDATIONS", tagline="OPI roles, classifications, and reporting lines.") }}
+{{ page_header(summary="A public overview of OPI role titles and responsibilities.", category="SERIES · OPI FOUNDATIONS", tagline="What each role contributes to OPI's work.") }}
 
-A single index of OPI’s position descriptions, grouped by portfolio, with classifications, reporting lines, and where to find the full document.
+This page provides a concise public summary of OPI's City roles. Full position
+descriptions contain internal personnel and employment details and are
+maintained in the City's SharePoint environment; they are not published on
+this site.
 
-## How to use this index
+The summaries describe the work at a high level. They are not vacancy notices,
+classification specifications, or a substitute for an official position
+description.
 
-OPI maintains a position description (PD) for every role on the team. PDs are the official job documents. We use them for hiring, classification, performance management, and onboarding. This index is the directory: it tells you what roles exist, where they sit, who they report to, the City classification, and where to find the full PD.
+## Director's Office
 
-### Conventions
+| Role | Public summary |
+| --- | --- |
+| Executive Director and Chief Data Officer | Sets OPI's strategy and quality bar and leads the City's performance, data, innovation, and cross-agency delivery work. |
+| Chief of Staff | Leads AdminOps, officewide planning, governance, communications, and fiscal, human-resources, and facilities coordination. |
+| Project Manager | Maintains delivery plans, coordinates dependencies, and keeps commitments, risks, and follow-up visible. |
+| Data Storyteller | Turns OPI's data and work into clear public information, executive briefings, and accessible communications. |
 
-In the table below, the Role column links to the full position description, and the Classification column carries the City classification. Reports to is the position the role reports to in the OPI Operating Model. Status is either "Filled" or "Open," maintained against the personnel roster. Roles are grouped by the team the person sits on, which is not always where the PD document is filed.
+## Performance
 
-This index is generated from the [canonical people directory](../../../how-we-work/organization/team-and-roles/index.md); update a role there and it updates here.
+| Role | Public summary |
+| --- | --- |
+| Deputy Chief Performance Officer | Directs Baltimore's citywide performance-management system and the CitiStat program. |
+| CitiStat Program Manager | Manages the CitiStat method, session cycle, quality assurance, and analyst coaching. |
+| CitiStat Analyst | Analyzes agency performance, prepares decision-focused sessions, and tracks follow-through. |
+| CitiStat Inspector | Validates performance data through field observation and documents service-delivery conditions. |
+| Senior Performance Analyst | Leads citywide performance measures, agency performance plans, and the Performance Tracker product. |
 
-## Browse by portfolio
+## Data and Analytics
 
-{{ people("pd_index") }}
+| Role | Public summary |
+| --- | --- |
+| Deputy Chief Data Officer | Leads citywide data strategy, infrastructure, analytics, open data, governance, and responsible AI readiness. |
+| Technical Program Manager | Coordinates roadmaps, requirements, risks, testing, and delivery across data and analytics products. |
+| Applied Data Scientist | Produces applied research, geospatial analysis, models, and decision-ready data products for City priorities. |
+| Principal Data Engineer | Sets data architecture and engineering standards and leads secure, reliable platform and pipeline development. |
+| Senior Data Engineer | Builds and maintains shared data models, ingestion pipelines, quality controls, and technical documentation. |
 
-### Cross-Agency Delivery
+## Innovation Lab
 
-Cross-Agency Delivery is a way of running work, not a separate team or cost center, so it does not have dedicated position descriptions. The Innovation Lab provides the team, Performance provides the standing delivery routine, and the Director's Office provides the authorizing relationships. Staff working in Cross-Agency Delivery engagements remain on their home-portfolio PD. See the [Cross-Agency Delivery service](../../../what-we-do/services/cross-agency-delivery/index.md) and the [Tiger Teams Playbook](../tiger-teams-playbook.md) for how engagements are chartered and staffed.
+| Role | Public summary |
+| --- | --- |
+| Innovation Program Manager | Leads service design, product discovery, prototyping, delivery partnerships, and sustainment planning. |
+| Civic Designer | Conducts user research and turns findings into accessible journeys, service blueprints, prototypes, and recommendations. |
+| Applied Data Scientist | Uses analysis and rapid prototyping to help the Lab test solutions and turn evidence into usable products. |
+| Operations Analyst | Supports discovery, project coordination, process analysis, documentation, and implementation follow-through. |
+| Full Stack Engineer | Builds accessible, secure web applications and APIs for public and operational data products. |
+
+## Cross-Agency Delivery
+
+Cross-Agency Delivery is a service, not a staffed team or cost center, so it
+does not have separate position descriptions. People supporting an engagement
+remain aligned to their home team. See the
+[Cross-Agency Delivery service](../../../what-we-do/services/cross-agency-delivery/index.md)
+and the [Tiger Teams Playbook](../tiger-teams-playbook.md) for the public
+operating model.
 
 ## How this index is maintained
 
-The Chief of Staff owns the PD index and is the final word on working titles, reporting lines, and status. Material changes to a title, classification, reporting line, or scope require Chief of Staff sign-off and HR partner review. The Chief of Staff reviews the index with team leads each quarter, with an annual sweep aligned to the budget cycle.
-
+The Chief of Staff owns this public overview and reviews it with team leads.
+Official position descriptions remain controlled City records in SharePoint.

@@ -6,7 +6,6 @@
 |--------------------------------|------------------------------------------------------------------------------------------------------------|
 | Government Cluster             | Community and Economic Development                                                                         |
 | Stat Type                      | Agency Stat                                                                                                |
-| Internal Tag                   | Housing / neighborhoods                                                                                    |
 | Executive Sponsor / Authorizer | Deputy Mayor for Community and Economic Development                                                        |
 | Primary Agency / Agencies      | Department of Housing and Community Development                                                            |
 | OPI lead                        | OPI-operated / Performance Team                                                                            |

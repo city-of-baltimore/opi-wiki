@@ -7,6 +7,9 @@ __pycache__/
 # Scratch
 *.scratch/
 *.scratch
+# Local working notes are not reviewable public content and must never be
+# committed to this public repository.
+/notes/
 
 # C extensions
 *.so
@@ -154,6 +157,7 @@ activemq-data/
 
 # Environments
 .env
+.env.*
 .envrc
 .venv
 env/

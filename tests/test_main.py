@@ -8,14 +8,12 @@ from tests.helpers import register_macros
 def test_shared_macro_registry_stays_explicit() -> None:
     """The shared macros module should expose the expected public macro surface."""
 
-    env = register_macros("how-we-work/operations/charter-template.md")
+    env = register_macros("resources/reference/strategic-priorities-one-pager.md")
 
     assert set(env.macros) == {
         "card_grid_from",
         "badge",
-        "page_badge",
         "page_header",
         "org_structure_from",
-        "people",
         "role_holder",
     }

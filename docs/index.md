@@ -1,5 +1,3 @@
-# Home
-
 <div class="opi-hero">
   <div class="opi-hero-eyebrow">Mayor's Office of Performance and Innovation</div>
   <h1>OPI Foundations</h1>
@@ -28,8 +26,8 @@ OPI is organized into teams with staff and budget. Those teams deliver services 
 | --- | --- | --- |
 | Teams | Groups with staff and budget | Director's Office, Performance, Data and Analytics, Innovation Lab |
 | Services | What OPI delivers for Baltimore | AdminOps, Citywide Performance Management, Citywide Data and Analytics, Innovation Lab, Cross-Agency Delivery |
-| Programs | Ongoing routines that may span teams | CitiStat, Baltimore Intelligence Center, Data Governance, Open Data, Citywide Data Network |
-| Products | Tools and platforms OPI builds | Baltimore City Data Platform, Baltimore City Performance Portal |
+| Programs | Ongoing routines that may span teams | CitiStat, Data Governance, Open Data, Citywide Data Network |
+| Products | Tools and platforms OPI builds | Baltimore Intelligence Center, Baltimore City Data Platform, Baltimore City Performance Portal |
 
 When in doubt, use the clearest full name. Do not use "CAD" for Cross-Agency Delivery; spell it out, or use "x-agency delivery" only when a short form is needed.
 

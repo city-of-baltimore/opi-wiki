@@ -58,11 +58,11 @@ Mayor’s Office of Performance and Innovation
 
 ## Read alongside
 
-**About OPI: Cross-Agency Delivery:** *what the team owns and how to engage it.*
+**[Cross-Agency Delivery](../../what-we-do/services/cross-agency-delivery/index.md):** *what the service owns and how to engage it.*
 
-**ToC: Cross-Agency Delivery:** *logic model, governance, and engagement model.*
+**[Cross-Agency Delivery: Service Definition](../../what-we-do/services/cross-agency-delivery/service-definition.md):** *the full method, governance, and engagement model.*
 
-**Tiger Teams Playbook:** *how OPI runs short-cycle cross-agency improvement work.*
+**[Tiger Teams Playbook](../../resources/reference/tiger-teams-playbook.md):** *how OPI runs short-cycle cross-agency improvement work.*
 
 ## Plain-language operating distinction
 

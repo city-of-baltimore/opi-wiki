@@ -31,7 +31,6 @@ Each Stat is tracked with consistent metadata so the portfolio stays manageable 
 | Executive Sponsor / Authorizer | Leader with authority to resolve barriers, authorize decisions and follow-ups, and escalate issues.                                      |
 | Primary Agency / Agencies      | Agencies responsible for implementation, data, or operational follow-through.                                             |
 | Stat Type                      | Agency Stat or Thematic Stat.                                                                                             |
-| Internal Tag                   | Internal management lens such as service system, foundation/enablement, workforce, capital, public realm, or place-based. |
 | OPI lead                       | How OPI runs or supports the Stat: OPI-operated, Data Team-led, Director’s Office-led, Deputy Mayor-led / OPI-supported, or method support only. |
 | Core Data Product              | Dashboard, tracker, map, register, scorecard, or portfolio view that anchors the session.                                 |
 | Standard Artifacts             | Pre-meeting memo, Stat deck, follow-up memo, and follow-up tracker. |
@@ -46,11 +45,11 @@ Every Stat produces the same core package, so staff, agencies, and sponsors know
 | Pre-meeting memo | Frames purpose, agenda, data highlights, risks, decisions needed, and prior follow-ups. |
 | Stat deck | Visual decision support for the session: signal, bottlenecks, options, and follow-ups. |
 | Follow-up memo | Documents follow-ups, owners, due dates, evidence expectations, and escalation path. |
-| Follow-up tracker | The MS Planner record of open, closed, overdue, and escalated follow-ups. |
+| Follow-up tracker | The record of open, closed, overdue, and escalated follow-ups. |
 
 ## Master Stat portfolio
 
-Agency Stats run monthly; the place-based operating Stats (Housing, DOT, Police, Fire & EMS) run biweekly. Calendar details are maintained separately.
+Agency Stats run monthly. Housing, DOT, Police, and Fire & EMS run as agency Stats today and are moving to a biweekly place-based format as the place-based model takes hold. Calendar details are maintained separately.
 
 | **Stat**              | **Cluster**                        | **Type** | **OPI Lead**          | **Core Data Product**                                   |
 |-----------------------|------------------------------------|----------|-----------------------|---------------------------------------------------------|

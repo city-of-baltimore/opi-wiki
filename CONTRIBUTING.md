@@ -27,8 +27,9 @@ pre-push hook and the deploy gate — so install the hooks, and run
 `task prepush` before you push:
 
 - Strict MkDocs build: broken links and nav entries fail the build.
-- Page metadata sidecars (`.metadata.yml`) must be complete and fresh —
-  pages unreviewed for 6+ months fail validation.
+- Page metadata sidecars (`.metadata.yml`) must be complete and fresh. Review
+  deadlines cannot be overdue, future-dated, or scheduled more than 200 days
+  after the prior review.
 - Python automation is linted (ruff), typed (mypy --strict), and tested
   (pytest). New or changed automation ships with tests.
 - Repo conventions live in [`AGENTS.md`](AGENTS.md) and the README; follow

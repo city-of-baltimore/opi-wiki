@@ -1,6 +1,6 @@
 # CitiStat Templates
 
-{{ page_header(summary="Stakeholder agendas, materials send-out standards, and the deliverable-type vocabulary that supports every Stat.", category="TEMPLATES", tagline="The recurring artifacts that sit alongside the Method Playbook: generic by design, ready to adapt.") }}
+{{ page_header(summary="Stakeholder agendas, artifact standards, and the deliverable-type vocabulary that supports every Stat.", category="TEMPLATES", tagline="The recurring artifacts that sit alongside the Method Playbook: generic by design, ready to adapt.") }}
 
 Templates are intentionally generic. Names, dates, and content are placeholders to be replaced for each Stat.
 
@@ -28,7 +28,7 @@ Use 5 to 8 days before each Stat. Length is typically 45 minutes.
 |--------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | 2 minutes    | Welcome and introductions.                                                                                                                                                                      |
 | 5 minutes    | Status of previous Stat follow-up items. Identify items of note, items needing support, and items to highlight in the next Stat.                                                                |
-| 5 minutes    | Proposed agenda. Walk through the deck's agenda slide and time allotments. Adjust topics, time, and confirm whether anyone outside the standing list needs to be invited.                       |
+| 5 minutes    | Proposed agenda. Walk through the deck's agenda slide and time allotments. Adjust topics and time, and confirm whether additional participants are needed.                                     |
 | 15 minutes   | Review the frame. Walk through the draft deck. Note any data still being finalized, ask for feedback on organization and content, and identify suggested questions for panelists.               |
 | 10 minutes   | Operational metrics and follow-ups. Review the operational metrics slide and the running follow-up table; flag anything that should change before send-out.                                     |
 | 5 minutes    | Final adjustments and send-out. Confirm what changes are needed before pre-memo distribution and the timing for the send-out.                                                                   |
@@ -48,11 +48,16 @@ Use within 24 hours after each Stat. Length is typically 30 minutes. For agency-
 
 ## Materials send-out standard
 
-Pre-meeting materials are distributed at least 48 hours before the Stat (T-2 in the [CitiStat cycle](method-playbook.md#the-citistat-cycle)). The standard send-out includes the prior follow-up memo, the pre-memo, and the deck with questions, posted to the Stat's SharePoint location and distributed by email to the standing distribution list.
+Pre-meeting materials are distributed at least 48 hours before the Stat (T-2 in
+the [CitiStat cycle](method-playbook.md#the-citistat-cycle)). The standard
+package includes the prior follow-up memo, the pre-memo, and the deck with
+questions. Materials are shared with invited participants through approved City
+systems.
 
 ### File naming
 
-All Stat materials use the same naming convention so files sort cleanly and read clearly across SharePoint, email, and the wiki.
+All Stat materials use the same naming convention so files sort cleanly and
+read clearly across approved recordkeeping and publishing systems.
 
 - Use spaces, not underscores.
 - Add a space before "Stat" when the agency code precedes it: `DGS Stat`, not `DGSStat`.
@@ -98,7 +103,9 @@ Each deliverable type pairs with an evidence standard in the follow-up tracker s
 Templates should create consistency without creating bureaucracy. Use them to make the work easier to prepare, easier to review, and easier to sustain. The templates below are for the artifacts produced inside a Stat: the pre-memo, the deck, the follow-up memo, the follow-up tracker, and the weekly status report. Every artifact below pairs with a checklist on the [CitiStat Quality Standards](quality-standards.md) page.
 
 !!! note "Where to get the fillable files"
-    This page documents each template's structure. The current fillable versions are controlled documents in the internal SharePoint template library at **Playbooks and Methods › CitiStat › Templates**. Retrieve the file from SharePoint before each Stat so you are always working from the latest controlled version. *(SharePoint links to be added once the library is published.)*
+    This page documents each template's structure. Current fillable versions
+    are controlled City records and are not published on this site. Authorized
+    staff should use the current approved version.
 
 ### Template 1: Pre-meeting memo
 
@@ -135,7 +142,7 @@ Templates should create consistency without creating bureaucracy. Use them to ma
 | Escalations        | Name issues needing executive decision, delivery activation, product discovery, or data governance. |
 | Next session focus | Identify likely topics, carry-forward items, and data needed for the next cycle.                    |
 
-### Template 4: Follow-up tracker (MS Planner)
+### Template 4: Follow-up tracker
 
 | **Field**             | **Definition**                                                                            |
 |-----------------------|-------------------------------------------------------------------------------------------|

@@ -1,6 +1,6 @@
 defaults:
   owner: Chief of Staff
-  status: internal
-  last_reviewed: 2026-04-15
-  next_review: 2026-07-15
-  change_log: Normalized review metadata for internal operating guidance.
+  status: approved
+  last_reviewed: 2026-07-19
+  next_review: 2027-01-31
+  change_log: Removed internal guidance and retained the approved public operating model.

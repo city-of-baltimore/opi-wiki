@@ -87,6 +87,7 @@ def test_ci_plan_excludes_the_test_suite_the_build_and_every_built_site_check() 
 
     assert "Running repo automation tests" not in ci_names
     assert "Building MkDocs site with strict validation" not in ci_names
+    assert "Checking built-site publication boundary" not in ci_names
     assert "Checking built-site internal links" not in ci_names
     assert "Running accessibility smoke checks" not in ci_names
     assert "Running browser smoke checks" not in ci_names
@@ -100,6 +101,7 @@ def test_ci_plan_keeps_every_static_check() -> None:
     assert ci_names == [
         "Checking hosted CI policy",
         "Checking platform baseline conformance",
+        "Checking repo automation formatting",
         "Linting repo automation",
         "Type-checking repo automation",
         "Scanning repo automation for security issues",
@@ -109,6 +111,28 @@ def test_ci_plan_keeps_every_static_check() -> None:
         "Checking page consistency",
         "Checking raw HTML links",
     ]
+
+
+def test_ci_plan_checks_formatting_before_linting() -> None:
+    """Formatting drift should fail the canonical gate, ahead of lint diagnostics."""
+
+    steps = build_steps(Path("/tmp/example"), python_executable="python", plan="ci")
+    names = [step.name for step in steps]
+    formatting = steps[names.index("Checking repo automation formatting")]
+
+    assert formatting.command == (
+        "python",
+        "-m",
+        "ruff",
+        "format",
+        "--check",
+        "main.py",
+        "scripts",
+        "tests",
+    )
+    assert names.index("Checking repo automation formatting") < names.index(
+        "Linting repo automation"
+    )
 
 
 def test_ci_plan_runs_both_policy_checkers() -> None:
@@ -137,17 +161,31 @@ def test_prepush_plan_owns_the_tests_the_build_and_the_built_site_checks() -> No
 
     assert "Running repo automation tests" in prepush_names
     assert "Building MkDocs site with strict validation" in prepush_names
+    assert "Checking built-site publication boundary" in prepush_names
     assert "Checking built-site internal links" in prepush_names
     assert "Running accessibility smoke checks" in prepush_names
 
 
-def test_built_link_crawl_runs_right_after_the_strict_build() -> None:
-    """The built-site link crawl needs the freshly built site/ directory."""
+def test_prepush_runs_pytest_without_a_duplicate_test_pass() -> None:
+    """The pre-push tier should execute the suite exactly once."""
+
+    steps = build_steps(Path("/tmp/example"), python_executable="python", plan="prepush")
+    test_steps = [step for step in steps if step.name == "Running repo automation tests"]
+
+    assert len(test_steps) == 1
+    assert test_steps[0].command == ("python", "-m", "pytest")
+
+
+def test_built_site_checks_run_right_after_the_strict_build() -> None:
+    """Built-site checks need the freshly built site/ directory."""
 
     step_names = [step.name for step in build_steps(Path("/tmp/example"), plan="prepush")]
 
     build_index = step_names.index("Building MkDocs site with strict validation")
-    assert step_names[build_index + 1] == "Checking built-site internal links"
+    assert step_names[build_index + 1 : build_index + 3] == [
+        "Checking built-site publication boundary",
+        "Checking built-site internal links",
+    ]
 
 
 def test_validate_plan_adds_the_browser_smoke_checks() -> None:

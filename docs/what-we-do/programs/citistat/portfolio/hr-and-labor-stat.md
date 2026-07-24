@@ -6,7 +6,6 @@
 |--------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------|
 | Government Cluster             | Internal Services                                                                                                                          |
 | Stat Type                      | Thematic Stat                                                                                                                              |
-| Internal Tag                   | Workforce / foundation / enablement                                                                                                        |
 | Executive Sponsor / Authorizer | Deputy City Administrator                                                                                                                  |
 | Primary Agency / Agencies      | Department of Human Resources, Office of the Labor Commissioner, agency HR leads                                                           |
 | OPI lead                        | OPI-operated / Performance Team                                                                                                            |

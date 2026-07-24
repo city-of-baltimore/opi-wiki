@@ -5,7 +5,6 @@ A program is an ongoing routine or body of work that may involve more than one t
 | Program | What it is |
 | --- | --- |
 | [CitiStat](citistat/index.md) | Baltimore's recurring, citywide performance routine that surfaces problems, assigns follow-ups, and tracks them to closure |
-| [Baltimore Intelligence Center](baltimore-intelligence-center/index.md) | The program making city data unified and trusted, and building responsible AI on top of it |
 | [Data Governance](data-governance/index.md) | The standing program that keeps city data classified, stewarded, and responsibly used |
 | [Open Data](open-data/index.md) | Publishing city data openly through Open Baltimore |
 | [Citywide Data Network](citywide-data-network/index.md) | Extending OPI's capacity through partnerships with residents, technologists, and researchers |

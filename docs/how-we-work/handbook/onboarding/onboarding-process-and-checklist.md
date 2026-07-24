@@ -133,7 +133,7 @@ Focus: human-centered design, product discovery, civic technology, AI pilots, an
 
 ### Manager checklist (all portfolios)
 
-Onboarding is a manager responsibility. This table is the minimum standard; the full method, covering the four conversations, the first early win, coaching, and the check-in scripts, is in the [Managers' Onboarding Playbook](managers-onboarding-playbook.md).
+Onboarding is a manager responsibility. This table is the minimum standard: define role outcomes and 90-day priorities before the start date, set up accounts and access, set expectations in week one, introduce the new hire to key partners, protect time for early wins, and run structured 30/60/90 check-ins.
 
 | **When**     | **Task**                                                                   | **How**                                                             |
 |--------------|----------------------------------------------------------------------------|---------------------------------------------------------------------|
@@ -142,7 +142,7 @@ Onboarding is a manager responsibility. This table is the minimum standard; the 
 | Week 1       | Set explicit expectations (communication, work quality, escalation, docs). | Use OPI norms and performance standards as the baseline.            |
 | Week 1–2     | Introduce the new hire to key partners and explain decision rights.        | Avoid surprise stakeholders. Clarify who approves what.             |
 | Month 1      | Create space for early wins. Protect focus from ad hoc churn.              | Use WIP limits. Say "not now" with rationale and a revisit date.    |
-| Day 30/60/90 | Run structured check-ins. Document outcomes.                               | Use the [30/60/90 check-in scripts](managers-onboarding-playbook.md#templates-and-prompts). Capture agreements in writing. |
+| Day 30/60/90 | Run structured check-ins. Document outcomes.                               | Use a 30/60/90 check-in script at each mark. Capture agreements in writing. |
 
 ## Appendix A. Suggested onboarding meetings
 

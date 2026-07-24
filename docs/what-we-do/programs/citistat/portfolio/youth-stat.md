@@ -6,7 +6,6 @@
 |--------------------------------|-----------------------------------------------------------------------------------------------------------------------------|
 | Government Cluster             | Health and Human Services                                                                                                   |
 | Stat Type                      | Thematic Stat                                                                                                               |
-| Internal Tag                   | Youth / mayoral priority / service system                                                                                   |
 | Executive Sponsor / Authorizer | Deputy Mayor for Health and Human Services                                                                                  |
 | Primary Agency / Agencies      | MOCFS, MONSE, BPD, DJS, City Schools partners, MOED, BCRP, BCHD, community partners                                         |
 | OPI lead                        | OPI-operated / Performance Team                                                                                             |

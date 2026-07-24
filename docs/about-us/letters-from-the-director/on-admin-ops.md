@@ -6,7 +6,10 @@
 
 *A public letter on the operations and administration that keep OPI running, and why they are part of our story.*
 
-Some of the most important work in city government never makes the news. It happens before the meeting, behind the dashboard, in the email that confirms a hire, in the contract that lets a vendor start, in the budget line that protects a program, in the SharePoint folder that keeps a team’s knowledge from walking out the door when someone changes jobs.
+Some of the most important work in city government never makes the news. It
+happens before the meeting, behind the dashboard, in the contract that lets a
+vendor start, in the budget that protects a program, and in the records that
+keep a team's knowledge available through change.
 
 That is administrative and operational work. At the Mayor’s Office of Performance and Innovation, we treat it not as overhead, but as part of the discipline of running a serious public office. If we want to ask Baltimore agencies to be well-managed, well-documented, and well-run, we have to be that office ourselves.
 
@@ -18,21 +21,34 @@ A redesigned service that nobody can hire to staff fails. A data product that ha
 
 ## What our administration and operations team does
 
-Our administration and operations team is the spine of OPI. They run our hiring and onboarding, our position descriptions and performance standards, our contracts and procurement, our budget and grants, our internal communications and SharePoint operating system, our knowledge management and wiki, our policies on telework and collaboration, our orientation for new staff and managers, our offboarding when people leave, and the day-to-day operations that make a small office run like a serious one.
+Our administration and operations team is the spine of OPI. It coordinates
+contracts and procurement, budget and grants, communications, records and
+knowledge management, and the officewide support that lets a small team deliver
+serious public work.
 
 The team also operates the institutional memory of OPI: the templates, playbooks, intake processes, charter formats, problem-statement standards, quality assurance checklists, and shared assets that keep us from starting each new engagement from scratch. When that memory is well-maintained, the office gets faster, more consistent, and more useful to its partners. When it is not, the office burns out the people who are trying to build on it.
 
 ## What good administrative work looks like
 
-Good administrative work in a public office is unshowy on purpose. It looks like a new hire who arrives on day one with a working laptop, an organizational chart, a 30/60/90 plan, and a manager who knows who they are. It looks like a contract that gets executed in days instead of months because the team that handles procurement is involved early and works alongside the program team. It looks like a budget where every line ties to a team and a strategic priority. It looks like a SharePoint site where you can find the document you need in under a minute.
+Good administrative work in a public office is unshowy on purpose. It looks
+like a clear intake path, procurement involved early enough to help a program
+succeed, a budget aligned to public priorities, reliable records, and material
+that is checked before it reaches leadership or the public.
 
 Those things sound small. They are not. They are the difference between an office where talented public servants thrive and an office where they spend half their week fighting their own internal systems. We owe our staff better than that. We also owe the agency partners and residents we work for an OPI that runs efficiently, because every hour we save in our own internal friction is an hour we can spend on the work that actually serves the public.
 
 ## Operations as a leadership choice
 
-I take administrative and operational excellence personally. So does our leadership team. We have invested in this work because we have seen, in our own careers and in the partner organizations we admire, that culture and operations are deeply linked. The values an office claims on its website are tested by what shows up in its onboarding packet, its performance review process, its hiring practices, its calendar discipline, and the way it handles offboarding when people leave. Those are not HR details. They are the office’s real character.
+I take administrative and operational excellence personally. So does our
+leadership team. We have invested in this work because culture and operations
+are deeply linked. The values an office claims on its website are tested by
+how it manages public resources, documents decisions, supports its people, and
+follows through. Those practices reveal the office's real character.
 
-We are working to build an OPI where the operational story matches the strategic one. Where the way we run the office is consistent with the way we ask other agencies to run their work. Where new staff feel oriented, current staff feel supported, and exiting staff feel respected. Where decisions are documented, knowledge is shared, and the office gets stronger every year as a place to work and a partner to work with.
+We are working to build an OPI where the operational story matches the
+strategic one, the way we run the office is consistent with what we ask of
+partner agencies, decisions are documented, knowledge is shared, and the
+office gets stronger every year as a place to work and a partner to work with.
 
 ## Why this matters to the City
 

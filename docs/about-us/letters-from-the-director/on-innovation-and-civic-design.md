@@ -88,8 +88,6 @@ A Tiger Team is where civic design becomes operational. The team does not simply
 
 ## Read alongside
 
-**Innovation Lab Strategy:** *how the Lab operates, what it owns, and priorities.*
-
-**Digital Product Methodology:** *how OPI designs, builds, and ships digital products.*
+**[Digital Product Methodology](../our-teams/innovation-lab/digital-product-methodology.md):** *how OPI designs, builds, and ships digital products.*
 
 **[About OPI: Innovation Lab](../our-teams/innovation-lab/about-innovation-lab.md):** *who is on the team and how to engage them.*

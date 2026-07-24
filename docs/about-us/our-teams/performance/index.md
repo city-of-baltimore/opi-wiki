@@ -18,12 +18,13 @@ A Stat is the right routine when a recurring performance problem needs leadershi
 
 The team contributes to [Cross-Agency Delivery](../../../what-we-do/services/cross-agency-delivery/index.md), the service OPI draws from across all its teams for problems that span agency boundaries, and helps sustain that work through standing delivery reviews and embedded performance routines.
 
-## Position descriptions
+## Role overview
 
-Performance position descriptions live in
+Public summaries of Performance roles are available in
 [Resources → Position Descriptions](../../../resources/reference/position-descriptions/index.md),
-so the team page can stay focused on method, service context, and the CitiStat program.
+while full position descriptions remain in the City's SharePoint environment.
 
 ## Read alongside
 
-- [Team and Roles](../../../how-we-work/organization/team-and-roles/index.md): the live staff roster, cost centers, and open positions.
+- [Org Structure](../../../how-we-work/organization/org-structure.md): the
+  public leadership chart, team leads, and operating structure.

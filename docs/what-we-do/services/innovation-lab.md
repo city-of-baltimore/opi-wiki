@@ -29,6 +29,10 @@ Residents want to track a 311 request without calling multiple times. Small busi
 
 The [Innovation Lab](../../about-us/our-teams/innovation-lab/index.md). When implementation requires multiple agencies to move together with named decision rights, the Lab's work is coordinated through [Cross-Agency Delivery](cross-agency-delivery/index.md).
 
+## How to request this service
+
+If a service is failing residents or staff and needs redesign, a prototype, or a digital tool, bring it to the Lab. Raise it through your agency's CitiStat process or email [opi@baltimorecity.gov](mailto:opi@baltimorecity.gov) with the problem and who feels it. The Lab helps frame the problem and decide whether a product, a process change, or a policy fix is the right answer. See [How to Engage OPI](../how-to-engage-opi.md) for the full path.
+
 ## Read alongside
 
 - [How Work Moves Through OPI](../../how-we-work/how-work-moves-through-opi.md): where this service sits in the loop

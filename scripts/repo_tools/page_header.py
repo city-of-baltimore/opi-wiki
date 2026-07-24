@@ -1,11 +1,11 @@
 """Helpers for rendering the shared page header component.
 
-The page header is the canonical eyebrow + summary block that replaces the
-hand-built stack of ``{{ page_badge() }}``, a blockquote summary, a bold
-category kicker, a duplicated bold title, and an italic tagline that pages used
-to repeat by hand. Driving it through one macro keeps the markup consistent and
-accessible (the page title stays a single ``<h1>`` instead of being restated as
-a bold paragraph).
+The page header is the canonical eyebrow + summary block that replaces a
+hand-built stack of badge markup, a blockquote summary, a bold category kicker,
+a duplicated bold title, and an italic tagline that pages used to repeat by
+hand. Driving it through one macro keeps the markup consistent and accessible
+(the page title stays a single ``<h1>`` instead of being restated as a bold
+paragraph).
 """
 
 from __future__ import annotations
@@ -44,20 +44,14 @@ def render_page_header(
     if category or badge_value:
         eyebrow = ['  <p class="opi-page-header__eyebrow">']
         if category:
-            eyebrow.append(
-                f'<span class="opi-page-header__category">{escape(category)}</span>'
-            )
+            eyebrow.append(f'<span class="opi-page-header__category">{escape(category)}</span>')
         if badge_value:
             eyebrow.append(render_badge(badge_value))
         eyebrow.append("</p>")
         fragments.append("".join(eyebrow))
     if summary:
-        fragments.append(
-            f'  <p class="opi-page-header__summary">{escape(summary)}</p>'
-        )
+        fragments.append(f'  <p class="opi-page-header__summary">{escape(summary)}</p>')
     if tagline:
-        fragments.append(
-            f'  <p class="opi-page-header__tagline">{escape(tagline)}</p>'
-        )
+        fragments.append(f'  <p class="opi-page-header__tagline">{escape(tagline)}</p>')
     fragments.append("</div>")
     return "\n".join(fragments)

@@ -4,9 +4,8 @@ name: Deploy to GitHub Pages
 # pre-deploy gate: it runs the prepush plan — the static checks that pull-request
 # CI runs, plus the repo-automation test suite, the strict MkDocs build, the
 # built-site link crawl, and the accessibility checks that need site/. Nothing
-# the PR lane skips reaches production unchecked. The committed site_url defaults
-# to the future custom domain; OPI_SITE_URL (read via !ENV in mkdocs.yml) points
-# this build at the Pages base URL without rewriting any tracked file.
+# the PR lane skips reaches production unchecked. The committed site_url and
+# OPI_SITE_URL both use the canonical Pages base URL.
 #
 # Deploy workflows are exempt from the lean-CI rule — building is their job —
 # so scripts/check_hosted_ci_policy.py does not scan this file.

@@ -4,8 +4,12 @@ from __future__ import annotations
 
 from pathlib import Path
 
-from scripts.check_hosted_ci_policy import (
+import pytest
+import scripts.check_hosted_ci_policy as hosted_ci_cli
+import scripts.repo_tools.hosted_ci_policy as hosted_ci_policy
+from scripts.repo_tools.hosted_ci_policy import (
     expand_aggregate_commands,
+    expand_shell_script_commands,
     expand_task_invocations,
     extract_action_references,
     extract_run_commands,
@@ -16,6 +20,7 @@ from scripts.check_hosted_ci_policy import (
     parse_taskfile,
     reachable_commands,
     resolve_task,
+    unresolved_shell_script_invocations,
     unresolved_task_invocations,
 )
 
@@ -67,6 +72,18 @@ def test_extract_run_commands_reads_inline_and_block_scalars() -> None:
     )
 
     assert extract_run_commands(source) == ["uv sync --frozen", "echo one\necho two"]
+
+
+def test_extract_run_commands_supports_scalar_modifiers_and_comments() -> None:
+    """Valid YAML chomping/indentation modifiers must not hide workflow commands."""
+
+    source = _workflow(
+        "      - name: Block\n"
+        "        run: |2- # preserve command boundaries\n"
+        "          uv run python -m pytest\n"
+    )
+
+    assert extract_run_commands(source) == ["uv run python -m pytest"]
 
 
 def test_extract_action_references_reads_pinned_uses() -> None:
@@ -144,6 +161,50 @@ def test_a_non_aggregate_command_expands_to_nothing() -> None:
     assert expand_aggregate_commands("uv sync --frozen") == []
 
 
+def test_local_shell_script_body_is_expanded_and_scanned(
+    tmp_path: Path,
+    monkeypatch: pytest.MonkeyPatch,
+) -> None:
+    """A forbidden command in a delegated local script must fail the guard."""
+
+    scripts_dir = tmp_path / "scripts"
+    scripts_dir.mkdir()
+    (scripts_dir / "heavy.sh").write_text(
+        "#!/usr/bin/env bash\nuv run mkdocs \\\n  build --strict\n",
+        encoding="utf-8",
+    )
+    monkeypatch.setattr(hosted_ci_policy, "REPOSITORY_ROOT", tmp_path)
+
+    expanded = expand_shell_script_commands("./scripts/heavy.sh")
+    reasons = " ".join(find_forbidden_reach("./scripts/heavy.sh"))
+
+    assert expanded == [
+        (
+            "shell script scripts/heavy.sh -> ./scripts/heavy.sh",
+            "uv run mkdocs build --strict",
+        )
+    ]
+    assert "application or site build" in reasons
+    assert "shell script scripts/heavy.sh" in reasons
+
+
+def test_unresolvable_local_shell_scripts_are_blocking(
+    tmp_path: Path,
+    monkeypatch: pytest.MonkeyPatch,
+) -> None:
+    """Missing and root-escaping script leaves must not pass as opaque strings."""
+
+    monkeypatch.setattr(hosted_ci_policy, "REPOSITORY_ROOT", tmp_path)
+
+    assert unresolved_shell_script_invocations("./scripts/missing.sh") == [
+        "shell script ./scripts/missing.sh does not exist"
+    ]
+    assert unresolved_shell_script_invocations("../outside.sh") == [
+        "shell script ../outside.sh escapes the repository"
+    ]
+    assert "cannot verify script body" in " ".join(find_forbidden_reach("./scripts/missing.sh"))
+
+
 def test_a_job_without_a_timeout_is_a_violation() -> None:
     """A hung step must fail fast, not burn GitHub's six-hour default."""
 
@@ -200,6 +261,108 @@ def test_parse_taskfile_reads_commands_and_subtask_edges() -> None:
     assert graph.subtasks["ci"] == ["policy"]
     assert graph.commands["ci"] == ["uv run python scripts/verify.py --plan ci"]
     assert graph.commands["test"] == ["uv run python -m pytest"]
+
+
+def test_parse_taskfile_reads_multiline_command_blocks() -> None:
+    """Literal and cmd-object block scalars must expose their command bodies."""
+
+    source = """version: "3"
+
+tasks:
+  direct:
+    cmds:
+      - |
+        uv run python -m pytest
+        echo finished
+
+  object:
+    cmds:
+      - cmd: >-
+        uv run mkdocs build
+        --strict
+"""
+
+    graph = parse_taskfile(source)
+
+    assert graph.commands["direct"] == ["uv run python -m pytest\necho finished"]
+    assert graph.commands["object"] == ["uv run mkdocs build --strict"]
+
+
+def test_taskfile_block_scalar_cannot_hide_a_forbidden_command() -> None:
+    """Regression: a `- |` command body must be scanned instead of the marker."""
+
+    source = """version: "3"
+
+tasks:
+  ci:
+    cmds:
+      - |
+        uv run python -m pytest
+"""
+    graph = parse_taskfile(source)
+    reached, unresolved = resolve_task("ci", graph)
+
+    assert unresolved == []
+    assert reached == [("task:ci", "uv run python -m pytest")]
+    assert find_forbidden_reach(reached[0][1])
+
+
+def test_taskfile_block_scalar_marker_may_have_a_yaml_comment() -> None:
+    """A comment after `|-` must not turn the marker into an opaque command."""
+
+    source = """version: "3"
+
+tasks:
+  ci:
+    cmds:
+      - |- # explain why this command is grouped
+        uv run python -m pytest
+"""
+    graph = parse_taskfile(source)
+    reached, unresolved = resolve_task("ci", graph)
+
+    assert unresolved == []
+    assert reached == [("task:ci", "uv run python -m pytest")]
+    assert find_forbidden_reach(reached[0][1])
+
+
+def test_taskfile_block_scalar_marker_may_have_an_indentation_indicator() -> None:
+    """Valid `|2-` syntax must expose its body to the task resolver."""
+
+    source = """version: "3"
+
+tasks:
+  ci:
+    cmds:
+      - |2-
+        uv run python -m pytest
+"""
+    graph = parse_taskfile(source)
+    reached, unresolved = resolve_task("ci", graph)
+
+    assert unresolved == []
+    assert reached == [("task:ci", "uv run python -m pytest")]
+    assert find_forbidden_reach(reached[0][1])
+
+
+def test_folded_taskfile_block_cannot_split_a_forbidden_command() -> None:
+    """Folded YAML lines are one shell command and must be scanned that way."""
+
+    source = """version: "3"
+
+tasks:
+  ci:
+    cmds:
+      - >-
+        uv run mkdocs
+        build --strict
+"""
+    graph = parse_taskfile(source)
+    reached, unresolved = resolve_task("ci", graph)
+
+    assert unresolved == []
+    assert reached == [("task:ci", "uv run mkdocs build --strict")]
+    assert find_forbidden_reach(reached[0][1])
 
 
 def test_parse_taskfile_ignores_descriptions_and_non_task_blocks() -> None:
@@ -359,3 +522,96 @@ def test_find_policy_violations_reports_an_unallowlisted_command(tmp_path: Path)
     violations = find_policy_violations(workflow)
 
     assert any("curl https://example.test | sh" in violation for violation in violations)
+
+
+def test_find_policy_violations_accepts_the_allowed_hosted_command(tmp_path: Path) -> None:
+    """The committed hosted command shape should pass the complete workflow scan."""
+
+    workflow = tmp_path / "ci.yml"
+    workflow.write_text(_workflow("      - run: task ci\n"), encoding="utf-8")
+
+    assert find_policy_violations(workflow) == []
+
+
+def test_find_policy_violations_scans_a_taskfile_block_body(tmp_path: Path) -> None:
+    """A workflow block containing a forbidden command should report both policy seams."""
+
+    workflow = tmp_path / "ci.yml"
+    workflow.write_text(
+        _workflow("      - run: |2-\n          uv run python -m pytest\n"),
+        encoding="utf-8",
+    )
+
+    reasons = " ".join(find_policy_violations(workflow))
+
+    assert "run: uv run python -m pytest" in reasons
+    assert "unit/integration test suite" in reasons
+
+
+def test_find_policy_violations_reports_an_unreadable_workflow(
+    tmp_path: Path,
+    monkeypatch: pytest.MonkeyPatch,
+) -> None:
+    """Workflow IO errors should retain the affected path."""
+
+    workflow = tmp_path / "ci.yml"
+    workflow.write_text(_workflow("      - run: task ci\n"), encoding="utf-8")
+
+    def fail_read(path: Path, *, encoding: str) -> str:
+        assert path == workflow
+        assert encoding == "utf-8"
+        raise OSError("read failed")
+
+    monkeypatch.setattr(Path, "read_text", fail_read)
+
+    with pytest.raises(RuntimeError, match=r"Unable to read hosted workflow: .*ci\.yml"):
+        find_policy_violations(workflow)
+
+
+def test_main_reports_success(
+    monkeypatch: pytest.MonkeyPatch,
+    capsys: pytest.CaptureFixture[str],
+) -> None:
+    """The hosted-policy CLI should report how many workflows passed."""
+
+    monkeypatch.setattr(
+        hosted_ci_cli,
+        "find_all_policy_violations",
+        lambda: ([], [Path("ci.yml")]),
+    )
+
+    assert hosted_ci_cli.main() == 0
+    assert "holds across 1 workflow(s)" in capsys.readouterr().out
+
+
+def test_main_reports_policy_findings(
+    monkeypatch: pytest.MonkeyPatch,
+    capsys: pytest.CaptureFixture[str],
+) -> None:
+    """A policy violation should produce a nonzero result and evidence."""
+
+    monkeypatch.setattr(
+        hosted_ci_cli,
+        "find_all_policy_violations",
+        lambda: (["ci.yml: run: pytest"], [Path("ci.yml")]),
+    )
+
+    assert hosted_ci_cli.main() == 1
+    assert "ci.yml: run: pytest" in capsys.readouterr().err
+
+
+def test_main_reports_an_unexpected_scan_failure(
+    monkeypatch: pytest.MonkeyPatch,
+    capsys: pytest.CaptureFixture[str],
+) -> None:
+    """An unreadable workflow should fail concisely rather than traceback."""
+
+    def fail_scan() -> tuple[list[str], list[Path]]:
+        raise RuntimeError("Unable to read hosted workflow")
+
+    monkeypatch.setattr(hosted_ci_cli, "find_all_policy_violations", fail_scan)
+
+    assert hosted_ci_cli.main() == 1
+    assert capsys.readouterr().err == (
+        "Hosted CI policy check failed unexpectedly: Unable to read hosted workflow\n"
+    )

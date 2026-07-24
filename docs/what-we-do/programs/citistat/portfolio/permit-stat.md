@@ -6,7 +6,6 @@
 |--------------------------------|----------------------------------------------------------------------------------------------------------------------|
 | Government Cluster             | Community and Economic Development                                                                                   |
 | Stat Type                      | Thematic Stat                                                                                                        |
-| Internal Tag                   | Service system / economic development / resident experience                                                          |
 | Executive Sponsor / Authorizer | Deputy Mayor for Community and Economic Development                                                                  |
 | Primary Agency / Agencies      | DHCD / Permitting and Development Services, BCIT, DOT, DPW, Fire, Planning, DCPBL, and review partners               |
 | OPI lead                        | OPI-operated / Data Team-led with agency partners                                                                    |

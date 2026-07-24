@@ -6,7 +6,6 @@
 |--------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------|
 | Government Cluster             | City Administrator                                                                                                                      |
 | Stat Type                      | Agency Stat                                                                                                                             |
-| Internal Tag                   | Fiscal operations / foundation / enablement                                                                                             |
 | Executive Sponsor / Authorizer | Chief Financial Officer and City Administrator, depending on issue                                                                      |
 | Primary Agency / Agencies      | Department of Finance, BBMR, Procurement, Grants Management, Revenue Collections, MWBOO/SMBA-related partners as needed                 |
 | OPI lead                        | OPI-operated / Performance Team                                                                                                         |

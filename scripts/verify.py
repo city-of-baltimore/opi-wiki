@@ -127,6 +127,19 @@ def build_steps(
             command=(python, "-m", "baltimore.patapsco.baseline.cli", "--repo", "."),
         ),
         VerifyStep(
+            name="Checking repo automation formatting",
+            command=(
+                python,
+                "-m",
+                "ruff",
+                "format",
+                "--check",
+                "main.py",
+                "scripts",
+                "tests",
+            ),
+        ),
+        VerifyStep(
             name="Linting repo automation",
             command=(python, "-m", "ruff", "check", "main.py", "scripts", "tests"),
         ),
@@ -183,6 +196,10 @@ def build_steps(
         VerifyStep(
             name="Building MkDocs site with strict validation",
             command=(python, "-m", "mkdocs", "build", "--strict"),
+        ),
+        VerifyStep(
+            name="Checking built-site publication boundary",
+            command=(python, "scripts/check_publication_boundary.py"),
         ),
         VerifyStep(
             name="Checking built-site internal links",

@@ -72,13 +72,13 @@ CitiStat runs on a repeating cycle keyed to the next session date (**T**). Days 
 | --- | --- | --- | --- |
 | 1 | Stakeholder alignment and debrief with the agency and Mayor's Office leadership | 0–1 day after the prior Stat | |
 | 1a | Plan the next Stat: agenda sketch, planned inspections and ride-alongs | 0–1 day after | DCPO |
-| 2 | Monitor and execute follow-ups; weekly status report and stakeholder email | Continuous | |
+| 2 | Monitor and execute follow-ups; provide a recurring written status | Continuous | |
 | 3 | Develop the pre-memo frame; determine analyses; confirm participants | T-9 | DCPO |
 | 4 | Communicate the frame to stakeholders for last-call input on the agenda | T-8 | |
 | 5 | Analyze data; draft the pre-memo and deck | T-5 | |
 | 6 | Quality review; determine whether more alignment is needed | T-4 to T-5 | PgM |
 | 7 | Re-analyze and revise; final data refresh | T-3 | |
-| 8 | Release materials to the distribution list and the Stat site (the 48-hour release) | T-2 | DCPO |
+| 8 | Share materials with invited participants (the 48-hour release) | T-2 | DCPO |
 | 9 | Prepare the room and packets | T-1 | |
 | 10–11 | Hold the Stat | T | |
 | 12 | Draft and send the follow-up memo; update the tracker | T+1, no later than T+2 | DCPO |
@@ -166,11 +166,17 @@ Under City Code Subtitle 61-5, each principal agency names a **Data-Driven Offic
 
 The value of CitiStat is realized after the session. A follow-up is not done because it was discussed; it is done when the owner provides evidence, the result is verified, and the change is closed or embedded.
 
-Follow-ups are tracked in **MS Planner**, the official record for each Stat. Each follow-up is one task with a single responsible person (named, not an agency), a due date, and the deliverable spelled out. Between sessions, the analyst works the tracker regularly: a reminder every three to four days is a good rule of thumb, and never more than a week.
+Follow-ups are kept in a controlled record for each Stat. Each follow-up names
+one responsible person, a due date, the expected deliverable, and the evidence
+needed for closure. The analyst reviews open items regularly between sessions
+and raises delays early.
 
 ### Weekly status report
 
-Every Wednesday, each analyst files a weekly status report (via MS Form) and sends a status email to stakeholders, so leadership and agency partners always have a current, written picture of where every follow-up stands. The report covers the next meeting date, the phase of the cycle, the high-level agenda (three to five topics), the strategies being monitored, and the color-coded follow-up status.
+A recurring written status gives leadership and agency partners a current
+picture of where every follow-up stands. It covers the next meeting date, the
+phase of the cycle, the high-level agenda, the strategies being monitored, and
+the color-coded follow-up status.
 
 Follow-up status uses one shared color scheme across the weekly report, the tracker, and the follow-up memo:
 
@@ -203,7 +209,7 @@ Every Stat product passes an independent quality review before it is presented. 
 
 **Data source review.** Sources are reviewed for reliability, backed by a periodic physical audit of how the data is collected and entered, a data dictionary for key sources, and a field-log record.
 
-**Visualization standards.** Y-axis starts at zero unless a zoomed view is justified and labeled; no gridlines; denominators written out with percentages; current City and CitiStat branding; OPI Branding Guidelines 2026.
+**Visualization standards.** Y-axis starts at zero unless a zoomed view is justified and labeled; gridlines removed unless they aid reading; denominators written out with percentages; current City and CitiStat branding. The full visualization rules live on the [Quality Standards](quality-standards.md) page.
 
 **The checkpoints** map to the cycle: planning review one month out, a PgM mock-up review and informal agency preview around T-9, formal QC at T-4 to T-5, the 48-hour release, and case-by-case review of any last-minute request.
 

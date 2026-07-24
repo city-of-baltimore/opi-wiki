@@ -6,7 +6,6 @@
 |--------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Government Cluster             | City Administrator                                                                                                                                           |
 | Stat Type                      | Thematic Stat                                                                                                                                                |
-| Internal Tag                   | Capital delivery / foundation                                                                                                                                |
 | Executive Sponsor / Authorizer | City Administrator, with Deputy Mayor for Operations and relevant portfolio sponsors as needed                                                               |
 | Primary Agency / Agencies      | MOID, DGS, DOT, DPW, BCRP, Finance/BBMR, Law, Procurement, and agency capital owners                                                                         |
 | OPI lead                        | OPI-operated / Performance Team with delivery support as needed                                                                                              |

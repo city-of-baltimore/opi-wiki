@@ -6,7 +6,6 @@
 |--------------------------------|-----------------------------------------------------------------------------------------------------------------|
 | Government Cluster             | Operations and Infrastructure                                                                                   |
 | Stat Type                      | Place-based Stat (operating agency)                                                                             |
-| Internal Tag                   | Transportation / mobility / public realm                                                                        |
 | Executive Sponsor / Authorizer | Deputy Mayor for Operations                                                                                     |
 | Session chair                  | City Administrator                                                                                              |
 | Primary Agency / Agencies      | Department of Transportation                                                                                    |

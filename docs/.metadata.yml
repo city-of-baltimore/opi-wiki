@@ -1,13 +1,13 @@
 # No display_badge default on purpose: badges are opt-in. Pages carry a pill
 # only when a section or page sets display_badge explicitly (draft, template,
-# reference, position-description). The old blanket "approved" badge was
+# reference). The old blanket "approved" badge was
 # retired — approval is the default state and labeling it added noise.
 defaults:
   owner: OPI Director's Office
   status: approved
-  last_reviewed: 2026-04-15
-  next_review: 2026-07-15
-  change_log: Added structured review metadata coverage and validation.
+  last_reviewed: 2026-07-19
+  next_review: 2027-01-31
+  change_log: Completed the July 2026 full-site content and publication review.
 
 pages:
   index.md:

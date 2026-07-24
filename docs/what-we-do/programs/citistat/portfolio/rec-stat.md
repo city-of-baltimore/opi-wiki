@@ -6,7 +6,6 @@
 |--------------------------------|--------------------------------------------------------------------------------------------------------------------|
 | Government Cluster             | Health and Human Services                                                                                          |
 | Stat Type                      | Agency Stat                                                                                                        |
-| Internal Tag                   | Parks / recreation / quality of life                                                                               |
 | Executive Sponsor / Authorizer | Deputy Mayor for Health and Human Services                                                                         |
 | Primary Agency / Agencies      | Department of Recreation and Parks                                                                                 |
 | OPI lead                        | OPI-operated / Performance Team                                                                                    |

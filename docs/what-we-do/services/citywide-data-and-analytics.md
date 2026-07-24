@@ -4,7 +4,7 @@
 
 ## What this service does
 
-This service strengthens Baltimore City's data infrastructure, analytics capacity, open data program, and data governance across agencies. The team builds and maintains data pipelines and shared datasets, produces analytics and data products for City leadership and agencies, sets and supports data quality and governance standards, runs the Open Baltimore program, publishes open datasets, supports data literacy, and prepares the City to use artificial intelligence and advanced analytics responsibly. Much of this work runs on the [Baltimore City Data Platform](../products/baltimore-city-data-platform.md) and powers the [Baltimore Intelligence Center](../programs/baltimore-intelligence-center/index.md) program.
+This service strengthens Baltimore City's data infrastructure, analytics capacity, open data program, and data governance across agencies. The team builds and maintains data pipelines and shared datasets, produces analytics and data products for City leadership and agencies, sets and supports data quality and governance standards, runs the Open Baltimore program, publishes open datasets, supports data literacy, and prepares the City to use artificial intelligence and advanced analytics responsibly. Much of this work runs on the [Baltimore City Data Platform](../products/baltimore-city-data-platform.md) and powers the [Baltimore Intelligence Center](../products/baltimore-intelligence-center/index.md) product.
 
 ## The goal
 
@@ -28,6 +28,10 @@ Residents want public data that's easy to understand and up to date. Reporters w
 ## Delivered by
 
 The [Data and Analytics team](../../about-us/our-teams/data-and-analytics/index.md).
+
+## How to request this service
+
+To request a dataset, a dashboard, data access, or analytics support, email [opi@baltimorecity.gov](mailto:opi@baltimorecity.gov) with the decision or question you are trying to answer and the agency data involved. Access and sharing follow the classification in the [Data Governance Framework](../../about-us/our-teams/data-and-analytics/data-governance-framework.md). See [How to Engage OPI](../how-to-engage-opi.md) for the full path.
 
 ## Read alongside
 

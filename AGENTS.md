@@ -8,10 +8,9 @@ This repository is the public MkDocs site for **OPI Foundations**. Docs are the
 product: they must be easy to find, easy to update, easy to review, and hard to
 break quietly.
 
-Before any structural change, read `README.md`, `CONTRIBUTING.md`,
-`MAINTAINERS.md`, and
-`docs/resources/reference/wiki-knowledge-base-structure.md`. Those are standing
-guidance for editorial, structural, and governance decisions.
+Before any structural change, read `README.md`, `CONTRIBUTING.md`, and
+`MAINTAINERS.md`. Those are standing guidance for editorial, structural, and
+governance decisions.
 
 ---
 
@@ -163,13 +162,14 @@ OPI content sorts into four distinct types. Do not blur them when adding or
 moving pages.
 
 - **Teams** (staff + budget, also called portfolios): Director's Office,
-  Performance, Data and Analytics, Innovation Lab → `our-teams/`.
+  Performance, Data and Analytics, Innovation Lab → `about-us/our-teams/`.
 - **Services** (what OPI delivers): AdminOps, Citywide Performance Management,
   Citywide Data and Analytics, Innovation Lab, Cross-Agency Delivery →
-  `how-we-work/services/`.
-- **Programs** (ongoing routines spanning teams): CitiStat → `programs/`.
+  `what-we-do/services/`.
+- **Programs** (ongoing routines spanning teams): CitiStat →
+  `what-we-do/programs/`.
 - **Products** (tools OPI builds): Baltimore Intelligence Center and others →
-  `products/`.
+  `what-we-do/products/`.
 
 Hold these lines:
 
@@ -178,7 +178,7 @@ Hold these lines:
 - CitiStat is a program supported by all teams, owned by the CitiStat Director —
   never a team.
 - Cross-Agency Delivery is a service, not a staffed team. There is no
-  `our-teams/cross-agency-delivery/`.
+  `about-us/our-teams/cross-agency-delivery/`.
 - Never write "CAD." Spell out Cross-Agency Delivery; "x-agency delivery" is the
   only allowed short form.
 - Every canonical page carries an owner and review cadence via the nearest
@@ -208,7 +208,8 @@ Hold these lines:
 - Keep cross-links current when slugs or folders move.
 - Prefer plain language and skimmable structure over ornamental formatting.
 - **Public/private boundaries must stay explicit.** Do not expose internal-only
-  content through a navigation or linking mistake.
+  content anywhere in the tracked tree or generated artifact; a public Git
+  repository is a publication surface even for files outside `docs/`.
 - **Do not delete substantive published content without explicit approval.**
   Safe cleanup is duplicate boilerplate, stale scaffolding, or superseded copies
   where one canonical source of truth remains.

@@ -20,3 +20,6 @@ services:
       # Anonymous volume keeps the container's uv virtualenv from being
       # shadowed by the bind mount above.
       - /app/.venv
+      # Keep generated output writable for the non-root preview user and out
+      # of the host worktree, including on Linux bind mounts.
+      - /app/site

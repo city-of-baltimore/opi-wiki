@@ -27,3 +27,17 @@
   {% endif %}
   {{ super() }}
 {% endblock %}
+
+{% block scripts %}
+  {{ super() }}
+  <script>
+    document$.subscribe(() => {
+      document
+        .querySelectorAll(".md-typeset__scrollwrap, .md-typeset pre > code")
+        .forEach((region) => {
+          region.setAttribute("tabindex", "0")
+        })
+      document.querySelector(".md-search")?.setAttribute("aria-label", "Search")
+    })
+  </script>
+{% endblock %}

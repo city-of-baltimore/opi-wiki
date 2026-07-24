@@ -4,16 +4,26 @@
 # can alter how the repository builds, ships, or is gated belongs to Platform
 # Admins; product behaviour belongs to Product Engineering.
 #
-# Dependency manifests are deliberately NOT owned by Platform Admins. Product
-# engineers change them constantly, and routing every bump through infra review
-# is the friction that gets CODEOWNERS deleted. Dependency risk is already
-# covered by pip-audit, npm audit, and Snyk.
+# Dependency manifests are deliberately NOT owned by Platform Admins. This
+# repository has no npm workspace. Python changes remain product-owned and are
+# reviewed through the exact uv lockfile, Dependabot, the repository gates, and
+# the manual advisory Snyk scan described in README.md.
 #
 # NOTE: a team must have write access to this repository for GitHub to honour
 # it here. Without that, these lines are silently ignored.
 
 # Default owner — product behaviour.
 *                           @city-of-baltimore/product-engineering
+
+# Content-team routing. GitHub can only honor teams with repository access, so
+# Innovation Lab content routes through Product Engineering while the PR
+# template records approval from the named section owner.
+/docs/about-us/our-teams/innovation-lab/        @city-of-baltimore/product-engineering
+/docs/what-we-do/services/innovation-lab.md     @city-of-baltimore/product-engineering
+/docs/what-we-do/services/cross-agency-delivery/ @city-of-baltimore/product-engineering @city-of-baltimore/citistat
+/docs/about-us/our-teams/performance/           @city-of-baltimore/citistat
+/docs/what-we-do/programs/citistat/             @city-of-baltimore/citistat
+/docs/what-we-do/services/citywide-performance-management.md @city-of-baltimore/citistat
 
 # CI, containers, orchestration, and the platform baseline.
 /.github/                   @city-of-baltimore/platform-admins

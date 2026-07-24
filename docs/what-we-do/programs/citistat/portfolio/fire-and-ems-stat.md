@@ -6,7 +6,6 @@
 |--------------------------------|-------------------------------------------------------------------------------------------------------------------|
 | Government Cluster             | Public Safety                                                                                                     |
 | Stat Type                      | Agency Stat                                                                                                       |
-| Internal Tag                   | Public safety / life safety                                                                                       |
 | Executive Sponsor / Authorizer | Deputy Mayor for Public Safety                                                                                    |
 | Primary Agency / Agencies      | Baltimore City Fire Department; Health, Housing, Police, MONSE, MOHS, and other partners as needed                |
 | OPI lead                        | Deputy Mayor-led / OPI-supported                                                                                  |

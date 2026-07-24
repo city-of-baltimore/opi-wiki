@@ -6,7 +6,6 @@
 |--------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------|
 | Government Cluster             | Operations and Infrastructure                                                                                                                       |
 | Stat Type                      | Agency Stat                                                                                                                                         |
-| Internal Tag                   | Utility / infrastructure / compliance                                                                                                               |
 | Executive Sponsor / Authorizer | Deputy Mayor for Operations                                                                                                                         |
 | Primary Agency / Agencies      | DPW Water, Wastewater, Engineering and Construction Management, Finance / billing partners as needed                                                |
 | OPI lead                        | OPI-operated / Performance Team                                                                                                                     |

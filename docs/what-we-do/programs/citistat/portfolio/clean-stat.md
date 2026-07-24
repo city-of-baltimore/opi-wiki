@@ -6,7 +6,6 @@
 |--------------------------------|------------------------------------------------------------------------------------------------------------|
 | Government Cluster             | Operations and Infrastructure                                                                              |
 | Stat Type                      | Thematic Stat                                                                                              |
-| Internal Tag                   | Public realm / cleanliness system                                                                          |
 | Executive Sponsor / Authorizer | Deputy Mayor for Operations                                                                                |
 | Primary Agency / Agencies      | DPW, DHCD, DOT, ECB, Clean Corps, BCRP, community partners, and other agencies as needed                   |
 | OPI lead                        | OPI-operated / Performance Team with delivery support as needed                                            |

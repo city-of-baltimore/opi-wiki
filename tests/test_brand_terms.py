@@ -12,9 +12,7 @@ def test_brand_term_checker_flags_editorial_casing_errors(tmp_path: Path) -> Non
 
     markdown_file = tmp_path / "sample.md"
     markdown_file.write_text(
-        "# Sample\n\n"
-        "Opi is wrong here.\n"
-        "Citistat is also wrong here.\n",
+        "# Sample\n\nOpi is wrong here.\nCitistat is also wrong here.\n",
         encoding="utf-8",
     )
 

@@ -6,7 +6,6 @@
 |--------------------------------|------------------------------------------------------------------------------------------------------------|
 | Government Cluster             | Operations and Infrastructure                                                                              |
 | Stat Type                      | Agency Stat                                                                                                |
-| Internal Tag                   | Sanitation / public realm                                                                                  |
 | Executive Sponsor / Authorizer | Deputy Mayor for Operations                                                                                |
 | Primary Agency / Agencies      | DPW Solid Waste and sanitation functions                                                                   |
 | OPI lead                        | OPI-operated / Performance Team                                                                            |

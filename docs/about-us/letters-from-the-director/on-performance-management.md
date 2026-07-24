@@ -62,10 +62,8 @@ Mayor’s Office of Performance and Innovation
 
 ## Read alongside
 
-**Performance Management Strategy:** *priorities, success measures, and commitments.*
+**[CitiStat Strategic Framework](../../what-we-do/programs/citistat/strategic-framework.md):** *mandate, operating model, and the modern CitiStat cycle.*
 
-**CitiStat Strategic Framework:** *mandate, operating model, and the modern CitiStat cycle.*
-
-**CitiStat Method Playbook:** *session formats, pre/post memo templates, and the cycle.*
+**[CitiStat Method Playbook](../../what-we-do/programs/citistat/method-playbook.md):** *session formats, pre and post memo templates, and the cycle.*
 
 **[About OPI: Performance](../our-teams/performance/about-performance.md):** *what the Performance team owns and how it partners.*

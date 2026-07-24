@@ -88,17 +88,6 @@ def define_env(env: MacroEnvironment) -> None:
         return _render_markup(render_badge(value))
 
     @env.macro
-    def page_badge() -> Markup:
-        """Render the current page's configured display badge."""
-
-        from scripts.repo_tools.badges import render_badge, resolve_page_badge_value
-        from scripts.repo_tools.metadata import resolve_page_metadata
-
-        page_path = DOCS_DIR / env.page.file.src_path
-        metadata = resolve_page_metadata(DOCS_DIR, page_path)
-        return _render_markup(render_badge(resolve_page_badge_value(metadata)))
-
-    @env.macro
     def page_header(
         summary: str = "",
         category: str = "",
@@ -132,19 +121,6 @@ def define_env(env: MacroEnvironment) -> None:
             relative_path,
             load_data=load_org_structure,
             render_data=render_org_structure,
-            render_args=(section,),
-        )
-
-    @env.macro
-    def people(section: str) -> Markup:
-        """Render a section of the canonical people directory (_data/people.yml)."""
-
-        from scripts.repo_tools.people import load_people, render_people
-
-        return _render_docs_markup(
-            PEOPLE_DATA_PATH,
-            load_data=load_people,
-            render_data=render_people,
             render_args=(section,),
         )
 

@@ -62,8 +62,6 @@ Mayor’s Office of Performance and Innovation
 
 ## Read alongside
 
-**Data and Analytics Strategy:** *how Baltimore is building citywide data infrastructure.*
-
-**Data Governance Framework:** *roles, standards, and decision rights for data stewardship.*
+**[Data Governance Framework](../our-teams/data-and-analytics/data-governance-framework.md):** *roles, standards, and decision rights for data stewardship.*
 
 **[About OPI: Data and Analytics](../our-teams/data-and-analytics/about-data-analytics.md):** *what the Data and Analytics team owns and how it partners.*

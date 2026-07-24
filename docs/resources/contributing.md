@@ -16,7 +16,10 @@ OPI Foundations is written in plain language. We avoid jargon where we can, defi
 
 ## What lives where
 
-This is the public reference. Internal SOPs, personnel records, and vendor contracts live elsewhere, in SharePoint, HR systems, and procurement records.
+This is the public reference. Internal SOPs, personnel records, full position
+descriptions, contact lists, and vendor contracts live elsewhere, in
+SharePoint, HR systems, and procurement records. Do not add payroll identifiers,
+personal or work phone numbers, or staff-roster exports to this repository.
 
 ## Operating model consistency checklist
 

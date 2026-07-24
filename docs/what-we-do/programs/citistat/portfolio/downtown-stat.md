@@ -6,7 +6,6 @@
 |--------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------|
 | Government Cluster             | Community and Economic Development                                                                                                              |
 | Stat Type                      | Thematic Stat                                                                                                                                   |
-| Internal Tag                   | Place-based / mayoral priority / service system                                                                                                 |
 | Executive Sponsor / Authorizer | Deputy Mayor for Community and Economic Development                                                                                             |
 | Primary Agency / Agencies      | BDC, Downtown partners, DOT, DPW, Police, DHCD, DGS, Finance, and other Downtown RISE partners                                                  |
 | OPI lead                        | Deputy Mayor-led / OPI-supported                                                                                                                |

@@ -16,10 +16,7 @@ def test_render_badge_uses_shared_label_and_variant_mapping() -> None:
     """Badge tokens should render through the shared mapping table."""
 
     assert render_badge("draft") == '<span class="opi-pill draft">Draft</span>'
-    assert (
-        render_badge("position-description")
-        == '<span class="opi-pill internal">Position Description</span>'
-    )
+    assert render_badge("reference") == ('<span class="opi-pill neutral">Reference</span>')
 
 
 def test_render_badge_rejects_unknown_badge_tokens() -> None:
@@ -36,17 +33,15 @@ def test_approved_badge_token_is_retired() -> None:
         render_badge("approved")
 
 
-def test_define_env_registers_badge_macros() -> None:
-    """The macros module should expose both explicit and page-derived badges."""
+def test_define_env_registers_explicit_badge_macro() -> None:
+    """The macros module should expose the supported inline badge helper."""
 
-    env = register_macros("how-we-work/handbook/operations/problem-statement-template.md")
+    env = register_macros("resources/reference/position-descriptions/index.md")
 
     assert str(env.macros["badge"]("reference")) == (
-        '<span class="opi-pill internal">Reference</span>'
+        '<span class="opi-pill neutral">Reference</span>'
     )
-    assert str(env.macros["page_badge"]()) == (
-        '<span class="opi-pill internal">Template</span>'
-    )
+    assert "page_badge" not in env.macros
 
 
 def test_markdown_pages_do_not_inline_raw_pill_markup() -> None:
@@ -59,15 +54,11 @@ def test_markdown_pages_do_not_inline_raw_pill_markup() -> None:
         )
 
 
-def test_badge_pages_retain_metadata_backing() -> None:
-    """Checked-in docs should keep badge-bearing pages wired to metadata-driven badges."""
+def test_badge_page_retains_metadata_backing() -> None:
+    """The checked-in reference page should stay wired to metadata-driven badges."""
 
     badge_pages = [
-        DOCS_DIR / "resources/reference/wiki-knowledge-base-structure.md",
-        DOCS_DIR / "how-we-work/handbook/onboarding/maps-benefits-quick-guide.md",
-        DOCS_DIR
-        / "resources/reference/position-descriptions/directors-office/"
-        "pd-project-manager.md",
+        DOCS_DIR / "resources/reference/position-descriptions/index.md",
     ]
 
     for markdown_file in badge_pages:

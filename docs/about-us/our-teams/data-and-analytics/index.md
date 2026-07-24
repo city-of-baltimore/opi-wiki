@@ -6,12 +6,13 @@ The Data and Analytics team builds the data foundation that makes OPI's work tru
 
 {{ card_grid_from("about-us/our-teams/data-and-analytics/index.cards.yml") }}
 
-## Position descriptions
+## Role overview
 
-Data and Analytics position descriptions now live in
+Public summaries of Data and Analytics roles are available in
 [Resources → Position Descriptions](../../../resources/reference/position-descriptions/index.md),
-which keeps reporting lines and role references centralized as the team evolves.
+while full position descriptions remain in the City's SharePoint environment.
 
 ## Read alongside
 
-- [Team and Roles](../../../how-we-work/organization/team-and-roles/index.md): the live staff roster, cost centers, and open positions.
+- [Org Structure](../../../how-we-work/organization/org-structure.md): the
+  public leadership chart, team leads, and operating structure.

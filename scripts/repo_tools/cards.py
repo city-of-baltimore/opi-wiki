@@ -86,14 +86,14 @@ def render_card_grid(cards: list[Card]) -> str:
         if card.href:
             fragments.extend(
                 [
-                    "  <article class=\"opi-card\">",
+                    '  <article class="opi-card">',
                     f'    <a class="opi-card-link" href="{escape(card.href, quote=True)}">',
                     f'      <span class="opi-card-meta">{escape(card.meta)}</span>',
                     f"      <h3>{escape(card.title)}</h3>",
                     f"      <p>{escape(card.body)}</p>",
                     (
                         f'      <span class="opi-card-action">'
-                        f'{escape(card.link_label or "Read more")}'
+                        f"{escape(card.link_label or 'Read more')}"
                         "</span>"
                     ),
                     "    </a>",
@@ -104,7 +104,7 @@ def render_card_grid(cards: list[Card]) -> str:
 
         fragments.extend(
             [
-                "  <article class=\"opi-card\">",
+                '  <article class="opi-card">',
                 '    <div class="opi-card-copy">',
                 f'      <span class="opi-card-meta">{escape(card.meta)}</span>',
                 f"      <h3>{escape(card.title)}</h3>",

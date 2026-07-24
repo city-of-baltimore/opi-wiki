@@ -21,14 +21,9 @@ def test_render_page_header_renders_eyebrow_summary_and_tagline() -> None:
     )
 
     assert '<div class="opi-page-header">' in html
-    assert (
-        '<span class="opi-page-header__category">SERIES · OPI FOUNDATIONS</span>'
-        in html
-    )
+    assert '<span class="opi-page-header__category">SERIES · OPI FOUNDATIONS</span>' in html
     assert '<span class="opi-pill draft">Draft</span>' in html
-    assert (
-        '<p class="opi-page-header__summary">What this page covers.</p>' in html
-    )
+    assert '<p class="opi-page-header__summary">What this page covers.</p>' in html
     assert '<p class="opi-page-header__tagline">A supporting line.</p>' in html
 
 
@@ -40,7 +35,7 @@ def test_render_page_header_omits_empty_optional_parts() -> None:
     assert "opi-page-header__category" not in html
     assert "opi-page-header__summary" not in html
     assert "opi-page-header__tagline" not in html
-    assert '<span class="opi-pill internal">Reference</span>' in html
+    assert '<span class="opi-pill neutral">Reference</span>' in html
 
 
 def test_render_page_header_without_badge_omits_the_eyebrow() -> None:
@@ -65,11 +60,11 @@ def test_render_page_header_escapes_text() -> None:
 def test_page_header_macro_resolves_badge_from_metadata() -> None:
     """The macro should pull the badge token from inherited page metadata."""
 
-    env = register_macros("how-we-work/handbook/operations/problem-statement-template.md")
+    env = register_macros("resources/reference/position-descriptions/index.md")
 
     rendered = str(env.macros["page_header"](summary="How charters work."))
 
-    assert '<span class="opi-pill internal">Template</span>' in rendered
+    assert '<span class="opi-pill neutral">Reference</span>' in rendered
     assert '<p class="opi-page-header__summary">How charters work.</p>' in rendered
 
 

@@ -1,6 +1,6 @@
 # About Performance
 
-{{ page_header(summary="How Baltimore turns priorities into measures, measures into decisions, and decisions into service improvements residents can feel.", category="ABOUT · SERVICE") }}
+{{ page_header(summary="How Baltimore turns priorities into measures, measures into decisions, and decisions into service improvements residents can feel.", category="ABOUT · TEAM") }}
 
 The Performance team runs Baltimore's citywide performance management: the work of helping leaders and agencies set clear priorities, measure what matters, review progress with discipline, and follow through until services improve. Its flagship program is [CitiStat](../../../what-we-do/programs/citistat/index.md), the city's performance program, which the team runs day to day.
 

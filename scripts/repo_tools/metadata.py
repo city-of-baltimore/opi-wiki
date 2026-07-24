@@ -12,6 +12,7 @@ from typing import Any
 from scripts.repo_tools.data import load_yaml_mapping
 
 REQUIRED_FIELDS = ("owner", "status", "last_reviewed", "next_review", "change_log")
+NONPUBLIC_STATUSES = frozenset({"confidential", "internal", "restricted"})
 
 
 @dataclass(frozen=True)
@@ -91,8 +92,11 @@ def resolve_page_metadata(docs_dir: Path, markdown_file: Path) -> dict[str, str]
     return effective
 
 
-# The published staleness policy: pages unreviewed for 6+ months are flagged.
-REVIEW_MAX_AGE_DAYS = 183
+# Review rounds may be scheduled up to roughly six and a half months apart.
+# The explicit next_review date is the deadline; this interval cap prevents a
+# distant date from disabling the staleness policy. Two hundred days covers the
+# approved 2026-07-19 to 2027-01-31 review round (196 days).
+REVIEW_MAX_INTERVAL_DAYS = 200
 
 
 def _parse_review_date(raw_value: str) -> date | None:
@@ -119,11 +123,9 @@ def find_review_date_issues(
 
     if last_reviewed is None:
         issues.append(f"{relative_file}: last_reviewed is not an ISO date (YYYY-MM-DD)")
-    elif (today - last_reviewed).days > REVIEW_MAX_AGE_DAYS:
+    elif last_reviewed > today:
         issues.append(
-            f"{relative_file}: last_reviewed {last_reviewed.isoformat()} is older than "
-            f"{REVIEW_MAX_AGE_DAYS} days — review the page (or its section) and bump "
-            "last_reviewed/next_review in the nearest .metadata.yml"
+            f"{relative_file}: last_reviewed {last_reviewed.isoformat()} is in the future"
         )
 
     if next_review is None:
@@ -132,6 +134,18 @@ def find_review_date_issues(
         issues.append(
             f"{relative_file}: next_review {next_review.isoformat()} precedes "
             f"last_reviewed {last_reviewed.isoformat()}"
+        )
+    elif next_review < today:
+        issues.append(
+            f"{relative_file}: next_review {next_review.isoformat()} is overdue — "
+            "review the page and set the next review date in the nearest .metadata.yml"
+        )
+    elif (
+        last_reviewed is not None and (next_review - last_reviewed).days > REVIEW_MAX_INTERVAL_DAYS
+    ):
+        issues.append(
+            f"{relative_file}: review interval from {last_reviewed.isoformat()} to "
+            f"{next_review.isoformat()} exceeds {REVIEW_MAX_INTERVAL_DAYS} days"
         )
 
     return issues
@@ -152,8 +166,12 @@ def find_metadata_issues(docs_dir: Path, *, today: date | None = None) -> list[s
             issues.append(f"{relative_file}: missing metadata fields: {missing_fields}")
             continue
 
-        issues.extend(
-            find_review_date_issues(metadata, relative_file, today=effective_today)
-        )
+        status = metadata["status"].strip().casefold()
+        if status in NONPUBLIC_STATUSES:
+            issues.append(
+                f"{relative_file}: status '{status}' is not publishable in this public repository"
+            )
+
+        issues.extend(find_review_date_issues(metadata, relative_file, today=effective_today))
 
     return issues

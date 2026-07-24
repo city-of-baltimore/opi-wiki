@@ -29,6 +29,10 @@ Residents want trash pickup delays addressed before they become a weekly problem
 
 The [Performance team](../../about-us/our-teams/performance/index.md), which operates the [CitiStat program](../programs/citistat/index.md) supported by all OPI teams.
 
+## How to request this service
+
+Agencies in the CitiStat portfolio work with the Performance team through their scheduled Stats and their Data-Driven Officer. To raise a performance problem, add a measure to a performance plan, or get help with a KPI definition, contact your Stat analyst or email [opi@baltimorecity.gov](mailto:opi@baltimorecity.gov). See [How to Engage OPI](../how-to-engage-opi.md) for the full path.
+
 ## Read alongside
 
 - [How Work Moves Through OPI](../../how-we-work/how-work-moves-through-opi.md): where this service sits in the loop

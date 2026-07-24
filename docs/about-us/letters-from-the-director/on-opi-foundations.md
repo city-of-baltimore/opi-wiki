@@ -54,8 +54,8 @@ Mayor’s Office of Performance and Innovation
 
 ## Read alongside
 
-**About OPI: Operating Frame:** *how the office is organized and how we work.*
+**[How Work Moves Through OPI](../../how-we-work/how-work-moves-through-opi.md):** *how the office is organized and how we work.*
 
-**Strategic Priorities OnePager:** *what we are committing to.*
+**[Strategic Priorities One-Pager](../../resources/reference/strategic-priorities-one-pager.md):** *what we are committing to.*
 
-**Service Crosswalk:** *how each service ties to its mandate, goal, and outcomes.*
+**[Service Crosswalk](../../resources/reference/service-crosswalk.md):** *how each service ties to its mandate, goal, and outcomes.*

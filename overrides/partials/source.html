@@ -1,0 +1,15 @@
+{#-
+  Keep Material's visible repository link, name, and icon, but omit its
+  data-md-component="source" hook. That hook fetches optional repository facts
+  from GitHub on every page, including a latest-release endpoint that correctly
+  returns 404 while this repository has no releases.
+-#}
+<a href="{{ config.repo_url }}" title="{{ lang.t('source') }}" class="md-source">
+  <div class="md-source__icon md-icon">
+    {% set icon = config.theme.icon.repo or "fontawesome/brands/git-alt" %}
+    {% include ".icons/" ~ icon ~ ".svg" %}
+  </div>
+  <div class="md-source__repository">
+    {{ config.repo_name }}
+  </div>
+</a>

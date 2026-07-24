@@ -70,9 +70,9 @@ ignore = ["D202"]
 convention = "google"
 
 [tool.ruff.lint.per-file-ignores]
-# Small pure helpers in check scripts read clearly without docstrings.
-"scripts/check_built_links.py" = ["D103", "T201"]
-"scripts/check_consistency.py" = ["D103", "T201"]
+# These CLIs intentionally print their human-readable reports to stdout.
+"scripts/check_built_links.py" = ["T201"]
+"scripts/check_consistency.py" = ["T201"]
 # The check_* scripts are argv-driven CLIs whose stdout IS their output, so T201
 # is scoped off there rather than repeated as a per-call noqa. The standard's
 # "no print for status" rule targets library and service code; there is none here.
@@ -99,4 +99,3 @@ exclude = ["tests/"]
 [[tool.mypy.overrides]]
 module = "check_cli"
 ignore_missing_imports = true
-

@@ -1,10 +1,12 @@
 # Glossary of OPI Terms
 
-{{ page_header(summary="Plain-language definitions of every term used inside OPI.", category="SERIES · OPI FOUNDATIONS") }}
+{{ page_header(summary="Plain-language definitions for OPI's public work.", category="SERIES · OPI FOUNDATIONS") }}
 
 ## Why this glossary exists
 
-Words shape behavior. When OPI uses one word for something and an agency partner uses another, simple conversations turn into translation work. This glossary is the single list of OPI’s active vocabulary. If a term is here, it is in use on purpose, so use it as written.
+Words shape behavior. When OPI uses one word for something and an agency
+partner uses another, simple conversations turn into translation work. This
+glossary explains the vocabulary used across OPI's public materials.
 
 ## Active terms
 
@@ -18,7 +20,9 @@ Jump to a letter: [0-9](#0-9) · [A](#a) · [B](#b) · [C](#c) · [D](#d) · [E]
 
 **Accela.** The platform that powers Baltimore’s permitting workflows. The FY26 permit reform priority is anchored on improving Accela’s configuration and the processes it supports.
 
-**AdminOps.** OPI’s internal backbone and administration and operations function. As a standing service run through the Director’s Office, it owns intake, project management, people operations, knowledge management, partner communications, finance, and contracts.
+**AdminOps.** OPI’s administration and operations service. Run through the
+Director’s Office, it coordinates intake, project management, communications,
+knowledge management, finance, contracts, and other officewide support.
 
 **Authorizer.** The executive who authorizes a Stat, a Tiger Team, or a Cross-Agency Delivery activation and provides the executive cover the work needs. For agency-scoped work, the authorizer is the agency director. For Cross-Agency Delivery activations, the authorizer is a Deputy Mayor or the City Administrator. The authorizer is named on the charter.
 
@@ -42,7 +46,9 @@ Jump to a letter: [0-9](#0-9) · [A](#a) · [B](#b) · [C](#c) · [D](#d) · [E]
 
 **Closure.** The end of a commitment, project, or Tiger Team, proven by a link, a metric, or a changed process rather than just declared. Carry-forward is named explicitly when closure is not complete.
 
-**Commitment.** The basic unit of accountability in CitiStat. Every commitment has an owner, a date, and a definition of done. Tracked as a follow-up in the CitiStat follow-up tracker (MS Planner) between meetings.
+**Commitment.** The basic unit of accountability in CitiStat. Every commitment
+has an owner, a date, and a definition of done. It is tracked as a follow-up
+between meetings.
 
 **Commitment ledger.** The running record of who owns what, by when, in a Cross-Agency Delivery activation. It is the delivery equivalent of the CitiStat follow-up tracker. Reviewed at each delivery cadence and carried until closure.
 
@@ -62,7 +68,10 @@ Jump to a letter: [0-9](#0-9) · [A](#a) · [B](#b) · [C](#c) · [D](#d) · [E]
 
 **Deputy Chief Performance Officer.** OPI’s senior leader for performance strategy and CitiStat, and Deputy Director of the CitiStat Program. Reports to the Executive Director. Oversees the CitiStat team, runs the citywide performance system, and partners with agencies on performance plans and BBMR on metric alignment.
 
-**Deliverable type.** The fixed vocabulary used to classify each follow-up in the follow-up memo and follow-up tracker (MS Planner). Eight types: E-mail Update, Memo, Meeting, New Workgroup/Project, Stat-Agenda Item, Stat-Report-Out, To-Do, Written Update (formal). Each type pairs with an evidence standard for closure.
+**Deliverable type.** The fixed vocabulary used to classify each follow-up in
+the follow-up memo and tracker. Eight types: E-mail Update, Memo, Meeting, New
+Workgroup/Project, Stat-Agenda Item, Stat-Report-Out, To-Do, Written Update
+(formal). Each type pairs with an evidence standard for closure.
 
 **Delivery review.** A standing cross-agency forum that meets on a fixed cadence to drive a single multi-agency outcome, such as vacancies, permitting, or workforce. Convened under Cross-Agency Delivery. Has a named Authorizer, a Senior Responsible Owner, the agencies at the table, and a closure plan.
 
@@ -92,7 +101,8 @@ Jump to a letter: [0-9](#0-9) · [A](#a) · [B](#b) · [C](#c) · [D](#d) · [E]
 
 **Inspection.** A direct observation used to validate what the data describes against what is happening on the ground: a ride-along, site visit, counter visit, or field walk. Planned during the frame review, conducted by or with the CitiStat Inspector, and brought back into the Stat as evidence alongside the data.
 
-**Intake.** OPI’s process for receiving, scoping, and chartering new work. See the Intake SOP. Owned by AdminOps in the Director’s Office.
+**Intake.** OPI’s process for receiving, scoping, and chartering new work.
+Owned by AdminOps in the Director’s Office.
 
 ### L
 
@@ -112,11 +122,9 @@ Jump to a letter: [0-9](#0-9) · [A](#a) · [B](#b) · [C](#c) · [D](#d) · [E]
 
 **Open Baltimore.** The city’s open data portal product. Operated by OPI Data and Analytics, it publishes datasets for residents, researchers, and partners.
 
-**OPI Foundations Document Set.** The series of internal reference documents that define how OPI works. Includes onboarding, operations, performance standards, charters, intake SOP, and this glossary.
-
-**OPI Operating Model.** The internal document that defines OPI’s teams, services, governance, and decision rights. Held by leadership; the staff version is in the Foundations Document Set.
-
-**OPI Wiki.** OPI’s internal knowledge base on SharePoint. The official home for the documents in the Foundations Document Set and active project records.
+**OPI Operating Model.** The public explanation of how OPI's teams and services
+work together to move from a problem to a sustained improvement. See
+[How Work Moves Through OPI](../../how-we-work/how-work-moves-through-opi.md).
 
 **ORF.** Opioid Restitution Fund. OPI built and operates the application that tracks ORF-funded recovery projects.
 
@@ -136,8 +144,6 @@ Jump to a letter: [0-9](#0-9) · [A](#a) · [B](#b) · [C](#c) · [D](#d) · [E]
 
 **Program.** An ongoing routine or body of work that may involve more than one team, distinct from a team (staff and budget) and a service (what OPI delivers). CitiStat is OPI’s flagship program, operated by the Performance team and supported by all teams.
 
-**Project Directory.** The SharePoint list of all OPI projects, active, paused, and closed. Updated at the Weekly Ops Review. Owned by the PMO.
-
 **Project gates.** The PMO process by which a project advances through its lifecycle. Each gate has named requirements; advancement is a leadership decision, not a calendar event.
 
 **Public Innovation Toolkit.** The civic innovation playbook OPI’s Innovation Lab uses for problem framing, human-centered design, product methods, and civic technology. Authored by [Bloomberg Philanthropies in partnership with the Johns Hopkins Bloomberg Center for Government Excellence](https://publicinnovation.jhu.edu/news/new-playbook-on-innovation/). OPI uses it; OPI does not own or author it.
@@ -147,8 +153,6 @@ Jump to a letter: [0-9](#0-9) · [A](#a) · [B](#b) · [C](#c) · [D](#d) · [E]
 **Senior Responsible Owner (SRO).** The named accountable owner for a delivery review or a Tiger Team. Typically a Deputy Chief, an agency deputy, or an OPI team lead. Owns the routine, the closure plan, and the relationship with the Authorizer. Distinct from the Authorizer, who provides executive cover but does not run the work day to day.
 
 **Service.** A standing capability OPI provides to the city. Five services: Citywide Performance Management; Citywide Data and Analytics; Innovation Lab; Cross-Agency Delivery; AdminOps.
-
-**SharePoint operating system.** The structured set of SharePoint sites, libraries, lists, and metadata that organizes OPI’s work. See [Wiki Knowledge Base Structure](wiki-knowledge-base-structure.md) for how the internal SharePoint knowledge base is organized.
 
 **Standing topic.** A recurring section of a Stat agenda that appears at every meeting: typically the four tenets, working purpose, prior follow-ups, KPI chart, operational metrics, system health, and repeat-back. Standing topics give the meeting a predictable spine; priority deep dives change cycle to cycle.
 
@@ -166,10 +170,6 @@ Jump to a letter: [0-9](#0-9) · [A](#a) · [B](#b) · [C](#c) · [D](#d) · [E]
 
 ### W
 
-**Walk-up music.** The short piece of music played as panelists and attendees enter the Stat room. A small, deliberate cue that the meeting is starting.
-
-**Weekly Ops Review.** OPI’s internal weekly leadership meeting that reviews the Project Directory, intake decisions, and active commitments.
-
 **Working purpose of Stat.** The one-to-two-sentence statement that names what a particular Stat exists to do. For example, *“To ensure timely and effective service delivery related to trash, littering, illegal dumping, and overall cleanliness in the city.”* Set during the new-Stat alignment, displayed on the deck, and revisited at frame reviews.
 
 **Workday.** The city’s enterprise system for HR, finance, and AdminOps. The FY26 “maximize Workday” priority focuses on reporting, HR processes, capital budget management, grants, and internal workflows.
@@ -180,13 +180,12 @@ A quick reference for acronyms that recur across the wiki and are easy to read p
 
 | Acronym | Expansion |
 | --- | --- |
-| **BoB** | Book of Business, the portfolio register of OPI projects |
 | **DCA** | Deputy City Administrator |
 | **DDO** | Data-Driven Officer (see entry above) |
 | **GIS** | Geographic Information System (mapping and spatial analytics) |
 | **PII** | Personally Identifiable Information |
-| **PIN** | Position Identification Number, the City's budget identifier for a role |
 | **RAG** | Red / Amber / Green status rating |
 | **TPM** | Technical Program Manager (a Data and Analytics role) |
 
-Standard IT and HR acronyms used in the how-to guides and memos (VPN, SSO, MFA, PTO, OOO, WFH) carry their common meanings.
+Standard IT and HR acronyms, when needed in public content, carry their common
+meanings.

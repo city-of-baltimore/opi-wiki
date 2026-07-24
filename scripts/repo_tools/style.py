@@ -75,8 +75,6 @@ def find_style_issues(paths: list[Path]) -> list[str]:
             lowered = line.lower()
             for term in BANNED_JARGON:
                 if term in lowered:
-                    issues.append(
-                        f'{path}:{line_number}: banned jargon "{term}" (see STYLE.md).'
-                    )
+                    issues.append(f'{path}:{line_number}: banned jargon "{term}" (see STYLE.md).')
 
     return issues

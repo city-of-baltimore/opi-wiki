@@ -18,52 +18,30 @@ def test_org_structure_data_loads_cleanly() -> None:
     structure = load_org_structure(DOCS_DIR, "_data/people.yml")
 
     assert structure.city_administrator.name == "Faith P. Leach"
-    assert len(structure.portfolios) == 5
-    assert structure.portfolios[-1].leadership_edge_style == "solid"
-    assert structure.portfolios[-1].lead.name == "Ifeanyi Akila"
-    assert structure.portfolios[-1].lead.worker_type == "contractor"
+    assert len(structure.portfolios) == 4
     assert structure.portfolios[3].lead.name == "Gabriel Watson"
 
 
-def test_org_structure_renderer_covers_chart_table_and_roster_sections() -> None:
-    """The renderer should emit the major repeated org-structure sections."""
+def test_org_structure_renderer_covers_public_chart_and_team_table() -> None:
+    """The renderer should emit only the public leadership and team views."""
 
     structure = load_org_structure(DOCS_DIR, "_data/people.yml")
 
     leadership_chart = render_org_structure(structure, "leadership_chart")
     portfolio_table = render_org_structure(structure, "portfolio_table")
-    staff_alignment = render_org_structure(structure, "staff_alignment")
 
-    assert "ED --> IL" in leadership_chart
-    assert "Director's Office" in leadership_chart
-    assert "Director&#x27;s Office" not in leadership_chart
-    assert "Gabriel Watson<br/>Innovation Program Manager" in leadership_chart
-    assert "| Director's Office | Rakeim Young, Chief of Staff | AdminOps |" in portfolio_table
-    assert "- Audrey Randazzo — Data Storyteller" in staff_alignment
-    assert "- Gabriel Watson — Innovation Program Manager" in staff_alignment
-    assert "- Ifeanyi Akila — AI Enablement Lead (Contractor)" in staff_alignment
-    assert "- Byron Roelofsz — Product Lead (Contractor · offshore)" in staff_alignment
-    assert "cross-portfolio model" not in staff_alignment
-
-
-def test_org_structure_marks_contractors_in_chart_and_roster() -> None:
-    """Contractors should be color-coded on the chart and tagged in the roster."""
-
-    structure = load_org_structure(DOCS_DIR, "_data/people.yml")
-
-    leadership_chart = render_org_structure(structure, "leadership_chart")
-    cards = render_org_structure(structure, "staff_cards")
-
-    assert "classDef contractor" in leadership_chart
-    assert "classDef offshore" in leadership_chart
-    # The AI Enablement branch lead is an onshore contractor.
-    assert ":::contractor" in leadership_chart
-    # Offshore BIC members are color-coded on the roster cards.
-    assert "opi-org-card--offshore" in cards
-    assert "opi-org-card--contractor" in cards
-    # Leads render as the full-width gold card; vacant seats render dashed.
-    assert "opi-org-card--lead" in cards
-    assert "opi-org-card--open" in cards
+    assert leadership_chart.startswith('<figure class="opi-org-chart"')
+    assert 'data-org-level="city"' in leadership_chart
+    assert 'data-org-level="executive"' in leadership_chart
+    assert leadership_chart.count('data-org-level="team"') == 4
+    assert 'data-org-key="innovation-lab"' in leadership_chart
+    assert "Director&#x27;s Office" in leadership_chart
+    assert "Gabriel Watson" in leadership_chart
+    assert "Innovation Program Manager" in leadership_chart
+    assert "```mermaid" not in leadership_chart
+    assert "| Director's Office | Rakeim Young, Chief of Staff |" in portfolio_table
+    assert "Cost Center" not in portfolio_table
+    assert "Ifeanyi Akila" not in leadership_chart
 
 
 def test_define_env_registers_org_structure_macro() -> None:
@@ -73,11 +51,10 @@ def test_define_env_registers_org_structure_macro() -> None:
 
     rendered = env.macros["org_structure_from"](
         "_data/people.yml",
-        "staff_cards",
+        "portfolio_table",
     )
 
-    assert '=== "Director\'s Office"' in str(rendered)
-    assert '<span class="opi-org-card__name">Rakeim Young</span>' in str(rendered)
+    assert "| Director's Office | Rakeim Young, Chief of Staff |" in str(rendered)
 
 
 def test_org_structure_renderer_rejects_unknown_sections() -> None:

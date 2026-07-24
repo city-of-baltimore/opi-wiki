@@ -2,9 +2,11 @@
 # image (the container builds its own .venv and site/).
 .git
 .github
+.env*
 .venv
 venv/
 site/
+notes/
 .claude/
 node_modules/
 __pycache__/
@@ -13,3 +15,5 @@ __pycache__/
 .mypy_cache/
 .ruff_cache/
 .pytest_cache/
+.DS_Store
+**/.DS_Store

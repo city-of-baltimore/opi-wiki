@@ -15,8 +15,8 @@ is the bar.
   but default to short. Read it aloud; if you would not say it, rewrite it.
 - **Be concrete.** Name the actual work (schedule meetings, track the budget,
   review the data) instead of the abstraction ("operating backbone").
-- **One voice everywhere.** Calm, direct, specific. The About page and the
-  handbook page should sound like the same office wrote them.
+- **One voice everywhere.** Calm, direct, specific. The About page and a service
+  page should sound like the same office wrote them.
 - **Active voice, present tense.** "AdminOps tracks the budget," not "The budget
   is tracked by AdminOps."
 - **Say it once.** No rule-of-three padding ("focused, measurable, and durable")
@@ -74,19 +74,19 @@ table. Default to paragraphs. Use structure only when structure genuinely helps.
 > and clearly explained.
 
 > After: AdminOps keeps OPI running. A small office doing citywide work still has
-> to schedule the meetings, track the budget, hire and onboard people, keep the
-> records, and explain the work to leadership and the City Council. AdminOps does
-> that, so the other teams can focus on delivery.
+> to coordinate requests, manage resources and records, and explain the work to
+> leadership and the City Council. AdminOps does that, so the other teams can
+> focus on delivery.
 
 **Bold-lead bullets into prose:**
 
 > Before:
 > - **Intake and triage** — one front door for new work, routed to the right team.
-> - **Portfolio visibility** — the Book of Business, so leaders can see risk.
+> - **Portfolio visibility** — a shared view so leaders can see risk.
 
 > After: New work comes in one front door, where it is sorted and sent to the
-> right team. The Book of Business keeps that work visible, so leaders can see
-> what is at risk and where capacity is tight.
+> right team. A shared portfolio view keeps that work visible, so leaders can
+> see what is at risk and where capacity is tight.
 
-**Keep the table (this one earns it):** a staff roster with name, title, and
-contact columns stays a table. You look people up in it.
+**Keep the table (this one earns it):** a public KPI register with measure,
+owner, source, and refresh cadence stays a table. Readers compare those fields.

@@ -1,7 +1,7 @@
 # Onboarding
 
-How OPI welcomes new staff, prepares managers, and handles transitions.
+How OPI welcomes new staff and how managers prepare.
 
 ## Pages in this section
 
-{{ card_grid_from("how-we-work/handbook/onboarding/index.cards.yml") }}
+- [Onboarding Process and Checklist](onboarding-process-and-checklist.md): the step-by-step onboarding process and checklist.

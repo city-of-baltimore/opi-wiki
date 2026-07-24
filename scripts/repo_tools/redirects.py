@@ -3,30 +3,23 @@
 from __future__ import annotations
 
 from collections import Counter
+from collections.abc import Hashable
 from pathlib import Path
+from typing import Any
 
 import yaml
 
 ALLOWED_DUPLICATE_DESTINATIONS = {
     "resources/index.md",
-    "resources/reference/position-descriptions/innovation-lab/pd-civic-designer.md",
-    "resources/reference/position-descriptions/directors-office/pd-data-storyteller.md",
-    "resources/reference/position-descriptions/directors-office/pd-operations-analyst.md",
-    "resources/reference/position-descriptions/data-and-analytics/pd-applied-data-scientist.md",
-    "resources/reference/position-descriptions/innovation-lab/pd-innovation-program-manager.md",
-    "resources/reference/position-descriptions/innovation-lab/pd-product-engineer-full-stack.md",
-    # Added with the June 2026 reorg (PD consolidations, performance rename, CAD moves):
-    "resources/reference/position-descriptions/data-and-analytics/pd-principal-data-engineer.md",
-    "resources/reference/position-descriptions/innovation-lab/pd-applied-data-scientist.md",
-    "resources/reference/position-descriptions/performance/pd-citistat-analyst.md",
-    "resources/reference/position-descriptions/performance/pd-citistat-program-manager.md",
-    "resources/reference/position-descriptions/performance/pd-deputy-chief-performance-officer.md",
-    "resources/reference/position-descriptions/performance/pd-senior-performance-analyst.md",
+    "resources/reference/index.md",
+    # Full position descriptions were removed from the public repository in
+    # July 2026. Canonical and legacy URLs now converge on the public summary.
+    "resources/reference/position-descriptions/index.md",
     "what-we-do/services/cross-agency-delivery/service-definition.md",
     "what-we-do/services/cross-agency-delivery/index.md",
-    # Added with the How We Work regroup (Organization / Handbook sub-sections):
+    # Added with the How We Work regroup and public/private boundary cleanup:
     "how-we-work/organization/org-structure.md",
-    "how-we-work/organization/team-and-roles/index.md",
+    "how-we-work/index.md",
     # The two operating-model omnibus pages folded into the canonical loop page:
     "how-we-work/how-work-moves-through-opi.md",
     # Our Teams folded under About Us (performance pages have 2 legacy paths each):
@@ -38,26 +31,37 @@ ALLOWED_DUPLICATE_DESTINATIONS = {
     "about-us/our-teams/data-and-analytics/about-data-analytics.md",
     "about-us/our-teams/innovation-lab/about-innovation-lab.md",
     "about-us/our-teams/directors-office/about-admin-ops.md",
-    "what-we-do/programs/baltimore-intelligence-center/index.md",
-    "what-we-do/programs/baltimore-intelligence-center/architecture-and-roadmap.md",
+    "what-we-do/products/baltimore-intelligence-center/index.md",
+    "what-we-do/products/baltimore-intelligence-center/architecture-and-roadmap.md",
+    "what-we-do/products/baltimore-intelligence-center/products-and-capabilities.md",
+    "what-we-do/products/baltimore-intelligence-center/responsible-data-and-ai.md",
     "what-we-do/programs/citistat/method-playbook.md",
-    # July 2026 handbook trims (admin-memos folder, charter/intake retired):
-    "how-we-work/handbook/index.md",
-    "how-we-work/handbook/operations/index.md",
-    "how-we-work/handbook/onboarding/index.md",
 }
 
 
 class _MkDocsConfigLoader(yaml.SafeLoader):
-    """Safe loader that tolerates MkDocs Python-name and !ENV tags."""
+    """Safe loader that tolerates MkDocs !ENV tags."""
 
+    def construct_mapping(
+        self,
+        node: yaml.MappingNode,
+        deep: bool = False,
+    ) -> dict[Any, Any]:
+        """Construct a mapping while rejecting duplicate YAML keys."""
 
-def _construct_python_name(loader: _MkDocsConfigLoader, node: yaml.Node) -> str:
-    """Treat Python-name tags as plain scalar strings for config inspection."""
+        if not isinstance(node, yaml.MappingNode):
+            raise ValueError(f"Expected a YAML mapping node, got {node!r}.")
 
-    if not isinstance(node, yaml.ScalarNode):
-        raise ValueError(f"Expected a scalar node for Python-name tag, got {node!r}.")
-    return str(loader.construct_scalar(node))
+        mapping: dict[Any, Any] = {}
+        for key_node, value_node in node.value:
+            key = self.construct_object(key_node, deep=deep)
+            if not isinstance(key, Hashable):
+                raise ValueError(f"Unhashable YAML mapping key at {key_node.start_mark}.")
+            if key in mapping:
+                line_number = key_node.start_mark.line + 1
+                raise ValueError(f"Duplicate YAML key '{key}' on line {line_number}.")
+            mapping[key] = self.construct_object(value_node, deep=deep)
+        return mapping
 
 
 def _construct_env_default(loader: _MkDocsConfigLoader, node: yaml.Node) -> str:
@@ -75,10 +79,6 @@ def _construct_env_default(loader: _MkDocsConfigLoader, node: yaml.Node) -> str:
     return str(loader.construct_scalar(node))
 
 
-_MkDocsConfigLoader.add_constructor(
-    "tag:yaml.org,2002:python/name:pymdownx.superfences.fence_code_format",
-    _construct_python_name,
-)
 _MkDocsConfigLoader.add_constructor("!ENV", _construct_env_default)
 
 
@@ -86,7 +86,7 @@ def load_redirect_map(config_path: Path) -> dict[str, str]:
     """Return the configured MkDocs redirect map."""
 
     # S506: _MkDocsConfigLoader subclasses yaml.SafeLoader — it only adds
-    # constructors for the two MkDocs tags, and instantiates no arbitrary
+    # a constructor for MkDocs' !ENV tag, and instantiates no arbitrary
     # objects. ruff cannot see the base class through the subclass.
     config = yaml.load(  # nosec B506
         config_path.read_text(encoding="utf-8"),

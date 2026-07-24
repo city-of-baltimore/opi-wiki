@@ -6,7 +6,6 @@
 |--------------------------------|-------------------------------------------------------------------------------------------------------------------------------------|
 | Government Cluster             | Internal Services                                                                                                                   |
 | Stat Type                      | Thematic Stat                                                                                                                       |
-| Internal Tag                   | Service system / resident experience                                                                                                |
 | Executive Sponsor / Authorizer | Deputy City Administrator                                                                                                           |
 | Primary Agency / Agencies      | BCIT / 311; fulfillment agencies including DPW, DOT, DHCD, DGS, BCRP and others                                                     |
 | OPI lead                        | OPI-operated / Data Team-led                                                                                                        |

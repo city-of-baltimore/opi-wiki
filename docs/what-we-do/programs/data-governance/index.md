@@ -14,4 +14,4 @@ The full policy covers classification tiers, stewardship roles, privacy, securit
 
 - [Data Governance Framework](../../../about-us/our-teams/data-and-analytics/data-governance-framework.md): the full policy.
 - [Data and Analytics](../../../about-us/our-teams/data-and-analytics/index.md): the team that runs the program.
-- [Baltimore Intelligence Center](../baltimore-intelligence-center/responsible-data-and-ai.md): how the tiers and gates show up in the city's AI products.
+- [Baltimore Intelligence Center](../../products/baltimore-intelligence-center/responsible-data-and-ai.md): how the tiers and gates apply to the city's responsible-AI product.

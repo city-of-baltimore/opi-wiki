@@ -53,20 +53,12 @@ body,
   border-bottom-color: var(--opi-link-hover);
 }
 
-.md-typeset a.internal-link::before {
-  content: "🔒 ";
-  font-size: 0.85em;
-  margin-right: 0.15em;
-}
-
-.md-typeset a.internal-link {
-  color: var(--opi-text);
-  border-bottom: 1px dotted var(--opi-text-muted);
-}
-
-.md-typeset a.internal-link:hover {
-  color: var(--opi-link-color);
-  border-bottom-color: var(--opi-link-hover);
+/* Inline links retain a non-color affordance in both theme schemes. Component
+   links such as cards and breadcrumbs own their presentation separately. */
+.md-typeset :where(p, li, dd, dt, blockquote, figcaption, summary, td, th) a {
+  text-decoration: underline;
+  text-decoration-thickness: 0.08em;
+  text-underline-offset: 0.14em;
 }
 
 .md-typeset table:not([class]) {
@@ -87,6 +79,21 @@ body,
 
 [data-md-color-scheme="slate"] .md-typeset table:not([class]) th {
   color: var(--opi-gold);
+}
+
+/* Material creates this overflow wrapper around wide tables after load. The
+   theme hook makes it keyboard-focusable; keep that focus visibly apparent. */
+.md-typeset .md-typeset__scrollwrap:focus-visible,
+.md-typeset pre > code:focus-visible {
+  outline: 2px solid var(--opi-link-hover);
+  outline-offset: -2px;
+}
+
+/* Pygments otherwise renders Markdown strong tokens at 4.47:1 against its
+   light code surface. The theme's code foreground clears AA in both schemes. */
+.md-typeset .highlight .gs {
+  color: var(--md-code-fg-color);
+  font-weight: 700;
 }
 
 .md-typeset .admonition,

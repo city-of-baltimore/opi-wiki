@@ -1,6 +1,6 @@
 # About the Innovation Lab
 
-{{ page_header(summary="Baltimore's in-house public-innovation team, and how the city turns priority challenges into tested, adopted service improvements.", category="ABOUT · SERVICE") }}
+{{ page_header(summary="Baltimore's in-house public-innovation team, and how the city turns priority challenges into tested, adopted service improvements.", category="ABOUT · TEAM") }}
 
 The Innovation Lab is Baltimore's in-house public-innovation team. It works across agencies on the Mayor's priority challenges, using human-centered design, data, and disciplined delivery to turn service problems into solutions residents and staff actually use.
 

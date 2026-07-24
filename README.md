@@ -2,7 +2,7 @@
 
 The public docs site for Baltimore City's Mayor's Office of Performance and Innovation.
 
-Live site: https://city-of-baltimore.github.io/opi-wiki/ (custom domain https://opi.baltimorecity.gov pending DNS)
+Live site: <https://city-of-baltimore.github.io/opi-wiki/>
 Repo: this repository
 Maintainer: see [`MAINTAINERS.md`](MAINTAINERS.md)
 
@@ -10,7 +10,11 @@ Maintainer: see [`MAINTAINERS.md`](MAINTAINERS.md)
 
 A docs-as-code site, written in Markdown, rendered with [MkDocs Material](https://squidfunk.github.io/mkdocs-material/), version-controlled on GitHub, and auto-deployed via GitHub Actions.
 
-The site is **public-facing**. Internal companion documents (PDs, performance standards, onboarding checklists) live on Baltimore City's SharePoint intranet and are linked from this site with a 🔒 marker.
+The site is **public-facing**. Internal companion documents, including full
+position descriptions, performance standards, onboarding materials, staff
+rosters, and contact records, live in Baltimore City's SharePoint and City
+systems. They are not published from this repository. The public site provides
+only a concise role-summary index and a leadership-level org chart.
 
 ## Local development
 
@@ -86,8 +90,8 @@ This is section 4 of the civic-app consistency standard, applied here:
 
 | Tier | Command | Where it runs | What it covers |
 | --- | --- | --- | --- |
-| `ci` | `task ci` | pull-request CI, fast local loop | workflow policy, lint, mypy, bandit, and the validators that read `docs/` source |
-| `prepush` | `task prepush` | the pre-push hook and the Pages deploy gate | everything in `ci`, plus pytest, `mkdocs build --strict`, the built-site link crawl, and the accessibility checks |
+| `ci` | `task ci` | pull-request CI, fast local loop | workflow policy, formatting, lint, mypy, bandit, and the validators that read `docs/` source |
+| `prepush` | `task prepush` | the pre-push hook and the Pages deploy gate | everything in `ci`, plus pytest, `mkdocs build --strict`, publication-boundary and link checks, and accessibility checks |
 | `validate` | `task validate` | before a deploy, locally | everything in `prepush`, plus the Playwright browser smoke checks |
 
 Each tier is a strict superset of the one above it, so a check that moves down
@@ -155,11 +159,14 @@ plugins and theme behavior together.
 
 - Keep global site config in `mkdocs.yml`.
 - Keep navigation local to the content in `docs/**/.pages`.
-- Keep recurring operational source material grouped in dedicated local collections such as `docs/how-we-work/administrative-memos/` and `docs/how-we-work/how-to/`, and expose those collections intentionally in the nearest section navigation.
+- Keep internal operating guidance, personnel records, and contact data in the
+  appropriate City system rather than under `docs/`.
 - Open each content page with one `{{ page_header(...) }}` call directly under the `# H1`, not a hand-built stack of badge, blockquote, bold kicker, restated bold title, and italic tagline. The macro renders the status badge (from `.metadata.yml`) plus an optional `category`, `summary`, and `tagline`. Keep the title as a single `# H1` — never restate it as a bold paragraph. Section `index.md` landing pages stay on a plain `>` blockquote summary and carry no badge.
 - Keep landing-page card content in neighboring `*.cards.yml` files and render it through the shared `card_grid_from(...)` macro.
 - Keep repeated structured page data in neighboring `*.data.yml` files when one source needs to drive multiple rendered sections.
-- Page badges are opt-in: set `display_badge` (`draft`, `template`, `reference`, `position-description`) in the nearest `.metadata.yml` only when a page needs a pill; `page_header()` renders it. Never inline raw HTML pill spans.
+- Page badges are opt-in: set `display_badge` (`draft`, `template`, or
+  `reference`) in the nearest `.metadata.yml` only when a page needs a pill;
+  `page_header()` renders it. Never inline raw HTML pill spans.
 - Keep shared brand CSS split by responsibility under `docs/assets/stylesheets/` so tokens, Material chrome, reusable components, and page-specific presentation do not drift together.
 - Run `task prepush` before merging structural or config changes.
 - Treat `site/` as generated output, not source.
@@ -172,6 +179,11 @@ Use the smallest shared pattern that matches the page need:
 - `.metadata.yml` carries inherited page metadata such as owner, review cadence, change log, and optional `display_badge` state.
 - `*.cards.yml` carries repeated landing-page card content and should render only through `card_grid_from(...)`.
 - `*.data.yml` carries structured page-specific source data when one file needs to drive multiple rendered sections, tables, charts, or lists.
+
+MkDocs excludes `_data/`, `*.cards.yml`, and `*.data.yml` from the generated
+site. These files are build inputs, not public downloads; the pre-push
+publication-boundary check enforces that separation and rejects visible PIN or
+phone-number fields in the built artifact.
 
 If a page can stay plain Markdown, keep it plain Markdown. Only introduce structured data when it removes repeated source-of-truth content or repeated shared UI markup.
 
@@ -188,19 +200,20 @@ opi-foundations/
 │   ├── index.md            # home
 │   ├── index.cards.yml     # shared card-grid data for home
 │   ├── about-us/           # mission, letters, our-teams/
-│   ├── how-we-work/        # organization/ (org chart, team & roles), handbook/
+│   ├── how-we-work/        # public operating model and leadership org chart
 │   ├── what-we-do/         # services, programs (CitiStat), products (BIC)
-│   ├── resources/          # reference, glossary, position descriptions
+│   ├── resources/          # reference, glossary, public role summaries
 │   ├── */index.cards.yml   # section-local landing-page card data
 │   └── assets/
 │       ├── stylesheets/tokens.css          # shared design tokens + Material bridges
 │       ├── stylesheets/base.css            # typography and content primitives
 │       ├── stylesheets/material-chrome.css # header, nav, tabs, footer
 │       ├── stylesheets/components.css      # cards, pills, reusable shared UI
+│       ├── stylesheets/org-chart.css       # responsive public leadership chart
+│       ├── stylesheets/breadcrumbs.css     # breadcrumb presentation
 │       ├── stylesheets/home.css            # homepage-only presentation
-│       ├── images/               # logos, page images
-│       └── docs/                 # downloadable .docx/.pdf assets
-├── overrides/              # MkDocs Material theme overrides (empty for now)
+│       └── images/               # logos and page images
+├── overrides/              # breadcrumbs + table keyboard-accessibility hook
 ├── Taskfile.yml            # the shared task surface (ci/prepush/validate + helpers)
 ├── scripts/
 │   ├── verify.sh           # underlying runner entrypoint (Taskfile calls it)
@@ -209,6 +222,7 @@ opi-foundations/
 │   ├── install-hooks.sh    # installs the pre-push gate
 │   ├── hooks/pre-push      # runs the prepush plan before every push
 │   ├── check_html_links.py # raw HTML href validation
+│   ├── check_publication_boundary.py # rejects source/sensitive data in site/
 │   ├── check_page_metadata.py
 │   ├── check_brand_terms.py
 ├── .github/
@@ -232,13 +246,16 @@ See [`MAINTAINERS.md`](MAINTAINERS.md) for the full operating manual.
 
 ## Deployment
 
-`main` branch deploys automatically to GitHub Pages via the workflow in `.github/workflows/deploy.yml`. To deploy to a custom domain (`opi.baltimorecity.gov`), the city DNS team needs to add a `CNAME` record pointing to GitHub Pages, and a `CNAME` file should be added to `docs/`.
+`main` deploys automatically to the canonical GitHub Pages URL through
+`.github/workflows/deploy.yml`. No custom-domain `CNAME` is committed.
 
 
 ## License
 
-Content: [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) — peer cities welcome to adapt with attribution.
-Code (theme, build): MIT.
+Content: [CC BY 4.0](LICENSE-CONTENT.md) — peer cities may adapt it with
+attribution. City names, logos, seals, and official marks are excluded.
+
+Code, theme customizations, and build automation: [MIT](LICENSE).
 
 ## Documentation method consistency
 

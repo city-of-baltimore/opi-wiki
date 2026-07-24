@@ -39,11 +39,7 @@ def test_run_issue_check_reports_findings(capsys: pytest.CaptureFixture[str]) ->
     captured = capsys.readouterr()
     assert exit_code == 1
     assert captured.out == ""
-    assert captured.err == (
-        "Example check failed:\n"
-        "  - first issue\n"
-        "  - second issue\n"
-    )
+    assert captured.err == ("Example check failed:\n  - first issue\n  - second issue\n")
 
 
 def test_run_issue_check_reports_unexpected_errors(capsys: pytest.CaptureFixture[str]) -> None:

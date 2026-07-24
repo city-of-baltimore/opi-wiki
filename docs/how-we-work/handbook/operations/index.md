@@ -1,7 +1,9 @@
 # Operations
 
-Leadership norms, performance standards, the productivity playbook, QA, and the templates we use.
+Performance standards and engineering references for the OPI team.
 
 ## Pages in this section
 
-{{ card_grid_from("how-we-work/handbook/operations/index.cards.yml") }}
+- [Performance Standards (Staff)](performance-standards-staff.md): how OPI defines and rates performance.
+- [Performance Standards: Manager Companion](performance-standards-manager-companion.md): the manager's guide to the standards.
+- [Coding Guidelines](coding-guidelines.md): engineering conventions for OPI code.
