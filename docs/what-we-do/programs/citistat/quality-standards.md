@@ -114,7 +114,7 @@ Applied once the data table is QCed and the lead is building visuals.
 
 - Major changes are embedded into SOPs, dashboards, alerts, training, or sustainment plans.
 
-- Public summaries are updated where appropriate.
+- Published summaries are updated where appropriate.
 
 ## Read alongside
 

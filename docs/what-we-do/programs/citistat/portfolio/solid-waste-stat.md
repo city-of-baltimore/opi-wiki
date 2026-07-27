@@ -11,7 +11,7 @@
 | OPI lead                        | OPI-operated / Performance Team                                                                            |
 | Core Data Product              | Solid waste operations dashboard                                                                           |
 
-## Public Purpose
+## Purpose
 
 Solid Waste Stat focuses on DPW’s sanitation and public right-of-way cleaning functions, including trash collection, recycling, missed pickups, dirty alleys, dirty streets, bulk trash, street sweeping, route performance, staffing, equipment, and disposal constraints.
 

@@ -1,4 +1,4 @@
-/* Public org chart.
+/* Organization chart.
    The chart is semantic HTML sourced from docs/_data/people.yml. CSS provides
    the visual hierarchy and responsive stacking; no separate image asset is
    required to keep the org structure current. */

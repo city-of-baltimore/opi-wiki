@@ -1,8 +1,8 @@
 # About the Innovation Lab
 
-{{ page_header(summary="Baltimore's in-house public-innovation team, and how the city turns priority challenges into tested, adopted service improvements.", category="ABOUT · TEAM") }}
+{{ page_header(summary="Baltimore's in-house civic innovation team, and how the city turns priority challenges into tested, adopted service improvements.", category="ABOUT · TEAM") }}
 
-The Innovation Lab is Baltimore's in-house public-innovation team. It works across agencies on the Mayor's priority challenges, using human-centered design, data, and disciplined delivery to turn service problems into solutions residents and staff actually use.
+The Innovation Lab is Baltimore's in-house civic innovation team. It works across agencies on the Mayor's priority challenges, using human-centered design, data, and disciplined delivery to turn service problems into solutions residents and staff actually use.
 
 The Lab works like an in-house innovation consultancy, not a department that runs services. It facilitates and coaches agency partners through a design-and-delivery process; it does not manage, and is not managed by, the departments it supports. It adds to existing capacity, designs with residents and frontline staff, and hands a working improvement to the agency that will own it.
 
@@ -46,7 +46,7 @@ The Lab does not own agency operations or the long-term running of the tools it 
 
 ## How the Lab partners across OPI
 
-The Lab is OPI's hands-on build team, and it works through the other services rather than around them. CitiStat shows where a service is falling short. Data and Analytics provides the evidence, datasets, and platform its products run on. Cross-Agency Delivery coordinates when multiple agencies must move together. AdminOps carries intake, public narrative, and the publication channel that sustains the gain.
+The Lab is OPI's hands-on build team, and it works through the other services rather than around them. CitiStat shows where a service is falling short. Data and Analytics provides the evidence, datasets, and platform its products run on. Cross-Agency Delivery coordinates when multiple agencies must move together. AdminOps carries intake, resident and Council communications, and the publication channel that sustains the gain.
 
 ## What success looks like
 

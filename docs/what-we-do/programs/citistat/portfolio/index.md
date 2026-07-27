@@ -4,7 +4,7 @@
 
 Baltimore’s CitiStat portfolio is how the City reviews performance across the services, systems, and priorities residents and staff experience most directly. This register documents all 19 active Stats; the fields are defined below.
 
-CitiStat is owned by OPI's Executive Director as CitiStat Director and implemented by agencies; the [Strategic Framework](../strategic-framework.md#governance-and-roles) sets out the full governance chain. OPI leaders may operate selected Stats where the topic aligns with their portfolio, but all Stats follow a common standard: clear purpose, reliable enough data, useful pre-work, disciplined follow-up, evidence of closure, and a public story of progress.
+CitiStat is owned by OPI's Executive Director as CitiStat Director and implemented by agencies; the [Strategic Framework](../strategic-framework.md#governance-and-roles) sets out the full governance chain. OPI leaders may operate selected Stats where the topic aligns with their portfolio, but all Stats follow a common standard: clear purpose, reliable enough data, useful pre-work, disciplined follow-up, evidence of closure, and a published account of progress.
 
 This document is a companion to OPI’s operating model. The operating model explains how OPI organizes work; this register explains what each Stat is for, who sponsors it, what it tracks, what artifacts it produces, and how it can trigger delivery, product, data, or executive action.
 
@@ -94,5 +94,5 @@ Not every recurring problem should become a Stat. The first question should be: 
 ## Read alongside
 
 - [CitiStat Method Playbook](../method-playbook.md): the operating standards every Stat in this portfolio runs on.
-- [CitiStat Strategic Framework](../strategic-framework.md): the public-facing strategic frame and portfolio rationale.
+- [CitiStat Strategic Framework](../strategic-framework.md): the strategic frame and portfolio rationale.
 - [About Performance](../../../../about-us/our-teams/performance/about-performance.md): a plain-language overview of the team.

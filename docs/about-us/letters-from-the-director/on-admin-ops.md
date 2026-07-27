@@ -4,7 +4,7 @@
 
 **The Quiet Work That Makes Public Service Possible**
 
-*A public letter on the operations and administration that keep OPI running, and why they are part of our story.*
+*A letter on the operations and administration that keep OPI running, and why they are part of our story.*
 
 Some of the most important work in city government never makes the news. It
 happens before the meeting, behind the dashboard, in the contract that lets a
@@ -54,7 +54,7 @@ office gets stronger every year as a place to work and a partner to work with.
 
 A city is a system of systems. The strength of any one program depends on the strength of the institutions that surround it. OPI is a small office, but its administrative and operational discipline ripples outward. It shapes the quality of our contracts, the speed of our hiring, the reliability of our routines, and the credibility we bring to partner agencies. It also models what disciplined operations can look like at City Hall, not as a corporate import but as a public-service practice.
 
-That is why administrative and operational work is part of OPI’s public story, not a footnote to it. The team that does this work is doing public service in its purest form: making other people’s public service possible.
+That is why administrative and operational work is part of OPI’s story, not a footnote to it. The team that does this work is doing public service in its purest form: making other people’s public service possible.
 
 I am grateful for them. The City should be too.
 

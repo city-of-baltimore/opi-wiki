@@ -13,7 +13,7 @@
 
 Housing is one of the first operating agencies moving to the [place-based model](../strategic-framework.md#the-place-based-model), alongside DOT. It runs today as an agency Stat; as the model takes hold, sessions will increasingly concentrate on the specific geographies where a priority housing outcome is stuck, taking one outcome, no more than two geographies, and two or three operational pressure points at a time.
 
-## Public Purpose
+## Purpose
 
 Housing Stat focuses on housing conditions, neighborhood stability, code enforcement, vacant properties, rental licensing, housing rehabilitation, and pathways to safer, healthier neighborhoods.
 

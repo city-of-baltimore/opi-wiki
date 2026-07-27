@@ -11,7 +11,7 @@
 | OPI lead                        | OPI-operated / Performance Team                                                                                                         |
 | Core Data Product              | Financial operations and compliance dashboard                                                                                           |
 
-## Public Purpose
+## Purpose
 
 Finance Stat focuses on the financial systems and processes that allow Baltimore City to steward public dollars, collect revenue, pay vendors, procure goods and services, and manage grants.
 

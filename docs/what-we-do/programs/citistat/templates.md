@@ -51,13 +51,13 @@ Use within 24 hours after each Stat. Length is typically 30 minutes. For agency-
 Pre-meeting materials are distributed at least 48 hours before the Stat (T-2 in
 the [CitiStat cycle](method-playbook.md#the-citistat-cycle)). The standard
 package includes the prior follow-up memo, the pre-memo, and the deck with
-questions. Materials are shared with invited participants through approved City
-systems.
+questions. Materials are shared with invited participants through City
+systems designated for CitiStat records and collaboration.
 
 ### File naming
 
 All Stat materials use the same naming convention so files sort cleanly and
-read clearly across approved recordkeeping and publishing systems.
+read clearly across designated City recordkeeping and publishing systems.
 
 - Use spaces, not underscores.
 - Add a space before "Stat" when the agency code precedes it: `DGS Stat`, not `DGSStat`.
@@ -105,7 +105,7 @@ Templates should create consistency without creating bureaucracy. Use them to ma
 !!! note "Where to get the fillable files"
     This page documents each template's structure. Current fillable versions
     are controlled City records and are not published on this site. Authorized
-    staff should use the current approved version.
+    staff should use the current controlled version.
 
 ### Template 1: Pre-meeting memo
 
@@ -164,7 +164,7 @@ Templates should create consistency without creating bureaucracy. Use them to ma
 | Top blockers                | What decisions or interventions are needed this week?             |
 | Overdue follow-ups          | Which follow-ups missed deadlines and what is the recovery plan? |
 | Completed items             | What was closed with evidence this week?                          |
-| Risks to public commitments | What could affect trust, service continuity, or public reporting? |
+| Risks to commitments to residents | What could affect trust, service continuity, or published reporting? |
 | Looking ahead               | What sessions, decisions, or deadlines are coming next?           |
 
 ## Read alongside

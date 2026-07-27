@@ -6,7 +6,7 @@ from tests.helpers import register_macros
 
 
 def test_shared_macro_registry_stays_explicit() -> None:
-    """The shared macros module should expose the expected public macro surface."""
+    """The shared macros module should expose only the registered macro surface."""
 
     env = register_macros("resources/reference/glossary.md")
 

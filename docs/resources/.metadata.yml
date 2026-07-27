@@ -1,8 +1,8 @@
 defaults:
   owner: Chief of Staff
-  last_reviewed: 2026-07-26
+  last_reviewed: 2026-07-27
   next_review: 2027-01-31
-  change_log: Updated resource descriptions to match the current reference library.
+  change_log: Updated resource descriptions and clarified the contribution review and content-placement guidance.
 
 pages:
   accessibility.md:

@@ -81,7 +81,7 @@ def candidate_paths(source_file: Path, href: str, *, docs_dir: Path | None = Non
 
 
 def _is_within(path: Path, root: Path) -> bool:
-    """Return whether a resolved target stays inside its publication root."""
+    """Return whether a resolved target stays inside its docs root."""
 
     try:
         path.relative_to(root)

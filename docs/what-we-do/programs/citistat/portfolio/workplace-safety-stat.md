@@ -11,7 +11,7 @@
 | OPI lead                        | Director’s Office-led with Performance method support                                                                      |
 | Core Data Product              | Workplace safety performance dashboard                                                                                     |
 
-## Public Purpose
+## Purpose
 
 Workplace Safety Stat focuses on the systems that keep City employees safe and ready to serve the public. A safer workforce reduces service disruption, protects staff, and strengthens operational reliability across agencies.
 

@@ -11,7 +11,7 @@
 | OPI lead                        | OPI-operated / Performance Team                                                                                             |
 | Core Data Product              | Youth outcomes and initiative tracker                                                                                       |
 
-## Public Purpose
+## Purpose
 
 Youth Stat focuses on Baltimore’s cradle-to-career youth priorities, including early childhood, youth safety, opportunity youth, career pathways, and coordination among agencies and partners serving young people.
 

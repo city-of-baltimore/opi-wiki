@@ -18,7 +18,7 @@ This guide complements City performance management and HR procedures. It does no
 
 ## The OPI Way
 
-OPI is not a typical agency. We trust each other, we hold a high bar, and we ship a lot. Our work is used by senior leaders, partner agencies, and sometimes the public. We protect OPI’s credibility through careful work, accurate analysis, clear communication, and documented decisions.
+OPI is not a typical agency. We trust each other, we hold a high bar, and we ship a lot. Our work is used by senior leaders, partner agencies, City staff, and residents. We protect OPI’s credibility through careful work, accurate analysis, clear communication, and documented decisions.
 
 A few habits carry most of that weight. We anchor ratings to what was delivered, not to opinion. We escalate risk early and close the loop, so there are no surprises. We do not ship work that has not been tested. We document as we go, because anything undocumented is lost the moment someone moves on. And we say the true thing kindly and early.
 
@@ -34,7 +34,7 @@ One thing to keep in mind throughout: a 3 is the bar. It means strong, reliable 
 |--------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Artifact           | A work product that can be reviewed. Examples: memo, deck, dashboard, dataset, code change, design prototype, runbook, process map, meeting recap, decision log. |
 | Evidence bundle    | A short set of links that prove what was delivered and the quality of the work. Evidence reduces bias and makes calibration fair.                                |
-| Definition of done | The shared checklist for a deliverable. Includes QA, approvals, documentation, and handoff steps.                                                                |
+| Definition of done | The shared checklist for a deliverable. Includes QA, required reviews, documentation, and handoff steps.                                                         |
 | Calibration        | A leadership review to ensure ratings are consistent across teams, roles, and levels, based on evidence and scope.                                               |
 | Role charter       | A one-page agreement that defines top priorities, expected artifacts, partners, and success measures for the cycle.                                              |
 | Reset plan         | A short, time-bound plan used when performance is inconsistent. It defines expectations, supports, and evidence of improvement.                                  |
@@ -72,7 +72,7 @@ All staff are assessed on eight core dimensions. Managers also assess role craft
 | Documentation and operational hygiene       | Keeps work discoverable and reproducible. Maintains decision logs, runbooks, and organized files.            | Decisions captured. Work can be picked up by others. Clean repositories and folders.             |
 | Collaboration and trust-building            | Works through agencies, not around them. Communicates candidly and respectfully. Protects OPI credibility.   | Partners feel respected and informed. No surprises. Conflicts resolved directly.                 |
 | Ownership, initiative, and learning agility | Acts without waiting for perfect direction. Escalates risk early. Learns fast and improves systems.          | Proposes solutions. Prevents recurring issues. Turns lessons into standards.                     |
-| Integrity, privacy, and stewardship         | Handles sensitive information appropriately. Protects public trust. Follows approvals and ethical standards. | Proactively flags risk. Uses least-privilege access. Avoids overstated claims.                   |
+| Integrity, privacy, and stewardship         | Handles sensitive information appropriately. Protects public trust. Follows review, authorization, and ethical standards. | Proactively flags risk. Uses least-privilege access. Avoids overstated claims.            |
 
 ### Role craft dimensions (role-specific)
 
@@ -84,7 +84,7 @@ Each role selects two to four craft dimensions at the start of the cycle. These 
 | Design craft                    | Service design, usability, accessibility, user research, problem definition.                  |
 | Engineering craft               | Reliability, testing, security mindset, maintainability, clean interfaces.                    |
 | PMO craft                       | Portfolio hygiene, risk management, cadence discipline, decision logs, unblock mechanics.     |
-| Communications and partnerships | Executive narratives, approvals discipline, editorial operations, partner follow-through.     |
+| Communications and partnerships | Executive narratives, review discipline, editorial operations, partner follow-through.         |
 | Operations craft                | Process design, SOP quality, compliance, procurement readiness, incident response discipline. |
 
 ## The performance process
@@ -97,7 +97,7 @@ The process is consistent across teams and works to reduce bias and surprises.
 
 - Role craft dimensions are selected and documented.
 
-- Definition of done is agreed for major deliverables (QA, approvals, documentation).
+- Definition of done is agreed for major deliverables (QA, required reviews, documentation).
 
 ### Quarterly check-ins (required)
 

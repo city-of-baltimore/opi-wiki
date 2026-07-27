@@ -4,7 +4,7 @@
 
 **The Work Lives in the Seams**
 
-*A public letter on cross-agency delivery and what it takes to finish complex work in city government.*
+*A letter on cross-agency delivery and what it takes to finish complex work in city government.*
 
 Most of the things residents care about in a city are not owned by one agency. A safer corner involves Police, Transportation, Public Works, Housing, and the neighborhood. A faster permit involves Housing, Finance, Fire, Health, and sometimes a half-dozen others. Getting an unhoused neighbor into stable housing involves Health, Housing and Community Development, the school system, hospitals, nonprofits, and the courts. The work that matters most lives in the seams between agencies.
 

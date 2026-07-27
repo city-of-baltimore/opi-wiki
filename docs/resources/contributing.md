@@ -8,7 +8,7 @@
 
 ## How proposed changes are reviewed
 
-Every change follows the same path. A proposal comes in as a pull request, an issue, or an email. The wiki maintainer triages it within five business days. The content owner for that page then reviews it for accuracy, so a change to a Data and Analytics page goes to the Deputy CDO. Once it is approved, the change ships to the live site automatically through GitHub Actions.
+Every change follows the same path. A proposal comes in as a pull request, an issue, or an email. The wiki maintainer triages it within five business days. The content owner for that page then reviews it for accuracy, so a change to a Data and Analytics page goes to the Deputy CDO. Once the content owner signs off, the change ships to the live site automatically through GitHub Actions.
 
 ## Editorial voice
 
@@ -16,8 +16,9 @@ OPI Foundations is written in plain language. We avoid jargon where we can, defi
 
 ## What lives where
 
-This is the public reference. Internal SOPs, personnel records, full position
-descriptions, contact lists, and vendor contracts live elsewhere, in
+OPI Foundations covers the office's methods, operating model, organization,
+services, programs, and products. Operational SOPs, personnel records, full
+position descriptions, contact lists, and vendor contracts are maintained in
 SharePoint, HR systems, and procurement records. Do not add payroll identifiers,
 personal or work phone numbers, or staff-roster exports to this repository.
 
@@ -32,5 +33,5 @@ Before opening a documentation PR, check whether the page uses OPI's core operat
 - Does the page (or its section `.metadata.yml`) name an owner and a review cadence?
 - Does it describe CitiStat as how the city reviews performance and follows through, rather than just a meeting calendar?
 - Does it link to the official method page when using terms like Tiger Team, Stat, delivery activation, or product discovery?
-- Does it name the audience and public posture?
+- Does it name the intended reader and state what they need to know or do?
 - Does it avoid retired or use-with-care terms unless the historical context requires them?

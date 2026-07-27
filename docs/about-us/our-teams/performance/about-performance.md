@@ -8,7 +8,7 @@ The team owns the method, not the agencies' operations. Agencies deliver service
 
 ## What the team does
 
-Day to day, the team runs CitiStat operations for the citywide portfolio of Stats: the sessions, the pre-memos, the follow-up memos, and the tracking that keeps follow-ups from slipping. It supports agency performance planning, helping agencies set goals, KPI trees, owners, and review schedules aligned to the Mayor's Action Plan. It maintains and improves the City's performance measures, KPI definitions, and performance plans, and keeps the City's public performance products current. And it tracks every follow-up to closure with evidence, routing issues that need an executive decision, delivery, data support, or service redesign to the team that can handle them.
+Day to day, the team runs CitiStat operations for the citywide portfolio of Stats: the sessions, the pre-memos, the follow-up memos, and the tracking that keeps follow-ups from slipping. It supports agency performance planning, helping agencies set goals, KPI trees, owners, and review schedules aligned to the Mayor's Action Plan. It maintains and improves the City's performance measures, KPI definitions, and performance plans, and keeps the City's performance products current. And it tracks every follow-up to closure with evidence, routing issues that need an executive decision, delivery, data support, or service redesign to the team that can handle them.
 
 ## How the work fits together
 
@@ -34,7 +34,7 @@ The team owns the method, not the agencies' operations. Agencies run their own s
 
 ## How the team partners across OPI
 
-Performance often sets the rest of the office in motion. It leans on [Data and Analytics](../data-and-analytics/index.md) for the reliable measures, dashboards, and data-quality notes behind every Stat. When a Stat surfaces a problem that needs a redesigned service or a new tool, it hands that work to the [Innovation Lab](../innovation-lab/index.md). When a problem spans several agencies, it routes the work to [Cross-Agency Delivery](../../../what-we-do/services/cross-agency-delivery/index.md). And it relies on AdminOps for scheduling, public summaries, and the annual reporting that keeps the Stat portfolio visible.
+Performance often sets the rest of the office in motion. It leans on [Data and Analytics](../data-and-analytics/index.md) for the reliable measures, dashboards, and data-quality notes behind every Stat. When a Stat surfaces a problem that needs a redesigned service or a new tool, it hands that work to the [Innovation Lab](../innovation-lab/index.md). When a problem spans several agencies, it routes the work to [Cross-Agency Delivery](../../../what-we-do/services/cross-agency-delivery/index.md). And it relies on AdminOps for scheduling, plain-language summaries, and the annual reporting that keeps the Stat portfolio visible.
 
 ## What success looks like
 

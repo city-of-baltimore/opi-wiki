@@ -12,7 +12,7 @@ from scripts.repo_tools.data import load_docs_yaml_file
 
 @dataclass(frozen=True)
 class OrgPerson:
-    """A named org-chart node, with an optional public role summary."""
+    """A named org-chart node, with an optional role summary."""
 
     name: str
     title: str
@@ -129,7 +129,7 @@ def load_org_structure(docs_dir: Path, relative_path: str) -> OrgStructure:
 
 
 def _display_name(person: OrgPerson) -> str:
-    """Return the public name shown in an org-chart card."""
+    """Return the name shown in an org-chart card."""
 
     if person.name.strip().lower() == "open":
         return "(Vacant)"

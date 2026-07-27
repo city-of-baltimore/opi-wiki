@@ -11,11 +11,11 @@ the AdminOps service that keeps the office aligned.
 
 ## Role overview
 
-Public summaries of Director's Office roles are available in
-[Team and Roles](../team-and-roles.md).
-Full position descriptions are not published on this site.
+Summaries of Director's Office roles are available in
+[Team and Roles](../team-and-roles.md). Full position descriptions are
+maintained in the City's SharePoint environment.
 
 ## Read alongside
 
 - [Org Structure](../../../how-we-work/organization/org-structure.md): the
-  public leadership chart, team leads, and operating structure.
+  leadership chart, team leads, and operating structure.

@@ -220,7 +220,7 @@ def _check_table_focus_after_instant_navigation(page: Any, base_url: str, scheme
 
 
 def _check_org_chart_state(page: Any, scheme: str, navigation: str) -> list[str]:
-    """Validate the visible semantic hierarchy and public leadership names."""
+    """Validate the visible semantic hierarchy and leadership names."""
 
     result = page.evaluate(
         """
@@ -264,7 +264,7 @@ def _check_org_chart_state(page: Any, scheme: str, navigation: str) -> list[str]
         issues.append(f"{label}: chart container had no visible dimensions.")
     missing_chart = [name for name in ORG_CHART_NAMES if name not in result["chartNames"]]
     if missing_chart:
-        issues.append(f"{label}: public leadership names were not visible: {missing_chart}.")
+        issues.append(f"{label}: leadership names were not visible: {missing_chart}.")
     expected_counts = {
         "mayor": 1,
         "city": 1,
@@ -302,7 +302,7 @@ def _check_org_chart_after_instant_navigation(page: Any, base_url: str, scheme: 
 
 
 def _check_search_workflow(page: Any, base_url: str, scheme: str) -> list[str]:
-    """Search for a stable public term and navigate to an accessible result."""
+    """Search for a stable site term and navigate to an accessible result."""
 
     response = page.goto(base_url, wait_until="networkidle")
     issues = _check_page_load(page, response, base_url, "Search home", scheme)

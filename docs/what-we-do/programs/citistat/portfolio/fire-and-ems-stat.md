@@ -13,7 +13,7 @@
 
 Fire and EMS is part of the public-safety extension of the [place-based model](../strategic-framework.md#the-place-based-model), after Housing and DOT. Fire and EMS Stat runs today as a Deputy Mayor-led agency Stat; as the model reaches life safety, sessions will increasingly concentrate on the places and populations that drive repeat risk and demand.
 
-## Public Purpose
+## Purpose
 
 Fire and EMS Stat focuses on life safety, emergency medical response, fire prevention, overdose response, community risk reduction, and operational readiness. This Stat is Deputy Mayor-led, with OPI analytics and performance support.
 

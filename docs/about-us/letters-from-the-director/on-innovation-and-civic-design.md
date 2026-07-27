@@ -4,7 +4,7 @@
 
 **Innovation Is Practice, Not Theater.**
 
-*A public letter on civic design, the Innovation Lab, and what practical innovation means in city government.*
+*A letter on civic design, the Innovation Lab, and what practical innovation means in city government.*
 
 Residents do not experience government as an organization chart. They experience it as a journey.
 
@@ -44,7 +44,7 @@ That loop is important because analysis without action does not change condition
 
 ## What practical innovation looks like
 
-Practical innovation can look like a new public-facing portal that makes a service easier to use. It can look like a field collection tool that helps staff document conditions block by block. It can look like clearer closure messages in 311. It can look like a permit dashboard that helps reviewers see what is stuck. It can look like a redesigned intake workflow that saves staff time and reduces resident frustration. It can look like an AI pilot that drafts clearer communication but keeps humans responsible for the final decision.
+Practical innovation can look like a new resident service portal that makes a service easier to use. It can look like a field collection tool that helps staff document conditions block by block. It can look like clearer closure messages in 311. It can look like a permit dashboard that helps reviewers see what is stuck. It can look like a redesigned intake workflow that saves staff time and reduces resident frustration. It can look like an AI pilot that drafts clearer communication but keeps humans responsible for the final decision.
 
 Sometimes the most innovative thing we can do is simplify. Remove a redundant step. Clarify a role. Make the status visible. Build a shared definition. Stop asking residents to understand our internal complexity. The goal is not to make government look futuristic. The goal is to make government work.
 

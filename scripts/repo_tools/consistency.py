@@ -8,6 +8,11 @@ from collections.abc import Sequence
 from dataclasses import dataclass
 from pathlib import Path
 
+from scripts.repo_tools.visibility_labels import (
+    check_visibility_labels,
+    find_visibility_label_issues,
+)
+
 REPO_ROOT = Path(__file__).resolve().parents[2]
 DOCS = REPO_ROOT / "docs"
 SERVICES_DIR = DOCS / "what-we-do" / "services"
@@ -121,7 +126,7 @@ RETIRED_PAGE_DECORATION_PATTERNS = (
 )
 
 # Common acronyms that are fine unexpanded. The glossary's acronyms are merged
-# in at runtime so the allowlist grows with the public terminology reference.
+# in at runtime so the allowlist grows with the site terminology reference.
 BASE_ALLOW = frozenset(
     """
     OPI MOPI AI IT HR QA KPI SOP SLA US OK ED CA DM CDO DCDO DCPO DCA SRO PMO ORF
@@ -380,9 +385,13 @@ def scan_consistency(
     *,
     repo_root: Path = REPO_ROOT,
 ) -> ConsistencyScan:
-    """Read published Markdown and collect all consistency findings."""
+    """Read site Markdown and collect all consistency findings."""
 
-    structural_issues: list[str] = []
+    structural_issues = find_visibility_label_issues(
+        repo_root,
+        docs_dir,
+        include_docs=False,
+    )
     acronyms: list[tuple[str, str]] = []
     allow = load_acronym_allowlist(docs_dir)
     services_dir = docs_dir / "what-we-do" / "services"
@@ -410,19 +419,30 @@ def scan_consistency(
         structural_issues.extend(check_glossary_taxonomy(path, text, repo_root=repo_root))
         structural_issues.extend(check_citistat_narrative(path, text, repo_root=repo_root))
         structural_issues.extend(check_retired_page_decoration(path, text, repo_root=repo_root))
+        structural_issues.extend(check_visibility_labels(path, text, repo_root=repo_root))
         acronyms.extend(acronym_report(path, text, allow, repo_root=repo_root))
 
-    for path in sorted(docs_dir.rglob("*.cards.yml")):
-        if not _is_citistat_narrative_path(path):
-            continue
+    yaml_paths = sorted(
+        path
+        for path in docs_dir.rglob("*")
+        if path.is_file() and path.suffix.casefold() in {".yaml", ".yml"}
+    )
+    for path in yaml_paths:
         try:
             text = path.read_text(encoding="utf-8")
         except OSError as error:
+            source_label = (
+                "card source"
+                if path.name.endswith(".cards.yml") and _is_citistat_narrative_path(path)
+                else "YAML source"
+            )
             structural_issues.append(
-                f"{_relative_path(path, repo_root)}: unable to read card source: {error}"
+                f"{_relative_path(path, repo_root)}: unable to read {source_label}: {error}"
             )
             continue
-        structural_issues.extend(check_citistat_narrative(path, text, repo_root=repo_root))
+        structural_issues.extend(check_visibility_labels(path, text, repo_root=repo_root))
+        if path.name.endswith(".cards.yml") and _is_citistat_narrative_path(path):
+            structural_issues.extend(check_citistat_narrative(path, text, repo_root=repo_root))
 
     return ConsistencyScan(tuple(structural_issues), tuple(acronyms))
 

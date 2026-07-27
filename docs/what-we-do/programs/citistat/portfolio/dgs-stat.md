@@ -11,7 +11,7 @@
 | OPI lead                        | OPI-operated / Performance Team                                                                                                                      |
 | Core Data Product              | Facilities and fleet readiness dashboard                                                                                                             |
 
-## Public Purpose
+## Purpose
 
 DGS Stat focuses on the buildings, fleet, facilities, energy, and internal services that City agencies rely on to deliver public services. Residents rarely see DGS directly, but they feel it when facilities, vehicles, and equipment are not ready.
 

@@ -28,7 +28,7 @@ data came from, how it changed, and whether it is appropriate for a given use.
 Data is classified and handled according to governance requirements. Published
 datasets and metrics must have a responsible owner, clear definitions,
 documented quality, and appropriate access controls. Personal and sensitive
-data is limited and protected. The public principles are in the
+data is limited and protected. The governing principles are in the
 [Data Governance Framework](../../about-us/our-teams/data-and-analytics/data-governance-framework.md).
 
 ## Read alongside

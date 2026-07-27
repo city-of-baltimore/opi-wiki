@@ -11,7 +11,7 @@
 | OPI lead                        | OPI-operated / Performance Team                                                                                                            |
 | Core Data Product              | Workforce and hiring pipeline dashboard                                                                                                    |
 
-## Public Purpose
+## Purpose
 
 HR and Labor Stat focuses on the people systems that allow City government to hire, retain, support, and manage its workforce. Strong HR and labor operations affect every agency’s ability to deliver services.
 

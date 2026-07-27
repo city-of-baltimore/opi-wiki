@@ -11,7 +11,7 @@
 | OPI lead                        | OPI-operated / Data Team-led with agency partners                                                                    |
 | Core Data Product              | Permitting performance dashboard                                                                                     |
 
-## Public Purpose
+## Purpose
 
 Permit Stat focuses on the permitting system that residents, homeowners, developers, small businesses, and contractors rely on to invest in Baltimore. It examines whether the permitting process is timely, transparent, predictable, and easy to navigate.
 
@@ -30,7 +30,7 @@ Staff use Permit Stat to review application backlogs, review timelines, process 
 
 - Permit cycle time, backlog, and review-step visibility
 - SOPs, process maps, and applicant communication
-- Internal and public permitting dashboards
+- Operational and resident-facing permitting dashboards
 
 ## Standard Artifacts and Data Products
 

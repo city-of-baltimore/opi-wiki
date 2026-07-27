@@ -146,12 +146,12 @@ def test_accessibility_checker_requires_built_semantic_org_chart(tmp_path: Path)
 
     assert issues == [
         "how-we-work/organization/org-structure/index.html: expected one semantic "
-        "public leadership chart, found 0"
+        "leadership chart, found 0"
     ]
 
 
 def test_accessibility_checker_accepts_complete_built_org_chart(tmp_path: Path) -> None:
-    """A captioned hierarchy with all public leadership levels should pass."""
+    """A captioned hierarchy with all leadership levels should pass."""
 
     site_dir = tmp_path / "site"
     site_dir.mkdir()
@@ -173,7 +173,7 @@ def test_accessibility_checker_accepts_complete_built_org_chart(tmp_path: Path) 
     _write_built_org_page(
         site_dir,
         '<h1>Org Structure</h1><figure class="opi-org-chart">'
-        '<figcaption class="opi-org-chart__caption">Public reporting hierarchy</figcaption>'
+        '<figcaption class="opi-org-chart__caption">OPI reporting hierarchy</figcaption>'
         f"{node_markup}</figure>",
     )
 

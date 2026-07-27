@@ -10,7 +10,7 @@ A digital product should not begin with a screen. It begins with a problem: who 
 
 Starting with the service protects OPI from building tools that just digitize a broken process. If a handoff is unclear, the product will not fix it. If ownership is unresolved, the product will expose it. If the underlying data is weak, the product will amplify the weakness. So the first job is always to understand the service end to end, before anyone designs a screen.
 
-From there the work moves through a handful of phases: frame the problem, map the service, design the product, build it, test it, and launch and sustain it. OPI owns this method through the Innovation Lab, in partnership with Data and Analytics, BCIT, agencies, and AdminOps. It applies to operational tools, public portals, field data-collection apps, dashboards with workflow, and anything else meant to improve service delivery.
+From there the work moves through a handful of phases: frame the problem, map the service, design the product, build it, test it, and launch and sustain it. OPI owns this method through the Innovation Lab, in partnership with Data and Analytics, BCIT, agencies, and AdminOps. It applies to operational tools, resident service portals, field data-collection apps, dashboards with workflow, and anything else meant to improve service delivery.
 
 ## The work, phase by phase
 
@@ -40,11 +40,11 @@ Launch is not success; adoption and sustainment are. Every product ships with a 
 
 ## A note on tools
 
-Tools serve the method, not the other way around. OPI maps services on a shared whiteboard (Miro), designs flows and interfaces in Figma against a common design system, builds on an approved engineering stack with AI-assisted coding where it helps, and produces public documents in a separate publishing track (Adobe InDesign). The tools can change; the sequence, from service to design to working software, does not.
+Tools serve the method, not the other way around. OPI maps services on a shared whiteboard (Miro), designs flows and interfaces in Figma against a common design system, builds to the City's engineering standards with AI-assisted coding where it helps, and produces reports and briefs in a separate publishing track (Adobe InDesign). The tools can change; the sequence, from service to design to working software, does not.
 
 ## Publications are a separate track
 
-Public reports, playbooks, briefs, and polished PDFs are not part of the product pipeline, and they should not be built as if they were. A digital product moves from service design to interface design to engineering. A policy report or public publication moves from writing and review to layout and PDF production. The two tracks share narrative, screenshots, data definitions, and lessons learned, but they are different work: one designs products, the other publishes documents.
+Reports, playbooks, briefs, and polished PDFs are not part of the product pipeline, and they should not be built as if they were. A digital product moves from service design to interface design to engineering. A policy report or other publication moves from writing and review to layout and PDF production. The two tracks share narrative, screenshots, data definitions, and lessons learned, but they are different work: one designs products, the other publishes documents.
 
 ## Who owns what
 
@@ -55,7 +55,7 @@ Public reports, playbooks, briefs, and polished PDFs are not part of the product
 | Agency Sponsor   | Owns workflow adoption, staff participation, operational sustainment, and business decisions. |
 | Data and Analytics | Owns shared datasets, methodology, data quality, APIs, analytics, and AI and data-readiness review. |
 | BCIT             | Owns enterprise infrastructure, security, identity, the production environment, architecture partnership, and technology governance. |
-| AdminOps         | Owns public narrative, Council coordination, publication readiness, and portfolio visibility. |
+| AdminOps         | Owns resident and Council communications, publication readiness, and portfolio visibility. |
 
 ## How we know a product is working
 

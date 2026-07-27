@@ -13,7 +13,7 @@
 
 Public safety is where the [place-based model](../strategic-framework.md#the-place-based-model) extends next, after Housing and DOT. Police Stat runs today as a Deputy Mayor-led agency Stat; as the model reaches public safety, sessions will increasingly focus on the specific places where a priority safety outcome is concentrated.
 
-## Public Purpose
+## Purpose
 
 Police Stat focuses on public safety outcomes, crime trends, operational coordination, community safety priorities, and the systems that support effective policing. This Stat is Deputy Mayor-led, with OPI analytics and performance support.
 

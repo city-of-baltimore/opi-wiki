@@ -69,7 +69,7 @@ table. Default to paragraphs. Use structure only when structure genuinely helps.
 
 **Jargon and abstraction:**
 
-> Before: AdminOps is OPI's internal operations and communications function — the
+> Before: AdminOps is OPI's office operations and communications function — the
 > operating backbone that keeps the office coordinated, documented, resourced,
 > and clearly explained.
 
@@ -88,5 +88,5 @@ table. Default to paragraphs. Use structure only when structure genuinely helps.
 > right team. A shared portfolio view keeps that work visible, so leaders can
 > see what is at risk and where capacity is tight.
 
-**Keep the table (this one earns it):** a public KPI register with measure,
+**Keep the table (this one earns it):** a published KPI register with measure,
 owner, source, and refresh cadence stays a table. Readers compare those fields.

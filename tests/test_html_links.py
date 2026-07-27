@@ -91,13 +91,13 @@ def test_single_quoted_broken_link_is_reported(tmp_path: Path) -> None:
 
 
 def test_link_escaping_docs_is_rejected_even_when_target_exists(tmp_path: Path) -> None:
-    """Raw links may not publish or validate files outside docs/."""
+    """Raw links may not validate against files outside docs/."""
 
     docs_dir = tmp_path / "docs"
     docs_dir.mkdir()
-    (tmp_path / "private.md").write_text("private\n", encoding="utf-8")
+    (tmp_path / "outside.md").write_text("outside\n", encoding="utf-8")
     (docs_dir / "page.md").write_text(
-        '<a href="../private.md">private</a>\n',
+        '<a href="../outside.md">outside</a>\n',
         encoding="utf-8",
     )
 
@@ -108,7 +108,7 @@ def test_link_escaping_docs_is_rejected_even_when_target_exists(tmp_path: Path) 
 
 
 def test_root_relative_link_resolves_from_docs_root(tmp_path: Path) -> None:
-    """A leading slash denotes the publish root, not the host filesystem root."""
+    """A leading slash denotes the docs root, not the host filesystem root."""
 
     docs_dir = tmp_path / "docs"
     section_dir = docs_dir / "section"

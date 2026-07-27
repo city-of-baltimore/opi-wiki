@@ -12,12 +12,12 @@ import yaml
 ALLOWED_DUPLICATE_DESTINATIONS = {
     "resources/index.md",
     "resources/reference/index.md",
-    # Position descriptions were retired; role summaries now live on the public
+    # Position descriptions were retired; role summaries now live on the
     # Team and Roles page, where the legacy PD URLs converge.
     "about-us/our-teams/team-and-roles.md",
     "what-we-do/services/cross-agency-delivery/service-definition.md",
     "what-we-do/services/cross-agency-delivery/index.md",
-    # Added with the How We Work regroup and public/private boundary cleanup:
+    # Added with the How We Work regroup and source-placement cleanup:
     "how-we-work/organization/org-structure.md",
     "how-we-work/index.md",
     # The two operating-model omnibus pages folded into the canonical loop page:

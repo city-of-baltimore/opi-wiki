@@ -1,9 +1,9 @@
-"""Load and query the public OPI organization directory.
+"""Load and query the OPI organization directory.
 
-The source file deliberately contains only public staff names, working titles,
+The source file deliberately contains only staff names, working titles,
 team assignments, reporting relationships, and short role summaries. Sensitive
 personnel, payroll, contact, and classification fields are forbidden at the
-loader boundary so they cannot silently return to the public build.
+loader boundary so they cannot silently enter the generated site.
 """
 
 from __future__ import annotations
@@ -13,7 +13,7 @@ from typing import Any
 
 from scripts.repo_tools.data import load_docs_yaml_file
 
-_FORBIDDEN_PUBLIC_FIELDS = frozenset(
+_FORBIDDEN_PERSONNEL_FIELDS = frozenset(
     {
         "classification",
         "compensation",
@@ -33,14 +33,14 @@ _FORBIDDEN_PUBLIC_FIELDS = frozenset(
 
 
 def _forbidden_field_paths(value: Any, path: str = "root") -> list[str]:
-    """Return paths to forbidden publication fields in a nested data value."""
+    """Return paths to excluded personnel fields in a nested data value."""
 
     paths: list[str] = []
     if isinstance(value, dict):
         for key, nested_value in value.items():
             key_text = str(key)
             nested_path = f"{path}.{key_text}"
-            if key_text.casefold() in _FORBIDDEN_PUBLIC_FIELDS:
+            if key_text.casefold() in _FORBIDDEN_PERSONNEL_FIELDS:
                 paths.append(nested_path)
             paths.extend(_forbidden_field_paths(nested_value, nested_path))
     elif isinstance(value, list):
@@ -50,7 +50,7 @@ def _forbidden_field_paths(value: Any, path: str = "root") -> list[str]:
 
 
 def load_people(docs_dir: Path, relative_path: str) -> dict[str, Any]:
-    """Load the public people mapping and reject private legacy fields."""
+    """Load the organization mapping and reject excluded personnel fields."""
 
     data = load_docs_yaml_file(docs_dir, relative_path, label="People data")
     if not isinstance(data, dict):
@@ -62,7 +62,7 @@ def load_people(docs_dir: Path, relative_path: str) -> dict[str, Any]:
     if forbidden_paths:
         joined_paths = ", ".join(forbidden_paths)
         raise ValueError(
-            f"{relative_path} contains fields forbidden from public people data: {joined_paths}"
+            f"{relative_path} contains fields excluded from organization data: {joined_paths}"
         )
     return data
 
