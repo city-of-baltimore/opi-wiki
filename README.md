@@ -172,12 +172,9 @@ plugins and theme behavior together.
 - Keep navigation local to the content in `docs/**/.pages`.
 - Keep internal operating guidance, personnel records, and contact data in the
   appropriate City system rather than under `docs/`.
-- Open each content page with one `{{ page_header(...) }}` call directly under the `# H1`, not a hand-built stack of badge, blockquote, bold kicker, restated bold title, and italic tagline. The macro renders the status badge (from `.metadata.yml`) plus an optional `category`, `summary`, and `tagline`. Keep the title as a single `# H1` — never restate it as a bold paragraph. Section `index.md` landing pages stay on a plain `>` blockquote summary and carry no badge.
+- Open each content page with one `{{ page_header(...) }}` call directly under the `# H1`, not a hand-built stack of blockquote, bold kicker, restated bold title, and italic tagline. The macro renders an optional `category`, `summary`, and `tagline`. Keep the title as a single `# H1` — never restate it as a bold paragraph. Section `index.md` landing pages stay on a plain `>` blockquote summary.
 - Keep landing-page card content in neighboring `*.cards.yml` files and render it through the shared `card_grid_from(...)` macro.
 - Keep repeated structured page data in neighboring `*.data.yml` files when one source needs to drive multiple rendered sections.
-- Page badges are opt-in: set `display_badge` (`draft`, `template`, or
-  `reference`) in the nearest `.metadata.yml` only when a page needs a pill;
-  `page_header()` renders it. Never inline raw HTML pill spans.
 - Keep shared brand CSS split by responsibility under `docs/assets/stylesheets/` so tokens, Material chrome, reusable components, and page-specific presentation do not drift together.
 - Run `task prepush` before merging structural or config changes.
 - Treat `site/` as generated output, not source.
@@ -186,8 +183,8 @@ plugins and theme behavior together.
 
 Use the smallest shared pattern that matches the page need:
 
-- `{{ page_header(...) }}` renders the canonical page intro (optional opt-in badge + optional `category`, `summary`, `tagline`) once, from the page and its `.metadata.yml`. It is the only supported way to render the header chrome.
-- `.metadata.yml` carries inherited page metadata such as owner, review cadence, change log, and optional `display_badge` state.
+- `{{ page_header(...) }}` renders the canonical page intro (optional `category`, `summary`, and `tagline`) once from explicit page arguments. It is the only supported way to render the header chrome.
+- `.metadata.yml` carries inherited page metadata: owner, review cadence, and change log.
 - `*.cards.yml` carries repeated landing-page card content and should render only through `card_grid_from(...)`.
 - `*.data.yml` carries structured page-specific source data when one file needs to drive multiple rendered sections, tables, charts, or lists.
 
@@ -220,7 +217,7 @@ opi-foundations/
 │       ├── stylesheets/tokens.css          # shared design tokens + Material bridges
 │       ├── stylesheets/base.css            # typography and content primitives
 │       ├── stylesheets/material-chrome.css # header, nav, tabs, footer
-│       ├── stylesheets/components.css      # cards, pills, reusable shared UI
+│       ├── stylesheets/components.css      # cards, page headers, reusable shared UI
 │       ├── stylesheets/org-chart.css       # responsive public leadership chart
 │       ├── stylesheets/breadcrumbs.css     # breadcrumb presentation
 │       ├── stylesheets/home.css            # homepage-only presentation

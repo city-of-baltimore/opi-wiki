@@ -109,6 +109,17 @@ CITISTAT_DRIFT_PATTERNS = (
     ),
 )
 
+RETIRED_PAGE_DECORATION_PATTERNS = (
+    (
+        re.compile(r"\{\{\s*badge\s*\(", re.IGNORECASE),
+        "Inline badge macros are retired; use plain page content.",
+    ),
+    (
+        re.compile(r"""class\s*=\s*["'][^"']*\bopi-pill\b[^"']*["']""", re.IGNORECASE),
+        "Raw pill markup is retired; use plain page content.",
+    ),
+)
+
 # Common acronyms that are fine unexpanded. The glossary's acronyms are merged
 # in at runtime so the allowlist grows with the public terminology reference.
 BASE_ALLOW = frozenset(
@@ -294,6 +305,22 @@ def check_citistat_narrative(
     return issues
 
 
+def check_retired_page_decoration(
+    path: Path,
+    text: str,
+    *,
+    repo_root: Path = REPO_ROOT,
+) -> list[str]:
+    """Reject retired inline page-decoration markup without policing prose."""
+
+    issues: list[str] = []
+    for pattern, message in RETIRED_PAGE_DECORATION_PATTERNS:
+        for match in pattern.finditer(text):
+            line_number = text.count("\n", 0, match.start()) + 1
+            issues.append(f"{_relative_path(path, repo_root)}:{line_number}: {message}")
+    return issues
+
+
 def _is_citistat_narrative_path(path: Path) -> bool:
     """Return whether a source participates in the CitiStat ownership narrative."""
 
@@ -382,6 +409,7 @@ def scan_consistency(
         structural_issues.extend(check_toc_sections(path, text, repo_root=repo_root))
         structural_issues.extend(check_glossary_taxonomy(path, text, repo_root=repo_root))
         structural_issues.extend(check_citistat_narrative(path, text, repo_root=repo_root))
+        structural_issues.extend(check_retired_page_decoration(path, text, repo_root=repo_root))
         acronyms.extend(acronym_report(path, text, allow, repo_root=repo_root))
 
     for path in sorted(docs_dir.rglob("*.cards.yml")):

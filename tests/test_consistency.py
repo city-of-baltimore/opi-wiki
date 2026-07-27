@@ -17,6 +17,7 @@ from scripts.repo_tools.consistency import (
     check_duplicate_blockquotes,
     check_empty_headings,
     check_glossary_taxonomy,
+    check_retired_page_decoration,
     check_service_sections,
     check_toc_sections,
     format_consistency_report,
@@ -223,6 +224,28 @@ def test_citistat_narrative_accepts_canonical_language_and_other_pages() -> None
 
     assert check_citistat_narrative(citistat_page, canonical) == []
     assert check_citistat_narrative(DOCS / "ordinary.md", "Agency briefs.") == []
+
+
+def test_retired_page_decoration_rejects_macro_and_raw_markup() -> None:
+    """Both legacy rendering paths must fail with line-level evidence."""
+
+    text = '# Page\n\n{{ badge("reference") }}\n\n<span class="opi-pill neutral">Reference</span>\n'
+
+    issues = check_retired_page_decoration(PAGE, text)
+
+    assert len(issues) == 2
+    assert issues[0].startswith("docs/example/page.md:3:")
+    assert "Inline badge macros are retired" in issues[0]
+    assert issues[1].startswith("docs/example/page.md:5:")
+    assert "Raw pill markup is retired" in issues[1]
+
+
+def test_retired_page_decoration_ignores_domain_language() -> None:
+    """Physical credentials and operational wording remain ordinary prose."""
+
+    text = "Activate your building badge and review the service-request status."
+
+    assert check_retired_page_decoration(PAGE, text) == []
 
 
 def test_allowlist_combines_curated_and_glossary_terms(tmp_path: Path) -> None:
