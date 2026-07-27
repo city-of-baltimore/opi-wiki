@@ -18,7 +18,9 @@ Jump to a letter: [0-9](#0-9) · [A](#a) · [B](#b) · [C](#c) · [D](#d) · [E]
 
 ### A
 
-**Accela.** The platform that powers Baltimore’s permitting workflows. The FY26 permit reform priority is anchored on improving Accela’s configuration and the processes it supports.
+**Accela.** The platform that powers Baltimore’s permitting workflows. Improving
+its configuration and the processes it supports can make permit work more
+consistent and easier to manage.
 
 **AdminOps.** OPI’s administration and operations service. Run through the
 Director’s Office, it coordinates intake, project management, communications,
@@ -56,7 +58,11 @@ between meetings.
 
 ### D
 
-**Data and Analytics.** OPI’s service that builds and governs the city’s data platform, produces decision-grade analytics products, and trains agencies. Reports to the Executive Director through the Deputy Chief Data Officer.
+**Data and Analytics.** OPI’s team for data infrastructure, governance,
+decision-grade analytics products, and agency support. The team delivers the
+[Citywide Data and Analytics](../../what-we-do/services/citywide-data-and-analytics.md)
+service and reports to the Executive Director through the Deputy Chief Data
+Officer.
 
 **Data-Driven Officer.** The agency executive designated by each principal agency to manage the agency’s internal CitiStat process. Reports directly to the agency head, coordinates agency data submissions, runs the agency’s internal Stat, and partners with the OPI analyst on each pre-memo and follow-up. Some agencies use the public-facing alias *Agency Performance and Data Lead*.
 
@@ -64,7 +70,7 @@ between meetings.
 
 **Decision-grade.** A standard for analytics work: data and analysis credible enough to anchor a real decision. Sourced, current, defined, and tested.
 
-**Deputy Chief Data Officer.** OPI’s senior leader for data infrastructure, analytics, open data, and applied analytics products. Reports to the Executive Director. Directs the Data Platform program and the citywide analytics function and partners with the Innovation Lab on shared product infrastructure.
+**Deputy Chief Data Officer.** OPI’s senior leader for data infrastructure, analytics, open data, and applied analytics products. Reports to the Executive Director. Directs the Baltimore City Data Platform product and the citywide analytics function and partners with the Innovation Lab on shared product infrastructure.
 
 **Deputy Chief Performance Officer.** OPI’s senior leader for performance strategy and CitiStat, and Deputy Director of the CitiStat Program. Reports to the Executive Director. Oversees the CitiStat team, runs the citywide performance system, and partners with agencies on performance plans and BBMR on metric alignment.
 
@@ -75,7 +81,8 @@ Workgroup/Project, Stat-Agenda Item, Stat-Report-Out, To-Do, Written Update
 
 **Delivery review.** A standing cross-agency forum that meets on a fixed cadence to drive a single multi-agency outcome, such as vacancies, permitting, or workforce. Convened under Cross-Agency Delivery. Has a named Authorizer, a Senior Responsible Owner, the agencies at the table, and a closure plan.
 
-**Director’s Office.** OPI team that hosts AdminOps, the PMO, communications, knowledge management, inspections, and officewide coordination. Led by the Chief of Staff.
+**Director’s Office.** OPI team that hosts AdminOps, the PMO, communications,
+knowledge management, and officewide coordination. Led by the Chief of Staff.
 
 ### E
 
@@ -97,7 +104,16 @@ Workgroup/Project, Stat-Agenda Item, Stat-Report-Out, To-Do, Written Update
 
 ### I
 
-**Innovation Lab.** OPI’s craft team: a portfolio of work and the dedicated team that runs it: civic designers, applied data scientists, a full-stack engineer, and an innovation program manager. Owns OPI’s methods (the Public Innovation Toolkit, service design, prototyping, AI pilots, and building and handing off minimum viable products). The Lab’s question is *how do we solve this?* Lab engagements can serve one agency or several; what defines the Lab is the craft, not the agency count. When work crosses agency lines and requires coordination authority, the Lab partners with Cross-Agency Delivery, which owns that coordination. Led by {{ role_holder("Innovation Program Manager") }}, Innovation Program Manager.
+**Innovation Lab.** OPI’s multidisciplinary design and product team. It brings
+civic design, applied data science, engineering, and operations disciplines to
+service research, prototyping, responsible-AI pilots, digital products, and
+sustainment. The Lab uses and adapts the Public Innovation Toolkit; Bloomberg
+Philanthropies and the Johns Hopkins Bloomberg Center for Government Excellence
+authored it. Lab engagements can serve one agency or several; when work requires
+cross-agency coordination authority, the Lab partners with Cross-Agency
+Delivery. Led by {{ role_holder("Innovation Program Manager") }}, Innovation
+Program Manager. The current roster is maintained on
+[Team and Roles](../../about-us/our-teams/team-and-roles.md).
 
 **Inspection.** A direct observation used to validate what the data describes against what is happening on the ground: a ride-along, site visit, counter visit, or field walk. Planned during the frame review, conducted by or with the CitiStat Inspector, and brought back into the Stat as evidence alongside the data.
 
@@ -110,7 +126,8 @@ Owned by AdminOps in the Director’s Office.
 
 ### M
 
-**Mayor’s Action Plan.** The Mayor’s public commitments. OPI’s strategic priorities are anchored to the Action Plan and the City Administrator’s priorities.
+**Mayor’s Action Plan.** The Mayor’s commitments and the shared frame for
+connecting agency work to citywide outcomes.
 
 ### N
 
@@ -130,7 +147,9 @@ work together to move from a problem to a sustained improvement. See
 
 ### P
 
-**Performance.** OPI’s service that operates the city’s performance management routine. Stewards the CitiStat method, the analyst bench, and the agency relationships.
+**Performance.** OPI’s team for the city’s performance management routine. The
+team delivers [Citywide Performance Management](../../what-we-do/services/citywide-performance-management.md)
+and stewards CitiStat operations, the analyst bench, and agency relationships.
 
 **PMO.** OPI’s Project Management Office. Sits in the Director’s Office and runs the project gate process across the OPI portfolio.
 
@@ -172,7 +191,8 @@ work together to move from a problem to a sustained improvement. See
 
 **Working purpose of Stat.** The one-to-two-sentence statement that names what a particular Stat exists to do. For example, *“To ensure timely and effective service delivery related to trash, littering, illegal dumping, and overall cleanliness in the city.”* Set during the new-Stat alignment, displayed on the deck, and revisited at frame reviews.
 
-**Workday.** The city’s enterprise system for HR, finance, and AdminOps. The FY26 “maximize Workday” priority focuses on reporting, HR processes, capital budget management, grants, and internal workflows.
+**Workday.** The city’s enterprise system for HR, finance, reporting, grants,
+capital-budget management, and related administrative workflows.
 
 ## Acronyms and status terms
 
@@ -188,7 +208,7 @@ A quick reference for acronyms that recur across the wiki and are easy to read p
 | **MOHS** | Mayor's Office of Homeless Services |
 | **PII** | Personally Identifiable Information |
 | **RAG** | Red / Amber / Green status rating |
-| **TPM** | Technical Program Manager (a Data and Analytics role) |
+| **TPM** | Technical Program Manager (a Director's Office role) |
 
 Standard IT and HR acronyms, when needed in public content, carry their common
 meanings.

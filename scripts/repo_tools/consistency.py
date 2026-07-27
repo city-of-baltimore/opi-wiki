@@ -37,6 +37,48 @@ TOC_REQUIRED = (
     "### 8. Operational handoffs across OPI services",
 )
 
+GLOSSARY_DRIFT_PATTERNS = (
+    (
+        re.compile(r"\*\*Data and Analytics\.\*\*\s+OPI[’']s service\b", re.IGNORECASE),
+        "Data and Analytics is a team; name Citywide Data and Analytics as the service.",
+    ),
+    (
+        re.compile(r"\*\*Performance\.\*\*\s+OPI[’']s service\b", re.IGNORECASE),
+        "Performance is a team; name Citywide Performance Management as the service.",
+    ),
+    (
+        re.compile(r"\bData Platform program\b", re.IGNORECASE),
+        "The Baltimore City Data Platform is a product, not a program.",
+    ),
+    (
+        re.compile(r"\*\*Director[’']s Office\.\*\*[^\n]*\binspections\b", re.IGNORECASE),
+        "CitiStat inspection belongs to Performance, not the Director's Office.",
+    ),
+    (
+        re.compile(r"\*\*Innovation Lab\.\*\*[^\n]*\bOwns OPI[’']s methods\b", re.IGNORECASE),
+        "Do not imply that OPI owns the externally authored Public Innovation Toolkit.",
+    ),
+    (
+        re.compile(r"\bOPI[’']s strategic priorities\b", re.IGNORECASE),
+        "Strategic Priorities guidance is retired; describe the durable concept instead.",
+    ),
+    (
+        re.compile(r"\bFY26 permit reform priority\b", re.IGNORECASE),
+        "Remove expired fiscal-year priority language from the durable glossary.",
+    ),
+    (
+        re.compile(r"\bFY26\b[^\n]*\bWorkday\b[^\n]*\bpriority\b", re.IGNORECASE),
+        "Remove expired fiscal-year priority language from the durable glossary.",
+    ),
+    (
+        re.compile(
+            r"Technical Program Manager \(a Data and Analytics role\)",
+            re.IGNORECASE,
+        ),
+        "The Technical Program Manager is a Director's Office role.",
+    ),
+)
+
 # Common acronyms that are fine unexpanded. The glossary's acronyms are merged
 # in at runtime so the allowlist grows with the public terminology reference.
 BASE_ALLOW = frozenset(
@@ -184,6 +226,25 @@ def check_toc_sections(
     ]
 
 
+def check_glossary_taxonomy(
+    path: Path,
+    text: str,
+    *,
+    repo_root: Path = REPO_ROOT,
+) -> list[str]:
+    """Reject glossary wording that reintroduces verified taxonomy drift."""
+
+    if path.as_posix().split("/")[-3:] != ["resources", "reference", "glossary.md"]:
+        return []
+
+    issues: list[str] = []
+    for pattern, message in GLOSSARY_DRIFT_PATTERNS:
+        for match in pattern.finditer(text):
+            line_number = text.count("\n", 0, match.start()) + 1
+            issues.append(f"{_relative_path(path, repo_root)}:{line_number}: {message}")
+    return issues
+
+
 def load_acronym_allowlist(docs_dir: Path = DOCS) -> set[str]:
     """Load the curated and glossary-derived acronym allowlist."""
 
@@ -252,6 +313,7 @@ def scan_consistency(
             )
         )
         structural_issues.extend(check_toc_sections(path, text, repo_root=repo_root))
+        structural_issues.extend(check_glossary_taxonomy(path, text, repo_root=repo_root))
         acronyms.extend(acronym_report(path, text, allow, repo_root=repo_root))
 
     return ConsistencyScan(tuple(structural_issues), tuple(acronyms))
