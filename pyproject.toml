@@ -46,6 +46,10 @@ dev = [
     # the local guard — see the "Two checkers" note in that module's docstring
     # for the gaps that were re-measured against 0.4.3.
     "baltimore-patapsco==0.4.5",
+    # The browser accessibility gate must not acquire new rules silently.
+    # Review axe release notes and rerun the canonical-route matrix before
+    # changing this exact pin.
+    "axe-playwright-python==0.1.7",
 ]
 
 [tool.pytest.ini_options]
@@ -98,4 +102,10 @@ exclude = ["tests/"]
 # sees the package form; ignore the bare-module fallback.
 [[tool.mypy.overrides]]
 module = "check_cli"
+ignore_missing_imports = true
+
+# The package is runtime-tested through the full browser matrix but does not
+# publish type information for mypy.
+[[tool.mypy.overrides]]
+module = "axe_playwright_python.*"
 ignore_missing_imports = true

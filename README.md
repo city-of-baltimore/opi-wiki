@@ -44,7 +44,7 @@ task prepush
 # Fast inner loop, and exactly what pull-request CI runs.
 task ci
 
-# the pre-deploy pass: everything above plus the Playwright browser smoke checks
+# the pre-deploy pass: browser interaction + full-route accessibility assurance
 task validate
 
 # `task --list` shows the rest (fmt, lint, typecheck, test, security:snyk)
@@ -65,8 +65,7 @@ preview never collides with a sibling app's stack. `mkdocs.yml` pins
 Every tier delegates to `scripts/verify.py`, a structured runner that emits step
 timings and can optionally write a JSON report for CI or debugging.
 
-To use the optional browser smoke checks locally, install the Chromium browser
-once per machine:
+To use the optional browser checks locally, install Chromium once per machine:
 
 ```bash
 uv run playwright install chromium
@@ -93,10 +92,17 @@ This is section 4 of the civic-app consistency standard, applied here:
 | --- | --- | --- | --- |
 | `ci` | `task ci` | pull-request CI, fast local loop | workflow policy, formatting, lint, mypy, bandit, and the validators that read `docs/` source |
 | `prepush` | `task prepush` | the pre-push hook and the Pages deploy gate | everything in `ci`, plus pytest, `mkdocs build --strict`, publication-boundary and link checks, and accessibility checks |
-| `validate` | `task validate` | before a deploy, locally | everything in `prepush`, plus the Playwright browser smoke checks |
+| `validate` | `task validate` | before a deploy, locally | everything in `prepush`, plus browser interaction and full-route WCAG assurance |
 
 Each tier is a strict superset of the one above it, so a check that moves down
 a tier is never a check that was dropped.
+
+The validate tier runs axe against every canonical route at desktop and 320px
+reflow widths in both color schemes. It also checks the open mobile navigation
+and search states, skip-link behavior, focus treatments, and instant
+navigation. The reader-facing promise and the manual checks automation cannot
+replace are documented in
+[`docs/resources/accessibility.md`](docs/resources/accessibility.md).
 
 **Hosted CI runs `task ci` verbatim — no test suite, no site build, no
 browser.** That is deliberate, and it has a cost worth stating plainly: a broken

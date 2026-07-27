@@ -11,33 +11,33 @@
 | OPI lead                        | Director’s Office-led with Performance method support                                                                      |
 | Core Data Product              | Workplace safety performance dashboard                                                                                     |
 
-### Public Purpose
+## Public Purpose
 
 Workplace Safety Stat focuses on the systems that keep City employees safe and ready to serve the public. A safer workforce reduces service disruption, protects staff, and strengthens operational reliability across agencies.
 
-### Staff Purpose
+## Staff Purpose
 
 Staff use Workplace Safety Stat to monitor training, safety committees, vehicle accidents, workers’ compensation trends, agency safety plans, and compliance with safety expectations.
 
-### Core Management Questions
+## Core Management Questions
 
 - Are agencies meeting basic safety expectations and training requirements?
 - Where are injuries, vehicle accidents, or readiness gaps concentrated?
 - Which agencies need support to implement safety committees, plans, or practices?
 - What barriers require DHR, Risk Management, DGS, or executive action?
 
-### Starter Focus Areas
+## Starter Focus Areas
 
 - Safety training completion and committee participation
 - Vehicle accidents and workers’ compensation trends
 - Winter readiness, PPE, and agency safety plan implementation
 
-### Standard Artifacts and Data Products
+## Standard Artifacts and Data Products
 
 - Pre-meeting memo, Stat deck, follow-up memo, and follow-up tracker.
 - Core data product: Workplace safety performance dashboard.
 
-### Tiger Team / Delivery Triggers
+## Tiger Team / Delivery Triggers
 
 - Safety compliance issue affecting multiple agencies
 - Repeated injury or accident pattern requiring coordinated intervention

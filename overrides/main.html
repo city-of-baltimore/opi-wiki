@@ -33,6 +33,23 @@
   <script>
     document$.subscribe(() => {
       document
+        .querySelectorAll(".md-nav[aria-labelledby]")
+        .forEach((navigation) => {
+          const path = []
+          let region = navigation
+          while (region?.matches(".md-nav[aria-labelledby]")) {
+            const title = region
+              .querySelector(":scope > .md-nav__title")
+              ?.textContent.trim()
+            if (title) path.unshift(title)
+            region = region.parentElement?.closest(".md-nav")
+          }
+          if (path.length) {
+            navigation.setAttribute("aria-label", `${path.join(" / ")} navigation`)
+            navigation.removeAttribute("aria-labelledby")
+          }
+        })
+      document
         .querySelectorAll(".md-typeset__scrollwrap, .md-typeset pre > code")
         .forEach((region) => {
           region.setAttribute("tabindex", "0")

@@ -188,12 +188,15 @@ def test_built_site_checks_run_right_after_the_strict_build() -> None:
     ]
 
 
-def test_validate_plan_adds_the_browser_smoke_checks() -> None:
-    """Browser smoke is the pre-deploy tier: it needs a real downloaded browser."""
+def test_validate_plan_adds_the_browser_assurance_checks() -> None:
+    """Real-browser interaction and accessibility remain local pre-deploy checks."""
 
     validate_names = [step.name for step in build_steps(Path("/tmp/example"), plan="validate")]
 
-    assert validate_names[-1] == "Running browser smoke checks"
+    assert validate_names[-2:] == [
+        "Running browser smoke checks",
+        "Running full browser accessibility audit",
+    ]
 
 
 def test_each_plan_is_a_strict_prefix_of_the_next() -> None:

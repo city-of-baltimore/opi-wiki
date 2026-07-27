@@ -22,28 +22,28 @@ Work moves from a problem to a fix in a repeatable way. [CitiStat](what-we-do/pr
 
 OPI is organized into teams with staff and budget. Those teams deliver services to city government and run programs and products, some of which span multiple teams.
 
-<div class="opi-taxonomy-grid" role="list">
-  <section class="opi-taxonomy-item" role="listitem">
+<ul class="opi-taxonomy-grid">
+  <li class="opi-taxonomy-item">
     <h3>Teams</h3>
     <p>Groups with staff and budget.</p>
     <p><strong>Examples:</strong> Director's Office, Performance, Data and Analytics, Innovation Lab.</p>
-  </section>
-  <section class="opi-taxonomy-item" role="listitem">
+  </li>
+  <li class="opi-taxonomy-item">
     <h3>Services</h3>
     <p>What OPI delivers for Baltimore.</p>
     <p><strong>Examples:</strong> AdminOps, Citywide Performance Management, Citywide Data and Analytics, Innovation Lab, Cross-Agency Delivery.</p>
-  </section>
-  <section class="opi-taxonomy-item" role="listitem">
+  </li>
+  <li class="opi-taxonomy-item">
     <h3>Programs</h3>
     <p>Ongoing routines that may span teams.</p>
     <p><strong>Examples:</strong> CitiStat, Data Governance, Open Data, Citywide Data Network.</p>
-  </section>
-  <section class="opi-taxonomy-item" role="listitem">
+  </li>
+  <li class="opi-taxonomy-item">
     <h3>Products</h3>
     <p>Tools and platforms OPI builds.</p>
     <p><strong>Examples:</strong> Baltimore Intelligence Center, Baltimore City Data Platform, Baltimore City Performance Portal, Baltimore 311 Explorer.</p>
-  </section>
-</div>
+  </li>
+</ul>
 
 When in doubt, use the clearest full name. Do not use "CAD" for Cross-Agency Delivery; spell it out, or use "x-agency delivery" only when a short form is needed.
 

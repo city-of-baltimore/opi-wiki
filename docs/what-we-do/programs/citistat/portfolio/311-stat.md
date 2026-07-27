@@ -11,33 +11,33 @@
 | OPI lead                        | OPI-operated / Data Team-led                                                                                                        |
 | Core Data Product              | 311 performance and resident experience dashboard                                                                                   |
 
-### Public Purpose
+## Public Purpose
 
 311 Stat focuses on Baltimore’s resident service request experience from intake to closure. It examines whether residents can report issues easily, whether requests are routed correctly, whether agencies complete work reliably, and whether closure messages clearly explain what happened.
 
-### Staff Purpose
+## Staff Purpose
 
 Staff use 311 Stat to improve digital intake, routing accuracy, closure quality, duplicate handling, and resident communication.
 
-### Core Management Questions
+## Core Management Questions
 
 - Are residents able to submit requests easily through phone and digital channels?
 - Are requests routed to the right agency the first time?
 - Are agencies completing work within realistic and accurate service levels?
 - Are closure messages accurate, understandable, and useful to residents?
 
-### Starter Focus Areas
+## Starter Focus Areas
 
 - SLA accuracy and service request taxonomy cleanup
 - Routing quality and duplicate / repeat request reduction
 - Closure quality and resident communication improvements
 
-### Standard Artifacts and Data Products
+## Standard Artifacts and Data Products
 
 - Pre-meeting memo, Stat deck, follow-up memo, and follow-up tracker.
 - Core data product: 311 performance and resident experience dashboard.
 
-### Tiger Team / Delivery Triggers
+## Tiger Team / Delivery Triggers
 
 - Repeated routing failures affecting multiple agencies
 - Closure quality issues that create resident distrust or repeat contacts
