@@ -11,6 +11,10 @@ manual (editorial voice, review tiers, conventions).
 **Editorial style:** [`STYLE.md`](STYLE.md) is the writing standard — voice,
 the jargon we replace, and how we handle bullets, tables, and em-dashes.
 
+**New to the product or repository?** Read
+[`onboarding.md`](onboarding.md) for the plain-language product, content model,
+review flow, and local-preview overview.
+
 ## Working in this repo
 
 ```bash
