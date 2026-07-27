@@ -42,7 +42,7 @@ change management, engineering, operations, and storytelling.
 
 ## What the Lab does not own
 
-The Lab does not own agency operations or the long-term running of the tools it builds; it hands those off with a sustainment plan. It does not hold cross-agency coordination authority. That belongs to [Cross-Agency Delivery](../../../what-we-do/services/cross-agency-delivery/index.md), the service OPI draws on across all its teams, and when that service charters a Tiger Team, the Lab supplies method and people to it. Performance routines and CitiStat belong to the [Performance](../performance/index.md) team. Data governance, KPI definitions, and open data belong to [Data and Analytics](../data-and-analytics/index.md). Enterprise infrastructure, security, and production environments belong to BCIT.
+The Lab does not own agency operations or the long-term running of the tools it builds; it hands those off with a sustainment plan. It does not hold cross-agency coordination authority. That belongs to [Cross-Agency Delivery](../../../what-we-do/services/cross-agency-delivery/index.md), the service OPI draws on across all its teams, and when that service charters a Tiger Team, the Lab supplies method and people to it. The [Performance](../performance/index.md) team owns the performance method and operates CitiStat day to day. Data governance, KPI definitions, and open data belong to [Data and Analytics](../data-and-analytics/index.md). Enterprise infrastructure, security, and production environments belong to BCIT.
 
 ## How the Lab partners across OPI
 

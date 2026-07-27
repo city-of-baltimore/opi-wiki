@@ -3,7 +3,7 @@ defaults:
   status: approved
   last_reviewed: 2026-07-27
   next_review: 2027-01-31
-  change_log: Reconciled glossary classifications, team placement, Toolkit provenance, and dated priority language.
+  change_log: Added direct links from the reference starting guidance to its named sources.
   # Reference-section pages are, by definition, reference material, so they
   # carry the neutral "Reference" pill. This is the same badge the retired
   # Position Descriptions page used to set on itself.

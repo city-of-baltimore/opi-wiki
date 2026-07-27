@@ -79,6 +79,36 @@ GLOSSARY_DRIFT_PATTERNS = (
     ),
 )
 
+CITISTAT_DRIFT_PATTERNS = (
+    (
+        re.compile(r"\bagency briefs?\b", re.IGNORECASE),
+        "The portfolio mixes agency and thematic Stats; call these Stat briefs.",
+    ),
+    (
+        re.compile(r"\bagency portfolio\b", re.IGNORECASE),
+        "The CitiStat portfolio includes agency and thematic Stats; call it the Stat portfolio.",
+    ),
+    (
+        re.compile(r"\bcurrent schedule of active Stats\b", re.IGNORECASE),
+        "The portfolio is a register; calendar details are maintained separately.",
+    ),
+    (
+        re.compile(
+            r"\bPerformance team owns how the city reviews performance\b",
+            re.IGNORECASE,
+        ),
+        "Performance owns the method; the Executive Director owns CitiStat as CitiStat Director.",
+    ),
+    (
+        re.compile(r"\bteam owns\b[^\n]*\bCitiStat\b[^\n]*\bprogram\b", re.IGNORECASE),
+        "The Executive Director owns CitiStat; Performance operates it day to day.",
+    ),
+    (
+        re.compile(r"\bPerformance routines and CitiStat belong to\b", re.IGNORECASE),
+        "Performance owns the method and operates CitiStat; it does not own the program.",
+    ),
+)
+
 # Common acronyms that are fine unexpanded. The glossary's acronyms are merged
 # in at runtime so the allowlist grows with the public terminology reference.
 BASE_ALLOW = frozenset(
@@ -245,6 +275,43 @@ def check_glossary_taxonomy(
     return issues
 
 
+def check_citistat_narrative(
+    path: Path,
+    text: str,
+    *,
+    repo_root: Path = REPO_ROOT,
+) -> list[str]:
+    """Reject wording that blurs CitiStat ownership or portfolio composition."""
+
+    if not _is_citistat_narrative_path(path):
+        return []
+
+    issues: list[str] = []
+    for pattern, message in CITISTAT_DRIFT_PATTERNS:
+        for match in pattern.finditer(text):
+            line_number = text.count("\n", 0, match.start()) + 1
+            issues.append(f"{_relative_path(path, repo_root)}:{line_number}: {message}")
+    return issues
+
+
+def _is_citistat_narrative_path(path: Path) -> bool:
+    """Return whether a source participates in the CitiStat ownership narrative."""
+
+    normalized_path = path.as_posix()
+    is_citistat_page = "what-we-do/programs/citistat" in normalized_path
+    is_performance_page = "about-us/our-teams/performance" in normalized_path
+    is_innovation_page = "about-us/our-teams/innovation-lab" in normalized_path
+    is_team_index_cards = normalized_path.endswith("about-us/our-teams/index.cards.yml")
+    is_glossary = normalized_path.endswith("resources/reference/glossary.md")
+    return (
+        is_citistat_page
+        or is_performance_page
+        or is_innovation_page
+        or is_team_index_cards
+        or is_glossary
+    )
+
+
 def load_acronym_allowlist(docs_dir: Path = DOCS) -> set[str]:
     """Load the curated and glossary-derived acronym allowlist."""
 
@@ -314,7 +381,20 @@ def scan_consistency(
         )
         structural_issues.extend(check_toc_sections(path, text, repo_root=repo_root))
         structural_issues.extend(check_glossary_taxonomy(path, text, repo_root=repo_root))
+        structural_issues.extend(check_citistat_narrative(path, text, repo_root=repo_root))
         acronyms.extend(acronym_report(path, text, allow, repo_root=repo_root))
+
+    for path in sorted(docs_dir.rglob("*.cards.yml")):
+        if not _is_citistat_narrative_path(path):
+            continue
+        try:
+            text = path.read_text(encoding="utf-8")
+        except OSError as error:
+            structural_issues.append(
+                f"{_relative_path(path, repo_root)}: unable to read card source: {error}"
+            )
+            continue
+        structural_issues.extend(check_citistat_narrative(path, text, repo_root=repo_root))
 
     return ConsistencyScan(tuple(structural_issues), tuple(acronyms))
 

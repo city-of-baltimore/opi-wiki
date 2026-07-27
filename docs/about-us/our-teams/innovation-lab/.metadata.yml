@@ -3,4 +3,4 @@ defaults:
   status: approved
   last_reviewed: 2026-07-27
   next_review: 2027-01-31
-  change_log: Reconciled the team description with the shared roster and external Toolkit provenance.
+  change_log: Reconciled the shared roster, Toolkit provenance, and CitiStat ownership boundary.

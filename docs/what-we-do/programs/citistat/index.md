@@ -1,10 +1,10 @@
 # CitiStat
 
-Baltimore's citywide performance program, run by OPI with support from every team in the office.
+Baltimore's citywide performance program. OPI's Executive Director serves as CitiStat Director and owns the program. The Performance team operates it day to day, with support from every OPI team.
 
 CitiStat is how the city reviews performance. In regular sessions, City leadership and agencies look at the data together, ask sharper questions, assign follow-ups, and track them to closure. The [Performance team](../../../about-us/our-teams/performance/index.md) runs it day to day, but the whole office pitches in: [Data and Analytics](../../../about-us/our-teams/data-and-analytics/index.md) makes the evidence trustworthy, the [Innovation Lab](../../../about-us/our-teams/innovation-lab/index.md) designs the improvements a session turns up, and [Cross-Agency Delivery](../../services/cross-agency-delivery/index.md) coordinates work that spans agencies.
 
-This section is split by job. The Strategic Framework explains why CitiStat exists and how it ties to citywide priorities. The Method Playbook shows how a Stat runs. The quality standards and templates support the people doing the work, and the portfolio holds the active agency briefs.
+This section is split by job. The Strategic Framework explains why CitiStat exists and how it ties to citywide priorities. The Method Playbook shows how a Stat runs. The quality standards and templates support the people doing the work, and the portfolio holds the Stat briefs.
 
 ## New to CitiStat? Start here
 
@@ -20,7 +20,7 @@ If you work in a Deputy Mayor's office, the City Administrator's Office, or as a
 
 ## The portfolio
 
-The full citywide portfolio of active CitiStats: every agency brief, organized in one place.
+The citywide CitiStat portfolio: every documented Stat brief, organized in one place.
 
 {{ card_grid_from("what-we-do/programs/citistat/index.cards.yml", "portfolio") }}
 

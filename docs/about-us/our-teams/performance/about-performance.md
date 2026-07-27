@@ -2,13 +2,13 @@
 
 {{ page_header(summary="How Baltimore turns priorities into measures, measures into decisions, and decisions into service improvements residents can feel.", category="ABOUT · TEAM") }}
 
-The Performance team runs Baltimore's citywide performance management: the work of helping leaders and agencies set clear priorities, measure what matters, review progress with discipline, and follow through until services improve. Its flagship program is [CitiStat](../../../what-we-do/programs/citistat/index.md), the city's performance program, which the team runs day to day.
+The Performance team runs Baltimore's citywide performance management: the work of helping leaders and agencies set clear priorities, measure what matters, review progress with discipline, and follow through until services improve. Its flagship program is [CitiStat](../../../what-we-do/programs/citistat/index.md), which OPI's Executive Director owns as CitiStat Director and the Performance team operates day to day.
 
 The team owns the method, not the agencies' operations. Agencies deliver services; Performance brings the structure, data, facilitation, and follow-through that turn a performance problem into a decision and a decision into a result.
 
 ## What the team does
 
-Day to day, the team runs the CitiStat program for the citywide portfolio of Stats: the sessions, the pre-memos, the follow-up memos, and the tracking that keeps follow-ups from slipping. It supports agency performance planning, helping agencies set goals, KPI trees, owners, and review schedules aligned to the Mayor's Action Plan. It maintains and improves the City's performance measures, KPI definitions, and performance plans, and keeps the City's public performance products current. And it tracks every follow-up to closure with evidence, routing issues that need an executive decision, delivery, data support, or service redesign to the team that can handle them.
+Day to day, the team runs CitiStat operations for the citywide portfolio of Stats: the sessions, the pre-memos, the follow-up memos, and the tracking that keeps follow-ups from slipping. It supports agency performance planning, helping agencies set goals, KPI trees, owners, and review schedules aligned to the Mayor's Action Plan. It maintains and improves the City's performance measures, KPI definitions, and performance plans, and keeps the City's public performance products current. And it tracks every follow-up to closure with evidence, routing issues that need an executive decision, delivery, data support, or service redesign to the team that can handle them.
 
 ## How the work fits together
 
@@ -26,7 +26,7 @@ A Stat only earns leadership's time if the numbers hold up. Every Stat product p
 
 ## What the team owns
 
-The team owns Baltimore's performance management method and the routines that run it. That means the [CitiStat](../../../what-we-do/programs/citistat/index.md) program and its Stat cycle: the sessions, the pre-memos, the follow-up memos, and the tracking that keeps commitments from slipping. It owns the KPI standards for the City's priority performance measures, the support that helps agencies build and maintain their performance plans, and the follow-up that carries every commitment to closure with evidence.
+The team owns Baltimore's performance management method and operates the routines that put it into practice. For [CitiStat](../../../what-we-do/programs/citistat/index.md), that means day-to-day operation of the Stat cycle: the sessions, the pre-memos, the follow-up memos, and the tracking that keeps commitments from slipping. It owns the KPI standards for the City's priority performance measures, the support that helps agencies build and maintain their performance plans, and the follow-up that carries every commitment to closure with evidence.
 
 ## What the team does not own
 
@@ -42,7 +42,7 @@ Success is a performance system that is useful, trusted, and acted on outside th
 
 ## Read alongside
 
-- [CitiStat](../../../what-we-do/programs/citistat/index.md): the program the team operates, with its strategic framework, method playbook, and portfolio.
+- [CitiStat](../../../what-we-do/programs/citistat/index.md): the program the team operates day to day, with its strategic framework, method playbook, and portfolio.
 - [How Work Moves Through OPI](../../../how-we-work/how-work-moves-through-opi.md): where performance management sits in the wider operating model.
 - [Team and Roles](../team-and-roles.md).
 - [On Performance Management](../../letters-from-the-director/on-performance-management.md): the Director's letter on why this work matters.
