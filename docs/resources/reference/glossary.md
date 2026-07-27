@@ -140,7 +140,7 @@ work together to move from a problem to a sustained improvement. See
 
 **Principal Agency.** A city agency that runs its own internal Stat, designates a Data-Driven Officer, and participates in CitiStat as a primary accountable agency. Distinguished from partner or supporting agencies that participate when their authority is needed but do not host their own Stat.
 
-**Product.** A tool, platform, or public-facing resource OPI builds or supports, distinct from a service (what OPI delivers) and a program (an ongoing effort). OPI products include the Baltimore Intelligence Center, the Baltimore City Data Platform, and the Baltimore City Performance Portal.
+**Product.** A tool, platform, or public-facing resource OPI builds or supports, distinct from a service (what OPI delivers) and a program (an ongoing effort). OPI products include the Baltimore Intelligence Center, the Baltimore City Data Platform, the Baltimore City Performance Portal, and Baltimore 311 Explorer.
 
 **Program.** An ongoing routine or body of work that may involve more than one team, distinct from a team (staff and budget) and a service (what OPI delivers). CitiStat is OPI’s flagship program, operated by the Performance team and supported by all teams.
 

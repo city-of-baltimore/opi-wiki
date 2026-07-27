@@ -1,6 +1,6 @@
 # Reference
 
-> Glossary, operating model, theories of change, position descriptions, playbooks, and other reference material.
+> Shared definitions, service accountability, playbooks, and other reference material.
 
 ## Pages in this section
 

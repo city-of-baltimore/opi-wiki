@@ -5,9 +5,9 @@
 defaults:
   owner: OPI Director's Office
   status: approved
-  last_reviewed: 2026-07-19
+  last_reviewed: 2026-07-26
   next_review: 2027-01-31
-  change_log: Completed the July 2026 full-site content and publication review.
+  change_log: Reconciled the home-page taxonomy and featured references.
 
 pages:
   index.md:

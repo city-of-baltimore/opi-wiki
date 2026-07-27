@@ -80,7 +80,6 @@ The Reference section (`docs/resources/reference/`) is cross-cutting. Every sect
 - The [Glossary](docs/resources/reference/glossary.md) when a term is first used in a section.
 - [How Work Moves Through OPI](docs/how-we-work/how-work-moves-through-opi.md)
   when a page is about OPI's structure or describes team and service handoffs.
-- The [Strategic Priorities](docs/resources/reference/strategic-priorities-one-pager.md) when a page connects to current FY priorities.
 
 ## Navigation ownership
 
@@ -106,12 +105,12 @@ mapping in mind when locating content, and keep the `.pages` title, the
 | Folder | Navigation label | Notes |
 |---|---|---|
 | `about-us/our-teams/` | Our Teams | The four team pages live under About Us. |
-| `about-us/our-teams/directors-office/` | Director's Office | The team that delivers the **AdminOps** service (operating backbone). |
+| `about-us/our-teams/directors-office/` | Director's Office | The team that delivers the **AdminOps** operations and communications service. |
 | `about-us/our-teams/performance/` | Performance | The team that delivers **Citywide Performance Management**; the **CitiStat** program itself lives in `what-we-do/programs/citistat/`. |
 | `about-us/our-teams/data-and-analytics/` | Data and Analytics | The team that delivers **Citywide Data and Analytics**. |
 | `about-us/our-teams/innovation-lab/` | Innovation Lab | Both a team and a service; the products it builds live in `what-we-do/products/`. |
 | `how-we-work/organization/` | Organization | Public leadership chart and team-purpose overview, generated from the limited public organization data in `docs/_data/people.yml`. |
-| `what-we-do/` | What We Do | Services, programs (CitiStat and portfolio), and products (Baltimore Intelligence Center). |
+| `what-we-do/` | What We Do | OPI's services, programs, and products. |
 | `what-we-do/programs/citistat/` | CitiStat | A **program** supported by all teams — its own section, not a team. |
 | `what-we-do/products/` | Products | Tools and platforms OPI builds, including the Baltimore Intelligence Center. |
 | `what-we-do/services/` | Services | The five services OPI delivers, including **Cross-Agency Delivery** — a service, not a staffed team. |
@@ -126,8 +125,8 @@ silently reclassify one as another.
 |---|---|---|---|
 | **Teams** | Groups with staff and budget (also called portfolios) | Director's Office, Performance, Data and Analytics, Innovation Lab | `about-us/our-teams/` |
 | **Services** | What OPI delivers for the City | AdminOps, Citywide Performance Management, Citywide Data and Analytics, Innovation Lab, Cross-Agency Delivery | `what-we-do/services/` |
-| **Programs** | Ongoing routines that may span teams | CitiStat | `what-we-do/programs/` |
-| **Products** | Tools and platforms OPI builds | Baltimore Intelligence Center, Baltimore City Data Platform, Baltimore City Performance Portal | `what-we-do/products/` |
+| **Programs** | Ongoing routines that may span teams | CitiStat, Data Governance, Open Data, Citywide Data Network | `what-we-do/programs/` |
+| **Products** | Tools and platforms OPI builds | Baltimore Intelligence Center, Baltimore City Data Platform, Baltimore City Performance Portal, Baltimore 311 Explorer | `what-we-do/products/` |
 
 Rules to enforce on every page:
 

@@ -166,10 +166,11 @@ moving pages.
 - **Services** (what OPI delivers): AdminOps, Citywide Performance Management,
   Citywide Data and Analytics, Innovation Lab, Cross-Agency Delivery →
   `what-we-do/services/`.
-- **Programs** (ongoing routines spanning teams): CitiStat →
-  `what-we-do/programs/`.
-- **Products** (tools OPI builds): Baltimore Intelligence Center and others →
-  `what-we-do/products/`.
+- **Programs** (ongoing routines spanning teams): CitiStat, Data Governance,
+  Open Data, Citywide Data Network → `what-we-do/programs/`.
+- **Products** (tools OPI builds): Baltimore Intelligence Center, Baltimore
+  City Data Platform, Baltimore City Performance Portal, Baltimore 311 Explorer
+  → `what-we-do/products/`.
 
 Hold these lines:
 
