@@ -167,6 +167,10 @@ def build_steps(
             command=(python, "scripts/check_page_metadata.py"),
         ),
         VerifyStep(
+            name="Validating organization data",
+            command=(python, "scripts/check_organization_data.py"),
+        ),
+        VerifyStep(
             name="Validating brand terms",
             command=(python, "scripts/check_brand_terms.py"),
         ),

@@ -202,14 +202,29 @@ build-time `.metadata.yml`, which drives ownership and review cadence.)
 
 ## Structured page data
 
-When one page needs to repeat the same source-of-truth data across
-charts and tables, keep that content in a shared YAML file and render it
-through a macro. `docs/_data/people.yml` is deliberately limited to staff
-names, working titles, team labels, reporting relationships, and short role
-summaries; it drives the leadership chart, Team and Roles page, and
-inline `role_holder(...)` references. It must never carry contractors, payroll
-identifiers, phone numbers, individual email addresses, classifications, cost
-centers, personnel status, compensation, or full position descriptions.
+When one page needs to repeat the same source-of-truth data across charts and
+tables, keep that content in a shared YAML file and render it through a macro.
+`docs/_data/people.yml` is deliberately limited to staff names, working titles,
+canonical team identifiers, the nested reporting structure, each team's primary
+value, and short role summaries. Reader-facing team labels are derived from those
+identifiers instead of duplicated in source. One immutable typed record drives
+the leadership chart, Team and Roles page, and inline `role_holder(...)`
+references.
+
+The organization loader is an exact allowlist, not a blacklist. Unknown fields,
+missing or mistyped values, duplicate YAML keys, and drift from the four canonical
+teams fail `scripts/check_organization_data.py` in hosted CI. The nested shape
+makes reporting cycles unrepresentable; do not add `reports_to` references or
+person IDs without an explicit data-model decision. The file must never carry
+contractors, payroll identifiers, phone numbers, individual email addresses,
+classifications, cost centers, personnel status, compensation, or full position
+descriptions.
+
+- 2026-07-27 — **[ORGANIZATION DATA] defer disposition of `primary_value`** —
+  the visible team summary was retired in commit `ee27304`, but its four
+  substantive descriptions remain verbatim in source pending an Executive
+  Director/CDO decision to restore, move, or retire them — reversible through
+  that recorded owner decision.
 
 ## Page data model
 

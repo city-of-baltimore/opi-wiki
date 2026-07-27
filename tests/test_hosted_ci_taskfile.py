@@ -309,6 +309,7 @@ def test_task_ci_reaches_the_policy_guard_and_the_lean_plan() -> None:
     assert "uv run python scripts/verify.py --plan ci" in reached
     # And the walk crosses into the plan's own subprocess list.
     assert any("check_page_metadata.py" in command for command in reached)
+    assert any("check_organization_data.py" in command for command in reached)
 
 
 def test_a_heavy_task_is_caught_through_the_task_graph() -> None:

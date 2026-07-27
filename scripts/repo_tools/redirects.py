@@ -3,11 +3,11 @@
 from __future__ import annotations
 
 from collections import Counter
-from collections.abc import Hashable
 from pathlib import Path
-from typing import Any
 
 import yaml
+
+from scripts.repo_tools.data import UniqueKeySafeLoader
 
 ALLOWED_DUPLICATE_DESTINATIONS = {
     "resources/index.md",
@@ -40,29 +40,8 @@ ALLOWED_DUPLICATE_DESTINATIONS = {
 }
 
 
-class _MkDocsConfigLoader(yaml.SafeLoader):
+class _MkDocsConfigLoader(UniqueKeySafeLoader):
     """Safe loader that tolerates MkDocs !ENV tags."""
-
-    def construct_mapping(
-        self,
-        node: yaml.MappingNode,
-        deep: bool = False,
-    ) -> dict[Any, Any]:
-        """Construct a mapping while rejecting duplicate YAML keys."""
-
-        if not isinstance(node, yaml.MappingNode):
-            raise ValueError(f"Expected a YAML mapping node, got {node!r}.")
-
-        mapping: dict[Any, Any] = {}
-        for key_node, value_node in node.value:
-            key = self.construct_object(key_node, deep=deep)
-            if not isinstance(key, Hashable):
-                raise ValueError(f"Unhashable YAML mapping key at {key_node.start_mark}.")
-            if key in mapping:
-                line_number = key_node.start_mark.line + 1
-                raise ValueError(f"Duplicate YAML key '{key}' on line {line_number}.")
-            mapping[key] = self.construct_object(value_node, deep=deep)
-        return mapping
 
 
 def _construct_env_default(loader: _MkDocsConfigLoader, node: yaml.Node) -> str:

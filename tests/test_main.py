@@ -13,6 +13,6 @@ def test_shared_macro_registry_stays_explicit() -> None:
     assert set(env.macros) == {
         "card_grid_from",
         "page_header",
-        "org_structure_from",
+        "org_structure",
         "role_holder",
     }

@@ -26,6 +26,12 @@ VALIDATOR_CASES = (
         "Page metadata validated.",
     ),
     (
+        "scripts.check_organization_data",
+        "scripts.repo_tools.organization",
+        "find_organization_data_issues",
+        "Organization data validated.",
+    ),
+    (
         "scripts.check_style",
         "scripts.repo_tools.style",
         "find_style_issues",

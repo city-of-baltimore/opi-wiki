@@ -1,17 +1,22 @@
 # Organization data for OPI Foundations.
 #
 # Single source for the org chart and the Team and Roles table. It holds City
-# staff names, working titles, team labels and leads, reporting relationships,
+# staff names, working titles, team identifiers and leads, reporting relationships,
 # each team's high-level purpose, and a one-line summary of what each role does.
 # Contractors do not appear here.
 #
-# Personal or employment data must never be added: payroll identifiers, phone
-# numbers, email addresses, classifications, cost centers, personnel status, and
-# full position descriptions live in City systems or SharePoint. The people-data
-# loader rejects `pin` and `phone` keys before the site can build.
+# Additional sensitive personnel or employment fields must never be added:
+# payroll identifiers, phone numbers, email addresses, classifications, cost
+# centers, personnel status, and full position descriptions live in City systems
+# or SharePoint. The organization loader accepts only the exact fields demonstrated
+# below and rejects every other field in hosted CI, before the site can build.
 #
 # Open (unfilled) City roles use the name "Open" so they show in the structure
 # without implying a current incumbent.
+#
+# The four primary_value descriptions are retained verbatim from the team summary
+# removed in commit ee27304. They are not currently rendered. Keep them unchanged
+# until the Executive Director/CDO decides whether to restore, move, or retire them.
 
 mayor:
   name: Brandon M. Scott
@@ -28,9 +33,7 @@ executive_director:
 
 portfolios:
   - key: directors-office
-    label: Director's Office
     primary_value: Keeps work prioritized, documented, communicated, and deliverable.
-    table_lead: Rakeim Young, Chief of Staff
     lead:
       name: Rakeim Young
       title: Chief of Staff
@@ -47,9 +50,7 @@ portfolios:
         summary: Builds OPI's partnerships and turns the office's data and work into clear information, briefings, and accessible communications for residents and City leaders.
 
   - key: performance
-    label: Performance
     primary_value: Owns the performance method; translates priorities into measures, follow-up, and improvement.
-    table_lead: Danny Heller, Deputy Chief Performance Officer
     lead:
       name: Danny Heller
       title: Deputy Chief Performance Officer
@@ -78,9 +79,7 @@ portfolios:
         summary: Inspects service delivery in the field to check reported results and surface issues the data doesn't show, and documents conditions on the ground.
 
   - key: data-and-analytics
-    label: Data and Analytics
     primary_value: Builds trusted data infrastructure and decision-ready analytics; supports CitiStat, transparency, agency operations, and AI readiness.
-    table_lead: Jason Howard, PhD, Deputy Chief Data Officer
     lead:
       name: "Jason Howard, PhD"
       title: Deputy Chief Data Officer
@@ -97,9 +96,7 @@ portfolios:
         summary: Builds and maintains shared data models, ingestion pipelines, quality controls, and technical documentation.
 
   - key: innovation-lab
-    label: Innovation Lab
     primary_value: Turns service problems into designed, usable, testable solutions; coordinates handoff to data, engineering, agency, or BCIT partners.
-    table_lead: Gabriel Watson, Innovation Program Manager
     lead:
       name: Gabriel Watson
       title: Innovation Program Manager

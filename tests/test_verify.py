@@ -106,6 +106,7 @@ def test_ci_plan_keeps_every_static_check() -> None:
         "Type-checking repo automation",
         "Scanning repo automation for security issues",
         "Validating page metadata",
+        "Validating organization data",
         "Validating brand terms",
         "Checking editorial voice guardrail",
         "Checking page consistency",
@@ -152,6 +153,16 @@ def test_ci_plan_runs_both_policy_checkers() -> None:
 
     assert any("check_hosted_ci_policy.py" in command for command in commands)
     assert any("baltimore.patapsco.baseline.cli" in command for command in commands)
+
+
+def test_ci_plan_validates_organization_data_before_any_build() -> None:
+    """The source contract should fail in hosted CI without relying on a site build."""
+
+    ci_steps = build_steps(Path("/tmp/example"), plan="ci")
+    organization_steps = [step for step in ci_steps if step.name == "Validating organization data"]
+
+    assert len(organization_steps) == 1
+    assert organization_steps[0].command[-1] == "scripts/check_organization_data.py"
 
 
 def test_prepush_plan_owns_the_tests_the_build_and_the_built_site_checks() -> None:
