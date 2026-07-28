@@ -35,7 +35,7 @@ dev = [
     "ruff>=0.16.0,<0.17.0",
     "playwright>=1.58.0,<2.0.0",
     "mypy>=2.1.0,<3.0.0",
-    "types-pyyaml>=6.0.12.20260518,<7.0.0.0",
+    "types-pyyaml>=6.0.12.20260724,<7.0.0.0",
     # Patapsco's estate baseline gate, exposed as the `platform-check` console
     # script. Exact-pinned, not ranged: it is a gate, and a gate that changes
     # its rule set under you on a routine `uv sync` is not a gate. Bumping it is
@@ -45,7 +45,7 @@ dev = [
     # instead of it. The two cover different ground and 0.4.3 does not subsume
     # the local guard — see the "Two checkers" note in that module's docstring
     # for the gaps that were re-measured against 0.4.3.
-    "baltimore-patapsco==0.4.5",
+    "baltimore-patapsco==0.4.8",
 ]
 
 [tool.pytest.ini_options]

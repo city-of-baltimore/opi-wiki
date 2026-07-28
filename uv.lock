@@ -86,7 +86,7 @@ wheels = [
 
 [[package]]
 name = "baltimore-patapsco"
-version = "0.4.5"
+version = "0.4.8"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "asgiref" },
@@ -94,9 +94,9 @@ dependencies = [
     { name = "djangorestframework" },
     { name = "drf-spectacular" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/a5/12/ac778d3489ed3820fed17cc7b9a5dfeeb1b1eb968cd6b779b64b2128b074/baltimore_patapsco-0.4.5.tar.gz", hash = "sha256:a409ae8a43129ed886d2e9e76a57d0edbf333a213ba10da68d77da6b50abcf43", size = 89802, upload-time = "2026-07-23T23:37:42.443Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/01/aa/cf9254275949687a9a0bb65195a057f77f8e936f744419754629f3c23c85/baltimore_patapsco-0.4.8.tar.gz", hash = "sha256:d0c523e2fe4a10a5b255ee14a3170fd8e94b135a4c28816c7aa60aa465b98e1a", size = 94716, upload-time = "2026-07-24T09:26:00.655Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/29/34/5b7753d0199cfbf70cc445bf7b94728affc769423d1a261294986811071e/baltimore_patapsco-0.4.5-py3-none-any.whl", hash = "sha256:6a2d7839d1230ddcfc436685594ad20be9e914978c5d9a5c160afa15c1a81232", size = 103184, upload-time = "2026-07-23T23:37:41.198Z" },
+    { url = "https://files.pythonhosted.org/packages/6c/bf/6e91f6c0a605a79a4b91ed6fc56aaa97dc0372c8d44443a074fbefadc4c7/baltimore_patapsco-0.4.8-py3-none-any.whl", hash = "sha256:91977e2ecd83995a01b4fc0f6e775f30ee09b643a43f12b68a2e76df66feb856", size = 110365, upload-time = "2026-07-24T09:25:59.628Z" },
 ]
 
 [[package]]
@@ -716,13 +716,13 @@ requires-dist = [
 
 [package.metadata.requires-dev]
 dev = [
-    { name = "baltimore-patapsco", specifier = "==0.4.5" },
+    { name = "baltimore-patapsco", specifier = "==0.4.8" },
     { name = "bandit", extras = ["toml"], specifier = ">=1.9.4,<2.0.0" },
     { name = "mypy", specifier = ">=2.1.0,<3.0.0" },
     { name = "playwright", specifier = ">=1.58.0,<2.0.0" },
     { name = "pytest", specifier = ">=9.0.3,<10.0.0" },
     { name = "ruff", specifier = ">=0.16.0,<0.17.0" },
-    { name = "types-pyyaml", specifier = ">=6.0.12.20260518,<7.0.0.0" },
+    { name = "types-pyyaml", specifier = ">=6.0.12.20260724,<7.0.0.0" },
 ]
 
 [[package]]
@@ -1067,11 +1067,11 @@ wheels = [
 
 [[package]]
 name = "types-pyyaml"
-version = "6.0.12.20260518"
+version = "6.0.12.20260724"
 source = { registry = "https://pypi.org/simple" }
-sdist = { url = "https://files.pythonhosted.org/packages/b8/83/4a1afc3fbfcf5b8d46fc390cd95ed6b0dc9010a265f4e9f46314efffa37a/types_pyyaml-6.0.12.20260518.tar.gz", hash = "sha256:d917f83fb38462550338c1297faedd860b3ec83912b96b1e3d73255f7473e466", size = 17850, upload-time = "2026-05-18T06:01:58.675Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/3f/6f/a28f44bcd56bebed42b028a2894c79853e2f5e6b5279e633cb3f287a05e7/types_pyyaml-6.0.12.20260724.tar.gz", hash = "sha256:3c1ce1bb73cd5ec02e90390c2b1f00e810d241d8825fd73ff359696839271b6b", size = 17893, upload-time = "2026-07-24T04:58:43.453Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/06/a2/c01db32be2ae7d6a1689972f3c492b149ee4e164b12fdfd9f64b50888215/types_pyyaml-6.0.12.20260518-py3-none-any.whl", hash = "sha256:d2150f75a231c9fe9c7463bd29487d93e60bac90400287351384bc2284eba7cd", size = 20312, upload-time = "2026-05-18T06:01:57.368Z" },
+    { url = "https://files.pythonhosted.org/packages/8b/42/0337fefc615e20ee55d1c8f71b774a9b2b734a04669139c20753b27a2a3a/types_pyyaml-6.0.12.20260724-py3-none-any.whl", hash = "sha256:d57db930a4b2efbc57cf430ec8882765d246929432fa253092f383902329a453", size = 20312, upload-time = "2026-07-24T04:58:42.486Z" },
 ]
 
 [[package]]
