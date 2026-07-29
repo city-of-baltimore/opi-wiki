@@ -8,6 +8,7 @@ from typing import Any
 from urllib.parse import urljoin
 
 from scripts.repo_tools.browser_routes import (
+    browser_route_url,
     canonical_route_paths,
     local_site_server,
     normalize_base_url,
@@ -358,7 +359,7 @@ def _crawl_canonical_routes(browser: Any, base_url: str, routes: tuple[str, ...]
     try:
         for route in routes:
             current_route["value"] = route
-            requested_url = urljoin(base_url, route.lstrip("/"))
+            requested_url = browser_route_url(base_url, route)
             response = page.goto(requested_url, wait_until="networkidle")
             issues.extend(
                 _check_page_load(page, response, requested_url, f"Canonical {route}", "desktop")

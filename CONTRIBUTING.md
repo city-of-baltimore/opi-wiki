@@ -31,6 +31,8 @@ pre-push hook and the deploy gate — so install the hooks, and run
 `task prepush` before you push:
 
 - Strict MkDocs build: broken links and nav entries fail the build.
+- The source-language ratchet runs in the static tier; the pre-push and deploy
+  gate also inspect the exact rendered HTML for every canonical page.
 - Page metadata sidecars (`.metadata.yml`) must be complete and fresh. Review
   deadlines cannot be overdue, future-dated, or scheduled more than 200 days
   after the prior review.

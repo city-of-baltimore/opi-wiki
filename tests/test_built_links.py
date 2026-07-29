@@ -142,6 +142,43 @@ def test_sitemap_base_path_discovery_rejects_an_empty_sitemap(tmp_path: Path) ->
         discover_site_base_path(tmp_path)
 
 
+@pytest.mark.parametrize(
+    ("sitemap_text", "expected_error"),
+    (
+        (
+            "<urlset><url><loc>https://example.org/</loc></url>"
+            "<url><loc>https://example.org/resources/</url></urlset>",
+            "Built sitemap XML is malformed",
+        ),
+        (
+            "<urlset><url><loc>https://example.org/</loc></url>"
+            "<url><lastmod>2026-07-29</lastmod></url></urlset>",
+            r"entry 2 must contain exactly one <loc>",
+        ),
+        (
+            "<urlset><url><loc>https://example.org/</loc></url><url><loc>  </loc></url></urlset>",
+            r"<loc> entry 2 is empty",
+        ),
+        (
+            "<urlset><url><loc>https://example.org/</loc></url>"
+            "<loc>https://example.org/resources/</loc></urlset>",
+            r"may contain only <url> entries",
+        ),
+    ),
+)
+def test_sitemap_loader_rejects_partial_structural_corruption(
+    tmp_path: Path,
+    sitemap_text: str,
+    expected_error: str,
+) -> None:
+    """One valid entry must not hide a malformed or misplaced sibling."""
+
+    (tmp_path / "sitemap.xml").write_text(sitemap_text, encoding="utf-8")
+
+    with pytest.raises(RuntimeError, match=expected_error):
+        load_sitemap_locations(tmp_path)
+
+
 def test_relative_link_escaping_site_is_rejected_even_when_target_exists(tmp_path: Path) -> None:
     """A link must never validate against a file outside the built-site root."""
 

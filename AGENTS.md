@@ -153,8 +153,9 @@ drifted.
 
 # App-specific
 
-Everything below is local to this repository. It is not in the baseline and no
-checker holds it — it is hard-won domain knowledge about OPI's content.
+Everything below is local to this repository rather than the shared baseline.
+It is hard-won domain knowledge about OPI's content; repo-local checks hold only
+the rules that name their enforcement seam.
 
 ## Content taxonomy
 
@@ -211,6 +212,14 @@ Hold these lines:
   the layout cleanly.
 - Keep cross-links current when slugs or folders move.
 - Prefer plain language and skimmable structure over ornamental formatting.
+- Do not use generic repository-state labels or resurrect removed pill UI hooks.
+  Name the actual reader, reviewer, owner, City system, or data rule.
+  Civic/service terminology and formal data-governance meanings are not
+  repository status and must remain usable.
+- The fast source-language ratchet runs in hosted CI. The rendered-artifact
+  ratchet runs only after the existing strict build in `prepush` and
+  `validate`; it uses generated HTML as semantic authority and must never grow
+  a second Markdown parser or trigger another build.
 - **Every tracked file must satisfy the repository source contract.** Keep
   personnel records, contact data, and controlled working copies in the City
   system that owns them; keep source-only data out of the generated artifact.

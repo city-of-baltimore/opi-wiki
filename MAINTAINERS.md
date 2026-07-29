@@ -78,6 +78,31 @@ When placement is unclear, **ask the section owner before adding the material**.
 Every tracked file participates in repository review even when it sits outside
 `docs/`.
 
+When the source-language ratchet reports a line, replace generic
+repository-state wording with the named reader, reviewer, owner, City system, or
+concrete data rule; do not work around the matcher.
+
+When the rendered-language ratchet reports a canonical route, start with the
+named Markdown page and generated-HTML context. The text may come from a macro
+or structured source, so artifact evidence remains authoritative even when one
+Markdown line is not the origin. Do not invent a source location to silence the
+finding.
+
+- 2026-07-27 — **[CONTENT LABELS] keep generic repository-state labels and the
+  former pill UI retired** — review belongs to the office release process, so
+  source names the actual reader, reviewer, owner, City system, or data rule
+  instead — owner: Executive Director/CDO — reversible only through a recorded
+  product decision that defines a needed user-facing status model and its
+  review, accessibility, and data semantics.
+
+- 2026-07-27 — **[CONTENT VALIDATION] use source and rendered-artifact
+  enforcement rather than a parallel Markdown parser** — the fast source
+  ratchet gives pull-request feedback, while the existing strict build supplies
+  the exact semantic artifact checked by the pre-push and deploy gate; neither
+  layer silently substitutes for the other — owner: OPI wiki maintainers —
+  reversible only when one layer is proven to subsume the other without adding
+  a build, browser, or network step to hosted CI.
+
 ## Cross-link discipline
 
 The Reference section (`docs/resources/reference/`) is cross-cutting. Every section page should link to:
@@ -298,7 +323,7 @@ runs it in three nested tiers:
 | Tier | Where | Covers |
 |---|---|---|
 | `task ci` | pull-request CI, fast local loop | hosted-CI policy guard, platform-gate evidence, format, lint, mypy, bandit, metadata, organization data, brand terms, style, consistency, raw HTML links |
-| `task prepush` | the pre-push hook and the Pages deploy gate | everything above, plus pytest, `mkdocs build --strict`, built-artifact safety and built-link checks, and accessibility checks |
+| `task prepush` | the pre-push hook and the Pages deploy gate | everything above, plus pytest, `mkdocs build --strict`, rendered-language assurance, built-artifact safety and built-link checks, and accessibility checks |
 | `task validate` | locally, before a deploy | everything above, plus browser interaction and full-route WCAG assurance |
 
 Each tier is a strict prefix of the next, so nothing is lost by moving a check
@@ -310,6 +335,17 @@ browser** — per section 4 of the civic-app consistency standard.
 including through indirection: it statically resolves both the `Taskfile.yml`
 task graph and the `verify.py` plans, so adding a heavy step to any task `ci`
 reaches is caught.
+
+The guard also holds the exact ordered shape of `.github/workflows/ci.yml`, the
+Taskfile top level, the `ci` task, and the resolved plan in
+`scripts/repo_tools/hosted_ci_contract.py`. The workflow action identities,
+steps, job properties, and command cardinality are fixed; action revisions may
+move only between full commit SHAs. Taskfile-global `env`, `dotenv`, `includes`,
+or `vars` are not permitted because they can reinterpret every task before the
+task-local contract sees it. An intentional hosted static-check or action change
+updates its behavior and the independent contract together; missing, extra,
+duplicated, reordered, skipped, ignored, or otherwise modified work is a
+failure by design.
 
 The `ci` plan also runs Patapsco's published `platform-check`
 (`baltimore-patapsco`, exact-pinned in the dev group), which checks the shared

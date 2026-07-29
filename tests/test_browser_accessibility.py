@@ -181,6 +181,48 @@ def test_browser_accessibility_normalizes_an_explicit_base_url(
     assert seen == ["http://example.test/docs/"]
 
 
+def test_accessibility_crawl_encodes_decoded_route_delimiters(
+    monkeypatch: pytest.MonkeyPatch,
+) -> None:
+    """The accessibility consumer must navigate the encoded canonical identity."""
+
+    profile = _AuditProfile("desktop-light", 1440, 900, "light", False)
+    monkeypatch.setattr(browser_accessibility, "AUDIT_PROFILES", (profile,))
+    monkeypatch.setattr(browser_accessibility, "_check_page_load", lambda *_args: [])
+    monkeypatch.setattr(browser_accessibility, "_format_axe_violations", lambda *_args: [])
+    monkeypatch.setattr(browser_accessibility, "_check_document_reflow", lambda *_args: [])
+    monkeypatch.setattr(browser_accessibility, "_check_skip_link", lambda *_args: [])
+    monkeypatch.setattr(
+        browser_accessibility,
+        "_check_mobile_interactive_states",
+        lambda *_args: [],
+    )
+
+    page = MagicMock()
+    page.goto.return_value = SimpleNamespace(status=200)
+    context = MagicMock()
+    context.new_page.return_value = page
+    browser = MagicMock()
+    browser.new_context.return_value = context
+    playwright = SimpleNamespace(chromium=SimpleNamespace(launch=lambda: browser))
+    manager = MagicMock()
+    manager.__enter__.return_value = playwright
+    axe_factory = MagicMock()
+
+    assert (
+        browser_accessibility._collect_browser_accessibility_issues(
+            lambda: manager,
+            axe_factory,
+            "http://example.test/opi-wiki/",
+            ("/#/?/%/%2F/%2e%2e/",),
+        )
+        == []
+    )
+    assert page.goto.call_args.args[0] == (
+        "http://example.test/opi-wiki/%23/%3F/%25/%252F/%252e%252e/"
+    )
+
+
 def test_browser_accessibility_serves_a_built_site(
     tmp_path: Path,
     monkeypatch: pytest.MonkeyPatch,

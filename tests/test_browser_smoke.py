@@ -5,24 +5,18 @@ from __future__ import annotations
 from pathlib import Path
 from types import SimpleNamespace
 from unittest.mock import MagicMock
-from urllib.request import urlopen
 
 import pytest
 import scripts.check_browser_smoke as browser_cli
-import scripts.repo_tools.browser_routes as browser_routes
 import scripts.repo_tools.browser_smoke as browser_smoke
 from scripts.check_browser_smoke import parse_args
 from scripts.repo_tools.browser_smoke import (
     ORG_CHART_NAMES,
     SMOKE_TARGETS,
     _check_org_chart_state,
-    _check_page_load,
     _check_table_focus_state,
-    canonical_route_paths,
+    _crawl_canonical_routes,
     find_browser_smoke_issues,
-    local_site_server,
-    normalize_base_url,
-    normalize_page_url,
 )
 
 
@@ -44,36 +38,6 @@ def test_smoke_targets_cover_each_major_section() -> None:
     ]
 
 
-def test_normalize_base_url_enforces_trailing_slash() -> None:
-    """Base URLs should normalize so joined paths stay stable."""
-
-    assert normalize_base_url("http://127.0.0.1:8000") == "http://127.0.0.1:8000/"
-    assert normalize_base_url("http://127.0.0.1:8000/") == "http://127.0.0.1:8000/"
-
-
-def test_normalize_page_url_ignores_fragments_but_preserves_queries() -> None:
-    """Final-URL checks should ignore fragments without hiding query redirects."""
-
-    assert normalize_page_url("HTTPS://EXAMPLE.ORG/docs#section") == "https://example.org/docs/"
-    assert normalize_page_url("https://example.org/docs/?view=all#top") == (
-        "https://example.org/docs/?view=all"
-    )
-
-
-class _Response:
-    """Minimal Playwright response stand-in for page-load tests."""
-
-    def __init__(self, status: int) -> None:
-        self.status = status
-
-
-class _Page:
-    """Minimal Playwright page stand-in for final-URL tests."""
-
-    def __init__(self, url: str) -> None:
-        self.url = url
-
-
 class _EvaluationPage:
     """Playwright page stand-in returning one scripted DOM result."""
 
@@ -86,62 +50,35 @@ class _EvaluationPage:
         return self.result
 
 
-def test_canonical_route_paths_are_derived_from_the_sitemap(
-    tmp_path: Path,
-    monkeypatch: pytest.MonkeyPatch,
-) -> None:
-    """The route crawl should use canonical sitemap URLs and strip the deploy base."""
+def test_canonical_smoke_crawl_encodes_decoded_route_delimiters() -> None:
+    """The smoke consumer must never reinterpret decoded route identity."""
 
-    monkeypatch.setattr(browser_routes, "discover_site_base_path", lambda _site: "/opi-wiki/")
-    monkeypatch.setattr(
-        browser_routes,
-        "load_sitemap_locations",
-        lambda _site: [
-            "https://example.test/opi-wiki/",
-            "https://example.test/opi-wiki/resources/",
-            "https://example.test/outside/",
-        ],
+    page = MagicMock()
+
+    def navigate(url: str, *, wait_until: str) -> SimpleNamespace:
+        """Expose the encoded destination as the fake page's final URL."""
+
+        assert wait_until == "networkidle"
+        page.url = url
+        return SimpleNamespace(status=200)
+
+    page.goto.side_effect = navigate
+    context = MagicMock()
+    context.new_page.return_value = page
+    browser = MagicMock()
+    browser.new_context.return_value = context
+
+    assert (
+        _crawl_canonical_routes(
+            browser,
+            "http://example.test/opi-wiki/",
+            ("/#/?/%/%2F/%2e%2e/",),
+        )
+        == []
     )
-
-    assert canonical_route_paths(tmp_path) == ["/", "/resources/"]
-
-
-def test_page_load_accepts_a_200_at_the_canonical_url() -> None:
-    """A canonical page returning HTTP 200 should pass the load check."""
-
-    requested = "http://127.0.0.1:5208/resources/"
-
-    assert _check_page_load(_Page(requested), _Response(200), requested, "Resources", "light") == []
-
-
-def test_page_load_reports_status_and_unexpected_redirect() -> None:
-    """HTTP errors and redirect-only smoke targets must fail with useful evidence."""
-
-    issues = _check_page_load(
-        _Page("http://127.0.0.1:5208/retired/"),
-        _Response(404),
-        "http://127.0.0.1:5208/resources/",
-        "Resources",
-        "dark",
+    assert page.goto.call_args.args[0] == (
+        "http://example.test/opi-wiki/%23/%3F/%25/%252F/%252e%252e/"
     )
-
-    assert len(issues) == 2
-    assert "returned HTTP 404" in issues[0]
-    assert "expected canonical URL" in issues[1]
-
-
-def test_page_load_reports_a_missing_navigation_response() -> None:
-    """Non-HTTP navigation results should fail instead of passing vacuously."""
-
-    issues = _check_page_load(
-        _Page("about:blank"),
-        None,
-        "http://127.0.0.1:5208/resources/",
-        "Resources",
-        "light",
-    )
-
-    assert issues == ["Resources (light): navigation returned no HTTP response."]
 
 
 def test_table_scroll_wrapper_has_keyboard_focus_treatment() -> None:
@@ -229,17 +166,6 @@ def test_source_override_keeps_static_repo_link_without_stats_hook() -> None:
     assert 'data-md-component="source" hook' in source_override
     anchor_markup = source_override.split("<a", maxsplit=1)[1].split(">", maxsplit=1)[0]
     assert "data-md-component" not in anchor_markup
-
-
-def test_local_site_server_serves_the_requested_directory(tmp_path: Path) -> None:
-    """The browser orchestrator's local server should expose freshly built files."""
-
-    (tmp_path / "index.html").write_text("<h1>OPI</h1>", encoding="utf-8")
-
-    with local_site_server(tmp_path) as base_url:
-        with urlopen(base_url, timeout=2) as response:  # noqa: S310
-            assert response.status == 200
-            assert b"<h1>OPI</h1>" in response.read()
 
 
 def test_browser_smoke_rejects_a_missing_built_site(tmp_path: Path) -> None:

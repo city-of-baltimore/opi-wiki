@@ -3,22 +3,12 @@
 from __future__ import annotations
 
 import re
-from collections import Counter
 from collections.abc import Sequence
-from dataclasses import dataclass
 from pathlib import Path
-
-from scripts.repo_tools.visibility_labels import (
-    check_visibility_labels,
-    find_visibility_label_issues,
-)
 
 REPO_ROOT = Path(__file__).resolve().parents[2]
 DOCS = REPO_ROOT / "docs"
 SERVICES_DIR = DOCS / "what-we-do" / "services"
-
-HEADING_RE = re.compile(r"^(#{1,6})\s+\S")
-ACRONYM_RE = re.compile(r"\b[A-Z]{2,5}\b")
 
 SERVICE_REQUIRED = (
     "## What this service does",
@@ -113,50 +103,6 @@ CITISTAT_DRIFT_PATTERNS = (
         "Performance owns the method and operates CitiStat; it does not own the program.",
     ),
 )
-
-RETIRED_PAGE_DECORATION_PATTERNS = (
-    (
-        re.compile(r"\{\{\s*badge\s*\(", re.IGNORECASE),
-        "Inline badge macros are retired; use plain page content.",
-    ),
-    (
-        re.compile(r"""class\s*=\s*["'][^"']*\bopi-pill\b[^"']*["']""", re.IGNORECASE),
-        "Raw pill markup is retired; use plain page content.",
-    ),
-)
-
-# Common acronyms that are fine unexpanded. The glossary's acronyms are merged
-# in at runtime so the allowlist grows with the site terminology reference.
-BASE_ALLOW = frozenset(
-    """
-    OPI MOPI AI IT HR QA KPI SOP SLA US OK ED CA DM CDO DCDO DCPO DCA SRO PMO ORF
-    RAG COOP OSHA WCAG ETL ELT GIS API APIs CSV PDF URL MVP UX UI FAQ FY MOU RFP BIC
-    BCDP CCA EOY TBD SQL CI CD ICYMI BCIT BBMR BCPSS BCRP DGS DOT DPW BPD EMS DHR
-    DHCD HCD MOED MONSE MOGR BCFD MOIT DPOB LIGHT MAPS RISE DDO PD BI AV ID MCP OOO
-    PTO GenBI BCHD DJS ECB HKS BDC DCPBL MWBOO WBE BMORE UMBC WIP PR QC ML UAT PPE JD
-    AM PM FMLA ADA AVL CIO COB FYI GPS HVAC IDE IRS ISO JIRA JSON KB MD RBAC SMS SSPR
-    AA GRIT AIM ORM VPN SSO MFA WFH SBAR NNN SMBA
-    """.split()
-)
-
-# Words that are not acronyms but match [A-Z]{2,5}, including common ALL-CAPS
-# heading words, Roman numerals, and date/time placeholders.
-STOPWORDS = frozenset(
-    """
-    THE AND OF FOR HOW ABOUT READ STAFF NORTH STAR WHAT WHEN WHO WHY WITH FROM THIS
-    THAT OWN WE OUR USE ALL NOT ARE WAS HAS HER HIS ITS OUT NEW NOW ONE TWO WORK TEAM
-    PLAN DONE MORE LESS GUIDE HACK NOTE OWNER STYLE TODO WARN
-    I II III IV V VI VII VIII IX X YYYY MM DD HH SS
-    """.split()
-)
-
-
-@dataclass(frozen=True)
-class ConsistencyScan:
-    """Collected structural issues and informational acronym findings."""
-
-    structural_issues: tuple[str, ...]
-    acronyms: tuple[tuple[str, str], ...]
 
 
 def _relative_path(path: Path, repo_root: Path) -> str:
@@ -310,22 +256,6 @@ def check_citistat_narrative(
     return issues
 
 
-def check_retired_page_decoration(
-    path: Path,
-    text: str,
-    *,
-    repo_root: Path = REPO_ROOT,
-) -> list[str]:
-    """Reject retired inline page-decoration markup without policing prose."""
-
-    issues: list[str] = []
-    for pattern, message in RETIRED_PAGE_DECORATION_PATTERNS:
-        for match in pattern.finditer(text):
-            line_number = text.count("\n", 0, match.start()) + 1
-            issues.append(f"{_relative_path(path, repo_root)}:{line_number}: {message}")
-    return issues
-
-
 def _is_citistat_narrative_path(path: Path) -> bool:
     """Return whether a source participates in the CitiStat ownership narrative."""
 
@@ -342,139 +272,3 @@ def _is_citistat_narrative_path(path: Path) -> bool:
         or is_team_index_cards
         or is_glossary
     )
-
-
-def load_acronym_allowlist(docs_dir: Path = DOCS) -> set[str]:
-    """Load the curated and glossary-derived acronym allowlist."""
-
-    allow = set(BASE_ALLOW)
-    glossary = docs_dir / "resources" / "reference" / "glossary.md"
-    if glossary.exists():
-        try:
-            glossary_text = glossary.read_text(encoding="utf-8")
-        except OSError as error:
-            raise RuntimeError(f"Unable to read acronym glossary: {glossary}") from error
-        allow.update(ACRONYM_RE.findall(glossary_text))
-    return allow
-
-
-def acronym_report(
-    path: Path,
-    text: str,
-    allow: set[str],
-    *,
-    repo_root: Path = REPO_ROOT,
-) -> list[tuple[str, str]]:
-    """Return possibly undefined acronyms on one page."""
-
-    found: set[str] = set()
-    # Skip headings because the wiki uses ALL-CAPS titles that are not acronyms.
-    body = "\n".join(line for line in text.split("\n") if not HEADING_RE.match(line))
-    for token in ACRONYM_RE.findall(body):
-        if token in allow or token in STOPWORDS:
-            continue
-        if f"({token})" in text:
-            continue
-        found.add(token)
-    display_path = _relative_path(path, repo_root)
-    return [(display_path, token) for token in sorted(found)]
-
-
-def scan_consistency(
-    docs_dir: Path = DOCS,
-    *,
-    repo_root: Path = REPO_ROOT,
-) -> ConsistencyScan:
-    """Read site Markdown and collect all consistency findings."""
-
-    structural_issues = find_visibility_label_issues(
-        repo_root,
-        docs_dir,
-        include_docs=False,
-    )
-    acronyms: list[tuple[str, str]] = []
-    allow = load_acronym_allowlist(docs_dir)
-    services_dir = docs_dir / "what-we-do" / "services"
-
-    for path in sorted(docs_dir.rglob("*.md")):
-        try:
-            text = path.read_text(encoding="utf-8")
-        except OSError as error:
-            structural_issues.append(
-                f"{_relative_path(path, repo_root)}: unable to read Markdown source: {error}"
-            )
-            continue
-        lines = text.split("\n")
-        structural_issues.extend(check_empty_headings(path, lines, repo_root=repo_root))
-        structural_issues.extend(check_duplicate_blockquotes(path, lines, repo_root=repo_root))
-        structural_issues.extend(
-            check_service_sections(
-                path,
-                text,
-                services_dir=services_dir,
-                repo_root=repo_root,
-            )
-        )
-        structural_issues.extend(check_toc_sections(path, text, repo_root=repo_root))
-        structural_issues.extend(check_glossary_taxonomy(path, text, repo_root=repo_root))
-        structural_issues.extend(check_citistat_narrative(path, text, repo_root=repo_root))
-        structural_issues.extend(check_retired_page_decoration(path, text, repo_root=repo_root))
-        structural_issues.extend(check_visibility_labels(path, text, repo_root=repo_root))
-        acronyms.extend(acronym_report(path, text, allow, repo_root=repo_root))
-
-    yaml_paths = sorted(
-        path
-        for path in docs_dir.rglob("*")
-        if path.is_file() and path.suffix.casefold() in {".yaml", ".yml"}
-    )
-    for path in yaml_paths:
-        try:
-            text = path.read_text(encoding="utf-8")
-        except OSError as error:
-            source_label = (
-                "card source"
-                if path.name.endswith(".cards.yml") and _is_citistat_narrative_path(path)
-                else "YAML source"
-            )
-            structural_issues.append(
-                f"{_relative_path(path, repo_root)}: unable to read {source_label}: {error}"
-            )
-            continue
-        structural_issues.extend(check_visibility_labels(path, text, repo_root=repo_root))
-        if path.name.endswith(".cards.yml") and _is_citistat_narrative_path(path):
-            structural_issues.extend(check_citistat_narrative(path, text, repo_root=repo_root))
-
-    return ConsistencyScan(tuple(structural_issues), tuple(acronyms))
-
-
-def format_consistency_report(
-    scan: ConsistencyScan,
-    *,
-    show_acronyms: bool,
-) -> tuple[str, int]:
-    """Format a consistency result and return its shell-compatible exit code."""
-
-    lines: list[str] = []
-    if scan.acronyms:
-        counts = Counter(token for _path, token in scan.acronyms)
-        if show_acronyms:
-            lines.append(
-                f"[consistency] {len(counts)} distinct possibly-undefined acronym(s) "
-                "(informational — add to the glossary or expand on first use):"
-            )
-            for token in sorted(counts, key=lambda item: (-counts[item], item)):
-                lines.append(f"  {token} ({counts[token]} use(s))")
-        else:
-            lines.append(
-                f"[consistency] {len(counts)} distinct possibly-undefined acronyms — "
-                "run with --acronyms to list them."
-            )
-
-    if scan.structural_issues:
-        lines.append("")
-        lines.append(f"[consistency] {len(scan.structural_issues)} structural issue(s):")
-        lines.extend(f"  {issue}" for issue in scan.structural_issues)
-        return "\n".join(lines), 1
-
-    lines.append("Consistency checks passed.")
-    return "\n".join(lines), 0

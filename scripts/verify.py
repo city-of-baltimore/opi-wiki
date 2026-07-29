@@ -207,6 +207,10 @@ def build_steps(
             command=(python, "-m", "mkdocs", "build", "--strict"),
         ),
         VerifyStep(
+            name="Checking built-content visibility",
+            command=(python, "scripts/check_built_visibility.py"),
+        ),
+        VerifyStep(
             name="Checking built-artifact safety",
             command=(python, "scripts/check_built_artifact.py"),
         ),

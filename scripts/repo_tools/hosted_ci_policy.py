@@ -6,12 +6,19 @@ Ownership: repository tooling, enforcing section 4 ("Lean CI") of
 
 Invariants enforced here:
 
-1. Every ``run:`` step in a hosted workflow matches the exact allowlist in
-   :data:`ALLOWED_RUN_COMMANDS`, and every ``uses:`` reference is pinned to a
-   full commit SHA (:data:`SHA_PINNED_ACTION`).
-2. No hosted workflow step reaches a forbidden command — a test suite, a
+1. The non-exempt workflow inventory and the ``ci.yml`` job/step sequence match
+   the independent exact contract in
+   :mod:`scripts.repo_tools.hosted_ci_contract`. Action identities, step
+   cardinality and order, job properties, and execution semantics are fixed;
+   action revisions may change only between full commit SHAs.
+2. The Taskfile has only its exact top-level semantics, the ``ci`` task chain
+   has its exact required shape, and every subprocess in the resolved plan
+   matches the independent ordered contract in
+   :mod:`scripts.repo_tools.hosted_ci_contract`. Missing, added, duplicated, or
+   reordered work is unsafe until this policy explicitly admits the new shape.
+3. No hosted workflow step reaches a forbidden command — a test suite, a
    coverage run, a site/application build, an image build, or a browser suite —
-   **directly or transitively, at any depth**. Invariant 1 alone would let
+   **directly or transitively, at any depth**. The workflow allowlist alone would let
    ``task ci`` or ``scripts/verify.py --plan prepush`` smuggle the whole heavy
    chain in behind one allowlisted-looking string, so this module walks two
    graphs and scans every command they expand to:
@@ -22,7 +29,7 @@ Invariants enforced here:
 
    The two compose: ``task ci`` → ``verify.py --plan ci`` → the step commands.
    A task that cannot be resolved is reported, never assumed innocent.
-3. Every hosted job declares ``timeout-minutes``. Without one, a hung step burns
+4. Every hosted job declares ``timeout-minutes``. Without one, a hung step burns
    GitHub's six-hour default instead of failing fast.
 
 Publish/deploy/release workflows are exempt: building the site is their job.
@@ -62,7 +69,7 @@ five; ``platform-check`` returns ``conforms`` / exit 0 on all five:
    the expander works and the wall is specifically the plan module. Reaching
    ``verify.py --plan prepush`` *directly* from the ``ci`` task is missed too,
    which rules out indirection depth as the cause.
-3. **A missing job ``timeout-minutes``** (invariant 3). *(0.4.5: still missed.)*
+3. **A missing job ``timeout-minutes``** (invariant 4). *(0.4.5: still missed.)*
    No equivalent rule.
 4. **An unallowlisted ``run:`` command** (invariant 1). *(0.4.5: structurally
    still missed; one worked example now caught.)* ``platform-check`` matches a
@@ -118,6 +125,13 @@ import re
 import shlex
 from pathlib import Path
 
+from scripts.repo_tools.hosted_ci_contract import (
+    EXPECTED_CI_WORKFLOW_PATHS,
+    find_ci_plan_shape_violations,
+    find_ci_task_shape_violations,
+    find_ci_workflow_inventory_violations,
+    find_ci_workflow_shape_violations,
+)
 from scripts.repo_tools.taskfile_graph import (
     TASK_INVOCATION,
     TaskGraph,
@@ -145,11 +159,11 @@ ALLOWED_RUN_COMMANDS = frozenset(
         "task ci",
     }
 )
-# Every ``uses:`` must be pinned to a full 40-character commit SHA. A SHA is
-# immutable, so a tag like ``@v7`` (which upstream can silently repoint) never
-# reaches CI. Which SHA is current is Dependabot's job to bump and a reviewer's
-# job to approve at merge; the guard only enforces that the pin is a SHA, so
-# routine action bumps do not need a code change here.
+# Every exact-contract ``uses:`` identity must be pinned to a full 40-character
+# commit SHA. A SHA is immutable, so a tag like ``@v7`` (which upstream can
+# silently repoint) never reaches CI. Dependabot may bump the revision without a
+# contract change; adding, removing, or reordering an action requires an explicit
+# contract update and review.
 SHA_PINNED_ACTION = re.compile(r"^[^@\s]+@[0-9a-f]{40}$")
 
 # Publish/deploy/release workflows legitimately build artifacts; that is their
@@ -250,6 +264,23 @@ def expand_aggregate_commands(command: str) -> list[tuple[str, str]]:
         resolved = " ".join(step.command)
         expanded.append((f"verify.py --plan {plan} -> {resolved}", resolved))
     return expanded
+
+
+def find_ci_plan_contract_violations(command: str) -> list[str]:
+    """Return missing, unexpected, duplicate, or reordered ``ci`` commands."""
+
+    if _resolved_plan(command) != "ci":
+        return []
+    actual = tuple(candidate for _provenance, candidate in expand_aggregate_commands(command))
+    return find_ci_plan_shape_violations(actual)
+
+
+def find_ci_task_contract_violations(command: str) -> list[str]:
+    """Return exact-shape violations for the hosted ``ci`` task chain."""
+
+    if "ci" not in TASK_INVOCATION.findall(command):
+        return []
+    return find_ci_task_shape_violations(_load_task_graph())
 
 
 def _shell_script_references(command: str) -> list[tuple[str, Path]]:
@@ -366,7 +397,11 @@ def find_forbidden_reach(command: str) -> list[str]:
     """Return reasons ``command`` reaches a forbidden operation, at any depth."""
 
     findings: list[str] = []
-    for provenance, candidate in reachable_commands(command):
+    reachable = reachable_commands(command)
+    findings.extend(find_ci_task_contract_violations(command))
+    for provenance, candidate in reachable:
+        for plan_issue in find_ci_plan_contract_violations(candidate):
+            findings.append(f"{provenance} [{plan_issue}]")
         for chain in unresolved_task_invocations(candidate):
             findings.append(f"{chain} [cannot verify what this task runs]")
         for script_issue in unresolved_shell_script_invocations(candidate):
@@ -378,7 +413,11 @@ def find_forbidden_reach(command: str) -> list[str]:
     return findings
 
 
-def find_policy_violations(workflow_path: Path) -> list[str]:
+def find_policy_violations(
+    workflow_path: Path,
+    *,
+    enforce_exact_contract: bool | None = None,
+) -> list[str]:
     """Return every lean-CI violation in one hosted workflow."""
 
     try:
@@ -387,7 +426,15 @@ def find_policy_violations(workflow_path: Path) -> list[str]:
         raise RuntimeError(f"Unable to read hosted workflow: {workflow_path}") from error
     commands = extract_run_commands(source)
 
-    violations = [f"run: {command}" for command in commands if command not in ALLOWED_RUN_COMMANDS]
+    exact_contract = (
+        workflow_path.name in EXPECTED_CI_WORKFLOW_PATHS
+        if enforce_exact_contract is None
+        else enforce_exact_contract
+    )
+    violations = find_ci_workflow_shape_violations(source) if exact_contract else []
+    violations.extend(
+        f"run: {command}" for command in commands if command not in ALLOWED_RUN_COMMANDS
+    )
     violations.extend(
         f"uses: {reference}"
         for reference in extract_action_references(source)
@@ -410,7 +457,12 @@ def find_all_policy_violations() -> tuple[list[str], list[Path]]:
         if path.stem.lower() not in EXEMPT_WORKFLOW_STEMS
     )
 
-    violations: list[str] = []
+    violations = [
+        f".github/workflows: {finding}"
+        for finding in find_ci_workflow_inventory_violations(
+            tuple(path.name for path in workflow_paths)
+        )
+    ]
     for workflow_path in workflow_paths:
         relative_path = workflow_path.relative_to(REPOSITORY_ROOT)
         violations.extend(

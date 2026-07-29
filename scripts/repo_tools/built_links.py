@@ -8,6 +8,9 @@ from pathlib import Path
 from posixpath import commonpath
 from urllib.parse import unquote, urlsplit
 
+# B405: only the locally generated MkDocs sitemap is parsed, with strict shape checks below.
+from xml.etree import ElementTree  # nosec B405
+
 
 @dataclass(frozen=True)
 class BuiltReference:
@@ -35,42 +38,6 @@ class _ReferenceParser(HTMLParser):
         for name, value in attrs:
             if name.lower() in {"href", "src"} and value is not None:
                 self.references.append(BuiltReference(value, self.getpos()[0]))
-
-
-class _SitemapLocationParser(HTMLParser):
-    """Collect URL locations from MkDocs' generated sitemap XML."""
-
-    def __init__(self) -> None:
-        super().__init__(convert_charrefs=True)
-        self.locations: list[str] = []
-        self._location_parts: list[str] | None = None
-
-    def handle_starttag(
-        self,
-        tag: str,
-        attrs: list[tuple[str, str | None]],
-    ) -> None:
-        """Start collecting text inside a loc element."""
-
-        del attrs
-        if tag.lower() == "loc":
-            self._location_parts = []
-
-    def handle_data(self, data: str) -> None:
-        """Collect text belonging to the current loc element."""
-
-        if self._location_parts is not None:
-            self._location_parts.append(data)
-
-    def handle_endtag(self, tag: str) -> None:
-        """Finish one loc element and retain its non-empty URL."""
-
-        if tag.lower() != "loc" or self._location_parts is None:
-            return
-        location = "".join(self._location_parts).strip()
-        if location:
-            self.locations.append(location)
-        self._location_parts = None
 
 
 def extract_built_references(text: str) -> list[BuiltReference]:
@@ -120,22 +87,63 @@ def discover_site_base_path(site_dir: Path) -> str:
 
 
 def load_sitemap_locations(site_dir: Path) -> list[str]:
-    """Return canonical URL locations from a generated sitemap, if present."""
+    """Return every location from one structurally valid generated sitemap."""
 
     sitemap = site_dir / "sitemap.xml"
     if not sitemap.exists():
         return []
     try:
         sitemap_text = sitemap.read_text(encoding="utf-8")
-    except OSError as error:
+    except (OSError, UnicodeError) as error:
         raise RuntimeError(f"Unable to read built sitemap: {sitemap}") from error
 
-    parser = _SitemapLocationParser()
-    parser.feed(sitemap_text)
-    parser.close()
-    if not parser.locations:
+    try:
+        # S314/B314: this is a locally generated MkDocs artifact; strict parsing
+        # is required here, and ElementTree does not retrieve external resources.
+        root = ElementTree.fromstring(sitemap_text)  # noqa: S314  # nosec B314
+    except ElementTree.ParseError as error:
+        raise RuntimeError(f"Built sitemap XML is malformed: {sitemap}: {error}") from error
+
+    def local_name(tag: str) -> str:
+        """Return an XML element name without its optional namespace."""
+
+        return tag.rsplit("}", maxsplit=1)[-1]
+
+    if local_name(root.tag) != "urlset":
+        raise RuntimeError(f"Built sitemap root must be <urlset>: {sitemap}")
+
+    url_elements = list(root)
+    if any(local_name(element.tag) != "url" for element in url_elements):
+        raise RuntimeError(f"Built sitemap <urlset> may contain only <url> entries: {sitemap}")
+
+    locations: list[str] = []
+    direct_locations: set[int] = set()
+    for index, url_element in enumerate(url_elements, start=1):
+        location_elements = [element for element in url_element if local_name(element.tag) == "loc"]
+        if len(location_elements) != 1:
+            raise RuntimeError(
+                f"Built sitemap <url> entry {index} must contain exactly one <loc>: {sitemap}"
+            )
+        location_element = location_elements[0]
+        direct_locations.add(id(location_element))
+        if list(location_element):
+            raise RuntimeError(
+                f"Built sitemap <loc> entry {index} must contain URL text only: {sitemap}"
+            )
+        location = (location_element.text or "").strip()
+        if not location:
+            raise RuntimeError(f"Built sitemap <loc> entry {index} is empty: {sitemap}")
+        locations.append(location)
+
+    nested_locations = {id(element) for element in root.iter() if local_name(element.tag) == "loc"}
+    if nested_locations != direct_locations:
+        raise RuntimeError(
+            f"Built sitemap contains a <loc> outside a direct <url> entry: {sitemap}"
+        )
+
+    if not locations:
         raise RuntimeError(f"Built sitemap contains no URL locations: {sitemap}")
-    return parser.locations
+    return locations
 
 
 def _candidate_paths(
