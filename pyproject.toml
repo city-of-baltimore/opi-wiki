@@ -35,7 +35,7 @@ dev = [
     "ruff>=0.16.0,<0.17.0",
     "playwright>=1.58.0,<2.0.0",
     "mypy>=2.1.0,<3.0.0",
-    "types-pyyaml>=6.0.12.20260518,<7.0.0.0",
+    "types-pyyaml>=6.0.12.20260724,<7.0.0.0",
     # Patapsco's estate baseline gate, exposed as the `platform-check` console
     # script. Exact-pinned, not ranged: it is a gate, and a gate that changes
     # its rule set under you on a routine `uv sync` is not a gate. Bumping it is
@@ -50,7 +50,7 @@ dev = [
     # The browser accessibility gate must not acquire new rules silently.
     # Review axe release notes and rerun the canonical-route matrix before
     # changing this exact pin.
-    "axe-playwright-python==0.1.7",
+    "axe-playwright-python==0.1.8",
 ]
 
 [tool.pytest.ini_options]
