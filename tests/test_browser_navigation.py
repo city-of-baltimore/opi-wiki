@@ -130,10 +130,12 @@ def test_instant_navigation_requires_the_expected_url_and_unique_target() -> Non
             "Search result",
             "light",
             ready_selector="h1#citistat",
+            activation="keyboard",
         )
         == []
     )
-    link.click.assert_called_once_with()
+    link.press.assert_called_once_with("Enter")
+    link.click.assert_not_called()
     assert page.wait_for_function.call_count == 3
     assert page.wait_for_function.call_args_list[0].kwargs == {"arg": "http://127.0.0.1:5208/"}
     assert page.wait_for_function.call_args_list[1].kwargs == {"arg": "transition-token"}

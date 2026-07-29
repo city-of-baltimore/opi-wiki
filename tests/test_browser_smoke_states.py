@@ -6,7 +6,7 @@ from unittest.mock import MagicMock
 
 import pytest
 from scripts.repo_tools.browser_smoke_states import (
-    _check_mobile_nav_state,
+    _check_mobile_nav_active_state,
     _check_org_chart_state,
     _check_table_focus_state,
 )
@@ -44,41 +44,27 @@ def test_smoke_targets_cover_each_major_section() -> None:
     ]
 
 
-def test_mobile_drawer_uses_pointer_interaction_without_navigation_wait(
+def test_mobile_navigation_checks_only_route_specific_active_state(
     monkeypatch: pytest.MonkeyPatch,
 ) -> None:
-    """The checkbox toggle should not inherit a navigation wait in offline Chromium."""
+    """Shared drawer behavior must not be repeated through the route matrix."""
 
     page = MagicMock()
-    toggle = MagicMock()
-    toggle.count.return_value = 1
-    overlay = MagicMock()
-    overlay.bounding_box.return_value = {"x": 0, "y": 0, "width": 100, "height": 100}
-    state = MagicMock()
-    state.is_checked.side_effect = [True, False]
     active_link = MagicMock()
     active_link.count.return_value = 1
     active_link.evaluate.return_value = "rgb(1, 2, 3)"
-    for locator in (toggle, overlay, active_link):
-        locator.first = locator
-    locators = {
-        'label.md-header__button[for="__drawer"]': toggle,
-        'label.md-overlay[for="__drawer"]': overlay,
-        "#__drawer": state,
-        ".md-nav--primary .md-nav__link--active": active_link,
-    }
-    page.locator.side_effect = lambda selector, **_kwargs: locators[selector]
-    monkeypatch.setattr(
-        "scripts.repo_tools.browser_smoke_states._check_repository_link_state",
-        lambda *_args: [],
-    )
+    active_link.first = active_link
+    page.locator.return_value = active_link
     monkeypatch.setattr(
         "scripts.repo_tools.browser_smoke_states._resolve_theme_color",
         lambda *_args: "rgb(1, 2, 3)",
     )
 
-    assert _check_mobile_nav_state(page, SMOKE_TARGETS[0], "light") == []
-    toggle.click.assert_called_once_with(no_wait_after=True)
+    assert _check_mobile_nav_active_state(page, SMOKE_TARGETS[0], "light") == []
+    page.locator.assert_called_once_with(
+        ".md-nav--primary .md-nav__link--active",
+        has_text=SMOKE_TARGETS[0].active_link_text,
+    )
 
 
 def test_table_scroll_wrapper_has_keyboard_focus_treatment() -> None:

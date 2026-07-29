@@ -1,7 +1,7 @@
 {#-
-  OPI override of the Material header. Adds the Baltimore civic lockup
-  (City of Baltimore logo + wordmark + divider + product title) for parity with
-  the balt-design-kit app family. Keep the rest in sync with upstream
+  OPI override of the Material header. It preserves Material's toggle inputs as
+  canonical state while presenting native controls and one home-linked
+  Baltimore civic lockup. Keep the structural blocks in sync with upstream
   partials/header.html on Material upgrades.
 -#}
 {% set class = "md-header" %}
@@ -12,18 +12,22 @@
 {% endif %}
 <header class="{{ class }}" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="{{ lang.t('header') }}">
-    <a href="{{ config.extra.homepage | d(nav.homepage.url, true) | url }}" title="{{ config.site_name | e }}" class="md-header__button md-logo" aria-label="{{ config.site_name }}" data-md-component="logo">
-      {% include "partials/logo.html" %}
-    </a>
-    <label class="md-header__button md-icon" for="__drawer">
+    <label class="md-header__button md-icon opi-header__fallback-control opi-header__fallback-drawer" for="__drawer" aria-label="Open navigation">
       {% set icon = config.theme.icon.menu or "material/menu" %}
       {% include ".icons/" ~ icon ~ ".svg" %}
     </label>
-    <div class="md-header__title md-header__lockup" data-md-component="header-title">
+    <button class="md-header__button md-icon opi-header__control opi-header__menu" type="button" aria-label="Open navigation" aria-controls="opi-primary-navigation" aria-expanded="false" aria-haspopup="dialog" data-opi-drawer-open>
+      {% set icon = config.theme.icon.menu or "material/menu" %}
+      {% include ".icons/" ~ icon ~ ".svg" %}
+    </button>
+    <a href="{{ config.extra.homepage | d(nav.homepage.url, true) | url }}" title="{{ config.site_name | e }} home" class="md-header__title md-header__lockup opi-header__brand" aria-label="{{ config.site_name }} home" data-md-component="header-title">
+      <span class="opi-header__seal" aria-hidden="true" data-md-component="logo">
+        {% include "partials/logo.html" %}
+      </span>
       <span class="md-header__wordmark">City of Baltimore</span>
       <span class="md-header__divider" aria-hidden="true"></span>
-      <span class="md-header__product md-ellipsis">{{ config.site_name }}</span>
-    </div>
+      <span class="md-header__product">{{ config.site_name }}</span>
+    </a>
     {% if config.theme.palette %}
       {% if not config.theme.palette is mapping %}
         {% include "partials/palette.html" %}
@@ -38,10 +42,14 @@
     {% if "material/search" in config.plugins %}
       {% set search = config.plugins["material/search"] | attr("config") %}
       {% if search.enabled %}
-        <label class="md-header__button md-icon" for="__search">
+        <label class="md-header__button md-icon opi-header__fallback-control opi-header__fallback-search" for="__search" aria-label="Open search">
           {% set icon = config.theme.icon.search or "material/magnify" %}
           {% include ".icons/" ~ icon ~ ".svg" %}
         </label>
+        <button class="md-header__button md-icon opi-header__control opi-header__search" type="button" aria-label="Open search" aria-controls="opi-search" aria-expanded="false" aria-haspopup="dialog" data-opi-search-open>
+          {% set icon = config.theme.icon.search or "material/magnify" %}
+          {% include ".icons/" ~ icon ~ ".svg" %}
+        </button>
         {% include "partials/search.html" %}
       {% endif %}
     {% endif %}

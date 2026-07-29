@@ -7,7 +7,7 @@ from collections.abc import Iterator
 from contextlib import contextmanager
 from dataclasses import dataclass
 from pathlib import Path
-from typing import Any
+from typing import Any, Literal
 from urllib.parse import quote, urlsplit, urlunsplit
 
 from scripts.repo_tools.browser_artifact_routes import install_canonical_artifact_route
@@ -226,8 +226,9 @@ def navigate_to_instant_page(
     scheme: str,
     *,
     ready_selector: str,
+    activation: Literal["pointer", "keyboard"] = "pointer",
 ) -> list[str]:
-    """Click a link and prove Material replaced content without reloading the document."""
+    """Activate a link and prove Material replaced content without a document reload."""
 
     transition = page.evaluate(
         """
@@ -248,7 +249,10 @@ def navigate_to_instant_page(
     if transition is None:
         return [f"{label} ({scheme}): source content was unavailable before instant navigation."]
 
-    link.click()
+    if activation == "keyboard":
+        link.press("Enter")
+    else:
+        link.click()
     page.wait_for_function(
         "(sourceUrl) => window.location.href !== sourceUrl",
         arg=transition["sourceUrl"],
