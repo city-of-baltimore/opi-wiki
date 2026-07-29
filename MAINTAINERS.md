@@ -412,7 +412,35 @@ supplement `task validate`; they do not replace its release evidence.
   evidence — owner: OPI Wiki product owner (design sign-off) and maintainers
   (implementation) — retire when navigation and search are traversable,
   operable, and visibly focused by keyboard at desktop and reflow widths, with
-  before/after evidence and automated regression proof.
+  before/after evidence and automated regression proof — **retired 2026-07-29:**
+  the semantic civic header slice added native controls, responsive focus
+  management, before/after evidence, and the focused browser proof.
+
+- 2026-07-29 — **[HEADER] keep Material's hidden toggles as canonical state
+  behind native civic controls** — Material 9.7.7's drawer, search, scroll lock,
+  deep links, and presentation consume the existing checkbox and palette-radio
+  state; the OPI adapter projects native activation into those controls and
+  derives ARIA, inertness, breakpoint roles, route handoff, and focus behavior
+  from the same state; this fixes semantics without forking the renderer or
+  creating a second open/closed model — owner: OPI Wiki product owner (visible
+  design) and maintainers (implementation) — reversible when Material exposes
+  equivalent native-control hooks or a replacement proves the same
+  controller-ready progressive enhancement, keyboard-native no-JavaScript
+  top-level navigation, deliberate search suppression without its runtime,
+  instant-navigation, focus, and search behavior.
+
+- 2026-07-29 — **[BROWSER ASSURANCE] prove shared header behavior once at the
+  cheapest authoritative layer** — one tiny rendered contract holds structure,
+  names, relationships, and the search-disabled guard; one enhanced browser
+  journey holds keyboard, geometry, focus, exact breakpoint handoffs, palette,
+  search-shortcut, and repeated instant navigation; one JavaScript-disabled
+  context holds the visible, keyboard-native top-level navigation fallback,
+  rejects hidden drawer focus stops, and proves safe search suppression; the
+  existing route-wide axe matrix retains contrast, semantics, and reflow
+  coverage, while its route loop checks only the active-link treatment that
+  actually varies — owner: OPI Wiki maintainers — reversible only to a
+  measured proof with equal risk coverage and no slower duplicated route or
+  color-scheme work.
 
 ### Which gate runs what
 

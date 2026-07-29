@@ -8,6 +8,7 @@ from unittest.mock import MagicMock
 
 import pytest
 import scripts.repo_tools.browser_accessibility as browser_accessibility
+import scripts.repo_tools.browser_header as browser_header
 import scripts.repo_tools.browser_smoke as browser_smoke
 from scripts.repo_tools.browser_routes import BrowserTarget
 
@@ -73,7 +74,8 @@ def test_smoke_attaches_resource_monitoring_to_canonical_and_interaction_context
 
     _ObserverSpy.instances = []
     monkeypatch.setattr(browser_smoke, "BrowserResourceObserver", _ObserverSpy)
-    monkeypatch.setattr(browser_smoke, "_check_mobile_nav_state", lambda *_args: [])
+    monkeypatch.setattr(browser_smoke, "_check_semantic_header", lambda *_args: [])
+    monkeypatch.setattr(browser_smoke, "_check_mobile_nav_active_state", lambda *_args: [])
     monkeypatch.setattr(browser_smoke, "_check_table_focus_state", lambda *_args: [])
     monkeypatch.setattr(
         browser_smoke,
@@ -87,7 +89,6 @@ def test_smoke_attaches_resource_monitoring_to_canonical_and_interaction_context
         "_check_org_chart_after_instant_navigation",
         lambda *_args: [],
     )
-    monkeypatch.setattr(browser_smoke, "_check_search_workflow", lambda *_args: [])
     monkeypatch.setattr(
         browser_smoke,
         "navigate_to_ready_page",
@@ -106,6 +107,41 @@ def test_smoke_attaches_resource_monitoring_to_canonical_and_interaction_context
     assert len(_ObserverSpy.instances) == 3
     assert all(observer.target == target for observer in _ObserverSpy.instances)
     assert all(observer.context is context for observer in _ObserverSpy.instances)
+
+
+def test_semantic_header_attaches_resource_monitoring_to_each_context(
+    monkeypatch: pytest.MonkeyPatch,
+) -> None:
+    """Mobile, desktop, and fallback header proofs must all fail on resource drift."""
+
+    _ObserverSpy.instances = []
+    contexts = [MagicMock(name=name) for name in ("mobile", "desktop", "fallback")]
+    for context in contexts:
+        context.new_page.return_value = MagicMock()
+
+    monkeypatch.setattr(
+        browser_header,
+        "create_browser_context",
+        MagicMock(side_effect=contexts),
+    )
+    monkeypatch.setattr(browser_header, "BrowserResourceObserver", _ObserverSpy)
+    monkeypatch.setattr(browser_header, "_mobile_header_journey", lambda *_args: [])
+    monkeypatch.setattr(browser_header, "_desktop_header_issues", lambda *_args: [])
+    monkeypatch.setattr(
+        browser_header,
+        "_no_javascript_fallback_issues",
+        lambda *_args: [],
+    )
+    target = BrowserTarget("https://city.example/opi-wiki/", ("/",))
+
+    assert browser_header._check_semantic_header(MagicMock(), target) == []
+    assert [(observer.scope, observer.context) for observer in _ObserverSpy.instances] == [
+        ("Semantic header (mobile)", contexts[0]),
+        ("Semantic header (desktop)", contexts[1]),
+        ("Semantic header (no JavaScript)", contexts[2]),
+    ]
+    assert all(observer.target == target for observer in _ObserverSpy.instances)
+    assert all(context.close.call_count == 1 for context in contexts)
 
 
 def test_accessibility_attaches_resource_monitoring_to_every_profile_context(

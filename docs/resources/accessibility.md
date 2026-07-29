@@ -16,8 +16,8 @@ screen-reader clarity, and the quality of alternative text.
 | Promise | How it is proven |
 | --- | --- |
 | Pages use meaningful headings, landmarks, names, and native HTML semantics. | Every generated page receives static semantic checks and a full-browser axe scan. |
-| Text, controls, links, and focus indicators remain perceivable in both color schemes. | Axe evaluates every canonical route in light and dark modes; focused cards, tables, and the skip link receive browser checks. |
-| The site works without a mouse. | Browser tests operate navigation, search, skip links, and horizontally scrollable tables with keyboard-accessible controls. |
+| Text, controls, links, and focus indicators remain perceivable in both color schemes. | Axe evaluates every canonical route in light and dark modes; focused header controls, tabs, cards, tables, and the skip link receive browser checks. |
+| The site works without a mouse. | Dedicated browser checks prove the skip link and scrollable tables. One focused header journey proves Tab order, Enter and Space activation, modal focus containment, Escape, focus return, global search shortcut behavior, and instant-navigation handoff. |
 | Content reflows without page-level horizontal scrolling. | Every canonical route is measured at a 320 CSS-pixel viewport in both color schemes. Data tables may scroll inside their labeled region, as WCAG permits. |
 | Responsive and interactive states receive the same standard as a direct page load. | The browser audit covers desktop, 320px reflow, the open mobile navigation drawer, open search, and pages reached through instant navigation. |
 | Accessibility failures stop a release. | `task prepush` holds generated semantic checks; `task validate` adds the real-browser matrix and must pass before deployment. |
@@ -34,8 +34,18 @@ its behavior cannot change silently. The matrix covers:
 - document-level horizontal overflow;
 - the first-focus skip link;
 - the mobile navigation drawer and search after they are opened; and
-- runtime errors, canonical routes, focus treatments, and instant navigation
-  through the companion browser smoke suite.
+- one enhanced 320px, 390px, exact-breakpoint, and true-desktop semantic-header
+  journey covering native controls, 44px targets, focus entry and return, and
+  instant navigation; and
+- one JavaScript-disabled header context proving visible, keyboard-native
+  top-level navigation with no hidden drawer focus stops, while search stays
+  suppressed without its results runtime.
+
+Shared header behavior runs once. The route-wide axe matrix still owns
+semantics, contrast, and reflow across every page and both color schemes; the
+mobile route matrix checks only the route- and scheme-specific active-link
+treatment. Repeating drawer and search behavior per route or theme would spend
+more time without proving a different risk.
 
 Run the complete local proof with:
 
