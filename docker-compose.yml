@@ -12,6 +12,11 @@
 services:
   wiki:
     build: .
+    environment:
+      # MkDocs serves on the container-only bind address, but canonical links
+      # must describe the loopback URL readers actually open. The registered
+      # hook validates and restores this value after MkDocs rewrites site_url.
+      OPI_SITE_URL: http://127.0.0.1:5208/opi-wiki/
     ports:
       - "127.0.0.1:5208:8000"
     volumes:

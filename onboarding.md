@@ -143,6 +143,24 @@ uv run playwright install chromium  # one-time browser installation
 task validate
 ```
 
+`task validate` makes a strict production build, reads its canonical address
+from the generated sitemap, and has Chromium audit those exact files at that
+address through local-only request routing. It does not start a server, use DNS,
+TLS, or the network, or rewrite the generated HTML. Unexpected paths, requests
+outside the deployment address, and missing files fail locally. This preserves
+production-origin behavior such as Material instant navigation, while a
+separate live preview does not need to be running.
+
+The self-contained check assumes outside font services are unavailable and
+confirms that the product workflows still work. That keeps the release proof
+dependable offline. It does not prove which font the browser painted or whether
+Adobe or Google is available; those typography details need a manual look in a
+live browser when they matter.
+
+The live browser commands documented in the [README](README.md) are deliberately
+different: when pointed at `task serve` or Docker Compose, they make real
+requests to that running preview and read its own sitemap.
+
 ### Docker Compose alternative
 
 Docker Compose is appropriate when a contributor wants a working preview

@@ -34,8 +34,9 @@ RUN mkdir -p /app/site
 EXPOSE 8000
 
 HEALTHCHECK --interval=30s --timeout=3s --start-period=10s --retries=3 \
-    CMD ["python", "-c", "import urllib.request; urllib.request.urlopen('http://127.0.0.1:8000/', timeout=2)"]
+    CMD ["python", "-m", "scripts.docker_healthcheck"]
 
-# Live-reload preview server. docker-compose mounts the source over /app so
-# edits on the host refresh the browser.
-CMD ["uv", "run", "--no-dev", "mkdocs", "serve", "-a", "0.0.0.0:8000"]
+# Live-reload preview server. Compose mounts the source over /app so edits on
+# the host refresh the browser. MKDOCS_DEV_ADDR above is the single container
+# bind-address source; Compose separately supplies the reader-visible site URL.
+CMD ["uv", "run", "--no-dev", "python", "-m", "mkdocs", "serve"]

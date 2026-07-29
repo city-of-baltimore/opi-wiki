@@ -25,13 +25,20 @@ def parse_args(argv: Sequence[str] | None = None) -> argparse.Namespace:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument(
         "--base-url",
-        help="Use an already-running site at this base URL instead of serving ./site locally.",
+        help=(
+            "Audit an already-running site at this canonical base URL. "
+            "Routes come from that preview's sitemap.xml."
+        ),
     )
     parser.add_argument(
         "--site-dir",
         type=Path,
         default=SITE_DIR,
-        help="Path to a built site directory. Defaults to ./site.",
+        help=(
+            "Built artifact to audit at its sitemap canonical origin when "
+            "--base-url is omitted. Defaults to ./site; ignored for an "
+            "explicit preview."
+        ),
     )
     return parser.parse_args(argv)
 

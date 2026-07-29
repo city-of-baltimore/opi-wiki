@@ -9,10 +9,10 @@ name: CI
 # standard (patapsco/docs/app-consistency-standard.md, §4), the hosted lane is
 # static checks, contracts, and security only.
 #
-# The test suite, the strict MkDocs build, the built-site link crawl, and the
-# accessibility checks all still run — in the pre-push hook and the pre-deploy
-# gate (.github/workflows/deploy.yml), via './scripts/verify.sh --plan prepush'.
-# Nothing was dropped; it moved to the tier that can afford it.
+# The test suite, strict MkDocs build, built-site checks, and accessibility smoke
+# still run in the pre-push hook and Pages deploy gate via `task prepush`.
+# Browser interactions and the full-route accessibility matrix remain the
+# deliberate local release proof in `task validate`; they are not hosted checks.
 #
 # This job runs `task ci` verbatim, so the hosted lane and a local run are the
 # same command. Do not add a test, build, or browser step here, and do not add

@@ -64,12 +64,12 @@ tasks:
   build:
     desc: Build the site with strict validation
     cmds:
-      - uv run mkdocs build --strict
+      - uv run python -m mkdocs build --strict
 
   serve:
     desc: Preview the site on the slot-8 loopback port (registry port 5208)
     cmds:
-      - uv run mkdocs serve -a 127.0.0.1:5208
+      - uv run python -m mkdocs serve -a 127.0.0.1:5208
 
   prepush:
     desc: Everything in ci plus tests, the strict build, and built-site checks
@@ -78,7 +78,7 @@ tasks:
       - uv run python scripts/verify.py --plan prepush
 
   validate:
-    desc: Everything in prepush plus the browser smoke suite
+    desc: Everything in prepush plus browser smoke and full accessibility suites
     cmds:
       - task: ci:policy
       - uv run python scripts/verify.py --plan validate

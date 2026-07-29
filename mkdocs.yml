@@ -127,6 +127,13 @@ markdown_extensions:
       custom_checkbox: true
   - pymdownx.tilde
 
+# MkDocs rewrites site_url to its bind address during `serve`. The official
+# hook restores an explicitly configured external URL after that rewrite so a
+# container preview keeps same-origin canonical links and Material instant
+# navigation. Static builds simply retain the configured production URL.
+hooks:
+  - scripts/mkdocs_site_url.py
+
 plugins:
   - awesome-pages
   - redirects:

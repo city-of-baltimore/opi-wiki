@@ -245,10 +245,40 @@ conflicting memo variants.
 - Preview locally with `task serve`, or `docker compose up` — both run the same
   uv-based `mkdocs serve` with live reload, both are developer conveniences
   only.
+- Compose separates its container bind address from the reader-visible
+  canonical URL through `OPI_SITE_URL` and `scripts/mkdocs_site_url.py`. Keep
+  that hook wired: Material instant navigation requires the preview canonical
+  origin to match <http://127.0.0.1:5208>.
+- Static browser checks in `task validate` read the production canonical origin
+  from the strict-built `sitemap.xml` and mount the exact artifact there inside
+  Chromium through hermetic Playwright request routing. Do not replace that
+  boundary with a loopback server or an HTML rewrite: it performs no DNS, TLS,
+  or network access, and any request outside the exact origin and deployment
+  base, or absent from the artifact, fails locally.
+- The static context is offline. Exact HTTPS Adobe and Google font origins are
+  the only nonblocking cross-origin dependency, and only for font, stylesheet,
+  or image requests; every other external request is a finding. This proves the
+  product workflows do not depend on vendor delivery, not which typeface
+  Chromium painted. Font delivery and visual typography remain a deliberate
+  manual design check; never add network access to the static release proof.
+- Live-preview browser diagnostics derive routes from the selected preview's
+  own `sitemap.xml`. MkDocs live reload keeps a request open, so browser
+  readiness is canonical load + visible rendered content + settled font
+  loading; smoke workflows add a target-specific marker after instant
+  navigation. They make real requests to the running `task serve` or Docker
+  Compose preview, but do not make third-party font delivery a release
+  assertion. The audit browser aborts only its own same-origin numeric MkDocs
+  `/livereload/` XHR so a route crawl cannot accumulate the server's 60-second
+  polls; normal preview browsers keep live reload. Never use `networkidle` or a
+  disk sitemap as the live-preview authority.
 - Both serve on <http://127.0.0.1:5208>: this repo's slot-8 pin in
   `patapsco/contracts/ports.toml`, recorded in `.baltimore-lab-app.toml`. Keep
   the binding on loopback, never `0.0.0.0`, and change the registry before
   changing the port.
+- Until Patapsco enforces ports for `docs-site`, the fast repository
+  browser-readiness contract pins every local seam: MkDocs, Task, Compose, the
+  container bind, and Docker startup and health. Do not weaken one path because
+  another remains correct.
 - Do not edit generated `site/` output.
 
 ## Docs that move with structure

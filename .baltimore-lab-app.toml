@@ -35,8 +35,9 @@ runner = "Taskfile.yml"
 deploy = "github-pages"
 # The hosted pull-request lane is static-only (`task ci`): no test suite, no
 # site build, no browser suite. The tests, the strict build, the built-site link
-# crawl, and the a11y checks run in the pre-push hook and the deploy gate
-# (`task prepush`); `task validate` adds browser smoke.
+# crawl, and accessibility smoke run in the pre-push hook and the deploy gate
+# (`task prepush`); deliberate local `task validate` adds browser interactions
+# and the full-route accessibility matrix.
 # scripts/check_hosted_ci_policy.py enforces the boundary mechanically, walking
 # both the Taskfile graph and the verify.py plans so indirection cannot hide a
 # forbidden command. The `ci` plan also runs Patapsco's published platform-check

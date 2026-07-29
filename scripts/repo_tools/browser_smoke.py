@@ -2,196 +2,35 @@
 
 from __future__ import annotations
 
-from dataclasses import dataclass
 from pathlib import Path
 from typing import Any
 from urllib.parse import urljoin
 
+from scripts.repo_tools.browser_resources import BrowserResourceObserver
 from scripts.repo_tools.browser_routes import (
+    BrowserTarget,
     browser_route_url,
-    canonical_route_paths,
-    local_site_server,
-    normalize_base_url,
-    normalize_page_url,
+    create_browser_context,
+    navigate_to_instant_page,
+    navigate_to_ready_page,
+    resolved_browser_target,
 )
-from scripts.repo_tools.browser_routes import check_page_load as _check_page_load
-
-
-@dataclass(frozen=True)
-class BrowserSmokeTarget:
-    """A representative docs page for browser-level smoke checks."""
-
-    section: str
-    path: str
-    active_link_text: str
-
-
-SMOKE_TARGETS = (
-    BrowserSmokeTarget(
-        "About Us",
-        "/about-us/operating-principles-and-culture/",
-        "Operating Principles and Culture",
-    ),
-    BrowserSmokeTarget(
-        "How We Work",
-        "/how-we-work/how-work-moves-through-opi/",
-        "How Work Moves Through OPI",
-    ),
-    BrowserSmokeTarget(
-        "What We Do",
-        "/what-we-do/services/cross-agency-delivery/",
-        "Cross-Agency Delivery",
-    ),
-    BrowserSmokeTarget("Resources", "/resources/reference/glossary/", "Glossary"),
+from scripts.repo_tools.browser_smoke_states import (
+    _check_card_focus_state,
+    _check_mobile_nav_state,
+    _check_org_chart_state,
+    _check_table_focus_state,
 )
-TABLE_FOCUS_SOURCE_PATH = "/what-we-do/services/cross-agency-delivery/"
-TABLE_FOCUS_TARGET_PATH = "/what-we-do/services/cross-agency-delivery/service-definition/"
-ORG_SOURCE_PATH = "/how-we-work/organization/"
-ORG_TARGET_PATH = "/how-we-work/organization/org-structure/"
-ORG_CHART_NAMES = (
-    "Brandon M. Scott",
-    "Faith P. Leach",
-    "Dartanion Swift-Williams",
-    "Rakeim Young",
-    "Danny Heller",
-    "Jason Howard, PhD",
-    "Gabriel Watson",
-    "Xander Jake de los Santos",
+from scripts.repo_tools.browser_smoke_targets import (
+    ORG_READY_SELECTOR,
+    ORG_SOURCE_PATH,
+    ORG_TARGET_PATH,
+    SEARCH_TARGET_SELECTOR,
+    SMOKE_TARGETS,
+    TABLE_FOCUS_SOURCE_PATH,
+    TABLE_FOCUS_TARGET_PATH,
+    TABLE_READY_SELECTOR,
 )
-REPOSITORY_URL = "https://github.com/city-of-baltimore/opi-wiki"
-REPOSITORY_NAME = "city-of-baltimore/opi-wiki"
-
-
-def _resolve_theme_color(page: Any, css_variable: str) -> str:
-    """Resolve a CSS custom property to the computed RGB value used by the page."""
-
-    script = """
-    ([variableName]) => {
-      const probe = document.createElement("div");
-      probe.style.color = `var(${variableName})`;
-      document.body.appendChild(probe);
-      const resolved = getComputedStyle(probe).color;
-      probe.remove();
-      return resolved;
-    }
-    """
-    return str(page.evaluate(script, [css_variable]))
-
-
-def _check_mobile_nav_state(page: Any, target: BrowserSmokeTarget, scheme: str) -> list[str]:
-    """Validate mobile drawer open/close behavior and active-link styling."""
-
-    issues: list[str] = []
-    drawer_toggle = page.locator('label.md-header__button[for="__drawer"]').first
-    drawer_overlay = page.locator('label.md-overlay[for="__drawer"]').first
-    drawer_state = page.locator("#__drawer")
-
-    if drawer_toggle.count() == 0:
-        return [f"{target.section} ({scheme}): drawer toggle was not found."]
-
-    drawer_toggle.click()
-    if not drawer_state.is_checked():
-        issues.append(f"{target.section} ({scheme}): drawer did not open.")
-        return issues
-
-    issues.extend(_check_repository_link_state(page, target.section, scheme))
-
-    active_link = page.locator(
-        ".md-nav--primary .md-nav__link--active",
-        has_text=target.active_link_text,
-    ).first
-    if active_link.count() == 0:
-        issues.append(
-            f"{target.section} ({scheme}): active nav link "
-            f"'{target.active_link_text}' was not found."
-        )
-    else:
-        expected_color = _resolve_theme_color(page, "--opi-nav-accent")
-        active_color = active_link.evaluate("element => getComputedStyle(element).color")
-        if active_color != expected_color:
-            issues.append(
-                f"{target.section} ({scheme}): active nav color was {active_color}, "
-                f"expected {expected_color}."
-            )
-
-    overlay_bounds = drawer_overlay.bounding_box()
-    if overlay_bounds is None:
-        issues.append(f"{target.section} ({scheme}): drawer overlay had no visible bounds.")
-        return issues
-    page.mouse.click(
-        overlay_bounds["x"] + overlay_bounds["width"] - 8,
-        overlay_bounds["y"] + (overlay_bounds["height"] / 2),
-    )
-    if drawer_state.is_checked():
-        issues.append(f"{target.section} ({scheme}): drawer did not close.")
-
-    return issues
-
-
-def _check_repository_link_state(page: Any, section: str, scheme: str) -> list[str]:
-    """Keep the visible repository link without Material's network-backed widget."""
-
-    issues: list[str] = []
-    repository_link = page.locator(f'.md-nav__source a.md-source[href="{REPOSITORY_URL}"]').first
-    if repository_link.count() == 0 or not repository_link.is_visible():
-        issues.append(f"{section} ({scheme}): visible repository link was not found.")
-    elif REPOSITORY_NAME not in repository_link.inner_text():
-        issues.append(f"{section} ({scheme}): repository name was not visible in its link.")
-
-    if page.locator('[data-md-component="source"]').count() != 0:
-        issues.append(f"{section} ({scheme}): repository stats component was still active.")
-    return issues
-
-
-def _check_card_focus_state(page: Any, scheme: str) -> list[str]:
-    """Validate that shared cards still expose a visible keyboard focus treatment."""
-
-    card_link = page.locator(".opi-card-link").first
-    if card_link.count() == 0:
-        return [f"Home ({scheme}): no shared card links were found."]
-
-    card_link.focus()
-    outline_style = card_link.evaluate("element => getComputedStyle(element).outlineStyle")
-    card_shadow = card_link.locator("xpath=ancestor::article[1]").evaluate(
-        "element => getComputedStyle(element).boxShadow"
-    )
-
-    issues: list[str] = []
-    if outline_style == "none":
-        issues.append(f"Home ({scheme}): focused card link lost its visible outline.")
-    if card_shadow == "none":
-        issues.append(f"Home ({scheme}): focused card lost its focus-within elevation state.")
-    return issues
-
-
-def _check_table_focus_state(page: Any, scheme: str, navigation: str) -> list[str]:
-    """Validate keyboard focusability and focus styling on a generated table wrapper."""
-
-    result = page.evaluate(
-        """
-        () => {
-          const region = document.querySelector(".md-typeset__scrollwrap");
-          if (!region) return null;
-          region.focus();
-          const style = getComputedStyle(region);
-          return {
-            tabIndex: region.tabIndex,
-            outlineStyle: style.outlineStyle,
-            outlineWidth: style.outlineWidth,
-          };
-        }
-        """
-    )
-    label = f"Table scroll region ({scheme}, {navigation})"
-    if result is None:
-        return [f"{label}: generated scroll wrapper was not found."]
-
-    issues: list[str] = []
-    if result["tabIndex"] != 0:
-        issues.append(f"{label}: tabIndex was {result['tabIndex']}, expected 0.")
-    if result["outlineStyle"] == "none" or result["outlineWidth"] == "0px":
-        issues.append(f"{label}: keyboard focus outline was not visible.")
-    return issues
 
 
 def _check_table_focus_after_instant_navigation(page: Any, base_url: str, scheme: str) -> list[str]:
@@ -199,87 +38,27 @@ def _check_table_focus_after_instant_navigation(page: Any, base_url: str, scheme
 
     source_url = urljoin(base_url, TABLE_FOCUS_SOURCE_PATH.lstrip("/"))
     target_url = urljoin(base_url, TABLE_FOCUS_TARGET_PATH.lstrip("/"))
-    response = page.goto(source_url, wait_until="networkidle")
-    issues = _check_page_load(page, response, source_url, "Table focus source", scheme)
+    issues = navigate_to_ready_page(page, source_url, "Table focus source", scheme)
+    if issues:
+        return issues
 
     target_link = page.locator('.md-content a[href*="service-definition/"]').first
     if target_link.count() == 0:
         issues.append(f"Table scroll region ({scheme}, instant navigation): link was not found.")
         return issues
 
-    target_link.click()
-    page.wait_for_url(target_url)
-    page.wait_for_load_state("networkidle")
-    if normalize_page_url(str(page.url)) != normalize_page_url(target_url):
-        issues.append(
-            f"Table scroll region ({scheme}, instant navigation): ended at {page.url}, "
-            f"expected {target_url}."
-        )
+    transition_issues = navigate_to_instant_page(
+        page,
+        target_link,
+        target_url,
+        "Table scroll region (instant navigation)",
+        scheme,
+        ready_selector=TABLE_READY_SELECTOR,
+    )
+    issues.extend(transition_issues)
+    if transition_issues:
         return issues
     issues.extend(_check_table_focus_state(page, scheme, "instant navigation"))
-    return issues
-
-
-def _check_org_chart_state(page: Any, scheme: str, navigation: str) -> list[str]:
-    """Validate the visible semantic hierarchy and leadership names."""
-
-    result = page.evaluate(
-        """
-        () => {
-          const chart = document.querySelector(".opi-org-chart");
-          if (!chart) return null;
-          const isVisible = (element) => {
-            const style = getComputedStyle(element);
-            const rect = element.getBoundingClientRect();
-            return style.display !== "none" && style.visibility !== "hidden" &&
-              Number(style.opacity) !== 0 && rect.width > 0 && rect.height > 0;
-          };
-          const nodes = [...chart.querySelectorAll(".opi-org-chart__node")];
-          const count = (level) =>
-            chart.querySelectorAll(`.opi-org-chart__node[data-org-level='${level}']`).length;
-          return {
-            chartVisible: isVisible(chart),
-            chartNames: nodes
-              .filter(isVisible)
-              .map((node) => node.querySelector(".opi-org-chart__name")?.textContent?.trim())
-              .filter(Boolean),
-            counts: {
-              mayor: count("mayor"),
-              city: count("city"),
-              executive: count("executive"),
-              seniorLead: count("senior-lead"),
-              manager: count("manager"),
-              team: count("team"),
-              staff: count("staff"),
-            },
-          };
-        }
-        """
-    )
-    label = f"Organization chart ({scheme}, {navigation})"
-    if result is None:
-        return [f"{label}: semantic chart container was not found."]
-
-    issues: list[str] = []
-    if not result["chartVisible"]:
-        issues.append(f"{label}: chart container had no visible dimensions.")
-    missing_chart = [name for name in ORG_CHART_NAMES if name not in result["chartNames"]]
-    if missing_chart:
-        issues.append(f"{label}: leadership names were not visible: {missing_chart}.")
-    expected_counts = {
-        "mayor": 1,
-        "city": 1,
-        "executive": 1,
-        "seniorLead": 3,
-        "manager": 1,
-        "team": 1,
-        "staff": 17,
-    }
-    actual_counts = result["counts"]
-    if actual_counts != expected_counts:
-        issues.append(
-            f"{label}: hierarchy counts were {actual_counts}, expected {expected_counts}."
-        )
     return issues
 
 
@@ -288,16 +67,25 @@ def _check_org_chart_after_instant_navigation(page: Any, base_url: str, scheme: 
 
     source_url = urljoin(base_url, ORG_SOURCE_PATH.lstrip("/"))
     target_url = urljoin(base_url, ORG_TARGET_PATH.lstrip("/"))
-    response = page.goto(source_url, wait_until="networkidle")
-    issues = _check_page_load(page, response, source_url, "Organization source", scheme)
+    issues = navigate_to_ready_page(page, source_url, "Organization source", scheme)
+    if issues:
+        return issues
     target_link = page.locator('.md-content a[href*="org-structure/"]').first
     if target_link.count() == 0:
         issues.append(f"Organization chart ({scheme}, instant navigation): link was not found.")
         return issues
 
-    target_link.click()
-    page.wait_for_url(target_url)
-    page.wait_for_load_state("networkidle")
+    transition_issues = navigate_to_instant_page(
+        page,
+        target_link,
+        target_url,
+        "Organization chart (instant navigation)",
+        scheme,
+        ready_selector=ORG_READY_SELECTOR,
+    )
+    issues.extend(transition_issues)
+    if transition_issues:
+        return issues
     issues.extend(_check_org_chart_state(page, scheme, "instant navigation"))
     return issues
 
@@ -305,12 +93,13 @@ def _check_org_chart_after_instant_navigation(page: Any, base_url: str, scheme: 
 def _check_search_workflow(page: Any, base_url: str, scheme: str) -> list[str]:
     """Search for a stable site term and navigate to an accessible result."""
 
-    response = page.goto(base_url, wait_until="networkidle")
-    issues = _check_page_load(page, response, base_url, "Search home", scheme)
+    issues = navigate_to_ready_page(page, base_url, "Search home", scheme)
+    if issues:
+        return issues
     search_toggle = page.locator('label.md-header__button[for="__search"]').first
     if search_toggle.count() == 0:
         return [*issues, f"Search ({scheme}): search toggle was not found."]
-    search_toggle.click()
+    search_toggle.click(no_wait_after=True)
 
     search_input = page.locator("input.md-search__input").first
     # Material 9.6 listens to key events, so fill() changes the value without
@@ -325,30 +114,37 @@ def _check_search_workflow(page: Any, base_url: str, scheme: str) -> list[str]:
         return issues
 
     target_url = urljoin(str(page.url), href)
-    result_link.click()
-    page.wait_for_url(target_url)
-    page.wait_for_load_state("networkidle")
-    target_response = page.request.get(target_url)
-    try:
-        issues.extend(_check_page_load(page, target_response, target_url, "Search result", scheme))
-    finally:
-        target_response.dispose()
+    issues.extend(
+        navigate_to_instant_page(
+            page,
+            result_link,
+            target_url,
+            "Search result",
+            scheme,
+            ready_selector=SEARCH_TARGET_SELECTOR,
+        )
+    )
     return issues
 
 
-def _crawl_canonical_routes(browser: Any, base_url: str, routes: tuple[str, ...]) -> list[str]:
+def _crawl_canonical_routes(browser: Any, target: BrowserTarget) -> list[str]:
     """Load every canonical route and capture status, redirect, and runtime errors."""
 
-    if not routes:
+    if not target.routes:
         return []
-    context = browser.new_context(viewport={"width": 1440, "height": 900})
-    context.set_default_timeout(5000)
-    page = context.new_page()
+    context = create_browser_context(
+        browser,
+        target,
+        viewport={"width": 1440, "height": 900},
+    )
     issues: list[str] = []
     current_route = {"value": "/"}
+    resource_observer = BrowserResourceObserver(target, issues, "Canonical /")
+    resource_observer.attach(context)
+    page = context.new_page()
 
     def record_console(message: Any) -> None:
-        if message.type == "error":
+        if message.type == "error" and not message.text.startswith("Failed to load resource:"):
             issues.append(f"Canonical {current_route['value']}: console error: {message.text}")
 
     def record_page_error(error: Any) -> None:
@@ -357,12 +153,17 @@ def _crawl_canonical_routes(browser: Any, base_url: str, routes: tuple[str, ...]
     page.on("console", record_console)
     page.on("pageerror", record_page_error)
     try:
-        for route in routes:
+        for route in target.routes:
             current_route["value"] = route
-            requested_url = browser_route_url(base_url, route)
-            response = page.goto(requested_url, wait_until="networkidle")
+            resource_observer.set_scope(f"Canonical {route}")
+            requested_url = browser_route_url(target.base_url, route)
             issues.extend(
-                _check_page_load(page, response, requested_url, f"Canonical {route}", "desktop")
+                navigate_to_ready_page(
+                    page,
+                    requested_url,
+                    f"Canonical {route}",
+                    "desktop",
+                )
             )
     finally:
         context.close()
@@ -371,51 +172,115 @@ def _crawl_canonical_routes(browser: Any, base_url: str, routes: tuple[str, ...]
 
 def _collect_browser_smoke_issues(
     sync_playwright: Any,
-    base_url: str,
-    routes: tuple[str, ...] = (),
+    target: BrowserTarget,
 ) -> list[str]:
-    """Run the actual browser interactions against a resolved base URL."""
+    """Run the actual browser interactions against one resolved target."""
 
     with sync_playwright() as playwright:
         browser = playwright.chromium.launch()
         try:
-            issues = _crawl_canonical_routes(browser, base_url, routes)
+            issues = _crawl_canonical_routes(browser, target)
             for scheme in ("light", "dark"):
-                context = browser.new_context(
+                context = create_browser_context(
+                    browser,
+                    target,
                     color_scheme=scheme,
                     viewport={"width": 390, "height": 844},
                     is_mobile=True,
                 )
-                context.set_default_timeout(5000)
-                page = context.new_page()
-
-                for target in SMOKE_TARGETS:
-                    requested_url = urljoin(base_url, target.path.lstrip("/"))
-                    response = page.goto(requested_url, wait_until="networkidle")
-                    issues.extend(
-                        _check_page_load(page, response, requested_url, target.section, scheme)
-                    )
-                    issues.extend(_check_mobile_nav_state(page, target, scheme))
-
-                table_url = urljoin(base_url, TABLE_FOCUS_TARGET_PATH.lstrip("/"))
-                response = page.goto(table_url, wait_until="networkidle")
-                issues.extend(_check_page_load(page, response, table_url, "Table focus", scheme))
-                issues.extend(_check_table_focus_state(page, scheme, "direct load"))
-                issues.extend(_check_table_focus_after_instant_navigation(page, base_url, scheme))
-
-                org_url = urljoin(base_url, ORG_TARGET_PATH.lstrip("/"))
-                response = page.goto(org_url, wait_until="networkidle")
-                issues.extend(
-                    _check_page_load(page, response, org_url, "Organization chart", scheme)
+                resource_observer = BrowserResourceObserver(
+                    target,
+                    issues,
+                    f"Smoke interactions ({scheme})",
                 )
-                issues.extend(_check_org_chart_state(page, scheme, "direct load"))
-                issues.extend(_check_org_chart_after_instant_navigation(page, base_url, scheme))
-                issues.extend(_check_search_workflow(page, base_url, scheme))
+                resource_observer.attach(context)
+                page = context.new_page()
+                try:
+                    for smoke_target in SMOKE_TARGETS:
+                        resource_observer.set_scope(
+                            f"{smoke_target.section} ({scheme}, mobile navigation)"
+                        )
+                        requested_url = urljoin(
+                            target.base_url,
+                            smoke_target.path.lstrip("/"),
+                        )
+                        navigation_issues = navigate_to_ready_page(
+                            page,
+                            requested_url,
+                            smoke_target.section,
+                            scheme,
+                        )
+                        issues.extend(navigation_issues)
+                        if navigation_issues:
+                            continue
+                        issues.extend(_check_mobile_nav_state(page, smoke_target, scheme))
 
-                response = page.goto(base_url, wait_until="networkidle")
-                issues.extend(_check_page_load(page, response, base_url, "Home", scheme))
-                issues.extend(_check_card_focus_state(page, scheme))
-                context.close()
+                    resource_observer.set_scope(f"Table focus ({scheme}, direct load)")
+                    table_url = urljoin(
+                        target.base_url,
+                        TABLE_FOCUS_TARGET_PATH.lstrip("/"),
+                    )
+                    navigation_issues = navigate_to_ready_page(
+                        page,
+                        table_url,
+                        "Table focus",
+                        scheme,
+                        ready_selector=TABLE_READY_SELECTOR,
+                    )
+                    issues.extend(navigation_issues)
+                    if not navigation_issues:
+                        issues.extend(_check_table_focus_state(page, scheme, "direct load"))
+                    resource_observer.set_scope(
+                        f"Table scroll region ({scheme}, instant navigation)"
+                    )
+                    issues.extend(
+                        _check_table_focus_after_instant_navigation(
+                            page,
+                            target.base_url,
+                            scheme,
+                        )
+                    )
+
+                    resource_observer.set_scope(f"Organization chart ({scheme}, direct load)")
+                    org_url = urljoin(
+                        target.base_url,
+                        ORG_TARGET_PATH.lstrip("/"),
+                    )
+                    navigation_issues = navigate_to_ready_page(
+                        page,
+                        org_url,
+                        "Organization chart",
+                        scheme,
+                        ready_selector=ORG_READY_SELECTOR,
+                    )
+                    issues.extend(navigation_issues)
+                    if not navigation_issues:
+                        issues.extend(_check_org_chart_state(page, scheme, "direct load"))
+                    resource_observer.set_scope(
+                        f"Organization chart ({scheme}, instant navigation)"
+                    )
+                    issues.extend(
+                        _check_org_chart_after_instant_navigation(
+                            page,
+                            target.base_url,
+                            scheme,
+                        )
+                    )
+                    resource_observer.set_scope(f"Search ({scheme})")
+                    issues.extend(_check_search_workflow(page, target.base_url, scheme))
+
+                    resource_observer.set_scope(f"Home cards ({scheme})")
+                    navigation_issues = navigate_to_ready_page(
+                        page,
+                        target.base_url,
+                        "Home",
+                        scheme,
+                    )
+                    issues.extend(navigation_issues)
+                    if not navigation_issues:
+                        issues.extend(_check_card_focus_state(page, scheme))
+                finally:
+                    context.close()
             return issues
         finally:
             browser.close()
@@ -423,9 +288,6 @@ def _collect_browser_smoke_issues(
 
 def find_browser_smoke_issues(site_dir: Path, base_url: str | None = None) -> list[str]:
     """Run lightweight browser smoke checks against the built site."""
-
-    if base_url is None and not site_dir.is_dir():
-        raise FileNotFoundError(f"Built site directory was not found: {site_dir}")
 
     try:
         from playwright.sync_api import sync_playwright
@@ -435,13 +297,5 @@ def find_browser_smoke_issues(site_dir: Path, base_url: str | None = None) -> li
             "'uv run playwright install chromium' first."
         ) from error
 
-    routes = tuple(canonical_route_paths(site_dir)) if site_dir.is_dir() else ()
-    if base_url is not None:
-        return _collect_browser_smoke_issues(
-            sync_playwright,
-            normalize_base_url(base_url),
-            routes,
-        )
-
-    with local_site_server(site_dir) as server_base_url:
-        return _collect_browser_smoke_issues(sync_playwright, server_base_url, routes)
+    with resolved_browser_target(site_dir, base_url) as target:
+        return _collect_browser_smoke_issues(sync_playwright, target)

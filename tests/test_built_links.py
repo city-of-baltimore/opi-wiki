@@ -12,6 +12,7 @@ from scripts.repo_tools.built_links import (
     extract_built_references,
     find_broken_links,
     load_sitemap_locations,
+    parse_sitemap_locations,
 )
 
 
@@ -130,6 +131,27 @@ def test_sitemap_base_path_discovery_handles_root_and_missing_sitemaps(tmp_path:
     )
 
     assert discover_site_base_path(tmp_path) == "/"
+
+
+def test_sitemap_parser_accepts_generated_xml_from_a_named_source() -> None:
+    """The shared parser should preserve every strict generated location."""
+
+    sitemap_text = (
+        "<urlset><url><loc>https://example.org/opi-wiki/</loc></url>"
+        "<url><loc>https://example.org/opi-wiki/resources/</loc></url></urlset>"
+    )
+
+    assert parse_sitemap_locations(sitemap_text, source="preview sitemap") == [
+        "https://example.org/opi-wiki/",
+        "https://example.org/opi-wiki/resources/",
+    ]
+
+
+def test_sitemap_parser_names_its_source_when_xml_is_malformed() -> None:
+    """A served sitemap failure should identify the preview that supplied it."""
+
+    with pytest.raises(RuntimeError, match="preview sitemap"):
+        parse_sitemap_locations("<urlset><url>", source="preview sitemap")
 
 
 def test_sitemap_base_path_discovery_rejects_an_empty_sitemap(tmp_path: Path) -> None:

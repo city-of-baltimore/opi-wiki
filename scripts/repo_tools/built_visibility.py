@@ -6,7 +6,7 @@ import re
 from dataclasses import dataclass
 from pathlib import Path
 
-from scripts.repo_tools.browser_routes import canonical_route_paths
+from scripts.repo_tools.browser_route_manifest import canonical_route_paths
 from scripts.repo_tools.rendered_text import (
     RenderedProjection,
     RenderedTextError,

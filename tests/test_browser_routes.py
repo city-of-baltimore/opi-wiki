@@ -3,31 +3,17 @@
 from __future__ import annotations
 
 from pathlib import Path
-from urllib.request import urlopen
 
 import pytest
-from scripts.repo_tools.browser_routes import (
-    browser_route_url,
+from scripts.repo_tools.browser_route_manifest import (
     canonical_route_paths,
-    check_page_load,
-    local_site_server,
-    normalize_base_url,
-    normalize_page_url,
 )
-
-
-class _Response:
-    """Minimal Playwright response stand-in for page-load tests."""
-
-    def __init__(self, status: int) -> None:
-        self.status = status
-
-
-class _Page:
-    """Minimal Playwright page stand-in for final-URL tests."""
-
-    def __init__(self, url: str) -> None:
-        self.url = url
+from scripts.repo_tools.browser_routes import (
+    BrowserTarget,
+    browser_route_url,
+    browser_target_owns_live_reload_url,
+    browser_target_owns_url,
+)
 
 
 def _write_sitemap(site_dir: Path, locations: tuple[str, ...]) -> None:
@@ -38,22 +24,6 @@ def _write_sitemap(site_dir: Path, locations: tuple[str, ...]) -> None:
     (site_dir / "sitemap.xml").write_text(
         f"<urlset>{entries}</urlset>",
         encoding="utf-8",
-    )
-
-
-def test_normalize_base_url_enforces_trailing_slash() -> None:
-    """Base URLs should normalize so joined paths stay stable."""
-
-    assert normalize_base_url("http://127.0.0.1:8000") == "http://127.0.0.1:8000/"
-    assert normalize_base_url("http://127.0.0.1:8000/") == "http://127.0.0.1:8000/"
-
-
-def test_normalize_page_url_ignores_fragments_but_preserves_queries() -> None:
-    """Final-URL checks should ignore fragments without hiding query redirects."""
-
-    assert normalize_page_url("HTTPS://EXAMPLE.ORG/docs#section") == "https://example.org/docs/"
-    assert normalize_page_url("https://example.org/docs/?view=all#top") == (
-        "https://example.org/docs/?view=all"
     )
 
 
@@ -117,12 +87,28 @@ def test_canonical_route_paths_accepts_the_deployment_root_in_any_order(
             "unsafe dot segment",
         ),
         (
+            "https://example.test/opi-wiki/%252Fhidden/",
+            "retains an encoded dot or path separator after decoding",
+        ),
+        (
+            "https://example.test/opi-wiki/%252e%252e/hidden/",
+            "retains an encoded dot or path separator after decoding",
+        ),
+        (
             "https://example.test/opi-wiki/hidden%ZZ/",
             "contains an invalid URL path",
         ),
         (
             "https://example.test/opi-wiki//hidden/",
             "contains an empty path segment",
+        ),
+        (
+            "https://example.test/opi-\twiki/hidden/",
+            "raw whitespace or a control character",
+        ),
+        (
+            "https://example.test/opi-\x7fwiki/hidden/",
+            "raw whitespace or a control character",
         ),
         (
             "https://example.test/opi-wiki/hidden.pdf",
@@ -174,8 +160,7 @@ def test_canonical_route_paths_rejects_duplicate_normalized_routes(
         ("%23", "#"),
         ("%3F", "?"),
         ("%25", "%"),
-        ("%252F", "%2F"),
-        ("%252e%252e", "%2e%2e"),
+        ("%2523", "%23"),
     ),
 )
 def test_canonical_routes_preserve_filesystem_identity_but_encode_browser_urls(
@@ -183,7 +168,7 @@ def test_canonical_routes_preserve_filesystem_identity_but_encode_browser_urls(
     encoded_segment: str,
     decoded_segment: str,
 ) -> None:
-    """Reserved and residual percent data must round-trip through separate seams."""
+    """Safe reserved percent data must round-trip through separate seams."""
 
     _write_sitemap(
         tmp_path,
@@ -219,50 +204,88 @@ def test_browser_route_url_rejects_ambiguous_route_forms(route: str) -> None:
         browser_route_url("http://127.0.0.1:5208/opi-wiki/", route)
 
 
-def test_page_load_accepts_a_200_at_the_canonical_url() -> None:
-    """A canonical page returning HTTP 200 should pass the load check."""
+@pytest.mark.parametrize(
+    ("route", "expected_error"),
+    (
+        ("/../outside/", "unsafe dot segment"),
+        ("/section/./page/", "unsafe dot segment"),
+        ("/section//page/", "empty path segment"),
+        ("/section/\tpage/", "whitespace or control"),
+        ("/section/\x00page/", "whitespace or control"),
+        ("/%2Foutside/", "encoded dot or path separator"),
+        ("/%252e%252e/outside/", "encoded dot or path separator"),
+        ("/section/%5Coutside/", "encoded dot or path separator"),
+    ),
+)
+def test_browser_route_url_rejects_unsafe_decoded_path_identity(
+    route: str,
+    expected_error: str,
+) -> None:
+    """A decoded route must remain contained after browser URL construction."""
 
-    requested = "http://127.0.0.1:5208/resources/"
+    with pytest.raises(ValueError, match=expected_error):
+        browser_route_url("http://127.0.0.1:5208/opi-wiki/", route)
 
-    assert check_page_load(_Page(requested), _Response(200), requested, "Resources", "light") == []
 
+def test_browser_route_url_normalizes_the_base_without_losing_its_deploy_path() -> None:
+    """A caller's missing trailing slash must not turn a route into an origin-root path."""
 
-def test_page_load_reports_status_and_unexpected_redirect() -> None:
-    """HTTP errors and redirect-only smoke targets must fail with useful evidence."""
-
-    issues = check_page_load(
-        _Page("http://127.0.0.1:5208/retired/"),
-        _Response(404),
-        "http://127.0.0.1:5208/resources/",
-        "Resources",
-        "dark",
+    assert (
+        browser_route_url(
+            "http://127.0.0.1:5208/opi-wiki",
+            "/resources/",
+        )
+        == "http://127.0.0.1:5208/opi-wiki/resources/"
     )
 
-    assert len(issues) == 2
-    assert "returned HTTP 404" in issues[0]
-    assert "expected canonical URL" in issues[1]
+
+@pytest.mark.parametrize(
+    ("url", "owned"),
+    (
+        ("https://city.example/opi-wiki/", True),
+        ("https://city.example/opi-wiki", True),
+        ("https://city.example/opi-wiki/assets/app.js?v=1", True),
+        ("https://city.example/opi-wiki-archive/", False),
+        ("https://city.example/outside/", False),
+        ("https://fonts.example/opi-wiki/", False),
+        ("http://city.example/opi-wiki/", False),
+        ("malformed", False),
+    ),
+)
+def test_browser_target_owns_only_its_canonical_url_space(
+    url: str,
+    owned: bool,
+) -> None:
+    """Runtime failures should be attributed only to the selected product."""
+
+    target = BrowserTarget("https://city.example/opi-wiki/", ("/",))
+
+    assert browser_target_owns_url(target, url) is owned
 
 
-def test_page_load_reports_a_missing_navigation_response() -> None:
-    """Non-HTTP navigation results should fail instead of passing vacuously."""
+@pytest.mark.parametrize(
+    ("url", "live", "owned"),
+    (
+        ("http://127.0.0.1:5208/livereload/123/456", True, True),
+        ("http://127.0.0.1:5208/livereload/not-numeric/456", True, False),
+        ("http://127.0.0.1:5208/livereload/123/456?retry=1", True, False),
+        ("http://foreign.test/livereload/123/456", True, False),
+        ("https://127.0.0.1:5208/livereload/123/456", True, False),
+        ("http://127.0.0.1:5208/livereload/123/456", False, False),
+    ),
+)
+def test_browser_target_owns_only_its_exact_live_reload_poll(
+    url: str,
+    live: bool,
+    owned: bool,
+    tmp_path: Path,
+) -> None:
+    """Only live targets may suppress their exact same-origin numeric poll."""
 
-    issues = check_page_load(
-        _Page("about:blank"),
-        None,
-        "http://127.0.0.1:5208/resources/",
-        "Resources",
-        "light",
+    target = BrowserTarget(
+        "http://127.0.0.1:5208/opi-wiki/",
+        ("/",),
+        None if live else tmp_path,
     )
 
-    assert issues == ["Resources (light): navigation returned no HTTP response."]
-
-
-def test_local_site_server_serves_the_requested_directory(tmp_path: Path) -> None:
-    """The browser orchestrator's local server should expose freshly built files."""
-
-    (tmp_path / "index.html").write_text("<h1>OPI</h1>", encoding="utf-8")
-
-    with local_site_server(tmp_path) as base_url:
-        with urlopen(base_url, timeout=2) as response:  # noqa: S310
-            assert response.status == 200
-            assert b"<h1>OPI</h1>" in response.read()
+    assert browser_target_owns_live_reload_url(target, url) is owned

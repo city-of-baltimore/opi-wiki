@@ -1,46 +1,38 @@
-"""Route and local-server helpers for browser smoke checks."""
+"""Resolved browser targets and page-readiness navigation helpers."""
 
 from __future__ import annotations
 
 import re
 from collections.abc import Iterator
 from contextlib import contextmanager
-from functools import partial
-from http.server import SimpleHTTPRequestHandler, ThreadingHTTPServer
+from dataclasses import dataclass
 from pathlib import Path
-from posixpath import commonpath
-from threading import Thread
 from typing import Any
-from urllib.parse import quote, unquote, urljoin, urlsplit, urlunsplit
+from urllib.parse import quote, urlsplit, urlunsplit
 
-from scripts.repo_tools.built_links import load_sitemap_locations
+from scripts.repo_tools.browser_artifact_routes import install_canonical_artifact_route
+from scripts.repo_tools.browser_route_manifest import (
+    canonical_route_manifest,
+    canonical_route_manifest_from_preview,
+)
+from scripts.repo_tools.site_urls import (
+    normalize_base_url,
+    normalize_page_url,
+    validate_http_location,
+)
 
-type _Origin = tuple[str, str, int]
-
-_INVALID_PERCENT_ESCAPE = re.compile(r"%(?![0-9A-Fa-f]{2})")
-
-
-class _QuietStaticSiteHandler(SimpleHTTPRequestHandler):
-    """Static-site request handler without per-request console logging."""
-
-    def log_message(self, format: str, *args: object) -> None:
-        """Suppress default request logging for local smoke-test servers."""
-
-
-def normalize_base_url(base_url: str) -> str:
-    """Normalize a base URL so downstream joins are stable."""
-
-    return base_url.rstrip("/") + "/"
+PAGE_CONTENT_SELECTOR = "article.md-content__inner"
+_FONTS_READY_EXPRESSION = "() => document.fonts.status === 'loaded'"
+_LIVE_RELOAD_PATH = re.compile(r"/livereload/\d+/\d+")
 
 
-def normalize_page_url(url: str) -> str:
-    """Normalize a page URL for redirect-sensitive final-URL comparisons."""
+@dataclass(frozen=True)
+class BrowserTarget:
+    """One immutable browser target and its authoritative artifact, if static."""
 
-    parsed = urlsplit(url)
-    path = parsed.path or "/"
-    if not Path(path).suffix:
-        path = path.rstrip("/") + "/"
-    return urlunsplit((parsed.scheme.lower(), parsed.netloc.lower(), path, parsed.query, ""))
+    base_url: str
+    routes: tuple[str, ...]
+    artifact_dir: Path | None = None
 
 
 def browser_route_url(base_url: str, route: str) -> str:
@@ -50,135 +42,136 @@ def browser_route_url(base_url: str, route: str) -> str:
         raise ValueError(
             "browser route must be an absolute path with one leading slash and no backslashes"
         )
-    return urljoin(base_url, quote(route[1:], safe="/"))
-
-
-def _validated_sitemap_location(location: str, index: int) -> tuple[_Origin, str]:
-    """Return one validated origin and decoded absolute path."""
-
-    label = f"Built sitemap <loc> entry {index}"
-    try:
-        parsed = urlsplit(location)
-    except ValueError as error:
-        raise RuntimeError(f"{label} is malformed: {location!r}: {error}") from error
-
-    scheme = parsed.scheme.casefold()
-    if scheme not in {"http", "https"} or not parsed.netloc:
-        raise RuntimeError(f"{label} must be an absolute HTTP(S) URL: {location!r}")
-    if parsed.username is not None or parsed.password is not None:
-        raise RuntimeError(f"{label} must not contain credentials: {location!r}")
-    try:
-        hostname = parsed.hostname
-        explicit_port = parsed.port
-    except ValueError as error:
-        raise RuntimeError(f"{label} has an invalid origin: {location!r}: {error}") from error
-    if hostname is None:
-        raise RuntimeError(f"{label} has no hostname: {location!r}")
-    if parsed.query or parsed.fragment or "?" in location or "#" in location:
-        raise RuntimeError(f"{label} must not contain a query or fragment: {location!r}")
-
-    raw_path = parsed.path
-    if not raw_path.startswith("/") or raw_path.startswith("//"):
-        raise RuntimeError(f"{label} must contain one absolute URL path: {location!r}")
-    if (
-        "\\" in raw_path
-        or any(character.isspace() for character in raw_path)
-        or _INVALID_PERCENT_ESCAPE.search(raw_path)
+    if any(
+        character.isspace() or ord(character) < 32 or ord(character) == 127 for character in route
     ):
-        raise RuntimeError(f"{label} contains an invalid URL path: {location!r}")
-    try:
-        path = unquote(raw_path, encoding="utf-8", errors="strict")
-    except UnicodeError as error:
-        raise RuntimeError(f"{label} contains an invalid encoded path: {location!r}") from error
-    if path.count("/") != raw_path.count("/") or "\\" in path:
-        raise RuntimeError(f"{label} must not encode path separators: {location!r}")
-    if any(ord(character) < 32 or ord(character) == 127 for character in path):
-        raise RuntimeError(f"{label} contains a control character in its path: {location!r}")
+        raise ValueError("browser route must not contain whitespace or control characters")
 
-    if "//" in path[1:]:
-        raise RuntimeError(f"{label} contains an empty path segment: {location!r}")
-    path_parts = path.strip("/").split("/") if path != "/" else []
-    if any(part in {".", ".."} for part in path_parts):
-        raise RuntimeError(f"{label} contains an unsafe dot segment: {location!r}")
-
-    default_port = 443 if scheme == "https" else 80
-    effective_port = explicit_port if explicit_port is not None else default_port
-    return (scheme, hostname.casefold(), effective_port), path
-
-
-def canonical_route_paths(site_dir: Path) -> list[str]:
-    """Return every validated deployment-relative route from the built sitemap."""
-
-    locations = load_sitemap_locations(site_dir)
-    if not locations:
-        return []
-    validated_locations = tuple(
-        _validated_sitemap_location(location, index)
-        for index, location in enumerate(locations, start=1)
+    normalized_base_url = normalize_base_url(
+        base_url,
+        label="Browser target base URL",
     )
-    expected_origin = validated_locations[0][0]
-    for index, ((origin, _path), location) in enumerate(
-        zip(validated_locations, locations, strict=True),
-        start=1,
-    ):
-        if origin != expected_origin:
-            raise RuntimeError(
-                f"Built sitemap <loc> entry {index} origin does not match entry 1: {location!r}"
-            )
+    browser_url = f"{normalized_base_url}{quote(route[1:], safe='/')}"
+    try:
+        validate_http_location(browser_url, "Browser route URL")
+    except RuntimeError as error:
+        raise ValueError(str(error)) from error
+    return browser_url
 
-    shared_path = commonpath(path for _origin, path in validated_locations)
-    base_path = "/" if shared_path == "/" else "/" + shared_path.strip("/") + "/"
-    if base_path not in {path for _origin, path in validated_locations}:
-        raise RuntimeError(
-            "Built sitemap does not contain a deployment-root <loc> for common "
-            f"base path {base_path!r}"
+
+def browser_target_owns_url(target: BrowserTarget, url: str) -> bool:
+    """Return whether one request belongs to the target's canonical URL space."""
+
+    try:
+        base_origin, base_path = validate_http_location(
+            normalize_base_url(target.base_url),
+            "Browser target base URL",
         )
+        parsed = urlsplit(url)
+        queryless_url = urlunsplit((parsed.scheme, parsed.netloc, parsed.path, "", ""))
+        request_origin, request_path = validate_http_location(
+            queryless_url,
+            "Browser target request URL",
+            allow_empty_path=True,
+        )
+    except (RuntimeError, ValueError):
+        return False
+    if request_origin != base_origin:
+        return False
+    root_without_slash = base_path.rstrip("/") or "/"
+    return request_path == root_without_slash or request_path.startswith(base_path)
 
-    routes: set[str] = set()
-    for index, ((_origin, path), location) in enumerate(
-        zip(validated_locations, locations, strict=True),
-        start=1,
-    ):
-        if not path.startswith(base_path):
-            raise RuntimeError(
-                f"Built sitemap <loc> entry {index} is outside deployment base path "
-                f"{base_path!r}: {location!r}"
-            )
 
-        route = "/" + path.removeprefix(base_path)
-        if not route.endswith("/"):
-            if not Path(route).suffix:
-                route = route.rstrip("/") + "/"
-            elif Path(route).suffix.casefold() != ".html":
-                raise RuntimeError(
-                    f"Built sitemap <loc> entry {index} is not a scannable HTML route: {location!r}"
-                )
-        if route in routes:
-            raise RuntimeError(
-                f"Built sitemap <loc> entry {index} duplicates canonical route {route!r}: "
-                f"{location!r}"
-            )
-        routes.add(route)
-    return sorted(routes, key=lambda route: (route != "/", route))
+def browser_target_owns_live_reload_url(target: BrowserTarget, url: str) -> bool:
+    """Return whether one URL is the selected live preview's exact reload poll."""
+
+    if target.artifact_dir is not None:
+        return False
+    try:
+        target_origin, _target_path = validate_http_location(
+            target.base_url,
+            "Browser target base URL",
+        )
+        request_origin, request_path = validate_http_location(
+            url,
+            "MkDocs live-reload request URL",
+        )
+    except (RuntimeError, ValueError):
+        return False
+    return target_origin == request_origin and _LIVE_RELOAD_PATH.fullmatch(request_path) is not None
+
+
+def _install_live_preview_transport_route(context: Any, target: BrowserTarget) -> None:
+    """Keep MkDocs' 60-second reload poll from accumulating during route crawls."""
+
+    def abort_live_reload(route: Any) -> None:
+        if browser_target_owns_live_reload_url(target, route.request.url):
+            route.abort(error_code="aborted")
+        else:
+            route.continue_()
+
+    context.route("**/livereload/**", abort_live_reload)
 
 
 @contextmanager
-def local_site_server(site_dir: Path) -> Iterator[str]:
-    """Serve a built static site from a temporary local HTTP server."""
+def resolved_browser_target(
+    site_dir: Path,
+    base_url: str | None = None,
+) -> Iterator[BrowserTarget]:
+    """Resolve one live preview or exact canonical build-artifact target."""
 
-    handler = partial(_QuietStaticSiteHandler, directory=str(site_dir))
-    server = ThreadingHTTPServer(("127.0.0.1", 0), handler)
-    thread = Thread(target=server.serve_forever, daemon=True)
+    if base_url is not None:
+        normalized_base_url = normalize_base_url(base_url)
+        manifest = canonical_route_manifest_from_preview(normalized_base_url)
+        if not manifest.routes:
+            raise RuntimeError(
+                f"Sitemap contains no canonical routes: {normalized_base_url}sitemap.xml"
+            )
+        yield BrowserTarget(normalized_base_url, manifest.routes)
+        return
+
+    if not site_dir.is_dir():
+        raise FileNotFoundError(f"Built site directory was not found: {site_dir}")
+
+    manifest = canonical_route_manifest(site_dir)
+    if not manifest.routes:
+        raise RuntimeError(f"Sitemap contains no canonical routes: {site_dir / 'sitemap.xml'}")
+    yield BrowserTarget(
+        manifest.canonical_base_url,
+        manifest.routes,
+        site_dir.resolve(),
+    )
+
+
+def create_browser_context(
+    browser: Any,
+    target: BrowserTarget,
+    **options: Any,
+) -> Any:
+    """Create one fail-closed context for a live or canonical artifact target."""
+
+    context_options = dict(options)
+    context_options.pop("service_workers", None)
+    context_options.pop("offline", None)
+    context = browser.new_context(
+        service_workers="block",
+        offline=target.artifact_dir is not None,
+        **context_options,
+    )
     try:
-        thread.start()
-        host_raw, port = server.server_address[0], server.server_address[1]
-        host = host_raw.decode() if isinstance(host_raw, bytes) else host_raw
-        yield f"http://{host}:{port}/"
-    finally:
-        if thread.is_alive():
-            server.shutdown()
-            thread.join(timeout=5)
-        server.server_close()
+        if target.artifact_dir is not None:
+            install_canonical_artifact_route(
+                context,
+                canonical_base_url=target.base_url,
+                site_dir=target.artifact_dir,
+            )
+        else:
+            _install_live_preview_transport_route(context, target)
+        context.set_default_timeout(5000)
+    except Exception:
+        context.close()
+        raise
+    return context
 
 
 def check_page_load(
@@ -203,3 +196,95 @@ def check_page_load(
             f"{label} ({scheme}): ended at {final_url}, expected canonical URL {requested_url}."
         )
     return issues
+
+
+def navigate_to_ready_page(
+    page: Any,
+    requested_url: str,
+    label: str,
+    scheme: str,
+    *,
+    ready_selector: str = PAGE_CONTENT_SELECTOR,
+) -> list[str]:
+    """Navigate to one URL and require its canonical content to be visible."""
+
+    response = page.goto(requested_url, wait_until="load")
+    issues = check_page_load(page, response, requested_url, label, scheme)
+    if issues:
+        return issues
+
+    page.locator(ready_selector).first.wait_for(state="visible")
+    page.wait_for_function(_FONTS_READY_EXPRESSION)
+    return []
+
+
+def navigate_to_instant_page(
+    page: Any,
+    link: Any,
+    requested_url: str,
+    label: str,
+    scheme: str,
+    *,
+    ready_selector: str,
+) -> list[str]:
+    """Click a link and prove Material replaced content without reloading the document."""
+
+    transition = page.evaluate(
+        """
+        () => {
+          const content = document.querySelector("article.md-content__inner");
+          if (!content) return null;
+          const token = crypto.randomUUID();
+          window.__opiBrowserInstantProbe = token;
+          content.dataset.opiBrowserInstantProbe = token;
+          return {
+            token,
+            sourceUrl: window.location.href,
+            timeOrigin: performance.timeOrigin,
+          };
+        }
+        """
+    )
+    if transition is None:
+        return [f"{label} ({scheme}): source content was unavailable before instant navigation."]
+
+    link.click()
+    page.wait_for_function(
+        "(sourceUrl) => window.location.href !== sourceUrl",
+        arg=transition["sourceUrl"],
+    )
+    final_url = str(page.url)
+    if normalize_page_url(final_url) != normalize_page_url(requested_url):
+        return [
+            f"{label} ({scheme}): ended at {final_url}, expected canonical URL {requested_url}."
+        ]
+
+    same_document = page.evaluate(
+        """
+        (expected) =>
+          window.__opiBrowserInstantProbe === expected.token &&
+          performance.timeOrigin === expected.timeOrigin
+        """,
+        transition,
+    )
+    if not same_document:
+        return [
+            f"{label} ({scheme}): loaded a new document instead of using "
+            "Material instant navigation."
+        ]
+
+    page.wait_for_function(
+        """
+        (token) =>
+          !document.querySelector(
+            `[data-opi-browser-instant-probe="${CSS.escape(token)}"]`
+          )
+        """,
+        arg=transition["token"],
+    )
+    page.locator(ready_selector).first.wait_for(state="visible")
+    page.wait_for_function(_FONTS_READY_EXPRESSION)
+    final_url = str(page.url)
+    if normalize_page_url(final_url) == normalize_page_url(requested_url):
+        return []
+    return [f"{label} ({scheme}): ended at {final_url}, expected canonical URL {requested_url}."]

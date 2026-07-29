@@ -72,6 +72,7 @@ EXPECTED_CI_WORKFLOW_LINES = (
 # token to ``python`` before comparison.
 EXPECTED_CI_PLAN_COMMANDS = (
     "python scripts/check_hosted_ci_policy.py",
+    "python scripts/check_browser_readiness_contract.py",
     "python scripts/check_platform_guard_evidence.py",
     "python -m baltimore.patapsco.baseline.cli --repo .",
     "python -m ruff format --check main.py scripts tests",
