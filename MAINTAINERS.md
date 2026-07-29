@@ -368,7 +368,9 @@ This role has a high bus factor by design (it's one person). Mitigations:
 
 ## Onboarding a new maintainer
 
-Day 1: read this document and `CONTRIBUTING.md`. Run `task setup` then `task serve` locally. Read every page on the live site.
+Day 1: read [`onboarding.md`](onboarding.md), this document, and
+`CONTRIBUTING.md`. Run `task setup` then `task serve` locally. Read every page
+on the live site.
 
 Week 1: shadow the previous maintainer through one full intake cycle (issue → PR → merge → deploy).
 

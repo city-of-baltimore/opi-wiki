@@ -6,6 +6,9 @@ Live site: <https://city-of-baltimore.github.io/opi-wiki/>
 Repo: this repository
 Maintainer: see [`MAINTAINERS.md`](MAINTAINERS.md)
 
+New to the product or repository? Start with
+[`onboarding.md`](onboarding.md).
+
 ## What this is
 
 A docs-as-code site, written in Markdown, rendered with [MkDocs Material](https://squidfunk.github.io/mkdocs-material/), version-controlled on GitHub, and auto-deployed via GitHub Actions.
@@ -50,9 +53,10 @@ task validate
 # `task --list` shows the rest (fmt, lint, typecheck, test, security:snyk)
 ```
 
-`scripts/verify.sh` is still the underlying runner if you need its flags
-directly — for example `./scripts/verify.sh --json-output /tmp/opi-verify.json`
-to write a machine-readable report.
+`scripts/verify.py` is the runner the Taskfile calls. The thin
+`scripts/verify.sh` compatibility wrapper exposes the same flags if needed—for
+example `./scripts/verify.sh --json-output /tmp/opi-verify.json` writes a
+machine-readable report.
 
 `task serve` runs at <http://127.0.0.1:5208> with live reload.
 
@@ -199,6 +203,7 @@ If a page can stay plain Markdown, keep it plain Markdown. Only introduce struct
 ```
 opi-foundations/
 ├── AGENTS.md               # standing repo rules
+├── onboarding.md           # plain-language product and repository overview
 ├── mkdocs.yml              # site-wide MkDocs config
 ├── pyproject.toml          # project metadata + deps (uv / PEP 621)
 ├── uv.lock                 # locked Python dependencies
@@ -223,8 +228,8 @@ opi-foundations/
 ├── overrides/              # breadcrumbs + table keyboard-accessibility hook
 ├── Taskfile.yml            # the shared task surface (ci/prepush/validate + helpers)
 ├── scripts/
-│   ├── verify.sh           # underlying runner entrypoint (Taskfile calls it)
-│   ├── verify.py           # the three-tier check plan (ci/prepush/validate)
+│   ├── verify.py           # runner + three-tier check plan (ci/prepush/validate)
+│   ├── verify.sh           # thin compatibility wrapper for the Python runner
 │   ├── check_hosted_ci_policy.py # keeps hosted CI static-only (repo-local guard)
 │   ├── install-hooks.sh    # installs the pre-push gate
 │   ├── hooks/pre-push      # runs the prepush plan before every push
