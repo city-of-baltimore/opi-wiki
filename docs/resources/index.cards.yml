@@ -3,6 +3,10 @@
   body: "Shared definitions, service accountability, playbooks, and supporting references."
   href: reference/
 - meta: Page
+  title: Accessibility
+  body: "What OPI Foundations promises, how accessibility is tested, and how to report a barrier."
+  href: accessibility/
+- meta: Page
   title: Contributing
   body: "How to suggest a change, report a problem, or propose new content."
   href: contributing/

@@ -273,9 +273,12 @@ for CI or triage, call the runner directly:
 `./scripts/verify.sh --json-output /path/to/report.json`.
 
 For UI regressions that static checks will miss, maintainers run the pre-deploy
-pass with `task validate`, which adds the browser smoke checks. That pass
-expects a one-time local browser install via
-`uv run playwright install chromium`.
+pass with `task validate`. It adds browser interaction checks and an axe-powered
+audit of every canonical route at desktop and 320px reflow widths in both color
+schemes. That pass expects a one-time local browser install via
+`uv run playwright install chromium`. The service promise and required manual
+review are documented in
+[`docs/resources/accessibility.md`](docs/resources/accessibility.md).
 
 ### Which gate runs what
 
@@ -286,7 +289,7 @@ runs it in three nested tiers:
 |---|---|---|
 | `task ci` | pull-request CI, fast local loop | hosted-CI policy guard, format, lint, mypy, bandit, metadata, brand terms, style, consistency, raw HTML links |
 | `task prepush` | the pre-push hook and the Pages deploy gate | everything above, plus pytest, `mkdocs build --strict`, publication-boundary and built-link checks, and accessibility checks |
-| `task validate` | locally, before a deploy | everything above, plus the Playwright browser smoke checks |
+| `task validate` | locally, before a deploy | everything above, plus browser interaction and full-route WCAG assurance |
 
 Each tier is a strict prefix of the next, so nothing is lost by moving a check
 down a tier — it runs later, not never.

@@ -4,3 +4,10 @@ defaults:
   last_reviewed: 2026-07-26
   next_review: 2027-01-31
   change_log: Updated resource descriptions to match the current reference library.
+
+pages:
+  accessibility.md:
+    owner: OPI Director's Office
+    last_reviewed: 2026-07-27
+    next_review: 2027-01-31
+    change_log: Established the accessibility promise and verification standard.

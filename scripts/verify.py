@@ -47,10 +47,10 @@ Plan = Literal["ci", "prepush", "validate"]
 PLANS: tuple[str, ...] = get_args(Plan)
 DEFAULT_PLAN: Plan = "prepush"
 
-# No verification step in this repository takes more than a couple of seconds.
-# A step that runs for ten minutes is hung, not slow, so cap it and fail with a
-# named step instead of letting the hosted runner sit at GitHub's six-hour
-# default. The workflows also set `timeout-minutes` as an outer backstop.
+# The exhaustive canonical-route browser audit intentionally takes several
+# minutes. No step should approach ten minutes, so cap it and fail with a named
+# step instead of letting a runner sit at GitHub's six-hour default. The
+# workflows also set `timeout-minutes` as an outer backstop.
 DEFAULT_STEP_TIMEOUT_SECONDS = 600.0
 
 
@@ -98,8 +98,9 @@ def build_steps(
         checks that inspect the built ``site/`` output.
 
     ``validate``
-        Everything in ``prepush`` plus the Playwright browser smoke checks,
-        which need a downloaded browser and so stay a deliberate local step.
+        Everything in ``prepush`` plus browser interaction and full-route
+        accessibility assurance, which need a downloaded browser and so stay
+        deliberate local steps.
 
     Nothing is dropped when a step leaves the hosted lane — every assertion
     still runs, in the tier that can afford it.
@@ -215,12 +216,16 @@ def build_steps(
         return steps
 
     # Tier 3 — pre-deploy, local only: drives a real browser.
-    steps.append(
+    steps += [
         VerifyStep(
             name="Running browser smoke checks",
             command=(python, "scripts/check_browser_smoke.py"),
-        )
-    )
+        ),
+        VerifyStep(
+            name="Running full browser accessibility audit",
+            command=(python, "scripts/check_browser_accessibility.py"),
+        ),
+    ]
 
     return steps
 
@@ -264,8 +269,8 @@ def run_step(
             stdout=_decode_stream(timeout.stdout),
             stderr=(
                 f"{step.name} timed out after {timeout_seconds:.0f}s and was killed. "
-                "It is hung, not slow — no step in this repository takes more than "
-                "a few seconds.\n"
+                "Even the exhaustive browser audit should finish within this "
+                "bounded allowance.\n"
             ),
         )
     except OSError as error:
@@ -417,8 +422,9 @@ def parse_args(argv: Sequence[str] | None = None) -> argparse.Namespace:
         help=(
             "Which tier to run. 'ci' is the hosted lane: static checks only, no "
             "tests and no site build. 'prepush' adds the test suite, the strict "
-            "MkDocs build, and the built-site checks. 'validate' adds the "
-            f"Playwright browser smoke checks. Defaults to '{DEFAULT_PLAN}'."
+            "MkDocs build, and the built-site checks. 'validate' adds browser "
+            "interaction and full-route accessibility assurance. "
+            f"Defaults to '{DEFAULT_PLAN}'."
         ),
     )
     parser.add_argument(

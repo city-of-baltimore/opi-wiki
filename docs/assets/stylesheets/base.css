@@ -106,6 +106,17 @@ body,
   font-weight: 700;
 }
 
+/* Material's default light-scheme comment color reaches only 4.47:1 against
+   the code surface. One token keeps every Pygments comment form above AA
+   without collapsing comments into the primary code foreground. */
+.md-typeset .highlight .c,
+.md-typeset .highlight .ch,
+.md-typeset .highlight .cm,
+.md-typeset .highlight .c1,
+.md-typeset .highlight .cs {
+  color: var(--opi-code-comment);
+}
+
 .md-typeset .admonition,
 .md-typeset details {
   border-left-width: 4px;

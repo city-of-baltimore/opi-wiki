@@ -11,33 +11,33 @@
 | OPI lead                        | OPI-operated / Performance Team                                                                      |
 | Core Data Product              | Public health service performance dashboard                                                          |
 
-### Public Purpose
+## Public Purpose
 
 Health Stat focuses on Baltimore’s public health infrastructure, including environmental health, animal services, maternal and child health, substance use response, clinical services, older adult supports, and other health functions that affect community well-being.
 
-### Staff Purpose
+## Staff Purpose
 
 Staff use Health Stat to monitor service timeliness, public health program implementation, contract and grant management, overdose strategy, environmental health response, and coordination with housing, human services, and community partners.
 
-### Core Management Questions
+## Core Management Questions
 
 - Are public health services timely, reliable, and reaching priority populations?
 - Where are program implementation, contract, staffing, or data barriers slowing progress?
 - Which health issues require cross-agency coordination or public communication?
 - How are public health priorities connected to neighborhood well-being?
 
-### Starter Focus Areas
+## Starter Focus Areas
 
 - Environmental health and animal service performance
 - Overdose strategy implementation and partner coordination
 - Contract lifecycle, grant management, and staffing stabilization
 
-### Standard Artifacts and Data Products
+## Standard Artifacts and Data Products
 
 - Pre-meeting memo, Stat deck, follow-up memo, and follow-up tracker.
 - Core data product: Public health service performance dashboard.
 
-### Tiger Team / Delivery Triggers
+## Tiger Team / Delivery Triggers
 
 - Health service issue spanning housing, public safety, or human services
 - Contract or grant barrier affecting service continuity
