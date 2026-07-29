@@ -18,6 +18,7 @@ from scripts.repo_tools.browser_routes import (
 )
 from scripts.repo_tools.browser_smoke_states import (
     _check_card_focus_state,
+    _check_home_hero_reflow_state,
     _check_mobile_nav_active_state,
     _check_org_chart_state,
     _check_table_focus_state,
@@ -120,14 +121,15 @@ def _crawl_canonical_routes(browser: Any, target: BrowserTarget) -> list[str]:
             current_route["value"] = route
             resource_observer.set_scope(f"Canonical {route}")
             requested_url = browser_route_url(target.base_url, route)
-            issues.extend(
-                navigate_to_ready_page(
-                    page,
-                    requested_url,
-                    f"Canonical {route}",
-                    "desktop",
-                )
+            navigation_issues = navigate_to_ready_page(
+                page,
+                requested_url,
+                f"Canonical {route}",
+                "desktop",
             )
+            issues.extend(navigation_issues)
+            if route == "/" and not navigation_issues:
+                issues.extend(_check_home_hero_reflow_state(page, "desktop", 1440))
     finally:
         context.close()
     return issues
@@ -240,6 +242,22 @@ def _collect_browser_smoke_issues(
                     issues.extend(navigation_issues)
                     if not navigation_issues:
                         issues.extend(_check_card_focus_state(page, scheme))
+                        if scheme == "light":
+                            issues.extend(
+                                _check_home_hero_reflow_state(
+                                    page,
+                                    "reflow-light",
+                                    390,
+                                )
+                            )
+                            page.set_viewport_size({"width": 320, "height": 800})
+                            issues.extend(
+                                _check_home_hero_reflow_state(
+                                    page,
+                                    "reflow-light",
+                                    320,
+                                )
+                            )
                 finally:
                     context.close()
             return issues
