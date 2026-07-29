@@ -122,40 +122,9 @@
   }
 }
 
-.opi-pill {
-  display: inline-block;
-  font-size: 0.7rem;
-  text-transform: uppercase;
-  letter-spacing: 0.06em;
-  padding: 0.1rem 0.5rem;
-  border-radius: 999px;
-  font-weight: 600;
-  vertical-align: middle;
-}
-
-.opi-pill.draft {
-  background: #FFF7E0;
-  color: #8A6800;
-}
-
-.opi-pill.neutral {
-  background: #EFEFEF;
-  color: var(--opi-text-muted);
-}
-
-[data-md-color-scheme="slate"] .opi-pill.draft {
-  background: #3A2F12;
-  color: #E8B635;
-}
-
-[data-md-color-scheme="slate"] .opi-pill.neutral {
-  background: #2A2A2D;
-  color: #B8B8B6;
-}
-
 /* Page header: canonical eyebrow + summary lede rendered by the page_header()
-   macro. Replaces the hand-built badge / bold kicker / duplicate-title /
-   tagline stack so the page title stays a single semantic <h1>. */
+   macro. Replaces hand-built intro stacks so the page title stays a single
+   semantic <h1>. */
 .opi-page-header {
   margin: 0 0 1.6rem;
 }

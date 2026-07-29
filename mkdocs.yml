@@ -95,9 +95,6 @@ extra:
     - icon: fontawesome/brands/github
       link: https://github.com/city-of-baltimore/opi-wiki
       name: OPI Foundations on GitHub
-  status:
-    new: Recently added
-    deprecated: Deprecated
 
 markdown_extensions:
   - abbr

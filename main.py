@@ -19,22 +19,8 @@ DOCS_DIR = REPO_ROOT / "docs"
 PEOPLE_DATA_PATH = "_data/people.yml"
 
 
-class PageFile(Protocol):
-    """Minimal protocol for the current MkDocs page file."""
-
-    src_path: str
-
-
-class Page(Protocol):
-    """Minimal protocol for the current MkDocs page object."""
-
-    file: PageFile
-
-
 class MacroEnvironment(Protocol):
     """Minimal protocol for the MkDocs macros plugin environment."""
-
-    page: Page
 
     def macro(self, function: Callable[..., Any]) -> Callable[..., Any]:
         """Register a callable as a macro."""
@@ -80,31 +66,17 @@ def define_env(env: MacroEnvironment) -> None:
         return _render_markup(render_card_grid(sections[section]))
 
     @env.macro
-    def badge(value: str) -> Markup:
-        """Render a shared display badge by token."""
-
-        from scripts.repo_tools.badges import render_badge
-
-        return _render_markup(render_badge(value))
-
-    @env.macro
     def page_header(
         summary: str = "",
         category: str = "",
         tagline: str = "",
     ) -> Markup:
-        """Render the current page's canonical header from metadata and args."""
+        """Render a page's canonical header from explicit authoring arguments."""
 
-        from scripts.repo_tools.badges import resolve_optional_page_badge_value
-        from scripts.repo_tools.metadata import resolve_page_metadata
         from scripts.repo_tools.page_header import render_page_header
 
-        page_path = DOCS_DIR / env.page.file.src_path
-        metadata = resolve_page_metadata(DOCS_DIR, page_path)
-        badge_value = resolve_optional_page_badge_value(metadata)
         return _render_markup(
             render_page_header(
-                badge_value,
                 summary=summary,
                 category=category,
                 tagline=tagline,

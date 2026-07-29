@@ -158,23 +158,12 @@ into the global theme surface.
 ## Page headers
 
 Every content page opens with one `{{ page_header(...) }}` call placed directly
-under the `# H1`. It renders the canonical intro — the status badge plus an
-optional `category` eyebrow, `summary` lede, and `tagline` — as a single
-accessible block. Do not hand-build the old stack (badge macro, blockquote
-summary, bold kicker, a bold line restating the title, italic tagline); that
-duplicated the title and split header styling three ways across the corpus. Keep
-the page title as a single `# H1`. Section `index.md` landing pages are the
-exception: they use a plain `>` blockquote summary and no badge.
-
-## Page badges
-
-Visible status/type pills are shared UI too, and they are **opt-in**: a page
-renders a pill only when a `.metadata.yml` scope sets `display_badge` to
-`draft`, `template`, or `reference`. Most pages set no
-badge — the old blanket `approved` badge was retired because labeling the
-default state added noise (and the token is now rejected by validation).
-`page_header()` renders the page's badge automatically; use the `badge(...)`
-macro only for one-off inline badges, and never inline raw HTML pill spans.
+under the `# H1`. It renders an optional `category` eyebrow, `summary` lede, and
+`tagline` as a single accessible block. Do not hand-build the old stack
+(blockquote summary, bold kicker, a bold line restating the title, italic
+tagline); that duplicated the title and split header styling three ways across
+the corpus. Keep the page title as a single `# H1`. Section `index.md` landing
+pages are the exception: they use a plain `>` blockquote summary.
 
 ## Headings
 
@@ -203,7 +192,7 @@ OWNER
 ```
 
 This renders as a semantic `<dl>`. (This visible block is distinct from the
-build-time `.metadata.yml`, which drives review cadence and the status badge.)
+build-time `.metadata.yml`, which drives ownership and review cadence.)
 
 ## Structured page data
 
@@ -220,7 +209,7 @@ centers, personnel status, compensation, or full position descriptions.
 
 Use each data shape intentionally:
 
-- `.metadata.yml` for inherited page metadata, review fields, and optional `display_badge` state.
+- `.metadata.yml` for inherited owner, review cadence, and change-log fields.
 - `*.cards.yml` for shared landing-page card content rendered through `card_grid_from(...)`.
 - `*.data.yml` for page-local structured source data that needs to render into more than one repeated section.
 

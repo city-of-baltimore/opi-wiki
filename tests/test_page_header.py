@@ -11,10 +11,9 @@ REPO_ROOT = Path(__file__).resolve().parents[1]
 
 
 def test_render_page_header_renders_eyebrow_summary_and_tagline() -> None:
-    """A full header should render category, badge, summary, and tagline."""
+    """A full header should render its category, summary, and tagline."""
 
     html = render_page_header(
-        "draft",
         summary="What this page covers.",
         category="SERIES · OPI FOUNDATIONS",
         tagline="A supporting line.",
@@ -22,7 +21,7 @@ def test_render_page_header_renders_eyebrow_summary_and_tagline() -> None:
 
     assert '<div class="opi-page-header">' in html
     assert '<span class="opi-page-header__category">SERIES · OPI FOUNDATIONS</span>' in html
-    assert '<span class="opi-pill draft">Draft</span>' in html
+    assert "opi-pill" not in html
     assert '<p class="opi-page-header__summary">What this page covers.</p>' in html
     assert '<p class="opi-page-header__tagline">A supporting line.</p>' in html
 
@@ -30,41 +29,44 @@ def test_render_page_header_renders_eyebrow_summary_and_tagline() -> None:
 def test_render_page_header_omits_empty_optional_parts() -> None:
     """Empty optional fields should not emit category, summary, or tagline."""
 
-    html = render_page_header("reference")
+    html = render_page_header()
 
     assert "opi-page-header__category" not in html
     assert "opi-page-header__summary" not in html
     assert "opi-page-header__tagline" not in html
-    assert '<span class="opi-pill neutral">Reference</span>' in html
 
 
-def test_render_page_header_without_badge_omits_the_eyebrow() -> None:
-    """Badges are opt-in: no badge and no category means no eyebrow row at all."""
+def test_render_page_header_without_category_omits_the_eyebrow() -> None:
+    """A summary without a category should not leave an empty eyebrow row."""
 
-    html = render_page_header(None, summary="Just a summary.")
+    html = render_page_header(summary="Just a summary.")
 
     assert "opi-page-header__eyebrow" not in html
-    assert "opi-pill" not in html
     assert '<p class="opi-page-header__summary">Just a summary.</p>' in html
 
 
 def test_render_page_header_escapes_text() -> None:
     """Author-supplied text should be HTML-escaped."""
 
-    html = render_page_header("draft", summary="A & B <c>")
+    html = render_page_header(summary="A & B <c>")
 
     assert "A &amp; B &lt;c&gt;" in html
     assert "<c>" not in html
 
 
-def test_page_header_macro_resolves_badge_from_metadata() -> None:
-    """The macro should pull the badge token from inherited page metadata."""
+def test_page_header_macro_renders_explicit_content_only() -> None:
+    """The macro should render only the content supplied by the page author."""
 
     env = register_macros("resources/reference/glossary.md")
 
-    rendered = str(env.macros["page_header"](summary="What this page covers."))
+    rendered = str(
+        env.macros["page_header"](
+            summary="What this page covers.",
+            category="REFERENCE",
+        )
+    )
 
-    assert '<span class="opi-pill neutral">Reference</span>' in rendered
+    assert '<span class="opi-page-header__category">REFERENCE</span>' in rendered
     assert '<p class="opi-page-header__summary">What this page covers.</p>' in rendered
 
 

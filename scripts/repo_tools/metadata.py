@@ -11,8 +11,8 @@ from typing import Any
 
 from scripts.repo_tools.data import load_yaml_mapping
 
-REQUIRED_FIELDS = ("owner", "status", "last_reviewed", "next_review", "change_log")
-NONPUBLIC_STATUSES = frozenset({"confidential", "internal", "restricted"})
+REQUIRED_FIELDS = ("owner", "last_reviewed", "next_review", "change_log")
+ALLOWED_FIELDS = frozenset(REQUIRED_FIELDS)
 
 
 @dataclass(frozen=True)
@@ -53,11 +53,26 @@ def load_metadata_config(path: Path) -> MetadataConfig:
     if not isinstance(defaults, dict):
         raise ValueError(f"{path}: 'defaults' must be a mapping.")
 
-    return MetadataConfig(
+    config = MetadataConfig(
         defaults={str(key): str(value) for key, value in defaults.items()},
         patterns=_normalize_mapping(raw_data.get("patterns"), path, "patterns"),
         pages=_normalize_mapping(raw_data.get("pages"), path, "pages"),
     )
+    scopes = [
+        ("defaults", config.defaults),
+        *((f"patterns.{name}", values) for name, values in config.patterns.items()),
+        *((f"pages.{name}", values) for name, values in config.pages.items()),
+    ]
+    allowed_fields = ", ".join(sorted(ALLOWED_FIELDS))
+    for scope, values in scopes:
+        unsupported = sorted(set(values) - ALLOWED_FIELDS)
+        if unsupported:
+            qualified_fields = ", ".join(f"{scope}.{field}" for field in unsupported)
+            raise ValueError(
+                f"{path}: unsupported metadata field(s): {qualified_fields}. "
+                f"Allowed fields: {allowed_fields}."
+            )
+    return config
 
 
 def resolve_page_metadata(docs_dir: Path, markdown_file: Path) -> dict[str, str]:
@@ -92,10 +107,22 @@ def resolve_page_metadata(docs_dir: Path, markdown_file: Path) -> dict[str, str]
     return effective
 
 
+def find_metadata_schema_issues(docs_dir: Path) -> list[str]:
+    """Reject fields outside the small review-metadata contract."""
+
+    issues: list[str] = []
+    for metadata_path in sorted(docs_dir.rglob(".metadata.yml")):
+        try:
+            load_metadata_config(metadata_path)
+        except (OSError, ValueError) as error:
+            issues.append(str(error))
+    return issues
+
+
 # Review rounds may be scheduled up to roughly six and a half months apart.
 # The explicit next_review date is the deadline; this interval cap prevents a
 # distant date from disabling the staleness policy. Two hundred days covers the
-# approved 2026-07-19 to 2027-01-31 review round (196 days).
+# 2026-07-19 to 2027-01-31 review round (196 days).
 REVIEW_MAX_INTERVAL_DAYS = 200
 
 
@@ -154,7 +181,9 @@ def find_review_date_issues(
 def find_metadata_issues(docs_dir: Path, *, today: date | None = None) -> list[str]:
     """Return missing, malformed, or stale metadata issues for Markdown files."""
 
-    issues: list[str] = []
+    issues = find_metadata_schema_issues(docs_dir)
+    if issues:
+        return issues
     effective_today = today or date.today()
 
     for markdown_file in sorted(docs_dir.rglob("*.md")):
@@ -165,12 +194,6 @@ def find_metadata_issues(docs_dir: Path, *, today: date | None = None) -> list[s
             missing_fields = ", ".join(sorted(missing))
             issues.append(f"{relative_file}: missing metadata fields: {missing_fields}")
             continue
-
-        status = metadata["status"].strip().casefold()
-        if status in NONPUBLIC_STATUSES:
-            issues.append(
-                f"{relative_file}: status '{status}' is not publishable in this public repository"
-            )
 
         issues.extend(find_review_date_issues(metadata, relative_file, today=effective_today))
 

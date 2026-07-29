@@ -1,10 +1,5 @@
-# No display_badge default on purpose: badges are opt-in. Pages carry a pill
-# only when a section or page sets display_badge explicitly (draft, template,
-# reference). The old blanket "approved" badge was
-# retired — approval is the default state and labeling it added noise.
 defaults:
   owner: OPI Director's Office
-  status: approved
   last_reviewed: 2026-07-26
   next_review: 2027-01-31
   change_log: Reconciled the home-page taxonomy and featured references.
@@ -12,4 +7,3 @@ defaults:
 pages:
   index.md:
     owner: OPI Director's Office
-    status: approved

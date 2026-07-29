@@ -1,6 +1,5 @@
 defaults:
   owner: Chief of Staff
-  status: approved
   last_reviewed: 2026-07-26
   next_review: 2027-01-31
   change_log: Updated resource descriptions to match the current reference library.
