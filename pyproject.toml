@@ -46,7 +46,7 @@ dev = [
     # the local guard — see the "Two checkers" note in that module's docstring
     # for the gaps that were re-measured against 0.4.5. The CI evidence check
     # makes a bump explicit; the permanent pre-push matrix proves its behavior.
-    "baltimore-patapsco==0.4.5",
+    "baltimore-patapsco==0.4.8",
     # The browser accessibility gate must not acquire new rules silently.
     # Review axe release notes and rerun the canonical-route matrix before
     # changing this exact pin.
