@@ -15,9 +15,6 @@ if str(REPO_ROOT) not in sys.path:
 
 DOCS_DIR = REPO_ROOT / "docs"
 
-# Canonical single-source people directory, relative to DOCS_DIR.
-PEOPLE_DATA_PATH = "_data/people.yml"
-
 
 class MacroEnvironment(Protocol):
     """Minimal protocol for the MkDocs macros plugin environment."""
@@ -84,14 +81,18 @@ def define_env(env: MacroEnvironment) -> None:
         )
 
     @env.macro
-    def org_structure_from(relative_path: str, section: str) -> Markup:
-        """Render a structured org-structure section from shared YAML data."""
+    def org_structure(section: str) -> Markup:
+        """Render a section from the one canonical organization source."""
 
-        from scripts.repo_tools.org_structure import load_org_structure, render_org_structure
+        from scripts.repo_tools.org_structure import render_org_structure
+        from scripts.repo_tools.organization import (
+            ORGANIZATION_DATA_PATH,
+            load_organization,
+        )
 
         return _render_docs_markup(
-            relative_path,
-            load_data=load_org_structure,
+            ORGANIZATION_DATA_PATH,
+            load_data=load_organization,
             render_data=render_org_structure,
             render_args=(section,),
         )
@@ -100,6 +101,16 @@ def define_env(env: MacroEnvironment) -> None:
     def role_holder(title: str) -> str:
         """Return the name of the staff member holding the given working title."""
 
-        from scripts.repo_tools.people import find_role_holder, load_people
+        from scripts.repo_tools.markdown_text import render_inert_markdown_text
+        from scripts.repo_tools.organization import (
+            ORGANIZATION_DATA_PATH,
+            find_role_holder,
+            load_organization,
+        )
 
-        return find_role_holder(load_people(DOCS_DIR, PEOPLE_DATA_PATH), title)
+        return render_inert_markdown_text(
+            find_role_holder(
+                load_organization(DOCS_DIR, ORGANIZATION_DATA_PATH),
+                title,
+            )
+        )

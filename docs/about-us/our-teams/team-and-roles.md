@@ -6,7 +6,7 @@ This page lists OPI's City staff by team and gives a plain-language summary of w
 
 To see who reports to whom, see the [Org Structure](../../how-we-work/organization/org-structure.md) chart.
 
-{{ org_structure_from("_data/people.yml", "team_roles") }}
+{{ org_structure("team_roles") }}
 
 ## Read alongside
 

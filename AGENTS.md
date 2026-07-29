@@ -184,6 +184,9 @@ Hold these lines:
   only allowed short form.
 - Every canonical page carries an owner and review cadence via the nearest
   `.metadata.yml`; new sections add their own.
+- `docs/_data/people.yml` has an exact, hosted-CI-validated organization schema.
+  Both organization macros consume the same immutable model; never add a parallel
+  parser or an unreviewed field.
 
 ## Structure and navigation
 

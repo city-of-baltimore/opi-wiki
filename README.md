@@ -22,10 +22,13 @@ of record. The existing Handbook sources are a bounded holding area while OPI
 decides their long-term City-system destination; MkDocs excludes them from the
 generated site.
 
-The people-data loader rejects named directory fields that do not belong in the
-staff roster. The built-artifact check rejects structured YAML, Handbook paths,
-phone-number patterns, and PIN labels in generated output. Section-owner review
-remains responsible for contextual placement that automation cannot infer.
+One strict organization loader accepts only the documented fields and feeds the
+org chart, Team and Roles tables, and inline role lookups from the same immutable
+record. Hosted CI rejects unknown fields, missing or mistyped values, duplicate
+YAML keys, and drift from the canonical four-team structure. The built-artifact
+check separately rejects structured YAML, Handbook paths, phone-number patterns,
+and PIN labels in generated output. Section-owner review remains responsible for
+contextual placement that automation cannot infer.
 
 ## Local development
 
@@ -241,6 +244,7 @@ opi-foundations/
 │   ├── hooks/pre-push      # runs the prepush plan before every push
 │   ├── check_html_links.py # raw HTML href validation
 │   ├── check_built_artifact.py # rejects excluded source/sensitive data in site/
+│   ├── check_organization_data.py # exact organization source contract
 │   ├── check_page_metadata.py
 │   ├── check_brand_terms.py
 ├── .github/
