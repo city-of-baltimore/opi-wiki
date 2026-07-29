@@ -5,11 +5,12 @@
 AdminOps keeps OPI running. A small office doing citywide work still has to
 coordinate requests, manage resources and records, and explain the work to
 leadership, the City Council, partners, and residents. AdminOps does that so the
-performance, data, design, and delivery teams can focus on their work. It covers
-portfolio management, communications, executive and Council support, and
-knowledge management.
+Performance, Data and Analytics, and Innovation Lab teams can focus on their
+work. It covers portfolio management, communications, executive and Council
+support, and knowledge management.
 
-This is not overhead. It is what lets a small, multidisciplinary office deliver citywide work credibly, and it keeps the other four teams working as one system rather than five separate ones.
+This is not overhead. It is what lets a small, multidisciplinary office deliver
+citywide work credibly, and it keeps OPI's four teams working as one system.
 
 ## Office operations
 

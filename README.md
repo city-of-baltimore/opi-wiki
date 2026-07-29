@@ -202,7 +202,7 @@ opi-foundations/
 │   ├── index.cards.yml     # shared card-grid data for home
 │   ├── about-us/           # mission, letters, our-teams/
 │   ├── how-we-work/        # public operating model and leadership org chart
-│   ├── what-we-do/         # services, programs (CitiStat), products (BIC)
+│   ├── what-we-do/         # services, programs, and products
 │   ├── resources/          # reference, glossary, public role summaries
 │   ├── */index.cards.yml   # section-local landing-page card data
 │   └── assets/

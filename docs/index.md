@@ -41,7 +41,7 @@ OPI is organized into teams with staff and budget. Those teams deliver services 
   <section class="opi-taxonomy-item" role="listitem">
     <h3>Products</h3>
     <p>Tools and platforms OPI builds.</p>
-    <p><strong>Examples:</strong> Baltimore Intelligence Center, Baltimore City Data Platform, Baltimore City Performance Portal.</p>
+    <p><strong>Examples:</strong> Baltimore Intelligence Center, Baltimore City Data Platform, Baltimore City Performance Portal, Baltimore 311 Explorer.</p>
   </section>
 </div>
 
@@ -53,7 +53,7 @@ When in doubt, use the clearest full name. Do not use "CAD" for Cross-Agency Del
 - **Every page has an "Edit this page" link** at the top right. It opens the source file on GitHub, so anyone with a GitHub account can suggest a change.
 - **Suggesting changes is welcome.** See [Contributing](resources/contributing.md) for how to propose edits, file corrections, or request new content.
 
-## Recently updated
+## Featured references
 
 - [Letter: On OPI Foundations](about-us/letters-from-the-director/on-opi-foundations.md)
 - [CitiStat Strategic Framework](what-we-do/programs/citistat/strategic-framework.md)

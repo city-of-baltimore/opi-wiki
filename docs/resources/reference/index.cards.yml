@@ -2,6 +2,10 @@
   title: "Glossary of OPI Terms"
   body: "Plain-language definitions of every term used inside OPI."
   href: glossary/
+- meta: Reference
+  title: "Service Crosswalk"
+  body: "How OPI's five services connect mandate, ownership, goals, and outcomes."
+  href: service-crosswalk/
 - meta: Playbook
   title: "Tiger Teams Playbook"
   body: "How OPI runs short-cycle, cross-functional Tiger Teams."
