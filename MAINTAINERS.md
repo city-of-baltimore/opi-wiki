@@ -452,6 +452,28 @@ supplement `task validate`; they do not replace its release evidence.
   OPI Wiki maintainers — reversible when the controller no longer uses a
   two-frame focus handoff or exposes a narrower completion signal.
 
+- 2026-07-29 — **[HOME HERO] scale the homepage heading fluidly without changing
+  its content hierarchy** — Material's inherited emergency word wrapping split
+  “Foundations” inside the word when fixed 48px type met the hero's 240px
+  content measure at 320px; a bounded `clamp()` keeps the existing 48px desktop
+  direction and gives the word enough room at reflow widths without changing
+  the copy, padding, gradient, eyebrow, summary, or global heading system — one
+  existing browser-smoke gate measures the rendered word fragments and hero
+  bounds at 320px, 390px, and 1440px without adding a context, route crawl, or
+  gate — owner: OPI Wiki product owner (visible design) and maintainers
+  (implementation) — reversible only to a replacement that preserves intact
+  heading words, viewport bounds, and the existing desktop composition.
+
+- 2026-07-29 — **[HOME ACTIONS] hold the overlaid edit/view actions for a
+  product placement decision** — the hero's negative top margin places
+  Material's muted page actions over its dark gradient, where the icon-only
+  treatment is visually weak; recoloring alone would not resolve placement or
+  discoverability, so it is a separate visible-design slice rather than a
+  typography companion fix — owner: OPI Wiki product owner (placement decision)
+  and maintainers (implementation) — retire this hold when the owner selects a
+  deliberate utility treatment and the slice preserves and proves accessible
+  naming, keyboard focus, target size, contrast, and responsive placement.
+
 ### Which gate runs what
 
 `Taskfile.yml` exposes the tiers; `scripts/verify.py` defines the suite once and
