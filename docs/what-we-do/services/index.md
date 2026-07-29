@@ -14,7 +14,7 @@ A **service** is what OPI delivers. It is distinct from a **team** (a group with
 
 ## How services relate to teams, programs, and products
 
-Teams have staff and budget; services are what those teams deliver. [CitiStat](../programs/citistat/index.md) is a program, a routine that the Performance team operates and all teams support. Products like the [Baltimore City Data Platform](../products/index.md) are the tools and platforms OPI builds while delivering these services.
+Teams have staff and budget; services are what those teams deliver. [CitiStat](../programs/citistat/index.md) is a program, a routine that the Performance team operates and all teams support. Products like the [Baltimore City Data Platform](../products/baltimore-city-data-platform.md) are the tools and platforms OPI builds while delivering these services.
 
 ## Read alongside
 

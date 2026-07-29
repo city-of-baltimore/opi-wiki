@@ -13,6 +13,7 @@ from scripts.repo_tools.consistency import (
     TOC_REQUIRED,
     ConsistencyScan,
     acronym_report,
+    check_citistat_narrative,
     check_duplicate_blockquotes,
     check_empty_headings,
     check_glossary_taxonomy,
@@ -181,6 +182,49 @@ def test_glossary_taxonomy_accepts_canonical_language_and_other_pages() -> None:
     assert check_glossary_taxonomy(DOCS / "ordinary.md", canonical) == []
 
 
+def test_citistat_narrative_rejects_verified_portfolio_and_ownership_drift() -> None:
+    """Agency-only labels and team-level program ownership must not return."""
+
+    citistat_page = DOCS / "what-we-do" / "programs" / "citistat" / "index.cards.yml"
+    performance_page = DOCS / "about-us" / "our-teams" / "performance" / "index.md"
+    innovation_page = DOCS / "about-us" / "our-teams" / "innovation-lab" / "about-innovation-lab.md"
+
+    portfolio_issues = check_citistat_narrative(
+        citistat_page,
+        "The 19 agency briefs form the agency portfolio and current schedule of active Stats.",
+    )
+    ownership_issues = check_citistat_narrative(
+        performance_page,
+        "The Performance team owns how the city reviews performance. "
+        "The team owns the CitiStat program.",
+    )
+    boundary_issues = check_citistat_narrative(
+        innovation_page,
+        "Performance routines and CitiStat belong to the Performance team.",
+    )
+
+    assert len(portfolio_issues) == 3
+    assert "mixes agency and thematic Stats" in portfolio_issues[0]
+    assert "calendar details are maintained separately" in portfolio_issues[2]
+    assert len(ownership_issues) == 2
+    assert all("Executive Director" in issue for issue in ownership_issues)
+    assert len(boundary_issues) == 1
+    assert "operates CitiStat" in boundary_issues[0]
+
+
+def test_citistat_narrative_accepts_canonical_language_and_other_pages() -> None:
+    """Canonical ownership and register wording pass without policing other pages."""
+
+    citistat_page = DOCS / "what-we-do" / "programs" / "citistat" / "index.md"
+    canonical = (
+        "The Executive Director owns CitiStat as CitiStat Director. "
+        "Performance operates it day to day. The Stat portfolio is a register."
+    )
+
+    assert check_citistat_narrative(citistat_page, canonical) == []
+    assert check_citistat_narrative(DOCS / "ordinary.md", "Agency briefs.") == []
+
+
 def test_allowlist_combines_curated_and_glossary_terms(tmp_path: Path) -> None:
     """The acronym allowlist should include built-ins and public glossary terms."""
 
@@ -229,6 +273,50 @@ def test_scan_consistency_collects_a_clean_page(tmp_path: Path) -> None:
     result = scan_consistency(docs_dir, repo_root=repo_root)
 
     assert result == ConsistencyScan(structural_issues=(), acronyms=())
+
+
+def test_scan_consistency_collects_citistat_card_narrative_drift(tmp_path: Path) -> None:
+    """The integrated scan must inspect the card source that held the original drift."""
+
+    repo_root = tmp_path / "repo"
+    docs_dir = repo_root / "docs"
+    cards = docs_dir / "what-we-do" / "programs" / "citistat" / "index.cards.yml"
+    cards.parent.mkdir(parents=True)
+    cards.write_text('body: "The full agency portfolio: 19 agency briefs."\n', encoding="utf-8")
+
+    result = scan_consistency(docs_dir, repo_root=repo_root)
+
+    assert len(result.structural_issues) == 2
+    assert all("index.cards.yml:1" in issue for issue in result.structural_issues)
+    assert any("agency and thematic Stats" in issue for issue in result.structural_issues)
+
+
+def test_scan_consistency_collects_an_unreadable_citistat_card_source(
+    tmp_path: Path,
+    monkeypatch: pytest.MonkeyPatch,
+) -> None:
+    """A card-source IO failure should retain its path and cause."""
+
+    repo_root = tmp_path / "repo"
+    docs_dir = repo_root / "docs"
+    cards = docs_dir / "what-we-do" / "programs" / "citistat" / "index.cards.yml"
+    cards.parent.mkdir(parents=True)
+    cards.touch()
+    original_read_text = Path.read_text
+
+    def fail_cards(path: Path, *, encoding: str) -> str:
+        if path == cards:
+            raise OSError("card read failed")
+        return original_read_text(path, encoding=encoding)
+
+    monkeypatch.setattr(Path, "read_text", fail_cards)
+
+    result = scan_consistency(docs_dir, repo_root=repo_root)
+
+    assert result.structural_issues == (
+        "docs/what-we-do/programs/citistat/index.cards.yml: "
+        "unable to read card source: card read failed",
+    )
 
 
 def test_scan_consistency_collects_an_unreadable_source(

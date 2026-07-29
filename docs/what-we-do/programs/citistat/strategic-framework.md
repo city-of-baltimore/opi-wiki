@@ -130,5 +130,5 @@ CitiStat identifies the problem; the rest of OPI helps explain, design, deliver,
 ## Read alongside
 
 - [CitiStat Method Playbook](method-playbook.md): the operating manual, covering roles, the full session cycle, and the quality bar.
-- [CitiStat Portfolio](portfolio/index.md): the current schedule of active Stats.
+- [CitiStat Portfolio](portfolio/index.md): the portfolio register and its Stat briefs.
 - [About Performance](../../../about-us/our-teams/performance/about-performance.md): how CitiStat fits inside citywide performance management.

@@ -212,5 +212,5 @@ A few failure modes recur. Status creep is the standing tour of every metric; na
 
 - [CitiStat Strategic Framework](strategic-framework.md): the strategy this playbook puts into practice.
 - [CitiStat Templates](templates.md): the pre-memo, deck, follow-up memo, and agenda templates.
-- [CitiStat Portfolio](portfolio/index.md): the current schedule of active Stats.
+- [CitiStat Portfolio](portfolio/index.md): the portfolio register and its Stat briefs.
 - [About Performance](../../../about-us/our-teams/performance/about-performance.md): how CitiStat fits inside citywide performance management.
