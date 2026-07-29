@@ -442,6 +442,16 @@ supplement `task validate`; they do not replace its release evidence.
   measured proof with equal risk coverage and no slower duplicated route or
   color-scheme work.
 
+- 2026-07-29 — **[BROWSER ASSURANCE] sample responsive focus after the
+  controller's complete frame sequence** — browser rendering evaluates
+  media-query changes before animation-frame callbacks, so a two-frame test
+  wait registered before the change can resolve immediately before the
+  controller's own second frame; issue the breakpoint requests back-to-back,
+  drain three frames, and assert only the final user-visible focus outcome
+  because the browser may coalesce the intermediate rendering state — owner:
+  OPI Wiki maintainers — reversible when the controller no longer uses a
+  two-frame focus handoff or exposes a narrower completion signal.
+
 ### Which gate runs what
 
 `Taskfile.yml` exposes the tiers; `scripts/verify.py` defines the suite once and
