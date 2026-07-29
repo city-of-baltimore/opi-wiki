@@ -10,16 +10,16 @@ readme = "README.md"
 requires-python = ">=3.13,<3.15"
 dependencies = [
   "mkdocs==1.6.1",
-  # Held on the 9.6.x line on purpose: Material 9.7+ prints a build-time advisory
-  # pushing migration to ProperDocs (an ecosystem fork). Stay on the stable,
-  # warning-free MkDocs 1.x stack until that settles.
-  "mkdocs-material==9.6.23",
+  # Material 9.7.7 fixes a search-suggestion XSS. Its MkDocs 2.0 warning is
+  # intentionally visible; see the dated decision in MAINTAINERS.md.
+  "mkdocs-material==9.7.7",
   "mkdocs-awesome-pages-plugin==2.10.1",
   "mkdocs-macros-plugin==1.5.0",
-  # Pinned at 1.2.2 on purpose: 1.2.3 swaps its dependency from `mkdocs` to
-  # `properdocs` (the same fork), which injects advocacy warnings into builds.
+  # 1.2.3 adds properdocs>=1.6.5 alongside MkDocs. Alternate-renderer adoption
+  # remains a separate platform decision; keep this pin.
   "mkdocs-redirects==1.2.2",
-  "pymdown-extensions==10.21.3",
+  # 11.0 contains the CVE-2026-61632 fix; 11.0.1 adds follow-up regex fixes.
+  "pymdown-extensions==11.0.1",
 ]
 
 # This is an application, not a distributable package, so uv does not build or

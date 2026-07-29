@@ -276,17 +276,19 @@ manual and deliberately wired into no gate — Snyk plans cap scan counts. See
 
 ## Build platform note
 
-This repo intentionally stays on `mkdocs==1.6.1` and pins
-`mkdocs-redirects==1.2.2`.
+The exact rendering stack is `mkdocs==1.6.1`, `mkdocs-material==9.7.7`,
+`pymdown-extensions==11.0.1`, and `mkdocs-redirects==1.2.2`.
 
-`mkdocs-redirects==1.2.3` introduces a transitive `properdocs` dependency and a
-build-time warning encouraging migration away from MkDocs. That migration may be
-worth evaluating later, but it should happen as an explicit repo decision, not
-as a side effect of a plugin upgrade.
+Material 9.7.2 and later print an MkDocs 2.0 incompatibility warning during a
+build. This repository intentionally leaves that planning signal visible. It is
+not a ProperDocs warning, and it does not require changing renderers in the
+security-patch slice that adopted this stack.
 
-If OPI chooses to adopt ProperDocs in the future, do it as a single migration
-slice: rename `mkdocs.yml`, update local commands and CI, and re-verify all
-plugins and theme behavior together.
+Separately, `mkdocs-redirects==1.2.3` adds `properdocs>=1.6.5` alongside MkDocs.
+That upgrade remains deferred to a separate renderer-migration decision
+recorded by OPI Wiki maintainers, not a routine dependency batch. Such a
+migration must update local commands and CI and re-verify every plugin and theme
+behavior together.
 
 ## Repository conventions
 

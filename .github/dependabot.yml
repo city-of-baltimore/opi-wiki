@@ -24,11 +24,8 @@ updates:
         patterns: ["*"]
         exclude-patterns: ["baltimore-patapsco"]
     ignore:
-      # Held back on purpose: these versions pull in / advocate ProperDocs, an
-      # MkDocs ecosystem fork (Material 9.7+ prints a migration warning;
-      # mkdocs-redirects 1.2.3 depends on properdocs). Re-evaluate manually
-      # when that situation settles, then bump deliberately.
-      - dependency-name: "mkdocs-material"
-        versions: [">=9.7.0"]
+      # 1.2.3 adds properdocs>=1.6.5 alongside MkDocs. Keep this alternate
+      # renderer outside routine dependency batches; revisit only in a
+      # migration decision recorded by OPI Wiki maintainers.
       - dependency-name: "mkdocs-redirects"
         versions: [">=1.2.3"]

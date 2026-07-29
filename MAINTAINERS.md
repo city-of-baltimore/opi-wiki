@@ -267,14 +267,29 @@ This repo currently runs on MkDocs 1.x and should stay there unless the team
 makes a deliberate platform-migration decision.
 
 Keep `mkdocs-redirects` pinned at `1.2.2` unless and until OPI explicitly
-decides to migrate to ProperDocs. Newer redirect-plugin releases pull in
-ProperDocs transitively and emit migration warnings during normal MkDocs builds.
+records a renderer-migration decision with the OPI Wiki maintainers. Version
+1.2.3 adds `properdocs>=1.6.5` alongside `mkdocs>=1.2,<=1.6.1`; do not introduce
+a second renderer through a routine dependency update.
 
-If the team wants ProperDocs later, treat it as a full platform change:
+If the team chooses another renderer later, treat it as a full platform change:
 
-1. Rename `mkdocs.yml` to `properdocs.yml`.
-2. Update local commands, CI, and preview/deploy scripts from `mkdocs` to `properdocs`.
+1. Confirm the target renderer and configuration contract.
+2. Update local commands, CI, and preview/deploy scripts together.
 3. Re-verify theme, plugins, redirects, and navigation behavior in one slice.
+
+- 2026-07-29 — **[BUILD PLATFORM] adopt security-patched Material and PyMdown
+  while retaining MkDocs 1.x** — `mkdocs-material==9.7.7` fixes a DOM-based XSS
+  in search suggestions, and `pymdown-extensions==11.0.1` includes the 11.0
+  containment fix for CVE-2026-61632; this site does not enable
+  `pymdownx.b64`, but it does not retain a known-vulnerable package. Material
+  9.7.2 and later emit an MkDocs 2.0 incompatibility warning; keep that signal
+  visible rather than setting `NO_MKDOCS_2_WARNING`. Material 9.7.7 still
+  requires `mkdocs>=1.6,<2`, so this slice retains exact-pinned MkDocs 1.6.1
+  and defers any renderer migration — owner: OPI Wiki maintainers — review
+  before Material's scheduled November 5, 2026 end of life; reversible only to
+  another patched, fully verified Material/MkDocs pairing or through a separate
+  renderer-migration decision recorded by OPI Wiki maintainers, never by
+  restoring the vulnerable pins.
 
 ## Review-date enforcement
 
