@@ -100,6 +100,7 @@ def test_ci_plan_keeps_every_static_check() -> None:
 
     assert ci_names == [
         "Checking hosted CI policy",
+        "Validating platform guard evidence",
         "Checking platform baseline conformance",
         "Checking repo automation formatting",
         "Linting repo automation",
@@ -140,7 +141,7 @@ def test_ci_plan_runs_both_policy_checkers() -> None:
     """The lean gate runs the local guard AND Patapsco's shared baseline check.
 
     They are not interchangeable, and the difference is measured rather than
-    assumed: ``platform-check`` 0.4.3 expands ``npm`` and ``.sh`` bodies but
+    assumed: ``platform-check`` 0.4.5 expands ``npm`` and ``.sh`` bodies but
     still treats a Python plan module — ``verify.py --plan ci`` — as an opaque
     leaf, so a forbidden command added to this module's ``ci`` tier passes it.
     It also has no job-timeout rule, and its ``run:`` coverage is a denylist
@@ -150,9 +151,21 @@ def test_ci_plan_runs_both_policy_checkers() -> None:
     """
 
     commands = [" ".join(step.command) for step in build_steps(Path("/tmp/example"), plan="ci")]
+    local_guard = next(
+        index for index, command in enumerate(commands) if "check_hosted_ci_policy.py" in command
+    )
+    evidence_guard = next(
+        index
+        for index, command in enumerate(commands)
+        if "check_platform_guard_evidence.py" in command
+    )
+    platform_guard = next(
+        index
+        for index, command in enumerate(commands)
+        if "baltimore.patapsco.baseline.cli" in command
+    )
 
-    assert any("check_hosted_ci_policy.py" in command for command in commands)
-    assert any("baltimore.patapsco.baseline.cli" in command for command in commands)
+    assert local_guard < evidence_guard < platform_guard
 
 
 def test_ci_plan_validates_organization_data_before_any_build() -> None:

@@ -32,6 +32,12 @@ VALIDATOR_CASES = (
         "Organization data validated.",
     ),
     (
+        "scripts.check_platform_guard_evidence",
+        "scripts.repo_tools.platform_guard_evidence",
+        "find_platform_guard_evidence_issues",
+        "Platform guard evidence validated.",
+    ),
+    (
         "scripts.check_style",
         "scripts.repo_tools.style",
         "find_style_issues",

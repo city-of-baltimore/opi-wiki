@@ -297,7 +297,7 @@ runs it in three nested tiers:
 
 | Tier | Where | Covers |
 |---|---|---|
-| `task ci` | pull-request CI, fast local loop | hosted-CI policy guard, format, lint, mypy, bandit, metadata, brand terms, style, consistency, raw HTML links |
+| `task ci` | pull-request CI, fast local loop | hosted-CI policy guard, platform-gate evidence, format, lint, mypy, bandit, metadata, organization data, brand terms, style, consistency, raw HTML links |
 | `task prepush` | the pre-push hook and the Pages deploy gate | everything above, plus pytest, `mkdocs build --strict`, built-artifact safety and built-link checks, and accessibility checks |
 | `task validate` | locally, before a deploy | everything above, plus browser interaction and full-route WCAG assurance |
 
@@ -312,20 +312,41 @@ task graph and the `verify.py` plans, so adding a heavy step to any task `ci`
 reaches is caught.
 
 The `ci` plan also runs Patapsco's published `platform-check`
-(`baltimore-patapsco`, exact-pinned in the dev group), which owns the shared
-estate baseline: the app marker, the slot-8 ports, the task surface, tooling
-configuration, and the pre-push hook. Keep **both**. `platform-check` 0.4.3 does
+(`baltimore-patapsco`, exact-pinned in the dev group), which checks the shared
+app marker, task surface, tooling configuration, and pre-push hook that apply
+to this docs site. Keep **both**. `platform-check` 0.4.5 does
 not expand `verify.py` plans (it expands `npm` and `.sh` bodies, but not a
 Python plan module), has no job-timeout rule, and has no `run:`/`uses:`
-allowlist, so it returns "conforms" for four of the five violations the local
+allowlist, so it returns "conforms" for all five violations the local
 guard fails on. The comparison runs both ways: the 0.4.1 sweep caught two
 Taskfile forms the local guard missed — a block-list `deps:` and a `silent: true`
 task — which are now fixed and regression-tested here, and the 0.4.3 sweep found
-a third that is not yet fixed (a new `.sh` in the task chain that runs a
-forbidden command directly). The measured gaps, and the condition under which
-the local guard can finally be deleted — still unmet at 0.4.3 — are recorded in
+a third — a new `.sh` in the task chain that runs a forbidden command directly —
+which is also fixed and regression-tested here. The measured gaps, and the
+condition for deleting the local guard — still unmet at 0.4.5 — are recorded in
 the "Two checkers" note in that module's docstring.
-If you bump the pin, re-run that comparison before assuming it is now redundant.
+
+`scripts/check_platform_guard_evidence.py` runs before `platform-check` in the
+hosted tier. It requires one exact Patapsco pin, a dedicated Dependabot update
+group, and coordinated current-measurement references. Updating the marker is a
+maintainer attestation, not execution proof. The pre-push suite runs
+`tests/test_platform_guard_differential.py` against the installed release and
+must pass before the change can be pushed or deployed.
+
+- 2026-07-27 — **[PLATFORM GATE] isolate and re-measure every Patapsco bump** —
+  policy-gate changes must arrive separately from routine tooling and preserve
+  the five-case differential evidence — owner: OPI wiki maintainers —
+  reversible when Patapsco catches the complete matrix and the local guard is
+  retired under its documented condition.
+
+- 2026-07-27 — **[DOCS-SITE PORTS] defer shared enforcement to Patapsco** —
+  Patapsco 0.4.5 treats `docs-site` as a non-application kind, so its registry
+  slot and compose/loopback rules do not run here; the repository remains
+  aligned to slot 8 and loopback port 5208, but a green shared check does not
+  prove that contract — owner: Patapsco maintainers — reversible when the
+  shared checker covers port-owning docs sites and this repository re-measures
+  the adopting pin.
+
 **The practical consequence: a broken test or strict build is not caught on the
 PR; it surfaces at `git push` (via the hook) or on the deploy run after merge.**
 

@@ -15,8 +15,14 @@ updates:
     schedule:
       interval: weekly
     groups:
+      # Patapsco is an executable policy gate, not routine tooling. Keep its
+      # bumps isolated so the differential evidence can be re-measured and
+      # reviewed without unrelated dependency noise.
+      platform-gate:
+        patterns: ["baltimore-patapsco"]
       python:
         patterns: ["*"]
+        exclude-patterns: ["baltimore-patapsco"]
     ignore:
       # Held back on purpose: these versions pull in / advocate ProperDocs, an
       # MkDocs ecosystem fork (Material 9.7+ prints a migration warning;

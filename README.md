@@ -133,24 +133,38 @@ and every pinned `uses:` action. A task it cannot resolve is a violation, not a
 pass.
 
 Alongside it, the `ci` plan runs **`platform-check`** from Patapsco's published
-`baltimore-patapsco` package (exact-pinned in the dev group). That is the shared
-estate baseline — the app marker, the reserved port slot, the task surface,
-ruff/mypy/bandit configuration, and the pre-push hook — and it is the authority
-on rules that span every sibling repo.
+`baltimore-patapsco` package (exact-pinned in the dev group). For this docs
+site, it checks the shared app marker, task surface, tooling configuration, and
+pre-push hook, and it remains the authority on rules that span sibling repos.
+
+One boundary is explicit: Patapsco 0.4.5 classifies `docs-site` outside its
+port-owning application kinds, so its slot and compose/loopback rules do not run
+here. The repository still declares registry slot 8 and both local preview paths
+use loopback port 5208, but a green `platform-check` does not prove that port
+contract. Extending the shared rule belongs in Patapsco, followed by a
+re-measured pin bump here.
 
 The two are complementary, not redundant, and the split is measured rather than
-assumed — re-measured against `platform-check` 0.4.3, which expands `npm` and
+assumed — re-measured against `platform-check` 0.4.5, which expands `npm` and
 `.sh` bodies but still treats a **Python plan module** as an opaque leaf. It
 therefore does not see this repo's second indirection layer
 (`verify.py --plan ci`), including when that layer is reached through
 `scripts/verify.sh`; it also has no job-timeout rule, and its `run:` coverage is
-a denylist rather than an allowlist. 0.4.3 still misses all five injected cases
+a denylist rather than an allowlist. 0.4.5 still misses all five injected cases
 in their ordinary form; a piped `curl … | sh` is caught only when the URL
 happens to end in `.sh`, via the unresolvable-delegation rule rather than any
 `curl` denylist entry. Those five, and the forms this repo's own guard misses in the
 other direction, are documented in the "Two checkers" note in
 `scripts/check_hosted_ci_policy.py`, with the condition for retiring the local
-guard — which 0.4.3 does not meet.
+guard — which 0.4.5 does not meet.
+
+`scripts/check_platform_guard_evidence.py` runs immediately before the shared
+gate. It keeps Patapsco exact-pinned, isolates its Dependabot pull requests from
+routine tooling updates, and requires every current-measurement claim to name
+the release actually tested. A pin bump fails CI until a maintainer updates the
+measurement marker and living claims; that update is an explicit attestation,
+not proof of execution. The pre-push suite runs the five-case differential
+matrix against the installed release and must pass before push or deploy.
 
 Do not add a test, build, or browser step to the pull-request workflow, and do
 not add one to a task `ci` reaches. Add checks to `build_steps()` in
@@ -240,6 +254,7 @@ opi-foundations/
 │   ├── verify.py           # runner + three-tier check plan (ci/prepush/validate)
 │   ├── verify.sh           # thin compatibility wrapper for the Python runner
 │   ├── check_hosted_ci_policy.py # keeps hosted CI static-only (repo-local guard)
+│   ├── check_platform_guard_evidence.py # holds Patapsco pin-bump evidence
 │   ├── install-hooks.sh    # installs the pre-push gate
 │   ├── hooks/pre-push      # runs the prepush plan before every push
 │   ├── check_html_links.py # raw HTML href validation
