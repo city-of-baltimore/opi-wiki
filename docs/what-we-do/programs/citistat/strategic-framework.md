@@ -14,7 +14,7 @@ CitiStat is one link in a connected chain. The Mayor's Action Plan sets the dest
 
 | Layer | What it sets | How it connects to CitiStat |
 | --- | --- | --- |
-| **Mayor's Action Plan** | The Mayor's strategic priorities: goals, strategies, and KPIs | The source of the outcomes CitiStat drives toward |
+| **Mayor's Action Plan** | The Mayor's goals, strategies, and KPIs | The source of the outcomes CitiStat drives toward |
 | **Agency Performance Plans** | Each agency's services, initiatives, and measures | Translate the Mayor's goals into what each agency delivers and how it is measured |
 | **CitiStat** | Where leadership works the priorities that need its attention | Takes the goals and measures that are off track or need coordination and drives them, in specific places, until they move |
 

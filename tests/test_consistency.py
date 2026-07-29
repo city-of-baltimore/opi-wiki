@@ -15,6 +15,7 @@ from scripts.repo_tools.consistency import (
     acronym_report,
     check_duplicate_blockquotes,
     check_empty_headings,
+    check_glossary_taxonomy,
     check_service_sections,
     check_toc_sections,
     format_consistency_report,
@@ -148,6 +149,36 @@ def test_complete_or_unrelated_theory_of_change_pages_pass() -> None:
 
     assert check_toc_sections(toc_page, "\n\n".join(TOC_REQUIRED)) == []
     assert check_toc_sections(DOCS / "ordinary.md", "# Ordinary\n") == []
+
+
+def test_glossary_taxonomy_rejects_verified_stale_classifications() -> None:
+    """Known team/service and role-placement contradictions must not return."""
+
+    glossary = DOCS / "resources" / "reference" / "glossary.md"
+    text = (
+        "**Data and Analytics.** OPI’s service for analytics.\n"
+        "| **TPM** | Technical Program Manager (a Data and Analytics role) |\n"
+    )
+
+    issues = check_glossary_taxonomy(glossary, text)
+
+    assert len(issues) == 2
+    assert "Data and Analytics is a team" in issues[0]
+    assert "Technical Program Manager is a Director's Office role" in issues[1]
+
+
+def test_glossary_taxonomy_accepts_canonical_language_and_other_pages() -> None:
+    """Canonical glossary language should pass without policing unrelated prose."""
+
+    glossary = DOCS / "resources" / "reference" / "glossary.md"
+    canonical = (
+        "**Data and Analytics.** OPI’s team that delivers the Citywide Data and "
+        "Analytics service.\n"
+        "| **TPM** | Technical Program Manager (a Director's Office role) |\n"
+    )
+
+    assert check_glossary_taxonomy(glossary, canonical) == []
+    assert check_glossary_taxonomy(DOCS / "ordinary.md", canonical) == []
 
 
 def test_allowlist_combines_curated_and_glossary_terms(tmp_path: Path) -> None:

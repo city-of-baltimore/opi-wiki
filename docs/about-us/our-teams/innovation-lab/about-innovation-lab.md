@@ -10,7 +10,7 @@ The Lab works like an in-house innovation consultancy, not a department that run
 
 The Lab does design research and problem framing: frontline listening, journey maps, service blueprints, root-cause analysis, and reframing the problem. It handles product discovery and management, and it designs and builds digital products, including resident-facing tools, operational workflow tools, and data-collection systems, built to be accessible and secure.
 
-It runs applied AI pilots, responsible use cases that improve a real decision or service, under the City's [responsible-AI review](../data-and-analytics/data-governance-framework.md). It runs design and innovation sprints, time-boxed engagements that bring agencies, residents, designers, engineers, and analysts together to diagnose, prototype, and pilot. And it builds reusable patterns: a shared design system and a public innovation toolkit that future products build on.
+It runs applied AI pilots, responsible use cases that improve a real decision or service, under the City's [responsible-AI review](../data-and-analytics/data-governance-framework.md). It runs design and innovation sprints, time-boxed engagements that bring agencies, residents, designers, engineers, and analysts together to diagnose, prototype, and pilot. And it builds reusable patterns through a shared design system while using and adapting the [Public Innovation Toolkit](https://publicinnovation.jhu.edu/) to Baltimore's work.
 
 ## How the Lab works: the Public Innovation Toolkit
 
@@ -27,7 +27,10 @@ The Lab is honest enough to say when the right answer is not a product. Sometime
 
 ## The team
 
-The team is small and multidisciplinary: civic designers, an applied data scientist, a full-stack engineer, and an Innovation Program Manager. It works as one team across five skills: civic design, data analysis, equity and engagement in design, delivery and change management, and storytelling.
+The team is small and multidisciplinary. Its current roster and role summaries
+are maintained on [Team and Roles](../team-and-roles.md). Its work combines
+civic design, data analysis, equity and engagement in design, delivery and
+change management, engineering, operations, and storytelling.
 
 ## What the Lab owns
 
@@ -35,7 +38,7 @@ The team is small and multidisciplinary: civic designers, an applied data scient
 - Resident and staff engagement and research.
 - Prototypes, pilots, and in-house digital products, including operational and data-collection tools.
 - Responsible-AI pilots focused on service improvement.
-- The design system and the Lab's methods and toolkit.
+- The design system and the Lab's service-design and product methods.
 
 ## What the Lab does not own
 
