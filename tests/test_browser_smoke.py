@@ -36,9 +36,12 @@ def test_smoke_targets_cover_each_major_section() -> None:
         "Resources",
     ]
 
-    assert all(target.path.endswith("/") for target in SMOKE_TARGETS)
-    assert all("/public/" not in target.path for target in SMOKE_TARGETS)
-    assert all(not target.path.startswith("/our-teams/") for target in SMOKE_TARGETS)
+    assert [target.path for target in SMOKE_TARGETS] == [
+        "/about-us/operating-principles-and-culture/",
+        "/how-we-work/how-work-moves-through-opi/",
+        "/what-we-do/services/cross-agency-delivery/",
+        "/resources/reference/glossary/",
+    ]
 
 
 def test_normalize_base_url_enforces_trailing_slash() -> None:
@@ -168,7 +171,7 @@ def test_table_scroll_wrapper_reports_missing_or_inaccessible_state() -> None:
 
 
 def test_org_chart_exposes_the_expected_visible_hierarchy() -> None:
-    """The rendered chart should expose all public leaders at the intended levels."""
+    """The rendered chart should expose all leaders at the intended levels."""
 
     page = _EvaluationPage(
         {
@@ -212,7 +215,7 @@ def test_org_chart_reports_missing_names_and_hierarchy_drift() -> None:
 
     assert len(issues) == 3
     assert "no visible dimensions" in issues[0]
-    assert "public leadership names were not visible" in issues[1]
+    assert "leadership names were not visible" in issues[1]
     assert "hierarchy counts" in issues[2]
 
 

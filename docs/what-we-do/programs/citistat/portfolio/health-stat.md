@@ -11,7 +11,7 @@
 | OPI lead                        | OPI-operated / Performance Team                                                                      |
 | Core Data Product              | Public health service performance dashboard                                                          |
 
-## Public Purpose
+## Purpose
 
 Health Stat focuses on Baltimore’s public health infrastructure, including environmental health, animal services, maternal and child health, substance use response, clinical services, older adult supports, and other health functions that affect community well-being.
 

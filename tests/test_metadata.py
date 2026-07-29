@@ -215,9 +215,9 @@ def test_metadata_schema_rejects_unsupported_fields_in_unmatched_scopes(
 @pytest.mark.parametrize(
     "document",
     (
-        "defaults:\n  status: approved\n",
+        "defaults:\n  status: legacy\n",
         "patterns:\n  '*.md':\n    display_badge: reference\n",
-        "pages:\n  page.md:\n    status: internal\n",
+        "pages:\n  page.md:\n    status: legacy\n",
     ),
 )
 def test_metadata_loader_rejects_retired_classification_fields(

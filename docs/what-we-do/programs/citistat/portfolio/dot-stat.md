@@ -14,7 +14,7 @@
 
 DOT is one of the operating agencies moving to the [place-based model](../strategic-framework.md#the-place-based-model), alongside Housing. **Place is the primary unit of action:** each session takes one outcome, no more than two geographies, and two or three operational pressure points, rather than touring every transportation metric citywide.
 
-## Public Purpose
+## Purpose
 
 DOT Stat works Baltimore's transportation outcomes where they are worst on the map: traffic safety on the high-injury network, plus the streets, parking, traffic calming, streetlights, resurfacing, and mobility infrastructure that shape a corridor's conditions. Citywide averages can improve while the most dangerous corridors stay stuck; place-based sessions concentrate attention where the need is greatest.
 

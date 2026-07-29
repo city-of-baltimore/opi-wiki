@@ -23,8 +23,8 @@ def test_org_structure_data_loads_cleanly() -> None:
     assert structure.portfolios[3].lead.name == "Gabriel Watson"
 
 
-def test_leadership_chart_renders_the_full_public_org() -> None:
-    """The chart renders the current public reporting hierarchy."""
+def test_leadership_chart_renders_the_full_org() -> None:
+    """The chart renders the current reporting hierarchy."""
 
     structure = load_org_structure(DOCS_DIR, "_data/people.yml")
     chart = render_org_structure(structure, "leadership_chart")
@@ -45,7 +45,7 @@ def test_leadership_chart_renders_the_full_public_org() -> None:
     assert "Jason Howard, PhD" in chart
     assert "Gabriel Watson" in chart
     assert chart.index("Jason Howard, PhD") < chart.index("Gabriel Watson")
-    # Contractors are not published in the public org chart.
+    # Contractors are excluded from the organization source and chart.
     assert "Byron Roelofsz" not in chart
     assert "Sand Technologies" not in chart
     assert "```mermaid" not in chart

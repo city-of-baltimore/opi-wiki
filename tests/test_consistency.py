@@ -71,7 +71,7 @@ def test_repeated_long_blockquote_is_flagged() -> None:
 def test_short_or_unique_blockquotes_are_not_flagged() -> None:
     """Only repeated long blockquotes should produce findings."""
 
-    long_quote = "> " + ("A sufficiently long public summary sentence. " * 2)
+    long_quote = "> " + ("A sufficiently long reader summary sentence. " * 2)
 
     assert check_duplicate_blockquotes(PAGE, ["> Short.", long_quote]) == []
 
@@ -130,7 +130,7 @@ def test_acronym_report_respects_allowlist_expansion_headings_and_stopwords() ->
 def test_acronym_report_returns_no_findings_for_plain_copy() -> None:
     """A page without unknown acronyms should produce no informational findings."""
 
-    assert acronym_report(PAGE, "Plain public copy for everyone.", allow=set()) == []
+    assert acronym_report(PAGE, "Plain site copy for everyone.", allow=set()) == []
 
 
 def test_theory_of_change_pages_require_the_shared_skeleton() -> None:
@@ -249,7 +249,7 @@ def test_retired_page_decoration_ignores_domain_language() -> None:
 
 
 def test_allowlist_combines_curated_and_glossary_terms(tmp_path: Path) -> None:
-    """The acronym allowlist should include built-ins and public glossary terms."""
+    """The acronym allowlist should include built-ins and glossary terms."""
 
     docs_dir = tmp_path / "docs"
     glossary = docs_dir / "resources" / "reference" / "glossary.md"
@@ -291,11 +291,40 @@ def test_scan_consistency_collects_a_clean_page(tmp_path: Path) -> None:
     docs_dir = repo_root / "docs"
     page = docs_dir / "guide" / "page.md"
     page.parent.mkdir(parents=True)
-    page.write_text("# Page\n\nPlain public copy.\n", encoding="utf-8")
+    page.write_text("# Page\n\nPlain site copy.\n", encoding="utf-8")
 
     result = scan_consistency(docs_dir, repo_root=repo_root)
 
     assert result == ConsistencyScan(structural_issues=(), acronyms=())
+
+
+def test_scan_consistency_integrates_visibility_ratchet_across_sources(tmp_path: Path) -> None:
+    """Root guidance, Markdown, and either YAML suffix must share the CI ratchet."""
+
+    repo_root = tmp_path / "repo"
+    docs_dir = repo_root / "docs"
+    docs_dir.mkdir(parents=True)
+    (repo_root / "README.md").write_text("Public-facing guide.\n", encoding="utf-8")
+    (docs_dir / "page.md").write_text("# Page\n\nInternal-only copy.\n", encoding="utf-8")
+    (docs_dir / "page.yaml").write_text(
+        'summary: "Approved audience label."\n',
+        encoding="utf-8",
+    )
+
+    result = scan_consistency(docs_dir, repo_root=repo_root)
+
+    assert len(result.structural_issues) == 3
+    assert any(
+        "README.md:1:" in issue and "Public-facing" in issue for issue in result.structural_issues
+    )
+    assert any(
+        "docs/page.md:3:" in issue and "Internal-only" in issue
+        for issue in result.structural_issues
+    )
+    assert any(
+        "docs/page.yaml:1:" in issue and "Approved audience" in issue
+        for issue in result.structural_issues
+    )
 
 
 def test_scan_consistency_collects_citistat_card_narrative_drift(tmp_path: Path) -> None:

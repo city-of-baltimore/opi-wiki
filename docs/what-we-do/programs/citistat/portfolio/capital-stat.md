@@ -11,7 +11,7 @@
 | OPI lead                        | OPI-operated / Performance Team with delivery support as needed                                                                                              |
 | Core Data Product              | Capital project portfolio and delivery risk dashboard                                                                                                        |
 
-## Public Purpose
+## Purpose
 
 Capital Stat focuses on Baltimore’s capital delivery system: how the City plans, funds, coordinates, and completes major infrastructure, facilities, public realm, and technology-related capital projects. It helps leadership see where projects are on track, where they are delayed, what decisions are needed, and how capital work connects to mayoral priorities and neighborhood outcomes.
 

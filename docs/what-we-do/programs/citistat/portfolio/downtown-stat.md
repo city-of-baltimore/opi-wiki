@@ -11,7 +11,7 @@
 | OPI lead                        | Deputy Mayor-led / OPI-supported                                                                                                                |
 | Core Data Product              | Downtown RISE performance dashboard                                                                                                             |
 
-## Public Purpose
+## Purpose
 
 Downtown Stat focuses on the health, safety, cleanliness, economic vitality, and public realm conditions of Downtown Baltimore. Downtown is a civic, employment, and business center; its performance affects residents, workers, visitors, and the city’s reputation.
 

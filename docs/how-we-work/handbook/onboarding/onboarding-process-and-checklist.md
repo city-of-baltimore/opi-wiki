@@ -73,7 +73,7 @@ Use the section for the portfolio you are joining. Managers should also use the 
 
 ### Director's Office
 
-Focus: portfolio visibility, decision support, communications, office operations, and quality assurance for public and executive artifacts.
+Focus: portfolio visibility, decision support, communications, office operations, and quality assurance for resident- and executive-facing artifacts.
 
 - Week 1: gain access to the Director’s Office SharePoint, portfolio boards, templates library, and key distribution lists.
 

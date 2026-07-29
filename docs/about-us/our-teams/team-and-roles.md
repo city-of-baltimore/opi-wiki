@@ -2,7 +2,7 @@
 
 {{ page_header(summary="Who is on each OPI team, and what each role does.", category="ABOUT · TEAM") }}
 
-This is the public roster of OPI's City staff, grouped by team, with a plain summary of what each role does.
+This page lists OPI's City staff by team and gives a plain-language summary of what each role does.
 
 To see who reports to whom, see the [Org Structure](../../how-we-work/organization/org-structure.md) chart.
 

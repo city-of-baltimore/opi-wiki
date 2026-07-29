@@ -35,7 +35,7 @@ Ask these five questions for each staff member during calibration, and anchor ev
 
 3.  What did they own, and what did they support?
 
-4.  How was risk handled across accuracy, approvals, privacy, and QA?
+4.  How was risk handled across accuracy, required reviews, privacy, and QA?
 
 5.  Did they build assets others can reuse, such as templates, SOPs, datasets, components, or runbooks?
 

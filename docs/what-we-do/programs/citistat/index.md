@@ -8,7 +8,7 @@ This section is split by job. The Strategic Framework explains why CitiStat exis
 
 ## New to CitiStat? Start here
 
-If you are a public reader, start with the [CitiStat Strategic Framework](strategic-framework.md) for the case and the active portfolio, then browse the [CitiStat Portfolio](portfolio/index.md) to see specific Stats.
+If you are new to CitiStat, start with the [CitiStat Strategic Framework](strategic-framework.md) for the case and the active portfolio, then browse the [CitiStat Portfolio](portfolio/index.md) to see specific Stats.
 
 If you are OPI staff running or supporting a Stat, start with the [Method Playbook](method-playbook.md) for the operating cycle. Pull artifact templates from [CitiStat Templates](templates.md), and hold every artifact to the [CitiStat Quality Standards](quality-standards.md).
 

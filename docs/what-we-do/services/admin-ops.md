@@ -8,11 +8,11 @@ AdminOps runs the administrative, operational, communications, and portfolio
 work that keeps the Mayor's Office of Performance and Innovation moving. That
 includes portfolio intake and tracking, project coordination, executive
 briefings, communications, Council relations, knowledge management, resource
-coordination, and quality assurance for public materials.
+coordination, and quality assurance for published materials.
 
 ## The goal
 
-Keep OPI's work coordinated, well-documented, properly resourced, and clearly communicated to City leadership, agencies, partners, and the public where appropriate.
+Keep OPI's work coordinated, well-documented, properly resourced, and clearly communicated to City leadership, Council, agencies, partners, and residents.
 
 ## Mandate
 
@@ -34,5 +34,5 @@ and shows its progress.
 ## Read alongside
 
 - [How Work Moves Through OPI](../../how-we-work/how-work-moves-through-opi.md): where this service sits in the loop
-- [Org Structure](../../how-we-work/organization/org-structure.md): public leadership and team structure
+- [Org Structure](../../how-we-work/organization/org-structure.md): leadership and team structure
 - [Director's Office](../../about-us/our-teams/directors-office/index.md)

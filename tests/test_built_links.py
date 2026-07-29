@@ -143,12 +143,12 @@ def test_sitemap_base_path_discovery_rejects_an_empty_sitemap(tmp_path: Path) ->
 
 
 def test_relative_link_escaping_site_is_rejected_even_when_target_exists(tmp_path: Path) -> None:
-    """A link must never validate against a file outside the publish root."""
+    """A link must never validate against a file outside the built-site root."""
 
     site_dir = tmp_path / "site"
     site_dir.mkdir()
-    (tmp_path / "private.html").write_text("private", encoding="utf-8")
-    _write(site_dir, "index.html", '<a href="../private.html">Private</a>')
+    (tmp_path / "outside.html").write_text("outside", encoding="utf-8")
+    _write(site_dir, "index.html", '<a href="../outside.html">Outside</a>')
 
     broken = find_broken_links(site_dir)
 
@@ -161,8 +161,8 @@ def test_encoded_path_escape_is_rejected(tmp_path: Path) -> None:
 
     site_dir = tmp_path / "site"
     site_dir.mkdir()
-    (tmp_path / "private.html").write_text("private", encoding="utf-8")
-    _write(site_dir, "index.html", '<a href="%2e%2e/private.html">Private</a>')
+    (tmp_path / "outside.html").write_text("outside", encoding="utf-8")
+    _write(site_dir, "index.html", '<a href="%2e%2e/outside.html">Outside</a>')
 
     assert "escapes built site" in find_broken_links(site_dir)[0]
 

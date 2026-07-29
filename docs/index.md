@@ -1,7 +1,7 @@
 <div class="opi-hero">
   <div class="opi-hero-eyebrow">Mayor's Office of Performance and Innovation</div>
   <h1>OPI Foundations</h1>
-  <p>How a modern performance and innovation office runs, in public: its methodology, operating model, strategy, and people.</p>
+  <p>How a modern performance and innovation office runs: its methodology, operating model, strategy, and people.</p>
 </div>
 
 ## Start here
@@ -10,7 +10,7 @@
 
 ## What you'll find here
 
-OPI Foundations is the public reference for how the Mayor's Office of Performance and Innovation operates. It documents the office's methodology, strategy, and operating model so partners, peer cities, and the public can see how the work is done.
+OPI Foundations explains how the Mayor's Office of Performance and Innovation operates. It documents the office's methodology, strategy, and operating model so residents, partners, and peer cities can understand how the work is done.
 
 The whole site lives as Markdown in a [GitHub repository](https://github.com/city-of-baltimore/opi-wiki), so the work is open to read, copy, and correct.
 

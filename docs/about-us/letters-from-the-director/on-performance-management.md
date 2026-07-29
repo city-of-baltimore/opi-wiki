@@ -4,7 +4,7 @@
 
 **Performance Management Is How a City Tells the Truth**
 
-*A public letter on CitiStat, citywide measures, and the management practices that turn data into decisions.*
+*A letter on CitiStat, citywide measures, and the management practices that turn data into decisions.*
 
 Most cities do not fail because they lack data. They fail because the data does not change what anyone does on Tuesday morning.
 

@@ -70,7 +70,7 @@ def test_team_landing_pages_point_to_canonical_team_and_roles_page() -> None:
 
 
 def test_full_position_descriptions_are_not_published() -> None:
-    """Role summaries live on the public Team and Roles page; no full PDs are published."""
+    """Role summaries live on Team and Roles; no full PDs enter the site."""
 
     for team_dir in OLD_TEAM_PD_DIRS:
         assert list(team_dir.glob("pd-*.md")) == []

@@ -114,7 +114,7 @@ CitiStat identifies the problem; the rest of OPI helps explain, design, deliver,
 | Citywide Data and Analytics | Builds the KPI definitions, dashboards, pipelines, maps, and open data behind the sessions. |
 | Innovation Lab | Turns service problems into practical fixes through service design, product work, and responsible AI pilots. |
 | Cross-Agency Delivery | Activates when an issue needs sequencing across agencies, named decision rights, and weekly delivery discipline. |
-| AdminOps | Maintains portfolio visibility, public reporting, Council readiness, and knowledge management. |
+| AdminOps | Maintains portfolio visibility, published reporting, Council readiness, and knowledge management. |
 
 ## What success looks like
 

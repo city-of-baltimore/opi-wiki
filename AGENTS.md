@@ -4,7 +4,7 @@ Derived from [`patapsco/docs/agents-master.md`](https://github.com/city-of-balti
 This file **adapts** the baseline; it never re-litigates it. Anything a machine
 can check lives in `platform-check`, not in prose here.
 
-This repository is the public MkDocs site for **OPI Foundations**. Docs are the
+This repository is the MkDocs site for **OPI Foundations**. Docs are the
 product: they must be easy to find, easy to update, easy to review, and hard to
 break quietly.
 
@@ -193,9 +193,9 @@ Hold these lines:
 - Every major docs section owns its own `.pages` file. When adding, renaming,
   moving, or deleting pages, update the nearest `.pages` file in the same
   change.
-- Keep ordering intentional; the filesystem alone should not decide the public
-  information architecture. Use section index pages as each area's landing
-  surface.
+- Keep ordering intentional; the filesystem alone should not decide the
+  reader-facing information architecture. Use section index pages as each
+  area's landing surface.
 - Directory boundaries: `docs/` published content and assets, `overrides/`
   Material template overrides, `scripts/` maintenance and verification helpers,
   `.github/workflows/` deploy and CI automation. No mystery top-level scripts.
@@ -208,18 +208,22 @@ Hold these lines:
   the layout cleanly.
 - Keep cross-links current when slugs or folders move.
 - Prefer plain language and skimmable structure over ornamental formatting.
-- **Public/private boundaries must stay explicit.** Do not expose internal-only
-  content anywhere in the tracked tree or generated artifact; a public Git
-  repository is a publication surface even for files outside `docs/`.
-- **Do not delete substantive published content without explicit approval.**
+- **Every tracked file must satisfy the repository source contract.** Keep
+  personnel records, contact data, and controlled working copies in the City
+  system that owns them; keep source-only data out of the generated artifact.
+- `docs/how-we-work/handbook/` is a bounded source-only holding area while its
+  owners decide the long-term City-system destination. MkDocs excludes it from
+  generated output. Do not expand it without recorded owner review.
+- **Do not delete substantive site content without recorded owner review.**
   Safe cleanup is duplicate boilerplate, stale scaffolding, or superseded copies
   where one canonical source of truth remains.
 
 ### Memo conversion
 
 Before converting a memo-style source document, ask the clarifying questions
-needed to resolve ambiguous dates, named contacts, publication posture, or
-sensitive details. Do not silently choose among conflicting memo variants.
+needed to resolve ambiguous dates, named contacts, sensitive details, or
+whether the material belongs on this site. Do not silently choose among
+conflicting memo variants.
 
 ## Runtime and deploy
 

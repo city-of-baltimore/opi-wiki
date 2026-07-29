@@ -11,7 +11,7 @@
 | OPI lead                        | OPI-operated / Performance Team                                                                                                                     |
 | Core Data Product              | Water and wastewater utility performance dashboard                                                                                                  |
 
-## Public Purpose
+## Purpose
 
 Water Stat focuses on the utility operations that provide safe, reliable water and wastewater services for Baltimore. This is separate from Solid Waste because the operating model, infrastructure, regulation, and risk profile are different.
 

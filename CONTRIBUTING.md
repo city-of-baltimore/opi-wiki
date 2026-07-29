@@ -42,4 +42,4 @@ pre-push hook and the deploy gate — so install the hooks, and run
 
 Review tiers: typo-level fixes may go straight to `main` by maintainers;
 substantive edits go through a PR reviewed by the section owner
-(see `.github/CODEOWNERS`); structural changes need ED/CDO approval.
+(see `.github/CODEOWNERS`); structural changes need recorded ED/CDO sign-off.

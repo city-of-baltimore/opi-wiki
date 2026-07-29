@@ -16,7 +16,7 @@ This does not mean every issue moves through every service. Some problems stay i
 | 2. Explain the pattern | Citywide Data and Analytics | What does the evidence show, and how confident are we? | Dataset, dashboard, methodology card, data quality note, analytic brief |
 | 3. Design and test the fix | Innovation Lab | How do we solve this in a way that works for residents and staff? | Discovery memo, service blueprint, prototype, pilot, product brief, runbook |
 | 4. Coordinate implementation | Cross-Agency Delivery | How do we get multiple agencies to deliver this together? | Activation memo, delivery charter, commitment ledger, decision log, escalation memo, sustainment plan |
-| 5. Keep the gain | AdminOps + responsible team | How do we document, communicate, monitor, and sustain the improvement? | Closure memo, SOP, training materials, public summary, status report, knowledge-base update |
+| 5. Keep the gain | AdminOps + responsible team | How do we document, communicate, monitor, and sustain the improvement? | Closure memo, SOP, training materials, plain-language summary, status report, knowledge-base update |
 
 ## What each service owns
 
@@ -81,7 +81,7 @@ Use these rules before creating a new meeting, workgroup, or project.
 | “Tiger Teams are CitiStat.” | “CitiStat may trigger a Tiger Team.” | CitiStat identifies and monitors; Tiger Teams diagnose, prototype, and pilot. |
 | “Delivery room” | “Delivery review,” “delivery cadence,” or “delivery activation” | These terms are clearer and less theatrical. |
 | “Digital Services” as a team name | “Innovation Lab” or “citywide digital services request,” depending on context | Innovation Lab is the official team name; Digital Services may describe a request channel or brand posture only when explicitly needed. |
-| “Baltimore Design Lab” as a separate team | “Design community of practice within or alongside the Innovation Lab” | Avoids implying a separate office unless formally approved. |
+| “Baltimore Design Lab” as a separate team | “Design community of practice within or alongside the Innovation Lab” | Avoids implying a separate office unless City leadership establishes one. |
 
 ## Standard handoffs
 
@@ -92,7 +92,7 @@ Use these rules before creating a new meeting, workgroup, or project.
 | CitiStat or Innovation Lab | Cross-Agency Delivery | Authorizer, Senior Responsible Owner (SRO), agencies involved, dependency map, decision rights, expected duration |
 | Innovation Lab | Agency owner / BCIT / Data and Analytics | Product brief, runbook, support model, data needs, release notes, sustainment owner |
 | Cross-Agency Delivery | Agency owner / CitiStat | Closure memo, commitment ledger, SOPs, training plan, metric set, review cadence |
-| Any service | AdminOps | Public narrative needs, Council posture, QA needs, portfolio status, knowledge-base updates |
+| Any service | AdminOps | Resident and Council communications, QA needs, portfolio status, knowledge-base updates |
 
 ## Function boundaries
 

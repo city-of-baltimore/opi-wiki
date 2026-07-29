@@ -1,6 +1,6 @@
 # OPI Foundations
 
-The public docs site for Baltimore City's Mayor's Office of Performance and Innovation.
+The documentation site for Baltimore City's Mayor's Office of Performance and Innovation.
 
 Live site: <https://city-of-baltimore.github.io/opi-wiki/>
 Repo: this repository
@@ -13,12 +13,19 @@ New to the product or repository? Start with
 
 A docs-as-code site, written in Markdown, rendered with [MkDocs Material](https://squidfunk.github.io/mkdocs-material/), version-controlled on GitHub, and auto-deployed via GitHub Actions.
 
-The site is **public-facing**. It may publish public staff names, working
-titles, team assignments, reporting relationships, and short role summaries.
-Internal companion documents, including full position descriptions, detailed
-performance records, onboarding working materials, contact records, payroll
-data, and personnel-status fields, live in Baltimore City's SharePoint and City
-systems. They are not published from this repository.
+This repository contains the source for the OPI Foundations website. Its staff
+directory is deliberately limited to City staff names, working titles, team
+assignments, reporting relationships, and short role summaries. Full position
+descriptions, detailed performance records, contact records, payroll data, and
+personnel-status fields belong in Baltimore City's SharePoint and other systems
+of record. The existing Handbook sources are a bounded holding area while OPI
+decides their long-term City-system destination; MkDocs excludes them from the
+generated site.
+
+The people-data loader rejects named directory fields that do not belong in the
+staff roster. The built-artifact check rejects structured YAML, Handbook paths,
+phone-number patterns, and PIN labels in generated output. Section-owner review
+remains responsible for contextual placement that automation cannot infer.
 
 ## Local development
 
@@ -95,7 +102,7 @@ This is section 4 of the civic-app consistency standard, applied here:
 | Tier | Command | Where it runs | What it covers |
 | --- | --- | --- | --- |
 | `ci` | `task ci` | pull-request CI, fast local loop | workflow policy, formatting, lint, mypy, bandit, and the validators that read `docs/` source |
-| `prepush` | `task prepush` | the pre-push hook and the Pages deploy gate | everything in `ci`, plus pytest, `mkdocs build --strict`, publication-boundary and link checks, and accessibility checks |
+| `prepush` | `task prepush` | the pre-push hook and the Pages deploy gate | everything in `ci`, plus pytest, `mkdocs build --strict`, built-artifact safety and link checks, and accessibility checks |
 | `validate` | `task validate` | before a deploy, locally | everything in `prepush`, plus browser interaction and full-route WCAG assurance |
 
 Each tier is a strict superset of the one above it, so a check that moves down
@@ -170,8 +177,10 @@ plugins and theme behavior together.
 
 - Keep global site config in `mkdocs.yml`.
 - Keep navigation local to the content in `docs/**/.pages`.
-- Keep internal operating guidance, personnel records, and contact data in the
-  appropriate City system rather than under `docs/`.
+- Treat `docs/how-we-work/handbook/` as a bounded holding area pending an
+  owner decision on its long-term City-system destination. Do not add new staff
+  working material there. Keep personnel records and contact data in their
+  owning City systems.
 - Open each content page with one `{{ page_header(...) }}` call directly under the `# H1`, not a hand-built stack of blockquote, bold kicker, restated bold title, and italic tagline. The macro renders an optional `category`, `summary`, and `tagline`. Keep the title as a single `# H1` — never restate it as a bold paragraph. Section `index.md` landing pages stay on a plain `>` blockquote summary.
 - Keep landing-page card content in neighboring `*.cards.yml` files and render it through the shared `card_grid_from(...)` macro.
 - Keep repeated structured page data in neighboring `*.data.yml` files when one source needs to drive multiple rendered sections.
@@ -189,9 +198,9 @@ Use the smallest shared pattern that matches the page need:
 - `*.data.yml` carries structured page-specific source data when one file needs to drive multiple rendered sections, tables, charts, or lists.
 
 MkDocs excludes `_data/`, the Handbook source folder, `*.cards.yml`, and
-`*.data.yml` from the generated site. These files are build inputs, not public
-downloads; the pre-push publication-boundary check enforces that separation and
-rejects visible PIN or phone-number fields in the built artifact.
+`*.data.yml` from the generated site. These files are build inputs, not
+downloadable pages; the pre-push built-artifact safety check enforces that
+separation and rejects visible PIN or phone-number fields in the built artifact.
 
 If a page can stay plain Markdown, keep it plain Markdown. Only introduce structured data when it removes repeated source-of-truth content or repeated shared UI markup.
 
@@ -209,16 +218,16 @@ opi-foundations/
 │   ├── index.md            # home
 │   ├── index.cards.yml     # shared card-grid data for home
 │   ├── about-us/           # mission, letters, our-teams/
-│   ├── how-we-work/        # public operating model and leadership org chart
+│   ├── how-we-work/        # operating model and leadership org chart
 │   ├── what-we-do/         # services, programs, and products
-│   ├── resources/          # reference, glossary, public role summaries
+│   ├── resources/          # reference, glossary, role summaries
 │   ├── */index.cards.yml   # section-local landing-page card data
 │   └── assets/
 │       ├── stylesheets/tokens.css          # shared design tokens + Material bridges
 │       ├── stylesheets/base.css            # typography and content primitives
 │       ├── stylesheets/material-chrome.css # header, nav, tabs, footer
 │       ├── stylesheets/components.css      # cards, page headers, reusable shared UI
-│       ├── stylesheets/org-chart.css       # responsive public leadership chart
+│       ├── stylesheets/org-chart.css       # responsive leadership chart
 │       ├── stylesheets/breadcrumbs.css     # breadcrumb presentation
 │       ├── stylesheets/home.css            # homepage-only presentation
 │       └── images/               # logos and page images
@@ -231,7 +240,7 @@ opi-foundations/
 │   ├── install-hooks.sh    # installs the pre-push gate
 │   ├── hooks/pre-push      # runs the prepush plan before every push
 │   ├── check_html_links.py # raw HTML href validation
-│   ├── check_publication_boundary.py # rejects source/sensitive data in site/
+│   ├── check_built_artifact.py # rejects excluded source/sensitive data in site/
 │   ├── check_page_metadata.py
 │   ├── check_brand_terms.py
 ├── .github/
@@ -248,8 +257,8 @@ opi-foundations/
 Three-tier review:
 
 1. **Typo / small correction:** maintainer commits directly to `main`. Auto-deploys in ~2 minutes.
-2. **Substantive content edit:** maintainer opens a pull request. Owner of that section (Performance, Innovation Lab, Data, Director's Office) approves. Then merge.
-3. **New section / structural change:** ED/CDO approves before merge.
+2. **Substantive content edit:** maintainer opens a pull request. The section owner reviews it before merge.
+3. **New section / structural change:** ED/CDO sign-off is recorded before merge.
 
 See [`MAINTAINERS.md`](MAINTAINERS.md) for the full operating manual.
 

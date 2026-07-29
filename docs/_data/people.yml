@@ -1,15 +1,14 @@
-# Public organization data for OPI Foundations.
+# Organization data for OPI Foundations.
 #
-# Single source for the public org chart and the Team and Roles table. It holds
-# only information OPI publishes about its structure: City staff names, working
-# titles, team labels and leads, reporting relationships, each team's high-level
-# purpose, and a one-line public summary of what each role does. Contractors do
-# not appear here.
+# Single source for the org chart and the Team and Roles table. It holds City
+# staff names, working titles, team labels and leads, reporting relationships,
+# each team's high-level purpose, and a one-line summary of what each role does.
+# Contractors do not appear here.
 #
 # Personal or employment data must never be added: payroll identifiers, phone
 # numbers, email addresses, classifications, cost centers, personnel status, and
 # full position descriptions live in City systems or SharePoint. The people-data
-# loader rejects `pin` and `phone` keys as an additional publication safeguard.
+# loader rejects `pin` and `phone` keys before the site can build.
 #
 # Open (unfilled) City roles use the name "Open" so they show in the structure
 # without implying a current incumbent.
@@ -45,7 +44,7 @@ portfolios:
         summary: Maintains delivery plans, coordinates dependencies, and keeps commitments, risks, and follow-up visible.
       - name: Audrey Randazzo
         title: Partnerships and Storytelling Lead
-        summary: Builds OPI's partnerships and turns the office's data and work into clear public information, briefings, and accessible communications.
+        summary: Builds OPI's partnerships and turns the office's data and work into clear information, briefings, and accessible communications for residents and City leaders.
 
   - key: performance
     label: Performance
@@ -117,4 +116,4 @@ portfolios:
         summary: Conducts user research and turns findings into accessible journeys, service blueprints, prototypes, products, and recommendations.
       - name: Xander Jake de los Santos
         title: Full Stack Engineer
-        summary: Builds accessible, secure web applications and APIs for public and operational data products.
+        summary: Builds accessible, secure web applications and APIs for open-data and operational data products.

@@ -128,7 +128,7 @@ The team hands off the gain so it survives the team, because the agency that own
 
 - Monthly delivery brief shared with the City Administrator and OPI leadership.
 
-- At sustain, a closure brief shared internally and, where appropriate, publicly.
+- At sustain, a closure brief shared with sponsors, participating agencies, and the people affected by the work.
 
 ## Standard artifacts
 
@@ -162,8 +162,7 @@ The Innovation Lab is the capability: it owns the Tiger Team method, the lead, a
 
 ## Where to learn more
 
-- Innovation Lab Public Brief: the public-facing explainer of how the Lab works.
+- Innovation Lab overview: how the Lab works.
 - CitiStat Method Playbook: the Stat method that absorbs the work at sustain.
 - OPI Charter Template and Problem Statement Template: the artifacts every Tiger Team uses at kickoff.
 - Public Innovation Toolkit: the underlying method.
-

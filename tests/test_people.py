@@ -1,4 +1,4 @@
-"""Tests for the public people directory and role lookups."""
+"""Tests for the organization directory and role lookups."""
 
 from __future__ import annotations
 
@@ -14,8 +14,8 @@ def _data() -> dict:
     return load_people(DOCS_DIR, PEOPLE_DATA_PATH)
 
 
-def test_public_people_data_loads_cleanly() -> None:
-    """The checked-in public organization directory should parse cleanly."""
+def test_people_data_loads_cleanly() -> None:
+    """The checked-in organization directory should parse cleanly."""
 
     data = _data()
 
@@ -24,8 +24,8 @@ def test_public_people_data_loads_cleanly() -> None:
     assert data["portfolios"][0]["key"] == "directors-office"
 
 
-def test_people_data_rejects_private_personnel_fields(tmp_path: Path) -> None:
-    """Private personnel fields must fail even when nested inside public staff data."""
+def test_people_data_rejects_excluded_personnel_fields(tmp_path: Path) -> None:
+    """Excluded personnel fields must fail even when nested in staff data."""
 
     people_file = tmp_path / "people.yml"
     people_file.write_text(
@@ -45,13 +45,13 @@ def test_people_data_rejects_private_personnel_fields(tmp_path: Path) -> None:
 
     with pytest.raises(
         ValueError,
-        match=r"fields forbidden from public people data: .*phone.*email.*PIN",
+        match=r"fields excluded from organization data: .*phone.*email.*PIN",
     ):
         load_people(tmp_path, "people.yml")
 
 
 def test_find_role_holder_returns_the_filled_incumbent() -> None:
-    """Inline role lookups resolve to current public org-chart data."""
+    """Inline role lookups resolve to current organization data."""
 
     data = _data()
 

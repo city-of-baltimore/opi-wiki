@@ -33,7 +33,7 @@ class _Heading:
 
 @dataclass
 class _OrgChartNode:
-    """Public leadership node captured from the semantic org chart."""
+    """Leadership node captured from the semantic org chart."""
 
     level: str
     name: list[str] = field(default_factory=list)
@@ -41,7 +41,7 @@ class _OrgChartNode:
 
 @dataclass
 class _OrgChart:
-    """Accessible content captured from one public leadership chart."""
+    """Accessible content captured from one leadership chart."""
 
     index: int
     caption_seen: bool = False
@@ -221,14 +221,14 @@ def find_accessibility_issues(site_dir: Path) -> list[str]:
         if relative_file == Path("how-we-work/organization/org-structure/index.html"):
             if len(parser.org_charts) != 1:
                 issues.append(
-                    f"{relative_file}: expected one semantic public leadership chart, "
+                    f"{relative_file}: expected one semantic leadership chart, "
                     f"found {len(parser.org_charts)}"
                 )
                 continue
 
             chart = parser.org_charts[0]
             if not chart.caption_seen or not _has_visible_text(chart.caption_text):
-                issues.append(f"{relative_file}: public leadership chart is missing its caption")
+                issues.append(f"{relative_file}: leadership chart is missing its caption")
 
             levels = [node.level for node in chart.nodes]
             expected_counts = {
@@ -243,7 +243,7 @@ def find_accessibility_issues(site_dir: Path) -> list[str]:
                 actual_count = levels.count(level)
                 if actual_count != expected_count:
                     issues.append(
-                        f"{relative_file}: public leadership chart has {actual_count} "
+                        f"{relative_file}: leadership chart has {actual_count} "
                         f"'{level}' nodes; expected {expected_count}"
                     )
 
@@ -254,8 +254,7 @@ def find_accessibility_issues(site_dir: Path) -> list[str]:
             ]
             for index in empty_names:
                 issues.append(
-                    f"{relative_file}: public leadership chart node #{index} "
-                    "is missing a visible name"
+                    f"{relative_file}: leadership chart node #{index} is missing a visible name"
                 )
 
     return issues

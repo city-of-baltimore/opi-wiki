@@ -11,7 +11,7 @@
 | OPI lead                        | OPI-operated / Performance Team with delivery support as needed                                            |
 | Core Data Product              | Clean Block Scorecard and cleanliness hotspot dashboard                                                    |
 
-## Public Purpose
+## Purpose
 
 Clean Stat focuses on Baltimore’s citywide cleanliness system. It coordinates sanitation, vacant property maintenance, illegal dumping response, enforcement, public realm conditions, community cleanups, and hotspot reduction.
 

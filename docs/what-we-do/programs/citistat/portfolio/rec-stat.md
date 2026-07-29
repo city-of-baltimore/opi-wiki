@@ -11,7 +11,7 @@
 | OPI lead                        | OPI-operated / Performance Team                                                                                    |
 | Core Data Product              | Recreation, parks, and forestry performance dashboard                                                              |
 
-## Public Purpose
+## Purpose
 
 Rec Stat focuses on recreation centers, parks, forestry, senior programming, youth sports, therapeutic recreation, and public spaces that shape neighborhood quality of life.
 

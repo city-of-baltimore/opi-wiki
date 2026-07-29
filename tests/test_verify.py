@@ -87,7 +87,7 @@ def test_ci_plan_excludes_the_test_suite_the_build_and_every_built_site_check() 
 
     assert "Running repo automation tests" not in ci_names
     assert "Building MkDocs site with strict validation" not in ci_names
-    assert "Checking built-site publication boundary" not in ci_names
+    assert "Checking built-artifact safety" not in ci_names
     assert "Checking built-site internal links" not in ci_names
     assert "Running accessibility smoke checks" not in ci_names
     assert "Running browser smoke checks" not in ci_names
@@ -161,7 +161,7 @@ def test_prepush_plan_owns_the_tests_the_build_and_the_built_site_checks() -> No
 
     assert "Running repo automation tests" in prepush_names
     assert "Building MkDocs site with strict validation" in prepush_names
-    assert "Checking built-site publication boundary" in prepush_names
+    assert "Checking built-artifact safety" in prepush_names
     assert "Checking built-site internal links" in prepush_names
     assert "Running accessibility smoke checks" in prepush_names
 
@@ -183,7 +183,7 @@ def test_built_site_checks_run_right_after_the_strict_build() -> None:
 
     build_index = step_names.index("Building MkDocs site with strict validation")
     assert step_names[build_index + 1 : build_index + 3] == [
-        "Checking built-site publication boundary",
+        "Checking built-artifact safety",
         "Checking built-site internal links",
     ]
 

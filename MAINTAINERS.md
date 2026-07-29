@@ -12,7 +12,7 @@ This document is for the OPI Foundations docs maintainer. It describes the role,
 
 1. Translate suggestions and source documents into Markdown that renders cleanly on the site.
 2. Maintain editorial voice consistency across every page.
-3. Run the contribution intake process: triage issues and Google Form submissions, draft changes, route for approval, publish.
+3. Run the contribution intake process: triage issues and Google Form submissions, draft changes, route for review, publish.
 4. Keep the navigation (`docs/**/.pages`), glossary, and cross-links in sync as content evolves.
 5. Quarterly: audit each page for staleness and route stale pages to their owners for review.
 
@@ -22,7 +22,7 @@ This document is for the OPI Foundations docs maintainer. It describes the role,
 |---|---|
 | Monday | Triage new issues + Google Form submissions; respond to acknowledge each within 2 business days |
 | Tuesday–Thursday | Draft changes in Markdown; open PRs; route to section owners |
-| Friday | Merge approved PRs; review metrics (page views, search queries, broken links); plan next week |
+| Friday | Merge reviewed PRs; review metrics (page views, search queries, broken links); plan next week |
 
 ## The intake funnel
 
@@ -33,45 +33,50 @@ Issue / Google Form / Comment / Email
   Maintainer triage
          │
          ├── Typo or small fix     → commit directly to main → auto-deploy
-         ├── Substantive change    → branch → PR → section owner approves → merge
-         └── New section or major  → ED/CDO approves before merge
+         ├── Substantive change    → branch → PR → section owner review → merge
+         └── New section or major  → ED/CDO sign-off before merge
 ```
 
 ## Editorial voice
 
-OPI Foundations is written for **city peers, partner agencies, council members, peer cities, and the public**. The voice is:
+OPI Foundations is written for **city peers, partner agencies, council members, peer cities, and residents**. The voice is:
 
 - **Plain.** No jargon without a glossary entry.
 - **Concrete.** Specific examples beat abstract framings.
 - **Active.** "OPI runs CitiStat sessions" not "CitiStat sessions are run by OPI."
-- **Sourced.** Every factual claim about city operations should link to a source — a council document, an annual report, a stat brief, or a public dataset.
+- **Sourced.** Every factual claim about city operations should link to a source — a council document, an annual report, a stat brief, or a published City dataset.
 - **Calm.** This is reference material, not marketing copy. No hype, no exclamation points.
 
 When in doubt, model the voice on the [Letters from the Director](docs/about-us/letters-from-the-director/index.md). They're the canonical tone reference.
 
-## What goes here vs. SharePoint
+## Repository source contract
 
-**Public Foundations site (this repo):**
+**Site source (this repo):**
 
 - Methodology, strategy, operating model
-- Public briefs and website material
-- Public methods, service definitions, and the Glossary
+- Briefs and website material
+- Methods, service definitions, and the Glossary
 - Letters from the Director
-- Public staff roster and role-summary index (names, working titles, team
+- Staff roster and role-summary index (names, working titles, team
   assignments, reporting relationships, and short role summaries)
 
-**City of Baltimore intranet (SharePoint):**
+**Long-term City-system homes (SharePoint and other owning systems):**
 
-- Internal onboarding working materials
+- Onboarding working materials
 - Full Position Descriptions (with compensation or classification details)
 - Performance records and signed evaluations
 - MAPS Benefits guides
-- Internal SOPs and intake queues
+- Staff SOPs and intake queues
 - Telework Policy (formal HR doc)
 
-When publication posture is unclear, **ask the section owner and do not publish
-until they confirm**. A public repository is itself a publication surface even
-when a file is outside `docs/`.
+The existing `docs/how-we-work/handbook/` files are a bounded holding area while
+their owners decide the long-term City-system destination. They remain tracked
+source, and MkDocs excludes them from the generated site. Do not add new staff
+working material to that folder.
+
+When placement is unclear, **ask the section owner before adding the material**.
+Every tracked file participates in repository review even when it sits outside
+`docs/`.
 
 ## Cross-link discipline
 
@@ -87,13 +92,14 @@ Navigation is local to each section. Keep `mkdocs.yml` focused on site-wide
 runtime settings, and update the nearest `docs/**/.pages` file whenever a page
 is added, removed, renamed, or moved.
 
-Internal operating guidance, onboarding working material, personnel records, and
-contact data belong in SharePoint or the appropriate City system. Public staff
-names, working titles, team assignments, reporting relationships, and short role
-summaries may be published when OPI has approved them for the public roster. Do
-not publish payroll identifiers, compensation, classifications, personnel
-status, phone numbers, individual email addresses, or controlled working copies
-through navigation, redirects, raw data files, or generated assets.
+The existing Handbook folder is the only bounded holding area for onboarding and
+staff operating material pending owner placement; do not expand it. Personnel
+records and contact data belong in their owning City systems. The staff
+directory is limited to names, working titles, team assignments, reporting
+relationships, and short role summaries. Do not add payroll identifiers,
+compensation, classifications, personnel status, phone numbers, individual
+email addresses, or controlled working copies through navigation, redirects,
+raw data files, or generated assets.
 
 ## Section map: folder ↔ navigation label
 
@@ -109,12 +115,12 @@ mapping in mind when locating content, and keep the `.pages` title, the
 | `about-us/our-teams/performance/` | Performance | The team that delivers **Citywide Performance Management**; the **CitiStat** program itself lives in `what-we-do/programs/citistat/`. |
 | `about-us/our-teams/data-and-analytics/` | Data and Analytics | The team that delivers **Citywide Data and Analytics**. |
 | `about-us/our-teams/innovation-lab/` | Innovation Lab | Both a team and a service; the products it builds live in `what-we-do/products/`. |
-| `how-we-work/organization/` | Organization | Public leadership chart and team-purpose overview, generated from the limited public organization data in `docs/_data/people.yml`. |
+| `how-we-work/organization/` | Organization | Leadership chart and team-purpose overview, generated from the limited organization data in `docs/_data/people.yml`. |
 | `what-we-do/` | What We Do | OPI's services, programs, and products. |
 | `what-we-do/programs/citistat/` | CitiStat | A **program** supported by all teams — its own section, not a team. |
 | `what-we-do/products/` | Products | Tools and platforms OPI builds, including the Baltimore Intelligence Center. |
 | `what-we-do/services/` | Services | The five services OPI delivers, including **Cross-Agency Delivery** — a service, not a staffed team. |
-| `how-we-work/` | How We Work | Public operating model and leadership structure. Internal operating guidance remains in SharePoint and is not published here. |
+| `how-we-work/` | How We Work | Operating model and leadership structure. The source-only Handbook holding area is excluded from the generated site pending an owner placement decision. |
 
 ## Content taxonomy guardrails
 
@@ -138,7 +144,7 @@ Rules to enforce on every page:
   `about-us/our-teams/cross-agency-delivery/` directory — it activates through Tiger
   Teams and Innovation Lab projects.
 - **Never write "CAD."** Spell out Cross-Agency Delivery; "x-agency delivery" is
-  the only approved short form.
+  the only allowed short form.
 - **Every canonical page names an owner and a review cadence** through the
   nearest `.metadata.yml` (`owner`, `last_reviewed`, `next_review`). New
   sections get their own `.metadata.yml`.
@@ -196,11 +202,11 @@ build-time `.metadata.yml`, which drives ownership and review cadence.)
 
 ## Structured page data
 
-When one public page needs to repeat the same source-of-truth data across
+When one page needs to repeat the same source-of-truth data across
 charts and tables, keep that content in a shared YAML file and render it
-through a macro. `docs/_data/people.yml` is deliberately limited to public staff
+through a macro. `docs/_data/people.yml` is deliberately limited to staff
 names, working titles, team labels, reporting relationships, and short role
-summaries; it drives the public leadership chart, Team and Roles page, and
+summaries; it drives the leadership chart, Team and Roles page, and
 inline `role_holder(...)` references. It must never carry contractors, payroll
 identifiers, phone numbers, individual email addresses, classifications, cost
 centers, personnel status, compensation, or full position descriptions.
@@ -218,7 +224,7 @@ Do not invent new adjacent file conventions casually. If a page needs a new shar
 ## Build platform posture
 
 This repo currently runs on MkDocs 1.x and should stay there unless the team
-approves a deliberate platform migration.
+makes a deliberate platform-migration decision.
 
 Keep `mkdocs-redirects` pinned at `1.2.2` unless and until OPI explicitly
 decides to migrate to ProperDocs. Newer redirect-plugin releases pull in
@@ -277,7 +283,7 @@ runs it in three nested tiers:
 | Tier | Where | Covers |
 |---|---|---|
 | `task ci` | pull-request CI, fast local loop | hosted-CI policy guard, format, lint, mypy, bandit, metadata, brand terms, style, consistency, raw HTML links |
-| `task prepush` | the pre-push hook and the Pages deploy gate | everything above, plus pytest, `mkdocs build --strict`, publication-boundary and built-link checks, and accessibility checks |
+| `task prepush` | the pre-push hook and the Pages deploy gate | everything above, plus pytest, `mkdocs build --strict`, built-artifact safety and built-link checks, and accessibility checks |
 | `task validate` | locally, before a deploy | everything above, plus browser interaction and full-route WCAG assurance |
 
 Each tier is a strict prefix of the next, so nothing is lost by moving a check
@@ -353,7 +359,7 @@ This role has a high bus factor by design (it's one person). Mitigations:
 | Pandoc | Convert .docx → Markdown when migrating Drive content |
 | VS Code (or any Markdown editor) | Authoring |
 | Google Drive | Read-access to the OPI Foundations folder for source materials |
-| SharePoint | Read-access for understanding what stays internal |
+| SharePoint | Read access to source material maintained in that system |
 
 ## Onboarding a new maintainer
 
@@ -377,5 +383,5 @@ When reviewing method pages, confirm that each method has a clear source of trut
   Digital Product Methodology.
 - Cross-Agency Delivery language should defer to its service overview and
   service definition.
-- Public template pages should explain structure without publishing internal
-  system locations, contact lists, or controlled working copies.
+- Template pages should explain structure without copying system locations,
+  contact lists, or controlled working copies.

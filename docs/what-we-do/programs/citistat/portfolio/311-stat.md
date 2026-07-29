@@ -11,7 +11,7 @@
 | OPI lead                        | OPI-operated / Data Team-led                                                                                                        |
 | Core Data Product              | 311 performance and resident experience dashboard                                                                                   |
 
-## Public Purpose
+## Purpose
 
 311 Stat focuses on Baltimore’s resident service request experience from intake to closure. It examines whether residents can report issues easily, whether requests are routed correctly, whether agencies complete work reliably, and whether closure messages clearly explain what happened.
 

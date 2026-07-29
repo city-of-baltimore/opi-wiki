@@ -21,11 +21,11 @@ decisions, and resources.
 
 The service coordinates records and knowledge management, fiscal and
 procurement work, HR and facilities support, and quality assurance for material
-headed to leadership or the public.
+headed to leadership, Council, or residents.
 
 ## Communications
 
-Communications is how OPI explains what changed, what it learned, what is still hard, and what comes next. It is a plain account of the work, not spin. That means executive and Council support (briefings, talking points, testimony, and hearing prep), public content (branding, website, editorial planning, and plain-language summaries), and partnership coordination (brokering, tracking, and closing the loop on commitments).
+Communications is how OPI explains what changed, what it learned, what is still hard, and what comes next. It is a plain account of the work, not spin. That means executive and Council support (briefings, talking points, testimony, and hearing prep), website and editorial work (branding, planning, and plain-language summaries), and partnership coordination (brokering, tracking, and closing the loop on commitments).
 
 ## What AdminOps owns
 
@@ -47,24 +47,25 @@ AdminOps coordinates, tracks, briefs, and supports these areas, but the work its
 
 ## How AdminOps partners across OPI
 
-AdminOps supports every other team: Performance with coordination, public
-summaries, and annual reporting for the Stat portfolio; Data and Analytics with
-publishing and partner communications; the Innovation Lab with launch
-communications, briefings, and quality assurance; and Cross-Agency Delivery
-with portfolio visibility, escalation tracking, and closeout. Each team owns
-the partnerships tied to its work, while AdminOps coordinates shared needs.
+AdminOps supports every other team: Performance with coordination,
+plain-language summaries, and annual reporting for the Stat portfolio; Data and
+Analytics with publishing and partner communications; the Innovation Lab with
+launch communications, briefings, and quality assurance; and Cross-Agency
+Delivery with portfolio visibility, escalation tracking, and closeout. Each
+team owns the partnerships tied to its work, while AdminOps coordinates shared
+needs.
 
 ## What success looks like
 
 Intake is predictable and routed to the right team. Portfolio status is current,
 and leaders can see risk and capacity at a glance. Briefings are timely,
-accurate, and aligned. Public materials are clear, accessible, factual, and
-checked before publication. Office knowledge remains reliable through
-transitions.
+accurate, and aligned. Resident- and Council-facing materials are clear,
+accessible, factual, and checked before publication. Office knowledge remains
+reliable through transitions.
 
 ## Read alongside
 
 - [Director's Office](index.md): the team AdminOps runs within.
-- [Org Structure](../../../how-we-work/organization/org-structure.md): public leadership and team structure.
+- [Org Structure](../../../how-we-work/organization/org-structure.md): leadership and team structure.
 - [How Work Moves Through OPI](../../../how-we-work/how-work-moves-through-opi.md): where AdminOps sits in the operating model.
 - [On AdminOps](../../letters-from-the-director/on-admin-ops.md): the Director's letter on why this work matters.

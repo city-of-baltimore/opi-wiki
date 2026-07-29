@@ -7,8 +7,7 @@ __pycache__/
 # Scratch
 *.scratch/
 *.scratch
-# Local working notes are not reviewable public content and must never be
-# committed to this public repository.
+# Local working notes are not site source and must never be committed.
 /notes/
 
 # C extensions

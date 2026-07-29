@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""CLI entry point for built-site publication-boundary checks."""
+"""CLI entry point for built-artifact safety checks."""
 
 from __future__ import annotations
 
@@ -14,14 +14,14 @@ SITE_DIR = REPO_ROOT / "site"
 
 
 def main() -> int:
-    """Reject private source files and sensitive fields in built output."""
+    """Reject excluded source files and sensitive fields in built output."""
 
-    from scripts.repo_tools.publication import find_publication_boundary_issues
+    from scripts.repo_tools.built_artifact import find_built_artifact_issues
 
     result: int = run_issue_check(
-        check_name="Publication boundary check",
-        success_message="Publication boundary check passed.",
-        issue_finder=lambda: find_publication_boundary_issues(SITE_DIR),
+        check_name="Built-artifact safety check",
+        success_message="Built-artifact safety check passed.",
+        issue_finder=lambda: find_built_artifact_issues(SITE_DIR),
     )
     return result
 

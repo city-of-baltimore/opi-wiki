@@ -1,12 +1,12 @@
 # Glossary of OPI Terms
 
-{{ page_header(summary="Plain-language definitions for OPI's public work.", category="SERIES · OPI FOUNDATIONS") }}
+{{ page_header(summary="Plain-language definitions for OPI's work.", category="SERIES · OPI FOUNDATIONS") }}
 
 ## Why this glossary exists
 
 Words shape behavior. When OPI uses one word for something and an agency
 partner uses another, simple conversations turn into translation work. This
-glossary explains the vocabulary used across OPI's public materials.
+glossary explains the vocabulary used across this site.
 
 ## Active terms
 
@@ -64,7 +64,7 @@ decision-grade analytics products, and agency support. The team delivers the
 service and reports to the Executive Director through the Deputy Chief Data
 Officer.
 
-**Data-Driven Officer.** The agency executive designated by each principal agency to manage the agency’s internal CitiStat process. Reports directly to the agency head, coordinates agency data submissions, runs the agency’s internal Stat, and partners with the OPI analyst on each pre-memo and follow-up. Some agencies use the public-facing alias *Agency Performance and Data Lead*.
+**Data-Driven Officer.** The agency executive designated by each principal agency to manage the agency’s internal CitiStat process. Reports directly to the agency head, coordinates agency data submissions, runs the agency’s internal Stat, and partners with the OPI analyst on each pre-memo and follow-up. Some agencies use the alternate title *Agency Performance and Data Lead*.
 
 **Debrief.** The standing meeting held within 24 hours after each Stat to reflect on what worked, draft preliminary agenda items for the next Stat, and review the drafted follow-ups before the follow-up memo is issued. For agency-based Stats, two debriefs are held: one with the agency, one with Mayor’s Office leadership.
 
@@ -139,7 +139,7 @@ connecting agency work to citywide outcomes.
 
 **Open Baltimore.** The city’s open data portal product. Operated by OPI Data and Analytics, it publishes datasets for residents, researchers, and partners.
 
-**OPI Operating Model.** The public explanation of how OPI's teams and services
+**OPI Operating Model.** The explanation of how OPI's teams and services
 work together to move from a problem to a sustained improvement. See
 [How Work Moves Through OPI](../../how-we-work/how-work-moves-through-opi.md).
 
@@ -159,7 +159,7 @@ and stewards CitiStat operations, the analyst bench, and agency relationships.
 
 **Principal Agency.** A city agency that runs its own internal Stat, designates a Data-Driven Officer, and participates in CitiStat as a primary accountable agency. Distinguished from partner or supporting agencies that participate when their authority is needed but do not host their own Stat.
 
-**Product.** A tool, platform, or public-facing resource OPI builds or supports, distinct from a service (what OPI delivers) and a program (an ongoing effort). OPI products include the Baltimore Intelligence Center, the Baltimore City Data Platform, the Baltimore City Performance Portal, and Baltimore 311 Explorer.
+**Product.** A tool, platform, or resource OPI builds or supports, distinct from a service (what OPI delivers) and a program (an ongoing effort). OPI products include the Baltimore Intelligence Center, the Baltimore City Data Platform, the Baltimore City Performance Portal, and Baltimore 311 Explorer.
 
 **Program.** An ongoing routine or body of work that may involve more than one team, distinct from a team (staff and budget) and a service (what OPI delivers). CitiStat is OPI’s flagship program, operated by the Performance team and supported by all teams.
 
@@ -210,5 +210,5 @@ A quick reference for acronyms that recur across the wiki and are easy to read p
 | **RAG** | Red / Amber / Green status rating |
 | **TPM** | Technical Program Manager (a Director's Office role) |
 
-Standard IT and HR acronyms, when needed in public content, carry their common
+Standard IT and HR acronyms, when needed on this site, carry their common
 meanings.

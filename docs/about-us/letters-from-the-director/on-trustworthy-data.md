@@ -4,7 +4,7 @@
 
 **Trustworthy Data Is the Foundation of Smarter Government**
 
-*A public letter on data stewardship, AI readiness, and the kind of government Baltimore is building.*
+*A letter on data stewardship, AI readiness, and the kind of government Baltimore is building.*
 
 Every generation of city government faces a test. Ours is whether we can use data and artificial intelligence to make government more effective without losing the public trust that makes government legitimate.
 

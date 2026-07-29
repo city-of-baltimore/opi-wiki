@@ -127,7 +127,7 @@ CitiStat depends on trust in the numbers. The goal is not perfect data before ac
 | Resident signals | Include 311 trends, resident feedback, surveys, or case examples when relevant. |
 | Map-first when possible | Use geography to find the hotspots, inequities, and repeat demand that averages hide. |
 | Field validation | Ground priority topics in inspections, ride-alongs, or interviews at least quarterly where the service is observable. |
-| Documentation | Analytic code and queries are commented, attributed, dated, and stored so the work is reproducible; public materials meet Section 508 accessibility. |
+| Documentation | Analytic code and queries are commented, attributed, dated, and stored so the work is reproducible; published materials meet Section 508 accessibility. |
 
 The **CitiStat Inspector** plans the ride-alongs and site visits, coordinates with the agency, and brings field findings back into the Stat as evidence alongside the data, reconciled against the agency's reported metrics in the pre-memo.
 

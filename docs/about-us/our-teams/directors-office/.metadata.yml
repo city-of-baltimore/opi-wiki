@@ -1,5 +1,5 @@
 defaults:
   owner: Chief of Staff
-  last_reviewed: 2026-07-26
+  last_reviewed: 2026-07-27
   next_review: 2027-01-31
-  change_log: Corrected the AdminOps description to match OPI's four-team model.
+  change_log: Corrected the AdminOps description to match OPI's four-team model and clarified its audiences and role summaries.

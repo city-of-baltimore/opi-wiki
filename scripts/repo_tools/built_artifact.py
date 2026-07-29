@@ -1,4 +1,4 @@
-"""Checks that private source data does not enter the published site."""
+"""Checks that excluded source data does not enter the generated site."""
 
 from __future__ import annotations
 
@@ -9,35 +9,35 @@ PHONE_NUMBER_RE = re.compile(r"(?<!\d)(?:\+?1[ .-]?)?(?:\(?\d{3}\)?[ .-])\d{3}[ 
 PIN_LABEL_RE = re.compile(r"\bPINs?\b")
 TEXT_OUTPUT_SUFFIXES = frozenset({".html", ".json", ".txt", ".xml"})
 YAML_SUFFIXES = frozenset({".yaml", ".yml"})
-EXCLUDED_PUBLIC_PATH_PREFIXES = ("how-we-work/handbook/",)
+EXCLUDED_OUTPUT_PATH_PREFIXES = ("how-we-work/handbook/",)
 
 
-def find_publication_boundary_issues(site_dir: Path) -> list[str]:
+def find_built_artifact_issues(site_dir: Path) -> list[str]:
     """Return source-data and sensitive-field findings in a built site."""
 
     if not site_dir.is_dir():
         raise FileNotFoundError(f"Built site directory was not found: {site_dir}")
 
     issues: list[str] = []
-    for published_file in sorted(path for path in site_dir.rglob("*") if path.is_file()):
-        relative_file = published_file.relative_to(site_dir)
+    for built_file in sorted(path for path in site_dir.rglob("*") if path.is_file()):
+        relative_file = built_file.relative_to(site_dir)
         relative_text = relative_file.as_posix()
-        for prefix in EXCLUDED_PUBLIC_PATH_PREFIXES:
+        for prefix in EXCLUDED_OUTPUT_PATH_PREFIXES:
             if relative_text.startswith(prefix):
-                issues.append(f"{relative_file}: excluded source path was published")
+                issues.append(f"{relative_file}: excluded source path entered the built artifact")
                 break
-        suffix = published_file.suffix.casefold()
+        suffix = built_file.suffix.casefold()
 
         if suffix in YAML_SUFFIXES:
-            issues.append(f"{relative_file}: structured YAML source was published")
+            issues.append(f"{relative_file}: structured YAML source entered the built artifact")
             continue
         if suffix not in TEXT_OUTPUT_SUFFIXES:
             continue
 
         try:
-            text = published_file.read_text(encoding="utf-8", errors="replace")
+            text = built_file.read_text(encoding="utf-8", errors="replace")
         except OSError as error:
-            raise RuntimeError(f"Unable to read built output: {published_file}") from error
+            raise RuntimeError(f"Unable to read built output: {built_file}") from error
 
         if PHONE_NUMBER_RE.search(text):
             issues.append(f"{relative_file}: contains a phone-number pattern")

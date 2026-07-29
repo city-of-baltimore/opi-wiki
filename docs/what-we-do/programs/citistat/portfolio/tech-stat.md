@@ -11,7 +11,7 @@
 | OPI lead                        | OPI-operated / Data Team-led with BCIT and agency CIO participation                                                                                           |
 | Core Data Product              | Technology portfolio and service reliability dashboard                                                                                                        |
 
-## Public Purpose
+## Purpose
 
 Tech Stat focuses on the technology systems, service delivery, and governance practices that help City government operate reliably. BCIT is the primary agency, but major agency CIOs and technology leads should participate because technology performance is experienced across departments.
 

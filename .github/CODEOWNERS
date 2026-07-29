@@ -17,7 +17,7 @@
 
 # Content-team routing. GitHub can only honor teams with repository access, so
 # Innovation Lab content routes through Product Engineering while the PR
-# template records approval from the named section owner.
+# template records review by the named section owner.
 /docs/about-us/our-teams/innovation-lab/        @city-of-baltimore/product-engineering
 /docs/what-we-do/services/innovation-lab.md     @city-of-baltimore/product-engineering
 /docs/what-we-do/services/cross-agency-delivery/ @city-of-baltimore/product-engineering @city-of-baltimore/citistat

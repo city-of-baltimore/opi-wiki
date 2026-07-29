@@ -64,7 +64,7 @@ We do not run delivery reviews for everything. Cross-Agency Delivery activates o
 | Intake / activation | Confirm activation criteria; appoint Delivery Lead; name Authorizer and SRO.                                                                    | Activation memo; delivery charter; authorizer decision rights; weekly cadence.     |
 | Problem statement   | Map the cross-agency workflow; surface dependencies; identify constraints and barriers.                                                         | Workflow map; dependency tree; risk register; constraints log.                     |
 | Charter             | Define scope, milestones, deliverables, owners by agency, decision points, definition of done, and sustainment owner.                           | Cross-agency charter; milestone plan; commitment register.                         |
-| Deliver             | Run weekly delivery reviews with the SRO and agency owners; track commitments; escalate blockers to the Authorizer; QA before any public release. | Weekly status; commitment ledger; decision log; QA sign-offs; blocker escalations. |
+| Deliver             | Run weekly delivery reviews with the SRO and agency owners; track commitments; escalate blockers to the Authorizer; QA before release. | Weekly status; commitment ledger; decision log; QA sign-offs; blocker escalations. |
 | Sustain             | Document SOPs, training, monitoring; transfer to sustainment owner; close activation with evidence and an annual review checkpoint.             | Runbook; SOP package; monitoring plan; closure memo; sustainment owner sign-off.   |
 
 ### 4. Theory of Change

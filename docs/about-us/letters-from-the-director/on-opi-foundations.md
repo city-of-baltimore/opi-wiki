@@ -4,7 +4,7 @@
 
 **Better Government Is a Discipline**
 
-*A public letter on what the Mayor’s Office of Performance and Innovation does, why it exists, and the standard we hold ourselves to.*
+*A letter on what the Mayor’s Office of Performance and Innovation does, why it exists, and the standard we hold ourselves to.*
 
 Every city in America is being asked to do more with less, move faster than it used to, and earn public trust in conditions that make trust harder to build. Baltimore is no exception. The honest question is not whether we feel that pressure. The honest question is whether we are organized to meet it.
 

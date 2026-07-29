@@ -199,8 +199,8 @@ def build_steps(
             command=(python, "-m", "mkdocs", "build", "--strict"),
         ),
         VerifyStep(
-            name="Checking built-site publication boundary",
-            command=(python, "scripts/check_publication_boundary.py"),
+            name="Checking built-artifact safety",
+            command=(python, "scripts/check_built_artifact.py"),
         ),
         VerifyStep(
             name="Checking built-site internal links",
