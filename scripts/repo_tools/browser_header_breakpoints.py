@@ -38,11 +38,13 @@ _BREAKPOINT_STATE_EXPRESSION = """
 
 
 def _settle_animation_frames(page: Any) -> None:
-    """Wait for focus work scheduled by responsive controller callbacks."""
+    """Drain media-query dispatch plus the controller's two focus frames."""
 
     page.evaluate(
         """() => new Promise(
-          (resolve) => requestAnimationFrame(() => requestAnimationFrame(resolve))
+          (resolve) => requestAnimationFrame(
+            () => requestAnimationFrame(() => requestAnimationFrame(resolve))
+          )
         )"""
     )
 
@@ -231,8 +233,8 @@ def _breakpoint_issues(page: Any) -> list[str]:
     _settle_animation_frames(page)
     if not _active_matches(page, "[data-opi-drawer-open]"):
         issues.append(
-            "Semantic header (1219px seam): stale widening callback won "
-            "after a rapid breakpoint recross."
+            "Semantic header (1219px seam): focus did not settle on the visible "
+            "menu control after a rapid breakpoint recross."
         )
 
     page.set_viewport_size({"width": 959, "height": 900})
