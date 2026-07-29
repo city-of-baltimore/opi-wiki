@@ -85,6 +85,51 @@ To use the optional browser checks locally, install Chromium once per machine:
 uv run playwright install chromium
 ```
 
+`task validate` is the canonical, self-contained pre-deploy proof. It builds the
+site strictly, reads the production canonical origin from that build's
+`sitemap.xml`, and mounts the exact generated files at that origin inside
+Chromium through hermetic Playwright request routing. It starts no local server,
+makes no DNS, TLS, or network request, and does not rewrite the generated HTML.
+Requests outside the exact canonical origin and deployment base, unsafe paths,
+and files absent from the artifact fail locally. Both browser suites exercise
+the production-shaped artifact; the smoke suite additionally proves same-origin
+Material instant navigation. `task serve` does not need to be running first.
+
+The static proof also treats the Adobe and Google font services as unavailable,
+so product workflows cannot depend on a vendor or internet connection. Only
+the exact HTTPS font-provider origins and font-related resource types are
+nonblocking; every other external dependency fails. This does not prove which
+typeface Chromium painted or whether a vendor is available. Check those
+typography details manually in a live browser when they matter.
+
+To diagnose the live-reload preview itself, use two terminals:
+
+```bash
+# Terminal A
+task serve
+
+# Terminal B, after the initial build completes
+uv run python scripts/check_browser_smoke.py \
+  --base-url http://127.0.0.1:5208/opi-wiki/
+uv run python scripts/check_browser_accessibility.py \
+  --base-url http://127.0.0.1:5208/opi-wiki/
+```
+
+The live checks take their canonical route manifest from the selected
+preview's own `sitemap.xml`, so they cannot silently use stale disk output.
+Unlike the self-contained static audit, they make real requests to the running
+`task serve` or Docker Compose preview named by `--base-url`.
+Do not edit source files until both live checks finish; each run audits the
+fixed route list represented by the manifest it loaded at startup, while page
+content remains live.
+MkDocs keeps a live-reload request open by design; browser readiness therefore
+means the canonical URL, rendered page content, and settled font loading—not
+that every network request has stopped. The smoke workflows additionally
+require a target-specific marker after Material instant navigation.
+The audit browser aborts only its own numeric, same-origin live-reload poll so a
+full crawl cannot accumulate 60-second server requests. This does not change
+live reload for a normal preview browser.
+
 ### Run with Docker
 
 No local Python or uv install required — preview the site in a container:
@@ -96,6 +141,17 @@ docker compose up
 This serves the wiki at <http://127.0.0.1:5208> with live reload; edits to
 `docs/` on the host refresh the browser. Production still deploys to GitHub
 Pages, not this image.
+
+Compose keeps the container-only bind address separate from the URL a reader
+opens. `OPI_SITE_URL` and the registered MkDocs hook preserve
+`http://127.0.0.1:5208/opi-wiki/` as the preview's canonical origin, so the
+container exercises the same Material instant-navigation behavior as
+`task serve`.
+
+The same live browser commands above can audit the Compose preview at
+`http://127.0.0.1:5208/opi-wiki/` from a host that has the development
+dependencies and Chromium installed. Stop `task serve` first because the two
+preview providers intentionally share the registered port.
 
 ## How CI is split
 
@@ -180,10 +236,11 @@ pre-push hook, and it remains the authority on rules that span sibling repos.
 
 One boundary is explicit: Patapsco 0.4.5 classifies `docs-site` outside its
 port-owning application kinds, so its slot and compose/loopback rules do not run
-here. The repository still declares registry slot 8 and both local preview paths
-use loopback port 5208, but a green `platform-check` does not prove that port
-contract. Extending the shared rule belongs in Patapsco, followed by a
-re-measured pin bump here.
+here. The fast repository browser-readiness contract fills that measured gap:
+it pins the slot-8 MkDocs default and task command, the exact loopback Compose
+service, the container bind, and Docker's startup and health behavior. Extending
+the estate-wide rule still belongs in Patapsco, followed by a re-measured pin
+bump here; until then, both checks are required.
 
 The two are complementary, not redundant, and the split is measured rather than
 assumed — re-measured against `platform-check` 0.4.5, which expands `npm` and

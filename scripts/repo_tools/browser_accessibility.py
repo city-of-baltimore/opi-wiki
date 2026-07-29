@@ -6,13 +6,14 @@ from dataclasses import dataclass
 from pathlib import Path
 from typing import Any
 
+from scripts.repo_tools.browser_resources import BrowserResourceObserver
 from scripts.repo_tools.browser_routes import (
+    BrowserTarget,
     browser_route_url,
-    canonical_route_paths,
-    local_site_server,
-    normalize_base_url,
+    create_browser_context,
+    navigate_to_ready_page,
+    resolved_browser_target,
 )
-from scripts.repo_tools.browser_routes import check_page_load as _check_page_load
 
 
 @dataclass(frozen=True)
@@ -32,6 +33,25 @@ AUDIT_PROFILES = (
     _AuditProfile("reflow-light", 320, 800, "light", True),
     _AuditProfile("reflow-dark", 320, 800, "dark", True),
 )
+
+
+def _run_axe(axe: Any, page: Any) -> dict[str, Any]:
+    """Run axe without analyzer-generated stylesheet refetches.
+
+    The hermetic target already loads every release-critical stylesheet from
+    the exact artifact. Axe's optional CSSOM preload would separately refetch
+    external font stylesheets as XHRs, which is analyzer traffic rather than a
+    product dependency and would blur the context-wide resource boundary.
+    """
+
+    result = axe.run(
+        page,
+        options={
+            "resultTypes": ["violations"],
+            "preload": False,
+        },
+    )
+    return dict(result.response)
 
 
 def _format_axe_violations(
@@ -92,8 +112,9 @@ def _check_skip_link(page: Any, base_url: str, profile: _AuditProfile) -> list[s
 
     if profile.mobile:
         return []
-    response = page.goto(base_url, wait_until="networkidle")
-    issues = _check_page_load(page, response, base_url, "Skip link", profile.name)
+    issues = navigate_to_ready_page(page, base_url, "Skip link", profile.name)
+    if issues:
+        return issues
     page.evaluate(
         """
         () => {
@@ -158,17 +179,17 @@ def _check_mobile_interactive_states(
 
     if not profile.mobile:
         return []
-    issues: list[str] = []
-    response = page.goto(base_url, wait_until="networkidle")
-    issues.extend(_check_page_load(page, response, base_url, "Interactive home", profile.name))
+    issues = navigate_to_ready_page(page, base_url, "Interactive home", profile.name)
+    if issues:
+        return issues
 
     drawer_toggle = page.locator('label.md-header__button[for="__drawer"]').first
-    drawer_toggle.click()
+    drawer_toggle.click(no_wait_after=True)
     issues.extend(
         _format_axe_violations(
             "/",
             profile,
-            axe.run(page).response,
+            _run_axe(axe, page),
             state="navigation drawer open",
         )
     )
@@ -184,12 +205,12 @@ def _check_mobile_interactive_states(
     )
 
     search_toggle = page.locator('label.md-header__button[for="__search"]').first
-    search_toggle.click()
+    search_toggle.click(no_wait_after=True)
     issues.extend(
         _format_axe_violations(
             "/",
             profile,
-            axe.run(page).response,
+            _run_axe(axe, page),
             state="search open",
         )
     )
@@ -199,10 +220,9 @@ def _check_mobile_interactive_states(
 def _collect_browser_accessibility_issues(
     sync_playwright: Any,
     axe_factory: Any,
-    base_url: str,
-    routes: tuple[str, ...],
+    target: BrowserTarget,
 ) -> list[str]:
-    """Run the accessibility matrix against a resolved site URL."""
+    """Run the accessibility matrix against one resolved browser target."""
 
     with sync_playwright() as playwright:
         browser = playwright.chromium.launch()
@@ -210,40 +230,49 @@ def _collect_browser_accessibility_issues(
         issues: list[str] = []
         try:
             for profile in AUDIT_PROFILES:
-                context = browser.new_context(
+                context = create_browser_context(
+                    browser,
+                    target,
                     color_scheme=profile.color_scheme,
                     viewport={"width": profile.width, "height": profile.height},
                     is_mobile=profile.mobile,
                 )
-                context.set_default_timeout(5000)
+                resource_observer = BrowserResourceObserver(
+                    target,
+                    issues,
+                    f"Accessibility ({profile.name})",
+                )
+                resource_observer.attach(context)
                 page = context.new_page()
                 try:
-                    for route in routes:
-                        requested_url = browser_route_url(base_url, route)
-                        response = page.goto(requested_url, wait_until="networkidle")
-                        issues.extend(
-                            _check_page_load(
-                                page,
-                                response,
-                                requested_url,
-                                f"Accessibility {route}",
-                                profile.name,
-                            )
+                    for route in target.routes:
+                        resource_observer.set_scope(f"Accessibility {route} ({profile.name})")
+                        requested_url = browser_route_url(target.base_url, route)
+                        navigation_issues = navigate_to_ready_page(
+                            page,
+                            requested_url,
+                            f"Accessibility {route}",
+                            profile.name,
                         )
+                        issues.extend(navigation_issues)
+                        if navigation_issues:
+                            continue
                         issues.extend(
                             _format_axe_violations(
                                 route,
                                 profile,
-                                axe.run(page).response,
+                                _run_axe(axe, page),
                             )
                         )
                         issues.extend(_check_document_reflow(page, route, profile))
-                    issues.extend(_check_skip_link(page, base_url, profile))
+                    resource_observer.set_scope(f"Skip link ({profile.name})")
+                    issues.extend(_check_skip_link(page, target.base_url, profile))
+                    resource_observer.set_scope(f"Interactive home ({profile.name})")
                     issues.extend(
                         _check_mobile_interactive_states(
                             page,
                             axe,
-                            base_url,
+                            target.base_url,
                             profile,
                         )
                     )
@@ -260,9 +289,6 @@ def find_browser_accessibility_issues(
 ) -> list[str]:
     """Audit canonical routes with axe, reflow, skip-link, and interactive-state checks."""
 
-    if not site_dir.is_dir():
-        raise FileNotFoundError(f"Built site directory was not found: {site_dir}")
-
     try:
         from axe_playwright_python.sync_playwright import Axe
         from playwright.sync_api import sync_playwright
@@ -272,23 +298,5 @@ def find_browser_accessibility_issues(
             "'uv run playwright install chromium' first."
         ) from error
 
-    routes = tuple(canonical_route_paths(site_dir))
-    if not routes:
-        raise RuntimeError(
-            f"Built sitemap contains no canonical routes: {site_dir / 'sitemap.xml'}"
-        )
-    if base_url is not None:
-        return _collect_browser_accessibility_issues(
-            sync_playwright,
-            Axe,
-            normalize_base_url(base_url),
-            routes,
-        )
-
-    with local_site_server(site_dir) as server_base_url:
-        return _collect_browser_accessibility_issues(
-            sync_playwright,
-            Axe,
-            server_base_url,
-            routes,
-        )
+    with resolved_browser_target(site_dir, base_url) as target:
+        return _collect_browser_accessibility_issues(sync_playwright, Axe, target)

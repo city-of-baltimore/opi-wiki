@@ -3,9 +3,11 @@ name: Deploy to GitHub Pages
 # Builds and deploys the site to GitHub Pages on every push to main. This is the
 # pre-deploy gate: it runs the prepush plan — the static checks that pull-request
 # CI runs, plus the repo-automation test suite, the strict MkDocs build, the
-# built-site link crawl, and the accessibility checks that need site/. Nothing
-# the PR lane skips reaches production unchecked. The committed site_url and
-# OPI_SITE_URL both use the canonical Pages base URL.
+# built-site checks, and accessibility smoke that need site/. Every assertion in
+# the prepush tier therefore gates production. Browser interactions and the
+# full-route accessibility matrix remain the deliberate local `task validate`
+# release proof; they are not part of this hosted deploy lane. The committed
+# site_url and OPI_SITE_URL both use the canonical Pages base URL.
 #
 # Deploy workflows are exempt from the lean-CI rule — building is their job —
 # so scripts/check_hosted_ci_policy.py does not scan this file.

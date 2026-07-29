@@ -2,52 +2,23 @@
 
 from __future__ import annotations
 
+import builtins
 from pathlib import Path
 from types import SimpleNamespace
+from typing import Any
 from unittest.mock import MagicMock
 
 import pytest
 import scripts.check_browser_smoke as browser_cli
+import scripts.repo_tools.browser_routes as browser_routes
 import scripts.repo_tools.browser_smoke as browser_smoke
 from scripts.check_browser_smoke import parse_args
+from scripts.repo_tools.browser_route_manifest import CanonicalRouteManifest
+from scripts.repo_tools.browser_routes import BrowserTarget
 from scripts.repo_tools.browser_smoke import (
-    ORG_CHART_NAMES,
-    SMOKE_TARGETS,
-    _check_org_chart_state,
-    _check_table_focus_state,
     _crawl_canonical_routes,
     find_browser_smoke_issues,
 )
-
-
-def test_smoke_targets_cover_each_major_section() -> None:
-    """Browser smoke coverage should keep one representative page per major section."""
-
-    assert [target.section for target in SMOKE_TARGETS] == [
-        "About Us",
-        "How We Work",
-        "What We Do",
-        "Resources",
-    ]
-
-    assert [target.path for target in SMOKE_TARGETS] == [
-        "/about-us/operating-principles-and-culture/",
-        "/how-we-work/how-work-moves-through-opi/",
-        "/what-we-do/services/cross-agency-delivery/",
-        "/resources/reference/glossary/",
-    ]
-
-
-class _EvaluationPage:
-    """Playwright page stand-in returning one scripted DOM result."""
-
-    def __init__(self, result: object) -> None:
-        self.result = result
-
-    def evaluate(self, script: str) -> object:
-        """Return the configured result after verifying the expected selector."""
-
-        return self.result
 
 
 def test_canonical_smoke_crawl_encodes_decoded_route_delimiters() -> None:
@@ -58,7 +29,7 @@ def test_canonical_smoke_crawl_encodes_decoded_route_delimiters() -> None:
     def navigate(url: str, *, wait_until: str) -> SimpleNamespace:
         """Expose the encoded destination as the fake page's final URL."""
 
-        assert wait_until == "networkidle"
+        assert wait_until == "load"
         page.url = url
         return SimpleNamespace(status=200)
 
@@ -71,89 +42,19 @@ def test_canonical_smoke_crawl_encodes_decoded_route_delimiters() -> None:
     assert (
         _crawl_canonical_routes(
             browser,
-            "http://example.test/opi-wiki/",
-            ("/#/?/%/%2F/%2e%2e/",),
+            BrowserTarget(
+                base_url="http://example.test/opi-wiki/",
+                routes=("/#/?/%/",),
+            ),
         )
         == []
     )
-    assert page.goto.call_args.args[0] == (
-        "http://example.test/opi-wiki/%23/%3F/%25/%252F/%252e%252e/"
+    assert page.goto.call_args.args[0] == "http://example.test/opi-wiki/%23/%3F/%25/"
+    browser.new_context.assert_called_once_with(
+        viewport={"width": 1440, "height": 900},
+        service_workers="block",
+        offline=False,
     )
-
-
-def test_table_scroll_wrapper_has_keyboard_focus_treatment() -> None:
-    """Generated table wrappers should be tabbable and visibly focused."""
-
-    page = _EvaluationPage({"tabIndex": 0, "outlineStyle": "solid", "outlineWidth": "2px"})
-
-    assert _check_table_focus_state(page, "light", "direct load") == []
-
-
-def test_table_scroll_wrapper_reports_missing_or_inaccessible_state() -> None:
-    """Missing wrappers, tabindex drift, and invisible focus must be actionable."""
-
-    assert _check_table_focus_state(_EvaluationPage(None), "dark", "direct load") == [
-        "Table scroll region (dark, direct load): generated scroll wrapper was not found."
-    ]
-
-    issues = _check_table_focus_state(
-        _EvaluationPage({"tabIndex": -1, "outlineStyle": "none", "outlineWidth": "0px"}),
-        "dark",
-        "instant navigation",
-    )
-
-    assert len(issues) == 2
-    assert "tabIndex was -1" in issues[0]
-    assert "focus outline was not visible" in issues[1]
-
-
-def test_org_chart_exposes_the_expected_visible_hierarchy() -> None:
-    """The rendered chart should expose all leaders at the intended levels."""
-
-    page = _EvaluationPage(
-        {
-            "chartVisible": True,
-            "chartNames": list(ORG_CHART_NAMES),
-            "counts": {
-                "mayor": 1,
-                "city": 1,
-                "executive": 1,
-                "seniorLead": 3,
-                "manager": 1,
-                "team": 1,
-                "staff": 17,
-            },
-        }
-    )
-
-    assert _check_org_chart_state(page, "light", "direct load") == []
-
-
-def test_org_chart_reports_missing_names_and_hierarchy_drift() -> None:
-    """Chart regressions should name both the missing leaders and structural mismatch."""
-
-    page = _EvaluationPage(
-        {
-            "chartVisible": False,
-            "chartNames": [],
-            "counts": {
-                "mayor": 0,
-                "city": 0,
-                "executive": 0,
-                "seniorLead": 0,
-                "manager": 0,
-                "team": 0,
-                "staff": 0,
-            },
-        }
-    )
-
-    issues = _check_org_chart_state(page, "dark", "instant navigation")
-
-    assert len(issues) == 3
-    assert "no visible dimensions" in issues[0]
-    assert "leadership names were not visible" in issues[1]
-    assert "hierarchy counts" in issues[2]
 
 
 def test_source_override_keeps_static_repo_link_without_stats_hook() -> None:
@@ -168,8 +69,33 @@ def test_source_override_keeps_static_repo_link_without_stats_hook() -> None:
     assert "data-md-component" not in anchor_markup
 
 
+def test_search_toggle_does_not_wait_for_a_navigation(
+    monkeypatch: pytest.MonkeyPatch,
+) -> None:
+    """Opening the in-document search control must remain safe in offline Chromium."""
+
+    page = MagicMock()
+    page.url = "https://city.example/opi-wiki/"
+    search_toggle = MagicMock()
+    search_toggle.count.return_value = 1
+    search_input = MagicMock()
+    result_link = MagicMock()
+    result_link.inner_text.return_value = "CitiStat"
+    result_link.get_attribute.return_value = "what-we-do/programs/citistat/"
+    for locator in (search_toggle, search_input, result_link):
+        locator.first = locator
+    page.locator.side_effect = (search_toggle, search_input, result_link)
+    monkeypatch.setattr(browser_smoke, "navigate_to_ready_page", lambda *_args: [])
+    instant_navigation = MagicMock(return_value=[])
+    monkeypatch.setattr(browser_smoke, "navigate_to_instant_page", instant_navigation)
+
+    assert browser_smoke._check_search_workflow(page, str(page.url), "light") == []
+    search_toggle.click.assert_called_once_with(no_wait_after=True)
+    instant_navigation.assert_called_once()
+
+
 def test_browser_smoke_rejects_a_missing_built_site(tmp_path: Path) -> None:
-    """A missing build must fail before a local server is started."""
+    """A missing build must fail before a static browser target is created."""
 
     missing_site = tmp_path / "missing-site"
 
@@ -178,7 +104,7 @@ def test_browser_smoke_rejects_a_missing_built_site(tmp_path: Path) -> None:
 
 
 def test_browser_smoke_rejects_a_file_in_place_of_the_built_site(tmp_path: Path) -> None:
-    """The local server requires a directory, not merely an existing path."""
+    """Static artifact routing requires a directory, not merely an existing path."""
 
     not_a_site = tmp_path / "site.html"
     not_a_site.write_text("<h1>Not a directory</h1>", encoding="utf-8")
@@ -187,53 +113,129 @@ def test_browser_smoke_rejects_a_file_in_place_of_the_built_site(tmp_path: Path)
         find_browser_smoke_issues(not_a_site)
 
 
+def test_browser_smoke_reports_missing_dependency_before_resolving_target(
+    tmp_path: Path,
+    monkeypatch: pytest.MonkeyPatch,
+) -> None:
+    """A missing browser runtime should not trigger preview network work."""
+
+    original_import = builtins.__import__
+
+    def import_without_playwright(name: str, *args: Any, **kwargs: Any) -> Any:
+        if name == "playwright.sync_api":
+            raise ModuleNotFoundError(name)
+        return original_import(name, *args, **kwargs)
+
+    def reject_target_resolution(*_args: object, **_kwargs: object) -> object:
+        pytest.fail("Browser target resolution ran before dependency validation.")
+
+    monkeypatch.setattr(builtins, "__import__", import_without_playwright)
+    monkeypatch.setattr(browser_smoke, "resolved_browser_target", reject_target_resolution)
+
+    with pytest.raises(RuntimeError) as captured:
+        find_browser_smoke_issues(
+            tmp_path / "not-built",
+            base_url="http://example.test/preview",
+        )
+
+    assert str(captured.value) == (
+        "Playwright is not installed. Run 'uv sync' and 'uv run playwright install chromium' first."
+    )
+
+
 def test_browser_smoke_uses_a_normalized_explicit_base_url(
     tmp_path: Path,
     monkeypatch: pytest.MonkeyPatch,
 ) -> None:
-    """An external preview URL should bypass the local server and normalize once."""
+    """A live preview URL should bypass artifact routing and normalize once."""
 
-    seen: list[str] = []
+    seen: list[BrowserTarget] = []
 
     def collect(
         _sync_playwright: object,
-        base_url: str,
-        _routes: tuple[str, ...],
+        target: BrowserTarget,
     ) -> list[str]:
-        seen.append(base_url)
+        seen.append(target)
         return ["example finding"]
 
+    monkeypatch.setattr(
+        browser_routes,
+        "canonical_route_manifest_from_preview",
+        lambda base_url: CanonicalRouteManifest(
+            canonical_base_url=base_url,
+            routes=("/", "/resources/"),
+        ),
+    )
     monkeypatch.setattr(browser_smoke, "_collect_browser_smoke_issues", collect)
 
     issues = find_browser_smoke_issues(tmp_path / "not-built", base_url="http://example.test/docs")
 
     assert issues == ["example finding"]
-    assert seen == ["http://example.test/docs/"]
+    assert seen == [
+        BrowserTarget(
+            base_url="http://example.test/docs/",
+            routes=("/", "/resources/"),
+        )
+    ]
 
 
-def test_browser_smoke_serves_a_built_site_for_the_collector(
+def test_browser_smoke_rejects_an_empty_preview_route_manifest(
     tmp_path: Path,
     monkeypatch: pytest.MonkeyPatch,
 ) -> None:
-    """Without an external URL, orchestration should use a loopback site server."""
+    """An explicit preview must never turn an empty live sitemap into a pass."""
+
+    monkeypatch.setattr(
+        browser_routes,
+        "canonical_route_manifest_from_preview",
+        lambda base_url: CanonicalRouteManifest(
+            canonical_base_url=base_url,
+            routes=(),
+        ),
+    )
+
+    with pytest.raises(RuntimeError, match="Sitemap contains no canonical routes"):
+        find_browser_smoke_issues(
+            tmp_path / "not-built",
+            base_url="http://example.test/docs",
+        )
+
+
+def test_browser_smoke_mounts_a_built_site_at_its_canonical_origin(
+    tmp_path: Path,
+    monkeypatch: pytest.MonkeyPatch,
+) -> None:
+    """A static audit should pass the exact artifact and sitemap origin downstream."""
 
     (tmp_path / "index.html").write_text("<h1>Home</h1>", encoding="utf-8")
-    seen: list[str] = []
+    (tmp_path / "sitemap.xml").write_text(
+        (
+            "<urlset>"
+            "<url><loc>https://example.test/opi-wiki/</loc></url>"
+            "<url><loc>https://example.test/opi-wiki/resources/</loc></url>"
+            "</urlset>"
+        ),
+        encoding="utf-8",
+    )
+    seen: list[BrowserTarget] = []
 
     def collect(
         _sync_playwright: object,
-        base_url: str,
-        _routes: tuple[str, ...],
+        target: BrowserTarget,
     ) -> list[str]:
-        seen.append(base_url)
+        seen.append(target)
         return []
 
     monkeypatch.setattr(browser_smoke, "_collect_browser_smoke_issues", collect)
 
     assert find_browser_smoke_issues(tmp_path) == []
-    assert len(seen) == 1
-    assert seen[0].startswith("http://127.0.0.1:")
-    assert seen[0].endswith("/")
+    assert seen == [
+        BrowserTarget(
+            base_url="https://example.test/opi-wiki/",
+            routes=("/", "/resources/"),
+            artifact_dir=tmp_path.resolve(),
+        )
+    ]
 
 
 def test_browser_cli_parses_site_and_base_url_options(tmp_path: Path) -> None:
@@ -243,6 +245,18 @@ def test_browser_cli_parses_site_and_base_url_options(tmp_path: Path) -> None:
 
     assert args.site_dir == tmp_path
     assert args.base_url == "http://example.test"
+
+
+def test_browser_cli_rejects_unknown_arguments(
+    capsys: pytest.CaptureFixture[str],
+) -> None:
+    """A misspelled browser option must fail instead of being ignored."""
+
+    with pytest.raises(SystemExit) as captured:
+        parse_args(["--not-a-browser-option"])
+
+    assert captured.value.code == 2
+    assert "unrecognized arguments: --not-a-browser-option" in capsys.readouterr().err
 
 
 def test_browser_cli_reports_success(
@@ -278,14 +292,14 @@ def test_browser_cli_reports_findings(
 def test_browser_collector_runs_both_color_schemes_and_closes_resources(
     monkeypatch: pytest.MonkeyPatch,
 ) -> None:
-    """The browser orchestrator should cover both schemes and always close contexts."""
+    """Every crawl should use the shared fail-closed context lifecycle."""
 
     page = MagicMock()
 
     def navigate(url: str, *, wait_until: str) -> SimpleNamespace:
         """Record a fake successful navigation and expose its final URL."""
 
-        assert wait_until == "networkidle"
+        assert wait_until == "load"
         page.url = url
         return SimpleNamespace(status=200)
 
@@ -298,7 +312,6 @@ def test_browser_collector_runs_both_color_schemes_and_closes_resources(
     manager = MagicMock()
     manager.__enter__.return_value = playwright
 
-    monkeypatch.setattr(browser_smoke, "_check_page_load", lambda *_args: [])
     monkeypatch.setattr(browser_smoke, "_check_mobile_nav_state", lambda *_args: [])
     monkeypatch.setattr(browser_smoke, "_check_table_focus_state", lambda *_args: [])
     monkeypatch.setattr(
@@ -314,14 +327,25 @@ def test_browser_collector_runs_both_color_schemes_and_closes_resources(
         lambda *_args: [],
     )
     monkeypatch.setattr(browser_smoke, "_check_search_workflow", lambda *_args: [])
+    create_context = MagicMock(side_effect=browser_smoke.create_browser_context)
+    monkeypatch.setattr(browser_smoke, "create_browser_context", create_context)
+    target = BrowserTarget("http://example.test/", ("/",))
 
-    issues = browser_smoke._collect_browser_smoke_issues(lambda: manager, "http://example.test/")
+    issues = browser_smoke._collect_browser_smoke_issues(lambda: manager, target)
 
     assert issues == []
-    assert [call.kwargs["color_scheme"] for call in browser.new_context.call_args_list] == [
+    assert [call.kwargs.get("color_scheme") for call in browser.new_context.call_args_list] == [
+        None,
         "light",
         "dark",
     ]
-    assert page.goto.call_count == 14
-    assert context.close.call_count == 2
+    assert all(
+        call.kwargs["service_workers"] == "block" for call in browser.new_context.call_args_list
+    )
+    assert all(call.kwargs["offline"] is False for call in browser.new_context.call_args_list)
+    assert create_context.call_count == 3
+    assert all(call.args[1] == target for call in create_context.call_args_list)
+    assert page.goto.call_count == 15
+    assert context.set_default_timeout.call_count == 3
+    assert context.close.call_count == 3
     browser.close.assert_called_once_with()

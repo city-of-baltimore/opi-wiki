@@ -97,12 +97,19 @@ def load_sitemap_locations(site_dir: Path) -> list[str]:
     except (OSError, UnicodeError) as error:
         raise RuntimeError(f"Unable to read built sitemap: {sitemap}") from error
 
+    return parse_sitemap_locations(sitemap_text, source=str(sitemap))
+
+
+def parse_sitemap_locations(sitemap_text: str, *, source: str) -> list[str]:
+    """Return every location from strict sitemap XML and name its evidence source."""
+
     try:
-        # S314/B314: this is a locally generated MkDocs artifact; strict parsing
-        # is required here, and ElementTree does not retrieve external resources.
+        # S314/B314: this is a generated MkDocs artifact from either disk or the
+        # selected preview; strict parsing is required, and ElementTree does not
+        # retrieve external resources.
         root = ElementTree.fromstring(sitemap_text)  # noqa: S314  # nosec B314
     except ElementTree.ParseError as error:
-        raise RuntimeError(f"Built sitemap XML is malformed: {sitemap}: {error}") from error
+        raise RuntimeError(f"Built sitemap XML is malformed: {source}: {error}") from error
 
     def local_name(tag: str) -> str:
         """Return an XML element name without its optional namespace."""
@@ -110,11 +117,11 @@ def load_sitemap_locations(site_dir: Path) -> list[str]:
         return tag.rsplit("}", maxsplit=1)[-1]
 
     if local_name(root.tag) != "urlset":
-        raise RuntimeError(f"Built sitemap root must be <urlset>: {sitemap}")
+        raise RuntimeError(f"Built sitemap root must be <urlset>: {source}")
 
     url_elements = list(root)
     if any(local_name(element.tag) != "url" for element in url_elements):
-        raise RuntimeError(f"Built sitemap <urlset> may contain only <url> entries: {sitemap}")
+        raise RuntimeError(f"Built sitemap <urlset> may contain only <url> entries: {source}")
 
     locations: list[str] = []
     direct_locations: set[int] = set()
@@ -122,27 +129,25 @@ def load_sitemap_locations(site_dir: Path) -> list[str]:
         location_elements = [element for element in url_element if local_name(element.tag) == "loc"]
         if len(location_elements) != 1:
             raise RuntimeError(
-                f"Built sitemap <url> entry {index} must contain exactly one <loc>: {sitemap}"
+                f"Built sitemap <url> entry {index} must contain exactly one <loc>: {source}"
             )
         location_element = location_elements[0]
         direct_locations.add(id(location_element))
         if list(location_element):
             raise RuntimeError(
-                f"Built sitemap <loc> entry {index} must contain URL text only: {sitemap}"
+                f"Built sitemap <loc> entry {index} must contain URL text only: {source}"
             )
         location = (location_element.text or "").strip()
         if not location:
-            raise RuntimeError(f"Built sitemap <loc> entry {index} is empty: {sitemap}")
+            raise RuntimeError(f"Built sitemap <loc> entry {index} is empty: {source}")
         locations.append(location)
 
     nested_locations = {id(element) for element in root.iter() if local_name(element.tag) == "loc"}
     if nested_locations != direct_locations:
-        raise RuntimeError(
-            f"Built sitemap contains a <loc> outside a direct <url> entry: {sitemap}"
-        )
+        raise RuntimeError(f"Built sitemap contains a <loc> outside a direct <url> entry: {source}")
 
     if not locations:
-        raise RuntimeError(f"Built sitemap contains no URL locations: {sitemap}")
+        raise RuntimeError(f"Built sitemap contains no URL locations: {source}")
     return locations
 
 

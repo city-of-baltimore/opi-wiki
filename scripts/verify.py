@@ -115,6 +115,10 @@ def build_steps(
             command=(python, "scripts/check_hosted_ci_policy.py"),
         ),
         VerifyStep(
+            name="Checking browser readiness source contract",
+            command=(python, "scripts/check_browser_readiness_contract.py"),
+        ),
+        VerifyStep(
             name="Validating platform guard evidence",
             command=(python, "scripts/check_platform_guard_evidence.py"),
         ),

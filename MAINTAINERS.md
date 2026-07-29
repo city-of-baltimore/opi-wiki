@@ -315,6 +315,90 @@ schemes. That pass expects a one-time local browser install via
 review are documented in
 [`docs/resources/accessibility.md`](docs/resources/accessibility.md).
 
+`task validate` is self-contained: it performs the strict build, reads the
+production canonical origin from the built `sitemap.xml`, and mounts the exact
+artifact at that origin inside Chromium through hermetic Playwright request
+routing. The static audit starts no server, makes no DNS, TLS, or network
+request, and does not rewrite generated HTML. Requests outside the exact
+canonical origin and deployment base, unsafe paths, unsupported methods, and
+files absent from the artifact receive a local failure. For a diagnostic
+against an already-running `task serve` or Docker Compose preview, run:
+
+```bash
+uv run python scripts/check_browser_smoke.py \
+  --base-url http://127.0.0.1:5208/opi-wiki/
+uv run python scripts/check_browser_accessibility.py \
+  --base-url http://127.0.0.1:5208/opi-wiki/
+```
+
+Each live command reads the route manifest from that preview's own
+`sitemap.xml`; a missing, malformed, redirected, empty, or oversized manifest
+fails closed. Do not edit source files until both live checks finish; each run
+uses the fixed route list represented by the manifest it loaded at startup.
+MkDocs live reload intentionally keeps network activity open, so the suites use one
+shared readiness seam: canonical HTTP load, visible rendered content, settled
+font loading; smoke workflows add a target-specific marker for Material instant
+navigation. Unlike the hermetic static audit, these commands make real requests
+to the running preview named by `--base-url`. The audit context aborts only its
+own same-origin numeric `/livereload/` XHR so a canonical crawl cannot
+accumulate MkDocs' 60-second polling threads; ordinary preview browsers keep
+live reload.
+The hosted static gate scans every repository-automation module and prevents
+direct navigation calls, direct browser-context creation, or a `networkidle`
+wait from returning outside that seam. The hermetic pass treats Adobe and Google
+font endpoints as unavailable. Exact HTTPS font-provider origins are
+nonblocking only for font, stylesheet, or image requests; every other external
+dependency, product-owned HTTP error, and non-cancellation transport failure
+remains blocking. Only an aborted target-owned search index and the live
+preview's same-origin, numeric `/livereload/` XHR are recognized browser
+cancellations.
+Axe CSSOM preloading stays disabled because it would synthesize its own XHRs to
+those font stylesheets after the product page has loaded. Every release-critical
+stylesheet is already a target-owned artifact resource; do not hide analyzer
+traffic by allowing font-provider XHRs in the product resource contract.
+The automation does not assert which typeface Chromium painted or whether a
+vendor delivered it; that remains a manual design check. Live diagnostics
+supplement `task validate`; they do not replace its release evidence.
+
+- 2026-07-28 — **[LOCAL PREVIEW] preserve the reader-visible canonical URL in
+  Docker Compose** — MkDocs rewrites `site_url` to its container bind address
+  during `serve`; `OPI_SITE_URL` plus `scripts/mkdocs_site_url.py` restores the
+  validated `http://127.0.0.1:5208/opi-wiki/` origin so Material instant
+  navigation remains same-origin — owner: OPI Wiki maintainers — reversible
+  when MkDocs supports separate bind and reader-visible preview URLs natively,
+  or when the Compose preview is deliberately retired. The wiring contract
+  lives in `tests/test_mkdocs_site_url.py`.
+
+- 2026-07-28 — **[BROWSER ASSURANCE] cap each canonical-route audit at 500
+  routes** — the current 79-route site remains within the four-profile browser
+  matrix's 600-second validation budget without making an unbounded route count
+  look safe — owner: OPI Wiki maintainers — review as the site approaches 400
+  canonical routes; reversible only by retiring or replacing the cap with
+  measured sharding that keeps the four-profile matrix within a documented
+  runtime budget.
+
+- 2026-07-29 — **[BROWSER ASSURANCE] audit the strict build at its sitemap
+  canonical origin inside Chromium** — hermetic Playwright request routing
+  preserves the exact generated artifact and production same-origin behavior
+  without a loopback-origin substitution, DNS, TLS, network access, or an HTML
+  rewrite; unknown, unsafe, missing, and out-of-base requests fail locally —
+  exact Adobe and Google font origins remain a narrow nonblocking dependency
+  for font-related resource types so product workflows can be proven offline,
+  while painted typeface and vendor availability remain manual design checks —
+  owner: OPI Wiki maintainers — reversible only when a replacement proves the
+  same exact-artifact, canonical-origin, isolation, and fail-closed guarantees.
+
+- 2026-07-29 — **[ACCESSIBILITY] carry keyboard-only header controls into the
+  render-backed redesign** — the current automated journeys prove the skip link,
+  table focus, visible focus treatments, and pointer-opened navigation/search,
+  but they do not yet prove keyboard activation of Material's label-based
+  header toggles; changing those controls is a visible product decision, so do
+  not weaken the service promise or disguise pointer coverage as keyboard
+  evidence — owner: OPI Wiki product owner (design sign-off) and maintainers
+  (implementation) — retire when navigation and search are traversable,
+  operable, and visibly focused by keyboard at desktop and reflow widths, with
+  before/after evidence and automated regression proof.
+
 ### Which gate runs what
 
 `Taskfile.yml` exposes the tiers; `scripts/verify.py` defines the suite once and
@@ -322,7 +406,7 @@ runs it in three nested tiers:
 
 | Tier | Where | Covers |
 |---|---|---|
-| `task ci` | pull-request CI, fast local loop | hosted-CI policy guard, platform-gate evidence, format, lint, mypy, bandit, metadata, organization data, brand terms, style, consistency, raw HTML links |
+| `task ci` | pull-request CI, fast local loop | hosted-CI policy guard, browser-readiness contract, platform-gate evidence, format, lint, mypy, bandit, metadata, organization data, brand terms, style, consistency, raw HTML links |
 | `task prepush` | the pre-push hook and the Pages deploy gate | everything above, plus pytest, `mkdocs build --strict`, rendered-language assurance, built-artifact safety and built-link checks, and accessibility checks |
 | `task validate` | locally, before a deploy | everything above, plus browser interaction and full-route WCAG assurance |
 
@@ -375,13 +459,14 @@ must pass before the change can be pushed or deployed.
   reversible when Patapsco catches the complete matrix and the local guard is
   retired under its documented condition.
 
-- 2026-07-27 — **[DOCS-SITE PORTS] defer shared enforcement to Patapsco** —
-  Patapsco 0.4.5 treats `docs-site` as a non-application kind, so its registry
-  slot and compose/loopback rules do not run here; the repository remains
-  aligned to slot 8 and loopback port 5208, but a green shared check does not
-  prove that contract — owner: Patapsco maintainers — reversible when the
-  shared checker covers port-owning docs sites and this repository re-measures
-  the adopting pin.
+- 2026-07-29 — **[DOCS-SITE PORTS] bridge the shared enforcement gap locally**
+  — Patapsco 0.4.5 treats `docs-site` as a non-application kind, so its registry
+  slot and compose/loopback rules do not run here; the fast browser-readiness
+  contract therefore pins the slot-8 MkDocs default and task command, exact
+  Compose service, container bind, and Docker startup and health behavior —
+  owner: OPI Wiki maintainers (local contract) and Patapsco maintainers (shared
+  rule) — retire the local port checks only when the shared checker covers
+  port-owning docs sites and this repository re-measures the adopting pin.
 
 **The practical consequence: a broken test or strict build is not caught on the
 PR; it surfaces at `git push` (via the hook) or on the deploy run after merge.**

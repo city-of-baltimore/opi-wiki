@@ -101,6 +101,7 @@ def test_ci_plan_keeps_every_static_check() -> None:
 
     assert ci_names == [
         "Checking hosted CI policy",
+        "Checking browser readiness source contract",
         "Validating platform guard evidence",
         "Checking platform baseline conformance",
         "Checking repo automation formatting",
