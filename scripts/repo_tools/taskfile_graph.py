@@ -10,9 +10,15 @@ BLOCK_SCALAR_MARKER = re.compile(r"^[|>](?:[+-][1-9]?|[1-9][+-]?)?$")
 TASK_INVOCATION = re.compile(r"\btask\s+(?!-)([A-Za-z][\w:.-]*)")
 #: Taskfile structure: task headers sit at exactly this indent under ``tasks:``.
 TASK_HEADER_INDENT = 2
-#: Keys that end a ``deps:`` block list. Anything else at list depth inside one
-#: is a dependency name, not a shell command.
-TASK_BLOCK_KEYS = re.compile(r"(cmds|vars|env|desc|dir|sources|generates|status|preconditions):")
+#: Task properties sit one level below a task header.
+TASK_PROPERTY_INDENT = 4
+#: Entries in a task property's YAML list sit one level below the property.
+TASK_LIST_ENTRY_INDENT = 6
+TASK_PROPERTY = re.compile(r"([A-Za-z][\w-]*):")
+#: These Taskfile lists execute shell, unlike declarative lists such as
+#: ``sources`` and ``generates``. Restricting generic ``- ...`` parsing to these
+#: blocks prevents declarative data from masquerading as a reached command.
+EXECUTABLE_LIST_PROPERTIES = frozenset({"cmds", "preconditions", "status"})
 
 
 @dataclass(frozen=True)
@@ -25,8 +31,13 @@ class TaskGraph:
     reported rather than trusted.
     """
 
+    top_level_entries: list[tuple[str, str]] = field(default_factory=list)
+    task_headers: list[str] = field(default_factory=list)
+    properties: dict[str, list[str]] = field(default_factory=dict)
     subtasks: dict[str, list[str]] = field(default_factory=dict)
     commands: dict[str, list[str]] = field(default_factory=dict)
+    command_forms: dict[str, list[str]] = field(default_factory=dict)
+    command_modifiers: dict[str, list[str]] = field(default_factory=dict)
     silent: set[str] = field(default_factory=set)
 
 
@@ -66,14 +77,15 @@ def parse_taskfile(source: str) -> TaskGraph:
 
     Deliberately hand-rolled rather than YAML-parsed so callers can run under a
     bare interpreter. Only what can carry or hide a command is modelled:
-    ``task:``/``deps:`` edges, ``cmds:`` shell strings, block scalars, and the
-    ``silent:`` flag.
+    top-level semantics, ``task:``/``deps:`` edges, executable
+    ``cmds:``/``preconditions:``/``status:`` lists, block scalars, and the
+    ``silent:`` flag. Declarative lists remain data.
     """
 
     graph = TaskGraph()
     inside_tasks = False
     current: str | None = None
-    in_deps_block = False
+    active_property: str | None = None
 
     lines = source.splitlines()
     index = 0
@@ -88,9 +100,21 @@ def parse_taskfile(source: str) -> TaskGraph:
         stripped = line.strip()
 
         if indentation == 0:
-            inside_tasks = stripped == "tasks:"
+            top_level_match = re.fullmatch(
+                r"(?P<key>[A-Za-z][\w-]*):(?:\s*(?P<value>.*))?",
+                stripped,
+            )
+            if top_level_match is None:
+                graph.top_level_entries.append(("<unsupported>", stripped))
+                inside_tasks = False
+            else:
+                key = top_level_match.group("key")
+                raw_value = top_level_match.group("value") or ""
+                value = "" if raw_value.startswith("#") else normalize_command(raw_value)
+                graph.top_level_entries.append((key, value))
+                inside_tasks = key == "tasks" and value == ""
             current = None
-            in_deps_block = False
+            active_property = None
             continue
         if not inside_tasks:
             continue
@@ -102,11 +126,25 @@ def parse_taskfile(source: str) -> TaskGraph:
         )
         if is_header:
             current = stripped[:-1]
+            graph.task_headers.append(current)
+            graph.properties.setdefault(current, [])
             graph.subtasks.setdefault(current, [])
             graph.commands.setdefault(current, [])
-            in_deps_block = False
+            graph.command_forms.setdefault(current, [])
+            graph.command_modifiers.setdefault(current, [])
+            active_property = None
             continue
         if current is None:
+            continue
+
+        if indentation == TASK_PROPERTY_INDENT and (
+            property_match := TASK_PROPERTY.match(stripped)
+        ):
+            active_property = property_match.group(1)
+            graph.properties[current].append(active_property)
+
+        if active_property == "cmds" and indentation > TASK_LIST_ENTRY_INDENT:
+            graph.command_modifiers[current].append(stripped)
             continue
 
         if re.match(r"silent:\s*true", stripped):
@@ -117,21 +155,22 @@ def parse_taskfile(source: str) -> TaskGraph:
             graph.subtasks[current].extend(
                 dependency.strip().strip("\"'") for dependency in match.group(1).split(",")
             )
-            in_deps_block = False
             continue
-        if re.match(r"deps:\s*$", stripped):
-            in_deps_block = True
-            continue
-        if TASK_BLOCK_KEYS.match(stripped):
-            in_deps_block = False
 
-        if match := re.match(r"-?\s*task:\s*([A-Za-z][\w:.-]*)", stripped):
+        if active_property in {"cmds", "deps"} and (
+            match := re.match(r"-?\s*task:\s*([A-Za-z][\w:.-]*)", stripped)
+        ):
+            graph.subtasks[current].append(match.group(1))
+            if active_property == "cmds":
+                graph.command_forms[current].append("task")
+            continue
+        if active_property == "deps" and (
+            match := re.match(r"-\s*([A-Za-z][\w:.-]*)\s*$", stripped)
+        ):
             graph.subtasks[current].append(match.group(1))
             continue
-        if in_deps_block and (match := re.match(r"-\s*([A-Za-z][\w:.-]*)\s*$", stripped)):
-            graph.subtasks[current].append(match.group(1))
-            continue
-        if match := re.match(r"-\s*cmd:\s*(.+)", stripped):
+        if active_property == "cmds" and (match := re.match(r"-\s*cmd:\s*(.+)", stripped)):
+            graph.command_forms[current].append("object")
             command = normalize_command(match.group(1))
             if BLOCK_SCALAR_MARKER.fullmatch(command):
                 command, index = _consume_task_block_scalar(
@@ -144,7 +183,22 @@ def parse_taskfile(source: str) -> TaskGraph:
             else:
                 graph.commands[current].append(normalize_command(command))
             continue
-        if stripped.startswith("- "):
+        if active_property == "preconditions" and (match := re.match(r"-\s*sh:\s*(.+)", stripped)):
+            command = normalize_command(match.group(1))
+            if BLOCK_SCALAR_MARKER.fullmatch(command):
+                command, index = _consume_task_block_scalar(
+                    lines,
+                    index,
+                    indentation,
+                    command,
+                )
+                graph.commands[current].append(command)
+            else:
+                graph.commands[current].append(normalize_command(command))
+            continue
+        if active_property in EXECUTABLE_LIST_PROPERTIES and stripped.startswith("- "):
+            if active_property == "cmds":
+                graph.command_forms[current].append("plain")
             command = normalize_command(stripped[2:])
             if BLOCK_SCALAR_MARKER.fullmatch(command):
                 command, index = _consume_task_block_scalar(

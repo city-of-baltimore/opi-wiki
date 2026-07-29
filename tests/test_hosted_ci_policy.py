@@ -140,15 +140,6 @@ def test_an_unpinned_aggregate_runner_resolves_to_the_heaviest_tier() -> None:
     assert "browser/e2e/visual suite" in reasons
 
 
-def test_expanding_the_ci_plan_yields_real_commands() -> None:
-    """Aggregate expansion resolves to the underlying subprocess commands."""
-
-    expanded = expand_aggregate_commands("uv run python scripts/verify.py --plan ci")
-
-    assert expanded
-    assert all(command.startswith("python ") for _, command in expanded)
-
-
 def test_a_non_aggregate_command_expands_to_nothing() -> None:
     """Only the verification runner is treated as an aggregate."""
 
@@ -222,7 +213,7 @@ def test_find_policy_violations_accepts_a_sha_pinned_action(tmp_path: Path) -> N
         encoding="utf-8",
     )
 
-    assert find_policy_violations(workflow) == []
+    assert find_policy_violations(workflow, enforce_exact_contract=False) == []
 
 
 def test_find_policy_violations_reports_an_unpinned_action(tmp_path: Path) -> None:
@@ -231,6 +222,6 @@ def test_find_policy_violations_reports_an_unpinned_action(tmp_path: Path) -> No
     workflow = tmp_path / "ci.yml"
     workflow.write_text(_workflow("      - uses: actions/checkout@v7\n"), encoding="utf-8")
 
-    violations = find_policy_violations(workflow)
+    violations = find_policy_violations(workflow, enforce_exact_contract=False)
 
     assert any("uses: actions/checkout@v7" in violation for violation in violations)

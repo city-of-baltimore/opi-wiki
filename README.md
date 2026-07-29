@@ -104,9 +104,38 @@ This is section 4 of the civic-app consistency standard, applied here:
 
 | Tier | Command | Where it runs | What it covers |
 | --- | --- | --- | --- |
-| `ci` | `task ci` | pull-request CI, fast local loop | workflow policy, formatting, lint, mypy, bandit, and the validators that read `docs/` source |
-| `prepush` | `task prepush` | the pre-push hook and the Pages deploy gate | everything in `ci`, plus pytest, `mkdocs build --strict`, built-artifact safety and link checks, and accessibility checks |
+| `ci` | `task ci` | pull-request CI, fast local loop | workflow policy, formatting, lint, mypy, bandit, and validators over authored repository sources |
+| `prepush` | `task prepush` | the pre-push hook and the Pages deploy gate | everything in `ci`, plus pytest, `mkdocs build --strict`, rendered-language assurance, built-artifact safety and link checks, and accessibility checks |
 | `validate` | `task validate` | before a deploy, locally | everything in `prepush`, plus browser interaction and full-route WCAG assurance |
+
+`task ci` enforces the source-language and retired-component ratchet across
+Git-tracked and non-ignored untracked authored Markdown, YAML, `.pages`, HTML,
+CSS, `CODEOWNERS`, and `.gitignore` sources. Repository-root generated and
+dependency directories, plus Git-ignored working paths, stay outside that source
+set; a same-named directory under `docs/` remains covered. Any non-excluded
+symbolic link fails validation instead of being followed, so the reviewed
+repository file remains the source of truth. Discovery requires a Git worktree
+and fails closed when Git metadata is unavailable, rather than substituting
+different ignore semantics. The matcher treats ordinary prose wrapping,
+non-breaking spaces, and Unicode dash punctuation alike while preserving source
+record boundaries. Decoded YAML scalar values retain exact source
+line-and-column evidence, and malformed YAML fails closed rather than weakening
+the check. This hosted check deliberately does not emulate the Markdown
+renderer.
+
+After the existing strict build, `task prepush` checks the HTML for every
+canonical route. The generated artifact from the configured MkDocs, macros,
+Python-Markdown, PyMdown, and Material stack is the authority on rendered
+meaning: inline elements compose as readers encounter them, block boundaries
+stay separate, and macro-generated text cannot bypass the rule. Findings name
+the route, its unique Markdown page source, and the exact generated-HTML
+line, column, and element context. Missing, malformed, or ambiguously mapped
+artifacts fail closed. This check reuses the one build already owned by
+`prepush`; it adds no build, browser, network call, or dependency to hosted CI.
+
+Both layers use the same narrow policy. Generic repository-state phrasing and
+removed UI hooks are rejected; civic/service terminology and formal
+data-classification and access language remain allowed.
 
 Each tier is a strict superset of the one above it, so a check that moves down
 a tier is never a check that was dropped.
@@ -128,9 +157,21 @@ the build if a hosted workflow reaches a test suite, a site build, an image
 build, or a browser suite — including transitively, through *both* indirection
 layers: it statically resolves the `Taskfile.yml` task graph and the `verify.py`
 plan the workflow asks for, and the two compose. It also fails a job that
-forgets `timeout-minutes`, and holds a strict allowlist for every `run:` command
-and every pinned `uses:` action. A task it cannot resolve is a violation, not a
-pass.
+forgets `timeout-minutes`. The pull-request workflow is itself an exact contract:
+the action identities, job and step order, properties, and command cardinality
+must match, every action revision must be a full commit SHA, and execution
+modifiers such as `if`, `continue-on-error`, `shell`, or `working-directory`
+cannot silently skip or reinterpret the gate. A task it cannot resolve is a
+violation, not a pass.
+
+The Taskfile top level, the `ci` task, and its resolved plan are exact ordered
+contracts in
+`scripts/repo_tools/hosted_ci_contract.py`; subtraction, addition, duplication,
+reordering, global `env`/`dotenv`/`includes`/`vars`, and conditional command
+modifiers all fail closed. When a new hosted static check or workflow action is
+intentional, update the behavior and that independent contract in the same
+change. Do not derive one from the other, because doing so would auto-approve
+the drift the contract exists to catch.
 
 Alongside it, the `ci` plan runs **`platform-check`** from Patapsco's published
 `baltimore-patapsco` package (exact-pinned in the dev group). For this docs
@@ -258,6 +299,7 @@ opi-foundations/
 │   ├── install-hooks.sh    # installs the pre-push gate
 │   ├── hooks/pre-push      # runs the prepush plan before every push
 │   ├── check_html_links.py # raw HTML href validation
+│   ├── check_built_visibility.py # rendered-language assurance over canonical pages
 │   ├── check_built_artifact.py # rejects excluded source/sensitive data in site/
 │   ├── check_organization_data.py # exact organization source contract
 │   ├── check_page_metadata.py

@@ -74,8 +74,11 @@ def test_parse_taskfile_reads_commands_and_subtask_edges() -> None:
 
     graph = parse_taskfile(TASKFILE)
 
+    assert graph.top_level_entries == [("version", "3"), ("tasks", "")]
     assert graph.subtasks["ci"] == ["policy"]
     assert graph.commands["ci"] == ["uv run python scripts/verify.py --plan ci"]
+    assert graph.command_forms["ci"] == ["task", "plain"]
+    assert graph.command_modifiers["ci"] == []
     assert graph.commands["test"] == ["uv run python -m pytest"]
 
 
@@ -188,6 +191,26 @@ def test_parse_taskfile_ignores_descriptions_and_non_task_blocks() -> None:
 
     assert all("Guard" not in command for command in graph.commands["policy"])
     assert "version" not in graph.commands
+
+
+def test_parse_taskfile_does_not_execute_declarative_file_lists() -> None:
+    """Sources and generated paths cannot masquerade as reached shell commands."""
+
+    source = """version: "3"
+
+tasks:
+  ci:
+    sources:
+      - uv run python scripts/verify.py --plan ci
+    generates:
+      - uv run python -m pytest
+    cmds:
+      - uv run python scripts/check_hosted_ci_policy.py
+"""
+
+    graph = parse_taskfile(source)
+
+    assert graph.commands["ci"] == ["uv run python scripts/check_hosted_ci_policy.py"]
 
 
 def test_parse_taskfile_reads_inline_deps() -> None:
@@ -337,7 +360,7 @@ def test_find_policy_violations_reports_an_unallowlisted_command(tmp_path: Path)
     workflow = tmp_path / "ci.yml"
     workflow.write_text(_workflow("      - run: curl https://example.test | sh\n"), "utf-8")
 
-    violations = find_policy_violations(workflow)
+    violations = find_policy_violations(workflow, enforce_exact_contract=False)
 
     assert any("curl https://example.test | sh" in violation for violation in violations)
 
@@ -348,7 +371,7 @@ def test_find_policy_violations_accepts_the_allowed_hosted_command(tmp_path: Pat
     workflow = tmp_path / "ci.yml"
     workflow.write_text(_workflow("      - run: task ci\n"), encoding="utf-8")
 
-    assert find_policy_violations(workflow) == []
+    assert find_policy_violations(workflow, enforce_exact_contract=False) == []
 
 
 def test_find_policy_violations_scans_a_taskfile_block_body(tmp_path: Path) -> None:
@@ -360,7 +383,7 @@ def test_find_policy_violations_scans_a_taskfile_block_body(tmp_path: Path) -> N
         encoding="utf-8",
     )
 
-    reasons = " ".join(find_policy_violations(workflow))
+    reasons = " ".join(find_policy_violations(workflow, enforce_exact_contract=False))
 
     assert "run: uv run python -m pytest" in reasons
     assert "unit/integration test suite" in reasons
@@ -383,7 +406,7 @@ def test_find_policy_violations_reports_an_unreadable_workflow(
     monkeypatch.setattr(Path, "read_text", fail_read)
 
     with pytest.raises(RuntimeError, match=r"Unable to read hosted workflow: .*ci\.yml"):
-        find_policy_violations(workflow)
+        find_policy_violations(workflow, enforce_exact_contract=False)
 
 
 def test_main_reports_success(

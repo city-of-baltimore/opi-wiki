@@ -2,7 +2,34 @@
 
 from __future__ import annotations
 
+import re
+
 from scripts.repo_tools.taskfile_graph import BLOCK_SCALAR_MARKER, normalize_command
+
+_USES_CONTRACT_LINE = re.compile(
+    r"^(?P<prefix>\s*(?:-\s+)?uses:\s*)(?P<identity>[^@\s]+)@(?P<revision>[^\s]+)$"
+)
+
+
+def project_workflow_contract_lines(source: str) -> tuple[str, ...]:
+    """Return comment-free workflow lines with action revisions normalized.
+
+    Indentation, key order, values, and step order remain exact. Only comments,
+    blank lines, and immutable action revision values are presentation details:
+    the separate SHA check validates each revision while this projection holds
+    action identity and cardinality.
+    """
+
+    projected: list[str] = []
+    for raw_line in source.splitlines():
+        if not raw_line.strip() or raw_line.lstrip().startswith("#"):
+            continue
+        line = raw_line.split(" #", maxsplit=1)[0].rstrip()
+        uses_match = _USES_CONTRACT_LINE.fullmatch(line)
+        if uses_match is not None:
+            line = f"{uses_match.group('prefix')}{uses_match.group('identity')}@<revision>"
+        projected.append(line)
+    return tuple(projected)
 
 
 def extract_run_commands(source: str) -> list[str]:

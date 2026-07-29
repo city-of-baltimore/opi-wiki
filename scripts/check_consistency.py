@@ -17,7 +17,7 @@ ensure_repo_root_on_path()
 def main(argv: Sequence[str] | None = None) -> int:
     """Run consistency checks and return a shell-compatible exit code."""
 
-    from scripts.repo_tools import consistency as consistency_logic
+    from scripts.repo_tools import consistency_scan as consistency_logic
 
     arguments = sys.argv[1:] if argv is None else argv
     try:

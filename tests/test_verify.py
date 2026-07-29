@@ -87,6 +87,7 @@ def test_ci_plan_excludes_the_test_suite_the_build_and_every_built_site_check() 
 
     assert "Running repo automation tests" not in ci_names
     assert "Building MkDocs site with strict validation" not in ci_names
+    assert "Checking built-content visibility" not in ci_names
     assert "Checking built-artifact safety" not in ci_names
     assert "Checking built-site internal links" not in ci_names
     assert "Running accessibility smoke checks" not in ci_names
@@ -185,6 +186,7 @@ def test_prepush_plan_owns_the_tests_the_build_and_the_built_site_checks() -> No
 
     assert "Running repo automation tests" in prepush_names
     assert "Building MkDocs site with strict validation" in prepush_names
+    assert "Checking built-content visibility" in prepush_names
     assert "Checking built-artifact safety" in prepush_names
     assert "Checking built-site internal links" in prepush_names
     assert "Running accessibility smoke checks" in prepush_names
@@ -203,13 +205,19 @@ def test_prepush_runs_pytest_without_a_duplicate_test_pass() -> None:
 def test_built_site_checks_run_right_after_the_strict_build() -> None:
     """Built-site checks need the freshly built site/ directory."""
 
-    step_names = [step.name for step in build_steps(Path("/tmp/example"), plan="prepush")]
+    steps = build_steps(Path("/tmp/example"), python_executable="python", plan="prepush")
+    step_names = [step.name for step in steps]
 
     build_index = step_names.index("Building MkDocs site with strict validation")
-    assert step_names[build_index + 1 : build_index + 3] == [
+    assert step_names[build_index + 1 : build_index + 4] == [
+        "Checking built-content visibility",
         "Checking built-artifact safety",
         "Checking built-site internal links",
     ]
+    assert steps[build_index + 1].command == (
+        "python",
+        "scripts/check_built_visibility.py",
+    )
 
 
 def test_validate_plan_adds_the_browser_assurance_checks() -> None:
@@ -217,6 +225,7 @@ def test_validate_plan_adds_the_browser_assurance_checks() -> None:
 
     validate_names = [step.name for step in build_steps(Path("/tmp/example"), plan="validate")]
 
+    assert "Checking built-content visibility" in validate_names
     assert validate_names[-2:] == [
         "Running browser smoke checks",
         "Running full browser accessibility audit",
