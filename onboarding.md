@@ -195,6 +195,12 @@ reviewed in the pull request.
 
 ## Where to go deeper
 
+- [Product requirements](product/product-requirements.md) — the
+  product boundary, audiences, complete capability contract, and open decisions
+- [User stories](product/user-stories.md) — the reader,
+  contributor, owner, and maintainer journeys the website must support
+- [Technical specification](product/technical-spec.md) — how the current
+  repository, rendering, verification, preview, and publishing boundaries work
 - [README](README.md) — setup, architecture, commands, and repository layout
 - [Contributing](CONTRIBUTING.md) — how to propose and review a change
 - [Maintainer manual](MAINTAINERS.md) — ownership, editorial workflow, and

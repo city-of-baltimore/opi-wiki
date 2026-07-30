@@ -9,6 +9,11 @@ Maintainer: see [`MAINTAINERS.md`](MAINTAINERS.md)
 New to the product or repository? Start with
 [`onboarding.md`](onboarding.md).
 
+The repository product contract lives outside the generated Wiki in
+[Product Requirements](product/product-requirements.md),
+[User Stories](product/user-stories.md), and the
+[Technical Specification](product/technical-spec.md).
+
 ## What this is
 
 A docs-as-code site, written in Markdown, rendered with [MkDocs Material](https://squidfunk.github.io/mkdocs-material/), version-controlled on GitHub, and auto-deployed via GitHub Actions.
@@ -335,10 +340,11 @@ If a page can stay plain Markdown, keep it plain Markdown. Only introduce struct
 opi-foundations/
 ├── AGENTS.md               # standing repo rules
 ├── onboarding.md           # plain-language product and repository overview
+├── product/                # repository-only requirements, stories, and technical specification
 ├── mkdocs.yml              # site-wide MkDocs config
 ├── pyproject.toml          # project metadata + deps (uv / PEP 621)
 ├── uv.lock                 # locked Python dependencies
-├── docs/                   # all content (Markdown)
+├── docs/                   # Wiki publication source and bounded build-only data
 │   ├── .pages              # top-level nav ownership
 │   ├── index.md            # home
 │   ├── index.cards.yml     # shared card-grid data for home

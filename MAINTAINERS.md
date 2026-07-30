@@ -12,7 +12,7 @@ This document is for the OPI Foundations docs maintainer. It describes the role,
 
 1. Translate suggestions and source documents into Markdown that renders cleanly on the site.
 2. Maintain editorial voice consistency across every page.
-3. Run the contribution intake process: triage issues and Google Form submissions, draft changes, route for review, publish.
+3. Run the contribution intake process: triage issues and email requests, draft changes, route for review, publish.
 4. Keep the navigation (`docs/**/.pages`), glossary, and cross-links in sync as content evolves.
 5. Quarterly: audit each page for staleness and route stale pages to their owners for review.
 
@@ -20,14 +20,14 @@ This document is for the OPI Foundations docs maintainer. It describes the role,
 
 | Day | Work |
 |---|---|
-| Monday | Triage new issues + Google Form submissions; respond to acknowledge each within 2 business days |
+| Monday | Triage new issues and email requests; acknowledge each within 2 business days |
 | Tuesday–Thursday | Draft changes in Markdown; open PRs; route to section owners |
-| Friday | Merge reviewed PRs; review metrics (page views, search queries, broken links); plan next week |
+| Friday | Merge reviewed PRs; review freshness and broken-link findings; plan next week. Review usage measures only after product Decision 7 defines them. |
 
 ## The intake funnel
 
 ```
-Issue / Google Form / Comment / Email
+Issue / Pull request / Email
          │
          ▼
   Maintainer triage
@@ -102,6 +102,15 @@ finding.
   layer silently substitutes for the other — owner: OPI wiki maintainers —
   reversible only when one layer is proven to subsume the other without adding
   a build, browser, or network step to hosted CI.
+
+- 2026-07-30 — **[PRODUCT DOCUMENTATION] keep OPI Foundations requirements,
+  user stories, and technical specification in root `product/`** — these are
+  repository governance documents, not reader-facing Wiki content, and keeping
+  them outside `docs/` prevents them from entering the MkDocs artifact or
+  appearing as a fifth OPI product — owner: Executive Director (scope, pending
+  Product Decision 12) and maintainers (maintenance) — reversible through an
+  explicit product decision that defines a reader need and moves links,
+  ownership, and navigation together.
 
 ## Cross-link discipline
 

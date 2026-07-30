@@ -113,6 +113,7 @@ def test_ci_plan_keeps_every_static_check() -> None:
         "Validating brand terms",
         "Checking editorial voice guardrail",
         "Checking page consistency",
+        "Checking product contract links",
         "Checking raw HTML links",
     ]
 

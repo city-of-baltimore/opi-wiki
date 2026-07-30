@@ -84,6 +84,7 @@ EXPECTED_CI_PLAN_COMMANDS = (
     "python scripts/check_brand_terms.py",
     "python scripts/check_style.py",
     "python scripts/check_consistency.py",
+    "python scripts/check_product_contract_links.py",
     "python scripts/check_html_links.py",
 )
 
