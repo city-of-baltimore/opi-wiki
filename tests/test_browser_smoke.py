@@ -69,31 +69,6 @@ def test_source_override_keeps_static_repo_link_without_stats_hook() -> None:
     assert "data-md-component" not in anchor_markup
 
 
-def test_search_toggle_does_not_wait_for_a_navigation(
-    monkeypatch: pytest.MonkeyPatch,
-) -> None:
-    """Opening the in-document search control must remain safe in offline Chromium."""
-
-    page = MagicMock()
-    page.url = "https://city.example/opi-wiki/"
-    search_toggle = MagicMock()
-    search_toggle.count.return_value = 1
-    search_input = MagicMock()
-    result_link = MagicMock()
-    result_link.inner_text.return_value = "CitiStat"
-    result_link.get_attribute.return_value = "what-we-do/programs/citistat/"
-    for locator in (search_toggle, search_input, result_link):
-        locator.first = locator
-    page.locator.side_effect = (search_toggle, search_input, result_link)
-    monkeypatch.setattr(browser_smoke, "navigate_to_ready_page", lambda *_args: [])
-    instant_navigation = MagicMock(return_value=[])
-    monkeypatch.setattr(browser_smoke, "navigate_to_instant_page", instant_navigation)
-
-    assert browser_smoke._check_search_workflow(page, str(page.url), "light") == []
-    search_toggle.click.assert_called_once_with(no_wait_after=True)
-    instant_navigation.assert_called_once()
-
-
 def test_browser_smoke_rejects_a_missing_built_site(tmp_path: Path) -> None:
     """A missing build must fail before a static browser target is created."""
 
@@ -312,7 +287,7 @@ def test_browser_collector_runs_both_color_schemes_and_closes_resources(
     manager = MagicMock()
     manager.__enter__.return_value = playwright
 
-    monkeypatch.setattr(browser_smoke, "_check_mobile_nav_state", lambda *_args: [])
+    monkeypatch.setattr(browser_smoke, "_check_mobile_nav_active_state", lambda *_args: [])
     monkeypatch.setattr(browser_smoke, "_check_table_focus_state", lambda *_args: [])
     monkeypatch.setattr(
         browser_smoke,
@@ -320,13 +295,28 @@ def test_browser_collector_runs_both_color_schemes_and_closes_resources(
         lambda *_args: [],
     )
     monkeypatch.setattr(browser_smoke, "_check_card_focus_state", lambda *_args: [])
+    hero_reflow = MagicMock(return_value=[])
+    monkeypatch.setattr(browser_smoke, "_check_home_hero_reflow_state", hero_reflow)
+    tools_layout = MagicMock(return_value=[])
+    monkeypatch.setattr(
+        browser_smoke,
+        "_check_home_page_tools_layout_state",
+        tools_layout,
+    )
+    tools_focus = MagicMock(return_value=[])
+    monkeypatch.setattr(
+        browser_smoke,
+        "_check_home_page_tools_focus_state",
+        tools_focus,
+    )
     monkeypatch.setattr(browser_smoke, "_check_org_chart_state", lambda *_args: [])
     monkeypatch.setattr(
         browser_smoke,
         "_check_org_chart_after_instant_navigation",
         lambda *_args: [],
     )
-    monkeypatch.setattr(browser_smoke, "_check_search_workflow", lambda *_args: [])
+    semantic_header = MagicMock(return_value=[])
+    monkeypatch.setattr(browser_smoke, "_check_semantic_header", semantic_header)
     create_context = MagicMock(side_effect=browser_smoke.create_browser_context)
     monkeypatch.setattr(browser_smoke, "create_browser_context", create_context)
     target = BrowserTarget("http://example.test/", ("/",))
@@ -348,4 +338,18 @@ def test_browser_collector_runs_both_color_schemes_and_closes_resources(
     assert page.goto.call_count == 15
     assert context.set_default_timeout.call_count == 3
     assert context.close.call_count == 3
+    assert hero_reflow.call_count == 3
+    assert [call.args[1:] for call in hero_reflow.call_args_list] == [
+        ("desktop", 1440),
+        ("reflow-light", 390),
+        ("reflow-light", 320),
+    ]
+    assert [call.args[1:] for call in tools_layout.call_args_list] == [
+        ("desktop", 1440),
+        ("reflow-light", 390),
+        ("reflow-light", 320),
+    ]
+    assert [call.args[1] for call in tools_focus.call_args_list] == ["light", "dark"]
+    page.set_viewport_size.assert_called_once_with({"width": 320, "height": 800})
+    semantic_header.assert_called_once_with(browser, target)
     browser.close.assert_called_once_with()

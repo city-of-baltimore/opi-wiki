@@ -1,0 +1,18 @@
+{#-
+  Material's radio inputs remain the color-scheme state. Their immediate next
+  siblings must stay the visible toggles; OPI makes those siblings native
+  buttons and lets the header controller activate the next radio.
+-#}
+<form class="md-header__option" data-md-component="palette">
+  {% for option in config.theme.palette %}
+    {% set scheme  = option.scheme  | d("default", true) %}
+    {% set primary = option.primary | d("indigo", true) %}
+    {% set accent  = option.accent  | d("indigo", true) %}
+    <input class="md-option" data-md-color-media="{{ option.media }}" data-md-color-scheme="{{ scheme | replace(' ', '-') }}" data-md-color-primary="{{ primary | replace(' ', '-') }}" data-md-color-accent="{{ accent | replace(' ', '-') }}" type="radio" name="__palette" id="__palette_{{ loop.index0 }}" tabindex="-1" aria-hidden="true">
+    {% if option.toggle %}
+      <button class="md-header__button md-icon opi-header__control opi-header__palette" type="button" title="{{ option.toggle.name }}" aria-label="{{ option.toggle.name }}" data-opi-palette-toggle data-opi-palette-target="__palette_{{ loop.index % loop.length }}" hidden>
+        {% include ".icons/" ~ option.toggle.icon ~ ".svg" %}
+      </button>
+    {% endif %}
+  {% endfor %}
+</form>

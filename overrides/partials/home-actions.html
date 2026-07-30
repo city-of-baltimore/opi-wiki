@@ -1,0 +1,41 @@
+{#- Homepage-only contribution tools. Ordinary pages retain Material's
+    dependency-owned actions partial and its compact article treatment. -#}
+{% if page.edit_url %}
+  <nav class="opi-page-tools" aria-labelledby="opi-page-tools-label">
+    <span class="opi-page-tools__label" id="opi-page-tools-label">Page tools</span>
+    <span class="opi-page-tools__actions">
+      {% if "content.action.edit" in features %}
+        <a
+          class="opi-page-tools__link"
+          data-opi-page-tool="edit"
+          href="{{ page.edit_url }}"
+          rel="edit"
+        >
+          <span class="opi-page-tools__icon md-icon" aria-hidden="true">
+            {% set icon = config.theme.icon.edit or "material/file-edit-outline" %}
+            {% include ".icons/" ~ icon ~ ".svg" %}
+          </span>
+          <span>Edit this page</span>
+        </a>
+      {% endif %}
+      {% if "content.action.view" in features %}
+        {% if "/blob/" in page.edit_url %}
+          {% set part = "blob" %}
+        {% else %}
+          {% set part = "edit" %}
+        {% endif %}
+        <a
+          class="opi-page-tools__link"
+          data-opi-page-tool="view"
+          href="{{ page.edit_url | replace(part, 'raw') }}"
+        >
+          <span class="opi-page-tools__icon md-icon" aria-hidden="true">
+            {% set icon = config.theme.icon.view or "material/file-eye-outline" %}
+            {% include ".icons/" ~ icon ~ ".svg" %}
+          </span>
+          <span>View source</span>
+        </a>
+      {% endif %}
+    </span>
+  </nav>
+{% endif %}

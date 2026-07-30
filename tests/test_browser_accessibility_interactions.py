@@ -10,7 +10,7 @@ from scripts.repo_tools.browser_accessibility import _AuditProfile
 def test_mobile_controls_use_pointer_interaction_without_navigation_wait(
     monkeypatch: pytest.MonkeyPatch,
 ) -> None:
-    """Drawer and search toggles should not wait for a navigation they cannot cause."""
+    """Native drawer and search buttons should not wait for navigation."""
 
     monkeypatch.setattr(
         browser_accessibility,

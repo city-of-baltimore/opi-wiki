@@ -1,8 +1,9 @@
-<div class="opi-hero">
-  <div class="opi-hero-eyebrow">Mayor's Office of Performance and Innovation</div>
-  <h1>OPI Foundations</h1>
-  <p>How a modern performance and innovation office runs: its methodology, operating model, strategy, and people.</p>
-</div>
+---
+template: home.html
+hero_title: OPI Foundations
+hero_eyebrow: Mayor's Office of Performance and Innovation
+hero_summary: "How a modern performance and innovation office runs: its methodology, operating model, strategy, and people."
+---
 
 ## Start here
 
@@ -50,7 +51,7 @@ When in doubt, use the clearest full name. Do not use "CAD" for Cross-Agency Del
 ## How this site works
 
 - **Every page is Markdown in a [GitHub repository](https://github.com/city-of-baltimore/opi-wiki).** Every page, and every change to it, has a commit, an author, and a timestamp.
-- **Every page has an "Edit this page" link** at the top right. It opens the source file on GitHub, so anyone with a GitHub account can suggest a change.
+- **Every page offers an edit link** near its opening content. It opens the source file on GitHub, so anyone with a GitHub account can suggest a change.
 - **Suggesting changes is welcome.** See [Contributing](resources/contributing.md) for how to propose edits, file corrections, or request new content.
 
 ## Featured references

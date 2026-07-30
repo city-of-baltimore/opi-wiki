@@ -1,4 +1,4 @@
-/* Material chrome overrides backed by OPI-owned tokens. */
+/* Material chrome overrides backed by OPI-owned civic design tokens. */
 
 .md-header {
   background-color: var(--opi-chrome-bg);
@@ -6,135 +6,388 @@
   box-shadow: 0 1px 0 rgba(0, 0, 0, 0.16);
 }
 
-/* Taller bar to match the civic app lockup proportions (~62px inner). */
 .md-header__inner {
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
+  min-height: 3rem;
+  padding: 0 0.2rem;
 }
 
-.md-header__title {
-  font-weight: 600;
-  letter-spacing: 0.02em;
+/* Every visible header action meets the 44px civic utility-control contract. */
+.opi-header__control {
+  align-items: center;
+  border-radius: 0.2rem;
+  box-sizing: border-box;
+  height: 2.2rem;
+  justify-content: center;
+  margin: 0.1rem;
+  padding: 0.5rem;
+  width: 2.2rem;
 }
 
-/* Civic header lockup: City of Baltimore logo + wordmark + divider + product. */
-.md-header__button.md-logo {
-  padding: 0.2rem 0.4rem;
+html:not(.opi-header-controls-ready) .opi-header__control {
+  display: none;
 }
 
-.md-header__button.md-logo img,
-.md-header__button.md-logo svg {
-  height: 2.9rem;
+.opi-header-controls-ready .opi-header__control:not([hidden]) {
+  display: inline-grid;
+}
+
+.opi-header__control:hover,
+.opi-header__brand:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  opacity: 1;
+}
+
+.opi-header__control:focus-visible,
+.opi-header__control.focus-visible,
+.opi-header__brand:focus-visible,
+.opi-header__brand.focus-visible {
+  border-radius: 0.2rem;
+  outline: 3px solid var(--opi-gold);
+  outline-offset: 2px;
+}
+
+.opi-header-controls-ready .opi-header__fallback-control {
+  display: none !important;
+}
+
+/* Material owns the fallback controls until OPI's adapter is fully ready. */
+.opi-header__fallback-control {
+  box-sizing: border-box;
+  display: inline-grid !important;
+  height: 2.2rem;
+  margin: 0.1rem;
+  padding: 0.5rem;
+  width: 2.2rem;
+}
+
+.no-js .opi-header__fallback-search {
+  display: none !important;
+}
+
+/* One complete, home-linked civic lockup at every width. */
+.md-header__title.opi-header__brand {
+  align-items: center;
+  color: #ffffff;
+  display: flex;
+  flex-grow: 1;
+  gap: 0.5rem;
+  height: auto;
+  line-height: normal;
+  margin: 0 0.2rem;
+  min-height: 2.2rem;
+  min-width: 0;
+  padding: 0 0.2rem;
+  text-decoration: none;
+}
+
+.opi-header__seal {
+  align-items: center;
+  display: flex;
+  flex: 0 0 auto;
+  height: 2rem;
+  justify-content: center;
+  width: 2rem;
+}
+
+.opi-header__seal img,
+.opi-header__seal svg {
+  display: block;
+  height: 100%;
   width: auto;
 }
 
-.md-header__lockup {
-  display: flex;
-  align-items: center;
-  gap: 0.85rem;
-  min-width: 0;
+.md-header__wordmark,
+.md-header__product {
+  color: #ffffff;
+  line-height: 1.05;
+  white-space: nowrap;
+}
+
+.md-header__wordmark,
+.md-header__divider {
+  display: none;
 }
 
 .md-header__wordmark {
-  font-weight: 800;
   font-size: 1.35rem;
-  line-height: 1.05;
-  color: #ffffff;
-  white-space: nowrap;
+  font-weight: 800;
 }
 
 .md-header__divider {
-  flex-shrink: 0;
   align-self: stretch;
-  width: 1px;
-  min-height: 2.2rem;
   background-color: rgba(255, 255, 255, 0.36);
+  flex-shrink: 0;
+  min-height: 2.2rem;
+  width: 1px;
 }
 
 .md-header__product {
-  min-width: 0;
-  overflow: hidden;
-  font-weight: 650;
-  font-size: 1.35rem;
-  line-height: 1.05;
-  color: #ffffff;
-  text-overflow: ellipsis;
-  white-space: nowrap;
+  font-size: 0.9rem;
+  font-weight: 700;
 }
 
-/* Scale the lockup down on smaller viewports, then drop the wordmark. */
-@media (max-width: 1000px) {
-  .md-header__button.md-logo img,
-  .md-header__button.md-logo svg {
-    height: 2.5rem;
+@media (max-width: 374px) {
+  .opi-header__seal {
+    display: none;
   }
 
-  .md-header__wordmark,
+  .md-header__title.opi-header__brand {
+    gap: 0;
+    margin-inline: 0.1rem;
+  }
+
+  .md-header__product {
+    white-space: normal;
+  }
+}
+
+@media (min-width: 600px) {
+  .md-header__inner {
+    min-height: 3.2rem;
+  }
+
+  .opi-header__seal {
+    height: 2.5rem;
+    width: 2.5rem;
+  }
+
   .md-header__product {
     font-size: 1.15rem;
   }
 }
 
-@media (max-width: 600px) {
-  .md-header__wordmark,
-  .md-header__divider {
-    display: none;
+@media (min-width: 60em) {
+  .opi-header__search,
+  .opi-header__fallback-search {
+    display: none !important;
   }
 }
 
-.md-tabs {
-  background-color: var(--opi-chrome-bg);
+@media (min-width: 76.25em) {
+  .md-header__inner {
+    min-height: 3.6rem;
+  }
+
+  .opi-header__menu,
+  .opi-header__fallback-drawer {
+    display: none !important;
+  }
+
+  .md-header__title.opi-header__brand {
+    gap: 0.85rem;
+    margin-inline-start: 0.2rem;
+    margin-inline-end: 0.4rem;
+  }
+
+  .opi-header__seal {
+    height: 2.9rem;
+    width: 2.9rem;
+  }
+
+  .md-header__wordmark,
+  .md-header__divider {
+    display: block;
+  }
+
+  .md-header__product {
+    font-size: 1.35rem;
+    font-weight: 650;
+  }
 }
 
-.md-tabs__link {
-  opacity: 0.85;
-  font-weight: 500;
+/* Native mobile search close plus a presentation-only desktop search icon. */
+.md-search {
+  --opi-surface-focus: #5f4d86;
 }
 
-.md-tabs__link--active,
-.md-tabs__link:hover {
+[data-md-color-scheme="slate"] .md-search {
+  --opi-surface-focus: var(--opi-gold);
+}
+
+.opi-search__decorative,
+.opi-search__close {
+  align-items: center;
+  box-sizing: border-box;
+  height: 2.2rem;
+  justify-content: center;
+  margin: 0;
+  position: absolute;
+  top: 0.1rem;
+  width: 2.2rem;
+  z-index: 3;
+}
+
+[dir="ltr"] .opi-search__decorative,
+[dir="ltr"] .opi-search__close {
+  left: 0.1rem;
+}
+
+[dir="rtl"] .opi-search__decorative,
+[dir="rtl"] .opi-search__close {
+  right: 0.1rem;
+}
+
+.opi-search__decorative {
+  display: none;
+  pointer-events: none;
+}
+
+.opi-search__fallback-close {
+  border-radius: 0.2rem;
+  cursor: pointer;
+  display: grid;
+}
+
+.opi-search__native-close {
+  display: none;
+}
+
+.opi-header-controls-ready .opi-search__fallback-close {
+  display: none;
+}
+
+.opi-header-controls-ready .opi-search__native-close {
+  border-radius: 0.2rem;
+  cursor: pointer;
+  display: grid;
+}
+
+.opi-search__close:hover {
+  background-color: var(--opi-nav-accent-bg);
   opacity: 1;
-  color: var(--opi-link-hover);
 }
 
-.md-nav__link {
-  color: var(--opi-text);
+.opi-search__close:focus-visible,
+.opi-search__close.focus-visible,
+.md-search__options .md-icon:focus-visible,
+.md-search__options .md-icon.focus-visible {
+  outline: 3px solid var(--opi-surface-focus);
+  outline-offset: -3px;
 }
 
-.md-nav__link--passed {
-  color: var(--opi-text-muted);
+[dir="ltr"] .md-search__input {
+  padding-left: 2.8rem;
 }
 
-.md-nav--primary .md-nav__item--active > .md-nav__link,
-.md-nav--primary .md-nav__item--active > .md-nav__link code,
-.md-nav__item--active > .md-nav__link,
-.md-nav__item--active > .md-nav__link code,
-.md-nav__link--active,
-.md-nav__link--active code,
-.md-nav__link:hover,
-.md-nav__link:focus-visible {
-  color: var(--opi-nav-accent);
+[dir="rtl"] .md-search__input {
+  padding-right: 2.8rem;
 }
 
-.md-nav--primary .md-nav__item--active > .md-nav__link {
-  background-color: var(--opi-nav-accent-bg);
+@media (min-width: 60em) {
+  .md-search__form {
+    height: 2.2rem;
+  }
+
+  .md-search__inner {
+    padding-block: 0.1rem;
+  }
+
+  .opi-search__fallback-close,
+  .opi-header-controls-ready .opi-search__native-close {
+    display: none;
+  }
+
+  .opi-search__decorative {
+    display: grid;
+  }
+
+  [dir="ltr"] .md-search__input {
+    padding-left: 2.2rem;
+  }
+
+  [dir="rtl"] .md-search__input {
+    padding-right: 2.2rem;
+  }
+
+  .md-search__output {
+    top: 2.3rem;
+  }
 }
 
-.md-nav--primary .md-nav__link:focus-visible {
-  background-color: var(--opi-nav-accent-bg);
-  outline: 2px solid currentcolor;
-  outline-offset: -2px;
+/* The drawer keeps Material's navigation, with an explicit native close. */
+.md-sidebar--primary {
+  --opi-surface-focus: #5f4d86;
 }
 
-.md-nav__title {
-  color: var(--opi-heading);
+[data-md-color-scheme="slate"] .md-sidebar--primary {
+  --opi-surface-focus: var(--opi-gold);
 }
 
-.md-footer {
+.opi-drawer__close {
+  align-items: center;
+  border-radius: 0.2rem;
+  box-sizing: border-box;
+  cursor: pointer;
+  height: 2.2rem;
+  justify-content: center;
+  margin: 0;
+  padding: 0.5rem;
+  position: absolute;
+  top: 0.3rem;
+  width: 2.2rem;
+  z-index: 2;
+}
+
+.opi-drawer__fallback-close {
+  display: grid !important;
+}
+
+.opi-drawer__native-close {
+  display: none !important;
+}
+
+.opi-header-controls-ready .opi-drawer__fallback-close {
+  display: none !important;
+}
+
+.opi-header-controls-ready .opi-drawer__native-close {
+  display: grid !important;
+}
+
+[dir="ltr"] .opi-drawer__close {
+  right: 0.3rem;
+}
+
+[dir="rtl"] .opi-drawer__close {
+  left: 0.3rem;
+}
+
+.opi-drawer__close:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.opi-drawer__close:focus-visible,
+.opi-drawer__close.focus-visible {
+  outline: 3px solid var(--opi-gold);
+  outline-offset: -3px;
+}
+
+.md-nav--primary .opi-drawer__title {
   background-color: var(--opi-chrome-bg);
-  border-top: 3px solid var(--opi-chrome-border);
+  color: #ffffff;
+  cursor: default;
+  position: relative;
 }
 
-.md-footer-meta {
-  background-color: #000000;
+.opi-drawer__name {
+  display: block;
+  overflow: hidden;
+  padding-inline-end: 2.4rem;
+  text-overflow: ellipsis;
+}
+
+@media (min-width: 76.25em) {
+  .opi-drawer__fallback-close,
+  .opi-header-controls-ready .opi-drawer__native-close {
+    display: none !important;
+  }
+}
+
+@media (forced-colors: active) {
+  .opi-header__control:focus-visible,
+  .opi-header__brand:focus-visible,
+  .opi-search__close:focus-visible,
+  .opi-drawer__close:focus-visible {
+    outline: 3px solid CanvasText;
+  }
 }
