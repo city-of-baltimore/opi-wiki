@@ -412,7 +412,90 @@ supplement `task validate`; they do not replace its release evidence.
   evidence — owner: OPI Wiki product owner (design sign-off) and maintainers
   (implementation) — retire when navigation and search are traversable,
   operable, and visibly focused by keyboard at desktop and reflow widths, with
-  before/after evidence and automated regression proof.
+  before/after evidence and automated regression proof — **retired 2026-07-29:**
+  the semantic civic header slice added native controls, responsive focus
+  management, before/after evidence, and the focused browser proof.
+
+- 2026-07-29 — **[HEADER] keep Material's hidden toggles as canonical state
+  behind native civic controls** — Material 9.7.7's drawer, search, scroll lock,
+  deep links, and presentation consume the existing checkbox and palette-radio
+  state; the OPI adapter projects native activation into those controls and
+  derives ARIA, inertness, breakpoint roles, route handoff, and focus behavior
+  from the same state; this fixes semantics without forking the renderer or
+  creating a second open/closed model — owner: OPI Wiki product owner (visible
+  design) and maintainers (implementation) — reversible when Material exposes
+  equivalent native-control hooks or a replacement proves the same
+  controller-ready progressive enhancement, keyboard-native no-JavaScript
+  top-level navigation, deliberate search suppression without its runtime,
+  instant-navigation, focus, and search behavior.
+
+- 2026-07-29 — **[BROWSER ASSURANCE] prove shared header behavior once at the
+  cheapest authoritative layer** — one tiny rendered contract holds structure,
+  names, relationships, and the search-disabled guard; one enhanced browser
+  journey holds keyboard, geometry, focus, exact breakpoint handoffs, palette,
+  search-shortcut, and repeated instant navigation; one JavaScript-disabled
+  context holds the visible, keyboard-native top-level navigation fallback,
+  rejects hidden drawer focus stops, and proves safe search suppression; the
+  existing route-wide axe matrix retains contrast, semantics, and reflow
+  coverage, while its route loop checks only the active-link treatment that
+  actually varies — owner: OPI Wiki maintainers — reversible only to a
+  measured proof with equal risk coverage and no slower duplicated route or
+  color-scheme work.
+
+- 2026-07-29 — **[BROWSER ASSURANCE] sample responsive focus after the
+  controller's complete frame sequence** — browser rendering evaluates
+  media-query changes before animation-frame callbacks, so a two-frame test
+  wait registered before the change can resolve immediately before the
+  controller's own second frame; issue the breakpoint requests back-to-back,
+  drain three frames, and assert only the final user-visible focus outcome
+  because the browser may coalesce the intermediate rendering state — owner:
+  OPI Wiki maintainers — reversible when the controller no longer uses a
+  two-frame focus handoff or exposes a narrower completion signal.
+
+- 2026-07-29 — **[HOME HERO] scale the homepage heading fluidly without changing
+  its content hierarchy** — Material's inherited emergency word wrapping split
+  “Foundations” inside the word when fixed 48px type met the hero's 240px
+  content measure at 320px; a bounded `clamp()` keeps the existing 48px desktop
+  direction and gives the word enough room at reflow widths without changing
+  the copy, padding, gradient, eyebrow, summary, or global heading system — one
+  existing browser-smoke gate measures the rendered word fragments and hero
+  bounds at 320px, 390px, and 1440px without adding a context, route crawl, or
+  gate — owner: OPI Wiki product owner (visible design) and maintainers
+  (implementation) — reversible only to a replacement that preserves intact
+  heading words, viewport bounds, and the existing desktop composition.
+
+- 2026-07-29 — **[HOME ACTIONS] retire the hero-overlay placement hold** — the
+  product owner selected a labeled neutral utility row beneath the hero, so the
+  earlier hold's retirement condition is met in the same slice that proves
+  accessible naming, keyboard focus, target size, contrast, and responsive
+  placement — owner: OPI Wiki product owner and maintainers — reversible only
+  if a later owner decision explicitly reopens placement and preserves those
+  guarantees.
+
+- 2026-07-29 — **[HOME TOOLS] place contribution utilities in a labeled
+  homepage-only row beneath the hero** — Material inserts its compact icon-only
+  actions before page content; the homepage's negative hero offset therefore
+  pulled those actions onto a dark gradient, where their placement, contrast,
+  target size, and purpose were weak. A per-page Material template now keeps
+  ordinary article actions unchanged while presenting native “Edit this page”
+  and “View source” links on the neutral surface immediately below the hero.
+  The links continue to derive from MkDocs' canonical edit URL; no repository
+  URL, duplicate state, global dependency override, or DOM-moving JavaScript
+  was introduced — owner: OPI Wiki product owner (visible design) and
+  maintainers (implementation) — reversible to another owner-approved
+  treatment only when it retains correct destinations, visible naming,
+  keyboard order and focus, 44px targets, scheme contrast, and proven
+  320px/390px/1440px placement.
+
+- 2026-07-29 — **[BROWSER ASSURANCE] confine fractional-edge tolerance to the
+  post-navigation content target** — in Chromium's JavaScript-disabled 320 ×
+  800 journey, native focus scrolling placed the new 44px edit target at
+  756.203–800.203 CSS pixels after reaching it from the exact top-level header
+  sequence. A one-pixel tolerance recognizes subpixel layout without accepting
+  a hidden target; every header focus stop retains exact viewport containment
+  — owner: OPI Wiki maintainers — reversible when browser focus scrolling
+  produces integer edge geometry or the post-navigation target no longer sits
+  at the document's scroll boundary.
 
 ### Which gate runs what
 

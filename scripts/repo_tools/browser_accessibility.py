@@ -183,7 +183,7 @@ def _check_mobile_interactive_states(
     if issues:
         return issues
 
-    drawer_toggle = page.locator('label.md-header__button[for="__drawer"]').first
+    drawer_toggle = page.locator("[data-opi-drawer-open]").first
     drawer_toggle.click(no_wait_after=True)
     issues.extend(
         _format_axe_violations(
@@ -204,7 +204,7 @@ def _check_mobile_interactive_states(
         overlay_bounds["y"] + (overlay_bounds["height"] / 2),
     )
 
-    search_toggle = page.locator('label.md-header__button[for="__search"]').first
+    search_toggle = page.locator("[data-opi-search-open]").first
     search_toggle.click(no_wait_after=True)
     issues.extend(
         _format_axe_violations(

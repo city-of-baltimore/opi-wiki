@@ -302,6 +302,14 @@ behavior together.
 - Keep landing-page card content in neighboring `*.cards.yml` files and render it through the shared `card_grid_from(...)` macro.
 - Keep repeated structured page data in neighboring `*.data.yml` files when one source needs to drive multiple rendered sections.
 - Keep shared brand CSS split by responsibility under `docs/assets/stylesheets/` so tokens, Material chrome, reusable components, and page-specific presentation do not drift together.
+- Keep drawer/search interaction in
+  `docs/assets/javascripts/header-controls.js` and palette projection in
+  `docs/assets/javascripts/palette-controls.js`. Material's hidden
+  drawer/search inputs and palette radios remain the only state; the
+  controllers may derive accessibility and focus behavior from them, but they
+  must not create parallel state. Without JavaScript at reflow widths, expose
+  Material's existing top-level tabs and remove the off-canvas drawer from
+  focus order; search stays hidden because its results runtime is unavailable.
 - Run `task prepush` before merging structural or config changes.
 - Treat `site/` as generated output, not source.
 
@@ -342,13 +350,20 @@ opi-foundations/
 │   └── assets/
 │       ├── stylesheets/tokens.css          # shared design tokens + Material bridges
 │       ├── stylesheets/base.css            # typography and content primitives
-│       ├── stylesheets/material-chrome.css # header, nav, tabs, footer
+│       ├── stylesheets/material-chrome.css # civic header and modal surfaces
+│       ├── stylesheets/navigation-chrome.css # tabs, nav states, and footer
 │       ├── stylesheets/components.css      # cards, page headers, reusable shared UI
 │       ├── stylesheets/org-chart.css       # responsive leadership chart
 │       ├── stylesheets/breadcrumbs.css     # breadcrumb presentation
 │       ├── stylesheets/home.css            # homepage-only presentation
-│       └── images/               # logos and page images
-├── overrides/              # breadcrumbs + table keyboard-accessibility hook
+│       ├── javascripts/
+│       │   ├── header-controls.js          # drawer/search focus + state adapter
+│       │   └── palette-controls.js         # Material palette control adapter
+│       └── images/                         # logos and page images
+├── overrides/              # bounded Material chrome + template hooks
+│   ├── main.html           # shared breadcrumb and generated-region behavior
+│   ├── home.html           # homepage-only semantic hero and content opening
+│   └── partials/           # header, home tools, nav, search, palette, source
 ├── Taskfile.yml            # the shared task surface (ci/prepush/validate + helpers)
 ├── scripts/
 │   ├── verify.py           # runner + three-tier check plan (ci/prepush/validate)

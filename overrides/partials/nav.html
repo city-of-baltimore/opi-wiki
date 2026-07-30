@@ -1,0 +1,41 @@
+{#-
+  OPI's bounded root-navigation override adds a stable controlled region and a
+  native mobile close button while retaining a label close until the controller
+  is ready. The recursive navigation remains Material-owned. Keep the remaining
+  structure in sync with upstream partials/nav.html.
+-#}
+{% import "partials/nav-item.html" as item with context %}
+{% set class = "md-nav md-nav--primary" %}
+{% if "navigation.tabs" in features %}
+  {% set class = class ~ " md-nav--lifted" %}
+{% endif %}
+{% if "toc.integrate" in features %}
+  {% set class = class ~ " md-nav--integrated" %}
+{% endif %}
+<nav id="opi-primary-navigation-links" class="{{ class }}" aria-label="{{ lang.t('nav') }}" data-md-level="0">
+  <div class="md-nav__title opi-drawer__title">
+    <a href="{{ config.extra.homepage | d(nav.homepage.url, true) | url }}" title="{{ config.site_name | e }} home" class="md-nav__button md-logo" aria-label="{{ config.site_name }} home" data-md-component="logo">
+      {% include "partials/logo.html" %}
+    </a>
+    <span class="opi-drawer__name">{{ config.site_name }}</span>
+    <label class="md-nav__button md-icon opi-drawer__close opi-drawer__fallback-close" for="__drawer" aria-label="Close navigation">
+      {% set icon = config.theme.icon.close or "material/close" %}
+      {% include ".icons/" ~ icon ~ ".svg" %}
+    </label>
+    <button class="md-nav__button md-icon opi-drawer__close opi-drawer__native-close" type="button" aria-label="Close navigation" aria-controls="opi-primary-navigation" data-opi-drawer-close>
+      {% set icon = config.theme.icon.close or "material/close" %}
+      {% include ".icons/" ~ icon ~ ".svg" %}
+    </button>
+  </div>
+  {% if config.repo_url %}
+    <div class="md-nav__source">
+      {% include "partials/source.html" %}
+    </div>
+  {% endif %}
+  <ul class="md-nav__list" data-md-scrollfix>
+    {% for nav_item in nav.items %}
+      {% set path = "__nav_" ~ loop.index %}
+      {{ item.render(nav_item, path, 1) }}
+    {% endfor %}
+  </ul>
+</nav>
