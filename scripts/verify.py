@@ -191,6 +191,10 @@ def build_steps(
             command=(python, "scripts/check_consistency.py"),
         ),
         VerifyStep(
+            name="Checking product contract links",
+            command=(python, "scripts/check_product_contract_links.py"),
+        ),
+        VerifyStep(
             name="Checking raw HTML links",
             command=(python, "scripts/check_html_links.py"),
         ),

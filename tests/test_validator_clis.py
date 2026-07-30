@@ -38,6 +38,12 @@ VALIDATOR_CASES = (
         "Platform guard evidence validated.",
     ),
     (
+        "scripts.check_product_contract_links",
+        "scripts.repo_tools.product_contract_links",
+        "find_product_contract_link_issues",
+        "Product contract links validated.",
+    ),
+    (
         "scripts.check_style",
         "scripts.repo_tools.style",
         "find_style_issues",
