@@ -541,7 +541,7 @@ failure by design.
 The `ci` plan also runs Patapsco's published `platform-check`
 (`baltimore-patapsco`, exact-pinned in the dev group), which checks the shared
 app marker, task surface, tooling configuration, and pre-push hook that apply
-to this docs site. Keep **both**. `platform-check` 0.4.5 does
+to this docs site. Keep **both**. `platform-check` 0.4.8 does
 not expand `verify.py` plans (it expands `npm` and `.sh` bodies, but not a
 Python plan module), has no job-timeout rule, and has no `run:`/`uses:`
 allowlist, so it returns "conforms" for all five violations the local
@@ -550,7 +550,7 @@ Taskfile forms the local guard missed — a block-list `deps:` and a `silent: tr
 task — which are now fixed and regression-tested here, and the 0.4.3 sweep found
 a third — a new `.sh` in the task chain that runs a forbidden command directly —
 which is also fixed and regression-tested here. The measured gaps, and the
-condition for deleting the local guard — still unmet at 0.4.5 — are recorded in
+condition for deleting the local guard — still unmet at 0.4.8 — are recorded in
 the "Two checkers" note in that module's docstring.
 
 `scripts/check_platform_guard_evidence.py` runs before `platform-check` in the
@@ -566,8 +566,16 @@ must pass before the change can be pushed or deployed.
   reversible when Patapsco catches the complete matrix and the local guard is
   retired under its documented condition.
 
+- 2026-07-30 — **[PLATFORM GATE] adopt Patapsco 0.4.8 after differential
+  re-measurement** — the candidate's unmodified control conformed, and the
+  seven-test matrix proved that the local guard still catches all five injected
+  violations while the shared checker misses them; retain both checkers while
+  accepting 0.4.8's stronger structural pre-push and manifest-aware npm
+  resolution — owner: OPI wiki maintainers — reversible by repinning the prior
+  release and restoring its lock and evidence claims in one reviewed slice.
+
 - 2026-07-29 — **[DOCS-SITE PORTS] bridge the shared enforcement gap locally**
-  — Patapsco 0.4.5 treats `docs-site` as a non-application kind, so its registry
+  — Patapsco 0.4.8 treats `docs-site` as a non-application kind, so its registry
   slot and compose/loopback rules do not run here; the fast browser-readiness
   contract therefore pins the slot-8 MkDocs default and task command, exact
   Compose service, container bind, and Docker startup and health behavior —

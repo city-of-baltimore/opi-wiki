@@ -239,7 +239,7 @@ Alongside it, the `ci` plan runs **`platform-check`** from Patapsco's published
 site, it checks the shared app marker, task surface, tooling configuration, and
 pre-push hook, and it remains the authority on rules that span sibling repos.
 
-One boundary is explicit: Patapsco 0.4.5 classifies `docs-site` outside its
+One boundary is explicit: Patapsco 0.4.8 classifies `docs-site` outside its
 port-owning application kinds, so its slot and compose/loopback rules do not run
 here. The fast repository browser-readiness contract fills that measured gap:
 it pins the slot-8 MkDocs default and task command, the exact loopback Compose
@@ -248,18 +248,19 @@ the estate-wide rule still belongs in Patapsco, followed by a re-measured pin
 bump here; until then, both checks are required.
 
 The two are complementary, not redundant, and the split is measured rather than
-assumed — re-measured against `platform-check` 0.4.5, which expands `npm` and
-`.sh` bodies but still treats a **Python plan module** as an opaque leaf. It
-therefore does not see this repo's second indirection layer
+assumed — re-measured against `platform-check` 0.4.8. That release includes the
+structural pre-push and manifest-aware npm resolution introduced in 0.4.6, but
+still treats a **Python plan module** as an opaque leaf. It therefore does not
+see this repo's second indirection layer
 (`verify.py --plan ci`), including when that layer is reached through
 `scripts/verify.sh`; it also has no job-timeout rule, and its `run:` coverage is
-a denylist rather than an allowlist. 0.4.5 still misses all five injected cases
+a denylist rather than an allowlist. 0.4.8 still misses all five injected cases
 in their ordinary form; a piped `curl … | sh` is caught only when the URL
 happens to end in `.sh`, via the unresolvable-delegation rule rather than any
 `curl` denylist entry. Those five, and the forms this repo's own guard misses in the
 other direction, are documented in the "Two checkers" note in
 `scripts/check_hosted_ci_policy.py`, with the condition for retiring the local
-guard — which 0.4.5 does not meet.
+guard — which 0.4.8 does not meet.
 
 `scripts/check_platform_guard_evidence.py` runs immediately before the shared
 gate. It keeps Patapsco exact-pinned, isolates its Dependabot pull requests from
