@@ -183,10 +183,13 @@ def _fallback_keyboard_issues(page: Any) -> list[str]:
               !!rect &&
               rect.width > 0 &&
               rect.height > 0 &&
-              rect.left >= 0 &&
-              rect.right <= innerWidth &&
-              rect.top >= 0 &&
-              rect.bottom <= innerHeight,
+              // Focus scrolling can settle a fraction of one CSS pixel at the
+              // document edge. This tolerance is intentionally confined to
+              // the post-navigation content target; header stops stay exact.
+              rect.left >= -1 &&
+              rect.right <= innerWidth + 1 &&
+              rect.top >= -1 &&
+              rect.bottom <= innerHeight + 1,
           };
         }
         """

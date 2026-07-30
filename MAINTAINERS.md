@@ -464,15 +464,38 @@ supplement `task validate`; they do not replace its release evidence.
   (implementation) — reversible only to a replacement that preserves intact
   heading words, viewport bounds, and the existing desktop composition.
 
-- 2026-07-29 — **[HOME ACTIONS] hold the overlaid edit/view actions for a
-  product placement decision** — the hero's negative top margin places
-  Material's muted page actions over its dark gradient, where the icon-only
-  treatment is visually weak; recoloring alone would not resolve placement or
-  discoverability, so it is a separate visible-design slice rather than a
-  typography companion fix — owner: OPI Wiki product owner (placement decision)
-  and maintainers (implementation) — retire this hold when the owner selects a
-  deliberate utility treatment and the slice preserves and proves accessible
-  naming, keyboard focus, target size, contrast, and responsive placement.
+- 2026-07-29 — **[HOME ACTIONS] retire the hero-overlay placement hold** — the
+  product owner selected a labeled neutral utility row beneath the hero, so the
+  earlier hold's retirement condition is met in the same slice that proves
+  accessible naming, keyboard focus, target size, contrast, and responsive
+  placement — owner: OPI Wiki product owner and maintainers — reversible only
+  if a later owner decision explicitly reopens placement and preserves those
+  guarantees.
+
+- 2026-07-29 — **[HOME TOOLS] place contribution utilities in a labeled
+  homepage-only row beneath the hero** — Material inserts its compact icon-only
+  actions before page content; the homepage's negative hero offset therefore
+  pulled those actions onto a dark gradient, where their placement, contrast,
+  target size, and purpose were weak. A per-page Material template now keeps
+  ordinary article actions unchanged while presenting native “Edit this page”
+  and “View source” links on the neutral surface immediately below the hero.
+  The links continue to derive from MkDocs' canonical edit URL; no repository
+  URL, duplicate state, global dependency override, or DOM-moving JavaScript
+  was introduced — owner: OPI Wiki product owner (visible design) and
+  maintainers (implementation) — reversible to another owner-approved
+  treatment only when it retains correct destinations, visible naming,
+  keyboard order and focus, 44px targets, scheme contrast, and proven
+  320px/390px/1440px placement.
+
+- 2026-07-29 — **[BROWSER ASSURANCE] confine fractional-edge tolerance to the
+  post-navigation content target** — in Chromium's JavaScript-disabled 320 ×
+  800 journey, native focus scrolling placed the new 44px edit target at
+  756.203–800.203 CSS pixels after reaching it from the exact top-level header
+  sequence. A one-pixel tolerance recognizes subpixel layout without accepting
+  a hidden target; every header focus stop retains exact viewport containment
+  — owner: OPI Wiki maintainers — reversible when browser focus scrolling
+  produces integer edge geometry or the post-navigation target no longer sits
+  at the document's scroll boundary.
 
 ### Which gate runs what
 

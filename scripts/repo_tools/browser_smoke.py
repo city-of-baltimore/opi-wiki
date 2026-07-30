@@ -7,6 +7,14 @@ from typing import Any
 from urllib.parse import urljoin
 
 from scripts.repo_tools.browser_header import _check_semantic_header
+from scripts.repo_tools.browser_home_states import (
+    _check_card_focus_state,
+    _check_home_hero_reflow_state,
+)
+from scripts.repo_tools.browser_home_tools import (
+    _check_home_page_tools_focus_state,
+    _check_home_page_tools_layout_state,
+)
 from scripts.repo_tools.browser_resources import BrowserResourceObserver
 from scripts.repo_tools.browser_routes import (
     BrowserTarget,
@@ -17,8 +25,6 @@ from scripts.repo_tools.browser_routes import (
     resolved_browser_target,
 )
 from scripts.repo_tools.browser_smoke_states import (
-    _check_card_focus_state,
-    _check_home_hero_reflow_state,
     _check_mobile_nav_active_state,
     _check_org_chart_state,
     _check_table_focus_state,
@@ -130,6 +136,7 @@ def _crawl_canonical_routes(browser: Any, target: BrowserTarget) -> list[str]:
             issues.extend(navigation_issues)
             if route == "/" and not navigation_issues:
                 issues.extend(_check_home_hero_reflow_state(page, "desktop", 1440))
+                issues.extend(_check_home_page_tools_layout_state(page, "desktop", 1440))
     finally:
         context.close()
     return issues
@@ -242,6 +249,7 @@ def _collect_browser_smoke_issues(
                     issues.extend(navigation_issues)
                     if not navigation_issues:
                         issues.extend(_check_card_focus_state(page, scheme))
+                        issues.extend(_check_home_page_tools_focus_state(page, scheme))
                         if scheme == "light":
                             issues.extend(
                                 _check_home_hero_reflow_state(
@@ -250,9 +258,23 @@ def _collect_browser_smoke_issues(
                                     390,
                                 )
                             )
+                            issues.extend(
+                                _check_home_page_tools_layout_state(
+                                    page,
+                                    "reflow-light",
+                                    390,
+                                )
+                            )
                             page.set_viewport_size({"width": 320, "height": 800})
                             issues.extend(
                                 _check_home_hero_reflow_state(
+                                    page,
+                                    "reflow-light",
+                                    320,
+                                )
+                            )
+                            issues.extend(
+                                _check_home_page_tools_layout_state(
                                     page,
                                     "reflow-light",
                                     320,
