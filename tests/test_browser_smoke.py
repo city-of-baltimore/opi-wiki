@@ -297,6 +297,18 @@ def test_browser_collector_runs_both_color_schemes_and_closes_resources(
     monkeypatch.setattr(browser_smoke, "_check_card_focus_state", lambda *_args: [])
     hero_reflow = MagicMock(return_value=[])
     monkeypatch.setattr(browser_smoke, "_check_home_hero_reflow_state", hero_reflow)
+    tools_layout = MagicMock(return_value=[])
+    monkeypatch.setattr(
+        browser_smoke,
+        "_check_home_page_tools_layout_state",
+        tools_layout,
+    )
+    tools_focus = MagicMock(return_value=[])
+    monkeypatch.setattr(
+        browser_smoke,
+        "_check_home_page_tools_focus_state",
+        tools_focus,
+    )
     monkeypatch.setattr(browser_smoke, "_check_org_chart_state", lambda *_args: [])
     monkeypatch.setattr(
         browser_smoke,
@@ -332,6 +344,12 @@ def test_browser_collector_runs_both_color_schemes_and_closes_resources(
         ("reflow-light", 390),
         ("reflow-light", 320),
     ]
+    assert [call.args[1:] for call in tools_layout.call_args_list] == [
+        ("desktop", 1440),
+        ("reflow-light", 390),
+        ("reflow-light", 320),
+    ]
+    assert [call.args[1] for call in tools_focus.call_args_list] == ["light", "dark"]
     page.set_viewport_size.assert_called_once_with({"width": 320, "height": 800})
     semantic_header.assert_called_once_with(browser, target)
     browser.close.assert_called_once_with()

@@ -16,9 +16,9 @@ screen-reader clarity, and the quality of alternative text.
 | Promise | How it is proven |
 | --- | --- |
 | Pages use meaningful headings, landmarks, names, and native HTML semantics. | Every generated page receives static semantic checks and a full-browser axe scan. |
-| Text, controls, links, and focus indicators remain perceivable in both color schemes. | Axe evaluates every canonical route in light and dark modes; focused header controls, tabs, cards, tables, and the skip link receive browser checks. |
-| The site works without a mouse. | Dedicated browser checks prove the skip link and scrollable tables. One focused header journey proves Tab order, Enter and Space activation, modal focus containment, Escape, focus return, global search shortcut behavior, and instant-navigation handoff. |
-| Content reflows without page-level horizontal scrolling, and the homepage hero title wraps only between words. | Every canonical route is measured at a 320 CSS-pixel viewport in both color schemes. A focused homepage check also measures the hero at 320px, 390px, and 1440px and fails when a heading word fragments across rendered lines. Data tables may scroll inside their labeled region, as WCAG permits. |
+| Text, controls, links, and focus indicators remain perceivable in both color schemes. | Axe evaluates every canonical route in light and dark modes; focused header controls, tabs, cards, tables, homepage page tools, and the skip link receive browser checks. |
+| The site works without a mouse. | Dedicated browser checks prove the skip link, scrollable tables, and the homepage's labeled edit and source links. One focused header journey proves Tab order, Enter and Space activation, modal focus containment, Escape, focus return, global search shortcut behavior, and instant-navigation handoff. |
+| Content reflows without page-level horizontal scrolling, and the homepage opening remains intact. | Every canonical route is measured at a 320 CSS-pixel viewport in both color schemes. A focused homepage check measures the hero and page-tools row at 320px, 390px, and 1440px; it fails when a heading word fragments, the row separates from the hero, controls fall outside the row, or a target becomes smaller than 44 × 44 CSS pixels. Data tables may scroll inside their labeled region, as WCAG permits. |
 | Responsive and interactive states receive the same standard as a direct page load. | The browser audit covers desktop, 320px reflow, the open mobile navigation drawer, open search, and pages reached through instant navigation. |
 | Accessibility failures stop a release. | `task prepush` holds generated semantic checks; `task validate` adds the real-browser matrix and must pass before deployment. |
 
@@ -40,16 +40,18 @@ its behavior cannot change silently. The matrix covers:
 - one JavaScript-disabled header context proving visible, keyboard-native
   top-level navigation with no hidden drawer focus stops, while search stays
   suppressed without its results runtime; and
-- one homepage hero check that reuses already-loaded 320px, 390px, and 1440px
-  states to measure viewport bounds and whole-word heading reflow.
+- one homepage-opening check that reuses already-loaded 320px, 390px, and
+  1440px states to measure hero reflow, page-tools placement, labeled native
+  links, 44px targets, and canonical edit/source destinations; it also checks
+  the page-tools focus treatment once in each color scheme.
 
 Shared header behavior runs once. The route-wide axe matrix still owns
 semantics, contrast, and reflow across every page and both color schemes; the
 mobile route matrix checks only the route- and scheme-specific active-link
 treatment. Repeating drawer and search behavior per route or theme would spend
-more time without proving a different risk. The hero's geometry is
-scheme-independent, so its focused width checks also run once rather than
-duplicating the full route and color-scheme matrix.
+more time without proving a different risk. Homepage geometry is
+scheme-independent, so its focused width checks run once; only the
+scheme-specific page-tools focus treatment runs in both light and dark modes.
 
 Run the complete local proof with:
 

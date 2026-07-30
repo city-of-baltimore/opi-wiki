@@ -360,8 +360,10 @@ opi-foundations/
 │       │   ├── header-controls.js          # drawer/search focus + state adapter
 │       │   └── palette-controls.js         # Material palette control adapter
 │       └── images/                         # logos and page images
-├── overrides/              # bounded Material chrome + shared template hooks
-│   └── partials/           # header, root nav, search, palette, source overrides
+├── overrides/              # bounded Material chrome + template hooks
+│   ├── main.html           # shared breadcrumb and generated-region behavior
+│   ├── home.html           # homepage-only semantic hero and content opening
+│   └── partials/           # header, home tools, nav, search, palette, source
 ├── Taskfile.yml            # the shared task surface (ci/prepush/validate + helpers)
 ├── scripts/
 │   ├── verify.py           # runner + three-tier check plan (ci/prepush/validate)

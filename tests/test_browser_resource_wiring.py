@@ -84,6 +84,16 @@ def test_smoke_attaches_resource_monitoring_to_canonical_and_interaction_context
     )
     monkeypatch.setattr(browser_smoke, "_check_card_focus_state", lambda *_args: [])
     monkeypatch.setattr(browser_smoke, "_check_home_hero_reflow_state", lambda *_args: [])
+    monkeypatch.setattr(
+        browser_smoke,
+        "_check_home_page_tools_layout_state",
+        lambda *_args: [],
+    )
+    monkeypatch.setattr(
+        browser_smoke,
+        "_check_home_page_tools_focus_state",
+        lambda *_args: [],
+    )
     monkeypatch.setattr(browser_smoke, "_check_org_chart_state", lambda *_args: [])
     monkeypatch.setattr(
         browser_smoke,

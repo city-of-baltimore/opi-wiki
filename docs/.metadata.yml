@@ -7,3 +7,5 @@ defaults:
 pages:
   index.md:
     owner: OPI Director's Office
+    last_reviewed: 2026-07-29
+    change_log: Kept the homepage content intact while moving edit and source links into a labeled, responsive page-tools row beneath the hero.

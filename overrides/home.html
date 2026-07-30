@@ -1,0 +1,18 @@
+{% extends "main.html" %}
+
+{#- The homepage owns a hero-and-tools opening that ordinary content pages do
+    not share. Keep reader-facing copy in docs/index.md metadata and preserve
+    Material's standard post-content includes below the authored page body. -#}
+{% block content %}
+  {% include "partials/tags.html" %}
+  <header class="opi-hero">
+    <p class="opi-hero-eyebrow">{{ page.meta.hero_eyebrow }}</p>
+    <h1>{{ page.meta.hero_title }}</h1>
+    <p class="opi-hero-summary">{{ page.meta.hero_summary }}</p>
+  </header>
+  {% include "partials/home-actions.html" %}
+  {{ page.content }}
+  {% include "partials/source-file.html" %}
+  {% include "partials/feedback.html" %}
+  {% include "partials/comments.html" %}
+{% endblock %}
