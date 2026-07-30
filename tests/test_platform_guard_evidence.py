@@ -36,7 +36,7 @@ def test_pin_bump_fails_until_differential_evidence_moves_with_it(tmp_path: Path
 def test_non_exact_patapsco_requirement_is_rejected(tmp_path: Path) -> None:
     """Ranges would make the measured checker version nondeterministic."""
 
-    _write_contract(tmp_path, dependency="baltimore-patapsco>=0.4.5")
+    _write_contract(tmp_path, dependency="baltimore-patapsco>=0.4.8")
 
     issues = find_platform_guard_evidence_issues(tmp_path)
 

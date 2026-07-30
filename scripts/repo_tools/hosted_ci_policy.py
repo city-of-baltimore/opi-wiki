@@ -43,14 +43,14 @@ dependencies so it can run under a bare interpreter.
 Two checkers, on purpose
 ------------------------
 The ``ci`` plan runs **both** this module and Patapsco's ``platform-check``
-(``baltimore-patapsco==0.4.5``). That is not duplication left by accident. The
-consolidation to the shared checker has now been attempted and measured four
-times — against 0.4.0, 0.4.1, 0.4.3, and now 0.4.5 — and no release yet
+(``baltimore-patapsco==0.4.8``). That is not duplication left by accident. The
+consolidation to the shared checker has now been attempted and measured five
+times — against 0.4.0, 0.4.1, 0.4.3, 0.4.5, and now 0.4.8 — and no release yet
 subsumes this guard. Each violation below was injected on its own and both
-checkers were run. As measured against **0.4.5**, this module exits 1 on all
+checkers were run. As measured against **0.4.8**, this module exits 1 on all
 five; ``platform-check`` returns ``conforms`` / exit 0 on all five:
 
-1. **A forbidden command inside a ``verify.py`` plan.** *(0.4.5: still missed.)*
+1. **A forbidden command inside a ``verify.py`` plan.** *(0.4.8: still missed.)*
    ``platform-check`` expands ``npm`` script bodies and ``*.sh`` bodies, but a
    **Python plan module** is still an opaque leaf: ``uv run python
    scripts/verify.py --plan ci`` is matched against the forbidden-pattern list
@@ -58,39 +58,39 @@ five; ``platform-check`` returns ``conforms`` / exit 0 on all five:
    build`` — to the ``ci`` tier of :func:`scripts.verify.build_steps` therefore
    passes it while the hosted lane really runs that step. Same shape as the
    ``task --dry`` bug: green while vacuous.
-2. **The same gap reached through a shell script.** *(0.4.5: still missed.)*
-   0.4.5 *does* read ``.sh`` bodies, but ``scripts/verify.sh`` is a two-line
+2. **The same gap reached through a shell script.** *(0.4.8: still missed.)*
+   0.4.8 *does* read ``.sh`` bodies, but ``scripts/verify.sh`` is a two-line
    wrapper whose payload is ``uv run python scripts/verify.py "$@"`` — so the
    expansion runs, walks one hop, and lands on the same Python-module wall.
    Pointing the ``ci`` task at ``./scripts/verify.sh --plan prepush`` is missed
-   for that reason. Two control injections re-confirmed the mechanism on 0.4.5:
+   for that reason. Two control injections re-confirmed the mechanism on 0.4.8:
    a ``.sh`` whose body contains ``mkdocs build`` *directly* is caught, and so
-   is ``bash -c "uv run mkdocs build --strict"`` (0.4.5 unwraps ``bash -c``), so
+   is ``bash -c "uv run mkdocs build --strict"`` (0.4.8 unwraps ``bash -c``), so
    the expander works and the wall is specifically the plan module. Reaching
    ``verify.py --plan prepush`` *directly* from the ``ci`` task is missed too,
    which rules out indirection depth as the cause.
-3. **A missing job ``timeout-minutes``** (invariant 4). *(0.4.5: still missed.)*
+3. **A missing job ``timeout-minutes``** (invariant 4). *(0.4.8: still missed.)*
    No equivalent rule.
-4. **An unallowlisted ``run:`` command** (invariant 1). *(0.4.5: structurally
+4. **An unallowlisted ``run:`` command** (invariant 1). *(0.4.8: structurally
    still missed; one worked example now caught.)* ``platform-check`` matches a
    *forbidden* pattern list, which is a denylist; it still has no allowlist, so
-   an arbitrary new command passes — measured on 0.4.5, ``run: echo "…"`` and
+   an arbitrary new command passes — measured on 0.4.8, ``run: echo "…"`` and
    ``run: node -e "…"`` both return ``conforms``. The worked example, a piped
    ``curl … | sh``, still stands, but only in its ordinary form. Measured on
-   0.4.5:
+   0.4.8:
 
    - ``curl -fsSL https://example.com/install | sh``     -> ``conforms``, missed
    - ``curl -fsSL https://example.com/install.sh | sh``  -> ERROR
 
    The second is not a denylist hit. ``FORBIDDEN_PATTERNS`` contains no ``curl``
-   entry through 0.4.5. The URL simply *ends in* ``.sh``, so the resolver
+   entry through 0.4.8. The URL simply *ends in* ``.sh``, so the resolver
    treats it as a script reference, fails to find it in the repository, and
    ``_frontier_findings``
    (added in 0.4.2) reports unresolvable delegation as blocking. Change the
    suffix and it passes again — which is incidental coverage of one spelling,
    not coverage of the command.
 5. **An unpinned ``uses:`` reference** (invariant 1) — e.g.
-   ``actions/checkout@main`` instead of a SHA. *(0.4.5: still missed.)* No
+   ``actions/checkout@main`` instead of a SHA. *(0.4.8: still missed.)* No
    equivalent rule.
 
 The traffic runs both ways, which is the argument for keeping both rather than
@@ -108,10 +108,12 @@ consolidation, and they share one root cause: **the shared resolver has no way
 to expand a Python aggregate.** 0.4.3 rewrote that resolver — it parses
 arguments positionally, resolves helper call sites, and unwraps ``bash -c`` —
 but those changes address shell and ``npm`` argv shapes, not a Python aggregate.
-The 0.4.5 rule and task-graph modules are byte-identical to 0.4.3, so the root
-cause is untouched. The retirement condition for this module is
-therefore unchanged and still unmet — when ``platform-check`` can resolve a plan
-module (see the suggestion in ``docs/`` and the PR that introduced this note: a
+0.4.6 materially strengthened structural pre-push validation and
+workspace-aware npm resolution; 0.4.7 and 0.4.8 advanced the platform BOM.
+None adds a Python aggregate contract, and the 0.4.8 differential confirms the
+root cause is untouched. The retirement condition for this module is therefore
+unchanged and still unmet — when ``platform-check`` can resolve a plan module
+(see the suggestion in ``docs/`` and the PR that introduced this note: a
 declared ``[tasks] aggregate`` entry in ``.baltimore-lab-app.toml`` naming the
 module and the flag that selects a tier, so the resolver can import it and
 enumerate the tier's commands), re-run the injection matrix and delete this
