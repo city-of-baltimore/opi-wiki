@@ -607,8 +607,8 @@ Acceptance criteria:
 ### Story: Preserve the source-placement boundary
 
 *As a maintainer, I want one limited organization model and enforced artifact
-boundary so that the website explains OPI without becoming a personnel,
-contact, or staff-working-material system.*
+boundary so that the website explains OPI without becoming a personnel-record
+or contact-list system.*
 
 Current state: **Available now.**
 
@@ -619,8 +619,9 @@ Acceptance criteria:
 2. Renderers use the permitted staff fields; the non-rendered team
    `primary_value` remains in source until its named owner resolves its
    disposition.
-3. Staff operating material and personnel records remain in their owning City
-   systems, and the bounded Handbook stays excluded from generated output.
+3. The Staff Guide publishes reviewed office-wide guidance; personnel records,
+   contact lists, controlled forms, and case-specific HR material remain in
+   their owning City systems.
 4. The artifact check enforces its named patterns, with owner review covering
    contextual placement that automation cannot infer.
 

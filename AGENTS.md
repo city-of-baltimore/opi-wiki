@@ -224,9 +224,11 @@ Hold these lines:
 - **Every tracked file must satisfy the repository source contract.** Keep
   personnel records, contact data, and controlled working copies in the City
   system that owns them; keep source-only data out of the generated artifact.
-- `docs/how-we-work/handbook/` is a bounded source-only holding area while its
-  owners decide the long-term City-system destination. MkDocs excludes it from
-  generated output. Do not expand it without recorded owner review.
+- `docs/how-we-work/handbook/` is the Staff Guide for onboarding, working norms,
+  performance expectations, and leadership commitments. Publish material there
+  only after the named section owner reviews it for staff use. Keep personnel
+  records, contact data, controlled forms, and case-specific HR material in the
+  City system that owns them.
 - **Do not delete substantive site content without recorded owner review.**
   Safe cleanup is duplicate boilerplate, stale scaffolding, or superseded copies
   where one canonical source of truth remains.

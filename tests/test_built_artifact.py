@@ -38,16 +38,14 @@ def test_built_artifact_rejects_yaml_pin_and_phone_output(tmp_path: Path) -> Non
     ]
 
 
-def test_built_artifact_rejects_excluded_handbook_output(tmp_path: Path) -> None:
-    """Source-only handbook pages must not reappear in the generated site."""
+def test_built_artifact_accepts_staff_guide_output(tmp_path: Path) -> None:
+    """Rendered Staff Guide pages should pass artifact safety checks."""
 
     handbook_page = tmp_path / "how-we-work" / "handbook" / "index.html"
     handbook_page.parent.mkdir(parents=True)
-    handbook_page.write_text("<h1>Handbook</h1>", encoding="utf-8")
+    handbook_page.write_text("<h1>Staff Guide</h1>", encoding="utf-8")
 
-    assert find_built_artifact_issues(tmp_path) == [
-        "how-we-work/handbook/index.html: excluded source path entered the built artifact"
-    ]
+    assert find_built_artifact_issues(tmp_path) == []
 
 
 def test_built_artifact_requires_a_built_site(tmp_path: Path) -> None:

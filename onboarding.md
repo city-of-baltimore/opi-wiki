@@ -61,7 +61,7 @@ The website has four main sections:
 | Section | What a reader finds there |
 | --- | --- |
 | [About Us](docs/about-us/index.md) | OPI's mission, identity, culture, letters, teams, and roles |
-| [How We Work](docs/how-we-work/index.md) | The operating model, work cycle, and organization |
+| [How We Work](docs/how-we-work/index.md) | The operating model, work cycle, organization, and Staff Guide |
 | [What We Do](docs/what-we-do/index.md) | Services, programs, and products |
 | [Resources](docs/resources/index.md) | Shared definitions, playbooks, contribution guidance, and supporting references |
 

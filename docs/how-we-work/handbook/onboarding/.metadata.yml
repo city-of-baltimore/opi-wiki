@@ -1,7 +1,7 @@
 defaults:
   owner: Chief of Staff
-  last_reviewed: 2026-07-27
-  next_review: 2027-01-31
-  change_log: Normalized review metadata and clarified the audiences for onboarding materials.
+  last_reviewed: 2026-08-05
+  next_review: 2026-11-05
+  change_log: Separated the new-employee orientation from the manager-owned checklist and removed unverified process details.
 
 pages:
