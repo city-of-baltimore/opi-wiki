@@ -1,5 +1,5 @@
 defaults:
   owner: Chief of Staff
-  last_reviewed: 2026-07-27
-  next_review: 2027-01-31
-  change_log: Normalized review metadata and clarified review and authorization language on operations pages.
+  last_reviewed: 2026-08-05
+  next_review: 2026-11-05
+  change_log: Replaced overlapping policy-like pages with concise staff expectations and manager commitments.

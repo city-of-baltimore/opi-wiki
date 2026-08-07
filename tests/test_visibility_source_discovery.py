@@ -133,14 +133,14 @@ def test_visibility_labels_respect_git_ignored_working_files(tmp_path: Path) -> 
     assert not any(issue.startswith("ignored/") for issue in issues)
 
 
-def test_visibility_labels_discover_source_only_markup_surfaces(tmp_path: Path) -> None:
-    """Root docs, excluded handbook pages, and overrides all need lexical coverage."""
+def test_visibility_labels_discover_noncanonical_markup_surfaces(tmp_path: Path) -> None:
+    """Repository notes and overrides need lexical coverage alongside rendered pages."""
 
     init_git_repo(tmp_path)
     docs_dir = tmp_path / "docs"
-    handbook = docs_dir / "how-we-work" / "handbook" / "notes.md"
-    handbook.parent.mkdir(parents=True)
-    handbook.write_text(
+    product_note = tmp_path / "product" / "notes.md"
+    product_note.parent.mkdir(parents=True)
+    product_note.write_text(
         "Use the internal [documentation](guide.md).\n",
         encoding="utf-8",
     )
@@ -166,8 +166,7 @@ def test_visibility_labels_discover_source_only_markup_surfaces(tmp_path: Path) 
     assert len(issues) == 4
     assert any(issue.startswith("README.md:1:") and "public site" in issue for issue in issues)
     assert any(
-        issue.startswith("docs/how-we-work/handbook/notes.md:1:")
-        and "internal documentation" in issue
+        issue.startswith("product/notes.md:1:") and "internal documentation" in issue
         for issue in issues
     )
     assert any(

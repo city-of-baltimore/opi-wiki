@@ -57,22 +57,24 @@ When in doubt, model the voice on the [Letters from the Director](docs/about-us/
 - Briefs and website material
 - Methods, service definitions, and the Glossary
 - Letters from the Director
+- Staff Guide material on onboarding, working norms, performance expectations,
+  and leadership commitments
 - Staff roster and role-summary index (names, working titles, team
   assignments, reporting relationships, and short role summaries)
 
 **Long-term City-system homes (SharePoint and other owning systems):**
 
-- Onboarding working materials
 - Full Position Descriptions (with compensation or classification details)
 - Performance records and signed evaluations
 - MAPS Benefits guides
-- Staff SOPs and intake queues
+- Controlled HR forms, case-specific guidance, and staff intake records
 - Telework Policy (formal HR doc)
 
-The existing `docs/how-we-work/handbook/` files are a bounded holding area while
-their owners decide the long-term City-system destination. They remain tracked
-source, and MkDocs excludes them from the generated site. Do not add new staff
-working material to that folder.
+The Staff Guide under `docs/how-we-work/handbook/` is part of the rendered Wiki.
+The named section owner must review each page before it is published. The guide
+may explain shared expectations and routines. Personnel records, contact lists,
+controlled forms, and case-specific HR material stay in their owning City
+systems.
 
 When placement is unclear, **ask the section owner before adding the material**.
 Every tracked file participates in repository review even when it sits outside
@@ -126,14 +128,14 @@ Navigation is local to each section. Keep `mkdocs.yml` focused on site-wide
 runtime settings, and update the nearest `docs/**/.pages` file whenever a page
 is added, removed, renamed, or moved.
 
-The existing Handbook folder is the only bounded holding area for onboarding and
-staff operating material pending owner placement; do not expand it. Personnel
-records and contact data belong in their owning City systems. The staff
-directory is limited to names, working titles, team assignments, reporting
-relationships, and short role summaries. Do not add payroll identifiers,
-compensation, classifications, personnel status, phone numbers, individual
-email addresses, or controlled working copies through navigation, redirects,
-raw data files, or generated assets.
+The Staff Guide contains reviewed onboarding, working norms, performance
+expectations, and leadership commitments. Personnel records and contact data
+belong in their owning City systems. The staff directory is limited to names,
+working titles, team assignments, reporting relationships, and short role
+summaries. Do not add payroll identifiers, compensation, classifications,
+personnel status, phone numbers, individual email addresses, or controlled
+working copies through navigation, redirects, raw data files, or generated
+assets.
 
 ## Section map: folder ↔ navigation label
 
@@ -154,7 +156,7 @@ mapping in mind when locating content, and keep the `.pages` title, the
 | `what-we-do/programs/citistat/` | CitiStat | A **program** supported by all teams — its own section, not a team. |
 | `what-we-do/products/` | Products | Tools and platforms OPI builds, including the Baltimore Intelligence Center. |
 | `what-we-do/services/` | Services | The five services OPI delivers, including **Cross-Agency Delivery** — a service, not a staffed team. |
-| `how-we-work/` | How We Work | Operating model and leadership structure. The source-only Handbook holding area is excluded from the generated site pending an owner placement decision. |
+| `how-we-work/` | How We Work | Operating model, leadership structure, and the Staff Guide for OPI staff. |
 
 ## Content taxonomy guardrails
 

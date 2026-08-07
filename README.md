@@ -18,22 +18,21 @@ The repository product contract lives outside the generated Wiki in
 
 A docs-as-code site, written in Markdown, rendered with [MkDocs Material](https://squidfunk.github.io/mkdocs-material/), version-controlled on GitHub, and auto-deployed via GitHub Actions.
 
-This repository contains the source for the OPI Foundations website. Its staff
-directory is deliberately limited to City staff names, working titles, team
-assignments, reporting relationships, and short role summaries. Full position
-descriptions, detailed performance records, contact records, payroll data, and
-personnel-status fields belong in Baltimore City's SharePoint and other systems
-of record. The existing Handbook sources are a bounded holding area while OPI
-decides their long-term City-system destination; MkDocs excludes them from the
-generated site.
+This repository contains the source for the OPI Foundations website. Its Staff
+Guide covers onboarding, day-to-day working norms, performance expectations,
+and leadership commitments. The staff directory is deliberately limited to
+City staff names, working titles, team assignments, reporting relationships,
+and short role summaries. Full position descriptions, detailed performance
+records, contact records, payroll data, and personnel-status fields belong in
+Baltimore City's SharePoint and other systems of record.
 
 One strict organization loader accepts only the documented fields and feeds the
 org chart, Team and Roles tables, and inline role lookups from the same immutable
 record. Hosted CI rejects unknown fields, missing or mistyped values, duplicate
 YAML keys, and drift from the canonical four-team structure. The built-artifact
-check separately rejects structured YAML, Handbook paths, phone-number patterns,
-and PIN labels in generated output. Section-owner review remains responsible for
-contextual placement that automation cannot infer.
+check separately rejects structured YAML, phone-number patterns, and PIN labels
+in generated output. Section-owner review remains responsible for contextual
+placement that automation cannot infer.
 
 ## Local development
 
@@ -300,10 +299,10 @@ behavior together.
 
 - Keep global site config in `mkdocs.yml`.
 - Keep navigation local to the content in `docs/**/.pages`.
-- Treat `docs/how-we-work/handbook/` as a bounded holding area pending an
-  owner decision on its long-term City-system destination. Do not add new staff
-  working material there. Keep personnel records and contact data in their
-  owning City systems.
+- Use `docs/how-we-work/handbook/` for reviewed guidance on onboarding, working
+  norms, performance expectations, and leadership commitments. Keep personnel
+  records, contact data, controlled forms, and case-specific HR material in
+  their owning City systems.
 - Open each content page with one `{{ page_header(...) }}` call directly under the `# H1`, not a hand-built stack of blockquote, bold kicker, restated bold title, and italic tagline. The macro renders an optional `category`, `summary`, and `tagline`. Keep the title as a single `# H1` — never restate it as a bold paragraph. Section `index.md` landing pages stay on a plain `>` blockquote summary.
 - Keep landing-page card content in neighboring `*.cards.yml` files and render it through the shared `card_grid_from(...)` macro.
 - Keep repeated structured page data in neighboring `*.data.yml` files when one source needs to drive multiple rendered sections.
@@ -328,10 +327,10 @@ Use the smallest shared pattern that matches the page need:
 - `*.cards.yml` carries repeated landing-page card content and should render only through `card_grid_from(...)`.
 - `*.data.yml` carries structured page-specific source data when one file needs to drive multiple rendered sections, tables, charts, or lists.
 
-MkDocs excludes `_data/`, the Handbook source folder, `*.cards.yml`, and
-`*.data.yml` from the generated site. These files are build inputs, not
-downloadable pages; the pre-push built-artifact safety check enforces that
-separation and rejects visible PIN or phone-number fields in the built artifact.
+MkDocs excludes `_data/`, `*.cards.yml`, and `*.data.yml` from the generated
+site. These files are build inputs, not downloadable pages; the pre-push
+built-artifact safety check enforces that separation and rejects visible PIN or
+phone-number fields in the built artifact.
 
 If a page can stay plain Markdown, keep it plain Markdown. Only introduce structured data when it removes repeated source-of-truth content or repeated shared UI markup.
 
@@ -381,7 +380,7 @@ opi-foundations/
 │   ├── hooks/pre-push      # runs the prepush plan before every push
 │   ├── check_html_links.py # raw HTML href validation
 │   ├── check_built_visibility.py # rendered-language assurance over canonical pages
-│   ├── check_built_artifact.py # rejects excluded source/sensitive data in site/
+│   ├── check_built_artifact.py # rejects structured source/sensitive fields in site/
 │   ├── check_organization_data.py # exact organization source contract
 │   ├── check_page_metadata.py
 │   ├── check_brand_terms.py

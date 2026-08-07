@@ -103,13 +103,12 @@ does not establish product decision rights.
 excludes:
 
 - `_data/`;
-- `how-we-work/handbook/`;
 - `*.cards.yml`; and
 - `*.data.yml`.
 
 Those files may drive build-time rendering, but they are not downloadable
-pages. The Handbook is the one bounded source-only holding area while its
-owners decide a long-term City-system destination.
+pages. Pages under `docs/how-we-work/handbook/` are part of the rendered Wiki
+and follow the same navigation and metadata rules as other content pages.
 
 Root `product/` is excluded by location, not by a fragile ignore pattern. The
 repository-wide authored-source discovery still sees root Markdown for the
@@ -377,7 +376,6 @@ it does not make tracked content safe by default.
 The organization loader enforces an exact schema. The artifact check rejects:
 
 - any YAML file in generated output;
-- generated paths under the excluded Handbook;
 - phone-number patterns; and
 - visible PIN labels.
 
@@ -418,7 +416,7 @@ post-deployment monitor.
 | Missing metadata or overdue review | Fast source gate fails with the page and correction |
 | Navigation, redirect, or internal-link drift | Tests, strict build, or built-link check fails |
 | Macro or template rendering error | Strict MkDocs build fails |
-| Excluded source or named sensitive pattern in `site/` | Artifact safety check fails |
+| Structured YAML or named sensitive pattern in `site/` | Artifact safety check fails |
 | Unexpected static browser request | Hermetic routing returns a local failure and the browser check reports it |
 | Canonical origin or base-path mismatch | URL validation or browser manifest loading fails |
 | Local port or Docker readiness drift | Source contracts, health probe, or focused tests fail |

@@ -1,4 +1,4 @@
-"""Checks that excluded source data does not enter the generated site."""
+"""Checks structured source data and named sensitive fields in generated output."""
 
 from __future__ import annotations
 
@@ -9,7 +9,6 @@ PHONE_NUMBER_RE = re.compile(r"(?<!\d)(?:\+?1[ .-]?)?(?:\(?\d{3}\)?[ .-])\d{3}[ 
 PIN_LABEL_RE = re.compile(r"\bPINs?\b")
 TEXT_OUTPUT_SUFFIXES = frozenset({".html", ".json", ".txt", ".xml"})
 YAML_SUFFIXES = frozenset({".yaml", ".yml"})
-EXCLUDED_OUTPUT_PATH_PREFIXES = ("how-we-work/handbook/",)
 
 
 def find_built_artifact_issues(site_dir: Path) -> list[str]:
@@ -21,11 +20,6 @@ def find_built_artifact_issues(site_dir: Path) -> list[str]:
     issues: list[str] = []
     for built_file in sorted(path for path in site_dir.rglob("*") if path.is_file()):
         relative_file = built_file.relative_to(site_dir)
-        relative_text = relative_file.as_posix()
-        for prefix in EXCLUDED_OUTPUT_PATH_PREFIXES:
-            if relative_text.startswith(prefix):
-                issues.append(f"{relative_file}: excluded source path entered the built artifact")
-                break
         suffix = built_file.suffix.casefold()
 
         if suffix in YAML_SUFFIXES:
