@@ -15,7 +15,6 @@ docs_dir: docs
 # surface. Keep it out of the generated site/ artifact.
 exclude_docs: |
   _data/
-  how-we-work/handbook/
   **/*.cards.yml
   **/*.data.yml
 strict: true

@@ -377,9 +377,10 @@ numbers, individual email addresses, contact-list exports, and controlled
 working copies belong in their owning City systems. The website may explain
 where a record belongs, but it must not publish a convenience copy.
 
-The existing Handbook directory is a bounded, source-only holding area while
-owners decide where its contents belong. It is excluded from the generated
-website and must not become a general storage folder.
+The Staff Guide under `docs/how-we-work/handbook/` contains reviewed guidance on
+onboarding, working norms, performance expectations, and leadership
+commitments. Personnel records, contact lists, controlled forms, signed
+evaluations, and case-specific HR material remain in their owning City systems.
 
 ### Responsive presentation and appearance
 
@@ -456,7 +457,7 @@ unmeasured.
 | Every page has maintenance ownership and a review date. | Source metadata is required; overdue dates stop the source gate. | Metadata is not reader-visible and does not establish business ownership |
 | Readers can propose corrections or report barriers. | Page edit links, email, and the accessibility issue route exist. | The general issue card is not linked, and response outcomes are not measured |
 | The interface has strong automated accessibility assurance. | Static semantics, browser journeys, axe scans, and reflow checks enforce the documented automated contract. | No dated human screen-reader, zoom, or custom text-spacing pass is recorded |
-| Generated output excludes named high-risk source material. | Checks reject Handbook paths, YAML artifacts, phone-number patterns, and PIN labels; owner review governs context. | Automation does not recognize every possible staff record or govern other City systems |
+| Generated output keeps structured source data and named sensitive patterns out. | Checks reject YAML artifacts, phone-number patterns, and PIN labels; owner review governs context. | Automation does not recognize every possible staff record or govern other City systems |
 | Releases are reproducible. | Nested gates build and inspect source-derived output before GitHub Pages publication. | Outside font availability remains a manual visual check, not a release dependency |
 
 ## Nonfunctional requirements

@@ -272,7 +272,7 @@ def test_visibility_label_check_handles_underscore_emphasis(
         (Path("README.md"), "Use the public **site**.\n", "public site"),
         (Path("README.md"), "Use the *public* site.\n", "public site"),
         (
-            Path("docs/how-we-work/handbook/notes.md"),
+            Path("product/notes.md"),
             "Use the internal [documentation](guide.md).\n",
             "internal documentation",
         ),
@@ -289,13 +289,13 @@ def test_visibility_label_check_handles_underscore_emphasis(
         (Path("README.md"), "Use the public&nbsp;site.\n", "public site"),
     ),
 )
-def test_source_only_lexical_projection_closes_inline_markup_bypasses(
+def test_noncanonical_lexical_projection_closes_inline_markup_bypasses(
     tmp_path: Path,
     relative_path: Path,
     text: str,
     expected_label: str,
 ) -> None:
-    """Source-only prose must not hide retired labels behind bounded syntax."""
+    """Repository prose must not hide retired labels behind bounded syntax."""
 
     issues = check_visibility_labels(
         tmp_path / relative_path,

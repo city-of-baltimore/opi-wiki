@@ -24,7 +24,6 @@ from scripts.repo_tools.yaml_semantics import YamlSemanticError, yaml_scalar_pro
 
 REPO_ROOT = Path(__file__).resolve().parents[2]
 DIRECTOR_LETTER_ROOT = Path("docs/about-us/letters-from-the-director")
-SOURCE_ONLY_DOCS_ROOT = Path("docs/how-we-work/handbook")
 _DIRECTOR_LETTER_SOURCE_HEADING_REGIONS = (
     re.compile(
         r"^[ \t]{0,3}#{1,6}[^\S\r\n]+[^\r\n]+[ \t]*\r?$",
@@ -64,10 +63,8 @@ def _needs_source_lexical_projection(path: Path, repo_root: Path) -> bool:
         relative_path = path.relative_to(repo_root)
     except ValueError:
         return False
-    is_canonical_docs_markdown = (
-        path.suffix.casefold() == ".md"
-        and relative_path.is_relative_to(Path("docs"))
-        and not relative_path.is_relative_to(SOURCE_ONLY_DOCS_ROOT)
+    is_canonical_docs_markdown = path.suffix.casefold() == ".md" and relative_path.is_relative_to(
+        Path("docs")
     )
     return not is_canonical_docs_markdown
 

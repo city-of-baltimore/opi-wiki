@@ -1,256 +1,132 @@
-# Performance Standards (Staff)
+# Performance Standards for Staff
 
-{{ page_header(summary="What performance looks like for individual contributors at OPI.", category="SERIES · OPI FOUNDATIONS") }}
+{{ page_header(summary="A plain-language guide for discussing good work, support, and feedback.") }}
 
-For all staff. Eight core dimensions plus role-specific ones, ratings anchored to evidence, and a calibration process built to be fair.
+This guide describes the work habits OPI wants to encourage and gives staff and
+managers a common starting point for feedback. It does not create a rating
+system, disciplinary policy, employment contract, or alternate performance
+process.
 
-EFFECTIVE
-:   July 1, 2026
+City policy, Civil Service requirements, applicable law, official forms, and
+collective bargaining agreements control whenever they differ from this guide.
+Human Resources and labor relations must confirm any use of this page in a
+formal employment decision.
 
-REVIEW
-:   Annual, or as required by operational changes
+## What good work looks like
 
-## Purpose
+### Deliver agreed work
 
-OPI exists to raise Baltimore City’s capacity to deliver. That requires consistent standards for quality, rigor, trust, and follow-through. This guide defines performance expectations for all OPI staff and the process leaders use to assess performance in a fair, evidence-based way.
+Understand the result, owner, priority, and reviewer before doing substantial
+work. Follow through on commitments or say early when the plan needs to change.
 
-This guide complements City performance management and HR procedures. It does not replace required City forms or policies. It provides OPI-specific clarity on how we define excellence and how we calibrate performance across roles.
+Good performance does not mean accepting unlimited work. When priorities
+conflict, ask what should stop, move, or receive less attention.
 
-## The OPI Way
+### Produce reliable work
 
-OPI is not a typical agency. We trust each other, we hold a high bar, and we ship a lot. Our work is used by senior leaders, partner agencies, City staff, and residents. We protect OPI’s credibility through careful work, accurate analysis, clear communication, and documented decisions.
+Check facts, calculations, links, names, permissions, accessibility, and other
+details that affect whether people can trust or use the result.
 
-A few habits carry most of that weight. We anchor ratings to what was delivered, not to opinion. We escalate risk early and close the loop, so there are no surprises. We do not ship work that has not been tested. We document as we go, because anything undocumented is lost the moment someone moves on. And we say the true thing kindly and early.
+Match the review to the risk. A City release, personnel matter, legal document,
+or decision based on sensitive data needs more care than an informal working
+note.
 
-## How to use this guide
+### Use sound judgment
 
-The guide runs across the full performance cycle. It sets priorities and expectations at the start, keeps work visible through quarterly check-ins, brings in partner perspective at the mid-cycle 360-lite, drives the end-of-cycle review, and holds ratings consistent across teams through leadership calibration.
+Distinguish what you know from what you infer. State important limits and
+uncertainty. Ask for review when a decision exceeds your authority or
+expertise. Do not hide a risk to make work appear further along.
 
-One thing to keep in mind throughout: a 3 is the bar. It means strong, reliable work at OPI’s standard. A 4 or a 5 is reserved for performance that clearly exceeds what the role expects and raises the bar for everyone else.
+### Communicate clearly
 
-## Key definitions
+Start with the point the reader needs. Use ordinary language. Name the action
+or decision requested and the person who owns it. Adapt the detail to the
+audience and consequence of the work.
 
-| **Term**           | **Meaning**                                                                                                                                                      |
-|--------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Artifact           | A work product that can be reviewed. Examples: memo, deck, dashboard, dataset, code change, design prototype, runbook, process map, meeting recap, decision log. |
-| Evidence bundle    | A short set of links that prove what was delivered and the quality of the work. Evidence reduces bias and makes calibration fair.                                |
-| Definition of done | The shared checklist for a deliverable. Includes QA, required reviews, documentation, and handoff steps.                                                         |
-| Calibration        | A leadership review to ensure ratings are consistent across teams, roles, and levels, based on evidence and scope.                                               |
-| Role charter       | A one-page agreement that defines top priorities, expected artifacts, partners, and success measures for the cycle.                                              |
-| Reset plan         | A short, time-bound plan used when performance is inconsistent. It defines expectations, supports, and evidence of improvement.                                  |
+### Leave work understandable
 
-## The OPI rating scale
+Keep current shared work, key decisions, and handoffs in a City-approved place
+that another authorized person can find. Notes should help someone act; they do
+not need to reproduce every conversation.
 
-The scale is meant to be clear and calibratable. A 3 is strong performance at OPI’s standard. A 4 and 5 are reserved for performance that clearly exceeds role expectations and raises the bar for others.
+### Work well with others
 
-| **Rating** | **Label**                 | **Behavior anchors**                                                                                                                   |
-|------------|---------------------------|----------------------------------------------------------------------------------------------------------------------------------------|
-| 5          | Transformational          | Delivers step-change impact and creates lasting systems others reuse. Sets a new bar for OPI.                                          |
-| 4          | Exceptional               | Consistently exceeds role expectations. Anticipates risk, unblocks others, and produces publish-ready work with minimal revision.      |
-| 3          | Strong (the bar)          | Reliably delivers high-quality work on time with sound judgment. Communicates clearly, documents consistently, and closes loops.       |
-| 2          | Developing / Inconsistent | Quality, reliability, or judgment is inconsistent. Rework recurs. Deadlines slip without early escalation. Documentation gaps persist. |
-| 1          | Not meeting expectations  | Repeatedly misses commitments or breaks quality and trust standards. Requires immediate corrective action.                             |
+Share useful context, listen, disagree respectfully, and give credit. Address
+work problems directly when it is appropriate and safe. Collaboration does not
+require agreement, silence, or giving up a protected reporting route.
 
-### Guardrails
+### Learn and take responsibility
 
-- A single high-severity trust breach (accuracy, integrity, privacy, or misrepresentation) can cap overall ratings until corrected and confidence is restored.
+Ask for feedback, use it, and correct errors. When something goes wrong,
+explain the effect and what you will change.
 
-- Overall ratings of 4 or 5 require strong performance in Results and follow-through, Craft quality and QA, and Collaboration and trust-building.
+Owning a mistake does not mean accepting blame for unclear priorities, missing
+access, unsafe conditions, discrimination, or problems outside your control.
 
-## Performance dimensions
+### Protect public trust
 
-All staff are assessed on eight core dimensions. Managers also assess role craft dimensions selected for each position at the start of the cycle.
+Follow current requirements for ethics, privacy, security, records,
+procurement, accessibility, and responsible use of public resources. When
+unsure, pause and ask the office that owns the requirement.
 
-### Eight core dimensions
+## Setting expectations
 
-| **Dimension**                               | **What it means**                                                                                            | **Strong signals (examples)**                                                                    |
-|---------------------------------------------|--------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------|
-| Results and follow-through                  | Delivers outcomes, closes loops, and makes progress legible to partners and leadership.                      | Ships work that changes decisions or operations. Tracks commitments. Closes items with evidence. |
-| Craft quality and QA discipline             | Produces accurate, tested, and audience-ready work. Uses checklists and peer review.                         | First-pass quality. Minimal avoidable errors. Uses peer review and test plans where relevant.    |
-| Judgment and analytical rigor               | Frames problems well, uses evidence, states assumptions, and recommends actionable options.                  | Sharp problem framing. Separates signal from noise. Makes tradeoffs explicit.                    |
-| Communication and executive readiness       | Writes and briefs with clarity. Tailors content to the audience. Produces materials leaders can act on.       | Skimmable structure. Clear asks. Slides and memos that stand on their own.                       |
-| Documentation and operational hygiene       | Keeps work discoverable and reproducible. Maintains decision logs, runbooks, and organized files.            | Decisions captured. Work can be picked up by others. Clean repositories and folders.             |
-| Collaboration and trust-building            | Works through agencies, not around them. Communicates candidly and respectfully. Protects OPI credibility.   | Partners feel respected and informed. No surprises. Conflicts resolved directly.                 |
-| Ownership, initiative, and learning agility | Acts without waiting for perfect direction. Escalates risk early. Learns fast and improves systems.          | Proposes solutions. Prevents recurring issues. Turns lessons into standards.                     |
-| Integrity, privacy, and stewardship         | Handles sensitive information appropriately. Protects public trust. Follows review, authorization, and ethical standards. | Proactively flags risk. Uses least-privilege access. Avoids overstated claims.            |
+At the start of a substantial assignment, the manager and staff member should
+agree on:
 
-### Role craft dimensions (role-specific)
+- the result needed;
+- what comes first;
+- who reviews or decides;
+- what a careful result requires;
+- what support is available; and
+- when to discuss progress again.
 
-Each role selects two to four craft dimensions at the start of the cycle. These dimensions define excellence in the specific discipline.
+When priorities change, the manager should explain what changes with them.
+Staff should not be judged against an expectation that was never communicated
+or against work displaced by a new priority.
 
-| **Craft dimension**             | **What strong looks like**                                                                    |
-|---------------------------------|-----------------------------------------------------------------------------------------------|
-| Analytics craft                 | Metric definitions, reproducibility, QA on sources, insight to action.                        |
-| Design craft                    | Service design, usability, accessibility, user research, problem definition.                  |
-| Engineering craft               | Reliability, testing, security mindset, maintainability, clean interfaces.                    |
-| PMO craft                       | Portfolio hygiene, risk management, cadence discipline, decision logs, unblock mechanics.     |
-| Communications and partnerships | Executive narratives, review discipline, editorial operations, partner follow-through.         |
-| Operations craft                | Process design, SOP quality, compliance, procurement readiness, incident response discipline. |
+Feedback should be timely, specific, and connected to work the person can
+understand. Staff should have an opportunity to ask questions, add context, and
+respond through the official City process.
 
-## The performance process
-
-The process is consistent across teams and works to reduce bias and surprises.
-
-### Start-of-cycle alignment (first two weeks)
-
-- Manager and staff agree on a role charter with three to five priorities, success measures, and expected artifacts.
-
-- Role craft dimensions are selected and documented.
-
-- Definition of done is agreed for major deliverables (QA, required reviews, documentation).
-
-### Quarterly check-ins (required)
-
-- Progress against priorities, evidence links, risks, and support needs.
-
-- Adjust scope when priorities or capacity change.
-
-- Confirm next 30 to 60 day deliverables.
-
-### Mid-cycle feedback (360-lite)
-
-- Manager collects input from two to four peers or partners using structured prompts focused on impact and collaboration.
-
-- Notes are summarized for calibration; raw quotes remain confidential.
-
-### End-of-cycle review
-
-- Staff submits a self-review with an impact narrative and evidence bundle.
-
-- Manager rates core and craft dimensions and proposes an overall rating with justification.
-
-- Development goals are set with one to two concrete assignments.
-
-### Calibration
-
-- OPI leadership reviews proposed ratings for consistency across teams, roles, and levels.
-
-- Final ratings reflect evidence, scope, outcomes, and the OPI bar.
-
-- Adjustments require a documented rationale. Calibration is for fairness and shared standards, not to force a curve.
-
-## Evidence bundle requirements
-
-Evidence is required for performance reviews. It strengthens fairness and reduces recency bias.
-
-- Minimum of five links for the cycle, more for senior roles.
-
-- Evidence should include final artifacts and supporting materials such as QA notes, decision logs, and implementation plans.
-
-- If an outcome is claimed, the evidence should show what changed and who validated it.
-
-- At least one closed-loop example (commitment, owner, due date, evidence of completion).
-
-- At least one QA discipline example (test plan, validation note, peer review, or checklist).
+Any formal review, rating, improvement plan, corrective action, or discipline
+must use the current City and bargaining-agreement process. This page does not
+create one.
 
 ## What staff can expect from managers
 
-High standards require strong management. Managers commit to:
+Staff can expect managers to:
 
-- Clear expectations at the start of the cycle, including definition of done for major deliverables.
+- set priorities and explain changes;
+- provide enough context, access, and review to do the work;
+- address workload conflicts;
+- give useful feedback while there is time to use it;
+- distinguish a skill gap from a missing resource or unclear direction;
+- apply expectations fairly; and
+- document formal matters through the required City process.
 
-- Timely feedback with specific examples and coaching, not vague commentary.
+Ordinary performance concerns should not be saved until the end of a review
+period. Urgent safety, conduct, security, or legal matters may require immediate
+action through the proper City process.
 
-- Fair assessment anchored to evidence and scope. No surprises at end-of-cycle.
+## Questions, disagreements, and protected concerns
 
-- Active removal of blockers and transparent tradeoffs when priorities change.
+A staff member may ask their manager to clarify an expectation or review the
+facts. They may also use another appropriate route, including:
 
-- Consistent documentation of decisions, feedback, and performance discussions.
+- the next level of management;
+- Human Resources or labor relations;
+- Equal Employment Opportunity;
+- Ethics;
+- workplace safety;
+- a union representative;
+- a whistleblower or other protected-reporting channel; or
+- a legal or other formal review channel, as applicable.
 
-## If you disagree with an assessment
+A staff member does not have to raise a protected concern with their manager
+first. This guide does not shorten a deadline, limit a right, or change any
+protection against retaliation provided by law, policy, or a bargaining
+agreement.
 
-Disagreement is handled through a clear pathway. The goal is clarity and fairness, not debate.
-
-- **Step 1:** Discuss with your manager and review the evidence bundle together.
-
-- **Step 2:** Request a second-level review with the manager’s manager if unresolved.
-
-- **Step 3:** OPI leadership reviews the case during calibration and documents the rationale if still unresolved.
-
-## Supporting improvement and addressing gaps
-
-When performance is inconsistent, OPI responds quickly and fairly. The objective is improvement with clear expectations and support.
-
-### When performance trends toward a 2
-
-- Manager and staff create a 30-day reset plan with two to three concrete expectations.
-
-- Weekly check-ins focus on evidence of progress and removal of blockers.
-
-- Training, pairing, or narrowing scope is used to support improvement.
-
-### When performance is a 1 or a trust breach occurs
-
-- Immediate corrective action and documentation.
-
-- Scope is narrowed to safe tasks until confidence is restored.
-
-- Formal HR-aligned steps are used when required.
-
-## Appendix A: Scorecard template
-
-*Eight core dimensions plus two role craft dimensions. Total weight = 100%.*
-
-| **Dimension**                               | **Weight** | **Rating (1–5)** | **Evidence (links)** | **Notes** |
-|---------------------------------------------|------------|------------------|----------------------|-----------|
-| Results and follow-through                  | 15%        |                  |                      |           |
-| Craft quality and QA discipline             | 15%        |                  |                      |           |
-| Judgment and analytical rigor               | 10%        |                  |                      |           |
-| Communication and executive readiness       | 10%        |                  |                      |           |
-| Documentation and operational hygiene       | 10%        |                  |                      |           |
-| Collaboration and trust-building            | 10%        |                  |                      |           |
-| Ownership, initiative, and learning agility | 10%        |                  |                      |           |
-| Integrity, privacy, and stewardship         | 10%        |                  |                      |           |
-| Role craft dimension 1                      | 5%         |                  |                      |           |
-| Role craft dimension 2                      | 5%         |                  |                      |           |
-
-## Appendix B: Self-review template
-
-*Staff complete this self-review at the end of each cycle. Each prompt is a short paragraph with links.*
-
-**Prompt 1.** Top outcomes delivered this cycle (three). Include links.
-
-**Prompt 2.** One example where you raised quality or reduced risk. Include link.
-
-**Prompt 3.** One miss and what you changed as a result.
-
-**Prompt 4.** How you improved a system (template, SOP, component, dataset, checklist).
-
-**Prompt 5.** Growth plan: one to two skills, plus next assignments that build them.
-
-## Appendix C: Manager review template
-
-*Managers complete this review at the end of each cycle alongside the staff self-review and the evidence bundle.*
-
-**Prompt 1.** Overall rating (1 to 5) with summary rationale.
-
-**Prompt 2.** Impact narrative (five to ten sentences) written for leadership readability.
-
-**Prompt 3.** Core and role craft ratings with behavior anchors.
-
-**Prompt 4.** Evidence links (minimum five).
-
-**Prompt 5.** Growth plan with specific coaching and assignments.
-
-## Appendix D: 30-day reset plan template
-
-| **Area**                                               | **Plan** |
-|--------------------------------------------------------|----------|
-| Primary gaps (two to three)                            |          |
-| Concrete expectations (definition of done)             |          |
-| Supports (training, pairing, scope changes)            |          |
-| Evidence of improvement (what will be true in 30 days) |          |
-
-## Appendix E: 360-lite feedback prompts
-
-- Where did this person raise the bar for quality or clarity?
-
-- Where did they create rework or risk, and what would you change?
-
-- How did they show up as a partner under pressure?
-
-- What is one capability they should develop next?
-
-## Owner and review cadence
-
-Owned by the OPI Director’s Office. Reviewed annually before the start of each fiscal year, or as required by operational changes. Its companion is the Manager Companion to these standards.
+Read this page with the [Staff Working Norms](staff-working-norms.md) and
+[Leadership Norms](leadership-norms.md).
