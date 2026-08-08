@@ -17,7 +17,10 @@ updates:
     groups:
       # Patapsco is an executable policy gate, not routine tooling. Keep its
       # bumps isolated so the differential evidence can be re-measured and
-      # reviewed without unrelated dependency noise.
+      # reviewed without unrelated dependency noise. The ignore list below now
+      # stops the bot proposing that bump at all — the repin arrives as a
+      # deliberate PR off a Patapsco release instead. This group is kept as a
+      # standing guard so the isolation still holds if the ignore is ever lifted.
       platform-gate:
         patterns: ["baltimore-patapsco"]
       python:
@@ -29,3 +32,14 @@ updates:
       # migration decision recorded by OPI Wiki maintainers.
       - dependency-name: "mkdocs-redirects"
         versions: [">=1.2.3"]
+      # The foundation packages are pinned EXACTLY by the platform BOM
+      # ([packages] in patapsco contracts/platform-bom.toml); pyproject.toml
+      # carries baltimore-patapsco==0.6.17 for that reason. They move when
+      # Patapsco cuts a release and the whole estate repins together, so a bot
+      # bump here is estate drift by definition and cannot be merged however
+      # green the checks look. This removes noise, not coverage: the update
+      # still happens, in Patapsco, and arrives here as a repin PR.
+      # baltimore-camden is listed ahead of need — this repo does not depend on
+      # it today, and must not start depending on it via a bot PR.
+      - dependency-name: "baltimore-patapsco"
+      - dependency-name: "baltimore-camden"
