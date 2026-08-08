@@ -14,10 +14,15 @@ Invariants:
   no browser suite. ``scripts/check_hosted_ci_policy.py`` enforces that
   mechanically, by resolving this module's plans rather than trusting the
   workflow's command string. Note that it is the *only* check that does so:
-  Patapsco's ``platform-check`` (0.4.8), which the ``ci`` plan also runs,
+  Patapsco's ``platform-check`` (0.6.17), which the ``ci`` plan also runs,
   expands ``npm`` and ``.sh`` bodies but not a Python plan module, so it cannot
   see a forbidden step added to the ``ci`` tier of :func:`build_steps`. Both
   checks are therefore load-bearing.
+
+  Both policy checkers are *also* invoked directly from the ``ci:policy`` task.
+  The estate's own enforcement rule proves the hosted gate reaches a policy
+  command by walking ``Taskfile`` edges and cannot follow a Python plan module,
+  so the ordinary Taskfile edge is what makes this gate visible from outside.
 * No step can hang the runner: stdin is closed and every step is bounded by a
   timeout.
 
@@ -93,14 +98,15 @@ def build_steps(
         that reads ``site/``** — those are forbidden in the hosted lane.
 
     ``prepush``
-        The local pre-push hook and the pre-deploy gate. Everything in ``ci``
-        plus the repo-automation test suite, the strict MkDocs build, and the
-        checks that inspect the built ``site/`` output.
+        The local pre-push hook. Everything in ``ci`` plus the repo-automation
+        test suite, the strict MkDocs build, and the checks that inspect the
+        built ``site/`` output.
 
     ``validate``
-        Everything in ``prepush`` plus browser interaction and full-route
-        accessibility assurance, which need a downloaded browser and so stay
-        deliberate local steps.
+        The pre-mutation boundary: everything in ``prepush`` plus browser
+        interaction and full-route accessibility assurance. These need a
+        downloaded browser, so they run locally before a release and in the
+        Pages deploy gate, which installs one — never in the pull-request lane.
 
     Nothing is dropped when a step leaves the hosted lane — every assertion
     still runs, in the tier that can afford it.
@@ -123,18 +129,30 @@ def build_steps(
             command=(python, "scripts/check_platform_guard_evidence.py"),
         ),
         # Patapsco's shared estate baseline that applies to this docs site: the
-        # app marker, shared task surface, ruff/mypy/bandit configuration, and
-        # pre-push hook. Invoked as `-m` rather than via the `platform-check`
-        # console script so it resolves through this interpreter like every
-        # other step, instead of depending on what is first on PATH.
+        # app marker, shared task surface, ruff/mypy/bandit configuration,
+        # ignore-file baseline, workflow shapes, and pre-push hook. Invoked as
+        # `-m` rather than via the `platform-check` console script so it
+        # resolves through this interpreter like every other step, instead of
+        # depending on what is first on PATH.
         #
         # This is additive to the guard above, not a replacement for it. The
         # local guard walks the verify.py plans and holds the workflow
-        # allowlists; platform-check 0.4.8 does neither.
+        # allowlists; platform-check 0.6.17 does neither.
+        #
+        # `ci:policy` invokes the same checker directly, exactly as it already
+        # does for the local guard above. That is not an accident: the estate's
+        # own enforcement rule proves the hosted gate reaches a policy command
+        # by walking Taskfile edges, and it cannot see into a Python plan
+        # module, so the ordinary edge is what makes this gate visible. The
+        # step stays here so a plan remains runnable and self-contained.
         VerifyStep(
             name="Checking platform baseline conformance",
             command=(python, "-m", "baltimore.patapsco.baseline.cli", "--repo", "."),
         ),
+        # Both ruff runs pin --config for the same reason the Taskfile does:
+        # without it ruff selects a configuration by walking up from each
+        # discovered file, so the enforced rule set would depend on the paths
+        # passed rather than on this repository's declared lint contract.
         VerifyStep(
             name="Checking repo automation formatting",
             command=(
@@ -142,6 +160,8 @@ def build_steps(
                 "-m",
                 "ruff",
                 "format",
+                "--config",
+                "pyproject.toml",
                 "--check",
                 "main.py",
                 "scripts",
@@ -150,7 +170,17 @@ def build_steps(
         ),
         VerifyStep(
             name="Linting repo automation",
-            command=(python, "-m", "ruff", "check", "main.py", "scripts", "tests"),
+            command=(
+                python,
+                "-m",
+                "ruff",
+                "check",
+                "--config",
+                "pyproject.toml",
+                "main.py",
+                "scripts",
+                "tests",
+            ),
         ),
         VerifyStep(
             name="Type-checking repo automation",
@@ -203,8 +233,8 @@ def build_steps(
     if plan == "ci":
         return steps
 
-    # Tier 2 — pre-push and pre-deploy: the test suite, the build, and
-    # everything that needs a freshly built site/ directory.
+    # Tier 2 — pre-push: the test suite, the build, and everything that needs a
+    # freshly built site/ directory.
     steps += [
         VerifyStep(
             name="Running repo automation tests",
@@ -235,7 +265,8 @@ def build_steps(
     if plan == "prepush":
         return steps
 
-    # Tier 3 — pre-deploy, local only: drives a real browser.
+    # Tier 3 — the pre-mutation boundary: drives a real browser, so it runs
+    # locally and in the Pages deploy gate, never in the pull-request lane.
     steps += [
         VerifyStep(
             name="Running browser smoke checks",

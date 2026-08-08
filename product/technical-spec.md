@@ -90,7 +90,7 @@ suggestions:
 | Verification plans | [`scripts/verify.py`](../scripts/verify.py) | Ordered checks, timeouts, reporting, and fail-fast behavior |
 | Product-document links | [`scripts/check_product_contract_links.py`](../scripts/check_product_contract_links.py) | Relative targets, local heading fragments, and repository-bound traversal |
 | Pull-request gate | [`.github/workflows/ci.yml`](../.github/workflows/ci.yml) | Fast source-only `task ci` |
-| Pages build and deploy | [`.github/workflows/deploy.yml`](../.github/workflows/deploy.yml) | `task prepush`, artifact upload, and Pages deployment |
+| Pages build and deploy | [`.github/workflows/deploy.yml`](../.github/workflows/deploy.yml) | `task validate`, artifact upload, and Pages deployment |
 | Local container preview | [`Dockerfile`](../Dockerfile) and [`docker-compose.yml`](../docker-compose.yml) | Pinned image, non-root process, live reload, port publication, and health |
 
 When two sources appear to disagree, the narrower authority wins only inside its
@@ -250,17 +250,20 @@ Pull-request CI installs pinned Python, uv, and Task tooling, then runs
 `task ci`. The hosted lane is intentionally source-only: no pytest, strict
 build, or browser process.
 
-A push to `main` starts the Pages workflow:
+A push to `main` starts the Pages workflow, in two jobs with a strict privilege
+split — only the second, environment-bound job holds the Pages write grants, and
+it cannot start until the first has passed:
 
 1. check out the merged commit;
-2. install the pinned toolchain and locked dependencies;
-3. run `task prepush` with the production `OPI_SITE_URL`;
+2. install the pinned toolchain, locked dependencies, and a browser;
+3. run `task validate` with the production `OPI_SITE_URL`;
 4. upload the resulting `site/` directory as the Pages artifact; and
 5. deploy that saved artifact through `actions/deploy-pages`.
 
-The container is absent from this path. The workflow does not run
-`task validate`, a post-deploy browser smoke, or an uptime check. It proves that
-the merged source passes pre-push assurance and produces an uploadable
+The container is absent from this path. The workflow does not run a post-deploy
+browser smoke or an uptime check. It proves that the merged source passes the
+full pre-mutation tier — everything `task prepush` asserts, plus browser
+interaction and the full-route accessibility matrix — and produces an uploadable
 artifact. It does not prove Pages uptime, DNS or TLS behavior, external-link
 availability, recovery time, backup retention, or successful reader reach
 after deployment.
@@ -279,17 +282,22 @@ report.
 | Browser release | `task validate` | The pre-push plan, focused browser smoke, and the full-route accessibility matrix |
 
 The Taskfile currently invokes `ci:policy` before calling `verify.py`, and every
-verification plan begins with the same hosted-policy check. The guard therefore
-runs twice in a top-level tier. It is fast and intentional today, but it is a
-measured exception to the prove-once rule. This specification must not hide it
-or generalize it into permission for further duplication. Retire it only in a
-focused gate slice that proves one invocation preserves both direct-task and
-plan enforcement.
+verification plan begins with the same two policy checks — the local hosted-CI
+guard and the shared `platform-check` baseline. Both therefore run twice in a
+top-level tier. They are fast, and the direct Taskfile edge is now load-bearing
+rather than merely convenient: the estate's enforcement rule proves a hosted
+gate reaches a policy command by walking `task` edges and cannot see inside a
+Python plan module, so a checker reachable only through `verify.py` is invisible
+to it. This remains a measured exception to the prove-once rule, and this
+specification must not generalize it into permission for further duplication.
+Retire it only in a focused gate slice that proves one invocation preserves both
+direct-task and plan enforcement, and stays visible to the estate.
 
 The pre-push hook is the local backstop for tests and builds. Git permits a
 developer to bypass it with `--no-verify`; a web editor also cannot run it. The
-Pages workflow runs the pre-push plan again before publication, so the
-deployment artifact receives that proof even when the local hook did not.
+Pages workflow runs `task validate` — a strict superset of the pre-push plan —
+before publication, so the deployment artifact receives that proof even when the
+local hook did not.
 
 ### What each layer does not prove
 

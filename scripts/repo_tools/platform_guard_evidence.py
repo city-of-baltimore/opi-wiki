@@ -15,7 +15,7 @@ from pathlib import Path
 
 from scripts.repo_tools.data import load_yaml_file
 
-MEASURED_PLATFORM_CHECK_VERSION = "0.4.8"
+MEASURED_PLATFORM_CHECK_VERSION = "0.6.17"
 
 _DEPENDENCY_NAME = "baltimore-patapsco"
 _REQUIREMENT_NAME = re.compile(r"^(?P<name>[A-Za-z0-9][A-Za-z0-9._-]*)")

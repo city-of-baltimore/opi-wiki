@@ -165,8 +165,8 @@ This is section 4 of the civic-app consistency standard, applied here:
 | Tier | Command | Where it runs | What it covers |
 | --- | --- | --- | --- |
 | `ci` | `task ci` | pull-request CI, fast local loop | workflow policy, formatting, lint, mypy, bandit, and validators over authored repository sources |
-| `prepush` | `task prepush` | the pre-push hook and the Pages deploy gate | everything in `ci`, plus pytest, `mkdocs build --strict`, rendered-language assurance, built-artifact safety and link checks, and accessibility checks |
-| `validate` | `task validate` | before a deploy, locally | everything in `prepush`, plus browser interaction and full-route WCAG assurance |
+| `prepush` | `task prepush` | the pre-push hook | everything in `ci`, plus pytest, `mkdocs build --strict`, rendered-language assurance, built-artifact safety and link checks, and accessibility checks |
+| `validate` | `task validate` | locally before a release, and the Pages deploy gate | everything in `prepush`, plus browser interaction and full-route WCAG assurance |
 
 `task ci` enforces the source-language and retired-component ratchet across
 Git-tracked and non-ignored untracked authored Markdown, YAML, `.pages`, HTML,
@@ -235,38 +235,47 @@ the drift the contract exists to catch.
 
 Alongside it, the `ci` plan runs **`platform-check`** from Patapsco's published
 `baltimore-patapsco` package (exact-pinned in the dev group). For this docs
-site, it checks the shared app marker, task surface, tooling configuration, and
-pre-push hook, and it remains the authority on rules that span sibling repos.
+site, it checks the shared app marker, task surface, tooling configuration,
+ignore-file baseline, workflow shapes, and pre-push hook, and it remains the
+authority on rules that span sibling repos. `task ci:policy` also invokes it
+directly, exactly as it already did the local guard: the estate proves a hosted
+gate reaches a policy command by walking `task` edges, and it cannot see inside
+a Python plan module, so the ordinary Taskfile edge is what makes this gate
+visible from outside the repository.
 
-One boundary is explicit: Patapsco 0.4.8 classifies `docs-site` outside its
-port-owning application kinds, so its slot and compose/loopback rules do not run
-here. The fast repository browser-readiness contract fills that measured gap:
-it pins the slot-8 MkDocs default and task command, the exact loopback Compose
-service, the container bind, and Docker's startup and health behavior. Extending
-the estate-wide rule still belongs in Patapsco, followed by a re-measured pin
-bump here; until then, both checks are required.
+One boundary is narrower than it was: Patapsco 0.6.17 now applies the registry
+slot rules to `docs-site` — the app name, kind, and slot-8 frontend port are
+checked against `contracts/ports.toml` — but `docs-site` remains outside its
+compose-owning application kinds, so the loopback Compose service, the container
+bind, and Docker startup/health rules still do not run here. The fast repository
+browser-readiness contract fills what remains: it pins the slot-8 MkDocs default
+and task command, the exact loopback Compose service, the container bind, and
+Docker's startup and health behavior. Extending the estate-wide rule still
+belongs in Patapsco, followed by a re-measured pin bump here; until then, both
+checks are required.
 
 The two are complementary, not redundant, and the split is measured rather than
-assumed — re-measured against `platform-check` 0.4.8. That release includes the
-structural pre-push and manifest-aware npm resolution introduced in 0.4.6, but
-still treats a **Python plan module** as an opaque leaf. It therefore does not
-see this repo's second indirection layer
+assumed — re-measured against `platform-check` 0.6.17. That release adds the
+managed ignore baseline, marker-declared workflow shapes, and a SHA-pinned
+`uses:` rule, but it still treats a **Python plan module** as an opaque leaf. It
+therefore does not see this repo's second indirection layer
 (`verify.py --plan ci`), including when that layer is reached through
 `scripts/verify.sh`; it also has no job-timeout rule, and its `run:` coverage is
-a denylist rather than an allowlist. 0.4.8 still misses all five injected cases
-in their ordinary form; a piped `curl … | sh` is caught only when the URL
-happens to end in `.sh`, via the unresolvable-delegation rule rather than any
-`curl` denylist entry. Those five, and the forms this repo's own guard misses in the
-other direction, are documented in the "Two checkers" note in
-`scripts/check_hosted_ci_policy.py`, with the condition for retiring the local
-guard — which 0.4.8 does not meet.
+a denylist rather than an allowlist. 0.6.17 still misses all four remaining
+injected cases in their ordinary form; a piped `curl … | sh` is caught only when
+the URL happens to end in `.sh`, via the unresolvable-delegation rule rather
+than any `curl` denylist entry. The fifth case — an unpinned `uses:` reference —
+was retired at this bump because 0.6.17 catches it. Those four, and the forms
+this repo's own guard misses in the other direction, are documented in the "Two
+checkers" note in `scripts/check_hosted_ci_policy.py`, with the condition for
+retiring the local guard — which 0.6.17 does not meet.
 
 `scripts/check_platform_guard_evidence.py` runs immediately before the shared
 gate. It keeps Patapsco exact-pinned, isolates its Dependabot pull requests from
 routine tooling updates, and requires every current-measurement claim to name
 the release actually tested. A pin bump fails CI until a maintainer updates the
 measurement marker and living claims; that update is an explicit attestation,
-not proof of execution. The pre-push suite runs the five-case differential
+not proof of execution. The pre-push suite runs the four-case differential
 matrix against the installed release and must pass before push or deploy.
 
 Do not add a test, build, or browser step to the pull-request workflow, and do

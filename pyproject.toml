@@ -41,12 +41,13 @@ dev = [
     # its rule set under you on a routine `uv sync` is not a gate. Bumping it is
     # a deliberate, reviewable commit.
     #
-    # It runs in the `ci` plan ALONGSIDE scripts/check_hosted_ci_policy.py, not
-    # instead of it. The two cover different ground and 0.4.8 does not subsume
-    # the local guard — see the "Two checkers" note in that module's docstring
-    # for the gaps that were re-measured against 0.4.8. The CI evidence check
-    # makes a bump explicit; the permanent pre-push matrix proves its behavior.
-    "baltimore-patapsco==0.4.8",
+    # It runs in the `ci:policy` task ALONGSIDE scripts/check_hosted_ci_policy.py,
+    # not instead of it. The two cover different ground and 0.6.17 does not
+    # subsume the local guard — see the "Two checkers" note in that module's
+    # docstring for the gaps that were re-measured against 0.6.17. The CI
+    # evidence check makes a bump explicit; the permanent pre-push matrix proves
+    # its behavior.
+    "baltimore-patapsco==0.6.17",
     # The browser accessibility gate must not acquire new rules silently.
     # Review axe release notes and rerun the canonical-route matrix before
     # changing this exact pin.

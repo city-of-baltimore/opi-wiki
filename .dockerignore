@@ -1,22 +1,68 @@
-# Keep the build context small and avoid copying host-only artifacts into the
-# image (the container builds its own .venv and site/).
+# >>> patapsco baseline ignore block v1 — managed by platform-check; edit outside the markers >>>
+# Version-control and CI metadata the image never needs.
 .git
+.gitignore
 .github
-.env*
-.cache/
-.coverage
-.coverage.*
-.venv
-venv/
-site/
-notes/
-.claude/
-node_modules/
-__pycache__/
-**/__pycache__/
-*.pyc
-.mypy_cache/
-.ruff_cache/
-.pytest_cache/
-.DS_Store
+
+# Environment files, secrets, TLS private material, and local CA output.
+.env
+.env.*
+.envrc
+**/*.pem
+**/*.key
+**/certs
+
+# Dependency installs, tool caches, coverage, and browser output. The image
+# installs its own dependencies; a host install is the wrong platform.
+**/.venv
+**/venv
+**/node_modules
+**/__pycache__
+**/*.py[cod]
+**/.mypy_cache
+**/.pytest_cache
+**/.ruff_cache
+**/.tox
+**/.nox
+**/.hypothesis
+**/.vite
+**/*.tsbuildinfo
+**/.eslintcache
+**/.coverage
+**/coverage.xml
+**/htmlcov
+**/coverage
+**/playwright-report
+**/test-results
+
+# Local databases, media/uploads, logs, and guarded runtime evidence.
+**/*.sqlite3
+**/*.sqlite3-journal
+**/*.log
+media
+var
+
+# Operating-system and editor state.
 **/.DS_Store
+**/Thumbs.db
+**/*.swp
+.idea
+.vscode
+
+# The one canonical scratch spelling.
+**/*.scratch
+**/*.scratch.*
+.scratch
+# <<< patapsco baseline ignore block v1 <<<
+
+# --- opi-wiki additions. Everything above is Patapsco's managed block, carried
+# --- verbatim; everything below is genuinely local to this build context.
+
+# Host build output and caches the image rebuilds for itself.
+site
+**/.coverage.*
+.cache
+
+# Local working notes and editor/agent state that is not build input.
+notes
+.claude
