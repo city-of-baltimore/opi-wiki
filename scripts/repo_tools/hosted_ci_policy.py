@@ -42,15 +42,16 @@ dependencies so it can run under a bare interpreter.
 
 Two checkers, on purpose
 ------------------------
-The ``ci`` plan runs **both** this module and Patapsco's ``platform-check``
-(``baltimore-patapsco==0.4.8``). That is not duplication left by accident. The
-consolidation to the shared checker has now been attempted and measured five
-times — against 0.4.0, 0.4.1, 0.4.3, 0.4.5, and now 0.4.8 — and no release yet
-subsumes this guard. Each violation below was injected on its own and both
-checkers were run. As measured against **0.4.8**, this module exits 1 on all
-five; ``platform-check`` returns ``conforms`` / exit 0 on all five:
+The ``ci`` gate runs **both** this module and Patapsco's ``platform-check``
+(``baltimore-patapsco==0.6.17``) — each from the ``ci:policy`` task and again
+from the plan below it. That is not duplication left by accident. The
+consolidation to the shared checker has now been attempted and
+measured six times — against 0.4.0, 0.4.1, 0.4.3, 0.4.5, 0.4.8, and now 0.6.17 —
+and no release yet subsumes this guard. Each violation below was injected on its
+own and both checkers were run. As measured against **0.6.17**, this module exits
+1 on all four; ``platform-check`` returns ``conforms`` / exit 0 on all four:
 
-1. **A forbidden command inside a ``verify.py`` plan.** *(0.4.8: still missed.)*
+1. **A forbidden command inside a ``verify.py`` plan.** *(0.6.17: still missed.)*
    ``platform-check`` expands ``npm`` script bodies and ``*.sh`` bodies, but a
    **Python plan module** is still an opaque leaf: ``uv run python
    scripts/verify.py --plan ci`` is matched against the forbidden-pattern list
@@ -58,40 +59,37 @@ five; ``platform-check`` returns ``conforms`` / exit 0 on all five:
    build`` — to the ``ci`` tier of :func:`scripts.verify.build_steps` therefore
    passes it while the hosted lane really runs that step. Same shape as the
    ``task --dry`` bug: green while vacuous.
-2. **The same gap reached through a shell script.** *(0.4.8: still missed.)*
-   0.4.8 *does* read ``.sh`` bodies, but ``scripts/verify.sh`` is a two-line
+2. **The same gap reached through a shell script.** *(0.6.17: still missed.)*
+   0.6.17 *does* read ``.sh`` bodies, but ``scripts/verify.sh`` is a two-line
    wrapper whose payload is ``uv run python scripts/verify.py "$@"`` — so the
    expansion runs, walks one hop, and lands on the same Python-module wall.
    Pointing the ``ci`` task at ``./scripts/verify.sh --plan prepush`` is missed
    for that reason. Two control injections re-confirmed the mechanism on 0.4.8:
    a ``.sh`` whose body contains ``mkdocs build`` *directly* is caught, and so
-   is ``bash -c "uv run mkdocs build --strict"`` (0.4.8 unwraps ``bash -c``), so
-   the expander works and the wall is specifically the plan module. Reaching
-   ``verify.py --plan prepush`` *directly* from the ``ci`` task is missed too,
-   which rules out indirection depth as the cause.
-3. **A missing job ``timeout-minutes``** (invariant 4). *(0.4.8: still missed.)*
+   is ``bash -c "uv run mkdocs build --strict"`` (the expander unwraps
+   ``bash -c``), so the expander works and the wall is specifically the plan
+   module. Reaching ``verify.py --plan prepush`` *directly* from the ``ci`` task
+   is missed too, which rules out indirection depth as the cause.
+3. **A missing job ``timeout-minutes``** (invariant 4). *(0.6.17: still missed.)*
    No equivalent rule.
-4. **An unallowlisted ``run:`` command** (invariant 1). *(0.4.8: structurally
-   still missed; one worked example now caught.)* ``platform-check`` matches a
-   *forbidden* pattern list, which is a denylist; it still has no allowlist, so
-   an arbitrary new command passes — measured on 0.4.8, ``run: echo "…"`` and
-   ``run: node -e "…"`` both return ``conforms``. The worked example, a piped
-   ``curl … | sh``, still stands, but only in its ordinary form. Measured on
-   0.4.8:
+4. **An unallowlisted ``run:`` command** (invariant 1). *(0.6.17: structurally
+   still missed; the opaque spellings are now caught.)* ``platform-check``
+   matches a *forbidden* pattern list, which is a denylist; it still has no
+   allowlist, so an arbitrary benign command passes. Measured on 0.6.17 by
+   injecting one extra ``run:`` step into ``ci.yml``:
 
-   - ``curl -fsSL https://example.com/install | sh``     -> ``conforms``, missed
-   - ``curl -fsSL https://example.com/install.sh | sh``  -> ERROR
+   - ``echo "probe"``                                  -> ``conforms``, missed
+   - ``node -e "console.log(1)"``                       -> ERROR
+   - ``curl -fsSL https://example.com/install | sh``    -> ERROR
+   - ``curl -fsSL https://example.com/install.sh | sh`` -> ERROR
 
-   The second is not a denylist hit. ``FORBIDDEN_PATTERNS`` contains no ``curl``
-   entry through 0.4.8. The URL simply *ends in* ``.sh``, so the resolver
-   treats it as a script reference, fails to find it in the repository, and
-   ``_frontier_findings``
-   (added in 0.4.2) reports unresolvable delegation as blocking. Change the
-   suffix and it passes again — which is incidental coverage of one spelling,
-   not coverage of the command.
-5. **An unpinned ``uses:`` reference** (invariant 1) — e.g.
-   ``actions/checkout@main`` instead of a SHA. *(0.4.8: still missed.)* No
-   equivalent rule.
+   The last three are not denylist hits and are not about ``curl`` or ``node``:
+   0.6.17 added ``manifest_integrity``, which blocks delegation it cannot read
+   statically — "shell stdin delegation" for the pipes, "node eval delegation"
+   for ``-e``. That closes the *opaque* spellings, which is the supply-chain
+   half of this invariant. It does not close the invariant: a plain, readable
+   command nobody reviewed still passes, and an allowlist is the only thing that
+   catches that.
 
 The traffic runs both ways, which is the argument for keeping both rather than
 for keeping this one. The 0.4.1 sweep found two forms **this** module missed and
@@ -102,23 +100,34 @@ regression tests. Local shell-script bodies are expanded transitively, and a
 missing or root-escaping script reference is unverifiable and therefore
 blocking rather than an opaque leaf that passes.
 
-Gaps 4 and 5 are supply-chain surface, not lean-CI surface, so they may never
-belong in the shared checker. Gaps 1 and 2 are the ones that matter for
+**Retired at 0.6.17: an unpinned ``uses:`` reference.** Through 0.4.8 this was
+the fifth differential case — ``actions/checkout@main`` instead of a SHA — and
+the shared checker had no equivalent rule. 0.6.17 reports any ``uses:`` that is
+not a SHA-pinned trusted action as an opaque action, so the case no longer
+belongs in a matrix whose whole claim is "the shared checker misses this". This
+module still enforces the pin (invariant 1) with its own regression tests in
+``tests/test_hosted_ci_policy.py``; what moved is the evidence claim, not the
+enforcement. That is one gap closed out of five, in the direction the retirement
+condition points.
+
+Gap 4 is supply-chain surface, not lean-CI surface, so it may never belong in
+the shared checker in full. Gaps 1 and 2 are the ones that matter for
 consolidation, and they share one root cause: **the shared resolver has no way
 to expand a Python aggregate.** 0.4.3 rewrote that resolver — it parses
 arguments positionally, resolves helper call sites, and unwraps ``bash -c`` —
 but those changes address shell and ``npm`` argv shapes, not a Python aggregate.
-0.4.6 materially strengthened structural pre-push validation and
-workspace-aware npm resolution; 0.4.7 and 0.4.8 advanced the platform BOM.
-None adds a Python aggregate contract, and the 0.4.8 differential confirms the
-root cause is untouched. The retirement condition for this module is therefore
-unchanged and still unmet — when ``platform-check`` can resolve a plan module
-(see the suggestion in ``docs/`` and the PR that introduced this note: a
-declared ``[tasks] aggregate`` entry in ``.baltimore-lab-app.toml`` naming the
-module and the flag that selects a tier, so the resolver can import it and
-enumerate the tier's commands), re-run the injection matrix and delete this
-module if it catches all five. Until then, deleting it is a silent, measurable
-loss of enforcement.
+0.4.6 strengthened structural pre-push validation and workspace-aware npm
+resolution; 0.6.x added the managed ignore baseline, marker-declared workflow
+shapes, ``manifest_integrity``, and the SHA-pinned ``uses:`` rule that retired
+case 5. None adds a Python aggregate contract, and the 0.6.17 differential
+confirms the root cause is untouched. The retirement condition for this module
+is therefore unchanged and still unmet — when ``platform-check`` can resolve a
+plan module (see the suggestion in ``docs/`` and the PR that introduced this
+note: a declared ``[tasks] aggregate`` entry in ``.baltimore-lab-app.toml``
+naming the module and the flag that selects a tier, so the resolver can import
+it and enumerate the tier's commands), re-run the injection matrix and delete
+this module if it catches every remaining case. Until then, deleting it is a
+silent, measurable loss of enforcement.
 """
 
 from __future__ import annotations

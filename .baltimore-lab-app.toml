@@ -24,23 +24,39 @@ frontend = 5208 # `mkdocs serve` / docker compose preview (5200 + slot)
 [runtime]
 python = "3.14" # local + CI interpreter; the platform range is >=3.13,<3.15
 
+[foundation]
+# What this repository CONSUMES, taken from patapsco/contracts/platform-bom.toml.
+# Patapsco is the only foundation here: the wiki has no frontend bundle, so it
+# takes neither bromo nor camden, and declaring either would be a false claim.
+patapsco = "0.6.17"
+
 [tasks]
 # The one command contract (consistency standard §5): Taskfile.yml exposes the
 # shared surface, and hosted CI runs `task ci` verbatim. The tiers delegate to
 # scripts/verify.py, which owns the step list for all three lanes.
 runner = "Taskfile.yml"
 
+[workflows]
+# GitHub Pages structurally needs two jobs, so this file can never satisfy the
+# single-job mutation boundary; it is declared as the shape it really is and
+# then held to that shape (consistency standard §4). Declaring buys exactly two
+# things: `actions/upload-pages-artifact` and `actions/deploy-pages` become
+# legible, and the one mandated `task validate` gate is permitted. Every other
+# command in the file is still scanned in full.
+".github/workflows/deploy.yml" = "pages-deploy"
+
 [docs_site]
 # Production deploy target. There is no container in the deploy path.
 deploy = "github-pages"
 # The hosted pull-request lane is static-only (`task ci`): no test suite, no
-# site build, no browser suite. The tests, the strict build, the built-site link
-# crawl, and accessibility smoke run in the pre-push hook and the deploy gate
-# (`task prepush`); deliberate local `task validate` adds browser interactions
-# and the full-route accessibility matrix.
+# site build, no browser suite. The tests, the strict build, and the built-site
+# checks run in the pre-push hook; the Pages deploy gate runs `task validate`,
+# which adds browser interactions and the full-route accessibility matrix as the
+# pre-mutation boundary.
 # scripts/check_hosted_ci_policy.py enforces the boundary mechanically, walking
 # both the Taskfile graph and the verify.py plans so indirection cannot hide a
-# forbidden command. The `ci` plan also runs Patapsco's published platform-check
-# (0.4.8) for the shared estate baseline; it walks the Taskfile graph, npm
-# scripts, and .sh bodies, but not the verify.py plans, so both checks are kept.
+# forbidden command. The `ci:policy` task also runs Patapsco's published
+# platform-check (0.6.17) for the shared estate baseline; it walks the Taskfile
+# graph, npm scripts, and .sh bodies, but not the verify.py plans, so both
+# checks are kept.
 lean_ci = true

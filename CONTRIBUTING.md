@@ -27,8 +27,8 @@ task ci         # static checks only (what PR CI runs)
 Ground rules, enforced by `task prepush` (and by CI — the suite is defined once,
 in `scripts/verify.py`). Pull-request CI runs the static `ci` tier only. The
 test suite, the strict build, and the checks that read built HTML run in the
-pre-push hook and the deploy gate — so install the hooks, and run
-`task prepush` before you push:
+pre-push hook, and again in the deploy gate as part of `task validate` — so
+install the hooks, and run `task prepush` before you push:
 
 - Strict MkDocs build: broken links and nav entries fail the build.
 - The source-language ratchet runs in the static tier; the pre-push and deploy

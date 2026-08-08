@@ -47,15 +47,18 @@ counts).
 | Tier       | Command         | Where                         |
 | ---------- | --------------- | ----------------------------- |
 | `ci`       | `task ci`       | GitHub Actions, on every PR   |
-| `prepush`  | `task prepush`  | local pre-push hook; also the Pages deploy gate |
-| `validate` | `task validate` | before a deploy; adds the browser suite (`uv run playwright install chromium` first) |
+| `prepush`  | `task prepush`  | local pre-push hook                           |
+| `validate` | `task validate` | locally before a release, and the Pages deploy gate; adds the browser suite (`uv run playwright install chromium` first) |
 
 `scripts/verify.py` defines the suite once, in three nested plans, so the lanes
 cannot drift. Add a check to `build_steps()` in the right tier — never as an
 ad-hoc workflow step.
 
 **Never add a test, build, or browser step to the hosted lane**, directly or by
-adding one to a task `ci` reaches. Two checks in the `ci` plan enforce this:
+adding one to a task `ci` reaches. Two checks enforce this — both in the `ci`
+plan, and both also invoked as ordinary `ci:policy` Taskfile edges, because the
+estate's enforcement rule proves a hosted gate reaches a policy command by
+walking `task` edges and cannot see into a Python plan module:
 
 - `scripts/check_hosted_ci_policy.py` (repo-local) walks **both** indirection
   layers — the `Taskfile.yml` graph and the `verify.py` plans — and additionally
@@ -67,21 +70,23 @@ Resolution is static on purpose in both: `task --dry` writes its plan to stderr,
 so a guard that shells out and reads stdout passes vacuously.
 
 **Do not delete the local guard as "duplicated by `platform-check`".** That has
-been attempted and measured five times, against 0.4.0, 0.4.1, 0.4.3, 0.4.5,
-and 0.4.8. 0.4.8 includes structural pre-push and manifest-aware npm resolution,
-expands `.sh` bodies, and unwraps `bash -c`, but a
+been attempted and measured six times, against 0.4.0, 0.4.1, 0.4.3, 0.4.5,
+0.4.8, and 0.6.17. 0.6.17 adds the managed ignore baseline, marker-declared
+workflow shapes, `manifest_integrity`, and a SHA-pinned `uses:` rule; it expands
+`.sh` bodies and unwraps `bash -c`, but a
 **Python plan module** is still an opaque leaf, so a `pytest` step added to the
 `ci` tier of `build_steps()` passes it while the hosted lane really runs the
 suite — the same green-but-vacuous failure mode as the `task --dry` bug. Routing
 `ci` through `scripts/verify.sh` is missed for the same reason: the `.sh` body is
 read, then lands on the same Python wall. It also misses a missing
-`timeout-minutes` and an unpinned `uses:` ref, and its `run:` coverage is a
-denylist, so an arbitrary unallowlisted command still passes. All five injected
-cases are still missed at 0.4.8 in their ordinary form. A piped `curl … | sh`
-*is* now caught when the URL ends in `.sh` — not from a denylist entry (there is
-no `curl` pattern in any 0.4.x release) but from `_frontier_findings`, a
-structural rule added in 0.4.2 that reports unresolvable delegation as blocking.
-That is incidental coverage of one spelling; drop the suffix and it passes. The
+`timeout-minutes`, and its `run:` coverage is a denylist, so an arbitrary benign
+unallowlisted command still passes. All four remaining injected
+cases are still missed at 0.6.17 in their ordinary form. Two spellings that used
+to pass no longer do: a piped `curl … | sh` and a `node -e "…"` are both blocked
+by `manifest_integrity` as delegation the checker cannot read — not by any
+`curl` or `node` denylist entry. A plain `echo "probe"` still passes, which is
+the invariant the allowlist exists for. The fifth case, an unpinned `uses:` ref,
+was **retired** at this bump because 0.6.17 catches it. The
 retirement condition is in the "Two checkers" note in that module's docstring and
 is **not** met — and the injection matrix that produced these numbers is
 reproducible; re-run it on every pin bump.

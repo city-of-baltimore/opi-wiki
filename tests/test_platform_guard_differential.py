@@ -29,6 +29,28 @@ COPY_IGNORE = shutil.ignore_patterns(
 )
 
 
+def _materialize_repository(tmp_path: Path) -> Path:
+    """Copy this repository to an isolated path the two checkers can both read.
+
+    The object database is deliberately not copied — the matrix needs the
+    working tree, not the history. Git's ``config`` is the one exception:
+    ``platform-check`` corroborates repository identity from ``remote.origin``,
+    and a copy with no remote is not a differently *configured* repository, it
+    is an unidentifiable one. Without it every case — including the control —
+    fails on identity rather than on the injected violation, which would make
+    the whole comparison vacuous.
+    """
+
+    repository = tmp_path / "repository"
+    shutil.copytree(REPOSITORY_ROOT, repository, ignore=COPY_IGNORE)
+    source_config = REPOSITORY_ROOT / ".git" / "config"
+    if source_config.is_file():
+        git_directory = repository / ".git"
+        git_directory.mkdir(exist_ok=True)
+        shutil.copy2(source_config, git_directory / "config")
+    return repository
+
+
 @dataclass(frozen=True, slots=True)
 class DifferentialCase:
     """One independently injected violation in the five-case comparison."""
@@ -103,16 +125,6 @@ def _inject_arbitrary_run_command(repository: Path) -> None:
     )
 
 
-def _replace_action_sha_with_branch(repository: Path) -> None:
-    """Replace one immutable action reference with a mutable branch."""
-
-    _sub_once(
-        repository / ".github" / "workflows" / "ci.yml",
-        r"actions/checkout@[0-9a-f]{40}",
-        "actions/checkout@main",
-    )
-
-
 CASES = (
     DifferentialCase(
         "Python plan hides pytest",
@@ -134,12 +146,13 @@ CASES = (
         _inject_arbitrary_run_command,
         "run: echo probe",
     ),
-    DifferentialCase(
-        "workflow action uses mutable ref",
-        _replace_action_sha_with_branch,
-        "uses: actions/checkout@main",
-    ),
 )
+# Retired at 0.6.17: "workflow action uses mutable ref". ``platform-check`` now
+# reports any ``uses:`` that is not a SHA-pinned trusted action, so that case no
+# longer belongs in a matrix whose whole claim is "the shared checker misses
+# this". The local guard still enforces the SHA pin, with its own direct
+# regression coverage in tests/test_hosted_ci_policy.py; what changed is the
+# evidence claim, not the enforcement.
 
 
 def _run(command: tuple[str, ...], repository: Path) -> subprocess.CompletedProcess[str]:
@@ -167,8 +180,7 @@ def test_installed_platform_check_matches_the_measured_release() -> None:
 def test_unmodified_repository_copy_is_accepted_by_both_checkers(tmp_path: Path) -> None:
     """The differential starts from a green control, not an already-broken copy."""
 
-    repository = tmp_path / "repository"
-    shutil.copytree(REPOSITORY_ROOT, repository, ignore=COPY_IGNORE)
+    repository = _materialize_repository(tmp_path)
 
     local = _run((sys.executable, "scripts/check_hosted_ci_policy.py"), repository)
     shared = _run(
@@ -193,8 +205,7 @@ def test_local_guard_blocks_each_case_platform_check_still_misses(
 ) -> None:
     """Each stable injected violation proves the local guard remains load-bearing."""
 
-    repository = tmp_path / "repository"
-    shutil.copytree(REPOSITORY_ROOT, repository, ignore=COPY_IGNORE)
+    repository = _materialize_repository(tmp_path)
     case.inject(repository)
 
     local = _run((sys.executable, "scripts/check_hosted_ci_policy.py"), repository)

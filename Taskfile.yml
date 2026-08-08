@@ -9,11 +9,17 @@
 # `ci` must never reach a test suite, a site build, an image build, or a
 # browser suite — directly or through any task it calls. `task ci:policy`
 # proves that mechanically by resolving both this file's task graph and
-# verify.py's plans. Patapsco's published platform-check (0.4.8) runs inside the
-# `ci` plan as well; it resolves this file's graph independently and owns the
+# verify.py's plans. Patapsco's published platform-check (0.6.17) runs inside
+# the same task; it resolves this file's graph independently and owns the
 # shared estate baseline, but it does NOT expand verify.py's plans, so the two
 # are complementary. See the "Two checkers" note in
 # scripts/check_hosted_ci_policy.py before removing either.
+#
+# Both policy checkers are invoked here as ordinary Taskfile edges as well as
+# from the verify.py plan. That is deliberate: the estate's own enforcement rule
+# proves the hosted gate reaches a policy command by walking `task` edges, and
+# it cannot see into a Python plan module — so a gate reachable only through
+# verify.py reads to the estate as no gate at all.
 
 version: "3"
 
@@ -24,21 +30,25 @@ tasks:
       - uv sync --frozen
       - ./scripts/install-hooks.sh
 
+  # Every ruff run pins --config. Without it, ruff picks a configuration by
+  # walking up from each discovered file, so the rule set enforced would depend
+  # on which paths happened to be passed rather than on this repository's
+  # declared lint contract.
   fmt:
     desc: Format and auto-fix the repo automation in place
     cmds:
-      - uv run ruff format main.py scripts tests
-      - uv run ruff check --fix main.py scripts tests
+      - uv run ruff format --config pyproject.toml main.py scripts tests
+      - uv run ruff check --config pyproject.toml --fix main.py scripts tests
 
   fmt:check:
     desc: Check formatting without writing
     cmds:
-      - uv run ruff format --check main.py scripts tests
+      - uv run ruff format --config pyproject.toml --check main.py scripts tests
 
   lint:
     desc: Lint the repo automation
     cmds:
-      - uv run ruff check main.py scripts tests
+      - uv run ruff check --config pyproject.toml main.py scripts tests
 
   typecheck:
     desc: Type-check the repo automation
@@ -46,9 +56,10 @@ tasks:
       - uv run mypy
 
   ci:policy:
-    desc: Prove the hosted lane reaches no test, build, or browser suite
+    desc: Run both policy checkers — the local lean-CI guard and the estate baseline
     cmds:
       - uv run python scripts/check_hosted_ci_policy.py
+      - uv run platform-check --repo .
 
   ci:
     desc: Lean hosted gate — static checks, content validators, policy guard

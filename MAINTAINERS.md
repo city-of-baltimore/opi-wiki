@@ -516,8 +516,8 @@ runs it in three nested tiers:
 | Tier | Where | Covers |
 |---|---|---|
 | `task ci` | pull-request CI, fast local loop | hosted-CI policy guard, browser-readiness contract, platform-gate evidence, format, lint, mypy, bandit, metadata, organization data, brand terms, style, consistency, raw HTML links |
-| `task prepush` | the pre-push hook and the Pages deploy gate | everything above, plus pytest, `mkdocs build --strict`, rendered-language assurance, built-artifact safety and built-link checks, and accessibility checks |
-| `task validate` | locally, before a deploy | everything above, plus browser interaction and full-route WCAG assurance |
+| `task prepush` | the pre-push hook | everything above, plus pytest, `mkdocs build --strict`, rendered-language assurance, built-artifact safety and built-link checks, and accessibility checks |
+| `task validate` | locally before a release, and the Pages deploy gate | everything above, plus browser interaction and full-route WCAG assurance |
 
 Each tier is a strict prefix of the next, so nothing is lost by moving a check
 down a tier — it runs later, not never.
@@ -542,17 +542,23 @@ failure by design.
 
 The `ci` plan also runs Patapsco's published `platform-check`
 (`baltimore-patapsco`, exact-pinned in the dev group), which checks the shared
-app marker, task surface, tooling configuration, and pre-push hook that apply
-to this docs site. Keep **both**. `platform-check` 0.4.8 does
+app marker, task surface, tooling configuration, ignore-file baseline, workflow
+shapes, and pre-push hook that apply to this docs site. `task ci:policy` invokes
+it directly as well, exactly as it already did the local guard: the estate
+proves a hosted gate reaches a policy command by walking `task` edges and cannot
+see inside a Python plan module, so the ordinary Taskfile edge is what makes
+this gate visible from outside. Keep **both**. `platform-check` 0.6.17 does
 not expand `verify.py` plans (it expands `npm` and `.sh` bodies, but not a
-Python plan module), has no job-timeout rule, and has no `run:`/`uses:`
-allowlist, so it returns "conforms" for all five violations the local
-guard fails on. The comparison runs both ways: the 0.4.1 sweep caught two
+Python plan module), has no job-timeout rule, and has no `run:` allowlist, so it
+returns "conforms" for all four remaining violations the local guard fails on.
+The comparison runs both ways: the 0.4.1 sweep caught two
 Taskfile forms the local guard missed — a block-list `deps:` and a `silent: true`
 task — which are now fixed and regression-tested here, and the 0.4.3 sweep found
 a third — a new `.sh` in the task chain that runs a forbidden command directly —
-which is also fixed and regression-tested here. The measured gaps, and the
-condition for deleting the local guard — still unmet at 0.4.8 — are recorded in
+which is also fixed and regression-tested here. 0.6.17 closed a fourth: the
+unpinned `uses:` case was retired from the differential matrix at this bump
+because the shared checker now reports it. The measured gaps, and the
+condition for deleting the local guard — still unmet at 0.6.17 — are recorded in
 the "Two checkers" note in that module's docstring.
 
 `scripts/check_platform_guard_evidence.py` runs before `platform-check` in the
@@ -562,11 +568,25 @@ maintainer attestation, not execution proof. The pre-push suite runs
 `tests/test_platform_guard_differential.py` against the installed release and
 must pass before the change can be pushed or deployed.
 
+- 2026-08-07 — **[PLATFORM GATE] adopt Patapsco 0.6.17 after differential
+  re-measurement** — the unmodified control conformed and the matrix still
+  proves the local guard catches what the shared checker misses, so both stay.
+  Three things changed with the bump: the unpinned-`uses:` case was **retired**
+  (0.6.17 catches it, so the matrix is four cases, not five); `platform-check`
+  moved out of the `verify.py` plan into the `ci:policy` task, because the
+  estate's enforcement rule follows `task` edges and cannot see into a Python
+  plan module; and `deploy.yml` is now declared `pages-deploy` and held to that
+  shape — workflow-level Pages grants removed, the two write grants scoped to
+  the environment-bound deploy job, and the build job's gate raised from
+  `task prepush` to `task validate`, the pre-mutation boundary — owner: OPI wiki
+  maintainers — reversible by repinning the prior release and restoring its
+  lock, workflow, and evidence claims in one reviewed slice.
+
 - 2026-07-27 — **[PLATFORM GATE] isolate and re-measure every Patapsco bump** —
   policy-gate changes must arrive separately from routine tooling and preserve
-  the five-case differential evidence — owner: OPI wiki maintainers —
-  reversible when Patapsco catches the complete matrix and the local guard is
-  retired under its documented condition.
+  the differential evidence, whatever its current case count — owner: OPI wiki
+  maintainers — reversible when Patapsco catches the complete matrix and the
+  local guard is retired under its documented condition.
 
 - 2026-07-30 — **[PLATFORM GATE] adopt Patapsco 0.4.8 after differential
   re-measurement** — the candidate's unmodified control conformed, and the
@@ -577,13 +597,20 @@ must pass before the change can be pushed or deployed.
   release and restoring its lock and evidence claims in one reviewed slice.
 
 - 2026-07-29 — **[DOCS-SITE PORTS] bridge the shared enforcement gap locally**
-  — Patapsco 0.4.8 treats `docs-site` as a non-application kind, so its registry
-  slot and compose/loopback rules do not run here; the fast browser-readiness
-  contract therefore pins the slot-8 MkDocs default and task command, exact
-  Compose service, container bind, and Docker startup and health behavior —
-  owner: OPI Wiki maintainers (local contract) and Patapsco maintainers (shared
-  rule) — retire the local port checks only when the shared checker covers
-  port-owning docs sites and this repository re-measures the adopting pin.
+  — Patapsco 0.4.8 treated `docs-site` as a non-application kind, so neither its
+  registry slot nor its compose/loopback rules ran here; the fast
+  browser-readiness contract therefore pins the slot-8 MkDocs default and task
+  command, exact Compose service, container bind, and Docker startup and health
+  behavior — owner: OPI Wiki maintainers (local contract) and Patapsco
+  maintainers (shared rule) — retire the local port checks only when the shared
+  checker covers port-owning docs sites and this repository re-measures the
+  adopting pin.
+  **Partly superseded at 0.6.17 (2026-08-07):** the registry slot rule now does
+  run for `docs-site` — app name, kind, and the slot-8 frontend port are checked
+  against `contracts/ports.toml`. The compose/loopback service, the container
+  bind, and Docker startup and health are still uncovered upstream, so the local
+  contract stays for those and its port assertions are now a corroborating
+  second reading rather than the only one.
 
 **The practical consequence: a broken test or strict build is not caught on the
 PR; it surfaces at `git push` (via the hook) or on the deploy run after merge.**

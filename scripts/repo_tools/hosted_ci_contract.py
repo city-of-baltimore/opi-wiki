@@ -25,8 +25,17 @@ EXPECTED_CI_TASK_SHAPES = (
         "ci:policy",
         ("desc", "cmds"),
         (),
-        ("uv run python scripts/check_hosted_ci_policy.py",),
-        ("plain",),
+        (
+            "uv run python scripts/check_hosted_ci_policy.py",
+            # The estate baseline runs here as an ordinary Taskfile edge, for
+            # the same reason the local guard above does: Patapsco's own
+            # ci_enforcement rule proves the hosted gate reaches a policy
+            # command by walking task edges, and it cannot follow a Python plan
+            # module. A platform-check invoked only from verify.py reads to the
+            # estate as no gate at all.
+            "uv run platform-check --repo .",
+        ),
+        ("plain", "plain"),
     ),
 )
 EXPECTED_CI_WORKFLOW_PATHS = ("ci.yml",)
@@ -75,8 +84,8 @@ EXPECTED_CI_PLAN_COMMANDS = (
     "python scripts/check_browser_readiness_contract.py",
     "python scripts/check_platform_guard_evidence.py",
     "python -m baltimore.patapsco.baseline.cli --repo .",
-    "python -m ruff format --check main.py scripts tests",
-    "python -m ruff check main.py scripts tests",
+    "python -m ruff format --config pyproject.toml --check main.py scripts tests",
+    "python -m ruff check --config pyproject.toml main.py scripts tests",
     "python -m mypy",
     "python -m bandit -q -c pyproject.toml -r main.py scripts",
     "python scripts/check_page_metadata.py",

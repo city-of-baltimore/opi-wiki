@@ -1,16 +1,32 @@
 name: Deploy to GitHub Pages
 
-# Builds and deploys the site to GitHub Pages on every push to main. This is the
-# pre-deploy gate: it runs the prepush plan — the static checks that pull-request
-# CI runs, plus the repo-automation test suite, the strict MkDocs build, the
-# built-site checks, and accessibility smoke that need site/. Every assertion in
-# the prepush tier therefore gates production. Browser interactions and the
-# full-route accessibility matrix remain the deliberate local `task validate`
-# release proof; they are not part of this hosted deploy lane. The committed
-# site_url and OPI_SITE_URL both use the canonical Pages base URL.
+# Builds and deploys the site to GitHub Pages on every push to main.
 #
-# Deploy workflows are exempt from the lean-CI rule — building is their job —
-# so scripts/check_hosted_ci_policy.py does not scan this file.
+# This file is declared as `pages-deploy` in .baltimore-lab-app.toml, and the
+# consistency standard (§4) then holds it to that exact shape. GitHub Pages
+# structurally needs two jobs, so it can never satisfy the single-job mutation
+# boundary; what replaces single-job ownership is the `needs` edge plus a strict
+# privilege split:
+#
+#   * workflow-level permissions grant neither `pages: write` nor
+#     `id-token: write` — writing them here would defeat the split even though
+#     GitHub would accept it;
+#   * the build job declares its own read-only grants and runs the gate;
+#   * only the environment-bound deploy job holds the two Pages write grants,
+#     and it cannot start until the gate has passed.
+#
+# The gate is `task validate`, not `task prepush`: validate is the pre-mutation
+# boundary, and this is the one hosted lane permitted to reach it. It runs every
+# prepush assertion — the tests, the strict build, the built-site checks — plus
+# browser smoke and the full-route accessibility matrix, which is why the build
+# job installs a browser first. The committed site_url and OPI_SITE_URL both use
+# the canonical Pages base URL.
+#
+# Deploy workflows are exempt from the repo-local lean-CI guard — building is
+# their job — so scripts/check_hosted_ci_policy.py does not scan this file.
+# Patapsco's platform-check does scan it, permitting only the single mandated
+# `task validate`; every other run body here is judged exactly as it would be in
+# the pull-request lane.
 
 on:
   push:
@@ -19,8 +35,6 @@ on:
 
 permissions:
   contents: read
-  pages: write
-  id-token: write
 
 concurrency:
   group: pages
@@ -29,7 +43,11 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
-    timeout-minutes: 20
+    timeout-minutes: 30
+    # Read-only, and written down rather than inherited: an absent block is not
+    # read-only, it silently takes the repository default.
+    permissions:
+      contents: read
     steps:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
@@ -51,14 +69,20 @@ jobs:
         timeout-minutes: 5
         run: uv sync --frozen
 
-      # `task prepush` is the same command the local pre-push hook runs; its
-      # strict-build step produces the site/ artifact uploaded below. This is
-      # the gate that owns the tests, the build, and the built-site checks.
-      - name: Run the prepush gate (gates the deploy, builds site/)
+      # The validate tier drives a real browser. Installing one is a dependency
+      # fetch, not a browser suite, and it has to happen before the gate runs.
+      - name: Install the accessibility browser
         timeout-minutes: 10
+        run: uv run playwright install --with-deps chromium
+
+      # `task validate` is the whole pre-deploy gate and the whole permitted
+      # command: everything `task prepush` asserts, plus the browser suites. Its
+      # strict-build step produces the site/ artifact uploaded below.
+      - name: Run the validate gate (gates the deploy, builds site/)
+        timeout-minutes: 20
         env:
           OPI_SITE_URL: https://city-of-baltimore.github.io/opi-wiki/
-        run: task prepush
+        run: task validate
 
       - uses: actions/upload-pages-artifact@fc324d3547104276b827a68afc52ff2a11cc49c9 # v5.0.0
         with:
@@ -68,6 +92,10 @@ jobs:
     needs: build
     runs-on: ubuntu-latest
     timeout-minutes: 10
+    # The only job that may touch Pages, and it runs only after the gate.
+    permissions:
+      pages: write
+      id-token: write
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
