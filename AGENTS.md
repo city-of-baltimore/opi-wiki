@@ -91,9 +91,11 @@ retirement condition is in the "Two checkers" note in that module's docstring an
 is **not** met — and the injection matrix that produced these numbers is
 reproducible; re-run it on every pin bump.
 
-Because tests live pre-push, **the hook is the only backstop**. Run
+Because tests live pre-push, **the hook is the only pre-merge backstop**. Run
 `./scripts/install-hooks.sh` after cloning. A broken test surfaces at
-`git push`, not on the pull request.
+`git push`, never on the pull request. If the hook is bypassed, the Pages
+`validate` gate still catches it — but only after the merge has landed, and it
+blocks publication rather than the merge.
 
 ## 3 · The excellence bar
 
