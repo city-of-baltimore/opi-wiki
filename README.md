@@ -394,7 +394,7 @@ opi-foundations/
 │   ├── check_page_metadata.py
 │   ├── check_brand_terms.py
 ├── .github/
-│   ├── workflows/ci.yml          # PR/push verification
+│   ├── workflows/ci.yml          # pull-request and manual verification
 │   ├── workflows/deploy.yml      # GitHub Actions auto-deploy
 │   └── ISSUE_TEMPLATE/           # suggestion + error report forms
 ├── CONTRIBUTING.md

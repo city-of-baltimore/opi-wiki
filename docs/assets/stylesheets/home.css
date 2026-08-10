@@ -12,7 +12,18 @@
 .opi-hero h1 {
   color: #FFFFFF;
   border-bottom: 0;
-  font-size: clamp(2rem, 12vw, 2.4rem);
+  /* Hero copy wraps only between words. Material sets overflow-wrap:
+     break-word globally, which lets a title word split mid-glyph once it no
+     longer fits its line box. Declaring the invariant here is only safe while
+     the longest word still fits, so the two rules move together. */
+  overflow-wrap: normal;
+  /* The release proof paints the hero offline, so the webfonts never arrive and
+     the stack falls through to system-ui — DejaVu Sans on Linux, roughly 16%
+     wider than the macOS fallback. "Foundations" measures 6.96x its font size
+     there, and the line box is the viewport less 80px of hero padding, so the
+     viewport term has to stay under ~10.8vw at the 320px floor. 9vw holds that
+     with headroom and leaves the desktop size unchanged. */
+  font-size: clamp(1.5rem, 9vw, 2.4rem);
   margin: 0 0 0.5rem 0;
   padding: 0;
 }
