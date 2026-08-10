@@ -310,8 +310,9 @@ local hook did not.
 - Automated accessibility checks do not prove screen-reader clarity, reading
   order quality, 200% or 400% zoom, custom text spacing, or useful alternative
   text.
-- Browser validation is a documented release requirement, but the Pages
-  workflow does not enforce it mechanically.
+- Browser validation gates publication, but it runs against the static release
+  artifact with fonts unavailable, so it does not prove delivered typography,
+  real devices, or behavior on the deployed site.
 - No gate proves reader comprehension, task success, GitHub Pages availability,
   or a recovery objective.
 
