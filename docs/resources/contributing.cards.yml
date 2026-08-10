@@ -4,6 +4,8 @@
 - meta: "Larger change"
   title: "Open an issue"
   body: "Suggest a structural change, propose new content, or flag a topic that's missing entirely. We use issue templates to make it easy."
+  href: https://github.com/city-of-baltimore/opi-wiki/issues/new/choose
+  link_label: "Choose an issue template"
 - meta: Direct
   title: "Email us"
   body: "For sensitive feedback or content we should not handle in the open, email opi@baltimorecity.gov."

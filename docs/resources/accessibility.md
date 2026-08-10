@@ -78,7 +78,7 @@ check passed” is not a substitute for that evidence.
 ## Report an accessibility barrier
 
 Email [opi@baltimorecity.gov](mailto:opi@baltimorecity.gov) or
-[open a GitHub issue](https://github.com/city-of-baltimore/opi-wiki/issues/new).
+[open a GitHub issue](https://github.com/city-of-baltimore/opi-wiki/issues/new/choose).
 Include the page address, what you were trying to do, what happened, and the
 browser or assistive technology you were using. Do not include sensitive
 personal information.
