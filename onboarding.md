@@ -165,21 +165,16 @@ reviewed in the pull request.
 
 ## Where to go deeper
 
-- [Product requirements](product/product-requirements.md) — the
-  product boundary, audiences, complete capability contract, and open decisions
-- [User stories](product/user-stories.md) — the reader,
-  contributor, owner, and maintainer journeys the website must support
-- [Technical specification](product/technical-spec.md) — how the current
-  repository, rendering, verification, preview, and publishing boundaries work
-- [README](README.md) — setup, architecture, commands, and repository layout
-- [Contributing](CONTRIBUTING.md) — how to propose and review a change
-- [Maintainer manual](MAINTAINERS.md) — ownership, editorial workflow, and
-  structural conventions
-- [Engineering and content rules](AGENTS.md) — enforced gates, boundaries, and
-  the excellence bar
-- [Editorial style](STYLE.md) — voice, plain language, and formatting
+[Which document answers which question](README.md#which-document-answers-which-question)
+maps every repository document to the question it answers. The three that follow
+most naturally from this one are the
+[product requirements](product/product-requirements.md) — the product boundary,
+audiences, and open decisions; the [user stories](product/user-stories.md) — the
+reader, contributor, owner, and maintainer journeys the website must support;
+and the [technical specification](product/technical-spec.md) — how rendering,
+verification, preview, and publishing actually work.
 
-For a first tour, read the
+For a first tour of the site itself, read the
 [home page](docs/index.md),
 [How Work Moves Through OPI](docs/how-we-work/how-work-moves-through-opi.md),
 [What We Do](docs/what-we-do/index.md), and the

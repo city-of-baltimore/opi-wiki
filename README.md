@@ -8,13 +8,43 @@ Maintainer: see [`MAINTAINERS.md`](MAINTAINERS.md)
 
 **Platform baseline:** `baltimore-patapsco==0.6.24`
 
-New to the product or repository? Start with
-[`onboarding.md`](onboarding.md).
+## Which document answers which question
 
-The repository product contract lives outside the generated Wiki in
+Nine documents, each with one job. Start here rather than guessing.
+
+| If you want to… | Read |
+| --- | --- |
+| Understand the product, its content model, and how a change reaches the site | [`onboarding.md`](onboarding.md) |
+| Set up, preview, and run the gates | [Local development](#local-development), below |
+| Know the rules before you change anything | [`AGENTS.md`](AGENTS.md) |
+| Write or review content — voice, review tiers, conventions | [`MAINTAINERS.md`](MAINTAINERS.md) |
+| Match the house voice in a specific sentence | [`STYLE.md`](STYLE.md) |
+| Propose a change as a contributor | [`CONTRIBUTING.md`](CONTRIBUTING.md) |
+| Know what the product must do, and for whom | [`product/`](product/README.md) |
+| Know exactly what a gate proves, or how the browser models differ | [`product/technical-spec.md`](product/technical-spec.md) |
+| Find how this repo is laid out | [Repository layout](#repository-layout), below |
+
+The product contract sits outside the generated Wiki on purpose —
 [Product Requirements](product/product-requirements.md),
 [User Stories](product/user-stories.md), and the
-[Technical Specification](product/technical-spec.md).
+[Technical Specification](product/technical-spec.md) are repository documents,
+not published pages.
+
+## Contents
+
+**Working here** — [Local development](#local-development) ·
+[How CI is split](#how-ci-is-split) ·
+[Security scanning](#security-scanning) ·
+[Build platform note](#build-platform-note)
+
+**Conventions** — [Repository conventions](#repository-conventions) ·
+[Page data model](#page-data-model) ·
+[Repository layout](#repository-layout) ·
+[Documentation method consistency](#documentation-method-consistency)
+
+**Shipping** — [Editorial workflow](#editorial-workflow) ·
+[Deployment](#deployment) ·
+[License](#license)
 
 ## What this is
 
