@@ -43,15 +43,15 @@ dependencies so it can run under a bare interpreter.
 Two checkers, on purpose
 ------------------------
 The ``ci`` gate runs **both** this module and Patapsco's ``platform-check``
-(``baltimore-patapsco==0.6.17``) — each from the ``ci:policy`` task and again
+(``baltimore-patapsco==0.6.24``) — each from the ``ci:policy`` task and again
 from the plan below it. That is not duplication left by accident. The
-consolidation to the shared checker has now been attempted and
-measured six times — against 0.4.0, 0.4.1, 0.4.3, 0.4.5, 0.4.8, and now 0.6.17 —
-and no release yet subsumes this guard. Each violation below was injected on its
-own and both checkers were run. As measured against **0.6.17**, this module exits
+consolidation to the shared checker has now been attempted and measured seven
+times — against 0.4.0, 0.4.1, 0.4.3, 0.4.5, 0.4.8, 0.6.17, and now 0.6.24 — and
+no release yet subsumes this guard. Each violation below was injected on its
+own and both checkers were run. As measured against **0.6.24**, this module exits
 1 on all four; ``platform-check`` returns ``conforms`` / exit 0 on all four:
 
-1. **A forbidden command inside a ``verify.py`` plan.** *(0.6.17: still missed.)*
+1. **A forbidden command inside a ``verify.py`` plan.** *(0.6.24: still missed.)*
    ``platform-check`` expands ``npm`` script bodies and ``*.sh`` bodies, but a
    **Python plan module** is still an opaque leaf: ``uv run python
    scripts/verify.py --plan ci`` is matched against the forbidden-pattern list
@@ -59,8 +59,8 @@ own and both checkers were run. As measured against **0.6.17**, this module exit
    build`` — to the ``ci`` tier of :func:`scripts.verify.build_steps` therefore
    passes it while the hosted lane really runs that step. Same shape as the
    ``task --dry`` bug: green while vacuous.
-2. **The same gap reached through a shell script.** *(0.6.17: still missed.)*
-   0.6.17 *does* read ``.sh`` bodies, but ``scripts/verify.sh`` is a two-line
+2. **The same gap reached through a shell script.** *(0.6.24: still missed.)*
+   0.6.24 *does* read ``.sh`` bodies, but ``scripts/verify.sh`` is a two-line
    wrapper whose payload is ``uv run python scripts/verify.py "$@"`` — so the
    expansion runs, walks one hop, and lands on the same Python-module wall.
    Pointing the ``ci`` task at ``./scripts/verify.sh --plan prepush`` is missed
@@ -70,12 +70,12 @@ own and both checkers were run. As measured against **0.6.17**, this module exit
    ``bash -c``), so the expander works and the wall is specifically the plan
    module. Reaching ``verify.py --plan prepush`` *directly* from the ``ci`` task
    is missed too, which rules out indirection depth as the cause.
-3. **A missing job ``timeout-minutes``** (invariant 4). *(0.6.17: still missed.)*
+3. **A missing job ``timeout-minutes``** (invariant 4). *(0.6.24: still missed.)*
    No equivalent rule.
-4. **An unallowlisted ``run:`` command** (invariant 1). *(0.6.17: structurally
-   still missed; the opaque spellings are now caught.)* ``platform-check``
+4. **An unallowlisted ``run:`` command** (invariant 1). *(0.6.24: structurally
+   still missed; the opaque spellings are caught.)* ``platform-check``
    matches a *forbidden* pattern list, which is a denylist; it still has no
-   allowlist, so an arbitrary benign command passes. Measured on 0.6.17 by
+   allowlist, so an arbitrary benign command passes. Measured on 0.6.24 by
    injecting one extra ``run:`` step into ``ci.yml``:
 
    - ``echo "probe"``                                  -> ``conforms``, missed
@@ -102,8 +102,8 @@ blocking rather than an opaque leaf that passes.
 
 **Retired at 0.6.17: an unpinned ``uses:`` reference.** Through 0.4.8 this was
 the fifth differential case — ``actions/checkout@main`` instead of a SHA — and
-the shared checker had no equivalent rule. 0.6.17 reports any ``uses:`` that is
-not a SHA-pinned trusted action as an opaque action, so the case no longer
+the shared checker had no equivalent rule. 0.6.17 and later report any ``uses:``
+that is not a SHA-pinned trusted action as an opaque action, so the case no longer
 belongs in a matrix whose whole claim is "the shared checker misses this". This
 module still enforces the pin (invariant 1) with its own regression tests in
 ``tests/test_hosted_ci_policy.py``; what moved is the evidence claim, not the
@@ -119,8 +119,10 @@ but those changes address shell and ``npm`` argv shapes, not a Python aggregate.
 0.4.6 strengthened structural pre-push validation and workspace-aware npm
 resolution; 0.6.x added the managed ignore baseline, marker-declared workflow
 shapes, ``manifest_integrity``, and the SHA-pinned ``uses:`` rule that retired
-case 5. None adds a Python aggregate contract, and the 0.6.17 differential
-confirms the root cause is untouched. The retirement condition for this module
+case 5. 0.6.18 through 0.6.24 are BOM advances carrying Bromo, plus
+``dependabot_posture`` and ``version_claims`` — estate hygiene rules that add no
+task-resolution capability. None adds a Python aggregate contract, and the
+0.6.24 differential confirms the root cause is untouched. The retirement condition for this module
 is therefore unchanged and still unmet — when ``platform-check`` can resolve a
 plan module (see the suggestion in ``docs/`` and the PR that introduced this
 note: a declared ``[tasks] aggregate`` entry in ``.baltimore-lab-app.toml``

@@ -8,6 +8,8 @@ This repository is the MkDocs site for **OPI Foundations**. Docs are the
 product: they must be easy to find, easy to update, easy to review, and hard to
 break quietly.
 
+**Platform baseline:** `baltimore-patapsco==0.6.24`
+
 Before any structural change, read `README.md`, `CONTRIBUTING.md`, and
 `MAINTAINERS.md`. Those are standing guidance for editorial, structural, and
 governance decisions.
@@ -70,26 +72,20 @@ Resolution is static on purpose in both: `task --dry` writes its plan to stderr,
 so a guard that shells out and reads stdout passes vacuously.
 
 **Do not delete the local guard as "duplicated by `platform-check`".** That has
-been attempted and measured six times, against 0.4.0, 0.4.1, 0.4.3, 0.4.5,
-0.4.8, and 0.6.17. 0.6.17 adds the managed ignore baseline, marker-declared
-workflow shapes, `manifest_integrity`, and a SHA-pinned `uses:` rule; it expands
-`.sh` bodies and unwraps `bash -c`, but a
-**Python plan module** is still an opaque leaf, so a `pytest` step added to the
-`ci` tier of `build_steps()` passes it while the hosted lane really runs the
-suite — the same green-but-vacuous failure mode as the `task --dry` bug. Routing
-`ci` through `scripts/verify.sh` is missed for the same reason: the `.sh` body is
-read, then lands on the same Python wall. It also misses a missing
-`timeout-minutes`, and its `run:` coverage is a denylist, so an arbitrary benign
-unallowlisted command still passes. All four remaining injected
-cases are still missed at 0.6.17 in their ordinary form. Two spellings that used
-to pass no longer do: a piped `curl … | sh` and a `node -e "…"` are both blocked
-by `manifest_integrity` as delegation the checker cannot read — not by any
-`curl` or `node` denylist entry. A plain `echo "probe"` still passes, which is
-the invariant the allowlist exists for. The fifth case, an unpinned `uses:` ref,
-was **retired** at this bump because 0.6.17 catches it. The
-retirement condition is in the "Two checkers" note in that module's docstring and
-is **not** met — and the injection matrix that produced these numbers is
-reproducible; re-run it on every pin bump.
+been attempted and measured seven times, against 0.4.0, 0.4.1, 0.4.3, 0.4.5,
+0.4.8, 0.6.17, and 0.6.24. One root cause survives every release: a **Python
+plan module is an opaque leaf** to the shared resolver, so a `pytest` step added
+to the `ci` tier of `build_steps()` passes it while the hosted lane really runs
+the suite — green and vacuous. All four remaining injected
+cases are still missed at 0.6.24 in their ordinary form.
+
+The full measured matrix, the spellings that changed, and the retirement
+condition — **not** met — are in the "Two checkers" note in
+`scripts/repo_tools/hosted_ci_policy.py`. That note is the authority; do not
+restate its numbers here. The matrix is reproducible as
+`tests/test_platform_guard_differential.py` — re-run it on every pin bump, and
+only against a repository that already conforms, or every case fails for the
+wrong reason.
 
 Because tests live pre-push, **the hook is the only pre-merge backstop**. Run
 `./scripts/install-hooks.sh` after cloning. A broken test surfaces at
