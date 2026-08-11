@@ -35,9 +35,13 @@ This document is for the OPI Foundations docs maintainer. It describes the role,
 [Which gate runs what](#which-gate-runs-what) ·
 [Advisory security scan](#advisory-security-scan)
 
-Dated decisions are recorded next to the rule they explain, not in one log.
-The largest group is under
-[Verification and browser assurance](#recorded-decisions--preview-browser-assurance-accessibility).
+**Recorded decisions** are kept next to the rule they explain rather than in one
+log, in five groups —
+[content labels and validation](#recorded-decisions--content-labels-and-validation) ·
+[organization data](#recorded-decisions--organization-data) ·
+[build platform](#recorded-decisions--build-platform) ·
+[preview, browser assurance, accessibility](#recorded-decisions--preview-browser-assurance-accessibility) ·
+[the platform gate](#recorded-decisions--the-platform-gate)
 
 ## The role
 
@@ -126,6 +130,8 @@ named Markdown page and generated-HTML context. The text may come from a macro
 or structured source, so artifact evidence remains authoritative even when one
 Markdown line is not the origin. Do not invent a source location to silence the
 finding.
+
+### Recorded decisions — content labels and validation
 
 - 2026-07-27 — **[CONTENT LABELS] keep generic repository-state labels and the
   former pill UI retired** — review belongs to the office release process, so
@@ -293,6 +299,8 @@ contractors, payroll identifiers, phone numbers, individual email addresses,
 classifications, cost centers, personnel status, compensation, or full position
 descriptions.
 
+### Recorded decisions — organization data
+
 - 2026-07-27 — **[ORGANIZATION DATA] defer disposition of `primary_value`** —
   the visible team summary was retired in commit `ee27304`, but its four
   substantive descriptions remain verbatim in source pending an Executive
@@ -324,6 +332,8 @@ If the team chooses another renderer later, treat it as a full platform change:
 1. Confirm the target renderer and configuration contract.
 2. Update local commands, CI, and preview/deploy scripts together.
 3. Re-verify theme, plugins, redirects, and navigation behavior in one slice.
+
+### Recorded decisions — build platform
 
 - 2026-07-29 — **[BUILD PLATFORM] adopt security-patched Material and PyMdown
   while retaining MkDocs 1.x** — `mkdocs-material==9.7.7` fixes a DOM-based XSS
@@ -584,6 +594,8 @@ group, and coordinated current-measurement references. Updating the marker is a
 maintainer attestation, not execution proof. The pre-push suite runs
 `tests/test_platform_guard_differential.py` against the installed release and
 must pass before the change can be pushed or deployed.
+
+### Recorded decisions — the platform gate
 
 - 2026-08-10 — **[PLATFORM GATE] adopt Patapsco 0.6.24 after differential
   re-measurement** — seven releases in one bump; 0.6.18 through 0.6.24 are BOM

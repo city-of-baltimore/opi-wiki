@@ -12,6 +12,40 @@ through GitHub Pages. The
 [User Stories](user-stories.md) own the journeys and acceptance criteria. This
 document owns the technical seams that implement and prove those contracts.
 
+## Contents
+
+Other documents point here for two things in particular:
+[Verification architecture](#verification-architecture) is the authority on what
+each gate tier contains, and
+[Static and live browser models](#static-and-live-browser-models) is the
+authority on how the two browser passes differ.
+
+**Orientation** — [System summary](#system-summary) ·
+[System context](#system-context) ·
+[Technical invariants](#technical-invariants) ·
+[Source authority map](#source-authority-map)
+
+**Content and rendering** — [Repository and publication boundaries](#repository-and-publication-boundaries) ·
+[Content and navigation model](#content-and-navigation-model) ·
+[Build-time data and macros](#build-time-data-and-macros) ·
+[Rendering and client behavior](#rendering-and-client-behavior)
+
+**Build, preview, publish** — [Canonical URLs and local preview](#canonical-urls-and-local-preview) ·
+[Build and deployment flow](#build-and-deployment-flow) ·
+[Local commands](#local-commands)
+
+**Verification** — [Verification architecture](#verification-architecture) ·
+[Static and live browser models](#static-and-live-browser-models) ·
+[Accessibility boundary](#accessibility-boundary)
+
+**Boundaries and limits** — [Security, privacy, and source placement](#security-privacy-and-source-placement) ·
+[External dependencies](#external-dependencies) ·
+[Failure behavior](#failure-behavior) ·
+[Known limits and deliberate deferrals](#known-limits-and-deliberate-deferrals)
+
+**Process** — [Definition of done](#definition-of-done) ·
+[Maintaining this specification](#maintaining-this-specification)
+
 ## System summary
 
 OPI Foundations is a static documentation site:

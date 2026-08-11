@@ -10,9 +10,23 @@ break quietly.
 
 **Platform baseline:** `baltimore-patapsco==0.6.24`
 
-Before any structural change, read `README.md`, `CONTRIBUTING.md`, and
-`MAINTAINERS.md`. Those are standing guidance for editorial, structural, and
-governance decisions.
+Before any structural change, read [`README.md`](README.md),
+[`CONTRIBUTING.md`](CONTRIBUTING.md), and [`MAINTAINERS.md`](MAINTAINERS.md).
+Those are standing guidance for editorial, structural, and governance decisions.
+
+## Contents
+
+**From the estate baseline** — [1 · What is enforced, and where](#1--what-is-enforced-and-where) ·
+[2 · The three gates](#2--the-three-gates) ·
+[3 · The excellence bar](#3--the-excellence-bar) ·
+[4 · Foundations and boundaries](#4--foundations-and-boundaries) ·
+[5 · Changing the baseline](#5--changing-the-baseline)
+
+**Local to this repository** — [Content taxonomy](#content-taxonomy) ·
+[Structure and navigation](#structure-and-navigation) ·
+[Content and linking](#content-and-linking) ·
+[Runtime and deploy](#runtime-and-deploy) ·
+[Docs that move with structure](#docs-that-move-with-structure)
 
 ---
 
@@ -164,34 +178,32 @@ the rules that name their enforcement seam.
 ## Content taxonomy
 
 OPI content sorts into four distinct types. Do not blur them when adding or
-moving pages.
+moving pages:
 
-- **Teams** (staff + budget, also called portfolios): Director's Office,
-  Performance, Data and Analytics, Innovation Lab → `about-us/our-teams/`.
-- **Services** (what OPI delivers): AdminOps, Citywide Performance Management,
-  Citywide Data and Analytics, Innovation Lab, Cross-Agency Delivery →
-  `what-we-do/services/`.
-- **Programs** (ongoing routines spanning teams): CitiStat, Data Governance,
-  Open Data, Citywide Data Network → `what-we-do/programs/`.
-- **Products** (tools OPI builds): Baltimore Intelligence Center, Baltimore
-  City Data Platform, Baltimore City Performance Portal, Baltimore 311 Explorer
-  → `what-we-do/products/`.
+- **Teams** — staff and budget, also called portfolios → `about-us/our-teams/`
+- **Services** — what OPI delivers → `what-we-do/services/`
+- **Programs** — ongoing routines that may span teams → `what-we-do/programs/`
+- **Products** — tools OPI builds → `what-we-do/products/`
 
-Hold these lines:
+Which team, service, program, and product belongs to each type is the roster in
+[Content taxonomy guardrails](MAINTAINERS.md#content-taxonomy-guardrails). It
+moves when OPI reorganizes, so it lives in one place; do not copy it here.
 
-- Innovation Lab is intentionally both a team and a service — state it, don't
-  "fix" it.
-- CitiStat is a program supported by all teams, owned by the CitiStat Director —
-  never a team.
+**Hold these four lines.** They look like errors and are not — every one has
+been "fixed" by someone who meant well:
+
+- Innovation Lab is intentionally both a team and a service. State it, don't
+  reconcile it.
+- CitiStat is a program supported by all teams, owned by the CitiStat Director.
+  Never a team.
 - Cross-Agency Delivery is a service, not a staffed team. There is no
   `about-us/our-teams/cross-agency-delivery/`.
 - Never write "CAD." Spell out Cross-Agency Delivery; "x-agency delivery" is the
   only allowed short form.
-- Every canonical page carries an owner and review cadence via the nearest
-  `.metadata.yml`; new sections add their own.
-- `docs/_data/people.yml` has an exact, hosted-CI-validated organization schema.
-  Both organization macros consume the same immutable model; never add a parallel
-  parser or an unreviewed field.
+
+Page ownership and the `docs/_data/people.yml` schema are enforced by
+`check_page_metadata.py` and `check_organization_data.py`. Per the rule at the
+top of this file, they are not restated here.
 
 ## Structure and navigation
 
