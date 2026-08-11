@@ -20,6 +20,12 @@ VALIDATOR_CASES = (
         "Brand terms validated.",
     ),
     (
+        "scripts.check_docs_folder_names",
+        "scripts.repo_tools.docs_folder_names",
+        "find_docs_folder_name_issues",
+        "Every docs/ folder name is visible to Git.",
+    ),
+    (
         "scripts.check_page_metadata",
         "scripts.repo_tools.metadata",
         "find_metadata_issues",

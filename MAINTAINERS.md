@@ -201,6 +201,37 @@ mapping in mind when locating content, and keep the `.pages` title, the
 | `what-we-do/services/` | Services | The five services OPI delivers, including **Cross-Agency Delivery** — a service, not a staffed team. |
 | `how-we-work/` | How We Work | Operating model, leadership structure, and the Staff Guide for OPI staff. |
 
+### Check a new folder name against the ignore file first
+
+A `docs/` folder name is two things at once: the public URL readers get, and an
+ordinary path that `.gitignore` matches like any other. The managed ignore block
+this repository carries from Patapsco holds **unanchored** directory patterns
+for Python packaging output, so `build/` and `dist/` match at *any* depth.
+`docs/build/` is ignored exactly as a root-level `build/` would be.
+
+That combination fails in the worst direction. The pages are invisible to Git,
+so they are never committed and never reach the checks, which read Git's view of
+the tree. MkDocs reads the filesystem, so the section renders perfectly in
+`task serve`. The author sees it working, the gate reports green, and the
+section is simply absent from the published site.
+
+`scripts/check_docs_folder_names.py` fails `task ci` on any such folder, so this
+now surfaces while the section is being created rather than after it ships. To
+check a candidate name by hand before committing to it:
+
+```bash
+git check-ignore -v docs/<candidate-name>/
+```
+
+No output means the name is free. Any output names the rule that would swallow
+it — pick a different name. Prefer the word a reader should see in the URL;
+lifecycle names like `develop/` read well beside the existing sections and
+collide with nothing.
+
+Anchoring those patterns locally is not the fix: the block is Patapsco's managed
+baseline, and rewriting `build/` as `/build/` here makes `platform-check` report
+the block as drifted. That change belongs upstream.
+
 ## Content taxonomy guardrails
 
 OPI content sorts into exactly four types. Keep them distinct; do not let a page

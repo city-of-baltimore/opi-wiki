@@ -219,6 +219,15 @@ top of this file, they are not restated here.
 - Directory boundaries: `docs/` published content and assets, `overrides/`
   Material template overrides, `scripts/` maintenance and verification helpers,
   `.github/workflows/` deploy and CI automation. No mystery top-level scripts.
+- **Run a new `docs/` folder name past the ignore file before adopting it.**
+  A `docs/` folder name is a public URL *and* an ordinary path, and the managed
+  `.gitignore` block carries unanchored directory patterns — `build/` and
+  `dist/` match at any depth. A section named for one of those is invisible to
+  Git and to every check that reads Git, while MkDocs still publishes it from
+  the working tree: green gate, page missing in production.
+  `scripts/check_docs_folder_names.py` fails the `ci` tier on it, so the answer
+  arrives at authoring time. Confirm a candidate by hand with
+  `git check-ignore -v docs/<name>/` — no output means the name is free.
 
 ## Content and linking
 
