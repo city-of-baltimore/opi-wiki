@@ -49,6 +49,13 @@ Git owns the answer to "is this path ignored?", so this asks Git rather than
 reimplementing ignore-matching. `git check-ignore` distinguishes its outcomes by
 exit status: 0 when something matched, 1 when nothing did, and anything else is
 a real error that fails closed rather than reading as "nothing ignored".
+
+`--no-index` is load-bearing. Without it, Git skips any path already in the
+index, so a folder someone had force-added with `git add -f` would report clean
+— and that half-state is worse than the plain one, not better: the committed
+pages work, and the *next* page dropped into the same folder vanishes, with the
+folder's own history as evidence that the name is fine. The question here is
+whether the name is a trap, not whether today's files happen to be hidden.
 """
 
 from __future__ import annotations
@@ -91,7 +98,7 @@ def _ignored_paths(repo_root: Path, candidates: tuple[Path, ...]) -> frozenset[P
         # is a fixed literal; every candidate path arrives on stdin, so no
         # folder name can be read as an option or a shell token.
         completed = subprocess.run(  # nosec B603  # noqa: S603
-            (git, "check-ignore", "--stdin"),
+            (git, "check-ignore", "--no-index", "--stdin"),
             cwd=repo_root,
             input=payload,
             capture_output=True,

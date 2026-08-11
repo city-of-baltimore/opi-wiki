@@ -2,6 +2,8 @@
 
 from __future__ import annotations
 
+import shutil
+import subprocess
 from pathlib import Path
 
 import pytest
@@ -59,6 +61,35 @@ def test_nested_ignored_folder_is_reported(tmp_path: Path) -> None:
     issues = find_docs_folder_name_issues(root, docs_dir=Path("docs"))
 
     assert [issue.split(":")[0] for issue in issues] == ["docs/what-we-do/build/"]
+
+
+def test_force_added_folder_is_still_reported(tmp_path: Path) -> None:
+    """A `git add -f` folder is the worse half-state, so the name still fails.
+
+    Git skips indexed paths unless asked not to. Without ``--no-index`` this
+    folder reports clean while the next page dropped into it still vanishes.
+    """
+
+    root = tmp_path / "repo"
+    docs = _docs_repo(root, ignore="build/\n")
+    (docs / "build").mkdir()
+    forced = docs / "build" / "overview.md"
+    forced.write_text("# Overview\n", encoding="utf-8")
+
+    git = shutil.which("git")
+    assert git is not None
+    # S603: git is an absolute resolved path and argv is fixed apart from the
+    # fixture path this test just created.
+    subprocess.run(  # noqa: S603
+        (git, "add", "-f", str(forced)),
+        cwd=root,
+        check=True,
+        capture_output=True,
+    )
+
+    issues = find_docs_folder_name_issues(root, docs_dir=Path("docs"))
+
+    assert [issue.split(":")[0] for issue in issues] == ["docs/build/"]
 
 
 def test_pycache_is_not_treated_as_published_content(tmp_path: Path) -> None:
