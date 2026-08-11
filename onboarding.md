@@ -86,20 +86,20 @@ method page over restating it in several places.
 
 ## How a page is assembled
 
-Most pages are ordinary Markdown under `docs/`. A few neighboring files provide
-structure without putting repeated markup into the content:
-
-- `.pages` controls the order and label of a section's navigation;
-- `.metadata.yml` records the owner, review dates, and change note for nearby
-  pages;
-- `*.cards.yml` supplies landing-page cards; and
-- `_data/people.yml` supplies the shared staff and organization views.
+Most pages are ordinary Markdown under `docs/`. A few neighboring files add
+structure without pushing repeated markup into the content: `.pages` orders and
+labels a section's navigation, `.metadata.yml` records the owner and review
+dates for nearby pages, `*.cards.yml` supplies landing-page cards, and
+`_data/people.yml` supplies the shared staff and organization views.
 
 `mkdocs.yml` owns site-wide configuration. Shared rendering helpers live in
 `main.py` and `scripts/repo_tools/`. Styling is split by responsibility under
-`docs/assets/stylesheets/`.
+`docs/assets/stylesheets/`. The generated `site/` directory is build output —
+never edit it directly.
 
-The generated `site/` directory is build output. Never edit it directly.
+The [page data model](README.md#page-data-model) in the README is the rule for
+choosing among these: reach for the smallest pattern that fits, and leave a page
+as plain Markdown when it can be.
 
 ## How a change reaches the website
 
@@ -108,26 +108,26 @@ The generated `site/` directory is build output. Never edit it directly.
    in the same change.
 3. Preview the result and run the appropriate verification gate.
 4. Open a pull request for substantive or structural work and request the
-   content owner's review.
+   content owner's review. How much review a change needs depends on its kind —
+   [`MAINTAINERS.md`](MAINTAINERS.md) is the operating manual that decides.
 5. Merge to `main` after the required review. The deploy workflow rebuilds the
    site and publishes the generated artifact to GitHub Pages.
 
-The repository uses three nested gates:
-
-| Gate | Command | Purpose |
-| --- | --- | --- |
-| Fast static gate | `task ci` | Formatting, typing, security, policy, and source-content checks |
-| Pre-push gate | `task prepush` | Everything above, plus tests, a strict site build, and generated-site checks |
-| Pre-deploy gate | `task validate` | Everything above, plus real-browser interaction and accessibility checks |
-
-Each gate is a strict prefix of the next. Checks are defined once in
-`scripts/verify.py`, which keeps local, pull-request, and deployment behavior
-from drifting apart.
+The repository uses three nested gates: `task ci` is the fast static pass,
+`task prepush` adds the tests and a strict site build, and `task validate` adds
+real-browser and accessibility checks before a release. Each is a strict superset
+of the one before it, and all three are defined once in `scripts/verify.py`,
+which keeps local, pull-request, and deployment behavior from drifting apart.
+The [Technical Specification](product/technical-spec.md#verification-architecture)
+lists exactly what each tier adds.
 
 ## Running it locally
 
-The standard local setup requires Python 3.13 or 3.14, `uv`, and
-[Task](https://taskfile.dev/).
+Editing the wiki does not require running anything. Content changes can go
+through the GitHub web editor, and the checks run for you.
+
+To preview locally you need Python 3.13 or 3.14, `uv`, and
+[Task](https://taskfile.dev/):
 
 ```bash
 task setup
@@ -135,44 +135,14 @@ task serve
 ```
 
 Open <http://127.0.0.1:5208>. The server reloads when a source file changes.
+Before handing off a substantial change, run `task validate` — the pre-deploy
+proof. It needs Chromium once per machine
+(`uv run playwright install chromium`).
 
-Before handing off a substantial change:
-
-```bash
-uv run playwright install chromium  # one-time browser installation
-task validate
-```
-
-`task validate` makes a strict production build, reads its canonical address
-from the generated sitemap, and has Chromium audit those exact files at that
-address through local-only request routing. It does not start a server, use DNS,
-TLS, or the network, or rewrite the generated HTML. Unexpected paths, requests
-outside the deployment address, and missing files fail locally. This preserves
-production-origin behavior such as Material instant navigation, while a
-separate live preview does not need to be running.
-
-The self-contained check assumes outside font services are unavailable and
-confirms that the product workflows still work. That keeps the release proof
-dependable offline. It does not prove which font the browser painted or whether
-Adobe or Google is available; those typography details need a manual look in a
-live browser when they matter.
-
-The live browser commands documented in the [README](README.md) are deliberately
-different: when pointed at `task serve` or Docker Compose, they make real
-requests to that running preview and read its own sitemap.
-
-### Docker Compose alternative
-
-Docker Compose is appropriate when a contributor wants a working preview
-without installing Python or `uv` on the host:
-
-```bash
-docker compose up --build
-```
-
-It serves the same MkDocs source at <http://127.0.0.1:5208> with live reload.
-The container is a development convenience only; GitHub Pages remains the
-deployment path.
+[Local development](README.md#local-development) in the README is the full
+account: what `task validate` does and does not prove, the Docker Compose
+alternative for a host without Python, and how to point the browser checks at a
+running preview.
 
 ## A product manager's change checklist
 
@@ -195,21 +165,16 @@ reviewed in the pull request.
 
 ## Where to go deeper
 
-- [Product requirements](product/product-requirements.md) — the
-  product boundary, audiences, complete capability contract, and open decisions
-- [User stories](product/user-stories.md) — the reader,
-  contributor, owner, and maintainer journeys the website must support
-- [Technical specification](product/technical-spec.md) — how the current
-  repository, rendering, verification, preview, and publishing boundaries work
-- [README](README.md) — setup, architecture, commands, and repository layout
-- [Contributing](CONTRIBUTING.md) — how to propose and review a change
-- [Maintainer manual](MAINTAINERS.md) — ownership, editorial workflow, and
-  structural conventions
-- [Engineering and content rules](AGENTS.md) — enforced gates, boundaries, and
-  the excellence bar
-- [Editorial style](STYLE.md) — voice, plain language, and formatting
+[Which document answers which question](README.md#which-document-answers-which-question)
+maps every repository document to the question it answers. The three that follow
+most naturally from this one are the
+[product requirements](product/product-requirements.md) — the product boundary,
+audiences, and open decisions; the [user stories](product/user-stories.md) — the
+reader, contributor, owner, and maintainer journeys the website must support;
+and the [technical specification](product/technical-spec.md) — how rendering,
+verification, preview, and publishing actually work.
 
-For a first tour, read the
+For a first tour of the site itself, read the
 [home page](docs/index.md),
 [How Work Moves Through OPI](docs/how-we-work/how-work-moves-through-opi.md),
 [What We Do](docs/what-we-do/index.md), and the

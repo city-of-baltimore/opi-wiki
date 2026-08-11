@@ -2,6 +2,47 @@
 
 This document is for the OPI Foundations docs maintainer. It describes the role, the weekly cadence, the editorial voice, and the systems involved.
 
+## Contents
+
+**The job** — [The role](#the-role) ·
+[Weekly cadence](#weekly-cadence-suggested) ·
+[The intake funnel](#the-intake-funnel) ·
+[Tools the maintainer uses](#tools-the-maintainer-uses) ·
+[Onboarding a new maintainer](#onboarding-a-new-maintainer) ·
+[Bus factor mitigation](#bus-factor-mitigation)
+
+**Writing and reviewing** — [Editorial voice](#editorial-voice) ·
+[Repository source contract](#repository-source-contract) ·
+[Cross-link discipline](#cross-link-discipline) ·
+[Method and playbook maintenance check](#method-and-playbook-maintenance-check)
+
+**Structure and navigation** — [Navigation ownership](#navigation-ownership) ·
+[Section map: folder ↔ navigation label](#section-map-folder--navigation-label) ·
+[Content taxonomy guardrails](#content-taxonomy-guardrails)
+
+**Building a page** — [Landing-page cards](#landing-page-cards) ·
+[Page headers](#page-headers) ·
+[Headings](#headings) ·
+[Page metadata blocks](#page-metadata-blocks) ·
+[Structured page data](#structured-page-data) ·
+[Page data model](#page-data-model)
+
+**Keeping it current** — [Review-date enforcement](#review-date-enforcement) ·
+[Staleness audit (quarterly)](#staleness-audit-quarterly)
+
+**Build and verification** — [Build platform posture](#build-platform-posture) ·
+[Verification and browser assurance](#verification-and-browser-assurance) ·
+[Which gate runs what](#which-gate-runs-what) ·
+[Advisory security scan](#advisory-security-scan)
+
+**Recorded decisions** are kept next to the rule they explain rather than in one
+log, in five groups —
+[content labels and validation](#recorded-decisions--content-labels-and-validation) ·
+[organization data](#recorded-decisions--organization-data) ·
+[build platform](#recorded-decisions--build-platform) ·
+[preview, browser assurance, accessibility](#recorded-decisions--preview-browser-assurance-accessibility) ·
+[the platform gate](#recorded-decisions--the-platform-gate)
+
 ## The role
 
 **Title:** OPI Foundations Docs Maintainer
@@ -89,6 +130,8 @@ named Markdown page and generated-HTML context. The text may come from a macro
 or structured source, so artifact evidence remains authoritative even when one
 Markdown line is not the origin. Do not invent a source location to silence the
 finding.
+
+### Recorded decisions — content labels and validation
 
 - 2026-07-27 — **[CONTENT LABELS] keep generic repository-state labels and the
   former pill UI retired** — review belongs to the office release process, so
@@ -256,6 +299,8 @@ contractors, payroll identifiers, phone numbers, individual email addresses,
 classifications, cost centers, personnel status, compensation, or full position
 descriptions.
 
+### Recorded decisions — organization data
+
 - 2026-07-27 — **[ORGANIZATION DATA] defer disposition of `primary_value`** —
   the visible team summary was retired in commit `ee27304`, but its four
   substantive descriptions remain verbatim in source pending an Executive
@@ -287,6 +332,8 @@ If the team chooses another renderer later, treat it as a full platform change:
 1. Confirm the target renderer and configuration contract.
 2. Update local commands, CI, and preview/deploy scripts together.
 3. Re-verify theme, plugins, redirects, and navigation behavior in one slice.
+
+### Recorded decisions — build platform
 
 - 2026-07-29 — **[BUILD PLATFORM] adopt security-patched Material and PyMdown
   while retaining MkDocs 1.x** — `mkdocs-material==9.7.7` fixes a DOM-based XSS
@@ -328,6 +375,8 @@ Every quarter, run `task prepush` (which includes `mkdocs build --strict`) and a
 
 Email the relevant section owner with a one-line ask: "Is this still accurate? Any updates?"
 
+## Verification and browser assurance
+
 Every tier delegates to a structured Python verification runner, so maintainers
 get per-step timing and failure summaries. If you need a machine-readable report
 for CI or triage, call the runner directly:
@@ -341,50 +390,31 @@ schemes. That pass expects a one-time local browser install via
 review are documented in
 [`docs/resources/accessibility.md`](docs/resources/accessibility.md).
 
-`task validate` is self-contained: it performs the strict build, reads the
-production canonical origin from the built `sitemap.xml`, and mounts the exact
-artifact at that origin inside Chromium through hermetic Playwright request
-routing. The static audit starts no server, makes no DNS, TLS, or network
-request, and does not rewrite generated HTML. Requests outside the exact
-canonical origin and deployment base, unsafe paths, unsupported methods, and
-files absent from the artifact receive a local failure. For a diagnostic
-against an already-running `task serve` or Docker Compose preview, run:
+`task validate` is the self-contained release proof; the live diagnostics are
+its deliberate opposite, making real requests to a running preview. Both models,
+and what each does and does not establish, are in
+[`product/technical-spec.md`](product/technical-spec.md#static-and-live-browser-models);
+the commands are in [the README](README.md#local-development). Live diagnostics
+supplement `task validate` — they never replace its release evidence.
 
-```bash
-uv run python scripts/check_browser_smoke.py \
-  --base-url http://127.0.0.1:5208/opi-wiki/
-uv run python scripts/check_browser_accessibility.py \
-  --base-url http://127.0.0.1:5208/opi-wiki/
-```
+Two rules bind anyone changing the browser automation:
 
-Each live command reads the route manifest from that preview's own
-`sitemap.xml`; a missing, malformed, redirected, empty, or oversized manifest
-fails closed. Do not edit source files until both live checks finish; each run
-uses the fixed route list represented by the manifest it loaded at startup.
-MkDocs live reload intentionally keeps network activity open, so the suites use one
-shared readiness seam: canonical HTTP load, visible rendered content, settled
-font loading; smoke workflows add a target-specific marker for Material instant
-navigation. Unlike the hermetic static audit, these commands make real requests
-to the running preview named by `--base-url`. The audit context aborts only its
-own same-origin numeric `/livereload/` XHR so a canonical crawl cannot
-accumulate MkDocs' 60-second polling threads; ordinary preview browsers keep
-live reload.
-The hosted static gate scans every repository-automation module and prevents
-direct navigation calls, direct browser-context creation, or a `networkidle`
-wait from returning outside that seam. The hermetic pass treats Adobe and Google
-font endpoints as unavailable. Exact HTTPS font-provider origins are
-nonblocking only for font, stylesheet, or image requests; every other external
-dependency, product-owned HTTP error, and non-cancellation transport failure
-remains blocking. Only an aborted target-owned search index and the live
-preview's same-origin, numeric `/livereload/` XHR are recognized browser
-cancellations.
-Axe CSSOM preloading stays disabled because it would synthesize its own XHRs to
-those font stylesheets after the product page has loaded. Every release-critical
-stylesheet is already a target-owned artifact resource; do not hide analyzer
-traffic by allowing font-provider XHRs in the product resource contract.
-The automation does not assert which typeface Chromium painted or whether a
-vendor delivered it; that remains a manual design check. Live diagnostics
-supplement `task validate`; they do not replace its release evidence.
+- **One readiness seam.** The hosted static gate scans every
+  repository-automation module and fails a direct navigation call, a direct
+  browser-context creation, or a `networkidle` wait that returns outside the
+  shared seam. Readiness is a canonical load, visible rendered content, and
+  settled font loading — never "the network went quiet".
+- **Axe CSSOM preloading stays disabled.** Enabling it would synthesize fresh
+  XHRs to the font stylesheets after the product page has loaded. Every
+  release-critical stylesheet is already a target-owned artifact resource; do
+  not hide analyzer traffic by allowing font-provider XHRs into the product
+  resource contract.
+
+### Recorded decisions — preview, browser assurance, accessibility
+
+Each entry names the date, the decision, its rationale, its owner, and the
+condition under which it can be reversed. Add to this list rather than editing
+an entry: a superseded decision is annotated in place, not rewritten.
 
 - 2026-07-28 — **[LOCAL PREVIEW] preserve the reader-visible canonical URL in
   Docker Compose** — MkDocs rewrites `site_url` to its container bind address
@@ -508,19 +538,16 @@ supplement `task validate`; they do not replace its release evidence.
   produces integer edge geometry or the post-navigation target no longer sits
   at the document's scroll boundary.
 
-### Which gate runs what
+## Which gate runs what
 
 `Taskfile.yml` exposes the tiers; `scripts/verify.py` defines the suite once and
-runs it in three nested tiers:
-
-| Tier | Where | Covers |
-|---|---|---|
-| `task ci` | pull-request CI, fast local loop | hosted-CI policy guard, browser-readiness contract, platform-gate evidence, format, lint, mypy, bandit, metadata, organization data, brand terms, style, consistency, raw HTML links |
-| `task prepush` | the pre-push hook | everything above, plus pytest, `mkdocs build --strict`, rendered-language assurance, built-artifact safety and built-link checks, and accessibility checks |
-| `task validate` | locally before a release, and the Pages deploy gate | everything above, plus browser interaction and full-route WCAG assurance |
-
-Each tier is a strict prefix of the next, so nothing is lost by moving a check
-down a tier — it runs later, not never.
+runs it in three nested tiers. `task ci` is the fast static pass and the only
+thing pull-request CI runs; `task prepush` is the pre-push hook; `task validate`
+runs before a release and as the Pages deploy gate. Each tier is a strict prefix
+of the next, so nothing is lost by moving a check down a tier — it runs later,
+not never.
+[`product/technical-spec.md`](product/technical-spec.md#verification-architecture)
+lists the exact membership of each tier.
 
 Pull-request CI is deliberately lean — **no test suite, no site build, no
 browser** — per section 4 of the civic-app consistency standard.
@@ -567,6 +594,8 @@ group, and coordinated current-measurement references. Updating the marker is a
 maintainer attestation, not execution proof. The pre-push suite runs
 `tests/test_platform_guard_differential.py` against the installed release and
 must pass before the change can be pushed or deployed.
+
+### Recorded decisions — the platform gate
 
 - 2026-08-10 — **[PLATFORM GATE] adopt Patapsco 0.6.24 after differential
   re-measurement** — seven releases in one bump; 0.6.18 through 0.6.24 are BOM
@@ -647,7 +676,7 @@ named step rather than burning GitHub's six-hour default. Progress lines are
 flushed as they happen, so the live log always shows which step is running.
 If a run still looks stuck, the last flushed `[n/m] <step>...` line names it.
 
-### Advisory security scan
+## Advisory security scan
 
 `./scripts/security_snyk.sh` runs a manual Snyk source-code scan. It is in no
 gate by design (Snyk plans cap scan counts), and it does not cover this repo's

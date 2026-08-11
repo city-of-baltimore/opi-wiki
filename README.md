@@ -8,13 +8,43 @@ Maintainer: see [`MAINTAINERS.md`](MAINTAINERS.md)
 
 **Platform baseline:** `baltimore-patapsco==0.6.24`
 
-New to the product or repository? Start with
-[`onboarding.md`](onboarding.md).
+## Which document answers which question
 
-The repository product contract lives outside the generated Wiki in
+Nine documents, each with one job. Start here rather than guessing.
+
+| If you want to… | Read |
+| --- | --- |
+| Understand the product, its content model, and how a change reaches the site | [`onboarding.md`](onboarding.md) |
+| Set up, preview, and run the gates | [Local development](#local-development), below |
+| Know the rules before you change anything | [`AGENTS.md`](AGENTS.md) |
+| Write or review content — voice, review tiers, conventions | [`MAINTAINERS.md`](MAINTAINERS.md) |
+| Match the house voice in a specific sentence | [`STYLE.md`](STYLE.md) |
+| Propose a change as a contributor | [`CONTRIBUTING.md`](CONTRIBUTING.md) |
+| Know what the product must do, and for whom | [`product/`](product/README.md) |
+| Know exactly what a gate proves, or how the browser models differ | [`product/technical-spec.md`](product/technical-spec.md) |
+| Find how this repo is laid out | [Repository layout](#repository-layout), below |
+
+The product contract sits outside the generated Wiki on purpose —
 [Product Requirements](product/product-requirements.md),
 [User Stories](product/user-stories.md), and the
-[Technical Specification](product/technical-spec.md).
+[Technical Specification](product/technical-spec.md) are repository documents,
+not published pages.
+
+## Contents
+
+**Working here** — [Local development](#local-development) ·
+[How CI is split](#how-ci-is-split) ·
+[Security scanning](#security-scanning) ·
+[Build platform note](#build-platform-note)
+
+**Conventions** — [Repository conventions](#repository-conventions) ·
+[Page data model](#page-data-model) ·
+[Repository layout](#repository-layout) ·
+[Documentation method consistency](#documentation-method-consistency)
+
+**Shipping** — [Editorial workflow](#editorial-workflow) ·
+[Deployment](#deployment) ·
+[License](#license)
 
 ## What this is
 
@@ -92,21 +122,12 @@ uv run playwright install chromium
 ```
 
 `task validate` is the canonical, self-contained pre-deploy proof. It builds the
-site strictly, reads the production canonical origin from that build's
-`sitemap.xml`, and mounts the exact generated files at that origin inside
-Chromium through hermetic Playwright request routing. It starts no local server,
-makes no DNS, TLS, or network request, and does not rewrite the generated HTML.
-Requests outside the exact canonical origin and deployment base, unsafe paths,
-and files absent from the artifact fail locally. Both browser suites exercise
-the production-shaped artifact; the smoke suite additionally proves same-origin
-Material instant navigation. `task serve` does not need to be running first.
-
-The static proof also treats the Adobe and Google font services as unavailable,
-so product workflows cannot depend on a vendor or internet connection. Only
-the exact HTTPS font-provider origins and font-related resource types are
-nonblocking; every other external dependency fails. This does not prove which
-typeface Chromium painted or whether a vendor is available. Check those
-typography details manually in a live browser when they matter.
+site strictly, then has Chromium audit those exact generated files at the
+production canonical origin through hermetic Playwright request routing — no
+local server, no DNS, no TLS, no network request, and no rewriting of the
+generated HTML. Requests outside the exact origin and deployment base, unsafe
+paths, and files absent from the artifact all fail locally. `task serve` does
+not need to be running first.
 
 To diagnose the live-reload preview itself, use two terminals:
 
@@ -121,20 +142,17 @@ uv run python scripts/check_browser_accessibility.py \
   --base-url http://127.0.0.1:5208/opi-wiki/
 ```
 
-The live checks take their canonical route manifest from the selected
-preview's own `sitemap.xml`, so they cannot silently use stale disk output.
-Unlike the self-contained static audit, they make real requests to the running
-`task serve` or Docker Compose preview named by `--base-url`.
-Do not edit source files until both live checks finish; each run audits the
-fixed route list represented by the manifest it loaded at startup, while page
-content remains live.
-MkDocs keeps a live-reload request open by design; browser readiness therefore
-means the canonical URL, rendered page content, and settled font loading—not
-that every network request has stopped. The smoke workflows additionally
-require a target-specific marker after Material instant navigation.
-The audit browser aborts only its own numeric, same-origin live-reload poll so a
-full crawl cannot accumulate 60-second server requests. This does not change
-live reload for a normal preview browser.
+These live checks are deliberately the opposite of the static proof: they make
+real requests to the running `task serve` or Docker Compose preview named by
+`--base-url`, and take their route manifest from that preview's own
+`sitemap.xml`, so they cannot silently use stale disk output. Do not edit source
+files until both finish — each run audits the fixed route list it loaded at
+startup, while page content stays live.
+
+Why each mode behaves as it does — the offline font assumption and what the
+static proof therefore does *not* establish about typography, why readiness is
+not `networkidle`, and which live-reload request the audit browser aborts — is
+in [`product/technical-spec.md`](product/technical-spec.md#static-and-live-browser-models).
 
 ### Run with Docker
 
@@ -164,11 +182,15 @@ preview providers intentionally share the registered port.
 Three tiers, defined once in `scripts/verify.py` and shared by every gate.
 This is section 4 of the civic-app consistency standard, applied here:
 
-| Tier | Command | Where it runs | What it covers |
+| Tier | Command | Where it runs | What it adds |
 | --- | --- | --- | --- |
-| `ci` | `task ci` | pull-request CI, fast local loop | workflow policy, formatting, lint, mypy, bandit, and validators over authored repository sources |
-| `prepush` | `task prepush` | the pre-push hook | everything in `ci`, plus pytest, `mkdocs build --strict`, rendered-language assurance, built-artifact safety and link checks, and accessibility checks |
-| `validate` | `task validate` | locally before a release, and the Pages deploy gate | everything in `prepush`, plus browser interaction and full-route WCAG assurance |
+| `ci` | `task ci` | pull-request CI, fast local loop | static checks over authored sources — policy contracts, formatting, lint, mypy, bandit, and the content validators |
+| `prepush` | `task prepush` | the pre-push hook | pytest, one `mkdocs build --strict`, and every check that needs a built artifact |
+| `validate` | `task validate` | locally before a release, and the Pages deploy gate | browser interaction and the full-route WCAG matrix |
+
+[`product/technical-spec.md`](product/technical-spec.md#verification-architecture)
+lists the exact membership of each tier. Keep that list there — this table names
+what a tier is *for*, not everything it runs.
 
 `task ci` enforces the source-language and retired-component ratchet across
 Git-tracked and non-ignored untracked authored Markdown, YAML, `.pages`, HTML,
@@ -410,7 +432,9 @@ Three-tier review:
 2. **Substantive content edit:** maintainer opens a pull request. The section owner reviews it before merge.
 3. **New section / structural change:** ED/CDO sign-off is recorded before merge.
 
-See [`MAINTAINERS.md`](MAINTAINERS.md) for the full operating manual.
+See [`MAINTAINERS.md`](MAINTAINERS.md) for the full operating manual, and
+[`onboarding.md`](onboarding.md#how-a-change-reaches-the-website) for the same
+path written as a narrative for content owners.
 
 ## Deployment
 

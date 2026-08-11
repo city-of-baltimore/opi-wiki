@@ -5,15 +5,13 @@
 truth for suggesting edits, reporting errors, and how review works. No
 GitHub or Markdown knowledge required there.
 
-**For maintainers:** [`MAINTAINERS.md`](MAINTAINERS.md) is the operating
-manual (editorial voice, review tiers, conventions).
-
-**Editorial style:** [`STYLE.md`](STYLE.md) is the writing standard — voice,
-the jargon we replace, and how we handle bullets, tables, and em-dashes.
-
 **New to the product or repository?** Read
 [`onboarding.md`](onboarding.md) for the plain-language product, content model,
 review flow, and local-preview overview.
+
+**Looking for something else?**
+[Which document answers which question](README.md#which-document-answers-which-question)
+maps all nine.
 
 ## Working in this repo
 

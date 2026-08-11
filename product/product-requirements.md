@@ -15,6 +15,33 @@ behavior of the City products described in
 [What We Do](../docs/what-we-do/products/index.md). Each of those products needs
 its own product contract in the repository or City system that governs it.
 
+## Contents
+
+In a hurry, read [The product in one page](#the-product-in-one-page). The
+sections other documents cite most are
+[Open decisions](#open-decisions) — the named, unresolved owner questions — and
+[Capability requirements](#capability-requirements).
+
+**Why and for whom** — [The product in one page](#the-product-in-one-page) ·
+[Why the product exists](#why-the-product-exists) ·
+[Product principles](#product-principles) ·
+[People the website serves](#people-the-website-serves)
+
+**What it must do** — [Product scope](#product-scope) ·
+[Information architecture](#information-architecture) ·
+[Core journeys](#core-journeys) ·
+[Capability requirements](#capability-requirements)
+
+**What it must hold to** — [Whole-product commitments](#whole-product-commitments) ·
+[Nonfunctional requirements](#nonfunctional-requirements) ·
+[Current assurance](#current-assurance)
+
+**How we know it worked** — [Success measures](#success-measures) ·
+[Product acceptance criteria](#product-acceptance-criteria)
+
+**Still open** — [Open decisions](#open-decisions) ·
+[Maintaining this contract](#maintaining-this-contract)
+
 ## The product in one page
 
 | Product fact | Current contract |

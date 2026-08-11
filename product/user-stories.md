@@ -15,6 +15,30 @@ City Performance Portal, or Baltimore 311 Explorer. This website owns the
 explanation and handoff to those products. Their application behavior belongs
 in their own product contracts.
 
+## Contents
+
+Read [How to read the stories](#how-to-read-the-stories) first — it explains the
+story format and what counts as acceptance. The six middle sections are the 30
+stories themselves, grouped by what the person is trying to do.
+
+**Using this document** — [How to read the stories](#how-to-read-the-stories) ·
+[Coverage by audience](#coverage-by-audience) ·
+[Traceability](#traceability)
+
+**The stories, by what someone is trying to do**
+
+| Section | The person is trying to… |
+| --- | --- |
+| [Orientation and shared understanding](#orientation-and-shared-understanding) | understand what OPI is and does |
+| [Finding and navigating information](#finding-and-navigating-information) | locate a specific thing |
+| [Choosing an OPI service or routine](#choosing-an-opi-service-or-routine) | decide what to engage |
+| [Understanding programs, products, data, and methods](#understanding-programs-products-data-and-methods) | go deeper on one offering |
+| [Correcting and contributing content](#correcting-and-contributing-content) | change what the site says |
+| [Inclusive reading and interaction](#inclusive-reading-and-interaction) | read it in their own way |
+| [Governing and publishing the product](#governing-and-publishing-the-product) | own, review, or ship it |
+
+**Release** — [Story acceptance for a release](#story-acceptance-for-a-release)
+
 ## How to read the stories
 
 Each story names a person, a need, and why that need matters. Acceptance
