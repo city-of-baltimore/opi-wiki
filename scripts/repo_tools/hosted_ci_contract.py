@@ -88,6 +88,7 @@ EXPECTED_CI_PLAN_COMMANDS = (
     "python -m ruff check --config pyproject.toml main.py scripts tests",
     "python -m mypy",
     "python -m bandit -q -c pyproject.toml -r main.py scripts",
+    "python scripts/check_docs_folder_names.py",
     "python scripts/check_page_metadata.py",
     "python scripts/check_organization_data.py",
     "python scripts/check_brand_terms.py",

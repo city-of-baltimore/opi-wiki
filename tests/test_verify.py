@@ -108,6 +108,7 @@ def test_ci_plan_keeps_every_static_check() -> None:
         "Linting repo automation",
         "Type-checking repo automation",
         "Scanning repo automation for security issues",
+        "Checking docs folder names",
         "Validating page metadata",
         "Validating organization data",
         "Validating brand terms",

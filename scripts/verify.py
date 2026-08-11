@@ -200,6 +200,14 @@ def build_steps(
                 "scripts",
             ),
         ),
+        # Runs before the content validators on purpose: a folder name the
+        # ignore file swallows makes its pages invisible to every check below,
+        # so this failure explains their silence rather than being explained by
+        # it.
+        VerifyStep(
+            name="Checking docs folder names",
+            command=(python, "scripts/check_docs_folder_names.py"),
+        ),
         VerifyStep(
             name="Validating page metadata",
             command=(python, "scripts/check_page_metadata.py"),
