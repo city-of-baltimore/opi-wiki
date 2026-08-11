@@ -27,6 +27,14 @@ updates:
         patterns: ["*"]
         exclude-patterns: ["baltimore-patapsco"]
     ignore:
+      # A semver-major is a decision — a changed API, a new interpreter floor, a
+      # moved peer range — and must arrive as its own reviewable PR carrying
+      # gate evidence, not bundled with routine patches behind a green check.
+      # The CLASS is closed rather than a list of package names because the
+      # estate has repeatedly discovered it needed a fence by being bitten by
+      # the one package nobody thought to list.
+      - dependency-name: "*"
+        update-types: ["version-update:semver-major"]
       # 1.2.3 adds properdocs>=1.6.5 alongside MkDocs. Keep this alternate
       # renderer outside routine dependency batches; revisit only in a
       # migration decision recorded by OPI Wiki maintainers.
@@ -34,7 +42,7 @@ updates:
         versions: [">=1.2.3"]
       # The foundation packages are pinned EXACTLY by the platform BOM
       # ([packages] in patapsco contracts/platform-bom.toml); pyproject.toml
-      # carries baltimore-patapsco==0.6.17 for that reason. They move when
+      # carries baltimore-patapsco==0.6.24 for that reason. They move when
       # Patapsco cuts a release and the whole estate repins together, so a bot
       # bump here is estate drift by definition and cannot be merged however
       # green the checks look. This removes noise, not coverage: the update

@@ -6,6 +6,8 @@ Live site: <https://city-of-baltimore.github.io/opi-wiki/>
 Repo: this repository
 Maintainer: see [`MAINTAINERS.md`](MAINTAINERS.md)
 
+**Platform baseline:** `baltimore-patapsco==0.6.24`
+
 New to the product or repository? Start with
 [`onboarding.md`](onboarding.md).
 
@@ -243,7 +245,7 @@ gate reaches a policy command by walking `task` edges, and it cannot see inside
 a Python plan module, so the ordinary Taskfile edge is what makes this gate
 visible from outside the repository.
 
-One boundary is narrower than it was: Patapsco 0.6.17 now applies the registry
+One boundary is narrower than it was: since 0.6.17 Patapsco applies the registry
 slot rules to `docs-site` — the app name, kind, and slot-8 frontend port are
 checked against `contracts/ports.toml` — but `docs-site` remains outside its
 compose-owning application kinds, so the loopback Compose service, the container
@@ -255,20 +257,18 @@ belongs in Patapsco, followed by a re-measured pin bump here; until then, both
 checks are required.
 
 The two are complementary, not redundant, and the split is measured rather than
-assumed — re-measured against `platform-check` 0.6.17. That release adds the
-managed ignore baseline, marker-declared workflow shapes, and a SHA-pinned
-`uses:` rule, but it still treats a **Python plan module** as an opaque leaf. It
-therefore does not see this repo's second indirection layer
-(`verify.py --plan ci`), including when that layer is reached through
-`scripts/verify.sh`; it also has no job-timeout rule, and its `run:` coverage is
-a denylist rather than an allowlist. 0.6.17 still misses all four remaining
-injected cases in their ordinary form; a piped `curl … | sh` is caught only when
-the URL happens to end in `.sh`, via the unresolvable-delegation rule rather
-than any `curl` denylist entry. The fifth case — an unpinned `uses:` reference —
-was retired at this bump because 0.6.17 catches it. Those four, and the forms
-this repo's own guard misses in the other direction, are documented in the "Two
-checkers" note in `scripts/check_hosted_ci_policy.py`, with the condition for
-retiring the local guard — which 0.6.17 does not meet.
+assumed — re-measured against `platform-check` 0.6.24. The shared checker still
+treats a **Python plan module** as an opaque leaf, so it cannot see this repo's
+second indirection layer (`verify.py --plan ci`), including when that layer is
+reached through `scripts/verify.sh`; it also has no job-timeout rule, and its
+`run:` coverage is a denylist rather than an allowlist. All four injected cases
+still pass it and still fail the local guard.
+
+The measured matrix — those four, the forms this repo's own guard misses in the
+other direction, and the condition for retiring the local guard, which 0.6.24
+does not meet — is the "Two checkers" note in
+`scripts/repo_tools/hosted_ci_policy.py`. It is the authority; this section
+summarizes it rather than repeating its numbers.
 
 `scripts/check_platform_guard_evidence.py` runs immediately before the shared
 gate. It keeps Patapsco exact-pinned, isolates its Dependabot pull requests from

@@ -547,7 +547,7 @@ shapes, and pre-push hook that apply to this docs site. `task ci:policy` invokes
 it directly as well, exactly as it already did the local guard: the estate
 proves a hosted gate reaches a policy command by walking `task` edges and cannot
 see inside a Python plan module, so the ordinary Taskfile edge is what makes
-this gate visible from outside. Keep **both**. `platform-check` 0.6.17 does
+this gate visible from outside. Keep **both**. `platform-check` 0.6.24 does
 not expand `verify.py` plans (it expands `npm` and `.sh` bodies, but not a
 Python plan module), has no job-timeout rule, and has no `run:` allowlist, so it
 returns "conforms" for all four remaining violations the local guard fails on.
@@ -558,8 +558,8 @@ a third — a new `.sh` in the task chain that runs a forbidden command directly
 which is also fixed and regression-tested here. 0.6.17 closed a fourth: the
 unpinned `uses:` case was retired from the differential matrix at this bump
 because the shared checker now reports it. The measured gaps, and the
-condition for deleting the local guard — still unmet at 0.6.17 — are recorded in
-the "Two checkers" note in that module's docstring.
+condition for deleting the local guard — still unmet at 0.6.24 — are recorded in
+the "Two checkers" note in `scripts/repo_tools/hosted_ci_policy.py`.
 
 `scripts/check_platform_guard_evidence.py` runs before `platform-check` in the
 hosted tier. It requires one exact Patapsco pin, a dedicated Dependabot update
@@ -568,6 +568,21 @@ maintainer attestation, not execution proof. The pre-push suite runs
 `tests/test_platform_guard_differential.py` against the installed release and
 must pass before the change can be pushed or deployed.
 
+- 2026-08-10 — **[PLATFORM GATE] adopt Patapsco 0.6.24 after differential
+  re-measurement** — seven releases in one bump; 0.6.18 through 0.6.24 are BOM
+  advances carrying Bromo 0.37.0 → 0.39.1, which this repo does not consume, plus
+  two estate hygiene rules that do apply. `version_claims` (0.6.19) requires
+  `README.md` and `AGENTS.md` to each carry one visible `**Platform baseline:**`
+  line naming the pin, and absence is a finding — both were missing, which is the
+  exact state that let `orf-portal` advertise 0.4.1 across the whole 0.6 line.
+  `dependabot_posture` (0.6.19–0.6.21) requires the `uv` ecosystem to fence the
+  semver-major *class*; this repo fenced packages by name only. The matrix was
+  re-measured after those three fixes, not before: an unconforming control makes
+  every case fail for the wrong reason. Result — the control conforms and
+  `platform-check` still returns "conforms" on all four cases the local guard
+  catches, so both checkers stay and the retirement condition remains unmet —
+  owner: OPI wiki maintainers — reversible by repinning the prior release and
+  restoring its lock, marker, and evidence claims in one reviewed slice.
 - 2026-08-07 — **[PLATFORM GATE] adopt Patapsco 0.6.17 after differential
   re-measurement** — the unmodified control conformed and the matrix still
   proves the local guard catches what the shared checker misses, so both stay.
