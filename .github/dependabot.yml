@@ -5,6 +5,15 @@ updates:
     directory: "/"
     schedule:
       interval: weekly
+    ignore:
+      # Majors land by ratification, never by bot — the same estate rule every
+      # other ecosystem block already carries. Actions are SHA-pinned and
+      # trusted per-checker, so a major is precisely the case deserving a human
+      # eye; and a GROUPED update delivers one bundled with routine patches
+      # behind a green check. That is how checkout 5->7 and setup-uv 8->9
+      # shipped through orf-portal's unfenced block before anyone noticed.
+      - dependency-name: "*"
+        update-types: ["version-update:semver-major"]
     groups:
       actions:
         patterns: ["*"]
