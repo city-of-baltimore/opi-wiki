@@ -605,7 +605,7 @@ shapes, and pre-push hook that apply to this docs site. `task ci:policy` invokes
 it directly as well, exactly as it already did the local guard: the estate
 proves a hosted gate reaches a policy command by walking `task` edges and cannot
 see inside a Python plan module, so the ordinary Taskfile edge is what makes
-this gate visible from outside. Keep **both**. `platform-check` 0.6.24 does
+this gate visible from outside. Keep **both**. `platform-check` 0.7.0 does
 not expand `verify.py` plans (it expands `npm` and `.sh` bodies, but not a
 Python plan module), has no job-timeout rule, and has no `run:` allowlist, so it
 returns "conforms" for all four remaining violations the local guard fails on.
@@ -616,7 +616,7 @@ a third — a new `.sh` in the task chain that runs a forbidden command directly
 which is also fixed and regression-tested here. 0.6.17 closed a fourth: the
 unpinned `uses:` case was retired from the differential matrix at this bump
 because the shared checker now reports it. The measured gaps, and the
-condition for deleting the local guard — still unmet at 0.6.24 — are recorded in
+condition for deleting the local guard — still unmet at 0.7.0 — are recorded in
 the "Two checkers" note in `scripts/repo_tools/hosted_ci_policy.py`.
 
 `scripts/check_platform_guard_evidence.py` runs before `platform-check` in the
@@ -628,6 +628,13 @@ must pass before the change can be pushed or deployed.
 
 ### Recorded decisions — the platform gate
 
+- 2026-08-12 — **[PLATFORM GATE] adopt Patapsco 0.7.0 after differential
+  re-measurement** — the 0.6.24 → 0.7.0 delta is the two-compiler TypeScript
+  transition (`tooling_typescript` reshaped; `typescript_api` added to the BOM
+  schema), compiler governance a MkDocs repo does not consume; no new
+  task-resolution capability. All four injected cases re-measured against the
+  installed 0.7.0: still blocked by the local guard, still missed by
+  `platform-check`. Matrix 6/6.
 - 2026-08-10 — **[PLATFORM GATE] adopt Patapsco 0.6.24 after differential
   re-measurement** — seven releases in one bump; 0.6.18 through 0.6.24 are BOM
   advances carrying Bromo 0.37.0 → 0.39.1, which this repo does not consume, plus

@@ -8,7 +8,7 @@ This repository is the MkDocs site for **OPI Foundations**. Docs are the
 product: they must be easy to find, easy to update, easy to review, and hard to
 break quietly.
 
-**Platform baseline:** `baltimore-patapsco==0.6.24`
+**Platform baseline:** `baltimore-patapsco==0.7.0`
 
 Before any structural change, read [`README.md`](README.md),
 [`CONTRIBUTING.md`](CONTRIBUTING.md), and [`MAINTAINERS.md`](MAINTAINERS.md).
@@ -86,12 +86,12 @@ Resolution is static on purpose in both: `task --dry` writes its plan to stderr,
 so a guard that shells out and reads stdout passes vacuously.
 
 **Do not delete the local guard as "duplicated by `platform-check`".** That has
-been attempted and measured seven times, against 0.4.0, 0.4.1, 0.4.3, 0.4.5,
-0.4.8, 0.6.17, and 0.6.24. One root cause survives every release: a **Python
+been attempted and measured eight times, against 0.4.0, 0.4.1, 0.4.3, 0.4.5,
+0.4.8, 0.6.17, 0.6.24, and 0.7.0. One root cause survives every release: a **Python
 plan module is an opaque leaf** to the shared resolver, so a `pytest` step added
 to the `ci` tier of `build_steps()` passes it while the hosted lane really runs
 the suite — green and vacuous. All four remaining injected
-cases are still missed at 0.6.24 in their ordinary form.
+cases are still missed at 0.7.0 in their ordinary form.
 
 The full measured matrix, the spellings that changed, and the retirement
 condition — **not** met — are in the "Two checkers" note in

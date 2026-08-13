@@ -28,7 +28,7 @@ python = "3.14" # local + CI interpreter; the platform range is >=3.13,<3.15
 # What this repository CONSUMES, taken from patapsco/contracts/platform-bom.toml.
 # Patapsco is the only foundation here: the wiki has no frontend bundle, so it
 # takes neither bromo nor camden, and declaring either would be a false claim.
-patapsco = "0.6.24"
+patapsco = "0.7.0"
 
 [tasks]
 # The one command contract (consistency standard §5): Taskfile.yml exposes the
@@ -56,7 +56,7 @@ deploy = "github-pages"
 # scripts/check_hosted_ci_policy.py enforces the boundary mechanically, walking
 # both the Taskfile graph and the verify.py plans so indirection cannot hide a
 # forbidden command. The `ci:policy` task also runs Patapsco's published
-# platform-check (0.6.24) for the shared estate baseline; it walks the Taskfile
+# platform-check (0.7.0) for the shared estate baseline; it walks the Taskfile
 # graph, npm scripts, and .sh bodies, but not the verify.py plans, so both
 # checks are kept.
 lean_ci = true
