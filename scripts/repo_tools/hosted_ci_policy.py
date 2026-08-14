@@ -43,16 +43,16 @@ dependencies so it can run under a bare interpreter.
 Two checkers, on purpose
 ------------------------
 The ``ci`` gate runs **both** this module and Patapsco's ``platform-check``
-(``baltimore-patapsco==0.7.0``) — each from the ``ci:policy`` task and again
+(``baltimore-patapsco==0.7.2``) — each from the ``ci:policy`` task and again
 from the plan below it. That is not duplication left by accident. The
-consolidation to the shared checker has now been attempted and measured eight
-times — against 0.4.0, 0.4.1, 0.4.3, 0.4.5, 0.4.8, 0.6.17, 0.6.24, and now
-0.7.0 — and
+consolidation to the shared checker has now been attempted and measured nine
+times — against 0.4.0, 0.4.1, 0.4.3, 0.4.5, 0.4.8, 0.6.17, 0.6.24, 0.7.0, and
+now 0.7.2 — and
 no release yet subsumes this guard. Each violation below was injected on its
-own and both checkers were run. As measured against **0.7.0**, this module exits
+own and both checkers were run. As measured against **0.7.2**, this module exits
 1 on all four; ``platform-check`` returns ``conforms`` / exit 0 on all four:
 
-1. **A forbidden command inside a ``verify.py`` plan.** *(0.7.0: still missed.)*
+1. **A forbidden command inside a ``verify.py`` plan.** *(0.7.2: still missed.)*
    ``platform-check`` expands ``npm`` script bodies and ``*.sh`` bodies, but a
    **Python plan module** is still an opaque leaf: ``uv run python
    scripts/verify.py --plan ci`` is matched against the forbidden-pattern list
@@ -60,8 +60,8 @@ own and both checkers were run. As measured against **0.7.0**, this module exits
    build`` — to the ``ci`` tier of :func:`scripts.verify.build_steps` therefore
    passes it while the hosted lane really runs that step. Same shape as the
    ``task --dry`` bug: green while vacuous.
-2. **The same gap reached through a shell script.** *(0.7.0: still missed.)*
-   0.7.0 *does* read ``.sh`` bodies, but ``scripts/verify.sh`` is a two-line
+2. **The same gap reached through a shell script.** *(0.7.2: still missed.)*
+   0.7.2 *does* read ``.sh`` bodies, but ``scripts/verify.sh`` is a two-line
    wrapper whose payload is ``uv run python scripts/verify.py "$@"`` — so the
    expansion runs, walks one hop, and lands on the same Python-module wall.
    Pointing the ``ci`` task at ``./scripts/verify.sh --plan prepush`` is missed
@@ -71,12 +71,12 @@ own and both checkers were run. As measured against **0.7.0**, this module exits
    ``bash -c``), so the expander works and the wall is specifically the plan
    module. Reaching ``verify.py --plan prepush`` *directly* from the ``ci`` task
    is missed too, which rules out indirection depth as the cause.
-3. **A missing job ``timeout-minutes``** (invariant 4). *(0.7.0: still missed.)*
+3. **A missing job ``timeout-minutes``** (invariant 4). *(0.7.2: still missed.)*
    No equivalent rule.
-4. **An unallowlisted ``run:`` command** (invariant 1). *(0.7.0: structurally
+4. **An unallowlisted ``run:`` command** (invariant 1). *(0.7.2: structurally
    still missed; the opaque spellings are caught.)* ``platform-check``
    matches a *forbidden* pattern list, which is a denylist; it still has no
-   allowlist, so an arbitrary benign command passes. Measured on 0.7.0 by
+   allowlist, so an arbitrary benign command passes. Measured on 0.7.2 by
    injecting one extra ``run:`` step into ``ci.yml``:
 
    - ``echo "probe"``                                  -> ``conforms``, missed
@@ -124,9 +124,16 @@ case 5. 0.6.18 through 0.6.24 are BOM advances carrying Bromo, plus
 ``dependabot_posture`` and ``version_claims`` — estate hygiene rules that add no
 task-resolution capability. 0.7.0 reshapes ``tooling_typescript`` into the
 two-compiler transition contract and adds ``typescript_api`` to the BOM schema —
-compiler governance, again no task-resolution capability. None adds a Python
-aggregate contract, and the 0.7.0 differential confirms the root cause is
-untouched. The retirement condition for this module
+compiler governance, again no task-resolution capability. 0.7.1 is a pure BOM
+advance carrying Bromo 0.40.0 and states of itself that no rule or contract
+behaviour changed. 0.7.2 carries Bromo 0.42.0 and is the largest checker change
+of the three — a BOM/release coupling gate, a contracts-provenance line on every
+report, ``--pristine`` estate scanning, and three fixes (npm origin no longer
+conflated with version, ``pages-deploy`` trigger, documentation held to
+``contracts/``). All of it is estate hygiene and reporting; none of it teaches
+the resolver to read a Python aggregate. None adds a Python aggregate contract,
+and the 0.7.2 differential confirms the root cause is untouched. The retirement
+condition for this module
 is therefore unchanged and still unmet — when ``platform-check`` can resolve a
 plan module (see the suggestion in ``docs/`` and the PR that introduced this
 note: a declared ``[tasks] aggregate`` entry in ``.baltimore-lab-app.toml``
