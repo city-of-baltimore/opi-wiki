@@ -51,7 +51,7 @@ updates:
         versions: [">=1.2.3"]
       # The foundation packages are pinned EXACTLY by the platform BOM
       # ([packages] in patapsco contracts/platform-bom.toml); pyproject.toml
-      # carries baltimore-patapsco==0.7.0 for that reason. They move when
+      # carries baltimore-patapsco==0.7.2 for that reason. They move when
       # Patapsco cuts a release and the whole estate repins together, so a bot
       # bump here is estate drift by definition and cannot be merged however
       # green the checks look. This removes noise, not coverage: the update
