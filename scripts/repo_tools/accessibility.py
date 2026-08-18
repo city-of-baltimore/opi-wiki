@@ -236,8 +236,7 @@ def find_accessibility_issues(site_dir: Path) -> list[str]:
                 "city": 1,
                 "executive": 1,
                 "senior-lead": 3,
-                "manager": 1,
-                "team": 1,
+                "manager": 2,
             }
             for level, expected_count in expected_counts.items():
                 actual_count = levels.count(level)

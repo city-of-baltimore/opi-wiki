@@ -21,7 +21,8 @@ _ROOT_FIELDS = frozenset(
     }
 )
 _PERSON_FIELDS = frozenset({"name", "title", "summary"})
-_PORTFOLIO_FIELDS = frozenset({"key", "lead", "primary_value", "staff"})
+_PORTFOLIO_REQUIRED_FIELDS = frozenset({"key", "lead", "primary_value", "staff"})
+_PORTFOLIO_FIELDS = _PORTFOLIO_REQUIRED_FIELDS | {"manager"}
 _PORTFOLIO_LABELS = MappingProxyType(
     {
         "directors-office": "Director's Office",
@@ -56,6 +57,15 @@ class Portfolio:
     lead: OrgPerson
     primary_value: str
     staff: tuple[OrgPerson, ...]
+    manager: OrgPerson | None = None
+
+    @property
+    def people(self) -> tuple[OrgPerson, ...]:
+        """Return the portfolio's roles in reporting order, manager included."""
+
+        if self.manager is None:
+            return (self.lead, *self.staff)
+        return (self.lead, self.manager, *self.staff)
 
     @property
     def label(self) -> str:
@@ -163,13 +173,19 @@ def _portfolio(raw_portfolio: Any, index: int, source: str) -> Portfolio:
     _validate_fields(
         portfolio,
         allowed=_PORTFOLIO_FIELDS,
-        required=_PORTFOLIO_FIELDS,
+        required=_PORTFOLIO_REQUIRED_FIELDS,
         path=portfolio_path,
     )
 
     raw_staff = portfolio["staff"]
     if not isinstance(raw_staff, list):
         raise ValueError(f"{portfolio_path}.staff: must be a list.")
+
+    manager = (
+        _person(portfolio["manager"], f"{portfolio_path}.manager", summary_required=True)
+        if "manager" in portfolio
+        else None
+    )
 
     return Portfolio(
         key=_text(portfolio, "key", portfolio_path),
@@ -187,6 +203,7 @@ def _portfolio(raw_portfolio: Any, index: int, source: str) -> Portfolio:
             )
             for member_index, member in enumerate(raw_staff)
         ),
+        manager=manager,
     )
 
 
@@ -252,9 +269,7 @@ def _role_holders(structure: OrgStructure) -> tuple[OrgPerson, ...]:
     """Return organization roles eligible for inline role-holder lookup."""
 
     portfolio_people = tuple(
-        person
-        for portfolio in structure.portfolios
-        for person in (portfolio.lead, *portfolio.staff)
+        person for portfolio in structure.portfolios for person in portfolio.people
     )
     return (structure.executive_director, *portfolio_people)
 

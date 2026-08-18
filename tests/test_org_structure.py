@@ -37,17 +37,21 @@ def test_leadership_chart_renders_the_full_org() -> None:
     assert chart.count('data-org-level="city"') == 1
     assert chart.count('data-org-level="executive"') == 1
     assert chart.count('data-org-level="senior-lead"') == 3
-    assert chart.count('data-org-level="manager"') == 1
-    assert chart.count('data-org-level="team"') == 1
-    assert chart.count('data-org-level="staff"') == 17
+    assert chart.count('data-org-level="manager"') == 2
+    # The chart shows people and roles only; there are no team grouping cards.
+    assert 'data-org-level="team"' not in chart
+    assert chart.count('data-org-level="staff"') == 16
     assert "Brandon M. Scott" in chart
     assert "Faith P. Leach" in chart
     assert "Dartanion Swift-Williams" in chart
     assert "Rakeim Young" in chart
     assert "Danny Heller" in chart
-    assert "Jason Howard, PhD" in chart
+    assert "Deputy Chief Data Officer" in chart
     assert "Gabriel Watson" in chart
-    assert chart.index("Jason Howard, PhD") < chart.index("Gabriel Watson")
+    assert chart.index("Deputy Chief Data Officer") < chart.index("Gabriel Watson")
+    # The vacant Data Governance and Analytics Manager sits between the Deputy
+    # Chief Data Officer and the staff who report through that role.
+    assert chart.index("Data Governance and Analytics Manager") < chart.index("Vera Choo")
     # Contractors are excluded from the organization source and chart.
     assert "Byron Roelofsz" not in chart
     assert "Sand Technologies" not in chart
@@ -71,6 +75,7 @@ def test_team_roles_table_lists_people_with_role_summaries() -> None:
     assert "## Director's Office" in roles
     assert "| Name | Title | What the role does |" in roles
     assert "| Rashaad Tillery | CitiStat Inspector |" in roles
+    assert roles.index("Rashaad Tillery") < roles.index("## Performance")
     assert (f"| {render_inert_markdown_text('(Vacant)')} | Senior Performance Analyst |") in roles
     assert "| Open |" not in roles
     assert "Byron Roelofsz" not in roles

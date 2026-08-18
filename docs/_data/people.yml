@@ -14,6 +14,9 @@
 # Open (unfilled) City roles use the name "Open" so they show in the structure
 # without implying a current incumbent.
 #
+# A portfolio may add an optional "manager" when a team lead's staff report
+# through an intermediate manager rather than directly to the lead.
+#
 # The four primary_value descriptions are retained verbatim from the team summary
 # removed in commit ee27304. They are not currently rendered. Keep them unchanged
 # until the Executive Director/CDO decides whether to restore, move, or retire them.
@@ -48,6 +51,9 @@ portfolios:
       - name: Audrey Randazzo
         title: Partnerships and Storytelling Lead
         summary: Builds OPI's partnerships and turns the office's data and work into clear information, briefings, and accessible communications for residents and City leaders.
+      - name: Rashaad Tillery
+        title: CitiStat Inspector
+        summary: Inspects service delivery in the field to check reported results and surface issues the data doesn't show, and documents conditions on the ground.
 
   - key: performance
     primary_value: Owns the performance method; translates priorities into measures, follow-up, and improvement.
@@ -74,23 +80,21 @@ portfolios:
       - name: "Griffin Riddler, PhD"
         title: CitiStat Analyst
         summary: Analyzes agency performance, prepares decision-focused sessions, and tracks follow-through.
-      - name: Rashaad Tillery
-        title: CitiStat Inspector
-        summary: Inspects service delivery in the field to check reported results and surface issues the data doesn't show, and documents conditions on the ground.
 
   - key: data-and-analytics
     primary_value: Builds trusted data infrastructure and decision-ready analytics; supports CitiStat, transparency, agency operations, and AI readiness.
     lead:
-      name: "Jason Howard, PhD"
+      name: Open
       title: Deputy Chief Data Officer
       summary: Leads citywide data strategy, infrastructure, analytics, open data, governance, and responsible AI readiness.
+    manager:
+      name: Open
+      title: Data Governance and Analytics Manager
+      summary: Leads the day-to-day data governance practice and manages the team's data engineering and applied data science work.
     staff:
       - name: Vera Choo
         title: Applied Data Scientist
         summary: Produces applied research, geospatial analysis, models, and decision-ready data products for City priorities.
-      - name: Open
-        title: Principal Data Engineer
-        summary: Sets data architecture and engineering standards and leads secure, reliable platform and pipeline development.
       - name: Briya Bhakta
         title: Senior Data Engineer
         summary: Builds and maintains shared data models, ingestion pipelines, quality controls, and technical documentation.
@@ -106,7 +110,7 @@ portfolios:
         title: Applied Data Scientist
         summary: Uses analysis and rapid prototyping to help the Lab test solutions and turn evidence into usable products.
       - name: Derek Thomas
-        title: Operations Analyst
+        title: Public Safety and Operations Analyst
         summary: Supports public safety and operations projects with discovery, project coordination, process analysis, documentation, and implementation follow-through.
       - name: Selenea Gibson
         title: Civic Designer

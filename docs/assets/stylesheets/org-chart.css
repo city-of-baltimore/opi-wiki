@@ -161,12 +161,6 @@
   color: var(--org-manager-text);
 }
 
-.opi-org-chart__node--team {
-  border-style: dashed;
-  background: transparent;
-  color: var(--org-card-text);
-}
-
 .opi-org-chart__node--staff {
   min-height: var(--org-card-height);
   padding-block: 0.48rem;

@@ -39,17 +39,6 @@ def _org_chart_node(
     )
 
 
-def _team_node(label: str, accent: str) -> str:
-    """Render a lightweight team grouping node inside the chart."""
-
-    return (
-        '<div class="opi-org-chart__node opi-org-chart__node--team" '
-        f'data-org-level="team" data-org-accent="{escape(accent, quote=True)}">'
-        f'<strong class="opi-org-chart__name">{escape(label)}</strong>'
-        "</div>"
-    )
-
-
 def _portfolio_by_key(structure: OrgStructure, key: str) -> Portfolio:
     """Return one portfolio by key, failing clearly if the source data drifts."""
 
@@ -83,6 +72,14 @@ def _staff_stack(people: tuple[OrgPerson, ...], accent: str) -> str:
     )
 
 
+def _manager_node(portfolio: Portfolio, accent: str, indent: str) -> list[str]:
+    """Render the intermediate manager card, for portfolios that have one."""
+
+    if portfolio.manager is None:
+        return []
+    return [indent + _org_chart_node(portfolio.manager, "manager", accent=accent)]
+
+
 def _lead_column(portfolio: Portfolio, accent: str) -> str:
     """Render a senior lead and direct reports as one chart column."""
 
@@ -92,6 +89,7 @@ def _lead_column(portfolio: Portfolio, accent: str) -> str:
         [
             opening,
             "      " + _org_chart_node(portfolio.lead, "senior-lead", accent=accent),
+            *_manager_node(portfolio, accent, "      "),
             _staff_stack(portfolio.staff, accent),
             "    </section>",
         ]
@@ -108,11 +106,12 @@ def _data_and_innovation_column(data: Portfolio, innovation: Portfolio) -> str:
             "      " + _org_chart_node(data.lead, "senior-lead", accent="data"),
             '      <div class="opi-org-chart__split">',
             '        <section class="opi-org-chart__subcolumn" data-org-accent="data">',
-            "          " + _team_node(data.label, "data"),
+            *_manager_node(data, "data", "          "),
             _staff_stack(data.staff, "data"),
             "        </section>",
             '        <section class="opi-org-chart__subcolumn" data-org-accent="innovation">',
             "          " + _org_chart_node(innovation.lead, "manager", accent="innovation"),
+            *_manager_node(innovation, "innovation", "          "),
             _staff_stack(innovation.staff, "innovation"),
             "        </section>",
             "      </div>",
@@ -194,5 +193,5 @@ def _render_team_roles(structure: OrgStructure) -> str:
         [structure.executive_director],
     )
     for portfolio in structure.portfolios:
-        lines.extend(_team_roles_group(portfolio.label, [portfolio.lead, *portfolio.staff]))
+        lines.extend(_team_roles_group(portfolio.label, list(portfolio.people)))
     return "\n".join(lines).rstrip()
