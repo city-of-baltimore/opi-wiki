@@ -117,7 +117,6 @@ def _check_org_chart_state(page: Any, scheme: str, navigation: str) -> list[str]
               executive: count("executive"),
               seniorLead: count("senior-lead"),
               manager: count("manager"),
-              team: count("team"),
               staff: count("staff"),
             },
           };
@@ -139,9 +138,8 @@ def _check_org_chart_state(page: Any, scheme: str, navigation: str) -> list[str]
         "city": 1,
         "executive": 1,
         "seniorLead": 3,
-        "manager": 1,
-        "team": 1,
-        "staff": 17,
+        "manager": 2,
+        "staff": 16,
     }
     actual_counts = result["counts"]
     if actual_counts != expected_counts:

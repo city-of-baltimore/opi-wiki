@@ -161,9 +161,9 @@ def test_accessibility_checker_accepts_complete_built_org_chart(tmp_path: Path) 
         ("executive", "Dartanion Swift-Williams"),
         ("senior-lead", "Rakeim Young"),
         ("senior-lead", "Danny Heller"),
-        ("senior-lead", "Jason Howard, PhD"),
+        ("senior-lead", "(Vacant)"),
         ("manager", "Gabriel Watson"),
-        ("team", "Data and Analytics"),
+        ("manager", "(Vacant)"),
     ]
     node_markup = "".join(
         f'<div class="opi-org-chart__node" data-org-level="{level}">'

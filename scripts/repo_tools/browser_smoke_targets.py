@@ -45,7 +45,6 @@ ORG_CHART_NAMES = (
     "Dartanion Swift-Williams",
     "Rakeim Young",
     "Danny Heller",
-    "Jason Howard, PhD",
     "Gabriel Watson",
     "Xander Jake de los Santos",
 )

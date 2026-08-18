@@ -264,3 +264,52 @@ def test_organization_rejects_duplicate_yaml_keys_at_any_depth(tmp_path: Path) -
 
     assert error.value.__cause__ is not None
     assert "Duplicate YAML key 'title' on lines" in str(error.value.__cause__)
+
+
+def test_portfolio_manager_is_optional_and_parsed() -> None:
+    """Only a team whose staff report through a manager carries that record."""
+
+    structure = load_organization(DOCS_DIR, ORGANIZATION_DATA_PATH)
+    by_key = {portfolio.key: portfolio for portfolio in structure.portfolios}
+
+    data_and_analytics = by_key["data-and-analytics"]
+    assert data_and_analytics.manager is not None
+    assert data_and_analytics.manager.title == "Data Governance and Analytics Manager"
+    assert data_and_analytics.manager.is_vacant
+    assert data_and_analytics.people == (
+        data_and_analytics.lead,
+        data_and_analytics.manager,
+        *data_and_analytics.staff,
+    )
+
+    directors_office = by_key["directors-office"]
+    assert directors_office.manager is None
+    assert directors_office.people == (directors_office.lead, *directors_office.staff)
+
+
+@pytest.mark.parametrize(
+    ("manager", "expected_message"),
+    [
+        (None, "must be a mapping"),
+        ({"name": "Example", "title": "Manager"}, "missing required fields: summary"),
+        (
+            {"name": "Example", "title": "Manager", "summary": "Leads", "email": "a@b.gov"},
+            "unsupported fields: email",
+        ),
+    ],
+)
+def test_portfolio_manager_is_held_to_the_person_contract(
+    tmp_path: Path,
+    manager: Any,
+    expected_message: str,
+) -> None:
+    """An optional field still fails at its own path instead of being ignored."""
+
+    data = fixtures.raw_organization_data()
+    data["portfolios"][0]["manager"] = manager
+
+    with pytest.raises(
+        ValueError,
+        match=rf"_data/people.yml.portfolios\[0\].manager: {expected_message}",
+    ):
+        fixtures.load_organization_fixture(tmp_path, data)

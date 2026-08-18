@@ -106,9 +106,8 @@ def test_org_chart_exposes_the_expected_visible_hierarchy() -> None:
                 "city": 1,
                 "executive": 1,
                 "seniorLead": 3,
-                "manager": 1,
-                "team": 1,
-                "staff": 17,
+                "manager": 2,
+                "staff": 16,
             },
         }
     )
@@ -129,7 +128,6 @@ def test_org_chart_reports_missing_names_and_hierarchy_drift() -> None:
                 "executive": 0,
                 "seniorLead": 0,
                 "manager": 0,
-                "team": 0,
                 "staff": 0,
             },
         }

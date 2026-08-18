@@ -25,7 +25,7 @@ def test_find_role_holder_returns_the_filled_incumbent() -> None:
     structure = load_organization(DOCS_DIR, ORGANIZATION_DATA_PATH)
 
     assert find_role_holder(structure, "Innovation Program Manager") == "Gabriel Watson"
-    assert find_role_holder(structure, "Deputy Chief Data Officer") == "Jason Howard, PhD"
+    assert find_role_holder(structure, "Chief of Staff") == "Rakeim Young"
     assert (
         find_role_holder(structure, "Executive Director and Chief Data Officer")
         == "Dartanion Swift-Williams"
@@ -39,6 +39,9 @@ def test_find_role_holder_distinguishes_vacant_unknown_and_blank_titles() -> Non
 
     with pytest.raises(ValueError, match="is vacant"):
         find_role_holder(structure, "Senior Performance Analyst")
+    # An intermediate manager is a lookup-eligible role even while it is vacant.
+    with pytest.raises(ValueError, match="is vacant"):
+        find_role_holder(structure, "Data Governance and Analytics Manager")
     with pytest.raises(ValueError, match="Unknown organization role"):
         find_role_holder(structure, "Chief Nonexistent Officer")
     with pytest.raises(ValueError, match="must be a non-empty string"):
