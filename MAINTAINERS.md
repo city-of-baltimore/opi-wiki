@@ -628,17 +628,33 @@ must pass before the change can be pushed or deployed.
 
 ### Recorded decisions — the platform gate
 
-- 2026-08-14 — **[PLATFORM GATE] adopt Patapsco 0.9.9 after differential
+- 2026-08-31 — **[PLATFORM GATE] adopt Patapsco 0.9.9 after a tenth
+  differential re-measurement** — the estate advanced 0.7.2 -> 0.9.9 (Bromo
+  0.54.0). Measured before adopting, exactly as every prior bump: all four
+  injected evasion cases are **still MISSED** by the shared checker in their
+  ordinary form, and both control cases are still CAUGHT. The local guard
+  therefore stays. The root cause is unchanged and is now ten releases old — a
+  Python plan module is an opaque leaf to the shared resolver — so this is a
+  re-confirmation, not a new finding.
+
+  Recorded separately rather than by editing the 2026-08-14 entry. That entry
+  is about 0.7.2 and stays about 0.7.2: a dated decision record answers "what
+  did we know, and when", and a version bump applied to it with find-and-replace
+  destroys the only thing it was keeping. That is precisely what happened here
+  and had to be reverted — in the one repository whose entire local guard exists
+  because version claims cannot be taken on trust.
+
+- 2026-08-14 — **[PLATFORM GATE] adopt Patapsco 0.7.2 after differential
   re-measurement** — two releases in one bump. 0.7.1 is a pure BOM advance
   carrying Bromo 0.40.0, which this repo does not consume, and states of itself
-  that no rule or contract behaviour changed. 0.9.9 carries Bromo 0.42.0 and is
+  that no rule or contract behaviour changed. 0.7.2 carries Bromo 0.42.0 and is
   the larger of the two: a BOM/release coupling gate, a contracts-provenance
   line on every report, `--pristine` estate scanning, and three fixes (npm
   origin no longer conflated with version, `pages-deploy` trigger, documentation
   held to `contracts/`). Estate hygiene and reporting throughout; no new
   task-resolution capability, and nothing that teaches the shared resolver to
   read a Python aggregate. All four injected cases re-measured against the
-  installed 0.9.9: still blocked by the local guard, still missed by
+  installed 0.7.2: still blocked by the local guard, still missed by
   `platform-check`. Matrix 6/6.
 - 2026-08-12 — **[PLATFORM GATE] adopt Patapsco 0.7.0 after differential
   re-measurement** — the 0.6.24 → 0.7.0 delta is the two-compiler TypeScript
