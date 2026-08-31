@@ -47,7 +47,7 @@ dev = [
     # scripts/repo_tools/hosted_ci_policy.py for the gaps that were re-measured
     # against 0.7.2. The CI evidence check makes a bump explicit; the permanent
     # pre-push matrix proves its behavior.
-    "baltimore-patapsco==0.7.2",
+    "baltimore-patapsco==0.9.9",
     # The browser accessibility gate must not acquire new rules silently.
     # Review axe release notes and rerun the canonical-route matrix before
     # changing this exact pin.

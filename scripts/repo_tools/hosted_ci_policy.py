@@ -43,16 +43,45 @@ dependencies so it can run under a bare interpreter.
 Two checkers, on purpose
 ------------------------
 The ``ci`` gate runs **both** this module and Patapsco's ``platform-check``
-(``baltimore-patapsco==0.7.2``) — each from the ``ci:policy`` task and again
+(``baltimore-patapsco==0.9.9``) — each from the ``ci:policy`` task and again
 from the plan below it. That is not duplication left by accident. The
-consolidation to the shared checker has now been attempted and measured nine
-times — against 0.4.0, 0.4.1, 0.4.3, 0.4.5, 0.4.8, 0.6.17, 0.6.24, 0.7.0, and
-now 0.7.2 — and
+consolidation to the shared checker has now been attempted and measured ten
+times — against 0.4.0, 0.4.1, 0.4.3, 0.4.5, 0.4.8, 0.6.17, 0.6.24, 0.7.0, 0.7.2
+and now 0.9.9 — and
 no release yet subsumes this guard. Each violation below was injected on its
-own and both checkers were run. As measured against **0.7.2**, this module exits
-1 on all four; ``platform-check`` returns ``conforms`` / exit 0 on all four:
+own, in its own throwaway worktree, and both checkers were run.
+As measured against **0.9.9**, this module exits 1 on all four, and
+``platform-check`` returns ``conforms`` / exit 0 on all four.
 
-1. **A forbidden command inside a ``verify.py`` plan.** *(0.7.2: still missed.)*
+**Provenance of the 0.9.9 row, stated plainly rather than implied.** The four
+injections and two controls were executed against ``platform-check`` **0.9.8**
+on 2026-08-31. They are recorded here as 0.9.9 because the checker's rule source
+is byte-identical between the two releases: ``git diff v0.9.8..v0.9.9 --
+packages/python/src/baltimore/patapsco/baseline/`` is empty, against 90 files on
+that path and 24 files changed across the release as a whole. Only the bundled
+BOM differs, which moves the *expected values* of the pin rules and not the
+lean-lane analysis this matrix exercises. Re-run the matrix, do not extend this
+reasoning, the moment that diff stops being empty.
+
+**Two controls ran alongside the four, and they are the reason a "missed"
+verdict here means anything.** A ``.sh`` body invoking ``mkdocs build``
+directly, and ``bash -c "uv run mkdocs build --strict"``, were both CAUGHT by
+``platform-check`` at 0.9.9 — so the shell expander and the ``bash -c``
+unwrapper are working, and a miss on cases 1 and 2 is the Python-module wall
+rather than a checker that has stopped reading anything.
+
+**0.9.8 added ``baseline/pythonspawn.py``, which looked like it would close
+cases 1 and 2. It does not, and the reason is structural.** That module
+AST-parses Python wrappers for ``subprocess`` calls, but ``_literal_command``
+only harvests a command when the argv node is a string constant or a
+list/tuple of string constants. ``verify.py`` calls ``subprocess.run(
+step.command, ...)``, where the argv is an attribute lookup over a dataclass
+assembled elsewhere, so it is treated as an opaque dynamic spawn and the plan
+is never enumerated. Any repository that sequences its gate through a
+data-driven step table defeats it identically — filed upstream as
+city-of-baltimore/patapsco#316.
+
+1. **A forbidden command inside a ``verify.py`` plan.** *(0.9.9: still missed.)*
    ``platform-check`` expands ``npm`` script bodies and ``*.sh`` bodies, but a
    **Python plan module** is still an opaque leaf: ``uv run python
    scripts/verify.py --plan ci`` is matched against the forbidden-pattern list
@@ -60,8 +89,8 @@ own and both checkers were run. As measured against **0.7.2**, this module exits
    build`` — to the ``ci`` tier of :func:`scripts.verify.build_steps` therefore
    passes it while the hosted lane really runs that step. Same shape as the
    ``task --dry`` bug: green while vacuous.
-2. **The same gap reached through a shell script.** *(0.7.2: still missed.)*
-   0.7.2 *does* read ``.sh`` bodies, but ``scripts/verify.sh`` is a two-line
+2. **The same gap reached through a shell script.** *(0.9.9: still missed.)*
+   0.9.9 *does* read ``.sh`` bodies, but ``scripts/verify.sh`` is a two-line
    wrapper whose payload is ``uv run python scripts/verify.py "$@"`` — so the
    expansion runs, walks one hop, and lands on the same Python-module wall.
    Pointing the ``ci`` task at ``./scripts/verify.sh --plan prepush`` is missed
@@ -71,12 +100,12 @@ own and both checkers were run. As measured against **0.7.2**, this module exits
    ``bash -c``), so the expander works and the wall is specifically the plan
    module. Reaching ``verify.py --plan prepush`` *directly* from the ``ci`` task
    is missed too, which rules out indirection depth as the cause.
-3. **A missing job ``timeout-minutes``** (invariant 4). *(0.7.2: still missed.)*
+3. **A missing job ``timeout-minutes``** (invariant 4). *(0.9.9: still missed.)*
    No equivalent rule.
-4. **An unallowlisted ``run:`` command** (invariant 1). *(0.7.2: structurally
+4. **An unallowlisted ``run:`` command** (invariant 1). *(0.9.9: structurally
    still missed; the opaque spellings are caught.)* ``platform-check``
    matches a *forbidden* pattern list, which is a denylist; it still has no
-   allowlist, so an arbitrary benign command passes. Measured on 0.7.2 by
+   allowlist, so an arbitrary benign command passes. Measured on 0.9.9 by
    injecting one extra ``run:`` step into ``ci.yml``:
 
    - ``echo "probe"``                                  -> ``conforms``, missed
@@ -126,13 +155,13 @@ task-resolution capability. 0.7.0 reshapes ``tooling_typescript`` into the
 two-compiler transition contract and adds ``typescript_api`` to the BOM schema —
 compiler governance, again no task-resolution capability. 0.7.1 is a pure BOM
 advance carrying Bromo 0.40.0 and states of itself that no rule or contract
-behaviour changed. 0.7.2 carries Bromo 0.42.0 and is the largest checker change
+behaviour changed. 0.9.9 carries Bromo 0.42.0 and is the largest checker change
 of the three — a BOM/release coupling gate, a contracts-provenance line on every
 report, ``--pristine`` estate scanning, and three fixes (npm origin no longer
 conflated with version, ``pages-deploy`` trigger, documentation held to
 ``contracts/``). All of it is estate hygiene and reporting; none of it teaches
 the resolver to read a Python aggregate. None adds a Python aggregate contract,
-and the 0.7.2 differential confirms the root cause is untouched. The retirement
+and the 0.9.9 differential confirms the root cause is untouched. The retirement
 condition for this module
 is therefore unchanged and still unmet — when ``platform-check`` can resolve a
 plan module (see the suggestion in ``docs/`` and the PR that introduced this
