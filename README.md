@@ -6,7 +6,7 @@ Live site: <https://city-of-baltimore.github.io/opi-wiki/>
 Repo: this repository
 Maintainer: see [`MAINTAINERS.md`](MAINTAINERS.md)
 
-**Platform baseline:** `baltimore-patapsco==0.7.2`
+**Platform baseline:** `baltimore-patapsco==0.9.9`
 
 ## Which document answers which question
 
@@ -279,7 +279,7 @@ belongs in Patapsco, followed by a re-measured pin bump here; until then, both
 checks are required.
 
 The two are complementary, not redundant, and the split is measured rather than
-assumed — re-measured against `platform-check` 0.7.2. The shared checker still
+assumed — re-measured against `platform-check` 0.9.9. The shared checker still
 treats a **Python plan module** as an opaque leaf, so it cannot see this repo's
 second indirection layer (`verify.py --plan ci`), including when that layer is
 reached through `scripts/verify.sh`; it also has no job-timeout rule, and its
@@ -287,7 +287,7 @@ reached through `scripts/verify.sh`; it also has no job-timeout rule, and its
 still pass it and still fail the local guard.
 
 The measured matrix — those four, the forms this repo's own guard misses in the
-other direction, and the condition for retiring the local guard, which 0.7.2
+other direction, and the condition for retiring the local guard, which 0.9.9
 does not meet — is the "Two checkers" note in
 `scripts/repo_tools/hosted_ci_policy.py`. It is the authority; this section
 summarizes it rather than repeating its numbers.
