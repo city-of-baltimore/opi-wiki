@@ -86,8 +86,8 @@ Resolution is static on purpose in both: `task --dry` writes its plan to stderr,
 so a guard that shells out and reads stdout passes vacuously.
 
 **Do not delete the local guard as "duplicated by `platform-check`".** That has
-been attempted and measured nine times, against 0.4.0, 0.4.1, 0.4.3, 0.4.5,
-0.4.8, 0.6.17, 0.6.24, 0.7.0, and 0.9.9. One root cause survives every release:
+been attempted and measured ten times, against 0.4.0, 0.4.1, 0.4.3, 0.4.5,
+0.4.8, 0.6.17, 0.6.24, 0.7.0, 0.7.2, and 0.9.9. One root cause survives every release:
 a **Python plan module is an opaque leaf** to the shared resolver, so a `pytest`
 step added to the `ci` tier of `build_steps()` passes it while the hosted lane
 really runs
