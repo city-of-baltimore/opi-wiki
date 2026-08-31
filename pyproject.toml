@@ -19,7 +19,7 @@ dependencies = [
   # remains a separate platform decision; keep this pin.
   "mkdocs-redirects==1.2.2",
   # 11.0 contains the CVE-2026-61632 fix; 11.0.1 adds follow-up regex fixes.
-  "pymdown-extensions==11.0.1",
+  "pymdown-extensions==11.0.2",
 ]
 
 # This is an application, not a distributable package, so uv does not build or
