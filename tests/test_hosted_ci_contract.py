@@ -150,14 +150,16 @@ def test_removing_a_required_ci_plan_command_fails_the_policy(
 
     _patch_ci_steps(
         monkeypatch,
-        lambda steps: [step for step in steps if "scripts/check_style.py" not in step.command],
+        lambda steps: [
+            step for step in steps if "scripts/check_redirect_stubs.py" not in step.command
+        ],
     )
 
     findings = find_forbidden_reach("uv run python scripts/verify.py --plan ci")
 
     assert len(findings) == 1
     assert "missing required hosted-CI plan command" in findings[0]
-    assert "scripts/check_style.py" in findings[0]
+    assert "scripts/check_redirect_stubs.py" in findings[0]
 
 
 def test_duplicating_an_approved_ci_plan_command_fails_the_policy(
@@ -171,7 +173,7 @@ def test_duplicating_an_approved_ci_plan_command_fails_the_policy(
 
     assert len(findings) == 1
     assert "duplicate hosted-CI plan command" in findings[0]
-    assert "scripts/check_html_links.py" in findings[0]
+    assert "scripts/check_redirect_stubs.py" in findings[0]
 
 
 def test_reordering_approved_ci_plan_commands_fails_the_policy(

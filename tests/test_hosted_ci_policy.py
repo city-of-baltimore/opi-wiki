@@ -106,10 +106,28 @@ def test_a_direct_site_build_step_is_a_violation() -> None:
     assert "application or site build" in findings[0]
 
 
+def test_the_redirect_site_build_is_a_violation() -> None:
+    """Writing site/ from the stubs belongs to the pre-push tier, never the hosted lane."""
+
+    findings = find_forbidden_reach("uv run python scripts/build_redirect_site.py")
+
+    assert len(findings) == 1
+    assert "application or site build" in findings[0]
+
+
 def test_a_browser_suite_step_is_a_violation() -> None:
     """Playwright never runs in the hosted lane."""
 
     assert find_forbidden_reach("uv run playwright install chromium")
+
+
+def test_the_browser_redirect_check_is_a_violation() -> None:
+    """The browser redirect check drives Chromium, so it never runs in the hosted lane."""
+
+    findings = find_forbidden_reach("uv run python scripts/check_browser_redirects.py")
+
+    assert len(findings) == 1
+    assert "browser/e2e/visual suite" in findings[0]
 
 
 def test_the_ci_plan_reaches_nothing_forbidden() -> None:
