@@ -379,6 +379,14 @@ If the team chooses another renderer later, treat it as a full platform change:
   another patched, fully verified Material/MkDocs pairing or through a separate
   renderer-migration decision recorded by OPI Wiki maintainers, never by
   restoring the vulnerable pins.
+- 2026-10-25 — **[RETIREMENT] answer the end-of-life review by retiring the
+  wiki** — opi-publications' D26 froze `main` at the import commit
+  `73272e25` and set the cutover before 2026-11-05. The content now lives in
+  OPI Foundations (https://opi-publications.fly.dev/foundations/, the owner's
+  decision of 2026-10-24). The final GitHub Pages deploy publishes only the
+  redirect stubs in `redirects/`, and the three gates check those stubs, not
+  the MkDocs source. No renderer migration follows; the repository is archived
+  after the deploy is verified.
 
 ## Review-date enforcement
 
