@@ -15,16 +15,6 @@
 # Default owner — product behaviour.
 *                           @city-of-baltimore/product-engineering
 
-# Content-team routing. GitHub can only honor teams with repository access, so
-# Innovation Lab content routes through Product Engineering while the PR
-# template records review by the named section owner.
-/docs/about-us/our-teams/innovation-lab/        @city-of-baltimore/product-engineering
-/docs/what-we-do/services/innovation-lab.md     @city-of-baltimore/product-engineering
-/docs/what-we-do/services/cross-agency-delivery/ @city-of-baltimore/product-engineering @city-of-baltimore/citistat
-/docs/about-us/our-teams/performance/           @city-of-baltimore/citistat
-/docs/what-we-do/programs/citistat/             @city-of-baltimore/citistat
-/docs/what-we-do/services/citywide-performance-management.md @city-of-baltimore/citistat
-
 # CI, containers, orchestration, and the platform baseline.
 /.github/                   @city-of-baltimore/platform-admins
 /Dockerfile*                @city-of-baltimore/platform-admins

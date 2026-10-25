@@ -238,12 +238,15 @@ FORBIDDEN_COMMAND_PATTERNS: tuple[tuple[str, re.Pattern[str]], ...] = (
     ("application or site build", re.compile(r"\bnpm\s+run\s+build\b")),
     ("application or site build", re.compile(r"\bvite\s+build\b")),
     ("application or site build", re.compile(r"\btask\s+build\b")),
+    # The wiki's own site build since it retired into OPI Foundations: it writes
+    # site/ from the committed redirect stubs.
+    ("application or site build", re.compile(r"\bbuild_redirect_site\b")),
     ("image build", re.compile(r"\bdocker\s+build\b")),
     ("image build", re.compile(r"\bdocker\s+compose\b[^\n]*\bbuild\b")),
     ("image build", re.compile(r"\bdocker\s+compose\b[^\n]*--build\b")),
     ("browser/e2e/visual suite", re.compile(r"\bplaywright\b", re.IGNORECASE)),
     ("browser/e2e/visual suite", re.compile(r"\baxe\b")),
-    ("browser/e2e/visual suite", re.compile(r"\bcheck_browser_smoke\b")),
+    ("browser/e2e/visual suite", re.compile(r"\bcheck_browser_redirects\b")),
 )
 
 

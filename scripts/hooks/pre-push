@@ -3,7 +3,7 @@
 # Pre-push gate for opi-wiki.
 #
 # Hosted CI runs the `ci` plan only — static checks, contracts, and security.
-# The test suite, the strict MkDocs build, and the built-site checks live here.
+# The test suite, the redirect-site build, and the built-site check live here.
 # That is deliberate (patapsco/docs/app-consistency-standard.md, §4), and it
 # means THIS HOOK IS THE ONLY BACKSTOP for a broken test. Do not bypass it
 # casually; `git push --no-verify` skips the entire suite.
@@ -27,7 +27,7 @@ fi
 repo_root="$(git rev-parse --show-toplevel)"
 cd "${repo_root}"
 
-echo "pre-push: running the prepush verification plan (tests, strict build, built-site checks)."
+echo "pre-push: running the prepush verification plan (tests, the redirect-site build, the built-site check)."
 echo "pre-push: hosted CI does NOT run these — this hook is the backstop."
 
 exec ./scripts/verify.sh --plan prepush

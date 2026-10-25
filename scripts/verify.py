@@ -52,9 +52,9 @@ Plan = Literal["ci", "prepush", "validate"]
 PLANS: tuple[str, ...] = get_args(Plan)
 DEFAULT_PLAN: Plan = "prepush"
 
-# The exhaustive canonical-route browser audit intentionally takes several
-# minutes. No step should approach ten minutes, so cap it and fail with a named
-# step instead of letting a runner sit at GitHub's six-hour default. The
+# The browser step follows every old address twice, with and without
+# JavaScript. No step should approach ten minutes, so cap it and fail with a
+# named step instead of letting a runner sit at GitHub's six-hour default. The
 # workflows also set `timeout-minutes` as an outer backstop.
 DEFAULT_STEP_TIMEOUT_SECONDS = 600.0
 
@@ -93,20 +93,26 @@ def build_steps(
 
     ``ci``
         What hosted GitHub Actions runs. Static checks, contracts, and the
-        workflow-policy guard only: linting, type-checking, and the validators
-        that read ``docs/`` source. **No test suite, no site build, and nothing
-        that reads ``site/``** — those are forbidden in the hosted lane.
+        workflow-policy guard only: linting, type-checking, and the check that
+        reads the committed redirect stubs in ``redirects/``. **No test suite,
+        no site build, and nothing that reads ``site/``** — those are forbidden
+        in the hosted lane.
 
     ``prepush``
         The local pre-push hook. Everything in ``ci`` plus the repo-automation
-        test suite, the strict MkDocs build, and the checks that inspect the
-        built ``site/`` output.
+        test suite, the build of ``site/`` from the stubs, and the same stub
+        check run against that built ``site/``.
 
     ``validate``
-        The pre-mutation boundary: everything in ``prepush`` plus browser
-        interaction and full-route accessibility assurance. These need a
-        downloaded browser, so they run locally before a release and in the
-        Pages deploy gate, which installs one — never in the pull-request lane.
+        The pre-mutation boundary: everything in ``prepush`` plus a real
+        browser following every old address to its new page, and axe on the
+        404 page. That needs a downloaded browser, so it runs locally before a
+        release and in the Pages deploy gate, which installs one — never in
+        the pull-request lane.
+
+    The wiki retired into OPI Foundations (opi-publications), so the site these
+    tiers guard is the redirect stubs in ``redirects/stubs/``, not the MkDocs
+    source.
 
     Nothing is dropped when a step leaves the hosted lane — every assertion
     still runs, in the tier that can afford it.
@@ -119,10 +125,6 @@ def build_steps(
         VerifyStep(
             name="Checking hosted CI policy",
             command=(python, "scripts/check_hosted_ci_policy.py"),
-        ),
-        VerifyStep(
-            name="Checking browser readiness source contract",
-            command=(python, "scripts/check_browser_readiness_contract.py"),
         ),
         VerifyStep(
             name="Validating platform guard evidence",
@@ -163,7 +165,6 @@ def build_steps(
                 "--config",
                 "pyproject.toml",
                 "--check",
-                "main.py",
                 "scripts",
                 "tests",
             ),
@@ -177,7 +178,6 @@ def build_steps(
                 "check",
                 "--config",
                 "pyproject.toml",
-                "main.py",
                 "scripts",
                 "tests",
             ),
@@ -196,52 +196,21 @@ def build_steps(
                 "-c",
                 "pyproject.toml",
                 "-r",
-                "main.py",
                 "scripts",
             ),
         ),
-        # Runs before the content validators on purpose: a folder name the
-        # ignore file swallows makes its pages invisible to every check below,
-        # so this failure explains their silence rather than being explained by
-        # it.
+        # The committed source of the published site, read statically: one clean
+        # stub per old address, and the 404 page. It reads redirects/, never site/.
         VerifyStep(
-            name="Checking docs folder names",
-            command=(python, "scripts/check_docs_folder_names.py"),
-        ),
-        VerifyStep(
-            name="Validating page metadata",
-            command=(python, "scripts/check_page_metadata.py"),
-        ),
-        VerifyStep(
-            name="Validating organization data",
-            command=(python, "scripts/check_organization_data.py"),
-        ),
-        VerifyStep(
-            name="Validating brand terms",
-            command=(python, "scripts/check_brand_terms.py"),
-        ),
-        VerifyStep(
-            name="Checking editorial voice guardrail",
-            command=(python, "scripts/check_style.py"),
-        ),
-        VerifyStep(
-            name="Checking page consistency",
-            command=(python, "scripts/check_consistency.py"),
-        ),
-        VerifyStep(
-            name="Checking product contract links",
-            command=(python, "scripts/check_product_contract_links.py"),
-        ),
-        VerifyStep(
-            name="Checking raw HTML links",
-            command=(python, "scripts/check_html_links.py"),
+            name="Checking redirect stubs",
+            command=(python, "scripts/check_redirect_stubs.py"),
         ),
     ]
 
     if plan == "ci":
         return steps
 
-    # Tier 2 — pre-push: the test suite, the build, and everything that needs a
+    # Tier 2 — pre-push: the test suite, the build, and the check that needs a
     # freshly built site/ directory.
     steps += [
         VerifyStep(
@@ -249,24 +218,12 @@ def build_steps(
             command=(python, "-m", "pytest"),
         ),
         VerifyStep(
-            name="Building MkDocs site with strict validation",
-            command=(python, "-m", "mkdocs", "build", "--strict"),
+            name="Building the redirect site",
+            command=(python, "scripts/build_redirect_site.py"),
         ),
         VerifyStep(
-            name="Checking built-content visibility",
-            command=(python, "scripts/check_built_visibility.py"),
-        ),
-        VerifyStep(
-            name="Checking built-artifact safety",
-            command=(python, "scripts/check_built_artifact.py"),
-        ),
-        VerifyStep(
-            name="Checking built-site internal links",
-            command=(python, "scripts/check_built_links.py", "site"),
-        ),
-        VerifyStep(
-            name="Running accessibility smoke checks",
-            command=(python, "scripts/check_accessibility_smoke.py"),
+            name="Checking the built redirect site",
+            command=(python, "scripts/check_redirect_stubs.py", "--site-dir", "site"),
         ),
     ]
 
@@ -277,12 +234,8 @@ def build_steps(
     # locally and in the Pages deploy gate, never in the pull-request lane.
     steps += [
         VerifyStep(
-            name="Running browser smoke checks",
-            command=(python, "scripts/check_browser_smoke.py"),
-        ),
-        VerifyStep(
-            name="Running full browser accessibility audit",
-            command=(python, "scripts/check_browser_accessibility.py"),
+            name="Following every old address in a browser",
+            command=(python, "scripts/check_browser_redirects.py"),
         ),
     ]
 
@@ -328,7 +281,7 @@ def run_step(
             stdout=_decode_stream(timeout.stdout),
             stderr=(
                 f"{step.name} timed out after {timeout_seconds:.0f}s and was killed. "
-                "Even the exhaustive browser audit should finish within this "
+                "Even the browser redirect check should finish within this "
                 "bounded allowance.\n"
             ),
         )
@@ -480,9 +433,9 @@ def parse_args(argv: Sequence[str] | None = None) -> argparse.Namespace:
         default=DEFAULT_PLAN,
         help=(
             "Which tier to run. 'ci' is the hosted lane: static checks only, no "
-            "tests and no site build. 'prepush' adds the test suite, the strict "
-            "MkDocs build, and the built-site checks. 'validate' adds browser "
-            "interaction and full-route accessibility assurance. "
+            "tests and no site build. 'prepush' adds the test suite, the build "
+            "of site/ from the redirect stubs, and the built-site check. "
+            "'validate' adds a browser following every old address. "
             f"Defaults to '{DEFAULT_PLAN}'."
         ),
     )

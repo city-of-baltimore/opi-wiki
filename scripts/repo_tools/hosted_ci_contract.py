@@ -81,21 +81,13 @@ EXPECTED_CI_WORKFLOW_LINES = (
 # token to ``python`` before comparison.
 EXPECTED_CI_PLAN_COMMANDS = (
     "python scripts/check_hosted_ci_policy.py",
-    "python scripts/check_browser_readiness_contract.py",
     "python scripts/check_platform_guard_evidence.py",
     "python -m baltimore.patapsco.baseline.cli --repo .",
-    "python -m ruff format --config pyproject.toml --check main.py scripts tests",
-    "python -m ruff check --config pyproject.toml main.py scripts tests",
+    "python -m ruff format --config pyproject.toml --check scripts tests",
+    "python -m ruff check --config pyproject.toml scripts tests",
     "python -m mypy",
-    "python -m bandit -q -c pyproject.toml -r main.py scripts",
-    "python scripts/check_docs_folder_names.py",
-    "python scripts/check_page_metadata.py",
-    "python scripts/check_organization_data.py",
-    "python scripts/check_brand_terms.py",
-    "python scripts/check_style.py",
-    "python scripts/check_consistency.py",
-    "python scripts/check_product_contract_links.py",
-    "python scripts/check_html_links.py",
+    "python -m bandit -q -c pyproject.toml -r scripts",
+    "python scripts/check_redirect_stubs.py",
 )
 
 

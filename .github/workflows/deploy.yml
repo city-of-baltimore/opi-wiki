@@ -17,10 +17,11 @@ name: Deploy to GitHub Pages
 #
 # The gate is `task validate`, not `task prepush`: validate is the pre-mutation
 # boundary, and this is the one hosted lane permitted to reach it. It runs every
-# prepush assertion — the tests, the strict build, the built-site checks — plus
-# browser smoke and the full-route accessibility matrix, which is why the build
-# job installs a browser first. The committed site_url and OPI_SITE_URL both use
-# the canonical Pages base URL.
+# prepush assertion — the tests, the build of site/ from the committed redirect
+# stubs, the built-site check — plus a browser following every old address to
+# its OPI Foundations page, which is why the build job installs a browser first.
+# The wiki retired into OPI Foundations (opi-publications): the published site
+# is redirects/stubs/, copied unchanged.
 #
 # Deploy workflows are exempt from the repo-local lean-CI guard — building is
 # their job — so scripts/check_hosted_ci_policy.py does not scan this file.
@@ -76,12 +77,10 @@ jobs:
         run: uv run playwright install --with-deps chromium
 
       # `task validate` is the whole pre-deploy gate and the whole permitted
-      # command: everything `task prepush` asserts, plus the browser suites. Its
-      # strict-build step produces the site/ artifact uploaded below.
+      # command: everything `task prepush` asserts, plus the browser check. Its
+      # build step copies redirects/stubs/ into the site/ artifact uploaded below.
       - name: Run the validate gate (gates the deploy, builds site/)
         timeout-minutes: 20
-        env:
-          OPI_SITE_URL: https://city-of-baltimore.github.io/opi-wiki/
         run: task validate
 
       - uses: actions/upload-pages-artifact@fc324d3547104276b827a68afc52ff2a11cc49c9 # v5.0.0

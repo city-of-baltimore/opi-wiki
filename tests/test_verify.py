@@ -86,12 +86,9 @@ def test_ci_plan_excludes_the_test_suite_the_build_and_every_built_site_check() 
     ci_names = [step.name for step in build_steps(Path("/tmp/example"), plan="ci")]
 
     assert "Running repo automation tests" not in ci_names
-    assert "Building MkDocs site with strict validation" not in ci_names
-    assert "Checking built-content visibility" not in ci_names
-    assert "Checking built-artifact safety" not in ci_names
-    assert "Checking built-site internal links" not in ci_names
-    assert "Running accessibility smoke checks" not in ci_names
-    assert "Running browser smoke checks" not in ci_names
+    assert "Building the redirect site" not in ci_names
+    assert "Checking the built redirect site" not in ci_names
+    assert "Following every old address in a browser" not in ci_names
 
 
 def test_ci_plan_keeps_every_static_check() -> None:
@@ -101,21 +98,13 @@ def test_ci_plan_keeps_every_static_check() -> None:
 
     assert ci_names == [
         "Checking hosted CI policy",
-        "Checking browser readiness source contract",
         "Validating platform guard evidence",
         "Checking platform baseline conformance",
         "Checking repo automation formatting",
         "Linting repo automation",
         "Type-checking repo automation",
         "Scanning repo automation for security issues",
-        "Checking docs folder names",
-        "Validating page metadata",
-        "Validating organization data",
-        "Validating brand terms",
-        "Checking editorial voice guardrail",
-        "Checking page consistency",
-        "Checking product contract links",
-        "Checking raw HTML links",
+        "Checking redirect stubs",
     ]
 
 
@@ -134,7 +123,6 @@ def test_ci_plan_checks_formatting_before_linting() -> None:
         "--config",
         "pyproject.toml",
         "--check",
-        "main.py",
         "scripts",
         "tests",
     )
@@ -174,14 +162,14 @@ def test_ci_plan_runs_both_policy_checkers() -> None:
     assert local_guard < evidence_guard < platform_guard
 
 
-def test_ci_plan_validates_organization_data_before_any_build() -> None:
-    """The source contract should fail in hosted CI without relying on a site build."""
+def test_ci_plan_checks_the_committed_stubs_before_any_build() -> None:
+    """The stub contract should fail in hosted CI without relying on a site build."""
 
     ci_steps = build_steps(Path("/tmp/example"), plan="ci")
-    organization_steps = [step for step in ci_steps if step.name == "Validating organization data"]
+    stub_steps = [step for step in ci_steps if step.name == "Checking redirect stubs"]
 
-    assert len(organization_steps) == 1
-    assert organization_steps[0].command[-1] == "scripts/check_organization_data.py"
+    assert len(stub_steps) == 1
+    assert stub_steps[0].command[-1] == "scripts/check_redirect_stubs.py"
 
 
 def test_prepush_plan_owns_the_tests_the_build_and_the_built_site_checks() -> None:
@@ -190,11 +178,8 @@ def test_prepush_plan_owns_the_tests_the_build_and_the_built_site_checks() -> No
     prepush_names = [step.name for step in build_steps(Path("/tmp/example"), plan="prepush")]
 
     assert "Running repo automation tests" in prepush_names
-    assert "Building MkDocs site with strict validation" in prepush_names
-    assert "Checking built-content visibility" in prepush_names
-    assert "Checking built-artifact safety" in prepush_names
-    assert "Checking built-site internal links" in prepush_names
-    assert "Running accessibility smoke checks" in prepush_names
+    assert "Building the redirect site" in prepush_names
+    assert "Checking the built redirect site" in prepush_names
 
 
 def test_prepush_runs_pytest_without_a_duplicate_test_pass() -> None:
@@ -207,21 +192,20 @@ def test_prepush_runs_pytest_without_a_duplicate_test_pass() -> None:
     assert test_steps[0].command == ("python", "-m", "pytest")
 
 
-def test_built_site_checks_run_right_after_the_strict_build() -> None:
-    """Built-site checks need the freshly built site/ directory."""
+def test_built_site_check_runs_right_after_the_build() -> None:
+    """The built-site check needs the freshly built site/ directory."""
 
     steps = build_steps(Path("/tmp/example"), python_executable="python", plan="prepush")
     step_names = [step.name for step in steps]
 
-    build_index = step_names.index("Building MkDocs site with strict validation")
-    assert step_names[build_index + 1 : build_index + 4] == [
-        "Checking built-content visibility",
-        "Checking built-artifact safety",
-        "Checking built-site internal links",
-    ]
+    build_index = step_names.index("Building the redirect site")
+    assert steps[build_index].command == ("python", "scripts/build_redirect_site.py")
+    assert step_names[build_index + 1 :] == ["Checking the built redirect site"]
     assert steps[build_index + 1].command == (
         "python",
-        "scripts/check_built_visibility.py",
+        "scripts/check_redirect_stubs.py",
+        "--site-dir",
+        "site",
     )
 
 
@@ -230,11 +214,8 @@ def test_validate_plan_adds_the_browser_assurance_checks() -> None:
 
     validate_names = [step.name for step in build_steps(Path("/tmp/example"), plan="validate")]
 
-    assert "Checking built-content visibility" in validate_names
-    assert validate_names[-2:] == [
-        "Running browser smoke checks",
-        "Running full browser accessibility audit",
-    ]
+    assert "Checking the built redirect site" in validate_names
+    assert validate_names[-1:] == ["Following every old address in a browser"]
 
 
 def test_each_plan_is_a_strict_prefix_of_the_next() -> None:
@@ -334,7 +315,7 @@ def test_main_runs_the_requested_plan(monkeypatch: pytest.MonkeyPatch) -> None:
     recorded.clear()
     assert main(["--plan", "validate"]) == 0
     assert "Running repo automation tests" in recorded
-    assert "Running browser smoke checks" in recorded
+    assert "Following every old address in a browser" in recorded
 
 
 def test_main_passes_the_step_timeout_through(monkeypatch: pytest.MonkeyPatch) -> None:

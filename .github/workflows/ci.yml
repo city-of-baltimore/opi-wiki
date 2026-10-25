@@ -3,16 +3,16 @@ name: CI
 # Runs on every pull request to main. This is the required gate before merge.
 #
 # It is deliberately LEAN: static checks only — lint, type-check, the workflow
-# policy guard, and the content validators that read docs/ source. It does NOT
-# run the test suite, does NOT build the site, and does NOT run anything that
-# inspects built HTML or drives a browser. Per the civic-app consistency
+# policy guard, and the check that reads the committed redirect stubs in
+# redirects/. It does NOT run the test suite, does NOT build the site, and does
+# NOT run anything that inspects built HTML or drives a browser. Per the civic-app consistency
 # standard (patapsco/docs/app-consistency-standard.md, §4), the hosted lane is
 # static checks, contracts, and security only.
 #
-# The test suite, strict MkDocs build, built-site checks, and accessibility smoke
-# still run in the pre-push hook and Pages deploy gate via `task prepush`.
-# Browser interactions and the full-route accessibility matrix remain the
-# deliberate local release proof in `task validate`; they are not hosted checks.
+# The test suite, the build of site/ from the stubs, and the built-site check
+# still run in the pre-push hook and Pages deploy gate via `task prepush`. The
+# browser following every old address remains the deliberate local release
+# proof in `task validate`; it is not a hosted check.
 #
 # This job runs `task ci` verbatim, so the hosted lane and a local run are the
 # same command. Do not add a test, build, or browser step here, and do not add

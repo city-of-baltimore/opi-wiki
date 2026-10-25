@@ -74,8 +74,8 @@ Thumbs.db
 # --- opi-wiki additions. Everything above is Patapsco's managed block, carried
 # --- verbatim; everything below is genuinely local to this repository.
 
-# MkDocs build output. Anchored: only the repository-root site/ is generated,
-# and docs/ content is free to use the word elsewhere.
+# The built Pages artifact (`task build` copies redirects/stubs/ here).
+# Anchored: only the repository-root site/ is generated.
 /site/
 
 # uv's local cache, when UV_CACHE_DIR points inside the checkout.

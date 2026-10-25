@@ -4,7 +4,12 @@ Derived from [`patapsco/docs/agents-master.md`](https://github.com/city-of-balti
 This file **adapts** the baseline; it never re-litigates it. Anything a machine
 can check lives in `platform-check`, not in prose here.
 
-This repository is the MkDocs site for **OPI Foundations**. Docs are the
+**Retired (25 Oct 2026).** OPI Foundations moved to opi-publications, and this
+repository now holds only the redirect stubs in `redirects/` and the gates that
+check them; see `README.md`. The rest of this file describes the wiki before it
+moved and is kept as its record.
+
+This repository was the MkDocs site for **OPI Foundations**. Docs are the
 product: they must be easy to find, easy to update, easy to review, and hard to
 break quietly.
 
