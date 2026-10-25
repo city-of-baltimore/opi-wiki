@@ -233,3 +233,14 @@ def test_contexts_follow_the_requested_javascript_mode(tmp_path: Path, javascrip
     collect_browser_redirect_issues(sync_playwright, _axe(), tmp_path, TARGETS)
 
     assert sum(1 for context in contexts[:2] if context.javascript is javascript) == 1
+
+
+def test_the_cli_reports_a_missing_build_without_a_browser(
+    capsys: pytest.CaptureFixture[str],
+) -> None:
+    """The validate step's command line fails, by name, before any browser starts."""
+
+    from scripts import check_browser_redirects
+
+    assert check_browser_redirects.main(["--site-dir", "no-such-site"]) == 1
+    assert "no-such-site is missing; run `task build` first" in capsys.readouterr().err

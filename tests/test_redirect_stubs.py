@@ -257,3 +257,23 @@ def test_the_build_copies_the_stubs_exactly(
     }
     assert copied == source
     assert find_redirect_stub_issues(repo, site_dir=Path("site")) == []
+
+
+def test_the_cli_passes_on_the_committed_site(capsys: pytest.CaptureFixture[str]) -> None:
+    """The ci step's command line reports success on this repository's stubs."""
+
+    from scripts import check_redirect_stubs
+
+    assert check_redirect_stubs.main([]) == 0
+    captured = capsys.readouterr()
+    assert captured.out == "Every old wiki address has one clean stub to OPI Foundations.\n"
+    assert captured.err == ""
+
+
+def test_the_cli_reports_a_missing_site(capsys: pytest.CaptureFixture[str]) -> None:
+    """The pre-push step fails, by name, when site/ was never built."""
+
+    from scripts import check_redirect_stubs
+
+    assert check_redirect_stubs.main(["--site-dir", "no-such-site"]) == 1
+    assert "no-such-site is not a directory" in capsys.readouterr().err
