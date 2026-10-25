@@ -83,10 +83,10 @@ EXPECTED_CI_PLAN_COMMANDS = (
     "python scripts/check_hosted_ci_policy.py",
     "python scripts/check_platform_guard_evidence.py",
     "python -m baltimore.patapsco.baseline.cli --repo .",
-    "python -m ruff format --config pyproject.toml --check main.py scripts tests",
-    "python -m ruff check --config pyproject.toml main.py scripts tests",
+    "python -m ruff format --config pyproject.toml --check scripts tests",
+    "python -m ruff check --config pyproject.toml scripts tests",
     "python -m mypy",
-    "python -m bandit -q -c pyproject.toml -r main.py scripts",
+    "python -m bandit -q -c pyproject.toml -r scripts",
     "python scripts/check_redirect_stubs.py",
 )
 

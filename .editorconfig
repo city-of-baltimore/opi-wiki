@@ -1,5 +1,4 @@
-# Shared editor defaults. Keep in step with ruff (line-length 100) and the
-# repository style guide in STYLE.md.
+# Shared editor defaults. Keep in step with ruff (line-length 100).
 
 root = true
 

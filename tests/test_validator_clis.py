@@ -8,52 +8,10 @@ import pytest
 
 VALIDATOR_CASES = (
     (
-        "scripts.check_accessibility_smoke",
-        "scripts.repo_tools.accessibility",
-        "find_accessibility_issues",
-        "Accessibility smoke check passed.",
-    ),
-    (
-        "scripts.check_brand_terms",
-        "scripts.repo_tools.brand_terms",
-        "find_brand_term_issues",
-        "Brand terms validated.",
-    ),
-    (
-        "scripts.check_docs_folder_names",
-        "scripts.repo_tools.docs_folder_names",
-        "find_docs_folder_name_issues",
-        "Every docs/ folder name is visible to Git.",
-    ),
-    (
-        "scripts.check_page_metadata",
-        "scripts.repo_tools.metadata",
-        "find_metadata_issues",
-        "Page metadata validated.",
-    ),
-    (
-        "scripts.check_organization_data",
-        "scripts.repo_tools.organization",
-        "find_organization_data_issues",
-        "Organization data validated.",
-    ),
-    (
         "scripts.check_platform_guard_evidence",
         "scripts.repo_tools.platform_guard_evidence",
         "find_platform_guard_evidence_issues",
         "Platform guard evidence validated.",
-    ),
-    (
-        "scripts.check_product_contract_links",
-        "scripts.repo_tools.product_contract_links",
-        "find_product_contract_link_issues",
-        "Product contract links validated.",
-    ),
-    (
-        "scripts.check_style",
-        "scripts.repo_tools.style",
-        "find_style_issues",
-        "Editorial voice guardrail passed.",
     ),
 )
 

@@ -44,11 +44,6 @@ updates:
       # the one package nobody thought to list.
       - dependency-name: "*"
         update-types: ["version-update:semver-major"]
-      # 1.2.3 adds properdocs>=1.6.5 alongside MkDocs. Keep this alternate
-      # renderer outside routine dependency batches; revisit only in a
-      # migration decision recorded by OPI Wiki maintainers.
-      - dependency-name: "mkdocs-redirects"
-        versions: [">=1.2.3"]
       # The foundation packages are pinned EXACTLY by the platform BOM
       # ([packages] in patapsco contracts/platform-bom.toml); pyproject.toml
       # carries baltimore-patapsco==0.7.2 for that reason. They move when

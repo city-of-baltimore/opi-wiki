@@ -123,7 +123,6 @@ def test_ci_plan_checks_formatting_before_linting() -> None:
         "--config",
         "pyproject.toml",
         "--check",
-        "main.py",
         "scripts",
         "tests",
     )

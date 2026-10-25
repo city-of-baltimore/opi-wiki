@@ -6,8 +6,9 @@
 contract_version = 2
 
 [app]
-# MkDocs documentation site, not an application: no backend, no database, no
-# nginx, no bromo. It publishes a single loopback port for local preview and
+# The retired OPI wiki, not an application: no backend, no database, no nginx,
+# no bromo. Its published site is the static redirect stubs in redirects/,
+# copied unchanged. It publishes a single loopback port for local preview and
 # deploys to GitHub Pages. Most of the civic-app compose/runtime baseline does
 # not apply here — see docs_site notes below.
 kind = "docs-site"
@@ -16,7 +17,7 @@ packaging = "uv"
 slot = 8
 
 [ports] # host ports, all bound to 127.0.0.1
-frontend = 5208 # `mkdocs serve` / docker compose preview (5200 + slot)
+frontend = 5208 # `task serve` preview of the built site/ (5200 + slot)
 # backend 8208, postgres 5448, and redis 6408 are reserved-but-idle for this
 # slot: the docs site runs none of them, but the registry holds the numbers so a
 # future adoption can never collide.
@@ -49,9 +50,9 @@ runner = "Taskfile.yml"
 # Production deploy target. There is no container in the deploy path.
 deploy = "github-pages"
 # The hosted pull-request lane is static-only (`task ci`): no test suite, no
-# site build, no browser suite. The tests, the strict build, and the built-site
-# checks run in the pre-push hook; the Pages deploy gate runs `task validate`,
-# which adds browser interactions and the full-route accessibility matrix as the
+# site build, no browser suite. The tests, the build of site/ from the stubs,
+# and the built-site check run in the pre-push hook; the Pages deploy gate runs
+# `task validate`, which adds a browser following every old address as the
 # pre-mutation boundary.
 # scripts/check_hosted_ci_policy.py enforces the boundary mechanically, walking
 # both the Taskfile graph and the verify.py plans so indirection cannot hide a

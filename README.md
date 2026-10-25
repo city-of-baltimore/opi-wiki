@@ -26,7 +26,7 @@ Every old address on https://city-of-baltimore.github.io/opi-wiki/ still works. 
 
 ## What else is here
 
-The MkDocs source in `docs/` is frozen at the import and is no longer published or gated. The dated decisions behind the wiki are in [`MAINTAINERS.md`](MAINTAINERS.md).
+The MkDocs source, its theme and its content checks were deleted in the final commit; they stay in this repository's history, at the import commit above. The dated decisions behind the wiki are in [`MAINTAINERS.md`](MAINTAINERS.md).
 
 ## License
 

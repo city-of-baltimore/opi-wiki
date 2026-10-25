@@ -21,8 +21,7 @@ name: Deploy to GitHub Pages
 # stubs, the built-site check — plus a browser following every old address to
 # its OPI Foundations page, which is why the build job installs a browser first.
 # The wiki retired into OPI Foundations (opi-publications): the published site
-# is redirects/stubs/, copied unchanged. The committed site_url and OPI_SITE_URL
-# both use the canonical Pages base URL.
+# is redirects/stubs/, copied unchanged.
 #
 # Deploy workflows are exempt from the repo-local lean-CI guard — building is
 # their job — so scripts/check_hosted_ci_policy.py does not scan this file.
@@ -82,8 +81,6 @@ jobs:
       # build step copies redirects/stubs/ into the site/ artifact uploaded below.
       - name: Run the validate gate (gates the deploy, builds site/)
         timeout-minutes: 20
-        env:
-          OPI_SITE_URL: https://city-of-baltimore.github.io/opi-wiki/
         run: task validate
 
       - uses: actions/upload-pages-artifact@fc324d3547104276b827a68afc52ff2a11cc49c9 # v5.0.0

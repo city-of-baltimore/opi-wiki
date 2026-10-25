@@ -246,7 +246,6 @@ FORBIDDEN_COMMAND_PATTERNS: tuple[tuple[str, re.Pattern[str]], ...] = (
     ("image build", re.compile(r"\bdocker\s+compose\b[^\n]*--build\b")),
     ("browser/e2e/visual suite", re.compile(r"\bplaywright\b", re.IGNORECASE)),
     ("browser/e2e/visual suite", re.compile(r"\baxe\b")),
-    ("browser/e2e/visual suite", re.compile(r"\bcheck_browser_smoke\b")),
     ("browser/e2e/visual suite", re.compile(r"\bcheck_browser_redirects\b")),
 )
 

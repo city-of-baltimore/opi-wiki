@@ -1,5 +1,7 @@
 # Maintainer's Operating Manual
 
+**Retired (25 Oct 2026).** OPI Foundations moved to opi-publications, and this repository now publishes only redirect stubs (see `README.md`). This manual describes the wiki before it moved, and is kept as the record of its dated decisions.
+
 This document is for the OPI Foundations docs maintainer. It describes the role, the weekly cadence, the editorial voice, and the systems involved.
 
 ## Contents

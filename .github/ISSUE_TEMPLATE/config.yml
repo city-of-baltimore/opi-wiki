@@ -1,8 +1,0 @@
-blank_issues_enabled: true
-contact_links:
-  # One entry, not two: both previously pointed at the contributing page, so a
-  # reader who reached this chooser from that page was offered two ways back to
-  # where they started.
-  - name: How contributions work
-    url: https://city-of-baltimore.github.io/opi-wiki/resources/contributing/
-    about: Read how edits are reviewed and published, including how to edit a page directly from the site.

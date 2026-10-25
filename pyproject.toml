@@ -1,26 +1,16 @@
 [project]
 name = "opi-wiki"
 version = "0.1.0"
-description = "A Wiki for all things OPI."
+description = "The retired OPI wiki: redirect stubs to OPI Foundations."
 readme = "README.md"
 # Platform bill of materials (patapsco/contracts/platform-bom.toml): default
 # 3.14, floor 3.13. Contributions to this wiki arrive through git, not local
 # runs, so a modern floor costs contributors nothing and keeps the toolchain
 # aligned with every sibling repo.
 requires-python = ">=3.13,<3.15"
-dependencies = [
-  "mkdocs==1.6.1",
-  # Material 9.7.7 fixes a search-suggestion XSS. Its MkDocs 2.0 warning is
-  # intentionally visible; see the dated decision in MAINTAINERS.md.
-  "mkdocs-material==9.7.7",
-  "mkdocs-awesome-pages-plugin==2.10.1",
-  "mkdocs-macros-plugin==1.5.0",
-  # 1.2.3 adds properdocs>=1.6.5 alongside MkDocs. Alternate-renderer adoption
-  # remains a separate platform decision; keep this pin.
-  "mkdocs-redirects==1.2.2",
-  # 11.0 contains the CVE-2026-61632 fix; 11.0.1 adds follow-up regex fixes.
-  "pymdown-extensions==11.0.2",
-]
+# The published site is static redirect stubs (redirects/), copied unchanged,
+# so nothing renders at runtime. MkDocs and its plugins retired with the wiki.
+dependencies = []
 
 # This is an application, not a distributable package, so uv does not build or
 # install the project itself — only its dependencies.
@@ -35,6 +25,9 @@ dev = [
     "ruff>=0.16.1,<0.17.0",
     "playwright>=1.62.0,<2.0.0",
     "mypy>=2.1.0,<3.0.0",
+    # The platform-guard evidence check reads .github/dependabot.yml. PyYAML
+    # used to arrive through MkDocs; it is declared here now that MkDocs is gone.
+    "pyyaml>=6.0.3,<7.0.0",
     "types-pyyaml>=6.0.12.20260724,<7.0.0.0",
     # Patapsco's estate baseline gate, exposed as the `platform-check` console
     # script. Exact-pinned, not ranged: it is a gate, and a gate that changes
@@ -60,7 +53,7 @@ testpaths = ["tests"]
 
 [tool.ruff]
 line-length = 100
-src = ["main.py", "scripts", "tests"]
+src = ["scripts", "tests"]
 target-version = "py313"
 
 [tool.ruff.lint]
@@ -76,9 +69,6 @@ ignore = ["D202"]
 convention = "google"
 
 [tool.ruff.lint.per-file-ignores]
-# These CLIs intentionally print their human-readable reports to stdout.
-"scripts/check_built_links.py" = ["T201"]
-"scripts/check_consistency.py" = ["T201"]
 # The check_* scripts are argv-driven CLIs whose stdout IS their output, so T201
 # is scoped off there rather than repeated as a per-call noqa. The standard's
 # "no print for status" rule targets library and service code; there is none here.
@@ -94,7 +84,7 @@ convention = "google"
 exclude_dirs = ["tests", ".venv", "site", "node_modules"]
 
 [tool.mypy]
-files = ["main.py", "scripts"]
+files = ["scripts"]
 strict = true
 # Tests exercise fakes and fixtures; strict typing there adds noise, not safety.
 exclude = ["tests/"]

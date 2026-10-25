@@ -37,18 +37,18 @@ tasks:
   fmt:
     desc: Format and auto-fix the repo automation in place
     cmds:
-      - uv run ruff format --config pyproject.toml main.py scripts tests
-      - uv run ruff check --config pyproject.toml --fix main.py scripts tests
+      - uv run ruff format --config pyproject.toml scripts tests
+      - uv run ruff check --config pyproject.toml --fix scripts tests
 
   fmt:check:
     desc: Check formatting without writing
     cmds:
-      - uv run ruff format --config pyproject.toml --check main.py scripts tests
+      - uv run ruff format --config pyproject.toml --check scripts tests
 
   lint:
     desc: Lint the repo automation
     cmds:
-      - uv run ruff check --config pyproject.toml main.py scripts tests
+      - uv run ruff check --config pyproject.toml scripts tests
 
   typecheck:
     desc: Type-check the repo automation
@@ -62,7 +62,7 @@ tasks:
       - uv run platform-check --repo .
 
   ci:
-    desc: Lean hosted gate — static checks, content validators, policy guard
+    desc: Lean hosted gate — static checks, the redirect-stub check, policy guard
     cmds:
       - task: ci:policy
       - uv run python scripts/verify.py --plan ci
@@ -73,23 +73,24 @@ tasks:
       - uv run python -m pytest
 
   build:
-    desc: Build the site with strict validation
+    desc: Build site/, the Pages artifact, from the committed redirect stubs
     cmds:
-      - uv run python -m mkdocs build --strict
+      - uv run python scripts/build_redirect_site.py
 
   serve:
-    desc: Preview the site on the slot-8 loopback port (registry port 5208)
+    desc: Preview the built redirect site on the slot-8 loopback port (registry port 5208)
     cmds:
-      - uv run python -m mkdocs serve -a 127.0.0.1:5208
+      - task: build
+      - uv run python -m http.server 5208 --bind 127.0.0.1 --directory site
 
   prepush:
-    desc: Everything in ci plus tests, the strict build, and built-site checks
+    desc: Everything in ci plus tests, the redirect-site build, and the built-site check
     cmds:
       - task: ci:policy
       - uv run python scripts/verify.py --plan prepush
 
   validate:
-    desc: Everything in prepush plus browser smoke and full accessibility suites
+    desc: Everything in prepush plus a browser following every old address
     cmds:
       - task: ci:policy
       - uv run python scripts/verify.py --plan validate
